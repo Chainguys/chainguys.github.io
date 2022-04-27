@@ -1,0 +1,186 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>关于 | Chainguys</title>
+<link rel="shortcut icon" href="https://chainguys.github.io/favicon.ico?v=1651034394026">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://chainguys.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="关于 | Chainguys - Atom Feed" href="https://chainguys.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+GM! 🤝
+
+Welcome!Bienvenue!欢迎！
+This Blog is a personal blog for @Chainguys.
+Ce Blog est un blog  personal pour @Chainguy..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://chainguys.github.io">
+  <img class="avatar" src="https://chainguys.github.io/images/avatar.png?v=1651034394026" alt="">
+  </a>
+  <h1 class="site-title">
+    Chainguys
+  </h1>
+  <p class="site-description">
+    A blockchain guy who likes making memes and translating tech articles </br>All Information NOT Financial Adivice</br> 一个区块链的老韭菜 </br>兴趣是做meme和翻译技术文章 </br>一切均非投资建议
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Chainguys" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/Chainguys" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              关于
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-04-27
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <blockquote>
+<p>GM! 🤝</p>
+</blockquote>
+<h2 id="welcomebienvenue欢迎">Welcome!Bienvenue!欢迎！</h2>
+<p>This Blog is a <strong><em>personal</em></strong> blog for <a href="https://twitter.com/Chainguys">@Chainguys</a>.<br>
+Ce Blog est un blog  <strong><em>personal</em></strong> pour <a href="https://twitter.com/Chainguys">@Chainguys</a>.<br>
+本博客是<a href="https://twitter.com/Chainguys">@Chainguys</a>的 <strong><em>私人</em></strong> 博客。</p>
+<p>This blog will store all works of  <a href="https://twitter.com/Chainguys">@Chainguys</a> .<br>
+Ce blog stockera toutes les œuvres de <a href="https://twitter.com/Chainguys">@Chainguys</a>.<br>
+本博客将会存储 <a href="https://twitter.com/Chainguys">@Chainguys</a> 所有作品。</p>
+<p>Thanks!Merci!谢谢!</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#welcomebienvenue%E6%AC%A2%E8%BF%8E">Welcome!Bienvenue!欢迎！</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Web3 is REAL,take it seriously. <a href="https://twitter.com/Chainguys" target="_blank">@Chainguys</a>
+  <a class="rss" href="https://chainguys.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

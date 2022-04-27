@@ -1,0 +1,217 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Neon EVM技术文档和白皮书(Neon EVM Docs and Whitepaper) | Chainguys</title>
+<link rel="shortcut icon" href="https://chainguys.github.io/favicon.ico?v=1651034394026">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://chainguys.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Neon EVM技术文档和白皮书(Neon EVM Docs and Whitepaper) | Chainguys - Atom Feed" href="https://chainguys.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="👏  GM!
+版权声明（Copyright Notice）
+本文翻译自Neon Labs为该项目撰写的技术文档，并已得到翻译授权。译者为@chainguys。转载请注明作者和译者。
+Coptyright©2021 by Neon Labs..." />
+    <meta name="keywords" content="neon,evm,proxy,translation,翻译,白皮书,技术文档,doc,whitepaper" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://chainguys.github.io">
+  <img class="avatar" src="https://chainguys.github.io/images/avatar.png?v=1651034394026" alt="">
+  </a>
+  <h1 class="site-title">
+    Chainguys
+  </h1>
+  <p class="site-description">
+    A blockchain guy who likes making memes and translating tech articles </br>All Information NOT Financial Adivice</br> 一个区块链的老韭菜 </br>兴趣是做meme和翻译技术文章 </br>一切均非投资建议
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Chainguys" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/Chainguys" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Neon EVM技术文档和白皮书(Neon EVM Docs and Whitepaper)
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-04-27
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://chainguys.github.io/tag/eeSxDsfZU/" class="post-tag">
+                  # neon
+                </a>
+              
+                <a href="https://chainguys.github.io/tag/UWWZz0LEyM/" class="post-tag">
+                  # evm
+                </a>
+              
+                <a href="https://chainguys.github.io/tag/Tv6es71_Wy/" class="post-tag">
+                  # proxy
+                </a>
+              
+                <a href="https://chainguys.github.io/tag/5D6ez_pFl0/" class="post-tag">
+                  # translation
+                </a>
+              
+                <a href="https://chainguys.github.io/tag/aDh69HsINT/" class="post-tag">
+                  # 翻译
+                </a>
+              
+                <a href="https://chainguys.github.io/tag/DWtbELEyqE/" class="post-tag">
+                  # 白皮书
+                </a>
+              
+                <a href="https://chainguys.github.io/tag/ZmPiwNPIqj/" class="post-tag">
+                  # 技术文档
+                </a>
+              
+                <a href="https://chainguys.github.io/tag/8_0Tjy_waA/" class="post-tag">
+                  # doc
+                </a>
+              
+                <a href="https://chainguys.github.io/tag/YRUwJD234r/" class="post-tag">
+                  # whitepaper
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>👏  GM!</p>
+<h1 id="版权声明copyright-notice">版权声明（Copyright Notice）</h1>
+<p><strong>本文翻译自<a href="https://neon-labs.org/">Neon Labs</a>为该项目撰写的<a href="https://docs.neon-labs.org/">技术文档</a>，并已得到翻译授权。译者为<a href="https://twitter.com/Chainguys">@chainguys</a>。转载请注明作者和译者。</strong></p>
+<p><strong>Coptyright©2021 by <a href="https://neon-labs.org/">Neon Labs</a>, translated by <a href="https://twitter.com/Chainguys">@chainguys</a>.</strong></p>
+<p><strong>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。</strong></p>
+<p><strong>All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice.</strong></p>
+<p><strong>最后，请理解此文件并不是官方发布的中文技术文档，而是一份由Neon信仰者<a href="https://twitter.com/Chainguys">@chainguys</a>个人单独维护的文档，若翻译与英文原文有出入，一律以英文原文和官方解释为准。欢迎大家加入Neon官方<a href="https://discord.gg/gapRjRtFN7">Discord群组</a> 。</strong></p>
+<p><strong>Finally,please understand this is not an official Chinese doc released by Neon, but one maintained solely by Neon Maximalist <a href="https://twitter.com/Chainguys">@chainguys</a>. In the event of conflicts or ambiguity between the English language version and translated versions, the English language versions and official interpretation shall prevail.Feel free to join Neon Official <a href="https://discord.gg/gapRjRtFN7">Discord server</a>.</strong></p>
+<p><strong>请访问以下链接查看：</strong><br>
+<strong>Please visit folloing links：</strong></p>
+<p><a href="https://chainguys.github.io/neonwp/">Neon EVM技术文档 (Neon EVM Docs)</a><br>
+<a href="https://chainguys.github.io/neonwp/11wp/wp">Neon EVM白皮书  (Neon EVM Whitepaper)</a></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8Ecopyright-notice">版权声明（Copyright Notice）</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Web3 is REAL,take it seriously. <a href="https://twitter.com/Chainguys" target="_blank">@Chainguys</a>
+  <a class="rss" href="https://chainguys.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

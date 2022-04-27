@@ -1,0 +1,243 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Akord x RedStone—提升Arweave的性能! Akord x RedStone – Improving Performance on Arweave | Chainguys</title>
+<link rel="shortcut icon" href="https://chainguys.github.io/favicon.ico?v=1651034394026">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://chainguys.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Akord x RedStone—提升Arweave的性能! Akord x RedStone – Improving Performance on Arweave | Chainguys - Atom Feed" href="https://chainguys.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="Akord x RedStone – Improving Performance on Arweave
+
+This blog post is based on a Twitter Spaces AMA we held with RedSto..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://chainguys.github.io">
+  <img class="avatar" src="https://chainguys.github.io/images/avatar.png?v=1651034394026" alt="">
+  </a>
+  <h1 class="site-title">
+    Chainguys
+  </h1>
+  <p class="site-description">
+    A blockchain guy who likes making memes and translating tech articles </br>All Information NOT Financial Adivice</br> 一个区块链的老韭菜 </br>兴趣是做meme和翻译技术文章 </br>一切均非投资建议
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Chainguys" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/Chainguys" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Akord x RedStone—提升Arweave的性能! Akord x RedStone – Improving Performance on Arweave
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-04-27
+              </span>
+              <span>
+                13 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="akord-x-redstone-improving-performance-on-arweave">Akord x RedStone – Improving Performance on Arweave</h1>
+<figure data-type="image" tabindex="1"><img src="https://akord.com/media/Akord-x-Redstone-1.jpeg" alt="Akord x Redstone 1" loading="lazy"></figure>
+<p><em>This blog post is based on a Twitter Spaces AMA we held with <a href="https://twitter.com/redstone_defi">RedStone</a>. You can <a href="https://twitter.com/i/spaces/1OdJrByrbXpJX">listen to the event here</a>.</em></p>
+<p><em>这篇博文源于我们与 <a href="https://twitter.com/redstone_defi">RedStone</a> 举行的 Twitter Spaces AMA。您可以<a href="https://twitter.com/i/spaces/1OdJrByrbXpJX">在此收听活动</a>.</em></p>
+<h2 id="背景-context">背景 (Context）</h2>
+<p>The possibility for web3, particularly in the context of Arweave, is to take our data, application and business model completely onchain. While that’s very exciting, it presents a number of significant challenges across the developer and user experience.</p>
+<p>web3 的可能性，是让我们的数据、应用和业务(模型)完全上链，尤其是在 Arweave 的“加持”下。虽然这非常令人兴奋，但它对开发人员和用户体验提出了许多重大挑战。</p>
+<p>At Akord, we aim to deliver a web2 user experience in the web3 paradigm. The work the RedStone team has been doing, creating the tools to improve performance, has been a great help for us in achieving this at the technical level.</p>
+<p>在 Akord，我们的目标是在 web3 范式中提供 web2 用户体验。 RedStone 团队一直在做的工作-即创建工具来提高性能-对我们在技术层面实现这一目标有很大帮助。</p>
+<h2 id="redstone-在-smart-weave-合约方面的工作redstones-work-on-smart-weave-contracts">RedStone 在 Smart Weave 合约方面的工作(RedStone’s work on Smart Weave contracts)</h2>
+<p>Early on, RedStone identified certain weaknesses in SmartWeave contracts relating to performance and reliability. Specifically, every time you want the latest state of the contract you need to evaluate all the interactions on your side, which doesn’t scale when a contract has tens or hundreds of thousands of interactions and may even communicate with other contracts.</p>
+<p>之前，RedStone 发现了 SmartWeave 合约中，性能可靠性相关的某些弱点。具体来说，每次你想要合约的最新状态时，你都需要评估自己这边的所有交互，当一个合约有数万或数十万次交互或甚至可能与其他合约进行通信时，它无就法扩展。</p>
+<p><a href="https://github.com/redstone-finance/redstone-smartcontracts"><strong>RedStone</strong></a> <a href="https://github.com/redstone-finance/redstone-smartcontracts"><strong>Contracts</strong></a> <strong>introduced a number of tools to address performance and developer experience</strong>: caching mechanisms, testing tools with a test net (including regression tests), a <a href="https://gateway.redstone.finance/">dedicated gateway</a> for indexing and serving smart contracts, a smart contract explorer called <a href="https://sonar.redstone.tools/#/app/contracts">SonAR</a>, and a sequencer built in collaboration with Bundlr.</p>
+<p><a href="https://github.com/redstone-finance/redstone-smartcontracts"><strong>RedStone</strong></a> <a href="https://github.com/redstone-finance/redstone-smartcontracts"><strong>Contracts</strong></a> <strong>引入了许多工具来解决性能和开发人员体验</strong>的问题：缓存机制、带有测试网的测试工具（包括回归测试）、用于索引和服务智能合约的 <a href="https://gateway.redstone.finance/">专用网关</a>、名为 <a href="https://sonar.redstone.tools/#/app/contracts">SonAR</a> 的智能合约浏览器，以及与 Bundlr 合作构建的排序器(序列器)。</p>
+<p>RedStone have put in a lot of effort to optimise the basic Execution Engine (the core part of the SDK), increasing the efficiency of contract evaluation thanks to extensive caching and memoization. As a result, a SmartWeave contract with over 300,000 interactions <a href="https://github.com/redstone-finance/redstone-sw-gateway#benchmarks">can be loaded in 2 minutes</a> instead of several hours. And this is just the beginning, with further improvements planned for RedStone Contracts SDK and the tools around it.</p>
+<p>RedStone 投入了大量精力来优化基本执行引擎（SDK 核心部分），通过广泛的缓存和记忆化提高了合约评估的效率。因此，具有超过 300,000 次交互的 SmartWeave 合约<a href="https://github.com/redstone-finance/redstone-sw-gateway#benchmarks">可以在 2 分钟内加载</a> 而不是几个小时。而这仅仅是开始，之后还会随着RedStone Contracts SDK 及其周围的工具的（研发）计划而进一步改进。</p>
+<p>RedStone itself utilises this smart contract platform for ensuring data integrity for its <a href="https://redstone.finance/">Oracles</a>, which can deliver <a href="https://app.redstone.finance/">various types of data</a> and export to any EVM compatible chain.</p>
+<p>RedStone 本身利用这个智能合约平台来确保其 <a href="https://redstone.finance/">预言机 Oracles</a> 的数据完整性，它可以提供 <a href="https://app.redstone.finance/">各种类型的数据</a> 并导出到任何 EVM 兼容链。</p>
+<h2 id="akod如何在redstone帮助下更快速运行how-akord-is-moving-faster-with-redstone">Akod如何在RedStone帮助下更快速运行？(How Akord is moving faster with RedStone)</h2>
+<p>Every action in Akord, for example, the creation of a vault, uploading of files, etc, is a user transaction that will be processed and validated through smart weave contracts.</p>
+<p>Akord 中的每个操作，例如创建保管库、上传文件等，都是用户交易，会通过智能合约进行处理和验证。</p>
+<p><strong>Each vault in Akord will have its own contract instance living on the Arweave blockchain. And so each action within a vault will be a specific interaction with that contract.</strong></p>
+<p>** Akord 中的每个保管库都将在 Arweave 区块链上拥有自己的合约实例。因此，保管库中的每个操作都将是与该合约的特定交互。**</p>
+<p>This is why RedStone’s suite of tools has proved so valuable for Akord. The quicker we can process interactions with the contract at the protocol level, the better UX we can deliver through the Akord app, and any other apps that build on the Akord Vault Protocol in the future.</p>
+<p>这就是为什么 RedStone 的工具套件对 Akord 如此有价值的原因。我们在协议级别处理与合约的交互越快，我们可以提供的用户体验就更好(通过 Akord 应用以及未来基于 Akord Vault 协议构建的任何其他应用程序)。</p>
+<p>Specifically, we’re using RedStone’s dedicated gateway to improve performance and catch any corrupted transactions.</p>
+<p>具体来说，我们正在使用 RedStone 的专用网关来提高性能并捕获任何损坏的交易。</p>
+<p>Another example, with context within the Akord product, is when we revoke a member from the vault. When this action is taken we need to redistribute the new encryption keys to the vault for the members who still have access while revoking the keys of the user who was removed. This requires various interactions with multiple contracts at the same time. <strong>With RedStone’s technology we can make one atomic transaction that covers all the necessary interactions at once.</strong></p>
+<p>另一个使用 Akord 产品环境的示例是，当我们从保管库中撤销成员时。执行此操作时，我们需要将新的加密密钥重新分发到保管库中仍具有访问权限的成员，同时还要撤销被移除人员的秘钥。这需要同时与多个合约进行各种交互。 <strong>借助 RedStone 的技术，我们可以进行一次涵盖所有必要交互的原子交易。</strong></p>
+<p>We’ve also found the test net environment that RedStone have built for Arweave to be very valuable in our developer experience. And the sequencer has also proved very useful, for instance, in returning the state of an Akord vault in a very performant way.</p>
+<p>我们还发现 RedStone 为 Arweave 构建的测试网络环境对我们的开发人员体验非常有价值。并且排序器(序列器)也被证明非常有用，例如，以非常高效的方式返回 Akord保管库的状态。</p>
+<h2 id="arweave的挑战-challenges-on-arweave">Arweave的挑战 (Challenges on Arweave)</h2>
+<p>Recently, we’ve had issues trying to get transactions to confirm on the network, which is in part due to the war in Ukraine. An unprecedented amount of data relating to the war is being uploaded, largely by bots. This historical preservation is an important process, and one which Arweave was designed for, but the consequence has been to stress the network.</p>
+<p>最近，我们在尝试在网络上确认交易时遇到了问题，部分原因是乌克兰的战争。与战争有关的大量数据正主要由机器人上传。这种历史保存是一个重要的过程，也是 Arweave 的设计初衷，但其结果是给网络带来了压力。</p>
+<p>We’ve designed Akord to be able to queue transactions until there’s availability, but it’s still not optimal. Especially as Akord sends multiple transactions linked in a sequence to one event.</p>
+<p>我们将 Akord 设计为能够对交易进行排队，直到处理能力有富余，但这仍然不是最佳的。尤其是当 Akord 发送多个按顺序链接到一个事件的交易时。</p>
+<p>For example, when we upload a file that’s one transaction, but there’s also another transaction for the metadata. Those transactions should go to the weave together, but if one is dropped that causes us problems on the backend. This is where the sequencer from RedStone is so powerful, as it ensures that we mine those transactions together.</p>
+<p>例如，当我们上传一个文件时，这是一个交易，但元数据还有另一个交易。这些交易应该一起编排，是如果一个被丢弃，就会导致在后端出现问题。这就是 RedStone 的排序器(序列器)如此强大的地方，因为它可以确保我们一起挖掘这些交易。</p>
+<p>To address some of these issues and help newcomers start with SmartWeave, <strong>the</strong> <strong>RedStone</strong> <strong>team</strong> <strong>recently launched their</strong> <a href="https://redstone.academy/"><strong>RedStone Academy</strong></a>  to provide one shared point of knowledge for developers looking to create profit-sharing tokens (PSTs) on Arweave, as well as provide resources for writing SmartWeave contracts and methods for testing.</p>
+<p>为了解决其中的一些问题，并帮助新手开始使用 SmartWeave，<strong>RedStone团队</strong>  **最近推出了<a href="https://redstone.academy/"><strong>RedStone 学院</strong></a>提供为希望在 Arweave 上创建利润分享代币 (PST) 的开发人员共享知识点，并为编写 SmartWeave 合约和测试方法提供资源。</p>
+<p>The academy already has a detailed step-by-step tutorial for writing a PST, with more resources planned for the future. Among those plans include tutorials and templates on WASM contracts, as well as real world examples of PST contracts making advanced interactions.</p>
+<p>该学院已经有一个详细的分步教程来编写 PST，并为未来计划了更多资源。这些计划包括关于 WASM 合约的教程和模板，以及对PST 合约进行高级交互的真实示例。</p>
+<p>The RedStone implementation of <a href="https://github.com/redstone-finance/redstone-smartcontracts-wasm-templates">WASM contracts</a> is another resource we intend to be using at Akord. Its fully sand-boxed environment and gas metering makes it much safer than just working in Javascript or Typescript.</p>
+<p><a href="https://github.com/redstone-finance/redstone-smartcontracts-wasm-templates">WASM 合约</a> 在RedStone的实施，是我们打算在 Akord 使用的另一个资源。它的完全沙盒环境和gas计量，使其比仅使用 Javascript 或 Typescript 工作更安全。</p>
+<h2 id="战胜成长的阵痛-overcoming-growing-pains">战胜成长的阵痛 (Overcoming growing pains)</h2>
+<p>We believe to a certain extent the issues facing the Arweave ecosystem are the result of growing pains. Arweave has becomes the <em>de facto</em> storage layer for NFTs and now stores the blockchain history of many L1s like Solana. Events like the War in Ukraine, which present the perfect use case for Arweave at scale, are also turbo-charging usage.</p>
+<p>我们认为，Arweave 生态系统面临的问题在一定程度上是成长阵痛的结果。 Arweave 已成为 NFT  <em>事实上的</em> 存储层，现在存储许多layer1 的区块链历史，比如 Solana。像乌克兰战争这样的事件，为 Arweave 大规模展示了完美的用例，也是“涡轮增压”的用法。</p>
+<p>This growth and the relatively early stage of the network has created some inevitable issues, something we see across almost all blockchain projects at some point in their early history.</p>
+<p>这种增长与相对早期的网络的已经产生了一些不可避免的问题，我们在几乎所有区块链项目早期的某个时刻都看到了这一点。</p>
+<p>That doesn’t mean we can just relax and assume everything will magically resolve itself. The Arweave team is an undeniable powerhouse, but every other team in the space should be thinking about how they can contribute. It’s only by partnering across projects in the ecosystem, pooling knowledge, and building shared tools and resources, that we can we come through the other side with truly solid foundations needed to scale to mass adoption.</p>
+<p>这并不意味着我们可以放松并假设一切都会神奇地自行解决。 Arweave 团队是一个不可否认的巨头，但该领域的所有其他团队都应该考虑如何做出贡献。只有通过在生态系统中的项目之间进行合作、汇集知识、构建共享工具和资源，我们才能通过扩展，以大规模采用所需的真正坚实的基础(建设)来渡过难关。</p>
+<p>RedStone’s work has been invaluable to Akord and the Arweave space at large, and we look forward to open sourcing the Akord Vault Protocol and evolving our own developer community to help others looking to build on Arweave.</p>
+<p>RedStone 的工作对 Akord 和整个 Arweave 空间来说非常宝贵，我们期待开源 Akord Vault 协议并发展我们自己的开发者社区，以帮助其他希望在 Arweave 上进行构建的人。</p>
+<p>–</p>
+<p><em>If this inspired you to help building on Arweave or you have any questions, feel free to reach out to <a href="mailto:hello@akord.com">contact us</a> or the RedStone team through the links below:</em></p>
+<p><em>如果这启发了您帮助构建 Arweave 或您有任何疑问，请随时通过以下链接与 <a href="mailto:hello@akord.com">联系我们</a> 或 RedStone 团队联系：</em></p>
+<p><strong>联系 RedStone Contact RedStone</strong><br>
+<a href="https://redstone.finance/">Oracle Website</a> // <a href="https://twitter.com/redstone_defi">Twitter</a> // <a href="https://discord.com/invite/PVxBZKFr46">Discord</a></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#akord-x-redstone-improving-performance-on-arweave">Akord x RedStone – Improving Performance on Arweave</a>
+<ul>
+<li><a href="#%E8%83%8C%E6%99%AF-context">背景 (Context）</a></li>
+<li><a href="#redstone-%E5%9C%A8-smart-weave-%E5%90%88%E7%BA%A6%E6%96%B9%E9%9D%A2%E7%9A%84%E5%B7%A5%E4%BD%9Credstones-work-on-smart-weave-contracts">RedStone 在 Smart Weave 合约方面的工作(RedStone’s work on Smart Weave contracts)</a></li>
+<li><a href="#akod%E5%A6%82%E4%BD%95%E5%9C%A8redstone%E5%B8%AE%E5%8A%A9%E4%B8%8B%E6%9B%B4%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8Chow-akord-is-moving-faster-with-redstone">Akod如何在RedStone帮助下更快速运行？(How Akord is moving faster with RedStone)</a></li>
+<li><a href="#arweave%E7%9A%84%E6%8C%91%E6%88%98-challenges-on-arweave">Arweave的挑战 (Challenges on Arweave)</a></li>
+<li><a href="#%E6%88%98%E8%83%9C%E6%88%90%E9%95%BF%E7%9A%84%E9%98%B5%E7%97%9B-overcoming-growing-pains">战胜成长的阵痛 (Overcoming growing pains)</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://chainguys.github.io/post/neondocwp/">
+              <h3 class="post-title">
+                Neon EVM技术文档和白皮书(Neon EVM Docs and Whitepaper)
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Web3 is REAL,take it seriously. <a href="https://twitter.com/Chainguys" target="_blank">@Chainguys</a>
+  <a class="rss" href="https://chainguys.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
