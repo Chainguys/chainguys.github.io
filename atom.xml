@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
-    <title>Chainguys</title>
-    <updated>2022-04-27T04:51:19.975Z</updated>
+    <title>Web3 is REAL</title>
+    <updated>2022-04-27T09:02:53.767Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
     <subtitle>A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议</subtitle>
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2022, Chainguys</rights>
+    <rights>All rights reserved 2022, Web3 is REAL</rights>
     <entry>
         <title type="html"><![CDATA[Akord x RedStone—提升Arweave的性能! Akord x RedStone – Improving Performance on Arweave]]></title>
         <id>https://chainguys.github.io/post/akord-x-redstone-ti-sheng-arweave-de-xing-neng-akord-x-redstone-improving-performance-on-arweave/</id>
@@ -82,7 +82,8 @@
         <link href="https://chainguys.github.io/post/neondocwp/">
         </link>
         <updated>2022-04-27T03:57:46.000Z</updated>
-        <content type="html"><![CDATA[<p>👏  GM!</p>
+        <content type="html"><![CDATA[<p><img src="https://chainguys.github.io/post-images/1651046857339.png" alt="" loading="lazy"><br>
+👏  GM!</p>
 <h1 id="版权声明copyright-notice">版权声明（Copyright Notice）</h1>
 <p><strong>本文翻译自<a href="https://neon-labs.org/">Neon Labs</a>为该项目撰写的<a href="https://docs.neon-labs.org/">技术文档</a>，并已得到翻译授权。译者为<a href="https://twitter.com/Chainguys">@chainguys</a>。转载请注明作者和译者。</strong></p>
 <p><strong>Coptyright©2021 by <a href="https://neon-labs.org/">Neon Labs</a>, translated by <a href="https://twitter.com/Chainguys">@chainguys</a>.</strong></p>
