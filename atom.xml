@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Web3 is REAL</title>
-    <updated>2022-05-03T13:05:48.542Z</updated>
+    <updated>2022-05-03T13:20:44.293Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -264,6 +264,472 @@ NFT 托管在以太坊上，用ETH计价。</li>
 <li>Discord: <a href="https://discord.gg/dUwcAj7C46">https://discord.gg/dUwcAj7C46</a></li>
 <li>Telegram: <a href="https://t.me/Axelarsea">https://t.me/Axelarsea</a></li>
 </ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Neon EVM白皮书(Neon EVM Whitepaper)-Neon EVM-用Solana扩展以太坊智能合约]]></title>
+        <id>https://chainguys.github.io/post/neon-evm-bai-pi-shu-neon-evm-whitepaper-neon-evm-yong-solana-kuo-zhan-yi-tai-fang-zhi-neng-he-yue/</id>
+        <link href="https://chainguys.github.io/post/neon-evm-bai-pi-shu-neon-evm-whitepaper-neon-evm-yong-solana-kuo-zhan-yi-tai-fang-zhi-neng-he-yue/">
+        </link>
+        <updated>2022-04-10T13:08:46.000Z</updated>
+        <content type="html"><![CDATA[<div align='center' ><font size='40'>Neon EVM</font></div>
+<br/>
+<div align='center' ><font size='30'>用Solana扩展以太坊智能合约</font></div>
+<div align='center' >(version 1.3, 4 April 2022)</div>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="版权声明copyright-notice">版权声明(Copyright Notice)</h1>
+<p>本文翻译自<a href="https://neon-labs.org/">Neon EVM</a>项目的<a href="https://neon-labs.org/Neon_EVM.pdf">白皮书</a>，并已得到授权。译者为<a href="https://twitter.com/Chainguys">@chainguys</a>。转载请注明作者和译者。<br>
+(Coptyright©2021 by <a href="https://neon-labs.org/">Neon Labs</a> , translated by <a href="https://twitter.com/Chainguys">@chainguys</a>)</p>
+<p>本文所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。<br>
+(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</p>
+<h1 id="欢迎词hello-world">欢迎词(Hello World)</h1>
+<p>Neon EVM is an Ethereum virtual machine on Solana that enables dApp developers to use Ethereum tooling to scale and get access to liquidity on Solana.</p>
+<p>Neon EVM是Solana上的以太坊虚拟机(EVM),它让去中心化应用(dapp)的开发者可以用以太坊的工具在Solana上扩展并且获得流动性。</p>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="概述abstract">概述(Abstract)</h1>
+<p>Ethereum remains the dominant blockchain protocol linked to smart contract trading and settlement. Its infrastructure for dApp developers and end-users is the most advanced.</p>
+<p>以太坊依然是智能合约交易与清算相关的主要区块链协议。对dApp开发人员和最终用户来说，它的基础设施是最先进的。</p>
+<p>This paper introduces Neon EVM: a tool that allows for Ethereum-like transactions to be processed on Solana, taking full advantage of the functionality native to Solana, including parallel execution of transactions. As such, Neon EVM allows dApps to operate with the low gas fees, high transaction speed, and high throughput of Solana, as well as offering access to the growing Solana market.</p>
+<p>本文将介绍 Neon EVM：一种在Solana上处理类以太坊交易的工具，(它)充分利用Solana交易并行执行等原生功能。如此，Neon EVM使得dApp能以Solana的低gas、高交易速度和大吞吐量运行，并提供进入不断成长的Solana市场(生态)的机会。</p>
+<p>The Ethereum state is represented by Merkle-Patricia Trie that stores key-value data for all smart contracts, and smart contracts written in Solidity do not have separate references to shared data and contracts’ code. Therefore, these smart contracts have to be executed in sequence to ensure deterministic behavior. This limits a throughput: highly optimized blockchains with EVM are capable of processing up to a maximum of 1,500 TPS.</p>
+<p>以太坊状态由存储所有智能合约键值数据的MPT(Merkle-Patricia Trie)表示，而用Solidity编写的智能合约并无对共享数据及合约代码的单独引用。因此，这些智能合约必须按顺序执行以保证行为的确定性。这样一来，链上的吞吐量就被限制了：高度优化的EVM区块链能购达到的(吞吐量)最多1,500 TPS。</p>
+<p>However, Solana is designed to support massive scaling of decentralized applications, with a maximum throughput of more than 50,000 TPS. To take full advantage of Solana's functionality, Neon EVM is built as a smart contract of Solana. This also ensures flexibility in terms of updates: Neon EVM can be updated easily when new Ethereum functionality appears.</p>
+<p>但是，Solana为了去中心化应用程序的大规模扩展而设计，最大吞吐量超过了50,000 TPS。为了充分利用Solan的功能，Neon EVM作为Solana的智能合约应运而生。这也确保了更新方面的灵活性：当新的以太坊功能出现时，Neon EVM(也)可以轻松更新。</p>
+<p>In the case of Neon EVM, an intermediary proxy server that can be run by anybody wraps up Ethereum-like transactions into Solana transactions and sends them to Neon EVM that executes them in parallel. To ensure the parallel execution of smart contracts, Neon EVM implements several strategies. In particular, each contract keeps its data in its own Solana storage and account balances used to pay for Neon transactions are also separated.</p>
+<p>在Neon EVM中，任何人都可以运行的中间代理服务器将类以太坊的交易打包到Solana交易中，并将它们发送到并行执行它们的Neon EVM。为了确保智能合约(能)并行执行，Neon EVM采取了多种策略。特别来说，每个合约都将其数据保存在各自的Solana存储中，而用于支付Neon交易的账户，余额也是分开的。</p>
+<p>The solution allows any Ethereum application to be run on Solana without any changes to its codebase, including UniSwap, SushiSwap, 0x, and MakerDAO. All key tools for Ethereum dApps can work on Solana, including Solidity, Metamask, Remix, Truffle, and others.</p>
+<p>该解决方案允许任何以太坊应用在Solana上运行，而无需更改其代码库，包括 UniSwap、SushiSwap、0x 和 Maker DAO。以太坊dApp的所有关键工具(也)都可以在Solana上运行，包括 Solidity、Metamask、Remix、Truffle等。</p>
+<p>Neon EVM is best suited to developers that want to enjoy a first-mover advantage and reach new customers on Solana, or those who want to scale with the low gas fees and high throughput that Solana provides. It is also good for those developers who are looking to tap into liquidity on Solana.</p>
+<p>希望在Solana上享受先发优势并接触新用户的开发人员是最适合Neon EVM的。或者是希望通过Solana低gas费用和高吞吐量进行扩展的开发人员。对那些希望在Solana上挖掘流动性的开发人员来说，也很不错。</p>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="导言introduction">导言(Introduction)</h1>
+<p>Ethereum is set to remain among the booming blockchain ecosystems. The number of active dApps on Ethereum is hovering above 300 and the number of active users of these dApps is close to 6 million, with the number of transactions on the rise. Ethereum’s popularity is not only down to its processing of smart contracts, but also thanks to its sophisticated infrastructure for application development.</p>
+<p>以太坊肯定会继续留在蓬勃发展的区块链生态系统中。以太坊上活跃的 dApp 数一直保持在300以上，并且这些dApp的活跃用户数接近600万，交易量也呈上升趋势。以太坊的流行不仅归功于其对智能合约的处理，它用于应用开发的复杂基础设施也有功劳。</p>
+<p>Solana is one of the most technically advanced blockchains, offering low gas fees and high throughput of transactions due to its technological innovations. Among these innovations is its Proof-of-Stake consensus system that is reinforced via a Proof-of-History protocol, a transaction parallelization technology that optimizes resources and ensures that Solana can scale horizontally across GPUs and SSDs, along with an optimized mempool system that speeds up throughput.</p>
+<p>Solana是技术最先进的区块链之一，得益于技术创新，它能提供低gas费和高交易吞吐量。这些创新包括其股权/质押证明共识系统，该系统通过历史证明协议得到加强，这是一种交易并行化技术，与加快吞吐量的优化内存池系统一起，可以充分利用资源并使得Solana可以跨GPU和SSD 来进行水平(横向)扩展。</p>
+<p>Neon EVM is a cross-chain solution that allows dApp developers to access the advantages of Solana and thus expand their services: to offer new products like arbitrage or high-frequency trading, grow their user base, and decrease costs where possible, including gas fees. It enables full compatibility with Ethereum on Solana.</p>
+<p>Neon EVM是一种跨链解决方案，允许dApp开发人员利用Solana的优势来扩展他们的服务：提供套利或高频交易等新产品，扩大用户基数，同时尽可能降低成本，包括gas费。它使得Solana与以太坊完全兼容。</p>
+<div STYLE="page-break-after: always;"></div>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="neon-evm基础信息neon-evm-fundamentals">Neon EVM基础信息(Neon EVM Fundamentals)</h1>
+<p>Solana blockchain has its own <a href="https://en.wikipedia.org/wiki/Berkeley_Packet_Filter">Berkeley Packet Filter virtual machine(BPF virtual machine)</a>. This virtual machine is used in the Linux kernel and has already been tested through time. BPF bytecode was originally designed for fast execution. Solana supports just-in-time compilation for BPF bytecode , which significantly increases the speed of execution of BPF contracts. Neon EVM is written in Rust and compiled to BPF bytecode. This allows us to take full advantage of Solana functionality, including parallel execution of transactions. It also makes it easy to update Neon EVM regardless of Solana’s hard forks.</p>
+<p>Solana拥有自己的<a href="https://en.wikipedia.org/wiki/Berkeley_Packet_Filter">Berkeley Packet Filter虚拟机(BPF虚拟机)</a>。该虚拟机用于Linux kernel，并且早已经受住了时间的“考验”。BPF字节码最初是为快速执行而设计的。Solana支持对<a href="https://en.wikipedia.org/wiki/Just-in-time_compilation">BPF字节码即时编译</a>，显着提高了BPF合约的执行速度。Neon EVM用Rust编写并编译为BPF字节码。这使我们能够充分利用包括交易并行执行的Solana功能。无论Solana如何硬分叉，Neon EVM都可以轻松更新。</p>
+<p>Let’s take a deeper look at the technical solution that Neon EVM offers.</p>
+<p>让我们深入了解一下Neon EVM提供的技术解决方案。</p>
+<div STYLE="page-break-after: always;"></div>
+<h2 id="neon-evm-架构neon-evm-architecture">Neon EVM 架构(Neon EVM Architecture)</h2>
+<figure data-type="image" tabindex="1"><img src="https://chainguys.github.io/post-images/neon-structurenew.png" alt="" loading="lazy"></figure>
+<p>Technical definitions(技术定义):</p>
+<ul>
+<li>
+<p><strong>Neon EVM</strong> is an Ethereum Virtual Machine compiled into Berkeley Packet Filter bytecode of a virtual machine running on Solana.<br>
+<strong>Neon EVM</strong>是编译成伯克利包过滤器(Berkeley Packet Filter)的以太坊虚拟机，在Solana上运行时的虚拟机字节码。</p>
+</li>
+<li>
+<p><strong>Neon EVM user</strong> is any user who has an account in Neon EVM with a balance in ETH, ERC20, and ERC721 tokens.<br>
+Neon EVM用户是任何拥有Neon EVM账户且拥有ETH余额，ERC20和ERC721代币的用户。</p>
+</li>
+<li>
+<p><strong>Neon EVM client</strong> is any application that has an EVM(Solidity/Vyper/etc.) bytecodecontract loaded into the Neon EVM on Solana.<br>
+<strong>Neon EVM客户端</strong>是任何具有EVM(Solidity/Vyper/或其他)字节码合约的，加载到Solana上的Neon EVM应用。</p>
+</li>
+<li>
+<p><strong>Neon EVM operator</strong> is any Solana account that pays for the execution of a Neontransaction in SOL tokens and receives payment for this work from the Neon EVM user in an arbitrary token specified by the user.<br>
+<strong>Neon EVM运营方</strong>是任何用SOL代币支付执行Neon交易费用的，并以Neon EVM用户指定的任意代币从用户那里接收回款的Solana账户。</p>
+</li>
+<li>
+<p><strong>Neon EVM governance</strong> is a decentralized Neon EVM governance that manages Neon EVM work by setting up Neon EVM parameters and updating Neon EVM software; it gets fees for its services.<br>
+Neon EVM治理是一种去中心化的Neon EVM治理，通过设置Neon EVM参数和更新Neon EVM软件来管理Neon EVM 工作，并且服务是收费的。</p>
+</li>
+<li>
+<p><strong>Neon Proxy</strong>  is a tool that can be used by a Neon EVM operator to package a Neon transaction into a Solana transaction.<br>
+<strong>Neon代理</strong> 是一款可供Neon EVM运营方用来将Neon交易打包成Solana交易的工具。</p>
+</li>
+<li>
+<p><strong>Neon Transaction</strong> is a transaction formed according to Ethereum rules with a signature produced by Ethereum rules.<br>
+<strong>Neon交易</strong>是根据以太坊规则形成的交易，其签名由以太坊规则生成。</p>
+</li>
+<li>
+<p><strong>Bridge</strong> is an EVM third-party(independent from Neon) solution with its own operators.<br>
+<strong>跨链桥</strong>是一个拥有自己运营方的EVM第三方(独立于Neon)解决方案。</p>
+</li>
+</ul>
+<p>Neon EVM has the following functions:</p>
+<p>Neon EVM有以下功能：</p>
+<ul>
+<li>
+<p>Uploading EVM contracts(built by Solidity/Vyper compilers) to individual Solana accounts.<br>
+将EVM合约(由 Solidity/Vyper编译器构建)上传到各个 Solana帐户。</p>
+</li>
+<li>
+<p>Checking signatures according to Ethereum rules on Solana.<br>
+根据以太坊规则在 Solana 上检查签名。</p>
+</li>
+<li>
+<p>Executing Neon transactions, including, if necessary, in an iterative manner taking into account Solana resource constraints with the financial guarantees for completion of transactions.<br>
+执行Neon交易，包含在必要时考虑Solana资源限制与财务担保，以迭代方式来完成交易</p>
+</li>
+<li>
+<p>Calculating gas consumption according to Ethereum rules.<br>
+根据以太坊规则计算gas消耗。</p>
+</li>
+<li>
+<p>Receiving a payment from the user to Neon EVM operator for the gas consumed and fees in any ETH or any ERC-20 token specified by the user.<br>
+接收用户向Neon EVM运营方支付的，消耗掉的gas，和用户指定的任何ETH或ERC-20代币的费用。</p>
+</li>
+<li>
+<p>Calculating and withdrawing fees in SOL tokens to the governance pool of Neon EVM from the Neon EVM operator account for execution of Neon transactions.<br>
+从来自Neon EVM运营方，用于执行Neon交易的账户中，计算并提取费用(以SOL计价)到Neon EVM的治理池中。</p>
+</li>
+<li>
+<p>Storing EVM data of contracts in the form of a hash table using the <a href="https://en.wikipedia.org/wiki/Hash_array_mapped_trie">Hash Array Mapped Trie algorithm(HAMT)</a>.<br>
+用 <a href="https://en.wikipedia.org/wiki/Hash_array_mapped_trie">Hash Array Mapped Trie algorithm(HAMT)</a>生成的哈希表来存储智能合约的EVM数据。</p>
+</li>
+</ul>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="neon-代理neon-proxy">Neon 代理(Neon Proxy)</h1>
+<p>Neon Proxy is a service that provides a Web3 API to access the Solana blockchain. It is an intermediary for communication between Neon EVM clients and Neon EVM and it can be run by Neon EVM operators. Neon  Proxy is optional for any Neon EVM client. Its main functionality is to help Neon EVM clients start using Neon EVM without any changes to their codebase.</p>
+<p>Neon代理是一项提供 Web3 API来访问Solana区块链的服务。它是Neon EVM客户端和Neon EVM之间的通信中介，它可以由Neon EVM运营方运行。Neon代理对于任何Neon EVM的客户端都是可选的。它的主要功能是帮助Neon EVM客户端无需更改其代码库就能使用Neon EVM。</p>
+<h2 id="erc20-spl封装器erc20-spl-wrapper">ERC20 SPL封装器(ERC20 SPL-Wrapper)</h2>
+<p>For each Solana token, an ERC20 SPL-Wrapper contract can be deployed. The task of the ERC20 SPL-Wrapper is to ensure the interaction of the Solana applications with EVM(Solidity/Vyper/etc.) bytecode contracts. ERC20 SPL-Wrapper can be also used to transfer funds in Solana tokens using Ethereum wallets such as Metamask.</p>
+<p>针对每种Solana代币，都可以部署一个ERC20 SPL封装合约。该合约的任务是确保Solana应用与EVM(Solidity/Vyper/等)字节码合约的交互。ERC20 SPL封装还可用于使用Metamask等以太坊钱包转账Solana代币。</p>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="用neon-evm实现独立运营independence-of-operations-within-neon-evm">用Neon EVM实现独立运营(Independence of Operations Within Neon EVM)</h1>
+<p>Neon EVM ensures the independence of its operations by providing open access to its infrastructure to anybody who is willing and capable of running Neon  Proxy. Moreover, Neon Web 3 Proxy can be replaced with a client library by any Neon EVM client. The transactions received by Neon EVM cannot be discriminated against because they do not have any attributes that determine their priority. The unchangeable nonce and user signature fields verified by Neon EVM guarantee the consistency of execution of Neon transactions and protect from re-execution.</p>
+<p>Neon EVM通过向愿意并有能力运行Neon代理的任何人开放其对基础设施的访问，来确保运营的独立性。此外，任何Neon EVM客户端都可以将Neon Web 3代理替换为客户端库。Neon EVM收到的交易不会被特殊对待，因为它们没有任何属性来决定它们的优先级。Neon EVM验证的不可更改的随机数和用户签名字段保证了Neon交易执行的一致性，并防止重复执行。</p>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="执行neon交易的前置条件preconditions-for-the-execution-of-neon-transactions">执行Neon交易的前置条件(Preconditions for the Execution of Neon Transactions)</h1>
+<p>As with other Solana-native dApps, in order to enable the execution of Neon transactions, the user must grant Neon EVM access to their accounts. Neon EVM then acts on behalf of the user for user transactions such as transfers, swaps, or other operations. It verifies the information received(the nonce field and the signature), and enables the operation that is asked for.</p>
+<p>与其他 Solana 原生 dApp 一样，为了能够执行 Neon 交易，用户必须授予 Neon EVM 对其帐户的访问权限。之后Neon EVM 代表用户进行交易：诸如转账、交换或其他操作。它验证收到的信息(nonce 字段和签名)，并启动所要求的操作。</p>
+<p>To prevent forgery and unlawful operations, the following fields are checked and verified:<br>
+为防止造假和非法操作，需要检查和验证以下字段：</p>
+<ul>
+<li>
+<p>The nonce field: It has a unique transaction index, which is verified by the Neon EVM smart contract. This makes double-spend attacks impossible.<br>
+nonce 字段：具有唯一的交易索引，由 Neon EVM 验证智能合约。这使得双花攻击成为不可能。</p>
+</li>
+<li>
+<p>The signature field: It is formed according to the Ethereum rules. The Neon transaction signature is verified by the Neon EVM smart contract. Note: the procedures for validating the Solana signature and the Neon signature are different, and are implemented using different algorithms.<br>
+签名字段：根据以太坊规则形成。 Neon 交易签名由 Neon EVM 智能合约验证。注意：验证 Solana 签名和 Neon 签名的程序不同，并且使用不同的算法实现。</p>
+</li>
+</ul>
+<p>Neon EVM access to user accounts is secured in the following ways:<br>
+Neon EVM 通过以下方式保护对用户帐户的访问：</p>
+<ul>
+<li>
+<p>Neon EVM smart contract code is <a href="https://github.com/neonlabsorg/neon-evm">freely available</a> for anyone to review. It was audited inSeptember, 2021.<br>
+Neon EVM 智能合约代码于 2021 年 9 月审计并<a href="https://github.com/neonlabsorg/neon-evm">免费向公众提供</a> ，任何人均可查看。</p>
+</li>
+<li>
+<p>Neon transactions are validated by independent Solana validators.<br>
+Neon 交易由独立的 Solana 验证器验证。</p>
+</li>
+<li>
+<p>Decentralized Neon EVM governance is responsible for the updates of the Neon EVM contract.<br>
+去中心化的 Neon EVM 治理负责 Neon EVM 合约的更新。</p>
+</li>
+</ul>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="neon交易在solana上的并行执行parallel-execution-of-neon-transactions-on-solana">Neon交易在Solana上的并行执行(Parallel Execution of Neon Transactions on Solana)</h1>
+<p>Most blockchains process transactions in a single thread. It means that one contract at a time modifies the blockchain state. In contrast, Solana can process tens of thousands of contracts in parallel, using as many cores as are available to its validator. This functionality is known as <a href="https://medium.com/solana-labs/sealevel-parallel-processing-thousands-of-smart-contracts-d814b378192">Sealevel</a> and it greatly increases the throughput.</p>
+<p>大多数区块链在单个线程中处理交易。这意味着一次一个合约就会修改区块链状态。相比之下，只要验证者的资源足够(可用)，Solana就可以用尽量多的核心，来并行处理数以千计的合约。此功能被称为<a href="https://medium.com/solana-labs/sealevel-parallel-processing-thousands-of-smart-contracts-d814b378192">Sealevel</a>，它极大地提高了吞吐量。</p>
+<p>Parallel processing is possible because Solana transactions describe all the states a transaction will read or write while executing. This prevents transactions from overlapping, allowing independent transactions and those that are reading the same state to be executed concurrently.</p>
+<p>并行处理是可能的，因为Solana的交易会描述一笔交易在执行时读写的所有状态。这可以防止重复执行，并使得独立交易和读取相同状态的交易同时进行。</p>
+<p>Neon transactions are executed by Solana as native transactions: in parallel while restricting access to shared data from Solana state. However, in some cases, a Neon transaction requires more resources than Solana allocates for one transaction. In this case, the Neon EVM executes the transaction iteratively, and the extended mode of restricting access to shared data in Solana state is used(for details, see the section on iterative execution of Neon transactions).</p>
+<p>Neon交易被Solana当作原生交易执行：在并行中，同时限制来自Solana状态访问共享数据。但是，在某些情况下，Neon交易需要的资源比Solana为一个交易分配的资源要多。在这种情况下，Neon EVM 迭代地执行交易，并且限制Solana状态访问共享数据的扩展模式也会被使用(详见Neon交易的迭代执行部分)。</p>
+<p>To ensure the parallel execution of Solana transactions, Solana requires a list of all Solana accounts involved in a transaction. If there is a call to a Solana account that is not specified in the header of the Solana transaction, the algorithm aborts the execution with an error.</p>
+<p>为了确保Solana交易的并行执行，Solana需要一份交易中涉及的所有Solana账户的列表。如果调用了未在交易的区块头中指定的Solana帐户，则算法会中止执行并报错。</p>
+<p>Parallel execution of Neon transactions by Neon EVM is carried out in the following manner:<br>
+Neon EVM 并行执行Neon交易的方式如下：</p>
+<ol>
+<li>
+<p>Neon Proxy, which has a built-in EVM similar to Neon EVM, receives a Neon transaction from the user.<br>
+Neon代理，内置一个类似于 Neon EVM 的 EVM，接收来自用户的 Neon 交易。</p>
+</li>
+<li>
+<p>Neon Proxy performs a test launch of the Neon transaction, calling the public Solana cluster RPC endpoint or its own Solana node for the current state.<br>
+Neon代理执行 Neon交易的测试加载，为(获取)当前状态调用公共 Solana 集群 RPC 端点或它自己的 Solana 节点。</p>
+</li>
+<li>
+<p>As a result of the test performed, Neon Proxy receives a complete list of contracts and accounts involved in the Neon transaction.<br>
+作为测试执行的结果，Neon代理收到了 Neon 交易中涉及的合约和账户的完整列表。</p>
+</li>
+<li>
+<p>Neon Proxy forms a Solana transaction using a list of Neon contracts and Neon accounts, inside which the Neon transaction is wrapped.<br>
+Neon代理形成封装了Neon 交易的， Neon 合约与 Neon 账户列表共同形成的 Solana 交易。</p>
+</li>
+<li>
+<p>Neon Proxy sends the Solana transaction for on-chain execution to the Solana cluster.<br>
+Neon代理将用于链上执行的 Solana 交易发送到 Solana 集群。</p>
+</li>
+<li>
+<p>The <a href="https://docs.solana.com/cluster/overview%23sending-transactions-to-a-cluster">Solana cluster</a> gets the Solana transaction and sends it for execution to the <a href="https://docs.solana.com/cluster/overview%23sending-transactions-to-a-cluster">leading Solana node</a>.<br>
+<a href="https://docs.solana.com/cluster/overview%23sending-transactions-to-a-cluster">Solana 集群</a>获取 Solana 交易并将其发送到领先的  <a href="https://docs.solana.com/cluster/overview%23sending-transactions-to-a-cluster">Solana 节点</a>. 执行。</p>
+</li>
+<li>
+<p>The<a href="https://docs.solana.com/validator/runtime">concurrent transaction processor</a> of the Solana node executes the Solana transactions in parallel, checking the independence by verifying the Solana accounts in the header of the Solana transaction.<br>
+Solana 节点的<a href="https://docs.solana.com/validator/runtime">并发交易处理器</a>并行执行 Solana 交易，通过验证 Solana 交易区块头中的 Solana 账户来检查独立性。</p>
+</li>
+<li>
+<p>Solana transactions with the packed Neon transactions are executed in parallel, calling the Neon EVM smart contract in the following manner:<br>
+Solana 交易与打包的 Neon 交易并行执行，调用 Neon EVM 智能合约的方式如下：</p>
+<p>a. Neon EVM smart contract is loaded.<br>
+Neon EVM 智能合约已加载。</p>
+<p>b. EVM(Solidity, Vyper, etc.) bytecode smart contract is loaded.<br>
+b. 加载 EVM(Solidity、Vyper 等)字节码智能合约。</p>
+<p>c. Each EVM(Solidity, Vyper, etc.) bytecode smart contract executed on Solana has its own independent state.<br>
+c. 在 Solana 上执行的每个 EVM(Solidity、Vyper 等)字节码智能合约都有自己独立的状态。</p>
+<p>d. The Neon EVM smart contract executes any Neon transaction by calling the EVM smart contract method.<br>
+d. Neon EVM 智能合约通过调用 EVM 智能合约方法，来执行任何 Neon 交易。</p>
+<p>e. When the Neon transaction is executed on-chain, data from the Solana state is used and changed.<br>
+e. 当 Neon 交易在链上执行时，自 Solana 状态的数据会被使用和更改。</p>
+<p>f. At the end of execution of the Neon transaction, the Neon EVM updates the Solana state.<br>
+f. 在 Neon 交易执行结束时，Neon EVM 更新 Solana 状态。</p>
+</li>
+</ol>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="加速neon交易执行acceleration-neon-transaction-execution">加速Neon交易执行(Acceleration Neon Transaction Execution)</h1>
+<p>As noted above, Neon  Proxy performs a test run to obtain a complete list of Neon accounts that are used for the execution of Neon transactions. A test run takes time, and this time could be critical when a transaction needs to be executed quickly</p>
+<p>如上所述，Neon代理执行一个测试以获得一张用于执行Neon交易的Neon帐户的完整列表。测试需要时间，当需要快速转账时，这个时间就可能会很关键。</p>
+<p>Any Neon transaction can be executed without a test run in the following manner:</p>
+<p>任何Neon交易都可以通过以下方式在没有测试的情况下执行：</p>
+<ul>
+<li>
+<p>The Solana transaction is built on the client side(web/mobile) with a Neon transaction packaged within it. The Solana transaction is sent directly to a Solana node without Neon  Proxy. It’s important to understand that, using this method, it’s up to the sender to make sure that:<br>
+Solana交易建立在客户端(网络/移动)上，其中包含一个Neon交易。Solana交易直接发送到没有Neon代理的Solana节点。一定要明白，使用这种方法，发件人必须确保：</p>
+<ul>
+<li>
+<p>In cases when the Neon transaction is too big, it has to be executed iteratively(see more in the section on iterative execution of Neon transactions below).<br>
+如果Neon交易太大，则必须迭代执行(更多内容请参考下面关于Neon交易迭代执行部分)。</p>
+</li>
+<li>
+<p>A list of all Neon accounts and contracts corresponding to the Neon transaction has to be determined on the client-side.<br>
+必须在客户端确认一个与Neon交易对应的所有Neon账户及合约的列表。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Additional methods in the Neon  Proxy with a transfer of the list of Neon accounts involved can be used. It’s important to understand that — using this method — it’s up to the sender to make sure that a list of all Neon accounts and contracts corresponding to the Neon transaction has to be determined on the client side.<br>
+Neon代理中的，涉及Neon帐户列表转移的其他方法也可以使用。但重要的是要理解——使用这种方法——发送方必须保证客户端确认与Neon交易对应的所有Neon账户及合约的列表。</p>
+</li>
+</ul>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="neon交易的迭代执行iterative-execution-of-neon-transactions">Neon交易的迭代执行(Iterative Execution of Neon Transactions)</h1>
+<p>The Solana blockchain limits the resources allocated to the execution of a single transaction to ensure optimal usage of hardware. To perform the best service possible(taking into account the existing restrictions of Solana), Neon EVM introduces iterative execution of Neon transactions. The main steps of iterative execution are the following:</p>
+<p>为确保充分使用硬件，Solana限制分配给执行单个交易的资源。为了尽可能提供最佳服务(尤其是考虑到Solana现有的限制)，Neon EVM引入了Neon交易的迭代执行。迭代执行的主要步骤如下：</p>
+<ul>
+<li>
+<p>Neon EVM transfers the deposit in SOL tokens from the operator's account to a separate account.<br>
+Neon EVM将SOL代币的存款/押金从运营方的账户转移到一个单独的账户。</p>
+<ul>
+<li>The main role of the deposit is to motivate the operator to complete user Neon transactions.<br>
+押金的主要作用是激励运营方完成用户 Neon 交易。</li>
+<li>The size of the deposit is determined by the Neon EVM settings set by Neon EVM governance.<br>
+押金的大小由 Neon EVM 治理中的 Neon EVM 设置来决定。</li>
+</ul>
+</li>
+<li>
+<p>Neon EVM blocks Solana accounts used in Neon transactions.<br>
+Neon EVM锁定用于Neon交易的Solana 账户。</p>
+</li>
+<li>
+<p>If any Solana accounts are already blocked by another Neon transaction, then the new transaction is queued for execution by Neon  Proxy.<br>
+如果任何Solana账户已被另一笔Neon交易阻止，则新的交易将进入等待由Neon代理执行的队列。</p>
+</li>
+</ul>
+<p>Neon EVM settings set by Neon EVM governance:<br>
+Neon EVM治理需要设置的内容：</p>
+<ul>
+<li>
+<p>The maximum number of iterations per Neon transaction. Solana currently charges a fee to verify the signatures specified in a Solana transaction. Thus, in a Solana transaction, only the Solana signature of the Neon EVM operator in charge of the transaction is specified. All Neon signatures are verified by the Neon EVM during the execution of Neon transactions. The number of iterations per Neon transaction is unknown in advance. It is necessary to limit the execution time of a transaction because all accounts and contracts involved in this transaction will be blocked for use in other Neon transactions. Therefore, Neon EVM governance sets the maximum number of iterations and the maximum number of waiting blocks(Mn).</p>
+<p>每笔Neon交易最大迭代次数。目前Solan需要收费来验证交易中指定的签名。因此，在一笔Solana交易中，仅指明了负责交易的Neon EVM运营方的Solana签名。在Neon交易执行期间，所有Neon签名都由Neon EVM验证。每个Neon交易的迭代次数事先是未知的。因此有必要限制交易的执行时间，因为该交易涉及的所有账户和合约都将无法用于其他Neon交易。因此，Neon EVM治理设置了最大迭代次数和最大等待块数(Mn)。</p>
+</li>
+<li>
+<p>A fee to the Neon EVM governance pool(see the section on Neon EVM economy and governance).<br>
+Neon EVM治理池的<a href="https://docs.solana.com/ru/transaction_fees">费用</a>(参见Neon EVM经济和治理部分)。</p>
+</li>
+<li>
+<p>A deposit for the iterative execution of a Neon transaction is paid to the operator who performs the last step of the Neon transaction and finalizes it.<br>
+迭代执行 Neon 交易的押金支付给执行 Neon 交易最后一步并完成交易的运营方。</p>
+</li>
+<li>
+<p>The maximum number of waiting blocks(Mn) is determined by Neon EVM governance.The operator is given a maximum number of blocks(Mn) between two iterations when it can perform the next iteration. After Mn blocks, any other operator can continue the execution and receive the deposit.<br>
+最大等待块数(Mn)由Neon EVM 治理决定。当运营方可以执行下一次迭代时，它会在两次迭代之间获得最大(等待)块数(Mn)。在 Mn 块之后，任何其他运营方都可以继续执行并接收存款。</p>
+</li>
+</ul>
+<p>The main steps for iterative execution of a Neon transaction are as follows:<br>
+迭代执行一个 Neon 事务的主要步骤如下：</p>
+<ul>
+<li>
+<p>If it’s not the first iteration, then:<br>
+— if more than Mn blocks have passed, the execution is passed to another operator.<br>
+— restore the state of the Neon EVM.<br>
+如果不是第一次迭代，那么：<br>
+— 如果超过了 Mn 个块，则将执行传递给另一个运营方。<br>
+— 恢复 Neon EVM 的状态。</p>
+</li>
+<li>
+<p>Complete the maximum number of EVM steps specified in the Solana transaction.<br>
+完成 Solana 交易中指定的最大 EVM 步长。</p>
+</li>
+<li>
+<p>The Neon operator pays fees in SOL tokens for each iteration:<br>
+Neon 运营商为每次迭代支付 SOL 代币费用：</p>
+<ul>
+<li>
+<p>A <a href="https://docs.solana.com/ru/transaction_fees">fee</a> to the Solana leader for executing the Solana transaction.<br>
+给 Solana 领导者执行 Solana 交易的<a href="https://docs.solana.com/ru/transaction_fees">费用</a>。</p>
+</li>
+<li>
+<p>Transfer lamports to Solana accounts for <a href="https://docs.solana.com/implemented-proposals/rent#two-tiered-rent-regime">rent exempt payments</a> in the case of creating new Solana accounts. For example, a Neon transaction creates a new Solana account in the case of transferring NEON tokens to not-existant Neon users. In another example, a Neon transaction deploys a new Neon contract.<br>
+在创建新的 Solana 账户的情况下，将逻辑时钟转移到 Solana 账户以<a href="https://docs.solana.com/implemented-proposals/rent#two-tiered-rent-regime">免除租金</a>。例如，在将 NEON 代币转移给不存在的 Neon 用户的情况下，Neon 交易会创建一个新的 Solana 帐户。在另一个示例中，Neon 交易部署了新的 Neon 合约。</p>
+</li>
+<li>
+<p>Transfer lamports to Solana accounts for <a href="https://docs.solana.com/implemented-proposals/rent#two-tiered-rent-regime">rent exempt payments</a> in the case of increasing the size of a Neon contract storage. Each Neon contract has independent storage in a separate Solana account.<br>
+在增加 Neon 合约存储大小的情况下，将逻辑时钟转移到 Solana 帐户来[免除租金]((https://docs.solana.com/implemented-proposals/rent#two-tiered-rent-regime)。每个 Neon 合约在单独的 Solana 帐户中都有独立的存储。</p>
+</li>
+<li>
+<p>A fee to the Neon EVM treasury.(See Neon EVM governance below.)<br>
+Neon EVM 国库的费用。(请参阅下面的 Neon EVM 治理。)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>EVM calculates gas based on the amount of lamports spent by the Neon operator.<br>
+EVM 根据 Neon 运营方花费的逻辑时钟量计算gas费用。</p>
+<ul>
+<li>
+<p>Neon EVM transfers NEON tokens from the Neon user to the Neon operator atthe end of each iteration.<br>
+Neon EVM 在每次迭代结束时将 NEON 代币从 Neon 用户转移到 Neon 运营方。</p>
+</li>
+<li>
+<p>Gas price is calculated by Neon Proxy based on the ratio of cost SOL and NEON tokens.<br>
+Gas 价格由 Neon代理根据SOL 和 NEON 代币的比率计算。</p>
+</li>
+<li>
+<p>Each Neon operator sets a fee for Neon transaction execution. The fee should allow the Neon operator to cover hardware costs and transaction execution costs, and bring a profit.<br>
+每个 Neon 运营方都会为 Neon 交易执行设置费用。该费用应允许 Neon 运营方支付硬件成本和交易执行成本，并带来利润。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If it’s not the end of execution:<br>
+如果不是执行结束</p>
+<p>— Record the operator that completed a step in iterative execution.<br>
+记录完成迭代执行步骤的运营方。</p>
+<p>— increase the number of completed iterations.<br>
+增加完成的迭代次数(的上限)。</p>
+<p>— Save the state of the Neon EVM to the state of Solana.<br>
+将 Neon EVM 的状态保存到 Solana 的状态。</p>
+</li>
+</ul>
+<p>The conditions to end the iterative execution of a Neon transaction are:<br>
+结束一笔Neon 交易迭代执行的条件是：</p>
+<ul>
+<li>
+<p>The Neon transaction is completed.<br>
+Neon交易完成</p>
+</li>
+<li>
+<p>Mi iterations of Neon transactions have been reached.<br>
+已达到 Neon 交易的最低迭代次数。</p>
+</li>
+<li>
+<p>The Neon transaction was canceled.In this case, the unspent deposit is burned.Neon transactions can be canceled:<br>
+Neon 交易被取消。在这种情况下，未使用的存款/押金被烧毁。Neon 交易可因以下情况被取消：<br>
+— by any Neon EVM operator if Mn blocks have not passed from the last iteration.<br>
+如果Mn 块没有从上次迭代通过，则由任何 Neon EVM 运营方执行(取消)</p>
+<p>— otherwise, by the Neon EVM operator from the last iterative execution.<br>
+否则，由最后一次迭代执行中的 Neon EVM 运营方执行。</p>
+</li>
+</ul>
+<p>At the end of the iterative execution of a Neon transaction:<br>
+在 Neon 交易的迭代执行结束时：</p>
+<ul>
+<li>
+<p>The result of the Neon transaction is saved into the Solana receipt.<br>
+Neon 交易的结果保存在 Solana 回执中。</p>
+</li>
+<li>
+<p>Data modified by the Neon transaction is saved into the Solana storage.<br>
+Neon交易修改的数据保存到 Solana 存储中。</p>
+</li>
+<li>
+<p>The Neon EVM operator receives the deposit.<br>
+Neon EVM 运营方收到押金。</p>
+</li>
+<li>
+<p>Neon EVM unlocks accounts blocked at the start of the Neon transaction.<br>
+Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。</p>
+</li>
+</ul>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="neon交易的支付payment-for-neon-transactions">Neon交易的支付(Payment for Neon Transactions)</h1>
+<p>The calculation of the cost of transaction execution in Neon EVM is carried out according to Ethereum rules. It uses a tool for gas calculation available on Ethereum.</p>
+<p>Neon EVM中交易执行成本的计算是根据以太坊规则进行的。它使用以太坊上一个gas费用计算工具。</p>
+<p>The cost of gas in Neon EVM is significantly lower than on Ethereum as it is based on Solana’s gas price. It is to be determined taking into consideration:</p>
+<p>Neon EVM中的gas成本明显低于以太坊，因为它基于Solana的gas 价格。确定gas时要考虑因素如下：</p>
+<ul>
+<li>
+<p>The cost of executing a Solana transaction, which depends on the number of signatures specified in the transaction — as  previously mentioned , in Solana transactions only one signature(that of the Neon EVM operator) is specified because Neon signatures are verified in Neon EVM(see the above section on iterative execution of transactions).<br>
+执行Solana交易的成本，取决于交易中指定的签名数量——如前所述，在Solana交易中只指定一个签名(Neon EVM运营方的签名)，因为Neon签名在Neon EVM中进行验证(请参阅上面关于交易迭代执行的部分)。</p>
+</li>
+<li>
+<p>The transferring of lamportss to Solana accounts for <a href="https://docs.solana.com/implemented-proposals/rent#two-tiered-rent-regime">rent exempt payments</a> in the case of creating new Solana accounts. Neon EVM creates a Solana account with a balance equivalent to two years rent payments to exclude cases of losing accounts by Neon users.<br>
+在创建新的 Solana 账户的情况下，将逻辑时钟转移到 Solana 账户以[免除租金]((https://docs.solana.com/implemented-proposals/rent#two-tiered-rent-regime)。 Neon EVM 创建一个余额相当于两年租金的 Solana 帐户，用于排除 Neon 用户丢失帐户的情况。</p>
+</li>
+<li>
+<p>A fee to be paid to Neon EVM governance that keeps Neon EVM running.<br>
+为保持Neon EVM运行而向Neon EVM治理支付的费用。</p>
+</li>
+<li>
+<p>A fee to the Neon EVM operator that executes the transaction.<br>
+向执行交易的Neon EVM运营方收取的费用。</p>
+</li>
+</ul>
+<p>A Neon transaction formed according to the Ethereum rules contains two groups of fields that are used in payment for Neon transactions:</p>
+<p>根据以太坊规则形成的 Neon 交易包含两组用于支付 Neon 交易的字段：</p>
+<ul>
+<li>
+<p>The first group consists of two fields: gas_price and gas_limit. These fields in the Ethereum network are used to pay for the gas spent on the transaction to the miner that produces a block. There are no miners in the case of Neon EVM, but the Neon operators are running proxies and sending Neon transactions to the Solana cluster and are rewarded for the work done. The Neon user pays for gas in NEON tokens.<br>
+第一组由两个字段组成：gas_price 和 gas_limit。以太坊网络中的这些字段用于向产生区块的矿工支付交易所花费的gas费用。在 Neon EVM 的情况下没有矿工，但 Neon 运营方正在运行代理并将 Neon 交易发送到 Solana 集群，也因完成工作而获得激励。 Neon 用户会使用 NEON 代币支付 gas。</p>
+</li>
+<li>
+<p>The second group consists of a field value. This field is used on Ethereum for two purposes: first, to enable the transfer of NEON tokens. Second, to enable payment to the Ethereum smart contracts according to the functionality that is used by a user. Neon users will be able to transfer only NEON tokens as a value token to prevent issues with the execution of Ethereum smart contracts deployed in Neon EVM.<br>
+第二组由字段值组成。该字段在以太坊上用于两个目的：首先，使得NEON 代币能够转移/转换。其次，根据用户使用的功能启用对以太坊智能合约的支付。 Neon 用户将只能转移 NEON 代币作为价值代币，以防止在 Neon EVM 中部署的以太坊智能合约出现执行问题。</p>
+</li>
+</ul>
+<p>There is an independent market for Neon EVM operators, and a user can choose an operator with reasonable prices for transactions. Neon EVM clients can enforce their payment policies based on their demands. Any Neon EVM user can independently deploy a Neon Proxy and execute a Neon transaction on–chain using Neon EVM without help from Neon EVM operators. In this case, the user has to cover the transaction execution on Solana with SOL tokens.</p>
+<p>Neon EVM运营方有一个独立的市场，用户可以选择价格合理的运营方进行交易。Neon EVM 客户可以根据他们的需求执行他们的支付政策。任何Neon EVM用户都可以独立部署Neon代理并使用Neon EVM执行链上Neon交易，无需Neon EVM运营方的帮助。在这种情况下，用户必须使用SOL代币覆盖Solana上的交易执行。</p>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="neon-evm-经济和治理neon-evm-economy-and-governance">Neon EVM 经济和治理(Neon EVM Economy and Governance)</h1>
+<p>The Neon EVM economy is fee-based. The NEON token is an utility token that is needed to pay for the execution of Neon transactions. This token will be used for governance purposes. At launch, Neon governance will be handled by an SPL governance program with add-ins.</p>
+<p>Neon EVM经济是基于收费制的。NEON代币是一种用来支付Neon交易的使用代币。NEON代币会有治理代币的作用。在启动时，Neon的治理将由一个含有插件的SPL治理程序来进行。</p>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="总结summary">总结(Summary)</h1>
+<p>Neon EVM is a viable solution for anyone who is looking to scale Ethereum dApps on Solana in a developer-friendly manner. To take full advantage of Solana's functionality, Neon EVM is built as a smart contract of Solana. This also ensures flexibility in terms of updates. Neon EVM has a high level of decentralization as it is governed with a help of a decentralized protocol and any user can set up Neon  Proxy and receive payments for executing transactions via Neon EVM.</p>
+<p>对于希望用对开发人员友好的方式在Solana上扩展以太坊dApp的任何人来说，Neon EVM都是一个可行的解决方案。为了充分利用Solana的功能，Neon EVM作为Solana的智能合约应运而生。这也确保了更新的灵活性。Neon EVM高度去中心化，因为它在去中心化协议的帮助下进行管理，任何用户都可以运行Neon代理，并通过用Neon EVM执行交易而收费。</p>
+<p>Neon EVM is a full Ethereum emulation with gas consumption calculated by Ethereum rules, iterative execution of large Ethereum EVM contracts, and full compatibility with all existing Ethereum tools. It enables parallel execution of EVM(Solidity/Vyper/etc.) bytecode contracts on Solana. It also provides access to Solana infrastructure via Ethereum tools and access to native Solana tokens, registered in the SPL-token contract through the ERC20 token interface, native to contracts and tools made for Ethereum. Users can pay for the services of Neon EVM in ETH or any ERC20 tokens.</p>
+<p>Neon EVM是一个完整的以太坊仿真(以太坊全仿真)，具有以太坊规则计算的gas消耗、大型以太坊EVM 合约的迭代执行以及完全兼容目前所有以太坊工具。它支持在Solana上并行执行EVM(Solidity/Vyper/等)字节码合约。它还允许通过以太坊工具访问Solana基础设施和访问原生Solana代币，这些代币可以通过ERC20代币接口在SPL代币合约中注册，对为以太坊而制造的合约和工具来说(也)是原生的。用户可以用ETH或任何ERC20代币支付Neon EVM的服务。</p>
+<div STYLE="page-break-after: always;"></div>
+<h1 id="免责声明disclaimer">免责声明(Disclaimer)</h1>
+<p>The information outlined in this White Paper may not be exhaustive and does not imply any elements of a contractual relationship. The content of this White Paper, including that of the website https://neonlabs.org/, is not binding for us and our affiliates and we reserve a right to change, modify, add, or remove portions of this White Paper for any reasons at any time without prior notification. We also reserve a right to annul this White Paper at any time with a prior notification.</p>
+<p>本白皮书中概述的信息可能并不详尽，并不暗示合同关系的任何要素。本白皮书的内容，包括网站 https://neonlabs.org/ 的内容，对我们和我们的关联公司没有约束力，我们保留在任何时间以任何理由变更、修改、添加或删除本白皮书的任何部分的权利，恕不另行通知。我们还保留在事先通知的情况下随时取消本白皮书的权利。</p>
+<p>This White Paper is designed for general informational purposes only, as a guide to certain of the conceptual considerations associated with the narrow issues it addresses. This White Paper shall not be reproduced, copied, transferred, or otherwise distributed to any third party. While we make efforts to ensure that all information in this White Paper is accurate and up-to-date, any information herein is not professional advice. We also make no representations or warranties regarding the accuracy, reliability, relevance, and completeness of any information herein.</p>
+<p>本白皮书仅用于一般信息，作为与其解决狭隘问题相关的某些概念性考虑的指南。本白皮书不得重制、复制、转让或以其他方式分发给任何第三方。虽然我们努力确保本白皮书中的所有信息都是准确和最新的，但此处的任何信息都不是专业建议。我们也不对此处任何信息的准确性、可靠性、相关性和完整性作出任何陈述或保证。</p>
+<p>This White Paper is aimed only on the description of Neon EVM without expression of any opinion or promise on its feasibility, investment attractiveness, and(or) relevance. We do not guarantee that the final product will meet your expectations. You should accept all risks related to operations with Neon EVM on your own prior to using the information herein. Information in the White Paper is based on publicly available information and shall not be deemed as a separate investigation. This White Paper does not constitute an investment, legal, tax, regulatory, financial, accounting, or other advice. Nothing in this White Paper shall be deemed to constitute a prospectus of any sort or a solicitation for investment, nor does it in any way pertain to an offering or a solicitation of an offer to buy any securities in any jurisdiction.</p>
+<p>本白皮书仅针对 Neon EVM 的描述，不对其可行性、投资吸引力和(或)相关性发表任何意见或承诺。我们不保证最终产品会满足您的期望。在使用此处的信息之前，您应自行接受与Neon EVM操作相关的所有风险。白皮书中的信息基于公开信息，不应被视为单独调查。本白皮书不构成投资、法律、税务、监管、财务、会计或其他建议。本白皮书中的任何内容均不得被视为构成任何形式的招股说明书或投资提案，也不以任何方式与在任何司法管辖区购买任何证券的要约或要约提案有关。</p>
+<p>Each person who reads this White Paper is reminded that this White Paper has been presented to him/her on the basis that he/she is a person into whose attention the document may be lawfully presented in accordance with the laws of his or her jurisdiction.</p>
+<p>提醒每一位阅读本白皮书的人，本白皮书是因为他/她是根据其管辖权的法律可以合法地提交给他/她的人而提交给他/她的。</p>
+<p>Certain statements in this White Paper may constitute forward-looking statements, which are usually identified by the use of words as “is expected”, “believes”, “expects”, “supposedly” “supposes” or similar phrases and statements. Such forward-looking statements or information may be affected by known and unknown risks and uncertainties, which may influence materially on estimates or results implied or expressed in such forward-looking statements. We do not undertake obligations on updating and review of such statements and information. We do not accept any liability for any losses that can be incurred due to use or reliance on such statements. We have not conducted any independent verification in relation to White Paper or any issue reflected herein.</p>
+<p>本白皮书中的某些陈述可能构成前瞻性陈述，通常通过使用“被预期”、“相信”、“预期”、“假定”、“假设”或类似的短语和陈述来识别这些表达。此类前瞻性陈述或信息可能会受到已知和未知风险和不确定性的影响，这些风险和不确定性可能会对此类前瞻性陈述中暗示或表达的估计或结果产生重大影响。我们不承担更新和审查此类声明和信息的义务。对于因使用或依赖此类陈述而导致的任何损失，我们不承担任何责任。我们没有对白皮书或其中反映的任何问题进行任何独立验证。</p>
+<p>You shall use this White Paper at your own risk. In the absence of express consent, we do not accept any liability for any losses that can be incurred as a result of such usage, including direct and indirect consequences.</p>
+<p>This White Paper is not legally binding, does not oblige anyone to execute any agreements or undertake any obligations.</p>
+<p>您应自行承担使用本白皮书的风险。在没有明确同意的情况下，我们不对因使用而可能造成的任何损失承担任何责任，包括直接和间接后果。</p>
+<p>本白皮书不具有法律约束力，不强制任何人执行任何协议或承担任何义务。</p>
+<p>YOU ARE ENTITLED AND ENCOURAGED TO ASK QUESTIONS AND REQUEST NECESSARY INFORMATION. FOR THESE AND ANY OTHER REASONS PLEASE CONTACT US AT <a href="mailto:info@neonlabs.org">info@neonlabs.org</a>.</p>
+<p>您有权并被鼓励提出问题并索取必要的信息。对于这些要求和任何其他原因，请通过 <a href="mailto:info@neonlabs.org">info@neonlabs.org</a></p>
+<p>与我们联系。</p>
 ]]></content>
     </entry>
     <entry>
@@ -756,55 +1222,6 @@ Scalability and liquidity from <strong>Solana</strong></p>
 <p>Effectively, within an orderbook users have individualized capital allocation, and with our liquidity rewards, more efficient competitive capital allocation results in more reward generation.</p>
 <p>This then gives market-makers the incentive to not only optimize their capital efficiency, but in doing so undercut one another as they attempt to take on a competitive position within the orderbook.</p>
 <p>虽然流动性提供者的代币激励与一个自动化做市商提供流动性的历史（数据）有关，不过似乎他们在订单簿条件下对解决滑点和价差起了更积极的作用。在订单簿的情况下，用户会有个性化的资产配置，那么在Swivel的流动性奖励机制下，更多有效率的竞争性资产配置将会产出更多的奖励。这将使得做市商不但会想办法最优化他们自己的资本市场效率，而且还会使他们之间互相竞价，因为他们之间处于竞争地位。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SOMMELIER-以太坊的辅助处理器(ENG-CHN)]]></title>
-        <id>https://chainguys.github.io/post/sommelier-yi-tai-fang-de-fu-zhu-chu-li-qi-eng-chn/</id>
-        <link href="https://chainguys.github.io/post/sommelier-yi-tai-fang-de-fu-zhu-chu-li-qi-eng-chn/">
-        </link>
-        <updated>2021-12-10T10:13:05.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="版权声明copyright-notice"><strong>版权声明（Copyright Notice）</strong></h2>
-<p><strong>本文翻译自</strong><a href="https://twitter.com/sommfinance"><strong>sommfinance</strong></a><strong>的文章：</strong><a href="https://sommelier.finance/blog/sommelier-new-co-processor-for-ethereum"><strong>SOMMELIER: WELCOME TO THE NEW COPROCESSOR FOR ETHEREUM</strong></a><strong>。已得到作者的授权。译者为</strong><a href="https://twitter.com/Chainguys"><strong>@chainguys</strong></a><strong>。转载请注明作者和译者。</strong></p>
-<p><strong>（Coptyright©2021 by sommfinance, translated by</strong> <a href="https://twitter.com/Chainguys"><strong>@chainguys</strong></a><strong>）</strong></p>
-<p><strong>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。<br>
-(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</strong></p>
-<h2 id="1-hello-world"><strong>1. Hello World</strong></h2>
-<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/0*bY4FbEN-th0o_IoK.jpg" alt="" loading="lazy"></figure>
-<p>Sommelier is a bet that Ethereum will be a dominant player in the global economy. It’s a bet that not only will Ethereum work, but that the growing architecture evolving in both L1 and L2 ecosystems continues to merge. To unlock its full potential, Ethereum needs a new coprocessor. This new computational machine will ensure that small investors maintain democratic access to Ethereum transactions with expanded functionality and opportunities to profit while minimizing their gas costs. The Ethereum network is the place to put capital to work and Sommelier is the partner to make that happen. Sommelier solves a number of key problems for the individual user on Etherum’s world computer network that we’ll outline below and that will serve as the thesis for our new coprocessor design and implementation.</p>
-<p>Sommelier坚信以太坊将会在全球经济中占据支配地位。以太坊不但（本身）有用，而且还会带来一个L1和L2生态系统不断涌现的，自身也不断成长的(技术)架构。要完全发挥它的潜力，以太坊就需要一个新的协处理器。这个新的计算机器（computational machine）将确保小型投资者也能利用（以太坊）不断扩张的功能和机遇，民主地、低成本地参与到以太坊生态的交易中并盈利。以太坊的主网将会是注入资金的地方，而Sommelier则会作为以太坊的伙伴来帮助完成这个目标。在下面的文章中我们将详细阐述我们如何设计和行动来帮助用户在解决在以太坊这一世界级网络系统中会遇到的难题。</p>
-<blockquote>
-<p><em>From translator</em> <a href="https://twitter.com/Chainguys"><strong><em>@chainguys</em></strong></a><em>:</em></p>
-<p><strong><em>A coprocessor is a computer processor used to supplement the functions of the primary processor (the CPU).For more details, please kindly see</em></strong> <a href="https://en.wikipedia.org/wiki/Coprocessor"><strong><em>Wikipedia:Coprocessor</em></strong></a></p>
-<p><strong><em>辅助处理器（英语：Coprocessor），也译作协处理器，这是一种协助中央处理器完成其无法执行或执行效率、效果低下的处理工作而开发和应用的处理器。更多信息请查看</em></strong><a href="https://zh.wikipedia.org/zh-cn/%E8%BC%94%E5%8A%A9%E8%99%95%E7%90%86%E5%99%A8"><strong><em>维基百科。</em></strong></a></p>
-</blockquote>
-<h2 id="2-不活跃的线上流动性inactive-onchain-liquidity"><strong>2. 不活跃的线上流动性（INACTIVE ONCHAIN LIQUIDITY）</strong></h2>
-<p>By design, Ethereum’s on-chain liquidity, with over 37 billion+ dollars, locked by on-chain programs, are user-push and non-proactive in the protocol, if not most blockchains. By default, it is safer for protocol designers to disallow protocol-level work scheduling capabilities that can execute business logic automatically due to the danger and risk of runaway processes that may put an entire protocol and its token value at risk.</p>
-<p>The need for such controls ensure that value is protected from unintended consequences of protocol-level transaction automation. However, this restriction penalizes the movement of on-chain liquidity in un-attended ways. Limited onchain liquidity automation requires the constant monitoring and active management of push transactions from all users on the protocol.</p>
-<p>以太坊锁在链上程序的，价值超过370亿美金的(线上)流动性，其实需要用户来操作（user-push）,在（各类AMM）协议中也并不活跃，别的链就更不用说了。而这样（不活跃），会被默认更加安全，因为协议的设计设者们不会在协议的宏观层面允许一个可以自动执行的商业逻辑，尤其是当有危险时自动“跑路”，这回对整个协议和代币系统造成（系统性）风险。所以，控制这些（自动化）的需求确保了价值不被协议层面的交易自动化可能带来的不可预知后果所伤害。但是，这样的限制也损害了线上流动性（参与/活跃）的可能性。要限制线上流动性的自动化，就需要对协议的所有交易和用户进行长期跟踪和主动管理。</p>
-<p>We see evidence of this by the rise of various Ethereum, onchain liquidity automation solutions that are already proposed to help solve these problems. However, these solutions themselves are also built on Ethereum and are constrained by the same architectural design limitations of the core protocol. They are only able to complete transactions discreetly and cannot continue with infinite automation. They either are only able to conduct local, specific automation or they must themselves stop their transactions and be manually restarted.</p>
-<p>It is our view that Ethereum’s potential will be unleashed with the addition of active onchain liquidity via the Sommelier protocol. The protocol aims to drive more inactive on-chain liquidity to become continuously active. It’s our belief that these new functionality will drive more Ethereum transaction volume and value for the network.</p>
-<p>我们也从这些地方看到了证据：大量(准备)将以太坊在线流动性进行自动化操作的项目和方案不断涌现。然而，这些方案本身也是在以太坊上开发的，所以也受制于由核心协议引出的架构设计问题。他们只能够蹑手蹑脚地完成转账，也不能永续自动化。他们要么只能在本地完成特定的自动化，要么就只能转账停止之后再手动重启。我们认为，以太坊的潜力在通过Sommelier带来的活跃线上流动性之后才能被充分发挥。Sommelier旨在让“沉寂”的线上流动性变得长期活跃。我们坚信Sommelier会让以太坊的交易规模和价值不断增加。</p>
-<h2 id="3-消极线上流动性和高gas损害以太坊的小型defi投资者passive-onchain-liquidity-and-high-gas-costs-hurt-smaller-ethereum-defi-investors"><strong>3. 消极线上流动性和高gas损害以太坊的小型DEFI投资者（PASSIVE ONCHAIN LIQUIDITY AND HIGH GAS COSTS HURT SMALLER ETHEREUM DEFI INVESTORS）</strong></h2>
-<p>If you are a large institutional investor conducting a trade through an Ethereum DeFi AMMs, gas fees and infrastructure costs are not a problem. Your transaction gas fee of $100USD is nothing when your transaction is $1,000,000 or more. Additionally, large investors are able to build their own trading infrastructure and DeFi tools to ensure that they are able to maintain a high velocity for their liquidity. This advantage is not a possibility for smaller investors who have to make decisions on which liquidity opportunities they should choose across an ever expanding universe of options. As of this writing, the Ethereum Average Gas Price is at a current level of 232.62 gwei, up from 12.41 gwei one year ago.</p>
-<p>如果你是一个在以太坊DeFi AMM交易的大型机构投资者，gas和基础设施等费用对你来说就不是个问题。一百美金的转账费用对于一百万美金的转账金额来说无非九牛一毛。除此之外，大型投资者也可以建设自己的基础设施和DeFi（交易）工具来确保流动性的高周转率。这样的优势对于还要在不断增加的选项中判别流动性机会的小型投资者来说是根本不可能的。在写作此文的时候，以太坊的平均gas价格达到了232.52 gwei,而一年之前只有12.41 gwei。</p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*DCFOKht2Y2wob_jm.png" alt="" loading="lazy"></figure>
-<p>来源: Etherscan.io</p>
-<p>Rising gas prices means that smaller investors are unable to actively participate in many Ethereum DeFi opportunities. Their window of selections will continue to decrease as gas prices increase. Additionally, the rising price of Ethereum means that smaller investors outside the Ethereum ecosystem will be priced out before they can participate. New opportunities for L1 batching and L2 roll-ups mean that solutions are coming, but the smaller investor just wants the lowest cost route to participate in the Ethereum DeFi ecosystem and through a wallet that she understands. She cannot be forced to choose and make the lowest cost decision from a myriad of choices. She desperately needs a fast way to access the lowest cost transaction network possible.</p>
-<p>高企的Gas意味着小型投资者无法有效积极地参与和捕捉Defi的机会。而他们选择的窗口也会随着gas增长越变越小。不仅如此，不断增长的以太坊价格也意味着在以太坊生态之外的小型投资者在他们能够参与（以太坊）之前就被赶出来（price out）。在L1和L2的机会不断涌现，意味着解决方案正在涌现，不过小型投资者想要的是用一个他们熟悉的钱包和最低的成本路径来参与以太坊的DeFi生态。小型投资者无法从过量的信息中做出一个成本最低的决定。小型投资者需要一个接入低成本交易网络的入口。</p>
-<p>Sommelier’s L1 batching capabilities and L2 participation in the coming roll-up offerings means that smaller investors have a partner to maintain their position as active participants in DeFi. With Sommelier, smaller-investor liquidity gets the same momentum as the bigger institutional players and they are able to continue to participate in the Ethereum DeFi ecosystem.</p>
-<p>Sommelier在将来roll-up的L1和L2中将会提供方法来让小型投资者尽可能成为和保持DeFi积极参与者的角色。小型投资者可以使用Sommelier来让自己流动性的动量（momentum）也能和大机构并驾齐驱，并且长期参与以太坊DeFi生态。</p>
-<h2 id="4-以太坊的签名设计限制了defi用户间交互的范围ethereum-signatures-design-limit-the-scope-of-defi-user-ethereum-interactions"><strong>4.</strong> <strong>以太坊的签名设计限制了DeFi用户间交互的范围（ETHEREUM SIGNATURES DESIGN LIMIT THE SCOPE OF DEFI USER ETHEREUM INTERACTIONS）</strong></h2>
-<p>Signature creation and broadcast requires that Ethereum DeFi users must monitor their wallets to manage their portfolio risk. DeFi users without substantial information infrastructure cannot expand their trading volume and are limited in their transaction volume. Automated transactions managed by Sommelier’s validators give Ethereum DeFi users more interactions and more opportunities to capture profits across complex compositions.</p>
-<p>制造和广播签名要求以太坊的DeFi用户必须时时监控他们的账户来进行风险管理。DeFi用户如果没有充分的信息基础设施是无法扩大交易规模的，甚至连转账规模也会受限。由Sommelier的验证节点管理的自动转账系统会基于DeFi用户更多的交互和更多复杂组合间捕捉利润的机会。</p>
-<h2 id="5-我们离民主金融还有一段长路we-still-have-a-long-way-to-go-to-democratize-finance"><strong>5.</strong> <strong>我们离“民主金融”还有一段长路（WE STILL HAVE A LONG WAY TO GO TO DEMOCRATIZE FINANCE）</strong></h2>
-<p>As of this writing, we are very proud that the Ethereum ecosystem has successfully locked up over <a href="https://defipulse.com/">$39 Billion</a> of value on-chain. However, we think this is still the early adopter phase of DeFi. Although we have lowered the barriers of decentralized finance and provided access to many, new financial products and communities, there is still a large, global population of individuals who need to participate in the Ethereum economy. The Ethereum Virtual Machine needs additional features from the new Sommelier coprocessor to support low-cost access for the rest of the world willing and eager to participate in this ecosystem. Without these additional features, barriers to participation such as high gas costs and expensive infrastructure will keep many users on the sidelines. Sommelier wants to be a new and tangible step to bringing further the promise of financial democracy and freedom on the Ethereum blockchain. Sommelier will make it so that these issues are no longer relevant in the Ethereum Virtual Machine.</p>
-<p>此文写作之时，我们对以太坊生态上有超过390亿的链上资产感到非常自豪。然而，我们认为这仍然是DeFi的早期。尽管我们已经降低了去中心化金融的门槛，给很多金融产品和社区提供了入口，但世界上仍然有大量的人口需要参与到以太坊的经济中。以太坊虚拟机(EVM)需要Sommelier这个辅助处理器提供的新功能来让世界其他愿意参与以太坊生态的人以低成本来加入。如果没有这些新的功能，那么高gas和昂贵的基础设施等问题就会让许多人无法参与。Sommelier希望成为以太坊上带来金融民主和自由的关键一步。Sommelier也会继续努力来解决EVM上存在的问题。</p>
-<h2 id="6-结论conclusion"><strong>6.</strong> <strong>结论（CONCLUSION）</strong></h2>
-<p>Sommelier aims to be a new coprocessor to expand the scale and scope of Ethereum DeFi transactions for all users on the Ethereum network. The Sommelier team’s position is that Etherum will be the dominant player in the decentralized finance economy. However, the missing tooling for low-cost, and scalable liquidity management creates a risk that smaller investors will be unable to practically participate in this new economy. The ability to make fast and proactive liquidity decisions is the key of success for large institutional investors that are able to move their value where it can deliver the highest returns.</p>
-<p>Sommelier aims to extend Ethereum functionality with its new coprocessor and intelligence in handling Ethereum transactions in ways that ensure that Ethereum remains useful (or accessible for all users). Sommelier allows for Ethereum users to enjoy the finest selection of liquidity transaction features. Join us as we continue to build on the liquidity narrative for Ethereum.</p>
-<p>Sommelier立志成为所有以太用户扩大以太坊Defi的规模和领域。Sommelier团队坚信以太坊将会在去中心化经济中占据支配地位。然而，缺少一个低成本、可扩展的流动性管理工具，会使得小型投资者有无法参与的风险。快速和主动的流动性决策能力是大型机构投资者成功地关键，因为这使得他们可以将资金投入到回报跟高的地方。</p>
-<p>Sommelier致力于用新的辅助处理器和情报，以确保以太坊可用性的方式来管理以太坊的交易，从而扩展以太坊的功能（使得它可以被所有人使用）。Sommelier使得以太坊用户可以享受到最好的流动性交易选择。我们会一直为以太坊的流动性和工作，快来加入我们吧！</p>
 ]]></content>
     </entry>
 </feed>
