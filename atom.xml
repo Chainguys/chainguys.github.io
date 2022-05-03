@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Web3 is REAL</title>
-    <updated>2022-05-03T09:39:16.693Z</updated>
+    <updated>2022-05-03T12:23:10.193Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -22,7 +22,7 @@
 Scalability and liquidity from <strong>Solana</strong></p>
 <p><a href="https://neon-labs.org/">Neon EVM</a></p>
 <p><strong>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。</strong></p>
-<p>(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)**</p>
+<p><strong>(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</strong></p>
 <h1 id="neon-代理-高维视野的解释-neon-proxy-high-level-explanation">NEON 代理 — 高维视野的解释 NEON PROXY — HIGH-LEVEL EXPLANATION</h1>
 <p>Probably most of you know what NeonEVM Platform is. But to be on the same page, I’d like to refresh some critical aspects of our platform.</p>
 <p>可能大多数人都知道 Neon EVM 平台是什么。但为了让大家保持信息一致，我想更新一些我们平台关键方面（的信息）。</p>
@@ -89,6 +89,9 @@ Scalability and liquidity from <strong>Solana</strong></p>
 <li>
 <p>When we began to study the situation more deeply, we found that Neon Proxy creates a lot of empty accounts. It’s not good, because storing extra records in Solana’s state is expensive. As result, the transaction cost is expensive for users and operators.</p>
 </li>
+</ol>
+<hr>
+<ol>
 <li>
 <p>用户无法执行他们的 Neon 交易，这很常见。</p>
 </li>
@@ -466,6 +469,342 @@ NFT 托管在以太坊上，用ETH计价。</li>
 <p>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。<br>
 (All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</p>
 <p>翻译文档本体在github,现在同步到博客。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Euler白皮书中英文对照版(ENG-CHN)]]></title>
+        <id>https://chainguys.github.io/post/euler-bai-pi-shu-zhong-ying-wen-dui-zhao-ban-eng-chn/</id>
+        <link href="https://chainguys.github.io/post/euler-bai-pi-shu-zhong-ying-wen-dui-zhao-ban-eng-chn/">
+        </link>
+        <updated>2022-01-30T09:55:44.000Z</updated>
+        <content type="html"><![CDATA[<p>之前因为已经首发在项目的官方文档，所以没有更新进来。过年了嘛，一家人还是要完完整整，更新上来咯！</p>
+<p>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。<br>
+(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</p>
+<p>https://docs.euler.finance/languages/white-paper-eng-chn</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[子空间（Subspace）：种收者困境的解决方案(ENG-CHN) Subspace: A Solution to the Farmer’s Dilemma]]></title>
+        <id>https://chainguys.github.io/post/zi-kong-jian-subspacechong-shou-zhe-kun-jing-de-jie-jue-fang-an-eng-chn-subspace-a-solution-to-the-farmers-dilemma/</id>
+        <link href="https://chainguys.github.io/post/zi-kong-jian-subspacechong-shou-zhe-kun-jing-de-jie-jue-fang-an-eng-chn-subspace-a-solution-to-the-farmers-dilemma/">
+        </link>
+        <updated>2022-01-14T12:05:52.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A61.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A62.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A63.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A64.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A65.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A66.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A67.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A68.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A69.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A610.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A611.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A612.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A613.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A614.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A615.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A616.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A617.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A618.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A619.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A620.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A621.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A622.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A623.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A624.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A625.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A626.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A627.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A628.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A629.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A630.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A631.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A632.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A633.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A634.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A635.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A636.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A637.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A638.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A639.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A640.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A641.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A642.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A643.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A644.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A645.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A646.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A647.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A648.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A649.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A650.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A651.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A652.png" alt="" loading="lazy"></p>
+<p><strong>再次声明：本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。</strong><br>
+<strong>(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</strong></p>
+<p><strong>如需查看pdf文件，请访问（For pdf file, please kindly see)：</strong></p>
+<p>https://drive.google.com/file/d/103GGDaKCOTEBIfLsThALWzRuuFDoTMPQ/view?usp=sharing</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Swivel Litepaper-Swivel协议简明机制与图示（ENG-CHN）]]></title>
+        <id>https://chainguys.github.io/post/swivel-litepaper-swivel-xie-yi-jian-ming-ji-zhi-yu-tu-shi-eng-chn/</id>
+        <link href="https://chainguys.github.io/post/swivel-litepaper-swivel-xie-yi-jian-ming-ji-zhi-yu-tu-shi-eng-chn/">
+        </link>
+        <updated>2021-12-11T10:00:58.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="版权声明copyright-notice"><strong>版权声明（Copyright Notice）</strong></h1>
+<p><strong>本文翻译自</strong><a href="https://twitter.com/SwivelFinance">@SwivelFinance</a><strong>的文章：</strong><a href="https://docs.swivel.finance/litepaper">A Basic Description and Visualization of the Swivel Protocol’s mechanics</a><strong>。已得到作者的授权。译者为</strong><a href="https://twitter.com/Chainguys"><strong>@chainguys</strong></a><strong>。转载请注明作者和译者。</strong></p>
+<p><strong>（Coptyright©2021 by</strong> <a href="https://twitter.com/SwivelFinance">@SwivelFinance</a>, <strong>translated by</strong> <a href="https://twitter.com/Chainguys"><strong>@chainguys</strong></a><strong>）</strong></p>
+<p><strong>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。<br>
+(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</strong></p>
+<h1 id="1-导言introduction"><strong>1. 导言（Introduction）</strong></h1>
+<p>Concerns surrounding protocols like Compound and Aave have become acceptable for all but the most risk-averse market participants. However, the volatility of DeFi rates still precludes many from effective portfolio/risk management, and others from market participation entirely.</p>
+<p>尽管（之前）对Compound和AAVE有所担忧，但大多数人现在认为它们是可以接受的了 — — 除了大多数风险厌恶的市场参与者。但是，DeFi市场的波动性依然使得一部分人无法进行有效的风险管理，让其他人无法完全参与市场。</p>
+<p>Swivel enables this wider market participation by providing the capital efficient infrastructure and professional trading interface necessary for tokenized cash-flows.</p>
+<p>Swivel通过对代币化现金流（tokenized cash-flows）提供资本高效(capital efficient)的基础设施和专业的交易界面来实现更广泛的市场参与。</p>
+<h2 id="11-代币现金流tokenizing-cash-flows"><strong>1.1 代币现金流（Tokenizing Cash-Flows）</strong></h2>
+<p>At it’s core, Swivel is built around the concept of cash flow-tokenization.</p>
+<p>Specifically, Swivel provides the ability to split a single interest generating token into two separate cash-flow tokens until a future date. One cash-flow being the interest generated, and the other being ownership of the underlying token, redeemable at that future date.</p>
+<p>In Swivel’s design these two are referred to as nTokens (yield-generating tokens), and zcTokens (tokens redeemable at maturity).</p>
+<p>Swivel以“将现金流代币化”为核心创立。</p>
+<p>详细来说，Swivel提供这样一种能力：（用户）可以将一个利率生成代币一分为二，生成两个绑定日期的现金流代币。其中一个现金流代币（表示）利率生成，另一个则代表所有权，并且在到期后可以赎回。在Swivel的系统中，第一个叫做nTokens，第二个叫zcTokens。</p>
+<p>（<a href="https://twitter.com/Chainguys"><strong>@chainguys</strong></a>省流助手：就是利率和本金分别开来，各用各的token来表示）</p>
+<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/0*FV2pL6gkfdoIwzcz" alt="" loading="lazy"></figure>
+<p>将USDC分别铸造成nTokens和zcTokens</p>
+<h1 id="2-zctokens"><strong>2. zcTokens</strong></h1>
+<h2 id="21-概览overview">2.1 概览（Overview）</h2>
+<p><strong><em>ERC-20 Tokens that represent a 1–1 claim for underlying upon maturity.</em></strong></p>
+<p><strong><em>一个可以在到期日1比1赎回标的资产（本金）的ERC-20代币</em></strong></p>
+<p>Zero-coupon tokens, <strong><em>zcTokens</em></strong>, are ERC-20’s which are redeemable 1:1 at maturity for an underlying token.</p>
+<p>零息代币，即**<em>zcTokens</em>** 是一个可以在到期日1比1赎回标的资产（本金）的ERC-20代币</p>
+<p>As users lock-in fixed yields, their deposit is split into zcTokens and nTokens and the the nTokens minted are sold to fuel a fixed-yield.</p>
+<p>用户锁定固定收益时，他们的入金会被分为zcTokens 和 nTokens。nTokens会被卖出作为一个固定收益的燃料（to fuel a fixed-yield）。</p>
+<p>This leaves the lender with an immediate fixed-yield and their minted zcTokens.</p>
+<p>这使得贷款人能够马上获得一个固定收入和一个zcTokens</p>
+<p><strong>Fixed-Yield Lending:</strong></p>
+<p><strong>Alice has 1000 USDC.</strong></p>
+<p><strong>Alice fills Bob’s order, splitting 1000 USDC into 1000 zcUSDC and 1000 nUSDC.</strong></p>
+<p><strong>Alice sells 1000 nUSDC to Bob for 50 USDC.</strong></p>
+<p><strong>Alice then has 1000 zcUSDC. At maturity Alice redeems her 1000zcUSDC for 1000 USDC. This leaves Alice with 1050 USDC.</strong></p>
+<p><strong>整个过程如下：</strong></p>
+<p><strong>Alice有1000USDC</strong></p>
+<p><strong>Alice相应Bob的订单，将1000USDC分成了1000zcUSDC和 1000nUSDC</strong></p>
+<p><strong>Alice将1000 nUSDC以50USDC的价格卖给Bob</strong></p>
+<p><strong>Alice现在就有1000zcUSDC,在到期后Alice将1000zcUSDC赎回，拿回1000USDC</strong></p>
+<p><strong>这样Alice就有1050USDC</strong></p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*UbnbVvxucFh62eW_" alt="" loading="lazy"></figure>
+<p>以5%年利率出借</p>
+<h2 id="22-定价pricing"><strong>2.2 定价（Pricing）</strong></h2>
+<p>Given zcTokens represent a 1–1 redemption only upon maturity, they are discounted at a rate based on the predicted amount of interest that may have otherwise been generated until the maturity/redemption date (the nToken price).</p>
+<p>Accepting that this potential yield decreases as time passes, ZcTokens appreciate towards par and reach par as maturity is reached.</p>
+<p>Further, because an nToken represents the predicted future yield, the discount on a zcToken is inversely proportional to the cost of an nToken.</p>
+<p>At maturity, zcTokens begin to appreciate above par, accruing the yield generated on a given money-market (e.g. Compound) until redeemed.</p>
+<p>​假设zcTokens在到期日能够按1：1赎回，那么它们就可以（跟传统债券一样）来根据变现日期和利率情况来定价。</p>
+<p>随着时间流逝，可能的收益就会减少，zcTokens也会越来越接近标的资产价格。</p>
+<p>接着，因为nToken代表了预计的未来收益，zcToken的折扣价格将会和nToken的价值成反比。</p>
+<p>到期时，zcTokens价格开始超过面值，在正式赎回之前会以某个流动性市场（如compound）上的情况来累积收益。</p>
+<h2 id="23-退出卖出zctokens-exitingselling-zctokens"><strong>2.3 退出/卖出zcTokens Exiting/Selling zcTokens</strong></h2>
+<p><strong><em>An example of common market interactions</em></strong></p>
+<p><strong><em>一个普通市场交互的案例</em></strong></p>
+<p>As rates fluctuate, active market participants may require the ability to fluidly move in and out of positions.</p>
+<p>To facilitate this market participation, Swivel provides the ability to frictionlessly exit or sell a zcToken position.</p>
+<p>由于（利率）会波动，主动的市场参与者会要求有迅速调整仓位的能力。为了帮助这样的市场参与行为，Swivel会提供这样无摩擦地退出或卖出zcToken仓位的能力。</p>
+<p>Exiting zcTokens early by purchasing nTokens and then redeeming for underlying:</p>
+<p><strong>Alice has 1000 zcUSDC.</strong></p>
+<p><strong>Alice fills Bob’s order, purchasing 1000 nTokens.</strong></p>
+<p><strong>Alice redeems 1000 zcUSDC and 1000 nUSDC for 1000 USDC and then pays Bob 50 USDC.</strong></p>
+<p><strong>This leaves Alice with 950 USDC.</strong></p>
+<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/0*U_osN0AH2XI2jExw" alt="" loading="lazy"></figure>
+<p>提前卖出zcToken仓位的交易过程如下：</p>
+<p>Alice有1000 zcUSDC</p>
+<p>Alice响应Bob的订单，购买了1000 <strong>nTokens</strong></p>
+<p>Alice用 1000zcUSDC和 1000nUSDC赎回了1000 USDC 然后向Bob支付了50USDC</p>
+<p>这样Alice就有950USDC了</p>
+<p>zcTokens can also be sold to counterparties looking to take fixed-yield positions through the orderbook:</p>
+<p><strong>Alice has 1000 zcUSDC.</strong></p>
+<p><strong>Alice fills Diane’s order, in the process Alice splitting Diane’s 1000 USDC into zcUSDC and nUSDC.</strong></p>
+<p><strong>Alice purchases 1000 nUSDC from Diane and redeems her 1000 zcUSDC + 1000 nUSDC for 1000 USDC.</strong></p>
+<p><strong>Alice then pays Diane a 50 USDC premium for the purchased nUSDC.</strong></p>
+<p><strong>This leaves Alice with 950 USDC.</strong></p>
+<p><strong>(Simplified to 1000 zcUSDC &lt;-&gt; 950 USDC)</strong></p>
+<p>zcTokens也可以被卖给寻求固定收益仓位的交易对手：</p>
+<p><strong>Alice有1000zcUSDC</strong></p>
+<p><strong>Alice响应Diane的订单，在过程中Alice将Diane的1000USDC拆分成了zcUSDC和nUSDC</strong></p>
+<p><strong>Alice从购买了1000 nUSDC, 然后将（1000 zcUSDC + 1000 nUSDC）打包赎回了1000USDC</strong></p>
+<p><strong>Alice然后付给了Diane 50USDC作为费用</strong></p>
+<p><strong>这样Alice就有了950USDC</strong></p>
+<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/0*G4qRJbEXxAaGcDqL" alt="" loading="lazy"></figure>
+<p>将zcTokens卖给寻求固定收益仓位的交易对手</p>
+<h2 id="24-二级自动做市商secondary-amms"><strong>2.4 二级自动做市商（Secondary AMM’s）</strong></h2>
+<p><strong><em>A discussion of potential secondary markets and cross-chain access to fixed-yields.</em></strong></p>
+<p><strong><em>一场关于潜在的二级自动做市商和跨链固定收益的讨论</em></strong></p>
+<p>zcTokens can also be traded on a secondary AMM in order to enter or exit lending positions, or alternatively attempt to amplify yield by providing liquidity.</p>
+<p>(see: Risks of LPing in derivative marketplaces)</p>
+<p>为了开/平仓，zcTokens也可以在二级自动做市商或者其他的流动性提供商处交易。</p>
+<p><strong>Entering:</strong></p>
+<p><strong>Alice has 1000 USDC and wants a fixed yield.</strong></p>
+<p><strong>Alice purchases 1050 zcTokens for 1000 USDC, maturing in one year for a 5% yield.</strong></p>
+<p><strong>Exiting:</strong></p>
+<p><strong>Alice has 1050 zcTokens and wants to exit.</strong></p>
+<p><strong>Alice sells 1050 zcTokens for 1000 USDC.</strong></p>
+<figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/1400/0*2O_dnWxyLcj-DGFy" alt="" loading="lazy"></figure>
+<p><strong>进入：</strong></p>
+<p><strong>Alice有1000USDC并且想获得固定收益</strong></p>
+<p><strong>Alice用1000USDC购买了1050 个一年后到期且年利率5%的zcTokens</strong></p>
+<p><strong>退出：</strong></p>
+<p><strong>Alice有1050个zcTokens并且想退出</strong></p>
+<p><strong>Alice 将1050 个zcTokens 以1000USDC卖出</strong></p>
+<h1 id="3-ntokens"><strong>3. nTokens</strong></h1>
+<p><strong><em>Notional Tokens contained in Swivel’s Vaults which represent the claim to underlying yields.</em></strong></p>
+<p><strong><em>放在Swivel库房中，代表标的资产的名义代币</em></strong></p>
+<h2 id="31-概览overview"><strong>3.1 概览（Overview）</strong></h2>
+<p>When a user buys nTokens, they create a vault that tracks their balances within a given market.</p>
+<p>Each vault contains two balances, <em>Notional</em> and <em>Redeemable.</em></p>
+<p>当一个用户购买nTokens时，系统会（自动）在指定市场生成一个可以追踪余额的金库（valut），每个金库都有两类余额，名义的和可赎回的。</p>
+<p><strong>名义代币nTokens ,Notional (nTokens)</strong></p>
+<p>Notional Tokens <em>(nTokens)</em> represent a 1–1 deposit, currently generating interest in an underlying protocol. Once maturity has been reached, interest-generation ceases and nTokens become worthless.</p>
+<p>As such, nTokens are deprecating assets that experience time-decay. As time passes, nTokens decrease in value, and as they approach maturity, an their value approaches 0.</p>
+<p>名义代币_(nTokens)_ 达标在一个标的协议中1：1存入并生息。一旦到期，生息就停止，该代币也就失效。如此，nTokens是一个随着时间不断贬值的资产。随着时间流逝，nTokens也不断贬值，到期后归零。</p>
+<p><strong>可赎回（余额）Redeemable</strong></p>
+<p>The <em>Redeemable</em> represents the amount of accrued interest currently available to redeem.</p>
+<p>As users interact with their vault, interest is accumulated to the redeemable balance, and this balance can be redeemed at any time.</p>
+<p>可赎回（余额）代表了目前累积的且可赎回的利息。只要用户与金库交互，利息就会自动归集到可赎回的余额，并且可以立即操作赎回。</p>
+<h2 id="32-购买ntokensbuying-ntokens"><strong>3.2 购买nTokens(Buying nTokens):</strong></h2>
+<p><strong>Bob has 50 USDC.</strong></p>
+<p><strong>Bob fills Alice’s order selling 1000 nUSDC at .05/ea (5%), paying Alice an immediate $50 premium.</strong></p>
+<p><strong>Once filled, Alice mints 1000 zcUSDC and 1000 nUSDC, transferring 1000 nUSDC to Bob. Bob then owns 1000 nUSDC (the right to the yield generated by 1000 USDC).</strong></p>
+<p><strong>Bob有50USDC</strong></p>
+<p><strong>Bob响应Alice的订单，卖出年利率5% 的1000 nUSDC，立刻付给Alice 50美金的费用</strong></p>
+<p><strong>Alice获得1000zcUSDC和1000nUSDC后，将1000nUSDC发送给Bob</strong></p>
+<p><strong>Bob现在就又1000 nUSDC(也就是获得1000USDC产生的利息)</strong></p>
+<figure data-type="image" tabindex="6"><img src="https://miro.medium.com/max/1400/0*0IDZWe6V_o4DPujy" alt="" loading="lazy"></figure>
+<p><strong>3.3 定价（Pricing）</strong></p>
+<p>Given nTokens represent a 1–1 deposit into an underlying money-market, and the claim to the deposit’s future yield, they are priced based on the expected yield generated until maturity.</p>
+<p>This potential future yield decreases as time passes and as such, nTokens depreciate and experience theta-decay.</p>
+<p>Of note, because a zcToken represents an underlying token stripped of nToken yields, the cost of a nToken is inversely proportional to the discount on a zcToken.</p>
+<p>假如nTokens在标定市场 1：1存入和未来对（利息）收入的权利不变，nTokens的价格就和到期日前的预期收益有关。nTokens随着时间流逝而贬值。注意，因为zcToken代表ntoken剥离的标的资产的收益，nTokens的费用和zcToken的折扣成反比。</p>
+<h2 id="34-退出卖ntokensexitingselling-ntokens"><strong>3.4 退出/卖nTokens（Exiting/Selling nTokens）</strong></h2>
+<p><strong><em>An example of common market interactions</em></strong></p>
+<p><strong><em>一个常见的市场交互案例</em></strong></p>
+<p>As with zcTokens, as rates fluctuate, active market participants require the ability to fluidly move in and out of nToken positions. To facilitate this market participation, Swivel provides the ability to exit/sell nTokens on our orderbook.</p>
+<p>由于利率会波动，主动的市场参与者会要求有迅速调整仓位的能力。为了帮助这样的市场参与行为，Swivel会提供这样退出或卖出nTokens仓位的能力。</p>
+<p>Selling nTokens to an initiating counterparty:</p>
+<p><strong>Bob has 1000 nUSDC. Bob fills Charlie’s order for 1000 nUSDC, and in return receives 50 USDC. This leaves Bob with 50 USDC + any accrued interest.</strong></p>
+<p><strong>Bob有1000nUSDC.Bob响应Charlie的订单，卖出1000nUSDC,收到了50USDC。所以现在Bob在归集的利息上就多了50USDC</strong></p>
+<figure data-type="image" tabindex="7"><img src="https://miro.medium.com/max/1400/0*4y3793nJWDa1JLFv" alt="" loading="lazy"></figure>
+<p>交易ntokens</p>
+<p>nTokens can also be sold to counterparties redeeming their zcTokens early:</p>
+<p><strong>Bob has 1000 nUSDC.</strong></p>
+<p><strong>Bob fills Alice’s order, selling Alice 1000 nTokens.</strong></p>
+<p><strong>Alice redeems 1000 zcUSDC + 1000 nUSDC for 1000 USDC and then pays Bob 50 USDC.</strong></p>
+<p><strong>This leaves Bob with 50 USDC + any accrued interest.</strong></p>
+<p><strong>nTokens也可以卖给要提前用zcTokens（赎回USDC）的交易对手：</strong></p>
+<p><strong>Bob有1000 nUSDC.</strong></p>
+<p><strong>Bob响应Alice的订单，买了1000个nTokens给Alice.</strong></p>
+<p><strong>Alice用（1000 zcUSDC + 1000 nUSDC）赎回了自己的1000USDC，然后支付给Bob 50USDC</strong></p>
+<p><strong>这样Bob归集的利息上就多了50USDC</strong></p>
+<figure data-type="image" tabindex="8"><img src="https://miro.medium.com/max/1400/0*CJVUAXZ6nM8CFZZA" alt="" loading="lazy"></figure>
+<p>向持有zcTokens的人卖出nTokens</p>
+<h1 id="4-资本效率capital-efficiency"><strong>4. 资本效率（Capital Efficiency）</strong></h1>
+<p><strong><em>An overview of capital efficiency within Interest-Rate Derivative and Cash-Flow Markets</em></strong></p>
+<p><strong><em>利率衍生品和现金流市场二者资本效率的回顾</em></strong></p>
+<h2 id="41-自动做市商与订单簿amm-vs-orderbook"><strong>4.1 自动做市商与订单簿（AMM vs. Orderbook）</strong></h2>
+<p>AMM’s have insofar proven to be the effective mechanism for bootstrapping liquidity, however the efficacy and capital efficiency of AMM’s within derivative markets has proven to be questionable at best.</p>
+<p>Without the ability to adjust quoted prices with regard to standard derivative pricing variables, liquidity providers are exposed to significant risk and constantly give up an edge to the market. (As seen in LP returns)</p>
+<p>自动做市商目前被证明是一个提升流动性的有效机制。然而自动做市商在衍生品市场的功能和资本效率却尤其受到质疑。由于不能根据标准的衍生品价格变量来调整引用的价格，流动性提供者暴露在巨大的风险之中并且持续丧失在市场中的优势地位（请看下图LP的回报）。</p>
+<figure data-type="image" tabindex="9"><img src="https://miro.medium.com/max/1400/0*P8uUQY5hkuzdzbwq.jpeg" alt="" loading="lazy"></figure>
+<p>Hegic LP -25%的年化收益</p>
+<p>Swivel instead attempts to bootstrap liquidity by providing the same token incentives present on most AMM’s, but with the enhanced capital efficiency and flexibility that an orderbook can provide for all market participants.</p>
+<p>Using Swivel’s capital efficient orderbook, not only do users receive reduced slippage and a potentially gas-free experience, but liquidity providers can account for the factors that would otherwise leave them exposed.</p>
+<p>Swivel则尝试用与大多数自动化做市商相同，但比传统订单簿给市场参与方带来的，更有资本效率和灵活性的代币激励，来提升市场的流动性。</p>
+<p>使用Swivel的资本有效订单簿（capital efficient orderbook），不但可以让用户减少滑点和甚至拥有无gas的交易体验，还可以让流动性提供者们发现那些可能让他们处于风险的因素。</p>
+<h2 id="42特定手段的优化instrument-specific-optimizations"><strong>4.2特定手段的优化（Instrument-Specific Optimizations）</strong></h2>
+<p>If then attempting to address Swivel’s market with an AMM, one would need both a time-appreciating AMM for zero-coupon tokens (similar to Element), and a time-depreciating AMM for interest-coupons (similar to Pendle).</p>
+<p>如果要用自动化做市商来处理Swivel这个市场，那就同时需要一个随着时间升值的零息代币自动化做市商（类似Element）和一个随着时间贬值的票息（代币）自动化做市场（类似于Pendle）。</p>
+<p>With Swivel’s flexible orderbook, these separate AMM’s are not necessary as a user can enter the marketplace with an underlying currency (USDC, ETC, BTC, etc.,), or alternatively with either zero-coupon tokens or money-market notional (interest-coupons) when exiting positions.</p>
+<p>As a result Swivel’s users benefit from the generalized efficiencies provided by an orderbook, and the further ~2x enhanced capital efficiency when compared to two separate AMM’s.</p>
+<p>使用 Swivel 的灵活订单簿，这些单独的 AMM就不再是必需的了。因为用户可以使用标定的货币（USDC、ETC、BTC 等）进入市场，或者在退出时使用零息代币或货币市场名义（票息）退出头寸时。</p>
+<p>因此 Swivel 的用户受益于订单簿提供的更广泛性效率和更多的东西 — — 与两个独立的 AMM 相比，资本效率提高了2倍。</p>
+<h2 id="43-铸造ntokens-minting-ntokens-interest-coupons"><strong>4.3 铸造nTokens ,Minting nTokens (Interest-Coupons)</strong></h2>
+<p>Swivel’s issuance of interest-coupons, termed Notional Tokens (nTokens), is optimized in two ways:</p>
+<p>1.nTokens include interest-generation and tracking functionality within their transfer function which:</p>
+<p>Reduces the deposit overhead present in designs which require increasing deposits over time</p>
+<p>Reduces complexity in nToken pricing</p>
+<p>Allows interest to be redeemed at any time</p>
+<p>2.Swivel atomically mints tokens as orders are filled which reduces the number of transactions necessary for most use cases.</p>
+<p>Swivel的发行票息，即名义代币（nTokens），主要有两个优化方向。</p>
+<p>其一是nTokens中利息产生、追踪和转移的环节：</p>
+<p>l 在设计中减少不断存入时会产生的损耗（费用）</p>
+<p>l 减少nTokens定价中的问题</p>
+<p>l 允许利息随时可赎回</p>
+<p>其二，Swivel铸币时会尽量用最少的交易（步骤）响应最多的用户需求。</p>
+<h1 id="5-流动性奖励liquidity-incentives"><strong>5. 流动性奖励（Liquidity Incentives）</strong></h1>
+<p><strong><em>A description of Swivel’s liquidity and market-making incentivization.</em></strong></p>
+<p><strong><em>Swivel流动性和做市激励简介</em></strong></p>
+<p>Swivel is the first orderbook-based protocol with liquidity incentives built baseline into token distribution and protocol design.</p>
+<p>In the context of an AMM, liquidity incentives are straightforward. Any user who provides pooled liquidity across the constant x*y=k curve is rewarded at a proportional rate for their liquidity provided.</p>
+<p>Swivel是世界上第一个以订单簿为基础的，在代币分配和协议设计时就融入了流动性激励得协议。以自动化做市商的角度来说，流动性激励是直接的。任何一个基于x*y=k曲线（自动化做市基本原理）来提供流动性的人都将按比例获得激励。</p>
+<p>When applying this concept to an orderbook, liquidity rewards are not pools but binary orders. Either an order gets filled, or it does not.</p>
+<p>With this accepted, how does one reward those providing liquidity to an orderbook? <strong><em>By providing token rewards only to those liquidity providers (makers) who’s orders are filled.</em></strong></p>
+<p>Swivel sets aside 50% of our token supply for these orderbook liquidity incentives.</p>
+<figure data-type="image" tabindex="10"><img src="https://miro.medium.com/max/1400/0*-aJoRYcj41Aosi3r" alt="" loading="lazy"></figure>
+<p>There are other alternative methods of weighing rewards based on orderbook state as described in <a href="https://hummingbot.io/liquidity-mining-whitepaper/">Hummingbot’s paper</a> on liquidity mining, however none serve to properly democratize access to rewards across any market participant.</p>
+<p>当将这一概念应用到订单簿时，流动性的奖励将不再（基于）AMM池而是买卖双方的订单。一个订单要么被响应，要么不会被响应。基于此，如何奖励那些为订单簿提供流动性的人呢？答案是：只对那些订单簿被相应的流动性提供者基于代币奖励。Swivel会将50%的代币作为流动性奖励。当然，在这篇官流动性挖矿的文章中（<a href="https://hummingbot.io/liquidity-mining-whitepaper/">Hummingbot’s paper</a>）有一些其他的，基于订单簿状态来衡量奖励的方法，但所有这些都没有使得所有市场参与者更民主地参与奖励的（分配）。</p>
+<h2 id="51-流动性激励的有效性amm-vs-clobeffectiveness-of-liquidity-incentives-amm-vs-clob"><strong>5.1 流动性激励的有效性AMM vs CLOB（Effectiveness of Liquidity Incentives: AMM vs CLOB）</strong></h2>
+<p>While liquidity provider token incentives have historically related to providing liquidity on an AMM, it appears that their positive effect on slippage/spread is enhanced within the context of an orderbook.</p>
+<p>Effectively, within an orderbook users have individualized capital allocation, and with our liquidity rewards, more efficient competitive capital allocation results in more reward generation.</p>
+<p>This then gives market-makers the incentive to not only optimize their capital efficiency, but in doing so undercut one another as they attempt to take on a competitive position within the orderbook.</p>
+<p>虽然流动性提供者的代币激励与一个自动化做市商提供流动性的历史（数据）有关，不过似乎他们在订单簿条件下对解决滑点和价差起了更积极的作用。在订单簿的情况下，用户会有个性化的资产配置，那么在Swivel的流动性奖励机制下，更多有效率的竞争性资产配置将会产出更多的奖励。这将使得做市商不但会想办法最优化他们自己的资本市场效率，而且还会使他们之间互相竞价，因为他们之间处于竞争地位。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SOMMELIER-以太坊的辅助处理器(ENG-CHN)]]></title>
+        <id>https://chainguys.github.io/post/sommelier-yi-tai-fang-de-fu-zhu-chu-li-qi-eng-chn/</id>
+        <link href="https://chainguys.github.io/post/sommelier-yi-tai-fang-de-fu-zhu-chu-li-qi-eng-chn/">
+        </link>
+        <updated>2021-12-10T10:13:05.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="版权声明copyright-notice"><strong>版权声明（Copyright Notice）</strong></h2>
+<p><strong>本文翻译自</strong><a href="https://twitter.com/sommfinance"><strong>sommfinance</strong></a><strong>的文章：</strong><a href="https://sommelier.finance/blog/sommelier-new-co-processor-for-ethereum"><strong>SOMMELIER: WELCOME TO THE NEW COPROCESSOR FOR ETHEREUM</strong></a><strong>。已得到作者的授权。译者为</strong><a href="https://twitter.com/Chainguys"><strong>@chainguys</strong></a><strong>。转载请注明作者和译者。</strong></p>
+<p><strong>（Coptyright©2021 by sommfinance, translated by</strong> <a href="https://twitter.com/Chainguys"><strong>@chainguys</strong></a><strong>）</strong></p>
+<p><strong>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。<br>
+(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</strong></p>
+<h2 id="1-hello-world"><strong>1. Hello World</strong></h2>
+<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/0*bY4FbEN-th0o_IoK.jpg" alt="" loading="lazy"></figure>
+<p>Sommelier is a bet that Ethereum will be a dominant player in the global economy. It’s a bet that not only will Ethereum work, but that the growing architecture evolving in both L1 and L2 ecosystems continues to merge. To unlock its full potential, Ethereum needs a new coprocessor. This new computational machine will ensure that small investors maintain democratic access to Ethereum transactions with expanded functionality and opportunities to profit while minimizing their gas costs. The Ethereum network is the place to put capital to work and Sommelier is the partner to make that happen. Sommelier solves a number of key problems for the individual user on Etherum’s world computer network that we’ll outline below and that will serve as the thesis for our new coprocessor design and implementation.</p>
+<p>Sommelier坚信以太坊将会在全球经济中占据支配地位。以太坊不但（本身）有用，而且还会带来一个L1和L2生态系统不断涌现的，自身也不断成长的(技术)架构。要完全发挥它的潜力，以太坊就需要一个新的协处理器。这个新的计算机器（computational machine）将确保小型投资者也能利用（以太坊）不断扩张的功能和机遇，民主地、低成本地参与到以太坊生态的交易中并盈利。以太坊的主网将会是注入资金的地方，而Sommelier则会作为以太坊的伙伴来帮助完成这个目标。在下面的文章中我们将详细阐述我们如何设计和行动来帮助用户在解决在以太坊这一世界级网络系统中会遇到的难题。</p>
+<blockquote>
+<p><em>From translator</em> <a href="https://twitter.com/Chainguys"><strong><em>@chainguys</em></strong></a><em>:</em></p>
+<p><strong><em>A coprocessor is a computer processor used to supplement the functions of the primary processor (the CPU).For more details, please kindly see</em></strong> <a href="https://en.wikipedia.org/wiki/Coprocessor"><strong><em>Wikipedia:Coprocessor</em></strong></a></p>
+<p><strong><em>辅助处理器（英语：Coprocessor），也译作协处理器，这是一种协助中央处理器完成其无法执行或执行效率、效果低下的处理工作而开发和应用的处理器。更多信息请查看</em></strong><a href="https://zh.wikipedia.org/zh-cn/%E8%BC%94%E5%8A%A9%E8%99%95%E7%90%86%E5%99%A8"><strong><em>维基百科。</em></strong></a></p>
+</blockquote>
+<h2 id="2-不活跃的线上流动性inactive-onchain-liquidity"><strong>2. 不活跃的线上流动性（INACTIVE ONCHAIN LIQUIDITY）</strong></h2>
+<p>By design, Ethereum’s on-chain liquidity, with over 37 billion+ dollars, locked by on-chain programs, are user-push and non-proactive in the protocol, if not most blockchains. By default, it is safer for protocol designers to disallow protocol-level work scheduling capabilities that can execute business logic automatically due to the danger and risk of runaway processes that may put an entire protocol and its token value at risk.</p>
+<p>The need for such controls ensure that value is protected from unintended consequences of protocol-level transaction automation. However, this restriction penalizes the movement of on-chain liquidity in un-attended ways. Limited onchain liquidity automation requires the constant monitoring and active management of push transactions from all users on the protocol.</p>
+<p>以太坊锁在链上程序的，价值超过370亿美金的(线上)流动性，其实需要用户来操作（user-push）,在（各类AMM）协议中也并不活跃，别的链就更不用说了。而这样（不活跃），会被默认更加安全，因为协议的设计设者们不会在协议的宏观层面允许一个可以自动执行的商业逻辑，尤其是当有危险时自动“跑路”，这回对整个协议和代币系统造成（系统性）风险。所以，控制这些（自动化）的需求确保了价值不被协议层面的交易自动化可能带来的不可预知后果所伤害。但是，这样的限制也损害了线上流动性（参与/活跃）的可能性。要限制线上流动性的自动化，就需要对协议的所有交易和用户进行长期跟踪和主动管理。</p>
+<p>We see evidence of this by the rise of various Ethereum, onchain liquidity automation solutions that are already proposed to help solve these problems. However, these solutions themselves are also built on Ethereum and are constrained by the same architectural design limitations of the core protocol. They are only able to complete transactions discreetly and cannot continue with infinite automation. They either are only able to conduct local, specific automation or they must themselves stop their transactions and be manually restarted.</p>
+<p>It is our view that Ethereum’s potential will be unleashed with the addition of active onchain liquidity via the Sommelier protocol. The protocol aims to drive more inactive on-chain liquidity to become continuously active. It’s our belief that these new functionality will drive more Ethereum transaction volume and value for the network.</p>
+<p>我们也从这些地方看到了证据：大量(准备)将以太坊在线流动性进行自动化操作的项目和方案不断涌现。然而，这些方案本身也是在以太坊上开发的，所以也受制于由核心协议引出的架构设计问题。他们只能够蹑手蹑脚地完成转账，也不能永续自动化。他们要么只能在本地完成特定的自动化，要么就只能转账停止之后再手动重启。我们认为，以太坊的潜力在通过Sommelier带来的活跃线上流动性之后才能被充分发挥。Sommelier旨在让“沉寂”的线上流动性变得长期活跃。我们坚信Sommelier会让以太坊的交易规模和价值不断增加。</p>
+<h2 id="3-消极线上流动性和高gas损害以太坊的小型defi投资者passive-onchain-liquidity-and-high-gas-costs-hurt-smaller-ethereum-defi-investors"><strong>3. 消极线上流动性和高gas损害以太坊的小型DEFI投资者（PASSIVE ONCHAIN LIQUIDITY AND HIGH GAS COSTS HURT SMALLER ETHEREUM DEFI INVESTORS）</strong></h2>
+<p>If you are a large institutional investor conducting a trade through an Ethereum DeFi AMMs, gas fees and infrastructure costs are not a problem. Your transaction gas fee of $100USD is nothing when your transaction is $1,000,000 or more. Additionally, large investors are able to build their own trading infrastructure and DeFi tools to ensure that they are able to maintain a high velocity for their liquidity. This advantage is not a possibility for smaller investors who have to make decisions on which liquidity opportunities they should choose across an ever expanding universe of options. As of this writing, the Ethereum Average Gas Price is at a current level of 232.62 gwei, up from 12.41 gwei one year ago.</p>
+<p>如果你是一个在以太坊DeFi AMM交易的大型机构投资者，gas和基础设施等费用对你来说就不是个问题。一百美金的转账费用对于一百万美金的转账金额来说无非九牛一毛。除此之外，大型投资者也可以建设自己的基础设施和DeFi（交易）工具来确保流动性的高周转率。这样的优势对于还要在不断增加的选项中判别流动性机会的小型投资者来说是根本不可能的。在写作此文的时候，以太坊的平均gas价格达到了232.52 gwei,而一年之前只有12.41 gwei。</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*DCFOKht2Y2wob_jm.png" alt="" loading="lazy"></figure>
+<p>来源: Etherscan.io</p>
+<p>Rising gas prices means that smaller investors are unable to actively participate in many Ethereum DeFi opportunities. Their window of selections will continue to decrease as gas prices increase. Additionally, the rising price of Ethereum means that smaller investors outside the Ethereum ecosystem will be priced out before they can participate. New opportunities for L1 batching and L2 roll-ups mean that solutions are coming, but the smaller investor just wants the lowest cost route to participate in the Ethereum DeFi ecosystem and through a wallet that she understands. She cannot be forced to choose and make the lowest cost decision from a myriad of choices. She desperately needs a fast way to access the lowest cost transaction network possible.</p>
+<p>高企的Gas意味着小型投资者无法有效积极地参与和捕捉Defi的机会。而他们选择的窗口也会随着gas增长越变越小。不仅如此，不断增长的以太坊价格也意味着在以太坊生态之外的小型投资者在他们能够参与（以太坊）之前就被赶出来（price out）。在L1和L2的机会不断涌现，意味着解决方案正在涌现，不过小型投资者想要的是用一个他们熟悉的钱包和最低的成本路径来参与以太坊的DeFi生态。小型投资者无法从过量的信息中做出一个成本最低的决定。小型投资者需要一个接入低成本交易网络的入口。</p>
+<p>Sommelier’s L1 batching capabilities and L2 participation in the coming roll-up offerings means that smaller investors have a partner to maintain their position as active participants in DeFi. With Sommelier, smaller-investor liquidity gets the same momentum as the bigger institutional players and they are able to continue to participate in the Ethereum DeFi ecosystem.</p>
+<p>Sommelier在将来roll-up的L1和L2中将会提供方法来让小型投资者尽可能成为和保持DeFi积极参与者的角色。小型投资者可以使用Sommelier来让自己流动性的动量（momentum）也能和大机构并驾齐驱，并且长期参与以太坊DeFi生态。</p>
+<h2 id="4-以太坊的签名设计限制了defi用户间交互的范围ethereum-signatures-design-limit-the-scope-of-defi-user-ethereum-interactions"><strong>4.</strong> <strong>以太坊的签名设计限制了DeFi用户间交互的范围（ETHEREUM SIGNATURES DESIGN LIMIT THE SCOPE OF DEFI USER ETHEREUM INTERACTIONS）</strong></h2>
+<p>Signature creation and broadcast requires that Ethereum DeFi users must monitor their wallets to manage their portfolio risk. DeFi users without substantial information infrastructure cannot expand their trading volume and are limited in their transaction volume. Automated transactions managed by Sommelier’s validators give Ethereum DeFi users more interactions and more opportunities to capture profits across complex compositions.</p>
+<p>制造和广播签名要求以太坊的DeFi用户必须时时监控他们的账户来进行风险管理。DeFi用户如果没有充分的信息基础设施是无法扩大交易规模的，甚至连转账规模也会受限。由Sommelier的验证节点管理的自动转账系统会基于DeFi用户更多的交互和更多复杂组合间捕捉利润的机会。</p>
+<h2 id="5-我们离民主金融还有一段长路we-still-have-a-long-way-to-go-to-democratize-finance"><strong>5.</strong> <strong>我们离“民主金融”还有一段长路（WE STILL HAVE A LONG WAY TO GO TO DEMOCRATIZE FINANCE）</strong></h2>
+<p>As of this writing, we are very proud that the Ethereum ecosystem has successfully locked up over <a href="https://defipulse.com/">$39 Billion</a> of value on-chain. However, we think this is still the early adopter phase of DeFi. Although we have lowered the barriers of decentralized finance and provided access to many, new financial products and communities, there is still a large, global population of individuals who need to participate in the Ethereum economy. The Ethereum Virtual Machine needs additional features from the new Sommelier coprocessor to support low-cost access for the rest of the world willing and eager to participate in this ecosystem. Without these additional features, barriers to participation such as high gas costs and expensive infrastructure will keep many users on the sidelines. Sommelier wants to be a new and tangible step to bringing further the promise of financial democracy and freedom on the Ethereum blockchain. Sommelier will make it so that these issues are no longer relevant in the Ethereum Virtual Machine.</p>
+<p>此文写作之时，我们对以太坊生态上有超过390亿的链上资产感到非常自豪。然而，我们认为这仍然是DeFi的早期。尽管我们已经降低了去中心化金融的门槛，给很多金融产品和社区提供了入口，但世界上仍然有大量的人口需要参与到以太坊的经济中。以太坊虚拟机(EVM)需要Sommelier这个辅助处理器提供的新功能来让世界其他愿意参与以太坊生态的人以低成本来加入。如果没有这些新的功能，那么高gas和昂贵的基础设施等问题就会让许多人无法参与。Sommelier希望成为以太坊上带来金融民主和自由的关键一步。Sommelier也会继续努力来解决EVM上存在的问题。</p>
+<h2 id="6-结论conclusion"><strong>6.</strong> <strong>结论（CONCLUSION）</strong></h2>
+<p>Sommelier aims to be a new coprocessor to expand the scale and scope of Ethereum DeFi transactions for all users on the Ethereum network. The Sommelier team’s position is that Etherum will be the dominant player in the decentralized finance economy. However, the missing tooling for low-cost, and scalable liquidity management creates a risk that smaller investors will be unable to practically participate in this new economy. The ability to make fast and proactive liquidity decisions is the key of success for large institutional investors that are able to move their value where it can deliver the highest returns.</p>
+<p>Sommelier aims to extend Ethereum functionality with its new coprocessor and intelligence in handling Ethereum transactions in ways that ensure that Ethereum remains useful (or accessible for all users). Sommelier allows for Ethereum users to enjoy the finest selection of liquidity transaction features. Join us as we continue to build on the liquidity narrative for Ethereum.</p>
+<p>Sommelier立志成为所有以太用户扩大以太坊Defi的规模和领域。Sommelier团队坚信以太坊将会在去中心化经济中占据支配地位。然而，缺少一个低成本、可扩展的流动性管理工具，会使得小型投资者有无法参与的风险。快速和主动的流动性决策能力是大型机构投资者成功地关键，因为这使得他们可以将资金投入到回报跟高的地方。</p>
+<p>Sommelier致力于用新的辅助处理器和情报，以确保以太坊可用性的方式来管理以太坊的交易，从而扩展以太坊的功能（使得它可以被所有人使用）。Sommelier使得以太坊用户可以享受到最好的流动性交易选择。我们会一直为以太坊的流动性和工作，快来加入我们吧！</p>
 ]]></content>
     </entry>
 </feed>

@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="crypto blockchain translation meme coin 区块链 加密货币 翻译 白皮书 文档 doc">
+<meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
+<meta name="theme-color" content="#000">
+<title>Web3 is REAL</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1651580586545">
+<link rel="stylesheet" href="/media/css/pisces.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.loli.net/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/default.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/media/js/jquery.js"></script>
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4L90XDQXCV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-4L90XDQXCV');
+</script>
+
+
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?51159237cb3a665e749ef996b5675a73";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="pisces">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>Web3 is REAL</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">Take It SERIOUSLY</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  Main 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives" target="_self">
+                  Archives 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags" target="_self">
+                  Tags
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about" target="_self">
+                  About 关于
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友链
+                  
+                </a>
+              </li>
+            
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout  pisces">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">Chainguys</p>
+    
+    <div class="site-description right-motion">
+      
+      
+      
+        <p>A blockchain guy who likes making memes and translating tech articles </p>
+      
+        <p>All Information NOT Financial Adivice</p>
+      
+        <p> 一个区块链的老韭菜 </p>
+      
+        <p>兴趣是做meme和翻译技术文章 </p>
+      
+        <p>一切均非投资建议</p>
+      
+      
+    </div>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">11</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">60</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://chainguys.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
+  
+
+
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'pisces';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box tag-line box-shadow-wrapper">
+          <section class="section tags-section posts-expand bg-color">
+            <div class="padding-wrapper">
+  <div class="tag-timeline-box">
+    <div class="tag-timeline-wrapper">
+      <div class="tag-timeline-title">
+        <h2>
+          storage
+          <small class="language" data-lan="tag">标签</small>
+        </h2>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <a href="https://chainguys.github.io/post/zi-kong-jian-subspacechong-shou-zhe-kun-jing-de-jie-jue-fang-an-eng-chn-subspace-a-solution-to-the-farmers-dilemma/">
+        <div class="motion-warpper">
+          <div class="tag-post-node">
+            <h1>
+              01-14
+              <small>子空间（Subspace）：种收者困境的解决方案(ENG-CHN) Subspace: A Solution to the Farmer’s Dilemma</small>
+            </h1>
+          </div>
+        </div>
+      </a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <center id="runTimeBox">
+      已运行:<span id="run_time"></span>
+    </center>
+    <span id="busuanzi_container_site_pv">浏览数:<span id="busuanzi_value_site_pv"></span> 次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">访客数:<span id="busuanzi_value_site_uv"></span> 人</span>
+
+    <script>
+      BirthDay = new Date('');
+      if (BirthDay.getTime()) {
+        function runTime() {
+          str = "";
+          today = new Date();
+          timeold = today.getTime() - BirthDay.getTime();
+          msPerDay = 24 * 60 * 60 * 1000;
+          e_daysold = timeold / msPerDay;
+          daysold = Math.floor(e_daysold);
+          str += daysold + "天";
+          return str;
+        }
+        setInterval(function () {
+          $("#run_time").html(runTime());
+        }, 1000);
+      } else {
+        document.querySelector('.footer').removeChild(document.querySelector('#runTimeBox'));
+      }
+    </script>
+    <div class="poweredby">
+      Web3 is REAL,take it seriously. <a href="https://twitter.com/Chainguys" target="_blank">@Chainguys</a>
+    </div>
+  </footer>
+  
+    
+        <div class="pisces back-to-top" id="back_to_top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span class="scrollpercent"> <span id="back_to_top_text">0</span>% </span>
+            
+        </div>
+        
+                  
+                        
+</div>
+<script>
+  let sideBarOpen = "sidebar-open";
+  let body = document.body;
+  let back2Top = document.querySelector("#back_to_top"),
+    back2TopText = document.querySelector("#back_to_top_text"),
+    drawerBox = document.querySelector("#drawer_box"),
+    rightSideBar = document.querySelector(".sidebar"),
+    viewport = document.querySelector("body");
+
+  function scrollAnimation(currentY, targetY) {
+    let needScrollTop = targetY - currentY;
+    let _currentY = currentY;
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10);
+      _currentY += dist;
+      window.scrollTo(_currentY, currentY);
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY);
+      } else {
+        window.scrollTo(_currentY, targetY);
+      }
+    }, 1);
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener("scroll", function (e) {
+    let percent =
+      (document.scrollingElement.scrollTop /
+        (document.scrollingElement.scrollHeight -
+          document.scrollingElement.clientHeight)) *
+      100;
+    if (percent > 1 && !back2Top.classList.contains("back-top-active")) {
+      back2Top.classList.add("back-top-active");
+    }
+    if (percent == 0) {
+      back2Top.classList.remove("back-top-active");
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  let hasCacu = false;
+  window.addEventListener("resize", function (e) {
+    calcuHeight();
+  });
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (
+      (!hasCacu && back2Top.classList.contains("pisces")) ||
+      back2Top.classList.contains("gemini")
+    ) {
+      let sideBar = document.querySelector(".sidebar");
+      let navUl = document.querySelector("#site_nav");
+      sideBar.style =
+        "margin-top:" + (navUl.offsetHeight + navUl.offsetTop + 15) + "px;";
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false,
+    MOTION_TIME = 300,
+    RIGHT_MOVE_DIS = "320px";
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll(".right-motion");
+    let right = drawerBox.classList.contains("right");
+
+    let transitionDir = right
+      ? "transition.slideRightIn"
+      : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingRight: "0px",
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingLeft: "0px",
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      jQuery.Velocity(rightSideBar, "stop");
+      jQuery.Velocity(viewport, "stop");
+      jQuery.Velocity(rightMotions, "stop");
+      if (open) {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: RIGHT_MOVE_DIS,
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, transitionDir, {});
+            },
+          }
+        );
+        jQuery.Velocity(viewport, openProp, {
+          duration: MOTION_TIME,
+        });
+      } else {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: "0px",
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, {
+                opacity: 0,
+              });
+            },
+          }
+        );
+        jQuery.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME,
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle("muse-line");
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    };
+  }
+
+  // 链接跳转
+  let newWindow = "true";
+  if (newWindow === "true") {
+    let links = document.querySelectorAll(".post-body a");
+    links.forEach((item) => {
+      if (!item.classList.contains("btn")) {
+        item.setAttribute("target", "_blank");
+      }
+    });
+  }
+
+  let faSearch = document.querySelector("#fa_search");
+  faSearch &&
+    faSearch.addEventListener("click", function () {
+      document.querySelector("#search_mask").style = "";
+    });
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+  // 离开当前页title变化
+  var leaveTitle = "";
+  var normal_title = document.title;
+  if (leaveTitle) {
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState == "hidden") {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+</script>
+
+<link rel="stylesheet" href="/media/css/jquery.fancybox.css" />
+<script src="/media/js/jquery.fancybox.js"></script>
+
+<script>
+  let images = document.querySelectorAll(".section img");
+  images.forEach((image) => {
+    var parent = image.parentElement;
+    var next = image.nextElementSibling;
+    parent.removeChild(image);
+    var aelem = document.createElement("a");
+    aelem.href = image.src;
+    aelem.dataset["fancybox"] = "images";
+    aelem.dataset["rel"] = "fancybox-button";
+    aelem.classList.add("fancybox");
+    aelem.appendChild(image);
+    parent.insertBefore(aelem, next);
+  });
+</script>
+  </div>
+</body>
+
+  <div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/neon-lab-di-er-ci-amasecond-ama-of-neon-lab/"" data-c="
+          &lt;h1 id=&#34;neon-lab第二次amasecond-ama-of-neon-lab&#34;&gt;NEON Lab第二次AMA(Second AMA of Neon Lab)&lt;/h1&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*CoVneWEtRIuY93DogiH9ig.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Neon Lab:Virtual machine from &lt;strong&gt;Ethereum&lt;/strong&gt;&lt;br&gt;
+Scalability and liquidity from &lt;strong&gt;Solana&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://neon-labs.org/&#34;&gt;Neon EVM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;neon-代理-高维视野的解释-neon-proxy-high-level-explanation&#34;&gt;NEON 代理 — 高维视野的解释 NEON PROXY — HIGH-LEVEL EXPLANATION&lt;/h1&gt;
+&lt;p&gt;Probably most of you know what NeonEVM Platform is. But to be on the same page, I’d like to refresh some critical aspects of our platform.&lt;/p&gt;
+&lt;p&gt;可能大多数人都知道 Neon EVM 平台是什么。但为了让大家保持信息一致，我想更新一些我们平台关键方面（的信息）。&lt;/p&gt;
+&lt;p&gt;Generally speaking, NeonEVM consists of two significant parts NeonEVM program and NeonProxy.&lt;/p&gt;
+&lt;p&gt;NeonEVM Program is a smart contract deployed on Solana and NeonProxy is a separate decentralized module.&lt;/p&gt;
+&lt;p&gt;一般来说，NeonEVM 由 NeonEVM 程序和 Neon代理（Neon Proxy）两个重要部分组成。&lt;/p&gt;
+&lt;p&gt;NeonEVM Program 是部署在 Solana 上的智能合约，NeonProxy 是一个单独的去中心化模块。&lt;/p&gt;
+&lt;p&gt;As you know, NeonEVM allows running Ethereum dApps with no code modifications on Solana (with all benefits of it like high speed and low costs).&lt;/p&gt;
+&lt;p&gt;To make it possible, you, as dApps developers, need to deploy your smart contracts into the NeonEVM program and connect the wallet (like Metamask) to the NeonProxy. Instead of or in addition to the wallet, you can connect IDE (like Remix, Truffle, Hardhat) or Front-end UI.&lt;/p&gt;
+&lt;p&gt;如您所知，NeonEVM 允许（用户）无需修改代码就能在 Solana 上运行以太坊 dApp（具有高速和低成本等所有优点）。&lt;/p&gt;
+&lt;p&gt;为了实现这一点，作为 dApp 开发人员，您需要将智能合约部署到 NeonEVM 程序中，并将钱包（如 Metamask）连接到 NeonProxy。除了钱包之外，您还可以连接 IDE（如 Remix、Truffle、Hardhat）或前端 UI。&lt;/p&gt;
+&lt;p&gt;The execution of Ethereum-like transactions in NeonEVM takes place in several steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You send an Ethereum-like transaction to the NeonProxy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NeonProxy splits and packs single Eth-like Tx into several Solana Tx and sents them to the NeonEVM program on Solana&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NeonEVM program unpacks and executes Eth-like Tx&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在 NeonEVM 中执行类以太坊交易分几个步骤进行：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;你向 NeonProxy 发送类以太坊交易&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NeonProxy 将单个 类以太坊交易拆分打包成多个Solana交易发送到 Solana 上的 NeonEVM 程序&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NeonEVM 程序解包并执行类以太坊交易&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To sum up, we implemented NeonProxy to execute Eth-like Tx as it used to be in the Ethereum world without any changes in dApps code.&lt;/p&gt;
+&lt;p&gt;总而言之，我们实现了 NeonProxy 来执行类以太坊交易，而无需对 dApps 代码进行任何更改，就像它曾经在以太坊世界中一样。&lt;/p&gt;
+&lt;p&gt;And the last point I want to clarify is that several Proxy Operators run NeonProxy. So it runs in decentralized mode.&lt;/p&gt;
+&lt;p&gt;Currently, we are going to Launch Alpha and Beta with a few professional whitelisted operators.&lt;/p&gt;
+&lt;p&gt;Further, we have plans to start the operator’s onboarding process and remove the operator’s whitelist at all in the future.&lt;/p&gt;
+&lt;p&gt;So, our primary goal is to run as many Proxy operators as possible to become fully decentralized.&lt;/p&gt;
+&lt;p&gt;我最后要澄清的一点是，有几个节点运营商运行NeonProxy。所以它以去中心化模式运行。&lt;/p&gt;
+&lt;p&gt;目前，我们将与一些专业的白名单运营商一起发布 Alpha 和 Beta。&lt;/p&gt;
+&lt;p&gt;此外，我们计划在未来启动运营商的引入流程并完全移除运营商的白名单。&lt;/p&gt;
+&lt;p&gt;因此，我们的主要目标是运行尽可能多的代理运营商，以实现完全去中心化。&lt;/p&gt;
+&lt;h1 id=&#34;深度聊聊技术-technical-deep-dive&#34;&gt;深度聊聊技术 TECHNICAL DEEP DIVE&lt;/h1&gt;
+&lt;p&gt;During the New Year holidays, the Neon Labs team did a global test of the Neon EVM.&lt;/p&gt;
+&lt;p&gt;新年期间，团队在全球范围内测试了Neon EVM。&lt;/p&gt;
+&lt;p&gt;After testing we found a number of problems, I will voice the most critical of them&lt;/p&gt;
+&lt;p&gt;测试期间我们找到了一些问题，我讲几个最重要的：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;It is very common for users to fail to execute their Neon transactions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The transaction execution speed isn’t high, despite the good performance of the Solana Cluster&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Users often cannot get a receipt for a completed Neon transaction.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We have found that at some points the public Neon Proxy spends more than 200 SOL tokens in 4 hours.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When we began to study the situation more deeply, we found that Neon Proxy creates a lot of empty accounts. It’s not good, because storing extra records in Solana’s state is expensive. As result, the transaction cost is expensive for users and operators.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;用户无法执行他们的 Neon 交易，这很常见。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;交易执行速度不高，尽管 Solana 集群(Cluster) 的性能不错&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用户经常无法获得已完成 Neon 交易的回执。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我们发现，在某些时候，公共 Neon Proxy 在 4 小时内花费了 200 多个 SOL 代币。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;当我们开始更深入地研究情况时，我们发现Neon Proxy创建了大量的空账户。这不是好兆头，因为在 Solana 的状态中存储额外的记录很昂贵。结果，交易成本对用户和运营商来说都很昂贵。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The Neon Proxy prepares Neon transactions for on-chain execution on the Solana cluster.&lt;/p&gt;
+&lt;p&gt;We also found a number of problems inside the Neon EVM program.&lt;/p&gt;
+&lt;p&gt;But today’s session is dedicated to what we did inside Neon Proxy, so we will talk about the Neon EVM program in another AMA session.&lt;/p&gt;
+&lt;p&gt;We love our community and we want to provide them with a really good product.&lt;/p&gt;
+&lt;p&gt;Therefore, we decided to refine our product so that working with it would be a pleasure.&lt;/p&gt;
+&lt;p&gt;NeonProxy为在 Solana 集群上的Neon 交易准备链上执行。&lt;/p&gt;
+&lt;p&gt;我们还在 Neon EVM 程序中发现了一些问题。&lt;/p&gt;
+&lt;p&gt;但是今天的会议专门讨论我们在 Neon代理(Neon proxy) 中所做的事情，因此我们将在另一个 AMA 会议中讨论 Neon EVM 程序。&lt;/p&gt;
+&lt;p&gt;我们热爱我们的社区，我们希望为他们提供非常好的产品。&lt;/p&gt;
+&lt;p&gt;因此，我们决定改进我们的产品，以便使用它时会成为一种乐趣。&lt;/p&gt;
+&lt;p&gt;What have we done?&lt;/p&gt;
+&lt;p&gt;Let’s have a few words about how it all works.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我们做了什么？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;让我们谈谈这一切是如何运作的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Neon transactions are complex transactions, they consist of many Solana transactions.&lt;/p&gt;
+&lt;p&gt;Neon 交易是复杂的交易，它们由许多 Solana 交易组成。&lt;/p&gt;
+&lt;p&gt;The thing is that Solana limits the number of resources for the execution of a single Solana transaction. If an Ethereum-like transaction requires a lot of compute units, it cannot be performed within a single Solana transaction.&lt;/p&gt;
+&lt;p&gt;Therefore, the Neon EVM program saves the EVM state to the Solana storage. And when the Neon Web3 Proxy sends a command to the Solana Cluster, the execution of the stored Neon transaction is renewed.&lt;/p&gt;
+&lt;p&gt;So, the Neon EVM program restores the EVM state on demand and continues the Neon transaction execution from the stopping point. The process continues till the Neon transaction is completed.&lt;/p&gt;
+&lt;p&gt;问题是 Solana 限制了执行单个 Solana 交易的资源数量。如果类以太坊交易需要大量计算单元，则无法在单个 Solana 交易中执行。&lt;/p&gt;
+&lt;p&gt;因此，Neon EVM 程序将 EVM 状态保存到 Solana 存储中。并且当 Neon Web3代理（Neon Web3 Proxy)向 Solana 集群发送命令时，存储Neon 交易的执行（状态）将被更新。&lt;/p&gt;
+&lt;p&gt;因此，Neon EVM 程序按需恢复 EVM 状态并从停止点继续执行 Neon 事务。该过程一直持续到 Neon 交易完成。&lt;/p&gt;
+&lt;p&gt;The algorithm for executing Solana transactions must be such as to guarantee the execution of a whole Neon transaction.&lt;/p&gt;
+&lt;p&gt;Solana transactions are related to each other and all of them need to be executed.&lt;/p&gt;
+&lt;p&gt;执行 Solana 交易的算法必须保证整个 Neon 交易的执行。&lt;/p&gt;
+&lt;p&gt;Solana 交易相互关联，都需要被执行。&lt;/p&gt;
+&lt;p&gt;In the first versions of the algorithm, Neon proxy executed the next Solana transaction when it received confirmation of the first transaction.&lt;/p&gt;
+&lt;p&gt;This ensured that the Neon transaction would execute in its entirety, but this execution is very slow when your Neon transaction has many iterations.&lt;/p&gt;
+&lt;p&gt;在算法的第一个版本中，Neon代理(Neon proxy)在收到第一笔交易的确认后执行下一笔 Solana 交易。&lt;/p&gt;
+&lt;p&gt;这确保了 Neon 事务将完整执行，但是当您的 Neon 交易有很多迭代时，执行就非常慢。&lt;/p&gt;
+&lt;p&gt;The current version of the Solana transaction sending algorithm works quite differently.&lt;/p&gt;
+&lt;p&gt;当前版本的 Solana 交易发送算法的工作方式完全不同。&lt;/p&gt;
+&lt;p&gt;The algorithm consists of two stages.&lt;/p&gt;
+&lt;p&gt;At the first stage, the algorithm chooses the strategy for sending the transaction.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A Neon transaction can be completed in a single Solana transaction if it is small in size and requires few EVM steps to complete.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A Neon transaction can be executed in several Solana transactions if it is small in size, but it requires many EVM steps to complete. In this case, Neon Proxy creates an additional Solana account. We call it a storage account. And Neon EVM stores the EVM state in it between iterations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The transaction can be large in size. In this case, Neon Proxy uploads the transaction to a separate Solana account, which we call Holder account.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;该算法包括两个阶段。&lt;/p&gt;
+&lt;p&gt;在第一阶段，算法选择发送交易的策略。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;如果 Neon 交易规模较小且需要很少的 EVM 步骤即可完成，则可以在单个 Solana 交易中完成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个 Neon 交易如果规模较小，可以在多个 Solana 交易中执行，但需要很多 EVM 步骤才能完成。在这种情况下，Neon代理(Neon proxy)会创建一个额外的 Solana 帐户。我们称之为存储帐户。 Neon EVM 在迭代期间将 EVM 状态存储在其中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;交易规模可能很大。在这种情况下，Neon Proxy 将交易上传到一个单独的 Solana 账户，我们称之为持有者账户(Holder account)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the second stage, Neon Proxy creates a batch of Solana transactions and sends them all at once to the Solana node.&lt;/p&gt;
+&lt;p&gt;Next, Neon Proxy checks the execution status of each Solana transaction, and if any of them fail, Neon Proxy generates a new batch of Solana transactions and sends them back to the Solana node.&lt;/p&gt;
+&lt;p&gt;And so on until the Neon Proxy receives the Neon transaction recipe.&lt;/p&gt;
+&lt;p&gt;在第二阶段，Neon代理(Neon proxy)创建一批 Solana 交易，并一次性将它们全部发送到 Solana 节点。&lt;/p&gt;
+&lt;p&gt;接下来，Neon代理(Neon proxy)检查每个 Solana交易的执行状态，如果其中任何一个失败，Neon代理(Neon proxy)会生成新的一批 Solana 交易并将它们发送回 Solana 节点。&lt;/p&gt;
+&lt;p&gt;依此类推，直到 Neon 代理收到 Neon交易的回执。&lt;/p&gt;
+&lt;p&gt;After the implementation of the specified algorithm, it was possible to achieve a high speed of Neon transactions and guarantee their execution.&lt;/p&gt;
+&lt;p&gt;执行指定算法后，可以让Neon高速交易并保证执行。&lt;/p&gt;
+&lt;p&gt;We check the quality of the Neon EVM platform using tests from the Open Zeppelin package.&lt;/p&gt;
+&lt;p&gt;The Neon Proxy version before the new year showed us from 900 to 1400 successful tests on Solana Devnet.&lt;/p&gt;
+&lt;p&gt;The new version of Neon Proxy consistently shows more than 1730 successful tests on Solana Devnet.&lt;/p&gt;
+&lt;p&gt;我们使用 Open Zeppelin 包中的测试来检查 Neon EVM 平台的质量。&lt;/p&gt;
+&lt;p&gt;新年前的 Neon Proxy 版本向我们展示了在 Solana Devnet 上进行了 900 到 1400 次成功测试。&lt;/p&gt;
+&lt;p&gt;新版本的 Neon Proxy 在 Solana Devnet 上持续显示超过 1730 次成功测试。&lt;/p&gt;
+&lt;p&gt;The second part of Neon Proxy deals with indexing completed transactions.&lt;/p&gt;
+&lt;p&gt;As a result of revisions, we have written a new service, which we call Indexer.&lt;/p&gt;
+&lt;p&gt;This service collects information about all Neon transactions performed by all Neon operators.&lt;/p&gt;
+&lt;p&gt;And clients can get information about Neon transactions by contacting any Neon Proxy using the standard Ethereum API.&lt;/p&gt;
+&lt;p&gt;At the moment we are expanding the functionality of Neon Indexer and collecting information for our operators.&lt;/p&gt;
+&lt;p&gt;We integrate the Prometeus service, which will allow Neon operators to collect statistics on the work of their proxies and evaluate the quality of their service.&lt;/p&gt;
+&lt;p&gt;Neon Proxy 的第二部分处理索引已完成的交易。&lt;/p&gt;
+&lt;p&gt;我们编写了一个新的服务作为修订，并称之为 Indexer。&lt;/p&gt;
+&lt;p&gt;该服务收集所有 Neon 运营商执行的全部Neon 交易的信息。&lt;/p&gt;
+&lt;p&gt;客户可以通过使用标准以太坊 API 联系任何 Neon 代理来获取有关 Neon 交易的信息。&lt;/p&gt;
+&lt;p&gt;目前，我们正在扩展 Neon Indexer 的功能并为我们的运营方收集信息。&lt;/p&gt;
+&lt;p&gt;我们集成了 Prometeus 服务，这将允许 Neon 运营方收集有关其代理工作的统计数据并评估其服务质量。&lt;/p&gt;
+&lt;h2 id=&#34;接下来呢whats-next&#34;&gt;接下来呢？What’s next?&lt;/h2&gt;
+&lt;p&gt;We have prepared version 0.7.0.&lt;/p&gt;
+&lt;p&gt;Tomorrow we will update the public version of Neon Proxy on Devnet and the community will be able to test the final version that will work on Mainnet.&lt;/p&gt;
+&lt;p&gt;We ask the community to come and test our product.&lt;/p&gt;
+&lt;p&gt;我们准备了 0.7.0 版本。&lt;/p&gt;
+&lt;p&gt;明天我们将在 Devnet 上更新Neon代理(Neon proxy) 的公开版本，社区将能够测试在 Mainnet 上运行的最终版本。&lt;/p&gt;
+&lt;p&gt;我们请求社区来测试我们的产品。&lt;/p&gt;
+">NEON Lab第二次AMA(Second AMA of Neon Lab)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-wen-dang-bai-pi-shu/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://chainguys.github.io/post-images/1651561927361.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;😀Euler is a great pionner and perhaps even infraustructure of DeFi 2.0.I am deeply humbled and honored to to translate it&#39;s whitepaper and Docs into Chinese.&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;😀Euler是DeFi 2.0的伟大先驱，甚至会是基础设施。能将Euler的文档和白皮书翻译成中文，我深感荣幸。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As Euler&#39;s docs are published on gitbook, the translation also published on gitbook.&lt;br&gt;
+鉴于Euler主文档发布在gitbook，为了和主文档一致，翻译件也发表在gitbook上。&lt;/p&gt;
+&lt;p&gt;Please see the link below:&lt;br&gt;
+请点击以下链接查看：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://app.gitbook.com/s/cU6Wvz87dQHSRjl1cqWP/&#34;&gt;https://app.gitbook.com/s/cU6Wvz87dQHSRjl1cqWP/&lt;/a&gt;&lt;/p&gt;
+">Euler文档+白皮书</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;GM! 🤝&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;welcomebienvenue欢迎&#34;&gt;Welcome!Bienvenue!欢迎！&lt;/h2&gt;
+&lt;p&gt;This Blog is a &lt;strong&gt;&lt;em&gt;personal&lt;/em&gt;&lt;/strong&gt; blog for &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;.&lt;br&gt;
+Ce Blog est un blog  &lt;strong&gt;&lt;em&gt;personal&lt;/em&gt;&lt;/strong&gt; pour &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;.&lt;br&gt;
+本博客是&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;的 &lt;strong&gt;&lt;em&gt;私人&lt;/em&gt;&lt;/strong&gt; 博客。&lt;/p&gt;
+&lt;p&gt;This blog will store all works of  &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt; .&lt;br&gt;
+Ce blog stockera toutes les œuvres de &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;.&lt;br&gt;
+本博客将会存储 &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt; 所有作品。&lt;/p&gt;
+&lt;p&gt;Thanks!Merci!谢谢!&lt;/p&gt;
+">关于</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/neondocwp/"" data-c="
+          &lt;p&gt;&lt;img src=&#34;https://chainguys.github.io/post-images/1651046857339.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+👏  GM!&lt;/p&gt;
+&lt;h1 id=&#34;版权声明copyright-notice&#34;&gt;版权声明(Copyright Notice）&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;本文翻译自&lt;a href=&#34;https://neon-labs.org/&#34;&gt;Neon Labs&lt;/a&gt;为该项目撰写的&lt;a href=&#34;https://docs.neon-labs.org/&#34;&gt;技术文档&lt;/a&gt;，并已得到翻译授权。译者为&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;。转载请注明作者和译者。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Coptyright©2021 by &lt;a href=&#34;https://neon-labs.org/&#34;&gt;Neon Labs&lt;/a&gt;, translated by &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最后，请理解此文件并不是官方发布的中文技术文档，而是一份由Neon信仰者&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;个人单独维护的文档，若翻译与英文原文有出入，一律以英文原文和官方解释为准。欢迎大家加入Neon官方&lt;a href=&#34;https://discord.gg/gapRjRtFN7&#34;&gt;Discord群组&lt;/a&gt; 。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Finally,please understand this is not an official Chinese doc released by Neon, but one maintained solely by Neon Maximalist &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;. In the event of conflicts or ambiguity between the English language version and translated versions, the English language versions and official interpretation shall prevail.Feel free to join Neon Official &lt;a href=&#34;https://discord.gg/gapRjRtFN7&#34;&gt;Discord server&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;请访问以下链接查看：&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;Please visit folloing links：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://chainguys.github.io/neonwp/&#34;&gt;Neon EVM技术文档 (Neon EVM Docs)&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://chainguys.github.io/neonwp/11wp/wp&#34;&gt;Neon EVM白皮书  (Neon EVM Whitepaper)&lt;/a&gt;&lt;/p&gt;
+">Neon EVM技术文档和白皮书(Neon EVM Docs and Whitepaper)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/akord-x-redstone-ti-sheng-arweave-de-xing-neng-akord-x-redstone-improving-performance-on-arweave/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://akord.com/media/Akord-x-Redstone-1.jpeg&#34; alt=&#34;Akord x Redstone 1&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;This blog post is based on a Twitter Spaces AMA we held with &lt;a href=&#34;https://twitter.com/redstone_defi&#34;&gt;RedStone&lt;/a&gt;. You can &lt;a href=&#34;https://twitter.com/i/spaces/1OdJrByrbXpJX&#34;&gt;listen to the event here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;这篇博文源于我们与 &lt;a href=&#34;https://twitter.com/redstone_defi&#34;&gt;RedStone&lt;/a&gt; 举行的 Twitter Spaces AMA。您可以&lt;a href=&#34;https://twitter.com/i/spaces/1OdJrByrbXpJX&#34;&gt;在此收听活动&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;背景-context&#34;&gt;背景 (Context)&lt;/h2&gt;
+&lt;p&gt;The possibility for web3, particularly in the context of Arweave, is to take our data, application and business model completely onchain. While that’s very exciting, it presents a number of significant challenges across the developer and user experience.&lt;/p&gt;
+&lt;p&gt;web3 的可能性，是让我们的数据、应用和业务(模型)完全上链，尤其是在 Arweave 的“加持”下。虽然这非常令人兴奋，但它对开发人员和用户体验提出了许多重大挑战。&lt;/p&gt;
+&lt;p&gt;At Akord, we aim to deliver a web2 user experience in the web3 paradigm. The work the RedStone team has been doing, creating the tools to improve performance, has been a great help for us in achieving this at the technical level.&lt;/p&gt;
+&lt;p&gt;在 Akord，我们的目标是在 web3 范式中提供 web2 用户体验。 RedStone 团队一直在做的工作-即创建工具来提高性能-对我们在技术层面实现这一目标有很大帮助。&lt;/p&gt;
+&lt;h2 id=&#34;redstone-在-smart-weave-合约方面的工作redstones-work-on-smart-weave-contracts&#34;&gt;RedStone 在 Smart Weave 合约方面的工作(RedStone’s work on Smart Weave contracts)&lt;/h2&gt;
+&lt;p&gt;Early on, RedStone identified certain weaknesses in SmartWeave contracts relating to performance and reliability. Specifically, every time you want the latest state of the contract you need to evaluate all the interactions on your side, which doesn’t scale when a contract has tens or hundreds of thousands of interactions and may even communicate with other contracts.&lt;/p&gt;
+&lt;p&gt;之前，RedStone 发现了 SmartWeave 合约中，性能可靠性相关的某些弱点。具体来说，每次你想要合约的最新状态时，你都需要评估自己这边的所有交互，当一个合约有数万或数十万次交互或甚至可能与其他合约进行通信时，它无就法扩展。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts&#34;&gt;&lt;strong&gt;RedStone&lt;/strong&gt;&lt;/a&gt; &lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts&#34;&gt;&lt;strong&gt;Contracts&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;introduced a number of tools to address performance and developer experience&lt;/strong&gt;: caching mechanisms, testing tools with a test net (including regression tests), a &lt;a href=&#34;https://gateway.redstone.finance/&#34;&gt;dedicated gateway&lt;/a&gt; for indexing and serving smart contracts, a smart contract explorer called &lt;a href=&#34;https://sonar.redstone.tools/#/app/contracts&#34;&gt;SonAR&lt;/a&gt;, and a sequencer built in collaboration with Bundlr.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts&#34;&gt;&lt;strong&gt;RedStone&lt;/strong&gt;&lt;/a&gt; &lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts&#34;&gt;&lt;strong&gt;Contracts&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;引入了许多工具来解决性能和开发人员体验&lt;/strong&gt;的问题：缓存机制、带有测试网的测试工具(包括回归测试)、用于索引和服务智能合约的 &lt;a href=&#34;https://gateway.redstone.finance/&#34;&gt;专用网关&lt;/a&gt;、名为 &lt;a href=&#34;https://sonar.redstone.tools/#/app/contracts&#34;&gt;SonAR&lt;/a&gt; 的智能合约浏览器，以及与 Bundlr 合作构建的排序器(序列器)。&lt;/p&gt;
+&lt;p&gt;RedStone have put in a lot of effort to optimise the basic Execution Engine (the core part of the SDK), increasing the efficiency of contract evaluation thanks to extensive caching and memoization. As a result, a SmartWeave contract with over 300,000 interactions &lt;a href=&#34;https://github.com/redstone-finance/redstone-sw-gateway#benchmarks&#34;&gt;can be loaded in 2 minutes&lt;/a&gt; instead of several hours. And this is just the beginning, with further improvements planned for RedStone Contracts SDK and the tools around it.&lt;/p&gt;
+&lt;p&gt;RedStone 投入了大量精力来优化基本执行引擎(SDK 核心部分)，通过广泛的缓存和记忆化提高了合约评估的效率。因此，具有超过 300,000 次交互的 SmartWeave 合约&lt;a href=&#34;https://github.com/redstone-finance/redstone-sw-gateway#benchmarks&#34;&gt;可以在 2 分钟内加载&lt;/a&gt; 而不是几个小时。而这仅仅是开始，之后还会随着RedStone Contracts SDK 及其周围的工具的(研发)计划而进一步改进。&lt;/p&gt;
+&lt;p&gt;RedStone itself utilises this smart contract platform for ensuring data integrity for its &lt;a href=&#34;https://redstone.finance/&#34;&gt;Oracles&lt;/a&gt;, which can deliver &lt;a href=&#34;https://app.redstone.finance/&#34;&gt;various types of data&lt;/a&gt; and export to any EVM compatible chain.&lt;/p&gt;
+&lt;p&gt;RedStone 本身利用这个智能合约平台来确保其 &lt;a href=&#34;https://redstone.finance/&#34;&gt;预言机 Oracles&lt;/a&gt; 的数据完整性，它可以提供 &lt;a href=&#34;https://app.redstone.finance/&#34;&gt;各种类型的数据&lt;/a&gt; 并导出到任何 EVM 兼容链。&lt;/p&gt;
+&lt;h2 id=&#34;akod如何在redstone帮助下更快速运行how-akord-is-moving-faster-with-redstone&#34;&gt;Akod如何在RedStone帮助下更快速运行？(How Akord is moving faster with RedStone)&lt;/h2&gt;
+&lt;p&gt;Every action in Akord, for example, the creation of a vault, uploading of files, etc, is a user transaction that will be processed and validated through smart weave contracts.&lt;/p&gt;
+&lt;p&gt;Akord 中的每个操作，例如创建保管库、上传文件等，都是用户交易，会通过智能合约进行处理和验证。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Each vault in Akord will have its own contract instance living on the Arweave blockchain. And so each action within a vault will be a specific interaction with that contract.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;** Akord 中的每个保管库都将在 Arweave 区块链上拥有自己的合约实例。因此，保管库中的每个操作都将是与该合约的特定交互。**&lt;/p&gt;
+&lt;p&gt;This is why RedStone’s suite of tools has proved so valuable for Akord. The quicker we can process interactions with the contract at the protocol level, the better UX we can deliver through the Akord app, and any other apps that build on the Akord Vault Protocol in the future.&lt;/p&gt;
+&lt;p&gt;这就是为什么 RedStone 的工具套件对 Akord 如此有价值的原因。我们在协议级别处理与合约的交互越快，我们可以提供的用户体验就更好(通过 Akord 应用以及未来基于 Akord Vault 协议构建的任何其他应用程序)。&lt;/p&gt;
+&lt;p&gt;Specifically, we’re using RedStone’s dedicated gateway to improve performance and catch any corrupted transactions.&lt;/p&gt;
+&lt;p&gt;具体来说，我们正在使用 RedStone 的专用网关来提高性能并捕获任何损坏的交易。&lt;/p&gt;
+&lt;p&gt;Another example, with context within the Akord product, is when we revoke a member from the vault. When this action is taken we need to redistribute the new encryption keys to the vault for the members who still have access while revoking the keys of the user who was removed. This requires various interactions with multiple contracts at the same time. &lt;strong&gt;With RedStone’s technology we can make one atomic transaction that covers all the necessary interactions at once.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;另一个使用 Akord 产品环境的示例是，当我们从保管库中撤销成员时。执行此操作时，我们需要将新的加密密钥重新分发到保管库中仍具有访问权限的成员，同时还要撤销被移除人员的秘钥。这需要同时与多个合约进行各种交互。 &lt;strong&gt;借助 RedStone 的技术，我们可以进行一次涵盖所有必要交互的原子交易。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We’ve also found the test net environment that RedStone have built for Arweave to be very valuable in our developer experience. And the sequencer has also proved very useful, for instance, in returning the state of an Akord vault in a very performant way.&lt;/p&gt;
+&lt;p&gt;我们还发现 RedStone 为 Arweave 构建的测试网络环境对我们的开发人员体验非常有价值。并且排序器(序列器)也被证明非常有用，例如，以非常高效的方式返回 Akord保管库的状态。&lt;/p&gt;
+&lt;h2 id=&#34;arweave的挑战-challenges-on-arweave&#34;&gt;Arweave的挑战 (Challenges on Arweave)&lt;/h2&gt;
+&lt;p&gt;Recently, we’ve had issues trying to get transactions to confirm on the network, which is in part due to the war in Ukraine. An unprecedented amount of data relating to the war is being uploaded, largely by bots. This historical preservation is an important process, and one which Arweave was designed for, but the consequence has been to stress the network.&lt;/p&gt;
+&lt;p&gt;最近，我们在尝试在网络上确认交易时遇到了问题，部分原因是乌克兰的战争。与战争有关的大量数据正主要由机器人上传。这种历史保存是一个重要的过程，也是 Arweave 的设计初衷，但其结果是给网络带来了压力。&lt;/p&gt;
+&lt;p&gt;We’ve designed Akord to be able to queue transactions until there’s availability, but it’s still not optimal. Especially as Akord sends multiple transactions linked in a sequence to one event.&lt;/p&gt;
+&lt;p&gt;我们将 Akord 设计为能够对交易进行排队，直到处理能力有富余，但这仍然不是最佳的。尤其是当 Akord 发送多个按顺序链接到一个事件的交易时。&lt;/p&gt;
+&lt;p&gt;For example, when we upload a file that’s one transaction, but there’s also another transaction for the metadata. Those transactions should go to the weave together, but if one is dropped that causes us problems on the backend. This is where the sequencer from RedStone is so powerful, as it ensures that we mine those transactions together.&lt;/p&gt;
+&lt;p&gt;例如，当我们上传一个文件时，这是一个交易，但元数据还有另一个交易。这些交易应该一起编排，是如果一个被丢弃，就会导致在后端出现问题。这就是 RedStone 的排序器(序列器)如此强大的地方，因为它可以确保我们一起挖掘这些交易。&lt;/p&gt;
+&lt;p&gt;To address some of these issues and help newcomers start with SmartWeave, &lt;strong&gt;the&lt;/strong&gt; &lt;strong&gt;RedStone&lt;/strong&gt; &lt;strong&gt;team&lt;/strong&gt; &lt;strong&gt;recently launched their&lt;/strong&gt; &lt;a href=&#34;https://redstone.academy/&#34;&gt;&lt;strong&gt;RedStone Academy&lt;/strong&gt;&lt;/a&gt;  to provide one shared point of knowledge for developers looking to create profit-sharing tokens (PSTs) on Arweave, as well as provide resources for writing SmartWeave contracts and methods for testing.&lt;/p&gt;
+&lt;p&gt;为了解决其中的一些问题，并帮助新手开始使用 SmartWeave，&lt;strong&gt;RedStone团队&lt;/strong&gt;  **最近推出了&lt;a href=&#34;https://redstone.academy/&#34;&gt;&lt;strong&gt;RedStone 学院&lt;/strong&gt;&lt;/a&gt;提供为希望在 Arweave 上创建利润分享代币 (PST) 的开发人员共享知识点，并为编写 SmartWeave 合约和测试方法提供资源。&lt;/p&gt;
+&lt;p&gt;The academy already has a detailed step-by-step tutorial for writing a PST, with more resources planned for the future. Among those plans include tutorials and templates on WASM contracts, as well as real world examples of PST contracts making advanced interactions.&lt;/p&gt;
+&lt;p&gt;该学院已经有一个详细的分步教程来编写 PST，并为未来计划了更多资源。这些计划包括关于 WASM 合约的教程和模板，以及对PST 合约进行高级交互的真实示例。&lt;/p&gt;
+&lt;p&gt;The RedStone implementation of &lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts-wasm-templates&#34;&gt;WASM contracts&lt;/a&gt; is another resource we intend to be using at Akord. Its fully sand-boxed environment and gas metering makes it much safer than just working in Javascript or Typescript.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts-wasm-templates&#34;&gt;WASM 合约&lt;/a&gt; 在RedStone的实施，是我们打算在 Akord 使用的另一个资源。它的完全沙盒环境和gas计量，使其比仅使用 Javascript 或 Typescript 工作更安全。&lt;/p&gt;
+&lt;h2 id=&#34;战胜成长的阵痛-overcoming-growing-pains&#34;&gt;战胜成长的阵痛 (Overcoming growing pains)&lt;/h2&gt;
+&lt;p&gt;We believe to a certain extent the issues facing the Arweave ecosystem are the result of growing pains. Arweave has becomes the &lt;em&gt;de facto&lt;/em&gt; storage layer for NFTs and now stores the blockchain history of many L1s like Solana. Events like the War in Ukraine, which present the perfect use case for Arweave at scale, are also turbo-charging usage.&lt;/p&gt;
+&lt;p&gt;我们认为，Arweave 生态系统面临的问题在一定程度上是成长阵痛的结果。 Arweave 已成为 NFT  &lt;em&gt;事实上的&lt;/em&gt; 存储层，现在存储许多layer1 的区块链历史，比如 Solana。像乌克兰战争这样的事件，为 Arweave 大规模展示了完美的用例，也是“涡轮增压”的用法。&lt;/p&gt;
+&lt;p&gt;This growth and the relatively early stage of the network has created some inevitable issues, something we see across almost all blockchain projects at some point in their early history.&lt;/p&gt;
+&lt;p&gt;这种增长与相对早期的网络的已经产生了一些不可避免的问题，我们在几乎所有区块链项目早期的某个时刻都看到了这一点。&lt;/p&gt;
+&lt;p&gt;That doesn’t mean we can just relax and assume everything will magically resolve itself. The Arweave team is an undeniable powerhouse, but every other team in the space should be thinking about how they can contribute. It’s only by partnering across projects in the ecosystem, pooling knowledge, and building shared tools and resources, that we can we come through the other side with truly solid foundations needed to scale to mass adoption.&lt;/p&gt;
+&lt;p&gt;这并不意味着我们可以放松并假设一切都会神奇地自行解决。 Arweave 团队是一个不可否认的巨头，但该领域的所有其他团队都应该考虑如何做出贡献。只有通过在生态系统中的项目之间进行合作、汇集知识、构建共享工具和资源，我们才能通过扩展，以大规模采用所需的真正坚实的基础(建设)来渡过难关。&lt;/p&gt;
+&lt;p&gt;RedStone’s work has been invaluable to Akord and the Arweave space at large, and we look forward to open sourcing the Akord Vault Protocol and evolving our own developer community to help others looking to build on Arweave.&lt;/p&gt;
+&lt;p&gt;RedStone 的工作对 Akord 和整个 Arweave 空间来说非常宝贵，我们期待开源 Akord Vault 协议并发展我们自己的开发者社区，以帮助其他希望在 Arweave 上进行构建的人。&lt;/p&gt;
+&lt;p&gt;–&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If this inspired you to help building on Arweave or you have any questions, feel free to reach out to &lt;a href=&#34;mailto:hello@akord.com&#34;&gt;contact us&lt;/a&gt; or the RedStone team through the links below:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;如果这启发了您帮助构建 Arweave 或您有任何疑问，请随时通过以下链接与 &lt;a href=&#34;mailto:hello@akord.com&#34;&gt;联系我们&lt;/a&gt; 或 RedStone 团队联系：&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;联系 RedStone Contact RedStone&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;https://redstone.finance/&#34;&gt;Oracle Website&lt;/a&gt; // &lt;a href=&#34;https://twitter.com/redstone_defi&#34;&gt;Twitter&lt;/a&gt; // &lt;a href=&#34;https://discord.com/invite/PVxBZKFr46&#34;&gt;Discord&lt;/a&gt;&lt;/p&gt;
+">Akord x RedStone—提升Arweave的性能! Akord x RedStone – Improving Performance on Arweave</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/axelarsea-ru-men-jian-jie-introducing-axelarsea/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*zeaspL9SwEaF6QJxN-CNlA.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;axelarsea入门简介-introducing-axelarsea&#34;&gt;AxelarSea入门简介 (Introducing AxelarSea!)&lt;/h1&gt;
+&lt;p&gt;Interoperability has been a fundamental issue in the blockchain ecosystem since its inception. This includes the NFT market, where buyers and sellers are limited by the difficulty of moving assets across chains. AxelarSea, powered by Axelar Network, aims to facilitate both buyers and sellers in achieving the most efficient NFT trades where they are not constrained by the chains.&lt;/p&gt;
+&lt;p&gt;自区块链生态系统诞生以来，交互性一直是一个基本问题。NFT 市场，买家和卖家都受到跨链转移资产难度的限制。 AxelarSea 由 Axelar Network 提供支持，旨在促进买卖双方在不受特定链约束的情况下实现最有效的 NFT 交易。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;AxelarSea is a one-stop interoperable NFT marketplace across chains where buyers can pay for an NFT on any supported chain using a token from a completely different chain, and sellers can list an NFT for sale on any supported chain while receiving payments on another chain.&lt;/p&gt;
+&lt;p&gt;AxelarSea 是跨链一站式可交互NFT 市场，买家可以使用来自完全不同链的代币在任何受支持的链上支付购买NFT的资金，卖家可以在任何受支持的链上列出要出售的 NFT，同时在另一条链上接受付款。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;AxelarSea’s goal is to provide solutions that&lt;br&gt;
+AxelarSea 的目标是提供解如下决方案:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;For sellers:&lt;/strong&gt; A seller can sell an NFT on one chain (chain &lt;em&gt;A&lt;/em&gt;) while putting up an asking price and receiving payment on another chain (chain &lt;em&gt;B&lt;/em&gt;).&lt;br&gt;
+&lt;strong&gt;对于卖家&lt;/strong&gt;：卖家可以在一条链(链 A）上出售 NFT，同时在另一条链(链 B）上设定价格并接收付款。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;For buyers:&lt;/strong&gt; A buyer can place an order for an NFT hosted on one chain (chain &lt;em&gt;A&lt;/em&gt;) and pay with tokens from another chain (chain &lt;em&gt;C&lt;/em&gt;).&lt;br&gt;
+对于买家：买家可以下单购买“存放”在一条链(链 A）上的 NFT，并使用来自另一条链(链 C）的代币进行支付。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Even though the buyer’s payment is made on chain &lt;em&gt;C&lt;/em&gt;, it will be automatically transferred to chain &lt;em&gt;B&lt;/em&gt; via the Axelar Network, as requested by the seller. The buyer is not required to own any assets/wallets on chain &lt;em&gt;B&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;即使买方的付款是在链 C 上进行的，它也可以根据卖方的要求通过 Axelar 网络自动转移到链 B。买方不需要拥有链 B 上的任何资产/钱包。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*WfxgAPwUs-Zirv04iay8oQ.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;P1:Diagram of the flow of NFT and assets between a seller and a buyer through AxelarSea without any constraint of the different chains, via Axelar Network.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;图1:通过 Axelar 网络，卖家和买家之间的 NFT 和资产不受不同链的任何约束。&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;当前nft市场的痛点-painpoints-in-the-current-nft-marketplace&#34;&gt;当前NFT市场的痛点 (Painpoints in the current NFT marketplace)&lt;/h1&gt;
+&lt;p&gt;Currently, the payment tokens and the NFT must be on the same chain. If an NFT is hosted on one chain, for example, the buyer must pay with a token and have a wallet on that chain. Even though some marketplaces (such as EVM) operate on multiple chains within the same ecosystem, there is no single universal marketplace that connects and facilitates transactions across multiple ecosystems. As a result, there are a plethora of marketplaces that complicate the experience of both buyers and sellers.&lt;/p&gt;
+&lt;p&gt;当前，支付代币和 NFT 必须在同一条链上。例如，如果 NFT 托管在一条链上，则买方必须使用代币付款并在该链上拥有钱包。尽管某些市场(例如 EVM）在同一生态系统内的多个链上运行，但没有一个通用市场可以连接和促进多个生态系统的交易。因此，过多的市场使买卖双方的体验变得复杂。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*dvhs9ay6UZN_6buv0BR3ig.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;axelarsea如何帮助买家-how-does-axelarsea-help-buyers&#34;&gt;AxelarSea如何帮助买家 (How does AxelarSea help buyers?)&lt;/h1&gt;
+&lt;p&gt;For most buyers, they don’t possess asset on all available chains in the blockchain ecosystem; hence, if they want to buy an NFT on a chain that they don’t have any token, they have to move their assets to that chain, incurring high fees and security risks/delay through bridges.&lt;/p&gt;
+&lt;p&gt;对于大多数买家来说，他们并不拥有区块链生态系统中所有可用链上的资产；因此，如果他们想在没有任何代币的链上购买 NFT，他们必须将资产转移到该链上，从而在使用跨链桥时产生高额费用和安全风险/延迟。&lt;/p&gt;
+&lt;p&gt;Let’s consider the following example situation:&lt;br&gt;
+让我们来思考一下下面的情形:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An NFT is hosted on Ethereum chain with an asking price quoted in $ETH.&lt;br&gt;
+NFT 托管在以太坊上，用ETH计价。&lt;/li&gt;
+&lt;li&gt;A potential buyer has assets as &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;L&lt;/mi&gt;&lt;mi&gt;U&lt;/mi&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;.&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;一&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;个&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;潜&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;在&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;的&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;买&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;家&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;只&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;有&lt;/mi&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;上&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;的&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;LUNA on Terra chain.    
+ 一个潜在的买家只有Terra上的&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;L&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.10903em;&#34;&gt;U&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.10903em;&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;o&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.13889em;&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.02778em;&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.02778em;&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;一&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;个&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;潜&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;在&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;的&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;买&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;家&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;只&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;有&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.13889em;&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.02778em;&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.02778em;&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;上&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;的&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;LUNA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using a tradiational NFT marketplace, the buyer has to go through the following steps:&lt;br&gt;
+如果使用传统的NFT市场，买家就需要进行下面几步:&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;Looking for a bridge that support asset transfer from Terra chain to Ethereum chain.&lt;/li&gt;
+&lt;li&gt;Looking for an asset supported by the bridge. For example, some bridges might not support $LUNA, and only support $UST as a transferring asset.&lt;/li&gt;
+&lt;li&gt;Searching for DEX on Terra to exchange $LUNA to an asset supported by the bridge, which is $UST in this example.&lt;/li&gt;
+&lt;li&gt;Creating a wallet that supports Ethereum chain.&lt;/li&gt;
+&lt;li&gt;Funding the Ethereum chain wallet with $ETH for transaction fees.&lt;/li&gt;
+&lt;li&gt;Searching for DEX on Ethereum chain to exchange the asset supported by the bridge ($UST) to $ETH.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;寻找支持从 Terra 到 Ethereum 转移资产的跨链桥。&lt;/li&gt;
+&lt;li&gt;寻找跨链桥支撑的资产。例如，有些跨链桥可能不支持 $LUNA，只支持 $UST 作为资产转移。&lt;/li&gt;
+&lt;li&gt;在 Terra 上搜索 DEX，将 $LUNA 兑换成桥支持的资产，本例中为 $UST。&lt;/li&gt;
+&lt;li&gt;创建一个支持以太坊的钱包。&lt;/li&gt;
+&lt;li&gt;用 $ETH 为以太坊钱包提供交易费用。&lt;/li&gt;
+&lt;li&gt;在以太坊上搜索DEX，将跨链桥支持的资产($UST)兑换成ETH。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*aRjqLmXxmMkTRZ7Xjx0rqQ.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;P3:Steps taken by a buyer to move an asset on Terra chain to buy an NFT on Ethereum chain.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;图3：买家将 Terra 链上的资产转移到以太坊链上购买 NFT 的步骤。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Steps needed for a buyer to buy an NFT on a chain that he/she doesn’t have an asset on, as described above, are riddled with problems, that can be categorized as following:&lt;/p&gt;
+&lt;p&gt;如上所述，买家在他/她没有资产的链上购买 NFT 所需的步骤充满了问题，可分为以下几类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;High fees&lt;/em&gt;: The buyer has to spent fees on many steps including making exchange on DEX on both chains, the bridge, and funding wallet on the new chain.&lt;br&gt;
+&lt;em&gt;高费用&lt;/em&gt;：买方必须在许多步骤上付费，包括在两条链上的 DEX 上进行交换、跨链桥和新链上的资金钱包。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Inconvenience&lt;/em&gt;: The buyer has to research for the bridge that support the transfer, the wallet for the new chain, how to fund the new wallet, and the DEX on the new and unfamiliar chain.&lt;br&gt;
+&lt;em&gt;不方便&lt;/em&gt;：买家要研究支持转账的桥，新链的钱包，新钱包如何注资，新链和陌生链上的DEX。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Security&lt;/em&gt;: The buyer experiences security risk (for example, phishing attack) when searching for bridge and DEX on an unfamiliar chain.&lt;br&gt;
+&lt;em&gt;安全&lt;/em&gt;：买家在陌生链上搜索bridge和DEX时会遇到安全风险(例如钓鱼攻击）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Time consuming&lt;/em&gt;: The buyer wastes time to execute several steps and doing research of the new chain.&lt;br&gt;
+&lt;em&gt;耗时&lt;/em&gt;：买方浪费时间执行几个步骤并研究新链。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;基于axelarsea的解决方案-solutions-via-axelarsea&#34;&gt;基于AxelarSea的解决方案 Solutions (via AxelarSea)&lt;/h2&gt;
+&lt;p&gt;Many of the steps required by a buyer described above are automatically executed by AxelarSea. The buyer only need to supply $LUNA to AxelarSea on Terra chain. AxelarSea system will perform the following actions.&lt;/p&gt;
+&lt;p&gt;上述买方所需的许多步骤由 AxelarSea 自动执行。买方只需向 Terra 链上的 AxelarSea 提供 $LUNA。 AxelarSea 系统将执行以下操作。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Transfer the asset to Ethereum chain via Axelar Network (becoming $aLUNA)&lt;br&gt;
+通过 Axelar Network 将资产转移到以太坊链(成为 $aLUNA）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make an exchange to $ETH through DEX supported by AxelarSea&lt;br&gt;
+通过 AxelarSea 支持的 DEX 兑换 $ETH&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Transfer $ETH to the seller&lt;br&gt;
+将ETH发送给卖方&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Notice that the buyer doesn’t need to setup wallet on Ethereum chain at all.&lt;br&gt;
+请注意，买家根本不需要在以太坊链上设置钱包。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*72Z4_4dGcJbn5eDm6l8Apw.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;P4:Buyer needs to simply deposit his asset and AxelarSea will automatically transfer the asset cross-chain, swap the tokens, and transfer it to the seller.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;买家只需存入资产，AxelarSea 会自动跨链转移资产，交换代币，转给卖家。&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;axelarsea如何帮助卖家-how-does-axelarsea-help-sellers&#34;&gt;AxelarSea如何帮助卖家 (How does AxelarSea help sellers?)&lt;/h1&gt;
+&lt;p&gt;Currently, each NFT marketplace is confined to a certain ecosystem. If a seller wishes to place sales of his multiple NFTs on several ecosystems, he/she has to interact with multiple marketplaces, complicating the experience. For example, if a seller owns NFTs on three different blockchain ecosystem (such as EVM, Polkadot, and Cosmos), he/she would need to interact with three different marketplaces — one for each ecosystem.&lt;/p&gt;
+&lt;p&gt;目前，每个 NFT 市场都局限于某个生态系统。如果卖家希望将他多个 NFT放在多个生态系统中销售，他/她必须与多个市场进行交互，从而使体验复杂化。例如，如果卖家在三个不同的区块链生态系统(例如 EVM、Polkadot 和 Cosmos）上拥有 NFT，他/她将需要与三个不同的市场进行交互—每个生态系统一个。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*LdgK5EN8XQJMudJlpP7iFw.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;P5:A seller needs to interact with different NFT marketplace for each ecosystem. Each NFT is confined to buyers who have access to those chains supported by each marketplace&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;图5:卖家需要与每个生态系统的不同 NFT 市场进行交互。每个 NFT 仅限于可以访问受市场支持的链上的买家&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A seller has to interact with multiple marketplaces — each specific to a certain blockchain ecosystem. This setup leads to the problems, that can be categorized as follow.&lt;/p&gt;
+&lt;p&gt;卖家必须与多个市场互动——每个市场都限定于某个区块链生态系统。这种设置会导致问题，分类如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Hard to track&lt;/em&gt;: With several NFTs being listed for sale on multiple marketplaces specific for each chain, the seller will have a hard time tracking all the sales and struggle to visualize the big picture.&lt;br&gt;
+&lt;em&gt;难以追踪&lt;/em&gt;：由于每个链的多个市场上都有多个 NFT 上市销售，卖家将很难跟踪所有销售情况，并且难以想象宏观状态&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Limited potential buyers:&lt;/em&gt; The sale is exposed only to the buyers in the chains supported by the marketplace.&lt;br&gt;
+&lt;em&gt;限制潜在买家：&lt;/em&gt; 此次销售仅向市场支持的链上的买家公开。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Time consuming&lt;/em&gt;: A seller would spend a large amount of time trying to manage his sales over multiple marketplaces.&lt;br&gt;
+&lt;em&gt;耗时&lt;/em&gt;：卖家会花费大量时间来管理他在多个市场上的销售。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;solutions-via-axelarsea&#34;&gt;Solutions (via AxelarSea)&lt;/h2&gt;
+&lt;p&gt;AxelarSea provides a platform for sellers to list NFTs from any chain while also attracting potential buyers from any chain. The seller can manage all of his sales by simply visiting the AxelarSea website and connecting his wallets.&lt;/p&gt;
+&lt;p&gt;AxelarSea 为卖家提供了一个平台，可以列出来自任何链的 NFT，同时也吸引来自任何链的潜在买家。卖家只需访问 AxelarSea 网站并连接他的钱包即可管理他所有销售的NFT。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*Iae62CRQ2NUNhrp6AXK1zA.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;P6:A seller can host an NFT from any chain on AxelarSea while attracting attention from potential buyers from any chain as well.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;图6：卖家可以在 AxelarSea 上托管来自任何链的 NFT，同时也可以吸引来自任何链的潜在买家的关注。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Try out for yourself!&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;快来试试吧！&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Website: &lt;a href=&#34;https://axelarsea.com/Home&#34;&gt;https://axelarsea.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Learn more: &lt;a href=&#34;https://axelarsea.gitbook.io/axelarsea-docs/&#34;&gt;https://axelarsea.gitbook.io/axelarsea-docs/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Having a question?&lt;/strong&gt;&lt;br&gt;
+有问题？欢迎来提问！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Email: axelarsea@gmail.com&lt;/li&gt;
+&lt;li&gt;Discord: &lt;a href=&#34;https://discord.gg/dUwcAj7C46&#34;&gt;https://discord.gg/dUwcAj7C46&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Telegram: &lt;a href=&#34;https://t.me/Axelarsea&#34;&gt;https://t.me/Axelarsea&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+">AxelarSea入门简介 (Introducing AxelarSea!)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/redstone-tech-doc-translation-redstone-ji-zhu-wen-dang-fan-yi/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*cagrG696gNL5_R0DTf6mew.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;I have translated the tech doc of @redstone_defi to Chinese If you are a developper that trying to enter @ArweaveTeam just come and check.&lt;/p&gt;
+&lt;p&gt;我翻译了RedStone的技术文档,如果你是想进入AR生态的开发者，欢迎来围观！&lt;/p&gt;
+&lt;p&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;br&gt;
+(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)&lt;/p&gt;
+&lt;p&gt;翻译文档本体在github,现在同步到博客。&lt;/p&gt;
+">RedStone Tech Doc Translation RedStone 技术文档翻译</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-bai-pi-shu-zhong-ying-wen-dui-zhao-ban-eng-chn/"" data-c="
+          &lt;p&gt;之前因为已经首发在项目的官方文档，所以没有更新进来。过年了嘛，一家人还是要完完整整，更新上来咯！&lt;/p&gt;
+&lt;p&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;br&gt;
+(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)&lt;/p&gt;
+&lt;p&gt;https://docs.euler.finance/languages/white-paper-eng-chn&lt;/p&gt;
+">Euler白皮书中英文对照版(ENG-CHN)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/zi-kong-jian-subspacechong-shou-zhe-kun-jing-de-jie-jue-fang-an-eng-chn-subspace-a-solution-to-the-farmers-dilemma/"" data-c="
+          &lt;p&gt;&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A61.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A62.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A63.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A64.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A65.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A66.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A67.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A68.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A69.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A610.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A611.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A612.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A613.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A614.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A615.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A616.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A617.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A618.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A619.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A620.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A621.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A622.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A623.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A624.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A625.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A626.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A627.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A628.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A629.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A630.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A631.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A632.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A633.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A634.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A635.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A636.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A637.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A638.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A639.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A640.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A641.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A642.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A643.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A644.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A645.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A646.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A647.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A648.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A649.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A650.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A651.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A652.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;再次声明：本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如需查看pdf文件，请访问（For pdf file, please kindly see)：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;https://drive.google.com/file/d/103GGDaKCOTEBIfLsThALWzRuuFDoTMPQ/view?usp=sharing&lt;/p&gt;
+">子空间（Subspace）：种收者困境的解决方案(ENG-CHN) Subspace: A Solution to the Farmer’s Dilemma</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/swivel-litepaper-swivel-xie-yi-jian-ming-ji-zhi-yu-tu-shi-eng-chn/"" data-c="
+          &lt;h1 id=&#34;版权声明copyright-notice&#34;&gt;&lt;strong&gt;版权声明（Copyright Notice）&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;本文翻译自&lt;/strong&gt;&lt;a href=&#34;https://twitter.com/SwivelFinance&#34;&gt;@SwivelFinance&lt;/a&gt;&lt;strong&gt;的文章：&lt;/strong&gt;&lt;a href=&#34;https://docs.swivel.finance/litepaper&#34;&gt;A Basic Description and Visualization of the Swivel Protocol’s mechanics&lt;/a&gt;&lt;strong&gt;。已得到作者的授权。译者为&lt;/strong&gt;&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;&lt;strong&gt;@chainguys&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;。转载请注明作者和译者。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（Coptyright©2021 by&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/SwivelFinance&#34;&gt;@SwivelFinance&lt;/a&gt;, &lt;strong&gt;translated by&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;&lt;strong&gt;@chainguys&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;br&gt;
+(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;1-导言introduction&#34;&gt;&lt;strong&gt;1. 导言（Introduction）&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Concerns surrounding protocols like Compound and Aave have become acceptable for all but the most risk-averse market participants. However, the volatility of DeFi rates still precludes many from effective portfolio/risk management, and others from market participation entirely.&lt;/p&gt;
+&lt;p&gt;尽管（之前）对Compound和AAVE有所担忧，但大多数人现在认为它们是可以接受的了 — — 除了大多数风险厌恶的市场参与者。但是，DeFi市场的波动性依然使得一部分人无法进行有效的风险管理，让其他人无法完全参与市场。&lt;/p&gt;
+&lt;p&gt;Swivel enables this wider market participation by providing the capital efficient infrastructure and professional trading interface necessary for tokenized cash-flows.&lt;/p&gt;
+&lt;p&gt;Swivel通过对代币化现金流（tokenized cash-flows）提供资本高效(capital efficient)的基础设施和专业的交易界面来实现更广泛的市场参与。&lt;/p&gt;
+&lt;h2 id=&#34;11-代币现金流tokenizing-cash-flows&#34;&gt;&lt;strong&gt;1.1 代币现金流（Tokenizing Cash-Flows）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;At it’s core, Swivel is built around the concept of cash flow-tokenization.&lt;/p&gt;
+&lt;p&gt;Specifically, Swivel provides the ability to split a single interest generating token into two separate cash-flow tokens until a future date. One cash-flow being the interest generated, and the other being ownership of the underlying token, redeemable at that future date.&lt;/p&gt;
+&lt;p&gt;In Swivel’s design these two are referred to as nTokens (yield-generating tokens), and zcTokens (tokens redeemable at maturity).&lt;/p&gt;
+&lt;p&gt;Swivel以“将现金流代币化”为核心创立。&lt;/p&gt;
+&lt;p&gt;详细来说，Swivel提供这样一种能力：（用户）可以将一个利率生成代币一分为二，生成两个绑定日期的现金流代币。其中一个现金流代币（表示）利率生成，另一个则代表所有权，并且在到期后可以赎回。在Swivel的系统中，第一个叫做nTokens，第二个叫zcTokens。&lt;/p&gt;
+&lt;p&gt;（&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;&lt;strong&gt;@chainguys&lt;/strong&gt;&lt;/a&gt;省流助手：就是利率和本金分别开来，各用各的token来表示）&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*FV2pL6gkfdoIwzcz&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;将USDC分别铸造成nTokens和zcTokens&lt;/p&gt;
+&lt;h1 id=&#34;2-zctokens&#34;&gt;&lt;strong&gt;2. zcTokens&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;21-概览overview&#34;&gt;2.1 概览（Overview）&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ERC-20 Tokens that represent a 1–1 claim for underlying upon maturity.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;一个可以在到期日1比1赎回标的资产（本金）的ERC-20代币&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Zero-coupon tokens, &lt;strong&gt;&lt;em&gt;zcTokens&lt;/em&gt;&lt;/strong&gt;, are ERC-20’s which are redeemable 1:1 at maturity for an underlying token.&lt;/p&gt;
+&lt;p&gt;零息代币，即**&lt;em&gt;zcTokens&lt;/em&gt;** 是一个可以在到期日1比1赎回标的资产（本金）的ERC-20代币&lt;/p&gt;
+&lt;p&gt;As users lock-in fixed yields, their deposit is split into zcTokens and nTokens and the the nTokens minted are sold to fuel a fixed-yield.&lt;/p&gt;
+&lt;p&gt;用户锁定固定收益时，他们的入金会被分为zcTokens 和 nTokens。nTokens会被卖出作为一个固定收益的燃料（to fuel a fixed-yield）。&lt;/p&gt;
+&lt;p&gt;This leaves the lender with an immediate fixed-yield and their minted zcTokens.&lt;/p&gt;
+&lt;p&gt;这使得贷款人能够马上获得一个固定收入和一个zcTokens&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fixed-Yield Lending:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice has 1000 USDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice fills Bob’s order, splitting 1000 USDC into 1000 zcUSDC and 1000 nUSDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice sells 1000 nUSDC to Bob for 50 USDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice then has 1000 zcUSDC. At maturity Alice redeems her 1000zcUSDC for 1000 USDC. This leaves Alice with 1050 USDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;整个过程如下：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice有1000USDC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice相应Bob的订单，将1000USDC分成了1000zcUSDC和 1000nUSDC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice将1000 nUSDC以50USDC的价格卖给Bob&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice现在就有1000zcUSDC,在到期后Alice将1000zcUSDC赎回，拿回1000USDC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这样Alice就有1050USDC&lt;/strong&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*UbnbVvxucFh62eW_&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;以5%年利率出借&lt;/p&gt;
+&lt;h2 id=&#34;22-定价pricing&#34;&gt;&lt;strong&gt;2.2 定价（Pricing）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Given zcTokens represent a 1–1 redemption only upon maturity, they are discounted at a rate based on the predicted amount of interest that may have otherwise been generated until the maturity/redemption date (the nToken price).&lt;/p&gt;
+&lt;p&gt;Accepting that this potential yield decreases as time passes, ZcTokens appreciate towards par and reach par as maturity is reached.&lt;/p&gt;
+&lt;p&gt;Further, because an nToken represents the predicted future yield, the discount on a zcToken is inversely proportional to the cost of an nToken.&lt;/p&gt;
+&lt;p&gt;At maturity, zcTokens begin to appreciate above par, accruing the yield generated on a given money-market (e.g. Compound) until redeemed.&lt;/p&gt;
+&lt;p&gt;​假设zcTokens在到期日能够按1：1赎回，那么它们就可以（跟传统债券一样）来根据变现日期和利率情况来定价。&lt;/p&gt;
+&lt;p&gt;随着时间流逝，可能的收益就会减少，zcTokens也会越来越接近标的资产价格。&lt;/p&gt;
+&lt;p&gt;接着，因为nToken代表了预计的未来收益，zcToken的折扣价格将会和nToken的价值成反比。&lt;/p&gt;
+&lt;p&gt;到期时，zcTokens价格开始超过面值，在正式赎回之前会以某个流动性市场（如compound）上的情况来累积收益。&lt;/p&gt;
+&lt;h2 id=&#34;23-退出卖出zctokens-exitingselling-zctokens&#34;&gt;&lt;strong&gt;2.3 退出/卖出zcTokens Exiting/Selling zcTokens&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;An example of common market interactions&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;一个普通市场交互的案例&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As rates fluctuate, active market participants may require the ability to fluidly move in and out of positions.&lt;/p&gt;
+&lt;p&gt;To facilitate this market participation, Swivel provides the ability to frictionlessly exit or sell a zcToken position.&lt;/p&gt;
+&lt;p&gt;由于（利率）会波动，主动的市场参与者会要求有迅速调整仓位的能力。为了帮助这样的市场参与行为，Swivel会提供这样无摩擦地退出或卖出zcToken仓位的能力。&lt;/p&gt;
+&lt;p&gt;Exiting zcTokens early by purchasing nTokens and then redeeming for underlying:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice has 1000 zcUSDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice fills Bob’s order, purchasing 1000 nTokens.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice redeems 1000 zcUSDC and 1000 nUSDC for 1000 USDC and then pays Bob 50 USDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This leaves Alice with 950 USDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*U_osN0AH2XI2jExw&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;提前卖出zcToken仓位的交易过程如下：&lt;/p&gt;
+&lt;p&gt;Alice有1000 zcUSDC&lt;/p&gt;
+&lt;p&gt;Alice响应Bob的订单，购买了1000 &lt;strong&gt;nTokens&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Alice用 1000zcUSDC和 1000nUSDC赎回了1000 USDC 然后向Bob支付了50USDC&lt;/p&gt;
+&lt;p&gt;这样Alice就有950USDC了&lt;/p&gt;
+&lt;p&gt;zcTokens can also be sold to counterparties looking to take fixed-yield positions through the orderbook:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice has 1000 zcUSDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice fills Diane’s order, in the process Alice splitting Diane’s 1000 USDC into zcUSDC and nUSDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice purchases 1000 nUSDC from Diane and redeems her 1000 zcUSDC + 1000 nUSDC for 1000 USDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice then pays Diane a 50 USDC premium for the purchased nUSDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This leaves Alice with 950 USDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(Simplified to 1000 zcUSDC &amp;lt;-&amp;gt; 950 USDC)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;zcTokens也可以被卖给寻求固定收益仓位的交易对手：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice有1000zcUSDC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice响应Diane的订单，在过程中Alice将Diane的1000USDC拆分成了zcUSDC和nUSDC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice从购买了1000 nUSDC, 然后将（1000 zcUSDC + 1000 nUSDC）打包赎回了1000USDC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice然后付给了Diane 50USDC作为费用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这样Alice就有了950USDC&lt;/strong&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*G4qRJbEXxAaGcDqL&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;将zcTokens卖给寻求固定收益仓位的交易对手&lt;/p&gt;
+&lt;h2 id=&#34;24-二级自动做市商secondary-amms&#34;&gt;&lt;strong&gt;2.4 二级自动做市商（Secondary AMM’s）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;A discussion of potential secondary markets and cross-chain access to fixed-yields.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;一场关于潜在的二级自动做市商和跨链固定收益的讨论&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;zcTokens can also be traded on a secondary AMM in order to enter or exit lending positions, or alternatively attempt to amplify yield by providing liquidity.&lt;/p&gt;
+&lt;p&gt;(see: Risks of LPing in derivative marketplaces)&lt;/p&gt;
+&lt;p&gt;为了开/平仓，zcTokens也可以在二级自动做市商或者其他的流动性提供商处交易。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Entering:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice has 1000 USDC and wants a fixed yield.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice purchases 1050 zcTokens for 1000 USDC, maturing in one year for a 5% yield.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exiting:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice has 1050 zcTokens and wants to exit.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice sells 1050 zcTokens for 1000 USDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*2O_dnWxyLcj-DGFy&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;进入：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice有1000USDC并且想获得固定收益&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice用1000USDC购买了1050 个一年后到期且年利率5%的zcTokens&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;退出：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice有1050个zcTokens并且想退出&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice 将1050 个zcTokens 以1000USDC卖出&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;3-ntokens&#34;&gt;&lt;strong&gt;3. nTokens&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Notional Tokens contained in Swivel’s Vaults which represent the claim to underlying yields.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;放在Swivel库房中，代表标的资产的名义代币&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;31-概览overview&#34;&gt;&lt;strong&gt;3.1 概览（Overview）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;When a user buys nTokens, they create a vault that tracks their balances within a given market.&lt;/p&gt;
+&lt;p&gt;Each vault contains two balances, &lt;em&gt;Notional&lt;/em&gt; and &lt;em&gt;Redeemable.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;当一个用户购买nTokens时，系统会（自动）在指定市场生成一个可以追踪余额的金库（valut），每个金库都有两类余额，名义的和可赎回的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;名义代币nTokens ,Notional (nTokens)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Notional Tokens &lt;em&gt;(nTokens)&lt;/em&gt; represent a 1–1 deposit, currently generating interest in an underlying protocol. Once maturity has been reached, interest-generation ceases and nTokens become worthless.&lt;/p&gt;
+&lt;p&gt;As such, nTokens are deprecating assets that experience time-decay. As time passes, nTokens decrease in value, and as they approach maturity, an their value approaches 0.&lt;/p&gt;
+&lt;p&gt;名义代币_(nTokens)_ 达标在一个标的协议中1：1存入并生息。一旦到期，生息就停止，该代币也就失效。如此，nTokens是一个随着时间不断贬值的资产。随着时间流逝，nTokens也不断贬值，到期后归零。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;可赎回（余额）Redeemable&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;Redeemable&lt;/em&gt; represents the amount of accrued interest currently available to redeem.&lt;/p&gt;
+&lt;p&gt;As users interact with their vault, interest is accumulated to the redeemable balance, and this balance can be redeemed at any time.&lt;/p&gt;
+&lt;p&gt;可赎回（余额）代表了目前累积的且可赎回的利息。只要用户与金库交互，利息就会自动归集到可赎回的余额，并且可以立即操作赎回。&lt;/p&gt;
+&lt;h2 id=&#34;32-购买ntokensbuying-ntokens&#34;&gt;&lt;strong&gt;3.2 购买nTokens(Buying nTokens):&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Bob has 50 USDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bob fills Alice’s order selling 1000 nUSDC at .05/ea (5%), paying Alice an immediate $50 premium.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Once filled, Alice mints 1000 zcUSDC and 1000 nUSDC, transferring 1000 nUSDC to Bob. Bob then owns 1000 nUSDC (the right to the yield generated by 1000 USDC).&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bob有50USDC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bob响应Alice的订单，卖出年利率5% 的1000 nUSDC，立刻付给Alice 50美金的费用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice获得1000zcUSDC和1000nUSDC后，将1000nUSDC发送给Bob&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bob现在就又1000 nUSDC(也就是获得1000USDC产生的利息)&lt;/strong&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*0IDZWe6V_o4DPujy&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;3.3 定价（Pricing）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Given nTokens represent a 1–1 deposit into an underlying money-market, and the claim to the deposit’s future yield, they are priced based on the expected yield generated until maturity.&lt;/p&gt;
+&lt;p&gt;This potential future yield decreases as time passes and as such, nTokens depreciate and experience theta-decay.&lt;/p&gt;
+&lt;p&gt;Of note, because a zcToken represents an underlying token stripped of nToken yields, the cost of a nToken is inversely proportional to the discount on a zcToken.&lt;/p&gt;
+&lt;p&gt;假如nTokens在标定市场 1：1存入和未来对（利息）收入的权利不变，nTokens的价格就和到期日前的预期收益有关。nTokens随着时间流逝而贬值。注意，因为zcToken代表ntoken剥离的标的资产的收益，nTokens的费用和zcToken的折扣成反比。&lt;/p&gt;
+&lt;h2 id=&#34;34-退出卖ntokensexitingselling-ntokens&#34;&gt;&lt;strong&gt;3.4 退出/卖nTokens（Exiting/Selling nTokens）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;An example of common market interactions&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;一个常见的市场交互案例&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As with zcTokens, as rates fluctuate, active market participants require the ability to fluidly move in and out of nToken positions. To facilitate this market participation, Swivel provides the ability to exit/sell nTokens on our orderbook.&lt;/p&gt;
+&lt;p&gt;由于利率会波动，主动的市场参与者会要求有迅速调整仓位的能力。为了帮助这样的市场参与行为，Swivel会提供这样退出或卖出nTokens仓位的能力。&lt;/p&gt;
+&lt;p&gt;Selling nTokens to an initiating counterparty:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bob has 1000 nUSDC. Bob fills Charlie’s order for 1000 nUSDC, and in return receives 50 USDC. This leaves Bob with 50 USDC + any accrued interest.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bob有1000nUSDC.Bob响应Charlie的订单，卖出1000nUSDC,收到了50USDC。所以现在Bob在归集的利息上就多了50USDC&lt;/strong&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*4y3793nJWDa1JLFv&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;交易ntokens&lt;/p&gt;
+&lt;p&gt;nTokens can also be sold to counterparties redeeming their zcTokens early:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bob has 1000 nUSDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bob fills Alice’s order, selling Alice 1000 nTokens.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice redeems 1000 zcUSDC + 1000 nUSDC for 1000 USDC and then pays Bob 50 USDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This leaves Bob with 50 USDC + any accrued interest.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;nTokens也可以卖给要提前用zcTokens（赎回USDC）的交易对手：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bob有1000 nUSDC.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bob响应Alice的订单，买了1000个nTokens给Alice.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alice用（1000 zcUSDC + 1000 nUSDC）赎回了自己的1000USDC，然后支付给Bob 50USDC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这样Bob归集的利息上就多了50USDC&lt;/strong&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;8&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*CJVUAXZ6nM8CFZZA&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;向持有zcTokens的人卖出nTokens&lt;/p&gt;
+&lt;h1 id=&#34;4-资本效率capital-efficiency&#34;&gt;&lt;strong&gt;4. 资本效率（Capital Efficiency）&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;An overview of capital efficiency within Interest-Rate Derivative and Cash-Flow Markets&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;利率衍生品和现金流市场二者资本效率的回顾&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;41-自动做市商与订单簿amm-vs-orderbook&#34;&gt;&lt;strong&gt;4.1 自动做市商与订单簿（AMM vs. Orderbook）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;AMM’s have insofar proven to be the effective mechanism for bootstrapping liquidity, however the efficacy and capital efficiency of AMM’s within derivative markets has proven to be questionable at best.&lt;/p&gt;
+&lt;p&gt;Without the ability to adjust quoted prices with regard to standard derivative pricing variables, liquidity providers are exposed to significant risk and constantly give up an edge to the market. (As seen in LP returns)&lt;/p&gt;
+&lt;p&gt;自动做市商目前被证明是一个提升流动性的有效机制。然而自动做市商在衍生品市场的功能和资本效率却尤其受到质疑。由于不能根据标准的衍生品价格变量来调整引用的价格，流动性提供者暴露在巨大的风险之中并且持续丧失在市场中的优势地位（请看下图LP的回报）。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;9&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*P8uUQY5hkuzdzbwq.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Hegic LP -25%的年化收益&lt;/p&gt;
+&lt;p&gt;Swivel instead attempts to bootstrap liquidity by providing the same token incentives present on most AMM’s, but with the enhanced capital efficiency and flexibility that an orderbook can provide for all market participants.&lt;/p&gt;
+&lt;p&gt;Using Swivel’s capital efficient orderbook, not only do users receive reduced slippage and a potentially gas-free experience, but liquidity providers can account for the factors that would otherwise leave them exposed.&lt;/p&gt;
+&lt;p&gt;Swivel则尝试用与大多数自动化做市商相同，但比传统订单簿给市场参与方带来的，更有资本效率和灵活性的代币激励，来提升市场的流动性。&lt;/p&gt;
+&lt;p&gt;使用Swivel的资本有效订单簿（capital efficient orderbook），不但可以让用户减少滑点和甚至拥有无gas的交易体验，还可以让流动性提供者们发现那些可能让他们处于风险的因素。&lt;/p&gt;
+&lt;h2 id=&#34;42特定手段的优化instrument-specific-optimizations&#34;&gt;&lt;strong&gt;4.2特定手段的优化（Instrument-Specific Optimizations）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;If then attempting to address Swivel’s market with an AMM, one would need both a time-appreciating AMM for zero-coupon tokens (similar to Element), and a time-depreciating AMM for interest-coupons (similar to Pendle).&lt;/p&gt;
+&lt;p&gt;如果要用自动化做市商来处理Swivel这个市场，那就同时需要一个随着时间升值的零息代币自动化做市商（类似Element）和一个随着时间贬值的票息（代币）自动化做市场（类似于Pendle）。&lt;/p&gt;
+&lt;p&gt;With Swivel’s flexible orderbook, these separate AMM’s are not necessary as a user can enter the marketplace with an underlying currency (USDC, ETC, BTC, etc.,), or alternatively with either zero-coupon tokens or money-market notional (interest-coupons) when exiting positions.&lt;/p&gt;
+&lt;p&gt;As a result Swivel’s users benefit from the generalized efficiencies provided by an orderbook, and the further ~2x enhanced capital efficiency when compared to two separate AMM’s.&lt;/p&gt;
+&lt;p&gt;使用 Swivel 的灵活订单簿，这些单独的 AMM就不再是必需的了。因为用户可以使用标定的货币（USDC、ETC、BTC 等）进入市场，或者在退出时使用零息代币或货币市场名义（票息）退出头寸时。&lt;/p&gt;
+&lt;p&gt;因此 Swivel 的用户受益于订单簿提供的更广泛性效率和更多的东西 — — 与两个独立的 AMM 相比，资本效率提高了2倍。&lt;/p&gt;
+&lt;h2 id=&#34;43-铸造ntokens-minting-ntokens-interest-coupons&#34;&gt;&lt;strong&gt;4.3 铸造nTokens ,Minting nTokens (Interest-Coupons)&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Swivel’s issuance of interest-coupons, termed Notional Tokens (nTokens), is optimized in two ways:&lt;/p&gt;
+&lt;p&gt;1.nTokens include interest-generation and tracking functionality within their transfer function which:&lt;/p&gt;
+&lt;p&gt;Reduces the deposit overhead present in designs which require increasing deposits over time&lt;/p&gt;
+&lt;p&gt;Reduces complexity in nToken pricing&lt;/p&gt;
+&lt;p&gt;Allows interest to be redeemed at any time&lt;/p&gt;
+&lt;p&gt;2.Swivel atomically mints tokens as orders are filled which reduces the number of transactions necessary for most use cases.&lt;/p&gt;
+&lt;p&gt;Swivel的发行票息，即名义代币（nTokens），主要有两个优化方向。&lt;/p&gt;
+&lt;p&gt;其一是nTokens中利息产生、追踪和转移的环节：&lt;/p&gt;
+&lt;p&gt;l 在设计中减少不断存入时会产生的损耗（费用）&lt;/p&gt;
+&lt;p&gt;l 减少nTokens定价中的问题&lt;/p&gt;
+&lt;p&gt;l 允许利息随时可赎回&lt;/p&gt;
+&lt;p&gt;其二，Swivel铸币时会尽量用最少的交易（步骤）响应最多的用户需求。&lt;/p&gt;
+&lt;h1 id=&#34;5-流动性奖励liquidity-incentives&#34;&gt;&lt;strong&gt;5. 流动性奖励（Liquidity Incentives）&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;A description of Swivel’s liquidity and market-making incentivization.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Swivel流动性和做市激励简介&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Swivel is the first orderbook-based protocol with liquidity incentives built baseline into token distribution and protocol design.&lt;/p&gt;
+&lt;p&gt;In the context of an AMM, liquidity incentives are straightforward. Any user who provides pooled liquidity across the constant x*y=k curve is rewarded at a proportional rate for their liquidity provided.&lt;/p&gt;
+&lt;p&gt;Swivel是世界上第一个以订单簿为基础的，在代币分配和协议设计时就融入了流动性激励得协议。以自动化做市商的角度来说，流动性激励是直接的。任何一个基于x*y=k曲线（自动化做市基本原理）来提供流动性的人都将按比例获得激励。&lt;/p&gt;
+&lt;p&gt;When applying this concept to an orderbook, liquidity rewards are not pools but binary orders. Either an order gets filled, or it does not.&lt;/p&gt;
+&lt;p&gt;With this accepted, how does one reward those providing liquidity to an orderbook? &lt;strong&gt;&lt;em&gt;By providing token rewards only to those liquidity providers (makers) who’s orders are filled.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Swivel sets aside 50% of our token supply for these orderbook liquidity incentives.&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;10&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*-aJoRYcj41Aosi3r&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;There are other alternative methods of weighing rewards based on orderbook state as described in &lt;a href=&#34;https://hummingbot.io/liquidity-mining-whitepaper/&#34;&gt;Hummingbot’s paper&lt;/a&gt; on liquidity mining, however none serve to properly democratize access to rewards across any market participant.&lt;/p&gt;
+&lt;p&gt;当将这一概念应用到订单簿时，流动性的奖励将不再（基于）AMM池而是买卖双方的订单。一个订单要么被响应，要么不会被响应。基于此，如何奖励那些为订单簿提供流动性的人呢？答案是：只对那些订单簿被相应的流动性提供者基于代币奖励。Swivel会将50%的代币作为流动性奖励。当然，在这篇官流动性挖矿的文章中（&lt;a href=&#34;https://hummingbot.io/liquidity-mining-whitepaper/&#34;&gt;Hummingbot’s paper&lt;/a&gt;）有一些其他的，基于订单簿状态来衡量奖励的方法，但所有这些都没有使得所有市场参与者更民主地参与奖励的（分配）。&lt;/p&gt;
+&lt;h2 id=&#34;51-流动性激励的有效性amm-vs-clobeffectiveness-of-liquidity-incentives-amm-vs-clob&#34;&gt;&lt;strong&gt;5.1 流动性激励的有效性AMM vs CLOB（Effectiveness of Liquidity Incentives: AMM vs CLOB）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;While liquidity provider token incentives have historically related to providing liquidity on an AMM, it appears that their positive effect on slippage/spread is enhanced within the context of an orderbook.&lt;/p&gt;
+&lt;p&gt;Effectively, within an orderbook users have individualized capital allocation, and with our liquidity rewards, more efficient competitive capital allocation results in more reward generation.&lt;/p&gt;
+&lt;p&gt;This then gives market-makers the incentive to not only optimize their capital efficiency, but in doing so undercut one another as they attempt to take on a competitive position within the orderbook.&lt;/p&gt;
+&lt;p&gt;虽然流动性提供者的代币激励与一个自动化做市商提供流动性的历史（数据）有关，不过似乎他们在订单簿条件下对解决滑点和价差起了更积极的作用。在订单簿的情况下，用户会有个性化的资产配置，那么在Swivel的流动性奖励机制下，更多有效率的竞争性资产配置将会产出更多的奖励。这将使得做市商不但会想办法最优化他们自己的资本市场效率，而且还会使他们之间互相竞价，因为他们之间处于竞争地位。&lt;/p&gt;
+">Swivel Litepaper-Swivel协议简明机制与图示（ENG-CHN）</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/sommelier-yi-tai-fang-de-fu-zhu-chu-li-qi-eng-chn/"" data-c="
+          &lt;h2 id=&#34;版权声明copyright-notice&#34;&gt;&lt;strong&gt;版权声明（Copyright Notice）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;本文翻译自&lt;/strong&gt;&lt;a href=&#34;https://twitter.com/sommfinance&#34;&gt;&lt;strong&gt;sommfinance&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;的文章：&lt;/strong&gt;&lt;a href=&#34;https://sommelier.finance/blog/sommelier-new-co-processor-for-ethereum&#34;&gt;&lt;strong&gt;SOMMELIER: WELCOME TO THE NEW COPROCESSOR FOR ETHEREUM&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;。已得到作者的授权。译者为&lt;/strong&gt;&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;&lt;strong&gt;@chainguys&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;。转载请注明作者和译者。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（Coptyright©2021 by sommfinance, translated by&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;&lt;strong&gt;@chainguys&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;br&gt;
+(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-hello-world&#34;&gt;&lt;strong&gt;1. Hello World&lt;/strong&gt;&lt;/h2&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*bY4FbEN-th0o_IoK.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Sommelier is a bet that Ethereum will be a dominant player in the global economy. It’s a bet that not only will Ethereum work, but that the growing architecture evolving in both L1 and L2 ecosystems continues to merge. To unlock its full potential, Ethereum needs a new coprocessor. This new computational machine will ensure that small investors maintain democratic access to Ethereum transactions with expanded functionality and opportunities to profit while minimizing their gas costs. The Ethereum network is the place to put capital to work and Sommelier is the partner to make that happen. Sommelier solves a number of key problems for the individual user on Etherum’s world computer network that we’ll outline below and that will serve as the thesis for our new coprocessor design and implementation.&lt;/p&gt;
+&lt;p&gt;Sommelier坚信以太坊将会在全球经济中占据支配地位。以太坊不但（本身）有用，而且还会带来一个L1和L2生态系统不断涌现的，自身也不断成长的(技术)架构。要完全发挥它的潜力，以太坊就需要一个新的协处理器。这个新的计算机器（computational machine）将确保小型投资者也能利用（以太坊）不断扩张的功能和机遇，民主地、低成本地参与到以太坊生态的交易中并盈利。以太坊的主网将会是注入资金的地方，而Sommelier则会作为以太坊的伙伴来帮助完成这个目标。在下面的文章中我们将详细阐述我们如何设计和行动来帮助用户在解决在以太坊这一世界级网络系统中会遇到的难题。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;From translator&lt;/em&gt; &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;&lt;strong&gt;&lt;em&gt;@chainguys&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;&lt;em&gt;:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;A coprocessor is a computer processor used to supplement the functions of the primary processor (the CPU).For more details, please kindly see&lt;/em&gt;&lt;/strong&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Coprocessor&#34;&gt;&lt;strong&gt;&lt;em&gt;Wikipedia:Coprocessor&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;辅助处理器（英语：Coprocessor），也译作协处理器，这是一种协助中央处理器完成其无法执行或执行效率、效果低下的处理工作而开发和应用的处理器。更多信息请查看&lt;/em&gt;&lt;/strong&gt;&lt;a href=&#34;https://zh.wikipedia.org/zh-cn/%E8%BC%94%E5%8A%A9%E8%99%95%E7%90%86%E5%99%A8&#34;&gt;&lt;strong&gt;&lt;em&gt;维基百科。&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;2-不活跃的线上流动性inactive-onchain-liquidity&#34;&gt;&lt;strong&gt;2. 不活跃的线上流动性（INACTIVE ONCHAIN LIQUIDITY）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;By design, Ethereum’s on-chain liquidity, with over 37 billion+ dollars, locked by on-chain programs, are user-push and non-proactive in the protocol, if not most blockchains. By default, it is safer for protocol designers to disallow protocol-level work scheduling capabilities that can execute business logic automatically due to the danger and risk of runaway processes that may put an entire protocol and its token value at risk.&lt;/p&gt;
+&lt;p&gt;The need for such controls ensure that value is protected from unintended consequences of protocol-level transaction automation. However, this restriction penalizes the movement of on-chain liquidity in un-attended ways. Limited onchain liquidity automation requires the constant monitoring and active management of push transactions from all users on the protocol.&lt;/p&gt;
+&lt;p&gt;以太坊锁在链上程序的，价值超过370亿美金的(线上)流动性，其实需要用户来操作（user-push）,在（各类AMM）协议中也并不活跃，别的链就更不用说了。而这样（不活跃），会被默认更加安全，因为协议的设计设者们不会在协议的宏观层面允许一个可以自动执行的商业逻辑，尤其是当有危险时自动“跑路”，这回对整个协议和代币系统造成（系统性）风险。所以，控制这些（自动化）的需求确保了价值不被协议层面的交易自动化可能带来的不可预知后果所伤害。但是，这样的限制也损害了线上流动性（参与/活跃）的可能性。要限制线上流动性的自动化，就需要对协议的所有交易和用户进行长期跟踪和主动管理。&lt;/p&gt;
+&lt;p&gt;We see evidence of this by the rise of various Ethereum, onchain liquidity automation solutions that are already proposed to help solve these problems. However, these solutions themselves are also built on Ethereum and are constrained by the same architectural design limitations of the core protocol. They are only able to complete transactions discreetly and cannot continue with infinite automation. They either are only able to conduct local, specific automation or they must themselves stop their transactions and be manually restarted.&lt;/p&gt;
+&lt;p&gt;It is our view that Ethereum’s potential will be unleashed with the addition of active onchain liquidity via the Sommelier protocol. The protocol aims to drive more inactive on-chain liquidity to become continuously active. It’s our belief that these new functionality will drive more Ethereum transaction volume and value for the network.&lt;/p&gt;
+&lt;p&gt;我们也从这些地方看到了证据：大量(准备)将以太坊在线流动性进行自动化操作的项目和方案不断涌现。然而，这些方案本身也是在以太坊上开发的，所以也受制于由核心协议引出的架构设计问题。他们只能够蹑手蹑脚地完成转账，也不能永续自动化。他们要么只能在本地完成特定的自动化，要么就只能转账停止之后再手动重启。我们认为，以太坊的潜力在通过Sommelier带来的活跃线上流动性之后才能被充分发挥。Sommelier旨在让“沉寂”的线上流动性变得长期活跃。我们坚信Sommelier会让以太坊的交易规模和价值不断增加。&lt;/p&gt;
+&lt;h2 id=&#34;3-消极线上流动性和高gas损害以太坊的小型defi投资者passive-onchain-liquidity-and-high-gas-costs-hurt-smaller-ethereum-defi-investors&#34;&gt;&lt;strong&gt;3. 消极线上流动性和高gas损害以太坊的小型DEFI投资者（PASSIVE ONCHAIN LIQUIDITY AND HIGH GAS COSTS HURT SMALLER ETHEREUM DEFI INVESTORS）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;If you are a large institutional investor conducting a trade through an Ethereum DeFi AMMs, gas fees and infrastructure costs are not a problem. Your transaction gas fee of $100USD is nothing when your transaction is $1,000,000 or more. Additionally, large investors are able to build their own trading infrastructure and DeFi tools to ensure that they are able to maintain a high velocity for their liquidity. This advantage is not a possibility for smaller investors who have to make decisions on which liquidity opportunities they should choose across an ever expanding universe of options. As of this writing, the Ethereum Average Gas Price is at a current level of 232.62 gwei, up from 12.41 gwei one year ago.&lt;/p&gt;
+&lt;p&gt;如果你是一个在以太坊DeFi AMM交易的大型机构投资者，gas和基础设施等费用对你来说就不是个问题。一百美金的转账费用对于一百万美金的转账金额来说无非九牛一毛。除此之外，大型投资者也可以建设自己的基础设施和DeFi（交易）工具来确保流动性的高周转率。这样的优势对于还要在不断增加的选项中判别流动性机会的小型投资者来说是根本不可能的。在写作此文的时候，以太坊的平均gas价格达到了232.52 gwei,而一年之前只有12.41 gwei。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*DCFOKht2Y2wob_jm.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;来源: Etherscan.io&lt;/p&gt;
+&lt;p&gt;Rising gas prices means that smaller investors are unable to actively participate in many Ethereum DeFi opportunities. Their window of selections will continue to decrease as gas prices increase. Additionally, the rising price of Ethereum means that smaller investors outside the Ethereum ecosystem will be priced out before they can participate. New opportunities for L1 batching and L2 roll-ups mean that solutions are coming, but the smaller investor just wants the lowest cost route to participate in the Ethereum DeFi ecosystem and through a wallet that she understands. She cannot be forced to choose and make the lowest cost decision from a myriad of choices. She desperately needs a fast way to access the lowest cost transaction network possible.&lt;/p&gt;
+&lt;p&gt;高企的Gas意味着小型投资者无法有效积极地参与和捕捉Defi的机会。而他们选择的窗口也会随着gas增长越变越小。不仅如此，不断增长的以太坊价格也意味着在以太坊生态之外的小型投资者在他们能够参与（以太坊）之前就被赶出来（price out）。在L1和L2的机会不断涌现，意味着解决方案正在涌现，不过小型投资者想要的是用一个他们熟悉的钱包和最低的成本路径来参与以太坊的DeFi生态。小型投资者无法从过量的信息中做出一个成本最低的决定。小型投资者需要一个接入低成本交易网络的入口。&lt;/p&gt;
+&lt;p&gt;Sommelier’s L1 batching capabilities and L2 participation in the coming roll-up offerings means that smaller investors have a partner to maintain their position as active participants in DeFi. With Sommelier, smaller-investor liquidity gets the same momentum as the bigger institutional players and they are able to continue to participate in the Ethereum DeFi ecosystem.&lt;/p&gt;
+&lt;p&gt;Sommelier在将来roll-up的L1和L2中将会提供方法来让小型投资者尽可能成为和保持DeFi积极参与者的角色。小型投资者可以使用Sommelier来让自己流动性的动量（momentum）也能和大机构并驾齐驱，并且长期参与以太坊DeFi生态。&lt;/p&gt;
+&lt;h2 id=&#34;4-以太坊的签名设计限制了defi用户间交互的范围ethereum-signatures-design-limit-the-scope-of-defi-user-ethereum-interactions&#34;&gt;&lt;strong&gt;4.&lt;/strong&gt; &lt;strong&gt;以太坊的签名设计限制了DeFi用户间交互的范围（ETHEREUM SIGNATURES DESIGN LIMIT THE SCOPE OF DEFI USER ETHEREUM INTERACTIONS）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Signature creation and broadcast requires that Ethereum DeFi users must monitor their wallets to manage their portfolio risk. DeFi users without substantial information infrastructure cannot expand their trading volume and are limited in their transaction volume. Automated transactions managed by Sommelier’s validators give Ethereum DeFi users more interactions and more opportunities to capture profits across complex compositions.&lt;/p&gt;
+&lt;p&gt;制造和广播签名要求以太坊的DeFi用户必须时时监控他们的账户来进行风险管理。DeFi用户如果没有充分的信息基础设施是无法扩大交易规模的，甚至连转账规模也会受限。由Sommelier的验证节点管理的自动转账系统会基于DeFi用户更多的交互和更多复杂组合间捕捉利润的机会。&lt;/p&gt;
+&lt;h2 id=&#34;5-我们离民主金融还有一段长路we-still-have-a-long-way-to-go-to-democratize-finance&#34;&gt;&lt;strong&gt;5.&lt;/strong&gt; &lt;strong&gt;我们离“民主金融”还有一段长路（WE STILL HAVE A LONG WAY TO GO TO DEMOCRATIZE FINANCE）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;As of this writing, we are very proud that the Ethereum ecosystem has successfully locked up over &lt;a href=&#34;https://defipulse.com/&#34;&gt;$39 Billion&lt;/a&gt; of value on-chain. However, we think this is still the early adopter phase of DeFi. Although we have lowered the barriers of decentralized finance and provided access to many, new financial products and communities, there is still a large, global population of individuals who need to participate in the Ethereum economy. The Ethereum Virtual Machine needs additional features from the new Sommelier coprocessor to support low-cost access for the rest of the world willing and eager to participate in this ecosystem. Without these additional features, barriers to participation such as high gas costs and expensive infrastructure will keep many users on the sidelines. Sommelier wants to be a new and tangible step to bringing further the promise of financial democracy and freedom on the Ethereum blockchain. Sommelier will make it so that these issues are no longer relevant in the Ethereum Virtual Machine.&lt;/p&gt;
+&lt;p&gt;此文写作之时，我们对以太坊生态上有超过390亿的链上资产感到非常自豪。然而，我们认为这仍然是DeFi的早期。尽管我们已经降低了去中心化金融的门槛，给很多金融产品和社区提供了入口，但世界上仍然有大量的人口需要参与到以太坊的经济中。以太坊虚拟机(EVM)需要Sommelier这个辅助处理器提供的新功能来让世界其他愿意参与以太坊生态的人以低成本来加入。如果没有这些新的功能，那么高gas和昂贵的基础设施等问题就会让许多人无法参与。Sommelier希望成为以太坊上带来金融民主和自由的关键一步。Sommelier也会继续努力来解决EVM上存在的问题。&lt;/p&gt;
+&lt;h2 id=&#34;6-结论conclusion&#34;&gt;&lt;strong&gt;6.&lt;/strong&gt; &lt;strong&gt;结论（CONCLUSION）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Sommelier aims to be a new coprocessor to expand the scale and scope of Ethereum DeFi transactions for all users on the Ethereum network. The Sommelier team’s position is that Etherum will be the dominant player in the decentralized finance economy. However, the missing tooling for low-cost, and scalable liquidity management creates a risk that smaller investors will be unable to practically participate in this new economy. The ability to make fast and proactive liquidity decisions is the key of success for large institutional investors that are able to move their value where it can deliver the highest returns.&lt;/p&gt;
+&lt;p&gt;Sommelier aims to extend Ethereum functionality with its new coprocessor and intelligence in handling Ethereum transactions in ways that ensure that Ethereum remains useful (or accessible for all users). Sommelier allows for Ethereum users to enjoy the finest selection of liquidity transaction features. Join us as we continue to build on the liquidity narrative for Ethereum.&lt;/p&gt;
+&lt;p&gt;Sommelier立志成为所有以太用户扩大以太坊Defi的规模和领域。Sommelier团队坚信以太坊将会在去中心化经济中占据支配地位。然而，缺少一个低成本、可扩展的流动性管理工具，会使得小型投资者有无法参与的风险。快速和主动的流动性决策能力是大型机构投资者成功地关键，因为这使得他们可以将资金投入到回报跟高的地方。&lt;/p&gt;
+&lt;p&gt;Sommelier致力于用新的辅助处理器和情报，以确保以太坊可用性的方式来管理以太坊的交易，从而扩展以太坊的功能（使得它可以被所有人使用）。Sommelier使得以太坊用户可以享受到最好的流动性交易选择。我们会一直为以太坊的流动性和工作，快来加入我们吧！&lt;/p&gt;
+">SOMMELIER-以太坊的辅助处理器(ENG-CHN)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/solana-yan-zheng-zhe-jie-dian-gong-lue-1-jiao-yi-liu-cheng-eng-chn/"" data-c="
+          &lt;h1 id=&#34;版权声明copyright-notice&#34;&gt;&lt;strong&gt;版权声明（Copyright Notice）&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;本文翻译自&lt;a href=&#34;https://twitter.com/jito_labs&#34;&gt;Jito Labs&lt;/a&gt;的文章：&lt;a href=&#34;https://medium.com/@jito-labs/solana-validator-101-transaction-processing-90bcdc271143&#34;&gt;Solana Validator 101: Transaction Processing&lt;/a&gt;。已得到作者的授权。译者为&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;。转载请注明作者和译者。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（Coptyright©2021 by&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/jito_labs&#34;&gt;&lt;strong&gt;Jito Labs&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;, translated by&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;&lt;strong&gt;@chainguys&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;br&gt;
+(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;1-欢迎词hello-world&#34;&gt;&lt;strong&gt;1. 欢迎词（Hello World）&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Welcome to the first article in Jito Lab’s series on the Solana validator. In this article, we’ll do a technical deep dive on the lifecycle of a transaction as it moves from an unsigned transaction to a propagated block.&lt;/p&gt;
+&lt;p&gt;欢迎阅读&lt;a href=&#34;https://twitter.com/jito_network&#34;&gt;Jito Labs&lt;/a&gt;关于Solana节点系列文章的第一篇。在这篇文章里，我们会将会从技术角度详细描述未签名的交易如何变为链上广播的区块。&lt;/p&gt;
+&lt;p&gt;If you want to follow along in code, we’re working off commit &lt;a href=&#34;https://github.com/solana-labs/solana/tree/cd6f931223181d5a1d47cba64e857785a175a760&#34;&gt;cd6f931223&lt;/a&gt;. This is the master branch as of November 21, 2021, so validators are likely running an older version of the code on this date.&lt;/p&gt;
+&lt;p&gt;如果您想直接阅读代码，请移步至我们正在施工的&lt;a href=&#34;https://github.com/solana-labs/solana/tree/cd6f931223181d5a1d47cba64e857785a175a760&#34;&gt;cd6f931223&lt;/a&gt;。这是2021年11月21号得主分支，所以目前节点们正在执行的是相对比较旧的版本。&lt;/p&gt;
+&lt;p&gt;There is a lot of activity in this codebase, so always check out the Solana &lt;a href=&#34;https://github.com/solana-labs/solana&#34;&gt;Github&lt;/a&gt; for the most up-to-date code. Load it up in your favorite IDE and click through definitions with the article to poke around.&lt;/p&gt;
+&lt;p&gt;由于代码工作和维护量巨大，所以请记得在Solana &lt;a href=&#34;https://github.com/solana-labs/solana&#34;&gt;Github&lt;/a&gt;寻找最新的代码。您可以在在本文的辅助下，在网上找到代码后加载到自己喜欢的IDE中试运行。&lt;/p&gt;
+&lt;p&gt;Jito Labs is building MEV infrastructure for Solana. If reverse engineering, hacking on code, or building high performance systems interests you, we’re hiring engineers! Please DM &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;@buffalu__&lt;/a&gt; on Twitter.&lt;/p&gt;
+&lt;p&gt;Jito Labs正在建设Solana MEV的基础设施。如果您对反向工程，编程，高性能系统感兴趣，请不要忘记我们正在招聘工程师，请推特私信 &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;@buffalu__&lt;/a&gt; 联系。&lt;/p&gt;
+&lt;h1 id=&#34;2-一笔交易的历程a-whole-picture-of-one-transaction&#34;&gt;2. 一笔交易的历程(A whole picture of one transaction)&lt;/h1&gt;
+&lt;p&gt;So you’re aping into some coins on Serum or Mango. You sign the transaction in your wallet and your transaction is quickly confirmed with a notification. What just happened?&lt;/p&gt;
+&lt;p&gt;现在你从Serum或者Mango买了几个币。你用钱包将交易签名，然后你的交易信息（向全网）通知后迅速获得确认。那么，这中间到底发生了什么？&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*8cIrOIv11M9EXTFV&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Solana交易信息流&lt;/p&gt;
+&lt;p&gt;The dapp built a transaction to buy some amount of tokens.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The dapp sent the transaction to your wallet (Phantom, Sollet, etc.) to be signed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The wallet signed the transaction using your private key and sends it back to the dapp.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The dapp took the signed transaction and uses the &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/rpc/src/rpc.rs#L3396&#34;&gt;sendTransaction&lt;/a&gt; HTTP API call to send the transaction to the current RPC provider specified in the dapp.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The RPC server sent your transaction as a UDP packet to the current and next validator on the leader schedule. validators on the leader schedule.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The validator’s &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs&#34;&gt;TPU&lt;/a&gt; &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs#L79&#34;&gt;receives&lt;/a&gt; the transaction, &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs#L91&#34;&gt;verifies&lt;/a&gt; the signature using CPU or GPU, &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs#L125&#34;&gt;executes&lt;/a&gt; it, and &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs#L136&#34;&gt;propagates&lt;/a&gt; it to other validators in the network.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dapp创建一笔购买代币的交易&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dapp将交易信息传送给你的钱包（如Phantom,Sellet等）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;钱包用你的私钥给交易签名并传回给dapp&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dapp再将已签名的信息，用&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/rpc/src/rpc.rs#L3396&#34;&gt;sendTransaction&lt;/a&gt; HTTP API发送给该Dapp目前所使用的RPC（Remote Procedure Call，即远程过程调用）服务器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RPC服务器将你的交易信息作为一个用户数据协议资料包（UDP packet）发送给&lt;a href=&#34;https://docs.solana.com/zh/cluster/leader-rotation&#34;&gt;领导者列表&lt;/a&gt;中当前和下一个验证者&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;验证者的&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs&#34;&gt;TPU&lt;/a&gt;会&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs#L79&#34;&gt;收到&lt;/a&gt;该笔交易信息，然后用CPU或GPU来&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs#L91&#34;&gt;验证&lt;/a&gt;这笔交易，然后&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs#L125&#34;&gt;执行&lt;/a&gt;，最后向网络中其他验证者&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs#L136&#34;&gt;广播&lt;/a&gt;这笔交易&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Solana has a known &lt;a href=&#34;https://docs.solana.com/developing/clients/jsonrpc-api#getleaderschedule&#34;&gt;leader schedule&lt;/a&gt; generated every epoch (~2 days), so it sends transactions directly to the current and next leader instead of gossiping transactions randomly like the Ethereum &lt;a href=&#34;https://www.quicknode.com/guides/defi/how-to-access-ethereum-mempool&#34;&gt;mempool&lt;/a&gt; does. Read more about the comparison &lt;a href=&#34;https://medium.com/solana-labs/gulf-stream-solanas-mempool-less-transaction-forwarding-protocol-d342e72186ad&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;请注意，Solana这个众所周知，每个时段（0–2天）产生一次的“&lt;a href=&#34;https://docs.solana.com/developing/clients/jsonrpc-api#getleaderschedule&#34;&gt;领导者机制&lt;/a&gt;”，即交易会被发送到领导者列表中当前和下一个“领导者”，而不是像以太坊&lt;a href=&#34;https://www.quicknode.com/guides/defi/how-to-access-ethereum-mempool&#34;&gt;mempool&lt;/a&gt; 那样随机向全网散发。您可以在此&lt;a href=&#34;https://medium.com/solana-labs/gulf-stream-solanas-mempool-less-transaction-forwarding-protocol-d342e72186ad&#34;&gt;阅读&lt;/a&gt;更多的信息。&lt;/p&gt;
+&lt;h1 id=&#34;3-关于tpu&#34;&gt;&lt;strong&gt;3. 关于TPU&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Let’s go deeper.&lt;/p&gt;
+&lt;p&gt;让我们再深入一点，聊一聊TPU（Transaction Processing Unit）&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*-ahAOJvw_HjxJM36&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;验证者和TPU总览&lt;/p&gt;
+&lt;p&gt;At this point, the RPC service that our dapp is using has received the transaction over HTTP, converted the transaction into a UDP packet, looked up the current leader’s info using the leader schedule, and has sent it to the leader’s TPU.&lt;/p&gt;
+&lt;p&gt;现在，dapp使用的RPC服务已经收到了HTTP发送过来的交易信息，并且将这些信息打包成了用户数据协议资料包（UDP packet），用“&lt;a href=&#34;https://docs.solana.com/developing/clients/jsonrpc-api#getleaderschedule&#34;&gt;领导者机制&lt;/a&gt;”查找到了当前领导者的信息，并成功地将其发送到了领导者的TPU。&lt;/p&gt;
+&lt;p&gt;So what is this TPU thing? The transaction processing unit (&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/validator.rs#L867&#34;&gt;TPU&lt;/a&gt;) processes transactions! It leverages message queues (Rust channels) to build a software pipeline consisting of multiple stages. The output of stage n is hooked into stage n + 1.&lt;/p&gt;
+&lt;p&gt;那到底什么是TPU？所谓的TPU，就是Transaction Processing Unit的缩写，顾名思义，TPU就是专门处理交易的！它使用消息队列（message queues）来建立一个包含多个阶段（multiple stages）的软件管线（software pipeline）。这样第n个阶段就可以自动替换为第n+1个阶段。&lt;/p&gt;
+&lt;p&gt;下面我们将逐步讲解TPU中涉及的各个各个部分。&lt;/p&gt;
+&lt;h2 id=&#34;31-读取阶段fetchstage&#34;&gt;&lt;strong&gt;3.1 读取阶段(&lt;/strong&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/fetch_stage.rs#L21&#34;&gt;&lt;strong&gt;FetchStage&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;The Solana validator is unique compared to other blockchains because it relies on UDP &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/sdk/src/packet.rs#L33&#34;&gt;packets&lt;/a&gt; to communicate with each other. UDP connections are stateless (no connection handshaking) and don’t guarantee order or delivery of messages. This removes potential TCP back-pressure issues and connection management overhead while keeping server and networking setup simple for validator operators. However, this limits transaction and gossip message sizes, increases DOS-ability of validators, and may cause transactions and other packets to get dropped.&lt;/p&gt;
+&lt;p&gt;与其他区块链相比，Solana节点最独特的地方就是它依赖用户数据协议资料包（UDP &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/sdk/src/packet.rs#L33&#34;&gt;packets&lt;/a&gt; ）来通信。UDP连接是无状态的（不需要握手/交握），也不保证有序和传输成功。这样做减少了可能的TCP背压（TCP back-pressure），也减少了高峰时期管理连接时的额外消耗，同时也可以让节点运行者更加方便地配置服务器和网络。但是，这也使得传输信息的规模受到了限制，增加了验证者受到DDOS攻击的概率，同时也可能会导致传输时丢包。&lt;/p&gt;
+&lt;p&gt;The FetchStage has dedicated sockets for each packet type:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/gossip/src/contact_info.rs#L27&#34;&gt;tpu&lt;/a&gt;: normal transactions (Serum orders, NFT minting, token transfers, etc.)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/gossip/src/contact_info.rs#L31&#34;&gt;tpu_vote&lt;/a&gt;: votes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/gossip/src/contact_info.rs#L29&#34;&gt;tpu_forwards&lt;/a&gt;: if the current leader can’t process all transactions, it forwards unprocessed packets to the next leader on this port.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;读取阶段对不同类型的信息包有专们设计的套接字(socket)：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/gossip/src/contact_info.rs#L27&#34;&gt;tpu&lt;/a&gt;: 普通交易 (Serum 订单, NFT minting, 代币转移等.)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/gossip/src/contact_info.rs#L31&#34;&gt;tpu_vote&lt;/a&gt;: 投票&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/gossip/src/contact_info.rs#L29&#34;&gt;tpu_forwards&lt;/a&gt;: 如果当前领导者（leader）无法处理交易，那么系统会自动将信息包发送到下一个领导者（leader）进行处理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Packets are batched into groups of 128 and forwarded to the SigVerifyStage.&lt;/p&gt;
+&lt;p&gt;The sockets mentioned above are created &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/gossip/src/cluster_info.rs#L2877&#34;&gt;here&lt;/a&gt; and stored in the &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/gossip/src/contact_info.rs#L16&#34;&gt;ContactInfo&lt;/a&gt; struct. ContactInfo contains information on the node and is &lt;a href=&#34;https://docs.solana.com/developing/clients/jsonrpc-api#getclusternodes&#34;&gt;shared&lt;/a&gt; with the rest of the network through a gossip protocol.&lt;/p&gt;
+&lt;p&gt;信息包将被分为128个组然后再传输到签名验证阶段（&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs#L91&#34;&gt;&lt;strong&gt;SigVerifyStage&lt;/strong&gt;&lt;/a&gt;）。上文中提到的套接字(socket)在&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/gossip/src/cluster_info.rs#L2877&#34;&gt;此处&lt;/a&gt;产生，存储在&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/gossip/src/contact_info.rs#L16&#34;&gt;ContactInfo&lt;/a&gt; 架构中。&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/gossip/src/contact_info.rs#L16&#34;&gt;ContactInfo&lt;/a&gt; 包含的节点信息也会通过一个八卦协议（&lt;a href=&#34;https://docs.solana.com/zh/validator/gossip&#34;&gt;gossip protocol&lt;/a&gt;）全网共享。&lt;/p&gt;
+&lt;h2 id=&#34;32-签名验证阶段sigverifystage&#34;&gt;&lt;strong&gt;3.2 签名验证阶段（&lt;/strong&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs#L91&#34;&gt;&lt;strong&gt;SigVerifyStage&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;The SigVerifyStage &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/sigverify.rs#L44&#34;&gt;verifies&lt;/a&gt; signatures on packets and marks them for discard if they fail. Reminder as far as the software is concerned, these are still packets with some metadata; it still doesn’t know if these are transactions or not.&lt;/p&gt;
+&lt;p&gt;签名验证阶段将&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/sigverify.rs#L44&#34;&gt;验证&lt;/a&gt;签名和信息包，如若失败则会标识它们作废。但请注意，对软件来说，它只认为这些都是包含一些元数据（metadata）的数据包,却并不知道这些是不是交易（信息）。&lt;/p&gt;
+&lt;p&gt;If you have a GPU installed, it will use it for signature verification. It also contains some logic to &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/sigverify_stage.rs#L183&#34;&gt;handle&lt;/a&gt; excessive packets in the case of higher load which uses IP addresses to drop packets.&lt;/p&gt;
+&lt;p&gt;如果你安装了GPU，那么它就会启动签名验证。这中间也包含了一些&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/sigverify_stage.rs#L183&#34;&gt;可以处理过量数据包的逻辑&lt;/a&gt;，以防止丢包等问题。&lt;/p&gt;
+&lt;p&gt;Votes and normal packets run in two separate pipelines. Packets arriving in the vote pipeline are filtered using simple &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/perf/src/sigverify.rs#L295&#34;&gt;logic&lt;/a&gt; to determine if the packet is a vote or not — this should help prevent DOS on the vote pipeline. This is another mitigation to avoid another network outage similar to the one earlier this year.&lt;/p&gt;
+&lt;p&gt;投票和正常的信息包会分别在两个独立的管线上处理。如果信息包进入了处理投票的管线，就会被简单的&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/perf/src/sigverify.rs#L295&#34;&gt;逻辑&lt;/a&gt;判定后再过滤掉。这样就可以防止投票管线的DDOS攻击。这和今年（2021年）早期时候一个防止网络终端的方案类似。&lt;/p&gt;
+&lt;h2 id=&#34;33-银行阶段bankingstage&#34;&gt;3.3 &lt;strong&gt;银行阶段(&lt;/strong&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L249&#34;&gt;&lt;strong&gt;BankingStage&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;This is the meat of the validator and the hardest section to understand, at least from what we’ve reviewed so far 😉&lt;/p&gt;
+&lt;p&gt;这是我们认为最难被（大众）理解，也同时是验证者“赚钱/揾食”之处。&lt;/p&gt;
+&lt;p&gt;There are three packet types being sent to this stage:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verified gossip vote packets&lt;/li&gt;
+&lt;li&gt;Verified tpu_vote packets&lt;/li&gt;
+&lt;li&gt;Verified tpu packets (normal transactions)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有三种已验证的信息包会被发送到这个阶段：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;已验证的gossip vote信息包（Verified gossip vote packets）&lt;/li&gt;
+&lt;li&gt;已验证的tpu_vote信息包（Verified tpu_vote packets）&lt;/li&gt;
+&lt;li&gt;已验证的tpu信息包（Verified tpu packets/normal transactions)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each packet type has its own processing thread; the normal transaction pipeline has two threads.&lt;/p&gt;
+&lt;p&gt;每一种类型的信息包都有对应的线程来处理。针对普通的交易，共有两个线程进行处理。&lt;/p&gt;
+&lt;p&gt;When the current node becomes a leader, the packet goes through the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L1156&#34;&gt;Deserialize&lt;/a&gt; the packet into a SanitizedTransaction.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L933&#34;&gt;Run&lt;/a&gt; the transaction through a Quality of Service (QoS) model. This selects transactions to execute depending on a few &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/runtime/src/cost_model.rs#L108&#34;&gt;properties&lt;/a&gt; (signature, length of instruction data bytes, and some type of cost model based on access patterns for a given program id).&lt;/li&gt;
+&lt;li&gt;The pipeline then grabs a batch of transactions to be executed. This group of transactions are greedily selected to form a parallelizable entry (a group of transactions that can be executed in parallel). In order to do this, it uses the isWriteable flag that clients set when building transactions and a per-account read-write lock to ensure no data race conditions.&lt;/li&gt;
+&lt;li&gt;Transactions are &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L845&#34;&gt;executed&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The results are sent to the &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L787&#34;&gt;PohService&lt;/a&gt; and then forwarded to the broadcast stage to be shredded (packetized) and propagated to the rest of the network. They are also &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L877&#34;&gt;saved&lt;/a&gt; to the bank and accounts database.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;若当前节点成为一个“领导者”，则信息包会经历以下“旅程”：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;将信息包反序列化（&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L1156&#34;&gt;Deserialize&lt;/a&gt;），生成一个纯净交易（SanitizedTransaction）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在服务质量（Quality of Service/QoS）模型下运行（&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L933&#34;&gt;Run&lt;/a&gt;）这笔交易。这将会根据一些特点（&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/runtime/src/cost_model.rs#L108&#34;&gt;properties&lt;/a&gt;）（如签名，指令数据长度，以及基于特定程序id访问模式的费用模型）来选择执行的交易。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接着管线将一批交易执行。这组被选中的交易将通过贪婪选择（greedily selected）被并行执行（executed in parallel）。为了让执行成功，管线会使用“是否可编辑（isWriteable）”标记来确保不会有数据竞争（data race）的状况，而这个标记在客户端生成交易时也由单账户读写锁（per-account read-write lock）同时设置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;至此，交易被执行（&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L845&#34;&gt;executed&lt;/a&gt;）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The results are sent to the &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L787&#34;&gt;PohService&lt;/a&gt; and then forwarded to the broadcast stage to be shredded (packetized) and propagated to the rest of the network. They are also &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L877&#34;&gt;saved&lt;/a&gt; to the bank and accounts database.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;结果被先传送至&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L787&#34;&gt;PohService&lt;/a&gt; ，然后在被转发到广播阶段（broadcast stage）打包并向全网发送。这些结果也会被保存（&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L877&#34;&gt;saved&lt;/a&gt;）在银行和账户数据库中（bank and accounts database）。&lt;/p&gt;
+&lt;p&gt;Transactions that aren’t processed will be buffered and retried on the next iteration. If a validator receives transactions before it’s time to produce blocks, or its time leading the network is up, it will forward the unprocessed transactions to the TPU forward port of leader n + 1.&lt;/p&gt;
+&lt;p&gt;那些没有被执行的交易则会被缓冲（buffered）并送入下一个迭代（iteration）中。如果一个验证者在它出块之前接收到了（这些）交易信息，或者它“领导者”的时间已经用尽，验证者就会对做出决定 — — 到底是留下这些信息还是发送给下一个“领导者”的TPU转发端口（TPU forward port）。&lt;/p&gt;
+&lt;h2 id=&#34;34-并行处理parallel-processing&#34;&gt;3.4 &lt;strong&gt;并行处理（Parallel Processing）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;One of Solana’s spicy features is the runtime’s ability to parallelize transaction processing enabled by the programming model’s separation of code and state (known as &lt;a href=&#34;https://medium.com/solana-labs/sealevel-parallel-processing-thousands-of-smart-contracts-d814b378192&#34;&gt;Sealevel&lt;/a&gt;). Transaction instructions are required to explicitly mark what accounts will be read from and written to.&lt;/p&gt;
+&lt;p&gt;Solana的一个突出特点就是它可以在运行时（Runtime）通过特定编程模型（programming model）将代码和状态分离，从而实现对交易的并行处理（即&lt;a href=&#34;https://medium.com/solana-labs/sealevel-parallel-processing-thousands-of-smart-contracts-d814b378192&#34;&gt;Sealevel&lt;/a&gt;机制）。&lt;/p&gt;
+&lt;p&gt;This can be a huge pain in the ass for developers, but it’s for a good reason — it allows the BankingStage to execute batches of transactions in parallel without running into concurrency issues.&lt;/p&gt;
+&lt;p&gt;这对开发者来说可能很痛苦（因为开发难度大），但这样做是有益的：它使得银行阶段**(&lt;strong&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L249&#34;&gt;&lt;strong&gt;BankingStage&lt;/strong&gt;&lt;/a&gt;&lt;/strong&gt;)** 可以在并行执行交易批处理文件（batches of transactions）时免受并发问题（concurrency issues）的影响。&lt;/p&gt;
+&lt;p&gt;Transactions are processed in batches. The entries produced by each batch contain a list of transactions that can be executed in parallel. Therefore, we need RW locking in each batch in addition to batches processed in other parallel pipelines.&lt;/p&gt;
+&lt;p&gt;交易在批处理文件中处理。由批处理文件产生的（启动）项（条目）中包含一张由多个可被并行执行的交易所组成的列表，因为，我们就需要在每个批处理文件中添加读写锁（read-write lock/R-W lock）来确保程序不会在平行管线间同时读/写相同的位置（否则数据就有问题了）。&lt;/p&gt;
+&lt;p&gt;Let’s walk through a few examples. In reality, transactions will access multiple accounts. &lt;strong&gt;For simplicity’s sake, imagine each box is a transaction that is accessing one account.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;接下来就让我们一起再进一步研究几个例子。在现实中，交易会涉及多个账户。但此时，简单起见，我们先认为下图一个盒子就代表一次交易，也只对应一个账户。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*wNqpjPIPQFGhVJD-&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;多个批处理文件可以同时被处理。当底层的管线没能识别/抓住（grab）账号C的读写锁是，它就会被缓冲然后进入下一个迭代。&lt;/p&gt;
+&lt;p&gt;In the above example, account &lt;strong&gt;C&lt;/strong&gt; is the only account shared between the two batches in the two separate pipelines. One batch is attempting to read from C and another attempting to write. In order to avoid any &lt;a href=&#34;https://en.wikipedia.org/wiki/Race_condition&#34;&gt;race conditions&lt;/a&gt;, the validator uses a &lt;a href=&#34;https://en.wikipedia.org/wiki/Readers%E2%80%93writer_lock&#34;&gt;read-write lock&lt;/a&gt; to ensure no data corruption. In this case, the top pipeline locks &lt;strong&gt;C&lt;/strong&gt; first and starts execution. At the same time, the bottom pipeline attempts to execute the batch, but &lt;strong&gt;C&lt;/strong&gt; is already locked, so it executes everything except for &lt;strong&gt;C&lt;/strong&gt; and saves it for the next iteration.&lt;/p&gt;
+&lt;p&gt;在上一个例子（图）中，C是在两条并行管线中，唯一被两个批处理文件共享的账户。一个批处理文件正尝试读取C而同时另一个则尝试编辑C。为了防止任何数据竞态（&lt;a href=&#34;https://en.wikipedia.org/wiki/Race_condition&#34;&gt;race conditions&lt;/a&gt;），验证者必须使用读写锁来确保数据没有被污染。具体来说，顶部的管线会先将C账户“上锁”然后开始执行。同时，虽然底部的管线也会尝试执行批处理文件中的C账户，但是C账户此时已经上锁，所以它会执行C账户之外所有的（账户），而C账户则会留到下一次迭代时执行。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*cDWKuxps2QWU1uha&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;已经被执行的批处理文件也需要是可并行的（parallelizable）&lt;/p&gt;
+&lt;p&gt;In this example, there are multiple transactions which contain reads and writes to account &lt;strong&gt;C&lt;/strong&gt;. Since the entries propagated to block producers need to support parallel execution, it will grab the first access to &lt;strong&gt;C&lt;/strong&gt; in addition to the other transactions after that follow the RW Lock rules.&lt;/p&gt;
+&lt;p&gt;总之，在这个例子中，因为有多笔交易信息，所以需要读取和编辑C账户。由于被广播给区块生成者的（初始）项（条目）需要支持并行处理/执行，所以系统会在读写锁的规则下，有序处理账户C和其他账户。&lt;/p&gt;
+&lt;p&gt;3.5 &lt;strong&gt;历史证明服务(&lt;/strong&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/poh/src/poh_service.rs&#34;&gt;&lt;strong&gt;PohService&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Proof of History (PoH) is Solana’s technique for proving the passage of time. It is similar to a verifiable delay function (VDF). Read more about it &lt;a href=&#34;https://medium.com/solana-labs/proof-of-history-a-clock-for-blockchain-cf47a61a9274&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;历史证明(PoH)是Solana用来证明（收发）消息时间的技术。它与可验证延迟函数（VDF: verifiable delay function）技术类似，具体可以&lt;a href=&#34;https://medium.com/solana-labs/proof-of-history-a-clock-for-blockchain-cf47a61a9274&#34;&gt;参考此处&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;The PohService is responsible for generating ticks which are units of time smaller than a slot (1 slot = N ticks). This is pinned to a processor core and runs a hash loop like:&lt;/p&gt;
+&lt;p&gt;历史证明服务会负责产生比“槽”（slot）还小的“最小时间单位”（ticks）。“最小时间单位”会附着在一个处理器核心上并运行一个哈希循环：&lt;/p&gt;
+&lt;p&gt;output = “solana summer”&lt;br&gt;
+while 1:&lt;br&gt;
+output = hash([output])&lt;/p&gt;
+&lt;p&gt;Hashes will be generated from themselves until a &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/poh/src/poh_recorder.rs#L83&#34;&gt;Record&lt;/a&gt; is &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L787&#34;&gt;received&lt;/a&gt; from the BankingStage, at which point the current hash and &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L782&#34;&gt;mixin&lt;/a&gt; (a hash of all transactions in the batch) are combined. These records are converted to &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/entry/src/entry.rs#L107&#34;&gt;Entries&lt;/a&gt; so that they can be broadcasted to the network via the BroadcastStage. The pseudo-code ends up looking something like:&lt;/p&gt;
+&lt;p&gt;直到从银行阶段（BankingStage）收到（&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/banking_stage.rs#L787&#34;&gt;received&lt;/a&gt;）一份记录(&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/poh/src/poh_recorder.rs#L83&#34;&gt;Record&lt;/a&gt;)，即当前哈希和mixin(批处理文件中所有交易的哈希)合并之前，哈希会一直产生。这些记录也会被转化成可被广播阶段（BroadcastStage）向全网发送的项（条目）（&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/entry/src/entry.rs#L107&#34;&gt;Entries&lt;/a&gt;）。整个过程的伪代码如下：&lt;/p&gt;
+&lt;p&gt;output = “solana summer”&lt;br&gt;
+record_queue = Queue()while 1:&lt;br&gt;
+record = record_queue.maybe_pop()&lt;br&gt;
+if record:&lt;br&gt;
+output = hash([output, record])&lt;br&gt;
+else:&lt;br&gt;
+output = hash([output])&lt;/p&gt;
+&lt;h2 id=&#34;36-广播阶段broadcaststage&#34;&gt;3.6 广播阶段（&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/core/src/tpu.rs#L136&#34;&gt;&lt;strong&gt;BroadcastStage&lt;/strong&gt;&lt;/a&gt;）&lt;/h2&gt;
+&lt;p&gt;This stage is responsible for broadcasting &lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/entry/src/entry.rs#L126&#34;&gt;Entries&lt;/a&gt; generated by PohService to the rest of the network. These entries are converted to Shreds, which represent the smallest unit of a block and then sent to the rest of the network using a block propagation technique called &lt;a href=&#34;https://medium.com/solana-labs/turbine-solanas-block-propagation-protocol-solves-the-scalability-trilemma-2ddba46a51db&#34;&gt;Turbine&lt;/a&gt;. The tl;dr is that each node receives a partial view of the block from its parent node (up to 64KB packet size), and shares it with its own children and so on. It looks something like this:&lt;/p&gt;
+&lt;p&gt;这个阶段负责将历史证明服务（PohService）所产生的项（条目）（&lt;a href=&#34;https://github.com/solana-labs/solana/blob/cd6f931223181d5a1d47cba64e857785a175a760/entry/src/entry.rs#L126&#34;&gt;Entries&lt;/a&gt;）向全网广播。这些项（条目）先回被转化成代表一个区块最小单位的碎片（Shreds），然后再使用“涡轮”(&lt;a href=&#34;https://docs.solana.com/cluster/turbine-block-propagation&#34;&gt;&lt;strong&gt;Turbine&lt;/strong&gt;&lt;/a&gt;)区块通信技术向全网广播。宏观上看，每个节点都只接收到父节点传来区块的部分信息（信息包大小上限为64K），并且和自己的子节点也如此分享信息。整个过程看起来像：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*Ac6G0eboDklWMtE7.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;涡轮&lt;/p&gt;
+&lt;p&gt;On the receiving side, validators listen for shreds and convert them back into entries and then blocks. The details of that will be in a future article.&lt;/p&gt;
+&lt;p&gt;在接收方面，验证者会监听并将碎片再次转化项（条目）（entries）。具体的详情会在之后的文章中详述。&lt;/p&gt;
+&lt;h1 id=&#34;4-感谢thank-you&#34;&gt;4. 感谢（Thank You）&lt;/h1&gt;
+&lt;p&gt;As you may be able to tell, the validator is a very complex piece of engineering and we have just scratched the surface. It takes inspiration from operating systems and one can tell there are lots of systems-level tricks the team uses to increase the performance. Big kudos to the Solana engineering team and contributors for this amazing piece of engineering.&lt;/p&gt;
+&lt;p&gt;如您所知，验证者/节点是网络工程中非常复杂的一环，目前我们也只是浮光掠影地介绍了一番。这其中有来自操作系统技术的灵感，开发团队也使用了大量底层系统级别的技术来提升性能。让我们一起向Solana工程团队致以崇高敬意！&lt;/p&gt;
+&lt;p&gt;Stay tuned for our next pieces where we go more in depth into the challenges of building a more democratic MEV system on Solana.&lt;/p&gt;
+&lt;p&gt;请密切关注我们下一篇文章，我们将会详述如何在Solana上建设一个更加民主（democratic）的MEV系统。&lt;/p&gt;
+&lt;p&gt;Thank you to the Solana engineers for help in Discord and thank you for reading. Please follow &lt;a href=&#34;https://twitter.com/jito_network&#34;&gt;@jito_network&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;@buffalu__&lt;/a&gt;, and &lt;a href=&#34;https://twitter.com/segfaultdoctor&#34;&gt;@segfaultdoctor&lt;/a&gt; on Twitter to stay tuned for our next articles.&lt;/p&gt;
+&lt;p&gt;向在Discord频道帮助我们的Solana工程师们致谢！如果可以的话，烦请您关注我们的推特账号：&lt;a href=&#34;https://twitter.com/jito_labs&#34;&gt;@jito_labs&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;@buffalu_&lt;/a&gt;和&lt;a href=&#34;https://twitter.com/segfaultdoctor&#34;&gt;@segfaultdoctor&lt;/a&gt; 。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If any of this is interesting to you, we’re hiring! Please DM&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;&lt;strong&gt;@buffalu__&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;on Twitter.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;另外，我们正在招聘！如果您有兴趣，请在推特上私信 &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;&lt;strong&gt;@buffalu__&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+">Solana验证者（节点）攻略1-交易流程(ENG-CHN)</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200
+    });
+  </script>
+
+
+
+
+
+
+
+</html>
