@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Web3 is REAL</title>
-    <updated>2022-05-03T07:15:26.229Z</updated>
+    <updated>2022-05-03T08:41:46.120Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,160 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Web3 is REAL</rights>
+    <entry>
+        <title type="html"><![CDATA[AxelarSea入门简介 (Introducing AxelarSea!)]]></title>
+        <id>https://chainguys.github.io/post/axelarsea-ru-men-jian-jie-introducing-axelarsea/</id>
+        <link href="https://chainguys.github.io/post/axelarsea-ru-men-jian-jie-introducing-axelarsea/">
+        </link>
+        <updated>2022-05-03T07:31:55.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*zeaspL9SwEaF6QJxN-CNlA.jpeg" alt="" loading="lazy"></figure>
+<h1 id="axelarsea入门简介-introducing-axelarsea">AxelarSea入门简介 (Introducing AxelarSea!)</h1>
+<p>Interoperability has been a fundamental issue in the blockchain ecosystem since its inception. This includes the NFT market, where buyers and sellers are limited by the difficulty of moving assets across chains. AxelarSea, powered by Axelar Network, aims to facilitate both buyers and sellers in achieving the most efficient NFT trades where they are not constrained by the chains.</p>
+<p>自区块链生态系统诞生以来，交互性一直是一个基本问题。NFT 市场，买家和卖家都受到跨链转移资产难度的限制。 AxelarSea 由 Axelar Network 提供支持，旨在促进买卖双方在不受特定链约束的情况下实现最有效的 NFT 交易。</p>
+<blockquote>
+<p>AxelarSea is a one-stop interoperable NFT marketplace across chains where buyers can pay for an NFT on any supported chain using a token from a completely different chain, and sellers can list an NFT for sale on any supported chain while receiving payments on another chain.</p>
+<p>AxelarSea 是跨链一站式可交互NFT 市场，买家可以使用来自完全不同链的代币在任何受支持的链上支付购买NFT的资金，卖家可以在任何受支持的链上列出要出售的 NFT，同时在另一条链上接受付款。</p>
+</blockquote>
+<p>AxelarSea’s goal is to provide solutions that<br>
+AxelarSea 的目标是提供解如下决方案:</p>
+<ul>
+<li>
+<p><strong>For sellers:</strong> A seller can sell an NFT on one chain (chain <em>A</em>) while putting up an asking price and receiving payment on another chain (chain <em>B</em>).<br>
+<strong>对于卖家</strong>：卖家可以在一条链(链 A）上出售 NFT，同时在另一条链(链 B）上设定价格并接收付款。</p>
+</li>
+<li>
+<p><strong>For buyers:</strong> A buyer can place an order for an NFT hosted on one chain (chain <em>A</em>) and pay with tokens from another chain (chain <em>C</em>).<br>
+对于买家：买家可以下单购买“存放”在一条链(链 A）上的 NFT，并使用来自另一条链(链 C）的代币进行支付。</p>
+</li>
+</ul>
+<p>Even though the buyer’s payment is made on chain <em>C</em>, it will be automatically transferred to chain <em>B</em> via the Axelar Network, as requested by the seller. The buyer is not required to own any assets/wallets on chain <em>B</em>.</p>
+<p>即使买方的付款是在链 C 上进行的，它也可以根据卖方的要求通过 Axelar 网络自动转移到链 B。买方不需要拥有链 B 上的任何资产/钱包。</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/1*WfxgAPwUs-Zirv04iay8oQ.jpeg" alt="" loading="lazy"></figure>
+<p><em>P1:Diagram of the flow of NFT and assets between a seller and a buyer through AxelarSea without any constraint of the different chains, via Axelar Network.</em></p>
+<p><em>图1:通过 Axelar 网络，卖家和买家之间的 NFT 和资产不受不同链的任何约束。</em></p>
+<h1 id="当前nft市场的痛点-painpoints-in-the-current-nft-marketplace">当前NFT市场的痛点 (Painpoints in the current NFT marketplace)</h1>
+<p>Currently, the payment tokens and the NFT must be on the same chain. If an NFT is hosted on one chain, for example, the buyer must pay with a token and have a wallet on that chain. Even though some marketplaces (such as EVM) operate on multiple chains within the same ecosystem, there is no single universal marketplace that connects and facilitates transactions across multiple ecosystems. As a result, there are a plethora of marketplaces that complicate the experience of both buyers and sellers.</p>
+<p>当前，支付代币和 NFT 必须在同一条链上。例如，如果 NFT 托管在一条链上，则买方必须使用代币付款并在该链上拥有钱包。尽管某些市场(例如 EVM）在同一生态系统内的多个链上运行，但没有一个通用市场可以连接和促进多个生态系统的交易。因此，过多的市场使买卖双方的体验变得复杂。</p>
+<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/1*dvhs9ay6UZN_6buv0BR3ig.jpeg" alt="" loading="lazy"></figure>
+<h1 id="axelarsea如何帮助买家-how-does-axelarsea-help-buyers">AxelarSea如何帮助买家 (How does AxelarSea help buyers?)</h1>
+<p>For most buyers, they don’t possess asset on all available chains in the blockchain ecosystem; hence, if they want to buy an NFT on a chain that they don’t have any token, they have to move their assets to that chain, incurring high fees and security risks/delay through bridges.</p>
+<p>对于大多数买家来说，他们并不拥有区块链生态系统中所有可用链上的资产；因此，如果他们想在没有任何代币的链上购买 NFT，他们必须将资产转移到该链上，从而在使用跨链桥时产生高额费用和安全风险/延迟。</p>
+<p>Let’s consider the following example situation:<br>
+让我们来思考一下下面的情形:</p>
+<ul>
+<li>An NFT is hosted on Ethereum chain with an asking price quoted in $ETH.<br>
+NFT 托管在以太坊上，用ETH计价。</li>
+<li>A potential buyer has assets as <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>U</mi><mi>N</mi><mi>A</mi><mi>o</mi><mi>n</mi><mi>T</mi><mi>e</mi><mi>r</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>h</mi><mi>a</mi><mi>i</mi><mi>n</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">一</mi><mi mathvariant="normal">个</mi><mi mathvariant="normal">潜</mi><mi mathvariant="normal">在</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">买</mi><mi mathvariant="normal">家</mi><mi mathvariant="normal">只</mi><mi mathvariant="normal">有</mi><mi>T</mi><mi>e</mi><mi>r</mi><mi>r</mi><mi>a</mi><mi mathvariant="normal">上</mi><mi mathvariant="normal">的</mi></mrow><annotation encoding="application/x-tex">LUNA on Terra chain.    
+ 一个潜在的买家只有Terra上的</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.10903em;">U</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault">A</span><span class="mord mathdefault">o</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">c</span><span class="mord mathdefault">h</span><span class="mord mathdefault">a</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord">.</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">潜</span><span class="mord cjk_fallback">在</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">买</span><span class="mord cjk_fallback">家</span><span class="mord cjk_fallback">只</span><span class="mord cjk_fallback">有</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord cjk_fallback">上</span><span class="mord cjk_fallback">的</span></span></span></span>LUNA</li>
+</ul>
+<p>Using a tradiational NFT marketplace, the buyer has to go through the following steps:<br>
+如果使用传统的NFT市场，买家就需要进行下面几步:</p>
+<hr>
+<ol>
+<li>Looking for a bridge that support asset transfer from Terra chain to Ethereum chain.</li>
+<li>Looking for an asset supported by the bridge. For example, some bridges might not support $LUNA, and only support $UST as a transferring asset.</li>
+<li>Searching for DEX on Terra to exchange $LUNA to an asset supported by the bridge, which is $UST in this example.</li>
+<li>Creating a wallet that supports Ethereum chain.</li>
+<li>Funding the Ethereum chain wallet with $ETH for transaction fees.</li>
+<li>Searching for DEX on Ethereum chain to exchange the asset supported by the bridge ($UST) to $ETH.</li>
+</ol>
+<hr>
+<ol>
+<li>寻找支持从 Terra 到 Ethereum 转移资产的跨链桥。</li>
+<li>寻找跨链桥支撑的资产。例如，有些跨链桥可能不支持 $LUNA，只支持 $UST 作为资产转移。</li>
+<li>在 Terra 上搜索 DEX，将 $LUNA 兑换成桥支持的资产，本例中为 $UST。</li>
+<li>创建一个支持以太坊的钱包。</li>
+<li>用 $ETH 为以太坊钱包提供交易费用。</li>
+<li>在以太坊上搜索DEX，将跨链桥支持的资产($UST)兑换成ETH。</li>
+</ol>
+<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/1*aRjqLmXxmMkTRZ7Xjx0rqQ.jpeg" alt="" loading="lazy"></figure>
+<p><em>P3:Steps taken by a buyer to move an asset on Terra chain to buy an NFT on Ethereum chain.</em></p>
+<p><em>图3：买家将 Terra 链上的资产转移到以太坊链上购买 NFT 的步骤。</em></p>
+<p>Steps needed for a buyer to buy an NFT on a chain that he/she doesn’t have an asset on, as described above, are riddled with problems, that can be categorized as following:</p>
+<p>如上所述，买家在他/她没有资产的链上购买 NFT 所需的步骤充满了问题，可分为以下几类：</p>
+<ul>
+<li>
+<p><em>High fees</em>: The buyer has to spent fees on many steps including making exchange on DEX on both chains, the bridge, and funding wallet on the new chain.<br>
+<em>高费用</em>：买方必须在许多步骤上付费，包括在两条链上的 DEX 上进行交换、跨链桥和新链上的资金钱包。</p>
+</li>
+<li>
+<p><em>Inconvenience</em>: The buyer has to research for the bridge that support the transfer, the wallet for the new chain, how to fund the new wallet, and the DEX on the new and unfamiliar chain.<br>
+<em>不方便</em>：买家要研究支持转账的桥，新链的钱包，新钱包如何注资，新链和陌生链上的DEX。</p>
+</li>
+<li>
+<p><em>Security</em>: The buyer experiences security risk (for example, phishing attack) when searching for bridge and DEX on an unfamiliar chain.<br>
+<em>安全</em>：买家在陌生链上搜索bridge和DEX时会遇到安全风险(例如钓鱼攻击）。</p>
+</li>
+<li>
+<p><em>Time consuming</em>: The buyer wastes time to execute several steps and doing research of the new chain.<br>
+<em>耗时</em>：买方浪费时间执行几个步骤并研究新链。</p>
+</li>
+</ul>
+<h2 id="基于axelarsea的解决方案-solutions-via-axelarsea">基于AxelarSea的解决方案 Solutions (via AxelarSea)</h2>
+<p>Many of the steps required by a buyer described above are automatically executed by AxelarSea. The buyer only need to supply $LUNA to AxelarSea on Terra chain. AxelarSea system will perform the following actions.</p>
+<p>上述买方所需的许多步骤由 AxelarSea 自动执行。买方只需向 Terra 链上的 AxelarSea 提供 $LUNA。 AxelarSea 系统将执行以下操作。</p>
+<ul>
+<li>
+<p>Transfer the asset to Ethereum chain via Axelar Network (becoming $aLUNA)<br>
+通过 Axelar Network 将资产转移到以太坊链(成为 $aLUNA）</p>
+</li>
+<li>
+<p>Make an exchange to $ETH through DEX supported by AxelarSea<br>
+通过 AxelarSea 支持的 DEX 兑换 $ETH</p>
+</li>
+<li>
+<p>Transfer $ETH to the seller<br>
+将ETH发送给卖方</p>
+</li>
+</ul>
+<p>Notice that the buyer doesn’t need to setup wallet on Ethereum chain at all.<br>
+请注意，买家根本不需要在以太坊链上设置钱包。</p>
+<figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/1400/1*72Z4_4dGcJbn5eDm6l8Apw.jpeg" alt="" loading="lazy"></figure>
+<p><em>P4:Buyer needs to simply deposit his asset and AxelarSea will automatically transfer the asset cross-chain, swap the tokens, and transfer it to the seller.</em></p>
+<p><em>买家只需存入资产，AxelarSea 会自动跨链转移资产，交换代币，转给卖家。</em></p>
+<h1 id="axelarsea如何帮助卖家-how-does-axelarsea-help-sellers">AxelarSea如何帮助卖家 (How does AxelarSea help sellers?)</h1>
+<p>Currently, each NFT marketplace is confined to a certain ecosystem. If a seller wishes to place sales of his multiple NFTs on several ecosystems, he/she has to interact with multiple marketplaces, complicating the experience. For example, if a seller owns NFTs on three different blockchain ecosystem (such as EVM, Polkadot, and Cosmos), he/she would need to interact with three different marketplaces — one for each ecosystem.</p>
+<p>目前，每个 NFT 市场都局限于某个生态系统。如果卖家希望将他多个 NFT放在多个生态系统中销售，他/她必须与多个市场进行交互，从而使体验复杂化。例如，如果卖家在三个不同的区块链生态系统(例如 EVM、Polkadot 和 Cosmos）上拥有 NFT，他/她将需要与三个不同的市场进行交互—每个生态系统一个。</p>
+<figure data-type="image" tabindex="6"><img src="https://miro.medium.com/max/1400/1*LdgK5EN8XQJMudJlpP7iFw.jpeg" alt="" loading="lazy"></figure>
+<p><em>P5:A seller needs to interact with different NFT marketplace for each ecosystem. Each NFT is confined to buyers who have access to those chains supported by each marketplace</em></p>
+<p><em>图5:卖家需要与每个生态系统的不同 NFT 市场进行交互。每个 NFT 仅限于可以访问受市场支持的链上的买家</em></p>
+<p>A seller has to interact with multiple marketplaces — each specific to a certain blockchain ecosystem. This setup leads to the problems, that can be categorized as follow.</p>
+<p>卖家必须与多个市场互动——每个市场都限定于某个区块链生态系统。这种设置会导致问题，分类如下：</p>
+<ul>
+<li>
+<p><em>Hard to track</em>: With several NFTs being listed for sale on multiple marketplaces specific for each chain, the seller will have a hard time tracking all the sales and struggle to visualize the big picture.<br>
+<em>难以追踪</em>：由于每个链的多个市场上都有多个 NFT 上市销售，卖家将很难跟踪所有销售情况，并且难以想象宏观状态</p>
+</li>
+<li>
+<p><em>Limited potential buyers:</em> The sale is exposed only to the buyers in the chains supported by the marketplace.<br>
+<em>限制潜在买家：</em> 此次销售仅向市场支持的链上的买家公开。</p>
+</li>
+<li>
+<p><em>Time consuming</em>: A seller would spend a large amount of time trying to manage his sales over multiple marketplaces.<br>
+<em>耗时</em>：卖家会花费大量时间来管理他在多个市场上的销售。</p>
+</li>
+</ul>
+<h2 id="solutions-via-axelarsea">Solutions (via AxelarSea)</h2>
+<p>AxelarSea provides a platform for sellers to list NFTs from any chain while also attracting potential buyers from any chain. The seller can manage all of his sales by simply visiting the AxelarSea website and connecting his wallets.</p>
+<p>AxelarSea 为卖家提供了一个平台，可以列出来自任何链的 NFT，同时也吸引来自任何链的潜在买家。卖家只需访问 AxelarSea 网站并连接他的钱包即可管理他所有销售的NFT。</p>
+<figure data-type="image" tabindex="7"><img src="https://miro.medium.com/max/1400/1*Iae62CRQ2NUNhrp6AXK1zA.jpeg" alt="" loading="lazy"></figure>
+<p><em>P6:A seller can host an NFT from any chain on AxelarSea while attracting attention from potential buyers from any chain as well.</em></p>
+<p><em>图6：卖家可以在 AxelarSea 上托管来自任何链的 NFT，同时也可以吸引来自任何链的潜在买家的关注。</em></p>
+<p><strong>Try out for yourself!</strong><br>
+<strong>快来试试吧！</strong></p>
+<ul>
+<li>Website: <a href="https://axelarsea.com/Home">https://axelarsea.com/</a></li>
+<li>Learn more: <a href="https://axelarsea.gitbook.io/axelarsea-docs/">https://axelarsea.gitbook.io/axelarsea-docs/</a></li>
+</ul>
+<p><strong>Having a question?</strong><br>
+有问题？欢迎来提问！</p>
+<ul>
+<li>Email: axelarsea@gmail.com</li>
+<li>Discord: <a href="https://discord.gg/dUwcAj7C46">https://discord.gg/dUwcAj7C46</a></li>
+<li>Telegram: <a href="https://t.me/Axelarsea">https://t.me/Axelarsea</a></li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Euler文档+白皮书]]></title>
         <id>https://chainguys.github.io/post/euler-wen-dang-bai-pi-shu/</id>
@@ -35,7 +189,7 @@
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/media/Akord-x-Redstone-1.jpeg" alt="Akord x Redstone 1" loading="lazy"></figure>
 <p><em>This blog post is based on a Twitter Spaces AMA we held with <a href="https://twitter.com/redstone_defi">RedStone</a>. You can <a href="https://twitter.com/i/spaces/1OdJrByrbXpJX">listen to the event here</a>.</em></p>
 <p><em>这篇博文源于我们与 <a href="https://twitter.com/redstone_defi">RedStone</a> 举行的 Twitter Spaces AMA。您可以<a href="https://twitter.com/i/spaces/1OdJrByrbXpJX">在此收听活动</a>.</em></p>
-<h2 id="背景-context">背景 (Context）</h2>
+<h2 id="背景-context">背景 (Context)</h2>
 <p>The possibility for web3, particularly in the context of Arweave, is to take our data, application and business model completely onchain. While that’s very exciting, it presents a number of significant challenges across the developer and user experience.</p>
 <p>web3 的可能性，是让我们的数据、应用和业务(模型)完全上链，尤其是在 Arweave 的“加持”下。虽然这非常令人兴奋，但它对开发人员和用户体验提出了许多重大挑战。</p>
 <p>At Akord, we aim to deliver a web2 user experience in the web3 paradigm. The work the RedStone team has been doing, creating the tools to improve performance, has been a great help for us in achieving this at the technical level.</p>
@@ -44,9 +198,9 @@
 <p>Early on, RedStone identified certain weaknesses in SmartWeave contracts relating to performance and reliability. Specifically, every time you want the latest state of the contract you need to evaluate all the interactions on your side, which doesn’t scale when a contract has tens or hundreds of thousands of interactions and may even communicate with other contracts.</p>
 <p>之前，RedStone 发现了 SmartWeave 合约中，性能可靠性相关的某些弱点。具体来说，每次你想要合约的最新状态时，你都需要评估自己这边的所有交互，当一个合约有数万或数十万次交互或甚至可能与其他合约进行通信时，它无就法扩展。</p>
 <p><a href="https://github.com/redstone-finance/redstone-smartcontracts"><strong>RedStone</strong></a> <a href="https://github.com/redstone-finance/redstone-smartcontracts"><strong>Contracts</strong></a> <strong>introduced a number of tools to address performance and developer experience</strong>: caching mechanisms, testing tools with a test net (including regression tests), a <a href="https://gateway.redstone.finance/">dedicated gateway</a> for indexing and serving smart contracts, a smart contract explorer called <a href="https://sonar.redstone.tools/#/app/contracts">SonAR</a>, and a sequencer built in collaboration with Bundlr.</p>
-<p><a href="https://github.com/redstone-finance/redstone-smartcontracts"><strong>RedStone</strong></a> <a href="https://github.com/redstone-finance/redstone-smartcontracts"><strong>Contracts</strong></a> <strong>引入了许多工具来解决性能和开发人员体验</strong>的问题：缓存机制、带有测试网的测试工具（包括回归测试）、用于索引和服务智能合约的 <a href="https://gateway.redstone.finance/">专用网关</a>、名为 <a href="https://sonar.redstone.tools/#/app/contracts">SonAR</a> 的智能合约浏览器，以及与 Bundlr 合作构建的排序器(序列器)。</p>
+<p><a href="https://github.com/redstone-finance/redstone-smartcontracts"><strong>RedStone</strong></a> <a href="https://github.com/redstone-finance/redstone-smartcontracts"><strong>Contracts</strong></a> <strong>引入了许多工具来解决性能和开发人员体验</strong>的问题：缓存机制、带有测试网的测试工具(包括回归测试)、用于索引和服务智能合约的 <a href="https://gateway.redstone.finance/">专用网关</a>、名为 <a href="https://sonar.redstone.tools/#/app/contracts">SonAR</a> 的智能合约浏览器，以及与 Bundlr 合作构建的排序器(序列器)。</p>
 <p>RedStone have put in a lot of effort to optimise the basic Execution Engine (the core part of the SDK), increasing the efficiency of contract evaluation thanks to extensive caching and memoization. As a result, a SmartWeave contract with over 300,000 interactions <a href="https://github.com/redstone-finance/redstone-sw-gateway#benchmarks">can be loaded in 2 minutes</a> instead of several hours. And this is just the beginning, with further improvements planned for RedStone Contracts SDK and the tools around it.</p>
-<p>RedStone 投入了大量精力来优化基本执行引擎（SDK 核心部分），通过广泛的缓存和记忆化提高了合约评估的效率。因此，具有超过 300,000 次交互的 SmartWeave 合约<a href="https://github.com/redstone-finance/redstone-sw-gateway#benchmarks">可以在 2 分钟内加载</a> 而不是几个小时。而这仅仅是开始，之后还会随着RedStone Contracts SDK 及其周围的工具的（研发）计划而进一步改进。</p>
+<p>RedStone 投入了大量精力来优化基本执行引擎(SDK 核心部分)，通过广泛的缓存和记忆化提高了合约评估的效率。因此，具有超过 300,000 次交互的 SmartWeave 合约<a href="https://github.com/redstone-finance/redstone-sw-gateway#benchmarks">可以在 2 分钟内加载</a> 而不是几个小时。而这仅仅是开始，之后还会随着RedStone Contracts SDK 及其周围的工具的(研发)计划而进一步改进。</p>
 <p>RedStone itself utilises this smart contract platform for ensuring data integrity for its <a href="https://redstone.finance/">Oracles</a>, which can deliver <a href="https://app.redstone.finance/">various types of data</a> and export to any EVM compatible chain.</p>
 <p>RedStone 本身利用这个智能合约平台来确保其 <a href="https://redstone.finance/">预言机 Oracles</a> 的数据完整性，它可以提供 <a href="https://app.redstone.finance/">各种类型的数据</a> 并导出到任何 EVM 兼容链。</p>
 <h2 id="akod如何在redstone帮助下更快速运行how-akord-is-moving-faster-with-redstone">Akod如何在RedStone帮助下更快速运行？(How Akord is moving faster with RedStone)</h2>
@@ -99,7 +253,7 @@
         <updated>2022-04-27T03:57:46.000Z</updated>
         <content type="html"><![CDATA[<p><img src="https://chainguys.github.io/post-images/1651046857339.png" alt="" loading="lazy"><br>
 👏  GM!</p>
-<h1 id="版权声明copyright-notice">版权声明（Copyright Notice）</h1>
+<h1 id="版权声明copyright-notice">版权声明(Copyright Notice）</h1>
 <p><strong>本文翻译自<a href="https://neon-labs.org/">Neon Labs</a>为该项目撰写的<a href="https://docs.neon-labs.org/">技术文档</a>，并已得到翻译授权。译者为<a href="https://twitter.com/Chainguys">@chainguys</a>。转载请注明作者和译者。</strong></p>
 <p><strong>Coptyright©2021 by <a href="https://neon-labs.org/">Neon Labs</a>, translated by <a href="https://twitter.com/Chainguys">@chainguys</a>.</strong></p>
 <p><strong>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。</strong></p>
@@ -110,6 +264,49 @@
 <strong>Please visit folloing links：</strong></p>
 <p><a href="https://chainguys.github.io/neonwp/">Neon EVM技术文档 (Neon EVM Docs)</a><br>
 <a href="https://chainguys.github.io/neonwp/11wp/wp">Neon EVM白皮书  (Neon EVM Whitepaper)</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[欢迎来到Tableland Welcome to Tableland]]></title>
+        <id>https://chainguys.github.io/post/huan-ying-lai-dao-tableland-welcome-to-tableland/</id>
+        <link href="https://chainguys.github.io/post/huan-ying-lai-dao-tableland-welcome-to-tableland/">
+        </link>
+        <updated>2022-03-19T07:58:06.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="欢迎来到tableland-welcome-to-tableland">欢迎来到Tableland Welcome to Tableland</h1>
+<p><strong>本文的作者为<a href="https://twitter.com/tableland__">@Tableland</a>，译者为<a href="https://twitter.com/Chainguys">@chainguys</a>，并已得到授权。转载请注明作者和译者。</strong></p>
+<p>(Coptyright©2022 by<a href="https://twitter.com/tableland__">@Tableland</a> , translated by <a href="https://twitter.com/Chainguys">@chainguys</a></p>
+<p>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。</p>
+<p>(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</p>
+<p>原文地址：<a href="https://mirror.xyz/tableland.eth/I6svQ-WzrhDneHO9NjC6eVIVzDfhtTR8rWyagGbgul8">https://mirror.xyz/tableland.eth/I6svQ-WzrhDneHO9NjC6eVIVzDfhtTR8rWyagGbgul8</a></p>
+<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/0*mDpawXGtVSSjM5Z5.jpg" alt="" loading="lazy"></figure>
+<p>Today, we are excited to announce Tableland, where we are building a novel protocol to enable relational tables and SQL in Web3.</p>
+<p>今天，我们兴奋地宣布 Tableland：在此我们正构建一个全新的协议，以在 Web3 中使用关系表和 SQL。</p>
+<p>In Tableland, we believe the new app stack is NFTs and DAOs. Apps are no longer user interfaces sitting on top of a pile of APIs. Now apps are human experiences that optimize for features like ownership, belonging, access control, and participation. Many of the people buying NFTs today are buying them for the experiences they confer.</p>
+<p>在 Tableland，我们认为新的应用栈是 NFT 和 DAO。应用(Apps)不再是在一堆 API 之上的用户界面。现在，Apps是针对所有权、归属感、访问控制和参与感等功能进行优化的人性化体验。如今，许多购买 NFT 的人是为了获得它们所赋予的体验。</p>
+<p>As the creators of those experiences, we rely extensively on crafting the metadata accompanying the tokens. Metadata describes the assets that make up the artwork in your Pfp; metadata is what community channels you’ll get access to; metadata is your NFT’s score in the game; metadata is how you decide which of your NFTs to show off in a gallery. And so on. When we look into how this metadata is created and exchanged, we find a disconnected system of on-chain storage, decentralized files, and centralized APIs.</p>
+<p>作为这些体验的创造者，我们广泛依赖于制作代币伴生的元数据。元数据阐述了构成用户照片中艺术品的资产(即作为头像的NFT作品背后是元数据作为支撑)；元数据是您可以访问的社区频道；元数据是你在游戏中的 NFT 分数；元数据是您如何决定在画廊中展示哪些 NFT ，等等。当我们研究这些元数据是如何创建和交换的时，我们会发现一个由链上存储、去中心化文件和中心化API 组成的不连贯系统。</p>
+<p>How metadata is captured and served means a lot to the way we develop in Web3. If metadata is stored in smart contracts, it may be expensive and limit the scale of data. If metadata is stored as static files on a decentralized network, it limits the experiences we build and the user interactions we can enable. That decision between on-chain and costly or off-chain but static limits many creators that want to develop unique metaverse experiences, interoperable gaming data, or user-controlled worlds. The main goal of Tableland is to provide a permissionless protocol that allows creators to compose metadata for Web3.</p>
+<p>如何获得和提供元数据对我们在 Web3 中的开发方式意义重大。如果元数据存储在智能合约中，它可能会很昂贵并且会限制数据规模。如果元数据作为静态文件存储在分散的网络上，它会限制我们能创建的用户体验和我们可以实现的用户交互。“在链上则昂贵，在链下但静态”，这艰难的决定限制了许多想要开发独特的元宇宙体验、可交互操作的游戏数据或用户控制世界的创作者。 Tableland 的主要目标是提供一种无许可协议，允许创作者为 Web3 编写元数据。</p>
+<p>The vision for Tableland is simple — a landscape of tables (rows and columns) that drive the metadata for NFTs or DAOs. By building the metadata layer for Web3, we want to give creators a decentralized system for storing structured data that can be queried, joined, and updated using a language they’ve used before, SQL. Tableland is here and we believe it will change the way we build the Internet.</p>
+<p>Tableland 的愿景很简单 — — 驱动 NFT、DAO相关元数据的一片天地。通过为 Web3 构建元数据层，我们希望为创作者提供一个去中心化的系统，来存储可以使用他们之前熟悉的语言(如SQL)来查询、连接和更新结构化数据。 Tableland 就在这里，我们相信它将改变我们构筑互联网的方式。</p>
+<h1 id="come-say-hi">Come say hi!</h1>
+<h1 id="来打个招呼">来打个招呼！</h1>
+<p>We’re at EthDenver for the next couple of days. Come find our booth, say hi, and let us know what you are working on. We are looking for new partners and collaborators, so let’s chat!</p>
+<p>接下来的几天我们在 EthDenver。来找我们的<a href="https://twitter.com/tableland__/status/1494350672057167872">展位</a>打个招呼，让我们知道你在做什么。我们正在寻找新的伙伴和合作者，让我们聊聊吧！</p>
+<h1 id="join-the-creators">Join the creators.</h1>
+<h1 id="加入成为创作者">加入成为创作者</h1>
+<p>The project is taking its first steps with the release of the Tableland gateway. While the protocol and network are still being built, the gateway is open to developers. We would love for you to join our Discord and follow the instructions to try it out.</p>
+<p>随着 <a href="https://docs.tableland.xyz/">Tableland 网关(Tableland gateway)</a>的发布，项目迈出了第一步。尽管其他协议和主网仍在构建中，但网关对开发人员开放。我们希望您加入我们的 Discord 并按照说明进行尝试。</p>
+<p>Check out the docs here. Be sure to see our use-cases and playbooks for NFT metadata and key-value stores.</p>
+<p>请<a href="https://docs.tableland.xyz/">点击此处查看文档</a>。请务必查看我们的<a href="https://www.notion.so/Tableland-Use-cases-466b4ab8bb1248a497dd457f057abf5f">用例</a>，特别是 <a href="https://docs.tableland.xyz/building/examples/playbooks">NFT 元数据和键值存储的和手册</a>。</p>
+<h1 id="become-a-builder">Become a builder.</h1>
+<h1 id="成为建设者">成为建设者</h1>
+<p>The Tableland network will be owned by those who build and use it. We want that to be you and we need your help to get there. Come join our developer efforts, community efforts, or apply for one of our grants or bounties here.</p>
+<p>Tableland 网络将为建设和使用它的人所有。我们希望你是其中一员，而我们也需要你的帮助才能成功。快来加入我们的开发者工作、社区工作，或在此处申请我们的<a href="https://www.notion.so/Tableland-Grants-Funding-ebc1f398d53a481d94f090ab12d93be0">资金支持</a>。</p>
+<h1 id="join-our-team">Join our team.</h1>
+<h1 id="加入团队">加入团队</h1>
+<p>We are hiring across all roles — join us!</p>
+<p>我们<a href="https://boards.greenhouse.io/textileio">正在招聘</a>，加入我们吧！</p>
 ]]></content>
     </entry>
 </feed>
