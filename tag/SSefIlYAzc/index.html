@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Web3 is REAL</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1651567141227">
+<link rel="shortcut icon" href="/favicon.ico?v=1651570625973">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -224,13 +224,13 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">5</span>
+        <span class="site-item-stat-count">6</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">26</span>
+        <span class="site-item-stat-count">36</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -309,11 +309,45 @@
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <a href="https://chainguys.github.io/post/akord-x-redstone-ti-sheng-arweave-de-xing-neng-akord-x-redstone-improving-performance-on-arweave/">
         <div class="motion-warpper">
           <div class="tag-post-node">
             <h1>
-              04-27
+              04-26
               <small>Akord x RedStone—提升Arweave的性能! Akord x RedStone – Improving Performance on Arweave</small>
             </h1>
           </div>
@@ -344,13 +378,16 @@
       
       
       
-      
-      
-      
-      
-      
-      
-      
+      <a href="https://chainguys.github.io/post/redstone-tech-doc-translation-redstone-ji-zhu-wen-dang-fan-yi/">
+        <div class="motion-warpper">
+          <div class="tag-post-node">
+            <h1>
+              03-18
+              <small>RedStone Tech Doc Translation RedStone 技术文档翻译</small>
+            </h1>
+          </div>
+        </div>
+      </a>
       
       
       
@@ -621,6 +658,300 @@
     <div class="result" id="result">
       
       <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/neon-lab-di-er-ci-amasecond-ama-of-neon-lab/"" data-c="
+          &lt;h1 id=&#34;neon-lab第二次amasecond-ama-of-neon-lab&#34;&gt;NEON Lab第二次AMA(Second AMA of Neon Lab)&lt;/h1&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*CoVneWEtRIuY93DogiH9ig.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Neon Lab:Virtual machine from &lt;strong&gt;Ethereum&lt;/strong&gt;&lt;br&gt;
+Scalability and liquidity from &lt;strong&gt;Solana&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://neon-labs.org/&#34;&gt;Neon EVM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)**&lt;/p&gt;
+&lt;h1 id=&#34;neon-代理-高维视野的解释-neon-proxy-high-level-explanation&#34;&gt;NEON 代理 — 高维视野的解释 NEON PROXY — HIGH-LEVEL EXPLANATION&lt;/h1&gt;
+&lt;p&gt;Probably most of you know what NeonEVM Platform is. But to be on the same page, I’d like to refresh some critical aspects of our platform.&lt;/p&gt;
+&lt;p&gt;可能大多数人都知道 Neon EVM 平台是什么。但为了让大家保持信息一致，我想更新一些我们平台关键方面（的信息）。&lt;/p&gt;
+&lt;p&gt;Generally speaking, NeonEVM consists of two significant parts NeonEVM program and NeonProxy.&lt;/p&gt;
+&lt;p&gt;NeonEVM Program is a smart contract deployed on Solana and NeonProxy is a separate decentralized module.&lt;/p&gt;
+&lt;p&gt;一般来说，NeonEVM 由 NeonEVM 程序和 Neon代理（Neon Proxy）两个重要部分组成。&lt;/p&gt;
+&lt;p&gt;NeonEVM Program 是部署在 Solana 上的智能合约，NeonProxy 是一个单独的去中心化模块。&lt;/p&gt;
+&lt;p&gt;As you know, NeonEVM allows running Ethereum dApps with no code modifications on Solana (with all benefits of it like high speed and low costs).&lt;/p&gt;
+&lt;p&gt;To make it possible, you, as dApps developers, need to deploy your smart contracts into the NeonEVM program and connect the wallet (like Metamask) to the NeonProxy. Instead of or in addition to the wallet, you can connect IDE (like Remix, Truffle, Hardhat) or Front-end UI.&lt;/p&gt;
+&lt;p&gt;如您所知，NeonEVM 允许（用户）无需修改代码就能在 Solana 上运行以太坊 dApp（具有高速和低成本等所有优点）。&lt;/p&gt;
+&lt;p&gt;为了实现这一点，作为 dApp 开发人员，您需要将智能合约部署到 NeonEVM 程序中，并将钱包（如 Metamask）连接到 NeonProxy。除了钱包之外，您还可以连接 IDE（如 Remix、Truffle、Hardhat）或前端 UI。&lt;/p&gt;
+&lt;p&gt;The execution of Ethereum-like transactions in NeonEVM takes place in several steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You send an Ethereum-like transaction to the NeonProxy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NeonProxy splits and packs single Eth-like Tx into several Solana Tx and sents them to the NeonEVM program on Solana&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NeonEVM program unpacks and executes Eth-like Tx&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在 NeonEVM 中执行类以太坊交易分几个步骤进行：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;你向 NeonProxy 发送类以太坊交易&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NeonProxy 将单个 类以太坊交易拆分打包成多个Solana交易发送到 Solana 上的 NeonEVM 程序&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NeonEVM 程序解包并执行类以太坊交易&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To sum up, we implemented NeonProxy to execute Eth-like Tx as it used to be in the Ethereum world without any changes in dApps code.&lt;/p&gt;
+&lt;p&gt;总而言之，我们实现了 NeonProxy 来执行类以太坊交易，而无需对 dApps 代码进行任何更改，就像它曾经在以太坊世界中一样。&lt;/p&gt;
+&lt;p&gt;And the last point I want to clarify is that several Proxy Operators run NeonProxy. So it runs in decentralized mode.&lt;/p&gt;
+&lt;p&gt;Currently, we are going to Launch Alpha and Beta with a few professional whitelisted operators.&lt;/p&gt;
+&lt;p&gt;Further, we have plans to start the operator’s onboarding process and remove the operator’s whitelist at all in the future.&lt;/p&gt;
+&lt;p&gt;So, our primary goal is to run as many Proxy operators as possible to become fully decentralized.&lt;/p&gt;
+&lt;p&gt;我最后要澄清的一点是，有几个节点运营商运行NeonProxy。所以它以去中心化模式运行。&lt;/p&gt;
+&lt;p&gt;目前，我们将与一些专业的白名单运营商一起发布 Alpha 和 Beta。&lt;/p&gt;
+&lt;p&gt;此外，我们计划在未来启动运营商的引入流程并完全移除运营商的白名单。&lt;/p&gt;
+&lt;p&gt;因此，我们的主要目标是运行尽可能多的代理运营商，以实现完全去中心化。&lt;/p&gt;
+&lt;h1 id=&#34;深度聊聊技术-technical-deep-dive&#34;&gt;深度聊聊技术 TECHNICAL DEEP DIVE&lt;/h1&gt;
+&lt;p&gt;During the New Year holidays, the Neon Labs team did a global test of the Neon EVM.&lt;/p&gt;
+&lt;p&gt;新年期间，团队在全球范围内测试了Neon EVM。&lt;/p&gt;
+&lt;p&gt;After testing we found a number of problems, I will voice the most critical of them&lt;/p&gt;
+&lt;p&gt;测试期间我们找到了一些问题，我讲几个最重要的：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;It is very common for users to fail to execute their Neon transactions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The transaction execution speed isn’t high, despite the good performance of the Solana Cluster&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Users often cannot get a receipt for a completed Neon transaction.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We have found that at some points the public Neon Proxy spends more than 200 SOL tokens in 4 hours.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When we began to study the situation more deeply, we found that Neon Proxy creates a lot of empty accounts. It’s not good, because storing extra records in Solana’s state is expensive. As result, the transaction cost is expensive for users and operators.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用户无法执行他们的 Neon 交易，这很常见。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;交易执行速度不高，尽管 Solana 集群(Cluster) 的性能不错&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用户经常无法获得已完成 Neon 交易的回执。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我们发现，在某些时候，公共 Neon Proxy 在 4 小时内花费了 200 多个 SOL 代币。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;当我们开始更深入地研究情况时，我们发现Neon Proxy创建了大量的空账户。这不是好兆头，因为在 Solana 的状态中存储额外的记录很昂贵。结果，交易成本对用户和运营商来说都很昂贵。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The Neon Proxy prepares Neon transactions for on-chain execution on the Solana cluster.&lt;/p&gt;
+&lt;p&gt;We also found a number of problems inside the Neon EVM program.&lt;/p&gt;
+&lt;p&gt;But today’s session is dedicated to what we did inside Neon Proxy, so we will talk about the Neon EVM program in another AMA session.&lt;/p&gt;
+&lt;p&gt;We love our community and we want to provide them with a really good product.&lt;/p&gt;
+&lt;p&gt;Therefore, we decided to refine our product so that working with it would be a pleasure.&lt;/p&gt;
+&lt;p&gt;NeonProxy为在 Solana 集群上的Neon 交易准备链上执行。&lt;/p&gt;
+&lt;p&gt;我们还在 Neon EVM 程序中发现了一些问题。&lt;/p&gt;
+&lt;p&gt;但是今天的会议专门讨论我们在 Neon代理(Neon proxy) 中所做的事情，因此我们将在另一个 AMA 会议中讨论 Neon EVM 程序。&lt;/p&gt;
+&lt;p&gt;我们热爱我们的社区，我们希望为他们提供非常好的产品。&lt;/p&gt;
+&lt;p&gt;因此，我们决定改进我们的产品，以便使用它时会成为一种乐趣。&lt;/p&gt;
+&lt;p&gt;What have we done?&lt;/p&gt;
+&lt;p&gt;Let’s have a few words about how it all works.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我们做了什么？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;让我们谈谈这一切是如何运作的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Neon transactions are complex transactions, they consist of many Solana transactions.&lt;/p&gt;
+&lt;p&gt;Neon 交易是复杂的交易，它们由许多 Solana 交易组成。&lt;/p&gt;
+&lt;p&gt;The thing is that Solana limits the number of resources for the execution of a single Solana transaction. If an Ethereum-like transaction requires a lot of compute units, it cannot be performed within a single Solana transaction.&lt;/p&gt;
+&lt;p&gt;Therefore, the Neon EVM program saves the EVM state to the Solana storage. And when the Neon Web3 Proxy sends a command to the Solana Cluster, the execution of the stored Neon transaction is renewed.&lt;/p&gt;
+&lt;p&gt;So, the Neon EVM program restores the EVM state on demand and continues the Neon transaction execution from the stopping point. The process continues till the Neon transaction is completed.&lt;/p&gt;
+&lt;p&gt;问题是 Solana 限制了执行单个 Solana 交易的资源数量。如果类以太坊交易需要大量计算单元，则无法在单个 Solana 交易中执行。&lt;/p&gt;
+&lt;p&gt;因此，Neon EVM 程序将 EVM 状态保存到 Solana 存储中。并且当 Neon Web3代理（Neon Web3 Proxy)向 Solana 集群发送命令时，存储Neon 交易的执行（状态）将被更新。&lt;/p&gt;
+&lt;p&gt;因此，Neon EVM 程序按需恢复 EVM 状态并从停止点继续执行 Neon 事务。该过程一直持续到 Neon 交易完成。&lt;/p&gt;
+&lt;p&gt;The algorithm for executing Solana transactions must be such as to guarantee the execution of a whole Neon transaction.&lt;/p&gt;
+&lt;p&gt;Solana transactions are related to each other and all of them need to be executed.&lt;/p&gt;
+&lt;p&gt;执行 Solana 交易的算法必须保证整个 Neon 交易的执行。&lt;/p&gt;
+&lt;p&gt;Solana 交易相互关联，都需要被执行。&lt;/p&gt;
+&lt;p&gt;In the first versions of the algorithm, Neon proxy executed the next Solana transaction when it received confirmation of the first transaction.&lt;/p&gt;
+&lt;p&gt;This ensured that the Neon transaction would execute in its entirety, but this execution is very slow when your Neon transaction has many iterations.&lt;/p&gt;
+&lt;p&gt;在算法的第一个版本中，Neon代理(Neon proxy)在收到第一笔交易的确认后执行下一笔 Solana 交易。&lt;/p&gt;
+&lt;p&gt;这确保了 Neon 事务将完整执行，但是当您的 Neon 交易有很多迭代时，执行就非常慢。&lt;/p&gt;
+&lt;p&gt;The current version of the Solana transaction sending algorithm works quite differently.&lt;/p&gt;
+&lt;p&gt;当前版本的 Solana 交易发送算法的工作方式完全不同。&lt;/p&gt;
+&lt;p&gt;The algorithm consists of two stages.&lt;/p&gt;
+&lt;p&gt;At the first stage, the algorithm chooses the strategy for sending the transaction.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A Neon transaction can be completed in a single Solana transaction if it is small in size and requires few EVM steps to complete.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A Neon transaction can be executed in several Solana transactions if it is small in size, but it requires many EVM steps to complete. In this case, Neon Proxy creates an additional Solana account. We call it a storage account. And Neon EVM stores the EVM state in it between iterations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The transaction can be large in size. In this case, Neon Proxy uploads the transaction to a separate Solana account, which we call Holder account.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;该算法包括两个阶段。&lt;/p&gt;
+&lt;p&gt;在第一阶段，算法选择发送交易的策略。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;如果 Neon 交易规模较小且需要很少的 EVM 步骤即可完成，则可以在单个 Solana 交易中完成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个 Neon 交易如果规模较小，可以在多个 Solana 交易中执行，但需要很多 EVM 步骤才能完成。在这种情况下，Neon代理(Neon proxy)会创建一个额外的 Solana 帐户。我们称之为存储帐户。 Neon EVM 在迭代期间将 EVM 状态存储在其中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;交易规模可能很大。在这种情况下，Neon Proxy 将交易上传到一个单独的 Solana 账户，我们称之为持有者账户(Holder account)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the second stage, Neon Proxy creates a batch of Solana transactions and sends them all at once to the Solana node.&lt;/p&gt;
+&lt;p&gt;Next, Neon Proxy checks the execution status of each Solana transaction, and if any of them fail, Neon Proxy generates a new batch of Solana transactions and sends them back to the Solana node.&lt;/p&gt;
+&lt;p&gt;And so on until the Neon Proxy receives the Neon transaction recipe.&lt;/p&gt;
+&lt;p&gt;在第二阶段，Neon代理(Neon proxy)创建一批 Solana 交易，并一次性将它们全部发送到 Solana 节点。&lt;/p&gt;
+&lt;p&gt;接下来，Neon代理(Neon proxy)检查每个 Solana交易的执行状态，如果其中任何一个失败，Neon代理(Neon proxy)会生成新的一批 Solana 交易并将它们发送回 Solana 节点。&lt;/p&gt;
+&lt;p&gt;依此类推，直到 Neon 代理收到 Neon交易的回执。&lt;/p&gt;
+&lt;p&gt;After the implementation of the specified algorithm, it was possible to achieve a high speed of Neon transactions and guarantee their execution.&lt;/p&gt;
+&lt;p&gt;执行指定算法后，可以让Neon高速交易并保证执行。&lt;/p&gt;
+&lt;p&gt;We check the quality of the Neon EVM platform using tests from the Open Zeppelin package.&lt;/p&gt;
+&lt;p&gt;The Neon Proxy version before the new year showed us from 900 to 1400 successful tests on Solana Devnet.&lt;/p&gt;
+&lt;p&gt;The new version of Neon Proxy consistently shows more than 1730 successful tests on Solana Devnet.&lt;/p&gt;
+&lt;p&gt;我们使用 Open Zeppelin 包中的测试来检查 Neon EVM 平台的质量。&lt;/p&gt;
+&lt;p&gt;新年前的 Neon Proxy 版本向我们展示了在 Solana Devnet 上进行了 900 到 1400 次成功测试。&lt;/p&gt;
+&lt;p&gt;新版本的 Neon Proxy 在 Solana Devnet 上持续显示超过 1730 次成功测试。&lt;/p&gt;
+&lt;p&gt;The second part of Neon Proxy deals with indexing completed transactions.&lt;/p&gt;
+&lt;p&gt;As a result of revisions, we have written a new service, which we call Indexer.&lt;/p&gt;
+&lt;p&gt;This service collects information about all Neon transactions performed by all Neon operators.&lt;/p&gt;
+&lt;p&gt;And clients can get information about Neon transactions by contacting any Neon Proxy using the standard Ethereum API.&lt;/p&gt;
+&lt;p&gt;At the moment we are expanding the functionality of Neon Indexer and collecting information for our operators.&lt;/p&gt;
+&lt;p&gt;We integrate the Prometeus service, which will allow Neon operators to collect statistics on the work of their proxies and evaluate the quality of their service.&lt;/p&gt;
+&lt;p&gt;Neon Proxy 的第二部分处理索引已完成的交易。&lt;/p&gt;
+&lt;p&gt;我们编写了一个新的服务作为修订，并称之为 Indexer。&lt;/p&gt;
+&lt;p&gt;该服务收集所有 Neon 运营商执行的全部Neon 交易的信息。&lt;/p&gt;
+&lt;p&gt;客户可以通过使用标准以太坊 API 联系任何 Neon 代理来获取有关 Neon 交易的信息。&lt;/p&gt;
+&lt;p&gt;目前，我们正在扩展 Neon Indexer 的功能并为我们的运营方收集信息。&lt;/p&gt;
+&lt;p&gt;我们集成了 Prometeus 服务，这将允许 Neon 运营方收集有关其代理工作的统计数据并评估其服务质量。&lt;/p&gt;
+&lt;h2 id=&#34;接下来呢whats-next&#34;&gt;接下来呢？What’s next?&lt;/h2&gt;
+&lt;p&gt;We have prepared version 0.7.0.&lt;/p&gt;
+&lt;p&gt;Tomorrow we will update the public version of Neon Proxy on Devnet and the community will be able to test the final version that will work on Mainnet.&lt;/p&gt;
+&lt;p&gt;We ask the community to come and test our product.&lt;/p&gt;
+&lt;p&gt;我们准备了 0.7.0 版本。&lt;/p&gt;
+&lt;p&gt;明天我们将在 Devnet 上更新Neon代理(Neon proxy) 的公开版本，社区将能够测试在 Mainnet 上运行的最终版本。&lt;/p&gt;
+&lt;p&gt;我们请求社区来测试我们的产品。&lt;/p&gt;
+">NEON Lab第二次AMA(Second AMA of Neon Lab)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-wen-dang-bai-pi-shu/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://chainguys.github.io/post-images/1651561927361.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;😀Euler is a great pionner and perhaps even infraustructure of DeFi 2.0.I am deeply humbled and honored to to translate it&#39;s whitepaper and Docs into Chinese.&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;😀Euler是DeFi 2.0的伟大先驱，甚至会是基础设施。能将Euler的文档和白皮书翻译成中文，我深感荣幸。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As Euler&#39;s docs are published on gitbook, the translation also published on gitbook.&lt;br&gt;
+鉴于Euler主文档发布在gitbook，为了和主文档一致，翻译件也发表在gitbook上。&lt;/p&gt;
+&lt;p&gt;Please see the link below:&lt;br&gt;
+请点击以下链接查看：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://app.gitbook.com/s/cU6Wvz87dQHSRjl1cqWP/&#34;&gt;https://app.gitbook.com/s/cU6Wvz87dQHSRjl1cqWP/&lt;/a&gt;&lt;/p&gt;
+">Euler文档+白皮书</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;GM! 🤝&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;welcomebienvenue欢迎&#34;&gt;Welcome!Bienvenue!欢迎！&lt;/h2&gt;
+&lt;p&gt;This Blog is a &lt;strong&gt;&lt;em&gt;personal&lt;/em&gt;&lt;/strong&gt; blog for &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;.&lt;br&gt;
+Ce Blog est un blog  &lt;strong&gt;&lt;em&gt;personal&lt;/em&gt;&lt;/strong&gt; pour &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;.&lt;br&gt;
+本博客是&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;的 &lt;strong&gt;&lt;em&gt;私人&lt;/em&gt;&lt;/strong&gt; 博客。&lt;/p&gt;
+&lt;p&gt;This blog will store all works of  &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt; .&lt;br&gt;
+Ce blog stockera toutes les œuvres de &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;.&lt;br&gt;
+本博客将会存储 &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt; 所有作品。&lt;/p&gt;
+&lt;p&gt;Thanks!Merci!谢谢!&lt;/p&gt;
+">关于</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/neondocwp/"" data-c="
+          &lt;p&gt;&lt;img src=&#34;https://chainguys.github.io/post-images/1651046857339.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+👏  GM!&lt;/p&gt;
+&lt;h1 id=&#34;版权声明copyright-notice&#34;&gt;版权声明(Copyright Notice）&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;本文翻译自&lt;a href=&#34;https://neon-labs.org/&#34;&gt;Neon Labs&lt;/a&gt;为该项目撰写的&lt;a href=&#34;https://docs.neon-labs.org/&#34;&gt;技术文档&lt;/a&gt;，并已得到翻译授权。译者为&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;。转载请注明作者和译者。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Coptyright©2021 by &lt;a href=&#34;https://neon-labs.org/&#34;&gt;Neon Labs&lt;/a&gt;, translated by &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最后，请理解此文件并不是官方发布的中文技术文档，而是一份由Neon信仰者&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;个人单独维护的文档，若翻译与英文原文有出入，一律以英文原文和官方解释为准。欢迎大家加入Neon官方&lt;a href=&#34;https://discord.gg/gapRjRtFN7&#34;&gt;Discord群组&lt;/a&gt; 。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Finally,please understand this is not an official Chinese doc released by Neon, but one maintained solely by Neon Maximalist &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;. In the event of conflicts or ambiguity between the English language version and translated versions, the English language versions and official interpretation shall prevail.Feel free to join Neon Official &lt;a href=&#34;https://discord.gg/gapRjRtFN7&#34;&gt;Discord server&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;请访问以下链接查看：&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;Please visit folloing links：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://chainguys.github.io/neonwp/&#34;&gt;Neon EVM技术文档 (Neon EVM Docs)&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://chainguys.github.io/neonwp/11wp/wp&#34;&gt;Neon EVM白皮书  (Neon EVM Whitepaper)&lt;/a&gt;&lt;/p&gt;
+">Neon EVM技术文档和白皮书(Neon EVM Docs and Whitepaper)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/akord-x-redstone-ti-sheng-arweave-de-xing-neng-akord-x-redstone-improving-performance-on-arweave/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://akord.com/media/Akord-x-Redstone-1.jpeg&#34; alt=&#34;Akord x Redstone 1&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;This blog post is based on a Twitter Spaces AMA we held with &lt;a href=&#34;https://twitter.com/redstone_defi&#34;&gt;RedStone&lt;/a&gt;. You can &lt;a href=&#34;https://twitter.com/i/spaces/1OdJrByrbXpJX&#34;&gt;listen to the event here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;这篇博文源于我们与 &lt;a href=&#34;https://twitter.com/redstone_defi&#34;&gt;RedStone&lt;/a&gt; 举行的 Twitter Spaces AMA。您可以&lt;a href=&#34;https://twitter.com/i/spaces/1OdJrByrbXpJX&#34;&gt;在此收听活动&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;背景-context&#34;&gt;背景 (Context)&lt;/h2&gt;
+&lt;p&gt;The possibility for web3, particularly in the context of Arweave, is to take our data, application and business model completely onchain. While that’s very exciting, it presents a number of significant challenges across the developer and user experience.&lt;/p&gt;
+&lt;p&gt;web3 的可能性，是让我们的数据、应用和业务(模型)完全上链，尤其是在 Arweave 的“加持”下。虽然这非常令人兴奋，但它对开发人员和用户体验提出了许多重大挑战。&lt;/p&gt;
+&lt;p&gt;At Akord, we aim to deliver a web2 user experience in the web3 paradigm. The work the RedStone team has been doing, creating the tools to improve performance, has been a great help for us in achieving this at the technical level.&lt;/p&gt;
+&lt;p&gt;在 Akord，我们的目标是在 web3 范式中提供 web2 用户体验。 RedStone 团队一直在做的工作-即创建工具来提高性能-对我们在技术层面实现这一目标有很大帮助。&lt;/p&gt;
+&lt;h2 id=&#34;redstone-在-smart-weave-合约方面的工作redstones-work-on-smart-weave-contracts&#34;&gt;RedStone 在 Smart Weave 合约方面的工作(RedStone’s work on Smart Weave contracts)&lt;/h2&gt;
+&lt;p&gt;Early on, RedStone identified certain weaknesses in SmartWeave contracts relating to performance and reliability. Specifically, every time you want the latest state of the contract you need to evaluate all the interactions on your side, which doesn’t scale when a contract has tens or hundreds of thousands of interactions and may even communicate with other contracts.&lt;/p&gt;
+&lt;p&gt;之前，RedStone 发现了 SmartWeave 合约中，性能可靠性相关的某些弱点。具体来说，每次你想要合约的最新状态时，你都需要评估自己这边的所有交互，当一个合约有数万或数十万次交互或甚至可能与其他合约进行通信时，它无就法扩展。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts&#34;&gt;&lt;strong&gt;RedStone&lt;/strong&gt;&lt;/a&gt; &lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts&#34;&gt;&lt;strong&gt;Contracts&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;introduced a number of tools to address performance and developer experience&lt;/strong&gt;: caching mechanisms, testing tools with a test net (including regression tests), a &lt;a href=&#34;https://gateway.redstone.finance/&#34;&gt;dedicated gateway&lt;/a&gt; for indexing and serving smart contracts, a smart contract explorer called &lt;a href=&#34;https://sonar.redstone.tools/#/app/contracts&#34;&gt;SonAR&lt;/a&gt;, and a sequencer built in collaboration with Bundlr.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts&#34;&gt;&lt;strong&gt;RedStone&lt;/strong&gt;&lt;/a&gt; &lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts&#34;&gt;&lt;strong&gt;Contracts&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;引入了许多工具来解决性能和开发人员体验&lt;/strong&gt;的问题：缓存机制、带有测试网的测试工具(包括回归测试)、用于索引和服务智能合约的 &lt;a href=&#34;https://gateway.redstone.finance/&#34;&gt;专用网关&lt;/a&gt;、名为 &lt;a href=&#34;https://sonar.redstone.tools/#/app/contracts&#34;&gt;SonAR&lt;/a&gt; 的智能合约浏览器，以及与 Bundlr 合作构建的排序器(序列器)。&lt;/p&gt;
+&lt;p&gt;RedStone have put in a lot of effort to optimise the basic Execution Engine (the core part of the SDK), increasing the efficiency of contract evaluation thanks to extensive caching and memoization. As a result, a SmartWeave contract with over 300,000 interactions &lt;a href=&#34;https://github.com/redstone-finance/redstone-sw-gateway#benchmarks&#34;&gt;can be loaded in 2 minutes&lt;/a&gt; instead of several hours. And this is just the beginning, with further improvements planned for RedStone Contracts SDK and the tools around it.&lt;/p&gt;
+&lt;p&gt;RedStone 投入了大量精力来优化基本执行引擎(SDK 核心部分)，通过广泛的缓存和记忆化提高了合约评估的效率。因此，具有超过 300,000 次交互的 SmartWeave 合约&lt;a href=&#34;https://github.com/redstone-finance/redstone-sw-gateway#benchmarks&#34;&gt;可以在 2 分钟内加载&lt;/a&gt; 而不是几个小时。而这仅仅是开始，之后还会随着RedStone Contracts SDK 及其周围的工具的(研发)计划而进一步改进。&lt;/p&gt;
+&lt;p&gt;RedStone itself utilises this smart contract platform for ensuring data integrity for its &lt;a href=&#34;https://redstone.finance/&#34;&gt;Oracles&lt;/a&gt;, which can deliver &lt;a href=&#34;https://app.redstone.finance/&#34;&gt;various types of data&lt;/a&gt; and export to any EVM compatible chain.&lt;/p&gt;
+&lt;p&gt;RedStone 本身利用这个智能合约平台来确保其 &lt;a href=&#34;https://redstone.finance/&#34;&gt;预言机 Oracles&lt;/a&gt; 的数据完整性，它可以提供 &lt;a href=&#34;https://app.redstone.finance/&#34;&gt;各种类型的数据&lt;/a&gt; 并导出到任何 EVM 兼容链。&lt;/p&gt;
+&lt;h2 id=&#34;akod如何在redstone帮助下更快速运行how-akord-is-moving-faster-with-redstone&#34;&gt;Akod如何在RedStone帮助下更快速运行？(How Akord is moving faster with RedStone)&lt;/h2&gt;
+&lt;p&gt;Every action in Akord, for example, the creation of a vault, uploading of files, etc, is a user transaction that will be processed and validated through smart weave contracts.&lt;/p&gt;
+&lt;p&gt;Akord 中的每个操作，例如创建保管库、上传文件等，都是用户交易，会通过智能合约进行处理和验证。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Each vault in Akord will have its own contract instance living on the Arweave blockchain. And so each action within a vault will be a specific interaction with that contract.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;** Akord 中的每个保管库都将在 Arweave 区块链上拥有自己的合约实例。因此，保管库中的每个操作都将是与该合约的特定交互。**&lt;/p&gt;
+&lt;p&gt;This is why RedStone’s suite of tools has proved so valuable for Akord. The quicker we can process interactions with the contract at the protocol level, the better UX we can deliver through the Akord app, and any other apps that build on the Akord Vault Protocol in the future.&lt;/p&gt;
+&lt;p&gt;这就是为什么 RedStone 的工具套件对 Akord 如此有价值的原因。我们在协议级别处理与合约的交互越快，我们可以提供的用户体验就更好(通过 Akord 应用以及未来基于 Akord Vault 协议构建的任何其他应用程序)。&lt;/p&gt;
+&lt;p&gt;Specifically, we’re using RedStone’s dedicated gateway to improve performance and catch any corrupted transactions.&lt;/p&gt;
+&lt;p&gt;具体来说，我们正在使用 RedStone 的专用网关来提高性能并捕获任何损坏的交易。&lt;/p&gt;
+&lt;p&gt;Another example, with context within the Akord product, is when we revoke a member from the vault. When this action is taken we need to redistribute the new encryption keys to the vault for the members who still have access while revoking the keys of the user who was removed. This requires various interactions with multiple contracts at the same time. &lt;strong&gt;With RedStone’s technology we can make one atomic transaction that covers all the necessary interactions at once.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;另一个使用 Akord 产品环境的示例是，当我们从保管库中撤销成员时。执行此操作时，我们需要将新的加密密钥重新分发到保管库中仍具有访问权限的成员，同时还要撤销被移除人员的秘钥。这需要同时与多个合约进行各种交互。 &lt;strong&gt;借助 RedStone 的技术，我们可以进行一次涵盖所有必要交互的原子交易。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We’ve also found the test net environment that RedStone have built for Arweave to be very valuable in our developer experience. And the sequencer has also proved very useful, for instance, in returning the state of an Akord vault in a very performant way.&lt;/p&gt;
+&lt;p&gt;我们还发现 RedStone 为 Arweave 构建的测试网络环境对我们的开发人员体验非常有价值。并且排序器(序列器)也被证明非常有用，例如，以非常高效的方式返回 Akord保管库的状态。&lt;/p&gt;
+&lt;h2 id=&#34;arweave的挑战-challenges-on-arweave&#34;&gt;Arweave的挑战 (Challenges on Arweave)&lt;/h2&gt;
+&lt;p&gt;Recently, we’ve had issues trying to get transactions to confirm on the network, which is in part due to the war in Ukraine. An unprecedented amount of data relating to the war is being uploaded, largely by bots. This historical preservation is an important process, and one which Arweave was designed for, but the consequence has been to stress the network.&lt;/p&gt;
+&lt;p&gt;最近，我们在尝试在网络上确认交易时遇到了问题，部分原因是乌克兰的战争。与战争有关的大量数据正主要由机器人上传。这种历史保存是一个重要的过程，也是 Arweave 的设计初衷，但其结果是给网络带来了压力。&lt;/p&gt;
+&lt;p&gt;We’ve designed Akord to be able to queue transactions until there’s availability, but it’s still not optimal. Especially as Akord sends multiple transactions linked in a sequence to one event.&lt;/p&gt;
+&lt;p&gt;我们将 Akord 设计为能够对交易进行排队，直到处理能力有富余，但这仍然不是最佳的。尤其是当 Akord 发送多个按顺序链接到一个事件的交易时。&lt;/p&gt;
+&lt;p&gt;For example, when we upload a file that’s one transaction, but there’s also another transaction for the metadata. Those transactions should go to the weave together, but if one is dropped that causes us problems on the backend. This is where the sequencer from RedStone is so powerful, as it ensures that we mine those transactions together.&lt;/p&gt;
+&lt;p&gt;例如，当我们上传一个文件时，这是一个交易，但元数据还有另一个交易。这些交易应该一起编排，是如果一个被丢弃，就会导致在后端出现问题。这就是 RedStone 的排序器(序列器)如此强大的地方，因为它可以确保我们一起挖掘这些交易。&lt;/p&gt;
+&lt;p&gt;To address some of these issues and help newcomers start with SmartWeave, &lt;strong&gt;the&lt;/strong&gt; &lt;strong&gt;RedStone&lt;/strong&gt; &lt;strong&gt;team&lt;/strong&gt; &lt;strong&gt;recently launched their&lt;/strong&gt; &lt;a href=&#34;https://redstone.academy/&#34;&gt;&lt;strong&gt;RedStone Academy&lt;/strong&gt;&lt;/a&gt;  to provide one shared point of knowledge for developers looking to create profit-sharing tokens (PSTs) on Arweave, as well as provide resources for writing SmartWeave contracts and methods for testing.&lt;/p&gt;
+&lt;p&gt;为了解决其中的一些问题，并帮助新手开始使用 SmartWeave，&lt;strong&gt;RedStone团队&lt;/strong&gt;  **最近推出了&lt;a href=&#34;https://redstone.academy/&#34;&gt;&lt;strong&gt;RedStone 学院&lt;/strong&gt;&lt;/a&gt;提供为希望在 Arweave 上创建利润分享代币 (PST) 的开发人员共享知识点，并为编写 SmartWeave 合约和测试方法提供资源。&lt;/p&gt;
+&lt;p&gt;The academy already has a detailed step-by-step tutorial for writing a PST, with more resources planned for the future. Among those plans include tutorials and templates on WASM contracts, as well as real world examples of PST contracts making advanced interactions.&lt;/p&gt;
+&lt;p&gt;该学院已经有一个详细的分步教程来编写 PST，并为未来计划了更多资源。这些计划包括关于 WASM 合约的教程和模板，以及对PST 合约进行高级交互的真实示例。&lt;/p&gt;
+&lt;p&gt;The RedStone implementation of &lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts-wasm-templates&#34;&gt;WASM contracts&lt;/a&gt; is another resource we intend to be using at Akord. Its fully sand-boxed environment and gas metering makes it much safer than just working in Javascript or Typescript.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts-wasm-templates&#34;&gt;WASM 合约&lt;/a&gt; 在RedStone的实施，是我们打算在 Akord 使用的另一个资源。它的完全沙盒环境和gas计量，使其比仅使用 Javascript 或 Typescript 工作更安全。&lt;/p&gt;
+&lt;h2 id=&#34;战胜成长的阵痛-overcoming-growing-pains&#34;&gt;战胜成长的阵痛 (Overcoming growing pains)&lt;/h2&gt;
+&lt;p&gt;We believe to a certain extent the issues facing the Arweave ecosystem are the result of growing pains. Arweave has becomes the &lt;em&gt;de facto&lt;/em&gt; storage layer for NFTs and now stores the blockchain history of many L1s like Solana. Events like the War in Ukraine, which present the perfect use case for Arweave at scale, are also turbo-charging usage.&lt;/p&gt;
+&lt;p&gt;我们认为，Arweave 生态系统面临的问题在一定程度上是成长阵痛的结果。 Arweave 已成为 NFT  &lt;em&gt;事实上的&lt;/em&gt; 存储层，现在存储许多layer1 的区块链历史，比如 Solana。像乌克兰战争这样的事件，为 Arweave 大规模展示了完美的用例，也是“涡轮增压”的用法。&lt;/p&gt;
+&lt;p&gt;This growth and the relatively early stage of the network has created some inevitable issues, something we see across almost all blockchain projects at some point in their early history.&lt;/p&gt;
+&lt;p&gt;这种增长与相对早期的网络的已经产生了一些不可避免的问题，我们在几乎所有区块链项目早期的某个时刻都看到了这一点。&lt;/p&gt;
+&lt;p&gt;That doesn’t mean we can just relax and assume everything will magically resolve itself. The Arweave team is an undeniable powerhouse, but every other team in the space should be thinking about how they can contribute. It’s only by partnering across projects in the ecosystem, pooling knowledge, and building shared tools and resources, that we can we come through the other side with truly solid foundations needed to scale to mass adoption.&lt;/p&gt;
+&lt;p&gt;这并不意味着我们可以放松并假设一切都会神奇地自行解决。 Arweave 团队是一个不可否认的巨头，但该领域的所有其他团队都应该考虑如何做出贡献。只有通过在生态系统中的项目之间进行合作、汇集知识、构建共享工具和资源，我们才能通过扩展，以大规模采用所需的真正坚实的基础(建设)来渡过难关。&lt;/p&gt;
+&lt;p&gt;RedStone’s work has been invaluable to Akord and the Arweave space at large, and we look forward to open sourcing the Akord Vault Protocol and evolving our own developer community to help others looking to build on Arweave.&lt;/p&gt;
+&lt;p&gt;RedStone 的工作对 Akord 和整个 Arweave 空间来说非常宝贵，我们期待开源 Akord Vault 协议并发展我们自己的开发者社区，以帮助其他希望在 Arweave 上进行构建的人。&lt;/p&gt;
+&lt;p&gt;–&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If this inspired you to help building on Arweave or you have any questions, feel free to reach out to &lt;a href=&#34;mailto:hello@akord.com&#34;&gt;contact us&lt;/a&gt; or the RedStone team through the links below:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;如果这启发了您帮助构建 Arweave 或您有任何疑问，请随时通过以下链接与 &lt;a href=&#34;mailto:hello@akord.com&#34;&gt;联系我们&lt;/a&gt; 或 RedStone 团队联系：&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;联系 RedStone Contact RedStone&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;https://redstone.finance/&#34;&gt;Oracle Website&lt;/a&gt; // &lt;a href=&#34;https://twitter.com/redstone_defi&#34;&gt;Twitter&lt;/a&gt; // &lt;a href=&#34;https://discord.com/invite/PVxBZKFr46&#34;&gt;Discord&lt;/a&gt;&lt;/p&gt;
+">Akord x RedStone—提升Arweave的性能! Akord x RedStone – Improving Performance on Arweave</a>
+      </div>
+      
+      <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/axelarsea-ru-men-jian-jie-introducing-axelarsea/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*zeaspL9SwEaF6QJxN-CNlA.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;h1 id=&#34;axelarsea入门简介-introducing-axelarsea&#34;&gt;AxelarSea入门简介 (Introducing AxelarSea!)&lt;/h1&gt;
@@ -772,152 +1103,14 @@ NFT 托管在以太坊上，用ETH计价。&lt;/li&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-wen-dang-bai-pi-shu/"" data-c="
-          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://chainguys.github.io/post-images/1651561927361.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;😀Euler is a great pionner and perhaps even infraustructure of DeFi 2.0.I am deeply humbled and honored to to translate it&#39;s whitepaper and Docs into Chinese.&lt;/strong&gt;&lt;br&gt;
-&lt;strong&gt;😀Euler是DeFi 2.0的伟大先驱，甚至会是基础设施。能将Euler的文档和白皮书翻译成中文，我深感荣幸。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;As Euler&#39;s docs are published on gitbook, the translation also published on gitbook.&lt;br&gt;
-鉴于Euler主文档发布在gitbook，为了和主文档一致，翻译件也发表在gitbook上。&lt;/p&gt;
-&lt;p&gt;Please see the link below:&lt;br&gt;
-请点击以下链接查看：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://app.gitbook.com/s/cU6Wvz87dQHSRjl1cqWP/&#34;&gt;https://app.gitbook.com/s/cU6Wvz87dQHSRjl1cqWP/&lt;/a&gt;&lt;/p&gt;
-">Euler文档+白皮书</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/about/"" data-c="
-          &lt;blockquote&gt;
-&lt;p&gt;GM! 🤝&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;welcomebienvenue欢迎&#34;&gt;Welcome!Bienvenue!欢迎！&lt;/h2&gt;
-&lt;p&gt;This Blog is a &lt;strong&gt;&lt;em&gt;personal&lt;/em&gt;&lt;/strong&gt; blog for &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;.&lt;br&gt;
-Ce Blog est un blog  &lt;strong&gt;&lt;em&gt;personal&lt;/em&gt;&lt;/strong&gt; pour &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;.&lt;br&gt;
-本博客是&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;的 &lt;strong&gt;&lt;em&gt;私人&lt;/em&gt;&lt;/strong&gt; 博客。&lt;/p&gt;
-&lt;p&gt;This blog will store all works of  &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt; .&lt;br&gt;
-Ce blog stockera toutes les œuvres de &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;.&lt;br&gt;
-本博客将会存储 &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt; 所有作品。&lt;/p&gt;
-&lt;p&gt;Thanks!Merci!谢谢!&lt;/p&gt;
-">关于</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/akord-x-redstone-ti-sheng-arweave-de-xing-neng-akord-x-redstone-improving-performance-on-arweave/"" data-c="
-          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://akord.com/media/Akord-x-Redstone-1.jpeg&#34; alt=&#34;Akord x Redstone 1&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;em&gt;This blog post is based on a Twitter Spaces AMA we held with &lt;a href=&#34;https://twitter.com/redstone_defi&#34;&gt;RedStone&lt;/a&gt;. You can &lt;a href=&#34;https://twitter.com/i/spaces/1OdJrByrbXpJX&#34;&gt;listen to the event here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;这篇博文源于我们与 &lt;a href=&#34;https://twitter.com/redstone_defi&#34;&gt;RedStone&lt;/a&gt; 举行的 Twitter Spaces AMA。您可以&lt;a href=&#34;https://twitter.com/i/spaces/1OdJrByrbXpJX&#34;&gt;在此收听活动&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;背景-context&#34;&gt;背景 (Context)&lt;/h2&gt;
-&lt;p&gt;The possibility for web3, particularly in the context of Arweave, is to take our data, application and business model completely onchain. While that’s very exciting, it presents a number of significant challenges across the developer and user experience.&lt;/p&gt;
-&lt;p&gt;web3 的可能性，是让我们的数据、应用和业务(模型)完全上链，尤其是在 Arweave 的“加持”下。虽然这非常令人兴奋，但它对开发人员和用户体验提出了许多重大挑战。&lt;/p&gt;
-&lt;p&gt;At Akord, we aim to deliver a web2 user experience in the web3 paradigm. The work the RedStone team has been doing, creating the tools to improve performance, has been a great help for us in achieving this at the technical level.&lt;/p&gt;
-&lt;p&gt;在 Akord，我们的目标是在 web3 范式中提供 web2 用户体验。 RedStone 团队一直在做的工作-即创建工具来提高性能-对我们在技术层面实现这一目标有很大帮助。&lt;/p&gt;
-&lt;h2 id=&#34;redstone-在-smart-weave-合约方面的工作redstones-work-on-smart-weave-contracts&#34;&gt;RedStone 在 Smart Weave 合约方面的工作(RedStone’s work on Smart Weave contracts)&lt;/h2&gt;
-&lt;p&gt;Early on, RedStone identified certain weaknesses in SmartWeave contracts relating to performance and reliability. Specifically, every time you want the latest state of the contract you need to evaluate all the interactions on your side, which doesn’t scale when a contract has tens or hundreds of thousands of interactions and may even communicate with other contracts.&lt;/p&gt;
-&lt;p&gt;之前，RedStone 发现了 SmartWeave 合约中，性能可靠性相关的某些弱点。具体来说，每次你想要合约的最新状态时，你都需要评估自己这边的所有交互，当一个合约有数万或数十万次交互或甚至可能与其他合约进行通信时，它无就法扩展。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts&#34;&gt;&lt;strong&gt;RedStone&lt;/strong&gt;&lt;/a&gt; &lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts&#34;&gt;&lt;strong&gt;Contracts&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;introduced a number of tools to address performance and developer experience&lt;/strong&gt;: caching mechanisms, testing tools with a test net (including regression tests), a &lt;a href=&#34;https://gateway.redstone.finance/&#34;&gt;dedicated gateway&lt;/a&gt; for indexing and serving smart contracts, a smart contract explorer called &lt;a href=&#34;https://sonar.redstone.tools/#/app/contracts&#34;&gt;SonAR&lt;/a&gt;, and a sequencer built in collaboration with Bundlr.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts&#34;&gt;&lt;strong&gt;RedStone&lt;/strong&gt;&lt;/a&gt; &lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts&#34;&gt;&lt;strong&gt;Contracts&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;引入了许多工具来解决性能和开发人员体验&lt;/strong&gt;的问题：缓存机制、带有测试网的测试工具(包括回归测试)、用于索引和服务智能合约的 &lt;a href=&#34;https://gateway.redstone.finance/&#34;&gt;专用网关&lt;/a&gt;、名为 &lt;a href=&#34;https://sonar.redstone.tools/#/app/contracts&#34;&gt;SonAR&lt;/a&gt; 的智能合约浏览器，以及与 Bundlr 合作构建的排序器(序列器)。&lt;/p&gt;
-&lt;p&gt;RedStone have put in a lot of effort to optimise the basic Execution Engine (the core part of the SDK), increasing the efficiency of contract evaluation thanks to extensive caching and memoization. As a result, a SmartWeave contract with over 300,000 interactions &lt;a href=&#34;https://github.com/redstone-finance/redstone-sw-gateway#benchmarks&#34;&gt;can be loaded in 2 minutes&lt;/a&gt; instead of several hours. And this is just the beginning, with further improvements planned for RedStone Contracts SDK and the tools around it.&lt;/p&gt;
-&lt;p&gt;RedStone 投入了大量精力来优化基本执行引擎(SDK 核心部分)，通过广泛的缓存和记忆化提高了合约评估的效率。因此，具有超过 300,000 次交互的 SmartWeave 合约&lt;a href=&#34;https://github.com/redstone-finance/redstone-sw-gateway#benchmarks&#34;&gt;可以在 2 分钟内加载&lt;/a&gt; 而不是几个小时。而这仅仅是开始，之后还会随着RedStone Contracts SDK 及其周围的工具的(研发)计划而进一步改进。&lt;/p&gt;
-&lt;p&gt;RedStone itself utilises this smart contract platform for ensuring data integrity for its &lt;a href=&#34;https://redstone.finance/&#34;&gt;Oracles&lt;/a&gt;, which can deliver &lt;a href=&#34;https://app.redstone.finance/&#34;&gt;various types of data&lt;/a&gt; and export to any EVM compatible chain.&lt;/p&gt;
-&lt;p&gt;RedStone 本身利用这个智能合约平台来确保其 &lt;a href=&#34;https://redstone.finance/&#34;&gt;预言机 Oracles&lt;/a&gt; 的数据完整性，它可以提供 &lt;a href=&#34;https://app.redstone.finance/&#34;&gt;各种类型的数据&lt;/a&gt; 并导出到任何 EVM 兼容链。&lt;/p&gt;
-&lt;h2 id=&#34;akod如何在redstone帮助下更快速运行how-akord-is-moving-faster-with-redstone&#34;&gt;Akod如何在RedStone帮助下更快速运行？(How Akord is moving faster with RedStone)&lt;/h2&gt;
-&lt;p&gt;Every action in Akord, for example, the creation of a vault, uploading of files, etc, is a user transaction that will be processed and validated through smart weave contracts.&lt;/p&gt;
-&lt;p&gt;Akord 中的每个操作，例如创建保管库、上传文件等，都是用户交易，会通过智能合约进行处理和验证。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Each vault in Akord will have its own contract instance living on the Arweave blockchain. And so each action within a vault will be a specific interaction with that contract.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;** Akord 中的每个保管库都将在 Arweave 区块链上拥有自己的合约实例。因此，保管库中的每个操作都将是与该合约的特定交互。**&lt;/p&gt;
-&lt;p&gt;This is why RedStone’s suite of tools has proved so valuable for Akord. The quicker we can process interactions with the contract at the protocol level, the better UX we can deliver through the Akord app, and any other apps that build on the Akord Vault Protocol in the future.&lt;/p&gt;
-&lt;p&gt;这就是为什么 RedStone 的工具套件对 Akord 如此有价值的原因。我们在协议级别处理与合约的交互越快，我们可以提供的用户体验就更好(通过 Akord 应用以及未来基于 Akord Vault 协议构建的任何其他应用程序)。&lt;/p&gt;
-&lt;p&gt;Specifically, we’re using RedStone’s dedicated gateway to improve performance and catch any corrupted transactions.&lt;/p&gt;
-&lt;p&gt;具体来说，我们正在使用 RedStone 的专用网关来提高性能并捕获任何损坏的交易。&lt;/p&gt;
-&lt;p&gt;Another example, with context within the Akord product, is when we revoke a member from the vault. When this action is taken we need to redistribute the new encryption keys to the vault for the members who still have access while revoking the keys of the user who was removed. This requires various interactions with multiple contracts at the same time. &lt;strong&gt;With RedStone’s technology we can make one atomic transaction that covers all the necessary interactions at once.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;另一个使用 Akord 产品环境的示例是，当我们从保管库中撤销成员时。执行此操作时，我们需要将新的加密密钥重新分发到保管库中仍具有访问权限的成员，同时还要撤销被移除人员的秘钥。这需要同时与多个合约进行各种交互。 &lt;strong&gt;借助 RedStone 的技术，我们可以进行一次涵盖所有必要交互的原子交易。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We’ve also found the test net environment that RedStone have built for Arweave to be very valuable in our developer experience. And the sequencer has also proved very useful, for instance, in returning the state of an Akord vault in a very performant way.&lt;/p&gt;
-&lt;p&gt;我们还发现 RedStone 为 Arweave 构建的测试网络环境对我们的开发人员体验非常有价值。并且排序器(序列器)也被证明非常有用，例如，以非常高效的方式返回 Akord保管库的状态。&lt;/p&gt;
-&lt;h2 id=&#34;arweave的挑战-challenges-on-arweave&#34;&gt;Arweave的挑战 (Challenges on Arweave)&lt;/h2&gt;
-&lt;p&gt;Recently, we’ve had issues trying to get transactions to confirm on the network, which is in part due to the war in Ukraine. An unprecedented amount of data relating to the war is being uploaded, largely by bots. This historical preservation is an important process, and one which Arweave was designed for, but the consequence has been to stress the network.&lt;/p&gt;
-&lt;p&gt;最近，我们在尝试在网络上确认交易时遇到了问题，部分原因是乌克兰的战争。与战争有关的大量数据正主要由机器人上传。这种历史保存是一个重要的过程，也是 Arweave 的设计初衷，但其结果是给网络带来了压力。&lt;/p&gt;
-&lt;p&gt;We’ve designed Akord to be able to queue transactions until there’s availability, but it’s still not optimal. Especially as Akord sends multiple transactions linked in a sequence to one event.&lt;/p&gt;
-&lt;p&gt;我们将 Akord 设计为能够对交易进行排队，直到处理能力有富余，但这仍然不是最佳的。尤其是当 Akord 发送多个按顺序链接到一个事件的交易时。&lt;/p&gt;
-&lt;p&gt;For example, when we upload a file that’s one transaction, but there’s also another transaction for the metadata. Those transactions should go to the weave together, but if one is dropped that causes us problems on the backend. This is where the sequencer from RedStone is so powerful, as it ensures that we mine those transactions together.&lt;/p&gt;
-&lt;p&gt;例如，当我们上传一个文件时，这是一个交易，但元数据还有另一个交易。这些交易应该一起编排，是如果一个被丢弃，就会导致在后端出现问题。这就是 RedStone 的排序器(序列器)如此强大的地方，因为它可以确保我们一起挖掘这些交易。&lt;/p&gt;
-&lt;p&gt;To address some of these issues and help newcomers start with SmartWeave, &lt;strong&gt;the&lt;/strong&gt; &lt;strong&gt;RedStone&lt;/strong&gt; &lt;strong&gt;team&lt;/strong&gt; &lt;strong&gt;recently launched their&lt;/strong&gt; &lt;a href=&#34;https://redstone.academy/&#34;&gt;&lt;strong&gt;RedStone Academy&lt;/strong&gt;&lt;/a&gt;  to provide one shared point of knowledge for developers looking to create profit-sharing tokens (PSTs) on Arweave, as well as provide resources for writing SmartWeave contracts and methods for testing.&lt;/p&gt;
-&lt;p&gt;为了解决其中的一些问题，并帮助新手开始使用 SmartWeave，&lt;strong&gt;RedStone团队&lt;/strong&gt;  **最近推出了&lt;a href=&#34;https://redstone.academy/&#34;&gt;&lt;strong&gt;RedStone 学院&lt;/strong&gt;&lt;/a&gt;提供为希望在 Arweave 上创建利润分享代币 (PST) 的开发人员共享知识点，并为编写 SmartWeave 合约和测试方法提供资源。&lt;/p&gt;
-&lt;p&gt;The academy already has a detailed step-by-step tutorial for writing a PST, with more resources planned for the future. Among those plans include tutorials and templates on WASM contracts, as well as real world examples of PST contracts making advanced interactions.&lt;/p&gt;
-&lt;p&gt;该学院已经有一个详细的分步教程来编写 PST，并为未来计划了更多资源。这些计划包括关于 WASM 合约的教程和模板，以及对PST 合约进行高级交互的真实示例。&lt;/p&gt;
-&lt;p&gt;The RedStone implementation of &lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts-wasm-templates&#34;&gt;WASM contracts&lt;/a&gt; is another resource we intend to be using at Akord. Its fully sand-boxed environment and gas metering makes it much safer than just working in Javascript or Typescript.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/redstone-finance/redstone-smartcontracts-wasm-templates&#34;&gt;WASM 合约&lt;/a&gt; 在RedStone的实施，是我们打算在 Akord 使用的另一个资源。它的完全沙盒环境和gas计量，使其比仅使用 Javascript 或 Typescript 工作更安全。&lt;/p&gt;
-&lt;h2 id=&#34;战胜成长的阵痛-overcoming-growing-pains&#34;&gt;战胜成长的阵痛 (Overcoming growing pains)&lt;/h2&gt;
-&lt;p&gt;We believe to a certain extent the issues facing the Arweave ecosystem are the result of growing pains. Arweave has becomes the &lt;em&gt;de facto&lt;/em&gt; storage layer for NFTs and now stores the blockchain history of many L1s like Solana. Events like the War in Ukraine, which present the perfect use case for Arweave at scale, are also turbo-charging usage.&lt;/p&gt;
-&lt;p&gt;我们认为，Arweave 生态系统面临的问题在一定程度上是成长阵痛的结果。 Arweave 已成为 NFT  &lt;em&gt;事实上的&lt;/em&gt; 存储层，现在存储许多layer1 的区块链历史，比如 Solana。像乌克兰战争这样的事件，为 Arweave 大规模展示了完美的用例，也是“涡轮增压”的用法。&lt;/p&gt;
-&lt;p&gt;This growth and the relatively early stage of the network has created some inevitable issues, something we see across almost all blockchain projects at some point in their early history.&lt;/p&gt;
-&lt;p&gt;这种增长与相对早期的网络的已经产生了一些不可避免的问题，我们在几乎所有区块链项目早期的某个时刻都看到了这一点。&lt;/p&gt;
-&lt;p&gt;That doesn’t mean we can just relax and assume everything will magically resolve itself. The Arweave team is an undeniable powerhouse, but every other team in the space should be thinking about how they can contribute. It’s only by partnering across projects in the ecosystem, pooling knowledge, and building shared tools and resources, that we can we come through the other side with truly solid foundations needed to scale to mass adoption.&lt;/p&gt;
-&lt;p&gt;这并不意味着我们可以放松并假设一切都会神奇地自行解决。 Arweave 团队是一个不可否认的巨头，但该领域的所有其他团队都应该考虑如何做出贡献。只有通过在生态系统中的项目之间进行合作、汇集知识、构建共享工具和资源，我们才能通过扩展，以大规模采用所需的真正坚实的基础(建设)来渡过难关。&lt;/p&gt;
-&lt;p&gt;RedStone’s work has been invaluable to Akord and the Arweave space at large, and we look forward to open sourcing the Akord Vault Protocol and evolving our own developer community to help others looking to build on Arweave.&lt;/p&gt;
-&lt;p&gt;RedStone 的工作对 Akord 和整个 Arweave 空间来说非常宝贵，我们期待开源 Akord Vault 协议并发展我们自己的开发者社区，以帮助其他希望在 Arweave 上进行构建的人。&lt;/p&gt;
-&lt;p&gt;–&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;If this inspired you to help building on Arweave or you have any questions, feel free to reach out to &lt;a href=&#34;mailto:hello@akord.com&#34;&gt;contact us&lt;/a&gt; or the RedStone team through the links below:&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;如果这启发了您帮助构建 Arweave 或您有任何疑问，请随时通过以下链接与 &lt;a href=&#34;mailto:hello@akord.com&#34;&gt;联系我们&lt;/a&gt; 或 RedStone 团队联系：&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;联系 RedStone Contact RedStone&lt;/strong&gt;&lt;br&gt;
-&lt;a href=&#34;https://redstone.finance/&#34;&gt;Oracle Website&lt;/a&gt; // &lt;a href=&#34;https://twitter.com/redstone_defi&#34;&gt;Twitter&lt;/a&gt; // &lt;a href=&#34;https://discord.com/invite/PVxBZKFr46&#34;&gt;Discord&lt;/a&gt;&lt;/p&gt;
-">Akord x RedStone—提升Arweave的性能! Akord x RedStone – Improving Performance on Arweave</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/neondocwp/"" data-c="
-          &lt;p&gt;&lt;img src=&#34;https://chainguys.github.io/post-images/1651046857339.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-👏  GM!&lt;/p&gt;
-&lt;h1 id=&#34;版权声明copyright-notice&#34;&gt;版权声明(Copyright Notice）&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;本文翻译自&lt;a href=&#34;https://neon-labs.org/&#34;&gt;Neon Labs&lt;/a&gt;为该项目撰写的&lt;a href=&#34;https://docs.neon-labs.org/&#34;&gt;技术文档&lt;/a&gt;，并已得到翻译授权。译者为&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;。转载请注明作者和译者。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Coptyright©2021 by &lt;a href=&#34;https://neon-labs.org/&#34;&gt;Neon Labs&lt;/a&gt;, translated by &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;最后，请理解此文件并不是官方发布的中文技术文档，而是一份由Neon信仰者&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;个人单独维护的文档，若翻译与英文原文有出入，一律以英文原文和官方解释为准。欢迎大家加入Neon官方&lt;a href=&#34;https://discord.gg/gapRjRtFN7&#34;&gt;Discord群组&lt;/a&gt; 。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Finally,please understand this is not an official Chinese doc released by Neon, but one maintained solely by Neon Maximalist &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;. In the event of conflicts or ambiguity between the English language version and translated versions, the English language versions and official interpretation shall prevail.Feel free to join Neon Official &lt;a href=&#34;https://discord.gg/gapRjRtFN7&#34;&gt;Discord server&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;请访问以下链接查看：&lt;/strong&gt;&lt;br&gt;
-&lt;strong&gt;Please visit folloing links：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://chainguys.github.io/neonwp/&#34;&gt;Neon EVM技术文档 (Neon EVM Docs)&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;https://chainguys.github.io/neonwp/11wp/wp&#34;&gt;Neon EVM白皮书  (Neon EVM Whitepaper)&lt;/a&gt;&lt;/p&gt;
-">Neon EVM技术文档和白皮书(Neon EVM Docs and Whitepaper)</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/huan-ying-lai-dao-tableland-welcome-to-tableland/"" data-c="
-          &lt;h1 id=&#34;欢迎来到tableland-welcome-to-tableland&#34;&gt;欢迎来到Tableland Welcome to Tableland&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;本文的作者为&lt;a href=&#34;https://twitter.com/tableland__&#34;&gt;@Tableland&lt;/a&gt;，译者为&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;，并已得到授权。转载请注明作者和译者。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;(Coptyright©2022 by&lt;a href=&#34;https://twitter.com/tableland__&#34;&gt;@Tableland&lt;/a&gt; , translated by &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;/p&gt;
-&lt;p&gt;(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)&lt;/p&gt;
-&lt;p&gt;原文地址：&lt;a href=&#34;https://mirror.xyz/tableland.eth/I6svQ-WzrhDneHO9NjC6eVIVzDfhtTR8rWyagGbgul8&#34;&gt;https://mirror.xyz/tableland.eth/I6svQ-WzrhDneHO9NjC6eVIVzDfhtTR8rWyagGbgul8&lt;/a&gt;&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*mDpawXGtVSSjM5Z5.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;p&gt;Today, we are excited to announce Tableland, where we are building a novel protocol to enable relational tables and SQL in Web3.&lt;/p&gt;
-&lt;p&gt;今天，我们兴奋地宣布 Tableland：在此我们正构建一个全新的协议，以在 Web3 中使用关系表和 SQL。&lt;/p&gt;
-&lt;p&gt;In Tableland, we believe the new app stack is NFTs and DAOs. Apps are no longer user interfaces sitting on top of a pile of APIs. Now apps are human experiences that optimize for features like ownership, belonging, access control, and participation. Many of the people buying NFTs today are buying them for the experiences they confer.&lt;/p&gt;
-&lt;p&gt;在 Tableland，我们认为新的应用栈是 NFT 和 DAO。应用(Apps)不再是在一堆 API 之上的用户界面。现在，Apps是针对所有权、归属感、访问控制和参与感等功能进行优化的人性化体验。如今，许多购买 NFT 的人是为了获得它们所赋予的体验。&lt;/p&gt;
-&lt;p&gt;As the creators of those experiences, we rely extensively on crafting the metadata accompanying the tokens. Metadata describes the assets that make up the artwork in your Pfp; metadata is what community channels you’ll get access to; metadata is your NFT’s score in the game; metadata is how you decide which of your NFTs to show off in a gallery. And so on. When we look into how this metadata is created and exchanged, we find a disconnected system of on-chain storage, decentralized files, and centralized APIs.&lt;/p&gt;
-&lt;p&gt;作为这些体验的创造者，我们广泛依赖于制作代币伴生的元数据。元数据阐述了构成用户照片中艺术品的资产(即作为头像的NFT作品背后是元数据作为支撑)；元数据是您可以访问的社区频道；元数据是你在游戏中的 NFT 分数；元数据是您如何决定在画廊中展示哪些 NFT ，等等。当我们研究这些元数据是如何创建和交换的时，我们会发现一个由链上存储、去中心化文件和中心化API 组成的不连贯系统。&lt;/p&gt;
-&lt;p&gt;How metadata is captured and served means a lot to the way we develop in Web3. If metadata is stored in smart contracts, it may be expensive and limit the scale of data. If metadata is stored as static files on a decentralized network, it limits the experiences we build and the user interactions we can enable. That decision between on-chain and costly or off-chain but static limits many creators that want to develop unique metaverse experiences, interoperable gaming data, or user-controlled worlds. The main goal of Tableland is to provide a permissionless protocol that allows creators to compose metadata for Web3.&lt;/p&gt;
-&lt;p&gt;如何获得和提供元数据对我们在 Web3 中的开发方式意义重大。如果元数据存储在智能合约中，它可能会很昂贵并且会限制数据规模。如果元数据作为静态文件存储在分散的网络上，它会限制我们能创建的用户体验和我们可以实现的用户交互。“在链上则昂贵，在链下但静态”，这艰难的决定限制了许多想要开发独特的元宇宙体验、可交互操作的游戏数据或用户控制世界的创作者。 Tableland 的主要目标是提供一种无许可协议，允许创作者为 Web3 编写元数据。&lt;/p&gt;
-&lt;p&gt;The vision for Tableland is simple — a landscape of tables (rows and columns) that drive the metadata for NFTs or DAOs. By building the metadata layer for Web3, we want to give creators a decentralized system for storing structured data that can be queried, joined, and updated using a language they’ve used before, SQL. Tableland is here and we believe it will change the way we build the Internet.&lt;/p&gt;
-&lt;p&gt;Tableland 的愿景很简单 — — 驱动 NFT、DAO相关元数据的一片天地。通过为 Web3 构建元数据层，我们希望为创作者提供一个去中心化的系统，来存储可以使用他们之前熟悉的语言(如SQL)来查询、连接和更新结构化数据。 Tableland 就在这里，我们相信它将改变我们构筑互联网的方式。&lt;/p&gt;
-&lt;h1 id=&#34;come-say-hi&#34;&gt;Come say hi!&lt;/h1&gt;
-&lt;h1 id=&#34;来打个招呼&#34;&gt;来打个招呼！&lt;/h1&gt;
-&lt;p&gt;We’re at EthDenver for the next couple of days. Come find our booth, say hi, and let us know what you are working on. We are looking for new partners and collaborators, so let’s chat!&lt;/p&gt;
-&lt;p&gt;接下来的几天我们在 EthDenver。来找我们的&lt;a href=&#34;https://twitter.com/tableland__/status/1494350672057167872&#34;&gt;展位&lt;/a&gt;打个招呼，让我们知道你在做什么。我们正在寻找新的伙伴和合作者，让我们聊聊吧！&lt;/p&gt;
-&lt;h1 id=&#34;join-the-creators&#34;&gt;Join the creators.&lt;/h1&gt;
-&lt;h1 id=&#34;加入成为创作者&#34;&gt;加入成为创作者&lt;/h1&gt;
-&lt;p&gt;The project is taking its first steps with the release of the Tableland gateway. While the protocol and network are still being built, the gateway is open to developers. We would love for you to join our Discord and follow the instructions to try it out.&lt;/p&gt;
-&lt;p&gt;随着 &lt;a href=&#34;https://docs.tableland.xyz/&#34;&gt;Tableland 网关(Tableland gateway)&lt;/a&gt;的发布，项目迈出了第一步。尽管其他协议和主网仍在构建中，但网关对开发人员开放。我们希望您加入我们的 Discord 并按照说明进行尝试。&lt;/p&gt;
-&lt;p&gt;Check out the docs here. Be sure to see our use-cases and playbooks for NFT metadata and key-value stores.&lt;/p&gt;
-&lt;p&gt;请&lt;a href=&#34;https://docs.tableland.xyz/&#34;&gt;点击此处查看文档&lt;/a&gt;。请务必查看我们的&lt;a href=&#34;https://www.notion.so/Tableland-Use-cases-466b4ab8bb1248a497dd457f057abf5f&#34;&gt;用例&lt;/a&gt;，特别是 &lt;a href=&#34;https://docs.tableland.xyz/building/examples/playbooks&#34;&gt;NFT 元数据和键值存储的和手册&lt;/a&gt;。&lt;/p&gt;
-&lt;h1 id=&#34;become-a-builder&#34;&gt;Become a builder.&lt;/h1&gt;
-&lt;h1 id=&#34;成为建设者&#34;&gt;成为建设者&lt;/h1&gt;
-&lt;p&gt;The Tableland network will be owned by those who build and use it. We want that to be you and we need your help to get there. Come join our developer efforts, community efforts, or apply for one of our grants or bounties here.&lt;/p&gt;
-&lt;p&gt;Tableland 网络将为建设和使用它的人所有。我们希望你是其中一员，而我们也需要你的帮助才能成功。快来加入我们的开发者工作、社区工作，或在此处申请我们的&lt;a href=&#34;https://www.notion.so/Tableland-Grants-Funding-ebc1f398d53a481d94f090ab12d93be0&#34;&gt;资金支持&lt;/a&gt;。&lt;/p&gt;
-&lt;h1 id=&#34;join-our-team&#34;&gt;Join our team.&lt;/h1&gt;
-&lt;h1 id=&#34;加入团队&#34;&gt;加入团队&lt;/h1&gt;
-&lt;p&gt;We are hiring across all roles — join us!&lt;/p&gt;
-&lt;p&gt;我们&lt;a href=&#34;https://boards.greenhouse.io/textileio&#34;&gt;正在招聘&lt;/a&gt;，加入我们吧！&lt;/p&gt;
-">欢迎来到Tableland Welcome to Tableland</a>
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/redstone-tech-doc-translation-redstone-ji-zhu-wen-dang-fan-yi/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*cagrG696gNL5_R0DTf6mew.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;I have translated the tech doc of @redstone_defi to Chinese If you are a developper that trying to enter @ArweaveTeam just come and check.&lt;/p&gt;
+&lt;p&gt;我翻译了RedStone的技术文档,如果你是想进入AR生态的开发者，欢迎来围观！&lt;/p&gt;
+&lt;p&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;br&gt;
+(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)&lt;/p&gt;
+&lt;p&gt;翻译文档本体在github,现在同步到博客。&lt;/p&gt;
+">RedStone Tech Doc Translation RedStone 技术文档翻译</a>
       </div>
       
     </div>
