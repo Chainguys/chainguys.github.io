@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Web3 is REAL</title>
-    <updated>2022-05-04T14:09:17.417Z</updated>
+    <updated>2022-05-05T08:23:16.164Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,61 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Web3 is REAL</rights>
+    <entry>
+        <title type="html"><![CDATA[为什么Web3存储至关重要(Why web3 storage matters)]]></title>
+        <id>https://chainguys.github.io/post/wei-shi-me-web3-cun-chu-zhi-guan-chong-yao-why-web3-storage-matters/</id>
+        <link href="https://chainguys.github.io/post/wei-shi-me-web3-cun-chu-zhi-guan-chong-yao-why-web3-storage-matters/">
+        </link>
+        <updated>2022-05-05T08:21:52.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/media/web3_storage.png" alt="Web3 storage" loading="lazy"></figure>
+<p>I’m sure you’ve used cloud services such as Google Drive and OneDrive?<br>
+These services are helpful to store and share your data with friends and family… until they are not. Users store their data on these cloud services, assuming it will not disappear.</p>
+<p>我相信您肯定使用过 Google Drive 和 OneDrive 等云服务。<br>
+这些服务有助于存储您的数据并与朋友和家人共享......直到他们不再（如此有帮助性）。用户将他们的数据存储在这些云服务上，并假设数据不会消失。</p>
+<p>However, most web2 services are controlled by a single company; so, if one day, they decide to close down a service or the company itself, it means that users would lose access to their data.<br>
+Conversely, a Web3 service like Akord is decentralized, meaning that no single party can prevent you from accessing your data, ever. Akord’s digital vaults allow you to save your data securely, forever. With the “Pay once, store forever” model, you never need to look back. So, how does this all work? First, let’s understand what Web3 is. Or actually, what Web2 is. Let’s even start with Web 1.0 and have an initial overview of what the internet was back in the day.</p>
+<p>但是，大多数 web2 服务都由一家公司控制；因此，如果有一天，他们决定关闭一项服务或公司本身，这意味着用户将无法访问他们的数据。<br>
+相反，像 Akord 这样的 Web3 服务是去中心化的，这意味着任何一方都无法阻止您访问自己的数据。 Akord 的数字保险库可让您永久安全地保存数据。使用“一次付款，永久存储”模式，您无需反复付费。那么，这一切是如何运作的呢？首先，让我们了解 Web3 是什么。或者实际上，Web2 是什么。甚至让我们从 Web 1.0 开始，初步了解一下互联网在当时的情况。</p>
+<p>Between the years 1990 and 2000, the internet was mostly a bunch of static web pages, meaning that whenever you loaded them, they would just show some content on your screen, and that was it. This is often referred to as “read-only” content. At the time, there were not any interactions between the user and the website. No logging in, no posting comments, no uploading photos. In addition to that, most of the early internet wasn’t profitable because it was mostly just like one big Wikipedia with everything hyperlinked together and no ads.</p>
+<p>在 1990 年到 2000 年之间，互联网主要是一堆静态网页，这意味着每当你加载它们时，它们只会在屏幕上显示一些内容，仅此而已。通常这被称为“只读”内容。当时，用户和网站之间没有任何互动。无法登录，无法发表评论，无法上传照片。除此之外，大多数早期的互联网都没有盈利，因为它就像一个大维基百科，所有内容都超链接在一起，没有广告。</p>
+<p>Of course, things did improve. First, it became possible to add images and even animations. However, at that time, users went to the internet to consume information. Around 2000, Web2.0 arrived, and the Internet bubble. The main differentiator was that the web became more and more interactive. People could use the Internet for everything: buying products online, chatting with friends and family, booking hotels and restaurants, you name it.</p>
+<p>当然，情况确实有所改善。首先，可以添加图像甚至动画。然而，当时用户上网是为了消费信息。 2000 年左右，Web2.0 和互联网泡沫到来。主要区别在于网络变得越来越互动。人们可以在任何事情上使用互联网：在线购买产品、与朋友和家人聊天、预订酒店和餐馆，应有尽有。</p>
+<p>However, the way that companies were monetizing their services evolved rapidly.<br>
+Companies were striving to collect more and more data about users. Initially, it was simply to customize the products they were offering. Then, it was to customize the ads users were seeing. Eventually, data even ended up being sold to other companies.</p>
+<p>然而，公司将其服务货币化的方式发展迅速。 公司在努力收集越来越多的用户数据。最初，它只是为了定制提供的产品。然后是定制用户看到的广告。最终，数据甚至被卖给了其他公司。</p>
+<p>Although some Web 2.0 companies have slowly started to take privacy more seriously, their business model makes it impossible to do so. Indeed, most Web 2.0 companies live primarily out of advertising and have to collect vast amounts of data from users to increase their revenues.<br>
+One of the main issues with Web 2.0 is that these companies ended up having too much power, to a point where it is now impossible to navigate the web without being permanently tracked by one of the large tech companies. In some way, this can be seen as an extreme centralization of the Internet.</p>
+<p>尽管一些 Web 2.0 公司已经慢慢开始更加认真地对待隐私，但他们的商业模式使得它们无法真正这样做。事实上，大多数 Web 2.0 公司主要靠广告为生，所以必须从用户那里收集大量数据才能增加收入。<br>
+Web 2.0 的主要问题之一是这些公司最终拥有了太多的权力，以至于现在如果不被一个大型科技公司永久跟踪，就无法浏览网络。在某种程度上，这可以被视为互联网的极端中心化。</p>
+<p>This is where Web3 comes in. Gavin Wood, who coined the term Web3, defines it as follows:</p>
+<p>这就是 Web3 的用武之地。创造 Web3 一词的 Gavin Wood 将其定义如下：</p>
+<blockquote>
+<p>Web 3.0 is an inclusive set of protocols to provide building blocks for application makers. These building blocks take the place of traditional web technologies… but present a whole new way of creating applications</p>
+<p>Web 3.0 是一组包容性协议，为应用制造商提供构建模块。这些构建模块取代了传统的 Web 技术……但提供了一种创建应用的全新方式</p>
+</blockquote>
+<p><a href="https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab">Why We Need Web 3.0</a></p>
+<p>The main vision of Web3 is that the web should be decentralized and that companies and content creators should be able to monetize their services directly rather than by leveraging users' data for this purpose.</p>
+<p>Web3 的主要愿景是网络应该是去中心化的，公司和内容创作者应该能够直接通过他们的服务获利，而不是为此目的利用用户数据。</p>
+<p>However, only decentralizing payments does not solve the issue fully. If the data is still centrally owned by large companies, we are back at square zero. This is where Akord comes in. Akord allows users to store their data permanently and privately. This means that only the user who uploaded the data can access it and that nobody can ever prevent the user from accessing his data. To achieve this, Akord leverages a blockchain called <a href="https://www.arweave.org/">Arweave</a>, whose goal is to store data permanently.</p>
+<p>然而，仅仅去中心化支付并不能完全解决问题。如果数据仍然由大公司集中拥有，我们又回到了原点。这就是 Akord 的用武之地。 Akord 允许用户永久且私密地存储他们的数据。这意味着只有上传数据的用户才能访问它，并且没有人可以阻止用户访问他的数据。为了实现这一点，Akord 利用了一个名为 <a href="https://www.arweave.org/">Arweave</a> 的区块链，其目标是永久存储数据。</p>
+<p>Arweave is a blockchain where all the participants running the network have to periodically prove that they are currently storing all data. In exchange for this service, these participants receive rewards paid in the network cryptocurrency $AR. This incentive is distributed not only when storing the data, but also in the form of an endowment to incentivize these providers to store data in the long term and to pay for their costs. All the data on the Arweave blockchain is unencrypted, which works well for public content but not for personal, private data.</p>
+<p>Arweave 是一个区块链，运行网络的所有参与者都必须定期证明他们当前正在存储所有数据。作为这项服务的交换，这些参与者将获得以网络加密货币 $AR 支付的奖励。这种激励不仅在存储数据时分配，而且还会有捐赠来激励这些提供者长期存储数据并支付他们的成本。 Arweave 区块链上的所有数据都是未加密的，这适用于公共内容，但不适用于个人、私人数据。</p>
+<p>Arweave's &quot;Proof of Access&quot; (PoA) is a simple extension of PoW. Each PoW puzzle round is related to a block from the past (a recall block), and only miners who have stored the selected recall block are eligible to participate in the PoW competition. Since recall blocks are randomly determined and cannot be predicted in advance, the more blocks a miner stores, the higher the chance of participating in the PoW competition and the higher the probability of getting a block reward. If a miner has limited storage space to save the entire block history, he will prioritize the blocks that have fewer copies in the network. Because each block has an equal probability of being selected as a recall block, when a scarce block is selected as a recall block, only a few miners are eligible to participate in the PoW contest, so it is more beneficial for miners to store scarce blocks. This ensures that scarce data is also stored by miners.</p>
+<p>Arweave 的“访问证明”（PoA）是 PoW 的简单扩展。每轮 PoW 拼图都与过去的一个区块（召回区块）相关，只有存储了所选召回区块的矿工才有资格参加 PoW 竞赛。由于召回区块是随机确定的，无法提前预测，因此矿工存储的区块越多，参与 PoW 竞赛的机会就越高，获得区块奖励的概率就越高。如果矿工存储整个区块历史的存储空间有限，他将优先考虑网络中副本较少的区块。因为每个区块被选为召回块的概率相等，所以当一个稀缺块被选为召回块时，只有少数矿工有资格参加 PoW 竞赛，因此矿工存储稀缺块更有利。这确保了稀缺数据也由矿工存储。</p>
+<p>Unlike other centralized or decentralized storage solutions, Arweave makes data persistent and reliable. As of today, several NFT markets or organizations have adopted Arweave as a solution, such as Mintbase, Avastars.io, and so forth.</p>
+<p>与其他集中式或分散式存储解决方案不同，Arweave 使数据持久可靠。时至今日，已有多个 NFT 市场或组织采用 Arweave 作为解决方案，例如 Mintbase、Avastars.io 等。</p>
+<p>However, all the data on Arweave is public by default, meaning that it is not appropriate to store any sort of private data.<br>
+Akord provides a missing privacy layer. When a user uploads data through Akord, the data is encrypted and can only be decrypted by the user himself/herself or other users with whom the data has been shared. The encrypted data is then uploaded to Arweave to be stored forever. This altogether provides the next level of security and resilience for storing data.</p>
+<p>但是，默认情况下，Arweave 上的所有数据都是公开的，这意味着不适合存储任何类型的私有数据。<br>
+Akord 提供了一个缺失的隐私层。当用户通过 Akord 上传数据时，数据是加密的，只能由用户本人或共享数据的其他用户解密。然后将加密的数据上传到 Arweave 永久存储。这为完全存储数据提供了更高级别的安全性和弹性。</p>
+<p>Akord also inherits this feature as the upper layer application of Arweave network, whether it is family group photos, songs of favorite bands, or NFT metadata, Akord is able to store them permanently.</p>
+<p>So, if you have data you truly care about, start using Akord today. Sign up and get started with 500MB for free: <a href="https://app.akord.com/signup">https://app.akord.com/signup</a></p>
+<p>Akord 作为 Arweave 网络的上层应用也继承了这一特性，无论是家庭合影、喜欢的乐队的歌曲，还是 NFT 元数据，Akord 都能永久存储。</p>
+<p>因此，如果您有真正关心的数据，请立即开始使用 Akord。注册并开始使用500MB 的免费空间 ：<a href="https://app.akord.com/signup">https://app.akord.com/signup</a></p>
+<p>其他参考文章：</p>
+<p><a href="https://akord.com/blog/web3-and-owning-your-data">Web3 and Owning Your Data</a> →</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Euler文档+白皮书(Euler Docs+Whitepaper)]]></title>
         <id>https://chainguys.github.io/post/euler-wen-dang-bai-pi-shu/</id>
@@ -1011,217 +1066,6 @@ Scalability and liquidity from <strong>Solana</strong></p>
 <strong>(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</strong></p>
 <p><strong>如需查看pdf文件，请访问（For pdf file, please kindly see)：</strong></p>
 <p>https://drive.google.com/file/d/103GGDaKCOTEBIfLsThALWzRuuFDoTMPQ/view?usp=sharing</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Swivel Litepaper-Swivel协议简明机制与图示（ENG-CHN）]]></title>
-        <id>https://chainguys.github.io/post/swivel-litepaper-swivel-xie-yi-jian-ming-ji-zhi-yu-tu-shi-eng-chn/</id>
-        <link href="https://chainguys.github.io/post/swivel-litepaper-swivel-xie-yi-jian-ming-ji-zhi-yu-tu-shi-eng-chn/">
-        </link>
-        <updated>2021-12-11T10:00:58.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="版权声明copyright-notice"><strong>版权声明（Copyright Notice）</strong></h1>
-<p><strong>本文翻译自</strong><a href="https://twitter.com/SwivelFinance">@SwivelFinance</a><strong>的文章：</strong><a href="https://docs.swivel.finance/litepaper">A Basic Description and Visualization of the Swivel Protocol’s mechanics</a><strong>。已得到作者的授权。译者为</strong><a href="https://twitter.com/Chainguys"><strong>@chainguys</strong></a><strong>。转载请注明作者和译者。</strong></p>
-<p><strong>（Coptyright©2021 by</strong> <a href="https://twitter.com/SwivelFinance">@SwivelFinance</a>, <strong>translated by</strong> <a href="https://twitter.com/Chainguys"><strong>@chainguys</strong></a><strong>）</strong></p>
-<p><strong>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。<br>
-(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</strong></p>
-<h1 id="1-导言introduction"><strong>1. 导言（Introduction）</strong></h1>
-<p>Concerns surrounding protocols like Compound and Aave have become acceptable for all but the most risk-averse market participants. However, the volatility of DeFi rates still precludes many from effective portfolio/risk management, and others from market participation entirely.</p>
-<p>尽管（之前）对Compound和AAVE有所担忧，但大多数人现在认为它们是可以接受的了 — — 除了大多数风险厌恶的市场参与者。但是，DeFi市场的波动性依然使得一部分人无法进行有效的风险管理，让其他人无法完全参与市场。</p>
-<p>Swivel enables this wider market participation by providing the capital efficient infrastructure and professional trading interface necessary for tokenized cash-flows.</p>
-<p>Swivel通过对代币化现金流（tokenized cash-flows）提供资本高效(capital efficient)的基础设施和专业的交易界面来实现更广泛的市场参与。</p>
-<h2 id="11-代币现金流tokenizing-cash-flows"><strong>1.1 代币现金流（Tokenizing Cash-Flows）</strong></h2>
-<p>At it’s core, Swivel is built around the concept of cash flow-tokenization.</p>
-<p>Specifically, Swivel provides the ability to split a single interest generating token into two separate cash-flow tokens until a future date. One cash-flow being the interest generated, and the other being ownership of the underlying token, redeemable at that future date.</p>
-<p>In Swivel’s design these two are referred to as nTokens (yield-generating tokens), and zcTokens (tokens redeemable at maturity).</p>
-<p>Swivel以“将现金流代币化”为核心创立。</p>
-<p>详细来说，Swivel提供这样一种能力：（用户）可以将一个利率生成代币一分为二，生成两个绑定日期的现金流代币。其中一个现金流代币（表示）利率生成，另一个则代表所有权，并且在到期后可以赎回。在Swivel的系统中，第一个叫做nTokens，第二个叫zcTokens。</p>
-<p>（<a href="https://twitter.com/Chainguys"><strong>@chainguys</strong></a>省流助手：就是利率和本金分别开来，各用各的token来表示）</p>
-<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/0*FV2pL6gkfdoIwzcz" alt="" loading="lazy"></figure>
-<p>将USDC分别铸造成nTokens和zcTokens</p>
-<h1 id="2-zctokens"><strong>2. zcTokens</strong></h1>
-<h2 id="21-概览overview">2.1 概览（Overview）</h2>
-<p><strong><em>ERC-20 Tokens that represent a 1–1 claim for underlying upon maturity.</em></strong></p>
-<p><strong><em>一个可以在到期日1比1赎回标的资产（本金）的ERC-20代币</em></strong></p>
-<p>Zero-coupon tokens, <strong><em>zcTokens</em></strong>, are ERC-20’s which are redeemable 1:1 at maturity for an underlying token.</p>
-<p>零息代币，即**<em>zcTokens</em>** 是一个可以在到期日1比1赎回标的资产（本金）的ERC-20代币</p>
-<p>As users lock-in fixed yields, their deposit is split into zcTokens and nTokens and the the nTokens minted are sold to fuel a fixed-yield.</p>
-<p>用户锁定固定收益时，他们的入金会被分为zcTokens 和 nTokens。nTokens会被卖出作为一个固定收益的燃料（to fuel a fixed-yield）。</p>
-<p>This leaves the lender with an immediate fixed-yield and their minted zcTokens.</p>
-<p>这使得贷款人能够马上获得一个固定收入和一个zcTokens</p>
-<p><strong>Fixed-Yield Lending:</strong></p>
-<p><strong>Alice has 1000 USDC.</strong></p>
-<p><strong>Alice fills Bob’s order, splitting 1000 USDC into 1000 zcUSDC and 1000 nUSDC.</strong></p>
-<p><strong>Alice sells 1000 nUSDC to Bob for 50 USDC.</strong></p>
-<p><strong>Alice then has 1000 zcUSDC. At maturity Alice redeems her 1000zcUSDC for 1000 USDC. This leaves Alice with 1050 USDC.</strong></p>
-<p><strong>整个过程如下：</strong></p>
-<p><strong>Alice有1000USDC</strong></p>
-<p><strong>Alice相应Bob的订单，将1000USDC分成了1000zcUSDC和 1000nUSDC</strong></p>
-<p><strong>Alice将1000 nUSDC以50USDC的价格卖给Bob</strong></p>
-<p><strong>Alice现在就有1000zcUSDC,在到期后Alice将1000zcUSDC赎回，拿回1000USDC</strong></p>
-<p><strong>这样Alice就有1050USDC</strong></p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*UbnbVvxucFh62eW_" alt="" loading="lazy"></figure>
-<p>以5%年利率出借</p>
-<h2 id="22-定价pricing"><strong>2.2 定价（Pricing）</strong></h2>
-<p>Given zcTokens represent a 1–1 redemption only upon maturity, they are discounted at a rate based on the predicted amount of interest that may have otherwise been generated until the maturity/redemption date (the nToken price).</p>
-<p>Accepting that this potential yield decreases as time passes, ZcTokens appreciate towards par and reach par as maturity is reached.</p>
-<p>Further, because an nToken represents the predicted future yield, the discount on a zcToken is inversely proportional to the cost of an nToken.</p>
-<p>At maturity, zcTokens begin to appreciate above par, accruing the yield generated on a given money-market (e.g. Compound) until redeemed.</p>
-<p>​假设zcTokens在到期日能够按1：1赎回，那么它们就可以（跟传统债券一样）来根据变现日期和利率情况来定价。</p>
-<p>随着时间流逝，可能的收益就会减少，zcTokens也会越来越接近标的资产价格。</p>
-<p>接着，因为nToken代表了预计的未来收益，zcToken的折扣价格将会和nToken的价值成反比。</p>
-<p>到期时，zcTokens价格开始超过面值，在正式赎回之前会以某个流动性市场（如compound）上的情况来累积收益。</p>
-<h2 id="23-退出卖出zctokens-exitingselling-zctokens"><strong>2.3 退出/卖出zcTokens Exiting/Selling zcTokens</strong></h2>
-<p><strong><em>An example of common market interactions</em></strong></p>
-<p><strong><em>一个普通市场交互的案例</em></strong></p>
-<p>As rates fluctuate, active market participants may require the ability to fluidly move in and out of positions.</p>
-<p>To facilitate this market participation, Swivel provides the ability to frictionlessly exit or sell a zcToken position.</p>
-<p>由于（利率）会波动，主动的市场参与者会要求有迅速调整仓位的能力。为了帮助这样的市场参与行为，Swivel会提供这样无摩擦地退出或卖出zcToken仓位的能力。</p>
-<p>Exiting zcTokens early by purchasing nTokens and then redeeming for underlying:</p>
-<p><strong>Alice has 1000 zcUSDC.</strong></p>
-<p><strong>Alice fills Bob’s order, purchasing 1000 nTokens.</strong></p>
-<p><strong>Alice redeems 1000 zcUSDC and 1000 nUSDC for 1000 USDC and then pays Bob 50 USDC.</strong></p>
-<p><strong>This leaves Alice with 950 USDC.</strong></p>
-<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/0*U_osN0AH2XI2jExw" alt="" loading="lazy"></figure>
-<p>提前卖出zcToken仓位的交易过程如下：</p>
-<p>Alice有1000 zcUSDC</p>
-<p>Alice响应Bob的订单，购买了1000 <strong>nTokens</strong></p>
-<p>Alice用 1000zcUSDC和 1000nUSDC赎回了1000 USDC 然后向Bob支付了50USDC</p>
-<p>这样Alice就有950USDC了</p>
-<p>zcTokens can also be sold to counterparties looking to take fixed-yield positions through the orderbook:</p>
-<p><strong>Alice has 1000 zcUSDC.</strong></p>
-<p><strong>Alice fills Diane’s order, in the process Alice splitting Diane’s 1000 USDC into zcUSDC and nUSDC.</strong></p>
-<p><strong>Alice purchases 1000 nUSDC from Diane and redeems her 1000 zcUSDC + 1000 nUSDC for 1000 USDC.</strong></p>
-<p><strong>Alice then pays Diane a 50 USDC premium for the purchased nUSDC.</strong></p>
-<p><strong>This leaves Alice with 950 USDC.</strong></p>
-<p><strong>(Simplified to 1000 zcUSDC &lt;-&gt; 950 USDC)</strong></p>
-<p>zcTokens也可以被卖给寻求固定收益仓位的交易对手：</p>
-<p><strong>Alice有1000zcUSDC</strong></p>
-<p><strong>Alice响应Diane的订单，在过程中Alice将Diane的1000USDC拆分成了zcUSDC和nUSDC</strong></p>
-<p><strong>Alice从购买了1000 nUSDC, 然后将（1000 zcUSDC + 1000 nUSDC）打包赎回了1000USDC</strong></p>
-<p><strong>Alice然后付给了Diane 50USDC作为费用</strong></p>
-<p><strong>这样Alice就有了950USDC</strong></p>
-<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/0*G4qRJbEXxAaGcDqL" alt="" loading="lazy"></figure>
-<p>将zcTokens卖给寻求固定收益仓位的交易对手</p>
-<h2 id="24-二级自动做市商secondary-amms"><strong>2.4 二级自动做市商（Secondary AMM’s）</strong></h2>
-<p><strong><em>A discussion of potential secondary markets and cross-chain access to fixed-yields.</em></strong></p>
-<p><strong><em>一场关于潜在的二级自动做市商和跨链固定收益的讨论</em></strong></p>
-<p>zcTokens can also be traded on a secondary AMM in order to enter or exit lending positions, or alternatively attempt to amplify yield by providing liquidity.</p>
-<p>(see: Risks of LPing in derivative marketplaces)</p>
-<p>为了开/平仓，zcTokens也可以在二级自动做市商或者其他的流动性提供商处交易。</p>
-<p><strong>Entering:</strong></p>
-<p><strong>Alice has 1000 USDC and wants a fixed yield.</strong></p>
-<p><strong>Alice purchases 1050 zcTokens for 1000 USDC, maturing in one year for a 5% yield.</strong></p>
-<p><strong>Exiting:</strong></p>
-<p><strong>Alice has 1050 zcTokens and wants to exit.</strong></p>
-<p><strong>Alice sells 1050 zcTokens for 1000 USDC.</strong></p>
-<figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/1400/0*2O_dnWxyLcj-DGFy" alt="" loading="lazy"></figure>
-<p><strong>进入：</strong></p>
-<p><strong>Alice有1000USDC并且想获得固定收益</strong></p>
-<p><strong>Alice用1000USDC购买了1050 个一年后到期且年利率5%的zcTokens</strong></p>
-<p><strong>退出：</strong></p>
-<p><strong>Alice有1050个zcTokens并且想退出</strong></p>
-<p><strong>Alice 将1050 个zcTokens 以1000USDC卖出</strong></p>
-<h1 id="3-ntokens"><strong>3. nTokens</strong></h1>
-<p><strong><em>Notional Tokens contained in Swivel’s Vaults which represent the claim to underlying yields.</em></strong></p>
-<p><strong><em>放在Swivel库房中，代表标的资产的名义代币</em></strong></p>
-<h2 id="31-概览overview"><strong>3.1 概览（Overview）</strong></h2>
-<p>When a user buys nTokens, they create a vault that tracks their balances within a given market.</p>
-<p>Each vault contains two balances, <em>Notional</em> and <em>Redeemable.</em></p>
-<p>当一个用户购买nTokens时，系统会（自动）在指定市场生成一个可以追踪余额的金库（valut），每个金库都有两类余额，名义的和可赎回的。</p>
-<p><strong>名义代币nTokens ,Notional (nTokens)</strong></p>
-<p>Notional Tokens <em>(nTokens)</em> represent a 1–1 deposit, currently generating interest in an underlying protocol. Once maturity has been reached, interest-generation ceases and nTokens become worthless.</p>
-<p>As such, nTokens are deprecating assets that experience time-decay. As time passes, nTokens decrease in value, and as they approach maturity, an their value approaches 0.</p>
-<p>名义代币_(nTokens)_ 达标在一个标的协议中1：1存入并生息。一旦到期，生息就停止，该代币也就失效。如此，nTokens是一个随着时间不断贬值的资产。随着时间流逝，nTokens也不断贬值，到期后归零。</p>
-<p><strong>可赎回（余额）Redeemable</strong></p>
-<p>The <em>Redeemable</em> represents the amount of accrued interest currently available to redeem.</p>
-<p>As users interact with their vault, interest is accumulated to the redeemable balance, and this balance can be redeemed at any time.</p>
-<p>可赎回（余额）代表了目前累积的且可赎回的利息。只要用户与金库交互，利息就会自动归集到可赎回的余额，并且可以立即操作赎回。</p>
-<h2 id="32-购买ntokensbuying-ntokens"><strong>3.2 购买nTokens(Buying nTokens):</strong></h2>
-<p><strong>Bob has 50 USDC.</strong></p>
-<p><strong>Bob fills Alice’s order selling 1000 nUSDC at .05/ea (5%), paying Alice an immediate $50 premium.</strong></p>
-<p><strong>Once filled, Alice mints 1000 zcUSDC and 1000 nUSDC, transferring 1000 nUSDC to Bob. Bob then owns 1000 nUSDC (the right to the yield generated by 1000 USDC).</strong></p>
-<p><strong>Bob有50USDC</strong></p>
-<p><strong>Bob响应Alice的订单，卖出年利率5% 的1000 nUSDC，立刻付给Alice 50美金的费用</strong></p>
-<p><strong>Alice获得1000zcUSDC和1000nUSDC后，将1000nUSDC发送给Bob</strong></p>
-<p><strong>Bob现在就又1000 nUSDC(也就是获得1000USDC产生的利息)</strong></p>
-<figure data-type="image" tabindex="6"><img src="https://miro.medium.com/max/1400/0*0IDZWe6V_o4DPujy" alt="" loading="lazy"></figure>
-<p><strong>3.3 定价（Pricing）</strong></p>
-<p>Given nTokens represent a 1–1 deposit into an underlying money-market, and the claim to the deposit’s future yield, they are priced based on the expected yield generated until maturity.</p>
-<p>This potential future yield decreases as time passes and as such, nTokens depreciate and experience theta-decay.</p>
-<p>Of note, because a zcToken represents an underlying token stripped of nToken yields, the cost of a nToken is inversely proportional to the discount on a zcToken.</p>
-<p>假如nTokens在标定市场 1：1存入和未来对（利息）收入的权利不变，nTokens的价格就和到期日前的预期收益有关。nTokens随着时间流逝而贬值。注意，因为zcToken代表ntoken剥离的标的资产的收益，nTokens的费用和zcToken的折扣成反比。</p>
-<h2 id="34-退出卖ntokensexitingselling-ntokens"><strong>3.4 退出/卖nTokens（Exiting/Selling nTokens）</strong></h2>
-<p><strong><em>An example of common market interactions</em></strong></p>
-<p><strong><em>一个常见的市场交互案例</em></strong></p>
-<p>As with zcTokens, as rates fluctuate, active market participants require the ability to fluidly move in and out of nToken positions. To facilitate this market participation, Swivel provides the ability to exit/sell nTokens on our orderbook.</p>
-<p>由于利率会波动，主动的市场参与者会要求有迅速调整仓位的能力。为了帮助这样的市场参与行为，Swivel会提供这样退出或卖出nTokens仓位的能力。</p>
-<p>Selling nTokens to an initiating counterparty:</p>
-<p><strong>Bob has 1000 nUSDC. Bob fills Charlie’s order for 1000 nUSDC, and in return receives 50 USDC. This leaves Bob with 50 USDC + any accrued interest.</strong></p>
-<p><strong>Bob有1000nUSDC.Bob响应Charlie的订单，卖出1000nUSDC,收到了50USDC。所以现在Bob在归集的利息上就多了50USDC</strong></p>
-<figure data-type="image" tabindex="7"><img src="https://miro.medium.com/max/1400/0*4y3793nJWDa1JLFv" alt="" loading="lazy"></figure>
-<p>交易ntokens</p>
-<p>nTokens can also be sold to counterparties redeeming their zcTokens early:</p>
-<p><strong>Bob has 1000 nUSDC.</strong></p>
-<p><strong>Bob fills Alice’s order, selling Alice 1000 nTokens.</strong></p>
-<p><strong>Alice redeems 1000 zcUSDC + 1000 nUSDC for 1000 USDC and then pays Bob 50 USDC.</strong></p>
-<p><strong>This leaves Bob with 50 USDC + any accrued interest.</strong></p>
-<p><strong>nTokens也可以卖给要提前用zcTokens（赎回USDC）的交易对手：</strong></p>
-<p><strong>Bob有1000 nUSDC.</strong></p>
-<p><strong>Bob响应Alice的订单，买了1000个nTokens给Alice.</strong></p>
-<p><strong>Alice用（1000 zcUSDC + 1000 nUSDC）赎回了自己的1000USDC，然后支付给Bob 50USDC</strong></p>
-<p><strong>这样Bob归集的利息上就多了50USDC</strong></p>
-<figure data-type="image" tabindex="8"><img src="https://miro.medium.com/max/1400/0*CJVUAXZ6nM8CFZZA" alt="" loading="lazy"></figure>
-<p>向持有zcTokens的人卖出nTokens</p>
-<h1 id="4-资本效率capital-efficiency"><strong>4. 资本效率（Capital Efficiency）</strong></h1>
-<p><strong><em>An overview of capital efficiency within Interest-Rate Derivative and Cash-Flow Markets</em></strong></p>
-<p><strong><em>利率衍生品和现金流市场二者资本效率的回顾</em></strong></p>
-<h2 id="41-自动做市商与订单簿amm-vs-orderbook"><strong>4.1 自动做市商与订单簿（AMM vs. Orderbook）</strong></h2>
-<p>AMM’s have insofar proven to be the effective mechanism for bootstrapping liquidity, however the efficacy and capital efficiency of AMM’s within derivative markets has proven to be questionable at best.</p>
-<p>Without the ability to adjust quoted prices with regard to standard derivative pricing variables, liquidity providers are exposed to significant risk and constantly give up an edge to the market. (As seen in LP returns)</p>
-<p>自动做市商目前被证明是一个提升流动性的有效机制。然而自动做市商在衍生品市场的功能和资本效率却尤其受到质疑。由于不能根据标准的衍生品价格变量来调整引用的价格，流动性提供者暴露在巨大的风险之中并且持续丧失在市场中的优势地位（请看下图LP的回报）。</p>
-<figure data-type="image" tabindex="9"><img src="https://miro.medium.com/max/1400/0*P8uUQY5hkuzdzbwq.jpeg" alt="" loading="lazy"></figure>
-<p>Hegic LP -25%的年化收益</p>
-<p>Swivel instead attempts to bootstrap liquidity by providing the same token incentives present on most AMM’s, but with the enhanced capital efficiency and flexibility that an orderbook can provide for all market participants.</p>
-<p>Using Swivel’s capital efficient orderbook, not only do users receive reduced slippage and a potentially gas-free experience, but liquidity providers can account for the factors that would otherwise leave them exposed.</p>
-<p>Swivel则尝试用与大多数自动化做市商相同，但比传统订单簿给市场参与方带来的，更有资本效率和灵活性的代币激励，来提升市场的流动性。</p>
-<p>使用Swivel的资本有效订单簿（capital efficient orderbook），不但可以让用户减少滑点和甚至拥有无gas的交易体验，还可以让流动性提供者们发现那些可能让他们处于风险的因素。</p>
-<h2 id="42特定手段的优化instrument-specific-optimizations"><strong>4.2特定手段的优化（Instrument-Specific Optimizations）</strong></h2>
-<p>If then attempting to address Swivel’s market with an AMM, one would need both a time-appreciating AMM for zero-coupon tokens (similar to Element), and a time-depreciating AMM for interest-coupons (similar to Pendle).</p>
-<p>如果要用自动化做市商来处理Swivel这个市场，那就同时需要一个随着时间升值的零息代币自动化做市商（类似Element）和一个随着时间贬值的票息（代币）自动化做市场（类似于Pendle）。</p>
-<p>With Swivel’s flexible orderbook, these separate AMM’s are not necessary as a user can enter the marketplace with an underlying currency (USDC, ETC, BTC, etc.,), or alternatively with either zero-coupon tokens or money-market notional (interest-coupons) when exiting positions.</p>
-<p>As a result Swivel’s users benefit from the generalized efficiencies provided by an orderbook, and the further ~2x enhanced capital efficiency when compared to two separate AMM’s.</p>
-<p>使用 Swivel 的灵活订单簿，这些单独的 AMM就不再是必需的了。因为用户可以使用标定的货币（USDC、ETC、BTC 等）进入市场，或者在退出时使用零息代币或货币市场名义（票息）退出头寸时。</p>
-<p>因此 Swivel 的用户受益于订单簿提供的更广泛性效率和更多的东西 — — 与两个独立的 AMM 相比，资本效率提高了2倍。</p>
-<h2 id="43-铸造ntokens-minting-ntokens-interest-coupons"><strong>4.3 铸造nTokens ,Minting nTokens (Interest-Coupons)</strong></h2>
-<p>Swivel’s issuance of interest-coupons, termed Notional Tokens (nTokens), is optimized in two ways:</p>
-<p>1.nTokens include interest-generation and tracking functionality within their transfer function which:</p>
-<p>Reduces the deposit overhead present in designs which require increasing deposits over time</p>
-<p>Reduces complexity in nToken pricing</p>
-<p>Allows interest to be redeemed at any time</p>
-<p>2.Swivel atomically mints tokens as orders are filled which reduces the number of transactions necessary for most use cases.</p>
-<p>Swivel的发行票息，即名义代币（nTokens），主要有两个优化方向。</p>
-<p>其一是nTokens中利息产生、追踪和转移的环节：</p>
-<p>l 在设计中减少不断存入时会产生的损耗（费用）</p>
-<p>l 减少nTokens定价中的问题</p>
-<p>l 允许利息随时可赎回</p>
-<p>其二，Swivel铸币时会尽量用最少的交易（步骤）响应最多的用户需求。</p>
-<h1 id="5-流动性奖励liquidity-incentives"><strong>5. 流动性奖励（Liquidity Incentives）</strong></h1>
-<p><strong><em>A description of Swivel’s liquidity and market-making incentivization.</em></strong></p>
-<p><strong><em>Swivel流动性和做市激励简介</em></strong></p>
-<p>Swivel is the first orderbook-based protocol with liquidity incentives built baseline into token distribution and protocol design.</p>
-<p>In the context of an AMM, liquidity incentives are straightforward. Any user who provides pooled liquidity across the constant x*y=k curve is rewarded at a proportional rate for their liquidity provided.</p>
-<p>Swivel是世界上第一个以订单簿为基础的，在代币分配和协议设计时就融入了流动性激励得协议。以自动化做市商的角度来说，流动性激励是直接的。任何一个基于x*y=k曲线（自动化做市基本原理）来提供流动性的人都将按比例获得激励。</p>
-<p>When applying this concept to an orderbook, liquidity rewards are not pools but binary orders. Either an order gets filled, or it does not.</p>
-<p>With this accepted, how does one reward those providing liquidity to an orderbook? <strong><em>By providing token rewards only to those liquidity providers (makers) who’s orders are filled.</em></strong></p>
-<p>Swivel sets aside 50% of our token supply for these orderbook liquidity incentives.</p>
-<figure data-type="image" tabindex="10"><img src="https://miro.medium.com/max/1400/0*-aJoRYcj41Aosi3r" alt="" loading="lazy"></figure>
-<p>There are other alternative methods of weighing rewards based on orderbook state as described in <a href="https://hummingbot.io/liquidity-mining-whitepaper/">Hummingbot’s paper</a> on liquidity mining, however none serve to properly democratize access to rewards across any market participant.</p>
-<p>当将这一概念应用到订单簿时，流动性的奖励将不再（基于）AMM池而是买卖双方的订单。一个订单要么被响应，要么不会被响应。基于此，如何奖励那些为订单簿提供流动性的人呢？答案是：只对那些订单簿被相应的流动性提供者基于代币奖励。Swivel会将50%的代币作为流动性奖励。当然，在这篇官流动性挖矿的文章中（<a href="https://hummingbot.io/liquidity-mining-whitepaper/">Hummingbot’s paper</a>）有一些其他的，基于订单簿状态来衡量奖励的方法，但所有这些都没有使得所有市场参与者更民主地参与奖励的（分配）。</p>
-<h2 id="51-流动性激励的有效性amm-vs-clobeffectiveness-of-liquidity-incentives-amm-vs-clob"><strong>5.1 流动性激励的有效性AMM vs CLOB（Effectiveness of Liquidity Incentives: AMM vs CLOB）</strong></h2>
-<p>While liquidity provider token incentives have historically related to providing liquidity on an AMM, it appears that their positive effect on slippage/spread is enhanced within the context of an orderbook.</p>
-<p>Effectively, within an orderbook users have individualized capital allocation, and with our liquidity rewards, more efficient competitive capital allocation results in more reward generation.</p>
-<p>This then gives market-makers the incentive to not only optimize their capital efficiency, but in doing so undercut one another as they attempt to take on a competitive position within the orderbook.</p>
-<p>虽然流动性提供者的代币激励与一个自动化做市商提供流动性的历史（数据）有关，不过似乎他们在订单簿条件下对解决滑点和价差起了更积极的作用。在订单簿的情况下，用户会有个性化的资产配置，那么在Swivel的流动性奖励机制下，更多有效率的竞争性资产配置将会产出更多的奖励。这将使得做市商不但会想办法最优化他们自己的资本市场效率，而且还会使他们之间互相竞价，因为他们之间处于竞争地位。</p>
 ]]></content>
     </entry>
 </feed>
