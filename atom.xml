@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Web3 is REAL</title>
-    <updated>2022-05-05T08:26:58.140Z</updated>
+    <updated>2022-05-05T12:04:31.984Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -17,6 +17,7 @@
         </link>
         <updated>2022-05-05T08:21:52.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/media/web3_storage.png" alt="Web3 storage" loading="lazy"></figure>
+<p>原文(original) : https://akord.com/blog/why-web3-storage-matters</p>
 <p>I’m sure you’ve used cloud services such as Google Drive and OneDrive?<br>
 These services are helpful to store and share your data with friends and family… until they are not. Users store their data on these cloud services, assuming it will not disappear.</p>
 <p>我相信您肯定使用过 Google Drive 和 OneDrive 等云服务。<br>
