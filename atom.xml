@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Web3 is REAL</title>
-    <updated>2022-05-06T02:31:25.783Z</updated>
+    <updated>2022-05-06T14:26:28.746Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Web3 is REAL</rights>
+    <entry>
+        <title type="html"><![CDATA[Euler来信-四月总结(Euler Newsletter April Summary)]]></title>
+        <id>https://chainguys.github.io/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/</id>
+        <link href="https://chainguys.github.io/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/">
+        </link>
+        <updated>2022-05-06T12:09:06.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="euler-更新-2022年4月20号-euler-update-20-apr-2022">Euler 更新 [2022年4月20号] Euler Update [20 Apr 2022]</h1>
+<h3 id="让我们一起回顾过去几周都发生了什么lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么！(Let's recap what has happened over the past few weeks!)</h3>
+<h1 id="紧追潮流-keep-up-to-date">紧追潮流 (Keep up to Date!)</h1>
+<p><a href="https://newsletter.euler.finance/p/march2022-recap?s=w">March</a> was an eventful month for the Euler team, so keep up to date on our latest progress and events recently below.</p>
+<p><a href="https://newsletter.euler.finance/p/march2022-recap?s=w">3 月</a> 对于 Euler 团队来说是一个活动满满的月份，因此请在下方了解我们最新进展和活动。</p>
+<p>Euler reached a new <a href="https://twitter.com/eulerfinance/status/1509875301949485063">milestone</a> with over $100M in TVL! We’ve had increases in borrowing as shown by <a href="https://twitter.com/tokenterminal/status/1511061146614304776">Token Terminal</a>, while we were #1 of the top 10 DApps by 30d revenue growth according to <a href="https://twitter.com/CryptoRank_io/status/1514912163713802240">CryptoRank</a>.</p>
+<p>Euler达到了一个新的<a href="https://twitter.com/eulerfinance/status/1509875301949485063">里程碑</a>，TVL 超过 1 亿美元！正如 <a href="https://twitter.com/tokenterminal/status/1511061146614304776">Token Terminal</a> 所示，我们的借入有所增加，而根据 <a href="https://twitter.com/CryptoRank_io/status/1514912163713802240">CryptoRank</a>，我们在 30 天收入增长的前 10 大 DApp 中排名第一。</p>
+<p>The devs made infrastructure changes to the main landing page and added some great new <a href="https://twitter.com/eulerfinance/status/1511782605040996352">features</a> including the ‘MINE’ function where users can use leverage. We also plan to launch a new metric, “<a href="https://twitter.com/euler_mab/status/1511653199220031489">time to liquidation</a>” for users to keep track of liquidation risk from interest rates while leverage borrowing.</p>
+<p>开发人员对主登录页面进行了基础架构更改，并添加了一些很棒的新<a href="https://twitter.com/eulerfinance/status/1511782605040996352">功能</a>，包括用户可以使用杠杆的“MINE(挖矿)”功能。我们还计划推出一个新指标“<a href="https://twitter.com/euler_mab/status/1511653199220031489">清算时间</a>”，让用户在杠杆借贷的同时跟踪利率的清算风险。</p>
+<p>We’ve had more activity in the <a href="https://forum.euler.finance/">governance forums</a>, where <a href="https://forum.euler.finance/t/eip-8-contract-bugfixes/120">eIP8</a> will fix some minor bugs in the smart contracts and another <a href="https://forum.euler.finance/t/changing-ageur-oracle-from-eth-ageur-30bp-to-eth-ageur-5bp/122">proposal</a> will readjust agEUR’s oracle. The Angle team also <a href="https://twitter.com/AngleProtocol/status/1513773659181232128">minted</a> $1M agEUR on Euler.</p>
+<p>我们在 <a href="https://forum.euler.finance/">治理论坛</a> 中进行了更多活动，其中 <a href="https://forum.euler.finance/t/eip-8-contract-bugfixes/120">eIP8</a>将修复智能合约中的一些小错误和另一个<a href="https://forum.euler.finance/t/changed-ageur-oracle-from-eth-ageur-30bp-to-eth-ageur-5bp/122">提案</a> 将修复一些智能合约的小bug,另一项<a href="https://forum.euler.finance/t/changing-ageur-oracle-from-eth-ageur-30bp-to-eth-ageur-5bp/122">提案</a>hui重新调整 agEUR 的预言机。 Angle 团队还在 Euler 上 <a href="https://twitter.com/AngleProtocol/status/1513773659181232128">铸币</a> 100 万美元的agEUR。</p>
+<p>Token Terminal released the fourth post in their research series, with the latest <a href="https://twitter.com/eulerfinance/status/1514634620632928262">article</a> focusing on Euler. Ape Board also <a href="https://twitter.com/ape_board/status/1509558638289068035">announced</a> Euler is supported on their platform.</p>
+<p>Token Terminal 发布了他们研究系列的第四篇文章，最新的<a href="https://twitter.com/eulerfinance/status/1514634620632928262">文章</a> 专注于Euler。 Ape Board 还 <a href="https://twitter.com/ape_board/status/1509558638289068035">宣布</a> 他们的平台支持 Euler。</p>
+<p>Looking for some big brain reads? Michael wrote a thread on how Euler is the most <a href="https://twitter.com/euler_mab/status/1509484799379091457?">advanced</a> liquidity protocol and detailed issues on <a href="https://twitter.com/euler_mab/status/1513849394394767360">bad debt</a> and bank runs. Seraphim reminded users the importance of <a href="https://twitter.com/MacroMate8/status/1514906441244676096">oracles</a> and examined how <a href="https://twitter.com/eulerfinance/status/1514325055425040384">borrowing</a> oSQTH became more efficient on Euler.</p>
+<p>寻找一些s烧脑读物？迈克尔写了一篇关于Euler为何是最<a href="https://twitter.com/euler_mab/status/1509484799379091457?">先进</a> 的流动性协议和关于<a href="https://twitter.com/euler_mab/status/1513849394394767360">坏账</a> 和银行挤兑的详细问题的帖子。 Seraphim 提醒用户 <a href="https://twitter.com/MacroMate8/status/1514906441244676096">预言机</a> 的重要性，并检查 <a href="https://twitter.com/eulerfinance/status/1514325055425040384">借入</a> oSQTH 如何在Euler更为效率。</p>
+<p>The team had a blast at PBWS, where Michael was a <a href="https://twitter.com/eulerfinance/status/1514599796195016712">speaker</a> on risk management. Michael was also interviewed on the <a href="https://twitter.com/eulerfinance/status/1513717518271057924">BlockHash</a> podcast and the <a href="https://twitter.com/knycksutherland/status/1511703480221773830">KickBlocks</a> podcast.</p>
+<p>Euler团队在 PBWS 上大放异彩，Michael 是风险管理方面的 <a href="https://twitter.com/eulerfinance/status/1514599796195016712">演讲者</a>。 Michael 还接受了 <a href="https://twitter.com/eulerfinance/status/1513717518271057924">BlockHash</a> 播客和 <a href="https://twitter.com/knycksutherland/status/1511703480221773830">KickBlocks</a> 播客的采访。</p>
+<p>Meanwhile, Seraphim was interviewed in <a href="https://twitter.com/eulerfinance/status/1510091127336013824">eFinancialCareers</a> and will be attending <a href="https://twitter.com/CryptoCanal/status/1511041954624286727">Devconnect</a> in Amsterdam on 25th April.</p>
+<p>同时，Seraphim 接受了 <a href="https://twitter.com/eulerfinance/status/1510091127336013824">eFinancialCareers</a> 的采访，并将于 25 日在阿姆斯特丹参加 <a href="https://twitter.com/CryptoCanal/status/1511041954624286727">Devconnect</a>。</p>
+<p>We currently have a total supply of $421.71M with TVL of $108.95M and $312.76M in total borrowed. Several new markets including <a href="https://twitter.com/eulerfinance/status/1509923564891246595">DPI</a> were activated, while our reserves have increased to $391.64K.</p>
+<p>我们目前的总供应量为 4.2171 亿美元，TVL 为 1.0895 亿美元，借款总额为 3.1276亿美元。包括 <a href="https://twitter.com/eulerfinance/status/1509923564891246595">DPI</a> 在内的几个新市场已启动，而我们的储备金已增加到 391.64 万美元。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[为什么Web3存储至关重要(Why web3 storage matters)]]></title>
         <id>https://chainguys.github.io/post/wei-shi-me-web3-cun-chu-zhi-guan-chong-yao-why-web3-storage-matters/</id>
@@ -789,6 +818,54 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。</p>
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Euler来信-三月总结(Euler Newsletter March Summary)]]></title>
+        <id>https://chainguys.github.io/post/euler-lai-xin-san-yue-zong-jie-euler-newsletter-march-summary/</id>
+        <link href="https://chainguys.github.io/post/euler-lai-xin-san-yue-zong-jie-euler-newsletter-march-summary/">
+        </link>
+        <updated>2022-04-01T11:49:04.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="让我们一起回顾过去几周都发生了什么-lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么! (Let's recap what has happened over the past few weeks!)</h3>
+<h3 id="欢迎-welcome">欢迎! (Welcome!)</h3>
+<p>Euler had loads of updates and notable events in our last <a href="https://newsletter.euler.finance/p/19march22?s=w">newsletter</a>, so get ready for more in this month’s summary!</p>
+<p>在我们上一期的<a href="https://newsletter.euler.finance/p/19march22?s=w">通讯</a>中，Euler 有大量更新和值得注意的事件，所以准备好在本月的总结中了解更多吧！</p>
+<p>We surprised the DeFi community with a <a href="https://twitter.com/eulerfinance/status/1505926062362046470">snapshot</a> and announced the start of Epoch 1 and the <a href="https://docs.euler.finance/governance/distribution">distribution</a> for <a href="https://twitter.com/eulerfinance/status/1506317448118607876">Epoch 0</a>.</p>
+<p>我们用<a href="https://twitter.com/eulerfinance/status/1505926062362046470">快照</a>给了 DeFi 社区一个惊喜，并宣布开始 Epoch 1 ，以及<a href="https://docs.euler.finance/governance/distribution">分发</a> <a href="https://twitter.com/eulerfinance/status/1506317448118607876">Epoch 0</a> 。</p>
+<p><a href="https://twitter.com/eulerfinance/status/1508526476064264192">eIP3</a> was approved, so users can now perform self-collateralisation.</p>
+<p><a href="https://twitter.com/eulerfinance/status/1508526476064264192">eIP3</a> 获得批准，因此用户现在可以进行自我抵押。</p>
+<p><a href="https://twitter.com/eulerfinance/status/1506715170898280450">eIP5</a> has been implemented, which amended the borrow factors and interest rate models on a large number of assets.</p>
+<p><a href="https://twitter.com/eulerfinance/status/1506715170898280450">eIP5</a> 已经实施，从而对大量资产的借贷因子和利率模型进行了修正。</p>
+<p><a href="https://twitter.com/eulerfinance/status/1508715614059188229">eIP6</a> passed, allowing Euler users to utilise Chainlink (LINK) as a collateral asset.</p>
+<p><a href="https://twitter.com/eulerfinance/status/1508715614059188229">eIP6</a> 获得通过，允许 Euler 用户将 Chainlink (LINK) 作为资产进行抵押。</p>
+<p><a href="https://forum.euler.finance/t/eip-7-promote-matic-to-collateral-tier/112">eIP7</a> has been proposed to enable Polygon (MATIC) as a collateral asset on Euler. Feel free to discuss on the gov forums, particularly if you voted for/against it on <a href="https://twitter.com/MacroMate8/status/1508937005270548484">Compound</a>.</p>
+<p><a href="https://forum.euler.finance/t/eip-7-promote-matic-to-collateral-tier/112">eIP7</a> 已被提案。它将让 Polygon (MATIC) 作为 Euler 上的抵押资产。请不要拘束，多多在 gov 论坛上讨论，尤其是如果您在 <a href="https://twitter.com/MacroMate8/status/1508937005270548484">Compound</a> 上投票支持/反对它。</p>
+<p>Michael wrote a related <a href="https://twitter.com/euler_mab/status/1508746235343261711">thread</a> about leverage on over-collateralised lending protocols and another one detailing Euler’s unique and advanced <a href="https://twitter.com/euler_mab/status/1509484799379091457">features</a>.</p>
+<p>Michael 写了一篇关于超额抵押借贷协议杠杆的<a href="https://twitter.com/euler_mab/status/1508746235343261711">长推</a>，还有另一篇文章详细介绍了 Euler 的独特和高级<a href="https://twitter.com/euler_mab/status/1509484799379091457">功能</a>。</p>
+<p>We launched an educational tweet <a href="https://twitter.com/eulerfinance/status/1506964539371229185">series</a> on Euler’s main features. Check out the #EulerFeatures hashtag on Twitter to stay updated.</p>
+<p>我们推出了有关 Euler 主要功能的教育<a href="https://twitter.com/eulerfinance/status/1506964539371229185">推文系列</a>。您可以查看 Twitter 上的#EulerFeatures 标签来保持更新。</p>
+<p>We held our monthly Euler <a href="https://odysee.com/@Carrebear:8/CommCall:d">Community Call</a> and also a <a href="https://twitter.com/eulerfinance/status/1506547052645212164">Twitter Space</a> with Polygon.</p>
+<p>我们举行了每月一次的 Euler <a href="https://odysee.com/@Carrebear:8/CommCall:d">社区电话会议</a>，与 Polygon一起进行了 <a href="https://twitter.com/eulerfinance/status/1506547052645212164">Twitter 空间</a> （活动）。</p>
+<p>Euler was highlighted in a Messari <a href="https://twitter.com/eulerfinance/status/1508836611089338370">article</a> by <a href="https://twitter.com/bloomberg_seth/status/1507452795158671360">Seth Bloomberg</a>, and Hasu mentioned us in a <a href="https://twitter.com/hasufl/status/1509121997179138049">Tweet</a>.</p>
+<p><a href="https://twitter.com/bloomberg_seth/status/1507452795158671360">Seth Bloomberg</a> 在Messari <a href="https://twitter.com/eulerfinance/status/1508836611089338370">文章</a>中高度评价Euler，并且Hasu 也在<a href="https://twitter.com/hasufl/status/1509121997179138049">推文</a>中提到了我们。</p>
+<p>Meanwhile, we made an appearance in Token Terminal’s <a href="https://twitter.com/totlsota/status/1509552766049521672">newsletter</a>, while they also hinted of a <a href="https://twitter.com/tokenterminal/status/1508804108052017152">potential</a> research piece on Euler.</p>
+<p>同时，我们出现在 Token Terminal 的<a href="https://twitter.com/totlsota/status/1509552766049521672">通讯</a>中，同时他们也暗示了他们有关于Euler的<a href="https://twitter.com/tokenterminal/status/1508804108052017152">潜在</a>研究。</p>
+<p>Euler’s head of risk Seraphim wrote a <a href="https://twitter.com/MacroMate8/status/1508810487068348424">thread</a> about our unique liquidation process.</p>
+<p>Euler 的风险主管 Seraphim 写了一篇关于我们独特清算流程的<a href="https://twitter.com/MacroMate8/status/1508810487068348424">长推</a>。</p>
+<p>The Euler team grew with <a href="https://twitter.com/eulerfinance/status/1506224211232059400">Connor Mulhall</a> having joined as a full-stack engineer and <a href="https://twitter.com/eulerfinance/status/1508640108441837571">Rangel Stoilov</a> joined as a senior front-end developer.</p>
+<p>Euler 团队持续扩大： <a href="https://twitter.com/eulerfinance/status/1506224211232059400">Connor Mulhall</a> 作为全栈工程师加入， <a href="https://twitter.com/eulerfinance/status/1508640108441837571">Rangel Stoilov</a> 作为高级前端开发人员加入。</p>
+<p>We now have $352.3M in total supply, $98.51M in TVL, and $253.8M in total being borrowed across 53 total markets and $111.55k in reserves.</p>
+<p>我们现在总供应量为 3.523 亿美元，TVL 为 9851 万美元，在 53 个总市场中总共借入了 2.538 亿美元，准备金为 11.155 万美元。</p>
+<hr>
+<h2 id="其他新闻-in-other-news">其他新闻 (In Other News)</h2>
+<p>Watch this <a href="https://twitter.com/rekt/status/1507126172286480384">interview</a> with Seraphim and Brandon Neal if you missed the last newsletter about Brandon joining as our COO, having previously worked as an NY Fed official.</p>
+<p>如果您错过了 Brandon 加入我们并成为COO（他之前曾担任纽约联储官员）的最新通讯，请观看对 Seraphim 和 Brandon Neal 的<a href="https://twitter.com/rekt/status/1507126172286480384">采访</a>。</p>
+<p>Seraphim was <a href="https://www.efinancialcareers.co.uk/news/2022/03/leave-goldman-sachs-for-crypto?utm_source=GLOBAL_ALL_ENG&amp;utm_medium=SM_TW&amp;utm_campaign=ED_NEWS">interviewed</a> in an article on Goldman Sachs employees leaving TradFi for the crypto industry.</p>
+<p>Seraphim 在一篇关于高盛员工离开 TradFi 进入加密货币行业的文章中接受了<a href="https://www.efinancialcareers.co.uk/news/2022/03/leave-goldman-sachs-for-crypto?utm_source=GLOBAL_ALL_ENG&amp;utm_medium=SM_TW&amp;utm_campaign=ED_NEWS">采访</a>。</p>
+<p>Come meet the team and see Michael as a <a href="https://twitter.com/PBWSummit/status/1471165200271392770?t=Sy_1hEd84GfkvIV7gMiYuA&amp;s=19">key speaker</a> at the Paris Blockchain Week Summit from April 13th-14th 2022 or if you’re in the US, join Seraphim at Blockworks’ <a href="https://twitter.com/MacroMate8/status/1490741479026970627">Permissionless</a> conference in Palm Beach on 17-19 May.</p>
+<p>快来与团队会面！在 2022 年 4 月 13 日至 14 日的巴黎区块链周峰会上，可以看到 Michael 作为<a href="https://twitter.com/PBWSummit/status/1471165200271392770?t=Sy_1hEd84GfkvIV7gMiYuA&amp;s=19">主要发言人</a>。如果您在美国，5 月 17 日至 19 日在棕榈滩（Palm Beach）将举行Blockworks的<a href="https://twitter.com/MacroMate8/status/1490741479026970627">无许可</a>会议（<a href="https://twitter.com/MacroMate8/status/1490741479026970627">Permissionless</a> conference），届时欢迎您请加入Seraphim的活动。</p>
+<p>If you're in Germany, join Michael at the inaugural <a href="https://twitter.com/euler_mab/status/1494075904154349573">Blockchain Oracle Summit</a> in Berlin on 7-9 June.</p>
+<p>如果您在德国，请与Michael一起参加 6 月 7 日至 9 日在柏林举行的首届<a href="https://twitter.com/euler_mab/status/1494075904154349573">区块链甲骨文峰会</a>。</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[RedStone Tech Doc Translation RedStone 技术文档翻译]]></title>
         <id>https://chainguys.github.io/post/redstone-tech-doc-translation-redstone-ji-zhu-wen-dang-fan-yi/</id>
         <link href="https://chainguys.github.io/post/redstone-tech-doc-translation-redstone-ji-zhu-wen-dang-fan-yi/">
@@ -991,82 +1068,6 @@ Scalability and liquidity from <strong>Solana</strong></p>
 <p>我们准备了 0.7.0 版本。</p>
 <p>明天我们将在 Devnet 上更新Neon代理(Neon proxy) 的公开版本，社区将能够测试在 Mainnet 上运行的最终版本。</p>
 <p>我们请求社区来测试我们的产品。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Euler白皮书中英文对照版(ENG-CHN)]]></title>
-        <id>https://chainguys.github.io/post/euler-bai-pi-shu-zhong-ying-wen-dui-zhao-ban-eng-chn/</id>
-        <link href="https://chainguys.github.io/post/euler-bai-pi-shu-zhong-ying-wen-dui-zhao-ban-eng-chn/">
-        </link>
-        <updated>2022-01-30T09:55:44.000Z</updated>
-        <content type="html"><![CDATA[<p>之前因为已经首发在项目的官方文档，所以没有更新进来。过年了嘛，一家人还是要完完整整，更新上来咯！</p>
-<p>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。<br>
-(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</p>
-<p>https://docs.euler.finance/languages/white-paper-eng-chn</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[子空间（Subspace）：种收者困境的解决方案(ENG-CHN) Subspace: A Solution to the Farmer’s Dilemma]]></title>
-        <id>https://chainguys.github.io/post/zi-kong-jian-subspacechong-shou-zhe-kun-jing-de-jie-jue-fang-an-eng-chn-subspace-a-solution-to-the-farmers-dilemma/</id>
-        <link href="https://chainguys.github.io/post/zi-kong-jian-subspacechong-shou-zhe-kun-jing-de-jie-jue-fang-an-eng-chn-subspace-a-solution-to-the-farmers-dilemma/">
-        </link>
-        <updated>2022-01-14T12:05:52.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A61.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A62.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A63.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A64.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A65.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A66.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A67.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A68.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A69.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A610.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A611.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A612.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A613.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A614.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A615.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A616.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A617.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A618.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A619.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A620.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A621.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A622.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A623.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A624.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A625.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A626.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A627.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A628.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A629.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A630.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A631.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A632.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A633.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A634.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A635.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A636.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A637.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A638.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A639.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A640.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A641.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A642.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A643.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A644.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A645.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A646.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A647.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A648.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A649.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A650.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A651.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A652.png" alt="" loading="lazy"></p>
-<p><strong>再次声明：本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。</strong><br>
-<strong>(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</strong></p>
-<p><strong>如需查看pdf文件，请访问（For pdf file, please kindly see)：</strong></p>
-<p>https://drive.google.com/file/d/103GGDaKCOTEBIfLsThALWzRuuFDoTMPQ/view?usp=sharing</p>
 ]]></content>
     </entry>
 </feed>
