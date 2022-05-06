@@ -2071,7 +2071,7 @@ body {
     }
     
     .post-body {
-      font-size: 18px !important
+      font-size: 16px !important
     }
     body {
       color: #000;
@@ -2099,27 +2099,27 @@ body {
     .node-title::before {
       background-color: #000;
     }a {
-      color: #5c7cfa;
+      color: #4263eb;
     }
     
     .next-md-body a, .friends-box a  {
-      color: #5c7cfa;
+      color: #4263eb;
     }a:hover {
-      color: #5c7cfa;
+      color: #4263eb;
     }
     
     .archive-timeline-box .tag-node:hover::before {
-      background-color: #5c7cfa;
+      background-color: #4263eb;
     }
     
     .markdownIt-TOC a:hover {
-      color: #5c7cfa;
-      border-bottom-color: #5c7cfa;
+      color: #4263eb;
+      border-bottom-color: #4263eb;
     }
 
     .next-md-body a:hover, .friends-box a:hover {
-      color: #5c7cfa;
-      border-bottom-color: #5c7cfa;
+      color: #4263eb;
+      border-bottom-color: #4263eb;
     }
     .nav-toggle .line {
       background-color:  !important;
@@ -2181,10 +2181,10 @@ body {
   
     }
     .main-title, .brand {
-      color: #FFF !important;
+      color: #000 !important;
     }
     .mist .site-title i {
-      background: #FFFFFFfe;
+      background: #000000fe;
     }.box-scale > #landlord {
       transform: scale(0.2);
     }.box-shadow-wrapper {
