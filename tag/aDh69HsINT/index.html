@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Web3 is REAL</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1651849597923">
+<link rel="shortcut icon" href="/favicon.ico?v=1651898624548">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -206,13 +206,13 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">16</span>
+        <span class="site-item-stat-count">17</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">66</span>
+        <span class="site-item-stat-count">74</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -356,6 +356,28 @@
           </div>
         </div>
       </a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -2324,6 +2346,125 @@ output = hash([output])&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;If any of this is interesting to you, we’re hiring! Please DM&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;&lt;strong&gt;@buffalu__&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;on Twitter.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;另外，我们正在招聘！如果您有兴趣，请在推特上私信 &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;&lt;strong&gt;@buffalu__&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 ">Solana验证者（节点）攻略1-交易流程(ENG-CHN)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/jie-ge-he-yu-yan-ji-prices-and-oracles/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*rSUJn0hbmqMcVKaP9AOcdQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;Euler builds upon Uniswap’s time-weighted average price (TWAP) oracles to allow users to lend and borrow almost any fungible token. This is part 1 of a series of articles in which we describe how these TWAP oracles work and the advantages they bring to users of our decentralised lending protocol.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Euler 建立在 Uniswap 的时间加权平均价格 (TWAP) 预言机之上，允许用户借出和借入几乎任何可替代的代币。这是一系列文章的第 1 部分，我们将在其中描述这些 TWAP 预言机的工作原理以及它们为我们的去中心化借贷协议用户带来的优势。&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;价格的含义-the-concept-of-price&#34;&gt;‘价格’的含义 (The concept of ‘price’)&lt;/h1&gt;
+&lt;p&gt;Sometimes identical assets can be sold at different prices in different markets. For example, the price of a widget is going to increase as it moves through the supply chain from the factory through wholesalers through to your neighbourhood retailer. Since people are paying different amounts for the exact same thing, it suggests that it doesn’t really make sense to talk about &lt;em&gt;the&lt;/em&gt; single price of something.&lt;/p&gt;
+&lt;p&gt;有时，相同的资产可以在不同的市场以不同的价格出售。例如，一个小部件的价格会随着它从工厂通过批发商到您附近的零售商的这条供应链而上涨。由于人们为完全相同的东西支付不同的金额，这表明谈论某物的单一价格并没有真正的意义。&lt;/p&gt;
+&lt;p&gt;Of course there is nothing stopping you from travelling to the factory, buying a bunch of the widgets and standing outside the retailer selling them directly to customers at a discount. If you do this you’d be practising what is known as arbitrage, and would likely force the retailer to lower its widget prices (or get you arrested for loitering).&lt;/p&gt;
+&lt;p&gt;当然，没有什么可以阻止您前往工厂，购买一堆小部件并站在零售商外面以折扣价直接将它们出售给客户。如果您这样做，您将实施所谓的套利，并且可能会迫使零售商降低其小部件价格（或因闲逛而被捕）。&lt;/p&gt;
+&lt;p&gt;Arbitrage is the guiding force that causes markets around the world to converge on common prices. The beautiful thing about it is that no coordination is required. As long as the transaction costs and trading risks aren’t too high, enough entities acting in their own self-interest is enough to ensure that the price of, say, gold moves at approximate lock-step in New York, London, and elsewhere.&lt;/p&gt;
+&lt;p&gt;套利是导致全球市场趋同于共同价格的指导力量。它的美妙之处在于不需要协调。只要交易成本和交易风险不太高，足够多的利己实体就足以确保黄金价格在纽约、伦敦和其他地方大致同步移动.&lt;/p&gt;
+&lt;h2 id=&#34;交易规模-trade-sizes&#34;&gt;交易规模 (Trade sizes)&lt;/h2&gt;
+&lt;p&gt;So maybe arbitrage is what creates &lt;em&gt;the&lt;/em&gt; price of an asset. On the other hand, have you ever bought a widget from the neighbourhood retailer rather than going direct to a factory in China? Of course you have. If you’re buying small quantities it’s natural to expect the unit price to be higher due to transportation costs and middle-men.&lt;/p&gt;
+&lt;p&gt;所以，也许套利是创造资产价格的原因。另一方面，您是否曾经从附近的零售商那里购买过小部件，而不是直接去中国的工厂？您当然有。如果您购买少量商品，由于运输成本和中间商，您很自然会期望单价更高。&lt;/p&gt;
+&lt;p&gt;Somewhat confusingly, unless you have studied economics or interacted with financial markets in practice, the natural state of prices is in fact the opposite: If you are buying a small quantity of a financial instrument, you can typically expect a &lt;em&gt;better&lt;/em&gt; price than if you are buying a large quantity.&lt;/p&gt;
+&lt;p&gt;稍微令人困惑的是，除非您在实践中研究过经济学或与金融市场进行过互动，否则价格的自然状态实际上是相反的：如果您购买少量金融工具，您通常可以预期比您购买时 &lt;em&gt;更好&lt;/em&gt; 的价格大量购买。&lt;/p&gt;
+&lt;p&gt;To recognise that price is somehow a function of trade size, economists refer to the “marginal” price. This is simply the best available price for an infinitesimally small amounts of an asset. Naturally you can’t buy an infinitesimally small amount of widgets: price curves are rarely the nice, smooth, differentiable functions that economists study. Instead, they are usually either free-for-all orderbooks populated by whoever has shown up to trade (like a stock exchange), or a more regular pricing band structure (like the foreign exchange market). On the other hand, systems like Uniswap are closer to smooth pricing functions, but we’re getting ahead of ourselves.&lt;/p&gt;
+&lt;p&gt;为了认识到价格在某种程度上是交易规模的函数，经济学家指的是“边际”价格。这只是极少量资产的最佳可用价格。当然，你不能购买极少量的小部件：价格曲线很少是经济学家研究的漂亮、平滑、可微的函数。取而代之的是，它们通常是由任何出现交易的人填充的免费订单簿（如证券交易所），或者是更常规的定价区间结构（如外汇市场）。另一方面，像 Uniswap 这样的系统更接近平滑的定价功能，但我们正在超越自己。&lt;/p&gt;
+&lt;h2 id=&#34;竞争还是共谋-competition-or-collusion&#34;&gt;竞争还是共谋 (Competition or collusion?)&lt;/h2&gt;
+&lt;p&gt;There is a lot of information embedded in a price. This is one way that financial markets help society. Even if you have no intention of buying or selling widgets, being able to observe in real time that their price on the other side of the world is increasing can be one of many valuable signals that will help you plan your economic activities.&lt;/p&gt;
+&lt;p&gt;价格中包含很多信息。这是金融市场帮助社会的一种方式。即使您无意购买或出售小部件，也能够实时观察它们在世界另一端的价格正在上涨，这可能是帮助您规划经济活动的许多有价值的信号之一。&lt;/p&gt;
+&lt;p&gt;But keep in mind that prices are abstractions, and are missing important context. Consider the gas stations in your town: Their gasoline prices are nearly identical and they move up and down together nearly in lock-step. This is clearly an example of competitive market forces converging prices to their common minimum viable level, right?&lt;/p&gt;
+&lt;p&gt;但请记住，价格是抽象的，缺少重要的背景。考虑一下您所在城镇的加油站：它们的汽油价格几乎相同，并且几乎同步上下移动。这显然是竞争性市场力量将价格收敛到它们共同的最低可行水平的一个例子，对吧？&lt;/p&gt;
+&lt;p&gt;Not so fast. Couldn’t it also be the case that the gas station operators are colluding to move their prices together to avoid the negative effects of competition? Yes, and given the price alone it is impossible to tell which it is.&lt;/p&gt;
+&lt;p&gt;但没那么快。加油站运营商不也是为了避免竞争而串通一气调价吗？是的，仅考虑到价格，就无法判断它的内涵。&lt;/p&gt;
+&lt;h1 id=&#34;预言机-oracles&#34;&gt;预言机 (Oracles)&lt;/h1&gt;
+&lt;p&gt;Just like in the so-called real world, many blockchain systems need access to prices of assets:&lt;br&gt;
+就像在所谓的现实世界中一样，许多区块链系统需要访问资产价格:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A system that is buying or selling some good or service needs to ensure that it is using accurate market rates, either for its product pricing, its input costs, or both.&lt;br&gt;
+购买或出售某些商品或服务的系统需要确保其使用准确的市场价格，无论是产品定价、投入成本还是两者兼而有之。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Derivative trading systems enable participants to effectively bet with one another about whether the prices will go up or down.&lt;br&gt;
+衍生交易系统使参与者能够有效地相互下注(对冲)价格是上涨还是下跌。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lending systems must monitor the values of loans and collateral to ensure that loans are never under-collateralised.&lt;br&gt;
+贷款系统必须监控贷款和抵押品的价值，以确保贷款永远不会非足值抵押。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Systems that provide prices to smart contracts are referred to as Oracles. Broadly speaking there are two classes of oracles: off-chain and on-chain. Each has advantages and disadvantages.&lt;/p&gt;
+&lt;p&gt;为智能合约提供价格的系统被称为预言机。从广义上讲，有两类预言机：链下和链上。每个都有优点和缺点。&lt;/p&gt;
+&lt;h2 id=&#34;链下预言机-off-chain-oracles&#34;&gt;链下预言机 (Off-chain oracles)&lt;/h2&gt;
+&lt;p&gt;In this design, prices are collected from sources external to the blockchain such as trading exchanges, and then these prices are embedded on the blockchain by trusted parties.&lt;/p&gt;
+&lt;p&gt;在这种设计中，价格是从区块链外部的来源（例如交易交易所）收集的，然后这些价格由受信任第三方嵌入到区块链中。&lt;/p&gt;
+&lt;p&gt;A well-known off-chain oracle today is &lt;a href=&#34;https://chain.link/&#34;&gt;Chainlink&lt;/a&gt;. At a high level, Chainlink works by assigning special privileges to nodes that control a certain amount of LINK tokens. These nodes coordinate to create an on-chain price in a series of time-bounded rounds. Every round, each node submits a price and then a smart contract takes the median of these prices and makes this value available to on-chain smart contracts.&lt;/p&gt;
+&lt;p&gt;今天著名的链下预言机是 &lt;a href=&#34;https://chain.link/&#34;&gt;Chainlink&lt;/a&gt;。在高层次上，Chainlink 通过为控制一定数量 LINK 代币的节点，分配特殊权限来工作。这些节点（互相）协调，在一系列时间限制的回合中创建链上价格。每一轮，每个节点都会提交一个价格，然后智能合约取这些价格的中值，并将这个值提供给链上智能合约。&lt;/p&gt;
+&lt;p&gt;One very powerful advantage of this approach is that the collected information can be anything at all. In fact, on Chainlink it is possible to bring data such as real-world weather statistics, or even pure randomly generated numbers, onto the chain.&lt;/p&gt;
+&lt;p&gt;这种方法一个非常强大的优势是，收集的信息可以是任何东西。事实上，在 Chainlink 上，可以将现实世界的天气统计数据，甚至是纯随机生成的数字等数据带到链上。&lt;/p&gt;
+&lt;p&gt;On the other hand, some blockchain users are uncomfortable with this approach, because such systems do not provide what is called “objective” data. Objective in this sense means this is that it is possible for a user to verify how the data was arrived at purely by looking at the operation of the blockchain.&lt;/p&gt;
+&lt;p&gt;另一方面，一些区块链用户对这种方法感到不舒服，因为这样的系统不提供所谓的“客观”数据。从这个意义上讲，客观意味着用户可以通过查看区块链的操作来验证数据是如何传达到的。&lt;/p&gt;
+&lt;p&gt;As an example, you can objectively verify the balance of an address’s wallet by downloading the history of the blockchain and (after making sure you aren’t on a malicious fork) replaying all the transactions up until the present. The wallet’s balance is now a self-evident, objective truth that you have determined without making any additional security assumptions beyond the security of the blockchain itself.&lt;/p&gt;
+&lt;p&gt;例如，您可以通过下载区块链的历史记录并（在确保您没有处于恶意分叉上）重放直到现在的所有交易，来客观地验证地址钱包的余额。钱包的余额现在是一个不言而喻的客观事实，你在没有超出区块链本身安全性的情况下，也没有做出任何额外安全性假设，就已经确定了它。&lt;/p&gt;
+&lt;h2 id=&#34;伦敦银行同业拆借利率-libor&#34;&gt;伦敦银行同业拆借利率 (LIBOR)&lt;/h2&gt;
+&lt;p&gt;Aside from theoretical purity, is this concept of objectivity important? I believe so. Let’s consider a real-world example.&lt;/p&gt;
+&lt;p&gt;除了理论上的纯洁性，这种客观性概念重要吗？我相信如此。让我们考虑一个真实的例子。&lt;/p&gt;
+&lt;p&gt;LIBOR stands for “London Inter-bank Offered Rate” and is supposed to represent the current interest rate that will be applied when borrowing money for a short period of time. In a sense, this value can be considered the &lt;em&gt;price of money&lt;/em&gt;. It is one of the most important numbers in the entire financial system. Whenever you take out a mortgage, carry a credit card interest, or interact with the financial system at all, you are likely affected by this number. But how is this number actually generated?&lt;/p&gt;
+&lt;p&gt;LIBOR 代表“伦敦银行同业拆借利率”，应该代表短期借款时将采用的当前利率。从某种意义上说，这个价值可以被认为是 &lt;em&gt;金钱的价格&lt;/em&gt; 。它是整个金融体系中最重要的数字之一。每当您进行抵押贷款、持有信用卡利息或与金融系统互动时，您都可能会受到这个数字的影响。但是这个数字实际上是如何产生的呢？&lt;/p&gt;
+&lt;p&gt;LIBOR can itself be thought of as an oracle. Every day, each of a group of major banks create estimates of how much it would cost them to borrow money, supposing they wanted to. The banks are supposed to go take a look at the prices their brokers are quoting and aggregate them in some way, although it is largely at their discretion how they do so. Once each bank has come up with its number, it submits it to an association tasked with aggregation. The association throws out the highest and lowest estimate under the assumption they may be unrepresentative outliers, and then averages the remaining estimates. This average is then published as the daily LIBOR.&lt;/p&gt;
+&lt;p&gt;LIBOR 本身可以被认为是一个预言机。每天，假设他们愿意，一组主要银行中的每家都会估算他们借钱的成本。银行应该去看看他们的经纪人报价并以某种方式汇总它们，尽管这在很大程度上取决于他们如何做。一旦每家银行提出了它的数据，它就会将其提交给一个负责汇总的协会。在假设它们可能是不具代表性的异常值的情况下，该协会将剔除最高和最低估计值，然后对剩余的估计值进行平均。然后将该平均值作为每日 LIBOR 发布。&lt;/p&gt;
+&lt;p&gt;Banks have a large amount of influence over their prices and they aren’t held financially accountable for the rates they submit in any way. In a pure market-driven system, if a bank published a “bad” price, then counterparties would trade on that price until such time as prices had converged through arbitrage.&lt;/p&gt;
+&lt;p&gt;银行对其价格有很大的影响力，并且他们不以任何方式对他们提交的利率承担财务责任。在纯粹的市场驱动系统中，如果银行公布了“坏”价格，那么交易对手将按照该价格进行交易，直到价格通过套利趋同为止。&lt;/p&gt;
+&lt;p&gt;Even worse than allowing banks to be sloppy with their price submissions, as was revealed in a major 2008 scandal, many of the banks submitting prices had significant exposure to derivatives based on the published LIBOR value. Traders at the banks would coordinate with the people at the bank tasked with making the LIBOR submissions and with traders at other banks to push the LIBOR in directions beneficial to their trading positions.&lt;/p&gt;
+&lt;p&gt;比允许银行草率地提交价格更糟糕的是，正如 2008 年的一起重大丑闻所揭示的那样，许多提交价格的银行对基于公布的 LIBOR 值的衍生品敞口很大。银行的交易员将与负责提交 LIBOR 的银行人员以及其他银行的交易员进行协调，以将 LIBOR 推向有利于其交易头寸的方向。&lt;/p&gt;
+&lt;p&gt;The problem is two-fold: First of all, there is no such thing as &lt;em&gt;the&lt;/em&gt; single price of an asset, beyond what can be supplied by a market-driven arbitrage system, and any attempt to compile such a value is to some degree a fiction. But more seriously, the origins of the prices comprising LIBOR are not transparent, and there are no market-driven consequence to a bank for publishing incorrect data.&lt;/p&gt;
+&lt;p&gt;问题有两面：首先，除了市场驱动的套利系统可以提供的东西之外，没有资产单一价格这样的东西，任何试图编制这样一个价值的尝试在某种程度上都是小说。但更严重的是，构成伦敦银行同业拆借利率的价格来源并不透明，银行发布不正确的数据不会导致市场驱动的后果。&lt;/p&gt;
+&lt;h2 id=&#34;链上预言机-on-chain-oracles&#34;&gt;链上预言机 (On-chain oracles)&lt;/h2&gt;
+&lt;p&gt;With smart contracts, trading systems can be built entirely on-chain. This naturally gives rise to the notion that asset prices could be accessible as objective truths to other smart contracts. By using the quoted prices as signals, systems that need prices can be entirely hermetic and self-contained within the scope of the blockchain. (Whether such systems should even be called “oracles” is a debate we’ll ignore.)&lt;/p&gt;
+&lt;p&gt;使用智能合约，交易系统可以完全建立在链上。这自然产生了这样一种观念，即资产价格可以作为其他智能合约的客观事实来获取。通过使用报价作为信号，需要价格的系统可以在区块链范围内完全封闭和自我包含。（这样的系统是否应该被称为“预言机”是我们将忽略的争论。）&lt;/p&gt;
+&lt;p&gt;The most well-known trading system that exists purely on-chain is Uniswap. Uniswap’s smart contract implements an Automated Market Maker which allows liquidity providers to deposit two assets into a smart contract, and a trader to exchange one asset by supplying the other. The price of this exchange depends on how depleted each component of the pool is at the time of the trade.&lt;/p&gt;
+&lt;p&gt;最知名的纯链上交易系统是 Uniswap。 Uniswap 的智能合约实现了一个自动做市商，它允许流动性提供者将两种资产存入智能合约，交易者通过提供另一种资产来交换一种资产。该交易所的价格取决于交易时池中每个组件的消耗程度。&lt;/p&gt;
+&lt;h2 id=&#34;价格快照-price-snapshots&#34;&gt;价格快照 (Price snapshots)&lt;/h2&gt;
+&lt;p&gt;Since the current marginal price of assets in a Uniswap pool can be determined at any time by looking at the relative quantities of assets, it is tempting to use this as a source for price information. However, this should be done with care. Snapshots of the pool quantities at any particular moment in time can be manipulated.&lt;/p&gt;
+&lt;p&gt;由于可以通过查看资产的相对数量来随时确定 Uniswap 池中资产的当前边际价格，因此很容易将其用作价格信息的来源。但是，这应该小心。任何特定时刻的池数量快照都可以被操纵&lt;/p&gt;
+&lt;p&gt;Of course this isn’t a problem with Uniswap, or even really unique to blockchains. Note the phenomenon of year-end “window dressing” by mutual funds. Since funds are commonly assessed by their year over year performance, there is a strong incentive to end the year with a high net asset value, even if it will revert right back the following morning. There are many other examples of unusual trading activity at the end of a quarter, or on the last ticks before market close, that suggest people are manipulating prices in order to influence snapshots.&lt;/p&gt;
+&lt;p&gt;当然，这不是 Uniswap 的问题，甚至不是区块链独有的问题。请注意共同基金的年终“装门面”现象。由于基金通常根据其同比表现进行评估，因此有强烈的动机以高资产净值结束这一年，即使它会在第二天早上立即恢复。在季度末或收市前的最后一个报价中，还有许多其他异常交易活动的例子，这表明人们正在操纵价格以影响快照。&lt;/p&gt;
+&lt;h2 id=&#34;闪电贷-flash-loans&#34;&gt;闪电贷 (Flash loans)&lt;/h2&gt;
+&lt;p&gt;Consider your chequing account. You can write a cheque even if you don’t have the funds in your account to cover it. As long as you deposit those funds into your chequing account before the cheque clears, your payment will process successfully. (Traditionally, at the end of each day banks apply all the daily credits first before moving on to the debits — there are fewer bounced cheques that way).&lt;/p&gt;
+&lt;p&gt;想想您的支票账户。即使您的帐户中没有资金来支付，您也可以写一张支票。只要您在支票清算前将这些资金存入您的支票账户，您的付款就会成功处理。（传统上，银行在每天结束时首先应用所有每日贷项，然后再进行借记 - 这样的退回支票较少）。&lt;/p&gt;
+&lt;p&gt;You can think of using cheques like this as a short-term uncollateralised loan. Suppose somebody wants to sell a car quickly and is asking a very low price. You write a cheque to buy the car, immediately take it over to a dealership, and sell it for a higher price. You then deposit the cheque the dealership gives you before your original cheque clears, netting yourself a profit on the transaction. &lt;em&gt;You could have done it with an entirely empty chequing account.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;您可以将此类支票视为短期无抵押贷款。假设有人想快速卖掉一辆汽车并且要价非常低。你写一张支票买车，立即把车交给经销商，以更高的价格出售。然后，您在原始支票清算之前存入经销商给您的支票，从而在交易中获得利润。 &lt;em&gt;你可以用一个完全空的支票账户来完成。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On Ethereum this is taken one step further: By employing the model of atomic database transactions, operations can be undone once they are detected to be unprofitable. In the case above it would be as if the dealership didn’t want to buy the car you could be guaranteed to give back the car to the original seller, get your cheque back, and pretend nothing ever happened. (Although tempting to describe this as unique to blockchains, that isn’t entirely true either — many broker platforms offer &lt;a href=&#34;https://www.investopedia.com/terms/c/contingencyorder.asp&#34;&gt;contingency orders&lt;/a&gt; that resemble atomic transactions).&lt;/p&gt;
+&lt;p&gt;在以太坊上，这更进一步：通过采用原子数据库交易模型，一旦检测到操作无利可图，就可以撤消操作。在上述情况下，就好像经销商不想买车，你可以保证把车还给原卖家，拿回你的支票，假装什么都没发生。（尽管很容易将其描述为区块链独有，但这也不完全正确——许多经纪平台提供类似于原子交易的 &lt;a href=&#34;https://www.investopedia.com/terms/c/contingencyorder.asp&#34;&gt;应急订单&lt;/a&gt; ）。&lt;/p&gt;
+&lt;h2 id=&#34;数据加权平均数-time-weighted-average-prices&#34;&gt;数据加权平均数 (Time-weighted average prices)&lt;/h2&gt;
+&lt;p&gt;The price snapshot problem gets worse in the presence of flash loans. With large loans, the pool sizes in Uniswap markets can be altered enough to seriously distort price snapshots.&lt;/p&gt;
+&lt;p&gt;在闪电贷存在的情况下，价格快照问题变得更加严重。对于大额贷款，Uniswap 市场中的资金池规模可以改变到足以严重扭曲价格快照的程度。&lt;/p&gt;
+&lt;p&gt;Because of this, Uniswap version 1 was unsuitable for use as a price oracle (although many projects did/do use it as such, often &lt;a href=&#34;https://samczsun.com/taking-undercollateralized-loans-for-fun-and-for-profit/&#34;&gt;disastrously&lt;/a&gt;). Fortunately, Uniswap version 2 includes a building block of a solution to the snapshot problem: Time-Weighted Average Prices (TWAP).&lt;/p&gt;
+&lt;p&gt;正因为如此，Uniswap 版本 1 不适合用作价格预言机（尽管许多项目确实使用它，通常是 &lt;a href=&#34;https://samczsun.com/taking-undercollateralized-loans-for-fun-and-for-profit/&#34;&gt;灾难性&lt;/a&gt; 的)。幸运的是，Uniswap 版本 2 包含解决快照问题的构建块：时间加权平均价格 (TWAP)。&lt;/p&gt;
+&lt;p&gt;Instead of using the current price, TWAPs let us compute what the average price has been over an interval of time. The way they works is that each Uniswap pool keeps a running sum that has the current price added to it every second. Given two of these records you subtract them and divide by the number of seconds elapsed to get the average price over that interval.&lt;/p&gt;
+&lt;p&gt;TWAP 不是使用当前价格，而是让我们计算一段时间内的平均价格。它的工作方式是每个 Uniswap 池保持一个运行的总和，其中每秒添加当前价格。给定其中两条记录，您将它们减去，并除以经过的秒数，就获得该时间间隔内的平均价格。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Short-term price spikes don’t move the price significantly because the averaging adds a dampening effect. Not only do would-be price manipulators need to spike the price, but they also need to hold it at the spiked levels for a duration of time.&lt;br&gt;
+短期价格飙升不会显着移动价格，因为平均会增加抑制作用。潜在的价格操纵者不仅需要拉升价格，而且还需要在一段时间内将价格保持在拉升的水平。&lt;/li&gt;
+&lt;li&gt;Because flash loans must be repaid within the same transaction they are granted, from the blockchain’s perspective they take no time at all. This means they cannot be used to manipulate the TWAP: They change the price for 0 seconds, so nothing is added to the running sum.&lt;br&gt;
+因为闪电贷必须在他们被授予的同一笔交易中偿还，从区块链的角度来看，他们根本不需要时间。这意味着它们不能用于操纵 TWAP：它们会在 0 秒内改变价格，因此不会将任何内容添加到运行总和中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;twap的挑战-challenges-with-twap&#34;&gt;TWAP的挑战 (Challenges with TWAP)&lt;/h2&gt;
+&lt;p&gt;Although Uniswap 2 is very popular, its TWAP support is not as widely used as some had expected. It turns out that using it in a production system has several challenges.&lt;/p&gt;
+&lt;p&gt;尽管 Uniswap 2 非常受欢迎，但它的 TWAP 支持并没有像一些人预期的那样广泛。事实证明，在生产系统中使用它有几个挑战。&lt;/p&gt;
+&lt;p&gt;Most importantly, the Uniswap smart contract does not keep historical values of the running price sum in its storage — just the current values. This means that to retrieve a price, contracts must record a value in one transaction and then wait for some time before recording the next. As well as costing extra gas, this means there may be periods of time where prices are unavailable because the recorded values are too old.&lt;/p&gt;
+&lt;p&gt;最重要的是，Uniswap 智能合约不会在其存储中保留运行价格总和的历史值——仅保留当前值。这意味着要检索价格，合约必须在一个交易中记录一个值，然后等待一段时间才能记录下一个交易。除了花费额外的gas外，这还意味着在某些时间段内可能无法获得价格，因为记录的值太旧了。&lt;/p&gt;
+&lt;p&gt;At Euler we have been working on some ways to use Uniswap’s TWAP more effectively, and we’ll be describing our system in more detail soon, so please subscribe to be notified when part 2 of this series is available.&lt;/p&gt;
+&lt;p&gt;在 Euler，我们一直在研究更有效地使用 Uniswap 的 TWAP 的一些方法，我们将很快更详细地描述我们的系统，因此请订阅以在本系列的第 2 部分发布时收到通知。&lt;/p&gt;
+&lt;h1 id=&#34;结论-conclusion&#34;&gt;结论 (Conclusion)&lt;/h1&gt;
+&lt;p&gt;There is no single concept of ‘the price’ that is equally useful for all trading parties. Prices differ depending on how they are calculated, where they are measured, how assets are traded, and how much of an asset someone wants to buy or sell. Getting ‘the price’ of an asset on-chain is no easy task and most solutions come with compromises in terms of decentralisation and accuracy. Uniswap offers a decentralised on-chain price oracle that gives users access to the average price over some interval of time. These oracles are resistant to price manipulation, but come with their own trade-offs. We will explain more about some of the advantages and disadvantages of Uniswap’s oracle solution in the near future, so keep your eyes peeled!&lt;/p&gt;
+&lt;p&gt;没有一个单一的“价格”概念对所有交易方都同样适用。价格因计算方式、测量地点、资产交易方式以及某人想要购买或出售的资产数量而异。获得链上资产的“价格”并非易事，大多数解决方案都在去中心化和准确性方面做出妥协。 Uniswap 提供了一个去中心化的链上价格预言机，让用户可以访问一段时间内的平均价格。这些预言机可以抵抗价格操纵，但也有自己的取舍。我们将在近期详细解释 Uniswap 的预言机方案的一些优缺点，请擦亮双眼！&lt;/p&gt;
+&lt;h1 id=&#34;保持联络-keep-in-touch&#34;&gt;保持联络 (Keep in touch)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;关注我们的 &lt;a href=&#34;https://twitter.com/euler_xyz&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;加入我们的 &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;加入我们的 &lt;a href=&#34;https://t.me/euler_xyz_official&#34;&gt;Telegram&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;访问我们的 &lt;a href=&#34;https://www.euler.xyz/&#34;&gt;网站&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+">价格和预言机(Prices and oracles)</a>
       </div>
       
       <div class="item">

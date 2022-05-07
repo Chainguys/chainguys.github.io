@@ -2181,10 +2181,10 @@ body {
   
     }
     .main-title, .brand {
-      color: #000 !important;
+      color: #e3fafc !important;
     }
     .mist .site-title i {
-      background: #000000fe;
+      background: #e3fafcfe;
     }.box-scale > #landlord {
       transform: scale(0.2);
     }.box-shadow-wrapper {
