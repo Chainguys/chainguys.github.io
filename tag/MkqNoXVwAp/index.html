@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Web3 is REAL</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1651898624548">
+<link rel="shortcut icon" href="/favicon.ico?v=1651985474293">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -206,13 +206,13 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">17</span>
+        <span class="site-item-stat-count">18</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">74</span>
+        <span class="site-item-stat-count">82</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -471,6 +471,26 @@
           </div>
         </div>
       </a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -2338,8 +2358,177 @@ output = hash([output])&lt;/p&gt;
       </div>
       
       <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/yi-dong-ping-jun-shu-ru-he-guo-lu-moving-average-filters/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*eOjkVDTxL0iNpyc5PoFFGA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Euler builds upon Uniswap’s time-weighted average price (TWAP) oracles to allow users to lend and borrow almost any fungible token. This is part 2 of a series of articles (see&lt;/em&gt; &lt;a href=&#34;https://medium.com/euler-xyz/prices-and-oracles-2da0126a138&#34;&gt;&lt;em&gt;Part 1&lt;/em&gt;&lt;/a&gt;&lt;em&gt;) in which we describe how TWAP oracles work and the advantages they bring to users of our decentralised lending protocol.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Euler 建立在 Uniswap 的时间加权平均价格 (TWAP) 预言机之上，允许用户借出和借入几乎任何可替代的代币。这是一系列文章的第 2 部分（参见&lt;/em&gt;&lt;a href=&#34;https://chainguys.github.io/post/jie-ge-he-yu-yan-ji-prices-and-oracles/&#34;&gt;&lt;em&gt;Part 1&lt;/em&gt;&lt;/a&gt;&lt;em&gt;），我们会在其中描述 TWAP 预言机的工作原理及其优势带给我们去中心化借贷协议的用户。&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;移动平均线-moving-averages&#34;&gt;&lt;strong&gt;移动平均线 (Moving averages)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;A time-weighted average price is a form of moving average, which is a way to dampen temporary deviations in a sequence of data. Imagine we are monitoring the price of an asset, and there is no movement for some time. Then, there is a single trade that spikes the price up, and another that spikes it back down, so that the spiked price is only available momentarily:&lt;/p&gt;
+&lt;p&gt;时间加权平均价格是移动平均线的一种形式，它是一种抑制数据序列中临时偏差的方法。想象一下，我们正在监控一项资产的价格，并且有一段时间没有变动。然后，有一个交易使价格上涨，另一个交易使价格回落，因此飙升的价格仅在瞬间可用：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/672/1*GPLajduYlIEjoWDOWvR0bg.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;（某种价格脉冲,Impulse)&lt;/p&gt;
+&lt;p&gt;This is known as an “&lt;a href=&#34;https://en.wikipedia.org/wiki/Dirac_delta_function&#34;&gt;impulse&lt;/a&gt;” and illustrates a spike in price for the smallest possible time interval. Let’s suppose we’re working with discrete time, and our smallest granularity is 1 second. In this case, the impulse lasts for exactly 1 second, after which the price returns to the original value.&lt;/p&gt;
+&lt;p&gt;这被称为“&lt;a href=&#34;https://en.wikipedia.org/wiki/Dirac_delta_function&#34;&gt;脉冲&lt;/a&gt;”，并说明价格在尽可能小的时间间隔内出现飙升。假设我们正在处理离散时间，我们的最小粒度是 1 秒。在这种情况下，脉冲只持续 1 秒，之后价格恢复到原始值。&lt;/p&gt;
+&lt;p&gt;What a moving average does is “smear” this impulse over a certain window of time, leaving what is called the &lt;em&gt;impulse response:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;移动平均线的作用是在某个时间窗口内“涂抹”这个脉冲，留下所谓的 &lt;em&gt;脉冲响应：&lt;/em&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/666/1*I6gqM0q2ihFN5OiBl0hC3A.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(移动平均线被称为“车厢”滤波器，因为它的脉冲响应类似于火车车厢 A moving average is called a “boxcar” filter because its impulse response resembles a train boxcar.)&lt;/p&gt;
+&lt;p&gt;Suppose the window is 10 seconds in length. Once the impulse occurs, each point in the response is now the average of 9 prices at the original level, and 1 price at the new level.&lt;/p&gt;
+&lt;p&gt;假设窗口长度为 10 秒。一旦脉冲发生，响应中的每个点现在都是原始水平的 9 个价格和新水平的 1 个价格的平均值。&lt;/p&gt;
+&lt;p&gt;Here are a few observations about this impulse response (assuming arithmetic averaging for now):&lt;/p&gt;
+&lt;p&gt;以下是关于这种脉冲响应的一些观察结果（假设现在是算术平均）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The response includes the effect of the impulse incorporated over the duration of the 10 second window.&lt;br&gt;
+响应包括在 10 秒窗口期间合并的脉冲的影响。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The maximum height of the response is 1/10th the height of the impulse.&lt;br&gt;
+响应的最大高度是脉冲高度的 1/10。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;After the window passes, the price level returns to precisely the base level, and there is no residual effect from the impulse (this makes it a “Finite Impulse Response”, or FIR).&lt;br&gt;
+窗口经过后，价格水平精确地返回到基本水平，并且没有来自脉冲的残余影响（这使其成为“有限脉冲响应”，或 FIR）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The impulse response is a description of a &lt;em&gt;digital filter&lt;/em&gt; (such as a moving average). Surprisingly it also embeds &lt;em&gt;all&lt;/em&gt; the information necessary to understand how a filter behaves. There are other illustrations possible, but they are just different renderings of the information available in the impulse response.&lt;/p&gt;
+&lt;p&gt;脉冲响应是对 &lt;em&gt;数字滤波器&lt;/em&gt;（例如移动平均线）的描述。令人惊讶的是，它还嵌入了 &lt;em&gt;所有&lt;/em&gt; 了解滤波器行为所需的信息。还有其他可能的信息，但它们只是脉冲响应中可用信息的不同呈现。&lt;/p&gt;
+&lt;p&gt;As well as the impulse response, it is often helpful to talk about the step response of a filter. In this case, imagine that a price is steady for a while, and then there is a trade that increases the price to a new level, after which it remains steady at this new level:&lt;/p&gt;
+&lt;p&gt;除了脉冲响应之外，讨论滤波器的阶跃响应通常也很有帮助。在这种情况下，假设一个价格稳定了一段时间，然后有一笔交易将价格提高到一个新的水平，之后它在这个新的水平上保持稳定：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/678/1*dZCWqzUztxncuZGqdTvUVw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;（阶跃, Step)&lt;/p&gt;
+&lt;p&gt;Here is a moving average’s response to a step:&lt;br&gt;
+这是移动平均线对阶跃的响应：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/688/1*mimwM_1cppo6jMD1vbYK-A.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;（移动平均线对阶跃的响应 Moving average step response）&lt;/p&gt;
+&lt;p&gt;Because the first point in the moving average window after the step is the average of 9 points pre-step and one point post-step, it is 1/10th the height of the step.&lt;/p&gt;
+&lt;p&gt;因为阶跃后移动平均窗口中的第一个点是跃前9个点和跃后1个点的平均值，它是跃高的1/10。&lt;/p&gt;
+&lt;p&gt;The second point contains 8 pre-step and 2 post-step, so it is 2/10th the height, and so forth:&lt;/p&gt;
+&lt;p&gt;第二个点包含 8 个跃前和 2 个跃后，所以它是高度的 2/10，依此类推：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Abrupt changes in the input take some time to be fully reflected in the response.&lt;br&gt;
+输入的突然变化需要一些时间才能完全反映在响应中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;After the window elapses, the response output precisely matches the new level.&lt;br&gt;
+窗口经过后，响应的输出与新级别精确匹配。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As we said, the step response of a filter doesn’t provide any extra information over the impulse response. You may have noticed that the step response is the discrete integral of the impulse response, which is just a way of saying that if you keep a running sum of all the values in the impulse response and plot it over time, you’ll have the step response.&lt;/p&gt;
+&lt;p&gt;正如我们所说，滤波器的阶跃响应不会提供任何超出脉冲响应的额外信息。您可能已经注意到，阶跃响应是脉冲响应的离散积分，这只是一种说法，如果您保留脉冲响应中所有值的运行总和并随时间绘制它，您将获得阶跃响应。&lt;/p&gt;
+&lt;p&gt;Moving average filters are excellent at smoothing data in time-domain plots like above. Unfortunately they are miserable performers when trying to build low-pass filters, the reasons for which are beyond the scope of this article (but intuitively, a moving average filter will leave sharp edges as seen in the boxcar’s corners, which are higher order harmonics in the output signal).&lt;/p&gt;
+&lt;p&gt;移动平均滤波器在平滑上述时域图中的数据方面非常出色。不幸的是，它们在尝试构建低通(low-pass)滤波器时表现不佳，其原因超出了本文的范围（但直观地说，移动平均滤波器会留下尖锐的边缘，如车厢角落中所见，这是高次谐波输出信号）。&lt;/p&gt;
+&lt;h2 id=&#34;递归更新-recursive-updates&#34;&gt;递归更新 (Recursive updates)&lt;/h2&gt;
+&lt;p&gt;So why are moving averages so commonly used instead of other types of convolution? It’s because they have one major advantage: They can be computed &lt;em&gt;recursively&lt;/em&gt;, which is very efficient. In this sense, recursion means taking the result of a previous iteration and performing some minor update on it to get the next result.&lt;/p&gt;
+&lt;p&gt;那么为什么移动平均线如此常用而不是其他类型的卷积呢？这是因为它们有一个主要优势：它们可以进行递归计算，这是非常有效的。从这个意义上说，递归意味着获取上一次迭代的结果并对其进行一些小的更新以获得下一个结果。&lt;/p&gt;
+&lt;p&gt;Suppose you have the sum of a window from points 10 through 20, and now you receive point 21. Rather than summing up all the points 11 through 21, you can simply take the previous sum, subtract the oldest point (10), and add in the new point (21):&lt;/p&gt;
+&lt;p&gt;假设您有一个窗口从点 10 到 20 的总和，现在您收到点 21。您可以简单地取之前的总和，减去最旧的点 (10)，然后加上在新点 (21) 中：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/552/1*sj2F9DXHCmPkGFYQvhu2aA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(移动平均线的递归计算 Recursive computation of moving average）&lt;/p&gt;
+&lt;p&gt;Running sums like this are called &lt;em&gt;accumulators&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;像这样的运行总和称为 &lt;em&gt;累加器&lt;/em&gt; 。&lt;/p&gt;
+&lt;p&gt;Note that we only needed to do one subtraction and one addition to maintain this accumulator (and then a division when we actually need an average). Most other FIR filters can not be computed using an accumulator, and they must be re-calculated from scratch over the whole window for every new point received.&lt;/p&gt;
+&lt;p&gt;请注意，我们只需要进行一次减法和一次加法来维持这个累加器（然后在我们实际需要平均值时进行除法）。大多数其他 FIR 滤波器无法使用累加器计算，并且必须在整个窗口中为每个接收到的新点从头开始重新计算它们。&lt;/p&gt;
+&lt;h1 id=&#34;uniswap时间加权移动平均价格-uniswap-twap&#34;&gt;Uniswap时间加权移动平均价格 (Uniswap TWAP)&lt;/h1&gt;
+&lt;p&gt;Moving averages form the basis of how TWAP price oracles are built on Uniswap. In order to prevent short-term price spikes from drastically affecting the observed price, the price should be smeared over time.&lt;/p&gt;
+&lt;p&gt;移动平均线构成了如何在 Uniswap 上构建 TWAP 价格预言机的基础。为了防止短期价格飙升严重影响观察到的价格，应该随着时间的推移对价格进行涂抹。&lt;/p&gt;
+&lt;p&gt;When a big trade happens, it moves the price far from the market value. Under the assumptions of a live blockchain (anybody can submit transactions) and the efficient market hypothesis (rational actors will quickly arbitrage price differences away for profit), the price will soon return to near the original value if it is consistent with the wider market. In this case, a moving average protects observers of the price oracle from being overly impacted by any temporary off-market prices.&lt;/p&gt;
+&lt;p&gt;当发生大笔交易时，它会使价格远离市场价值。在实时区块链（任何人都可以提交交易）和有效市场假设（理性行为者会迅速套利差价以获取利润）的假设下，如果与更广泛的市场一致，价格将很快回到原始值附近。在这种情况下，移动平均线可以保护价格预言机的观察者，免受任何临时场外价格的过度影响。&lt;/p&gt;
+&lt;p&gt;If the Uniswap contract had the entire history of prices available, the trivial way to compute a moving average would be to loop over every second in the desired interval, sum up the prices, and divide by the interval’s duration. However, this would require a prohibitive amount of gas, both to store the previous values and to compute the sum.&lt;/p&gt;
+&lt;p&gt;如果 Uniswap 合约有可用的整个历史价格，计算移动平均线的简单方法是在所需间隔内的每一秒循环，总结价格，然后除以间隔的持续时间。然而，这将需要大量的gas，既要存储先前的值，又要计算总和。&lt;/p&gt;
+&lt;p&gt;Instead, Uniswap 2 stores a running sum of the prices since the pair was created as an accumulator: Every second the running sum is increased by the value of the price at that time (&lt;a href=&#34;https://uniswap.org/blog/uniswap-v3/&#34;&gt;Uniswap 3&lt;/a&gt; is slightly different — see below).&lt;/p&gt;
+&lt;p&gt;不过，Uniswap 2 存储自该交易对创建为累加器以来的，运行价格的总和：运行总和每秒都会增加当时的价格值（[Uniswap 3](https://uniswap.org/ blog/uniswap-v3/) 略有不同——见下文）。&lt;/p&gt;
+&lt;p&gt;The contract obviously can’t wake up every second to add the current price to the sum so a bit of bookkeeping needs to happen whenever a trade occurs (and whenever the running sum is queried). Since the contract knows how long it’s been since the previous trade, and that the price level has been unchanged during that time, it’s just a matter of multiplying this duration by the price level and adding that product onto the running sum.&lt;/p&gt;
+&lt;p&gt;合约显然不能每秒唤醒来将当前价格添加到总和中，因此每当交易发生时（以及每当查询运行总和时）都需要进行一些记账。由于合约知道自上次交易以来已经过去了多长时间，并且在那段时间内价格水平没有变化，只需将此持续时间乘以价格水平并将该产品添加到运行总和中即可。&lt;/p&gt;
+&lt;p&gt;Doesn’t keeping a running sum like this result in big numbers? Well, yes, but the EVM word size of 256 bits can represent &lt;em&gt;very&lt;/em&gt; big numbers.&lt;/p&gt;
+&lt;p&gt;保持这样的流动总和不会导致大数字吗？嗯，是的，但是 256 位的 EVM 字长可以表示非常大的数字。&lt;/p&gt;
+&lt;h2 id=&#34;时间加权移动平均价格的平均价格-price-averages-from-twap&#34;&gt;时间加权移动平均价格的平均价格 (Price averages from TWAP)&lt;/h2&gt;
+&lt;p&gt;If we compare it to a conventional moving average, Uniswap’s ever-increasing running sums represent a window from the beginning of time up to the present. In most cases that is not useful. In order to get price averages over shorter windows, we need to use a similar method to the recursive technique described above.&lt;/p&gt;
+&lt;p&gt;如果我们将其与传统的移动平均线进行比较，Uniswap 不断增加的运行总和代表了从时间开始到现在的一个窗口。在大多数情况下，这没有用。为了获得较短窗口内的价格平均值，我们需要使用与上述递归技术类似的方法。&lt;/p&gt;
+&lt;p&gt;Let’s consider an example. Suppose the following is a plot of the price on a Uniswap pair over time:&lt;/p&gt;
+&lt;p&gt;让我们考虑一个例子。假设以下是 Uniswap 货币对的价格随时间变化的图：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/648/1*-zVluQWTC6O5hiErGStjUQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(时价图 Price over time)&lt;/p&gt;
+&lt;p&gt;Notice that the graph is a series of steps: When a trade happens, the price immediately jumps to the new price, and in between nothing is happening so the price is flat.&lt;/p&gt;
+&lt;p&gt;请注意，该图是一系列步骤：当交易发生时，价格立即跳至新价格，中间什么都没有发生，因此价格持平。&lt;/p&gt;
+&lt;p&gt;If we take the integral (sum up the price over time), we get the following:&lt;/p&gt;
+&lt;p&gt;如果我们取积分（随着时间的推移总结价格），我们得到以下结果：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;8&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/650/1*pglpKbnAkZG6Gn_P-pazFQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(运行价格总和 Running sum of price over time）&lt;/p&gt;
+&lt;p&gt;The sum is always increasing (prices are always positive), and the slope (how fast it’s increasing) depends on the price at that point in time. So at every point this running sum represents the area of the entire prices summed up since the beginning of time (well, pair creation).&lt;/p&gt;
+&lt;p&gt;总和始终在增加（价格始终为正），斜率（增加的速度）取决于该时间点的价格。因此，在每一点上，这个运行总和都代表了自时间开始以来总价格的总和（嗯，交易对创建）。&lt;/p&gt;
+&lt;p&gt;To find the area over an interval, we can take two points of the running sum and subtract them:&lt;/p&gt;
+&lt;p&gt;要找到一个区间上的面积，我们可以取运行总和的两个点并将它们相减：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;9&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/708/1*ilUJG2RWbjdS6PbO6Ra6DQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;（寻找区域面积 Finding area of price window using running sums）&lt;/p&gt;
+&lt;p&gt;By taking two points of the running sum and subtracting them, we get the area of the price graph between the two corresponding points in time, called a window. Since this area is the sum of the price for every second during that window, dividing by the number of seconds gives us the average price within that window, which is the moving average we desire.&lt;/p&gt;
+&lt;p&gt;通过将运行总和的两个点相减，我们得到两个对应时间点之间的价格图区域，称为窗口。由于该区域是该窗口内每一秒的价格总和，除以秒数即可得出该窗口内的平均价格，即我们想要的移动平均线。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;10&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/572/1*XaHOQpfVlS3BQgaSINm_Tg.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(计算TWAP窗口的递归方法:减去两个累加器 Recursive method for computing a TWAP window: subtract two accumulators)&lt;/p&gt;
+&lt;h2 id=&#34;闪电贷-flash-loans&#34;&gt;闪电贷 (Flash loans)&lt;/h2&gt;
+&lt;p&gt;Moving averages smear out temporary blips in data. In some situations this is quite desirable: Smart contracts that access prices should not see price spikes caused by large trades if they are quickly returned to the prior level by the force of arbitrage.&lt;/p&gt;
+&lt;p&gt;移动平均线抹去了数据中的临时波动。在某些情况下，这是非常可取的：如果通过套利的力量迅速将价格恢复到之前的水平，则访问价格的智能合约不会看到由大宗交易引起的价格飙升。&lt;/p&gt;
+&lt;p&gt;As described in the &lt;a href=&#34;https://medium.com/euler-xyz/prices-and-oracles-2da0126a138&#34;&gt;previous article&lt;/a&gt;, flash loans are large uncollateralised loans that must be repaid within the same transaction they are issued. If a contract simply uses the current price of Uniswap as an oracle, it is simple to use a flash loan (or in fact any other source of capital) to manipulate this price: An attacker takes out a flash loan, which is used to move the Uniswap price significantly, and then calls into the victim contract. The contract then reads the manipulated price and performs some action beneficial to the attacker. After the victim contract’s execution finishes, but before the transaction completes, a trade in the opposite direction is made, allowing the flash loan to be paid back at minimal expense.&lt;/p&gt;
+&lt;p&gt;如 &lt;a href=&#34;https://chainguys.github.io/post/jie-ge-he-yu-yan-ji-prices-and-oracles/&#34;&gt;上一篇文章&lt;/a&gt; 中所述，闪电贷是必须在同一笔交易中偿还的大额无抵押贷款。如果合约只是简单地使用 Uniswap 的当前价格作为预言机，那么使用闪电贷（或实际上任何其他资金来源）来操纵这个价格很简单：攻击者取出闪电贷，用于移动Uniswap 价格大幅上涨，然后调用受害者合约。然后合约读取被操纵的价格并执行一些有利于攻击者的操作。在受害者合约执行完成后，但在交易完成之前，会进行相反方向的交易，从而以最小的费用偿还闪电贷。&lt;/p&gt;
+&lt;p&gt;In a sense, you can think of a price blip caused by a flash loan as being an impulse that lasts for 0 seconds. Since it has a width of 0, it contributes nothing to the moving average, which means that flash loans cannot be used to manipulate TWAP-based pricing oracles.&lt;/p&gt;
+&lt;p&gt;从某种意义上说，您可以将由闪电贷引起的价格波动视为持续 0 秒的冲动。由于它的宽度为 0，它对移动平均线没有任何贡献，这意味着闪电贷不能用于操纵基于 TWAP 的定价预言机。&lt;/p&gt;
+&lt;h2 id=&#34;窗口大小-window-sizes&#34;&gt;窗口大小 (Window Sizes)&lt;/h2&gt;
+&lt;p&gt;Once we’ve decided to use a moving average to smooth out prices, the next decision to be made is how long the averaging window should be.&lt;/p&gt;
+&lt;p&gt;一旦我们决定使用移动平均线来平滑价格，接下来要做的决定是平均窗口应该多长。&lt;/p&gt;
+&lt;p&gt;Too short a window and arbitrageurs may have insufficient time to smooth out price blips. Too long a window and the prices will take too long to reflect long-term “legitimate” market movements.&lt;/p&gt;
+&lt;p&gt;窗口太短，套利者可能没有足够的时间来消除价格波动。时间窗太长，价格将需要太长时间才能反映长期的“合法”市场走势。&lt;/p&gt;
+&lt;p&gt;Uniswap’s accumulator design allows us to use TWAP windows of any duration which is necessary because different applications and/or pairs may need their own custom window sizes. Furthermore, the appropriate window sizes may change over time.&lt;/p&gt;
+&lt;p&gt;Uniswap 的累加器设计允许我们使用任何必要的 TWAP 窗口，因为不同的应用程序和/或对可能需要自己自定义窗口大小。此外，适当的窗口大小可能会随着时间而改变。&lt;/p&gt;
+&lt;h2 id=&#34;几何移动平均线-geometric-moving-averages&#34;&gt;几何移动平均线 (Geometric moving averages)&lt;/h2&gt;
+&lt;p&gt;Up until now we’ve been using the conventional definition of “average” that uses the sum of the prices: the arithmetic mean. However, &lt;a href=&#34;https://uniswap.org/blog/uniswap-v3/&#34;&gt;Uniswap 3&lt;/a&gt; uses a slightly different averaging method known as the geometric mean. If the window size in seconds is N, then instead of summing up the prices at each second and dividing by N, the geometric mean multiplies together the prices at each second and takes the Nth root.&lt;/p&gt;
+&lt;p&gt;到目前为止，我们一直在运用使用价格总和“平均”的传统定义：算术平均值。但是，&lt;a href=&#34;https://uniswap.org/blog/uniswap-v3/&#34;&gt;Uniswap 3&lt;/a&gt; 使用了一种稍微不同的平均方法，称为几何平均值。如果以秒为单位的窗口大小为 N，则几何平均值不是将每秒的价格相加并除以 N，而是将每秒的价格相乘并取 N 次方根。&lt;/p&gt;
+&lt;p&gt;The most important reason to use the geometric mean is because it has the nice property where &lt;em&gt;the average of the inverses is equal to the inverse of the average&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;使用几何平均值的最重要原因是因为它具有很好的属性，其中 &lt;em&gt;倒数的平均值等于平均值的倒数&lt;/em&gt; 。&lt;/p&gt;
+&lt;p&gt;In Uniswap 2, which used the conventional arithmetic mean, separate accumulators had to be maintained for the two trading pairs serviced by a pool (tokenA denominated in tokenB and vice versa). With Uniswap 3, it is enough to maintain just one accumulator, cutting down the number of storage writes needed and saving users gas.&lt;/p&gt;
+&lt;p&gt;在使用传统算术平均值的 Uniswap 2 中，必须为服务池的两个交易对维护单独的累加器（tokenA 以 tokenB 计价，反之亦然）。使用 Uniswap 3，只需维护一个累加器就足够了，减少了所需的存储写入次数并节省了用户 gas。&lt;/p&gt;
+&lt;p&gt;Best of all, geometric moving averages are also FIR filters that can be computed recursively, using multiplication and division instead of addition and subtraction.&lt;/p&gt;
+&lt;p&gt;最重要的是，几何移动平均也是可以递归计算的 FIR 滤波器，使用乘法和除法而不是加法和减法。&lt;/p&gt;
+&lt;p&gt;The geometric mean does, however, have properties that are different from the arithmetic mean.&lt;/p&gt;
+&lt;p&gt;但是，几何平均值确实具有与算术平均值不同的属性。&lt;/p&gt;
+&lt;p&gt;Suppose you have 20 meters of fencing. What shape should you build in order to maximise the area of a rectangular enclosure?&lt;/p&gt;
+&lt;p&gt;假设您有 20 米的围栏。为了最大化矩形外壳的面积，您应该构建什么形状？&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;11&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/682/1*u4nhHu_-raZj1wwyNAsq7Q.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(最大化栅栏区域 Maximise the area bounded by a fence)&lt;/p&gt;
+&lt;p&gt;Naturally you would build a square. Any deviation from that would result in a smaller area.&lt;/p&gt;
+&lt;p&gt;你自然会建一个正方形。任何偏离都会导致面积变小。&lt;/p&gt;
+&lt;p&gt;When all the prices are equal in a window, then the arithmetic and geometric averages are equivalent. However, in any other case the geometric mean will be &lt;em&gt;less than&lt;/em&gt; the arithmetic mean.&lt;/p&gt;
+&lt;p&gt;当一个窗口中的所有价格都相等时，算术平均值和几何平均值是相等的。但是，在任何其他情况下，几何平均值将 &lt;em&gt;小于&lt;/em&gt; 算术平均值。&lt;/p&gt;
+&lt;p&gt;That said, in most cases the difference is minor. For example, the 4 by 6 meter fence has an area of 24, which isn’t too far from the maximum of 25.&lt;/p&gt;
+&lt;p&gt;也就是说，在大多数情况下，差异很小。例如，4 x 6 米的围栏面积为 24，与最大值 25 相差不远。&lt;/p&gt;
+&lt;p&gt;To see how this impacts real world pricing data, we downloaded the trading history for the DAI/WETH pair on Uniswap 2, and plotted both the arithmetic and geometric 30 minute moving averages:&lt;/p&gt;
+&lt;p&gt;为了了解这如何影响现实世界的定价数据，我们在 Uniswap 2 上下载了 DAI/WETH 对的交易历史，并绘制了算术和几何 30 分钟移动平均线：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;12&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*7vmYciTE1nRNotTgLHmLzg.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(Uniswap 2 数据的 DAI/WETH 30 分钟移动平均线 DAI/WETH 30 minute moving averages of Uniswap 2 data)&lt;/p&gt;
+&lt;p&gt;The arithmetic mean line isn’t visible because the geometric line is drawn over top of it. To actually see the difference, we need to zoom in to periods with rapid price movements:&lt;/p&gt;
+&lt;p&gt;算术平均线不可见，因为几何线绘制在它上面。要真正看到差异，我们需要放大价格快速变动的时期：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;13&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*rpwpQeSLJKvhVo4tKat98g.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;（放大到价格快速变动的时期 Zoomed in to a period with rapid price movement）&lt;/p&gt;
+&lt;p&gt;Although Uniswap 3 has some other differences that may affect this plot, such as less granular tick sizing, it doesn’t appear as though the change to geometric averaging itself will have a substantial impact on TWAPs.&lt;/p&gt;
+&lt;p&gt;尽管 Uniswap 3 有一些其他差异可能会影响此图，例如更精细的刻度大小，但看起来几何平均本身的更改不会对 TWAP 产生重大影响。&lt;/p&gt;
+&lt;h1 id=&#34;结论-conclusion&#34;&gt;&lt;strong&gt;结论 (Conclusion)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Euler builds upon Uniswap’s time-weighted average price (TWAP) oracles to allow users to lend and borrow almost any fungible token. TWAP oracles help to smooth out abrupt price movements and always converge on the long-running average price after a period of time. On a decentralised lending protocol such as Euler, this has the positive effect of limiting users from being liquidated in the event of sudden shocks to the price that are later corrected through arbitrage. This includes protection against extreme temporary price movements enabled by flash loans, which have &lt;a href=&#34;https://samczsun.com/taking-undercollateralized-loans-for-fun-and-for-profit/&#34;&gt;famously&lt;/a&gt; been used to attack other DeFi protocols.&lt;/p&gt;
+&lt;p&gt;Euler 建立在 Uniswap 的时间加权平均价格 (TWAP) 预言机之上，允许用户借出和借入几乎任何可替代的代币。 TWAP 预言机有助于消除突然的价格变动，并在一段时间后始终收敛于长期平均价格。在像Euler这样的去中心化借贷协议上，这具有积极影响:限制用户在价格突然波动的情况下被清算。这些波动后来通过套利进行纠正。这包括防止由闪电贷款引发的极端临时价格波动，该贷款因 已被用于攻击其他 DeFi协议而&lt;a href=&#34;https://samczsun.com/taking-undercollat%E2%80%8B%E2%80%8Beralized-loans-for-fun-and-for-profit/&#34;&gt;著名&lt;/a&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;保持联络-keep-in-touch&#34;&gt;保持联络 (Keep in touch)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;关注我们的 &lt;a href=&#34;https://twitter.com/euler_xyz&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;加入我们的 &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;加入我们的 &lt;a href=&#34;https://t.me/euler_xyz_official&#34;&gt;Telegram&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;访问我们的 &lt;a href=&#34;https://www.euler.xyz/&#34;&gt;网站&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+">移动平均数如何过滤 (Moving average filters)</a>
+      </div>
+      
+      <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/jie-ge-he-yu-yan-ji-prices-and-oracles/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*rSUJn0hbmqMcVKaP9AOcdQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;em&gt;Euler builds upon Uniswap’s time-weighted average price (TWAP) oracles to allow users to lend and borrow almost any fungible token. This is part 1 of a series of articles in which we describe how these TWAP oracles work and the advantages they bring to users of our decentralised lending protocol.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Euler 建立在 Uniswap 的时间加权平均价格 (TWAP) 预言机之上，允许用户借出和借入几乎任何可替代的代币。这是一系列文章的第 1 部分，我们将在其中描述这些 TWAP 预言机的工作原理以及它们为我们的去中心化借贷协议用户带来的优势。&lt;/em&gt;&lt;/p&gt;
 &lt;h1 id=&#34;价格的含义-the-concept-of-price&#34;&gt;‘价格’的含义 (The concept of ‘price’)&lt;/h1&gt;
@@ -2423,7 +2612,7 @@ output = hash([output])&lt;/p&gt;
 &lt;p&gt;您可以将此类支票视为短期无抵押贷款。假设有人想快速卖掉一辆汽车并且要价非常低。你写一张支票买车，立即把车交给经销商，以更高的价格出售。然后，您在原始支票清算之前存入经销商给您的支票，从而在交易中获得利润。 &lt;em&gt;你可以用一个完全空的支票账户来完成。&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;On Ethereum this is taken one step further: By employing the model of atomic database transactions, operations can be undone once they are detected to be unprofitable. In the case above it would be as if the dealership didn’t want to buy the car you could be guaranteed to give back the car to the original seller, get your cheque back, and pretend nothing ever happened. (Although tempting to describe this as unique to blockchains, that isn’t entirely true either — many broker platforms offer &lt;a href=&#34;https://www.investopedia.com/terms/c/contingencyorder.asp&#34;&gt;contingency orders&lt;/a&gt; that resemble atomic transactions).&lt;/p&gt;
 &lt;p&gt;在以太坊上，这更进一步：通过采用原子数据库交易模型，一旦检测到操作无利可图，就可以撤消操作。在上述情况下，就好像经销商不想买车，你可以保证把车还给原卖家，拿回你的支票，假装什么都没发生。（尽管很容易将其描述为区块链独有，但这也不完全正确——许多经纪平台提供类似于原子交易的 &lt;a href=&#34;https://www.investopedia.com/terms/c/contingencyorder.asp&#34;&gt;应急订单&lt;/a&gt; ）。&lt;/p&gt;
-&lt;h2 id=&#34;数据加权平均数-time-weighted-average-prices&#34;&gt;数据加权平均数 (Time-weighted average prices)&lt;/h2&gt;
+&lt;h2 id=&#34;数据加权平均价格-time-weighted-average-prices&#34;&gt;数据加权平均价格 (Time-weighted average prices)&lt;/h2&gt;
 &lt;p&gt;The price snapshot problem gets worse in the presence of flash loans. With large loans, the pool sizes in Uniswap markets can be altered enough to seriously distort price snapshots.&lt;/p&gt;
 &lt;p&gt;在闪电贷存在的情况下，价格快照问题变得更加严重。对于大额贷款，Uniswap 市场中的资金池规模可以改变到足以严重扭曲价格快照的程度。&lt;/p&gt;
 &lt;p&gt;Because of this, Uniswap version 1 was unsuitable for use as a price oracle (although many projects did/do use it as such, often &lt;a href=&#34;https://samczsun.com/taking-undercollateralized-loans-for-fun-and-for-profit/&#34;&gt;disastrously&lt;/a&gt;). Fortunately, Uniswap version 2 includes a building block of a solution to the snapshot problem: Time-Weighted Average Prices (TWAP).&lt;/p&gt;
