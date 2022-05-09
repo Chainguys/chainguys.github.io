@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Web3 is REAL</title>
-    <updated>2022-05-09T01:41:30.628Z</updated>
+    <updated>2022-05-09T02:14:31.184Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -17,6 +17,7 @@
         </link>
         <updated>2022-05-06T12:09:06.000Z</updated>
         <content type="html"><![CDATA[<h1 id="euler-更新-2022年4月20号-euler-update-20-apr-2022">Euler 更新 [2022年4月20号] Euler Update [20 Apr 2022]</h1>
+<p>原文:<a href="https://newsletter.euler.finance/p/20april22?s=r">https://newsletter.euler.finance/p/20april22?s=r</a></p>
 <h3 id="让我们一起回顾过去几周都发生了什么lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么！(Let's recap what has happened over the past few weeks!)</h3>
 <h1 id="紧追潮流-keep-up-to-date">紧追潮流 (Keep up to Date!)</h1>
 <p><a href="https://newsletter.euler.finance/p/march2022-recap?s=w">March</a> was an eventful month for the Euler team, so keep up to date on our latest progress and events recently below.</p>
@@ -823,7 +824,8 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。</p>
         <link href="https://chainguys.github.io/post/euler-lai-xin-san-yue-zong-jie-euler-newsletter-march-summary/">
         </link>
         <updated>2022-04-01T11:49:04.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="让我们一起回顾过去几周都发生了什么-lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么! (Let's recap what has happened over the past few weeks!)</h3>
+        <content type="html"><![CDATA[<p>原文:<a href="https://newsletter.euler.finance/p/march2022-recap?s=r">https://newsletter.euler.finance/p/march2022-recap?s=r</a></p>
+<h3 id="让我们一起回顾过去几周都发生了什么-lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么! (Let's recap what has happened over the past few weeks!)</h3>
 <h3 id="欢迎-welcome">欢迎! (Welcome!)</h3>
 <p>Euler had loads of updates and notable events in our last <a href="https://newsletter.euler.finance/p/19march22?s=w">newsletter</a>, so get ready for more in this month’s summary!</p>
 <p>在我们上一期的<a href="https://newsletter.euler.finance/p/19march22?s=w">通讯</a>中，Euler 有大量更新和值得注意的事件，所以准备好在本月的总结中了解更多吧！</p>
