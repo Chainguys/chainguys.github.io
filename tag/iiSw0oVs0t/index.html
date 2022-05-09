@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Web3 is REAL</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1652068451513">
+<link rel="shortcut icon" href="/favicon.ico?v=1652091689359">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -206,13 +206,13 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">20</span>
+        <span class="site-item-stat-count">21</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">92</span>
+        <span class="site-item-stat-count">108</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -433,6 +433,42 @@
           </div>
         </div>
       </a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -2387,6 +2423,346 @@ output = hash([output])&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;If any of this is interesting to you, we’re hiring! Please DM&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;&lt;strong&gt;@buffalu__&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;on Twitter.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;另外，我们正在招聘！如果您有兴趣，请在推特上私信 &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;&lt;strong&gt;@buffalu__&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 ">Solana验证者（节点）攻略1-交易流程(ENG-CHN)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/jia-mi-shi-chang-de-feng-xian-cong-yi-ge-jie-dai-xie-yi-de-jiao-du-risks-in-crypto-a-lending-protocol-perspective/"" data-c="
+          &lt;p&gt;原文:&lt;br&gt;
+&lt;a href=&#34;https://blog.euler.finance/risks-in-crypto-a-lending-protocol-perspective-376e19c1d01a&#34;&gt;https://blog.euler.finance/risks-in-crypto-a-lending-protocol-perspective-376e19c1d01a&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Euler’s risk framework and innovations in risk&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Euler的风险框架和风险创新&lt;/em&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*pH_XUSttasMSUdJS.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;In this article we’ll discuss:&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;&lt;em&gt;在本文中，我们将讨论：&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Things that can go wrong on a lending protocol&lt;br&gt;
+借贷协议可能出错的事情&lt;/li&gt;
+&lt;li&gt;Euler’s innovations to tackle them&lt;br&gt;
+解决这些问题的创新&lt;/li&gt;
+&lt;li&gt;Why this is exciting&lt;br&gt;
+为什么这令人兴奋&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;借贷协议可能出什么问题-what-could-go-wrong-on-a-lending-protocol&#34;&gt;借贷协议可能出什么问题? (What could go wrong on a lending protocol?)&lt;/h1&gt;
+&lt;p&gt;While the short answer is: “&lt;em&gt;Everything&lt;/em&gt;”, we will focus on market-related risks that materialised on other lending protocols.&lt;/p&gt;
+&lt;p&gt;虽然简短的回答是：“&lt;em&gt;每件事&lt;/em&gt;”，但我们将关注在其他借贷协议上实现且与市场相关的风险。&lt;/p&gt;
+&lt;p&gt;These projects pushed the boundaries of what’s possible in the space and have provided invaluable insights into DeFi lending:&lt;/p&gt;
+&lt;p&gt;这些项目突破了该领域的可能性，并为 DeFi 借贷提供了宝贵的见解：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Venus&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;From the &lt;a href=&#34;https://thedefiant.io/bscs-venus-protocol-left-with-bad-debt-after-liquidations/#:~:text=Binance%20Smart%20Chain%27s%20most%20popular,Venus%27%20governance%20token%2C%20XVS.&#34;&gt;Defiant article&lt;/a&gt;:&lt;br&gt;
+来自 &lt;a href=&#34;https://thedefiant.io/bscs-venus-protocol-left-with-bad-debt-after-liquidations/#:~:text=Binance%20Smart%20Chain%27s%20most%20popular,Venus%27%20governance%20token%2C%20XVS.&#34;&gt;Defiant 文章&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Binance Smart Chain’s most popular lending protocol, Venus, experienced a massive string of market liquidations totalling over $200M on May 18, and Venus, itself, has been left with $100M in bad debt because of it.&lt;/p&gt;
+&lt;p&gt;Binance Smart Chain 最受欢迎的借贷协议 Venus 在 5 月 18 日经历了总计超过 2 亿美元的大规模市场清算，而 Venus 本身因此留下了 1 亿美元的坏账。&lt;/p&gt;
+&lt;p&gt;The liquidations were primarily caused by the massive price swing of Venus’ governance token, XVS. The token jumped 88% from $76 to $143 and then crashed 50% to $72, all over the course of six hours on May 18. The price of XVS has further spiralled since, hitting lows of $32 on May 19.&lt;/p&gt;
+&lt;p&gt;清算主要是由 Venus 的治理代币 XVS 的巨大价格波动引起的。在 5 月 18 日的六个小时内，该代币从 76 美元上涨 88% 至 143 美元，然后暴跌 50% 至 72 美元。此后，XVS 的价格进一步飙升，在 5 月 19 日跌至 32 美元的低点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here’s the daily candle chart:&lt;br&gt;
+这是每日蜡烛图：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*p3avWnrhLoofORvSfU9lbg.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(在较低的时间范围内，它看起来特别暴力：It looks particularly violent on the lower time frame:)&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*XnZjDJIx3MjZ94TEAS7BPw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;到底发生了什么? (So what happened?)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$XVS was allowed to be used a collateral asset, which means you were able to borrow assets like $BTC and $ETH by depositing $XVS into the protocol. The more $XVS went up in value, the more $BTC, $ETH and other assets you were allowed to borrow.&lt;/p&gt;
+&lt;p&gt;$XVS 被允许用作抵押资产，这意味着您可以通过将 $XVS 存入协议来借入 $BTC 和 $ETH 等资产。 $XVS 升值越多，您被允许借入的 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;、&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;BTC、&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.68333em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.05017em;&#34;&gt;B&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.13889em;&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.07153em;&#34;&gt;C&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;、&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;ETH 和其他资产就越多。&lt;/p&gt;
+&lt;p&gt;This meant that in theory you could have pumped $XVS by 88%, borrowed a lot more $ETH and $BTC against it than you normally would be able to, sold $XVS back and ran away with $ETH and $BTC.&lt;/p&gt;
+&lt;p&gt;这意味着理论上你可以将 $XVS 提高 88%，借入比平时多得多的 $ETH 和 $BTC，卖回 $XVS，然后带着 $ETH 和 $BTC 跑掉。&lt;/p&gt;
+&lt;p&gt;While it isn’t clear who pumped $XVS, someone definitely took advantage of it:&lt;/p&gt;
+&lt;p&gt;虽然尚不清楚是谁注入了 $XVS，但肯定有人利用了它：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Igamberdiev pointed to two traders who left the majority of the bad debt. One &lt;a href=&#34;https://twitter.com/FrankResearcher/status/1394900205678612486/photo/1&#34;&gt;borrowed&lt;/a&gt; 4.2k BTC ($160M) for 1M XVS collateral ($50M at current value). The second &lt;a href=&#34;https://twitter.com/FrankResearcher/status/1394900226838827008/photo/1&#34;&gt;borrowed&lt;/a&gt; 13.4k ETH ($35M) for 490k XVS collateral ($24.5M at current value).&lt;/p&gt;
+&lt;p&gt;Igamberdiev 指出有两名交易员留下了大部分坏账。一个 &lt;a href=&#34;https://twitter.com/FrankResearcher/status/1394900205678612486/photo/1&#34;&gt;借来的&lt;/a&gt; 4.2k BTC（1.6 亿美元）用于 100 万个 XVS 抵押品（现值 5000 万美元）。第二个 &lt;a href=&#34;https://twitter.com/FrankResearcher/status/1394900226838827008/photo/1&#34;&gt;借用&lt;/a&gt; 13.4k ETH（3500 万美元）用于 490k XVS 抵押品（当前价值 2450 万美元）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;故事的道德启示 (Moral of the Story)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Our takeaway is that manipulation-resistant price oracles are a must, otherwise Venus-like exploits will occur again.&lt;/p&gt;
+&lt;p&gt;我们的结论是，抗操纵的价格预言机是必须的，否则类似Venus的攻击将再次发生。&lt;/p&gt;
+&lt;p&gt;Additionally, this incident taught the community that some assets just shouldn’t be listed as collateral. More on that later.&lt;/p&gt;
+&lt;p&gt;此外，这一事件告诉社区，某些资产不应该被列为抵押品。稍后再谈。&lt;/p&gt;
+&lt;h2 id=&#34;cream-ftt&#34;&gt;Cream — FTT&lt;/h2&gt;
+&lt;p&gt;From the &lt;a href=&#34;https://defirate.com/cream-ftt-delisting/&#34;&gt;Defirate article&lt;/a&gt;:&lt;br&gt;
+来自 &lt;a href=&#34;https://defirate.com/cream-ftt-delisting/&#34;&gt;Defirate article&lt;/a&gt; 的文章：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Cream has come under fire after $75M worth of FTT, the native token of FTX, was used to borrow and short leading DeFi assets like YFI over the weekend.&lt;/p&gt;
+&lt;p&gt;在价值 7500 万美元的 FTT（FTX 的原生代币）在周末被用来借入和做空 YFI 等领先的 DeFi 资产之后，Cream 受到了抨击。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Basically, Cream allowed $FTT to be used as collateral. Consequently, someone deposited a gazillion of $FTT to short-sell $YFI, $CRV, $UNI and other projects.&lt;/p&gt;
+&lt;p&gt;基本上，Cream 允许将 $FTT 用作抵押品。因此，有人存入大量 $FTT 用于卖空 $YFI $CRV $UNI 和其他项目。&lt;/p&gt;
+&lt;p&gt;On top of that, it had very little onchain liquidity given the deposited size:&lt;/p&gt;
+&lt;p&gt;最重要的是，鉴于存款规模，它的链上流动性非常少：&lt;/p&gt;
+&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class=&#34;media full&#34;&gt;
+   &lt;div class=&#34;tweet&#34;&gt;
+    &lt;div class=&#34;twitter-tweet twitter-tweet-rendered&#34; style=&#34;width: 100%; margin: 10px auto; display: flex; max-width: 550px;&#34;&gt;
+     &lt;iframe id=&#34;twitter-widget-0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allowfullscreen=&#34;true&#34; class=&#34;&#34; style=&#34;position: static; visibility: visible; width: 550px; height: 1635px; display: block; flex-grow: 1;&#34; title=&#34;Twitter Tweet&#34; src=&#34;https://platform.twitter.com/embed/Tweet.html?dnt=false&amp;amp;embedId=twitter-widget-0&amp;amp;features=eyJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfX0%3D&amp;amp;frame=false&amp;amp;hideCard=false&amp;amp;hideThread=false&amp;amp;id=1314295729532227584&amp;amp;lang=en&amp;amp;origin=https%3A%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Ftype%3Dtext%252Fhtml%26key%3Da19fcc184b9711e1b4764040d3dc5c07%26schema%3Dtwitter%26url%3Dhttp%253A%2F%2Ftwitter.com%2FChainLinkGod%2Fstatus%2F1314295729532227584%253Fs%253D20%26image%3D&amp;amp;sessionId=1b369b1c1aa86b79ad7d4b9056c261337b5a119d&amp;amp;theme=light&amp;amp;widgetsVersion=c8fe9736dd6fb%3A1649830956492&amp;amp;width=550px&#34; data-tweet-id=&#34;1314295729532227584&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+&lt;p&gt;So let’s imagine Alice borrowed $UNI tokens that shot up in price versus Collateral ($FTT), which made her subject to liquidation.&lt;/p&gt;
+&lt;p&gt;因此，让我们假设 Alice 借了 $UNI 代币，其价格与抵押品 ($FTT) 相比飙升，这使她受到清算。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A liquidator would do the following:&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;清算人会做以下事情：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Take on Alice’s $UNI debt&lt;br&gt;
+承担 Alice 的 $UNI 债务&lt;/li&gt;
+&lt;li&gt;Buy $UNI to repay the debt&lt;br&gt;
+购买 $UNI偿还债务&lt;/li&gt;
+&lt;li&gt;Receive $FTT collateral equivalent to the $UNI repaid plus &lt;strong&gt;bonus $FTT&lt;/strong&gt;for liquidating Alice&lt;br&gt;
+收到与偿还的 $UNI 等值的 $FTT 抵押品以及用于清算 Alice 的&lt;strong&gt;奖金 $FTT&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Sell $FTT to repay whatever was borrowed for the procedure and reap the bonus.&lt;br&gt;
+出售 $FTT 来偿还为执行该程序借入的任何款项并获得奖金。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Due to small $FTT float available in the market, (4) wouldn’t be viable and the liquidator couldn’t possibly liquidate Alice’s entire position. Consequently, $UNI lenders would lose their tokens and millions accrue in bad debt.&lt;/p&gt;
+&lt;p&gt;由于市场上可用的 $FTT 浮动很小，（4）将不可行，清算人不可能清算 Alice 的全部头寸。因此，$UNI 出借方将失去他们的代币，并产生数百万计的坏账。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;故事的道德启示 (Moral of the Story)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When a token has suboptimal liquidity and its ownership pie looks like this:&lt;/p&gt;
+&lt;p&gt;当代币的流动性欠佳且其所有权饼图如下所示时：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*n5S6GFVY4Cd2RrD791m-2A.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://bloxy.info/token_holders/0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9&#34;&gt;From Bloxy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;… one should be very careful about listing it as collateral.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Being a collateral asset should be a&lt;/em&gt; &lt;strong&gt;privilege&lt;/strong&gt; contingent on, among other things, DeFi principles like &lt;strong&gt;decentralisation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;......人们应该非常小心地将其列为抵押品。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;作为抵押资产应该是&lt;/em&gt; 一种基于DeFi原则的  &lt;strong&gt;特权&lt;/strong&gt; ，例如&lt;strong&gt;去中心化&lt;/strong&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;euler的解决方案-eulers-solutions&#34;&gt;Euler的解决方案 (Euler’s Solutions)&lt;/h1&gt;
+&lt;p&gt;Unlike Aave and Compound, Euler allows permissionless listing, which means that anyone can create a lending market without governance approval.&lt;/p&gt;
+&lt;p&gt;与 Aave 和 Compound 不同，Euler 允许无许可上市，这意味着任何人都可以在没有治理批准的情况下创建借贷市场。&lt;/p&gt;
+&lt;p&gt;While it’s very exciting, this feature introduces a myriad of risks.&lt;/p&gt;
+&lt;p&gt;虽然非常令人兴奋，但此功能会带来一系列风险。&lt;/p&gt;
+&lt;p&gt;In order to deal with these risks while maximising capital efficiency, we’ve come up with a range of solutions in the spirit of DeFi.&lt;/p&gt;
+&lt;p&gt;为了应对这些风险，同时最大限度地提高资本效率，我们本着 DeFi 的精神提出了一系列解决方案。&lt;/p&gt;
+&lt;h2 id=&#34;抵押和借入因子-collateral-and-borrow-factors&#34;&gt;抵押和借入因子 (Collateral and Borrow Factors)&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;If I lend 100 USD worth of $ETH, how much can I borrow?&lt;/em&gt; That’s determined by the collateral factor.&lt;br&gt;
+Here are the collateral factors (they call it the &lt;em&gt;Liquidation Threshold&lt;/em&gt;) listed on Aave:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;如果我借出价值 100 美元的 ETH，我可以借多少钱？&lt;/em&gt; 这取决于抵押因素。 以下是 Aave 上列出的附带因素（他们称之为 &lt;em&gt;清算阈值&lt;/em&gt; ）：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/868/0*t5p50NloVqejQqc2&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;According to this table, if I lend out 100 USD worth of $ETH, I can borrow up to 82.5 USD worth of:&lt;/p&gt;
+&lt;p&gt;根据这张表，如果我借出价值 100 美元的 ETH，我最多可以借出价值 82.5 美元的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$USDC&lt;/li&gt;
+&lt;li&gt;$renDOGE&lt;/li&gt;
+&lt;li&gt;$UNI&lt;/li&gt;
+&lt;li&gt;其他Aave上的代币(Or any other token on Aave)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An astute reader will notice an issue with this approach. Even though $UNI or $USDC are vastly safer than $renDOGE (although some would disagree), you can borrow an equal amount of both versus your $ETH collateral.&lt;/p&gt;
+&lt;p&gt;精明的读者会注意到这种方法的一个问题。尽管 $UNI 或 $USDC 比 $renDOGE 安全得多（尽管有些人不同意），但您可以借用与您的 $ETH 抵押品相等数量的两者。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*3uQmuz_OnKhT0yXDU1u8Lg.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(renDOGE = UNI?)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Euler的创新:借入因子 (Euler’s innovation: borrow factors)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is why we’ve introduced borrow factors. While collateral factors encapsulate the risks of a collateral asset like $ETH, $USDC or $DAI, borrow factors encapsulate the specific risks of a borrowed asset.&lt;/p&gt;
+&lt;p&gt;这就是我们引入借用因子的原因。虽然抵押因素封装了 $ETH、$USDC 或 $DAI 等抵押资产的风险，但借入因子封装了借入资产的特定风险。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;实例 (Example)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For eg, if you lend out 100 USD worth of $ETH and the collateral factor is 0.90, then your &lt;em&gt;risk-adjusted collateral value&lt;/em&gt; is 90 USD (100 USD x 0.90).&lt;/p&gt;
+&lt;p&gt;例如，如果您借出价值 100 美元的 ETH 并且抵押因子为 0.90，那么您的 &lt;em&gt;风险调整抵押品价值&lt;/em&gt; 为 90 美元（100 美元 x 0.90）。&lt;/p&gt;
+&lt;p&gt;To borrow an asset, you multiply the risk-adjusted collateral value by the respective borrow factor (BF). For eg:&lt;/p&gt;
+&lt;p&gt;要借入资产，您将风险调整后的抵押品价值乘以相应的借入因子 (BF)。例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$USDC BF = 0.90, meaning you can borrow 81 USD (100 USD x 0.90 x 0.90) worth of $USDC vs 100 USD worth of $ETH&lt;br&gt;
+$USDC 借入因子 = 0.90，这意味着您用价值100美元的ETH，可以借入价值 81 美元（100 美元 x 0.90 x 0.90）的 $USDC&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$renDOGE BF = 0.28, meaning you can borrow 25.2 USD (100 USD x 0.90 x 0.285) worth of $renDOGE vs 100 USD worth of $ETH&lt;br&gt;
+$renDOGE BF = 0.28，这意味着您用价值 100 美元的 $ETH，可以借入价值 25.2 美元（100 美元 x 0.90 x 0.285）的 $renDOGE&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This way, we can make listing of assets permissionless as each borrowed asset will be assigned a borrow factor matching its risk profile.&lt;/p&gt;
+&lt;p&gt;通过这种方式，我们可以使资产列表无需许可，因为每个借入的资产都将被分配一个与其风险状况相匹配的借入因子。&lt;/p&gt;
+&lt;h2 id=&#34;只允许最高质量的资产作为抵押物-only-allow-highest-quality-assets-as-collateral&#34;&gt;只允许最高质量的资产作为抵押物 (Only allow highest quality assets as Collateral)&lt;/h2&gt;
+&lt;p&gt;As we have seen in the Venus and FTT examples, a protocol is only as strong as its weakest collateral.&lt;/p&gt;
+&lt;p&gt;正如我们在 Venus 和 FTT 示例中所见，协议的强韧度取决于其最弱的抵押品。&lt;/p&gt;
+&lt;p&gt;Now that we are on the same page, here are the parameters we use to assess assets for collateral eligibility:&lt;/p&gt;
+&lt;p&gt;现在我们在同一页面上，以下是我们用来评估资产是否符合抵押品资格的参数：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;智能合约风险 (Smart Contract Risk)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It is arguably the biggest tail risk, as a badly written smart contract can result in hacks and stolen money, leading to a catastrophic collapse in price.&lt;/p&gt;
+&lt;p&gt;这可以说是最大的尾部风险，因为写得粗糙的智能合约可能导致黑客攻击和资金被盗，从而导致价格的灾难性崩溃。&lt;/p&gt;
+&lt;p&gt;So if $XYZ collateral asset goes from 100 USD to 0 USD in a minute, two things happen:&lt;/p&gt;
+&lt;p&gt;因此，如果 $XYZ 抵押资产在一分钟内从 100 美元变为 0 美元，则会发生两件事：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Lenders of $XYZ asset are left with nothing.&lt;br&gt;
+$XYZ 资产的出借方一无所有。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Users that borrowed other assets like $ABC vs $XYZ will not be liquidated, as no liquidator is willing to receive the collapsing collateral as a bonus for liquidation. Consequently, borrowers run away with $ABC and lenders of $ABC lose their tokens.&lt;br&gt;
+用 $XYZ借入 $ABC等其他资产的用户将不会被清算，因为没有清算人愿意接收崩溃的抵押品作为清算奖金。因此，借款人带着 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;逃&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;跑&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;了&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;，&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;ABC 逃跑了，&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.68333em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.05017em;&#34;&gt;B&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.07153em;&#34;&gt;C&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;逃&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;跑&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;了&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;，&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;ABC 的出借方失去了他们的代币。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While the first scenario sucks, second is actually systemic as it creates bad debt.&lt;/p&gt;
+&lt;p&gt;虽然第一种情况很糟糕，但第二种情况实际上是系统性的，因为它会产生坏账。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;中心化 (Centralisation)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It measures whether a small number of holders have undue influence over the token. For example, a founder with 70% ownership of the tokenomics pie and flexible vesting period can oversupply the protocol with tokens and borrow anything against it without risk of liquidation (FTT case).&lt;/p&gt;
+&lt;p&gt;它衡量少数持有者是否对代币有不当影响。例如，拥有 70% 的代币和灵活的归属期的创始人，可以用代币造成过渡供应并借入任何东西而不会有清算风险（FTT 案例）。&lt;/p&gt;
+&lt;p&gt;This is a reason we haven’t listed $BUSD as collateral:&lt;br&gt;
+这就是我们没有将 $BUSD 列为抵押品的原因：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*hv_iSvnHCdu8COE1eb-6kw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(虽然很多人通过币安进行交易，但所有 BUSD 都在币安上这一事实使得 BUSD 容易受到币安的特殊风险。 While lots of people trade via binance, the fact that all that BUSD is on Binance makes BUSD prone to idiosyncratic risks of Binance.)&lt;/p&gt;
+&lt;p&gt;Alternatively, a whale holding a large chunk of tokens can easily pass deleterious changes through governance.&lt;/p&gt;
+&lt;p&gt;或者，持有大量代币的鲸鱼可以很容易地通过治理传递有害的变化。&lt;/p&gt;
+&lt;p&gt;Personally, I love this criterion as it nicely aligns DeFi goals with our protocol. If you want to be a collateral, you should be decentralised.&lt;/p&gt;
+&lt;p&gt;就个人而言，我喜欢这个标准，因为它很好地将 DeFi 目标与我们的协议保持一致。如果你想成为抵押品，你应该去中心化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;流动性 (Liquidity)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An asset with 100 mio USD daily turnover is easier to buy and sell versus an asset with only 1 mio USD turnover, all other things being equal.&lt;/p&gt;
+&lt;p&gt;在所有其他条件相同的情况下，与只有 1 mio美元日交易额的资产相比，具有 100 mio美元日营业额的资产更容易买卖。&lt;/p&gt;
+&lt;p&gt;This is important for two reasons:&lt;br&gt;
+这很重要，原因有两个：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A user can pump an illiquid collateral (like in the case of Venus), borrow against it and run away with the money.&lt;br&gt;
+用户可以抽出非流动性抵押品（如Venus的情况），以它为抵押借款并带着钱逃跑。&lt;/li&gt;
+&lt;li&gt;If a liquidator is receiving an illiquid collateral that is collapsing in price with crazy slippage, he may have no incentive to liquidate in the first place. Hence, borrowers may run away with borrowed assets.&lt;br&gt;
+如果清算人收到非流动性抵押品，其价格因疯狂滑点而崩溃，他可能一开始就没有清算的动机。因此，借款人可能会带着借来的资产逃跑。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both of these scenarios are systemic and create bad debts, which is why high liquidity is crucial.&lt;/p&gt;
+&lt;p&gt;这两种情况都是系统性的，都会产生坏账，这就是高流动性至关重要的原因。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: a quick and dirty way to assess liquidity is estimating slippage on Uniswap:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;注意：评估流动性的一种快速而&amp;quot;肮脏&amp;quot;的方法是估计 Uniswap 的滑点：&lt;/em&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;8&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1194/1*837jJzopVLMinINsduUbvA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(如果我尝试交换价值 3.5 mio 美元的 ETH，DAI 几乎没有变化 (-0.684%) If I try to swap 3.5 mio USD worth of ETH, DAI barely budges (-0.684%)  )&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;9&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1202/1*boedZnT-UhaPvEVsct7Pgw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(另一方面，如果我将 ETH 换成 OCEAN，你会得到巨大的滑点（-70.2%）On the other hand, if I swap ETH to OCEAN you get huge slippage (-70.2%))&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;波动性 (Volatility)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;All other things equal, an asset with 100% realised volatility is more likely to cause a liquidation than an asset with a 10% realised volatility. Hence, less volatile assets should have more favourable borrow factors.&lt;/p&gt;
+&lt;p&gt;在所有其他条件相同的情况下，具有 100% 已实现波动率的资产比具有 10% 已实现波动率的资产更有可能导致清算。因此，波动性较小的资产应该具有更有利的借贷因素。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;For more on our risk framework, check out the&lt;/em&gt; &lt;a href=&#34;https://docs.euler.finance/risk-framework/ranking-assets&#34;&gt;&lt;em&gt;risk docs&lt;/em&gt;&lt;/a&gt;&lt;em&gt;.&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;有关我们风险框架的更多信息，请查看&lt;/em&gt; &lt;a href=&#34;https://docs.euler.finance/risk-framework/ranking-assets&#34;&gt;&lt;em&gt;风险文档&lt;/em&gt;&lt;/a&gt;&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;为流动性更强的资产提供更高的借贷因子-give-higher-borrow-factors-to-more-liquid-assets&#34;&gt;为流动性更强的资产提供更高的借贷因子 (Give higher Borrow Factors to more liquid assets)&lt;/h2&gt;
+&lt;p&gt;While a collateral asset can create systemic risk by being easy to manipulate up &lt;em&gt;or&lt;/em&gt; down, a borrowed asset going down in price doesn’t pose much harm to Euler.&lt;/p&gt;
+&lt;p&gt;虽然抵押资产可以通过易于向上或向下操纵而产生系统性风险，但借入资产价格下跌不会对Euler造成太大伤害。&lt;/p&gt;
+&lt;p&gt;When it comes to borrowing, it’s the ability to easily pump a borrowed asset that presents risks to the protocol. This is why there’s a higher weighting on the latter two parameters:&lt;/p&gt;
+&lt;p&gt;在借入方面，能够轻松提取借入资产的能力会给协议带来风险。这就是为什么后两个参数的权重更高的原因：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;流动性 Liquidity&lt;/li&gt;
+&lt;li&gt;波动性 Volatility&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since volatility is self-explanatory, understanding liquidity is crucial. Let us use the $XVS token as an example again:&lt;/p&gt;
+&lt;p&gt;由于波动性是不言自明的，因此了解流动性至关重要。让我们再次以 $XVS 代币为例：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;10&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*OWaUw5GmsFd6j1QJd6WknA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(但是，想象一下，在这种情况下，我们借出 $ETH 并借入 $XVS。However, imagine that in this case we’ve lent $ETH and borrowed $XVS.)&lt;/p&gt;
+&lt;p&gt;Assuming the CF of $ETH is 0.90 and BF of $XVS is 0.80, the final factor is 0.72 (0.90 x 0.80). Hence, if I lend out 100 USD worth of $ETH, I can borrow up to 72 USD worth of $XVS. Because I’m an utter degen, I decide to borrow exactly 71.99 USD worth of Venus, just below the threshold.&lt;/p&gt;
+&lt;p&gt;假设 $ETH 的抵押因子 为 0.90，$XVS 的借入为 0.80，则最终因子为 0.72 (0.90 x 0.80)。因此，如果我借出价值 100 美元的 $ETH，我最多可以借入价值 72 美元的 $XVS。因为我是一个彻头彻尾的堕落者，所以我决定借入 71.99 美元的Venus，刚好低于门槛。&lt;/p&gt;
+&lt;p&gt;Imagine that the next second, someone pumps $XVS to 150 USD while my collateral is still worth just 100 USD. I am subject to liquidation, but do I repay my $XVS debt? Obviously no, as the value of my borrowed asset is higher than my collateral. It’s more advantageous for me to run with my $XVS and never recover the $ETH.&lt;/p&gt;
+&lt;p&gt;想象一下，下一秒，有人将 XVS 加到 150 美元，而我的抵押品仍然只值 100 美元。我将被清算，但我需要偿还我的 $XVS 债务吗？显然不是，因为我借来的资产的价值高于我的抵押品。拿着我的 $XVS跑路并且永远不会恢复 $ETH 对我来说更有利。&lt;/p&gt;
+&lt;p&gt;Due to the illiquidity of $XVS, the lender of $XVS loses his asset and bad debt accrues.&lt;/p&gt;
+&lt;p&gt;由于 $XVS 的流动性不足，$XVS 的出借方会损失其资产并产生坏账。&lt;/p&gt;
+&lt;h2 id=&#34;使用uniswap-v3时间加平均价格-use-uniswap-v3-twap&#34;&gt;使用Uniswap v3时间加平均价格 (Use Uniswap v3 TWAP)&lt;/h2&gt;
+&lt;p&gt;No matter how good and liquid an asset is, someone will most likely try to manipulate its pricing.&lt;/p&gt;
+&lt;p&gt;无论资产有多好和多流动，有人很可能会试图操纵它的定价。&lt;/p&gt;
+&lt;p&gt;For eg, if I tried to swap 35mio USD worth of $ETH (which a well-capitalised fund could easily do with some leverage), $UNI moves by 20%:&lt;/p&gt;
+&lt;p&gt;例如，如果我试图交换价值 35mio 美元的 $ETH（一个资本充足的基金可以通过一些杠杆轻松做到这一点），$UNI 移动 20%：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;11&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1198/1*griO2Uq7Ae4fE5aap-6LZw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Due to the nature of how liquidity pools work, an alternative to Uniswap spot prices has to be used. It must also be decentralised to enable pricing for any asset listed on Euler permissionlessly.&lt;/p&gt;
+&lt;p&gt;由于流动性池如何运作的性质，必须使用 Uniswap 现货价格的替代品。它还必须是去中心化的，以便在未经许可的情况下对 Euler 上列出的任何资产进行定价。&lt;/p&gt;
+&lt;p&gt;Our solution is a TWAP based on Uniswap v3. Since a TWAP is a moving average, it would take an enormous amount of money of $ETH to manipulate $UNI prices.&lt;/p&gt;
+&lt;p&gt;我们的解决方案是基于 Uniswap v3 的 TWAP。由于 TWAP 是移动平均线，因此需要大量的 $ETH 来操纵 $UNI 价格。&lt;/p&gt;
+&lt;p&gt;As an extreme example, see PIVX vs BTC spot (candles) vs TWAP (orange line):&lt;/p&gt;
+&lt;p&gt;作为一个极端的例子，请参见 PIVX vs BTC 现货（蜡烛） vs TWAP（橙色线）：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;12&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*BpS6l__sENAq6tUtMxN3eg.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;While spot rallied dramatically and ultimately mean-reverted, it would take an even more dramatic and persistent upside for the TWAP to really catch up.&lt;/p&gt;
+&lt;p&gt;尽管现货价格大幅上涨并最终均值回归，但 TWAP 要真正赶上，还需要更加剧烈和持续的上涨。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Check out Doug’s longer posts on TWAPs&lt;/em&gt; &lt;em&gt;&lt;a href=&#34;https://blog.euler.finance/moving-average-filters-ac8913263d64&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://blog.euler.finance/prices-and-oracles-2da0126a138&#34;&gt;here&lt;/a&gt;&lt;/em&gt;.&lt;br&gt;
+&lt;em&gt;查看 Doug 在 TWAP 上的较长帖子 &lt;a href=&#34;https://chainguys.github.io/post/jie-ge-he-yu-yan-ji-prices-and-oracles/&#34;&gt;这里&lt;/a&gt; 和 &lt;a href=&#34;https://chainguys.github.io/post/yi-dong-ping-jun-shu-ru-he-guo-lu-moving-average-filters/&#34;&gt;这里&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But Seraphim, YOU CAN’T USE A MOVING AVERAGE FOR PRICING&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;但是Seraphim，您不能使用移动平均线定价&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First, yes I can.&lt;br&gt;
+首先，我可以。&lt;/p&gt;
+&lt;p&gt;Second, I do acknowledge that it introduces certain complications. Let’s imagine the &lt;strong&gt;following scenario&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;其次，我承认它引入了某些复杂性。让我们想象一下&lt;strong&gt;以下场景&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;You lend 100 USD worth of $USDC to borrow $SHIB.&lt;br&gt;
+您借出价值 100 美元的 $USDC 来借入 $SHIB。&lt;/p&gt;
+&lt;p&gt;Since $USDC CF = 0.90, $SHIB BF = 0.28, you can borrow up to 25.2 USD worth of $SHIB. Let’s say you borrow 25 USD worth at 15:11 on the 11Oct 2021. Next thing, we experience a huge rally:&lt;/p&gt;
+&lt;p&gt;由于 $USDC 抵押因子 = 0.90，$SHIB 借入因子 = 0.28，您最多可以借入价值 25.2 美元的 $SHIB。假设您在 2021 年 10 月 11 日 15:11 借了价值 25 美元的资金。接下来，我们经历了一次巨大的反弹：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;13&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*MIFYum2EWMkS0i1LbmxfSA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Notice the difference between the TWAP (orange line) and the spot price of 5.43% in a matter of 7 minutes.&lt;/p&gt;
+&lt;p&gt;请注意 TWAP（橙色线）与 5.43% 的现货价格在 7 分钟内的差异。&lt;/p&gt;
+&lt;p&gt;Whether you use TWAP (which is effectively the price at which you borrow on Euler) or spot, you’re in liquidation territory. However, the spot — TWAP discrepancy influences a liquidator’s profitability.&lt;/p&gt;
+&lt;p&gt;无论您使用 TWAP（实际上是您在 Euler 上借入的价格）还是现货，您都处于清算领域。然而，现货—TWAP 差异会影响清算人的盈利能力。&lt;/p&gt;
+&lt;p&gt;Recall that a liquidator would:&lt;br&gt;
+回想一下，清算人会：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Take on your $SHIB debt &lt;strong&gt;priced in TWAP terms&lt;/strong&gt;&lt;br&gt;
+承担您&lt;strong&gt;以 TWAP 计价&lt;/strong&gt;的 $SHIB 债务&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Buy $SHIB &lt;strong&gt;on the market at spot price&lt;/strong&gt; to repay your TWAP-priced debt&lt;br&gt;
+在市场上以现货价格**购买 $SHIB **，以偿还您以 TWAP 定价的债务&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Receive $USDC collateral equivalent to the $SHIB debt repaid plus bonus $SHIB &lt;strong&gt;priced in TWAP terms again&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;再次以 TWAP 条款定价&lt;/strong&gt;获得相当于偿还的 $SHIB 债务加上 $SHIB奖金的 $USDC 等价抵押品&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sell $USDC &lt;strong&gt;on the market at spot rate&lt;/strong&gt; to repay whatever was borrowed for the procedure and reap the bonus&lt;br&gt;
+以&lt;strong&gt;即期汇率在市场上出售 $USDC&lt;/strong&gt; 以偿还为该程序借入的任何款项并获得奖金&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You might notice the issue here: the liquidator receives collateral equivalent to $SHIB debt priced in TWAP terms, which is at a worse price than the spot rate at which the liquidator buys $SHIB to repay the debt in the first place.&lt;/p&gt;
+&lt;p&gt;您可能会注意到这里的问题：清算人收到的抵押品相当于以 TWAP 计价的 $SHIB 债务，其价格低于清算人购买 $SHIB 以首先偿还债务的即期汇率。&lt;/p&gt;
+&lt;p&gt;Essentially, the liquidator buys high and sells low (you do as well but who cares).&lt;/p&gt;
+&lt;p&gt;本质上，清算人高买低卖（你也这样做，但谁在乎）。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;14&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1000/1*mf1h-iuTTjpfZ4htigry6w.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;清算人奖金的荷兰式拍卖-dutch-auctions-for-liquidator-bonuses&#34;&gt;清算人奖金的荷兰式拍卖 (Dutch Auctions for liquidator bonuses)&lt;/h2&gt;
+&lt;p&gt;In order to compensate the liquidator for his work, a borrower will pay him additional collateral.&lt;/p&gt;
+&lt;p&gt;为了补偿清算人的工作，借款人将向他支付额外的抵押品。&lt;/p&gt;
+&lt;p&gt;For eg, if the debt to be repaid is worth 20 USD and the liquidator bonus is 10%, the liquidator will receive 22 USD worth of collateral from the borrower (20 USD x 1.1). The 2 USD is essentially the profit for the liquidator excluding the gas costs.&lt;/p&gt;
+&lt;p&gt;例如，如果要偿还的债务价值 20 美元，清算人奖金为 10%，清算人将从借款人那里获得价值 22 美元的抵押品（20 美元 x 1.1）。 2 美元本质上是清算人的利润，不包括 gas 成本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;问题 (The issue)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;10% liquidator bonus sounds like a good deal, but what if the TWAP — spot discrepancy is very large, say, 20%? This means that to repay the borrower’s debt, a liquidator would have to buy 24 USD (20 USD * 1.2) worth of debt asset on the market to receive 22 USD worth of collateral, which amounts to a -2 USD loss.&lt;/p&gt;
+&lt;p&gt;10% 的清算人奖金听起来很划算，但如果 TWAP—现货差异非常大，比如 20%，怎么办？这意味着要偿还借款人的债务，清算人必须在市场上购买价值 24 美元（20 美元 * 1.2）的债务资产才能获得价值 22 美元的抵押品，这相当于 -2 美元的损失。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;15&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/996/1*1C1BEYRr_ayKAB5HZfY-Qw.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;解决方案 (The solution)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We make the liquidator bonus subject to a Dutch auction. For eg, if someone is willing to conduct a liquidation at a measly 1% bonus, he can do it. If not, the Dutch auction of the bonus will go up to 2%, 3%… 10%… 21% until a liquidator agrees to do the liquidation as it’s in profit territory.&lt;/p&gt;
+&lt;p&gt;我们将清算人奖金进行荷兰式拍卖。例如，如果有人愿意以区区 1% 的奖金进行清算，他可以做到。如果没有，奖金的荷兰式拍卖将上升到 2%、3%……10%……21%，直到清算人同意进行清算，因为它处于利润领域。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Effectively, as long as TWAP * (1+Liquidator_Bonus&lt;/em&gt;%) &amp;gt; Spot, a liquidator is profitable (excluding gas costs, slippage etc).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;实际上，只要 TWAP * (1+Liquidator_Bonus&lt;/em&gt;%) &amp;gt; Spot，清算人是有利可图的（不包括 gas 成本、滑点等）。&lt;/p&gt;
+&lt;p&gt;This is also neat as borrowers on average will not be forced to pay a fixed rate of 5 or 10% on every single liquidation. The bonus will likely be lower most of the time apart from very volatile times when TWAP — spot basis widens and there is lots of slippage.&lt;/p&gt;
+&lt;p&gt;这也很巧妙，因为借款人平均不会被迫在每次清算时支付 5% 或 10% 的固定利率。除了 TWAP（即期基差扩大且滑点很多）非常不稳定的时期外，奖金在大多数情况下可能会降低。&lt;/p&gt;
+&lt;h2 id=&#34;债务代币-debt-tokens&#34;&gt;债务代币 (Debt Tokens)&lt;/h2&gt;
+&lt;p&gt;Say you are a liquidator that received 4.5 million USD worth of $UNI as collateral in return for repaying someone’s debt. If you sell that $UNI for $DAI in the market, the slippage is huge:&lt;/p&gt;
+&lt;p&gt;假设您是一名清算人，收到了价值 450 万美元的 UNI 作为抵押品，以换取偿还某人的债务。如果你在市场上以 $DAI 的价格出售 $UNI，滑点是巨大的：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;16&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1190/1*Qax88bWKD3Sc3ldsDJIsLg.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;(4.5mio USD 价值 $UNI 的滑点为8%, 8% slippage for pushing 4.5mio USD worth of $UNI)&lt;/p&gt;
+&lt;p&gt;In fact, it could be a lot worse if UNI/DAI pair were aggressively selling, which is when a good deal of liquidations get triggered.&lt;/p&gt;
+&lt;p&gt;事实上，如果 UNI/DAI 对积极卖出，情况可能会更糟，此时会触发大量清算。&lt;/p&gt;
+&lt;p&gt;But what if you could keep that $UNI and sell it… later, once prices and slippage stabilise?&lt;/p&gt;
+&lt;p&gt;但是，如果您可以保留该 $UNI 并将其出售……稍后，一旦价格和滑点稳定下来，该怎么办？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这就是dToken介入的时机 (This is where the dTokens come in.)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;dTokens on Euler represent a borrower’s debt, whilst eTokens represent a borrower’s collateral. If the borrower is in liquidation territory, a liquidator can take on the borrower’s dTokens (debt) and eTokens (collateral), repay the debt and receive the collateral + bonus underlying the eToken.&lt;/p&gt;
+&lt;p&gt;Euler 上的 dToken 代表借款人的债务，而 eToken 代表借款人的抵押品。如果借款人处于清算范围内，清算人可以承担借款人的 dToken（债务）和 eToken（抵押品），偿还债务并获得 eToken 的抵押品 + 奖金。&lt;/p&gt;
+&lt;p&gt;However, unlike on other protocols, the liquidator isn’t constrained to repay that debt straightaway. If he has enough collateral in his account, he may hold the dTokens on his balance sheet along with the eTokens, and repay that debt later to sell the collateral at a better price.&lt;/p&gt;
+&lt;p&gt;然而，与其他协议不同的是，清算人不受限制直接偿还债务。如果他的账户中有足够的抵押品，他可能会在资产负债表上持有 dTokens 以及 eTokens，并在稍后偿还债务以以更好的价格出售抵押品。&lt;/p&gt;
+&lt;p&gt;This basically enables liquidators to take on market risk if they choose to, which wasn’t possible before on lending protocols. Instead of everyone liquidating everything at once, we will see more trading floor dynamics where liquidators act as market makers of sort, ie taking on market risk to achieve better returns.&lt;/p&gt;
+&lt;p&gt;这基本上使清算人能够承担市场风险，如果他们愿意的话，这在借贷协议之前是不可能的。我们将看到更多的交易大厅动态，清算人充当某种做市商，即承担市场风险以获得更好的回报，而不是每个人都同时清算所有东西。&lt;/p&gt;
+&lt;h1 id=&#34;为什么我很兴奋-why-am-i-excited&#34;&gt;为什么我很兴奋? (Why am I excited?)&lt;/h1&gt;
+&lt;p&gt;While creating a permissionless lending market is a monumental task from a risk perspective, I am extremely excited about the possibilities that open up as a consequence.&lt;/p&gt;
+&lt;p&gt;虽然从风险的角度来看，创建一个无许可的借贷市场是一项艰巨的任务，但我对由此带来的可能性感到非常兴奋。&lt;/p&gt;
+&lt;h2 id=&#34;卖空任何东西-short-selling-anything&#34;&gt;卖空任何东西 (Short-selling anything)&lt;/h2&gt;
+&lt;p&gt;Everyone talks about accountability in the space. Well, now users will be able to short-sell any ERC20 token, creating an exciting space for investigative and activist trading in the crypto space.&lt;/p&gt;
+&lt;p&gt;More on that in my &lt;a href=&#34;https://blog.euler.finance/defi-short-squeeze-190180978f6?source=collection_home---------3----------------------------&#34;&gt;previous article&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;每个人都在谈论该领域的问责制。好吧，现在用户将能够卖空任何 ERC20 代币，为加密领域的调查和激进交易创造了一个令人兴奋的空间。&lt;/p&gt;
+&lt;p&gt;在我上一篇文章&lt;a href=&#34;https://chainguys.github.io/post/defi-ya-kong-defi-short-squeeze/&#34;&gt;查看更多&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;任意自查的保证金交易-margin-trading-on-anything&#34;&gt;任意自查的保证金交易 (Margin trading on anything)&lt;/h2&gt;
+&lt;p&gt;Thanks to our swap module, Euler allows users to put on one-click leveraged long and short positions on any collateral vs collateral asset pairs and one-click leveraged short positions on any collateral vs non-collateral pairs.&lt;/p&gt;
+&lt;p&gt;由于我们的swap模块，Euler 允许用户在任何抵押品与抵押品交易对上建立一键式杠杆多头和空头头寸，以及在任何抵押品与非抵押品交易对上建立一键式杠杆空头头寸。&lt;/p&gt;
+&lt;h2 id=&#34;赚取任何资产的利息-earn-interest-on-anything&#34;&gt;赚取任何资产的利息 (Earn interest on anything)&lt;/h2&gt;
+&lt;p&gt;Your DPI index or that tiny DAO token sit idle on your balance sheet? Big or small, Euler enables interest accumulation on any ERC20 token.&lt;/p&gt;
+&lt;p&gt;你的 DPI 指数或那个微小的 DAO 代币在你的资产负债表上闲置着？ Euler 无论大小，都可以在任何 ERC20 代币上累积利息。&lt;/p&gt;
+&lt;h2 id=&#34;任何资产都可以流动性挖矿-liquidity-farm-anything&#34;&gt;任何资产都可以流动性挖矿 (Liquidity Farm anything)&lt;/h2&gt;
+&lt;p&gt;Deposit eligible collateral and borrow anything that will result in liquidity mining rewards. By creating a lending market for everything, anyone can tap into farming without selling their high quality assets.&lt;/p&gt;
+&lt;p&gt;存入合格的抵押品并借入任何会产生流动性挖矿奖励的资产。通过为所有资产创建一个借贷市场，任何人都可以在不出售其优质资产的情况下涉足流动性挖矿。&lt;/p&gt;
+&lt;h2 id=&#34;而这样的例子不胜枚举-and-the-list-goes-on&#34;&gt;而这样的例子不胜枚举 (And the list goes on).&lt;/h2&gt;
+&lt;p&gt;Thanks for reading this, feel fee to contact me.&lt;br&gt;
+感谢您阅读本文，请与我联系。&lt;/p&gt;
+&lt;h1 id=&#34;关于euler-about-euler&#34;&gt;关于Euler (About Euler)&lt;/h1&gt;
+&lt;p&gt;Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit &lt;a href=&#34;https://www.euler.finance/&#34;&gt;euler.finance&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 &lt;a href=&#34;https://www.euler.finance/&#34;&gt;euler.finance&lt;/a&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;加入社区-join-the-community&#34;&gt;加入社区 (Join the Community)&lt;/h1&gt;
+&lt;p&gt;Follow us &lt;a href=&#34;https://twitter.com/eulerfinance&#34;&gt;Twitter&lt;/a&gt;. Join our &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;. Keep in touch on Telegram (&lt;a href=&#34;https://t.me/eulerfinance_official&#34;&gt;community&lt;/a&gt;, &lt;a href=&#34;https://t.me/eulerfinance&#34;&gt;announcements&lt;/a&gt;). Check out our &lt;a href=&#34;https://www.euler.finance/&#34;&gt;website&lt;/a&gt;. Connect with us on &lt;a href=&#34;https://www.linkedin.com/company/euler-xyz/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;关注我们 &lt;a href=&#34;https://twitter.com/eulerfinance&#34;&gt;Twitter&lt;/a&gt;。加入我们的 &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;。在 Telegram 上保持联系(&lt;a href=&#34;https://t.me/eulerfinance_official&#34;&gt;community&lt;/a&gt;、&lt;a href=&#34;https://t.me/eulerfinance&#34;&gt;announcements&lt;/a&gt;)。查看我们的&lt;a href=&#34;https://www.euler.finance/&#34;&gt;网站&lt;/a&gt;。在 &lt;a href=&#34;https://www.linkedin.com/company/euler-xyz/&#34;&gt;LinkedIn&lt;/a&gt; 上与我们联系。&lt;/p&gt;
+">加密市场的风险—从一个借贷协议的角度 (Risks in Crypto — a Lending Protocol Perspective)</a>
       </div>
       
       <div class="item">
