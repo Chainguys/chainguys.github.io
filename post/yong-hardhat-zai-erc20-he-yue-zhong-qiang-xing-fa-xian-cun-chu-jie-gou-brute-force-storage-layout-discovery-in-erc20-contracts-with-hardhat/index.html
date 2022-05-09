@@ -8,7 +8,7 @@
 <meta name="keywords" content="crypto blockchain translation meme coin 区块链 加密货币 翻译 白皮书 文档 doc">
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
-<title>Web3 is REAL</title>
+<title>用Hardhat在ERC20合约中强行发现存储结构 (Brute Force Storage Layout Discovery in ERC20 Contracts With Hardhat) | Web3 is REAL</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1652067989091">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -61,6 +61,8 @@
 
 
 
+  <meta name="description" content="用Hardhat在ERC20合约中强行发现存储结构 (Brute Force Storage Layout Discovery in ERC20 Contracts With Hardhat)" />
+  <meta name="keywords" content="hardhat,balance,solidity,storage,Euler" />
 </head>
 
 <body>
@@ -175,10 +177,17 @@
   <div class="main-continer">
     
     <div
-      class="section-layout  pisces">
+      class="section-layout pisces ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+      <div class="sidebar-body pisces" id="sidebar_body">
+        
+          
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -234,334 +243,298 @@
 
 
 </div>
+        
+      </div>
+    </div>
+  
 </div>
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'pisces';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    jQuery.Velocity(hideElement, 'stop');
+    jQuery.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        jQuery.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
       }
-    });
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
   }
-  </script>
-        <div class="section-box tag-line box-shadow-wrapper">
-          <section class="section tags-section posts-expand bg-color">
-            <div class="padding-wrapper">
-  <div class="tag-timeline-box">
-    <div class="tag-timeline-wrapper">
-      <div class="tag-timeline-title">
-        <h2>
-          arweave
-          <small class="language" data-lan="tag">标签</small>
-        </h2>
-      </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <a href="https://chainguys.github.io/post/akord-x-redstone-ti-sheng-arweave-de-xing-neng-akord-x-redstone-improving-performance-on-arweave/">
-        <div class="motion-warpper">
-          <div class="tag-post-node">
-            <h1>
-              04-26
-              <small>Akord x RedStone—提升Arweave的性能! Akord x RedStone – Improving Performance on Arweave</small>
-            </h1>
-          </div>
-        </div>
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://chainguys.github.io/post/yong-hardhat-zai-erc20-he-yue-zhong-qiang-xing-fa-xian-cun-chu-jie-gou-brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat/"> 用Hardhat在ERC20合约中强行发现存储结构 (Brute Force Storage Layout Discovery in ERC20 Contracts With Hardhat) </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2021-10-12 11:44:49">2021-10-12</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show language" data-lan="category-in">标签:</span>
+       
+      <a href="https://chainguys.github.io/tag/yjrnVlu2S/"> <span>hardhat</span> </a>、   
+      <a href="https://chainguys.github.io/tag/x_m9bXcC1P/"> <span>balance</span> </a>、   
+      <a href="https://chainguys.github.io/tag/Z34HW4LVmK/"> <span>solidity</span> </a>、   
+      <a href="https://chainguys.github.io/tag/3aAPG_Y09o/"> <span>storage</span> </a>、   
+      <a href="https://chainguys.github.io/tag/MVdf-VhEc/">
+        <span>Euler</span>
       </a>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+       
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span
+        >9<span class="language" data-lan="minute"
+          >分钟</span
+        ></span
+      >
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span
+        >1690<span class="pc-show language" data-lan="words"
+          >字数</span
+        ></span
+      >
+    </span>
+      
+    <span
+      id="/post/yong-hardhat-zai-erc20-he-yue-zhong-qiang-xing-fa-xian-cun-chu-jie-gou-brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat/"
+      data-flag-title="用Hardhat在ERC20合约中强行发现存储结构 (Brute Force Storage Layout Discovery in ERC20 Contracts With Hardhat)"
+      class="meta-item pc-show leancloud_visitors"
+    >
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span
+        ><span class="language" data-lan="view">浏览量:</span>:<span
+          class="leancloud-visitors-count"
+        ></span
+      ></span>
+    </span>
+    
+  </div>
+</section>
+
+            <div class="post-body next-md-body" id="post_body">
+              <p>原文：<a href="https://blog.euler.finance/brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat-7ff9342143ed">https://blog.euler.finance/brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat-7ff9342143ed</a></p>
+<p><em>We’re sharing a simple hack to automatically find the account balance slot in ERC20 contracts using Hardhat’s mainnet fork feature.</em></p>
+<p><em>我们正在分享一个简单的技巧，使用 Hardhat 的主网分叉功能自动查找 ERC20 合约中的账户余额槽。</em></p>
+<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*6QW5ZScCLSlUEsvkd_9t7g.png" alt="" loading="lazy"></figure>
+<hr>
+<p>Here at <a href="https://www.euler.finance/">Euler</a> we’re building a next gen lending protocol, similar to Aave or Compound. As with all smart contract development, that requires testing, and lots of it.</p>
+<p>在 <a href="https://www.euler.finance/">Euler</a>，我们正在构建类似于 Aave 或 Compound 的下一代借贷协议。与所有智能合约开发一样，这需要测试，而且很多。</p>
+<p>If your code is meant to interact with other contracts on Ethereum, which is the case for lending protocols, at some point you might want to run a few integration tests on <a href="https://hardhat.org/hardhat-network/guides/mainnet-forking.html">Hardhat’s mainnet fork</a>. In essence, you get all of the “real” ethereum, in memory, for your contracts to interact with. Pretty awesome!</p>
+<p>如果您的代码旨在与以太坊上的其他合约交互，借贷协议就是这种情况，在某些时候您可能希望在 <a href="https://hardhat.org/hardhat-%E7%BD%91%E7%BB%9C/%E6%8C%87%E5%8D%97/mainnet-forking.html">Hardhat 的主网分支</a>。从本质上讲，你在内存中获得了所有“真实”的以太坊，供你的合约进行交互。太棒了！</p>
+<p>As a lending protocol, Euler fundamentally interacts with ERC20 tokens. If we want to test lending <em>real</em> BAT against <em>real</em> DAI, the first thing we need are wallets with some token balances. Hardhat allows us to <a href="https://hardhat.org/hardhat-network/reference/#hardhat-impersonateaccount">impersonate</a> any real Ethereum account, but because of reasons, we wanted to use the built in wallets provided by ethers. Yet another cool feature of Hardhat is the ability to <a href="https://hardhat.org/hardhat-network/reference/#hardhat-setstorageat">manually set the value of any storage slot</a> with <code>hardhat_setStorageAt</code>. We decided to use that, and manually set token balances for our accounts.</p>
+<p>作为一种借贷协议，Euler从根本上与 ERC20 代币进行交互。如果我们想针对 <em>real</em> DAI 测试借贷 <em>real</em> BAT，我们首先需要的是带有一些代币余额的钱包。 Hardhat 允许我们<a href="https://hardhat.org/hardhat-network/reference/#hardhat-impersonateaccount">模拟</a> 任何真实的以太坊帐户，但由于某些原因，我们希望使用 ethers 提供的内置钱包。 Hardhat 的另一个很酷的功能是能够<a href="https://hardhat.org/hardhat-network/reference/#hardhat-setstorageat">手动设置任何存储槽的值</a> 使用<code>hardhat_setStorageAt</code>。我们决定使用它，并为我们的账户手动设置代币余额。</p>
+<p><em>How exactly do we do that though? How do we find which slot to set?</em><br>
+<em>我们到底是怎么做的呢？我们如何找到要设置的插槽？</em></p>
+<p>Let’s first make an assumption, that ERC20 contracts will most likely declare a mapping from an account address to balance:</p>
+<p>我们首先做一个假设，ERC20 合约很可能会声明从账户地址到余额的映射：</p>
+<pre><code>mapping (address =&gt; uint) balances;
+</code></pre>
+<p>Knowing <a href="https://medium.com/coinmonks/solidity-tutorial-all-about-mappings-29a12269ee14">how mappings work</a>, we can calculate the slot number where the balance of an account is held:</p>
+<p>知道了<a href="https://medium.com/coinmonks/solidity-tutorial-all-about-mappings-29a12269ee14">映射如何工作</a>，我们可以计算出持有账户余额的槽号：</p>
+<pre><code>const valueSlot = ethers.utils.keccak256(  
+  ethers.utils.defaultAbiCoder.encode(  
+    ['address', 'uint'],  
+    [account, balanceSlot]  
+  ),  
+);
+</code></pre>
+<p>Where <code>balanceSlot</code>is the slot where the mapping is declared. Cool, but how do we find which slot it is, for any given token contract? For DAI, for example, we could go through the <a href="https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f#code">contract code on etherscan</a> and just count the variables declared, until we find the balances mapping. However, this seems like manual and tedious work, especially if we want to use a large number of real tokens in our tests. There are tools to analyze storage layout, but they would still require some manual work.</p>
+<p>其中 <code>balanceSlot</code> 是声明映射的槽。很酷，但是对于任何给定的代币合约，我们如何找到它是哪个插槽？例如，对于 DAI，我们可以通过 <a href="https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f#code">etherscan 上的合约代码</a> 计算声明的变量，直到找到余额映射。然而，这似乎是手动和乏味的工作，特别是如果我们想在我们的测试中使用大量的真实代币。有一些工具可以分析存储布局，但它们仍然需要一些手动工作。</p>
+<p><em>What if we could automate finding the</em><code>_balanceSlot_</code><em>value somehow, given just the token address?</em></p>
+<p><em>如果我们能以某种方式自动找到</em><code>_balanceSlot_</code><em>值，并且只需要代币地址呢？</em></p>
+<p>Let’s flip the question, and instead of asking what the <code>balanceSlot</code>value is, let’s ask: If we knew the <code>balanceSlot</code>value, how would we verify that it is in fact the balances mapping?</p>
+<p>让我们翻转这个问题，而不是问什么是 <code>balanceSlot</code> 值，让我们问：如果我们知道 <code>balanceSlot</code> 值，我们如何验证它实际上是 balances 映射？</p>
+<p>If we manually set some balance for the account.<br>
+如果我们手动为帐户设置一些余额。</p>
+<pre><code>const probe = '0x' + '1'.padStart(64);network.provider.send('hardhat_setStorageAt', [valueSlot, probe]);
+</code></pre>
+<p>then calling the token’s <code>balanceOf</code> should return that same value:<br>
+然后调用代币的 <code>balanceOf</code> 应该返回相同的值：</p>
+<pre><code>const balance = await token.balanceOf(account);if (!balance.eq(ethers.BigNumber.from(probe)))  
+  throw 'Nope, it’s not the balances slot';
+</code></pre>
+<p>So now we can just iterate over the slot numbers to find <code>balanceSlot</code>. With handling of some edge cases and cleaning up the storage, the final code:</p>
+<p>所以现在我们可以遍历槽号来找到 <code>balanceSlot</code>。通过处理一些边缘情况并清理存储，最终代码如下：</p>
+<pre><code>async _function_ findBalancesSlot(_tokenAddress_) {  
+  _const_ encode = (_types_, _values_) _=&gt;_     
+    ethers.utils.defaultAbiCoder.encode(_types_, _values_);  _const_ account = ethers.constants.AddressZero;  
+  _const_ probeA = encode(['uint'], [1]);  
+  _const_ probeB = encode(['uint'], [2]);  _const_ token = await ethers.getContractAt(  
+    'ERC20',  
+    _tokenAddress_  );  for (_let_ i = 0; i &lt; 100; i++) {  
+    _let_ probedSlot = ethers.utils.keccak256(  
+      encode(['address', 'uint'], [account, i])  
+    );    // remove padding for JSON RPC  
+    while (probedSlot.startsWith('0x0'))  
+      probedSlot = '0x' + probedSlot.slice(3);    _const_ prev = await network.provider.send(  
+      'eth_getStorageAt',  
+      [_tokenAddress_, probedSlot, 'latest']  
+    );    // make sure the probe will change the slot value  
+    _const_ probe = prev === probeA ? probeB : probeA;  
+    
+    await network.provider.send(&quot;hardhat_setStorageAt&quot;, [  
+      _tokenAddress_,  
+      probedSlot,  
+      probe  
+    ]);  
+    
+    _const_ balance = await token.balanceOf(account);    // reset to previous value  
+    await network.provider.send(&quot;hardhat_setStorageAt&quot;, [  
+      _tokenAddress_,  
+      probedSlot,  
+      prev  
+    ]);    if (balance.eq(ethers.BigNumber.from(probe)))  
+      return i;  
+  }  throw 'Balances slot not found!';  
+}
+</code></pre>
+<p>This simple technique has some obvious limitations. It won’t work if the account balances are not stored in a top level mapping, for example in a struct somewhere, or even in a different contract altogether. It can be extended however for other ERC20 data like <code>allowances</code> or to other standards.</p>
+<p>这种简单的技术有一些明显的局限性。如果账户余额没有存储在顶层映射中，例如在某个结构中，甚至完全不同的合约中，它就不会起作用。但是，它可以扩展到其他 ERC20 数据，例如“津贴”或其他标准。</p>
+<p>So that’s it, happy coding!<br>
+这就试了,编程愉快!</p>
+<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
+<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
+<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
+<h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
+<p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
+<p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
+
+            </div>
+            
+              <div class="reward-btn">
+                <div class="reward-btn-text">赞赏</div>
+              </div>
+            
+            
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      Chainguys
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://chainguys.github.io/post/yong-hardhat-zai-erc20-he-yue-zhong-qiang-xing-fa-xian-cun-chu-jie-gou-brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat/" title="用Hardhat在ERC20合约中强行发现存储结构 (Brute Force Storage Layout Discovery in ERC20 Contracts With Hardhat)">https://chainguys.github.io/post/yong-hardhat-zai-erc20-he-yue-zhong-qiang-xing-fa-xian-cun-chu-jie-gou-brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://chainguys.github.io/tag/yjrnVlu2S/"># hardhat</a>
+    
+      <a href="https://chainguys.github.io/tag/x_m9bXcC1P/"># balance</a>
+    
+      <a href="https://chainguys.github.io/tag/Z34HW4LVmK/"># solidity</a>
+    
+      <a href="https://chainguys.github.io/tag/3aAPG_Y09o/"># storage</a>
+    
+      <a href="https://chainguys.github.io/tag/MVdf-VhEc/"># Euler</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="Solana验证者（节点）攻略1-交易流程(ENG-CHN)" href="https://chainguys.github.io/post/solana-yan-zheng-zhe-jie-dian-gong-lue-1-jiao-yi-liu-cheng-eng-chn/">Solana验证者（节点）攻略1-交易流程(ENG-CHN)</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="Solana验证者（节点）攻略1-交易流程(ENG-CHN)" href="https://chainguys.github.io/post/solana-yan-zheng-zhe-jie-dian-gong-lue-1-jiao-yi-liu-cheng-eng-chn/">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="DeFi轧空 (DeFi Short Squeeze)" href="https://chainguys.github.io/post/defi-ya-kong-defi-short-squeeze/">DeFi轧空 (DeFi Short Squeeze)</a>
+        <a class="nav-mobile-next" title="DeFi轧空 (DeFi Short Squeeze)" href="https://chainguys.github.io/post/defi-ya-kong-defi-short-squeeze/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
 </div>
-          </section>
+            
+            
+  
+
+          </div>
         </div>
       </div>
     </div>
@@ -806,6 +779,235 @@
     parent.insertBefore(aelem, next);
   });
 </script>
+    <div class="reward-mask" style="display: none;">
+  <div class="reward-relative">
+    <span class="close" aria-hidden="true">x</span>
+    <div class="reward-body">
+      <h2>感谢您的支持，我会继续努力的!</h2>
+      <div class="reward-img-box">
+        <div style="position: relative; width: 140px; height: 140px;">
+          
+          
+            <img id="zfb" class="reward-img" src="/media/images/custom-zfbImg.png" alt="赞赏码">
+          
+          
+            <img id="wx" class="reward-img" src="/media/images/custom-wxImg.png" alt="赞赏码">
+          
+        </div>
+      </div>
+      <p class="reward-word">ETH:0xeaD95E58791e42D89EF144A2BaB00B1BfAFC0a3C</p>
+      <p class="reward-tip">Solana:7TqTNNvnduqKNGkDVAcGXfkena35PJGyR6tby3QWNzC2</p>
+    </div>
+    <div class="bottom">
+      
+      <div id="zfbBtn" class="pay-text">
+        ETH QR Code
+      </div>
+      
+      
+      <div id="wxBtn" class="pay-text">
+        Solana QR Code
+      </div>
+      
+    </div>
+  </div>
+</div>
+<style>
+  .reward-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000054;
+  }
+
+  .reward-relative {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -205px;
+  }
+
+  .reward-relative .close {
+    position: absolute;
+    right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+  }
+
+  .reward-body {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .reward-btn {
+    text-align: center;
+  }
+
+  .reward-btn-text {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ff9734;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .pay-text {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    transition: all .2s linear;
+  }
+
+  .pay-text:hover {
+    background-color: #a5a5a536;
+  }
+
+  .reward-body h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
+  .reward-body h2:after,
+  .reward-body h2:before {
+    font-family: Arial, Helvetica, sans-serif;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    font-style: normal;
+    color: #eee;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .reward-body h2:before {
+    content: '\201c';
+    left: 50px;
+  }
+
+  .reward-body h2:after {
+    content: '\201d';
+    right: 80px;
+  }
+
+  .reward-img-box {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .reward-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .reward-relative {
+      height: 100%;
+      top: 0px;
+      margin-top: 0;
+      width: auto;
+    }
+
+    .reward-relative .bottom {
+      flex-direction: column;
+    }
+
+    .reward-relative .pay-text {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid silver;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .reward-body h2:after {
+      right: 40px;
+    }
+
+    .reward-body h2:after,
+    .reward-body h2:before {
+      font-size: 60px;
+    }
+
+    .reward-body h2:before {
+      left: 20px;
+    }
+  }
+</style>
+<script>
+  !function () {
+    var mask = document.querySelector('.reward-mask');
+    let close = document.querySelector('.reward-relative .close');
+    let rewardBtn = document.querySelector('.reward-btn');
+
+    let zfb = document.querySelector('#zfb'),
+      wx = document.querySelector('#wx'),
+      zfbBtn = document.querySelector('#zfbBtn'),
+      wxBtn = document.querySelector('#wxBtn');
+
+    if (zfbBtn && wxBtn) {
+      zfbBtn.addEventListener('click', () => {
+        jQuery.Velocity(zfb, 'transition.slideLeftIn', {
+          duration: 400
+        });
+        jQuery.Velocity(wx, 'transition.slideRightOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+
+      wxBtn.addEventListener('click', () => {
+        jQuery.Velocity(wx, 'transition.slideRightIn', {
+          duration: 400
+        });
+        jQuery.Velocity(zfb, 'transition.slideLeftOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+    }
+
+    rewardBtn.addEventListener('click', (e) => {
+      jQuery.Velocity(mask, 'transition.slideDownIn', {
+        duration: 400
+      })
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      jQuery.Velocity(mask, 'transition.slideUpOut', {
+        duration: 400
+      })
+    })
+  }()
+</script>
+
   </div>
 </body>
 
@@ -3312,7 +3514,6 @@ output = hash([output])&lt;/p&gt;
       speed: 200
     });
   </script>
-
 
 
 

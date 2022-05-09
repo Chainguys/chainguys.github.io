@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Web3 is REAL</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1652062467118">
+<link rel="shortcut icon" href="/favicon.ico?v=1652067989091">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -206,13 +206,13 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">19</span>
+        <span class="site-item-stat-count">20</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">89</span>
+        <span class="site-item-stat-count">92</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -351,6 +351,18 @@
           </div>
         </div>
       </a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -2375,6 +2387,97 @@ output = hash([output])&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;If any of this is interesting to you, we’re hiring! Please DM&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;&lt;strong&gt;@buffalu__&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;on Twitter.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;另外，我们正在招聘！如果您有兴趣，请在推特上私信 &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;&lt;strong&gt;@buffalu__&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 ">Solana验证者（节点）攻略1-交易流程(ENG-CHN)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/yong-hardhat-zai-erc20-he-yue-zhong-qiang-xing-fa-xian-cun-chu-jie-gou-brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat/"" data-c="
+          &lt;p&gt;原文：&lt;a href=&#34;https://blog.euler.finance/brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat-7ff9342143ed&#34;&gt;https://blog.euler.finance/brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat-7ff9342143ed&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We’re sharing a simple hack to automatically find the account balance slot in ERC20 contracts using Hardhat’s mainnet fork feature.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;我们正在分享一个简单的技巧，使用 Hardhat 的主网分叉功能自动查找 ERC20 合约中的账户余额槽。&lt;/em&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*6QW5ZScCLSlUEsvkd_9t7g.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;p&gt;Here at &lt;a href=&#34;https://www.euler.finance/&#34;&gt;Euler&lt;/a&gt; we’re building a next gen lending protocol, similar to Aave or Compound. As with all smart contract development, that requires testing, and lots of it.&lt;/p&gt;
+&lt;p&gt;在 &lt;a href=&#34;https://www.euler.finance/&#34;&gt;Euler&lt;/a&gt;，我们正在构建类似于 Aave 或 Compound 的下一代借贷协议。与所有智能合约开发一样，这需要测试，而且很多。&lt;/p&gt;
+&lt;p&gt;If your code is meant to interact with other contracts on Ethereum, which is the case for lending protocols, at some point you might want to run a few integration tests on &lt;a href=&#34;https://hardhat.org/hardhat-network/guides/mainnet-forking.html&#34;&gt;Hardhat’s mainnet fork&lt;/a&gt;. In essence, you get all of the “real” ethereum, in memory, for your contracts to interact with. Pretty awesome!&lt;/p&gt;
+&lt;p&gt;如果您的代码旨在与以太坊上的其他合约交互，借贷协议就是这种情况，在某些时候您可能希望在 &lt;a href=&#34;https://hardhat.org/hardhat-%E7%BD%91%E7%BB%9C/%E6%8C%87%E5%8D%97/mainnet-forking.html&#34;&gt;Hardhat 的主网分支&lt;/a&gt;。从本质上讲，你在内存中获得了所有“真实”的以太坊，供你的合约进行交互。太棒了！&lt;/p&gt;
+&lt;p&gt;As a lending protocol, Euler fundamentally interacts with ERC20 tokens. If we want to test lending &lt;em&gt;real&lt;/em&gt; BAT against &lt;em&gt;real&lt;/em&gt; DAI, the first thing we need are wallets with some token balances. Hardhat allows us to &lt;a href=&#34;https://hardhat.org/hardhat-network/reference/#hardhat-impersonateaccount&#34;&gt;impersonate&lt;/a&gt; any real Ethereum account, but because of reasons, we wanted to use the built in wallets provided by ethers. Yet another cool feature of Hardhat is the ability to &lt;a href=&#34;https://hardhat.org/hardhat-network/reference/#hardhat-setstorageat&#34;&gt;manually set the value of any storage slot&lt;/a&gt; with &lt;code&gt;hardhat_setStorageAt&lt;/code&gt;. We decided to use that, and manually set token balances for our accounts.&lt;/p&gt;
+&lt;p&gt;作为一种借贷协议，Euler从根本上与 ERC20 代币进行交互。如果我们想针对 &lt;em&gt;real&lt;/em&gt; DAI 测试借贷 &lt;em&gt;real&lt;/em&gt; BAT，我们首先需要的是带有一些代币余额的钱包。 Hardhat 允许我们&lt;a href=&#34;https://hardhat.org/hardhat-network/reference/#hardhat-impersonateaccount&#34;&gt;模拟&lt;/a&gt; 任何真实的以太坊帐户，但由于某些原因，我们希望使用 ethers 提供的内置钱包。 Hardhat 的另一个很酷的功能是能够&lt;a href=&#34;https://hardhat.org/hardhat-network/reference/#hardhat-setstorageat&#34;&gt;手动设置任何存储槽的值&lt;/a&gt; 使用&lt;code&gt;hardhat_setStorageAt&lt;/code&gt;。我们决定使用它，并为我们的账户手动设置代币余额。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;How exactly do we do that though? How do we find which slot to set?&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;我们到底是怎么做的呢？我们如何找到要设置的插槽？&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Let’s first make an assumption, that ERC20 contracts will most likely declare a mapping from an account address to balance:&lt;/p&gt;
+&lt;p&gt;我们首先做一个假设，ERC20 合约很可能会声明从账户地址到余额的映射：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mapping (address =&amp;gt; uint) balances;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Knowing &lt;a href=&#34;https://medium.com/coinmonks/solidity-tutorial-all-about-mappings-29a12269ee14&#34;&gt;how mappings work&lt;/a&gt;, we can calculate the slot number where the balance of an account is held:&lt;/p&gt;
+&lt;p&gt;知道了&lt;a href=&#34;https://medium.com/coinmonks/solidity-tutorial-all-about-mappings-29a12269ee14&#34;&gt;映射如何工作&lt;/a&gt;，我们可以计算出持有账户余额的槽号：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const valueSlot = ethers.utils.keccak256(  
+  ethers.utils.defaultAbiCoder.encode(  
+    [&#39;address&#39;, &#39;uint&#39;],  
+    [account, balanceSlot]  
+  ),  
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Where &lt;code&gt;balanceSlot&lt;/code&gt;is the slot where the mapping is declared. Cool, but how do we find which slot it is, for any given token contract? For DAI, for example, we could go through the &lt;a href=&#34;https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f#code&#34;&gt;contract code on etherscan&lt;/a&gt; and just count the variables declared, until we find the balances mapping. However, this seems like manual and tedious work, especially if we want to use a large number of real tokens in our tests. There are tools to analyze storage layout, but they would still require some manual work.&lt;/p&gt;
+&lt;p&gt;其中 &lt;code&gt;balanceSlot&lt;/code&gt; 是声明映射的槽。很酷，但是对于任何给定的代币合约，我们如何找到它是哪个插槽？例如，对于 DAI，我们可以通过 &lt;a href=&#34;https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f#code&#34;&gt;etherscan 上的合约代码&lt;/a&gt; 计算声明的变量，直到找到余额映射。然而，这似乎是手动和乏味的工作，特别是如果我们想在我们的测试中使用大量的真实代币。有一些工具可以分析存储布局，但它们仍然需要一些手动工作。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What if we could automate finding the&lt;/em&gt;&lt;code&gt;_balanceSlot_&lt;/code&gt;&lt;em&gt;value somehow, given just the token address?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;如果我们能以某种方式自动找到&lt;/em&gt;&lt;code&gt;_balanceSlot_&lt;/code&gt;&lt;em&gt;值，并且只需要代币地址呢？&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Let’s flip the question, and instead of asking what the &lt;code&gt;balanceSlot&lt;/code&gt;value is, let’s ask: If we knew the &lt;code&gt;balanceSlot&lt;/code&gt;value, how would we verify that it is in fact the balances mapping?&lt;/p&gt;
+&lt;p&gt;让我们翻转这个问题，而不是问什么是 &lt;code&gt;balanceSlot&lt;/code&gt; 值，让我们问：如果我们知道 &lt;code&gt;balanceSlot&lt;/code&gt; 值，我们如何验证它实际上是 balances 映射？&lt;/p&gt;
+&lt;p&gt;If we manually set some balance for the account.&lt;br&gt;
+如果我们手动为帐户设置一些余额。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const probe = &#39;0x&#39; + &#39;1&#39;.padStart(64);network.provider.send(&#39;hardhat_setStorageAt&#39;, [valueSlot, probe]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;then calling the token’s &lt;code&gt;balanceOf&lt;/code&gt; should return that same value:&lt;br&gt;
+然后调用代币的 &lt;code&gt;balanceOf&lt;/code&gt; 应该返回相同的值：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const balance = await token.balanceOf(account);if (!balance.eq(ethers.BigNumber.from(probe)))  
+  throw &#39;Nope, it’s not the balances slot&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So now we can just iterate over the slot numbers to find &lt;code&gt;balanceSlot&lt;/code&gt;. With handling of some edge cases and cleaning up the storage, the final code:&lt;/p&gt;
+&lt;p&gt;所以现在我们可以遍历槽号来找到 &lt;code&gt;balanceSlot&lt;/code&gt;。通过处理一些边缘情况并清理存储，最终代码如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;async _function_ findBalancesSlot(_tokenAddress_) {  
+  _const_ encode = (_types_, _values_) _=&amp;gt;_     
+    ethers.utils.defaultAbiCoder.encode(_types_, _values_);  _const_ account = ethers.constants.AddressZero;  
+  _const_ probeA = encode([&#39;uint&#39;], [1]);  
+  _const_ probeB = encode([&#39;uint&#39;], [2]);  _const_ token = await ethers.getContractAt(  
+    &#39;ERC20&#39;,  
+    _tokenAddress_  );  for (_let_ i = 0; i &amp;lt; 100; i++) {  
+    _let_ probedSlot = ethers.utils.keccak256(  
+      encode([&#39;address&#39;, &#39;uint&#39;], [account, i])  
+    );    // remove padding for JSON RPC  
+    while (probedSlot.startsWith(&#39;0x0&#39;))  
+      probedSlot = &#39;0x&#39; + probedSlot.slice(3);    _const_ prev = await network.provider.send(  
+      &#39;eth_getStorageAt&#39;,  
+      [_tokenAddress_, probedSlot, &#39;latest&#39;]  
+    );    // make sure the probe will change the slot value  
+    _const_ probe = prev === probeA ? probeB : probeA;  
+    
+    await network.provider.send(&amp;quot;hardhat_setStorageAt&amp;quot;, [  
+      _tokenAddress_,  
+      probedSlot,  
+      probe  
+    ]);  
+    
+    _const_ balance = await token.balanceOf(account);    // reset to previous value  
+    await network.provider.send(&amp;quot;hardhat_setStorageAt&amp;quot;, [  
+      _tokenAddress_,  
+      probedSlot,  
+      prev  
+    ]);    if (balance.eq(ethers.BigNumber.from(probe)))  
+      return i;  
+  }  throw &#39;Balances slot not found!&#39;;  
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This simple technique has some obvious limitations. It won’t work if the account balances are not stored in a top level mapping, for example in a struct somewhere, or even in a different contract altogether. It can be extended however for other ERC20 data like &lt;code&gt;allowances&lt;/code&gt; or to other standards.&lt;/p&gt;
+&lt;p&gt;这种简单的技术有一些明显的局限性。如果账户余额没有存储在顶层映射中，例如在某个结构中，甚至完全不同的合约中，它就不会起作用。但是，它可以扩展到其他 ERC20 数据，例如“津贴”或其他标准。&lt;/p&gt;
+&lt;p&gt;So that’s it, happy coding!&lt;br&gt;
+这就试了,编程愉快!&lt;/p&gt;
+&lt;h1 id=&#34;关于euler-about-euler&#34;&gt;关于Euler (About Euler)&lt;/h1&gt;
+&lt;p&gt;Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit &lt;a href=&#34;https://www.euler.finance/&#34;&gt;euler.finance&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 &lt;a href=&#34;https://www.euler.finance/&#34;&gt;euler.finance&lt;/a&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;加入社区-join-the-community&#34;&gt;加入社区 (Join the Community)&lt;/h1&gt;
+&lt;p&gt;Follow us &lt;a href=&#34;https://twitter.com/eulerfinance&#34;&gt;Twitter&lt;/a&gt;. Join our &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;. Keep in touch on Telegram (&lt;a href=&#34;https://t.me/eulerfinance_official&#34;&gt;community&lt;/a&gt;, &lt;a href=&#34;https://t.me/eulerfinance&#34;&gt;announcements&lt;/a&gt;). Check out our &lt;a href=&#34;https://www.euler.finance/&#34;&gt;website&lt;/a&gt;. Connect with us on &lt;a href=&#34;https://www.linkedin.com/company/euler-xyz/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;关注我们 &lt;a href=&#34;https://twitter.com/eulerfinance&#34;&gt;Twitter&lt;/a&gt;。加入我们的 &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;。在 Telegram 上保持联系(&lt;a href=&#34;https://t.me/eulerfinance_official&#34;&gt;community&lt;/a&gt;、&lt;a href=&#34;https://t.me/eulerfinance&#34;&gt;announcements&lt;/a&gt;)。查看我们的&lt;a href=&#34;https://www.euler.finance/&#34;&gt;网站&lt;/a&gt;。在 &lt;a href=&#34;https://www.linkedin.com/company/euler-xyz/&#34;&gt;LinkedIn&lt;/a&gt; 上与我们联系。&lt;/p&gt;
+">用Hardhat在ERC20合约中强行发现存储结构 (Brute Force Storage Layout Discovery in ERC20 Contracts With Hardhat)</a>
       </div>
       
       <div class="item">
