@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Web3 is REAL</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1651985474293">
+<link rel="shortcut icon" href="/favicon.ico?v=1652060467741">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -206,13 +206,13 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">18</span>
+        <span class="site-item-stat-count">19</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">82</span>
+        <span class="site-item-stat-count">89</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -353,6 +353,24 @@
           </div>
         </div>
       </a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -2355,6 +2373,187 @@ output = hash([output])&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;If any of this is interesting to you, we’re hiring! Please DM&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;&lt;strong&gt;@buffalu__&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;on Twitter.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;另外，我们正在招聘！如果您有兴趣，请在推特上私信 &lt;a href=&#34;https://twitter.com/buffalu__&#34;&gt;&lt;strong&gt;@buffalu__&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 ">Solana验证者（节点）攻略1-交易流程(ENG-CHN)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/defi-ya-kong-defi-short-squeeze/"" data-c="
+          &lt;p&gt;&lt;em&gt;Short Squeezes in DeFi and how Euler enables trading them&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;DeFi上的轧空和Euler如何促成该类交易。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*LU6gb5QvEnXbra4F.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;In this article we’ll discuss:&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;
+在本文中我们将讨论：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Wild short selling squeezes in the stock markets and what causes them&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;股市中的疯狂卖空挤压以及导致它们的原因&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;How we’re about to witness the same phenomenon play out in the digital asset space&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;我们将如何在数字资产领域见证同样的现象&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;How one could capitalise on that&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;如何利用这一点&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;How Euler enables it for both retail and institutional traders through unique innovation&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Euler如何通过独特的创新为散户和机构交易者启用它&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;一个轧空的故事-let-me-tell-you-a-short-story&#34;&gt;&lt;strong&gt;一个轧空的故事 (Let me tell you a Short Story)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Remember the GME short squeeze?&lt;br&gt;
+还记得GME的轧空事件吗？&lt;/p&gt;
+&lt;h2 id=&#34;-2&#34;&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ZzL5OLCwSPY&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*d1nDiUyv8SPDbZ5u.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I do. There I was, putting in ridiculous bids for GME, NOK and AMC call options in an environment where you could drive a truck through the bid ask spread and market makers would show up like Viennese cafe waiters, i.e. whenever they pleased. As a matter of fact, footage of me trying to request prices from Interactive Brokers in the first 10 minutes of the trading session:&lt;/p&gt;
+&lt;p&gt;我记得。我在那里对 GME、NOK 和 AMC 看涨期权进行了荒谬的出价，在这样一个环境中，你可以驾驶卡车通过买卖价差，做市商会像维也纳咖啡馆服务员一样出现，即只要他们高兴。事实上，我在交易时段的前 10 分钟尝试向盈透证券索取价格的镜头：&lt;/p&gt;
+&lt;h2 id=&#34;-3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/852/0*48IesVx8uvg8QuOT.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/h2&gt;
+&lt;p&gt;Suddenly, I saw Nokia (NOK) 10 strike April expiry calls options trading at 0.30 USD (note: they were trading at 0.05 USD the day before) and I managed to buy stupid size at that price.&lt;/p&gt;
+&lt;p&gt;突然，我看到诺基亚 (NOK) 10 的4 月到期看涨期权的交易价格为 0.30 美元(注意：它们前一天的交易价格为 0.05 美元)，我愚蠢地设法以这个价格购买了大量。&lt;/p&gt;
+&lt;p&gt;The next few days were history: a bunch of Wall Street Bets apes basically beat millionaire hedgies and market makers with hundreds of Ivy Oxbridge PhDs into brutal submission. GME, NOK, AMC and whatever was being shorted by the market skyrocketed as shorts sellers were trying to buy back the shares and mitigate losses.&lt;/p&gt;
+&lt;p&gt;接下来的几天成为历史：一群华尔街赌徒基本上击败了拥有数百名常春藤牛津大学博士的百万富翁套期保值和做市商，残酷地让他们屈服了。 GME、NOK、AMC 和任何被市场做空的东西都飙升，因为卖空者试图回购股票并减轻损失。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*gHeh2NmEH7_elCeIhDO7Ew.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;NOK&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*DDqoVFxH5LErlQE-zw0Rdg.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;GME&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*abDTSZghtUnXjIdLNSkrYA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;AMC&lt;/p&gt;
+&lt;p&gt;My NOK options opened at 1.14 USD vs 0.30 USD the day before and we immediately hit a circuit breaker. Then 1.70 USD and another circuit breaker… then 2.00 USD until someone actually dealt at 5.25 USD. Given I was managing decent size for me and 3 other degens, hadn’t slept for 24+ hours and had a full-time job at the same time, “&lt;em&gt;fun&lt;/em&gt;” was one way of putting it.&lt;/p&gt;
+&lt;p&gt;我的NOK期权开盘价为 1.14 美元，前一天为 0.30 美元，我们立即触发了熔断机制。然后是 1.70 美元和另一个熔断……然后是 2.00 美元，直到有人实际以 5.25 美元进行交易。鉴于我为我和其他 3 人管理体面的资金量，我24 小时以上没有睡觉，还同时有一份全职工作，“有趣”是我对此唯一的表达。&lt;/p&gt;
+&lt;p&gt;At the end of the day, we left some money on the table but it was worth the effort and fun.&lt;/p&gt;
+&lt;p&gt;一天结束时，我们在桌子上留下了一些钱，但付出的努力和乐趣是值得的。&lt;/p&gt;
+&lt;p&gt;But the real winner was Roaring Kitty: &lt;a href=&#34;https://www.cnbc.com/2021/04/16/roaring-kitty-stands-to-rake-in-millions-on-his-gamestop-options-bet-friday.html&#34;&gt;“20 million profit”&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但真正的赢家是 Roaring Kitty：&lt;a href=&#34;https://www.cnbc.com/2021/04/16/roaring-kitty-stands-to-rake-in-millions-on-his-gamestop-options-bet-friday.html&#34;&gt;“2000 万利润”&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;为什么买入gme会成功-why-did-buying-gme-work&#34;&gt;&lt;strong&gt;为什么买入GME会成功? (Why did buying GME work?)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Mid-December 2020, my fellow market operator Jan noticed something: Gamestop (GME), a video game retailer, was significantly undervalued. The market was pricing imminent death of the franchise due to COVID lockdowns, whilst completely discounting positive developments within the company. And crucially, everyone, and I mean &lt;em&gt;everyone&lt;/em&gt; on the street was shorting GME:&lt;/p&gt;
+&lt;p&gt;2020 年 12 月中旬，我的市场运营商同事 Jan 注意到了一些事情：视频游戏零售商 Gamestop (GME) 被严重低估了。由于 COVID 锁定，市场正在定价特许经营权即将死亡，同时完全不考虑公司内部的积极发展。至关重要的是，每个人，我的意思是街上的每个人都在做空 GME：&lt;/p&gt;
+&lt;h2 id=&#34;-4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*ya0KaQu4jcnPv4kh.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;As a quick refresher, short selling means betting that a given asset will go down in price. In theory, you ask someone who is holding GME shares if you can borrow these shares subject to interest. Should they agree, you sell GME shares for cash. If GME price halves, you can use half the cash you’ve received upon selling GME earlier to buy GME back at a lower price and return it to the lender. The other half of cash is your profit.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;快速复习：卖空意味着押注给定资产的价格会下跌。从理论上讲，您可以询问持有 GME 股票的人是否可以借用这些股票，但需支付利息。如果他们同意，您可以出售 GME 股票以换取现金。如果 GME 价格减半，您可以使用之前出售 GME 时收到的一半现金以较低的价格买回 GME 并将其返还给出借方。另一半现金是你的利润。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Now in reality, this is done through your retail broker or prime broker like Goldman Sachs if you’re an institutional investor. Goldman would act as the intermediary between a large pension fund sitting on a bunch of stocks and hedge funds. Additionally, Goldman would loan the hedge fund money to be able to borrow more stocks than they can afford for leverage.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;现在实际上，如果您是机构投资者，这是通过您的零售经纪人或像高盛这样的主要经纪人完成的。高盛将充当持有大量股票的大型养老基金和对冲基金之间的中介。此外，高盛将借给对冲基金资金，以便借入比杠杆承受能力更多的股票。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Why would someone keep shorting a stock that’s trading so low? Why not just cash in and leave? The reason is that hedge funds often fulfil a specific investment mandate like &lt;em&gt;long/short equities.&lt;/em&gt; In theory, you are long a basket of good stocks like Berkshire Hathaway, Apple and Google whilst shorting a basket of scum stocks like Gamestop, AMC, Deutsche Bank etc. on a constant basis. This way, your investors are only exposed to the difference between the two baskets and don’t care what the general market is doing overall. You might close some of your profitable positions from time to time, but at the end of the day, investors are paying you for being long AND short.&lt;/p&gt;
+&lt;p&gt;为什么有人会继续做空交易如此低的股票？为什么不直接兑现然后离开？原因是对冲基金经常履行特定的投资任务，例如 &lt;em&gt;多头/空头股票。&lt;/em&gt; 从理论上讲，您做多一篮子好股票，如伯克希尔哈撒韦、苹果和谷歌，同时做空一篮子败犬股票，如 Gamestop、AMC、德意志银行银行等。这样，您的投资者只接触到两个篮子之间的差异，而不关心整体市场的整体表现。您可能会不时关闭一些有利可图的头寸，但归根结底，投资者会因为做多和做空而向您支付费用。&lt;/p&gt;
+&lt;p&gt;This is where the apes come in.&lt;br&gt;
+这就是猿人(apes)进来的地方。&lt;/p&gt;
+&lt;h2 id=&#34;-5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*OJLKn4UJBcSBdI5r.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/h2&gt;
+&lt;p&gt;Redditors picked up on &lt;em&gt;Roaring Kitty’s pitch&lt;/em&gt; and started buying GME en masse. As they pushed it higher, some weak short sellers went underwater and decided to close their positions by buying GME. That pushed the stock even higher which emboldened the apes. The apes bought more, shorties covered, GME up, apes bought more… you get the idea: a feedback loop of victorious degeneracy. The apes smelled blood (and opportunity to move out of their mums’ basements), but they wanted more. So they started buying EVERYTHING that was heavily shorted: AMC, NOK, BB, MAC etc.&lt;/p&gt;
+&lt;p&gt;Reddit用户 接受了_Roaring Kitty 的宣传_ 并开始大量购买 GME。当他们将其推高时，一些疲软的卖空者陷入困境并决定通过购买 GME 来平仓。这推高了股票，这让猿人更加胆大妄为。猿人买了更多，空方爆仓清算(继续购买)，GME 涨了，猿人买了更多……你终于明白了：胜利退化的反馈循环。猿人闻到了血腥味(以及搬出妈妈地下室的机会)，但它们想要更多。所以他们开始购买所有被严重做空的东西：AMC、NOK、BB、MAC 等。&lt;/p&gt;
+&lt;h2 id=&#34;-6&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*p2-0_D5jZzTdXfKH&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/h2&gt;
+&lt;p&gt;Melvin capital, a multi-billion dollar hedge fund that was shorting these names, &lt;a href=&#34;https://www.bloomberg.com/news/articles/2021-04-09/hedge-fund-melvin-capital-posts-first-quarter-decline-of-49&#34;&gt;lost half the AuM&lt;/a&gt;, Robinhood had to ban buying and that &lt;a href=&#34;https://www.ft.com/content/50cb746c-b861-44d7-97fd-05f14a38a645&#34;&gt;got Congress involved&lt;/a&gt;, &lt;a href=&#34;https://www.vice.com/en/article/88ae5z/aoc-ted-cruz-agree-robinhood-gamestop-stock-ban-is-unacceptable&#34;&gt;AOC and Ted Cruz agreed on something&lt;/a&gt;… it was mayhem. And I won’t lie, I deeply enjoyed it &lt;em&gt;especially because&lt;/em&gt; I used to work in institutional finance. Smug bankers got beaten at their own game by a bunch of degens, what’s not to like?&lt;/p&gt;
+&lt;p&gt;做空这些名字的数十亿美元对冲基金 Melvin Capital &lt;a href=&#34;https://www.bloomberg.com/news/articles/2021-04-09/hedge-fund-melvin-capital-posts-first-quarter-decline-of-49&#34;&gt;损失了一半的管理资产&lt;/a&gt;，Robinhood 不得不禁止购买，并且 &lt;a href=&#34;https://www.ft.com/content/50cb746c-b861-44d7-97fd-05f14a38a645&#34;&gt;让国会参与其中&lt;/a&gt;， &lt;a href=&#34;https://www.vice.com/en/article/88ae5z/aoc-ted-cruz-agree-robinhood-gamestop-stock-ban-is-unacceptable&#34;&gt;AOC 和 Ted Cruz 就某事达成了一致&lt;/a&gt;……这是一场混乱.我不会撒谎，我非常喜欢它 &lt;em&gt;尤其是因为&lt;/em&gt; 我曾经在机构金融部门工作。自鸣得意的银行家在他们自己的游戏中被一群人打败了，有什么不喜欢的？&lt;/p&gt;
+&lt;p&gt;The point of this story is, you can make a lot of money by understanding &lt;em&gt;market positioning.&lt;/em&gt; Sometimes, it’s good to be short because you think the intrinsic value of something ought to be lower. But sometimes, when everyone is short for the same reason… you can make a killing by taking the other side and going long. At some point, even a tiny uptick in price will cause an avalanche of buying and who knows, maybe you’ll get out of your mum’s basement too someday!&lt;/p&gt;
+&lt;p&gt;这个故事的重点是，你可以通过了解 &lt;em&gt;市场定位赚很多钱&lt;/em&gt; 有时候，做空是件好事，因为你认为某事物的内在价值应该更低。但有时，当每个人都因为同样的原因做空时……你可以通过站在另一边做多来杀人。在某些时候，即使是价格的微小上涨也会导致大量购买，谁知道呢，也许有一天你也会离开你妈妈的地下室！&lt;/p&gt;
+&lt;h1 id=&#34;回到加密货币-back-to-crypto&#34;&gt;&lt;strong&gt;回到加密货币 (Back to Crypto)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;The digital asset space has been maturing. It has become a trillion dollar asset class with billions of dollars exchanged every day. That hasn’t been left unnoticed by the institutional trading crowd.&lt;/p&gt;
+&lt;p&gt;数字资产空间已经成熟。它已成为一个万亿美元的资产类别，每天交易数十亿美元。机构交易人群并没有忽视这一点。&lt;/p&gt;
+&lt;p&gt;Now that the liquidity is there, multi-billion dollar hedge funds fulfilling various mandates like macro, long/short, volatility etc. are setting up crypto desks as we speak. Remember that long/short strategy in stocks we talked about? That’s coming to crypto, which means soon we’ll see traders doing spread trades between &lt;em&gt;good&lt;/em&gt; tokens vs &lt;em&gt;bad&lt;/em&gt; tokens which leads to short-selling volume.&lt;/p&gt;
+&lt;p&gt;既然流动性已经存在，履行各种任务(如宏观、多头/空头、波动性等)的数十亿美元对冲基金正在设立加密货币柜台。还记得我们谈到的股票多头/空头策略吗？这将涉及加密货币，这意味着很快我们将看到交易者在 &lt;em&gt;好&lt;/em&gt; 代币与 &lt;em&gt;差&lt;/em&gt; 代币之间进行点差交易，这会导致卖空量。&lt;/p&gt;
+&lt;p&gt;These wild swings in equities you’ve seen above…&lt;br&gt;
+您在上面看到的这些股票的剧烈波动……&lt;/p&gt;
+&lt;p&gt;Are coming to the digital asset space with institutional involvement.&lt;br&gt;
+在机构参与的情况下会进入数字资产领域。&lt;/p&gt;
+&lt;h1 id=&#34;euler&#34;&gt;&lt;strong&gt;Euler&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Euler is a permissionless lending protocol that enables anyone to create a lending/borrowing market on any token. Want to earn interest on your $FWB token? No problem. Lend it via our protocol, receive eFWB which entitles you to the deposited $FWB + interest.&lt;/p&gt;
+&lt;p&gt;Euler 是一种无需许可的借贷协议，任何人都可以在任何代币上创建借贷市场。想通过您的 $FWB 代币赚取利息吗？没问题。通过我们的协议借出它，接收 eFWB，它使您有权获得存入的 $FWB + 利息。&lt;/p&gt;
+&lt;p&gt;What if you think their community is massively overvalued and will hit a snag soon? You could first lend (deposit) some eligible collateral like ETH etc. and receive your eETH. With that in your wallet, the protocol will allow you to borrow an asset subject to borrowing requirements.&lt;/p&gt;
+&lt;p&gt;如果您认为他们的社区被严重高估并且很快就会遇到障碍，该怎么办？您可以先借出(存入)一些合格的抵押品，如 ETH 等，然后收到您的 eETH。有了你的钱包，协议将允许你根据借贷要求借入资产。&lt;/p&gt;
+&lt;p&gt;For eg, if you deposit 100 USD worth of ETH, you can only borrow 20 USD worth of FWB. If you’re really certain it will collapse, why not lever up? Sell that FWB you borrowed for ETH, lend the ETH, get more eETH, borrow more FWB etc. until you hit the max allowed borrowing limit. Should FWB collapse, you’ll make a pretty penny as you’re leveraged.&lt;/p&gt;
+&lt;p&gt;例如，如果您存入价值 100 美元的 ETH，您只能借入价值 20 美元的 FWB。如果你真的确定它会崩溃，为什么不加杠杆呢？卖掉你借来的 FWB 换取 ETH，借出 ETH，获得更多的 eETH，借入更多的 FWB 等等，直到你达到允许的最大借款限额。如果 FWB 倒闭，你会在杠杆作用下赚到一大笔钱。&lt;/p&gt;
+&lt;p&gt;If you’re an institutional trader, your job is also to think about risk management at all times. Basic risk management would be something like: “if FWB/ETH goes up against me by 20%, I want to be out of the trade with a loss of 1mio USD”.&lt;/p&gt;
+&lt;p&gt;如果您是机构交易员，您的工作也是时刻考虑风险管理。基本的风险管理类似于：“如果 FWB/ETH 上涨 20%，我想退出交易，损失 1mio USD”。&lt;/p&gt;
+&lt;p&gt;You don’t want to stay short FWB/ETH as it’s going up &amp;gt;20% without being liquidated. FWB/ETH could easily surge by 100% meaning you’ll lose 5x your predetermined loss and probably get fired for lousy execution. This is the entire reason you have dedicated prime brokerages at banks like Goldman, JPM etc.&lt;/p&gt;
+&lt;p&gt;你不想做空 FWB/ETH，因为它会在没有被清算的情况下上涨 &amp;gt;20%。 FWB/ETH 很容易飙升 100%，这意味着你将损失 5 倍的预定损失，并且可能会因为糟糕的交易而被解雇。这就是您在高盛、摩根大通等银行拥有专门的大宗经纪业务的全部原因。&lt;/p&gt;
+&lt;p&gt;In legacy finance, it would look something like this:&lt;br&gt;
+在传统金融中，它看起来像这样：&lt;/p&gt;
+&lt;p&gt;Say you shorted FWB/ETH at 1 but the pair is approaching 1.15, you call up your prime broker and ask for a price.&lt;/p&gt;
+&lt;p&gt;假设您在 1 处做空 FWB/ETH，但该货币交易对比率接近 1.15，您致电您的主要经纪人并询问价格。&lt;/p&gt;
+&lt;p&gt;Goldman: “Bid/offer is 1.18/1.22”&lt;/p&gt;
+&lt;p&gt;高盛：“出价/报价为 1.18/1.22”&lt;/p&gt;
+&lt;p&gt;You: “Mine at 1.22”&lt;/p&gt;
+&lt;p&gt;你：“我在 1.22”&lt;/p&gt;
+&lt;p&gt;“Mine” meaning “I buy at 1.22” in trading floor jargon (selling would be “yours at 1.18”)&lt;/p&gt;
+&lt;p&gt;“我的”在交易大厅行话中的意思是“我以 1.22 的价格买入”(卖出将是“你的 1.18 的价格”)&lt;/p&gt;
+&lt;p&gt;Effectively, you’ve lost a bit more than 1mio USD as you’ve exited at 22% above entry price level instead of 20%, but given liquidity conditions, it was a decent price. Next minute you see some desperate short seller actually &lt;em&gt;lifting an offer&lt;/em&gt; (“bought” in trading floor jargon) at 1.90 to cover his position. &lt;em&gt;Phew&lt;/em&gt;, that was as close as it gets to arranging an interview with McDonalds!&lt;/p&gt;
+&lt;p&gt;实际上，当您以高于入门价格水平 22% 而不是 20% 的价格退出时，您损失了 1mio 美元多一点，但考虑到流动性条件，这是一个不错的价格。下一分钟，您会看到一些绝望的卖空者实际上在 1.90 &lt;em&gt;提出报价&lt;/em&gt;(交易大厅术语中的“买入”)来补仓。 呼呼呼，这已经接近安排对麦当劳的采访了！&lt;/p&gt;
+&lt;h1 id=&#34;euler-风险管理-euler-risk-management&#34;&gt;&lt;strong&gt;Euler = 风险管理 (Euler = Risk management)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;This isn’t legacy finance. To make sure you get liquidated reliably, we have technology!&lt;/p&gt;
+&lt;p&gt;这不是传统金融。为了确保您可靠地清算，我们拥有技术！&lt;/p&gt;
+&lt;h2 id=&#34;-7&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/996/0*__O8MY2ZbwT6sMik.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/h2&gt;
+&lt;p&gt;At Euler, we have implemented mechanisms like stability pools and Dutch auctions to make sure liquidators have a huge incentive to liquidate your positions reliably. These aren’t just “&lt;em&gt;nice to haves&lt;/em&gt;”, as predictable execution is crucial to drive institutional adoption and hence higher utilisation and higher volumes. Through these innovations we are putting Euler at the forefront of this inevitable trend.&lt;/p&gt;
+&lt;p&gt;在 Euler，我们实施了稳定池和荷兰式拍卖等机制，以确保清算人有巨大的动力可靠地清算您的头寸。这些不仅仅是“&lt;em&gt;有就很不错 nice to haves&lt;/em&gt;”，因为可预测的执行对于推动机构采用以及由此带来更高的利用率和更高的交易量至关重要。通过这些创新，我们将Euler置于这一必然趋势的最前沿。&lt;/p&gt;
+&lt;p&gt;You can read more about these mechanisms &lt;a href=&#34;https://docs.euler.finance/getting-started/white-paper#liquidations&#34;&gt;here&lt;/a&gt;.&lt;br&gt;
+您可以在 &lt;a href=&#34;https://docs.euler.finance/getting-started/white-paper#liquidations&#34;&gt;此处&lt;/a&gt; 阅读有关这些机制的更多信息。&lt;/p&gt;
+&lt;h1 id=&#34;euler赋能的交易场景-trading-scenarios-euler-enables&#34;&gt;&lt;strong&gt;Euler赋能的交易场景 (Trading scenarios Euler enables)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Imagine you’re a serious crypto trader (&lt;em&gt;just for a minute)&lt;/em&gt; and you’ve been following the hypothetical rockbuyerDAO that invests in NFTs depicting rocks. Their token is trading around 5 USD and so far, their investments have played out well.&lt;/p&gt;
+&lt;p&gt;想象一下，你是一个严肃的加密交易者(&lt;em&gt;只需一分钟&lt;/em&gt;)，你一直在关注假设的rockbuyerDAO，它投资于描绘岩石的 NFT。他们的代币交易价格约为 5 美元，到目前为止，他们的投资表现良好。&lt;/p&gt;
+&lt;p&gt;Then, you notice someone brought forward a proposal to outsource the investment research to a third party provider: Oakton Stratmont Investment Research. Governance passes the motion almost unanimously and Oakton is paid 5 mio USD per year in USDC.&lt;/p&gt;
+&lt;p&gt;然后，您注意到有人提出将投资研究外包给第三方提供商的建议：Oakton Stratmont Investment Research。治理层几乎一致通过了该议案，Oakton 每年以 USDC 支付 5 mio 美元。&lt;/p&gt;
+&lt;p&gt;Unlike rockbuyerDAO governance members, you are aware of the fact that Oakton is a scam. Their previous head of research was convicted of fraud and the people listed on the website don’t even have LinkedIn profiles.&lt;/p&gt;
+&lt;p&gt;与 rockbuyerDAO 治理成员不同，您知道 Oakton 是一个骗局。他们以前的研究负责人被判犯有欺诈罪，网站上列出的人甚至没有 LinkedIn 个人资料。&lt;/p&gt;
+&lt;p&gt;You put on a huge short position vs ETH expecting imminent collapse.&lt;br&gt;
+你对 ETH 持有巨大的空头头寸，预计即将崩溃。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/682/0*wY0A9Au_fjR-1EQw.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;（这是你的Michael Burry时刻This is your Michael Burry moment）&lt;/p&gt;
+&lt;p&gt;Days pass, and the price keeps grinding higher against you. You add collateral to short more. It keeps moving against you and you’re very frustrated.&lt;/p&gt;
+&lt;p&gt;日子一天天过去，价格不断上涨，对你不利。你增加抵押品做空更多。它一直对你不利，你非常沮丧。&lt;/p&gt;
+&lt;p&gt;As you analyse onchain data, you realise that you’re not the only smart kid on the block. 10 other addresses have put on a combined short position of 12 mio USD and they’re all bleeding. This could quickly become a massacre, especially since average daily volume is circa 1 mio USD, i.e. they’d struggle to cover.&lt;/p&gt;
+&lt;p&gt;当您分析链上数据时，您会意识到您并不是唯一聪明的孩子。其他 10 个地址的空头头寸合计为 12 mio USD，它们都在流血。这可能很快成为一场大屠杀，特别是因为平均每日交易量约为 1 兆美元，即他们很难弥补。&lt;/p&gt;
+&lt;p&gt;You start digging more diligently this time and schedule a call with Oakton under the pretence of seeking their services. The new head of research seems like a very knowledgeable guy with serious credentials, and furthermore tells you that he turned the entire place around just recently after the previous head was convicted.&lt;/p&gt;
+&lt;p&gt;这次你开始更加努力地挖掘，并以寻求服务的名义安排与奥克顿的通话。新的研究负责人似乎是一个知识渊博的人，资历很深，而且还告诉你，他在前任负责人被判有罪后不久就扭转了整个局势。&lt;/p&gt;
+&lt;p&gt;You make a few calls and realise that he has real pedigree and has already done some high quality work for previous projects as an independent advisor.&lt;/p&gt;
+&lt;p&gt;你打了几个电话，意识到他有真正的血统，并且作为独立顾问已经为以前的项目做了一些高质量的工作。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This is big.&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;事情大条了！&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Immediately, you cover your short at a slight loss and buy rockbuyerDAO token in size. Oakton’s first investment proposal is an absolute killer and the token jumps by 10%, forcing some short sellers to cover their shorts and to buy the token. As the buying pressure pushes the token higher, more people are forced to get out, creating a vicious loop akin to what happened to GME.&lt;/p&gt;
+&lt;p&gt;立即，您以轻微的损失弥补您的空头并购买相应大小的 rockbuyerDAO 代币。 Oakton 的第一个投资方案绝对是一个杀手锏，代币暴涨 10%，迫使一些卖空者回补空头并购买代币。随着购买压力推高代币，更多人被迫退出，形成类似于 GME 发生的恶性循环。&lt;/p&gt;
+&lt;h2 id=&#34;-8&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/954/0*UVIevx6-_gc4-ONU.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/h2&gt;
+&lt;p&gt;You on the other hand are balling because you’ve:&lt;br&gt;
+另一方面，您正在打球，因为您已经：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Understood market positioning&lt;br&gt;
+了解市场定位&lt;/li&gt;
+&lt;li&gt;Done deep due diligence&lt;br&gt;
+做了深入的尽职调查&lt;/li&gt;
+&lt;li&gt;Cut your losses early and flipped.&lt;br&gt;
+尽早止损并翻转&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;All of this was enabled by Euler and its underlying technology, which will create permissionless markets on any token and crucially, liquidate you reliably when you are on the wrong side of the trade.&lt;/p&gt;
+&lt;p&gt;所有这一切都是由 Euler 及其底层技术实现的，它将在任何代币上创建无需许可的市场，并且至关重要的是，当您处于交易的错误一方时，可以可靠地将您清算。&lt;/p&gt;
+&lt;h1 id=&#34;风险-risks&#34;&gt;&lt;strong&gt;风险 (Risks)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;If what was described above fits your trading style, it’s important to understand the risks.&lt;/p&gt;
+&lt;p&gt;如果上述内容符合您的交易风格，了解风险很重要。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Liquidation&lt;/em&gt;: while we believe our innovations are a game changer, there is no guarantee that you’ll be liquidated. Which is why it’s important to understand things like:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;清算&lt;/em&gt;：虽然我们相信我们的创新改变了游戏规则，但不能保证你会被清算。这就是为什么理解以下内容很重要的原因：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Liquidity of your token (market cap, average volume, size of the liquidity pool)&lt;br&gt;
+代币的流动性(市值、平均交易量、流动资金池的规模)&lt;/li&gt;
+&lt;li&gt;Volatility (especially during tail scenarios)&lt;br&gt;
+波动性(尤其是在尾部场景中)&lt;/li&gt;
+&lt;li&gt;Size of your position (also combined size of all short sellers) versus average volume&lt;br&gt;
+您的头寸规模(也是所有卖空者的总规模)与平均交易量&lt;/li&gt;
+&lt;li&gt;Idiosyncratic risks of the token (smart contract risk, centralisation risk, auditing etc.)&lt;br&gt;
+代币的特殊风险(智能合约风险、中心化风险、审计等)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Luckily, we’re diligently analysing these things through our risk framework and will be publishing our views on specific tokens. Nevertheless, one should always do his/her own research.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;幸运的是，我们正在通过我们的风险框架努力分析这些事情，并将发布我们对特定代币的看法。然而，一个人应该总是做他/她自己的研究。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Interest rate risk:&lt;/em&gt; when you borrow a token, you are paying variable interest. The more people borrow, the higher the utilisation rate, and the higher the interest rate. Higher accumulated interest owed results in higher debts, which may lead to unwanted liquidations.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;利率风险：&lt;/em&gt; 当您借入代币时，您支付的是浮动利息。借的人越多，利用率就越高，利率也就越高。较高的累积利息会导致较高的债务，这可能会导致不必要的清算。&lt;/p&gt;
+&lt;p&gt;Additionally, should most lenders withdraw their tokens from the lending pool, utilisation will skyrocket leading to increased borrowing rates.&lt;/p&gt;
+&lt;p&gt;此外，如果大多数出借方从借贷池中撤回其代币，利用率将飙升，从而导致借贷利率上升。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: we are planning to cap interest rates in worst case scenarios to prevent massive liquidation spirals.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;注意：我们计划在最坏的情况下限制利率，以防止大规模清算螺旋。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Lending risks:&lt;/em&gt; If you’re on the lending side, you’re at risk of not being able to immediately withdraw your tokens from the lending pool. This may happen if any of your tokens are used for borrowing purposes. Hence, it’s important to understand your share of the lending pool and withdrawal risk.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;出借风险：&lt;/em&gt; 如果您是出借方，您将面临无法立即从借贷池中提取代币的风险。如果您的任何代币用于借贷目的，则可能会发生这种情况。因此，了解您在贷款池中的份额和提款风险非常重要。&lt;/p&gt;
+&lt;h1 id=&#34;结论-conclusion&#34;&gt;&lt;strong&gt;结论 (Conclusion)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;There is a plethora of trading strategies waiting to be deployed in the digital asset space beyond mere hodling, and we are excited to roll out our protocol to enable that. Through innovations like stability pools, Dutch auctions and many more things to come, we will support a resilient environment capable of accommodating traders of all sizes, from your average trader to hedge fund whales.&lt;/p&gt;
+&lt;p&gt;除了囤积之外，还有大量的交易策略等待部署在数字资产领域，我们很高兴推出我们的协议来实现这一点。通过稳定池、荷兰式拍卖等创新以及未来的更多活动，我们将支持一个有弹性的环境，能够容纳从普通交易者到对冲基金鲸鱼等各种规模的交易者。&lt;/p&gt;
+&lt;h1 id=&#34;关于euler-about-euler&#34;&gt;关于Euler (About Euler)&lt;/h1&gt;
+&lt;p&gt;Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit &lt;a href=&#34;https://www.euler.finance/&#34;&gt;euler.finance&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 &lt;a href=&#34;https://www.euler.finance/&#34;&gt;euler.finance&lt;/a&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;加入社区-join-the-community&#34;&gt;加入社区 (Join the Community)&lt;/h1&gt;
+&lt;p&gt;Follow us &lt;a href=&#34;https://twitter.com/eulerfinance&#34;&gt;Twitter&lt;/a&gt;. Join our &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;. Keep in touch on Telegram (&lt;a href=&#34;https://t.me/eulerfinance_official&#34;&gt;community&lt;/a&gt;, &lt;a href=&#34;https://t.me/eulerfinance&#34;&gt;announcements&lt;/a&gt;). Check out our &lt;a href=&#34;https://www.euler.finance/&#34;&gt;website&lt;/a&gt;. Connect with us on &lt;a href=&#34;https://www.linkedin.com/company/euler-xyz/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;关注我们 &lt;a href=&#34;https://twitter.com/eulerfinance&#34;&gt;Twitter&lt;/a&gt;。加入我们的 &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;。在 Telegram 上保持联系(&lt;a href=&#34;https://t.me/eulerfinance_official&#34;&gt;community&lt;/a&gt;、&lt;a href=&#34;https://t.me/eulerfinance&#34;&gt;announcements&lt;/a&gt;)。查看我们的&lt;a href=&#34;https://www.euler.finance/&#34;&gt;网站&lt;/a&gt;。在 &lt;a href=&#34;https://www.linkedin.com/company/euler-xyz/&#34;&gt;LinkedIn&lt;/a&gt; 上与我们联系。&lt;/p&gt;
+">DeFi轧空 (DeFi Short Squeeze)</a>
       </div>
       
       <div class="item">
