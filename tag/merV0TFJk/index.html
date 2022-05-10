@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Web3 is REAL</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1652151226284">
+<link rel="shortcut icon" href="/favicon.ico?v=1652151730262">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -212,7 +212,7 @@
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">108</span>
+        <span class="site-item-stat-count">111</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -391,8 +391,6 @@
       
       
       
-      
-      
       <a href="https://chainguys.github.io/post/euler-bai-pi-shu-zhong-ying-wen-dui-zhao-ban-eng-chn/">
         <div class="motion-warpper">
           <div class="tag-post-node">
@@ -403,6 +401,24 @@
           </div>
         </div>
       </a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -861,121 +877,6 @@
       <hr>
     </div>
     <div class="result" id="result">
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-de-yu-yan-ji-feng-xian-ping-fen-xi-tong-eulers-oracle-risk-grading-system/"" data-c="
-          &lt;p&gt;原文:&lt;a href=&#34;https://blog.euler.finance/eulers-oracle-risk-grading-system-93f47d68205c&#34;&gt;https://blog.euler.finance/eulers-oracle-risk-grading-system-93f47d68205c&lt;/a&gt;&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*LMcUWQ4ppQ0qEJ2BzC4rWw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;em&gt;As a user of a non-custodial lending protocol, it is up to you to understand factors like oracle manipulation and make a judgement call on when it is safe to use a given oracle. Here, we help explain how and why Uniswap’s oracles are sometimes risky, and introduce a new price oracle rating tool on the Euler UI to help users understand and manage these risks.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;作为非托管借贷协议的用户，您决定是否要了解预言机操纵等因素，并判断何时可以安全使用给定的预言机。在这里，我们帮助解释 Uniswap 的预言机的机制以及为什么有时会有风险，并在 Euler UI 上引入新的价格预言机评级工具，以帮助用户了解和管理这些风险。&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;TL;DR: lending into anything with an oracle rating below B is extremely risky!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;省流助手: 借出预言机评级低于 B 的任何东西都是非常危险的！&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&#34;简介-introduction&#34;&gt;&lt;strong&gt;简介 (Introduction)&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;Euler is a non-custodial lending protocol which allows its users to judge which markets are safe for them to lend and borrow on.&lt;/p&gt;
-&lt;p&gt;Euler 是一种非托管借贷协议，它允许用户自行判断哪些市场对他们来说是安全的借贷。&lt;/p&gt;
-&lt;p&gt;A key component of the risks borne by users on Euler derives from the price oracles provided by Uniswap V3. These oracles may be vulnerable to manipulation when the Uniswap V3 pool they derive from is illiquid or thinly traded.&lt;/p&gt;
-&lt;p&gt;Euler 用户承担的风险的一个关键组成部分来自 Uniswap V3 提供的价格预言机。当这些预言机衍生的 Uniswap V3 矿池流动性不足或交易减少时，这些预言机可能容易受到操纵。&lt;/p&gt;
-&lt;p&gt;To help users better identify markets at risk of price manipulation attacks, we have introduced an oracle rating system to the Euler front-end, designed to rank price oracles for each market by their associated liquidity and vulnerability to manipulation.&lt;/p&gt;
-&lt;p&gt;为了帮助用户更好地识别面临价格操纵攻击风险的市场，我们在 Euler 前端引入了一个预言机评级系统，旨在根据每个市场的相关流动性和反操控性对价格预言机进行排名。&lt;/p&gt;
-&lt;p&gt;Users should carefully consider the risks involved in depositing large amounts of assets on Euler in markets with a poor oracle rating. Large deposits of assets may entice attackers to manipulate the price on Uniswap in order to drain funds on Euler.&lt;/p&gt;
-&lt;p&gt;用户应仔细考虑在预言机评级较差的市场中将大量资产存入 Euler 所涉及的风险。大量资产存款可能会诱使攻击者操纵 Uniswap 的价格，进而消耗 Euler 上的资金。&lt;/p&gt;
-&lt;h1 id=&#34;哪些市场能安全出借-which-markets-are-safe-to-lend-on&#34;&gt;&lt;strong&gt;哪些市场能安全出借? (Which markets are safe to lend on?)&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;All forms of lending are risky, whether depositing crypto assets in a lending protocol or depositing fiat currency into a bank account. Ultimately, there is no guarantee that borrowers will repay their loans.&lt;/p&gt;
-&lt;p&gt;所有形式的借贷都是有风险的，无论是在借贷协议中存入加密资产还是将法定货币存入银行账户。最终，无法保证借款人会偿还贷款。&lt;/p&gt;
-&lt;p&gt;However, some forms of lending are less risky than others. If the borrowed and collateral asset pricing is more difficult to manipulate, loss of funds is less likely, all other things being equal.&lt;/p&gt;
-&lt;p&gt;但是，某些形式的贷款比其他形式的风险要小。如果借入和抵押的资产定价更难以操纵，则在所有其他条件相同的情况下，资金损失的可能性较小。&lt;/p&gt;
-&lt;h1 id=&#34;预言机是什么-what-is-an-oracle&#34;&gt;&lt;strong&gt;预言机是什么? (What is an oracle?)&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;Within the context of pricing, an oracle is an on-chain API for price. Simply put, it tells you what the price of an asset is at a given time.&lt;/p&gt;
-&lt;p&gt;在定价的背景下，预言机是价格的链上 API。简而言之，它告诉您资产在给定时间的价格。&lt;/p&gt;
-&lt;h1 id=&#34;什么是euler的预言机解决方案what-is-eulers-oracle-solution&#34;&gt;什么是Euler的预言机解决方案?(What is Euler’s Oracle Solution?)&lt;/h1&gt;
-&lt;p&gt;In order to enable lending and borrowing on virtually any ERC20 token, we have chosen in our opinion the most decentralised oracle solution available: Uniswap TWAP (Time Weighted Average Price).&lt;/p&gt;
-&lt;p&gt;为了实现几乎任何 ERC20 代币的借贷，我们选择了我们认为最去中心化的预言机解决方案：Uniswap TWAP（时间加权平均价格）。&lt;/p&gt;
-&lt;p&gt;Specifically, when someone activates a lending market on the XYZ token, the protocol automatically uses Uniswap V3’s TWAP (essentially a moving average of the price) on the first existing 0.3%, 0.05%, 1% fee-level pool in order to determine the price of XYZ.&lt;/p&gt;
-&lt;p&gt;具体来说，当有人在 XYZ 代币上激活借贷市场时，协议会自动在第一个现有的 0.3%、0.05%、1% 费用水平池上使用 Uniswap V3 的 TWAP（本质上是价格的移动平均线），以确定XYZ 的价格。&lt;/p&gt;
-&lt;p&gt;For instance, when someone activated the &lt;a href=&#34;https://app.euler.finance/market/0x6b175474e89094c44da98b954eedeac495271d0f&#34;&gt;DAI lending pool on Euler&lt;/a&gt; for the first time, the protocol queried Uniswap V3 for available pools of DAI/ETH:&lt;/p&gt;
-&lt;p&gt;例如，当有人第一次激活 &lt;a href=&#34;https://app.euler.finance/market/0x6b175474e89094c44da98b954eedeac495271d0f&#34;&gt;Euler 上的 DAI 借贷池&lt;/a&gt; 时，该协议会向 Uniswap V3 查询可用的 DAI/ETH 池：&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*5RBdjCloT0ZYnfY2oNOTLw.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;p&gt;It automatically chose the 0.3% pool and the respective TWAP as the price oracle for DAI on Euler.&lt;/p&gt;
-&lt;p&gt;它自动选择了 0.3% 的池和相应的 TWAP 作为Euler上 DAI 的价格预言机。&lt;/p&gt;
-&lt;h1 id=&#34;什么是预言机攻击场景-what-is-an-oracle-attack-scenario&#34;&gt;什么是预言机攻击场景? (What is an oracle attack scenario?)&lt;/h1&gt;
-&lt;p&gt;While we think Uniswap’s oracles are best suited for our permissionless lending protocol, depositing into an Euler pool backed by illiquid liquidity pools on Uniswap can lead to devastating results.&lt;/p&gt;
-&lt;p&gt;虽然我们认为 Uniswap 的预言机最适合我们的无许可借贷协议，但存入由 Uniswap 上流动性欠佳的池对应的 Euler 池可能会导致毁灭性的结果。&lt;/p&gt;
-&lt;h2 id=&#34;让我们一起来看一个案例-lets-run-through-an-example&#34;&gt;让我们一起来看一个案例 (Let’s run through an example:)&lt;/h2&gt;
-&lt;p&gt;Suppose someone activated the $HOGE lending pool on Euler and deposited $5mil worth of $HOGE.&lt;/p&gt;
-&lt;p&gt;假设有人在 Euler 上激活了 $HOGE 借贷池并存入了价值 500 万美元的 $HOGE。&lt;/p&gt;
-&lt;p&gt;As there are no 0.3% or 0.05% fee pools on Uniswap V3, Euler will use the 1% pool for the oracle. There is, however, a bit of a problem:&lt;/p&gt;
-&lt;p&gt;由于 Uniswap V3 上没有 0.3% 或 0.05% 的费用池，Euler 将使用 1% 的池用于预言机。但是，有一点问题：&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*RIBNSgZb5O2eoboN0Aqa5Q.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;p&gt;There is virtually no liquidity in &lt;a href=&#34;https://info.uniswap.org/#/pools/0xb74f0303ebfe9d5c08b6f89d9baf121117cd9dc9&#34;&gt;that Uniswap pool&lt;/a&gt;.&lt;br&gt;
-&lt;a href=&#34;https://info.uniswap.org/#/pools/0xb74f0303ebfe9d5c08b6f89d9baf121117cd9dc9&#34;&gt;那个 Uniswap 池&lt;/a&gt; 中几乎没有流动性。&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/800/1*auMnoCcBU_Bs5Bt06vaI_w.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;p&gt;This is literally free money. All an attacker has to do is sell some tiny amount of $HOGE for $ETH on Uniswap to crash the price of $HOGE to almost zero and keep it there for a few blocks so the TWAP follows the spot price. Since there is no liquidity whatsoever, it doesn’t pay off for arbitrageurs to bring the price back to normal as slippage will be enormous.&lt;/p&gt;
-&lt;p&gt;这实际上是免费的钱。攻击者所要做的就是在 Uniswap 上以 $ETH 的价格出售少量 $HOGE，从而使 $HOGE 的价格几乎为零并将其保持几个区块，以便 TWAP 跟随现货价格。由于没有任何流动性，套利者将价格恢复正常并没有回报，因为滑点是巨大的。&lt;/p&gt;
-&lt;p&gt;After that, the attacker needs to deposit a bit of collateral like USDC and borrow all the $HOGE that is now valued at almost $0 (due to the oracle attack). In reality, however, it’s actually worth $5mil and the attacker can offload the stolen $HOGE on Uniswap V2, gate.io, PancakeSwap etc. and make millions without any real costs.&lt;/p&gt;
-&lt;p&gt;之后，攻击者需要存入一些像 USDC 这样的抵押品，并借入现在价值几乎为 0 美元的所有 $HOGE（由于预言机攻击）。然而，在现实中，它实际上价值 500 万美元，攻击者可以在 Uniswap V2、gate.io、PancakeSwap 等平台上出售被盗的 HOGE，并在没有任何实际成本的情况下赚取数百万美元。&lt;/p&gt;
-&lt;p&gt;In fact, many well-known tokens have with very liquid markets on Uniswap V2, CEXes but barely any liquidity on Uniswap V3. This creates an easy risk vector: manipulate and drain a lending pool based on Uniswap V3 pricing, and sell the stolen assets on more liquid exchanges.&lt;/p&gt;
-&lt;p&gt;事实上，许多知名代币在 Uniswap V2、CEXes 上都有流动性不错的市场，但在 Uniswap V3 上几乎没有任何流动性。这创造了一个简单的风险向量：根据 Uniswap V3 定价操纵和耗尽贷款池，并在流动性更强的交易所出售被盗资产。&lt;/p&gt;
-&lt;p&gt;If you’ve already deposited into an Euler pool with an illiquid Uniswap V3 oracle… please realise you’re taking on enormous risk.&lt;/p&gt;
-&lt;p&gt;如果您已经使用流动性欠佳的 Uniswap V3 预言机存入Euler池……请意识到您正在承担巨大的风险。&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/960/1*Ne05sCBiSUY2xN9ipGweSw.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;p&gt;Luckily, we’ve come up with a &lt;strong&gt;risk grading system&lt;/strong&gt; for you to be aware of the risks.&lt;/p&gt;
-&lt;p&gt;幸运的是，我们提出了一个&lt;strong&gt;风险评分系统&lt;/strong&gt;，让您了解风险。&lt;/p&gt;
-&lt;h1 id=&#34;euler的风险评分系统-eulers-oracle-risk-grading-system&#34;&gt;Euler的风险评分系统 (Euler’s Oracle Risk Grading System)&lt;/h1&gt;
-&lt;p&gt;There are two main factors that influence the ease of attacking a Uniswap V3 oracle: TVL and concentration of liquidity.&lt;/p&gt;
-&lt;p&gt;有两个主要因素会影响攻击 Uniswap V3 预言机的难易程度：TVL 和流动性集中度。&lt;/p&gt;
-&lt;h2 id=&#34;极端集中流动性-uber-concentrated-liquidity&#34;&gt;极端集中流动性 (Uber-concentrated liquidity)&lt;/h2&gt;
-&lt;p&gt;If there is $20 mil USD TVL locked in but it is concentrated around one tick like in this example:&lt;/p&gt;
-&lt;p&gt;如果锁定了 2000 万美元的 TVL，但它集中在一个刻度附近，如下例所示：&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*ImynP18RJ1JMYOKJd2-bWw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;p&gt;There really isn’t much of a point, because beyond that tick you can push the price anywhere and perpetrate the attack I’ve described above.&lt;/p&gt;
-&lt;p&gt;真的没有什么意义，因为超出那个刻度，你可以将价格推到任何地方并实施我上面描述的攻击。&lt;/p&gt;
-&lt;p&gt;扭曲流动性状况 (Skewed liquidity profile)&lt;/p&gt;
-&lt;p&gt;Watch out for false friends including highly skewed liquidity profiles like this:&lt;/p&gt;
-&lt;p&gt;提防虚假朋友，包括像这样高度扭曲的流动性概况：&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*FTLmp369F6_r8IkyHvYqxQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;p&gt;In this chart, there is plenty of liquidity to XYZ/ETH upside, but barely any to the downside. This means while overall TVL and liquidity are decent, you could still easily crash the price.&lt;/p&gt;
-&lt;p&gt;在这张图表中，XYZ/ETH 上行有充足的流动性，但下行几乎没有。这意味着虽然整体 TVL 和流动性不错，但您仍然可以轻松地使价格崩盘。&lt;/p&gt;
-&lt;h2 id=&#34;理想场景-ideal-scenario&#34;&gt;理想场景 (Ideal scenario)&lt;/h2&gt;
-&lt;p&gt;A much better setup is when liquidity is spread across, making the attack costly along every price tick. &lt;a href=&#34;https://info.uniswap.org/#/pools/0xd83d78108dd0d1dffff11ea3f99871671a52488b&#34;&gt;PAX/ETH&lt;/a&gt; is a good example:&lt;/p&gt;
-&lt;p&gt;一个更好的设置是当流动性分散时，使得每次价格变动的攻击都代价高昂。 &lt;a href=&#34;https://info.uniswap.org/#/pools/0xd83d78108dd0d1dffff11ea3f99871671a52488b&#34;&gt;PAX/ETH&lt;/a&gt; 就是一个很好的例子：&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;8&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*n8sQCpsuNfZ_mhW0WsLVFA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;h1 id=&#34;评分系统-the-grading-system&#34;&gt;评分系统 (The Grading System)&lt;/h1&gt;
-&lt;p&gt;This is why we’ve come up with a rating that incorporates 3 factors:&lt;br&gt;
-这就是为什么我们提出一个包含三个因素的评级：&lt;/p&gt;
-&lt;h2 id=&#34;锁定在-uniswap-v3-池中的tvl-tvl-locked-in-the-uniswap-v3-pool&#34;&gt;锁定在 Uniswap V3 池中的TVL ：(TVL locked in the Uniswap V3 pool:)&lt;/h2&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;9&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/936/1*M2xlub1qmc-hqY7ly-jHcw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;uniswap-上-100-万美元的-xyz-与-eth-买单的滑点slippage-on-a-1mil-xyz-vs-eth-buy-order-on-uniswap&#34;&gt;Uniswap 上 100 万美元的 XYZ 与 ETH 买单的滑点：(Slippage on a $1mil XYZ vs ETH buy order on Uniswap:)&lt;/h2&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;10&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/938/1*hF4E9s0dgqGvTkdBjH-NSQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;uniswap-上-100-万美元的-xyz-与-eth-卖单的滑点slippage-on-a-1mil-xyz-vs-eth-sell-order-on-uniswap&#34;&gt;Uniswap 上 100 万美元的 XYZ 与 ETH 卖单的滑点：(Slippage on a $1mil XYZ vs ETH sell order on Uniswap:)&lt;/h2&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;11&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/934/1*Leu9q4CQu03CHBy5UD_lgw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;这些评级的总和产生一个综合评级the-sum-of-these-ratings-yields-a-comprehensive-rating&#34;&gt;这些评级的总和产生一个综合评级：(The sum of these ratings yields a comprehensive rating:)&lt;/h2&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;12&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/906/1*ELg4AQ5eo_5uSotJgjSsJw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;p&gt;Which will be displayed on the front-end page of the respective lending pool:&lt;/p&gt;
-&lt;p&gt;将在相应借贷池的前端页面显示：&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;13&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*Y0tqJ3WmEcg3mMJjBAzB8A.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;p&gt;The overall rating goes from A to F and should give users an idea of what the oracle risk is. &lt;strong&gt;&lt;em&gt;Overall, anything below B should probably be avoided!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;总体评级从 A 到 F，应该能让用户了解预言机风险是什么。 &lt;strong&gt;&lt;em&gt;总体而言，应该避免低于 B 的任何借贷！&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Keep in mind that this is merely an indicative tool and we bear no responsibility for loss of funds.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;请记住，这只是一个指示性工具，我们对资金损失不承担任何责任。&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&#34;你能做些什么来让池更安全what-can-you-do-to-make-the-pool-safer&#34;&gt;你能做些什么来让池更安全？(What can you do to make the pool safer?)&lt;/h1&gt;
-&lt;p&gt;As written in our &lt;a href=&#34;https://docs.euler.finance/risk-framework/introduction&#34;&gt;risk docs&lt;/a&gt;, the Euler governance can promote assets to collateral and cross tiers and increase the borrow factors if the asset is deemed less likely to be manipulated. Oracle rating plays a crucial role in this assessment.&lt;/p&gt;
-&lt;p&gt;正如我们的 &lt;a href=&#34;https://docs.euler.finance/risk-framework/introduction&#34;&gt;风险文档&lt;/a&gt; 中所写，Euler治理可以将资产提升为抵押品和跨层/交叉层，并在资产被认为不太可能被操控的情况下增加借入因子。预言机评级在此评估中起着至关重要的作用。&lt;/p&gt;
-&lt;p&gt;If you want a given token to be promoted, we recommend providing as much liquidity as possible over the full range of the Uniswap V3 pool. Feel free to reach out to us if you have questions.&lt;/p&gt;
-&lt;p&gt;如果您希望推广给定的代币，我们建议在 Uniswap V3 池的整个范围内提供尽可能多的流动性。如果您有任何问题，请随时与我们联系。&lt;/p&gt;
-&lt;h1 id=&#34;下一步是什么-whats-next&#34;&gt;下一步是什么? (What’s next?)&lt;/h1&gt;
-&lt;p&gt;This is merely the first version of our ranking tool. Behind the scenes, our team of analysts are working on more sophisticated ways of estimating costs of attacking lending pools over multiple blocks given probabilistic scenarios involving price, liquidity profiles, TVLs, etc. Stay tuned for more!&lt;/p&gt;
-&lt;p&gt;这只是我们排名工具的第一个版本。在幕后，我们的分析师团队正在研究更复杂的方法，以估计在涉及价格、流动性概况、TVL 等的概率场景下，在多个区块上攻击池的成本。敬请期待更多！&lt;/p&gt;
-&lt;h1 id=&#34;我们正在招聘we-are-hiring&#34;&gt;我们正在招聘！(We are hiring!)&lt;/h1&gt;
-&lt;p&gt;We are always on the lookout for exceptional people. If you feel inspired by what is happening in DeFi, and think you have what it takes to shape the future of finance, we want to talk to you. We’ll soon be advertising new roles for an in-house counsel, more smart contract developers, and a product design lead. But whatever your talent, if you think you can add value, feel free to reach out. You can read more about careers at Euler &lt;a href=&#34;https://www.euler.finance/#/careers&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;我们一直在寻找杰出的人才。如果你对 DeFi 中正在发生的事情感到鼓舞，并认为你有能力塑造金融的未来，我们想和你谈谈。我们很快就会为内部法律顾问、更多智能合约开发人员和产品设计负责人招聘新职位。但是，无论您的才华如何，如果您认为自己可以增加价值，请随时与我们联系。您可以在 &lt;a href=&#34;https://www.euler.finance/#/careers&#34;&gt;此处&lt;/a&gt; 阅读有关 Euler 职业生涯的更多信息。&lt;/p&gt;
-&lt;h1 id=&#34;关于euler-about-euler&#34;&gt;关于Euler (About Euler)&lt;/h1&gt;
-&lt;p&gt;Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit &lt;a href=&#34;https://www.euler.finance/&#34;&gt;euler.finance&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 &lt;a href=&#34;https://www.euler.finance/&#34;&gt;euler.finance&lt;/a&gt;。&lt;/p&gt;
-&lt;h1 id=&#34;加入社区-join-the-community&#34;&gt;加入社区 (Join the Community)&lt;/h1&gt;
-&lt;p&gt;Follow us &lt;a href=&#34;https://twitter.com/eulerfinance&#34;&gt;Twitter&lt;/a&gt;. Join our &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;. Keep in touch on Telegram (&lt;a href=&#34;https://t.me/eulerfinance_official&#34;&gt;community&lt;/a&gt;, &lt;a href=&#34;https://t.me/eulerfinance&#34;&gt;announcements&lt;/a&gt;). Check out our &lt;a href=&#34;https://www.euler.finance/&#34;&gt;website&lt;/a&gt;. Connect with us on &lt;a href=&#34;https://www.linkedin.com/company/euler-xyz/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;关注我们 &lt;a href=&#34;https://twitter.com/eulerfinance&#34;&gt;Twitter&lt;/a&gt;。加入我们的 &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;。在 Telegram 上保持联系(&lt;a href=&#34;https://t.me/eulerfinance_official&#34;&gt;community&lt;/a&gt;、&lt;a href=&#34;https://t.me/eulerfinance&#34;&gt;announcements&lt;/a&gt;)。查看我们的&lt;a href=&#34;https://www.euler.finance/&#34;&gt;网站&lt;/a&gt;。在 &lt;a href=&#34;https://www.linkedin.com/company/euler-xyz/&#34;&gt;LinkedIn&lt;/a&gt; 上与我们联系。&lt;/p&gt;
-">Euler的预言机风险评分系统 (Euler’s Oracle Risk Grading System)</a>
-      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/"" data-c="
@@ -2093,6 +1994,121 @@ Scalability and liquidity from &lt;strong&gt;Solana&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;如需查看pdf文件，请访问（For pdf file, please kindly see)：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;https://drive.google.com/file/d/103GGDaKCOTEBIfLsThALWzRuuFDoTMPQ/view?usp=sharing&lt;/p&gt;
 ">子空间（Subspace）：种收者困境的解决方案(ENG-CHN) Subspace: A Solution to the Farmer’s Dilemma</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-de-yu-yan-ji-feng-xian-ping-fen-xi-tong-eulers-oracle-risk-grading-system/"" data-c="
+          &lt;p&gt;原文:&lt;a href=&#34;https://blog.euler.finance/eulers-oracle-risk-grading-system-93f47d68205c&#34;&gt;https://blog.euler.finance/eulers-oracle-risk-grading-system-93f47d68205c&lt;/a&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*LMcUWQ4ppQ0qEJ2BzC4rWw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;As a user of a non-custodial lending protocol, it is up to you to understand factors like oracle manipulation and make a judgement call on when it is safe to use a given oracle. Here, we help explain how and why Uniswap’s oracles are sometimes risky, and introduce a new price oracle rating tool on the Euler UI to help users understand and manage these risks.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;作为非托管借贷协议的用户，您决定是否要了解预言机操纵等因素，并判断何时可以安全使用给定的预言机。在这里，我们帮助解释 Uniswap 的预言机的机制以及为什么有时会有风险，并在 Euler UI 上引入新的价格预言机评级工具，以帮助用户了解和管理这些风险。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;TL;DR: lending into anything with an oracle rating below B is extremely risky!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;省流助手: 借出预言机评级低于 B 的任何东西都是非常危险的！&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;简介-introduction&#34;&gt;&lt;strong&gt;简介 (Introduction)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Euler is a non-custodial lending protocol which allows its users to judge which markets are safe for them to lend and borrow on.&lt;/p&gt;
+&lt;p&gt;Euler 是一种非托管借贷协议，它允许用户自行判断哪些市场对他们来说是安全的借贷。&lt;/p&gt;
+&lt;p&gt;A key component of the risks borne by users on Euler derives from the price oracles provided by Uniswap V3. These oracles may be vulnerable to manipulation when the Uniswap V3 pool they derive from is illiquid or thinly traded.&lt;/p&gt;
+&lt;p&gt;Euler 用户承担的风险的一个关键组成部分来自 Uniswap V3 提供的价格预言机。当这些预言机衍生的 Uniswap V3 矿池流动性不足或交易减少时，这些预言机可能容易受到操纵。&lt;/p&gt;
+&lt;p&gt;To help users better identify markets at risk of price manipulation attacks, we have introduced an oracle rating system to the Euler front-end, designed to rank price oracles for each market by their associated liquidity and vulnerability to manipulation.&lt;/p&gt;
+&lt;p&gt;为了帮助用户更好地识别面临价格操纵攻击风险的市场，我们在 Euler 前端引入了一个预言机评级系统，旨在根据每个市场的相关流动性和反操控性对价格预言机进行排名。&lt;/p&gt;
+&lt;p&gt;Users should carefully consider the risks involved in depositing large amounts of assets on Euler in markets with a poor oracle rating. Large deposits of assets may entice attackers to manipulate the price on Uniswap in order to drain funds on Euler.&lt;/p&gt;
+&lt;p&gt;用户应仔细考虑在预言机评级较差的市场中将大量资产存入 Euler 所涉及的风险。大量资产存款可能会诱使攻击者操纵 Uniswap 的价格，进而消耗 Euler 上的资金。&lt;/p&gt;
+&lt;h1 id=&#34;哪些市场能安全出借-which-markets-are-safe-to-lend-on&#34;&gt;&lt;strong&gt;哪些市场能安全出借? (Which markets are safe to lend on?)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;All forms of lending are risky, whether depositing crypto assets in a lending protocol or depositing fiat currency into a bank account. Ultimately, there is no guarantee that borrowers will repay their loans.&lt;/p&gt;
+&lt;p&gt;所有形式的借贷都是有风险的，无论是在借贷协议中存入加密资产还是将法定货币存入银行账户。最终，无法保证借款人会偿还贷款。&lt;/p&gt;
+&lt;p&gt;However, some forms of lending are less risky than others. If the borrowed and collateral asset pricing is more difficult to manipulate, loss of funds is less likely, all other things being equal.&lt;/p&gt;
+&lt;p&gt;但是，某些形式的贷款比其他形式的风险要小。如果借入和抵押的资产定价更难以操纵，则在所有其他条件相同的情况下，资金损失的可能性较小。&lt;/p&gt;
+&lt;h1 id=&#34;预言机是什么-what-is-an-oracle&#34;&gt;&lt;strong&gt;预言机是什么? (What is an oracle?)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Within the context of pricing, an oracle is an on-chain API for price. Simply put, it tells you what the price of an asset is at a given time.&lt;/p&gt;
+&lt;p&gt;在定价的背景下，预言机是价格的链上 API。简而言之，它告诉您资产在给定时间的价格。&lt;/p&gt;
+&lt;h1 id=&#34;什么是euler的预言机解决方案what-is-eulers-oracle-solution&#34;&gt;什么是Euler的预言机解决方案?(What is Euler’s Oracle Solution?)&lt;/h1&gt;
+&lt;p&gt;In order to enable lending and borrowing on virtually any ERC20 token, we have chosen in our opinion the most decentralised oracle solution available: Uniswap TWAP (Time Weighted Average Price).&lt;/p&gt;
+&lt;p&gt;为了实现几乎任何 ERC20 代币的借贷，我们选择了我们认为最去中心化的预言机解决方案：Uniswap TWAP（时间加权平均价格）。&lt;/p&gt;
+&lt;p&gt;Specifically, when someone activates a lending market on the XYZ token, the protocol automatically uses Uniswap V3’s TWAP (essentially a moving average of the price) on the first existing 0.3%, 0.05%, 1% fee-level pool in order to determine the price of XYZ.&lt;/p&gt;
+&lt;p&gt;具体来说，当有人在 XYZ 代币上激活借贷市场时，协议会自动在第一个现有的 0.3%、0.05%、1% 费用水平池上使用 Uniswap V3 的 TWAP（本质上是价格的移动平均线），以确定XYZ 的价格。&lt;/p&gt;
+&lt;p&gt;For instance, when someone activated the &lt;a href=&#34;https://app.euler.finance/market/0x6b175474e89094c44da98b954eedeac495271d0f&#34;&gt;DAI lending pool on Euler&lt;/a&gt; for the first time, the protocol queried Uniswap V3 for available pools of DAI/ETH:&lt;/p&gt;
+&lt;p&gt;例如，当有人第一次激活 &lt;a href=&#34;https://app.euler.finance/market/0x6b175474e89094c44da98b954eedeac495271d0f&#34;&gt;Euler 上的 DAI 借贷池&lt;/a&gt; 时，该协议会向 Uniswap V3 查询可用的 DAI/ETH 池：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*5RBdjCloT0ZYnfY2oNOTLw.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;It automatically chose the 0.3% pool and the respective TWAP as the price oracle for DAI on Euler.&lt;/p&gt;
+&lt;p&gt;它自动选择了 0.3% 的池和相应的 TWAP 作为Euler上 DAI 的价格预言机。&lt;/p&gt;
+&lt;h1 id=&#34;什么是预言机攻击场景-what-is-an-oracle-attack-scenario&#34;&gt;什么是预言机攻击场景? (What is an oracle attack scenario?)&lt;/h1&gt;
+&lt;p&gt;While we think Uniswap’s oracles are best suited for our permissionless lending protocol, depositing into an Euler pool backed by illiquid liquidity pools on Uniswap can lead to devastating results.&lt;/p&gt;
+&lt;p&gt;虽然我们认为 Uniswap 的预言机最适合我们的无许可借贷协议，但存入由 Uniswap 上流动性欠佳的池对应的 Euler 池可能会导致毁灭性的结果。&lt;/p&gt;
+&lt;h2 id=&#34;让我们一起来看一个案例-lets-run-through-an-example&#34;&gt;让我们一起来看一个案例 (Let’s run through an example:)&lt;/h2&gt;
+&lt;p&gt;Suppose someone activated the $HOGE lending pool on Euler and deposited $5mil worth of $HOGE.&lt;/p&gt;
+&lt;p&gt;假设有人在 Euler 上激活了 $HOGE 借贷池并存入了价值 500 万美元的 $HOGE。&lt;/p&gt;
+&lt;p&gt;As there are no 0.3% or 0.05% fee pools on Uniswap V3, Euler will use the 1% pool for the oracle. There is, however, a bit of a problem:&lt;/p&gt;
+&lt;p&gt;由于 Uniswap V3 上没有 0.3% 或 0.05% 的费用池，Euler 将使用 1% 的池用于预言机。但是，有一点问题：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*RIBNSgZb5O2eoboN0Aqa5Q.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;There is virtually no liquidity in &lt;a href=&#34;https://info.uniswap.org/#/pools/0xb74f0303ebfe9d5c08b6f89d9baf121117cd9dc9&#34;&gt;that Uniswap pool&lt;/a&gt;.&lt;br&gt;
+&lt;a href=&#34;https://info.uniswap.org/#/pools/0xb74f0303ebfe9d5c08b6f89d9baf121117cd9dc9&#34;&gt;那个 Uniswap 池&lt;/a&gt; 中几乎没有流动性。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/800/1*auMnoCcBU_Bs5Bt06vaI_w.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;This is literally free money. All an attacker has to do is sell some tiny amount of $HOGE for $ETH on Uniswap to crash the price of $HOGE to almost zero and keep it there for a few blocks so the TWAP follows the spot price. Since there is no liquidity whatsoever, it doesn’t pay off for arbitrageurs to bring the price back to normal as slippage will be enormous.&lt;/p&gt;
+&lt;p&gt;这实际上是免费的钱。攻击者所要做的就是在 Uniswap 上以 $ETH 的价格出售少量 $HOGE，从而使 $HOGE 的价格几乎为零并将其保持几个区块，以便 TWAP 跟随现货价格。由于没有任何流动性，套利者将价格恢复正常并没有回报，因为滑点是巨大的。&lt;/p&gt;
+&lt;p&gt;After that, the attacker needs to deposit a bit of collateral like USDC and borrow all the $HOGE that is now valued at almost $0 (due to the oracle attack). In reality, however, it’s actually worth $5mil and the attacker can offload the stolen $HOGE on Uniswap V2, gate.io, PancakeSwap etc. and make millions without any real costs.&lt;/p&gt;
+&lt;p&gt;之后，攻击者需要存入一些像 USDC 这样的抵押品，并借入现在价值几乎为 0 美元的所有 $HOGE（由于预言机攻击）。然而，在现实中，它实际上价值 500 万美元，攻击者可以在 Uniswap V2、gate.io、PancakeSwap 等平台上出售被盗的 HOGE，并在没有任何实际成本的情况下赚取数百万美元。&lt;/p&gt;
+&lt;p&gt;In fact, many well-known tokens have with very liquid markets on Uniswap V2, CEXes but barely any liquidity on Uniswap V3. This creates an easy risk vector: manipulate and drain a lending pool based on Uniswap V3 pricing, and sell the stolen assets on more liquid exchanges.&lt;/p&gt;
+&lt;p&gt;事实上，许多知名代币在 Uniswap V2、CEXes 上都有流动性不错的市场，但在 Uniswap V3 上几乎没有任何流动性。这创造了一个简单的风险向量：根据 Uniswap V3 定价操纵和耗尽贷款池，并在流动性更强的交易所出售被盗资产。&lt;/p&gt;
+&lt;p&gt;If you’ve already deposited into an Euler pool with an illiquid Uniswap V3 oracle… please realise you’re taking on enormous risk.&lt;/p&gt;
+&lt;p&gt;如果您已经使用流动性欠佳的 Uniswap V3 预言机存入Euler池……请意识到您正在承担巨大的风险。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/960/1*Ne05sCBiSUY2xN9ipGweSw.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Luckily, we’ve come up with a &lt;strong&gt;risk grading system&lt;/strong&gt; for you to be aware of the risks.&lt;/p&gt;
+&lt;p&gt;幸运的是，我们提出了一个&lt;strong&gt;风险评分系统&lt;/strong&gt;，让您了解风险。&lt;/p&gt;
+&lt;h1 id=&#34;euler的风险评分系统-eulers-oracle-risk-grading-system&#34;&gt;Euler的风险评分系统 (Euler’s Oracle Risk Grading System)&lt;/h1&gt;
+&lt;p&gt;There are two main factors that influence the ease of attacking a Uniswap V3 oracle: TVL and concentration of liquidity.&lt;/p&gt;
+&lt;p&gt;有两个主要因素会影响攻击 Uniswap V3 预言机的难易程度：TVL 和流动性集中度。&lt;/p&gt;
+&lt;h2 id=&#34;极端集中流动性-uber-concentrated-liquidity&#34;&gt;极端集中流动性 (Uber-concentrated liquidity)&lt;/h2&gt;
+&lt;p&gt;If there is $20 mil USD TVL locked in but it is concentrated around one tick like in this example:&lt;/p&gt;
+&lt;p&gt;如果锁定了 2000 万美元的 TVL，但它集中在一个刻度附近，如下例所示：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*ImynP18RJ1JMYOKJd2-bWw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;There really isn’t much of a point, because beyond that tick you can push the price anywhere and perpetrate the attack I’ve described above.&lt;/p&gt;
+&lt;p&gt;真的没有什么意义，因为超出那个刻度，你可以将价格推到任何地方并实施我上面描述的攻击。&lt;/p&gt;
+&lt;p&gt;扭曲流动性状况 (Skewed liquidity profile)&lt;/p&gt;
+&lt;p&gt;Watch out for false friends including highly skewed liquidity profiles like this:&lt;/p&gt;
+&lt;p&gt;提防虚假朋友，包括像这样高度扭曲的流动性概况：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*FTLmp369F6_r8IkyHvYqxQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;In this chart, there is plenty of liquidity to XYZ/ETH upside, but barely any to the downside. This means while overall TVL and liquidity are decent, you could still easily crash the price.&lt;/p&gt;
+&lt;p&gt;在这张图表中，XYZ/ETH 上行有充足的流动性，但下行几乎没有。这意味着虽然整体 TVL 和流动性不错，但您仍然可以轻松地使价格崩盘。&lt;/p&gt;
+&lt;h2 id=&#34;理想场景-ideal-scenario&#34;&gt;理想场景 (Ideal scenario)&lt;/h2&gt;
+&lt;p&gt;A much better setup is when liquidity is spread across, making the attack costly along every price tick. &lt;a href=&#34;https://info.uniswap.org/#/pools/0xd83d78108dd0d1dffff11ea3f99871671a52488b&#34;&gt;PAX/ETH&lt;/a&gt; is a good example:&lt;/p&gt;
+&lt;p&gt;一个更好的设置是当流动性分散时，使得每次价格变动的攻击都代价高昂。 &lt;a href=&#34;https://info.uniswap.org/#/pools/0xd83d78108dd0d1dffff11ea3f99871671a52488b&#34;&gt;PAX/ETH&lt;/a&gt; 就是一个很好的例子：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;8&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*n8sQCpsuNfZ_mhW0WsLVFA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;评分系统-the-grading-system&#34;&gt;评分系统 (The Grading System)&lt;/h1&gt;
+&lt;p&gt;This is why we’ve come up with a rating that incorporates 3 factors:&lt;br&gt;
+这就是为什么我们提出一个包含三个因素的评级：&lt;/p&gt;
+&lt;h2 id=&#34;锁定在-uniswap-v3-池中的tvl-tvl-locked-in-the-uniswap-v3-pool&#34;&gt;锁定在 Uniswap V3 池中的TVL ：(TVL locked in the Uniswap V3 pool:)&lt;/h2&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;9&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/936/1*M2xlub1qmc-hqY7ly-jHcw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;uniswap-上-100-万美元的-xyz-与-eth-买单的滑点slippage-on-a-1mil-xyz-vs-eth-buy-order-on-uniswap&#34;&gt;Uniswap 上 100 万美元的 XYZ 与 ETH 买单的滑点：(Slippage on a $1mil XYZ vs ETH buy order on Uniswap:)&lt;/h2&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;10&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/938/1*hF4E9s0dgqGvTkdBjH-NSQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;uniswap-上-100-万美元的-xyz-与-eth-卖单的滑点slippage-on-a-1mil-xyz-vs-eth-sell-order-on-uniswap&#34;&gt;Uniswap 上 100 万美元的 XYZ 与 ETH 卖单的滑点：(Slippage on a $1mil XYZ vs ETH sell order on Uniswap:)&lt;/h2&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;11&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/934/1*Leu9q4CQu03CHBy5UD_lgw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;这些评级的总和产生一个综合评级the-sum-of-these-ratings-yields-a-comprehensive-rating&#34;&gt;这些评级的总和产生一个综合评级：(The sum of these ratings yields a comprehensive rating:)&lt;/h2&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;12&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/906/1*ELg4AQ5eo_5uSotJgjSsJw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Which will be displayed on the front-end page of the respective lending pool:&lt;br&gt;
+将在相应借贷池的前端页面显示：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;13&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*Y0tqJ3WmEcg3mMJjBAzB8A.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;The overall rating goes from A to F and should give users an idea of what the oracle risk is. &lt;strong&gt;&lt;em&gt;Overall, anything below B should probably be avoided!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;总体评级从 A 到 F，应该能让用户了解预言机风险是什么。 &lt;strong&gt;&lt;em&gt;总体而言，应该避免低于 B 的任何借贷！&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keep in mind that this is merely an indicative tool and we bear no responsibility for loss of funds.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;请记住，这只是一个指示性工具，我们对资金损失不承担任何责任。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;你能做些什么来让池更安全what-can-you-do-to-make-the-pool-safer&#34;&gt;你能做些什么来让池更安全？(What can you do to make the pool safer?)&lt;/h1&gt;
+&lt;p&gt;As written in our &lt;a href=&#34;https://docs.euler.finance/risk-framework/introduction&#34;&gt;risk docs&lt;/a&gt;, the Euler governance can promote assets to collateral and cross tiers and increase the borrow factors if the asset is deemed less likely to be manipulated. Oracle rating plays a crucial role in this assessment.&lt;/p&gt;
+&lt;p&gt;正如我们的 &lt;a href=&#34;https://docs.euler.finance/risk-framework/introduction&#34;&gt;风险文档&lt;/a&gt; 中所写，Euler治理可以将资产提升为抵押品和跨层/交叉层，并在资产被认为不太可能被操控的情况下增加借入因子。预言机评级在此评估中起着至关重要的作用。&lt;/p&gt;
+&lt;p&gt;If you want a given token to be promoted, we recommend providing as much liquidity as possible over the full range of the Uniswap V3 pool. Feel free to reach out to us if you have questions.&lt;/p&gt;
+&lt;p&gt;如果您希望推广给定的代币，我们建议在 Uniswap V3 池的整个范围内提供尽可能多的流动性。如果您有任何问题，请随时与我们联系。&lt;/p&gt;
+&lt;h1 id=&#34;下一步是什么-whats-next&#34;&gt;下一步是什么? (What’s next?)&lt;/h1&gt;
+&lt;p&gt;This is merely the first version of our ranking tool. Behind the scenes, our team of analysts are working on more sophisticated ways of estimating costs of attacking lending pools over multiple blocks given probabilistic scenarios involving price, liquidity profiles, TVLs, etc. Stay tuned for more!&lt;/p&gt;
+&lt;p&gt;这只是我们排名工具的第一个版本。在幕后，我们的分析师团队正在研究更复杂的方法，以估计在涉及价格、流动性概况、TVL 等的概率场景下，在多个区块上攻击池的成本。敬请期待更多！&lt;/p&gt;
+&lt;h1 id=&#34;我们正在招聘we-are-hiring&#34;&gt;我们正在招聘！(We are hiring!)&lt;/h1&gt;
+&lt;p&gt;We are always on the lookout for exceptional people. If you feel inspired by what is happening in DeFi, and think you have what it takes to shape the future of finance, we want to talk to you. We’ll soon be advertising new roles for an in-house counsel, more smart contract developers, and a product design lead. But whatever your talent, if you think you can add value, feel free to reach out. You can read more about careers at Euler &lt;a href=&#34;https://www.euler.finance/#/careers&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;我们一直在寻找杰出的人才。如果你对 DeFi 中正在发生的事情感到鼓舞，并认为你有能力塑造金融的未来，我们想和你谈谈。我们很快就会为内部法律顾问、更多智能合约开发人员和产品设计负责人招聘新职位。但是，无论您的才华如何，如果您认为自己可以增加价值，请随时与我们联系。您可以在 &lt;a href=&#34;https://www.euler.finance/#/careers&#34;&gt;此处&lt;/a&gt; 阅读有关 Euler 职业生涯的更多信息。&lt;/p&gt;
+&lt;h1 id=&#34;关于euler-about-euler&#34;&gt;关于Euler (About Euler)&lt;/h1&gt;
+&lt;p&gt;Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit &lt;a href=&#34;https://www.euler.finance/&#34;&gt;euler.finance&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 &lt;a href=&#34;https://www.euler.finance/&#34;&gt;euler.finance&lt;/a&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;加入社区-join-the-community&#34;&gt;加入社区 (Join the Community)&lt;/h1&gt;
+&lt;p&gt;Follow us &lt;a href=&#34;https://twitter.com/eulerfinance&#34;&gt;Twitter&lt;/a&gt;. Join our &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;. Keep in touch on Telegram (&lt;a href=&#34;https://t.me/eulerfinance_official&#34;&gt;community&lt;/a&gt;, &lt;a href=&#34;https://t.me/eulerfinance&#34;&gt;announcements&lt;/a&gt;). Check out our &lt;a href=&#34;https://www.euler.finance/&#34;&gt;website&lt;/a&gt;. Connect with us on &lt;a href=&#34;https://www.linkedin.com/company/euler-xyz/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;关注我们 &lt;a href=&#34;https://twitter.com/eulerfinance&#34;&gt;Twitter&lt;/a&gt;。加入我们的 &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;。在 Telegram 上保持联系(&lt;a href=&#34;https://t.me/eulerfinance_official&#34;&gt;community&lt;/a&gt;、&lt;a href=&#34;https://t.me/eulerfinance&#34;&gt;announcements&lt;/a&gt;)。查看我们的&lt;a href=&#34;https://www.euler.finance/&#34;&gt;网站&lt;/a&gt;。在 &lt;a href=&#34;https://www.linkedin.com/company/euler-xyz/&#34;&gt;LinkedIn&lt;/a&gt; 上与我们联系。&lt;/p&gt;
+">Euler的预言机风险评分系统 (Euler’s Oracle Risk Grading System)</a>
       </div>
       
       <div class="item">

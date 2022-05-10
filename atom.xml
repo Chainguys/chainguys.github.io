@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Web3 is REAL</title>
-    <updated>2022-05-10T02:54:20.819Z</updated>
+    <updated>2022-05-10T03:02:32.137Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,124 +10,6 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Web3 is REAL</rights>
-    <entry>
-        <title type="html"><![CDATA[Euler的预言机风险评分系统 (Euler’s Oracle Risk Grading System)]]></title>
-        <id>https://chainguys.github.io/post/euler-de-yu-yan-ji-feng-xian-ping-fen-xi-tong-eulers-oracle-risk-grading-system/</id>
-        <link href="https://chainguys.github.io/post/euler-de-yu-yan-ji-feng-xian-ping-fen-xi-tong-eulers-oracle-risk-grading-system/">
-        </link>
-        <updated>2022-05-10T02:52:03.000Z</updated>
-        <content type="html"><![CDATA[<p>原文:<a href="https://blog.euler.finance/eulers-oracle-risk-grading-system-93f47d68205c">https://blog.euler.finance/eulers-oracle-risk-grading-system-93f47d68205c</a></p>
-<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*LMcUWQ4ppQ0qEJ2BzC4rWw.png" alt="" loading="lazy"></figure>
-<p><em>As a user of a non-custodial lending protocol, it is up to you to understand factors like oracle manipulation and make a judgement call on when it is safe to use a given oracle. Here, we help explain how and why Uniswap’s oracles are sometimes risky, and introduce a new price oracle rating tool on the Euler UI to help users understand and manage these risks.</em></p>
-<p><em>作为非托管借贷协议的用户，您决定是否要了解预言机操纵等因素，并判断何时可以安全使用给定的预言机。在这里，我们帮助解释 Uniswap 的预言机的机制以及为什么有时会有风险，并在 Euler UI 上引入新的价格预言机评级工具，以帮助用户了解和管理这些风险。</em></p>
-<p><strong><em>TL;DR: lending into anything with an oracle rating below B is extremely risky!</em></strong></p>
-<p><strong><em>省流助手: 借出预言机评级低于 B 的任何东西都是非常危险的！</em></strong></p>
-<h1 id="简介-introduction"><strong>简介 (Introduction)</strong></h1>
-<p>Euler is a non-custodial lending protocol which allows its users to judge which markets are safe for them to lend and borrow on.</p>
-<p>Euler 是一种非托管借贷协议，它允许用户自行判断哪些市场对他们来说是安全的借贷。</p>
-<p>A key component of the risks borne by users on Euler derives from the price oracles provided by Uniswap V3. These oracles may be vulnerable to manipulation when the Uniswap V3 pool they derive from is illiquid or thinly traded.</p>
-<p>Euler 用户承担的风险的一个关键组成部分来自 Uniswap V3 提供的价格预言机。当这些预言机衍生的 Uniswap V3 矿池流动性不足或交易减少时，这些预言机可能容易受到操纵。</p>
-<p>To help users better identify markets at risk of price manipulation attacks, we have introduced an oracle rating system to the Euler front-end, designed to rank price oracles for each market by their associated liquidity and vulnerability to manipulation.</p>
-<p>为了帮助用户更好地识别面临价格操纵攻击风险的市场，我们在 Euler 前端引入了一个预言机评级系统，旨在根据每个市场的相关流动性和反操控性对价格预言机进行排名。</p>
-<p>Users should carefully consider the risks involved in depositing large amounts of assets on Euler in markets with a poor oracle rating. Large deposits of assets may entice attackers to manipulate the price on Uniswap in order to drain funds on Euler.</p>
-<p>用户应仔细考虑在预言机评级较差的市场中将大量资产存入 Euler 所涉及的风险。大量资产存款可能会诱使攻击者操纵 Uniswap 的价格，进而消耗 Euler 上的资金。</p>
-<h1 id="哪些市场能安全出借-which-markets-are-safe-to-lend-on"><strong>哪些市场能安全出借? (Which markets are safe to lend on?)</strong></h1>
-<p>All forms of lending are risky, whether depositing crypto assets in a lending protocol or depositing fiat currency into a bank account. Ultimately, there is no guarantee that borrowers will repay their loans.</p>
-<p>所有形式的借贷都是有风险的，无论是在借贷协议中存入加密资产还是将法定货币存入银行账户。最终，无法保证借款人会偿还贷款。</p>
-<p>However, some forms of lending are less risky than others. If the borrowed and collateral asset pricing is more difficult to manipulate, loss of funds is less likely, all other things being equal.</p>
-<p>但是，某些形式的贷款比其他形式的风险要小。如果借入和抵押的资产定价更难以操纵，则在所有其他条件相同的情况下，资金损失的可能性较小。</p>
-<h1 id="预言机是什么-what-is-an-oracle"><strong>预言机是什么? (What is an oracle?)</strong></h1>
-<p>Within the context of pricing, an oracle is an on-chain API for price. Simply put, it tells you what the price of an asset is at a given time.</p>
-<p>在定价的背景下，预言机是价格的链上 API。简而言之，它告诉您资产在给定时间的价格。</p>
-<h1 id="什么是euler的预言机解决方案what-is-eulers-oracle-solution">什么是Euler的预言机解决方案?(What is Euler’s Oracle Solution?)</h1>
-<p>In order to enable lending and borrowing on virtually any ERC20 token, we have chosen in our opinion the most decentralised oracle solution available: Uniswap TWAP (Time Weighted Average Price).</p>
-<p>为了实现几乎任何 ERC20 代币的借贷，我们选择了我们认为最去中心化的预言机解决方案：Uniswap TWAP（时间加权平均价格）。</p>
-<p>Specifically, when someone activates a lending market on the XYZ token, the protocol automatically uses Uniswap V3’s TWAP (essentially a moving average of the price) on the first existing 0.3%, 0.05%, 1% fee-level pool in order to determine the price of XYZ.</p>
-<p>具体来说，当有人在 XYZ 代币上激活借贷市场时，协议会自动在第一个现有的 0.3%、0.05%、1% 费用水平池上使用 Uniswap V3 的 TWAP（本质上是价格的移动平均线），以确定XYZ 的价格。</p>
-<p>For instance, when someone activated the <a href="https://app.euler.finance/market/0x6b175474e89094c44da98b954eedeac495271d0f">DAI lending pool on Euler</a> for the first time, the protocol queried Uniswap V3 for available pools of DAI/ETH:</p>
-<p>例如，当有人第一次激活 <a href="https://app.euler.finance/market/0x6b175474e89094c44da98b954eedeac495271d0f">Euler 上的 DAI 借贷池</a> 时，该协议会向 Uniswap V3 查询可用的 DAI/ETH 池：</p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/1*5RBdjCloT0ZYnfY2oNOTLw.jpeg" alt="" loading="lazy"></figure>
-<p>It automatically chose the 0.3% pool and the respective TWAP as the price oracle for DAI on Euler.</p>
-<p>它自动选择了 0.3% 的池和相应的 TWAP 作为Euler上 DAI 的价格预言机。</p>
-<h1 id="什么是预言机攻击场景-what-is-an-oracle-attack-scenario">什么是预言机攻击场景? (What is an oracle attack scenario?)</h1>
-<p>While we think Uniswap’s oracles are best suited for our permissionless lending protocol, depositing into an Euler pool backed by illiquid liquidity pools on Uniswap can lead to devastating results.</p>
-<p>虽然我们认为 Uniswap 的预言机最适合我们的无许可借贷协议，但存入由 Uniswap 上流动性欠佳的池对应的 Euler 池可能会导致毁灭性的结果。</p>
-<h2 id="让我们一起来看一个案例-lets-run-through-an-example">让我们一起来看一个案例 (Let’s run through an example:)</h2>
-<p>Suppose someone activated the $HOGE lending pool on Euler and deposited $5mil worth of $HOGE.</p>
-<p>假设有人在 Euler 上激活了 $HOGE 借贷池并存入了价值 500 万美元的 $HOGE。</p>
-<p>As there are no 0.3% or 0.05% fee pools on Uniswap V3, Euler will use the 1% pool for the oracle. There is, however, a bit of a problem:</p>
-<p>由于 Uniswap V3 上没有 0.3% 或 0.05% 的费用池，Euler 将使用 1% 的池用于预言机。但是，有一点问题：</p>
-<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/1*RIBNSgZb5O2eoboN0Aqa5Q.png" alt="" loading="lazy"></figure>
-<p>There is virtually no liquidity in <a href="https://info.uniswap.org/#/pools/0xb74f0303ebfe9d5c08b6f89d9baf121117cd9dc9">that Uniswap pool</a>.<br>
-<a href="https://info.uniswap.org/#/pools/0xb74f0303ebfe9d5c08b6f89d9baf121117cd9dc9">那个 Uniswap 池</a> 中几乎没有流动性。</p>
-<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/800/1*auMnoCcBU_Bs5Bt06vaI_w.gif" alt="" loading="lazy"></figure>
-<p>This is literally free money. All an attacker has to do is sell some tiny amount of $HOGE for $ETH on Uniswap to crash the price of $HOGE to almost zero and keep it there for a few blocks so the TWAP follows the spot price. Since there is no liquidity whatsoever, it doesn’t pay off for arbitrageurs to bring the price back to normal as slippage will be enormous.</p>
-<p>这实际上是免费的钱。攻击者所要做的就是在 Uniswap 上以 $ETH 的价格出售少量 $HOGE，从而使 $HOGE 的价格几乎为零并将其保持几个区块，以便 TWAP 跟随现货价格。由于没有任何流动性，套利者将价格恢复正常并没有回报，因为滑点是巨大的。</p>
-<p>After that, the attacker needs to deposit a bit of collateral like USDC and borrow all the $HOGE that is now valued at almost $0 (due to the oracle attack). In reality, however, it’s actually worth $5mil and the attacker can offload the stolen $HOGE on Uniswap V2, gate.io, PancakeSwap etc. and make millions without any real costs.</p>
-<p>之后，攻击者需要存入一些像 USDC 这样的抵押品，并借入现在价值几乎为 0 美元的所有 $HOGE（由于预言机攻击）。然而，在现实中，它实际上价值 500 万美元，攻击者可以在 Uniswap V2、gate.io、PancakeSwap 等平台上出售被盗的 HOGE，并在没有任何实际成本的情况下赚取数百万美元。</p>
-<p>In fact, many well-known tokens have with very liquid markets on Uniswap V2, CEXes but barely any liquidity on Uniswap V3. This creates an easy risk vector: manipulate and drain a lending pool based on Uniswap V3 pricing, and sell the stolen assets on more liquid exchanges.</p>
-<p>事实上，许多知名代币在 Uniswap V2、CEXes 上都有流动性不错的市场，但在 Uniswap V3 上几乎没有任何流动性。这创造了一个简单的风险向量：根据 Uniswap V3 定价操纵和耗尽贷款池，并在流动性更强的交易所出售被盗资产。</p>
-<p>If you’ve already deposited into an Euler pool with an illiquid Uniswap V3 oracle… please realise you’re taking on enormous risk.</p>
-<p>如果您已经使用流动性欠佳的 Uniswap V3 预言机存入Euler池……请意识到您正在承担巨大的风险。</p>
-<figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/960/1*Ne05sCBiSUY2xN9ipGweSw.gif" alt="" loading="lazy"></figure>
-<p>Luckily, we’ve come up with a <strong>risk grading system</strong> for you to be aware of the risks.</p>
-<p>幸运的是，我们提出了一个<strong>风险评分系统</strong>，让您了解风险。</p>
-<h1 id="euler的风险评分系统-eulers-oracle-risk-grading-system">Euler的风险评分系统 (Euler’s Oracle Risk Grading System)</h1>
-<p>There are two main factors that influence the ease of attacking a Uniswap V3 oracle: TVL and concentration of liquidity.</p>
-<p>有两个主要因素会影响攻击 Uniswap V3 预言机的难易程度：TVL 和流动性集中度。</p>
-<h2 id="极端集中流动性-uber-concentrated-liquidity">极端集中流动性 (Uber-concentrated liquidity)</h2>
-<p>If there is $20 mil USD TVL locked in but it is concentrated around one tick like in this example:</p>
-<p>如果锁定了 2000 万美元的 TVL，但它集中在一个刻度附近，如下例所示：</p>
-<figure data-type="image" tabindex="6"><img src="https://miro.medium.com/max/1400/1*ImynP18RJ1JMYOKJd2-bWw.png" alt="" loading="lazy"></figure>
-<p>There really isn’t much of a point, because beyond that tick you can push the price anywhere and perpetrate the attack I’ve described above.</p>
-<p>真的没有什么意义，因为超出那个刻度，你可以将价格推到任何地方并实施我上面描述的攻击。</p>
-<p>扭曲流动性状况 (Skewed liquidity profile)</p>
-<p>Watch out for false friends including highly skewed liquidity profiles like this:</p>
-<p>提防虚假朋友，包括像这样高度扭曲的流动性概况：</p>
-<figure data-type="image" tabindex="7"><img src="https://miro.medium.com/max/1400/1*FTLmp369F6_r8IkyHvYqxQ.png" alt="" loading="lazy"></figure>
-<p>In this chart, there is plenty of liquidity to XYZ/ETH upside, but barely any to the downside. This means while overall TVL and liquidity are decent, you could still easily crash the price.</p>
-<p>在这张图表中，XYZ/ETH 上行有充足的流动性，但下行几乎没有。这意味着虽然整体 TVL 和流动性不错，但您仍然可以轻松地使价格崩盘。</p>
-<h2 id="理想场景-ideal-scenario">理想场景 (Ideal scenario)</h2>
-<p>A much better setup is when liquidity is spread across, making the attack costly along every price tick. <a href="https://info.uniswap.org/#/pools/0xd83d78108dd0d1dffff11ea3f99871671a52488b">PAX/ETH</a> is a good example:</p>
-<p>一个更好的设置是当流动性分散时，使得每次价格变动的攻击都代价高昂。 <a href="https://info.uniswap.org/#/pools/0xd83d78108dd0d1dffff11ea3f99871671a52488b">PAX/ETH</a> 就是一个很好的例子：</p>
-<figure data-type="image" tabindex="8"><img src="https://miro.medium.com/max/1400/1*n8sQCpsuNfZ_mhW0WsLVFA.png" alt="" loading="lazy"></figure>
-<h1 id="评分系统-the-grading-system">评分系统 (The Grading System)</h1>
-<p>This is why we’ve come up with a rating that incorporates 3 factors:<br>
-这就是为什么我们提出一个包含三个因素的评级：</p>
-<h2 id="锁定在-uniswap-v3-池中的tvl-tvl-locked-in-the-uniswap-v3-pool">锁定在 Uniswap V3 池中的TVL ：(TVL locked in the Uniswap V3 pool:)</h2>
-<figure data-type="image" tabindex="9"><img src="https://miro.medium.com/max/936/1*M2xlub1qmc-hqY7ly-jHcw.png" alt="" loading="lazy"></figure>
-<h2 id="uniswap-上-100-万美元的-xyz-与-eth-买单的滑点slippage-on-a-1mil-xyz-vs-eth-buy-order-on-uniswap">Uniswap 上 100 万美元的 XYZ 与 ETH 买单的滑点：(Slippage on a $1mil XYZ vs ETH buy order on Uniswap:)</h2>
-<figure data-type="image" tabindex="10"><img src="https://miro.medium.com/max/938/1*hF4E9s0dgqGvTkdBjH-NSQ.png" alt="" loading="lazy"></figure>
-<h2 id="uniswap-上-100-万美元的-xyz-与-eth-卖单的滑点slippage-on-a-1mil-xyz-vs-eth-sell-order-on-uniswap">Uniswap 上 100 万美元的 XYZ 与 ETH 卖单的滑点：(Slippage on a $1mil XYZ vs ETH sell order on Uniswap:)</h2>
-<figure data-type="image" tabindex="11"><img src="https://miro.medium.com/max/934/1*Leu9q4CQu03CHBy5UD_lgw.png" alt="" loading="lazy"></figure>
-<h2 id="这些评级的总和产生一个综合评级the-sum-of-these-ratings-yields-a-comprehensive-rating">这些评级的总和产生一个综合评级：(The sum of these ratings yields a comprehensive rating:)</h2>
-<figure data-type="image" tabindex="12"><img src="https://miro.medium.com/max/906/1*ELg4AQ5eo_5uSotJgjSsJw.png" alt="" loading="lazy"></figure>
-<p>Which will be displayed on the front-end page of the respective lending pool:</p>
-<p>将在相应借贷池的前端页面显示：</p>
-<figure data-type="image" tabindex="13"><img src="https://miro.medium.com/max/1400/1*Y0tqJ3WmEcg3mMJjBAzB8A.jpeg" alt="" loading="lazy"></figure>
-<p>The overall rating goes from A to F and should give users an idea of what the oracle risk is. <strong><em>Overall, anything below B should probably be avoided!</em></strong></p>
-<p>总体评级从 A 到 F，应该能让用户了解预言机风险是什么。 <strong><em>总体而言，应该避免低于 B 的任何借贷！</em></strong></p>
-<p><strong>Keep in mind that this is merely an indicative tool and we bear no responsibility for loss of funds.</strong></p>
-<p><strong>请记住，这只是一个指示性工具，我们对资金损失不承担任何责任。</strong></p>
-<h1 id="你能做些什么来让池更安全what-can-you-do-to-make-the-pool-safer">你能做些什么来让池更安全？(What can you do to make the pool safer?)</h1>
-<p>As written in our <a href="https://docs.euler.finance/risk-framework/introduction">risk docs</a>, the Euler governance can promote assets to collateral and cross tiers and increase the borrow factors if the asset is deemed less likely to be manipulated. Oracle rating plays a crucial role in this assessment.</p>
-<p>正如我们的 <a href="https://docs.euler.finance/risk-framework/introduction">风险文档</a> 中所写，Euler治理可以将资产提升为抵押品和跨层/交叉层，并在资产被认为不太可能被操控的情况下增加借入因子。预言机评级在此评估中起着至关重要的作用。</p>
-<p>If you want a given token to be promoted, we recommend providing as much liquidity as possible over the full range of the Uniswap V3 pool. Feel free to reach out to us if you have questions.</p>
-<p>如果您希望推广给定的代币，我们建议在 Uniswap V3 池的整个范围内提供尽可能多的流动性。如果您有任何问题，请随时与我们联系。</p>
-<h1 id="下一步是什么-whats-next">下一步是什么? (What’s next?)</h1>
-<p>This is merely the first version of our ranking tool. Behind the scenes, our team of analysts are working on more sophisticated ways of estimating costs of attacking lending pools over multiple blocks given probabilistic scenarios involving price, liquidity profiles, TVLs, etc. Stay tuned for more!</p>
-<p>这只是我们排名工具的第一个版本。在幕后，我们的分析师团队正在研究更复杂的方法，以估计在涉及价格、流动性概况、TVL 等的概率场景下，在多个区块上攻击池的成本。敬请期待更多！</p>
-<h1 id="我们正在招聘we-are-hiring">我们正在招聘！(We are hiring!)</h1>
-<p>We are always on the lookout for exceptional people. If you feel inspired by what is happening in DeFi, and think you have what it takes to shape the future of finance, we want to talk to you. We’ll soon be advertising new roles for an in-house counsel, more smart contract developers, and a product design lead. But whatever your talent, if you think you can add value, feel free to reach out. You can read more about careers at Euler <a href="https://www.euler.finance/#/careers">here</a>.</p>
-<p>我们一直在寻找杰出的人才。如果你对 DeFi 中正在发生的事情感到鼓舞，并认为你有能力塑造金融的未来，我们想和你谈谈。我们很快就会为内部法律顾问、更多智能合约开发人员和产品设计负责人招聘新职位。但是，无论您的才华如何，如果您认为自己可以增加价值，请随时与我们联系。您可以在 <a href="https://www.euler.finance/#/careers">此处</a> 阅读有关 Euler 职业生涯的更多信息。</p>
-<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
-<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
-<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
-<h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
-<p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
-<p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Euler来信-四月总结(Euler Newsletter April Summary)]]></title>
         <id>https://chainguys.github.io/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/</id>
@@ -997,6 +879,197 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。</p>
 <p>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。<br>
 (All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</p>
 <p>翻译文档本体在github,现在同步到博客。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NEON Lab第二次AMA(Second AMA of Neon Lab)]]></title>
+        <id>https://chainguys.github.io/post/neon-lab-di-er-ci-amasecond-ama-of-neon-lab/</id>
+        <link href="https://chainguys.github.io/post/neon-lab-di-er-ci-amasecond-ama-of-neon-lab/">
+        </link>
+        <updated>2022-03-12T09:34:05.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="neon-lab第二次amasecond-ama-of-neon-lab">NEON Lab第二次AMA(Second AMA of Neon Lab)</h1>
+<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*CoVneWEtRIuY93DogiH9ig.gif" alt="" loading="lazy"></figure>
+<p>Neon Lab:Virtual machine from <strong>Ethereum</strong><br>
+Scalability and liquidity from <strong>Solana</strong></p>
+<p><a href="https://neon-labs.org/">Neon EVM</a></p>
+<p><strong>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。</strong></p>
+<p><strong>(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</strong></p>
+<h1 id="neon-代理-高维视野的解释-neon-proxy-high-level-explanation">NEON 代理 — 高维视野的解释 NEON PROXY — HIGH-LEVEL EXPLANATION</h1>
+<p>Probably most of you know what NeonEVM Platform is. But to be on the same page, I’d like to refresh some critical aspects of our platform.</p>
+<p>可能大多数人都知道 Neon EVM 平台是什么。但为了让大家保持信息一致，我想更新一些我们平台关键方面（的信息）。</p>
+<p>Generally speaking, NeonEVM consists of two significant parts NeonEVM program and NeonProxy.</p>
+<p>NeonEVM Program is a smart contract deployed on Solana and NeonProxy is a separate decentralized module.</p>
+<p>一般来说，NeonEVM 由 NeonEVM 程序和 Neon代理（Neon Proxy）两个重要部分组成。</p>
+<p>NeonEVM Program 是部署在 Solana 上的智能合约，NeonProxy 是一个单独的去中心化模块。</p>
+<p>As you know, NeonEVM allows running Ethereum dApps with no code modifications on Solana (with all benefits of it like high speed and low costs).</p>
+<p>To make it possible, you, as dApps developers, need to deploy your smart contracts into the NeonEVM program and connect the wallet (like Metamask) to the NeonProxy. Instead of or in addition to the wallet, you can connect IDE (like Remix, Truffle, Hardhat) or Front-end UI.</p>
+<p>如您所知，NeonEVM 允许（用户）无需修改代码就能在 Solana 上运行以太坊 dApp（具有高速和低成本等所有优点）。</p>
+<p>为了实现这一点，作为 dApp 开发人员，您需要将智能合约部署到 NeonEVM 程序中，并将钱包（如 Metamask）连接到 NeonProxy。除了钱包之外，您还可以连接 IDE（如 Remix、Truffle、Hardhat）或前端 UI。</p>
+<p>The execution of Ethereum-like transactions in NeonEVM takes place in several steps:</p>
+<ol>
+<li>
+<p>You send an Ethereum-like transaction to the NeonProxy</p>
+</li>
+<li>
+<p>NeonProxy splits and packs single Eth-like Tx into several Solana Tx and sents them to the NeonEVM program on Solana</p>
+</li>
+<li>
+<p>NeonEVM program unpacks and executes Eth-like Tx</p>
+</li>
+</ol>
+<p>在 NeonEVM 中执行类以太坊交易分几个步骤进行：</p>
+<ol>
+<li>
+<p>你向 NeonProxy 发送类以太坊交易</p>
+</li>
+<li>
+<p>NeonProxy 将单个 类以太坊交易拆分打包成多个Solana交易发送到 Solana 上的 NeonEVM 程序</p>
+</li>
+<li>
+<p>NeonEVM 程序解包并执行类以太坊交易</p>
+</li>
+</ol>
+<p>To sum up, we implemented NeonProxy to execute Eth-like Tx as it used to be in the Ethereum world without any changes in dApps code.</p>
+<p>总而言之，我们实现了 NeonProxy 来执行类以太坊交易，而无需对 dApps 代码进行任何更改，就像它曾经在以太坊世界中一样。</p>
+<p>And the last point I want to clarify is that several Proxy Operators run NeonProxy. So it runs in decentralized mode.</p>
+<p>Currently, we are going to Launch Alpha and Beta with a few professional whitelisted operators.</p>
+<p>Further, we have plans to start the operator’s onboarding process and remove the operator’s whitelist at all in the future.</p>
+<p>So, our primary goal is to run as many Proxy operators as possible to become fully decentralized.</p>
+<p>我最后要澄清的一点是，有几个节点运营商运行NeonProxy。所以它以去中心化模式运行。</p>
+<p>目前，我们将与一些专业的白名单运营商一起发布 Alpha 和 Beta。</p>
+<p>此外，我们计划在未来启动运营商的引入流程并完全移除运营商的白名单。</p>
+<p>因此，我们的主要目标是运行尽可能多的代理运营商，以实现完全去中心化。</p>
+<h1 id="深度聊聊技术-technical-deep-dive">深度聊聊技术 TECHNICAL DEEP DIVE</h1>
+<p>During the New Year holidays, the Neon Labs team did a global test of the Neon EVM.</p>
+<p>新年期间，团队在全球范围内测试了Neon EVM。</p>
+<p>After testing we found a number of problems, I will voice the most critical of them</p>
+<p>测试期间我们找到了一些问题，我讲几个最重要的：</p>
+<ol>
+<li>
+<p>It is very common for users to fail to execute their Neon transactions.</p>
+</li>
+<li>
+<p>The transaction execution speed isn’t high, despite the good performance of the Solana Cluster</p>
+</li>
+<li>
+<p>Users often cannot get a receipt for a completed Neon transaction.</p>
+</li>
+<li>
+<p>We have found that at some points the public Neon Proxy spends more than 200 SOL tokens in 4 hours.</p>
+</li>
+<li>
+<p>When we began to study the situation more deeply, we found that Neon Proxy creates a lot of empty accounts. It’s not good, because storing extra records in Solana’s state is expensive. As result, the transaction cost is expensive for users and operators.</p>
+</li>
+</ol>
+<hr>
+<ol>
+<li>
+<p>用户无法执行他们的 Neon 交易，这很常见。</p>
+</li>
+<li>
+<p>交易执行速度不高，尽管 Solana 集群(Cluster) 的性能不错</p>
+</li>
+<li>
+<p>用户经常无法获得已完成 Neon 交易的回执。</p>
+</li>
+<li>
+<p>我们发现，在某些时候，公共 Neon Proxy 在 4 小时内花费了 200 多个 SOL 代币。</p>
+</li>
+<li>
+<p>当我们开始更深入地研究情况时，我们发现Neon Proxy创建了大量的空账户。这不是好兆头，因为在 Solana 的状态中存储额外的记录很昂贵。结果，交易成本对用户和运营商来说都很昂贵。</p>
+</li>
+</ol>
+<p>The Neon Proxy prepares Neon transactions for on-chain execution on the Solana cluster.</p>
+<p>We also found a number of problems inside the Neon EVM program.</p>
+<p>But today’s session is dedicated to what we did inside Neon Proxy, so we will talk about the Neon EVM program in another AMA session.</p>
+<p>We love our community and we want to provide them with a really good product.</p>
+<p>Therefore, we decided to refine our product so that working with it would be a pleasure.</p>
+<p>NeonProxy为在 Solana 集群上的Neon 交易准备链上执行。</p>
+<p>我们还在 Neon EVM 程序中发现了一些问题。</p>
+<p>但是今天的会议专门讨论我们在 Neon代理(Neon proxy) 中所做的事情，因此我们将在另一个 AMA 会议中讨论 Neon EVM 程序。</p>
+<p>我们热爱我们的社区，我们希望为他们提供非常好的产品。</p>
+<p>因此，我们决定改进我们的产品，以便使用它时会成为一种乐趣。</p>
+<p>What have we done?</p>
+<p>Let’s have a few words about how it all works.</p>
+<p><strong>我们做了什么？</strong></p>
+<p><strong>让我们谈谈这一切是如何运作的。</strong></p>
+<p>Neon transactions are complex transactions, they consist of many Solana transactions.</p>
+<p>Neon 交易是复杂的交易，它们由许多 Solana 交易组成。</p>
+<p>The thing is that Solana limits the number of resources for the execution of a single Solana transaction. If an Ethereum-like transaction requires a lot of compute units, it cannot be performed within a single Solana transaction.</p>
+<p>Therefore, the Neon EVM program saves the EVM state to the Solana storage. And when the Neon Web3 Proxy sends a command to the Solana Cluster, the execution of the stored Neon transaction is renewed.</p>
+<p>So, the Neon EVM program restores the EVM state on demand and continues the Neon transaction execution from the stopping point. The process continues till the Neon transaction is completed.</p>
+<p>问题是 Solana 限制了执行单个 Solana 交易的资源数量。如果类以太坊交易需要大量计算单元，则无法在单个 Solana 交易中执行。</p>
+<p>因此，Neon EVM 程序将 EVM 状态保存到 Solana 存储中。并且当 Neon Web3代理（Neon Web3 Proxy)向 Solana 集群发送命令时，存储Neon 交易的执行（状态）将被更新。</p>
+<p>因此，Neon EVM 程序按需恢复 EVM 状态并从停止点继续执行 Neon 事务。该过程一直持续到 Neon 交易完成。</p>
+<p>The algorithm for executing Solana transactions must be such as to guarantee the execution of a whole Neon transaction.</p>
+<p>Solana transactions are related to each other and all of them need to be executed.</p>
+<p>执行 Solana 交易的算法必须保证整个 Neon 交易的执行。</p>
+<p>Solana 交易相互关联，都需要被执行。</p>
+<p>In the first versions of the algorithm, Neon proxy executed the next Solana transaction when it received confirmation of the first transaction.</p>
+<p>This ensured that the Neon transaction would execute in its entirety, but this execution is very slow when your Neon transaction has many iterations.</p>
+<p>在算法的第一个版本中，Neon代理(Neon proxy)在收到第一笔交易的确认后执行下一笔 Solana 交易。</p>
+<p>这确保了 Neon 事务将完整执行，但是当您的 Neon 交易有很多迭代时，执行就非常慢。</p>
+<p>The current version of the Solana transaction sending algorithm works quite differently.</p>
+<p>当前版本的 Solana 交易发送算法的工作方式完全不同。</p>
+<p>The algorithm consists of two stages.</p>
+<p>At the first stage, the algorithm chooses the strategy for sending the transaction.</p>
+<ul>
+<li>
+<p>A Neon transaction can be completed in a single Solana transaction if it is small in size and requires few EVM steps to complete.</p>
+</li>
+<li>
+<p>A Neon transaction can be executed in several Solana transactions if it is small in size, but it requires many EVM steps to complete. In this case, Neon Proxy creates an additional Solana account. We call it a storage account. And Neon EVM stores the EVM state in it between iterations.</p>
+</li>
+<li>
+<p>The transaction can be large in size. In this case, Neon Proxy uploads the transaction to a separate Solana account, which we call Holder account.</p>
+</li>
+</ul>
+<p>该算法包括两个阶段。</p>
+<p>在第一阶段，算法选择发送交易的策略。</p>
+<ul>
+<li>
+<p>如果 Neon 交易规模较小且需要很少的 EVM 步骤即可完成，则可以在单个 Solana 交易中完成。</p>
+</li>
+<li>
+<p>一个 Neon 交易如果规模较小，可以在多个 Solana 交易中执行，但需要很多 EVM 步骤才能完成。在这种情况下，Neon代理(Neon proxy)会创建一个额外的 Solana 帐户。我们称之为存储帐户。 Neon EVM 在迭代期间将 EVM 状态存储在其中。</p>
+</li>
+<li>
+<p>交易规模可能很大。在这种情况下，Neon Proxy 将交易上传到一个单独的 Solana 账户，我们称之为持有者账户(Holder account)。</p>
+</li>
+</ul>
+<p>In the second stage, Neon Proxy creates a batch of Solana transactions and sends them all at once to the Solana node.</p>
+<p>Next, Neon Proxy checks the execution status of each Solana transaction, and if any of them fail, Neon Proxy generates a new batch of Solana transactions and sends them back to the Solana node.</p>
+<p>And so on until the Neon Proxy receives the Neon transaction recipe.</p>
+<p>在第二阶段，Neon代理(Neon proxy)创建一批 Solana 交易，并一次性将它们全部发送到 Solana 节点。</p>
+<p>接下来，Neon代理(Neon proxy)检查每个 Solana交易的执行状态，如果其中任何一个失败，Neon代理(Neon proxy)会生成新的一批 Solana 交易并将它们发送回 Solana 节点。</p>
+<p>依此类推，直到 Neon 代理收到 Neon交易的回执。</p>
+<p>After the implementation of the specified algorithm, it was possible to achieve a high speed of Neon transactions and guarantee their execution.</p>
+<p>执行指定算法后，可以让Neon高速交易并保证执行。</p>
+<p>We check the quality of the Neon EVM platform using tests from the Open Zeppelin package.</p>
+<p>The Neon Proxy version before the new year showed us from 900 to 1400 successful tests on Solana Devnet.</p>
+<p>The new version of Neon Proxy consistently shows more than 1730 successful tests on Solana Devnet.</p>
+<p>我们使用 Open Zeppelin 包中的测试来检查 Neon EVM 平台的质量。</p>
+<p>新年前的 Neon Proxy 版本向我们展示了在 Solana Devnet 上进行了 900 到 1400 次成功测试。</p>
+<p>新版本的 Neon Proxy 在 Solana Devnet 上持续显示超过 1730 次成功测试。</p>
+<p>The second part of Neon Proxy deals with indexing completed transactions.</p>
+<p>As a result of revisions, we have written a new service, which we call Indexer.</p>
+<p>This service collects information about all Neon transactions performed by all Neon operators.</p>
+<p>And clients can get information about Neon transactions by contacting any Neon Proxy using the standard Ethereum API.</p>
+<p>At the moment we are expanding the functionality of Neon Indexer and collecting information for our operators.</p>
+<p>We integrate the Prometeus service, which will allow Neon operators to collect statistics on the work of their proxies and evaluate the quality of their service.</p>
+<p>Neon Proxy 的第二部分处理索引已完成的交易。</p>
+<p>我们编写了一个新的服务作为修订，并称之为 Indexer。</p>
+<p>该服务收集所有 Neon 运营商执行的全部Neon 交易的信息。</p>
+<p>客户可以通过使用标准以太坊 API 联系任何 Neon 代理来获取有关 Neon 交易的信息。</p>
+<p>目前，我们正在扩展 Neon Indexer 的功能并为我们的运营方收集信息。</p>
+<p>我们集成了 Prometeus 服务，这将允许 Neon 运营方收集有关其代理工作的统计数据并评估其服务质量。</p>
+<h2 id="接下来呢whats-next">接下来呢？What’s next?</h2>
+<p>We have prepared version 0.7.0.</p>
+<p>Tomorrow we will update the public version of Neon Proxy on Devnet and the community will be able to test the final version that will work on Mainnet.</p>
+<p>We ask the community to come and test our product.</p>
+<p>我们准备了 0.7.0 版本。</p>
+<p>明天我们将在 Devnet 上更新Neon代理(Neon proxy) 的公开版本，社区将能够测试在 Mainnet 上运行的最终版本。</p>
+<p>我们请求社区来测试我们的产品。</p>
 ]]></content>
     </entry>
 </feed>
