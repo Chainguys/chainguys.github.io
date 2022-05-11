@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Web3 is REAL</title>
-    <updated>2022-05-11T10:17:38.243Z</updated>
+    <updated>2022-05-11T12:34:51.528Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -37,6 +37,7 @@
 <h2 id="shippooordao提供的euler-dune分析仪表板-eulers-dune-analytics-dashboard-by-shippooordao"><a href="https://chainguys.github.io/post/shippooordao-ti-gong-de-euler-dune-fen-xi-yi-biao-ban-eulers-dune-analytics-dashboard-by-shippooordao">ShippooorDAO提供的Euler Dune分析仪表板 (Euler’s Dune Analytics Dashboard by ShippooorDAO)</a></h2>
 <h2 id="euler-finance借贷市场风险管理的新方法-euler-financea-fresh-approach-to-risk-management-in-lending-and-borrowing-markets"><a href="https://chainguys.github.io/post/euler-financejie-dai-shi-chang-feng-xian-guan-li-de-xin-fang-fa-euler-financea-fresh-approach-to-risk-management-in-lending-and-borrowing-markets">Euler Finance：借贷市场风险管理的新方法 (Euler Finance：A Fresh Approach to Risk Management in Lending and Borrowing Markets）</a></h2>
 <h2 id="积分的意义何在whats-the-point-in-points"><a href="https://chainguys.github.io/post/ji-fen-de-yi-yi-he-zai-whats-the-point-in-points">积分的意义何在？(What’s the point in points?)</a></h2>
+<h2 id="euler测试网使用手册-euler-testnet-guide"><a href="https://chainguys.github.io/post/euler-ce-shi-wang-shi-yong-shou-ce-euler-testnet-guide">EULER测试网使用手册 (EULER  TESTNET GUIDE)</a></h2>
 ]]></content>
     </entry>
     <entry>
@@ -848,6 +849,125 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。</p>
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[EULER测试网使用手册 (EULER  TESTNET GUIDE)]]></title>
+        <id>https://chainguys.github.io/post/euler-ce-shi-wang-shi-yong-shou-ce-euler-testnet-guide/</id>
+        <link href="https://chainguys.github.io/post/euler-ce-shi-wang-shi-yong-shou-ce-euler-testnet-guide/">
+        </link>
+        <updated>2022-04-02T12:30:35.000Z</updated>
+        <content type="html"><![CDATA[<p>原文:<br>
+<a href="https://docs.google.com/document/d/1xWsgT2i9x2Birtt7Rm2mQNu2kCLkfUrue9LljwoMYU8/edit">https://docs.google.com/document/d/1xWsgT2i9x2Birtt7Rm2mQNu2kCLkfUrue9LljwoMYU8/edit</a></p>
+<figure data-type="image" tabindex="1"><img src="https://lh3.googleusercontent.com/hX_QOdde_IDls4IVw7IWN4ZUny2qgq4aF3obsgeJqX5Te0E35u1DKTf7dhpx8dFOHSHFs0Y2T6ehKtF_5Gd3RE1djZs97Xn5HQ_SpyTljzipv_zn7_SiQFPeKpDAanGgTBUYHZusJ18viXkP6g" alt="" loading="lazy"></figure>
+<h1 id="euler测试网-euler-testnet">EULER测试网 (EULER TESTNET )</h1>
+<p><em>Guide on how to get tokens on Ropsten and participate in the Euler protocol testnet.</em></p>
+<p><em>如何在 Ropsten 上获取代币并参与欧拉协议测试网的指南。</em></p>
+<p>The testnet stage will make use of the Ethereum Ropsten Test Network so users can try lending and borrowing with Ropsten tokens such as wETH, DAI, WBTC and many others. Users can become more acquainted with the differences in market assets, specifically isolated, cross and collateral tokens.</p>
+<p>测试网阶段将利用以太坊 Ropsten 测试网络，因此用户可以尝试使用 Ropsten 代币（如 wETH、DAI、WBTC 等）进行借贷。用户可以更加熟悉市场资产的差异，特别是隔离、交叉(跨层)和抵押代币。</p>
+<p>We highly encourage users to browse around, test interactions, click things, break stuff and then report any feedback, positive or negative, back to us.</p>
+<p>我们强烈鼓励用户随机浏览、测试交互、点击东西、破坏东西，然后将任何反馈（正面或负面）报告给我们。</p>
+<p>When first landing on the site, users will be greeted by the available lending markets and general stats. From here users can participate by creating sub accounts, swap, deposit, borrow, short and transfer tokens.</p>
+<p>首次登陆该网站时，用户会看到可用的借贷市场和一般统计数据。从这里用户可以通过创建子账户、交换、存款、借入、卖空和转移代币来参与。</p>
+<p>After entering a position users can check out their health scores on the account page which will show their collateral, liabilities, and transactions, along with other user stats. The user dashboard will also reveal other important user stats, account summaries and more.</p>
+<p>建立头寸后，用户可以在账户页面上查看他们的健康评分，该页面将显示他们的抵押品、负债和交易，以及其他用户统计信息。用户仪表板还将显示其他重要的用户统计信息、帐户摘要等。</p>
+<p>Also note that we’re currently focusing on desktop web development, so mobile experiences may differ for the time being. Some components on the platform may be temporarily missing or paused during development as we work on feedback.</p>
+<p>另请注意，我们目前专注于桌面 Web 开发，因此移动体验暂时可能会有所不同。在我们处理反馈的过程中，平台上的某些组件可能会在开发过程中暂时丢失或暂停。</p>
+<h2 id="如何参与-how-to-participate">如何参与 (How to participate:)</h2>
+<ol>
+<li>
+<p>Use one of the Ropsten Ethereum (rETH) Faucets to receive some testnet ETH in your wallet<br>
+使用 Ropsten Ethereum (rETH) 水龙头之一在您的钱包中接收一些测试网 ETH</p>
+<ul>
+<li><a href="https://faucet.dimensions.network/">https://faucet.dimensions.network/</a></li>
+<li><a href="https://faucet.ropsten.be/">https://faucet.ropsten.be/</a></li>
+<li><a href="https://faucet.metamask.io/">https://faucet.metamask.io/  </a></li>
+</ul>
+</li>
+<li>
+<p>Use Euler’s custom faucet to get some testnet tokens: <br>
+使用 Euler 的自定义水龙头获取一些测试网代币</p>
+<ul>
+<li><a href="https://faucet.euler.finance/">https://faucet.euler.finance/</a></li>
+</ul>
+</li>
+</ol>
+<p>As a reminder, minting tokens from faucets does take some time since requests get queued up. Please try refreshing the etherscan link after 5-10 min. Make sure that you use our custom faucet for the tokens! Existing ropstein DAI and USDC won't work.</p>
+<p>提醒一下，由于请求排队，因此从水龙头铸造代币确实需要一些时间。请在 5-10 分钟后尝试刷新 etherscan 链接。确保您使用我们的定制水龙头获取代币！现有的 ropstein DAI 和 USDC 将不起作用。</p>
+<p>As a second option, an ERC-20 test faucet smart contract has been deployed on Ropsten and has all of the 18 supported tokens within the test environment.</p>
+<p>作为第二种选择，ERC-20 测试水龙头智能合约已部署在 Ropsten 上，并在测试环境中拥有所有 18 个受支持的代币。</p>
+<p>You can claim 10 of each token by pasting the token contract address from the testing guide into the withdraw field/function of the faucet contract.</p>
+<p>您可以将测试指南中的代币合约地址，粘贴到水龙头合约的提款字段/功能中来领取每种代币 10 个。</p>
+<p>The faucet contract can be found at:<br>
+水龙头合约可在以下位置找到：<br>
+<a href="https://ropsten.etherscan.io/address/0xEacEC657dAd8923e057f62EB7F0D6b10ede1E716#code">https://ropsten.etherscan.io/address/0xEacEC657dAd8923e057f62EB7F0D6b10ede1E716#code</a></p>
+<p>To interact with the contract you’ll need some Ropsten ETH in your metamask wallet. Paste the URL above into your chrome browser with metamask switched to Ropsten. Then click on Contract (next to transactions) and then Write. Then connect your wallet by clicking Connect to Web3. Once connected, you can paste any our tokens addresses into the withdraw function test field and click on Write. Once the transaction is processed, you should see 10 of the tokens you have claimed added to your wallet under the assets area in metamask (note: you will need to have imported the token into metamask to see your balance).</p>
+<p>要与合约交互，你的 metamask 钱包中需要一些 Ropsten ETH。将上面的 URL 粘贴到您的 chrome 浏览器中，并将 metamask 切换为 Ropsten。然后单击 合约（交易旁边），然后单击 写入。然后通过单击 连接到 Web3 连接您的钱包。连接后，您可以将我们的任何代币地址粘贴到提款功能测试字段中，然后单击 写入。处理完交易后，您应该会在 metamask 的资产区域下看到您声称已添加到钱包中的 10 个代币（注意：您需要将代币导入 metamask 才能查看余额）。</p>
+<h2 id="用户指南如何将测试网代币添加到您的metamask-user-guide-how-to-add-testnet-tokens-to-your-metamask">用户指南(如何将测试网代币添加到您的metamask)-User guide (How to add testnet tokens to your metamask)</h2>
+<ol>
+<li>Open your metamask and make sure you are connected to the Ropsten Test Network. Choose “Assets” and click on “Import tokens”.<br>
+打开您的metamask并确保您已连接到 Ropsten 测试网络。选择“资产”并点击“导入代币”。</li>
+</ol>
+<figure data-type="image" tabindex="2"><img src="https://lh3.googleusercontent.com/ksyHZK1_JM1zGKDcHOvuvEbMIHI9Y3ZQaH4DzZ1PsWthBpd8_fi1AC83S6ypxUOvat9_RNoqMbpUyD1ZUfS3dILJsJ3jymb-76opZDORwR8WytffVh6XB65JDpzT2xSJFRNbZUPE-mllzVNa0Q" alt="" loading="lazy"></figure>
+<ol start="2">
+<li>Another popup will appear in which you need to enter the token contract address provided from the list below and press on “Add Custom Token”.<br>
+将出现另一个弹出窗口，您需要在其中输入下面列表中提供的代币合约地址，然后点击“添加自定义代币”。<br>
+<a href="https://docs.google.com/spreadsheets/d/1OVc6dfB1h5k6zFIqRfC6zpWovcPBX_j6tAat-AaJIbM/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1OVc6dfB1h5k6zFIqRfC6zpWovcPBX_j6tAat-AaJIbM/edit?usp=sharing</a> <img src="https://lh5.googleusercontent.com/n684FoN4g9Oknu49-vPgEXMqgYVckEMt0cieBPhACI-hXoN9jCusV3oELY2jN82uirEP08k88NSffVNg5HvOIgpcHdl8nY_wkRt0jM--p7tdQqNXwrNNHRrgiV9JrHl_6J75GDZRb32RqKtgow" alt="" loading="lazy"></li>
+</ol>
+<h2 id="用户指南如何进行交易-user-guide-how-to-do-a-transaction">用户指南(如何进行交易)-User guide (How to do a transaction)</h2>
+<ol>
+<li>Connect to the wallet you used with the faucet above and make sure you choose Ropsten Test Network from the dropdown list.<br>
+连接到您与上述水龙头一起使用的钱包，并确保从下拉列表中选择 Ropsten 测试网络。</li>
+</ol>
+<figure data-type="image" tabindex="3"><img src="https://lh6.googleusercontent.com/80mGQu8GvJK4bh_Da-HCVG0WjMHY8gplDI4iw08tNkbo-0hv5mQPPYgLTYk10HwRaJ6qd-R4JS12a2PULfGuwurXdI8TIjEzi0hYBjxHdQE_1CZzr-mKfjdBONrkS4IO7mXtNzRGKQeiydlgzA" alt="" loading="lazy"></figure>
+<ol start="2">
+<li>Go to <a href="https://ropsten.euler.finance">https://ropsten.euler.finance</a> and click ‘Connect’ in the upper right corner.<br>
+前往<a href="https://ropsten.euler.finance">https://ropsten.euler.finance</a>，点击右上角的“连接”。</li>
+</ol>
+<figure data-type="image" tabindex="4"><img src="https://lh4.googleusercontent.com/ipSadV8vMNayNkts_spKianvjzjUXDfdLrn4KxIadElnUoEeXFbwK1yeEcR9pcaD4E8pRQe4LwtOotmcKDJ1IgKQQvSChG3WlTHGS3G7dg00DtGgTK-sNVWjqeaLtZMwNdSX_EsUCgxRUNmnyw" alt="" loading="lazy"></figure>
+<ol start="3">
+<li>Create a new transaction by pressing ‘Transaction’ at the top right in the header. Start by depositing USDC, and then borrowing CRV to your Main account.<br>
+按标题右上角的“交易”创建新交易。首先存入 USDC，然后将 CRV 借入您的主账户。</li>
+</ol>
+<figure data-type="image" tabindex="5"><img src="https://lh4.googleusercontent.com/vUWdt4u5nD0UXSPdus8ofawRqBdeBpiNak09lXrNY_waDE-ISSbzfncobDcHsnkulyHrDKGmeaz9_Z0EGnbXkmqCucY0hAfBmNPLTuWWr3cO-Netp75SYMW5t5nwbmXqLWmT-awZJ2QWEXyP_g" alt="" loading="lazy"></figure>
+<p><img src="https://lh4.googleusercontent.com/NoLA9cz_9G7wgM2U0H8_ItcGoPgy-z38z64yklBZH4SyheH5bYXgbyOeBA8Q_BbekTUnDiS1hLcN9ietLZejzvB1wSdVumsQV5HtDGZdKoLlJxoCbulhJvR5HD8C170XAmTRgq9IPdOrvdS-dw" alt="" loading="lazy"><img src="https://lh6.googleusercontent.com/Nov7I58lxRgwq84ozDdW_qiRIkrzxo638J7_FD6GJi7mUO6ySpdlzqrsehHDzAdp7ynkEL42a4cWe9t5eqVxKNFZ0jr_b5G1bug-VLd2WdWXkFt3zdNz6yXSDtwfZrsd0hv6fYiq-ut6TpIr7Q" alt="" loading="lazy"></p>
+<ol start="4">
+<li>After you approve the spending limit, you will be able to choose the desired amount for the deposit. A transaction builder popup will appear on the right side, where you will have to click on the ‘Send txs’ button to initiate the transfer.<br>
+在您批准消费限额后，您将可以选择所需的存款金额。交易构建器弹出窗口将出现在右侧，您必须在其中单击“发送 txs”按钮来启动交易。</li>
+</ol>
+<figure data-type="image" tabindex="6"><img src="https://lh5.googleusercontent.com/N07QKHeJJ3DQknFGmuy-bOGp-WGSVNScQdVcYXn-ITcRkIHhCwd9UR46W5aqKS-O5EOd8fOQeNL5tzwu2_YZ-xFGgSlvZxZx7nh1LOZOPf9EgAliioZ-FWnlQYQWczN0z-8CHHaPgVyYAwo7Fw" alt="" loading="lazy"></figure>
+<h2 id="用户指南了解资产层-user-guide-learn-about-asset-tiers">用户指南(了解资产层)-User guide (Learn about Asset tiers)</h2>
+<p>When you click on the “MARKETS” tab, it will take you to the markets page, on which you can see the asset tiers and the number of assets in that tier. Asset tiers are also visible on the left side next to the token icon. By hovering over the Asset tiers, in this case for “Collateral”, the tier will also display a popup with an additional explanation on use cases for each tier.</p>
+<p>当您单击“市场”选项卡时，它将带您进入市场页面，您可以在该页面上查看资产层级和该层级中的资产数量。资产层级也可以在令牌图标旁边的左侧看到。通过将鼠标悬停在资产层上，在本例中为“抵押品”，该层还将显示一个弹出窗口，其中包含有关每个层的用例的附加说明。</p>
+<figure data-type="image" tabindex="7"><img src="https://lh5.googleusercontent.com/PsMxJ_Pc4xjyWxh6_zvviCzpeNBiADZptxo98defSS28jHHIHnWW6m-Y5xZMSGqEy7qOFp8BDAHgJLxKkOQYz3n9boOzoXgMoIO9etMaVDbbhsEmzGjjjdZ1izEsdwgMyIJWBEQkNjb_y2XuCg" alt="" loading="lazy"></figure>
+<p>Note. In order to “Borrow” you need to have one of the “Collateral Tier” assets deposited.</p>
+<p>注意：为了“借入”，您需要存入“抵押层”资产之一。</p>
+<h2 id="用户指南了解子账户-user-guide-learn-about-sub-accounts">用户指南(了解子账户)-User guide (Learn about sub-accounts)</h2>
+<ol>
+<li>At the top right of the app, mouse over the profile icon and then click on ‘Create New’ to create a Sub-account.<br>
+在应用的右上角，将鼠标悬停在个人资料图标上，然后单击“新建”创建子帐户。</li>
+</ol>
+<figure data-type="image" tabindex="8"><img src="https://lh4.googleusercontent.com/QpH8eZHnZ333n8qHn5NIKClKp1HfYf4w6jnsc4JZ_LiaRzgwIpZIIG0AshAW0csk5c2ONrj2uTkjMwzrjbIqyMXwFBR21NahiWd4M72WHJNVuf9cfxnmP-S1MNIa_yEGNna0meNLWNP3M5OMyQ" alt="" loading="lazy"></figure>
+<ol start="2">
+<li>Click on the ‘Transaction’ button again and transfer some collateral to your freshly created sub-account and borrow an isolated token. Understand that you need to be on a fresh sub-account to borrow isolated markets.<br>
+再次点击“交易”按钮，将一些抵押品转移到您新创建的子账户，并借入一个隔离层的代币。请了解您需要使用新的子账户才能借入隔离层的资产。</li>
+</ol>
+<p><img src="https://lh6.googleusercontent.com/OFfzuzC7u_Q0RC-mAvvyZ_PFeA6Qi56yGhXYZ3hJ-8d26oSmIVVmblQQa0WtkgLuG-OPpchdMaR6MmA1PLdhwAmtHUeCKLpIes3RYCnzlC2xkt5yL3W8Rirj_JWCsNFXHzwJMWK1oJvF_EvKrQ" alt="" loading="lazy"><br>
+<img src="https://lh5.googleusercontent.com/Lz0RwB1ni0TM93S--PFvZuwPt9QhWjQNWyGkvIZUYrL2ayOysVn2UdA3h7X9K_Vk_2ThXESFhT7i422pKCX28c-XmP2PageadMSEXcyK9eTHrJuroYqG96npox2Yonx5vevIY3Tc49qmVHtXfA" alt="" loading="lazy"></p>
+<ol start="3">
+<li>Deposit DAI and USDT in the same transaction to see how the transaction slip allows for multiple transactions to save gas cost.<br>
+在同一笔交易中存入 DAI 和 USDT，看看交易单如何允许多笔交易以节省 gas 成本。</li>
+</ol>
+<figure data-type="image" tabindex="9"><img src="https://lh4.googleusercontent.com/dGc1ICfAX2E50mrcIHuDMq1RHU4kcGFICIIzpkD2GmH4zDueV7lIpUbV5mZN3UT7MZAN3AFMIgzZZfOdBA8YoACO3AVkD-gIQOAPXM2ql406KXYFVwsP8XH7gSSJEMFBe3iQ9CNDZ62GwdXONg" alt="" loading="lazy"></figure>
+<ol start="4">
+<li>Navigate to the dashboard page and click on your main sub-account. Take stock of your health score and be aware that if it goes below 1 you will be up for liquidation.<br>
+导航到仪表板页面并单击您的主要子帐户。评估您的健康评分并注意，如果它低于 1，您将被清算。</li>
+</ol>
+<figure data-type="image" tabindex="10"><img src="https://lh4.googleusercontent.com/E-8DxIXongdvzLz951Ms6saBa4dRD0DsJeoTZSUmBTVm2AjUnvTlBcZa7Rwug7qkOYrQVRo3K_0s3wnNNkoqXMP_lRlBO04D7tQRYc3aGeI7FJ6wa_TbOZTFF6McgCJ7_Wfy2672JYwehbnjLA" alt="" loading="lazy"></figure>
+<p>Please report your feedback here: <a href="https://bit.ly/30URZ8x">https://bit.ly/30URZ8x</a><br>
+请在此处报告您的反馈：<a href="https://bit.ly/30URZ8x">https://bit.ly/30URZ8x</a></p>
+<p>THANK YOU!<br>
+谢谢！</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Euler来信-三月总结(Euler Newsletter March Summary)]]></title>
         <id>https://chainguys.github.io/post/euler-lai-xin-san-yue-zong-jie-euler-newsletter-march-summary/</id>
         <link href="https://chainguys.github.io/post/euler-lai-xin-san-yue-zong-jie-euler-newsletter-march-summary/">
@@ -894,20 +1014,6 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。</p>
 <p>快来与团队会面！在 2022 年 4 月 13 日至 14 日的巴黎区块链周峰会上，可以看到 Michael 作为<a href="https://twitter.com/PBWSummit/status/1471165200271392770?t=Sy_1hEd84GfkvIV7gMiYuA&amp;s=19">主要发言人</a>。如果您在美国，5 月 17 日至 19 日在棕榈滩（Palm Beach）将举行Blockworks的<a href="https://twitter.com/MacroMate8/status/1490741479026970627">无许可</a>会议（<a href="https://twitter.com/MacroMate8/status/1490741479026970627">Permissionless</a> conference），届时欢迎您请加入Seraphim的活动。</p>
 <p>If you're in Germany, join Michael at the inaugural <a href="https://twitter.com/euler_mab/status/1494075904154349573">Blockchain Oracle Summit</a> in Berlin on 7-9 June.</p>
 <p>如果您在德国，请与Michael一起参加 6 月 7 日至 9 日在柏林举行的首届<a href="https://twitter.com/euler_mab/status/1494075904154349573">区块链甲骨文峰会</a>。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RedStone Tech Doc Translation RedStone 技术文档翻译]]></title>
-        <id>https://chainguys.github.io/post/redstone-tech-doc-translation-redstone-ji-zhu-wen-dang-fan-yi/</id>
-        <link href="https://chainguys.github.io/post/redstone-tech-doc-translation-redstone-ji-zhu-wen-dang-fan-yi/">
-        </link>
-        <updated>2022-03-18T09:18:55.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*cagrG696gNL5_R0DTf6mew.png" alt="" loading="lazy"></figure>
-<p>I have translated the tech doc of @redstone_defi to Chinese If you are a developper that trying to enter @ArweaveTeam just come and check.</p>
-<p>我翻译了RedStone的技术文档,如果你是想进入AR生态的开发者，欢迎来围观！</p>
-<p>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。<br>
-(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</p>
-<p>翻译文档本体在github,现在同步到博客。</p>
 ]]></content>
     </entry>
 </feed>
