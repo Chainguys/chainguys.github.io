@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Web3 is REAL</title>
-    <updated>2022-05-17T16:03:14.131Z</updated>
+    <updated>2022-05-17T16:29:49.324Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -136,9 +136,9 @@ const eagEurAddr = e
         </link>
         <updated>2022-05-10T15:36:58.000Z</updated>
         <content type="html"><![CDATA[<p>原文:https://blog.euler.finance/announcing-new-features-of-euler-dapp-8cadabb111ac</p>
+<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*z4C6jmNf25LAq-SgB_gaXQ.png" alt="" loading="lazy"></figure>
 <p><em>Long awaited awaited features are here! Know your Estimated Time to Liquidation, take part in Liquidity Mining easily!</em></p>
 <p><em>期待已久的功能就在这里！现在您可以了解预计清算时间，轻松参与流动性挖矿！</em></p>
-<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*z4C6jmNf25LAq-SgB_gaXQ.png" alt="" loading="lazy"></figure>
 <p>Today we are introducing two new features in the Euler dapp. Both of them have been designed and developed in response to our community’s feedback and we hope that they will significantly increase user experience.</p>
 <p>今天我们将介绍 Euler dapp 中的两个新功能。它们都是根据我们社区的反馈设计和开发的，我们希望它们能显着提高用户体验。</p>
 <p>One of the flagship Euler’s functionalities is <em>Mint</em>. <em>Mint</em> creates an equal amount of deposits and debts for an account and hence is often used for creating leveraged positions. Users no longer need to recursively borrow the same asset to set up a leveraged position, but can instead use this gas-efficient Euler native function which requires only a few clicks.</p>
@@ -146,17 +146,17 @@ const eagEurAddr = e
 <p>With the announcement of <em>Liquidity Mining</em> program back in March, we introduced a <em>Mine</em> function. <em>Mine</em>’s purpose was to simplify the existing <em>Mint</em> function so that users can easily create self-collateralized positions to mine EUL tokens. Very soon many users noticed that <em>Mine</em> and <em>Mint</em> are very similar in nature which lead to unnecessary confusion.</p>
 <p>随着 3 月份 <em>流动性挖矿</em> 计划的发布，我们引入了 <em>挖矿 Mine</em> 功能。 <em>挖矿 Mine</em> 的目的是简化现有的 <em>铸币 Mint</em> 功能，以便用户可以轻松创建 自抵押 仓位来挖掘 EUL 代币。很快许多用户注意到 <em>挖矿 Mine</em> 和 <em>铸币Mint</em> 在本质上非常相似，这会导致不必要的混淆。</p>
 <figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/1*ntWf1vFfj0g9ycT0LRSgzQ.png" alt="" loading="lazy"></figure>
-<p>【铸造更多场景（金额大于当前债务）Mint more scenario (the amount is greater than current debt)】</p>
+<p>【铸造更多场景(金额大于当前债务) Mint more scenario (the amount is greater than current debt)】</p>
 <p><strong>Hence, we decided to remove <em>Mine</em> functionality.</strong> To make it up we unified <em>Mine</em> and <em>Mint</em> tabs so that <em>Mint</em> can become a one-stop-shop both for building transaction batches and <em>Liquidity Mining</em>. Depending on the input amount, from one single tab, users can mint more (if the amount is greater than current debt) or burn (if the amount is less than current debt) making it simple for everyone. To simplify things even more, by dragging a slider users can see: changing multiplier (leverage), estimates of how many EUL tokens they can earn, net profit/cost of a given position, <strong>but also <em>Estimated Time to Liquidation,</em> which is the second feature we are rolling out today!</strong></p>
-<p><strong>因此，我们决定移除 <em>挖矿 Mine</em> 功能。</strong> 为了弥补这一点，我们统一了 <em>挖矿 Mine</em> 和 <em>铸币 Mint</em> 选项卡，以便 <em>铸币 Mint</em> 可以成为构建交易批次和 <em>流动性挖矿</em> 的一站式商店。根据输入的金额，用户可以从一个选项卡中铸造更多（如果金额大于当前债务）或销毁（如果金额小于当前债务），这对每个人来说都很简单。为了进一步简化交易，通过拖动滑块，用户可以看到：改变乘数（杠杆），估计他们可以赚取多少 EUL 代币，给定头寸的净利润/成本，<strong>还有 <em>预计清算时间 Estimated Time to Liquidation,</em> 是我们今天推出的第二个功能！</strong></p>
+<p><strong>因此，我们决定移除 <em>挖矿 Mine</em> 功能。</strong> 为了弥补这一点，我们统一了 <em>挖矿 Mine</em> 和 <em>铸币 Mint</em> 选项卡，以便 <em>铸币 Mint</em> 可以成为构建交易批次和 <em>流动性挖矿</em> 的一站式商店。根据输入的金额，用户可以从一个选项卡中铸造更多(如果金额大于当前债务)或销毁(如果金额小于当前债务)，这对每个人来说都很简单。为了进一步简化交易，通过拖动滑块，用户可以看到：改变乘数(杠杆)，估计他们可以赚取多少 EUL 代币，给定头寸的净利润/成本，<strong>还有 <em>预计清算时间 Estimated Time to Liquidation,</em> 是我们今天推出的第二个功能！</strong></p>
 <figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/1*2ZHSOsGCfcIWWYWjsiwfxg.png" alt="" loading="lazy"></figure>
-<p>【烧毁场景（金额小于当前债务）Burn scenario (the amount is less than current debt)】</p>
+<p>【烧毁场景(金额小于当前债务)Burn scenario (the amount is less than current debt)】</p>
 <p>The introduction of the long-anticipated <em>Estimated Time to Liquidation,</em> together with the classic <em>Health Score,</em> will let better estimate the health of the user's account. The <em>Health Score ratio</em>, which is commonly used in DeFi space, defined as the ratio of risk-adjusted collateral to risk-adjusted liabilities is not always a good indicator of the risk of the account being liquidated.</p>
 <p>引入期待已久的 <em>预计清算时间 Estimated Time to Liquidation</em> 以及经典的 <em>健康评分 Health Score,</em> 将更好地估计用户帐户的健康状况。 DeFi 领域常用的 <em>健康评分比率</em>，定义为风险调整后的抵押品与风险调整后负债的比率，并不总是能很好地指示账户被清算的风险。</p>
 <p>Typically, an account gets liquidated when the <em>Health Score</em> drops below 1. However, let’s take into consideration a self-collateralized loan. In a situation where a given asset has a collateral factor of 0, meaning that this asset can only be used to collateralize a loan of the same asset, and there is no other collateral provided, such a loan would always have the <em>Health Score</em> equal to 1. With that, there is no easy way to say how much buffer the given account has until will get liquidated. And this is where the <em>Estimated Time to Liquidation</em> comes into play.</p>
 <p>通常，当 <em>健康评分</em> 低于 1 时，账户就会被清算。但是，让我们考虑一下自抵押贷款。在给定资产的抵押因子为 0 的情况下，这意味着该资产只能用于抵押同一资产的贷款，并且没有提供其他抵押品，此类贷款的 <em>健康评分</em> 总是等于1. 有了这个，没有简单的方法来说明给定帐户在清算之前有多少缓冲。这就是 <em>预计清算时间 Estimated Time to Liquidation</em>  发挥作用的地方。</p>
 <figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/1*r6W0cVOM_q6-haPwtkEnVQ.png" alt="" loading="lazy"></figure>
-<p>（<em>预计清算时间 Estimated Time to Liquidation</em> 在账户视图中替代贷款价值比的功能 <em>Estimated Time to Liquidation</em> feature that replaces Loan-to-value in the Account view）</p>
+<p>(<em>预计清算时间 Estimated Time to Liquidation</em> 在账户视图中替代贷款价值比的功能 <em>Estimated Time to Liquidation</em> feature that replaces Loan-to-value in the Account view)</p>
 <p>The <em>Estimated Time to Liquidation</em> is calculated with one-day precision, assuming the asset prices and interest rates will not change. Certainly, the real time until liquidation would be different however the estimate lets users easily check whether their account is at risk at the moment. As already explained, it might be especially helpful for self-collateralized loans where, depending on the leverage and collateral factor of a given asset, the health score metric is not a sufficient indicator to measure the risk of the account being liquidated. However, the estimate might be a useful metric for a far more complex composition of deposits and debt within the account. If we assume no major upside or downside movements of the market, it can give us quite an accurate estimate of how much time we have until the debt must be repaid or more collateral deposited. Pretty useful, isn’t it?</p>
 <p>假设资产价格和利率不会改变，<em>预计清算时间</em> 以一天的精度计算。当然，到清算的实际时间会有所不同，但该估计让用户可以轻松检查他们的账户目前是否存在风险。如前所述，它可能对自抵押贷款特别有用，因为根据给定资产的杠杆和抵押因素，健康评分指标不足以衡量账户被清算的风险。然而，对于账户内的存款和债务构成更为复杂，该估计值可能也是一个有用的指标。如果我们假设市场没有重大的上行或下行变动，它可以让我们非常准确地估计在必须偿还债务或存入更多抵押品之前还有多少时间。很有用，不是吗？</p>
 <p>This is all for today. As always, if you have any feedback, we will be happy to hear from you!</p>
