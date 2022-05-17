@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Web3 is REAL</title>
-    <updated>2022-05-16T02:51:42.416Z</updated>
+    <updated>2022-05-17T16:03:14.131Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -11,6 +11,165 @@
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Web3 is REAL</rights>
     <entry>
+        <title type="html"><![CDATA[Euler SDK来啦！(Announcing the Euler SDK)]]></title>
+        <id>https://chainguys.github.io/post/euler-sdk-lai-la-announcing-the-euler-sdk/</id>
+        <link href="https://chainguys.github.io/post/euler-sdk-lai-la-announcing-the-euler-sdk/">
+        </link>
+        <updated>2022-05-17T12:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p><em>Calling all smart contract developers — integrate Euler into your workflows now!</em></p>
+<p><em>召集所有智能合约开发人员——现在将 Euler 集成到您的工作流中吧！</em></p>
+<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/0*eJyn10G8Sk2JG-7k.png" alt="" loading="lazy"></figure>
+<p>As Euler grows and matures, attracting lenders and borrowers, we are also looking for ways to encourage the developer community to build cool products and integrations on top of the platform. To reach that goal, we are excited to announce the release of a <a href="https://www.npmjs.com/package/@eulerxyz/euler-sdk">JavaScript SDK for Euler</a>.</p>
+<p>随着 Euler 的成长和成熟，以及吸引了贷款人和出借人，我们也在寻找方法来鼓励开发者社区在平台之上构建很酷的产品和集成。为了实现这一目标，我们很高兴地宣布发布 <a href="https://www.npmjs.com/package/@eulerxyz/euler-sdk">JavaScript SDK for Euler</a>。</p>
+<p>With this initial release, the SDK provides:<br>
+在此初始版本中，SDK 提供：</p>
+<ul>
+<li>
+<p>Easy access to instances of all Euler smart contracts, including mining contracts, the EUL token and peripheries such as FlashLoan.<br>
+轻松访问所有 Euler 智能合约的实例，包括挖矿合约、EUL 代币和 FlashLoan 等外围合约。</p>
+</li>
+<li>
+<p>Built-in configurations for Ethereum mainnet and Ropsten testnet.<br>
+以太坊主网和 Ropsten 测试网的内置配置。</p>
+</li>
+<li>
+<p>Tools for working with Euler’s batch transactions.<br>
+用于处理 Euler 批量事务的工具。</p>
+</li>
+<li>
+<p>Tools for signing and applying the <a href="https://eips.ethereum.org/EIPS/eip-2612">EIP2612</a> permits.<br>
+用于签署和应用 <a href="https://eips.ethereum.org/EIPS/eip-2612">EIP2612</a> 许可的工具。</p>
+</li>
+</ul>
+<p>For details, please read the <a href="https://github.com/euler-xyz/euler-sdk/blob/master/README.md">docs</a>. Here we’d like to give you just a few quick examples of how to use the SDK to interact with the Euler platform.</p>
+<p>有关详细信息，请阅读 <a href="https://github.com/euler-xyz/euler-sdk/blob/master/README.md">文档</a>。在这里，我们想为您提供几个快速示例，说明如何使用 SDK 与 Euler 平台进行交互。</p>
+<h2 id="euler类-the-euler-class">Euler类 (The Euler class)</h2>
+<p>To begin with, import the Euler class and instantiate it with a standard ethers provider or signer:</p>
+<p>首先，导入 Euler 类并使用标准的 ethers 提供者或签名者对其进行实例化：</p>
+<pre><code>import { Euler } from &quot;@eulerxyz/euler-sdk&quot;const provider = new ethers  
+  .providers  
+  .JsonRpcProvider(&quot;&lt;JSON_RPC_URL&gt;&quot;)const signer = new ethers.Wallet(&quot;&lt;PRV_KEY&gt;&quot;, provider)  
+  
+const e = new Euler(signer)
+</code></pre>
+<h2 id="合约-contracts">合约 (Contracts)</h2>
+<p>By default, you will get an instance configured for the mainnet. The main Euler singleton contracts are provided on the <code>contracts</code> property. They are simply vanilla instances of the ethers Contract class. Helpers are also available for factory-created contracts (eTokens, dTokens, pTokens).</p>
+<p>您将默认获得一个为主网配置的实例。 <code>contracts</code> 属性提供了主要的 Euler 单例合约。它们只是 ethers合约 类的普通实例。助手(Helpers)也可用于工厂创建的合约（eTokens、dTokens、pTokens）。</p>
+<pre><code>const eUsdcAddress = await e  
+  .contracts  
+  .markets  
+  .underlyingToEToken(USDC_ADDRESS)await e.eToken(eUsdcAddress).deposit(0, 1M_USDC)
+</code></pre>
+<h2 id="批量交易-batch-transactions">批量交易 (Batch transactions)</h2>
+<p>Now let’s try something more interesting. We’ll take advantage of <a href="https://docs.euler.finance/developers/architecture#batch-requests">batch transactions</a> and <a href="https://docs.euler.finance/developers/architecture#liquidity-deferrals">deferred liquidity check</a>, some of Euler’s coolest features. We’re going to build a leveraged position in a single transaction, in the same way the Short feature works in the Euler dapp. We’re going to <code>mint</code> the shorted token (WETH) and swap it on Uniswap V3 for collateral or long token (USDC). We need to defer the liquidity check because presumably the minted amount is too large to be sustained by existing collateral, and the liquidity check would fail on <code>mint</code>. Only when the minted deposit is swapped back to collateral is the health score restored.</p>
+<p>现在让我们尝试一些更有趣的东西。我们将利用 <a href="https://docs.euler.finance/developers/architecture#batch-requests">批量交易</a> 和 <a href="https://docs.euler.finance/developers/architecture#liquidity-deferrals">展期流动性检查</a>，Euler的一些最酷的功能。我们将在单个交易中建立一个杠杆头寸，就像Euler dapp 中的 Short 功能一样。我们将<code>铸造</code>做空的代币 (WETH) 并在 Uniswap V3 上将其换成抵押品或做多的代币 (USDC)。我们需要推迟流动性检查，因为可能铸造的数量太大而无法由现有抵押品维持，并且流动性检查将在“铸造”时失败。只有当铸造的存款被换回抵押品时，健康评分才会恢复。</p>
+<pre><code>const batchItems = [  
+  {  
+    contract: &quot;markets&quot;,  
+    method: &quot;enterMarket&quot;,  
+    args: USDC_ADDRESS,  
+  },  
+  {  
+    contract: &quot;eToken&quot;,  
+    address: EWETH_ADDRESS,  
+    method: &quot;mint&quot;,  
+    args: [0, 1M_USDC]  
+  },  
+  {  
+    contract: &quot;swap&quot;,  
+    method: &quot;swapUniExactInputSingle&quot;,  
+    args: [{  
+      subAccountIdIn: 0,  
+      subAccountIdOut: 0,  
+      underlyingIn: WETH_ADDRESS,  
+      underlyingOut: USDC_ADDRESS,  
+      amountIn: 1M_USDC,  
+      amountOutMinimum: mySlippageTolerance,  
+      deadline: 0,  
+      fee: 300, // use 0.3% USDC/WETH pool  
+      sqrtPriceLimitX96: 0  
+    }]  
+  }  
+]const encodedBatch = e.buildBatch(batchItems)const deferredLiquidityCheckAccount = await e  
+  .getSigner()  
+  .getAddress()await e  
+  .contracts  
+  .exec  
+  .batchDispatch(encodedBatch, [deferredLiquidityCheckAccount])
+</code></pre>
+<h2 id="许可-permits">许可 (Permits)</h2>
+<p>Finally, the SDK handles signing and applying EIP2612 permits. The list of tokens supporting permits and the data needed to construct the signatures is provided by <a href="https://github.com/euler-xyz/euler-tokenlist">Euler’s token list</a>.</p>
+<p>最后，SDK 处理签署和申请 EIP2612 许可。支持许可的代币列表和构建签名所需的数据由 <a href="https://github.com/euler-xyz/euler-tokenlist">Euler 的代币列表</a> 提供。</p>
+<pre><code>const agEur = eulerTokenList.find(t =&gt; t.symbol === 'agEUR')  
+const eagEurAddr = e  
+  .contracts  
+  .markets  
+  .underlyingToEtoken(agEur.address)const batchItems = [  
+  await e.signPermitBatchItem(agEur),  
+  {  
+    contract: e.eToken(eagEurAddr),  
+    method: &quot;deposit&quot;,  
+    args: [0, 1M_AGEUR]  
+  }  
+]
+</code></pre>
+<h2 id="还有什么-whats-next">还有什么? (What’s next)</h2>
+<p>The current release provides a very basic set of features, and there’s obviously room for improvement. We will be working on improving the SDK in the near future, but we also welcome contributions, ideas, and requests from the community. Please feel free to open a pull request or reach out to us on <a href="https://discord.gg/CdG97VSYGk">Discord</a>.</p>
+<p>GitHub: <a href="https://github.com/euler-xyz/euler-sdk">https://github.com/euler-xyz/euler-sdk</a></p>
+<p>NPM: <a href="https://www.npmjs.com/package/@eulerxyz/euler-sdk">https://www.npmjs.com/package/@eulerxyz/euler-sdk</a></p>
+<p>当前版本提供了一组非常基本的功能，显然还有改进的余地。我们将在不久的将来努力改进 SDK，但我们也欢迎社区的贡献、想法和请求。请随时打开提出请求或通过以下方式与我们联系。</p>
+<p>Discord: <a href="https://discord.gg/rMk7wSSxaG">https://discord.gg/rMk7wSSxaG</a></p>
+<p>GitHub: <a href="https://github.com/euler-xyz/euler-sdk">https://github.com/euler-xyz/euler-sdk</a></p>
+<p>NPM: <a href="https://www.npmjs.com/package/@eulerxyz/euler-sdk">https://www.npmjs.com/package/@eulerxyz/euler-sdk</a></p>
+<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
+<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
+<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
+<h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
+<p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
+<p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Euler dapp新功能来啦！(Announcing new features of Euler dapp)]]></title>
+        <id>https://chainguys.github.io/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/</id>
+        <link href="https://chainguys.github.io/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/">
+        </link>
+        <updated>2022-05-10T15:36:58.000Z</updated>
+        <content type="html"><![CDATA[<p>原文:https://blog.euler.finance/announcing-new-features-of-euler-dapp-8cadabb111ac</p>
+<p><em>Long awaited awaited features are here! Know your Estimated Time to Liquidation, take part in Liquidity Mining easily!</em></p>
+<p><em>期待已久的功能就在这里！现在您可以了解预计清算时间，轻松参与流动性挖矿！</em></p>
+<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*z4C6jmNf25LAq-SgB_gaXQ.png" alt="" loading="lazy"></figure>
+<p>Today we are introducing two new features in the Euler dapp. Both of them have been designed and developed in response to our community’s feedback and we hope that they will significantly increase user experience.</p>
+<p>今天我们将介绍 Euler dapp 中的两个新功能。它们都是根据我们社区的反馈设计和开发的，我们希望它们能显着提高用户体验。</p>
+<p>One of the flagship Euler’s functionalities is <em>Mint</em>. <em>Mint</em> creates an equal amount of deposits and debts for an account and hence is often used for creating leveraged positions. Users no longer need to recursively borrow the same asset to set up a leveraged position, but can instead use this gas-efficient Euler native function which requires only a few clicks.</p>
+<p>Euler 的旗舰功能之一是 <em>铸币 Mint</em>。 <em>铸币 Mint</em> 为账户创建等量的存款和债务，因此通常用于创建杠杆头寸。用户不再需要递归地借入相同的资产来设置杠杆头寸，而是可以使用这种节省gas的Euler原生功能——只需点击几下。</p>
+<p>With the announcement of <em>Liquidity Mining</em> program back in March, we introduced a <em>Mine</em> function. <em>Mine</em>’s purpose was to simplify the existing <em>Mint</em> function so that users can easily create self-collateralized positions to mine EUL tokens. Very soon many users noticed that <em>Mine</em> and <em>Mint</em> are very similar in nature which lead to unnecessary confusion.</p>
+<p>随着 3 月份 <em>流动性挖矿</em> 计划的发布，我们引入了 <em>挖矿 Mine</em> 功能。 <em>挖矿 Mine</em> 的目的是简化现有的 <em>铸币 Mint</em> 功能，以便用户可以轻松创建 自抵押 仓位来挖掘 EUL 代币。很快许多用户注意到 <em>挖矿 Mine</em> 和 <em>铸币Mint</em> 在本质上非常相似，这会导致不必要的混淆。</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/1*ntWf1vFfj0g9ycT0LRSgzQ.png" alt="" loading="lazy"></figure>
+<p>【铸造更多场景（金额大于当前债务）Mint more scenario (the amount is greater than current debt)】</p>
+<p><strong>Hence, we decided to remove <em>Mine</em> functionality.</strong> To make it up we unified <em>Mine</em> and <em>Mint</em> tabs so that <em>Mint</em> can become a one-stop-shop both for building transaction batches and <em>Liquidity Mining</em>. Depending on the input amount, from one single tab, users can mint more (if the amount is greater than current debt) or burn (if the amount is less than current debt) making it simple for everyone. To simplify things even more, by dragging a slider users can see: changing multiplier (leverage), estimates of how many EUL tokens they can earn, net profit/cost of a given position, <strong>but also <em>Estimated Time to Liquidation,</em> which is the second feature we are rolling out today!</strong></p>
+<p><strong>因此，我们决定移除 <em>挖矿 Mine</em> 功能。</strong> 为了弥补这一点，我们统一了 <em>挖矿 Mine</em> 和 <em>铸币 Mint</em> 选项卡，以便 <em>铸币 Mint</em> 可以成为构建交易批次和 <em>流动性挖矿</em> 的一站式商店。根据输入的金额，用户可以从一个选项卡中铸造更多（如果金额大于当前债务）或销毁（如果金额小于当前债务），这对每个人来说都很简单。为了进一步简化交易，通过拖动滑块，用户可以看到：改变乘数（杠杆），估计他们可以赚取多少 EUL 代币，给定头寸的净利润/成本，<strong>还有 <em>预计清算时间 Estimated Time to Liquidation,</em> 是我们今天推出的第二个功能！</strong></p>
+<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/1*2ZHSOsGCfcIWWYWjsiwfxg.png" alt="" loading="lazy"></figure>
+<p>【烧毁场景（金额小于当前债务）Burn scenario (the amount is less than current debt)】</p>
+<p>The introduction of the long-anticipated <em>Estimated Time to Liquidation,</em> together with the classic <em>Health Score,</em> will let better estimate the health of the user's account. The <em>Health Score ratio</em>, which is commonly used in DeFi space, defined as the ratio of risk-adjusted collateral to risk-adjusted liabilities is not always a good indicator of the risk of the account being liquidated.</p>
+<p>引入期待已久的 <em>预计清算时间 Estimated Time to Liquidation</em> 以及经典的 <em>健康评分 Health Score,</em> 将更好地估计用户帐户的健康状况。 DeFi 领域常用的 <em>健康评分比率</em>，定义为风险调整后的抵押品与风险调整后负债的比率，并不总是能很好地指示账户被清算的风险。</p>
+<p>Typically, an account gets liquidated when the <em>Health Score</em> drops below 1. However, let’s take into consideration a self-collateralized loan. In a situation where a given asset has a collateral factor of 0, meaning that this asset can only be used to collateralize a loan of the same asset, and there is no other collateral provided, such a loan would always have the <em>Health Score</em> equal to 1. With that, there is no easy way to say how much buffer the given account has until will get liquidated. And this is where the <em>Estimated Time to Liquidation</em> comes into play.</p>
+<p>通常，当 <em>健康评分</em> 低于 1 时，账户就会被清算。但是，让我们考虑一下自抵押贷款。在给定资产的抵押因子为 0 的情况下，这意味着该资产只能用于抵押同一资产的贷款，并且没有提供其他抵押品，此类贷款的 <em>健康评分</em> 总是等于1. 有了这个，没有简单的方法来说明给定帐户在清算之前有多少缓冲。这就是 <em>预计清算时间 Estimated Time to Liquidation</em>  发挥作用的地方。</p>
+<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/1*r6W0cVOM_q6-haPwtkEnVQ.png" alt="" loading="lazy"></figure>
+<p>（<em>预计清算时间 Estimated Time to Liquidation</em> 在账户视图中替代贷款价值比的功能 <em>Estimated Time to Liquidation</em> feature that replaces Loan-to-value in the Account view）</p>
+<p>The <em>Estimated Time to Liquidation</em> is calculated with one-day precision, assuming the asset prices and interest rates will not change. Certainly, the real time until liquidation would be different however the estimate lets users easily check whether their account is at risk at the moment. As already explained, it might be especially helpful for self-collateralized loans where, depending on the leverage and collateral factor of a given asset, the health score metric is not a sufficient indicator to measure the risk of the account being liquidated. However, the estimate might be a useful metric for a far more complex composition of deposits and debt within the account. If we assume no major upside or downside movements of the market, it can give us quite an accurate estimate of how much time we have until the debt must be repaid or more collateral deposited. Pretty useful, isn’t it?</p>
+<p>假设资产价格和利率不会改变，<em>预计清算时间</em> 以一天的精度计算。当然，到清算的实际时间会有所不同，但该估计让用户可以轻松检查他们的账户目前是否存在风险。如前所述，它可能对自抵押贷款特别有用，因为根据给定资产的杠杆和抵押因素，健康评分指标不足以衡量账户被清算的风险。然而，对于账户内的存款和债务构成更为复杂，该估计值可能也是一个有用的指标。如果我们假设市场没有重大的上行或下行变动，它可以让我们非常准确地估计在必须偿还债务或存入更多抵押品之前还有多少时间。很有用，不是吗？</p>
+<p>This is all for today. As always, if you have any feedback, we will be happy to hear from you!</p>
+<p>这就是今天的全部内容。与往常一样，如果您有任何反馈，我们将很高兴收到您的来信！</p>
+<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
+<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
+<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
+<h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
+<p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
+<p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Euler中文材料合集-不断更新中(Euler Chinese Materials-Updating)]]></title>
         <id>https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/</id>
         <link href="https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/">
@@ -18,6 +177,8 @@
         <updated>2022-05-10T04:23:01.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.euler.finance/static/media/Euler-animation.399c7e5b.gif" alt="" loading="lazy"></figure>
 <h1 id="1项目进展-euler来信project-update-euler-newletter">1.项目进展-Euler来信(Project update-Euler Newletter)</h1>
+<h2 id="euler-sdk来啦announcing-the-euler-sdk"><a href="https://chainguys.github.io/post/euler-sdk-lai-la-announcing-the-euler-sdk/">Euler SDK来啦！(Announcing the Euler SDK)</a></h2>
+<h2 id="euler-dapp新功能来啦announcing-new-features-of-euler-dapp"><a href="https://chainguys.github.io/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/">Euler dapp新功能来啦！(Announcing new features of Euler dapp)</a></h2>
 <h2 id="euler来信-四月总结euler-newsletter-april-summary"><a href="https://chainguys.github.io/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/">Euler来信-四月总结(Euler Newsletter April Summary)</a></h2>
 <h2 id="euler来信-三月总结euler-newsletter-march-summary"><a href="https://chainguys.github.io/post/euler-lai-xin-san-yue-zong-jie-euler-newsletter-march-summary/">Euler来信-三月总结(Euler Newsletter March Summary)</a></h2>
 <h1 id="2白皮书和官方文档whitepaper-and-official-docs">2.白皮书和官方文档(Whitepaper and Official Docs)：</h1>
@@ -846,174 +1007,6 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。</p>
 <p>YOU ARE ENTITLED AND ENCOURAGED TO ASK QUESTIONS AND REQUEST NECESSARY INFORMATION. FOR THESE AND ANY OTHER REASONS PLEASE CONTACT US AT <a href="mailto:info@neonlabs.org">info@neonlabs.org</a>.</p>
 <p>您有权并被鼓励提出问题并索取必要的信息。对于这些要求和任何其他原因，请通过 <a href="mailto:info@neonlabs.org">info@neonlabs.org</a></p>
 <p>与我们联系。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[EULER测试网使用手册 (EULER  TESTNET GUIDE)]]></title>
-        <id>https://chainguys.github.io/post/euler-ce-shi-wang-shi-yong-shou-ce-euler-testnet-guide/</id>
-        <link href="https://chainguys.github.io/post/euler-ce-shi-wang-shi-yong-shou-ce-euler-testnet-guide/">
-        </link>
-        <updated>2022-04-02T12:30:35.000Z</updated>
-        <content type="html"><![CDATA[<p>原文:<br>
-<a href="https://docs.google.com/document/d/1xWsgT2i9x2Birtt7Rm2mQNu2kCLkfUrue9LljwoMYU8/edit">https://docs.google.com/document/d/1xWsgT2i9x2Birtt7Rm2mQNu2kCLkfUrue9LljwoMYU8/edit</a></p>
-<figure data-type="image" tabindex="1"><img src="https://lh3.googleusercontent.com/hX_QOdde_IDls4IVw7IWN4ZUny2qgq4aF3obsgeJqX5Te0E35u1DKTf7dhpx8dFOHSHFs0Y2T6ehKtF_5Gd3RE1djZs97Xn5HQ_SpyTljzipv_zn7_SiQFPeKpDAanGgTBUYHZusJ18viXkP6g" alt="" loading="lazy"></figure>
-<h1 id="euler测试网-euler-testnet">EULER测试网 (EULER TESTNET )</h1>
-<p><em>Guide on how to get tokens on Ropsten and participate in the Euler protocol testnet.</em></p>
-<p><em>如何在 Ropsten 上获取代币并参与欧拉协议测试网的指南。</em></p>
-<p>The testnet stage will make use of the Ethereum Ropsten Test Network so users can try lending and borrowing with Ropsten tokens such as wETH, DAI, WBTC and many others. Users can become more acquainted with the differences in market assets, specifically isolated, cross and collateral tokens.</p>
-<p>测试网阶段将利用以太坊 Ropsten 测试网络，因此用户可以尝试使用 Ropsten 代币（如 wETH、DAI、WBTC 等）进行借贷。用户可以更加熟悉市场资产的差异，特别是隔离、交叉(跨层)和抵押代币。</p>
-<p>We highly encourage users to browse around, test interactions, click things, break stuff and then report any feedback, positive or negative, back to us.</p>
-<p>我们强烈鼓励用户随机浏览、测试交互、点击东西、破坏东西，然后将任何反馈（正面或负面）报告给我们。</p>
-<p>When first landing on the site, users will be greeted by the available lending markets and general stats. From here users can participate by creating sub accounts, swap, deposit, borrow, short and transfer tokens.</p>
-<p>首次登陆该网站时，用户会看到可用的借贷市场和一般统计数据。从这里用户可以通过创建子账户、交换、存款、借入、卖空和转移代币来参与。</p>
-<p>After entering a position users can check out their health scores on the account page which will show their collateral, liabilities, and transactions, along with other user stats. The user dashboard will also reveal other important user stats, account summaries and more.</p>
-<p>建立头寸后，用户可以在账户页面上查看他们的健康评分，该页面将显示他们的抵押品、负债和交易，以及其他用户统计信息。用户仪表板还将显示其他重要的用户统计信息、帐户摘要等。</p>
-<p>Also note that we’re currently focusing on desktop web development, so mobile experiences may differ for the time being. Some components on the platform may be temporarily missing or paused during development as we work on feedback.</p>
-<p>另请注意，我们目前专注于桌面 Web 开发，因此移动体验暂时可能会有所不同。在我们处理反馈的过程中，平台上的某些组件可能会在开发过程中暂时丢失或暂停。</p>
-<h2 id="如何参与-how-to-participate">如何参与 (How to participate:)</h2>
-<ol>
-<li>
-<p>Use one of the Ropsten Ethereum (rETH) Faucets to receive some testnet ETH in your wallet<br>
-使用 Ropsten Ethereum (rETH) 水龙头之一在您的钱包中接收一些测试网 ETH</p>
-<ul>
-<li><a href="https://faucet.dimensions.network/">https://faucet.dimensions.network/</a></li>
-<li><a href="https://faucet.ropsten.be/">https://faucet.ropsten.be/</a></li>
-<li><a href="https://faucet.metamask.io/">https://faucet.metamask.io/  </a></li>
-</ul>
-</li>
-<li>
-<p>Use Euler’s custom faucet to get some testnet tokens: <br>
-使用 Euler 的自定义水龙头获取一些测试网代币</p>
-<ul>
-<li><a href="https://faucet.euler.finance/">https://faucet.euler.finance/</a></li>
-</ul>
-</li>
-</ol>
-<p>As a reminder, minting tokens from faucets does take some time since requests get queued up. Please try refreshing the etherscan link after 5-10 min. Make sure that you use our custom faucet for the tokens! Existing ropstein DAI and USDC won't work.</p>
-<p>提醒一下，由于请求排队，因此从水龙头铸造代币确实需要一些时间。请在 5-10 分钟后尝试刷新 etherscan 链接。确保您使用我们的定制水龙头获取代币！现有的 ropstein DAI 和 USDC 将不起作用。</p>
-<p>As a second option, an ERC-20 test faucet smart contract has been deployed on Ropsten and has all of the 18 supported tokens within the test environment.</p>
-<p>作为第二种选择，ERC-20 测试水龙头智能合约已部署在 Ropsten 上，并在测试环境中拥有所有 18 个受支持的代币。</p>
-<p>You can claim 10 of each token by pasting the token contract address from the testing guide into the withdraw field/function of the faucet contract.</p>
-<p>您可以将测试指南中的代币合约地址，粘贴到水龙头合约的提款字段/功能中来领取每种代币 10 个。</p>
-<p>The faucet contract can be found at:<br>
-水龙头合约可在以下位置找到：<br>
-<a href="https://ropsten.etherscan.io/address/0xEacEC657dAd8923e057f62EB7F0D6b10ede1E716#code">https://ropsten.etherscan.io/address/0xEacEC657dAd8923e057f62EB7F0D6b10ede1E716#code</a></p>
-<p>To interact with the contract you’ll need some Ropsten ETH in your metamask wallet. Paste the URL above into your chrome browser with metamask switched to Ropsten. Then click on Contract (next to transactions) and then Write. Then connect your wallet by clicking Connect to Web3. Once connected, you can paste any our tokens addresses into the withdraw function test field and click on Write. Once the transaction is processed, you should see 10 of the tokens you have claimed added to your wallet under the assets area in metamask (note: you will need to have imported the token into metamask to see your balance).</p>
-<p>要与合约交互，你的 metamask 钱包中需要一些 Ropsten ETH。将上面的 URL 粘贴到您的 chrome 浏览器中，并将 metamask 切换为 Ropsten。然后单击 合约（交易旁边），然后单击 写入。然后通过单击 连接到 Web3 连接您的钱包。连接后，您可以将我们的任何代币地址粘贴到提款功能测试字段中，然后单击 写入。处理完交易后，您应该会在 metamask 的资产区域下看到您声称已添加到钱包中的 10 个代币（注意：您需要将代币导入 metamask 才能查看余额）。</p>
-<h2 id="用户指南如何将测试网代币添加到您的metamask-user-guide-how-to-add-testnet-tokens-to-your-metamask">用户指南(如何将测试网代币添加到您的metamask)-User guide (How to add testnet tokens to your metamask)</h2>
-<ol>
-<li>Open your metamask and make sure you are connected to the Ropsten Test Network. Choose “Assets” and click on “Import tokens”.<br>
-打开您的metamask并确保您已连接到 Ropsten 测试网络。选择“资产”并点击“导入代币”。</li>
-</ol>
-<figure data-type="image" tabindex="2"><img src="https://lh3.googleusercontent.com/ksyHZK1_JM1zGKDcHOvuvEbMIHI9Y3ZQaH4DzZ1PsWthBpd8_fi1AC83S6ypxUOvat9_RNoqMbpUyD1ZUfS3dILJsJ3jymb-76opZDORwR8WytffVh6XB65JDpzT2xSJFRNbZUPE-mllzVNa0Q" alt="" loading="lazy"></figure>
-<ol start="2">
-<li>Another popup will appear in which you need to enter the token contract address provided from the list below and press on “Add Custom Token”.<br>
-将出现另一个弹出窗口，您需要在其中输入下面列表中提供的代币合约地址，然后点击“添加自定义代币”。<br>
-<a href="https://docs.google.com/spreadsheets/d/1OVc6dfB1h5k6zFIqRfC6zpWovcPBX_j6tAat-AaJIbM/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1OVc6dfB1h5k6zFIqRfC6zpWovcPBX_j6tAat-AaJIbM/edit?usp=sharing</a> <img src="https://lh5.googleusercontent.com/n684FoN4g9Oknu49-vPgEXMqgYVckEMt0cieBPhACI-hXoN9jCusV3oELY2jN82uirEP08k88NSffVNg5HvOIgpcHdl8nY_wkRt0jM--p7tdQqNXwrNNHRrgiV9JrHl_6J75GDZRb32RqKtgow" alt="" loading="lazy"></li>
-</ol>
-<h2 id="用户指南如何进行交易-user-guide-how-to-do-a-transaction">用户指南(如何进行交易)-User guide (How to do a transaction)</h2>
-<ol>
-<li>Connect to the wallet you used with the faucet above and make sure you choose Ropsten Test Network from the dropdown list.<br>
-连接到您与上述水龙头一起使用的钱包，并确保从下拉列表中选择 Ropsten 测试网络。</li>
-</ol>
-<figure data-type="image" tabindex="3"><img src="https://lh6.googleusercontent.com/80mGQu8GvJK4bh_Da-HCVG0WjMHY8gplDI4iw08tNkbo-0hv5mQPPYgLTYk10HwRaJ6qd-R4JS12a2PULfGuwurXdI8TIjEzi0hYBjxHdQE_1CZzr-mKfjdBONrkS4IO7mXtNzRGKQeiydlgzA" alt="" loading="lazy"></figure>
-<ol start="2">
-<li>Go to <a href="https://ropsten.euler.finance">https://ropsten.euler.finance</a> and click ‘Connect’ in the upper right corner.<br>
-前往<a href="https://ropsten.euler.finance">https://ropsten.euler.finance</a>，点击右上角的“连接”。</li>
-</ol>
-<figure data-type="image" tabindex="4"><img src="https://lh4.googleusercontent.com/ipSadV8vMNayNkts_spKianvjzjUXDfdLrn4KxIadElnUoEeXFbwK1yeEcR9pcaD4E8pRQe4LwtOotmcKDJ1IgKQQvSChG3WlTHGS3G7dg00DtGgTK-sNVWjqeaLtZMwNdSX_EsUCgxRUNmnyw" alt="" loading="lazy"></figure>
-<ol start="3">
-<li>Create a new transaction by pressing ‘Transaction’ at the top right in the header. Start by depositing USDC, and then borrowing CRV to your Main account.<br>
-按标题右上角的“交易”创建新交易。首先存入 USDC，然后将 CRV 借入您的主账户。</li>
-</ol>
-<figure data-type="image" tabindex="5"><img src="https://lh4.googleusercontent.com/vUWdt4u5nD0UXSPdus8ofawRqBdeBpiNak09lXrNY_waDE-ISSbzfncobDcHsnkulyHrDKGmeaz9_Z0EGnbXkmqCucY0hAfBmNPLTuWWr3cO-Netp75SYMW5t5nwbmXqLWmT-awZJ2QWEXyP_g" alt="" loading="lazy"></figure>
-<p><img src="https://lh4.googleusercontent.com/NoLA9cz_9G7wgM2U0H8_ItcGoPgy-z38z64yklBZH4SyheH5bYXgbyOeBA8Q_BbekTUnDiS1hLcN9ietLZejzvB1wSdVumsQV5HtDGZdKoLlJxoCbulhJvR5HD8C170XAmTRgq9IPdOrvdS-dw" alt="" loading="lazy"><img src="https://lh6.googleusercontent.com/Nov7I58lxRgwq84ozDdW_qiRIkrzxo638J7_FD6GJi7mUO6ySpdlzqrsehHDzAdp7ynkEL42a4cWe9t5eqVxKNFZ0jr_b5G1bug-VLd2WdWXkFt3zdNz6yXSDtwfZrsd0hv6fYiq-ut6TpIr7Q" alt="" loading="lazy"></p>
-<ol start="4">
-<li>After you approve the spending limit, you will be able to choose the desired amount for the deposit. A transaction builder popup will appear on the right side, where you will have to click on the ‘Send txs’ button to initiate the transfer.<br>
-在您批准消费限额后，您将可以选择所需的存款金额。交易构建器弹出窗口将出现在右侧，您必须在其中单击“发送 txs”按钮来启动交易。</li>
-</ol>
-<figure data-type="image" tabindex="6"><img src="https://lh5.googleusercontent.com/N07QKHeJJ3DQknFGmuy-bOGp-WGSVNScQdVcYXn-ITcRkIHhCwd9UR46W5aqKS-O5EOd8fOQeNL5tzwu2_YZ-xFGgSlvZxZx7nh1LOZOPf9EgAliioZ-FWnlQYQWczN0z-8CHHaPgVyYAwo7Fw" alt="" loading="lazy"></figure>
-<h2 id="用户指南了解资产层-user-guide-learn-about-asset-tiers">用户指南(了解资产层)-User guide (Learn about Asset tiers)</h2>
-<p>When you click on the “MARKETS” tab, it will take you to the markets page, on which you can see the asset tiers and the number of assets in that tier. Asset tiers are also visible on the left side next to the token icon. By hovering over the Asset tiers, in this case for “Collateral”, the tier will also display a popup with an additional explanation on use cases for each tier.</p>
-<p>当您单击“市场”选项卡时，它将带您进入市场页面，您可以在该页面上查看资产层级和该层级中的资产数量。资产层级也可以在令牌图标旁边的左侧看到。通过将鼠标悬停在资产层上，在本例中为“抵押品”，该层还将显示一个弹出窗口，其中包含有关每个层的用例的附加说明。</p>
-<figure data-type="image" tabindex="7"><img src="https://lh5.googleusercontent.com/PsMxJ_Pc4xjyWxh6_zvviCzpeNBiADZptxo98defSS28jHHIHnWW6m-Y5xZMSGqEy7qOFp8BDAHgJLxKkOQYz3n9boOzoXgMoIO9etMaVDbbhsEmzGjjjdZ1izEsdwgMyIJWBEQkNjb_y2XuCg" alt="" loading="lazy"></figure>
-<p>Note. In order to “Borrow” you need to have one of the “Collateral Tier” assets deposited.</p>
-<p>注意：为了“借入”，您需要存入“抵押层”资产之一。</p>
-<h2 id="用户指南了解子账户-user-guide-learn-about-sub-accounts">用户指南(了解子账户)-User guide (Learn about sub-accounts)</h2>
-<ol>
-<li>At the top right of the app, mouse over the profile icon and then click on ‘Create New’ to create a Sub-account.<br>
-在应用的右上角，将鼠标悬停在个人资料图标上，然后单击“新建”创建子帐户。</li>
-</ol>
-<figure data-type="image" tabindex="8"><img src="https://lh4.googleusercontent.com/QpH8eZHnZ333n8qHn5NIKClKp1HfYf4w6jnsc4JZ_LiaRzgwIpZIIG0AshAW0csk5c2ONrj2uTkjMwzrjbIqyMXwFBR21NahiWd4M72WHJNVuf9cfxnmP-S1MNIa_yEGNna0meNLWNP3M5OMyQ" alt="" loading="lazy"></figure>
-<ol start="2">
-<li>Click on the ‘Transaction’ button again and transfer some collateral to your freshly created sub-account and borrow an isolated token. Understand that you need to be on a fresh sub-account to borrow isolated markets.<br>
-再次点击“交易”按钮，将一些抵押品转移到您新创建的子账户，并借入一个隔离层的代币。请了解您需要使用新的子账户才能借入隔离层的资产。</li>
-</ol>
-<p><img src="https://lh6.googleusercontent.com/OFfzuzC7u_Q0RC-mAvvyZ_PFeA6Qi56yGhXYZ3hJ-8d26oSmIVVmblQQa0WtkgLuG-OPpchdMaR6MmA1PLdhwAmtHUeCKLpIes3RYCnzlC2xkt5yL3W8Rirj_JWCsNFXHzwJMWK1oJvF_EvKrQ" alt="" loading="lazy"><br>
-<img src="https://lh5.googleusercontent.com/Lz0RwB1ni0TM93S--PFvZuwPt9QhWjQNWyGkvIZUYrL2ayOysVn2UdA3h7X9K_Vk_2ThXESFhT7i422pKCX28c-XmP2PageadMSEXcyK9eTHrJuroYqG96npox2Yonx5vevIY3Tc49qmVHtXfA" alt="" loading="lazy"></p>
-<ol start="3">
-<li>Deposit DAI and USDT in the same transaction to see how the transaction slip allows for multiple transactions to save gas cost.<br>
-在同一笔交易中存入 DAI 和 USDT，看看交易单如何允许多笔交易以节省 gas 成本。</li>
-</ol>
-<figure data-type="image" tabindex="9"><img src="https://lh4.googleusercontent.com/dGc1ICfAX2E50mrcIHuDMq1RHU4kcGFICIIzpkD2GmH4zDueV7lIpUbV5mZN3UT7MZAN3AFMIgzZZfOdBA8YoACO3AVkD-gIQOAPXM2ql406KXYFVwsP8XH7gSSJEMFBe3iQ9CNDZ62GwdXONg" alt="" loading="lazy"></figure>
-<ol start="4">
-<li>Navigate to the dashboard page and click on your main sub-account. Take stock of your health score and be aware that if it goes below 1 you will be up for liquidation.<br>
-导航到仪表板页面并单击您的主要子帐户。评估您的健康评分并注意，如果它低于 1，您将被清算。</li>
-</ol>
-<figure data-type="image" tabindex="10"><img src="https://lh4.googleusercontent.com/E-8DxIXongdvzLz951Ms6saBa4dRD0DsJeoTZSUmBTVm2AjUnvTlBcZa7Rwug7qkOYrQVRo3K_0s3wnNNkoqXMP_lRlBO04D7tQRYc3aGeI7FJ6wa_TbOZTFF6McgCJ7_Wfy2672JYwehbnjLA" alt="" loading="lazy"></figure>
-<p>Please report your feedback here: <a href="https://bit.ly/30URZ8x">https://bit.ly/30URZ8x</a><br>
-请在此处报告您的反馈：<a href="https://bit.ly/30URZ8x">https://bit.ly/30URZ8x</a></p>
-<p>THANK YOU!<br>
-谢谢！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Euler来信-三月总结(Euler Newsletter March Summary)]]></title>
-        <id>https://chainguys.github.io/post/euler-lai-xin-san-yue-zong-jie-euler-newsletter-march-summary/</id>
-        <link href="https://chainguys.github.io/post/euler-lai-xin-san-yue-zong-jie-euler-newsletter-march-summary/">
-        </link>
-        <updated>2022-04-01T11:49:04.000Z</updated>
-        <content type="html"><![CDATA[<p>原文:<a href="https://newsletter.euler.finance/p/march2022-recap?s=r">https://newsletter.euler.finance/p/march2022-recap?s=r</a></p>
-<h3 id="让我们一起回顾过去几周都发生了什么-lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么! (Let's recap what has happened over the past few weeks!)</h3>
-<h3 id="欢迎-welcome">欢迎! (Welcome!)</h3>
-<p>Euler had loads of updates and notable events in our last <a href="https://newsletter.euler.finance/p/19march22?s=w">newsletter</a>, so get ready for more in this month’s summary!</p>
-<p>在我们上一期的<a href="https://newsletter.euler.finance/p/19march22?s=w">通讯</a>中，Euler 有大量更新和值得注意的事件，所以准备好在本月的总结中了解更多吧！</p>
-<p>We surprised the DeFi community with a <a href="https://twitter.com/eulerfinance/status/1505926062362046470">snapshot</a> and announced the start of Epoch 1 and the <a href="https://docs.euler.finance/governance/distribution">distribution</a> for <a href="https://twitter.com/eulerfinance/status/1506317448118607876">Epoch 0</a>.</p>
-<p>我们用<a href="https://twitter.com/eulerfinance/status/1505926062362046470">快照</a>给了 DeFi 社区一个惊喜，并宣布开始 Epoch 1 ，以及<a href="https://docs.euler.finance/governance/distribution">分发</a> <a href="https://twitter.com/eulerfinance/status/1506317448118607876">Epoch 0</a> 。</p>
-<p><a href="https://twitter.com/eulerfinance/status/1508526476064264192">eIP3</a> was approved, so users can now perform self-collateralisation.</p>
-<p><a href="https://twitter.com/eulerfinance/status/1508526476064264192">eIP3</a> 获得批准，因此用户现在可以进行自我抵押。</p>
-<p><a href="https://twitter.com/eulerfinance/status/1506715170898280450">eIP5</a> has been implemented, which amended the borrow factors and interest rate models on a large number of assets.</p>
-<p><a href="https://twitter.com/eulerfinance/status/1506715170898280450">eIP5</a> 已经实施，从而对大量资产的借贷因子和利率模型进行了修正。</p>
-<p><a href="https://twitter.com/eulerfinance/status/1508715614059188229">eIP6</a> passed, allowing Euler users to utilise Chainlink (LINK) as a collateral asset.</p>
-<p><a href="https://twitter.com/eulerfinance/status/1508715614059188229">eIP6</a> 获得通过，允许 Euler 用户将 Chainlink (LINK) 作为资产进行抵押。</p>
-<p><a href="https://forum.euler.finance/t/eip-7-promote-matic-to-collateral-tier/112">eIP7</a> has been proposed to enable Polygon (MATIC) as a collateral asset on Euler. Feel free to discuss on the gov forums, particularly if you voted for/against it on <a href="https://twitter.com/MacroMate8/status/1508937005270548484">Compound</a>.</p>
-<p><a href="https://forum.euler.finance/t/eip-7-promote-matic-to-collateral-tier/112">eIP7</a> 已被提案。它将让 Polygon (MATIC) 作为 Euler 上的抵押资产。请不要拘束，多多在 gov 论坛上讨论，尤其是如果您在 <a href="https://twitter.com/MacroMate8/status/1508937005270548484">Compound</a> 上投票支持/反对它。</p>
-<p>Michael wrote a related <a href="https://twitter.com/euler_mab/status/1508746235343261711">thread</a> about leverage on over-collateralised lending protocols and another one detailing Euler’s unique and advanced <a href="https://twitter.com/euler_mab/status/1509484799379091457">features</a>.</p>
-<p>Michael 写了一篇关于超额抵押借贷协议杠杆的<a href="https://twitter.com/euler_mab/status/1508746235343261711">长推</a>，还有另一篇文章详细介绍了 Euler 的独特和高级<a href="https://twitter.com/euler_mab/status/1509484799379091457">功能</a>。</p>
-<p>We launched an educational tweet <a href="https://twitter.com/eulerfinance/status/1506964539371229185">series</a> on Euler’s main features. Check out the #EulerFeatures hashtag on Twitter to stay updated.</p>
-<p>我们推出了有关 Euler 主要功能的教育<a href="https://twitter.com/eulerfinance/status/1506964539371229185">推文系列</a>。您可以查看 Twitter 上的#EulerFeatures 标签来保持更新。</p>
-<p>We held our monthly Euler <a href="https://odysee.com/@Carrebear:8/CommCall:d">Community Call</a> and also a <a href="https://twitter.com/eulerfinance/status/1506547052645212164">Twitter Space</a> with Polygon.</p>
-<p>我们举行了每月一次的 Euler <a href="https://odysee.com/@Carrebear:8/CommCall:d">社区电话会议</a>，与 Polygon一起进行了 <a href="https://twitter.com/eulerfinance/status/1506547052645212164">Twitter 空间</a> （活动）。</p>
-<p>Euler was highlighted in a Messari <a href="https://twitter.com/eulerfinance/status/1508836611089338370">article</a> by <a href="https://twitter.com/bloomberg_seth/status/1507452795158671360">Seth Bloomberg</a>, and Hasu mentioned us in a <a href="https://twitter.com/hasufl/status/1509121997179138049">Tweet</a>.</p>
-<p><a href="https://twitter.com/bloomberg_seth/status/1507452795158671360">Seth Bloomberg</a> 在Messari <a href="https://twitter.com/eulerfinance/status/1508836611089338370">文章</a>中高度评价Euler，并且Hasu 也在<a href="https://twitter.com/hasufl/status/1509121997179138049">推文</a>中提到了我们。</p>
-<p>Meanwhile, we made an appearance in Token Terminal’s <a href="https://twitter.com/totlsota/status/1509552766049521672">newsletter</a>, while they also hinted of a <a href="https://twitter.com/tokenterminal/status/1508804108052017152">potential</a> research piece on Euler.</p>
-<p>同时，我们出现在 Token Terminal 的<a href="https://twitter.com/totlsota/status/1509552766049521672">通讯</a>中，同时他们也暗示了他们有关于Euler的<a href="https://twitter.com/tokenterminal/status/1508804108052017152">潜在</a>研究。</p>
-<p>Euler’s head of risk Seraphim wrote a <a href="https://twitter.com/MacroMate8/status/1508810487068348424">thread</a> about our unique liquidation process.</p>
-<p>Euler 的风险主管 Seraphim 写了一篇关于我们独特清算流程的<a href="https://twitter.com/MacroMate8/status/1508810487068348424">长推</a>。</p>
-<p>The Euler team grew with <a href="https://twitter.com/eulerfinance/status/1506224211232059400">Connor Mulhall</a> having joined as a full-stack engineer and <a href="https://twitter.com/eulerfinance/status/1508640108441837571">Rangel Stoilov</a> joined as a senior front-end developer.</p>
-<p>Euler 团队持续扩大： <a href="https://twitter.com/eulerfinance/status/1506224211232059400">Connor Mulhall</a> 作为全栈工程师加入， <a href="https://twitter.com/eulerfinance/status/1508640108441837571">Rangel Stoilov</a> 作为高级前端开发人员加入。</p>
-<p>We now have $352.3M in total supply, $98.51M in TVL, and $253.8M in total being borrowed across 53 total markets and $111.55k in reserves.</p>
-<p>我们现在总供应量为 3.523 亿美元，TVL 为 9851 万美元，在 53 个总市场中总共借入了 2.538 亿美元，准备金为 11.155 万美元。</p>
-<hr>
-<h2 id="其他新闻-in-other-news">其他新闻 (In Other News)</h2>
-<p>Watch this <a href="https://twitter.com/rekt/status/1507126172286480384">interview</a> with Seraphim and Brandon Neal if you missed the last newsletter about Brandon joining as our COO, having previously worked as an NY Fed official.</p>
-<p>如果您错过了 Brandon 加入我们并成为COO（他之前曾担任纽约联储官员）的最新通讯，请观看对 Seraphim 和 Brandon Neal 的<a href="https://twitter.com/rekt/status/1507126172286480384">采访</a>。</p>
-<p>Seraphim was <a href="https://www.efinancialcareers.co.uk/news/2022/03/leave-goldman-sachs-for-crypto?utm_source=GLOBAL_ALL_ENG&amp;utm_medium=SM_TW&amp;utm_campaign=ED_NEWS">interviewed</a> in an article on Goldman Sachs employees leaving TradFi for the crypto industry.</p>
-<p>Seraphim 在一篇关于高盛员工离开 TradFi 进入加密货币行业的文章中接受了<a href="https://www.efinancialcareers.co.uk/news/2022/03/leave-goldman-sachs-for-crypto?utm_source=GLOBAL_ALL_ENG&amp;utm_medium=SM_TW&amp;utm_campaign=ED_NEWS">采访</a>。</p>
-<p>Come meet the team and see Michael as a <a href="https://twitter.com/PBWSummit/status/1471165200271392770?t=Sy_1hEd84GfkvIV7gMiYuA&amp;s=19">key speaker</a> at the Paris Blockchain Week Summit from April 13th-14th 2022 or if you’re in the US, join Seraphim at Blockworks’ <a href="https://twitter.com/MacroMate8/status/1490741479026970627">Permissionless</a> conference in Palm Beach on 17-19 May.</p>
-<p>快来与团队会面！在 2022 年 4 月 13 日至 14 日的巴黎区块链周峰会上，可以看到 Michael 作为<a href="https://twitter.com/PBWSummit/status/1471165200271392770?t=Sy_1hEd84GfkvIV7gMiYuA&amp;s=19">主要发言人</a>。如果您在美国，5 月 17 日至 19 日在棕榈滩（Palm Beach）将举行Blockworks的<a href="https://twitter.com/MacroMate8/status/1490741479026970627">无许可</a>会议（<a href="https://twitter.com/MacroMate8/status/1490741479026970627">Permissionless</a> conference），届时欢迎您请加入Seraphim的活动。</p>
-<p>If you're in Germany, join Michael at the inaugural <a href="https://twitter.com/euler_mab/status/1494075904154349573">Blockchain Oracle Summit</a> in Berlin on 7-9 June.</p>
-<p>如果您在德国，请与Michael一起参加 6 月 7 日至 9 日在柏林举行的首届<a href="https://twitter.com/euler_mab/status/1494075904154349573">区块链甲骨文峰会</a>。</p>
 ]]></content>
     </entry>
 </feed>
