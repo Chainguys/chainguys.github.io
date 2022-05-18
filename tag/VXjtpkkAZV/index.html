@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Web3 is REAL</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1652804979015">
+<link rel="shortcut icon" href="/favicon.ico?v=1652857102775">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -206,7 +206,7 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">33</span>
+        <span class="site-item-stat-count">34</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
@@ -222,7 +222,7 @@
       <div class="sidebar-item">
         <span class="site-item-rss">
             <i class="fa fa-rss"></i>
-            <a href="https://chainguys.github.io/atom.xml" target="_blank">RSS</a>
+            <a href="http://localhost:4000/atom.xml" target="_blank">RSS</a>
         </span>
       </div>
     
@@ -391,7 +391,9 @@
       
       
       
-      <a href="https://chainguys.github.io/post/euler-ce-shi-wang-shi-yong-shou-ce-euler-testnet-guide/">
+      
+      
+      <a href="http://localhost:4000/post/euler-ce-shi-wang-shi-yong-shou-ce-euler-testnet-guide/">
         <div class="motion-warpper">
           <div class="tag-post-node">
             <h1>
@@ -1003,7 +1005,665 @@
     <div class="result" id="result">
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-sdk-lai-la-announcing-the-euler-sdk/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/uxd-protocol-wen-dang-uxd-protocol-docs/"" data-c="
+          &lt;pre&gt;&lt;code class=&#34;language-toc&#34;&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;版权声明copyright-notice&#34;&gt;版权声明(Copyright Notice)&lt;/h1&gt;
+&lt;p&gt;本文翻译自&lt;a href=&#34;https://twitter.com/KentoInami&#34;&gt;Kento Inami&lt;/a&gt; 为&lt;a href=&#34;https://uxd.fi/&#34;&gt;UXD&lt;/a&gt;项目的&lt;a href=&#34;https://uxd.fi/static/media/whitepaper.7be6354b.pdf&#34;&gt;白皮书&lt;/a&gt;，并已得到授权。译者为&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;。转载请注明作者和译者。&lt;/p&gt;
+&lt;p&gt;(Coptyright©2021 by &lt;a href=&#34;https://twitter.com/KentoInami&#34;&gt;Kento Inami&lt;/a&gt; from &lt;a href=&#34;https://uxd.fi/&#34;&gt;UXD&lt;/a&gt; , translated by &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;本文所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;/p&gt;
+&lt;p&gt;(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)&lt;/p&gt;
+&lt;h1 id=&#34;uxd协议是什么-what-is-uxd-protocol&#34;&gt;UXD协议是什么? (What is UXD Protocol?)&lt;/h1&gt;
+&lt;h2 id=&#34;uxd&#34;&gt;UXD&lt;/h2&gt;
+&lt;p&gt;UXD Protocol is an algorithmic stablecoin that is fully backed by a delta-neutral position using derivatives.&lt;/p&gt;
+&lt;p&gt;UXD 协议是一种算法稳定币，完全由使用衍生品的 delta 中性头寸支持。&lt;/p&gt;
+&lt;p&gt;UXD is issued on &lt;a href=&#34;https://solana.com/&#34;&gt;Solana&lt;/a&gt;, an incredibly fast, cheap, and permissionless blockchain. UXD is a next-generation decentralized stablecoin that integrates with top derivative trading exchanges on Solana in order to create a &amp;quot;delta-neutral&amp;quot; position that collateralizes the stablecoin. Our first derivative dex will be &lt;a href=&#34;https://mango.markets/&#34;&gt;mango markets&lt;/a&gt;. Through UXD&#39;s construct, we are able to solve the &amp;quot;&lt;a href=&#34;https://multicoin.capital/2021/09/02/solving-the-stablecoin-trilemma/&#34;&gt;stablecoin trilemma&lt;/a&gt;&amp;quot;, allowing UXD to be stable, capital efficient, and decentralized. Moreover, the stablecoin has native yield from the &amp;quot;funding rate&amp;quot; of the perpetual futures position it puts on, allowing UXD stakeholders to generate yield as a result. See &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics&#34;&gt;UXD Basics&lt;/a&gt; for an explanation of concepts like Derivatives, Delta, Perpetual Futures, Funding Rates, etc.&lt;/p&gt;
+&lt;p&gt;UXD 在 &lt;a href=&#34;https://solana.com/&#34;&gt;Solana&lt;/a&gt; 上发布，这是一个速度极快、费用低廉且无需许可的区块链。 UXD 是下一代去中心化稳定币，它与 Solana 上的顶级衍生品交易交易所集成，进而创建一个“delta中性(delta-neutral)”的头寸来抵押稳定币。我们的第一个衍生 品dex将是 &lt;a href=&#34;https://mango.markets/&#34;&gt;芒果市场&lt;/a&gt;。通过 UXD 的构建，我们能够解决“&lt;a href=&#34;https://multicoin.capital/2021/09/02/solving-the-stablecoin-trilemma/&#34;&gt;稳定币三难困境&lt;/a&gt;”，让 UXD 变得稳定、资本高效，和去中心化。此外，稳定币从它所放置的永续合约/期货头寸的“资金费率”中获得原生收益，从而允许 UXD 利益相关者产生收益。请参阅 UXD 基础知识](https://docs.uxd.fi/uxdprotocol/overview/uxd-basics) 了解衍生品、Delta、永续期货、资金费率等概念的解释。&lt;/p&gt;
+&lt;h3 id=&#34;uxd-与其他算法稳定币有何不同how-does-uxd-differ-from-other-algorithmic-stablecoins&#34;&gt;UXD 与其他“算法”稳定币有何不同？(How does UXD differ from other &amp;quot;algorithmic&amp;quot; stablecoins?)&lt;/h3&gt;
+&lt;p&gt;When thinking about what features an ideal stablecoin would have, three come to mind as incredibly important:&lt;/p&gt;
+&lt;p&gt;在考虑理想的稳定币应具备哪些功能时，我想到了三个非常重要的功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stable:&lt;/strong&gt; The goal of a stablecoin is to keep a direct peg to a non-crypto asset like US Dollars. If a stablecoin wildly fluctuates above or below this peg, it is fundamentally not very useful.&lt;br&gt;
+&lt;strong&gt;稳定性：&lt;/strong&gt; 稳定币的目标是与美元等非加密资产保持直接挂钩。如果一个稳定币在这个挂钩之上或之下剧烈波动，它基本上就不是很有用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Decentralized:&lt;/strong&gt; The issuance, trading, and flow of the stablecoin should not rely on any centralized entity. Minting and redeeming the stablecoin should be permissionless and decentralized, and the community of stablecoin users should own the platform that creates the stablecoin.&lt;br&gt;
+&lt;strong&gt;去中心化：&lt;/strong&gt; 稳定币的发行、交易和流动不应依赖任何中心化实体。稳定币的铸造和赎回应该是无许可和去中心化的，稳定币用户社区应该拥有创建稳定币的平台。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Capital Efficient:&lt;/strong&gt; Anyone should be able to mint the stablecoin with $1 of assets. Requiring more than $1 to mint a stablecoin, such as the case with DAI, is extremely inefficient for users.&lt;br&gt;
+&lt;strong&gt;资本效率：&lt;/strong&gt; 任何人都应该能够用 1 美元的资产铸造稳定币。铸造稳定币需要超过 1 美元，例如 DAI 的情况，对用户来说效率极低。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The stablecoin trilemma that we referenced above states &lt;em&gt;it is impossible to be Stable, Decentralized, and Capital Efficient at the same time. Stablecoins can have at most 2 of these 3 features.&lt;/em&gt; UXD believes that all stablecoins currently in the crypto ecosystem fail in one of these three key features, whereas UXD has novel solutions for &lt;em&gt;&lt;strong&gt;all three at the same time.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;我们在上面提到的“稳定币三难困境”表明 &lt;em&gt;不可能同时保持稳定、去中心化和资本效率。稳定币最多可以具有这 3 个功能中的 2 个。&lt;/em&gt; UXD 认为，目前加密生态系统中的所有稳定币都在这三个关键功能之一上失败，而 UXD 的新解决方案 &lt;em&gt;&lt;strong&gt;同时满足所有三个功能。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Think of your favorite stablecoin designs - they will fail in one of these three features to some extent. Of course, UXD comes with its own &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/risks&#34;&gt;Risks&lt;/a&gt;, which should be fully understood before minting or using UXD.&lt;/p&gt;
+&lt;p&gt;想想你最喜欢的稳定币设计——它们在某种程度上会在这三个特性之一中失败。当然，UXD 有其自身的 风险](https://docs.uxd.fi/uxdprotocol/overview/risks)，在铸造或使用 UXD 之前应充分了解。&lt;/p&gt;
+&lt;h2 id=&#34;稳定性-stable&#34;&gt;稳定性 (Stable)&lt;/h2&gt;
+&lt;p&gt;UXD is pegged to the US dollar using derivatives. Since it is backed 100% (meaning fully collateralized) by a delta-neutral position, users will always be able to redeem 1 UXD for 1 USD worth of assets. If UXD deviates above or below the USD peg for any reason, traders will be able to make risk-free profits and bring the price of UXD back to the peg. &lt;strong&gt;See&lt;/strong&gt; &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/delta-neutral-position&#34;&gt;&lt;strong&gt;Delta-Neutral Position&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;section for an explanation of the mechanics of UXD&#39;s stability.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;UXD 使用衍生工具与美元挂钩。由于它100%由 delta 中性头寸支持（意味着完全抵押），用户将始终能够将 1 UXD 兑换为价值 1 美元的资产。如果 UXD 因任何原因高于或低于美元挂钩，交易者将能够获得无风险利润并将 UXD 的价格带回挂钩。 &lt;strong&gt;请参阅&lt;/strong&gt; &lt;strong&gt;Delta中性头寸&lt;/strong&gt;](https://docs.uxd.fi/uxdprotocol/overview/delta-neutral-position) *&lt;em&gt;有关 UXD 稳定性机制的说明部分。&lt;/em&gt; *&lt;/p&gt;
+&lt;h2 id=&#34;去中心化-decentralized&#34;&gt;去中心化 (Decentralized)&lt;/h2&gt;
+&lt;p&gt;UXD Protocol is non-custodial, and does not hold user&#39;s deposited crypto assets. Users can mint/redeem UXD on a permissionless basis. Although the UXD team will control initial design choices for the protocol, eventually UXP holders (UXD&#39;s governance token) will have DAO authority over future design proposals. This will ensure that UXD is decentralized over the longer term, and never relies on any individual entity.&lt;/p&gt;
+&lt;p&gt;UXD 协议是非托管的，不持有用户存入的加密资产。用户可以在未经许可的基础上铸造/兑换 UXD。尽管 UXD 团队将控制协议的初始设计选择，但最终 UXP 持有者（UXD 的治理代币）将对未来的设计提案拥有 DAO 权限。这将确保 UXD 在较长时期内是去中心化的，并且永远不会依赖任何单个实体。&lt;/p&gt;
+&lt;h2 id=&#34;资本效率-capital-efficient&#34;&gt;资本效率 (Capital Efficient)&lt;/h2&gt;
+&lt;p&gt;Unlike many popular stablecoins that require more than $1 of crypto assets (sometimes $1.50+ of assets) to mint $1 of a stablecoin, UXD users can mint 1 UXD for $1 worth of crypto assets. UXD does not require any over-collateralization.&lt;/p&gt;
+&lt;p&gt;与许多流行的稳定币铸造 1 美元的定币需要抵质押超过 1 美元的加密资产（有时是 1.50 美元以上的资产）不同，UXD 用户可以用价值 1 美元的加密资产铸造 1 个 UXD。 UXD 不需要任何超额抵押。&lt;/p&gt;
+&lt;p&gt;A major benefit of this fact is that users don&#39;t have to actively monitor their deposits to guard against the risk of getting liquidated and taking a significant loss. UXD users can passively deposit their assets and feel confident that they can reclaim $1 of crypto asset for 1 UXD at any time.&lt;/p&gt;
+&lt;p&gt;这一事实的一个主要好处是，用户不必主动监控他们的存款来防止被清算和遭受重大损失。 UXD 用户可以被动地存入他们的资产，并确信他们可以随时用 1 UXD 收回 1 美元的加密资产。&lt;/p&gt;
+&lt;h2 id=&#34;原生收益-native-yield&#34;&gt;原生收益 (Native Yield)&lt;/h2&gt;
+&lt;p&gt;When UXD token is minted, UXD protocol establishes a derivatives trading position on decentralized exchanges that has a yield component through the &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-perpetual-future#funding-rates&#34;&gt;perpetual futures funding rate&lt;/a&gt;. This yield component means that stakeholders in UXD will receive yield when the yield is positive. When the yield is negative, the &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/insurance-fund&#34;&gt;insurance fund&lt;/a&gt; will be used to pay the negative yield from the perpetual futures funding rate, so long as the insurance fund remains capitalized. This ensures that holders of UXD do not have to worry about funding rates.&lt;/p&gt;
+&lt;p&gt;当 UXD 代币被铸造时，UXD 协议通过 永续期货资金费率]（https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-）在去中心化交易所建立衍生品交易头寸，该头寸具有收益组组件。这个组件意味着当收益为正时，UXD 的利益相关者将获得收益。当收益率为负时，保险基金]（https://docs.uxd.fi/uxdprotocol/overview/insurance-fund）将用于支付永续合约/期货资金利率的负收益率，只要保险基金确保资本化。这也确保了 UXD 的持有者不必担心资金费率。&lt;/p&gt;
+&lt;h1 id=&#34;uxd基本概念-uxd-basics&#34;&gt;UXD基本概念 (UXD Basics)&lt;/h1&gt;
+&lt;p&gt;In the next few sections we provide educational material on the basic background knowledge required to understand UXD Protocol, including an explanation of concepts like &amp;quot;delta-neutral&amp;quot;, &amp;quot;perpetual futures&amp;quot; and &amp;quot;funding rates&amp;quot;. These explanations should serve as a reference for readers with no prerequisite knowledge of these financial concepts. The following pages are quite long, and are meant to serve as educational materials away from the strict &amp;quot;docs&amp;quot; of UXD.&lt;/p&gt;
+&lt;p&gt;在接下来的几节中，我们将提供有关理解 UXD 协议所需的基本背景知识的教育材料，包括对“delta-neutral”、“perpetual futures”和“funding rate”等概念的解释。这些解释应该作为对这些金融概念没有先决知识的读者的参考。以下页面很长，旨在用作UXD 严格“文档”之外的教育材料。&lt;/p&gt;
+&lt;h2 id=&#34;什么是delta-whats-a-delta&#34;&gt;什么是&amp;quot;Delta&amp;quot;? (What&#39;s a &amp;quot;Delta&amp;quot;?)&lt;/h2&gt;
+&lt;p&gt;When you visit our &lt;a href=&#34;https://www.uxd.fi&#34;&gt;homepage&lt;/a&gt;, you&#39;ll be met immediately with a rather unusual word all over the homepage: &lt;strong&gt;&amp;quot;Delta&amp;quot;.&lt;/strong&gt; UXD at its core is a stablecoin backed by a &amp;quot;delta-neutral&amp;quot; position. But what is a &amp;quot;delta&amp;quot; and why is this important for a stablecoin?&lt;/p&gt;
+&lt;p&gt;当您访问我们的&lt;a href=&#34;https://www.uxd.fi&#34;&gt;主页&lt;/a&gt;时，您会立即在主页上看到一个相当不寻常的词：“Delta”。 UXD 的核心是由“delta 中性”头寸支持的稳定币。但是什么是“delta”，为什么这对稳定币很重要？&lt;/p&gt;
+&lt;p&gt;Delta, as in the Greek letter δ, is one of the most fundamental concepts in the field of financial derivatives. But what&#39;s a financial derivative?&lt;/p&gt;
+&lt;p&gt;Delta，就是希腊字母 δ，是金融衍生品领域最基本的概念之一。但什么是金融衍生品？&lt;/p&gt;
+&lt;h3 id=&#34;金融衍生品-financial-derivatives&#34;&gt;金融衍生品 (Financial Derivatives)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;tl;dr: A financial derivative is a bet between two parties that references an underlying asset without having to own that asset.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;省流助手：金融衍生品是两方之间的对赌，它基于标的资产而不必拥有该资产。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Taking a step back, a financial derivative is a way of betting on the price of another thing (asset) without having to own that thing (asset). For example, if I bet you $10 that the price of Tesla stock will double next year, then we&#39;ve just created a derivative contract between you and me. Neither of us needs to own Tesla stock in order to make this bet, but we are &lt;em&gt;&lt;strong&gt;referencing another asset&lt;/strong&gt;&lt;/em&gt; in our bet- Tesla stock. In other words, our bet &lt;strong&gt;&lt;em&gt;derives&lt;/em&gt;&lt;/strong&gt; its ultimate outcome from the referenced Tesla stock, hence the whole bet is named a &lt;em&gt;&lt;strong&gt;derivative.&lt;/strong&gt;&lt;/em&gt; At the end of 1 year, you and I check on the price of Tesla stock. If it&#39;s doubled, you give me $10 and if it hasn&#39;t, I give you $10.&lt;/p&gt;
+&lt;p&gt;退后一步，金融衍生品是一种押注另一事物（资产）价格的方式，并且无需拥有该事物（资产）。例如，如果我与你赌 10 美元特斯拉股票的价格明年将翻一番，那么我们刚刚在你我之间创建了一份衍生品合约。我们都不需要拥有特斯拉股票才能下注，但我们在赌注中 &lt;em&gt;&lt;strong&gt;引用了另一种资产&lt;/strong&gt;&lt;/em&gt;——特斯拉股票。换句话说，我们的对赌 &lt;strong&gt;&lt;em&gt;衍生&lt;/em&gt;&lt;/strong&gt; 的最终结果来自参考的特斯拉股票，因此整个对赌被命名为 &lt;em&gt;&lt;strong&gt;衍生品。&lt;/strong&gt;&lt;/em&gt; 在 1 年结束时，您和我检查特斯拉股票。如果翻倍，你给我 10 美元，如果没有，我给你 10 美元。&lt;/p&gt;
+&lt;p&gt;More common derivatives may be familiar to users of stock trading apps, such as Call and Put Options. Options are derivatives on the referenced stock. When you enter into an options contract, someone else takes the opposite side of the bet and you both agree to settle your bet by referencing the value of the underlying stock.&lt;/p&gt;
+&lt;p&gt;股票交易应用的用户可能熟悉更常见的衍生品，例如看涨期权和看跌期权。期权是参考股票的衍生品。当您签订期权合约时，其他人采取了相反的赌注，并且你们都同意通过参考标的股票的价值来结算您的赌注。&lt;/p&gt;
+&lt;p&gt;The thing referenced by a derivative is called the &amp;quot;underlying&amp;quot; asset in financial terms.&lt;/p&gt;
+&lt;p&gt;衍生品所引用的东西在金融术语中称为“基础”资产。&lt;/p&gt;
+&lt;h3 id=&#34;delta&#34;&gt;Delta&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;tl;dr: A &amp;quot;delta&amp;quot; is the amount a derivative&#39;s price changes as the referenced underlying asset changes in price.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;省流助手：“delta”是衍生品价格随着标定标的资产价格变化而变化的量。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Now that we understand what a derivative is, we need to understand a bit about &lt;em&gt;derivatives pricing.&lt;/em&gt; Derivatives themselves can also be traded and exchanged between people. What exactly does that mean?&lt;/p&gt;
+&lt;p&gt;现在我们了解了衍生品是什么，我们需要了解一点 &lt;em&gt;衍生品定价。&lt;/em&gt; 衍生品本身也可以在人与人之间进行交易和交换。这到底是什么意思呢？&lt;/p&gt;
+&lt;p&gt;Returning to the example from the previous section, suppose it&#39;s January 1st, 2022 and you and I bet that by January 1st, 2023 the price of Tesla stock will double. If it doubles, you give me $10, if it doesn&#39;t double, I give you $10.&lt;/p&gt;
+&lt;p&gt;回到上一节的例子，假设现在是 2022 年 1 月 1 日，你和我打赌到 2023 年 1 月 1 日，特斯拉股票的价格将翻倍。如果翻倍，你给我 10 美元，如果没有翻倍，我给你 10 美元。&lt;/p&gt;
+&lt;p&gt;Let&#39;s say 9 months pass by, and I want to exit this bet for whatever reason. You say &amp;quot;no, we had a deal&amp;quot; or &amp;quot;you signed a contract on a napkin&amp;quot;, etc etc. I offer you a solution: what if my friend Bob takes my place in the bet, so that the bet will now be with him instead of me. You agree, because you don&#39;t really care &lt;em&gt;&lt;strong&gt;who&lt;/strong&gt;&lt;/em&gt; the bet is with &lt;em&gt;&lt;strong&gt;as long as the bet still holds.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;假设 9 个月过去了，无论出于何种原因，我都想退出这个赌注。你说“不，我们达成了协议”或“你在餐巾纸上签了合同”等等。我为你提供了一个解决方案：如果我的朋友 Bob 在赌注中取代我的位置，那么现在将与他而不是我对赌。你同意，因为你并不真正关心 &lt;em&gt;&lt;strong&gt;谁&lt;/strong&gt;&lt;/em&gt; 下注 &lt;em&gt;&lt;strong&gt;只要下注仍然成立。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Now I call up Bob and ask him if he&#39;s interested in entering the bet instead of me. He says sure. Suppose, however, that in the 9 months since the bet started, Tesla stock price has gone up 95% and therefore has almost doubled. Bob realizes if he enters this bet he will probably win given how the stock has performed, so he may even be willing to &lt;em&gt;&lt;strong&gt;pay me to enter this bet.&lt;/strong&gt;&lt;/em&gt; I myself realize that there&#39;s a really good chance Bob makes $10, so I tell him he can enter the bet if he pays me $5. Bob agrees because he is pretty certain Tesla stock will go up more than the remaining 5% over the next 3 months.&lt;/p&gt;
+&lt;p&gt;现在我打电话给鲍勃，问他是否有兴趣代替我下注。他说当然。然而，假设在赌注开始后的 9 个月里，特斯拉股价上涨了 95%，因此几乎翻了一番。 Bob 意识到如果他下注，考虑到股票的表现，他可能会赢，所以他甚至可能愿意 &lt;em&gt;&lt;strong&gt;付钱让我下注。&lt;/strong&gt;&lt;/em&gt; 我自己也意识到 Bob 很有可能赚 10 美元，所以我告诉他，如果他付给我 5 美元，他就可以下注。 Bob 表示同意，因为他非常确定特斯拉股票在未来 3 个月内的涨幅将超过剩余的 5%。&lt;/p&gt;
+&lt;p&gt;So what has happened here? Bob paid me $5 to take my place in a $10 bet that Tesla stock doubles by January 1st, 2023. Tesla stock has gone up 95% already, so by paying me $5, Bob is essentially betting $15 ($5 paid + $10 potential loss) that Tesla will go up that last 5%, in order to make $10. From your perspective, nothing has changed. Your bet is now with Bob instead of me, but that&#39;s the only difference.&lt;/p&gt;
+&lt;p&gt;那么这里发生了什么？ Bob 付给我 5 美元，让我在 10 美元的赌注中取代我的位置，押注特斯拉的股票在 2023 年 1 月 1 日之前翻倍。特斯拉的股票已经上涨了 95%，所以付给我 5 美元，Bob 基本上是在赌 15 美元（支付 5 美元 + 10 美元潜在损失）特斯拉将上涨最后 5%，以赚取 10 美元。从你的角度来看，一切都没有改变。你现在赌的是鲍勃而不是我，但这是唯一的区别。&lt;/p&gt;
+&lt;p&gt;The $5 Bob has paid me is the &lt;em&gt;&lt;strong&gt;derivative price.&lt;/strong&gt;&lt;/em&gt; It represents the price someone would be willing to pay in order to enter the bet in my place. Actual pricing of derivatives, such as through &lt;a href=&#34;https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model&#34;&gt;Black-Scholes&lt;/a&gt;, is quite mathematically complex but the basic ideas are pretty simple. What factors would influence how much someone is willing to pay to enter the Tesla stock bet? For example:&lt;/p&gt;
+&lt;p&gt;Bob 支付给我的 5 美元是 &lt;em&gt;&lt;strong&gt;衍生价格。&lt;/strong&gt;&lt;/em&gt; 它代表有人愿意支付代替我下注的价格。衍生品的实际定价，例如通过 &lt;a href=&#34;https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model&#34;&gt;Black-Scholes&lt;/a&gt;，在数学上相当复杂，但基本思想非常简单。哪些因素会影响人们愿意支付多少钱来参与特斯拉股票的赌注？例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.&lt;strong&gt;Time until the bet is over-&lt;/strong&gt; If today is December 31st, 2022 and the price of Tesla stock is four times the price it was on January 1st, 2022 then it is &lt;em&gt;&lt;strong&gt;very very likely&lt;/strong&gt;&lt;/em&gt; that the price the following day will be at least two times the price it was at the beginning of the year, because it is unlikely the stock goes down more than 50% overnight. So, a rational derivatives price would be &lt;strong&gt;&lt;em&gt;very very close to $10, say $9.95.&lt;/em&gt;&lt;/strong&gt; On the other hand, if it&#39;s month 3 (9 months of the bet remaining) and the price is four times the price at the beginning of the year, it seems &lt;em&gt;&lt;strong&gt;somewhat likely&lt;/strong&gt;&lt;/em&gt; that the stock will be above the two times bet price by the end of the year. But, this extra 9 months introduces some uncertainty, changing the confidence of winning the bet from &lt;em&gt;&lt;strong&gt;very very likely&lt;/strong&gt;&lt;/em&gt; to &lt;em&gt;&lt;strong&gt;somewhat likely,&lt;/strong&gt;&lt;/em&gt; so a rational derivatives price would be &lt;em&gt;&lt;strong&gt;somewhat close to $10, say $7&lt;/strong&gt;&lt;/em&gt;&lt;strong&gt;.&lt;/strong&gt; Note the price of the Tesla stock is the same in both cases, what has changed is the time until the bet is over, which changes the derivative price.&lt;/p&gt;
+&lt;p&gt;1.&lt;strong&gt;距离下注结束的时间-&lt;/strong&gt; 如果今天是 2022 年 12 月 31 日，特斯拉股票的价格是 2022 年 1 月 1 日价格的四倍，那么 &lt;em&gt;&lt;strong&gt;非常有可能&lt;/strong&gt;&lt;/em&gt; 第二天的价格将至少是年初价格的两倍，因为股票在一夜之间下跌超过 50% 的可能性不大。因此，合理的衍生品价格将 &lt;strong&gt;&lt;em&gt;非常接近 10 美元，例如 9.95 美元。&lt;/em&gt;&lt;/strong&gt; 另一方面，如果是第 3 个月（剩余下注时间为 9 个月）并且价格是今年开始时价格的四倍，似乎 &lt;em&gt;&lt;strong&gt;有可能&lt;/strong&gt;&lt;/em&gt; 股票到年底将高于两倍的下注价格。但是，这额外的 9 个月引入了一些不确定性，将赢得赌注的信心从 &lt;strong&gt;&lt;em&gt;非常可能&lt;/em&gt;&lt;/strong&gt;  变为  &lt;strong&gt;&lt;em&gt;有点可能，&lt;/em&gt;&lt;/strong&gt; 所以一个理性的衍生品价格将 &lt;strong&gt;&lt;em&gt;有点接近10 美元，比如 7 美元&lt;/em&gt;&lt;/strong&gt;。请注意，特斯拉股票的价格在两种情况下都是相同的，变化的是赌注结束前的时间，这会改变衍生品价格。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.&lt;strong&gt;Price of the referenced asset-&lt;/strong&gt; Regardless of the time until the end of the bet, the derivatives price will depend on the price of Tesla stock at any given moment. Suppose it&#39;s 6 months into the bet (6 months remaining). If Tesla stock is up ten times in this 6 month period, I can be pretty confident that I will win the bet, so someone might be willing to pay me $9 to take on this bet. If Tesla stock was down 99% from the beginning of the year, it would be very unlikely that I will win the bet so someone wouldn&#39;t be willing to pay me anything. In fact, I&#39;d have to pay someone almost $10 to take the risk. Note the time to the end of the bet is the same in both cases, what has changed is the price of Tesla stock.&lt;/p&gt;
+&lt;p&gt;2.&lt;strong&gt;参考资产的价格-&lt;/strong&gt; 无论何时结束投注，衍生品价格都将取决于特斯拉股票在任何给定时刻的价格。假设下注 6 个月（剩余 6 个月）。如果特斯拉股票在这 6 个月内上涨了 10 倍，我可以非常有信心赢得这场赌注，所以有人可能愿意付给我 9 美元来接受这个赌注。如果特斯拉的股票从年初以来下跌了 99%，那么我就不太可能赢得赌注，因此有人不会愿意付钱给我。事实上，我必须付给某人近 10 美元才能冒险。请注意，两种情况下赌注结束的时间是相同的，变化的是特斯拉股票的价格。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3.&lt;strong&gt;Volatility of the referenced asset-&lt;/strong&gt; Volatility refers to the amount up or down an asset will typically move in a defined time period. For example, gold&#39;s volatility is usually pretty low, because the price fluctuates pretty slowly. Bitcoin&#39;s volatility is usually pretty high, because it can double or halve in short period of time. Suppose hypothetically that Tesla stock was a very very low volatility asset and in its entire history has only ever gone up or down 2% annually. The price never changes much. Then, a bet that Tesla will double is not very likely, because it doesn&#39;t usually change price that much. So, the derivatives price of this bet would be low. On the other hand, if hypothetically Tesla stock often moves by 10% per day, it seems much more possible that Tesla could double over a year. So, the derivatives price of this bet would be much higher.&lt;/p&gt;
+&lt;p&gt;3.&lt;strong&gt;参考资产的波动性-&lt;/strong&gt; 波动性是指资产通常会在定义的时间段内上涨或下跌的数量。例如，黄金的波动性通常很低，因为价格波动很慢。比特币的波动性通常很高，因为它可以在短时间内翻倍或减半。假设特斯拉股票是一种非常低波动性的资产，并且在其整个历史中每年仅上涨或下跌 2%。价格变化不大。然后，押注特斯拉翻倍的可能性不大，因为它通常不会改变价格。所以，这个赌注的衍生品价格会很低。另一方面，如果假设特斯拉的股票每天经常波动 10%，那么特斯拉在一年内翻倍的可能性似乎更大。所以，这个赌注的衍生品价格会高得多。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To summarize, we&#39;ve defined what it means for a derivative to have a price, and some of the basic variables that might influence that price. But getting back to the original question: what&#39;s a delta? &lt;strong&gt;A delta is the amount a derivatives price changes depending on the price of the underlying asset. For example, a delta of 1 means that for every $1 the underlying asset moves, the derivatives price changes by the same $1. A delta of 0.5 means that for every $1 the underlying asset moves, the derivatives price changes by $0.50.&lt;/strong&gt; It&#39;s the second variable explained above, &amp;quot;&lt;strong&gt;2. Price of the referenced asset&lt;/strong&gt;&amp;quot;. Delta is one of the fundamental ways to think about how much a derivative is worth, through the lens of the price of the underlying asset, everything else equal.&lt;/p&gt;
+&lt;p&gt;总而言之，我们已经定义了衍生品有价格的含义，以及可能影响该价格的一些基本变量。但回到最初的问题：什么是delta？ &lt;strong&gt;Delta 是衍生品价格根据标的资产价格而变化的量。例如，delta 为 1 意味着标的资产每移动 1 美元，衍生品价格就会变化 1 美元。 0.5 的 delta 意味着标的资产每移动 1 美元，衍生品价格就会变化 0.50 美元。&lt;/strong&gt; 这是上面解释的第二个变量，“&lt;strong&gt;2. 参考资产的价格&lt;/strong&gt;”。 Delta 是在其他一切都相同的情况下，从标的资产价格的角度考虑衍生品价值的基本方法之一，。&lt;/p&gt;
+&lt;h3 id=&#34;delta-delta-中性的实际应用-practical-uses-of-delta-delta-neutral&#34;&gt;Delta、Delta-中性的实际应用 (Practical Uses of Delta, Delta-Neutral)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;tl;dr: A derivative is Delta-Neutral with respect to an asset if the derivative&#39;s price does not change when the asset&#39;s price changes.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;省流助手：如果衍生品的价格在资产价格变化时没有变化，则衍生品相对于资产是 Delta 中性的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Derivatives traders often talk about their exposure to an underlying asset in terms of &amp;quot;Delta&amp;quot;. You might hear someone say they have &amp;quot;10 Delta&amp;quot; exposure to Bitcoin. This is a measure of their exposure to the price of Bitcoin. All else equal, having a 10 Delta exposure is essentially similar to owning 10 Bitcoin. Of course, there are different ways to get Delta exposure. You could simply buy 1 Bitcoin and hold it to get 1 Delta of exposure, or you could buy a call option on Bitcoin, which would have some &lt;em&gt;&lt;strong&gt;implied Delta (say, of 0.75 Delta).&lt;/strong&gt;&lt;/em&gt; The important point is that understanding your &amp;quot;Delta exposure&amp;quot; helps you understand how much the value of your portfolio should go up or down as the value of the underlying asset goes up or down. A position is said to be &amp;quot;&lt;strong&gt;Delta-Neutral&amp;quot;&lt;/strong&gt; with respect to some asset if the value of the position does not depend on the value of that asset, i.e. 0 Delta exposure. An obvious example: if the value of my house doubles, this probably does not change the value of our bet on Tesla stock (other than through some correlation like the economy doing well), so our bet on Tesla stock has 0 Delta and is Delta-Neutral with respect to my home price.&lt;/p&gt;
+&lt;p&gt;衍生品交易者经常用“Delta”来谈论他们对标的资产的敞口。你可能会听到有人说他们对比特币有“10 Delta”的风险敞口。这是衡量他们对比特币价格敞口的衡量标准。在其他条件相同的情况下，拥有 10 个 Delta 风险敞口本质上类似于拥有 10 个比特币。当然，有不同的方式来获得 Delta敞口。你可以简单地购买 1 个比特币并持有它以获得 1 个 Delta 的敞口，或者你可以购买比特币的看涨期权，它会有一些 &lt;strong&gt;_隐含的 Delta（例如，0.75 Delta）。&lt;/strong&gt;_ 重点是了解您的“Delta 风险敞口”，可以帮助您了解您的投资组合的价值，会如何随着标的资产价值变化而改变。如果头寸的价值不取决于该资产的价值，即 0 Delta 风险敞口，则该头寸相对于某些资产被称为“&lt;strong&gt;Delta-Neutral”&lt;/strong&gt;。一个明显的例子：如果我的房子的价值翻了一番，这可能不会改变我们押注特斯拉股票的价值（除了通过一些相关性，比如经济表现良好），所以我们押注特斯拉股票的 Delta 为 0， Delta相对于我的房价就是中性的。&lt;/p&gt;
+&lt;p&gt;Now that you understand what a &amp;quot;Delta&amp;quot; is, see our section on &lt;a href=&#34;/uxdprotocol/overview/delta-neutral-position&#34;&gt;Delta-Neutral Position&lt;/a&gt; to understand why this concept is important to UXD.&lt;/p&gt;
+&lt;p&gt;既然您了解了“Delta”是什么，请参阅我们关于 Delta中性头寸](/uxdprotocol/overview/delta-neutral-position) 的部分，以了解为什么这个概念对 UXD 很重要。&lt;/p&gt;
+&lt;p&gt;For those of you comfortable with calculus, if we define  P to be the price of the derivative and S to be the price of the underlying asset (the Tesla stock), then delta,δ, is defined as &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;δ&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;δ = \frac{dP}{dS}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.03785em;&#34;&gt;δ&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.2251079999999999em;vertical-align:-0.345em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8801079999999999em;&#34;&gt;&lt;span style=&#34;top:-2.6550000000000002em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathdefault mtight&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;mord mathdefault mtight&#34; style=&#34;margin-right:0.05764em;&#34;&gt;S&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.394em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathdefault mtight&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;mord mathdefault mtight&#34; style=&#34;margin-right:0.13889em;&#34;&gt;P&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.345em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; , the mathematical derivative of P with respect to S&lt;/p&gt;
+&lt;p&gt;.&lt;/p&gt;
+&lt;p&gt;对于那些熟悉微积分的人来说，如果我们定义P为衍生品的价格, S为标的资产（特斯拉股票）的价格，那么&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;δ&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;δ = \frac{dP}{dS}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.03785em;&#34;&gt;δ&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.2251079999999999em;vertical-align:-0.345em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8801079999999999em;&#34;&gt;&lt;span style=&#34;top:-2.6550000000000002em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathdefault mtight&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;mord mathdefault mtight&#34; style=&#34;margin-right:0.05764em;&#34;&gt;S&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.394em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathdefault mtight&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;mord mathdefault mtight&#34; style=&#34;margin-right:0.13889em;&#34;&gt;P&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.345em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;什么是永续合约期货-whats-a-perpetual-future&#34;&gt;什么是永续合约/期货? (What&#39;s a &amp;quot;Perpetual Future&amp;quot;?)&lt;/h2&gt;
+&lt;p&gt;In our last section &amp;quot;&lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-delta&#34;&gt;What&#39;s a Delta&lt;/a&gt;&amp;quot;, we explained what a financial derivative is and how to think about the price of financial derivatives through the lens of &amp;quot;Delta&amp;quot;, the change in the price of the derivative with respect to the price of the underlying asset.&lt;/p&gt;
+&lt;p&gt;在上一节“什么是 Delta](https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-delta)”中，我们解释了什么是金融衍生品以及如何思考以“Delta”为核心的金融衍生品价格，以及价格相对于标的资产价格的变化。&lt;/p&gt;
+&lt;p&gt;In this section we will discuss a specific type of derivative in depth, a &amp;quot;Perpetual Future&amp;quot; contract.&lt;/p&gt;
+&lt;p&gt;在本节中，我们将深入讨论一种特定类型的衍生品，即“永续期货”合约。&lt;/p&gt;
+&lt;h3 id=&#34;期货-futures&#34;&gt;期货 (Futures)&lt;/h3&gt;
+&lt;p&gt;Before adding the word &amp;quot;perpetual&amp;quot;, let&#39;s discuss Future&#39;s contracts. &lt;em&gt;&lt;strong&gt;A Future&#39;s contract between two parties is an agreement to buy or sell some asset at a pre-determined date at a pre-determined price.&lt;/strong&gt;&lt;/em&gt; For example, I agree to buy a Bitcoin from you in one month at a price of $50,000 (today&#39;s price is $48,000). Our pre-determined date is one month from now and our pre-determined price is $50,000.&lt;/p&gt;
+&lt;p&gt;在添加“永久”一词之前，让我们讨论一下名为期货的合约。 &lt;em&gt;&lt;strong&gt;期货是两方之间的合约，是在预定日期以预定价格购买或出售某些资产的协议。&lt;/strong&gt;&lt;/em&gt; 例如，我同意在一个月后出价 50,000 美元（今天的价格为 48,000 美元）。我们预定的日期是从现在起一个月，我们预定的价格是 50,000 美元。&lt;/p&gt;
+&lt;p&gt;Why would we enter into this contract? Futures contracts tend to exist for two main reasons:&lt;/p&gt;
+&lt;p&gt;我们为什么要签订这份合约？期货合约的存在往往有两个主要原因：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.&lt;strong&gt;Price Speculation-&lt;/strong&gt; It would make sense to enter this contract if I think the price of Bitcoin is going to go up to $55,000 in a month, because then I would be able to profit $5,000 by buying it for $50,000 from you. On the other hand, it would make sense for you to enter this contract if you think the price of Bitcoin is going to go down to $45,000 in a month, because then you would be able to sell me a Bitcoin for $50,000, keep $5,000 and buy another Bitcoin for $45,000. The future&#39;s contract allows two people to make &lt;em&gt;&lt;strong&gt;equal and opposite bets.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;1.&lt;strong&gt;价格推测-&lt;/strong&gt; 如果我认为比特币的价格将在一个月内上涨到 55,000 美元，那么签订这份合约是有意义的，因为我就可以通过以 50,000 美元的价格购买它进而从你那里获利利 5,000 美元。另一方面，如果您认为比特币的价格将在一个月内跌至 45,000 美元，那么您签订这份合约是有意义的，因为这样您就可以用 50,000 美元的价格卖给我一个比特币，保留 5,000 美元和以 45,000 美元购买另一个比特币。未来的合约允许两个人进行 &lt;em&gt;&lt;strong&gt;相同和相反的下注。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.&lt;strong&gt;Locked in Prices-&lt;/strong&gt; Suppose my nephew&#39;s birthday is in one month, and I know I have to get him one Bitcoin for his birthday, because I promised him way back in 2013 that I would do so when he reached a certain age. Now because I know for a fact I will need it in 1 month, but don&#39;t have the money right this second to actually buy a Bitcoin, I can enter into a future&#39;s contract with you in order to guarantee that I will be able to buy a Bitcoin for at most $50,000. On the other hand, you want to sell a Bitcoin to buy a new car, but don&#39;t need the cash for another month. You&#39;re worried about the price going down, so you decide to lock your sale price of $50,000 today with me. The future&#39;s contract allows two people to &lt;em&gt;&lt;strong&gt;have certainty today about the purchase or sale price of an asset in the future.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;2.**锁定价格-&lt;strong&gt;假设我侄子的生日在一个月后，我必须给他一个比特币作为礼物，因为我早在 2013 年就向他承诺过，当他到达年龄时我会这样做。现在因为我知道一个事实：我将在 1 个月内需要它，但是这一秒没有足够的钱来实际购买比特币，那我就可以与你签订期货的合同，来保证我能够以最多 50,000 美元的价格购买比特币。另一方面，你想出售比特币来购买新车，但有一个月不需要现金。您担心价格会下跌，因此您决定将今天的 50,000 美元的销售价格锁定在我这里。期货的合约允许两个人今天&lt;/strong&gt; _对未来资产的购买或销售价格产生确定性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In crypto trading, futures contracts tend to be used for Price Speculation as they allow users to take bets on the future value of assets without necessarily having to own the asset today. However, in the above example at the future&#39;s &lt;em&gt;&lt;strong&gt;expiry date&lt;/strong&gt;&lt;/em&gt; in one month, you have to send me a Bitcoin and I have to send you $50,000 for &lt;em&gt;&lt;strong&gt;settlement.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;在加密交易中，期货合约往往用于价格投机，因为它们允许用户对资产的未来价值进行投注，而不必在今天拥有资产。然而，在上面的例子中，在未来一个月的 &lt;em&gt;&lt;strong&gt;到期日&lt;/strong&gt;&lt;/em&gt;，你必须给我一个比特币，我必须给你50,000美元用于 &lt;strong&gt;&lt;em&gt;结算&lt;/em&gt;&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;永续期货合约-perpetual-futures&#34;&gt;永续期货/合约 (Perpetual Futures)&lt;/h2&gt;
+&lt;p&gt;Now that we understand Future&#39;s contracts we can add the word &amp;quot;Perpetual&amp;quot;. In our above example, we had a contract with an Expiry Date and a Pre-determined Price that required you and I to exchange a Bitcoin and cash on the Expiry Date (settlement). Perpetual Future&#39;s are the purest form of price speculation because they (i) remove the Expiry Date (never expires) (ii) replace Pre-determined Price with Market Price and (iii) removes the need for settlement. How does this work?&lt;/p&gt;
+&lt;p&gt;现在我们了解了期货的合约，我们可以添加“永续/Perpetual”这个词。在我们上面的例子中，我们有一个带有到期日和预定价格的合约，要求你和我在到期日（结算）交换比特币和现金。永续期货/合约是最纯粹的价格投机形式，因为它们 (i) 删除了到期日（永不过期）(ii) 用市场价格代替预先确定的价格和 (iii) 消除了结算的需要。这是如何运作的？&lt;/p&gt;
+&lt;p&gt;I decide to go onto a derivative dex like mango markets and enter into a &amp;quot;BTC-USD&amp;quot; perpetual futures position. In order to enter into this position I need to provide some collateral in the form of &lt;em&gt;&lt;strong&gt;margin.&lt;/strong&gt;&lt;/em&gt; Margin ensures the exchange that if I lose a lot of money on my trade, I will still have enough money to pay the loss I&#39;ve incurred.&lt;/p&gt;
+&lt;p&gt;我决定进入像芒果市场这样的衍生 dex 并进入“BTC-USD”永续期货头寸。为了建立这个头寸，我需要以 &lt;em&gt;&lt;strong&gt;保证金的形式提供一些抵押品。&lt;/strong&gt;&lt;/em&gt; 交易所利用保证金确保即使我在交易中损失了很多钱，我仍然有足够的钱来支付我遭受的损失。&lt;/p&gt;
+&lt;p&gt;A Perpetual Future can be thought of as an &amp;quot;Agreement for Deltas&amp;quot;: if I want to have exposure to &amp;quot;20 Deltas&amp;quot; of Bitcoin using only 1 BTC worth of collateral (also known as &amp;quot;going long BTC with 20x leverage&amp;quot;), and you want to have exposure to &amp;quot;-20 Deltas&amp;quot; of Bitcoin using only 1 BTC worth of collateral (also known as &amp;quot;going short BTC with 20x leverage&amp;quot;), we can agree today to enter a derivatives contract that we will pay the other 20 times the price change of Bitcoin. We both put up 1 BTC as collateral to guarantee we can pay the other in case our losses grow too large. In this case, because we have 20x leverage, a mere 5% change in the price of Bitcoin will cause one of us to take a 1 BTC loss (20 BTC * 5% = 1 BTC), so if BTC moves 5% one of us will have to take the other&#39;s 1 BTC. Any move greater than 5% and we won&#39;t be able to guarantee that the other will pay the money owed.&lt;/p&gt;
+&lt;p&gt;永续期货/合约可以被认为是“Deltas 协议”：如果我想仅使用价值 1 BTC 的抵押品获得比特币的“20 个 Deltas”（也称为“以 20 倍杠杆做多 BTC”），以及如果您想仅使用价值 1 BTC 的抵押品来获得比特币的“-20 Deltas”（也称为“以 20 倍杠杆做空 BTC”），我们今天可以同意签订衍生品合约，我们将支付另外 20倍比特币的价格变化。我们都提供了 1 个 BTC 作为抵押品，来保证我们可以在我们的损失增长过大的情况下支付对方。在这种情况下，因为我们有 20 倍杠杆，比特币价格仅 5% 的变化将导致我们中的一个人损失 1 BTC（20 BTC * 5% = 1 BTC），所以如果 BTC 移动 5%，我们其中之一将不得不拿走对方的 1 BTC。任何超过 5% 的变动，我们将无法保证对方会支付所欠款项。&lt;/p&gt;
+&lt;p&gt;So to prevent losses greater than 1 BTC, we agree at the start of the contract that the Perpetual Futures contract between you and I will continue &amp;quot;forever&amp;quot;, until one of two things happens:&lt;/p&gt;
+&lt;p&gt;因此，为了防止损失超过 1 BTC，我们在合同开始时同意你我之间的永续合约将“永远”持续，直到发生以下两种情况之一：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.&lt;strong&gt;BTC moves up or down 5%-&lt;/strong&gt; This means that someone will have to pay their full initial margin of 1 BTC to the other, due to the 20x leverage.&lt;br&gt;
+1.&lt;strong&gt;BTC 上下波动 5%-&lt;/strong&gt; 这意味着由于 20 倍杠杆，某人将不得不向对方支付 1 BTC 的全部初始保证金。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.&lt;strong&gt;One of us sells the derivative contract to someone else-&lt;/strong&gt; This means you or I want to exit the trade and sell our position to someone else.&lt;br&gt;
+2.&lt;strong&gt;我们中的一个人将衍生品合约出售给其他人-&lt;/strong&gt; 这意味着您或我想退出交易并将我们的头寸出售给其他人。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that in order to do 2. there has to be a settlement. For example, if Bitcoin has gone down 2%, then because I had 20x leverage (a 20 Delta position), I will owe you &amp;quot;2% * 20 BTC = 0.4 BTC. So, I pay you 0.4 BTC and then find someone else to step into the 20 Delta position in my place.&lt;/p&gt;
+&lt;p&gt;请注意，为了完成2，就必须有一个清算机制。例如，如果比特币下跌 2%，那么因为我有 20 倍杠杆（20 Delta 头寸），我将欠你“2% * 20 BTC = 0.4 BTC。所以，我付给你 0.4 BTC，然后再找别人代替我进入 20 Delta 的位置。&lt;/p&gt;
+&lt;h3 id=&#34;实践中的永续期货合约-perpetual-futures-in-practice&#34;&gt;实践中的永续期货/合约 (Perpetual Futures in Practice)&lt;/h3&gt;
+&lt;p&gt;In practice, for a derivatives market place like mango markets the easiest way to create a whole market of perpetual futures is to create a &amp;quot;virtual&amp;quot; BTC trading market. In a normal Bitcoin market, a user enters the market and places an order such as &amp;quot;Buy 3 BTC&amp;quot; and then pays for these 3 BTC and receives the 3 BTC in their wallet.&lt;/p&gt;
+&lt;p&gt;在实践中，对于芒果这样的衍生品市场来说，创建一个完整的永续期货市场最简单的方法是创建一个“虚拟”的 BTC 交易市场。在正常的比特币市场中，用户进入市场并下订单，例如“购买 3 BTC”，然后支付这 3 BTC 并在钱包中收到 3 BTC。&lt;/p&gt;
+&lt;p&gt;Imagine instead we set up a &amp;quot;virtual&amp;quot; BTC trading market in which people could submit orders for BTC and rather than paying for these BTC directly (or receiving funds if selling) we could have the &amp;quot;virtual&amp;quot; trading market track everyone&#39;s &amp;quot;bought&amp;quot; and &amp;quot;sold&amp;quot; BTC. In order to exit the virtual trading market, users have to settle their gains/losses from the BTC they bought or sold, without ever actually receiving or sending BTC. The market therefore only settles profits and losses from a user&#39;s virtual position, rather than having user&#39;s exchange BTC directly.&lt;/p&gt;
+&lt;p&gt;想象一下，相反，我们建立了一个“虚拟” BTC 交易市场，人们可以在其中提交 BTC 订单，而不是直接为这些 BTC 付款（或在出售时接收资金），我们可以让“虚拟”交易市场跟踪每个人的“购买”和“出售”比特币。为了退出虚拟交易市场，用户必须结算他们购买或出售的 BTC 的收益/损失，而无需实际接收或发送 BTC。因此市场只结算用户虚拟仓位的盈亏，而不是直接让用户兑换比特币。&lt;/p&gt;
+&lt;p&gt;In the context of our previous example where you and I want 20x and -20x leverage, respectively, I can do so as follows:&lt;/p&gt;
+&lt;p&gt;在我们之前的示例中，您和我分别想要 20 倍和 -20 倍的杠杆率，我可以这样做：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.I enter the &amp;quot;virtual&amp;quot; BTC market and deposit 1 BTC as margin collateral.&lt;br&gt;
+1.我进入“虚拟”BTC市场并存入1 BTC作为保证金。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.Even though I don&#39;t have 20 BTC worth of cash to buy 20 BTC with, I ask the &amp;quot;virtual&amp;quot; BTC market to buy me 20 BTC at whatever the price of BTC is on this virtual market at that time.&lt;br&gt;
+2.即使我没有价值 20 BTC 的现金来购买 20 BTC，我还是要求“虚拟”BTC 市场以当时虚拟市场上 BTC 的价格为我购买 20 BTC。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3.My gains/losses will move 20x the change in BTC price. Every $1 of BTC price movement will change the value of my position by $20.&lt;br&gt;
+我的收益/损失将移动 20 倍的 BTC 价格变化。 BTC 价格每变动 1 美元，我的头寸价值就会改变 20 美元。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;4.I am required to &amp;quot;leave&amp;quot; the virtual trading market if one of two things happens: (i) BTC goes down by 5%, I will lose (20 BTC * 5%) = 1 BTC and lose my margin collateral, or (ii) I decide to &amp;quot;sell&amp;quot; the 20 BTC I own to someone else on the virtual market.&lt;br&gt;
+如果发生以下两种情况之一，我必须“离开”虚拟交易市场： (i) BTC 下跌 5%，我将损失 (20 BTC * 5%) = 1 BTC 并失去我的保证金抵押品，或 (ii) 我决定将我拥有的 20 比特币“出售”给虚拟市场上的其他人。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To summarize, this is exactly what we described above in the &amp;quot;Agreement for Deltas&amp;quot;! I was able to gain 20x exposure to BTC through this virtual market, with the exact same conditions for ending the contract as above: either I get wiped out or decide to sell to someone else. This is how Perpetual Futures contracts are done in practice.&lt;/p&gt;
+&lt;p&gt;总而言之，这正是我们上面在“Deltas协议”中描述的内容！我能够通过这个虚拟市场获得 20 倍的 BTC 敞口，终止合同的条件与上述完全相同：要么我被淘汰，要么决定卖给其他人。这就是永续期货合约在实践中的运作方式。&lt;/p&gt;
+&lt;h3 id=&#34;资金费率-funding-rates&#34;&gt;资金费率 (Funding Rates)&lt;/h3&gt;
+&lt;p&gt;There is, however, a slight issue with the above &amp;quot;virtual&amp;quot; market construction. Each time someone buys or sells on this virtual market, the price of BTC on this virtual market will change. If too many people want to buy or sell, this could cause the virtual price of BTC on this virtual market to deviate from the actual market price. That&#39;s no good, because we want the Perpetual Future to track the exact price of the underlying BTC. So, we need a mechanism in order to make sure the price doesn&#39;t deviate too far from the actual market price of BTC.&lt;/p&gt;
+&lt;p&gt;然而，上述“虚拟”市场建设存在一个小问题。每次有人在这个虚拟市场上买卖，BTC在这个虚拟市场上的价格都会发生变化。如果太多人想买或卖，这可能会导致该虚拟市场上的 BTC 虚拟价格与实际市场价格有偏差。这不好，因为我们希望永续期货合约跟踪基础 BTC 的确切价格。因此，我们需要一种机制来确保价格不会偏离 BTC 的实际市场价格太远。&lt;/p&gt;
+&lt;p&gt;This mechanism for keeping the virtual price close to the market price is called the &lt;em&gt;&lt;strong&gt;funding rate.&lt;/strong&gt;&lt;/em&gt; To understand the funding rate, it&#39;s helpful to understand how the virtual price would deviate from the market price in the first place.&lt;/p&gt;
+&lt;p&gt;这种保持虚拟价格接近市场价格的机制称为 &lt;em&gt;&lt;strong&gt;资金费率。&lt;/strong&gt;&lt;/em&gt; 要了解资金费率，首先要了解虚拟价格如何偏离市场价格会有所帮助。&lt;/p&gt;
+&lt;p&gt;If the virtual price is above the market price, this implies that many people on the virtual market want to buy BTC, therefore pushing the price up. If enough people want to buy BTC on this virtual market (for example, because they all think the price is going to go up), then the virtual price might go above the real market price. On the other hand, if enough people want to sell BTC on this virtual market, this may cause the virtual price to go below the market price.&lt;/p&gt;
+&lt;p&gt;如果虚拟价格高于市场价格，这意味着虚拟市场上有很多人想要购买BTC，从而推高价格。如果有足够多的人想在这个虚拟市场上购买 BTC（例如，因为他们都认为价格会上涨），那么虚拟价格可能会高于真实市场价格。另一方面，如果有足够多的人想在这个虚拟市场上出售 BTC，这可能会导致虚拟价格低于市场价格。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The funding rate for a virtual market like this one is a periodic payment from the more popular position (buying, for example) to the less popular position (selling).&lt;/strong&gt; The frequency of this payment varies by derivatives exchange, but let&#39;s suppose that it&#39;s every 8 hours. Then every 8 hours, if the virtual price is above the market price, people who have &amp;quot;bought&amp;quot; BTC perpetual futures pay people who have &amp;quot;sold&amp;quot; perpetual futures an amount:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;虚拟市场的资金费率是从较受欢迎的位置（例如买入）到不太受欢迎的位置（卖出）的定期支付。&lt;/strong&gt; 这种支付的频率因衍生品交易所而异，但让我们假设它是每 8 小时一次。然后每 8 小时，如果虚拟价格高于市场价格，“买入”BTC 永续合约的人向“卖出”永续合约的人支付一笔金额：&lt;/p&gt;
+&lt;p class=&#39;katex-block&#39;&gt;&lt;span class=&#34;katex-display&#34;&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;F&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt; &lt;/mi&gt;&lt;mi&gt;R&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt; &lt;/mi&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt; &lt;/mi&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;−&lt;/mi&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt; &lt;/mi&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;Funding Rate Payment=Virtual Price−Market Price 
+&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8888799999999999em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.13889em;&#34;&gt;F&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.03588em;&#34;&gt;g&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.00773em;&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.13889em;&#34;&gt;P&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.03588em;&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.77777em;vertical-align:-0.08333em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.22222em;&#34;&gt;V&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.02778em;&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.01968em;&#34;&gt;l&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.13889em;&#34;&gt;P&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.02778em;&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;−&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.10903em;&#34;&gt;M&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.02778em;&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.03148em;&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.13889em;&#34;&gt;P&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.02778em;&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;e&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For example, if the virtual price of BTC is $48,200 and the market price is $48,000, then anyone who &amp;quot;bought&amp;quot; bitcoin on this virtual market will pay anyone who sold a sum of $200 for this 8 hour payment. If instead the virtual price was $50,000 and the market price was $48,000, then the funding rate payment would be $2,000. As the prices move, so does the funding rate. Note, actual funding rate formulas are a bit more complex, but for illustrative purposes, the above idea is correct.&lt;/p&gt;
+&lt;p&gt;例如，如果 BTC 的虚拟价格是 48,200 美元，市场价格是 48,000 美元，那么任何在这个虚拟市场上“购买”比特币的人都将向任何卖出 200 美元的人支付这 8 小时的费用。相反，如果虚拟价格为 50,000 美元，市场价格为 48,000 美元，则资金费率支付为 2,000 美元。随着价格的变动，资金费率也随之变动。请注意，实际资金费率公式要复杂一些，但出于说明目的，上述想法是正确的。&lt;/p&gt;
+&lt;p&gt;The idea of the funding rate is to incentivize people to take the opposite position on the exchange and bring the virtual price in order with the market price. For example, if I think BTC likely will not move much over the next few hours, it may make sense for me to &amp;quot;sell&amp;quot; 1 BTC on the exchange in order to collect the $200 payment. My sale of the BTC on the virtual market will bring the price down, and people will likely continue to do so until the &amp;quot;arbitrage&amp;quot; from the funding rate disappears.&lt;/p&gt;
+&lt;p&gt;资金费率的想法是激励人们在交易所采取相反的立场，并使虚拟价格与市场价格保持一致。例如，如果我认为 BTC 在接下来的几个小时内可能不会有太大变动，那么我在交易所“卖出” 1 个 BTC 以收取 200 美元的付款可能是有意义的。我在虚拟市场上出售 BTC 将使价格下降，人们可能会继续这样做，直到资金费率的“套利”消失。&lt;/p&gt;
+&lt;p&gt;So, the funding rate serves the essential purpose of making sure the price of our perpetual future&#39;s contract stays in line with the price of the underlying asset.&lt;/p&gt;
+&lt;p&gt;因此，资金费率的基本目的是确保我们的永续合约价格与标的资产价格保持一致。&lt;/p&gt;
+&lt;h3 id=&#34;永续期货合约示例&#34;&gt;永续期货合约示例&lt;/h3&gt;
+&lt;p&gt;Bob decides he wants to gain 5x leverage exposure to the price of BTC on mango markets.&lt;/p&gt;
+&lt;p&gt;Bob 决定他想在芒果市场上获得 5 倍 BTC 价格的杠杆敞口。&lt;/p&gt;
+&lt;p&gt;He goes to the derivatives dex, clicks on the &amp;quot;BTC-PERP&amp;quot;. First, he deposits some collateral as margin, say 0.5 BTC.&lt;/p&gt;
+&lt;p&gt;他转到衍生品 dex，点击“BTC-PERP”。首先，他存入一些抵押品作为保证金，比如 0.5 BTC。&lt;/p&gt;
+&lt;p&gt;Then, he &amp;quot;buys&amp;quot; 2.5 BTC (5x his margin) on the virtual perpetual futures market. This represents ~$120,000 of exposure to BTC at a price of ~$48k.&lt;/p&gt;
+&lt;p&gt;然后，他在虚拟永续期货市场上“买入”了 2.5 BTC（保证金的 5 倍）。这代表以约 48,000 美元的价格撬动了约 120,000 美元的BTC 。&lt;/p&gt;
+&lt;p&gt;Because he bought BTC and the virtual price of BTC is above the current market price (at the time of writing, the perpetual futures price is $48,383.9 whereas the market price is $48,355.3.)&lt;/p&gt;
+&lt;p&gt;因为他购买了 BTC，而 BTC 的虚拟价格高于当前市场价格（在撰写本文时，永续合约价格为 48,383.9 美元，而市场价格为 48,355.3 美元。）&lt;/p&gt;
+&lt;p&gt;Mango markets has an hourly funding rate frequency, so every hour the virtual price is above the market price, Bob will owe a payment. Today, the average funding rate payment has been .0003%, meaning every hour Bob will owe:&lt;/p&gt;
+&lt;p&gt;(.0003%)&lt;em&gt;($120,000) = $0.36(.0003%)&lt;/em&gt;($120,000)=$0.36 per hour, or $8.64 per day, or $3,153.6 per year if funding rates stay at the exact same level.&lt;/p&gt;
+&lt;p&gt;芒果市场有一个每小时的资金费率频率，因此虚拟价格每小时高于市场价格，Bob 都会欠一笔款项。今天，平均资金费率支付为 0.0003%，这意味着 Bob 每小时将欠：(.0003%)&lt;em&gt;($120,000) = $0.36(.0003%)&lt;/em&gt;($120,000)=$0.36 每小时，如果资金费率保持在完全相同的水平，则每天 8.64 美元或每年 3,153.6 美元。&lt;/p&gt;
+&lt;p&gt;Suppose funding rates stay constant for 30 days, and BTC has gone up 5%. At the end of the 30 day period, what is Bob&#39;s total profit?&lt;/p&gt;
+&lt;p&gt;Profit =  (5% * $120,000) - (.0003%)&lt;em&gt;($120,000)&lt;/em&gt;(24 hours)*(30 days) = $5740.80&lt;/p&gt;
+&lt;p&gt;假设资金费率保持不变 30 天，BTC 上涨了 5%。在 30 天期限结束时，Bob 的总利润是多少？利润 = (5% * $120,000) - (.0003%)&lt;em&gt;($120,000)&lt;/em&gt;(24 小时)*(30 天) = $5740.80。&lt;/p&gt;
+&lt;p&gt;On his initial deposit of .5 BTC ($24,000), this is a ~24% return in 30 days! Compare that to the 5% he would have made by just holding his .5 BTC over this time period.&lt;/p&gt;
+&lt;p&gt;在他 0.5 比特币（24,000 美元）的初始存款中，这是 30 天内约 24% 的回报！相比之下，他在这段时间内仅持有 0.5 比特币就可以获得 5%。&lt;/p&gt;
+&lt;h1 id=&#34;通过-delta-中性实现稳定性-stability-through-delta-neutrality&#34;&gt;通过 Delta 中性实现稳定性 (Stability through Delta-Neutrality)&lt;/h1&gt;
+&lt;p&gt;UXD is a stablecoin that is backed by a delta-neutral position derivatives position. In this section, we will explain how a delta-neutral position provides stability to the UXD stablecoin.&lt;/p&gt;
+&lt;p&gt;UXD 是一种稳定币，由 delta 中性头寸衍生品头寸支持。在本节中，我们将解释 delta 中性头寸如何为 UXD 稳定币提供稳定性。&lt;/p&gt;
+&lt;h2 id=&#34;delta-中性位置的稳定性-stability-from-a-delta-neutral-position&#34;&gt;Delta 中性位置的稳定性 (Stability from a Delta-Neutral Position)&lt;/h2&gt;
+&lt;p&gt;As explained in our section on &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-delta#practical-uses-of-delta-delta-neutral&#34;&gt;Delta&lt;/a&gt;, a position is said to be &amp;quot;&lt;strong&gt;Delta-Neutral&amp;quot;&lt;/strong&gt; with respect to some asset if the value of the position does not depend on the value of that asset. In other words, a position is usually said to be delta-neutral if it utilizes multiple balancing long and short positions so that the overall position has zero &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-delta#delta&#34;&gt;delta-exposure&lt;/a&gt;. A delta-neutral position finds stability in this balancing effect of long and short positions, which balance out to ensure price stability.&lt;/p&gt;
+&lt;p&gt;正如我们在 Delta] (https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-delta#practical-uses-of-delta-delta-neutral) 部分中解释的那样，如果头寸的价值不依赖于该资产的价值，则称该头寸为“&lt;strong&gt;Delta中性”&lt;/strong&gt;。换句话说，如果一个头寸利用多个平衡的多头和空头头寸以使整体头寸为零delta-exposure]（https://docs.uxd.fi/uxdprotocol/overview/ uxd-basics/whats-a-delta#delta），则它就是Delta 中性的。 Delta 中性头寸在多头头寸和空头头寸的这种平衡效应中找到稳定性，这种平衡可以确保价格稳定。&lt;/p&gt;
+&lt;p&gt;An example is illustrative. Suppose you are long $100 of BTC (you own $100 of BTC) and at the same time open a short of $100 of BTC through a &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-perpetual-future&#34;&gt;Perpetual Future&lt;/a&gt;. This portfolio is initially worth $100, from the $100 of BTC you hold. What happens to the profit and loss of this portfolio as the price of BTC changes?&lt;/p&gt;
+&lt;p&gt;下面有一个说明性的例子。假设您做多 100 美元的 BTC（您拥有 100 美元的 BTC），同时通过 Perpetual Future]（https://docs.uxd.fi/uxdprotocol/overview/uxd-basics /whats-a-perpetual-future) 做空 100 美元的 BTC。该投资组合最初价值 100 美元，来自您持有的 100 美元 BTC。随着 BTC 价格的变化，这个投资组合的盈亏会发生什么变化？&lt;/p&gt;
+&lt;p&gt;Suppose BTC goes up by $1. Then, the long position (owned BTC) is now worth $1 more. But, the short position is worth $1 less by definition. So, the overall portfolio is worth $100 + $1 (gain from long) - $1 (loss from short) = $100. &lt;em&gt;&lt;strong&gt;The value of the overall portfolio has not changed, it&#39;s still worth $100, even though the price of BTC has changed.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;假设 BTC 上涨 1 美元。然后，多头头寸（拥有的 BTC）现在价值 1 美元。但是，根据定义，空头头寸的价值要低 1 美元。因此，整个投资组合价值 100 美元 + 1 美元（多头收益）- 1 美元（空头损失）= 100 美元。 &lt;em&gt;&lt;strong&gt;整体投资组合的价值没有改变，它仍然值 100 美元，尽管 BTC 的价格发生了变化。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;And this brings us back to our definition of delta-neutrality: the value of the position does not depend on the value of the asset. If BTC goes up in value, the long goes up in value but the short goes down by the same amount. If BTC goes down, the short goes up in value but the long goes down by the same amount. &lt;strong&gt;Delta-neutrality is stability.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这让我们回到了我们对 delta 中性的定义：头寸的价值不取决于资产的价值。如果 BTC 价值上涨，多头的价值就会上涨，而空头的价值会下降相同的数量。如果 BTC 下跌，则空头的价值会上涨，但多头的价格会下跌相同的数量。 &lt;strong&gt;Delta 中性是稳定的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;uxd一种-delta-中性稳定币-uxd-a-delta-neutral-stablecoin&#34;&gt;UXD，一种 Delta 中性稳定币 (UXD, a Delta-Neutral Stablecoin)&lt;/h2&gt;
+&lt;p&gt;UXD, a stablecoin, derives its stability from the property of being delta-neutral. Here&#39;s how:&lt;/p&gt;
+&lt;p&gt;UXD 是一种稳定币，其稳定性源于 delta 中性的特性。就是如此：&lt;/p&gt;
+&lt;p&gt;A user deposits an asset, such as $100 of SOL. UXD Protocol enters into a corresponding short Perpetual Future position on a derivative exchange, such as &lt;a href=&#34;https://www.mango.markets/&#34;&gt;mango markets&lt;/a&gt;. This position is the same as the BTC position described above, and will maintain its $100 value in the same way.&lt;/p&gt;
+&lt;p&gt;用户存入一项资产，例如 100 美元的 SOL。 UXD 协议在衍生品交易所（例如 &lt;a href=&#34;https://www.mango.markets/&#34;&gt;芒果市场&lt;/a&gt;）上建立了相应的永续期货空头头寸。该头寸与上述 BTC 头寸相同，将以相同的方式保持其 100 美元的价值。&lt;/p&gt;
+&lt;p&gt;100 UXD stablecoin &lt;em&gt;is issued to the user for dollar amount of SOL the user deposited. This 100 UXD represents the underlying delta-neutral position, which is by definition always worth $100. In this way, UXD is 100% collateralized and can be redeemed at any time for $100 of crypto assets. In this example, a user could deposit 100 UXD in exchange for $100 of SOL&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;100 UXD 稳定币&lt;em&gt;以用户存入的 SOL 美元金额发行给用户。这 100 UXD 代表潜在的 delta 中性头寸，根据定义，它总是价值 100 美元。通过这种方式，UXD 是 100% 抵押的，可以随时赎回 100 美元的加密资产。在此示例中，用户可以存入 100 UXD 以换取 100 美元的 SOL&lt;/em&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Less trading fees. UXD does not take any protocol fees. Any fees/slippage from minting are due to the underlying derivative exchanges.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;更少的交易费用。 UXD 不收取任何协议费用。铸币产生的任何费用/滑点都是由于基础衍生品交易所造成的。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Please see the &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/risks&#34;&gt;Risks&lt;/a&gt; section of the docs to understand the ways in which UXD may become de-pegged from its $1 USD peg.&lt;/p&gt;
+&lt;p&gt;请参阅文档的 风险](https://docs.uxd.fi/uxdprotocol/overview/risks) 部分，了解 UXD 可能从其 1 美元挂钩中脱钩的方式。&lt;/p&gt;
+&lt;h2 id=&#34;资金利率利息产生-funding-rates-interest-generation&#34;&gt;资金利率，利息产生 (Funding Rates, Interest Generation)&lt;/h2&gt;
+&lt;p&gt;By nature of the perpetual futures position, the delta-neutral position backing a UXD stablecoin generates/pays interest depending on market conditions. This yield is due to the &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-perpetual-future#funding-rates&#34;&gt;funding rate&lt;/a&gt; of perpetual futures.&lt;/p&gt;
+&lt;p&gt;根据永续期货头寸的性质，支持 UXD 稳定币的 delta 中性头寸会根据市场条件产生/支付利息。这种收益率是由于永续期货的&lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-perpetual-future#funding-rates&#34;&gt;资金费率&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;When the funding rate is positive, the interest will be distributed to UXD Protocol Stakeholders and the &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/insurance-fund&#34;&gt;insurance fund&lt;/a&gt;. When the funding rate is negative, the insurance fund will be used to pay out the negative funding rate so that UXD holders do not have to pay out interest.&lt;/p&gt;
+&lt;p&gt;当资金利率为正时，利息将分配给 UXD 协议利益相关者和 &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/insurance-fund&#34;&gt;保险基金&lt;/a&gt;。当资金利率为负时，保险基金将用于支付负资金利率，使UXD持有者无需支付利息。&lt;/p&gt;
+&lt;h1 id=&#34;保险基金-insurance-fund&#34;&gt;保险基金 (Insurance Fund)&lt;/h1&gt;
+&lt;p&gt;UXD&#39;s insurance fund exists for the benefit of UXD holders, so that they do not have to pay the negative &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-perpetual-future#funding-rates&#34;&gt;funding rate&lt;/a&gt; from the &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/delta-neutral-position&#34;&gt;delta-neutral position&lt;/a&gt;, if such negative funding rates occur. The insurance fund may also be used in the case of an exploitative hack that results in undercollateralization of UXD&#39;s stablecoin. The insurance fund will be managed by the forthcoming UXP DAO.&lt;/p&gt;
+&lt;p&gt;UXD 的保险基金是为 UXD 持有者的利益而存在的，因此他们不必支付负的 资金费率](https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-perpetual- future#funding-rates）从delta-neutral position]（https://docs.uxd.fi/uxdprotocol/overview/delta-neutral-position），如果出现这种负资金利率。保险基金也可用于导致 UXD 稳定币抵押不足的剥削性黑客攻击的情况。保险基金将由即将推出的 UXP DAO 管理。&lt;/p&gt;
+&lt;p&gt;UXD&#39;s insurance fund was initially capitalized at $57,086,131 as of 11/14/2021. This means that at its initial value, UXD&#39;s insurance fund could withstand -11.4% funding rates on $500 milllion of UXD for an entire year.&lt;/p&gt;
+&lt;p&gt;截至 2021 年 11 月 14 日，UXD 的保险基金最初资本金为 57,086,131 美元。这意味着，UXD 的保险基金的初始价值可以承受一整年 5 亿美元 UXD 的 -11.4% 的资金费率。&lt;/p&gt;
+&lt;p&gt;If the insurance fund is depleted, UXD will hold an auction of UXP tokens to replenish the insurance fund.&lt;/p&gt;
+&lt;p&gt;如果保险资金用完，UXD将举行UXP代币拍卖以补充保险资金。&lt;/p&gt;
+&lt;h2 id=&#34;保险基金模拟-insurance-fund-simulations&#34;&gt;保险基金模拟 (Insurance Fund Simulations)&lt;/h2&gt;
+&lt;p&gt;In early 2022, UXD completed a research study detailing historical funding rates and what the performance of the insurance fund would have been in various historical market regimes. The results of the study were detailed in the below report:&lt;/p&gt;
+&lt;p&gt;2022 年初，UXD 完成了一项研究，详细说明了历史资金费率以及保险基金在各种历史市场制度下的表现。研究结果详述于以下报告中：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FK8B4Qq1s6iS16m2dDiYP%2FInsurance_Fund_Simulation_vF.pdf?alt=media&amp;amp;token=8e79050d-0835-4154-a38c-eddc4fa8b2a9&#34;&gt;Insurance_Fund_Simulation_vF.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;此外，调查结果的摘要可以在相应的媒体文章中找到。&lt;/p&gt;
+&lt;h1 id=&#34;治理代币uxp-governance-token-uxp&#34;&gt;治理代币UXP (Governance Token UXP)&lt;/h1&gt;
+&lt;p&gt;The governance token UXP is required for the governance of UXD Protocol and will control decisions to be made through the UXP DAO. UXP tokenholders will be able to vote on proposals that contribute to the growth of UXD Protocol. Examples of proposals that UXP token holders can make are:&lt;/p&gt;
+&lt;p&gt;治理代币 UXP 是 UXD 协议治理所必需的，它将控制通过 UXP DAO 做出的决策。 UXP 代币持有者将能够对有助于 UXD 协议发展的提案进行投票。 UXP 代币持有者可以提出的建议示例如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Nominate/Add Derivative Exchanges for integration.&lt;br&gt;
+提名/添加衍生品交易所进行整合。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nominate/Add crypto assets to use as collateral to create the delta-neutral position.&lt;br&gt;
+提名/添加加密资产用作抵押品来创建 delta 中性头寸。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adjust the distribution of the positive funding rate.&lt;br&gt;
+整正资金费率的分配&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Propose/Implement Asset Management Strategies for the Insurance Fund.&lt;br&gt;
+提议/实施保险基金的资产管理策略。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Propose/Implement Optimizations to UXD Protocol&lt;br&gt;
+提议/实施对 UXD 协议的优化&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;uxp代币分配-uxp-token-distribution&#34;&gt;UXP代币分配 (UXP Token Distribution)&lt;/h1&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2Foehd2vRKNwrDcLbglHw4%2FUXP%20token%20distribution%20(1).png?alt=media&amp;amp;token=54feaee4-1077-492d-a9e9-25d60016f485&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Total Supply&lt;/strong&gt;: 10,000,000,000 UXP&lt;br&gt;
+&lt;strong&gt;总供应量&lt;/strong&gt;：10,000,000,000 UXP&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Team&lt;/strong&gt;: 20% 25% vested and released on 11/14/2022, remaining vested and released monthly over 3 years linearly.&lt;br&gt;
+&lt;strong&gt;团队&lt;/strong&gt;：20% 25% 于 2022 年 11 月 14 日归属和释放，3 年内每月线性归属和释放。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Investors&lt;/strong&gt;: 15%&lt;br&gt;
+&lt;strong&gt;投资者&lt;/strong&gt;：15%&lt;/p&gt;
+&lt;p&gt;Pre-Seed Investors, 5%: 25% vested and released on 11/14/2022, remaining vested and released monthly over 3 years linearly.&lt;/p&gt;
+&lt;p&gt;种子前投资者，5%：25% 于 2022 年 11 月 14 日归属和释放，3 年内每月线性归属和释放。&lt;/p&gt;
+&lt;p&gt;Seed Investors, 10% : 50% vested and released on 11/14/2022, remaining vested and released monthly over 1 year linearly.&lt;/p&gt;
+&lt;p&gt;种子投资者，10%：50% 于 2022 年 11 月 14 日归属和释放，剩余的归属和每月线性释放超过 1 年。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Community&lt;/strong&gt;: 57% UXP tokens will be distributed through liquidity mining and through other direct incentive programs decided on by the forthcoming DAO.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;社区&lt;/strong&gt;：57% 的 UXP 代币将通过流动性挖矿和即将到来的 DAO 决定的其他直接激励计划进行分配。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Treasury&lt;/strong&gt;: 5%. Funds reserved for the future growth of UXD Protocol.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;金库&lt;/strong&gt;：5%。为 UXD 协议的未来发展预留的资金。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Insurance Fund&lt;/strong&gt;: 3% Funds raised from the sale of UXP tokens were 100% allocated to the insurance fund for the benefit of UXD holders.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;保险基金&lt;/strong&gt;：为保障 UXD 持有者的利益，从出售 UXP 代币中筹集的 3% 资金 100% 分配给保险基金。&lt;/p&gt;
+&lt;h1 id=&#34;风险-risks&#34;&gt;风险 (Risks)&lt;/h1&gt;
+&lt;p&gt;Below we outline the risk factors that may cause a de-pegging of UXD to USD, or a loss of principal value to UXD holders. All decentralized stablecoins assume some amount of risk by their nature.&lt;/p&gt;
+&lt;p&gt;下面我们概述了可能导致 UXD 与美元脱钩或 UXD 持有者本金价值损失的风险因素。所有去中心化的稳定币本质上都承担了一定的风险。&lt;/p&gt;
+&lt;h2 id=&#34;风险因子-risk-factors&#34;&gt;风险因子 (Risk Factors)&lt;/h2&gt;
+&lt;p&gt;We view the following as the primary risks faced by UXD stablecoin, although there may be other &amp;quot;unknown unknowns&amp;quot; not included in the below list.&lt;/p&gt;
+&lt;p&gt;我们认为以下是 UXD 稳定币面临的主要风险，尽管可能还有其他“未知的未知数”没有包含在以下列表中。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Smart Contract Risk:&lt;/strong&gt; By definition, a decentralized stablecoin must rely on smart contract code for its existence. If a smart contract written by UXD Protocol, or an underlying derivative exchange contains a critical bug, user funds may be irrevocably lost and UXD may no longer be fully collateralized.&lt;br&gt;
+&lt;strong&gt;智能合约风险：&lt;/strong&gt; 根据定义，去中心化稳定币必须依赖智能合约代码才能存在。如果由 UXD 协议编写的智能合约或基础衍生品交易所包含严重错误，则用户资金可能会不可挽回地丢失，并且 UXD 可能不再被完全抵押。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Negative Funding Rates:&lt;/strong&gt; If the perpetual futures &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-perpetual-future#funding-rates&#34;&gt;funding rates&lt;/a&gt; are negative for a period long enough to cause full depletion of the insurance fund, and if UXD holders have not redeemed their UXD stablecoin for assets by such time, UXD holders may become undercollateralized due to continued negative funding rates.&lt;br&gt;
+&lt;strong&gt;负资金费率：&lt;/strong&gt; 如果永续合约 &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-perpetual-future#funding-rates&#34;&gt;资金费率&lt;/a&gt; 为负数在足够长的时间内导致保险资金全部耗尽，如果 UXD 持有人在此时间之前还没有赎回他们的 UXD 稳定币资产，则 UXD 持有人可能会由于持续的负融资利率而变得抵押不足。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Insurance Fund Asset Management Risk:&lt;/strong&gt; The insurance fund will be deployed in asset management strategies for the benefit of UXD Stakeholders. If these asset management strategies carry unforeseen risk or if funds are lost due to exploitative hacks, UXD holders may become undercollateralized due to negative funding rates.&lt;br&gt;
+&lt;strong&gt;保险基金资产管理风险：&lt;/strong&gt; 保险基金将被部署在资产管理策略中，来造福 UXD 利益相关者。如果这些资产管理策略存在不可预见的风险，或者由于黑客攻击导致资金损失，则 UXD 持有人可能会因负资金利率而导致抵押不足。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Insufficient Liquidity to Exit UXD Positions:&lt;/strong&gt; If the underlying derivative exchanges experience significant illiquidity in their perpetual futures markets, at the same time that a large number of UXD holders are attempting to redeem UXD for crypto assets, there may be insufficient liquidity to immediately redeem UXD for crypto assets.&lt;br&gt;
+&lt;strong&gt;流动性不足，无法退出 UXD 头寸：&lt;/strong&gt; 如果基础衍生品交易所在其永续期货市场出现明显的流动性不足，同时大量 UXD 持有者试图将 UXD 赎回加密资产，则可能存在不足流动性立即将 UXD 赎回加密资产。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Supply/Demand Imbalance:&lt;/strong&gt; Although the mint/redeem functions on UXD&#39;s website will allow unrestricted users to swap UXD for underlying crypto assets, there may be cases in which UXD trades off its peg on secondary markets. This may be due to a front-end application bug for the mint/redeem process, or a variety of other market conditions caused by an imbalance of supply/demand.&lt;br&gt;
+&lt;strong&gt;供应/需求失衡：&lt;/strong&gt; 虽然 UXD 网站上的铸币/兑换功能将允许不受限制的用户将 UXD 换成基础加密资产，但可能存在 UXD 在二级市场上取消其挂钩的情况。这可能是由于铸币/兑换过程的前端应用程序错误，或供需不平衡导致的各种其他市场状况。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;再平衡-rebalancing&#34;&gt;再平衡 (Rebalancing)&lt;/h2&gt;
+&lt;p&gt;UXD stablecoin is created through the set-up of a &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/delta-neutral-position#uxd-a-delta-neutral-stablecoin&#34;&gt;delta-neutral&lt;/a&gt; position on a decentralized derivative exchange.&lt;/p&gt;
+&lt;p&gt;UXD 稳定币是通过设置 delta-neutral](https://docs.uxd.fi/uxdprotocol/overview/delta-neutral-position#uxd-a-delta-neutral-stablecoin) 头寸创建去中心化衍生品交易所。&lt;/p&gt;
+&lt;p&gt;At initiation, this delta-neutral position is 100% backed by decentralized crypto assets, such as SOL, ETH and BTC. The below section is intended to explain some of the intricacies involved in the dynamics of the delta-neutral accounting, and scenarios in which UXD may become partially and temporarily collateralized by USDC.&lt;/p&gt;
+&lt;p&gt;在开始时，这个 delta 中性头寸 100% 由去中心化加密资产支持，例如 SOL、ETH 和 BTC。以下部分旨在解释 delta 中性会计动态所涉及的一些复杂性，以及 UXD 可能部分和暂时被 USDC 抵押的情况。&lt;/p&gt;
+&lt;h3 id=&#34;delta中性会计-delta-neutral-accounting&#34;&gt;Delta中性会计 (Delta-Neutral Accounting)&lt;/h3&gt;
+&lt;p&gt;Suppose there is 1,000,000 of UXD outstanding, which was created on average when SOL was $100. This means the UXD asset depository holds 10,000 SOL and is short 10,000 SOL-perp on a relevant derivative exchange. Each UXD is backed by an equivalent dollar amount of SOL.&lt;/p&gt;
+&lt;p&gt;假设有 1,000,000流通的UXD，平均在 SOL 为 100 美元时创建。这意味着 UXD 资产存管持有 10,000 SOL，并在相关衍生品交易所做空 10,000 SOL-perp。每个 UXD 都由等值美元的 SOL 支持。&lt;/p&gt;
+&lt;p&gt;Suppose SOL moves to $90. Then:&lt;br&gt;
+假设 SOL 移动到 90 美元。然后：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.UXD&#39;s depository still holds 10,000 SOL, which is now worth $900,000.&lt;br&gt;
+1.UXD 的存款仍然持有 10,000 SOL，现在价值 900,000 美元。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.UXD&#39;s short SOL-perp position accrues a +$100,000 PnL&lt;br&gt;
+2.UXD的SOL-perp空头头寸产生+$100,000 PnL(profit and loss，损益，后文还是沿用PnL)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each UXD is still backed by an equivalent dollar amount of &amp;quot;assets&amp;quot;, but the composition of assets has changed slightly. Now, 1 UXD is backed by 90% SOL and 10% &amp;quot;paper profits&amp;quot;, which are the unsettled PnL profits from the derivative exchange (note: paper profits are themselves collateralized due to margin maintenance requirements, significantly reducing any sort of counterparty risk).&lt;/p&gt;
+&lt;p&gt;每个 UXD 仍然由等值美元的“资产”支持，但资产的构成略有变化。现在，1 UXD 由 90% 的 SOL 和 10% 的“账面利润”支持，这是来自衍生品交易所的未结算 PnL 利润（注意：由于保证金维持要求，账面利润本身被抵押，大大降低了任何形式的交易对手风险）。&lt;/p&gt;
+&lt;p&gt;The existence of UXD&#39;s +$100,000 paper profit implies that another party has a -$100,000 paper loss, in unsettled PnL. If this profit remains unsettled, UXD remains 100% backed by &amp;quot;decentralized&amp;quot; assets, because the paper PnL is a formal accounting structure on a decentralized derivative exchange.&lt;/p&gt;
+&lt;p&gt;UXD 的+100,000 美元账面利润的存在意味着另一方有-100,000 美元的账面损失，未结算的盈亏。如果该利润仍未结清，UXD 仍然 100% 由“去中心化”资产支持，因为纸质 PnL 是去中心化衍生品交易所的正式会计结构。&lt;/p&gt;
+&lt;p&gt;However, for decentralized exchanges like Mango Markets, PnL settlement may only occur in USDC. Therefore, if UXD&#39;s counterparty wishes to settle the -$100,000 PnL, they are allowed to do so by sending USDC only. Immediately after settlement, UXD is still backed 100% by assets, but the composition has become: 90% SOL, 10% USDC.&lt;/p&gt;
+&lt;p&gt;然而，对于像 Mango Markets 这样的去中心化交易所，盈亏结算可能只发生在 USDC 中。因此，如果 UXD 的交易对手希望结算 -$100,000 PnL，他们只能通过发送 USDC 来实现。刚结算后，UXD仍然是100%的资产支撑，但是组成变成了：90% SOL，10% USDC。&lt;/p&gt;
+&lt;p&gt;Since UXD is not intended to ever have permanent USDC backing, there needs to be a mechanism for bringing UXD back to 100% backing by &lt;em&gt;&lt;strong&gt;decentralized&lt;/strong&gt;&lt;/em&gt; crypto assets. Note also that if the counterparty never settles the negative PnL, then UXD never holds any USDC, though eventually would be required to do so.&lt;/p&gt;
+&lt;p&gt;由于 UXD 并不打算永久拥有USDC支撑，因此需要一种机制来使 UXD 恢复到 &lt;em&gt;&lt;strong&gt;去中心化&lt;/strong&gt;&lt;/em&gt;  100%加密资产支撑。另请注意，如果交易对手从未结算负 PnL，则 UXD 永远不会持有任何 USDC，尽管最终会被要求这样做。&lt;/p&gt;
+&lt;h3 id=&#34;再平衡-rebalancing-2&#34;&gt;再平衡 (Rebalancing)&lt;/h3&gt;
+&lt;p&gt;The solution is a &amp;quot;rebalancing&amp;quot; mechanism that &amp;quot;resets&amp;quot; the delta-neutral position to have zero PnL. Using the above example, in one atomic transaction rebalancing works as follows:&lt;/p&gt;
+&lt;p&gt;解决方案是“再平衡”机制，将 delta 中性位置“重置”为零 PnL。使用上面的示例，在一个原子交易中，重新平衡的工作方式如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.UXD settles the $100,000 PnL and receives $100,000 USDC.&lt;br&gt;
+1.UXD 结算 $100,000 PnL 并获得 $100,000 USDC。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.The USDC is atomically swapped into SOL, BTC or ETH through a spot-market purchase. In the above example, UXD purchases ~1,111 SOL at $90/SOL.&lt;br&gt;
+2.USDC通过现货市场购买自动兑换成SOL、BTC或ETH。在上面的示例中，UXD 以 90 美元/SOL 的价格购买了约 1,111 SOL。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3.Atomically, a corresponding short SOL perp position is established for ~1,111 SOL.&lt;br&gt;
+自动为〜1,111 SOL建立了相应的空头SOL perp头寸。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The end result is as follows:&lt;br&gt;
+结果如下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.UXD&#39;s depository now holds ~11,111 SOL, worth $1,000,000 at $90/SOL.&lt;br&gt;
+1.UXD 的存款现在持有约 11,111 SOL，价值 1,000,000 美元，平均90 美元/SOL。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.UXD&#39;s short SOL-perp position has 0 PnL, as the PnL has been settled.&lt;br&gt;
+2.UXD 的 SOL-perp 空头头寸的 PnL 为 0，因为 PnL 已经结算。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After this operation, UXD is 100% backed by decentralized crypto assets once again.&lt;/p&gt;
+&lt;p&gt;此次操作后，UXD 再次回到100%去中心化加密资产支撑。&lt;/p&gt;
+&lt;h4 id=&#34;再平衡现况-current-state-of-rebalancing&#34;&gt;再平衡现况 (Current State of Rebalancing)&lt;/h4&gt;
+&lt;p&gt;In UXD&#39;s current beta state, it has not been possible to implement rebalancing due to a technical limitation regarding the number of accounts involved in a single atomic transaction and the current 200k computing units limit. As a result, UXD does not currently have a rebalancing mechanism.&lt;/p&gt;
+&lt;p&gt;在 UXD 目前的 beta 状态下，由于单个原子交易涉及的账户数量的技术限制和当前 200k 计算单元的限制，无法实现再平衡。因此，UXD 目前没有再平衡机制。&lt;/p&gt;
+&lt;p&gt;However &lt;a href=&#34;https://docs.solana.com/proposals/transactions-v2&#34;&gt;this proposal,&lt;/a&gt; once implemented, will allow for continuous rebalancing of UXD&#39;s position. Moreover, since the rebalancing operation incurs fees (trading slippage + taker fees), the DAO may find it preferable to set a USDC backing %, above which rebalancing occurs.&lt;/p&gt;
+&lt;p&gt;然而，&lt;a href=&#34;https://docs.solana.com/proposals/transactions-v2&#34;&gt;此提案&lt;/a&gt; 一旦实施，将允许 UXD 的头寸不断重新平衡。此外，由于再平衡操作会产生费用（交易滑点 + 接受者费用），DAO 可能会发现最好设置一个 USDC 支持百分比，高于该百分比才会发生再平衡。&lt;/p&gt;
+&lt;p&gt;Currently, as of 2/08/2022, UXD is not backed by any USDC because the short perpetual futures global depository is in a negative PnL, and so there is no positive PnL at risk of settlement.&lt;/p&gt;
+&lt;p&gt;目前，截至 2022 年 2 月 8 日，UXD 没有任何 USDC 支持，因为短期永续期货全球存管处于负 PnL，因此没有正PnL存在结算风险。&lt;/p&gt;
+&lt;p&gt;However, UXD Protocol is working on temporary solutions to help mitigate the rebalancing issue until such a time as UXD Protocol can implement a full rebalancing solution. These will be communicated over public communications channels such as Twitter and Discord.&lt;/p&gt;
+&lt;p&gt;但是，UXD 协议正在研究临时解决方案，以帮助缓解再平衡问题，直到 UXD 协议可以实施完整的再平衡解决方案。这些将通过 Twitter 和 Discord 等公共沟通渠道进行沟通。&lt;/p&gt;
+&lt;h4 id=&#34;再平衡现状-redeemability-liquidity&#34;&gt;再平衡现状 (Redeemability Liquidity)&lt;/h4&gt;
+&lt;p&gt;In the (viewed as unlikely) scenario that assets in the depository consist almost entirely of positive PnL, then UXD may become temporarily backed by a corresponding amount of USDC if this PnL is settled. Currently, there is no direct mechanism for redeeming UXD for USDC, so redeemability may be temporarily not possible for 100% of outstanding UXD, though such UXD would still remain fully collateralized.&lt;/p&gt;
+&lt;p&gt;在存管中的资产几乎完全由正PnL组成的情况下（虽然不太可能），如果该盈亏得到结算，则 UXD 可能会暂时得到相应数量的 USDC 的支持。目前，没有将 UXD 兑换为 USDC 的直接机制，因此 100% 未偿还的 UXD 可能暂时无法赎回，尽管此类 UXD 仍将保持完全抵押。&lt;/p&gt;
+&lt;p&gt;UXD Protocol has developed a temporary solution in this case that would allow for UXD to be redeemed for USDC:&lt;/p&gt;
+&lt;p&gt;UXD 协议在这种情况下开发了一个临时解决方案，允许将 UXD 兑换为 USDC:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.UXD Protocol would mint UXD using insurance fund converted to the desired collateral as a temporary buffer.&lt;br&gt;
+1.UXD协议将使用保险资金转换为所需抵押品，作为临时缓冲来铸造UXD。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.Add Liquidity in USDC from the insurance fund on Saber USDC-UXD pools if the pool has &amp;lt;= 30% USDC.&lt;br&gt;
+如果池中的 USDC &amp;lt;= 30%，则从 Sabre USDC-UXD 池的保险基金中添加 USDC 流动性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;UXD Protocol believes a combination of these two solutions will allow for sufficient exit liquidity should a user wish to exit their UXD Position. Such a solution has not been deployed on mainnet, but will be implemented very soon.&lt;/p&gt;
+&lt;p&gt;UXD 协议认为，如果用户希望退出其 UXD 头寸，这两种解决方案的组合将允许足够的退出流动性。这样的解决方案尚未部署在主网上，但很快就会实施。&lt;/p&gt;
+&lt;p&gt;Moreover, our next audited update will include an audited rebalancing-lite instruction, that has been designed to circumvent the current technical limitation. This will be replaced by the full automatic rebalancing mechanism in the future.&lt;/p&gt;
+&lt;p&gt;此外，我们的下一个审计更新将包括一个经过审计的 rebalancing-lite 指令，旨在规避当前的技术限制。这将在未来被全自动再平衡机制所取代。&lt;/p&gt;
+&lt;h1 id=&#34;如何铸造uxd-how-to-mint-uxd&#34;&gt;如何铸造UXD (How to mint UXD)&lt;/h1&gt;
+&lt;p&gt;The below describes the minting process to create new UXD for usage in the crypto economy.&lt;/p&gt;
+&lt;p&gt;下面描述了创建用于加密经济的新 UXD 的铸造过程。&lt;/p&gt;
+&lt;p&gt;Minting UXD is available only to persons not in a restricted jurisdiction. For more information, please see our &lt;a href=&#34;https://terms.uxd.fi/&#34;&gt;Terms and Conditions&lt;/a&gt; regarding the usage of UXD Protocol.&lt;/p&gt;
+&lt;p&gt;铸造 UXD 仅适用于不受限制司法管辖区的人。有关更多信息，请参阅我们的 &lt;a href=&#34;https://terms.uxd.fi/&#34;&gt;条款和条件&lt;/a&gt; 关于 UXD 协议使用的部分。&lt;/p&gt;
+&lt;p&gt;&amp;quot;Minting&amp;quot; UXD is the process of creating new UXD in exchange for a USD-equivalent of a decentralized crypto asset such as SOL. For example, approximately 100 UXD can be created using $100 of crypto assets, making UXD highly capital efficient. The difference between the USD amount of crypto assets and the UXD created is due to (i) slippage (the change in price between a user&#39;s order submission and final execution) and (ii) trading fees on the underlying derivative exchange.&lt;/p&gt;
+&lt;p&gt;“铸造”UXD 是用等值美元的去中心化加密资产（如 SOL）创建新 UXD 的过程。例如，可以使用 100 美元的加密资产创建大约 100 UXD ，从而使 UXD 具有很高的资本效率。加密资产的美元金额与创建的 UXD 之间的差异是由于 (i) 滑点（用户提交订单和最终执行之间的价格变化）和 (ii) 基础衍生品交易所的交易费用。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;UXD Protocol does not collect any fees from the user.&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;&lt;strong&gt;UXD协议不向用户收取任何费用。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Please note: The minimum mint size is .01 SOL (~$1.5 as of January 2022) due to the functionality of the underlying derivatives exchange(s).&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;请注意：由于基础衍生品交易所的功能，最小铸币量为 0.01 SOL（截至 2022 年 1 月约为 1.5 美元）。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;铸币步骤-steps-to-mint&#34;&gt;铸币步骤 (Steps to Mint)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;1.Visit the &lt;a href=&#34;https://app.uxd.fi/&#34;&gt;Minting Application&lt;/a&gt;. If you are in a restricted jurisdiction, you will receive the following message when attempting to access the application:&lt;br&gt;
+1.访问&lt;a href=&#34;https://app.uxd.fi/&#34;&gt;铸币应用&lt;/a&gt;。如果您在受限制的司法管辖区，您将在尝试访问应用程序时收到以下消息：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FJ82XBkjvhXVuK20D27mc%2FScreen%20Shot%202022-01-16%20at%202.46.17%20PM.png?alt=media&amp;amp;token=113cb873-78df-4fdf-9ec9-9be26a6e5141&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;If you are not in a restricted jurisdiction, you will see the following page:&lt;/p&gt;
+&lt;p&gt;如果您不在受限制的司法管辖区，您将看到以下页面：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FQgyUn5JJuSIbMInoXGrQ%2FScreen%20Shot%202022-01-16%20at%202.47.36%20PM.png?alt=media&amp;amp;token=721078e1-80a0-4099-b351-81d7cf06deb8&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;2.To proceed, click &amp;quot;Connect&amp;quot; in the upper right corner:&lt;br&gt;
+2.要继续，请单击右上角的“连接”：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FzrePbSFE5eTeY72oiWWd%2FScreen%20Shot%202022-01-16%20at%202.50.20%20PM.jpg?alt=media&amp;amp;token=fbcec49c-52c5-452c-82e9-83e98ed8ab5c&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;You will be prompted to accept the &lt;a href=&#34;https://terms.uxd.fi/&#34;&gt;Terms and Conditions&lt;/a&gt; in order to connect your wallet. Click acknowledge after you have read the Terms and Conditions and hit &amp;quot;Confirm.&lt;/p&gt;
+&lt;p&gt;系统将提示您接受 &lt;a href=&#34;https://terms.uxd.fi/&#34;&gt;条款和条件&lt;/a&gt; 以连接您的钱包。阅读条款和条件后点击确认并点击“确认”。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FjYOoIvAaRdxsib34e4xw%2FScreen%20Shot%202022-01-16%20at%202.59.49%20PM.jpg?alt=media&amp;amp;token=7a00f308-dc53-40bd-95bf-5c5b97ec6324&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Select your desired wallet and enter the password to access your wallet. You will receive a pop-up indicating that you&#39;re now connected.&lt;/p&gt;
+&lt;p&gt;选择您想要的钱包并输入密码以访问您的钱包。您将收到一个弹出窗口，指示您现在已连接。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FCr25cPIr2CIoeP9Z0ucb%2FScreen%20Shot%202022-01-16%20at%203.06.49%20PM.png?alt=media&amp;amp;token=25007d67-023c-4fc8-97cc-94a000bce74e&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;3.Enter the amount of SOL you&#39;d like to exchange for UXD. Then, select your desired slippage tolerance and click &amp;quot;Mint&amp;quot; and approve the transaction in your wallet.&lt;/p&gt;
+&lt;p&gt;3.输入您要兑换 UXD 的 SOL 数量。然后，选择您想要的滑点容限并单击“铸币”并批准您钱包中的交易。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FjJj0Oj64B9OJ39xfVLcv%2FScreen%20Shot%202022-01-16%20at%203.17.44%20PM(1).jpg?alt=media&amp;amp;token=894aee95-3ee2-4424-be27-5180cfcf03a9&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;4.Once the transaction completes, you will receive a notification indicating UXD has been successfully minted to your wallet:&lt;/p&gt;
+&lt;p&gt;4.交易完成后，您将收到一条通知，说明 UXD 已成功铸造到您的钱包：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;8&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2F5KygV2G2BBcbm07WO4Xw%2FScreen%20Shot%202022-01-16%20at%203.25.17%20PM.png?alt=media&amp;amp;token=fa52a6a6-9cde-4fbc-aa5f-8fef212ee387&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;You will now be able to view your UXD balance in your wallet! UXD&#39;s token address is&lt;/p&gt;
+&lt;p&gt;您现在可以在您的钱包中查看您的 UXD 余额！ UXD的代币地址是:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://solscan.io/token/7kbnvuGBxxj8AG9qp8Scn56muWGaRaFqxg1FsRp3PaFT&#34;&gt;&lt;strong&gt;7kbnvuGBxxj8AG9qp8Scn56muWGaRaFqxg1FsRp3PaFT&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;如何赎回uxd-how-to-redeem-uxd&#34;&gt;如何赎回UXD (How to redeem UXD)&lt;/h1&gt;
+&lt;p&gt;The below describes the redemption process to redeem UXD for an equivalent amount of crypto assets.&lt;/p&gt;
+&lt;p&gt;下面描述了将 UXD 兑换为等量加密资产的赎回过程。&lt;/p&gt;
+&lt;p&gt;Redeeming UXD is available only to persons not in a restricted jurisdiction. For more information, please see our &lt;a href=&#34;https://terms.uxd.fi/&#34;&gt;Terms and Conditions&lt;/a&gt; regarding the usage of UXD Protocol.&lt;/p&gt;
+&lt;p&gt;赎回 UXD 仅适用于不受限制司法管辖区的人。有关更多信息，请参阅我们的 &lt;a href=&#34;https://terms.uxd.fi/&#34;&gt;条款和条件&lt;/a&gt; 关于 UXD 协议使用的内容。&lt;/p&gt;
+&lt;p&gt;&amp;quot;Redeeming&amp;quot; UXD is the process of burning UXD in exchange for a USD-equivalent of a decentralized crypto assets such as SOL. For example, 100 UXD can be burned to redeem approximately $100 of crypto assets, making UXD highly capital efficient. The difference between the UXD amount and the USD amount of crypto assets redeemed is due to (i) slippage (the change in price between a user&#39;s order submission and final execution) and (ii) trading fees on the underlying derivative exchange.&lt;/p&gt;
+&lt;p&gt;“赎回” UXD 是燃烧 UXD 以换取等值美元的去中心化加密资产（如 SOL）的过程。例如，可以燃烧 100 UXD 来赎回大约 100 美元的加密资产，从而使 UXD 具有很高的资本效率。赎回的加密资产的 UXD 金额和美元金额之间的差异是由于 (i) 滑点（用户提交订单和最终执行之间的价格变化）和 (ii) 基础衍生品交易所的交易费用。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;UXD Protocol does not collect any fees from the user.&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;&lt;strong&gt;UXD协议不向用户收取任何费用。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Please note: The minimum redemption size is .01 SOL (~$1.5 as of January 2022) due to the functionality of the underlying derivatives exchange(s).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;请注意：由于基础衍生品交易所的功能，最低赎回规模为 0.01 SOL（截至 2022 年 1 月约为 1.5 美元）。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;赎回uxd步骤-steps-to-redeem&#34;&gt;赎回UXD步骤 (Steps to Redeem)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;1.Visit the &lt;a href=&#34;https://app.uxd.fi/&#34;&gt;Redeem Application&lt;/a&gt;. If you are in a restricted jurisdiction, you will receive the following message when attempting to access the application:&lt;br&gt;
+访问&lt;a href=&#34;https://app.uxd.fi/&#34;&gt;赎回申请&lt;/a&gt;。如果您在受限制的司法管辖区，您将在尝试访问应用程序时收到以下消息：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;9&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FJ82XBkjvhXVuK20D27mc%2FScreen%20Shot%202022-01-16%20at%202.46.17%20PM.png?alt=media&amp;amp;token=113cb873-78df-4fdf-9ec9-9be26a6e5141&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;If you are not in a restricted jurisdiction, you will see the following page:&lt;br&gt;
+如果您不在受限制的司法管辖区，您将看到以下页面：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;10&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FKZpHmL8jqpMM2fuFsWmA%2Fimage.png?alt=media&amp;amp;token=7b134415-96b0-4aec-aee2-106189200bfb&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;2.To proceed, click &amp;quot;Connect&amp;quot; in the upper right corner:&lt;br&gt;
+2.要继续，请单击右上角的“连接”：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;11&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FzrePbSFE5eTeY72oiWWd%2FScreen%20Shot%202022-01-16%20at%202.50.20%20PM.jpg?alt=media&amp;amp;token=fbcec49c-52c5-452c-82e9-83e98ed8ab5c&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;You will be prompted to accept the &lt;a href=&#34;https://terms.uxd.fi/&#34;&gt;Terms and Conditions&lt;/a&gt; in order to connect your wallet. Click acknowledge after you have read the Terms and Conditions and hit &amp;quot;Confirm.&lt;/p&gt;
+&lt;p&gt;系统将提示您接受 &lt;a href=&#34;https://terms.uxd.fi/&#34;&gt;条款和条件&lt;/a&gt; 然后连接您的钱包。阅读条款和条件后点击确认并点击“确认”。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;12&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FjYOoIvAaRdxsib34e4xw%2FScreen%20Shot%202022-01-16%20at%202.59.49%20PM.jpg?alt=media&amp;amp;token=7a00f308-dc53-40bd-95bf-5c5b97ec6324&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Select your desired wallet and enter the password to access your wallet. You will receive a pop-up indicating that you&#39;re now connected.&lt;/p&gt;
+&lt;p&gt;选择您想要的钱包并输入密码以访问您的钱包。您将收到一个弹出窗口，指示您现在已连接。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;13&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FCr25cPIr2CIoeP9Z0ucb%2FScreen%20Shot%202022-01-16%20at%203.06.49%20PM.png?alt=media&amp;amp;token=25007d67-023c-4fc8-97cc-94a000bce74e&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;3.Click &amp;quot;Redeem&amp;quot; on the top of the main user interface. Enter the amount of UXD you&#39;d like to exchange for SOL. Then, select your desired slippage tolerance and click &amp;quot;Redeem&amp;quot; and approve the transaction in your wallet.&lt;/p&gt;
+&lt;p&gt;3.点击主界面上方的“赎回”。输入您要兑换 SOL 的 UXD 数量。然后，选择您想要的滑点容忍度并单击“赎回”并批准您钱包中的交易。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;14&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2F3IdgMPDlC3qk4xrctwug%2FScreen%20Shot%202022-01-16%20at%203.40.46%20PM.jpg?alt=media&amp;amp;token=cfdf78b6-06a0-40f3-adeb-87d986c7c0ab&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;4.Once the transaction completes, you will receive a notification indicating UXD has been successfully burned and SOL assets have been added to your wallet:&lt;br&gt;
+4.交易完成后，您会收到提示UXD已成功烧毁且SOL资产已添加到您的钱包的通知：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;15&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2FT5y3D49foVbAyIm4aQ2A%2FScreen%20Shot%202022-01-16%20at%203.45.54%20PM.png?alt=media&amp;amp;token=7dbd7c4e-5d5a-4238-8e93-986a657f55f4&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;You will now be able to view your changes in UXD and SOL balances in your wallet! UXD&#39;s token address is:&lt;/p&gt;
+&lt;p&gt;您现在可以在钱包中查看 UXD 和 SOL 余额的变化！ UXD的代币地址是：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://solscan.io/token/7kbnvuGBxxj8AG9qp8Scn56muWGaRaFqxg1FsRp3PaFT&#34;&gt;&lt;strong&gt;7kbnvuGBxxj8AG9qp8Scn56muWGaRaFqxg1FsRp3PaFT&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;铸币赎回常见问题-mintingredeeming-faq&#34;&gt;铸币/赎回常见问题 (Minting/Redeeming FAQ)&lt;/h1&gt;
+&lt;p&gt;Below are some common questions regarding the minting/redeeming process.&lt;/p&gt;
+&lt;p&gt;以下是有关铸币/赎回过程的一些常见问题。&lt;/p&gt;
+&lt;h3 id=&#34;谁可以铸造赎回-uxdwho-is-allowed-to-mintredeem-uxd&#34;&gt;谁可以铸造/赎回 UXD？(Who is allowed to mint/redeem UXD?)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Users in non-restricted jurisdictions are able to access the UXD website and mint/redeem UXD. By accessing the website and minting/redeeming UXD, you are agreeing to the &lt;a href=&#34;https://terms.uxd.fi/&#34;&gt;Terms and Conditions&lt;/a&gt; and acknowledge that you are not in a restricted jurisdiction, such as the United States.&lt;/p&gt;
+&lt;p&gt;不受限制的司法管辖区用户可以访问 UXD 网站并铸造/赎回 UXD。访问该网站并铸造/赎回 UXD，即表示您同意 &lt;a href=&#34;https://terms.uxd.fi/&#34;&gt;条款和条件&lt;/a&gt; 并承认您不在受限制的司法管辖区，例如美国。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;是否有最小铸币赎回规模-is-there-a-minimum-mintredeem-size&#34;&gt;是否有最小铸币/赎回规模 (Is there a minimum mint/redeem size?)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Minimum size is 0.01 SOL (equivalent to ~$1.50 at the time of writing). This minimum size is due to backend integrations with the derivative exchanges. Transactions to mint/redeem UXD for sizes smaller than 0.01 SOL will fail automatically.&lt;/p&gt;
+&lt;p&gt;最小规模为 0.01 SOL（在撰写本文时相当于约 1.50 美元）。这个最小规模是由于与衍生品交易所的后端集成所致。对小于 0.01 SOL 的大小的铸币/赎回 UXD 的交易将自动失败。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;哪些资产可用于铸造-uxd-uxd可以兑换什么资产-what-assets-can-be-used-to-mint-uxd-what-assets-can-uxd-be-redeemed-for&#34;&gt;哪些资产可用于铸造 UXD？ UXD可以兑换什么资产？ (What asset(s) can be used to mint UXD? What assets can UXD be redeemed for?)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Currently, UXD can be minted using SOL. Conversely, currently UXD can only be redeemed for SOL. Note that both mint and redeem operations require paying trading fees to the underlying derivative exchanges. UXD Protocol does not take any fees.&lt;/p&gt;
+&lt;p&gt;目前，可以使用 SOL 铸造 UXD。相反，目前UXD只能赎回SOL。请注意，铸造和赎回操作都需要向基础衍生品交易所支付交易费用。 UXD 协议不收取任何费用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;是否有任何与铸币相关的上限are-there-any-caps-in-place-related-to-minting&#34;&gt;是否有任何与铸币相关的上限？(Are there any caps in place related to minting?)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;At launch, there will be a 1,000,000 UXD supply cap globally. There will also be an individual wallet cap of 10,000 UXD. These caps will be raised according to certain milestones. Full information regarding the minting cap can be found &lt;a href=&#34;https://uxdprotocol.medium.com/uxd-launches-mainnet-beta-bringing-the-first-fully-decentralized-capital-efficient-stablecoin-to-74cd4075f4d9&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;在发布时，全球将有 1,000,000 UXD 的供应上限。个人钱包上限为 10,000 UXD。这些上限将根据某些里程碑提高。有关铸币上限的完整信息，请参见 &lt;a href=&#34;https://uxdprotocol.medium.com/uxd-launches-mainnet-beta-bringing-the-first-fully-decentralized-capital-efficient-stablecoin-to-74cd4075f4d9&#34;&gt;此处&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;为什么铸造兑换不完全是-1-uxd-1-美元的加密资产why-is-the-mintredeem-not-exactly-1-uxd-1-of-crypto-asset&#34;&gt;为什么铸造/兑换不完全是 1 UXD = 1 美元的加密资产？(Why is the mint/redeem not exactly 1 UXD = $1 of crypto asset?)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This is due to the underlying derivative exchanges taking trading fees, as well as from slippage during the trade execution. UXD Protocol does not take any fees.&lt;/p&gt;
+&lt;p&gt;这是由于基础衍生品交易所收取交易费用，以及交易执行期间的滑点。 UXD 协议不收取任何费用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;白皮书-whitepaper&#34;&gt;白皮书 (Whitepaper)&lt;/h1&gt;
+&lt;p&gt;Whitepaper (English v0): &lt;a href=&#34;https://uxd.fi/static/media/whitepaper.7be6354b.pdf&#34;&gt;https://uxd.fi/static/media/whitepaper.7be6354b.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;英文版：&lt;a href=&#34;https://uxd.fi/static/media/whitepaper.7be6354b.pdf&#34;&gt;https://uxd.fi/static/media/whitepaper.7be6354b.pdf&lt;/a&gt;&lt;br&gt;
+中文版：&lt;a href=&#34;https://chainguys.github.io/post/uxd-bai-pi-shu-100you-delta-zhong-xing-tou-cun-zhi-cheng-de-wen-ding-bi-uxd-protocol-an-algorithmic-stablecoin-100-backed-by-a-delta-neutral-position&#34;&gt;https://chainguys.github.io/post/uxd-bai-pi-shu-100you-delta-zhong-xing-tou-cun-zhi-cheng-de-wen-ding-bi-uxd-protocol-an-algorithmic-stablecoin-100-backed-by-a-delta-neutral-position&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;漏洞赏金-bug-bounty&#34;&gt;漏洞赏金 (Bug Bounty)&lt;/h1&gt;
+&lt;p&gt;Below we describe UXD&#39;s bug bounty program. Bounty amounts, criteria, and award denomination are subject to change.&lt;/p&gt;
+&lt;p&gt;下面我们介绍 UXD 的漏洞赏金计划。赏金金额、标准和奖励面额可能会发生变化。&lt;/p&gt;
+&lt;p&gt;UXD Protocol is proud to offer a generous bug bounty program in order to align the incentives of users and various security testers. UXD Protocol believes a generous bug bounty program is key to protocol security, as it makes the decisions of white and grey hat hackers more aligned with the users of UXD.&lt;/p&gt;
+&lt;p&gt;UXD 协议很自豪地提供了一个慷慨的漏洞赏金计划，用来调整用户和各种安全测试人员的激励措施。 UXD 协议认为，慷慨的漏洞赏金计划是协议安全的关键，因为它使白帽和灰帽黑客的决策更加符合 UXD 的用户。&lt;/p&gt;
+&lt;h2 id=&#34;计划详情-program-details&#34;&gt;计划详情 (Program Details)&lt;/h2&gt;
+&lt;p&gt;The program will initiate at UXD Protocol&#39;s launch, on January 18th at 14:00 UTC. Although UXD&#39;s smart contracts are not yet open sourced, we will still be awarding any critical issues that may be found.&lt;/p&gt;
+&lt;p&gt;该计划将在 1 月 18 日 14:00 UTC 启动 UXD 协议时启动。尽管 UXD 的智能合约尚未开源，但我们仍将奖励可能发现的任何关键问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2% of UXP (currently, ~$20mm) will be allocated to our bug bounty program&lt;/strong&gt;, coming from the &amp;quot;Community Fund&amp;quot; token allocation. Eventually, these funds may be redirected towards protocol development if voted on by the forthcoming DAO.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2% 的 UXP将分配给我们的漏洞赏金计划&lt;/strong&gt;，其来自“社区基金”的代币分配。最终，如果即将到来的 DAO 投票通过，这些资金可能会重新用于协议开发。&lt;/p&gt;
+&lt;p&gt;We use the below severity guidelines (informed by &lt;a href=&#34;https://immunefi.com/severity-updated/&#34;&gt;Immunefi&#39;s classification system&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;我们使用以下严重程度作为指南（由 &lt;a href=&#34;https://immunefi.com/severity-updated/&#34;&gt;Immunefi 的分类系统&lt;/a&gt; 提供信息）：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;16&#34;&gt;&lt;img src=&#34;https://987185596-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mj8VWsobdvjhMutae2g%2Fuploads%2Fbb60CCo4o8NOATQimgjq%2FScreen%20Shot%202022-01-16%20at%204.16.31%20PM.png?alt=media&amp;amp;token=a96157c6-5dcc-492c-b523-eb2675a6c2ff&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Please direct all bug bounty inquiries to uxdlegal@gmail.com. Please provide a detailed description of the attack vector. If it is possible, we require a demonstrated proof-of-concept on a privately deployed mainnet contract.&lt;/p&gt;
+&lt;p&gt;请将所有错误赏金查询发送至 uxdlegal@gmail.com。请提供攻击媒介的详细描述。如果可能的话，我们需要在私人部署的主网合约上进行概念验证。&lt;/p&gt;
+&lt;h2 id=&#34;其他值得注意的例外-other-notable-exceptions&#34;&gt;其他值得注意的例外 (Other notable exceptions)&lt;/h2&gt;
+&lt;p&gt;The following are out of scope for the bug bounty program:&lt;br&gt;
+以下内容超出了漏洞赏金计划的范围：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Attacks that the reporter has already exploited themselves, leading to damage and/or loss of funds.&lt;br&gt;
+报告已经利用的，导致损害和/或资金损失的攻击。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Attacks that the reporter has deployed on a public mainnet which is consequently used by an attacker to exploit, even if the reporter was not the attacker&lt;br&gt;
+报告者在公共主网上部署的攻击，因此被攻击者用来利用，即使报告者不是攻击者&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Attacks requiring access to leaked keys/credentials&lt;br&gt;
+需要访问泄露的密钥/凭证的攻击&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Attacks requiring access to other privileged addresses (governance, admin)&lt;br&gt;
+需要访问其他特权地址（治理、管理员）的攻击&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Incorrect data supplied by third party oracles (This does not exclude oracle manipulation/flash loan attacks)&lt;br&gt;
+第三方预言机提供的数据不正确（不排除预言机操纵/闪贷攻击）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Issues arising solely from liquidity&lt;br&gt;
+完全由流动性引起的问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Third party, off-chain bot errors (for instance bugs with an arbitrage bot running on the smart contracts)&lt;br&gt;
+第三方、链下机器人错误（例如在智能合约上运行套利机器人的错误）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Best practice critiques&lt;br&gt;
+最佳实践评论&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sybil attacks&lt;br&gt;
+女巫攻击&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;审计-audits&#34;&gt;审计 (Audits)&lt;/h1&gt;
+&lt;p&gt;We have received the first professional security audit from &lt;a href=&#34;https://www.bramah.systems/&#34;&gt;Bramah Systems&lt;/a&gt; on 1/14/2022. &lt;a href=&#34;https://bramah.systems/audits/UXD_Audit_Bramah.pdf&#34;&gt;https://bramah.systems/audits/UXD_Audit_Bramah.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我们于 2022 年 1 月 14 日收到了 &lt;a href=&#34;https://www.bramah.systems/&#34;&gt;Bramah Systems&lt;/a&gt; 的第一次专业安全审计。 &lt;a href=&#34;https://bramah.systems/audits/UXD_Audit_Bramah.pdf&#34;&gt;https://bramah.systems/audits/UXD_Audit_Bramah.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We have received the second professional security audit from &lt;a href=&#34;https://www.soteria.dev/&#34;&gt;Soteria&lt;/a&gt; on 3/31/2022.&lt;/p&gt;
+&lt;p&gt;我们于 2022 年 3 月 31 日收到了 &lt;a href=&#34;https://www.soteria.dev/&#34;&gt;Soteria&lt;/a&gt; 的第二次专业安全审计。&lt;/p&gt;
+&lt;h1 id=&#34;faq&#34;&gt;FAQ&lt;/h1&gt;
+&lt;h2 id=&#34;什么是-uxd-协议what-is-uxd-protocol&#34;&gt;什么是 UXD 协议？(What is UXD Protocol?)&lt;/h2&gt;
+&lt;p&gt;UXD Protocol is the first trustless algorithmic stablecoin that maintains its peg with the use of perpetual swaps. UXD Protocol is integrated with derivative exchanges to create a delta-neutral position to ensure the stablecoin is fully collateralized.&lt;/p&gt;
+&lt;p&gt;UXD 协议是第一个使用永续期货合约维持其挂钩去信任化的算法稳定币。 UXD 协议与衍生品交易所集成，进而创建 delta 中性头寸，确保稳定币得到充分抵押。&lt;/p&gt;
+&lt;h2 id=&#34;当资金费率为负时会发生什么what-happens-when-the-funding-rate-is-negative&#34;&gt;当资金费率为负时会发生什么？(What happens when the funding rate is negative?)&lt;/h2&gt;
+&lt;p&gt;The insurance fund will pay the negative funding rate to ensure that holders of UXD will never pay a negative interest rate as long as the insurance fund remains capitalized.&lt;/p&gt;
+&lt;p&gt;保险基金将支付负资金利率，从而确保 UXD 的持有者在保险基金保持资本化的情况下永远不会支付负利率。&lt;/p&gt;
+&lt;h2 id=&#34;保险基金将如何筹资how-will-the-insurance-fund-be-funded&#34;&gt;保险基金将如何筹资？(How will the insurance fund be funded?)&lt;/h2&gt;
+&lt;p&gt;When the funding rate is positive, part of the interest generated from the delta-neutral position will flow to the insurance fund. UXD&#39;s insurance fund was initially capitalized at $57,086,131 as of 11/14/2021.&lt;/p&gt;
+&lt;p&gt;当资金利率为正时，delta中性头寸产生的部分利息将流向保险基金。截至 2021 年 11 月 14 日，UXD 的保险基金最初资本金为 57,086,131 美元。&lt;/p&gt;
+&lt;h2 id=&#34;哪些加密货币资产将用于创建-delta-中性头寸which-cryptocurrency-assets-will-be-used-to-create-the-delta-neutral-position&#34;&gt;哪些加密货币资产将用于创建 delta 中性头寸？(Which cryptocurrency assets will be used to create the delta-neutral position?)&lt;/h2&gt;
+&lt;p&gt;We will accept various types of cryptocurrency assets such as BTC, SOL, ETH, etc as collateral to back the stablecoin. Initially, we will accept only SOL as a deposited collateral.&lt;/p&gt;
+&lt;p&gt;我们将接受各种类型的加密货币资产，如 BTC、SOL、ETH 等作为支持稳定币的抵押品。最初，我们只接受 SOL 作抵押。&lt;/p&gt;
+&lt;h2 id=&#34;如果保险基金余额用完怎么办what-happens-if-the-insurance-fund-balance-is-depleted&#34;&gt;如果保险基金余额用完怎么办？(What happens if the insurance fund balance is depleted?)&lt;/h2&gt;
+&lt;p&gt;We will have an auction of the governance tokens and use the proceeds to refund the insurance fund. See &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/risks&#34;&gt;Risks&lt;/a&gt; for further details.&lt;/p&gt;
+&lt;p&gt;我们将拍卖治理代币，并将所得款项用于退还保险基金。有关详细信息，请参阅 风险](https://docs.uxd.fi/uxdprotocol/overview/risks)。&lt;/p&gt;
+&lt;h2 id=&#34;您将与哪种永续期货合约协议集成which-perpetual-swap-protocol-will-you-integrate-with&#34;&gt;您将与哪种永续期货合约协议集成？(Which perpetual swap protocol will you integrate with?)&lt;/h2&gt;
+&lt;p&gt;We will integrate with various perpetual swap protocols in the future but in the first release we will integrate with mango markets.&lt;/p&gt;
+&lt;p&gt;未来我们将与各种永久掉期协议集成，但在第一个版本中，我们将与芒果市场集成。&lt;/p&gt;
+&lt;h2 id=&#34;你怎么知道uxd会一直稳定how-do-you-know-that-uxd-will-be-stable-at-all-times&#34;&gt;你怎么知道UXD会一直稳定？(How do you know that UXD will be stable at all times?)&lt;/h2&gt;
+&lt;p&gt;Since UXD is 100% backed by a delta neutral position, users can always mint/redeem the UXD with an equivalent amount of cryptocurrency. If 1 UXD trades at a price that is different from 1 USD, arbitrageurs can make risk free profits and will push the price of 1 UXD to 1 USD. For more information on the stability mechanism see &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/delta-neutral-position&#34;&gt;here&lt;/a&gt;. For risks related to de-pegging, see &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/risks&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;由于 UXD 100% 由 delta 中立头寸支持，因此用户始终可以用等量的加密货币铸造/赎回 UXD。如果 1 UXD 的交易价格与 1 美元不同，套利者可以无风险获利，并将 1 UXD 的价格推高至 1 美元。有关稳定性机制的更多信息，请参阅 此处](https://docs.uxd.fi/uxdprotocol/overview/delta-neutral-position)。有关脱钩相关的风险，请参阅 此处](https://docs.uxd.fi/uxdprotocol/overview/risks)。&lt;/p&gt;
+&lt;h2 id=&#34;为什么我应该使用-uxd-而不是其他稳定币why-should-i-use-uxd-over-other-stablecoins&#34;&gt;为什么我应该使用 UXD 而不是其他稳定币？(Why should I use UXD over other stablecoins?)&lt;/h2&gt;
+&lt;p&gt;UXD is decentralized, stable, and capital efficient and solves the &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/&#34;&gt;stablecoin trilemma&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;UXD 是去中心化的、稳定的、资本效率高的，并且解决了 &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/&#34;&gt;稳定币三难困境&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;为什么-uxd-协议不需要过度抵押why-doesnt-uxd-protocol-require-over-collateralization&#34;&gt;为什么 UXD 协议不需要过度抵押？(Why doesn&#39;t UXD Protocol require over collateralization?)&lt;/h2&gt;
+&lt;p&gt;Since perpetual swaps are very liquid, UXD Protocol will be able to unwind the delta neutral position without much slippage. As a result, users can mint 1 UXD with 1 USD worth of cryptocurrency assets. The &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/delta-neutral-position&#34;&gt;stability mechanism&lt;/a&gt; of a delta-neutral position ensures that the underlying position will be worth 1 USD. See &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/risks&#34;&gt;Risks&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;由于永续合约的流动性非常强，UXD 协议将能够在没有太多滑点的情况下平仓 delta 中性头寸。因此，用户可以用价值 1 美元的加密货币资产铸造 1 个 UXD。 delta中性头寸的稳定机制](https://docs.uxd.fi/uxdprotocol/overview/delta-neutral-position)确保标的头寸价值1美元。有关详细信息，请参阅 风险](https://docs.uxd.fi/uxdprotocol/overview/risks)。&lt;/p&gt;
+&lt;h1 id=&#34;更多信息-more-info&#34;&gt;更多信息 (More info)&lt;/h1&gt;
+&lt;p&gt;For more info, please check out our &lt;a href=&#34;https://uxdprotocol.medium.com/&#34;&gt;medium blog&lt;/a&gt;, as well as the following resources:&lt;/p&gt;
+&lt;p&gt;有关更多信息，请查看我们的 &lt;a href=&#34;https://uxdprotocol.medium.com/&#34;&gt;medium 博客&lt;/a&gt;，以及以下资源：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://multicoin.capital/2021/09/02/solving-the-stablecoin-trilemma/&#34;&gt;Investment thesis by Multicoin Capital&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://multicoin.capital/2021/09/02/solving-the-stablecoin-trilemma/&#34;&gt;Multicoin Capital 投资论文&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://messari.io/article/uxd-tackling-the-stablecoin-trilemma&#34;&gt;Messari research report&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://messari.io/article/uxd-tackling-the-stablecoin-trilemma&#34;&gt;Messari 研究报告&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=UP-9A-LidwI&#34;&gt;UXD Founder, Kento Inami, Speaking at Solana Breakpoint Conference&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=UP-9A-LidwI&#34;&gt;UXD 创始人，Kento Inami，在 Solana Breakpoint 会议上发言&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;其他链接-links&#34;&gt;其他链接 (Links)&lt;/h1&gt;
+&lt;h2 id=&#34;discord&#34;&gt;&lt;a href=&#34;https://discord.gg/A4M3JEfcA4&#34;&gt;Discord&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;twitter&#34;&gt;&lt;a href=&#34;https://twitter.com/uxdprotocol&#34;&gt;Twitter&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;blog&#34;&gt;&lt;a href=&#34;https://uxdprotocol.medium.com/&#34;&gt;Blog&lt;/a&gt;&lt;/h2&gt;
+">UXD Protocol文档 (UXD Protocol Docs)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-sdk-lai-la-announcing-the-euler-sdk/"" data-c="
           &lt;p&gt;&lt;em&gt;Calling all smart contract developers — integrate Euler into your workflows now!&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;召集所有智能合约开发人员——现在将 Euler 集成到您的工作流中吧！&lt;/em&gt;&lt;/p&gt;
 &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*eJyn10G8Sk2JG-7k.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
@@ -1119,7 +1779,7 @@ const eagEurAddr = e
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/"" data-c="
           &lt;p&gt;原文:https://blog.euler.finance/announcing-new-features-of-euler-dapp-8cadabb111ac&lt;/p&gt;
 &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*z4C6jmNf25LAq-SgB_gaXQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;em&gt;Long awaited awaited features are here! Know your Estimated Time to Liquidation, take part in Liquidity Mining easily!&lt;/em&gt;&lt;/p&gt;
@@ -1156,7 +1816,7 @@ const eagEurAddr = e
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://www.euler.finance/static/media/Euler-animation.399c7e5b.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;h1 id=&#34;1项目进展-euler来信project-update-euler-newletter&#34;&gt;1.项目进展-Euler来信(Project update-Euler Newletter)&lt;/h1&gt;
 &lt;h2 id=&#34;euler-sdk来啦announcing-the-euler-sdk&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/euler-sdk-lai-la-announcing-the-euler-sdk/&#34;&gt;Euler SDK来啦！(Announcing the Euler SDK)&lt;/a&gt;&lt;/h2&gt;
@@ -1185,7 +1845,7 @@ const eagEurAddr = e
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/"" data-c="
           &lt;h1 id=&#34;euler-更新-2022年4月20号-euler-update-20-apr-2022&#34;&gt;Euler 更新 [2022年4月20号] Euler Update [20 Apr 2022]&lt;/h1&gt;
 &lt;p&gt;原文:&lt;a href=&#34;https://newsletter.euler.finance/p/20april22?s=r&#34;&gt;https://newsletter.euler.finance/p/20april22?s=r&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;让我们一起回顾过去几周都发生了什么lets-recap-what-has-happened-over-the-past-few-weeks&#34;&gt;让我们一起回顾过去几周都发生了什么！(Let&#39;s recap what has happened over the past few weeks!)&lt;/h3&gt;
@@ -1212,7 +1872,7 @@ const eagEurAddr = e
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/wei-shi-me-web3-cun-chu-zhi-guan-chong-yao-why-web3-storage-matters/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/wei-shi-me-web3-cun-chu-zhi-guan-chong-yao-why-web3-storage-matters/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://akord.com/media/web3_storage.png&#34; alt=&#34;Web3 storage&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;原文(original) : https://akord.com/blog/why-web3-storage-matters&lt;/p&gt;
 &lt;p&gt;I’m sure you’ve used cloud services such as Google Drive and OneDrive?&lt;br&gt;
@@ -1265,8 +1925,8 @@ Akord 提供了一个缺失的隐私层。当用户通过 Akord 上传数据时�
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-wen-dang-bai-pi-shu/"" data-c="
-          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://chainguys.github.io/post-images/1651561927361.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-wen-dang-bai-pi-shu/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;http://localhost:4000/post-images/1651561927361.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;😀Euler is a great pionner and perhaps even infraustructure of DeFi 2.0.I am deeply humbled and honored to to translate it&#39;s whitepaper and Docs into Chinese.&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;😀Euler是DeFi 2.0的伟大先驱，甚至会是基础设施。能将Euler的文档和白皮书翻译成中文，我深感荣幸。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;As Euler&#39;s docs are published on gitbook, the translation also published on gitbook.&lt;br&gt;
@@ -1278,7 +1938,7 @@ Akord 提供了一个缺失的隐私层。当用户通过 Akord 上传数据时�
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/about/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/about/"" data-c="
           &lt;blockquote&gt;
 &lt;p&gt;GM! 🤝&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1294,8 +1954,8 @@ Ce blog stockera toutes les œuvres de &lt;a href=&#34;https://twitter.com/Chain
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/neondocwp/"" data-c="
-          &lt;p&gt;&lt;img src=&#34;https://chainguys.github.io/post-images/1651046857339.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/neondocwp/"" data-c="
+          &lt;p&gt;&lt;img src=&#34;http://localhost:4000/post-images/1651046857339.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
 👏  GM!&lt;/p&gt;
 &lt;h1 id=&#34;版权声明copyright-notice&#34;&gt;版权声明(Copyright Notice）&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;本文翻译自&lt;a href=&#34;https://neon-labs.org/&#34;&gt;Neon Labs&lt;/a&gt;为该项目撰写的&lt;a href=&#34;https://docs.neon-labs.org/&#34;&gt;技术文档&lt;/a&gt;，并已得到翻译授权。译者为&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;。转载请注明作者和译者。&lt;/strong&gt;&lt;/p&gt;
@@ -1312,7 +1972,7 @@ Ce blog stockera toutes les œuvres de &lt;a href=&#34;https://twitter.com/Chain
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/akord-x-redstone-ti-sheng-arweave-de-xing-neng-akord-x-redstone-improving-performance-on-arweave/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/akord-x-redstone-ti-sheng-arweave-de-xing-neng-akord-x-redstone-improving-performance-on-arweave/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://akord.com/media/Akord-x-Redstone-1.jpeg&#34; alt=&#34;Akord x Redstone 1&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;em&gt;This blog post is based on a Twitter Spaces AMA we held with &lt;a href=&#34;https://twitter.com/redstone_defi&#34;&gt;RedStone&lt;/a&gt;. You can &lt;a href=&#34;https://twitter.com/i/spaces/1OdJrByrbXpJX&#34;&gt;listen to the event here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;这篇博文源于我们与 &lt;a href=&#34;https://twitter.com/redstone_defi&#34;&gt;RedStone&lt;/a&gt; 举行的 Twitter Spaces AMA。您可以&lt;a href=&#34;https://twitter.com/i/spaces/1OdJrByrbXpJX&#34;&gt;在此收听活动&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
@@ -1374,7 +2034,7 @@ Ce blog stockera toutes les œuvres de &lt;a href=&#34;https://twitter.com/Chain
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/axelarsea-ru-men-jian-jie-introducing-axelarsea/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/axelarsea-ru-men-jian-jie-introducing-axelarsea/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*zeaspL9SwEaF6QJxN-CNlA.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;h1 id=&#34;axelarsea入门简介-introducing-axelarsea&#34;&gt;AxelarSea入门简介 (Introducing AxelarSea!)&lt;/h1&gt;
 &lt;p&gt;Interoperability has been a fundamental issue in the blockchain ecosystem since its inception. This includes the NFT market, where buyers and sellers are limited by the difficulty of moving assets across chains. AxelarSea, powered by Axelar Network, aims to facilitate both buyers and sellers in achieving the most efficient NFT trades where they are not constrained by the chains.&lt;/p&gt;
@@ -1525,7 +2185,7 @@ NFT 托管在以太坊上，用ETH计价。&lt;/li&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/neon-evm-bai-pi-shu-neon-evm-whitepaper-neon-evm-yong-solana-kuo-zhan-yi-tai-fang-zhi-neng-he-yue/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/neon-evm-bai-pi-shu-neon-evm-whitepaper-neon-evm-yong-solana-kuo-zhan-yi-tai-fang-zhi-neng-he-yue/"" data-c="
           &lt;div align=&#39;center&#39; &gt;&lt;font size=&#39;40&#39;&gt;Neon EVM&lt;/font&gt;&lt;/div&gt;
 &lt;br/&gt;
 &lt;div align=&#39;center&#39; &gt;&lt;font size=&#39;30&#39;&gt;用Solana扩展以太坊智能合约&lt;/font&gt;&lt;/div&gt;
@@ -1572,7 +2232,7 @@ NFT 托管在以太坊上，用ETH计价。&lt;/li&gt;
 &lt;p&gt;让我们深入了解一下Neon EVM提供的技术解决方案。&lt;/p&gt;
 &lt;div STYLE=&#34;page-break-after: always;&#34;&gt;&lt;/div&gt;
 &lt;h2 id=&#34;neon-evm-架构neon-evm-architecture&#34;&gt;Neon EVM 架构(Neon EVM Architecture)&lt;/h2&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://chainguys.github.io/post-images/neon-structurenew.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;http://localhost:4000/post-images/neon-structurenew.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;Technical definitions(技术定义):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1988,7 +2648,7 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-ce-shi-wang-shi-yong-shou-ce-euler-testnet-guide/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-ce-shi-wang-shi-yong-shou-ce-euler-testnet-guide/"" data-c="
           &lt;p&gt;原文:&lt;br&gt;
 &lt;a href=&#34;https://docs.google.com/document/d/1xWsgT2i9x2Birtt7Rm2mQNu2kCLkfUrue9LljwoMYU8/edit&#34;&gt;https://docs.google.com/document/d/1xWsgT2i9x2Birtt7Rm2mQNu2kCLkfUrue9LljwoMYU8/edit&lt;/a&gt;&lt;/p&gt;
 &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/hX_QOdde_IDls4IVw7IWN4ZUny2qgq4aF3obsgeJqX5Te0E35u1DKTf7dhpx8dFOHSHFs0Y2T6ehKtF_5Gd3RE1djZs97Xn5HQ_SpyTljzipv_zn7_SiQFPeKpDAanGgTBUYHZusJ18viXkP6g&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
@@ -2104,7 +2764,7 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-lai-xin-san-yue-zong-jie-euler-newsletter-march-summary/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-lai-xin-san-yue-zong-jie-euler-newsletter-march-summary/"" data-c="
           &lt;p&gt;原文:&lt;a href=&#34;https://newsletter.euler.finance/p/march2022-recap?s=r&#34;&gt;https://newsletter.euler.finance/p/march2022-recap?s=r&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;让我们一起回顾过去几周都发生了什么-lets-recap-what-has-happened-over-the-past-few-weeks&#34;&gt;让我们一起回顾过去几周都发生了什么! (Let&#39;s recap what has happened over the past few weeks!)&lt;/h3&gt;
 &lt;h3 id=&#34;欢迎-welcome&#34;&gt;欢迎! (Welcome!)&lt;/h3&gt;
@@ -2150,7 +2810,7 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/redstone-tech-doc-translation-redstone-ji-zhu-wen-dang-fan-yi/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/redstone-tech-doc-translation-redstone-ji-zhu-wen-dang-fan-yi/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*cagrG696gNL5_R0DTf6mew.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;I have translated the tech doc of @redstone_defi to Chinese If you are a developper that trying to enter @ArweaveTeam just come and check.&lt;/p&gt;
 &lt;p&gt;我翻译了RedStone的技术文档,如果你是想进入AR生态的开发者，欢迎来围观！&lt;/p&gt;
@@ -2161,7 +2821,7 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-financejie-dai-shi-chang-feng-xian-guan-li-de-xin-fang-fa-euler-financea-fresh-approach-to-risk-management-in-lending-and-borrowing-markets/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-financejie-dai-shi-chang-feng-xian-guan-li-de-xin-fang-fa-euler-financea-fresh-approach-to-risk-management-in-lending-and-borrowing-markets/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://messari.io/images/Messari_icon_36x36.svg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;原文:&lt;a href=&#34;https://messari.io/article/euler-finance&#34;&gt;https://messari.io/article/euler-finance&lt;/a&gt;&lt;/p&gt;
 &lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://messari.imgix.net/https%3A%2F%2Fcdn.sanity.io%2Fimages%2F2bt0j8lu%2Fproduction%2F018fb561f68d1278ff34b4d649b115af3e6ed715-3024x4032.jpg?auto=format%2Ccompress&amp;amp;q=60&amp;amp;w=250&amp;amp;s=7b9ffc742b6b6cbb72e6afe7a6385ddd&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
@@ -2248,7 +2908,7 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/neon-lab-di-er-ci-amasecond-ama-of-neon-lab/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/neon-lab-di-er-ci-amasecond-ama-of-neon-lab/"" data-c="
           &lt;h1 id=&#34;neon-lab第二次amasecond-ama-of-neon-lab&#34;&gt;NEON Lab第二次AMA(Second AMA of Neon Lab)&lt;/h1&gt;
 &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*CoVneWEtRIuY93DogiH9ig.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;Neon Lab:Virtual machine from &lt;strong&gt;Ethereum&lt;/strong&gt;&lt;br&gt;
@@ -2436,7 +3096,7 @@ Scalability and liquidity from &lt;strong&gt;Solana&lt;/strong&gt;&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/ji-fen-de-yi-yi-he-zai-whats-the-point-in-points/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/ji-fen-de-yi-yi-he-zai-whats-the-point-in-points/"" data-c="
           &lt;p&gt;原文:&lt;a href=&#34;https://blog.euler.finance/whats-the-point-in-points-31c2d3ae040f&#34;&gt;https://blog.euler.finance/whats-the-point-in-points-31c2d3ae040f&lt;/a&gt;&lt;/p&gt;
 &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*_Ml7Oq0N8pT-ciAzEEL1bQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;hr&gt;
@@ -2543,7 +3203,7 @@ Scalability and liquidity from &lt;strong&gt;Solana&lt;/strong&gt;&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-zhi-li-lun-tan-fa-bu-liao-announcing-euler-governance-forum/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-zhi-li-lun-tan-fa-bu-liao-announcing-euler-governance-forum/"" data-c="
           &lt;p&gt;原文:&lt;a href=&#34;https://blog.euler.finance/announcing-euler-governance-forum-5d62c15523ff&#34;&gt;https://blog.euler.finance/announcing-euler-governance-forum-5d62c15523ff&lt;/a&gt;&lt;/p&gt;
 &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*pNQYy_BKePAfx36xdbnMOA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;hr&gt;
@@ -2627,7 +3287,7 @@ Euler智能合约更新&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/shippooordao-ti-gong-de-euler-dune-fen-xi-yi-biao-ban-eulers-dune-analytics-dashboard-by-shippooordao/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/shippooordao-ti-gong-de-euler-dune-fen-xi-yi-biao-ban-eulers-dune-analytics-dashboard-by-shippooordao/"" data-c="
           &lt;p&gt;原文：&lt;a href=&#34;https://blog.euler.finance/eulers-dune-analytics-dashboard-by-shippooordao-3e23648bde7a&#34;&gt;https://blog.euler.finance/eulers-dune-analytics-dashboard-by-shippooordao-3e23648bde7a&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Check out Euler’s new Dune Analytics dashboard created by ShippooorDAO.&lt;/em&gt;&lt;br&gt;
 &lt;em&gt;查看由 ShippooorDAO 创建的 Euler 新的Dune分析仪表板。&lt;/em&gt;&lt;/p&gt;
@@ -2662,7 +3322,7 @@ Euler智能合约更新&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/uniswap-yu-yan-ji-gong-ji-mo-ni-qi-uniswap-oracle-attack-simulator/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/uniswap-yu-yan-ji-gong-ji-mo-ni-qi-uniswap-oracle-attack-simulator/"" data-c="
           &lt;p&gt;&lt;em&gt;We are releasing a&lt;/em&gt; &lt;a href=&#34;https://oracle.euler.finance/&#34;&gt;&lt;em&gt;tool&lt;/em&gt;&lt;/a&gt; &lt;em&gt;which allows users to simulate and quantify attack risks on Uniswap V3 TWAP price oracles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;我们正在发布一个&lt;/em&gt; &lt;a href=&#34;https://oracle.euler.finance/&#34;&gt;&lt;em&gt;工具&lt;/em&gt;&lt;/a&gt; &lt;em&gt;允许用户模拟和量化 Uniswap V3 TWAP 价格预言机的攻击风险。&lt;/em&gt;&lt;/p&gt;
 &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*ZA0_4zMuMaxopeQH.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
@@ -2791,7 +3451,7 @@ SLP (0 decimals) Tick -291406 126% / -33%
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-bai-pi-shu-zhong-ying-wen-dui-zhao-ban-eng-chn/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-bai-pi-shu-zhong-ying-wen-dui-zhao-ban-eng-chn/"" data-c="
           &lt;p&gt;之前因为已经首发在项目的官方文档，所以没有更新进来。过年了嘛，一家人还是要完完整整，更新上来咯！&lt;/p&gt;
 &lt;p&gt;本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;br&gt;
 (All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)&lt;/p&gt;
@@ -2800,59 +3460,59 @@ SLP (0 decimals) Tick -291406 126% / -33%
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/zi-kong-jian-subspacechong-shou-zhe-kun-jing-de-jie-jue-fang-an-eng-chn-subspace-a-solution-to-the-farmers-dilemma/"" data-c="
-          &lt;p&gt;&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A61.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A62.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A63.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A64.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A65.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A66.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A67.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A68.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A69.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A610.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A611.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A612.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A613.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A614.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A615.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A616.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A617.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A618.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A619.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A620.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A621.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A622.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A623.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A624.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A625.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A626.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A627.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A628.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A629.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A630.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A631.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A632.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A633.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A634.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A635.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A636.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A637.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A638.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A639.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A640.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A641.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A642.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A643.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A644.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A645.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A646.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A647.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A648.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A649.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A650.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A651.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
-&lt;img src=&#34;https://chainguys.github.io/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A652.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/zi-kong-jian-subspacechong-shou-zhe-kun-jing-de-jie-jue-fang-an-eng-chn-subspace-a-solution-to-the-farmers-dilemma/"" data-c="
+          &lt;p&gt;&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A61.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A62.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A63.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A64.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A65.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A66.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A67.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A68.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A69.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A610.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A611.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A612.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A613.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A614.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A615.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A616.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A617.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A618.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A619.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A620.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A621.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A622.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A623.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A624.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A625.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A626.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A627.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A628.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A629.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A630.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A631.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A632.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A633.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A634.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A635.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A636.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A637.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A638.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A639.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A640.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A641.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A642.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A643.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A644.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A645.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A646.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A647.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A648.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A649.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A650.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A651.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/subspace%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7%E7%99%BD%E7%9A%AE%E4%B9%A652.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;再次声明：本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;如需查看pdf文件，请访问（For pdf file, please kindly see)：&lt;/strong&gt;&lt;/p&gt;
@@ -2861,7 +3521,7 @@ SLP (0 decimals) Tick -291406 126% / -33%
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-tui-chu-100-wan-mei-yuan-de-immunefi-lou-dong-shang-jin-ji-hua-euler-launches-dollar1m-immunefi-bug-bounty-programme/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-tui-chu-100-wan-mei-yuan-de-immunefi-lou-dong-shang-jin-ji-hua-euler-launches-dollar1m-immunefi-bug-bounty-programme/"" data-c="
           &lt;p&gt;&lt;em&gt;The ImmuneFi Bug Bounty programme aims to strengthen Euler’s security while boosting collaboration with the greater DeFi ecosystem as part of our insurance partnership with Sherlock Protocol.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;作为我们与 Sherlock Protocol 的保险合作伙伴关系的一部分，ImmuneFi 漏洞赏金(ImmuneFi Bug Bounty) 旨在加强 Euler 的安全性，同时促进与更大的 DeFi 生态系统的合作。&lt;/em&gt;&lt;/p&gt;
 &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*2AODzJCf4SVErEJMKmn7hA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
@@ -3071,7 +3731,7 @@ SLP (0 decimals) Tick -291406 126% / -33%
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-de-yu-yan-ji-feng-xian-ping-fen-xi-tong-eulers-oracle-risk-grading-system/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-de-yu-yan-ji-feng-xian-ping-fen-xi-tong-eulers-oracle-risk-grading-system/"" data-c="
           &lt;p&gt;原文:&lt;a href=&#34;https://blog.euler.finance/eulers-oracle-risk-grading-system-93f47d68205c&#34;&gt;https://blog.euler.finance/eulers-oracle-risk-grading-system-93f47d68205c&lt;/a&gt;&lt;/p&gt;
 &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*LMcUWQ4ppQ0qEJ2BzC4rWw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;em&gt;As a user of a non-custodial lending protocol, it is up to you to understand factors like oracle manipulation and make a judgement call on when it is safe to use a given oracle. Here, we help explain how and why Uniswap’s oracles are sometimes risky, and introduce a new price oracle rating tool on the Euler UI to help users understand and manage these risks.&lt;/em&gt;&lt;/p&gt;
@@ -3186,7 +3846,7 @@ SLP (0 decimals) Tick -291406 126% / -33%
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/swivel-litepaper-swivel-xie-yi-jian-ming-ji-zhi-yu-tu-shi-eng-chn/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/swivel-litepaper-swivel-xie-yi-jian-ming-ji-zhi-yu-tu-shi-eng-chn/"" data-c="
           &lt;h1 id=&#34;版权声明copyright-notice&#34;&gt;&lt;strong&gt;版权声明（Copyright Notice）&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;本文翻译自&lt;/strong&gt;&lt;a href=&#34;https://twitter.com/SwivelFinance&#34;&gt;@SwivelFinance&lt;/a&gt;&lt;strong&gt;的文章：&lt;/strong&gt;&lt;a href=&#34;https://docs.swivel.finance/litepaper&#34;&gt;A Basic Description and Visualization of the Swivel Protocol’s mechanics&lt;/a&gt;&lt;strong&gt;。已得到作者的授权。译者为&lt;/strong&gt;&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;&lt;strong&gt;@chainguys&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;。转载请注明作者和译者。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;（Coptyright©2021 by&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/SwivelFinance&#34;&gt;@SwivelFinance&lt;/a&gt;, &lt;strong&gt;translated by&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;&lt;strong&gt;@chainguys&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;）&lt;/strong&gt;&lt;/p&gt;
@@ -3394,7 +4054,7 @@ SLP (0 decimals) Tick -291406 126% / -33%
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/sommelier-yi-tai-fang-de-fu-zhu-chu-li-qi-eng-chn/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/sommelier-yi-tai-fang-de-fu-zhu-chu-li-qi-eng-chn/"" data-c="
           &lt;h2 id=&#34;版权声明copyright-notice&#34;&gt;&lt;strong&gt;版权声明（Copyright Notice）&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;本文翻译自&lt;/strong&gt;&lt;a href=&#34;https://twitter.com/sommfinance&#34;&gt;&lt;strong&gt;sommfinance&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;的文章：&lt;/strong&gt;&lt;a href=&#34;https://sommelier.finance/blog/sommelier-new-co-processor-for-ethereum&#34;&gt;&lt;strong&gt;SOMMELIER: WELCOME TO THE NEW COPROCESSOR FOR ETHEREUM&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;。已得到作者的授权。译者为&lt;/strong&gt;&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;&lt;strong&gt;@chainguys&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;。转载请注明作者和译者。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;（Coptyright©2021 by sommfinance, translated by&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;&lt;strong&gt;@chainguys&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;）&lt;/strong&gt;&lt;/p&gt;
@@ -3440,7 +4100,7 @@ SLP (0 decimals) Tick -291406 126% / -33%
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/solana-yan-zheng-zhe-jie-dian-gong-lue-1-jiao-yi-liu-cheng-eng-chn/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/solana-yan-zheng-zhe-jie-dian-gong-lue-1-jiao-yi-liu-cheng-eng-chn/"" data-c="
           &lt;h1 id=&#34;版权声明copyright-notice&#34;&gt;&lt;strong&gt;版权声明（Copyright Notice）&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;本文翻译自&lt;a href=&#34;https://twitter.com/jito_labs&#34;&gt;Jito Labs&lt;/a&gt;的文章：&lt;a href=&#34;https://medium.com/@jito-labs/solana-validator-101-transaction-processing-90bcdc271143&#34;&gt;Solana Validator 101: Transaction Processing&lt;/a&gt;。已得到作者的授权。译者为&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;。转载请注明作者和译者。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;（Coptyright©2021 by&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/jito_labs&#34;&gt;&lt;strong&gt;Jito Labs&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;, translated by&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;&lt;strong&gt;@chainguys&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;）&lt;/strong&gt;&lt;/p&gt;
@@ -3633,7 +4293,7 @@ output = hash([output])&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/jia-mi-shi-chang-de-feng-xian-cong-yi-ge-jie-dai-xie-yi-de-jiao-du-risks-in-crypto-a-lending-protocol-perspective/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/jia-mi-shi-chang-de-feng-xian-cong-yi-ge-jie-dai-xie-yi-de-jiao-du-risks-in-crypto-a-lending-protocol-perspective/"" data-c="
           &lt;p&gt;原文:&lt;br&gt;
 &lt;a href=&#34;https://blog.euler.finance/risks-in-crypto-a-lending-protocol-perspective-376e19c1d01a&#34;&gt;https://blog.euler.finance/risks-in-crypto-a-lending-protocol-perspective-376e19c1d01a&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Euler’s risk framework and innovations in risk&lt;/em&gt;&lt;br&gt;
@@ -3973,7 +4633,7 @@ $XYZ 资产的出借方一无所有。&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/yong-hardhat-zai-erc20-he-yue-zhong-qiang-xing-fa-xian-cun-chu-jie-gou-brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/yong-hardhat-zai-erc20-he-yue-zhong-qiang-xing-fa-xian-cun-chu-jie-gou-brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat/"" data-c="
           &lt;p&gt;原文:&lt;br&gt;
 &lt;a href=&#34;https://blog.euler.finance/brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat-7ff9342143ed&#34;&gt;https://blog.euler.finance/brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat-7ff9342143ed&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;We’re sharing a simple hack to automatically find the account balance slot in ERC20 contracts using Hardhat’s mainnet fork feature.&lt;/em&gt;&lt;/p&gt;
@@ -4065,7 +4725,7 @@ $XYZ 资产的出借方一无所有。&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/defi-ya-kong-defi-short-squeeze/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/defi-ya-kong-defi-short-squeeze/"" data-c="
           &lt;p&gt;原文:&lt;a href=&#34;https://blog.euler.finance/defi-short-squeeze-190180978f6&#34;&gt;https://blog.euler.finance/defi-short-squeeze-190180978f6&lt;/a&gt;&lt;br&gt;
 &lt;em&gt;Short Squeezes in DeFi and how Euler enables trading them&lt;/em&gt;&lt;br&gt;
 &lt;em&gt;DeFi上的轧空和Euler如何促成该类交易。&lt;/em&gt;&lt;/p&gt;
@@ -4247,7 +4907,7 @@ $XYZ 资产的出借方一无所有。&lt;/p&gt;
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/uxd-bai-pi-shu-100you-delta-zhong-xing-tou-cun-zhi-cheng-de-wen-ding-bi-uxd-protocol-an-algorithmic-stablecoin-100-backed-by-a-delta-neutral-position/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/uxd-bai-pi-shu-100you-delta-zhong-xing-tou-cun-zhi-cheng-de-wen-ding-bi-uxd-protocol-an-algorithmic-stablecoin-100-backed-by-a-delta-neutral-position/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*RqJBshUtqJznB1N2pkkxUg.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;h1 id=&#34;版权声明copyright-notice&#34;&gt;版权声明(Copyright Notice)&lt;/h1&gt;
 &lt;p&gt;本文翻译自&lt;a href=&#34;https://twitter.com/KentoInami&#34;&gt;Kento Inami&lt;/a&gt; 为&lt;a href=&#34;https://uxd.fi/&#34;&gt;UXD&lt;/a&gt;项目的&lt;a href=&#34;https://uxd.fi/static/media/whitepaper.7be6354b.pdf&#34;&gt;白皮书&lt;/a&gt;，并已得到授权。译者为&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@chainguys&lt;/a&gt;。转载请注明作者和译者。&lt;/p&gt;
@@ -4295,7 +4955,7 @@ Since the collateral backing the stablecoin is not held by a centralized third p
 &lt;p&gt;Users will also be able to obtain UXD through centralized and decentralized exchanges, and other third party services. Once the UXD is in circulation, it is freely traded.&lt;/p&gt;
 &lt;p&gt;用户还将能够通过中心化和去中心化交易所以及其他第三方服务获得 UXD。一旦 UXD 流通，它就可以自由交易。&lt;/p&gt;
 &lt;h1 id=&#34;资金流程图-flow-of-funds-diagram&#34;&gt;资金流程图 (Flow of Funds Diagram)&lt;/h1&gt;
-&lt;h2 id=&#34;&#34;&gt;&lt;img src=&#34;https://chainguys.github.io/post-images/1652668829071.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;&#34;&gt;&lt;img src=&#34;http://localhost:4000/post-images/1652668829071.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/h2&gt;
 &lt;h1 id=&#34;delta中性头寸-neutral-position&#34;&gt;Delta中性头寸 (Neutral Position)&lt;/h1&gt;
 &lt;p&gt;For UXD Protocol to always be able to issue/redeem UXD at par value, UXD Protocol will short BTC/USD perpetual swaps on a derivatives dex(decentralized exchange) to an equivalent amount of the UXD in circulation. As a result, the position will be delta neutral and UXD Protocol will be protected from price fluctuations of BTC.&lt;/p&gt;
 &lt;p&gt;为了使 UXD 协议始终能够以面值发行/赎回 UXD，UXD 协议将在衍生品dex上做空 BTC/USD 永续合约，使其与流通中的 UXD 等值。因此，该头寸将是 delta 中性的，且 UXD 协议将免受 BTC 价格波动的影响。&lt;/p&gt;
@@ -4357,7 +5017,7 @@ People who are excluded from the banking system will now be able to store and tr
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/yi-dong-ping-jun-shu-ru-he-guo-lu-moving-average-filters/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/yi-dong-ping-jun-shu-ru-he-guo-lu-moving-average-filters/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*eOjkVDTxL0iNpyc5PoFFGA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;原文：&lt;a href=&#34;https://blog.euler.finance/moving-average-filters-ac8913263d64&#34;&gt;https://blog.euler.finance/moving-average-filters-ac8913263d64&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -4526,7 +5186,7 @@ People who are excluded from the banking system will now be able to store and tr
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/jie-ge-he-yu-yan-ji-prices-and-oracles/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/jie-ge-he-yu-yan-ji-prices-and-oracles/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*rSUJn0hbmqMcVKaP9AOcdQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;原文：&lt;a href=&#34;https://blog.euler.finance/prices-and-oracles-2da0126a138&#34;&gt;https://blog.euler.finance/prices-and-oracles-2da0126a138&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -4647,7 +5307,7 @@ People who are excluded from the banking system will now be able to store and tr
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-jian-jie-introducing-euler/"" data-c="
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/euler-jian-jie-introducing-euler/"" data-c="
           &lt;p&gt;原文：&lt;a href=&#34;https://blog.euler.finance/introducing-euler-8f4422f13848&#34;&gt;https://blog.euler.finance/introducing-euler-8f4422f13848&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The latest innovation in decentralised finance: a permissionless lending protocol with reactive interest rates to address the long-tail of the crypto market.&lt;br&gt;
