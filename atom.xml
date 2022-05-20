@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
-    <title>Web3 is REAL</title>
-    <updated>2022-05-20T03:11:36.866Z</updated>
+    <title>Chainguys&apos;Blog</title>
+    <updated>2022-05-20T03:41:27.842Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
     <subtitle>A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议</subtitle>
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2022, Web3 is REAL</rights>
+    <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
     <entry>
         <title type="html"><![CDATA[Euler SDK来啦！(Announcing the Euler SDK)]]></title>
         <id>https://chainguys.github.io/post/euler-sdk-lai-la-announcing-the-euler-sdk/</id>
