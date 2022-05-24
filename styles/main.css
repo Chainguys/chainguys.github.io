@@ -2060,11 +2060,11 @@ body {
         margin: 0 auto;
       }
     @font-face {
-      font-family: 'MiSans-Normal';
-      src: url('/media/fonts/MiSans-Normal.ttf');
+      font-family: 'Sans_SC_Medium';
+      src: url('/media/fonts/Sans_SC_Medium.ttf');
     }
     * {
-        font-family: 'MiSans-Normal';
+        font-family: 'Sans_SC_Medium';
     }
     .katex-block *{
       font-family: 'KaTeX_Main';

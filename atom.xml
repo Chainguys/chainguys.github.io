@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-05-24T04:00:03.352Z</updated>
+    <updated>2022-05-24T09:45:48.503Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -454,7 +454,7 @@ const eagEurAddr = e
 <h2 id="euler-finance借贷市场风险管理的新方法-euler-financea-fresh-approach-to-risk-management-in-lending-and-borrowing-markets"><a href="https://chainguys.github.io/post/euler-financejie-dai-shi-chang-feng-xian-guan-li-de-xin-fang-fa-euler-financea-fresh-approach-to-risk-management-in-lending-and-borrowing-markets">Euler Finance：借贷市场风险管理的新方法 (Euler Finance：A Fresh Approach to Risk Management in Lending and Borrowing Markets）</a></h2>
 <h2 id="积分的意义何在whats-the-point-in-points"><a href="https://chainguys.github.io/post/ji-fen-de-yi-yi-he-zai-whats-the-point-in-points">积分的意义何在？(What’s the point in points?)</a></h2>
 <h2 id="euler测试网使用手册-euler-testnet-guide"><a href="https://chainguys.github.io/post/euler-ce-shi-wang-shi-yong-shou-ce-euler-testnet-guide">EULER测试网使用手册 (EULER  TESTNET GUIDE)</a></h2>
-<h2 id="euler-faq中英双语版eng-chnhttpschainguysgithubioposteuler-faq-zhong-ying-shuang-yu-ban-eng-chn">Euler FAQ中英双语版(ENG-CHN)(https://chainguys.github.io/post/euler-faq-zhong-ying-shuang-yu-ban-eng-chn/)</h2>
+<h2 id="euler-faq中英双语版eng-chn"><a href="https://chainguys.github.io/post/euler-faq-zhong-ying-shuang-yu-ban-eng-chn/">Euler FAQ中英双语版(ENG-CHN)</a></h2>
 <h2 id="euler颠覆市场的突破性方法-eulers-approach-to-distrupting-the-incumbents"><a href="https://chainguys.github.io/post/euler-dian-fu-shi-chang-de-tu-po-xing-fang-fa-eulers-approach-to-distrupting-the-incumbents">Euler颠覆市场的突破性方法 (Euler’s Approach to Distrupting the Incumbents)</a></h2>
 ]]></content>
     </entry>
