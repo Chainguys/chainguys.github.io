@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Swivel Litepaper-Swivel协议简明机制与图示（ENG-CHN） | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1653308226202">
+<link rel="shortcut icon" href="/favicon.ico?v=1653364787835">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -215,13 +215,13 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">38</span>
+        <span class="site-item-stat-count">39</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">162</span>
+        <span class="site-item-stat-count">165</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -2779,6 +2779,152 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This report was commissioned by Euler, a member of Protocol Services. All content was produced independently by the author(s) and does not necessarily reflect the opinions of Messari, Inc. or the organization that requested the report. Paid membership in the Hub does not influence editorial decision or content. Author(s) may hold cryptocurrencies named in this report and each author is subject to Messari’s Code of Conduct and Insider Trading Policy. Additionally, employees are required to disclose their holdings, which is updated monthly and published &lt;a href=&#34;https://www.google.com/url?q=https://messari.io/article/messari-employee-holdings-policy-and-disclosures&amp;amp;source=gmail-imap&amp;amp;ust=1647457925000000&amp;amp;usg=AOvVaw0jwd9uU_O4e2D2TzMmDVmb&#34;&gt;here.&lt;/a&gt; Crypto projects can commission independent research through Messari Protocol Services. For more details or to join the program, contact &lt;a href=&#34;mailto:hub@messari.io&#34;&gt;hub@messari.io&lt;/a&gt;. This report is meant for informational purposes only. It is not meant to serve as investment advice. You should conduct your own research, and consult an independent financial, tax, or legal advisor before making any investment decisions. Past performance of any asset is not indicative of future results. Please see our terms of use for more information.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;本报告由 Protocol Services 成员 Euler 委托编写。所有内容均由作者独立制作，并不一定反映 Messari, Inc. 或要求报告的组织的意见。该中心的付费会员不影响编辑决定或内容。作者可能持有本报告中指定的加密货币，每位作者均受 Messari 行为准则和内幕交易政策的约束。此外，员工必须披露其持有的资产，该资产每月更新并在&lt;a href=&#34;https://www.google.com/url?q=https://messari.io/article/messari-employee-holdings-policy-anddisclosures&amp;amp;source=gmail-imap&amp;amp;ust=1647457925000000&amp;amp;usg=AOvVaw0jwd9uU_O4e2D2TzMmDVmb&#34;&gt;此处&lt;/a&gt; 发布。加密项目可以通过 Messari 协议服务委托独立研究。如需了解更多详情或加入该计划，请联系 &lt;a href=&#34;mailto:hub@messari.io&#34;&gt;hub@messari.io&lt;/a&gt;。本报告仅供参考。它不是作为投资建议。在做出任何投资决定之前，您应该进行自己的研究，并咨询独立的财务、税务或法律顾问。任何资产的过往表现并不代表未来的结果。请参阅我们的使用条款了解更多信息。&lt;/em&gt;&lt;/p&gt;
 ">Euler Finance：借贷市场风险管理的新方法 (Euler Finance：A Fresh Approach to Risk Management in Lending and Borrowing Markets）</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/verevyi-chong-shou-yi-fen-pei-ji-zhi-introducing-verev-a-yield-distribution-mechanism/"" data-c="
+          &lt;p&gt;原文：&lt;a href=&#34;https://uxdprotocol.medium.com/introducing-verev-a-yield-distribution-mechanism-c9243fbbfe3e&#34;&gt;https://uxdprotocol.medium.com/introducing-verev-a-yield-distribution-mechanism-c9243fbbfe3e&lt;/a&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*j7x2ftgoezW6ovSBBiNjFQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Below, UXD Protocol introduces “veRev”, a novel mechanism that introduces the concept of “semi-liquid” tokens and a new method for rewarding veToken stakers. Although UXD Protocol plans to apply this method specifically to its Protocol Fund, the mechanism can be applied more generally to any protocol looking to efficiently distribute profits.&lt;/p&gt;
+&lt;p&gt;下面，UXD 协议将介绍“veRev”，这是一种引入“半流动”代币概念的新颖机制和奖励 veToken 质押者的新方法。尽管 UXD 协议计划将此方法专门应用于其协议基金，但该机制可以更广泛地应用于任何希望有效分配利润的协议。&lt;/p&gt;
+&lt;p&gt;The below is meant to outline the general mechanism, in the hopes that other projects may find the general idea useful. At the end, some design variations and some nuances are outlined for consideration.&lt;/p&gt;
+&lt;p&gt;下文旨在概述一般机制，希望其他项目可能会发现这些想法有用。最后，也提供了一些设计变化和一些细微差别得概述以供您考量。&lt;/p&gt;
+&lt;h1 id=&#34;现有机制-existing-mechanisms&#34;&gt;现有机制 (Existing Mechanisms)&lt;/h1&gt;
+&lt;p&gt;Most protocols generate some sort of cashflow/yield in the form of trading fees (DEXs, NFT Platforms), management fees (Yield Vaults), minting/redeeming fees (Stablecoins), etc. Ultimately, most of these Protocols intend to distribute this cashflow to aligned governance token holders, where “aligned” often means “staked” (either in veToken form, or in a simple staking form).&lt;/p&gt;
+&lt;p&gt;大多数协议以交易费（DEX、NFT 平台）、管理费（Yield Vaults）、铸造/赎回费（稳定币）等形式产生某种现金流/收益。最终，这些协议中的大多数拟分配现金流会对应治理代币持有者，其中“对应”通常意味着“质押”（以 veToken 形式或简单质押形式）。&lt;/p&gt;
+&lt;p&gt;The difficulty with Yield Distribution is that it is not at all obvious how to distribute yield in a manner which (i) gives the cashflow to those most aligned with the protocol (ii) does not require egregiously punitive locking/staking periods (5 years + in some cases) (iii) has tax flexibility (some users want income, some users want staking rewards because &lt;a href=&#34;https://www.natlawreview.com/article/recent-court-case-leaves-many-speculating-taxation-staking-rewards&#34;&gt;they may be taxed more favorably&lt;/a&gt;) and (iv) stimulates demand for the token in a natural way.&lt;/p&gt;
+&lt;p&gt;收益分配的困难在于，如何以以下方式分配收益并不明显：(i) 将现金流提供给最符合协议的人 (ii) 不需要极其惩罚性的锁定/质押期（5 年以上在某些情况下）（iii）具有税收灵活性（一些用户想要收入，一些用户想要赌注奖励，因为[他们可能会被更优惠地征税](https://www.natlawreview.com/article/recent-court-case-leaves -many-speculating-taxation-staking-rewards)和 (iv) 以自然的方式刺激对代币的需求。&lt;/p&gt;
+&lt;p&gt;Taking some examples and issues with such examples:&lt;br&gt;
+举一些例子和派生问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Buyback and Burn (or Buyback and Reward to Stakers)&lt;/strong&gt;: The simplest issues with Buyback and Burn are that &lt;strong&gt;(i)&lt;/strong&gt; you cannot control &lt;strong&gt;&lt;em&gt;to whom&lt;/em&gt;&lt;/strong&gt; the cashflow is going (it may go to any number of unaligned parties) &lt;strong&gt;(ii)&lt;/strong&gt; &lt;a href=&#34;https://www.placeholder.vc/blog/2020/9/17/stop-burning-tokens-buyback-and-make-instead&#34;&gt;burning reduces flexibility&lt;/a&gt; for future token issuance/rewards &lt;strong&gt;(iii)&lt;/strong&gt; decreasing supply is not the same as increasing demand (it may affect price in a short-term manner similarly, but longer term consistent deflation may hurt gov token liquidity and counterintuitively actually decrease demand in tandem as less participants are in the system). For buyback and rewarding to stakers, the issues are primarily that &lt;strong&gt;(i)&lt;/strong&gt; cashflow goes to non-stakers, instead of stakers &lt;strong&gt;(ii)&lt;/strong&gt; stakers trade a scarce asset (cash) for a plentiful asset (token) in the short term, which may be suboptimal for many participants &lt;strong&gt;(iii)&lt;/strong&gt; fees are paid out to stakers in the form of the native token, which may face substantial volatility compared to stablecoin cashflow.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;回购和销毁（或回购和奖励给质押者）&lt;/strong&gt;：回购和销毁最简单的问题是 &lt;strong&gt;（i）&lt;/strong&gt; 您无法控制  &lt;strong&gt;&lt;em&gt;现金流向谁&lt;/em&gt;&lt;/strong&gt; （它可能会去到任意数量的不“对应”的地方）&lt;strong&gt;(ii)&lt;/strong&gt; 对于未来的代币发行/奖励来说， &lt;a href=&#34;https://www.placeholder.vc/blog/2020/9/17/stop-burning-tokens-buyback-and-make-%E7%9B%B8%E5%8F%8D&#34;&gt;销毁降低灵活性&lt;/a&gt;  &lt;strong&gt;(iii)&lt;/strong&gt; 减少供应与增加需求不同（它可能会以类似的方式在短期内影响价格，但长期持续通缩可能会损害治理代币的流动性并且实际上以违反直觉的方式运行：随着系统中的参与者减少，需求随之减少）。对于回购和奖励给质押者，问题主要是 &lt;strong&gt;(i)&lt;/strong&gt; 现金流流向非质押者，而不是质押者 &lt;strong&gt;(ii)&lt;/strong&gt; 质押者将稀缺资产（现金）换成丰富资产（代币） 在短期内，这对许多参与者来说可能不是最理想的 &lt;strong&gt;(iii)&lt;/strong&gt; 费用以原生代币的形式支付给质押者，与稳定币现金流相比，它可能面临巨大的波动。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;(Yearn has buyback and build, which is certainly a bit better, but still suffers from several of the issues above. For example, why not use fees to pay builders directly in stablecoins?)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;（Yearn有回购和建设，当然会好一点，但还是有上面几个问题的困扰。比如，为什么不用费用直接拿稳定币支付建设者？）&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;veToken Yield Distribution:&lt;/strong&gt; veToken models tend to work as follows: a user locks up some principal amount, say 100 Token. The user then receives some veToken depending on the length of time for which the user chooses to lock. For example, in &lt;a href=&#34;https://curve.readthedocs.io/dao-vecrv.html&#34;&gt;Curve’s model&lt;/a&gt; 1 CRV locked for 1 year is 0.25 veCRV, for 2 years is 0.5 veCRV, …, for 4 years is 1.0 veCRV. Here are some issues: &lt;strong&gt;(i)&lt;/strong&gt; the &lt;a href=&#34;https://curve.readthedocs.io/dao-fees.html#fee-distribution&#34;&gt;Fee Distribution is proportional to your veCRV balance&lt;/a&gt; (this makes locking extremely capital inefficient if it’s for less than the max period!) &lt;strong&gt;(ii)&lt;/strong&gt; the ve numbers are usually entirely arbitrary (why should double the length of locking entitle you to double the fees relative to your 1 year locking peers? Why not some other proportion?) &lt;strong&gt;(iii)&lt;/strong&gt; Tokens are usually fully illiquid until the end of the vote lock (users are less likely to lock if they are forced to take a multi-year approach to an industry as new as crypto, whose protocols and companies often have lifecycles measured in months, not years. Moreover, users can’t use the capital as collateral anywhere.) &lt;strong&gt;(iv)&lt;/strong&gt; tax inefficient for many, since they are forced to receive 3CRV (which is recorded as ordinary income in most jurisdictions).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;veToken 收益分配：&lt;/strong&gt; veToken 模型倾向于按如下方式工作：用户锁定一些本金，例如 100 个代币。然后，用户会收到一些 veToken，具体取决于用户选择锁定的时间长度。例如， &lt;a href=&#34;https://curve.readthedocs.io/dao-vecrv.html&#34;&gt;Curve 的模型&lt;/a&gt; 中1 CRV 锁定 1 年为 0.25 veCRV，2 年为 0.5 veCRV，……，4 年为 1.0 veCRV .以下是一些问题：&lt;strong&gt;(i)&lt;/strong&gt; &lt;a href=&#34;https://curve.readthedocs.io/dao-fees.html#fee-distribution&#34;&gt;费用分配与您的 veCRV 余额成正比&lt;/a&gt;（如果它的时间少于最长期限，那么看起来资本效率十分低下！）&lt;strong&gt;（ii）&lt;/strong&gt; ve对应的数字通常是完全任意的（为什么要加倍锁定时长使您相对于 1 年锁定的同行费用翻倍？为什么不其他比例？）&lt;strong&gt;(iii)&lt;/strong&gt; 代币通常在投票锁定结束之前完全缺乏流动性（如果用户被迫对像加密货币这样的新兴行业采取多年(长线)方法，则用户不太可能锁定协议和公司通常以几个月而不是几年来衡量的生命周期。此外，用户不能在任何地方使用这些资本作为抵押品。）&lt;strong&gt;（iv）&lt;/strong&gt; 对许多人来说税收效率低下，因为他们被迫接受 3CRV（在大多数司法管辖区作为普通收入记录在案）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ve(3,3) Yield Distribution:&lt;/strong&gt; Fee distribution &lt;em&gt;per se&lt;/em&gt; in the ve(3,3) model is the same as most veToken models: ve(3,3) stakers receive rewards (&lt;a href=&#34;https://andrecronje.medium.com/ve-3-3-ouroboros-part-1-fee-distribution-5dcf131dc82e&#34;&gt;in Solidly’s case&lt;/a&gt;, only for pools they voted on). It therefore inherits &lt;strong&gt;(i)&lt;/strong&gt;, &lt;strong&gt;(ii)&lt;/strong&gt; and &lt;strong&gt;(iv)&lt;/strong&gt; from veToken issues. Moreover, the introduction of the veNFTs, which make ve positions fully liquid is suboptimal, as it becomes unclear how to think about price dynamics of a set of liquid NFTs (which are semi-fungible) vs the underlying token. If all tokens are locked (which incentives suggest they should be), then the underlying token price is irrelevant, and the fragmented but liquid NFT market &lt;em&gt;may step in to act as the token itself.&lt;/em&gt; Thinking about the dynamics of such a market is needlessly complicated.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ve(3,3) 收益分配：&lt;/strong&gt; ve(3,3) 模型中的费用分配 &lt;em&gt;本身&lt;/em&gt; 与大多数 veToken 模型相同：ve(3,3) 质押者获得奖励（&lt;a href=&#34;https://andrecronje.medium.com/ve-3-3-ouroboros-part-1-fee-distribution-5dcf131dc82e&#34;&gt;在 Solidly 的情况下&lt;/a&gt; ，仅适用于他们投票的矿池）。因此，它从 veToken 问题继承了 &lt;strong&gt;(i)&lt;/strong&gt; &lt;strong&gt;(ii)&lt;/strong&gt; 和 &lt;strong&gt;(iv)&lt;/strong&gt; 。此外，使 ve 头寸完全流动的 veNFT 的引入并不是最理想的，因为目前还不清楚如何考虑一组流动 NFT（半可替代）与基础代币的价格动态。如果所有代币都被锁定（激励措施表明它们应该被锁定），那么标的代币价格是无关紧要的，分散但流动的 NFT 市场 &lt;em&gt;可能会介入充当代币本身&lt;/em&gt; 考虑这样一个市场的动态是不必要的复杂。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;verev&#34;&gt;veRev&lt;/h1&gt;
+&lt;p&gt;The above establishes a few facts that we would like to solve for:&lt;br&gt;
+以上确立了我们想要解决的一些事实：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Locked tokens should neither be fully illiquid nor fully liquid, as the former is too punitive and the later introduces hairy “game-theoretic” dynamics that obfuscate the mechanics.&lt;br&gt;
+锁定代币既不能完全非流动也不能完全流动，因为前者过于惩罚性，而后者引入了会模糊整套机制的粗糙的“博弈论”动态。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fee Distribution should primarily go to those most aligned with the protocol (stakers, not non-stakers).&lt;br&gt;
+费用分配应该主要分配给那些最“对应”协议的人（质押这，而不是非质押这）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Protocols should retain some flexibility regarding future token issuance (don’t burn).&lt;br&gt;
+协议在未来的代币发行方面应该保留一些灵活性（不要销毁）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Locked Tokens economics should be less arbitrarily tied to locking periods (again, why should 1 year lock be worth 1/2 as much as a 2 year lock?).&lt;br&gt;
+锁定代币经济学不应该随意地与锁定期挂钩（再次质疑，为什么 1 年锁定的价值应该是 2 年锁定的 1/2？）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stakers should be able to choose between stablecoin distribution (cash income) or staking rewards (potentially more tax-efficient, as it has been speculated that, in the US, &lt;a href=&#34;https://www.natlawreview.com/article/recent-court-case-leaves-many-speculating-taxation-staking-rewards&#34;&gt;staking rewards may receive different tax treatment&lt;/a&gt;).&lt;br&gt;
+质押者应该能够选择：是稳定币分配（现金收入）还是质押奖励（可能更节税，因为据推测，在美国，[质押奖励可能会受到不同的税收待遇](https:// www.natlawreview.com/article/recent-court-case-leaves-many-speculating-taxation-staking-rewards)）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;UXD is proud to introduce a novel mechanism for Protocol Yield distribution: &lt;strong&gt;veRev&lt;/strong&gt;. veRev is our shorthand for a “ve Reverse Dutch Auction”. &lt;strong&gt;At its heart, veRev is a buyback mechanism that attempts to solve many of the issues noted above.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;UXD 很自豪地介绍了一种新的协议收益分配机制：&lt;strong&gt;veRev&lt;/strong&gt;。 veRev 是我们对“ve Reverse Dutch Auction”的简写。 &lt;strong&gt;从本质上讲，veRev 是一种回购机制，试图解决上述许多问题。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In one sentence, veRev is a periodic (e.g. weekly/monthly) &lt;a href=&#34;https://www.investopedia.com/terms/r/reverse-auction.asp&#34;&gt;Reverse Dutch Auction&lt;/a&gt; conducted by the protocol distributing yield, in which users are rewarded periodically in additional veToken, and are able to either offer up veToken to be repurchased by the protocol (1 veToken has the same economic value as 1 Token), or users can retain their veToken rewards and let their rewards compound in Token. (Unlike normal veTokens, which are not at all transferrable, the veTokens in this model will be transferrable to the protocol treasury only, which allows for this veRev auction to take place.)&lt;/p&gt;
+&lt;p&gt;简而言之，veRev 是由协议进行的定期（例如每周/每月）&lt;a href=&#34;https://www.investopedia.com/terms/r/reverse-auction.asp&#34;&gt;反向荷兰式拍卖&lt;/a&gt;分配收益，其中用户在额外的 veToken 中定期获得奖励，并且能够提供 veToken 来通过协议回购（1 个 veToken 与 1 个 Token 具有相同的经济价值），或者用户可以保留他们的 veToken 奖励并让他们的奖励在 Token 中复利。（与根本不可转让的普通 veToken 不同，此模型中的 veToken 将仅可转让到协议的金库，从而允许进行此 veRev 拍卖。）&lt;/p&gt;
+&lt;p&gt;An example is probably easiest.&lt;/p&gt;
+&lt;p&gt;一个例子可能是最简单的说明。&lt;/p&gt;
+&lt;p&gt;Suppose at time t=0, you have three stakers, Alice, Bob, and Wassie, who each have $10 worth of veToken staked in the protocol.&lt;/p&gt;
+&lt;p&gt;假设在时间 t=0，您有三个质押者 Alice、Bob 和 Wassie，他们各自在协议中质押了价值 10 美元的 veToken。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*sOPMW4FThvXgav9fURSIiQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Suppose at t=1, the protocol generates $3 in profits that it wants to distribute to its loyal stakers. First, the protocol distributes the yield to Alice, Bob, and Wassie as &lt;strong&gt;&lt;em&gt;increased veToken balance.&lt;/em&gt;&lt;/strong&gt; In this example, since all stakers have the same veToken balance, they all receive $1 in veToken.&lt;/p&gt;
+&lt;p&gt;假设在 t=1 时，协议产生了 3 美元的利润，它想分配给忠实的质押者。首先，协议将收益分配给 Alice、Bob 和 Wassie，作为 &lt;strong&gt;&lt;em&gt;增加的 veToken 余额。&lt;/em&gt;&lt;/strong&gt; 在此示例中，由于所有质押者都拥有相同的 veToken 余额，因此他们都会收到 1 美元的 veToken。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*Ike0_VWGFlZUopfvi5jO8w.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Now, the protocol initiates a Reverse Dutch Auction, starting at a discount to market price, and ending at the market price. Alice and Bob decide that they each want to sell their $1 in rewards from that period, and Alice decides that she wants to sell another $0.50 from her initial $10 balance. Wassie, being a Wassie, decides not to sell anything and wants to compound rewards. The auction doesn’t fill ($2.50 out of an available $3), so it gets executed at market price.&lt;/p&gt;
+&lt;p&gt;现在，协议启动反向荷兰式拍卖，从市场价格的折扣开始，到市场价格结束。Alice和Bob决定他们每个人都想卖掉他们那段时期的 1 美元奖励，Alice决定她想从她最初的 10 美元余额中再卖 0.50 美元。 Wassie则决定不出售任何东西并希望获得复利奖励。拍卖没有成交（可用 3 美元中的 2.50 美元），因此以市场价格执行。&lt;/p&gt;
+&lt;p&gt;Post the auction, balances now look like this:&lt;br&gt;
+拍卖后，余额现在如下所示：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*kgh7G2oQIvw0m0cf6_0noA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Note the protocol has generated $3 in profits, but has only spent $2.50 to reward Alice and Bob. So, the protocol uses this remaining $0.50 to buyback Token on the open market, thereby also creating demand for circulating Token.&lt;/p&gt;
+&lt;p&gt;请注意，该协议产生了 3 美元的利润，但只花费了 2.50 美元来奖励 Alice 和 Bob。因此，协议使用这剩余的 0.50 美元在公开市场上回购代币，从而也创造了对流通 Token 的需求。&lt;/p&gt;
+&lt;p&gt;Let’s do a little accounting to figure out what has happened. &lt;strong&gt;&lt;em&gt;A Yield Distribution mechanism must satisfy “cash in = cash out”, otherwise there is an inefficiency! In this case, the protocol has received $3 in profits, and should therefore distribute $3 in value.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;让我们做一点会计来弄清楚发生了什么。 &lt;strong&gt;“&lt;em&gt;进项 = 出项 ”，否则效率低下！在这种情况下，协议获得了 3 美元的利润，因此应该分配 3 美元的价值。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*1e04RAUTxPbp6vi5yUrgWg.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;From the above, we can see that there has been exactly $0 in net value creation (which was the goal), as all of the cash revenues have been distributed towards tokens. That is, stakeholders have received exactly $3.00 in stablecoin, exactly the amount the protocol was looking to distribute. &lt;strong&gt;Moreover, there has been no net inflation or deflation of the Token: Alice and Bob both sold their inflationary rewards. Moreover, since Alice chose to sell some of her &lt;em&gt;principal&lt;/em&gt; (she sold $0.50 of her original balance), and because the protocol purchased $0.50 on the open market, the $1 in veToken granted to Wassie is not inflationary (think of it like $0.50 came from Alice and $0.50 came from the Open Market). This is because one can think of the buying of principal and the buying on the open market as a true “buyback”, which is then rewarded to Wassie.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从上面我们可以看到，产生的净值正好是 0 美元（这也是目标），因为所有的现金收入都分配给了代币。也就是说，质押者已经收到了 3.00 美元的稳定币，这正是协议希望分配的金额。 &lt;strong&gt;此外，代币没有净通货膨胀或通货紧缩：Alice 和 Bob 都出售了他们的通货膨胀奖励。此外，由于 Alice 选择出售她的一些本金 （她出售了她原始余额的 0.50 美元），并且由于协议在公开市场上购买了 0.50 美元，因此授予 Wassie 的 1 美元 veToken 不会引起通货膨胀（可以将其想象为 0.50 美元来自Alice 和 0.50 美元来自公开市场）。这是因为人们可以将购买本金和在公开市场上购买视为真正的“回购”，然后奖励给 Wassie。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So that’s the basic mechanism. Note that in the next period, Wassie will receive a proportionally higher % of the rewards, because Wassie now holds $11/($11+$10+$9.5) = 36% of the total staked veToken.&lt;/p&gt;
+&lt;p&gt;这就是基本机制。请注意，在下一个时期，Wassie 将获得更高比例的奖励，因为 Wassie 现在持有 11 美元/（11 美元+10 美元+9.5 美元）= 36% 的质押 veToken。&lt;/p&gt;
+&lt;p&gt;If instead, Alice, Bob and Wassie had wanted to sell back more than $3 of veToken, then the Reverse Dutch Auction would execute on a standard price -time priority (lowest offered sales prices execute when the auction fills up).&lt;/p&gt;
+&lt;p&gt;相反，如果 Alice、Bob 和 Wassie 想要卖回超过 3 美元的 veToken，那么反向荷兰式拍卖将以标准价格时间优先级执行（当拍卖成立执行最低提供的销售价格）。&lt;/p&gt;
+&lt;p&gt;Reflecting on the above, the beauty of the veRev mechanism are the following benefits:&lt;/p&gt;
+&lt;p&gt;综上所述，veRev 机制的美妙之处在于以下好处：&lt;/p&gt;
+&lt;p&gt;(i) Protocol Yield distribution prioritizes stakers over non-stakers. In a traditional buyback and burn model, cashflow by definition goes to non-stakers (or if a protocol does not have staking, then to any number of unaligned parties). Given the scarcity of cash vs governance token, this is extremely suboptimal. &lt;strong&gt;&lt;em&gt;veRev gives stakers the first priority to protocol cashflow.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(i) 协议收益分配将质押者优先于非质押者。在传统的回购和销毁模型中，根据定义，现金流流向非质押者（或者如果协议没有质押，则流向任意数量的未对应方）。鉴于现金对治理代币的稀缺性，这是非常不理想的。 &lt;strong&gt;&lt;em&gt;veRev 给予质押方协议现金流的第一优先权。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(ii) Protocol Yield distribution turns traditional “fully illiquid” veTokens into “semi-liquid” veTokens. Because users can sell some amount of their veToken to the protocol &lt;strong&gt;prior to their veToken unlock, the token is neither fully liquid nor fully illiquid. In some sense it is a brand new token design.&lt;/strong&gt; This partial liquidity should increase the incentive to stake for longer. In fact, veToken liquidity increases as the Protocol Yield increases, so smart governance that increases Protocol Yield not only increases economic value, but also directly increases liquidity.&lt;/p&gt;
+&lt;p&gt;(ii) 协议收益分配将传统的“完全缺乏流动性”的 veTokens 变成了“半流动性的”veTokens。因为用户可以在他们的 veToken &lt;strong&gt;解锁之前将一定数量的 veToken 出售给协议，所以该代币既不是完全流动的，也不是完全非流动的。从某种意义上说，这是一种全新的代币设计。&lt;/strong&gt; 这种部分流动性应该会增加更长时间的股权激励。事实上，veToken 流动性随着协议利润产出的增加而增加，因此增加 利润产出的智能治理不仅增加了经济价值，而且直接增加了流动性。&lt;/p&gt;
+&lt;p&gt;(iii) “Paper hands” or “inactive governance participants” will slowly exit the governance system, and will likely be willing to sell their veToken at a discount back to the protocol, making veRev a capital efficient buyback mechanism for the protocol. Moreover, by removing less aligned governance participants from the system, it is less likely that such users will vote in some nefarious way.&lt;/p&gt;
+&lt;p&gt;(iii) “纸手”或“不活跃的治理参与者”将慢慢退出治理系统，并可能愿意以折扣价将其 veToken 卖回协议，使 veRev 成为协议的资本高效回购机制。此外，通过从系统中移除不太一致的治理参与者，这些用户不太可能以某种邪恶的方式投票。&lt;/p&gt;
+&lt;p&gt;(iv) Because users are receiving veToken rewards, users get to choose whether or not they want to convert this veToken yield into cash, or if they want to keep rewards in veToken and compound their rewards. &lt;strong&gt;This may have favorable tax implications for many, because it allows users to either receive cashflow or delay that cashflow and compound veToken rewards.&lt;/strong&gt; (Of course, consult with your tax lawyer on this, UXD Protocol makes no reps and warrants on this).&lt;/p&gt;
+&lt;p&gt;(iv) 由于用户可以接收 veToken 奖励，用户可以选择是否要将这个 veToken 收益转换为现金，或者是否希望将奖励保留在 veToken 中并复利他们的奖励。 &lt;strong&gt;这可能对许多人产生有利的税收影响，因为它允许用户接收现金流或延迟该现金流和复合 veToken 奖励。&lt;/strong&gt;（当然，请就此咨询您的税务律师，UXD 协议不代表和保证这）。&lt;/p&gt;
+&lt;p&gt;(v) vRev replicates the stabilization effects of buybacks without many of the negative properties described above, and acts as an indirect constant source of demand for Token.&lt;/p&gt;
+&lt;p&gt;(v) vRev 复制了回购的稳定效应，没有上述许多负面属性，并充当代币的间接恒定需求来源。&lt;/p&gt;
+&lt;p&gt;Therefore, veRev is a novel mechanism that helps solve prioritization of stakers over non-stakers, creates a new “semi-liquid” veToken to help incentivize longer vote-locking, lets paper hands exit the governance system, likely has favorable tax implications, and creates a natural demand vector for non-staked Token.&lt;/p&gt;
+&lt;p&gt;因此，veRev 是一种新颖的机制，有助于解决质押者优先于非质押者的问题，创建新的“半流动性”veToken 可帮助激励更长的投票锁定，让纸手退出治理系统，可能具有有利的税收影响，以及为非质押代币创建自然需求。&lt;/p&gt;
+&lt;h2 id=&#34;最后几点设计变化-a-few-final-pointsdesign-variations&#34;&gt;最后几点/设计变化 (A Few Final Points/Design Variations)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You may have noticed that the assumption that 1 veToken has the same value as 1 Token is different from the usual veToken model in which some multiplier is applied to the veToken balance, which decays over time. &lt;strong&gt;In the veRev model, we disaggregate economic value from voting power: 1 veToken = 1 Token in economic value regardless of locking length. What changes is a “governance power” multiplier, specific to each user that controls their governance weight. For example, a user may have 1 veToken with a 25% multiplier, which would entitle them to 0.25 votes. However, the &lt;em&gt;economic value&lt;/em&gt; of their stake available to sell back through veRev is still 1 Token. Similar to other ve models, when the governance power decays to zero (linearly, or with some other function) remaining veToken are converted back into Token.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;您可能已经注意到，假设 1 个 veToken 与 1 个 Token 具有相同的价值，这与通常的 veToken 模型不同，其中一些乘数应用于 veToken 余额，随着时间的推移而衰减。 &lt;strong&gt;在 veRev 模型中，我们将经济价值与投票权分开：1 veToken = 1 代币的经济价值，与锁定长度无关。改变的是“治理权力”乘数，特定于控制其治理权重的每个用户。例如，一个用户可能有 1 个 veToken，乘数为 25%，这将使他们有权获得 0.25 票。但是，他们可通过 veRev 卖回的股份的 经济价值仍然是 1 个代币。与其他 ve 模型类似，当治理能力衰减为零（线性或使用其他函数）时，剩余的 veToken 将转换回 Token。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(Another option, depending on a protocol’s preference, is to allow users liquidity only on an amount of veToken equal to their veToken balance times their governance multiplier. For example, a user with 100 veToken and a 25% multiplier would only be able to sell back 25% of their veToken balance back to the protocol (with the rest being locked), whereas a user with a 100% multiplier would be able to sell back 100% of their veToken in the veRev auction.)&lt;br&gt;
+（根据协议的偏好，另一种选择是仅允许用户在等于其 veToken 余额乘以治理乘数的 veToken 数量上流动。例如，拥有 100 个 veToken 和 25% 乘数的用户将只能将其 25% 的 veToken 余额卖回给协议（其余部分被锁定），而拥有 100% 乘数的用户将能够在 veRev 拍卖中卖回 100% 的 veToken。）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(A third option is to require veTokens to be locked &lt;em&gt;indefinitely,&lt;/em&gt; which would give all users the same voting power, and offer 100% governance multiplier for all veTokens. Users would then be able to exit their positions only through protocol-generated revenue.)&lt;/p&gt;
+&lt;p&gt;（第三种选择是要求 veTokens 被 &lt;em&gt;无差别&lt;/em&gt; 无限期锁定，这将赋予所有用户相同的投票权，并为所有 veTokens 提供 100% 的治理乘数。然后用户只能通过协议产生的收入退出他们的头寸.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the case that ~100% of outstanding supply is staked (in which case there is no underlying market price to reference for veToken rewards), then the protocol can initiate an unbounded Reverse Dutch Auction, starting at a discount to the previous auction’s clearing price and moving upwards until the auction clears fully. This makes the Reverse Dutch Auction a tool for price discovery in this edge case.&lt;/p&gt;
+&lt;p&gt;如果100% 的流通供应被质押（在这种情况下，没有基础市场价格可作为 veToken 奖励的参考），则协议可以启动无限制的反向荷兰式拍卖，从前一次拍卖的清算价格的折扣开始并向上移动直到拍卖完全清除。这使得反向荷兰式拍卖成为这种极端情况下价格发现的工具。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Protocols that want to incorporate staking rewards (that is, net inflation) can do so quite easily using the veRev mechanism. Instead of having veToken rewards = yield, consider having veToken rewards = yield + target inflation (more veToken is rewarded than bought back). Similarly, protocols wanting net deflation can have veToken rewards = yield - target deflation (less veToken is rewarded than bought back). &lt;strong&gt;&lt;em&gt;veRev thus acts as a lever for token monetary policy that can be tailored to each protocol’s needs.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;想要包含质押奖励（即净通胀）的协议可以使用 veRev 机制很容易地做到这一点。与其让 veToken 奖励 = 收益，不如考虑让 veToken 奖励 = 收益 + 目标通胀（奖励的 veToken 比回购的多）。同样，想要净通缩的协议可以有 veToken 奖励 = 收益 - 目标通缩（奖励的 veToken 少于回购的奖励）。 &lt;strong&gt;&lt;em&gt;veRev 因此充当代币货币政策的杠杆，可以根据每个协议的需求进行定制。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If there is excess capacity in the Reverse Dutch Auction, then the protocol purchases from the open market. However, depending on the latency between end of auction and market execution, there may be some +/- price movement in the meantime. This would change the net zero accounting in the example above, and essentially create small inflation or small deflation. (If in practice, this discrepancy is too large then open market buys can be done away with, and a “chained” Reverse Dutch Auction can be implemented, where the Reverse Dutch Auction begins at a discount to the price at which the previous Reverse Dutch Auction cleared, and can increase to any price level, guaranteeing each auction will fill).&lt;/p&gt;
+&lt;p&gt;如果反向荷兰式拍卖中有多余的容量，则协议会从公开市场购买。然而，拍卖结束和市场执行之间会有延迟，在此期间可能会有一些 +/- 价格变动。这将改变上面示例中的净值为零的会计，并从本质上产生小幅通货膨胀或小幅通货紧缩。 （如果在实践中，这种差异太大，那么可以取消公开市场购买，并且可以实施“链式”反向荷兰式拍卖，其中反向荷兰式拍卖以之前的反向荷兰式拍卖的价格折扣开始拍卖清仓，并可以提高到任何价格水平，保证每次拍卖都会成交）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In order to prevent “perpetual cannibalization”, i.e. a scenario in which a single party with a low cost basis is willing to fill every auction fully at the maximum discount, the single Reverse Dutch Auction can be split into an “interest” and a “principal” auction on the back end: users submit the number of tokens they’d like to sell and at what price; the backend then conducts two “rounds”: in the first round, a user can sell at most their pro-rata profit distribution ($1 in the earlier example); then, if the auction does not fill fully (not all users want to sell their profit distribution), the excess will be used to fill “principal” sales, i.e. sales beyond the profit distribution (Alice’s extra $0.50 in the earlier example). This gives all users the ability to sell at least their pro-rata distribution of profits if they wish to do so.&lt;/p&gt;
+&lt;p&gt;为了防止“永久蚕食”，即以低成本为基础策略的一方愿意以最大折扣全部完成每一次拍卖的情况，单次反向荷兰式拍卖可以拆分为“利率”和后端的“本金”拍卖：用户提交他们想要出售的代币数量和价格；然后后端进行两个“回合”：在第一回合中，用户最多可以出售他们按比例分配的利润（在前面的示例中为 1 美元）；然后，如果拍卖没有完全填满（并非所有用户都想出售他们的利润分配），超出的部分将用于填充“本金”销售，即超出利润分配的销售（在前面的示例中，Alice 的额外 0.50 美元）。这使所有用户能够在他们愿意的情况下至少出售他们按比例分配的利润。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you’ve made it this far, thanks for reading. Thanks to &lt;a href=&#34;https://twitter.com/joey__santoro&#34;&gt;@ joey__santoro&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/wireless_anon&#34;&gt;@ wireless_anon&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/0xkydo&#34;&gt;@ 0xkydo&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/itoslemmas&#34;&gt;@ itoslemmas&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/0x__fp&#34;&gt;@ 0x__fp&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/heatdeathx&#34;&gt;@ heatdeathx&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/bigz_Pubkey&#34;&gt;@ bigz_Pubkey&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/Alexand23684236&#34;&gt;@ Alexand23684236&lt;/a&gt;, and &lt;a href=&#34;https://twitter.com/__euler__&#34;&gt;@ &lt;strong&gt;euler&lt;/strong&gt;&lt;/a&gt; for their review and helpful conversations.&lt;/p&gt;
+&lt;p&gt;如果您已经做到了这一点，感谢您的阅读。感谢 &lt;a href=&#34;https://twitter.com/joey__santoro&#34;&gt;@joey__santoro&lt;/a&gt;、&lt;a href=&#34;https://twitter.com/wireless_anon&#34;&gt;@wireless_anon&lt;/a&gt;、&lt;a href=&#34;https://twitter.com/0xkydo&#34;&gt;@0xkydo&lt;/a&gt;、 &lt;a href=&#34;https://twitter.com/itoslemmas&#34;&gt;@itoslemmas&lt;/a&gt;、&lt;a href=&#34;https://twitter.com/0x__fp&#34;&gt;@0x__fp&lt;/a&gt;、&lt;a href=&#34;https://twitter.com/heatdeathx&#34;&gt;@heatdeathx&lt;/a&gt;、&lt;a href=&#34;https://twitter.com/bigz_Pubkey&#34;&gt;@ bigz_Pubkey&lt;/a&gt;、&lt;a href=&#34;https://twitter.com/Alexand23684236&#34;&gt;@Alexand23684236&lt;/a&gt; 和 &lt;a href=&#34;https://twitter.com/__euler__&#34;&gt;@&lt;strong&gt;euler&lt;/strong&gt;&lt;/a&gt; 供他们审查和有用的对话。&lt;/p&gt;
+&lt;p&gt;As always, feel free to drop by our &lt;a href=&#34;http://discord.gg/kXwXQfu5kV&#34;&gt;discord&lt;/a&gt; and give us feedback.&lt;br&gt;
+与往常一样，请随时访问我们的 &lt;a href=&#34;https://discord.gg/A4M3JEfcA4&#34;&gt;discord&lt;/a&gt; 并向我们提供反馈。&lt;/p&gt;
+&lt;p&gt;Cheers.&lt;br&gt;
+干杯。&lt;/p&gt;
+&lt;p&gt;Thanks to Joey Santoro&lt;br&gt;
+感谢乔伊·桑托罗&lt;/p&gt;
+">veRev：一种收益分配机制 (Introducing veRev — a Yield Distribution Mechanism)</a>
       </div>
       
       <div class="item">
