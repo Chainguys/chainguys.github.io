@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-05-25T07:15:07.145Z</updated>
+    <updated>2022-05-25T13:14:48.996Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -25,7 +25,7 @@
 <p>Euler 已通过多种安全模式措施确保发展(潜力)，不过现在它已准备好跨越式颠覆行业。 Euler独特功能集为原生DeFi 用户和希望参与未来金融的新用户提供了理想的平台。</p>
 <h1 id="去审批化无许可上币-permissionless-listing">去审批化/无许可上币 (Permissionless Listing)</h1>
 <p>As a custom-built system to support long-tail assets from the start, Euler is able to manage the risks involved with opening up <a href="https://docs.euler.finance/getting-started/white-paper#permissionless-listing">listings</a> to the public. Euler full-heartedly supports decentralisation by offering a platform to ensure that the market decides which assets should be borrowed or lent. There are already 60 markets activated on Euler.</p>
-<p>作为从一开始就支持长尾资产的可定制系统，Euler能够管理向公众开放 <a href="https://docs.euler.finance/getting-started/white-paper#permissionless-listing">上币</a> 所涉及的风险。欧拉通过提供让市场决定应该借入或借出哪些资产的一个平台，全心全意地支持去中心化。Euler 上已经激活了 60 个市场。</p>
+<p>作为从一开始就支持长尾资产的可定制系统，Euler能够管理向公众开放 <a href="https://docs.euler.finance/getting-started/white-paper#permissionless-listing">上币</a> 所涉及的风险。Euler通过提供让市场决定应该借入或借出哪些资产的一个平台，全心全意地支持去中心化。Euler 上已经激活了 60 个市场。</p>
 <figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*KdwCwbq4-HasojdCvdKNlA.png" alt="" loading="lazy"></figure>
 <p>(只需单击按钮即可激活任何市场 Simply activate any market with the click of a button)</p>
 <h1 id="借入因子-borrow-factors">借入因子 (Borrow Factors)</h1>
@@ -33,10 +33,10 @@
 <p>借贷协议需要管理波动性或非流动性资产的风险，因此必须调整贷款对价值的比率，以便超额抵押来防止坏账。 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/xie-yi/can-shu#jie-ru-yin-zi">借入因子</a> 也可以通过治理进行调整，以最好地反映资产的潜在风险。</p>
 <h1 id="去中心化价格预言机-decentralised-price-oracles">去中心化价格预言机 (Decentralised Price Oracles)</h1>
 <p>The Euler team has put enormous effort behind researching oracles and developing <a href="https://docs.euler.finance/risk-framework/oracle-rating">tools</a> to illuminate risks. <a href="https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf">Research</a> by Euler’s CEO Michael Bentley highlights the difficulty in carrying out attacks on decentralised oracles such as Uniswap v3’s Time Weighted Average Price (TWAP). Euler’s <a href="https://oracle.euler.finance/">Oracle tool</a> can also show the oracle risks involved with different Uniswap V3 pools.</p>
-<p>Euler 团队在研究预言机和开发 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/feng-xian-kuang-jia/yu-yan-ji-ping-ji">工具</a> 来阐明风险方面，付出了巨大的努力。欧拉首席执行官 Michael Bentley 的 <a href="https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf">研究</a> 强调了对去中心化预言机进行攻击的难度，比如 Uniswap v3 的时间加权平均价格 (TWAP)。 Euler 的 <a href="https://oracle.euler.finance/">预言机工具</a> 还可以显示不同 Uniswap V3 矿池所涉及的预言机风险。</p>
+<p>Euler 团队在研究预言机和开发 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/feng-xian-kuang-jia/yu-yan-ji-ping-ji">工具</a> 来阐明风险方面，付出了巨大的努力。Euler首席执行官 Michael Bentley 的 <a href="https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf">研究</a> 强调了对去中心化预言机进行攻击的难度，比如 Uniswap v3 的时间加权平均价格 (TWAP)。 Euler 的 <a href="https://oracle.euler.finance/">预言机工具</a> 还可以显示不同 Uniswap V3 矿池所涉及的预言机风险。</p>
 <h1 id="荷兰式拍卖清算-dutch-auction-liquidations">荷兰式拍卖清算 (Dutch-Auction Liquidations)</h1>
 <p>Not only does Euler limit MEV, but large borrowers will find the <a href="https://docs.euler.finance/developers/architecture#liquidations">liquidation process</a> less taxing compared to other protocols. Expected borrowing costs are drastically lower as Euler gives the market a voice in how much of a bonus that liquidators can receive. According to the <a href="https://dune.com/shippooordao/Euler-Finance-Dashboard">Euler Dune dashboard</a> from Shippooordao, the average liquidation bonus has been around 2.13%.</p>
-<p>Euler 不仅限制 MEV，且与其它协议相比，大型借款人会发现 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/kai-fa-zhe/jia-gou#qing-suan">清算过程</a> 的征税更少。预期的借贷成本大大降低，因为欧拉使得市场对清算人可以获得多少奖金有了发言权。根据 Shippooordao 的 <a href="https://dune.com/shippooordao/Euler-Finance-Dashboard">Euler Dune 仪表盘</a>，平均清算奖金约为 2.13%。</p>
+<p>Euler 不仅限制 MEV，且与其它协议相比，大型借款人会发现 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/kai-fa-zhe/jia-gou#qing-suan">清算过程</a> 的征税更少。预期的借贷成本大大降低，因为Euler使得市场对清算人可以获得多少奖金有了发言权。根据 Shippooordao 的 <a href="https://dune.com/shippooordao/Euler-Finance-Dashboard">Euler Dune 仪表盘</a>，平均清算奖金约为 2.13%。</p>
 <h1 id="交易建设者-transaction-builder">交易建设者 (Transaction Builder)</h1>
 <p>Users can batch build their transactions into a convenient <a href="https://docs.euler.finance/getting-started/white-paper#transaction-builder">list</a> before a final submission. This reduces gas costs and helps to manage complex positions while previewing estimated costs and potential conflicts with the transactions.</p>
 <p>用户可以在最终提交之前将他们的交易批量构建到一个方便的 <a href="https://docs.euler.finance/languages/white-paper-eng-chn#jiao-yi-jian-she-zhe-transaction-builder">列表</a> 中。这降低了 gas 成本并有助于管理复杂的头寸，同时可以预估预览成本与潜在的交易冲突。</p>
@@ -52,7 +52,7 @@
 <p>Euler 的创新方法有助于减轻长尾资产带来的系统性风险，同时确保这些风险较高的资产在借贷市场中依然占有一席之地。 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/feng-xian-kuang-jia/fen-ceng-fang-fa">隔离</a> 和跨层资产可以借入和借出，但不能用作抵押品。跨层资产也可以与其他资产一起借入。这可以防止因抵押高风险资产而产生的坏账情况。</p>
 <h1 id="高效杠杆-efficient-leverage">高效杠杆 (Efficient Leverage)</h1>
 <p><a href="https://docs.euler.finance/guides/faq#should-i-mine-at-19x">Leverage</a> can be built up quickly and extremely cheaply using the Mint and Burn functions. Users no longer need to develop complex recursive strategies or move to third-party solutions. Euler’s development in this area enables higher collateral ratios for highly correlated assets.</p>
-<p>可以使用 Mint 和 Burn 功能快速且极其便宜地创建<a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-dao-shou-ce/faq#wo-ying-gai-yi-19-bei-de-su-du-wa-kuang-ma-shouldimine-at-19x">杠杆</a> 。用户不再需要开发复杂的递归策略或转向第三方解决方案。欧拉在这一领域的发展，为高度相关的资产提供了更高的抵押比率。</p>
+<p>可以使用 Mint 和 Burn 功能快速且极其便宜地创建<a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-dao-shou-ce/faq#wo-ying-gai-yi-19-bei-de-su-du-wa-kuang-ma-shouldimine-at-19x">杠杆</a> 。用户不再需要开发复杂的递归策略或转向第三方解决方案。Euler在这一领域的发展，为高度相关的资产提供了更高的抵押比率。</p>
 <h1 id="子账户-sub-accounts">子账户 (Sub-accounts)</h1>
 <p>Euler’s <a href="https://docs.euler.finance/developers/architecture#sub-accounts">sub-accounts</a> makes trading even easier for users by eliminating the need to use multiple wallets to create multiple position. Users can manage positions and save on gas with minimal approvals in just one wallet.</p>
 <p>Euler 的 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/kai-fa-zhe/jia-gou#zi-zhang-hu">子账户</a> 消除了使用多个钱包创建多个头寸的必要，使得用户的交易更加轻松。用户只需在一个钱包中获得最少的批准即可管理头寸并节省gas。</p>
@@ -384,6 +384,114 @@ const eagEurAddr = e
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[是时候放下Dropbox了 (Time To Drop Dropbox)]]></title>
+        <id>https://chainguys.github.io/post/shi-shi-hou-fang-xia-dropbox-liao-time-to-drop-dropbox/</id>
+        <link href="https://chainguys.github.io/post/shi-shi-hou-fang-xia-dropbox-liao-time-to-drop-dropbox/">
+        </link>
+        <updated>2022-05-15T13:06:34.000Z</updated>
+        <content type="html"><![CDATA[<p>原文:<a href="https://akord.com/blog/time-to-drop-dropbox">https://akord.com/blog/time-to-drop-dropbox</a></p>
+<figure data-type="image" tabindex="1"><img src="https://akord.com/media/Dropping-Dropbox.png" alt="Dropping Dropbox" loading="lazy"></figure>
+<hr>
+<p>You’ve probably been with Dropbox for a while now.<br>
+您可能已经使用 Dropbox 一段时间了。</p>
+<p>It was love at first sync. At first it was exciting, fresh and Dropbox had plenty to offer.</p>
+<p>第一次同步是那么有爱的悸动。它起初令人兴奋、新鲜，而且 Dropbox 也提供了很多（其他）东西。</p>
+<p>The thing is, you’ve always wondered how long Dropbox will stick around. You want a real long-term partner, but in the back of your mind you’ve always suspected something better would come along.</p>
+<p>不过问题是，你一直想知道 Dropbox 能坚持多久。你想要一个真正的长期合作伙伴，但在你的内心深处，你总是怀疑是否会有更好的事情发生。</p>
+<p>And then, every month Dropbox is always asking you for more money. If you don’t pay they say they’ll bin all your precious photos. Not cool.</p>
+<p>然后，每个月 Dropbox 都会向您要更多的钱。如果你不付钱，他们会说他们会把你所有的珍贵照片都&quot;没收&quot;。真的一点也不酷。</p>
+<p>Recently you’ve suspected Dropbox may not be so trustworthy. You’re not confident you can entrust them with your most valuable possessions. What does that say about your relationship? Trust is everything, after all.</p>
+<p>最近你怀疑 Dropbox 可能不那么值得信赖。你不相信你能把你最宝贵的财产托付给他们。那你们的关系到底是什么？毕竟，信任就是一切。</p>
+<p>But, despite the issues that have emerged, you just kinda stick with Dropbox. Because… well, who else would you choose?</p>
+<p>但是，尽管出现了问题，你还是坚持使用 Dropbox。因为……好吧，你还能选择谁？</p>
+<p>It’s a relationship borne from familiarity. But you’ve outgrown, Dropbox. You just may not have realised it yet.</p>
+<p>这是一种源于熟悉的关系。但你已经长大了，Dropbox。你可能只是还没有意识到。</p>
+<p>It’s time you felt confident you could trust your partner. Someone who will have your back. Someone you can share all those precious memories with. Someone who’ll get on with your friends. Someone you feel is prioritising <em>you</em>. Someone you can feel completely confident that they’ll be around next year, the next decade, the next generation, and even beyond. And, dare I say, someone who’ll actually contribute something financially instead of take, take, take.</p>
+<p>是时候让你自信你可以信任你的伴侣了。那是会支持你的人。可以与你分享所有这些珍贵回忆的人。一个会和你的朋友相处的人。你觉得会优先考虑 <em>你</em> 的人。一个你可以完全相信他们在明年、下一个十年、下一代，甚至更远依然萦绕(在身边)的人。而且，我敢说，一个真正会在经济上做出贡献而不是只会索取，索取，索取的人。</p>
+<p>I really want to introduce you to a good friend of mine, Akord. I think you guys will get along great. First off, let me give you the bullet-point breakdown on why they’re so different…</p>
+<p>我真的很想把你介绍给我的一个好朋友，Akord。我想你们会相处得很好。首先，让我给你一个要点分解为什么它如此不同......</p>
+<ul>
+<li>
+<p><strong>在Arweave上构建 (Built on Arweave)</strong></p>
+<p>When you use Dropbox your data is in the cloud. Clouds come and go, they’re temporary. Probably not the best place for valuable data.</p>
+<p>当您使用 Dropbox 时，您的数据在云端。云来来去去，都是暂时的。大概不是存储有价值数据的最佳位置。</p>
+<p>In Akord, your data is secured pretty much until the 4 horsemen of the apocalypse ride into town. Our application isn’t deployed on <a href="http://www.arweave.org/">Arweave</a>, but we’ve built the Akord Explorer and that will be. With Akord Explorer, for as long as your encrypted data lives on Arweave you will have a means to access it, regardless of whether Akord the company or app exists.</p>
+<p>在 Akord，您的数据几乎是安全的，直到天启4骑士降临(世界末日)。我们的应用程序并未部署在 <a href="http://www.arweave.org/">Arweave</a> 上，但我们已经构建了 Akord Explorer，并且将会如此。使用 Akord Explorer，只要您的加密数据存在于 Arweave 上，您就可以访问它，无论 Akord 公司或应用程序是否存在。</p>
+<p><a href="https://www.youtube.com/watch?v=jKFhHL1geVw&amp;t=3s">More on Arweave in this video from Coin Bureau</a> <a href="https://www.youtube.com/watch?v=jKFhHL1geVw&amp;t=3s">→</a><br>
+<a href="https://www.youtube.com/watch?v=jKFhHL1geVw&amp;t=3s">查看 Coin Bureau 的视频中有关 Arweave 的更多信息</a><a href="https://www.youtube.com/watch?v=jKFhHL1geVw&amp;t=3s">→</a></p>
+</li>
+<li>
+<p><strong>掌握私钥，掌握你的数据 (Own the keys, own your data)</strong></p>
+<p>Whatever Dropbox says about security, understand one simple fact: they own and control the keys that encrypt your data. If I sell you a car but I keep the keys, letting you access them on my terms, would you feel like you own that car? Would you feel comfortable that your car is secure?</p>
+<p>无论 Dropbox 对安全性说什么，请明白一个简单的事实：他们拥有并控制着加密您数据的密钥。如果我卖给你一辆车，但我保留了钥匙，让你按照我的条件访问它们，你会觉得你拥有那辆车吗？你会觉得车是安全的吗？</p>
+<p>The first thing you do in Akord is create your crypto wallet. Similar to owning and managing cryptocurrency, the keys that manage your assets are in your hands and we ask you to store a backup phrase as a means to recovering your account. It’s easy for Dropbox to change your password for you because they can access your data whenever they want. With Akord, you own the keys. Your data is so secure, even we can’t see it.</p>
+<p>你在 Akord 做的第一件事就是创建你的加密钱包。与拥有和管理加密货币类似，管理资产的密钥掌握在您手中，我们要求您存储备份短语作为恢复帐户的一种手段。 Dropbox 可以轻松为您更改密码，因为他们可以随时访问您的数据。使用 Akord，您才拥有钥匙。您的数据非常安全，甚至我们都看不到。</p>
+<p><a href="https://akord.com/blog/the-akord-wallet">More on the Akord crypto wallet</a> <a href="https://akord.com/blog/the-akord-wallet">→</a><br>
+<a href="https://akord.com/blog/the-akord-wallet">更多关于 Akord 加密钱包</a> <a href="https://akord.com/blog/the-akord-wallet">→</a></p>
+</li>
+<li>
+<p><strong>简单 (Simplicity)</strong></p>
+<p>You loved Dropbox in the beginning because it was simple. But countless redesigns and scaling to a global household name has come at a cost: feature overload and a cluttered UI has created a poor user experience.</p>
+<p>一开始你喜欢 Dropbox，因为它很简单。但无数次的重新设计和扩展到全球家喻户晓的名字是有代价的：功能超载和混乱UI导致了糟糕的用户体验。</p>
+<p>Akord is not perfect. We’re still working on adding some new features. But everything we do is with simplicity in mind. We’d rather not cover every edge case and niche scenario, if it means compromising on building a product that’s usable by anyone regardless of their background. Don’t believe me? Here’s what others say about Akord:</p>
+<p>Akord 并不完美。我们仍在努力添加一些新功能。但我们所做的一切都是为了简单。我们宁愿不涵盖所有边缘案例和长尾/微小场景，如果这意味着要在构建一个任何人都可以忽略他们的背景而使用的产品上做出妥协。不相信我？以下是其他人对 Akord 的评价：</p>
+<p>&quot;Permaweb for your grandaunt!&quot;<br>
+~ Mike Lowther, Developer</p>
+<p>“给你祖母的永久网(Permaweb)！”<br>
+~ Mike Lowther，开发人员</p>
+<p>&quot;Anyone can use Akord, the user interface is easy to use. Even my Mum can use it.&quot;<br>
+~ Joshua Lane, Chaplain</p>
+<p>“任何人都可以使用 Akord，用户界面易于使用。即使是我妈妈也可以使用。”<br>
+~ Joshua Lane, 牧师</p>
+<p>&quot;Like Dropbox, but better.&quot;<br>
+~ Nibel, Web Designer</p>
+<p>“像 Dropbox，但更好。”<br>
+~ Nibel，网页设计师</p>
+</li>
+<li>
+<p><strong>社交保管库 (The social vault)</strong></p>
+<p>While you can share folders and files in Dropbox, you’re missing one critical component in the context of sharing data – chat.</p>
+<p>虽然您可以在 Dropbox 中共享文件夹和文件，但您在共享数据的环境中缺少一个关键组件——聊天。</p>
+<p>Not only does Akord have the level of end-to-end encryption of Signal, it also has the same ability to easily chat with friends and family in a completely private space. Invite the people you want to share with to your vault and send messages to each other. You can even drop an emoji reaction or two ❤️👍</p>
+<p>Akord 不仅具有 Signal 的端到端加密级别，还具有在完全私密的空间中轻松与朋友和家人聊天的能力。邀请您想与之共享的人到您的保管库并互相发送消息。您甚至可以丢出一两个表情符号❤️👍</p>
+<p>In its design, Akord has realised the inherent reality that storing data will often result in sharing and conversation, and all conversations invariably result at some point in the sharing of data. We designed chat in Akord to look and feel like your favourite messenger apps, except for making it looking better 😎</p>
+<p>在其设计中，Akord 已经意识到存储数据通常会导致共享和对话的内在现实，并且所有对话都会在某个时间点导致数据共享。我们在 Akord 中设计了聊天，看起来和感觉就像您最喜欢的即时通讯应用程序，除了它看起来更好😎</p>
+</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://akord.com/media/AK-Chat.png" alt="AK Chat" loading="lazy"></figure>
+<ul>
+<li>
+<p><strong>一次付费，存到世界末日 (Pay once, store until the apocalypse)</strong></p>
+<p>The thing with Dropbox is you’re just renting space. Maybe you’re OK with that. But it’s worth considering the bigger picture. How many years do you want to store those precious photos? 10, 20, 30, 40, 50… a hundred years? As long as possible? How many payments are you going to keep making for storing the same photos? Who’s going to make those payments if you’re not around?</p>
+<p>Dropbox 的问题在于您只是在租用空间。也许你可以接受。但值得考虑更大的视野。那些珍贵的照片，你想保存多少年？ 10、20、30、40、50……100年？越长越好？您将继续为存储相同的照片支付多少费用？如果您不在，谁来支付这些款项？</p>
+<p>If you want to store a 1 MB photo on Akord you will pay $0.003 (1 GB of storage is currently $3). You will never pay anything to ever store that photo again. Ever. If you never come back and use Akord in the future – no problem. Your photo is, and always will be, stored on the Arweave blockchain, accessible indefinitely on Akord Explorer for the rest of your lifetime, and for the future generations you want to pass that photo down to.</p>
+<p>如果您想在 Akord 上存储 1 MB 照片，您需要支付 0.003 美元（目前 1 GB 的存储空间为 3 美元）。您将永远不会再支付任何费用来存储该照片，一劳永逸。如果您以后再也不会回来使用 Akord ——没问题。您的照片现在并且将永远存储在 Arweave 区块链上，您可以在您的余生中无限期地在 Akord Explorer 上访问，同时您希望将照片传递给后代的后代也可以。</p>
+<p>So who’s giving <em>real value</em> for money – Dropbox or Akord?<br>
+那么，谁在为金钱提供 <em>真正的价值</em> —Dropbox 还是 Akord？</p>
+<p><a href="https://akord.com/pricing">Check out our pricing discounts</a> <a href="https://akord.com/pricing">→</a><br>
+<a href="https://akord.com/pricing">查看我们的定价折扣</a> <a href="https://akord.com/pricing">→</a></p>
+</li>
+<li>
+<p><strong>读-写-有：$AKRD (Read-write-own: $AKRD)</strong></p>
+<p>Dropbox is web2 – the old centralised way of doing things. All the big web2 players have made their billions by treating your data as their own. The relationship is crude and transactional: <em>you</em> are the product, a consumer, a data point.</p>
+<p>Dropbox 是 web2——旧的中心化运营方式。通过将您的数据视为自己的数据，所有大型 web2 玩家都赚了数十亿美元。这种关系是粗略的和交易性的：<em>你</em> 是产品、消费者、数据点。</p>
+<p>Akord is building on the technology and ideas of web3. If static web1 was read-only, and the interactive web2 is read-write, then web3 can be summarised as read-write-own. Web3 is built on community engagement, governance and, crucially, ownership through tokenised networks.</p>
+<p>Akord 建立在 web3 的技术和理念之上。如果静态web1是只读的，而交互式web2是可读写的，那么web3可以概括为读-写-有(read-write-own)。 Web3 建立在社区参与、治理以及至关重要的代币化网络所有权之上。</p>
+<p>Our private investors bought the $AKRD token, not equity. And the people who use Akord will be able to buy the same $AKRD token on public exchanges in the future. Our token underpins the Akord Vault Protocol. Our app will be the first of many apps that will leverage the protocol once open sourced to other developers and teams.</p>
+<p>我们的私人投资者购买的是 $AKRD 代币，而不是股权。未来使用 Akord 的人将能够在公共交易所购买相同的 $AKRD 代币。我们的代币支持 Akord Vault 协议。一旦向其他开发人员和团队开源，我们的应用程序将成为众多应用程序中的第一个利用该协议的应用程序。</p>
+<p>$AKRD will be a profit-sharing token, meaning every app that makes a transaction through the protocol will pay a small fee in <a href="https://coinmarketcap.com/currencies/arweave/">AR</a>, and this will be proportionally distributed to token holders. Our token will also give you certain governance rights to vote on the future of the protocol.</p>
+<p>$AKRD 将是一种利润分享代币，这意味着通过该协议进行交易的每个应用程序都将支付 <a href="https://coinmarketcap.com/currencies/arweave/">AR</a> 的少量费用，这将成比例分发给代币持有者。我们的代币还将赋予您一定的治理权，以对协议的未来进行投票。</p>
+<p>In the not too distant future, new people to Akord will get airdropped $AKRD, maybe as a referral reward or as part of the signup incentive. You’ll be able to login to Akord and go to a dashboard where you’ll see your $AKRD balance, buy more, see how much $AR you’ve passively earnt and any proposals you can vote on.</p>
+<p>在不久的将来，Akord 的新用户将获得空投 $AKRD，可能作为推荐奖励或作为注册奖励的一部分。您将能够登录 Akord 并转到仪表盘，在那里您将看到您的 $AKRD 余额、如何购买更多、查看您被动赚取了多少 $AR 以及您可以投票的任何提案。</p>
+<p>This is the difference when you're part of a community, not a customer base.<br>
+当您是社区的一员而不是客户时，这就是区别。</p>
+</li>
+</ul>
+<h3 id="time-to-say-hello-to-akord"><a href="https://app.akord.com/signup">Time to say hello to Akord →</a></h3>
+<h3 id="是时候向-akord-问好了"><a href="https://app.akord.com/signup">是时候向 Akord 问好了 →</a></h3>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Euler dapp新功能来啦！(Announcing new features of Euler dapp)]]></title>
         <id>https://chainguys.github.io/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/</id>
         <link href="https://chainguys.github.io/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/">
@@ -558,27 +666,6 @@ Akord 提供了一个缺失的隐私层。当用户通过 Akord 上传数据时�
 <p>Please see the link below:<br>
 请点击以下链接查看：</p>
 <p><a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/">https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Neon EVM技术文档和白皮书(Neon EVM Docs and Whitepaper)]]></title>
-        <id>https://chainguys.github.io/post/neondocwp/</id>
-        <link href="https://chainguys.github.io/post/neondocwp/">
-        </link>
-        <updated>2022-04-27T03:57:46.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://chainguys.github.io/post-images/1651046857339.png" alt="" loading="lazy"><br>
-👏  GM!</p>
-<h1 id="版权声明copyright-notice">版权声明(Copyright Notice）</h1>
-<p><strong>本文翻译自<a href="https://neon-labs.org/">Neon Labs</a>为该项目撰写的<a href="https://docs.neon-labs.org/">技术文档</a>，并已得到翻译授权。译者为<a href="https://twitter.com/Chainguys">@chainguys</a>。转载请注明作者和译者。</strong></p>
-<p><strong>Coptyright©2021 by <a href="https://neon-labs.org/">Neon Labs</a>, translated by <a href="https://twitter.com/Chainguys">@chainguys</a>.</strong></p>
-<p><strong>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。</strong></p>
-<p><strong>All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice.</strong></p>
-<p><strong>最后，请理解此文件并不是官方发布的中文技术文档，而是一份由Neon信仰者<a href="https://twitter.com/Chainguys">@chainguys</a>个人单独维护的文档，若翻译与英文原文有出入，一律以英文原文和官方解释为准。欢迎大家加入Neon官方<a href="https://discord.gg/gapRjRtFN7">Discord群组</a> 。</strong></p>
-<p><strong>Finally,please understand this is not an official Chinese doc released by Neon, but one maintained solely by Neon Maximalist <a href="https://twitter.com/Chainguys">@chainguys</a>. In the event of conflicts or ambiguity between the English language version and translated versions, the English language versions and official interpretation shall prevail.Feel free to join Neon Official <a href="https://discord.gg/gapRjRtFN7">Discord server</a>.</strong></p>
-<p><strong>请访问以下链接查看：</strong><br>
-<strong>Please visit folloing links：</strong></p>
-<p><a href="https://chainguys.github.io/neonwp/">Neon EVM技术文档 (Neon EVM Docs)</a><br>
-<a href="https://chainguys.github.io/neonwp/11wp/wp">Neon EVM白皮书  (Neon EVM Whitepaper)</a></p>
 ]]></content>
     </entry>
 </feed>
