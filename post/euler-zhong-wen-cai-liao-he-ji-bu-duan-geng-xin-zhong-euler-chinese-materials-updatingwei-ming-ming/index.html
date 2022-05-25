@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Euler中文材料合集-不断更新中(Euler Chinese Materials-Updating) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1653461855848">
+<link rel="shortcut icon" href="/favicon.ico?v=1653462890646">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -2500,24 +2500,24 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。&lt;/p&gt;
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/uxd-xie-yi-zi-jin-jie-gou-uxd-protocol-fund-structure/"" data-c="
-          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*jxaaM0VhI2gVTB5DmBKS-w.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+          &lt;h2 id=&#34;&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*jxaaM0VhI2gVTB5DmBKS-w.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/h2&gt;
 &lt;p&gt;One of the most common questions in the UXD Protocol discord is: “How will UXP governance token holders partake in the delta-neutral yield generation? What will the structure be?”. After a long design process, during which UXD Protocol explored various potential options, UXD Protocol is finally ready to propose a structure for the “Protocol Fund” that uses its recently introduced &lt;a href=&#34;https://medium.com/@uxdprotocol/introducing-verev-a-novel-yield-distribution-mechanism-c9243fbbfe3e&#34;&gt;veRev mechanism&lt;/a&gt;. The purpose of today’s blog post is to propose a structure for community feedback, as the proposed fund will take some time to build, including the veRev mechanism.&lt;/p&gt;
 &lt;p&gt;UXD 协议的Discord中最常见的问题之一是：“UXP 治理代币持有者将如何参与 delta 中性收益的产生？结构是什么？”。经过漫长的设计过程，在此过程中 UXD 协议探索了各种潜在的选择，团队终于准备好为“协议的基金”提出一个结构，该结构使用其最近引入的&lt;a href=&#34;https://chainguys.github.io/post/verevyi-chong-shou-yi-fen-pei-ji-zhi-introducing-verev-a-yield-distribution-mechanism/&#34;&gt;veRev 机制&lt;/a&gt;。今天这篇博文的目的是出一个结构供社区反馈提，因为提议的基金需要一些时间来建立，包括 veRev 机制。&lt;/p&gt;
 &lt;p&gt;This is going to be a long post, bear with it. Skip to “&lt;strong&gt;tl;dr — the Protocol Fund Structure&lt;/strong&gt;” for the most essential info.&lt;/p&gt;
 &lt;p&gt;这将是一个很长的帖子，请耐心等待。跳至“&lt;strong&gt;省流助手 — 协议基金结构&lt;/strong&gt;”了解最重要的信息。&lt;/p&gt;
 &lt;h1 id=&#34;uxd利益相关方-uxd-stakeholders&#34;&gt;UXD利益相关方 (UXD Stakeholders)&lt;/h1&gt;
 &lt;p&gt;For quite some time, UXD Protocol has noted that “the funding rate of the delta-neutral position will be automatically distributed to stakeholders of the UXD Protocol”.&lt;/p&gt;
-&lt;p&gt;相当长一段时间以来，UXD 协议已经注意到“delta 中性头寸的基金费率将自动分配给 UXD 协议的利益相关者”。&lt;/p&gt;
+&lt;p&gt;相当长一段时间以来，UXD 协议已经注意到“delta 中性头寸的资金费率将自动分配给 UXD 协议的利益相关者”。&lt;/p&gt;
 &lt;p&gt;First, a few definitions/reminders.&lt;br&gt;
 首先，一些定义/提醒。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;the “&lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-perpetual-future#funding-rates&#34;&gt;&lt;strong&gt;funding rate&lt;/strong&gt;&lt;/a&gt;” refers to the yield generated through UXD’s underlying &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-delta&#34;&gt;delta-neutral position&lt;/a&gt;, and is determined by the price of &lt;a href=&#34;https://docs.uxd.fi/uxdprotocol/overview/uxd-basics/whats-a-perpetual-future&#34;&gt;Perpetual Futures&lt;/a&gt; on exchanges such as Mango Markets. This yield can be positive or negative depending on market conditions.&lt;/p&gt;
-&lt;p&gt;“&lt;a href=&#34;https://chainguys.github.io/post/uxd-wen-dang-uxd-docs/#%E8%B5%84%E9%87%91%E8%B4%B9%E7%8E%87-funding-rates&#34;&gt;&lt;strong&gt;基金费率&lt;/strong&gt;&lt;/a&gt;”是指通过 UXD标定&lt;a href=&#34;https://chainguys.github.io/post/uxd-wen-dang-uxd-docs/#delta-%E4%B8%AD%E6%80%A7%E4%BD%8D%E7%BD%AE%E7%9A%84%E7%A8%B3%E5%AE%9A%E6%80%A7-stability-from-a-delta-neutral-position&#34;&gt;delta中性头寸&lt;/a&gt;产生的收益，由在Mango市场的&lt;a href=&#34;https://chainguys.github.io/post/uxd-wen-dang-uxd-docs/#%E4%BB%80%E4%B9%88%E6%98%AF%E6%B0%B8%E7%BB%AD%E5%90%88%E7%BA%A6%E6%9C%9F%E8%B4%A7-whats-a-perpetual-future&#34;&gt;永续期货合约&lt;/a&gt; 决定。根据市场情况，该收益可为正数或负数。&lt;/p&gt;
+&lt;p&gt;“&lt;a href=&#34;https://chainguys.github.io/post/uxd-wen-dang-uxd-docs/#%E8%B5%84%E9%87%91%E8%B4%B9%E7%8E%87-funding-rates&#34;&gt;&lt;strong&gt;资金费率&lt;/strong&gt;&lt;/a&gt;”是指通过 UXD标定&lt;a href=&#34;https://chainguys.github.io/post/uxd-wen-dang-uxd-docs/#delta-%E4%B8%AD%E6%80%A7%E4%BD%8D%E7%BD%AE%E7%9A%84%E7%A8%B3%E5%AE%9A%E6%80%A7-stability-from-a-delta-neutral-position&#34;&gt;delta中性头寸&lt;/a&gt;产生的收益，由在Mango市场的&lt;a href=&#34;https://chainguys.github.io/post/uxd-wen-dang-uxd-docs/#%E4%BB%80%E4%B9%88%E6%98%AF%E6%B0%B8%E7%BB%AD%E5%90%88%E7%BA%A6%E6%9C%9F%E8%B4%A7-whats-a-perpetual-future&#34;&gt;永续期货合约&lt;/a&gt; 决定。根据市场情况，该收益可为正数或负数。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Since funding rates can be a source of cash or an expense for UXD Protocol depending on if funding rates are positive or negative, UXD has an &lt;strong&gt;insurance fund,&lt;/strong&gt; capitalized with ~$57mm, which is used to pay negative funding rates when they occur.&lt;/p&gt;
-&lt;p&gt;由于基金费率可以是 UXD 协议的现金来源或费用，具体取决于基金费率是正数还是负数，因此 UXD 有一个&lt;strong&gt;保险基金&lt;/strong&gt;，资本约为 570万美元，用于支付负基金费率。&lt;/p&gt;
+&lt;p&gt;由于资金费率可以是 UXD 协议的现金来源或费用，具体取决于资金费率是正数还是负数，因此 UXD 有一个&lt;strong&gt;保险基金&lt;/strong&gt;，资本约为 570万美元，用于支付负资金费率。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;UXD Protocol “&lt;strong&gt;Stakeholders&lt;/strong&gt;” refers to UXP Governance Token Holders, UXD Stablecoin Holders, and the UXD Insurance Fund.&lt;/p&gt;
@@ -2525,7 +2525,7 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The insurance fund also generates yield through asset management strategies (stablecoin LP positions, lending, etc). The combination of the funding rate plus the yield from asset management strategies can be called the &lt;strong&gt;Protocol Yield.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;保险基金还通过资产管理策略（稳定币LP持仓、借贷等）产生收益。基金费率加上资产管理策略的收益的组合可以称为&lt;strong&gt;协议收益。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;保险基金还通过资产管理策略（稳定币LP持仓、借贷等）产生收益。资金费率加上资产管理策略的收益的组合可以称为&lt;strong&gt;协议收益。&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;With that in mind, the question to be answered is:&lt;br&gt;
@@ -2610,9 +2610,9 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;UXP Holders should receive some Protocol Yield when it is positive, but not pay Protocol Yield when it is negative (to the extent the insurance fund is still capitalized). However, there may be a penalty for negative yield resulting from Insurance Fund asset management strategies, in order to incentivize safe strategies for existing assets. In this way, UXP behaves like a rolling call option on the Protocol Yield. In order to align incentives (ensure that UXP holders do not mismanage the insurance fund due to the nature of this call option), the % of yield received by UXP stakers will depend on the overall health of the protocol (see Appendix).&lt;/p&gt;
-&lt;p&gt;UXP 持有者应该在协议收益为正时获得一些协议收益，但在协议收益为负时不支付协议收益（在保险基金仍资本化的范围内）。但是，保险基金资产管理策略导致的负收益可能会受到惩罚，从而来激励现有资产的安全策略。通过这种方式，UXP 的行为类似于协议收益的滚动看涨期权。为了调整激励措施（确保 UXP 持有者不会因为这个看涨期权的性质而对保险基金管理不善），UXP 质押者获得的收益百分比将取决于协议的整体健康状况（见附录）。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;UXP 持有者应该在协议收益为正时获得一些协议收益，但在协议收益为负时不支付协议收益（在保险基金仍资本化的范围内）。但是，保险基金资产管理策略导致的负收益可能会受到惩罚，从而来激励现有资产的安全策略。通过这种方式，UXP 的行为类似于协议收益的滚动看涨期权。为了调整激励措施（确保 UXP 持有者不会因为这个看涨期权的性质而对保险基金管理不善），UXP 质押者获得的收益百分比将取决于协议的整体健康状况（见附录）。&lt;/p&gt;
 &lt;h2 id=&#34;uxd-稳定币持有者-uxd-stablecoin-holders&#34;&gt;UXD 稳定币持有者 (UXD Stablecoin Holders)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -2639,7 +2639,7 @@ Neon EVM 解锁在 Neon 交易开始时被锁定的帐户。&lt;/p&gt;
 &lt;p&gt;应采取适当的保障措施，来确保UXP质押者社区做出的资产管理决策与协议和 UXD持有者保持一致。策略应该是低风险和深思熟虑的。风险策略应该是可否决的，负收益策略应该会带来一些惩罚。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;2. _UXP 质押者的收益应该从哪里来？(&lt;em&gt;Where&lt;/em&gt; should the yield to UXP stakers come from?&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. &lt;em&gt;UXP 质押者的收益应该从哪里来？&lt;/em&gt; (&lt;em&gt;Where&lt;/em&gt; should the yield to UXP stakers come from?&lt;/strong&gt;)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;As the stewards of UXD Protocol, UXP stakers should receive interest from both the delta-neutral position and the insurance fund yield strategies. The former can be interpreted as a “operations fee”, that allows the community to continue to operate, and the latter as an “asset management fee”. Longer term, UXP Stakers may be able to generate incremental yield through other services (for example, potentially through &lt;a href=&#34;https://docs.frax.finance/amo/frax-lending&#34;&gt;a lending AMO&lt;/a&gt;).&lt;/p&gt;
@@ -2705,45 +2705,45 @@ UXP质押者将使用 veRev 收益分配模型为 veUXP 质押并获得收益。
 &lt;h1 id=&#34;附录技术规格-appendix-technical-specs&#34;&gt;附录：技术规格 (Appendix: Technical Specs)&lt;/h1&gt;
 &lt;p&gt;As defined above, Protocol Yield (r) will be a combination of asset management strategy yield (r_I) and Delta-Neutral yield (r_DN):&lt;/p&gt;
 &lt;p&gt;如上所述，协议收益率 (r) 将是资产管理策略收益率 (r_I) 和 Delta-Neutral 收益率 (r_DN) 的组合：&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/432/1*f5o64WcLfJ5MZEA8BBzrHw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/432/1*f5o64WcLfJ5MZEA8BBzrHw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;Yield split between UXP stakers pro-rata and the insurance fund will be a function of the overall health of the protocol at a given time, known as the Health Ratio at time t:&lt;/p&gt;
 &lt;p&gt;UXP 质押者和保险基金之间按比例分配的收益将是给定时间内协议的整体健康状况之函数，称为时间 t 的健康比率：&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*yj3nlHXizyMs1aR6&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*yj3nlHXizyMs1aR6&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;The &lt;strong&gt;Health&lt;/strong&gt; of the protocol will be a moving average of the Health Ratio for the past n blocks:&lt;/p&gt;
 &lt;p&gt;协议的&lt;strong&gt;健康(值)&lt;/strong&gt; 将是过去 n 个区块的健康比率的移动平均值：&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*L6smmbOcPN67qLz4&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*L6smmbOcPN67qLz4&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;Using historical data, we can calculate a “Value At Risk” Health, which represents the Health value which would cause the protocol to stay solvent in ≥90% of historical scenarios (meaning if UXD protocol began on a random date in the historical data, the probability of bankruptcy is ≤10%.) Note this is the initial parameter chosen and may be subject to change.&lt;/p&gt;
 &lt;p&gt;使用历史数据，我们可以计算出“风险价值”的健康值，它表示在 ≥90% 的历史场景中，会导致协议保持偿付能力的健康值（意味着如果 UXD 协议在历史数据中的随机日期开始，破产概率≤10%。）请注意，这是选择的初始参数，后续可能会发生变化。&lt;/p&gt;
 &lt;p&gt;Call this value&lt;br&gt;
 调用这个值&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/288/1*Jpoe6eZbJeU3WpCUI3HjkQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/288/1*Jpoe6eZbJeU3WpCUI3HjkQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;(本质上这就是上面文章的“目标健康率” essentially this is the “Target Health Ratio” above in the article).&lt;/p&gt;
 &lt;p&gt;The yield split between UXP holders and the insurance fund is then given by a logistic function:&lt;/p&gt;
 &lt;p&gt;UXP持有者和保险基金之间的收益分配之后由逻辑函数给出：&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*V2kI-EGqKGnW50KJ&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*V2kI-EGqKGnW50KJ&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;Where r is the total yield generated by the protocol as above and k is a parameter that can be chosen by governance, but must fall in the range:&lt;/p&gt;
 &lt;p&gt;其中 r 是上述协议产生的总收益，k 是可以由治理选择的参数，但必须在以下范围内：&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/720/1*Ecb3ciPv3Wz7dlVpiZY1sA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/720/1*Ecb3ciPv3Wz7dlVpiZY1sA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;which was chosen so that&lt;br&gt;
 为了满足以下条件而选择&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;8&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*yJWUhkXX-fROZB_q&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*yJWUhkXX-fROZB_q&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;and&lt;br&gt;
 和&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;9&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*IonM4Q_yjDQAT4P0&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;8&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*IonM4Q_yjDQAT4P0&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;which means that k is set such that UXP holders can get 75% of the yield at the quickest if Health_t = 1.05Health* (i.e. current health is 5% above target health), and UXP holders can get 75% of the yield at the slowest if Health_t = 1.50Health* (i.e. current health is 50% above target health).&lt;/p&gt;
 &lt;p&gt;这意味着设置 k 使得如果 Health_t = 1.05Health*（即当前健康值比目标健康值高出 5%），UXP 持有者可以最快获得 75% 的收益。而如果 Health_t = 1.50Health*（即当前生命值比目标生命值高 50%），UXP 持有者则以最慢的速度获得75%的收益。&lt;/p&gt;
 &lt;p&gt;Indeed the parameter k governs the steepness of the logistic function around Health* (and so can be interpreted as the risk adversity of the UXP stakers, higher k means more risk and more reward, lower k means lower risk and lower reward)&lt;/p&gt;
 &lt;p&gt;实际上，参数 k 控制着围绕 Health* 的逻辑函数的平滑度/斜率/陡度（因此可以解释为 UXP 质押者的风险处境，较高的 k 意味着更多的风险和更多的回报，较低的 k 意味着更低的风险和更低的回报）&lt;/p&gt;
 &lt;p&gt;For example, the below is a family of logistic functions with Health* = 1 and k in the above range. The idea is that a larger k is beneficial when the protocol is in favorable health (Health_t above Health*), and highly detrimental when the protocol is in bad health (Health_t below Health*), as the yield decays to zero quickly. The two red curves are the bounds of the family of curves (k at endpoint value of ln(9) and 20ln(3))&lt;/p&gt;
 &lt;p&gt;例如，下面是一系列逻辑函数，其中 Health* = 1 且 k 在上述范围内。这个想法是，当协议健康状况良好（Health_t 高于 Health*）时，较大的 k 是有益的，而当协议健康状况不佳时（Health_t 低于 Health*）则非常有害，因为收益率会迅速衰减到零。两条红色曲线是曲线族的边界（在 ln(9) 和 20ln(3) 的端点值处的 k）&lt;/p&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;10&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*WcXM985KwG61QkoI&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;9&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*WcXM985KwG61QkoI&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;Note that, the yield split is always 50% at the Health* optimal value, and increases with varying slope from there.&lt;/p&gt;
 &lt;p&gt;请注意，在 Health* 最佳值下，收益分配始终为 50%，并随着斜率的变化而增加。&lt;/p&gt;
 &lt;p&gt;“k” will be allowed to be changed only once per quarter (subject to change in periodicity), so that there isn’t abuse of the governance system.&lt;/p&gt;
 &lt;p&gt;“k”将被允许每季度仅更改一次（可能会定期更改），以免治理系统被滥用。&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note the final functional form of the yield split will likely include a non-continuous drop-off in yield split if Health is below 100% (the entire protocol is undercollateralized), likely to zero.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;请注意，如果 Health 低于 100%（整个协议的抵押不足），收益率拆分的最终功能形式可能包括收益率拆分的非连续下降，甚至可能为零。&lt;/p&gt;
-">UXD协议资金结构  (UXD Protocol Fund Structure)</a>
+">UXD协议基金结构  (UXD Protocol Fund Structure)</a>
       </div>
       
       <div class="item">
