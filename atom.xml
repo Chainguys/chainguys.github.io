@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-05-27T14:18:28.296Z</updated>
+    <updated>2022-06-04T12:54:27.873Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,115 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Euler来信-五月总结2 (Euler Newsletter May Summary-2)]]></title>
+        <id>https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-2-euler-newsletter-may-summary-2/</id>
+        <link href="https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-2-euler-newsletter-may-summary-2/">
+        </link>
+        <updated>2022-06-04T12:48:45.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="让我们一起回顾过去几周都发生了什么lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么！(Let's recap what has happened over the past few weeks!)</h3>
+<p>If you read the last <a href="https://newsletter.euler.finance/p/20may22?s=w">newsletter</a>, you’ll know we have been quite busy over the last month, so here’s a summary of all our other major events in May!</p>
+<p>如果您阅读了上一期的<a href="https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-euler-newsletter-may-summary/">Euler来信</a>，您就会知道我们在过去的一个月里一直很忙，所以请来看看我们 5 月份所有其他重大事件的摘要吧！</p>
+<p><a href="https://twitter.com/MacroMate8/status/1529849406853263360">eIP7</a> passed, MATIC is now a collateral asset.<br>
+<a href="https://twitter.com/MacroMate8/status/1529849406853263360">eIP7</a>  通过，MATIC 现在已经成为抵押资产。</p>
+<p>Euler has <a href="https://twitter.com/eulerfinance/status/1532378126294073344">integrated</a> with Zapper.<br>
+Euler 已与 Zapper <a href="https://twitter.com/eulerfinance/status/1532378126294073344">集成</a>。</p>
+<p>The <a href="https://twitter.com/eulerfinance/status/1532005249988407301">EulerDAO</a> and on-chain governance will be going live soon, while the details of the <a href="https://blog.euler.finance/eulerdao-launch-phases-2a154837b908">launch phases</a> have been published.</p>
+<p><a href="https://twitter.com/eulerfinance/status/1532005249988407301">EulerDAO</a> 和链上治理将很快上线，同时<a href="https://chainguys.github.io/post/eulerdao-qi-dong-ge-jie-duan-jie-shao-eulerdao-launch-phases">发布阶段</a>的详细信息已经公布。</p>
+<p>The <a href="https://twitter.com/eulerfinance/status/1527688111873880064">Euler Features</a> education series continues with an article overview.</p>
+<p><a href="https://twitter.com/eulerfinance/status/1527688111873880064">Euler Features</a> 教育系列继续提供文章概述。</p>
+<p>A new <a href="https://twitter.com/eulerfinance/status/1529475124553912320">user guide</a> education series kicked off with an overview of Euler's UI, with more in-depth content yet to come.</p>
+<p>一个新的<a href="https://twitter.com/eulerfinance/status/1529475124553912320">用户指南</a>教育系列已从对 Euler 的 UI 的概述开始，还会有更深入的内容。</p>
+<p>altooptimo.eth updated an excellent <a href="https://twitter.com/eulerfinance/status/1529070599598837761">Dune dashboard</a> for various Euler metrics.</p>
+<p>altooptimo.eth 为Euler各种指标更新了一个出色的<a href="https://twitter.com/eulerfinance/status/1529070599598837761">Dune仪表盘</a>。</p>
+<p>A new front-end update has changed some UI sections and added a disclaimer to the dApp, so users can be more aware of the terms of use.</p>
+<p>新的前端更新了一些部分的UI,并在 dApp 中添加了免责声明，因此用户可以更了解使用条款。</p>
+<p>The Euler Canny page for feedback is being replaced with <a href="https://github.com/orgs/euler-xyz/discussions">GitHub Discussions</a></p>
+<p>用于反馈的 Euler Canny 页面正在被<a href="https://github.com/orgs/euler-xyz/discussions">GitHub Discussions</a> 取代。</p>
+<p><a href="https://twitter.com/Chainguys">@Chainguys</a> has <a href="https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/">translated</a> the Euler white paper and many other published articles into Chinese. 谢谢你！</p>
+<p><a href="https://twitter.com/Chainguys">@Chainguys</a> 已将Euler白皮书和许多其他已发表的文章<a href="https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/">翻译</a>成中文。谢谢你！</p>
+<p>Seraphim wrote about <a href="https://twitter.com/MacroMate8/status/1531293562796576769">stress testing</a> of the Uniswap TWAPs during the recent market volatility, and also about Euler’s attracted <a href="https://twitter.com/MacroMate8/status/1529200959888367616">liquidation bonus</a> compared to other protocols. The latest <a href="https://twitter.com/aztecnetwork/status/1532741131523571713">DeFi 2.71 podcast</a> interview discussed privacy layer protocol Aztec with cofounder Joe Andrews.</p>
+<p>Seraphim 在近期市场波动期间写了Uniswap TWAP 的 <a href="https://twitter.com/MacroMate8/status/1531293562796576769">压力测试</a>，以及与其他歇息相比，Eule令人感到吸引的 [清算奖金](https://twitter.com/ MacroMate8/status/1529200959888367616）与其他协议相比。最新的 <a href="https://twitter.com/aztecnetwork/status/1532741131523571713">DeFi 2.71 播客</a> 。最新的 <a href="https://twitter.com/aztecnetwork/status/1532741131523571713">DeFi 2.71 播客</a> 采访与联合创始人 Joe Andrews 讨论了隐私层协议 Aztec。</p>
+<p>Euler currently has a total supply of $292.65M with TVL of $87.9M and $204.75M in total borrowed, while the reserves have <a href="https://twitter.com/eulerfinance/status/1523710185201561600">increased</a> to $703.32k. There are 3,748 lenders and 722 borrowers over 60 markets.</p>
+<p>Euler 目前的总供应量为 2.9265 亿美元，TVL 为 8790 万美元，借款总额为 2.0475 亿美元，而储备金<a href="https://twitter.com/eulerfinance/status/1523710185201561600">增加</a> 至 703.32 万美元。超过 60 个市场，有 3,748 名出借方和 722 名借款人。</p>
+<h2 id="其他内容-in-other-news">其他内容 (In Other News)</h2>
+<p>Meet the team at Consensus in Austin, Texas next week from 9-12 June.</p>
+<p>下周 6 月 9 日至 12 日，在德克萨斯州奥斯汀的 Consensus 与团队会面。</p>
+<p>If you're in Germany, join Michael at the inaugural <a href="https://twitter.com/euler_mab/status/1494075904154349573">Blockchain Oracle Summit</a> in Berlin on 7-9 June.</p>
+<p>如果您在德国，请与迈克尔一起参加 6 月 7 日至 9 日在柏林举行的首届<a href="https://twitter.com/euler_mab/status/1494075904154349573">区块链甲骨文峰会</a> 。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[EulerDAO启动各阶段介绍 (EulerDAO Launch Phases)]]></title>
+        <id>https://chainguys.github.io/post/eulerdao-qi-dong-ge-jie-duan-jie-shao-eulerdao-launch-phases/</id>
+        <link href="https://chainguys.github.io/post/eulerdao-qi-dong-ge-jie-duan-jie-shao-eulerdao-launch-phases/">
+        </link>
+        <updated>2022-06-03T12:12:09.000Z</updated>
+        <content type="html"><![CDATA[<p><em>Learn more about the plans to launch the EulerDAO and participate in the governance process.</em><br>
+<em>详细了解EulerDAO启动并参与治理过程的计划。</em></p>
+<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*D0n8MzqmozLAZ4EVX4eY8w.png" alt="" loading="lazy"></figure>
+<hr>
+<p>EulerDAO will kick off in three phases for a guarded launch towards full decentralisation of the Euler protocol. Each phase is described below.</p>
+<p>EulerDAO 将分三个阶段来安全启动，进而将Euler 协议推向完全去中心化。每个阶段如下所述。</p>
+<p>The EulerDAO uses the OpenZeppelin Governor smart contracts (version 4.6.0) for governance (as well as the EUL token contract). It is a governance protocol — similar to the one Compound uses — where delegates vote on active proposals to make changes to the EulerDAO and Euler protocol.</p>
+<p>EulerDAO 使用 OpenZeppelin Governor 智能合约（4.6.0 版）进行治理（EUL 代币合约也是）。这是一种治理协议——类似Compound使用的协议——代表们对活动的提案进行投票，从而对 EulerDAO 和 Euler 协议进行更改。</p>
+<p>Euler uses the Tally governance dashboard application to manage the governance process. Through Tally, you can set up your wallet to become a delegate, create on-chain proposals, vote on active proposals, discover delegates in the community, and delegate your voting power to a community member.</p>
+<p>Euler 使用 Tally 治理仪表盘应用来管理治理过程。通过Tally，您可以设置您的钱包成为代表，创建链上提案，对活跃提案进行投票，或者在社区中发现代表，并将您的投票权委托给社区成员。</p>
+<h1 id="第1阶段-phase-1">第1阶段 (Phase 1)</h1>
+<p>The first phase of the launch will be such that actions to be performed directly on the Euler protocol smart contracts will be executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target a function in a stub smart contract (in place of the Euler protocol smart contracts).</p>
+<p>启动的第一阶段将由 Euler 团队代表社区，直接执行在 Euler 协议智能合约上的操作。在这种情况下，所有链上治理提案都将指向或针对樁(又译为“桩”，是指用来替换一部分功能的程序段)智能合约中的功能（代替Euler协议智能合约）。</p>
+<p>Should the proposal become successful and executed, the target function will then be executed (via the TimelockController controller smart contract). It will emit the proposal description string and proposal transaction data, which will then be validated by the Euler team and executed against the Exec module via the Euler multisig.</p>
+<p>如果提案成功并被执行，目标函数将被执行（通过 TimelockController 控制器智能合约）。它将发出描述提案的字符串和提案交易数据，然后由 Euler 团队验证并通过 Euler 多重签名针对 Exec 模块执行。</p>
+<p>Hence, the governorOnly() modifier in the Euler Governance module smart contract will be checking that the caller of its functions is the Euler mulisig and not the TimelockController smart contract.</p>
+<p>因此，Euler 治理模块智能合约中的 GovernorOnly() 修改器，将检查其函数的调用者是否为 Euler mulisig(而不应该是 TimelockController 智能合约）。</p>
+<p>To create the proposal transaction data, a <a href="https://governance.euler.finance/">tool</a> has been implemented which will help the proposer to auto-generate this depending on what actions should be executed. The proposer can select a token from the dropdown token list (this will autopopulate the fields with the current configuration for the token/market on Euler).</p>
+<p>为了创建提案交易数据，我们发布了一个 <a href="https://governance.euler.finance/">工具</a>，这将帮助提案者根据应执行的操作自动生成此数据。提议者可以从下拉代币列表中选择一个代币（这将使用 Euler 上代币/市场的当前配置，自动填充字段）。</p>
+<p>The proposer can then make modifications and generate the proposal transaction hex to be executed via the Euler Exec module (batchDispatch() function) and use this hex data as the input to the target function in the stub smart contract when creating a proposal on Tally.</p>
+<p>然后，提议者可以进行修改，并生成通过 Euler Exec 模块（batchDispatch() 函数）执行的提议交易十六进制信息，并于Tally上创建提议时，使用此十六进制数据作为樁智能合约中，目标函数的输入项。</p>
+<p>Examples of the kinds of decisions token holders might vote on include proposals to modify:</p>
+<p>代币持有者可能投票的决策类型示例，包括可以修改以下内容的提案：</p>
+<ul>
+<li>
+<p>The tier of an asset<br>
+资产的层级</p>
+</li>
+<li>
+<p>Collateral and borrow factors<br>
+抵押和借贷因子</p>
+</li>
+<li>
+<p>Price oracle parameters<br>
+价格预言机参数</p>
+</li>
+<li>
+<p>Reactive interest rate model parameters<br>
+回应性利率模型参数</p>
+</li>
+<li>
+<p>Reserve factors<br>
+储备因素</p>
+</li>
+</ul>
+<h1 id="第2阶段-phase-2">第2阶段 (Phase 2)</h1>
+<p>In the second phase, the governor admin for the Euler Governance module will switch from the Euler multisig to the TimelockController smart contract. Hence, the governorOnly() modifier in the Euler Governance module smart contract will be checking that the caller of its functions is the TimelockController smart contract.</p>
+<p>在第2阶段，Euler治理模块治理者的管理员将从 Euler 多重签名切，换到 TimelockController 智能合约。因此，Euler治理模块智能合约中的 GovernorOnly() 修改器将检查其函数的调用者是否为 TimelockController 智能合约。</p>
+<p>In this case, proposals created via the Tally governance dashboard will need to target the Euler <a href="https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol">Governance module</a> directly. Successful proposals which receive a higher number of votes in support will then be executed without the control of the Euler team.</p>
+<p>在这种情况下，通过 Tally 治理仪表盘创建的提案需要直接针对 Euler <a href="https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol">治理模块</a>。获得更高票数支持的成功提案，会在没有Euler团队控制的情况下执行。</p>
+<p>During execution, the TimelockController smart contract will call the target function in the Euler Governance module as specified within the on-chain proposal. Proposers will be able to add a batch of actions / functions to be executed within the Euler Governance module into a single on-chain proposal as well.</p>
+<p>在执行期间，TimelockController 智能合约将调用链上提案中指定的 Euler 治理模块中的目标功能。提议者也可以把在 Euler 治理模块中执行的批处理操作/功能添加到单个链上提议中。</p>
+<h1 id="第3阶段-phase-3">第3阶段 (Phase 3)</h1>
+<p>In this phase, the Installer Admin will also be switched to the TimelockController smart contract.</p>
+<p>在这个阶段，负责安装的管理员(Installer Admin)也将切换到 TimelockController 智能合约。</p>
+<p>Not only giving the community control over the Governance module for asset configuration modifications but also full control over the protocol including the installer module. This module is used to bootstrap install the rest of the modules, and can later on be used to upgrade modules to add new features and/or fix bugs.</p>
+<p>这些不仅让社区能为资产配置修改而掌控治理模块，还可以完全控制包括安装模块在内的协议。安装模块用于引导安装其余模块，稍后可用于升级其他模块来添加新功能和/或修复错误。</p>
+<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
+<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
+<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
+<h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
+<p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
+<p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Euler用户手册 (Euler User Guide)]]></title>
         <id>https://chainguys.github.io/post/euler-yong-hu-shou-ce-euler-user-guide/</id>
@@ -678,73 +787,6 @@ const eagEurAddr = e
 <h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
 <p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
 <p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Euler中文材料合集-不断更新中(Euler Chinese Materials-Updating)]]></title>
-        <id>https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/</id>
-        <link href="https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/">
-        </link>
-        <updated>2022-05-10T04:23:01.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.euler.finance/static/media/Euler-animation.399c7e5b.gif" alt="" loading="lazy"></figure>
-<h1 id="1项目进展-euler来信project-update-euler-newletter">1.项目进展-Euler来信(Project update-Euler Newletter)</h1>
-<h2 id="euler来信-五月总结euler-newsletter-may-summary"><a href="https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-euler-newsletter-may-summary/">Euler来信-五月总结(Euler Newsletter May Summary)</a></h2>
-<h2 id="euler-sdk来啦announcing-the-euler-sdk"><a href="https://chainguys.github.io/post/euler-sdk-lai-la-announcing-the-euler-sdk/">Euler SDK来啦！(Announcing the Euler SDK)</a></h2>
-<h2 id="euler-dapp新功能来啦announcing-new-features-of-euler-dapp"><a href="https://chainguys.github.io/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/">Euler dapp新功能来啦！(Announcing new features of Euler dapp)</a></h2>
-<h2 id="euler来信-四月总结euler-newsletter-april-summary"><a href="https://chainguys.github.io/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/">Euler来信-四月总结(Euler Newsletter April Summary)</a></h2>
-<h2 id="euler来信-三月总结euler-newsletter-march-summary"><a href="https://chainguys.github.io/post/euler-lai-xin-san-yue-zong-jie-euler-newsletter-march-summary/">Euler来信-三月总结(Euler Newsletter March Summary)</a></h2>
-<h1 id="2白皮书和官方文档whitepaper-and-official-docs">2.白皮书和官方文档(Whitepaper and Official Docs)：</h1>
-<h2 id="白皮书-whitepaper"><a href="https://docs.euler.finance/languages/white-paper-eng-chn">白皮书 whitepaper</a></h2>
-<h2 id="官方文档-official-docs"><a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/">官方文档 official docs</a></h2>
-<h1 id="3官方博客翻译-official-blogs-translated-into-chinese">3.官方博客翻译 (Official Blogs Translated into Chinese)</h1>
-<h2 id="euler简介-introducing-euler"><a href="https://chainguys.github.io/post/euler-jian-jie-introducing-euler/">Euler简介 (Introducing Euler)</a></h2>
-<h2 id="价格和预言机prices-and-oracles"><a href="https://chainguys.github.io/post/jie-ge-he-yu-yan-ji-prices-and-oracles/">价格和预言机(Prices and oracles)</a></h2>
-<h2 id="移动平均数如何过滤-moving-average-filters"><a href="https://chainguys.github.io/post/yi-dong-ping-jun-shu-ru-he-guo-lu-moving-average-filters/">移动平均数如何过滤 (Moving average filters)</a></h2>
-<h2 id="defi轧空-defi-short-squeeze"><a href="https://chainguys.github.io/post/defi-ya-kong-defi-short-squeeze/">DeFi轧空 (DeFi Short Squeeze)</a></h2>
-<h2 id="用hardhat在erc20合约中强行发现存储结构-brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat"><a href="https://chainguys.github.io/post/yong-hardhat-zai-erc20-he-yue-zhong-qiang-xing-fa-xian-cun-chu-jie-gou-brute-force-storage-layout-discovery-in-erc20-contracts-with-hardhat/">用Hardhat在ERC20合约中强行发现存储结构 (Brute Force Storage Layout Discovery in ERC20 Contracts With Hardhat)</a></h2>
-<h2 id="加密市场的风险从一个借贷协议的角度-risks-in-crypto-a-lending-protocol-perspective"><a href="https://chainguys.github.io/post/jia-mi-shi-chang-de-feng-xian-cong-yi-ge-jie-dai-xie-yi-de-jiao-du-risks-in-crypto-a-lending-protocol-perspective/">加密市场的风险—从一个借贷协议的角度 (Risks in Crypto — a Lending Protocol Perspective)</a></h2>
-<h2 id="euler的预言机风险评分系统-eulers-oracle-risk-grading-system"><a href="https://chainguys.github.io/post/euler-de-yu-yan-ji-feng-xian-ping-fen-xi-tong-eulers-oracle-risk-grading-system/">Euler的预言机风险评分系统 (Euler’s Oracle Risk Grading System)</a></h2>
-<h2 id="euler推出100万美元的-immunefi-漏洞赏金计划euler-launches-1m-immunefi-bug-bounty-programme"><a href="https://chainguys.github.io/post/euler-tui-chu-100-wan-mei-yuan-de-immunefi-lou-dong-shang-jin-ji-hua-euler-launches-dollar1m-immunefi-bug-bounty-programme">Euler推出100万美元的 ImmuneFi 漏洞赏金计划!(Euler launches $1M ImmuneFi Bug Bounty Programme!)</a></h2>
-<h2 id="euler治理论坛发布了-announcing-euler-governance-forum"><a href="https://chainguys.github.io/post/euler-zhi-li-lun-tan-fa-bu-liao-announcing-euler-governance-forum/">Euler治理论坛发布了! (Announcing Euler Governance Forum)</a></h2>
-<h2 id="uniswap预言机攻击模拟器-uniswap-oracle-attack-simulator"><a href="https://chainguys.github.io/post/uniswap-yu-yan-ji-gong-ji-mo-ni-qi-uniswap-oracle-attack-simulator">Uniswap预言机攻击模拟器 (Uniswap Oracle Attack Simulator )</a></h2>
-<h2 id="shippooordao提供的euler-dune分析仪表板-eulers-dune-analytics-dashboard-by-shippooordao"><a href="https://chainguys.github.io/post/shippooordao-ti-gong-de-euler-dune-fen-xi-yi-biao-ban-eulers-dune-analytics-dashboard-by-shippooordao">ShippooorDAO提供的Euler Dune分析仪表板 (Euler’s Dune Analytics Dashboard by ShippooorDAO)</a></h2>
-<h2 id="euler-finance借贷市场风险管理的新方法-euler-financea-fresh-approach-to-risk-management-in-lending-and-borrowing-markets"><a href="https://chainguys.github.io/post/euler-financejie-dai-shi-chang-feng-xian-guan-li-de-xin-fang-fa-euler-financea-fresh-approach-to-risk-management-in-lending-and-borrowing-markets">Euler Finance：借贷市场风险管理的新方法 (Euler Finance：A Fresh Approach to Risk Management in Lending and Borrowing Markets）</a></h2>
-<h2 id="积分的意义何在whats-the-point-in-points"><a href="https://chainguys.github.io/post/ji-fen-de-yi-yi-he-zai-whats-the-point-in-points">积分的意义何在？(What’s the point in points?)</a></h2>
-<h2 id="euler测试网使用手册-euler-testnet-guide"><a href="https://chainguys.github.io/post/euler-ce-shi-wang-shi-yong-shou-ce-euler-testnet-guide">EULER测试网使用手册 (EULER  TESTNET GUIDE)</a></h2>
-<h2 id="euler-faq中英双语版eng-chn"><a href="https://chainguys.github.io/post/euler-faq-zhong-ying-shuang-yu-ban-eng-chn/">Euler FAQ中英双语版(ENG-CHN)</a></h2>
-<h2 id="euler颠覆市场的突破性方法-eulers-approach-to-distrupting-the-incumbents"><a href="https://chainguys.github.io/post/euler-dian-fu-shi-chang-de-tu-po-xing-fang-fa-eulers-approach-to-distrupting-the-incumbents">Euler颠覆市场的突破性方法 (Euler’s Approach to Distrupting the Incumbents)</a></h2>
-<h2 id="euler用户手册准备开始-euler-user-guidegetting-started"><a href="https://chainguys.github.io/post/euler-yong-hu-shou-ce-zhun-bei-kai-shi-euler-user-guidegetting-started">Euler用户手册：准备开始 (Euler User Guide：Getting Started)</a></h2>
-<h2 id="euler用户手册-euler-user-guide"><a href="https://chainguys.github.io/post/euler-yong-hu-shou-ce-euler-user-guide">Euler用户手册 (Euler User Guide)</a></h2>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Euler来信-四月总结(Euler Newsletter April Summary)]]></title>
-        <id>https://chainguys.github.io/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/</id>
-        <link href="https://chainguys.github.io/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/">
-        </link>
-        <updated>2022-05-06T12:09:06.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="euler-更新-2022年4月20号-euler-update-20-apr-2022">Euler 更新 [2022年4月20号] Euler Update [20 Apr 2022]</h1>
-<p>原文:<a href="https://newsletter.euler.finance/p/20april22?s=r">https://newsletter.euler.finance/p/20april22?s=r</a></p>
-<h3 id="让我们一起回顾过去几周都发生了什么lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么！(Let's recap what has happened over the past few weeks!)</h3>
-<h1 id="紧追潮流-keep-up-to-date">紧追潮流 (Keep up to Date!)</h1>
-<p><a href="https://newsletter.euler.finance/p/march2022-recap?s=w">March</a> was an eventful month for the Euler team, so keep up to date on our latest progress and events recently below.</p>
-<p><a href="https://newsletter.euler.finance/p/march2022-recap?s=w">3 月</a> 对于 Euler 团队来说是一个活动满满的月份，因此请在下方了解我们最新进展和活动。</p>
-<p>Euler reached a new <a href="https://twitter.com/eulerfinance/status/1509875301949485063">milestone</a> with over $100M in TVL! We’ve had increases in borrowing as shown by <a href="https://twitter.com/tokenterminal/status/1511061146614304776">Token Terminal</a>, while we were #1 of the top 10 DApps by 30d revenue growth according to <a href="https://twitter.com/CryptoRank_io/status/1514912163713802240">CryptoRank</a>.</p>
-<p>Euler达到了一个新的<a href="https://twitter.com/eulerfinance/status/1509875301949485063">里程碑</a>，TVL 超过 1 亿美元！正如 <a href="https://twitter.com/tokenterminal/status/1511061146614304776">Token Terminal</a> 所示，我们的借入有所增加，而根据 <a href="https://twitter.com/CryptoRank_io/status/1514912163713802240">CryptoRank</a>，我们在 30 天收入增长的前 10 大 DApp 中排名第一。</p>
-<p>The devs made infrastructure changes to the main landing page and added some great new <a href="https://twitter.com/eulerfinance/status/1511782605040996352">features</a> including the ‘MINE’ function where users can use leverage. We also plan to launch a new metric, “<a href="https://twitter.com/euler_mab/status/1511653199220031489">time to liquidation</a>” for users to keep track of liquidation risk from interest rates while leverage borrowing.</p>
-<p>开发人员对主登录页面进行了基础架构更改，并添加了一些很棒的新<a href="https://twitter.com/eulerfinance/status/1511782605040996352">功能</a>，包括用户可以使用杠杆的“MINE(挖矿)”功能。我们还计划推出一个新指标“<a href="https://twitter.com/euler_mab/status/1511653199220031489">清算时间</a>”，让用户在杠杆借贷的同时跟踪利率的清算风险。</p>
-<p>We’ve had more activity in the <a href="https://forum.euler.finance/">governance forums</a>, where <a href="https://forum.euler.finance/t/eip-8-contract-bugfixes/120">eIP8</a> will fix some minor bugs in the smart contracts and another <a href="https://forum.euler.finance/t/changing-ageur-oracle-from-eth-ageur-30bp-to-eth-ageur-5bp/122">proposal</a> will readjust agEUR’s oracle. The Angle team also <a href="https://twitter.com/AngleProtocol/status/1513773659181232128">minted</a> $1M agEUR on Euler.</p>
-<p>我们在 <a href="https://forum.euler.finance/">治理论坛</a> 中进行了更多活动，其中 <a href="https://forum.euler.finance/t/eip-8-contract-bugfixes/120">eIP8</a>将修复智能合约中的一些小错误和另一个<a href="https://forum.euler.finance/t/changed-ageur-oracle-from-eth-ageur-30bp-to-eth-ageur-5bp/122">提案</a> 将修复一些智能合约的小bug,另一项<a href="https://forum.euler.finance/t/changing-ageur-oracle-from-eth-ageur-30bp-to-eth-ageur-5bp/122">提案</a>会重新调整 agEUR 的预言机。 Angle 团队还在 Euler 上 <a href="https://twitter.com/AngleProtocol/status/1513773659181232128">铸币</a> 100 万美元的agEUR。</p>
-<p>Token Terminal released the fourth post in their research series, with the latest <a href="https://twitter.com/eulerfinance/status/1514634620632928262">article</a> focusing on Euler. Ape Board also <a href="https://twitter.com/ape_board/status/1509558638289068035">announced</a> Euler is supported on their platform.</p>
-<p>Token Terminal 发布了他们研究系列的第四篇文章，最新的<a href="https://twitter.com/eulerfinance/status/1514634620632928262">文章</a> 专注于Euler。 Ape Board 还 <a href="https://twitter.com/ape_board/status/1509558638289068035">宣布</a> 他们的平台支持 Euler。</p>
-<p>Looking for some big brain reads? Michael wrote a thread on how Euler is the most <a href="https://twitter.com/euler_mab/status/1509484799379091457?">advanced</a> liquidity protocol and detailed issues on <a href="https://twitter.com/euler_mab/status/1513849394394767360">bad debt</a> and bank runs. Seraphim reminded users the importance of <a href="https://twitter.com/MacroMate8/status/1514906441244676096">oracles</a> and examined how <a href="https://twitter.com/eulerfinance/status/1514325055425040384">borrowing</a> oSQTH became more efficient on Euler.</p>
-<p>寻找一些烧脑读物？迈克尔写了一篇关于Euler为何是最<a href="https://twitter.com/euler_mab/status/1509484799379091457?">先进</a> 的流动性协议和关于<a href="https://twitter.com/euler_mab/status/1513849394394767360">坏账</a> 和银行挤兑的详细问题的帖子。 Seraphim 提醒用户 <a href="https://twitter.com/MacroMate8/status/1514906441244676096">预言机</a> 的重要性，并检查 <a href="https://twitter.com/eulerfinance/status/1514325055425040384">借入</a> oSQTH 如何在Euler更为效率。</p>
-<p>The team had a blast at PBWS, where Michael was a <a href="https://twitter.com/eulerfinance/status/1514599796195016712">speaker</a> on risk management. Michael was also interviewed on the <a href="https://twitter.com/eulerfinance/status/1513717518271057924">BlockHash</a> podcast and the <a href="https://twitter.com/knycksutherland/status/1511703480221773830">KickBlocks</a> podcast.</p>
-<p>Euler团队在 PBWS 上大放异彩，Michael 是风险管理方面的 <a href="https://twitter.com/eulerfinance/status/1514599796195016712">演讲者</a>。 Michael 还接受了 <a href="https://twitter.com/eulerfinance/status/1513717518271057924">BlockHash</a> 播客和 <a href="https://twitter.com/knycksutherland/status/1511703480221773830">KickBlocks</a> 播客的采访。</p>
-<p>Meanwhile, Seraphim was interviewed in <a href="https://twitter.com/eulerfinance/status/1510091127336013824">eFinancialCareers</a> and will be attending <a href="https://twitter.com/CryptoCanal/status/1511041954624286727">Devconnect</a> in Amsterdam on 25th April.</p>
-<p>同时，Seraphim 接受了 <a href="https://twitter.com/eulerfinance/status/1510091127336013824">eFinancialCareers</a> 的采访，并将于 25 日在阿姆斯特丹参加 <a href="https://twitter.com/CryptoCanal/status/1511041954624286727">Devconnect</a>。</p>
-<p>We currently have a total supply of $421.71M with TVL of $108.95M and $312.76M in total borrowed. Several new markets including <a href="https://twitter.com/eulerfinance/status/1509923564891246595">DPI</a> were activated, while our reserves have increased to $391.64K.</p>
-<p>我们目前的总供应量为 4.2171 亿美元，TVL 为 1.0895 亿美元，借款总额为 3.1276亿美元。包括 <a href="https://twitter.com/eulerfinance/status/1509923564891246595">DPI</a> 在内的几个新市场已启动，而我们的储备金已增加到 391.64 万美元。</p>
 ]]></content>
     </entry>
 </feed>
