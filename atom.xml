@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-06-03T07:44:37.099Z</updated>
+    <updated>2022-05-27T14:18:28.296Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://chainguys.github.io"/>
+    <link rel="self" href="https://chainguys.github.io/atom.xml"/>
     <subtitle>A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://chainguys.github.io/images/avatar.png</logo>
+    <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
     <entry>
         <title type="html"><![CDATA[Euler用户手册 (Euler User Guide)]]></title>
-        <id>http://localhost:4000/post/euler-yong-hu-shou-ce-euler-user-guide/</id>
-        <link href="http://localhost:4000/post/euler-yong-hu-shou-ce-euler-user-guide/">
+        <id>https://chainguys.github.io/post/euler-yong-hu-shou-ce-euler-user-guide/</id>
+        <link href="https://chainguys.github.io/post/euler-yong-hu-shou-ce-euler-user-guide/">
         </link>
         <updated>2022-05-25T03:27:57.000Z</updated>
         <content type="html"><![CDATA[<p><em>Euler Protocol is a sophisticated lending and borrowing dApp that offers a number of financial tools for users to make their capital more efficient. Learn how to get the most out of the platform with these handy guides.</em></p>
@@ -52,8 +52,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Euler用户手册：准备开始 (Euler User Guide：Getting Started)]]></title>
-        <id>http://localhost:4000/post/euler-yong-hu-shou-ce-zhun-bei-kai-shi-euler-user-guidegetting-started/</id>
-        <link href="http://localhost:4000/post/euler-yong-hu-shou-ce-zhun-bei-kai-shi-euler-user-guidegetting-started/">
+        <id>https://chainguys.github.io/post/euler-yong-hu-shou-ce-zhun-bei-kai-shi-euler-user-guidegetting-started/</id>
+        <link href="https://chainguys.github.io/post/euler-yong-hu-shou-ce-zhun-bei-kai-shi-euler-user-guidegetting-started/">
         </link>
         <updated>2022-05-25T03:01:46.000Z</updated>
         <content type="html"><![CDATA[<p><em>Users can learn the basics of connecting a crypto wallet and navigating the user interface of the Euler dApp.</em></p>
@@ -162,8 +162,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Euler颠覆市场的突破性方法 (Euler’s Approach to Distrupting the Incumbents)]]></title>
-        <id>http://localhost:4000/post/euler-dian-fu-shi-chang-de-tu-po-xing-fang-fa-eulers-approach-to-distrupting-the-incumbents/</id>
-        <link href="http://localhost:4000/post/euler-dian-fu-shi-chang-de-tu-po-xing-fang-fa-eulers-approach-to-distrupting-the-incumbents/">
+        <id>https://chainguys.github.io/post/euler-dian-fu-shi-chang-de-tu-po-xing-fang-fa-eulers-approach-to-distrupting-the-incumbents/</id>
+        <link href="https://chainguys.github.io/post/euler-dian-fu-shi-chang-de-tu-po-xing-fang-fa-eulers-approach-to-distrupting-the-incumbents/">
         </link>
         <updated>2022-05-21T11:59:08.000Z</updated>
         <content type="html"><![CDATA[<p>原文：<a href="https://blog.euler.finance/eulers-approach-to-distrupting-the-incumbents-32ea6342b0c4">https://blog.euler.finance/eulers-approach-to-distrupting-the-incumbents-32ea6342b0c4</a></p>
@@ -238,8 +238,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Euler FAQ中英双语版(ENG-CHN)]]></title>
-        <id>http://localhost:4000/post/euler-faq-zhong-ying-shuang-yu-ban-eng-chn/</id>
-        <link href="http://localhost:4000/post/euler-faq-zhong-ying-shuang-yu-ban-eng-chn/">
+        <id>https://chainguys.github.io/post/euler-faq-zhong-ying-shuang-yu-ban-eng-chn/</id>
+        <link href="https://chainguys.github.io/post/euler-faq-zhong-ying-shuang-yu-ban-eng-chn/">
         </link>
         <updated>2022-05-20T14:34:53.000Z</updated>
         <content type="html"><![CDATA[<h2 id=""><img src="https://www.euler.finance/static/media/EF_logo__Euler_finance_lite-bg.b7e79ffc.svg" alt="" loading="lazy"></h2>
@@ -377,8 +377,8 @@ EUL 代币尚未向公众发布。</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Euler来信-五月总结(Euler Newsletter May Summary)]]></title>
-        <id>http://localhost:4000/post/euler-lai-xin-wu-yue-zong-jie-euler-newsletter-may-summary/</id>
-        <link href="http://localhost:4000/post/euler-lai-xin-wu-yue-zong-jie-euler-newsletter-may-summary/">
+        <id>https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-euler-newsletter-may-summary/</id>
+        <link href="https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-euler-newsletter-may-summary/">
         </link>
         <updated>2022-05-20T11:43:18.000Z</updated>
         <content type="html"><![CDATA[<h1 id="euler-update-20-may-2022">Euler Update [20 May 2022]</h1>
@@ -409,13 +409,13 @@ EUL 代币尚未向公众发布。</p>
 <p><strong>工作描述</strong>：Euler 正在寻找一名全职的社交经理。理想的候选人是了解我们的平台、Defi 受众以及所有主次要社交媒体平台的加密原住民（非常欢迎 “degens” 申请）。</p>
 <hr>
 <h1 id="进展更新-progress-updates">进展更新 (Progress Updates)</h1>
-<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1653047884616.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://chainguys.github.io/post-images/1653047884616.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Euler SDK来啦！(Announcing the Euler SDK)]]></title>
-        <id>http://localhost:4000/post/euler-sdk-lai-la-announcing-the-euler-sdk/</id>
-        <link href="http://localhost:4000/post/euler-sdk-lai-la-announcing-the-euler-sdk/">
+        <id>https://chainguys.github.io/post/euler-sdk-lai-la-announcing-the-euler-sdk/</id>
+        <link href="https://chainguys.github.io/post/euler-sdk-lai-la-announcing-the-euler-sdk/">
         </link>
         <updated>2022-05-17T12:00:00.000Z</updated>
         <content type="html"><![CDATA[<p><em>Calling all smart contract developers — integrate Euler into your workflows now!</em></p>
@@ -534,8 +534,8 @@ const eagEurAddr = e
     </entry>
     <entry>
         <title type="html"><![CDATA[是时候放下Dropbox了 (Time To Drop Dropbox)]]></title>
-        <id>http://localhost:4000/post/shi-shi-hou-fang-xia-dropbox-liao-time-to-drop-dropbox/</id>
-        <link href="http://localhost:4000/post/shi-shi-hou-fang-xia-dropbox-liao-time-to-drop-dropbox/">
+        <id>https://chainguys.github.io/post/shi-shi-hou-fang-xia-dropbox-liao-time-to-drop-dropbox/</id>
+        <link href="https://chainguys.github.io/post/shi-shi-hou-fang-xia-dropbox-liao-time-to-drop-dropbox/">
         </link>
         <updated>2022-05-15T13:06:34.000Z</updated>
         <content type="html"><![CDATA[<p>原文:<a href="https://akord.com/blog/time-to-drop-dropbox">https://akord.com/blog/time-to-drop-dropbox</a></p>
@@ -642,8 +642,8 @@ const eagEurAddr = e
     </entry>
     <entry>
         <title type="html"><![CDATA[Euler dapp新功能来啦！(Announcing new features of Euler dapp)]]></title>
-        <id>http://localhost:4000/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/</id>
-        <link href="http://localhost:4000/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/">
+        <id>https://chainguys.github.io/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/</id>
+        <link href="https://chainguys.github.io/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/">
         </link>
         <updated>2022-05-10T15:36:58.000Z</updated>
         <content type="html"><![CDATA[<p>原文:https://blog.euler.finance/announcing-new-features-of-euler-dapp-8cadabb111ac</p>
@@ -682,8 +682,8 @@ const eagEurAddr = e
     </entry>
     <entry>
         <title type="html"><![CDATA[Euler中文材料合集-不断更新中(Euler Chinese Materials-Updating)]]></title>
-        <id>http://localhost:4000/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/</id>
-        <link href="http://localhost:4000/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/">
+        <id>https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/</id>
+        <link href="https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/">
         </link>
         <updated>2022-05-10T04:23:01.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.euler.finance/static/media/Euler-animation.399c7e5b.gif" alt="" loading="lazy"></figure>
@@ -719,8 +719,8 @@ const eagEurAddr = e
     </entry>
     <entry>
         <title type="html"><![CDATA[Euler来信-四月总结(Euler Newsletter April Summary)]]></title>
-        <id>http://localhost:4000/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/</id>
-        <link href="http://localhost:4000/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/">
+        <id>https://chainguys.github.io/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/</id>
+        <link href="https://chainguys.github.io/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/">
         </link>
         <updated>2022-05-06T12:09:06.000Z</updated>
         <content type="html"><![CDATA[<h1 id="euler-更新-2022年4月20号-euler-update-20-apr-2022">Euler 更新 [2022年4月20号] Euler Update [20 Apr 2022]</h1>
