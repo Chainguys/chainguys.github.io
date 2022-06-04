@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-06-04T12:54:27.873Z</updated>
+    <updated>2022-06-04T13:29:35.872Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -19,10 +19,10 @@
         <content type="html"><![CDATA[<h3 id="让我们一起回顾过去几周都发生了什么lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么！(Let's recap what has happened over the past few weeks!)</h3>
 <p>If you read the last <a href="https://newsletter.euler.finance/p/20may22?s=w">newsletter</a>, you’ll know we have been quite busy over the last month, so here’s a summary of all our other major events in May!</p>
 <p>如果您阅读了上一期的<a href="https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-euler-newsletter-may-summary/">Euler来信</a>，您就会知道我们在过去的一个月里一直很忙，所以请来看看我们 5 月份所有其他重大事件的摘要吧！</p>
-<p><a href="https://twitter.com/MacroMate8/status/1529849406853263360">eIP7</a> passed, MATIC is now a collateral asset.<br>
-<a href="https://twitter.com/MacroMate8/status/1529849406853263360">eIP7</a>  通过，MATIC 现在已经成为抵押资产。</p>
-<p>Euler has <a href="https://twitter.com/eulerfinance/status/1532378126294073344">integrated</a> with Zapper.<br>
-Euler 已与 Zapper <a href="https://twitter.com/eulerfinance/status/1532378126294073344">集成</a>。</p>
+<p><a href="https://twitter.com/MacroMate8/status/1529849406853263360">eIP7</a> passed, MATIC is now a collateral asset.</p>
+<p><a href="https://twitter.com/MacroMate8/status/1529849406853263360">eIP7</a>  通过，MATIC 现在已经成为抵押资产。</p>
+<p>Euler has <a href="https://twitter.com/eulerfinance/status/1532378126294073344">integrated</a> with Zapper.</p>
+<p>Euler 已与 Zapper <a href="https://twitter.com/eulerfinance/status/1532378126294073344">集成</a>。</p>
 <p>The <a href="https://twitter.com/eulerfinance/status/1532005249988407301">EulerDAO</a> and on-chain governance will be going live soon, while the details of the <a href="https://blog.euler.finance/eulerdao-launch-phases-2a154837b908">launch phases</a> have been published.</p>
 <p><a href="https://twitter.com/eulerfinance/status/1532005249988407301">EulerDAO</a> 和链上治理将很快上线，同时<a href="https://chainguys.github.io/post/eulerdao-qi-dong-ge-jie-duan-jie-shao-eulerdao-launch-phases">发布阶段</a>的详细信息已经公布。</p>
 <p>The <a href="https://twitter.com/eulerfinance/status/1527688111873880064">Euler Features</a> education series continues with an article overview.</p>
@@ -38,7 +38,7 @@ Euler 已与 Zapper <a href="https://twitter.com/eulerfinance/status/15323781262
 <p><a href="https://twitter.com/Chainguys">@Chainguys</a> has <a href="https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/">translated</a> the Euler white paper and many other published articles into Chinese. 谢谢你！</p>
 <p><a href="https://twitter.com/Chainguys">@Chainguys</a> 已将Euler白皮书和许多其他已发表的文章<a href="https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/">翻译</a>成中文。谢谢你！</p>
 <p>Seraphim wrote about <a href="https://twitter.com/MacroMate8/status/1531293562796576769">stress testing</a> of the Uniswap TWAPs during the recent market volatility, and also about Euler’s attracted <a href="https://twitter.com/MacroMate8/status/1529200959888367616">liquidation bonus</a> compared to other protocols. The latest <a href="https://twitter.com/aztecnetwork/status/1532741131523571713">DeFi 2.71 podcast</a> interview discussed privacy layer protocol Aztec with cofounder Joe Andrews.</p>
-<p>Seraphim 在近期市场波动期间写了Uniswap TWAP 的 <a href="https://twitter.com/MacroMate8/status/1531293562796576769">压力测试</a>，以及与其他歇息相比，Eule令人感到吸引的 [清算奖金](https://twitter.com/ MacroMate8/status/1529200959888367616）与其他协议相比。最新的 <a href="https://twitter.com/aztecnetwork/status/1532741131523571713">DeFi 2.71 播客</a> 。最新的 <a href="https://twitter.com/aztecnetwork/status/1532741131523571713">DeFi 2.71 播客</a> 采访与联合创始人 Joe Andrews 讨论了隐私层协议 Aztec。</p>
+<p>Seraphim 在近期市场波动期间写了Uniswap TWAP 的 <a href="https://twitter.com/MacroMate8/status/1531293562796576769">压力测试</a>，以及与其他歇息相比，Eule令人感到吸引的 [清算奖金](https://twitter.com/MacroMate8/status/1529200959888367616）与其他协议相比。最新的 <a href="https://twitter.com/aztecnetwork/status/1532741131523571713">DeFi 2.71 播客</a> 。最新的 <a href="https://twitter.com/aztecnetwork/status/1532741131523571713">DeFi 2.71 播客</a> 采访与联合创始人 Joe Andrews 讨论了隐私层协议 Aztec。</p>
 <p>Euler currently has a total supply of $292.65M with TVL of $87.9M and $204.75M in total borrowed, while the reserves have <a href="https://twitter.com/eulerfinance/status/1523710185201561600">increased</a> to $703.32k. There are 3,748 lenders and 722 borrowers over 60 markets.</p>
 <p>Euler 目前的总供应量为 2.9265 亿美元，TVL 为 8790 万美元，借款总额为 2.0475 亿美元，而储备金<a href="https://twitter.com/eulerfinance/status/1523710185201561600">增加</a> 至 703.32 万美元。超过 60 个市场，有 3,748 名出借方和 722 名借款人。</p>
 <h2 id="其他内容-in-other-news">其他内容 (In Other News)</h2>
