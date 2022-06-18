@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-06-18T08:39:12.106Z</updated>
+    <updated>2022-06-18T09:32:51.794Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -216,6 +216,64 @@
 <h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
 <p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
 <p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[握紧私钥，掌握自己的数据 (Own the keys, own your data)]]></title>
+        <id>https://chainguys.github.io/post/wo-jin-si-yao-zhang-wo-zi-ji-de-shu-ju-own-the-keys-own-your-data/</id>
+        <link href="https://chainguys.github.io/post/wo-jin-si-yao-zhang-wo-zi-ji-de-shu-ju-own-the-keys-own-your-data/">
+        </link>
+        <updated>2022-06-13T09:31:16.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/media/you_own_the_keys1.png" alt="You own the keys1" loading="lazy"></figure>
+<p>With Akord, you own the keys that encrypt and decrypt your data. Your keys are generated when you sign up and are represented by your backup phrase. In this article article, we'll explain the backup phrase, how we store and manage it, and demonstrate exactly how you 'own the keys'.</p>
+<p>使用 Akord，您才拥有加密和解密数据的密钥。您的密钥是在您注册时生成的，并由您的备份短语表示。在本文中，我们将解释备份短语、我们如何存储和管理它，并精确演示您如何“拥有密钥”。</p>
+<h2 id="关于您的备份短语-your-backup-phrase-explained">关于您的备份短语 (Your backup phrase explained)</h2>
+<p>For many web3 services, the backup phrase is required any time you would like to access your wallet from a new device. Let's first explain what the backup phrase is.</p>
+<p>对于许多 web3 服务，只要您想从新设备访问您的钱包，就需要备份短语。我们先来解释一下什么是备份短语。</p>
+<p>In order to generate unique keys, we need a unique random number that is known as a “seed”. Since it is difficult for us to read a large number, crypto-wallets use a backup phrase, which is a human-readable representation of the seed. It is also known by other names such as seed phrase, recovery phrase, mnemonic, or passphrase.</p>
+<p>为了生成唯一的密钥，我们需要一个被称为“种子”的唯一随机数。由于人类很难读取大量数字，因此加密钱包使用备用短语，其实是种子的人类可读表示。它也有其他名称，例如种子短语、恢复短语、助记词或密码短语。</p>
+<p>The backup phrase is typically generated using an algorithm called <a href="https://privacypros.io/wallets/mnemonic-phrase">BIP39</a> and assigned to a user when signing up. Akord uses this method to generate the backup phrase. It consists of 12 or 24 words that are chosen from a list of <a href="https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt">2,048 words</a> beginning with “abandon” and ending with “zoo”.</p>
+<p>备用短语通常使用称为 <a href="https://privacypros.io/wallets/mnemonic-phrase">BIP39</a> 的算法生成，并在注册时分配给用户。 Akord 使用这种方法来生成备份短语。它由从 <a href="https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt">2,048 个单词</a> 列表中选择的 12 或 24 个单词组成，以“abandon”开头并结束与“zoo”。</p>
+<p>How safe is a backup phrase that is made up of 12 words? Well, since there are plenty of possible combinations, the chance of drawing the right combination is 1 out of the big number below:</p>
+<p>由 12 个单词组成的备用短语有多安全？好吧，因为有很多可能的组合，所以得出正确组合的机会是下面大数字中的 1：</p>
+<p>2,048^12 = 5444517870735015415413993718908291383296 ≈ 5.4445179e+39</p>
+<p>So, as you can see, backup phrase is pretty much impossible to hack from a brute force attack that tries to guess what your backup phrase is. You just need to store it in a safe place.</p>
+<p>因此，正如您所看到的，备用短语几乎不可能从试图猜测您的备用短语是什么的蛮力攻击中破解。您只需将其存放在安全的地方。</p>
+<p>We recommend the following security practices:<br>
+我们推荐以下安全做法：</p>
+<ul>
+<li>Store your backup phrase in a few different secure locations offline.<br>
+将您的备份短语离线存储在几个不同的安全位置。</li>
+<li>Don’t communicate your backup phrase to anyone.<br>
+不要将您的备用短语传达给任何人。</li>
+<li>Don’t store your backup phrase unencrypted digitally.<br>
+不要以数字方式存储未加密的备份短语。</li>
+</ul>
+<h2 id="您拥有-akord-上的备用短语-you-own-the-backup-phrase-on-akord">您拥有 Akord 上的备用短语 (You own the backup phrase on Akord)</h2>
+<p>In Akord, we ask for an email address and password. We ask for your email so we can send you important notifications when other people in your vault take actions. Your password is used to decrypt your backup phrase locally when you want to sign in.</p>
+<p>在 Akord，我们要求提供电子邮件地址和密码。我们要求您提供电子邮件，以便在您保管库中的其他人采取行动时向您发送重要通知。当您要登录时，您的密码用于在本地解密您的备份短语。</p>
+<p>The backup phrase is encrypted using your actual password. This means that nobody can decrypt your backup phrase without knowing your password.</p>
+<p>备份短语使用您的实际密码加密。这意味着没有人可以在不知道您的密码的情况下解密您的备份短语。</p>
+<p>We store the following three things in our database:<br>
+我们在数据库中存储以下三项内容：</p>
+<p>1.E-mail address(电子邮件地址)<br>
+2.Encrypted backup phrase(加密备份短语)<br>
+3.Verifier of the password(密码验证者)</p>
+<p>We do not store your password, but rather a cryptographic verifier of it. This means that we can easily check if a password you entered is correct without ever seeing the password itself. For those who are curious about how this works in detail, you can read about this process in the <a href="https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol">Secure Remote Password protocol</a> (SRP).</p>
+<p>我们不存储您的密码，而是对其进行加密验证。这意味着我们可以轻松检查您输入的密码是否正确，而无需查看密码本身。对于那些对其详细工作原理感到好奇的人，您可以在 <a href="https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol">安全远程密码协议</a> (SRP) 中阅读有关此过程的信息。</p>
+<figure data-type="image" tabindex="2"><img src="https://akord.com/media/diagam.png" alt="Diagam" loading="lazy"></figure>
+<p>So here’s the process when you sign up with your email address and password. First, we encrypt your backup phrase with the password you entered, or more precisely, with a key derived from your password using <a href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a>. Then, we use the SRP protocol, to compute a cryptographic verifier: We send these two pieces of information along with your email address to our server. This makes it impossible for any middleman, or for anyone with access to the data, including Akord, to decrypt your backup phrase or obtain any information about your password.</p>
+<p>以上是您使用电子邮件地址和密码注册的过程。首先，我们使用您输入的密码加密您的备份短语，或者更准确地说，使用 <a href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a> 使用从您的密码派生的密钥来加密。然后，我们使用 SRP 协议来计算加密验证器：我们将这两条信息连同您的电子邮件地址一起发送到我们的服务器。这使得任何中间人或任何有权访问数据的人（包括 Akord）都无法解密您的备份短语或获取有关您的密码的任何信息。</p>
+<h2 id="akord-的简单登录-akords-simple-sign-in">Akord 的简单登录 (Akord’s simple sign in)</h2>
+<p>Most web3 services require you to connect with a wallet, but with Akord you just need your email and password. So how exactly are you using your keys to sign in?</p>
+<p>大多数 web3 服务都要求您连接钱包，但使用 Akord，您只需要您的电子邮件和密码。那么，您究竟是如何使用密钥登录的呢？</p>
+<p>When you sign in, we first look up your email address and use the SRP protocol to make sure that the password you provided is correct, again, without actually sending the password. If the provided email and password are correct, we send back the encrypted backup phrase. It is decrypted directly in your browser, meaning that nobody but you ever knows it.</p>
+<p>当您登录时，无需实际发送密码，我们首先会查找您的电子邮件地址并使用 SRP 协议,来确保您提供的密码正确无误。如果提供的电子邮件和密码正确，我们会发回加密的备份短语。它直接在您的浏览器中解密，这意味着除了您之外没有人知道它。</p>
+<p>At this point, you're ready to use our user-friendly UI to upload your files to Arweave, with all encryption and decryption happening directly in your browser .</p>
+<p>此时，您已准备好使用我们用户友好的 UI 将您的文件上传到 Arweave，所有加密和解密都直接在您的浏览器中进行。</p>
+<hr>
+<p><em>We believe in true collaboration with the people using our product. If you have feedback on Akord, the best place to reach us is by becoming part of our community on <a href="https://discord.gg/g4VXfauK5s">Discord</a>.</em></p>
+<p><em>我们相信与使用我们产品的人的真正合作。如果您对 Akord 有任何反馈，与我们联系的最佳方式是加入 <a href="https://discord.gg/g4VXfauK5s">Discord</a> 上的社区。</em></p>
 ]]></content>
     </entry>
     <entry>
@@ -972,82 +1030,6 @@ Layer2 PRC地址</p>
 <p>另请注意，此页面未来将更新，来反映 Euler UI 上的更改，因此请随时在有更新时回来查看。</p>
 <p>If you have any questions, join us in <a href="https://discord.gg/CdG97VSYGk">Discord</a> and feel free to ask the team. Please make sure to browse other guides in the main collection as well.</p>
 <p>如果您有任何问题，请加入我们的 <a href="https://discord.gg/MTQDdAFaaq">Discord</a> 并随时向团队提问。请务必同时浏览主收藏中的其他指南。</p>
-<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
-<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
-<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
-<h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
-<p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
-<p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Euler颠覆市场的突破性方法 (Euler’s Approach to Distrupting the Incumbents)]]></title>
-        <id>https://chainguys.github.io/post/euler-dian-fu-shi-chang-de-tu-po-xing-fang-fa-eulers-approach-to-distrupting-the-incumbents/</id>
-        <link href="https://chainguys.github.io/post/euler-dian-fu-shi-chang-de-tu-po-xing-fang-fa-eulers-approach-to-distrupting-the-incumbents/">
-        </link>
-        <updated>2022-05-21T11:59:08.000Z</updated>
-        <content type="html"><![CDATA[<p>原文：<a href="https://blog.euler.finance/eulers-approach-to-distrupting-the-incumbents-32ea6342b0c4">https://blog.euler.finance/eulers-approach-to-distrupting-the-incumbents-32ea6342b0c4</a></p>
-<p><em>Euler is the most innovative lending and borrowing protocol in the DeFi space when it comes to features, security, and scalability, and is now set to grow at a rapid pace.</em></p>
-<p><em>Euler在功能、安全性和可扩展性方面， 是 DeFi 领域最具创新性的借贷协议，并将快速增长。</em></p>
-<h2 id=""><img src="https://miro.medium.com/max/1400/1*tVLSEEMcw48aqTw50-SgTg.png" alt="" loading="lazy"></h2>
-<p>Euler has been locked in development with numerous safe mode measures in place, but it is now ready to disrupt the industry by leaps and bounds. Euler’s unique set of features present the ideal platform for native DeFi users and new users looking to engage with the future of finance.</p>
-<p>Euler 已通过多种安全模式措施确保发展(潜力)，不过现在它已准备好跨越式颠覆行业。 Euler独特功能集为原生DeFi 用户和希望参与未来金融的新用户提供了理想的平台。</p>
-<h1 id="去审批化无许可上币-permissionless-listing">去审批化/无许可上币 (Permissionless Listing)</h1>
-<p>As a custom-built system to support long-tail assets from the start, Euler is able to manage the risks involved with opening up <a href="https://docs.euler.finance/getting-started/white-paper#permissionless-listing">listings</a> to the public. Euler full-heartedly supports decentralisation by offering a platform to ensure that the market decides which assets should be borrowed or lent. There are already 60 markets activated on Euler.</p>
-<p>作为从一开始就支持长尾资产的可定制系统，Euler能够管理向公众开放 <a href="https://docs.euler.finance/getting-started/white-paper#permissionless-listing">上币</a> 所涉及的风险。Euler通过提供让市场决定应该借入或借出哪些资产的一个平台，全心全意地支持去中心化。Euler 上已经激活了 60 个市场。</p>
-<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*KdwCwbq4-HasojdCvdKNlA.png" alt="" loading="lazy"></figure>
-<p>(只需单击按钮即可激活任何市场 Simply activate any market with the click of a button)</p>
-<h1 id="借入因子-borrow-factors">借入因子 (Borrow Factors)</h1>
-<p>Lending and borrowing protocols need to manage the risks of volatile or illiquid assets, and therefore it is essential to adjust loan-to-value ratios so that overcollateralisation can prevent bad debts. <a href="https://docs.euler.finance/protocol/eulers-default-parameters#borrow-factor">Borrow factors</a> can also be adjusted via governance to best reflect the asset’s underlying risk.</p>
-<p>借贷协议需要管理波动性或非流动性资产的风险，因此必须调整贷款对价值的比率，以便超额抵押来防止坏账。 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/xie-yi/can-shu#jie-ru-yin-zi">借入因子</a> 也可以通过治理进行调整，以最好地反映资产的潜在风险。</p>
-<h1 id="去中心化价格预言机-decentralised-price-oracles">去中心化价格预言机 (Decentralised Price Oracles)</h1>
-<p>The Euler team has put enormous effort behind researching oracles and developing <a href="https://docs.euler.finance/risk-framework/oracle-rating">tools</a> to illuminate risks. <a href="https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf">Research</a> by Euler’s CEO Michael Bentley highlights the difficulty in carrying out attacks on decentralised oracles such as Uniswap v3’s Time Weighted Average Price (TWAP). Euler’s <a href="https://oracle.euler.finance/">Oracle tool</a> can also show the oracle risks involved with different Uniswap V3 pools.</p>
-<p>Euler 团队在研究预言机和开发 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/feng-xian-kuang-jia/yu-yan-ji-ping-ji">工具</a> 来阐明风险方面，付出了巨大的努力。Euler首席执行官 Michael Bentley 的 <a href="https://github.com/euler-xyz/uni-v3-twap-manipulation/blob/master/cost-of-attack.pdf">研究</a> 强调了对去中心化预言机进行攻击的难度，比如 Uniswap v3 的时间加权平均价格 (TWAP)。 Euler 的 <a href="https://oracle.euler.finance/">预言机工具</a> 还可以显示不同 Uniswap V3 矿池所涉及的预言机风险。</p>
-<h1 id="荷兰式拍卖清算-dutch-auction-liquidations">荷兰式拍卖清算 (Dutch-Auction Liquidations)</h1>
-<p>Not only does Euler limit MEV, but large borrowers will find the <a href="https://docs.euler.finance/developers/architecture#liquidations">liquidation process</a> less taxing compared to other protocols. Expected borrowing costs are drastically lower as Euler gives the market a voice in how much of a bonus that liquidators can receive. According to the <a href="https://dune.com/shippooordao/Euler-Finance-Dashboard">Euler Dune dashboard</a> from Shippooordao, the average liquidation bonus has been around 2.13%.</p>
-<p>Euler 不仅限制 MEV，且与其它协议相比，大型借款人会发现 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/kai-fa-zhe/jia-gou#qing-suan">清算过程</a> 的征税更少。预期的借贷成本大大降低，因为Euler使得市场对清算人可以获得多少奖金有了发言权。根据 Shippooordao 的 <a href="https://dune.com/shippooordao/Euler-Finance-Dashboard">Euler Dune 仪表盘</a>，平均清算奖金约为 2.13%。</p>
-<h1 id="交易建设者-transaction-builder">交易建设者 (Transaction Builder)</h1>
-<p>Users can batch build their transactions into a convenient <a href="https://docs.euler.finance/getting-started/white-paper#transaction-builder">list</a> before a final submission. This reduces gas costs and helps to manage complex positions while previewing estimated costs and potential conflicts with the transactions.</p>
-<p>用户可以在最终提交之前将他们的交易批量构建到一个方便的 <a href="https://docs.euler.finance/languages/white-paper-eng-chn#jiao-yi-jian-she-zhe-transaction-builder">列表</a> 中。这降低了 gas 成本并有助于管理复杂的头寸，同时可以预估预览成本与潜在的交易冲突。</p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/1*QVMFetCPSz2cQrABWLJjEw.png" alt="" loading="lazy"></figure>
-<h1 id="模块化智能合约设计-modular-smart-contract-design">模块化智能合约设计 (Modular Smart Contract Design)</h1>
-<p>Euler’s <a href="https://docs.euler.finance/developers/contract-reference">smart contracts</a> allow the community to upgrade oracles and other features without having to force users to migrate liquidity to a new protocol for each change. This design is much more optimal for decentralisation and DAOs. Scalability through redeployment is not scalability.</p>
-<p>Euler 的 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/kai-fa-zhe/he-yue-can-kao">智能合约</a> 允许社区升级预言机和其他功能，而用户每次更改后无需强制将流动性迁移到新协议。这种设计对于去中心化和 DAO 来说更加优化。重新部署得来的可扩展性不是(真正的)可扩展性。</p>
-<h1 id="受保护抵押物-protected-collateral">受保护抵押物 (Protected Collateral)</h1>
-<p>By <a href="https://docs.euler.finance/getting-started/white-paper#protected-collateral">protecting collateral</a> from borrowers, users can prevent governance manipulation and short selling, and it is free from the risks of borrowers defaulting. This also helps reduce risks for DeFi native hedge funds and large borrowers.</p>
-<p>通过借款人的<a href="https://docs.euler.finance/languages/white-paper-eng-chn#shou-bao-hu-de-di-ya-wu-protected-collateral">受保护抵押物</a>，用户可以防止被治理操纵和卖空，也没有借款人违约的风险。这也有助于降低 DeFi 原生对冲基金和大型借款人的风险。</p>
-<h1 id="隔离和交叉跨层借贷模式-isolated-and-cross-borrowing-modes">隔离和交叉/跨层借贷模式 (Isolated and Cross Borrowing Modes)</h1>
-<p>Euler’s innovative approach helps to mitigate the systemic risks posed by long-tail assets while ensuring these riskier assets have a place in the lending and borrowing market. <a href="https://docs.euler.finance/risk-framework/tiers#isolated-tier">Isolated</a> and cross tier assets can be borrowed and lent but not used as collateral. Cross tier assets can also be borrowed alongside other assets. This prevents bad debt situations from risky collateral assets.</p>
-<p>Euler 的创新方法有助于减轻长尾资产带来的系统性风险，同时确保这些风险较高的资产在借贷市场中依然占有一席之地。 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/feng-xian-kuang-jia/fen-ceng-fang-fa">隔离</a> 和跨层资产可以借入和借出，但不能用作抵押品。跨层资产也可以与其他资产一起借入。这可以防止因抵押高风险资产而产生的坏账情况。</p>
-<h1 id="高效杠杆-efficient-leverage">高效杠杆 (Efficient Leverage)</h1>
-<p><a href="https://docs.euler.finance/guides/faq#should-i-mine-at-19x">Leverage</a> can be built up quickly and extremely cheaply using the Mint and Burn functions. Users no longer need to develop complex recursive strategies or move to third-party solutions. Euler’s development in this area enables higher collateral ratios for highly correlated assets.</p>
-<p>可以使用 Mint 和 Burn 功能快速且极其便宜地创建<a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-dao-shou-ce/faq#wo-ying-gai-yi-19-bei-de-su-du-wa-kuang-ma-shouldimine-at-19x">杠杆</a> 。用户不再需要开发复杂的递归策略或转向第三方解决方案。Euler在这一领域的发展，为高度相关的资产提供了更高的抵押比率。</p>
-<h1 id="子账户-sub-accounts">子账户 (Sub-accounts)</h1>
-<p>Euler’s <a href="https://docs.euler.finance/developers/architecture#sub-accounts">sub-accounts</a> makes trading even easier for users by eliminating the need to use multiple wallets to create multiple position. Users can manage positions and save on gas with minimal approvals in just one wallet.</p>
-<p>Euler 的 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/kai-fa-zhe/jia-gou#zi-zhang-hu">子账户</a> 消除了使用多个钱包创建多个头寸的必要，使得用户的交易更加轻松。用户只需在一个钱包中获得最少的批准即可管理头寸并节省gas。</p>
-<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1304/1*nu3R5thdxHPdVKnuZfF9GQ.png" alt="" loading="lazy"></figure>
-<h1 id="无费用和广义闪电贷-feeless-and-generalised-flash-loans">无费用和广义闪电贷 (Feeless and Generalised Flash Loans)</h1>
-<p>Researchers and advanced traders will find <a href="https://docs.euler.finance/developers/integration-guide#flash-loans">flash loans</a> on Euler more economical as there is no interest or fees for this service. Use a liquidity deferral to flash loan multiple assets at once or perform complex position management.</p>
-<p>研究人员和高级交易员会发现 Euler 上的 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/kai-fa-zhe/he-yue-ji-cheng-zhi-nan#shan-dian-dai">闪电贷</a> 更经济，因为不收取利息或费用。使用流动性展期一次闪贷多种资产或执行复杂的头寸管理。</p>
-<h1 id="回应性利率-reactive-interest-rates">回应性利率 (Reactive Interest Rates)</h1>
-<p>As an Euler innovation that maximises capital efficiency on the protocol, utilisation is balanced at 70% by automatically adjusting the <a href="https://docs.euler.finance/getting-started/white-paper#reactive-interest-rates">interest rates</a> without the need for governance.</p>
-<p>作为Euler协议上最大化资本效率的创新，通过自动调整 <a href="https://docs.euler.finance/languages/white-paper-eng-chn#li-lv-interest-rates">利率</a>，利用率平衡在 70%而无需治理介入。</p>
-<h1 id="多空功能-shortlong-function">多/空功能 (Short/Long Function)</h1>
-<p>Users can conveniently create leveraged <a href="https://docs.euler.finance/guides/ui#short">positions</a> using the mint and burn functions in combination with Euler’s 1inch and Uniswap integrations that allow users to take out gas-efficient long and short positions in a single click.</p>
-<p>用户可以使用铸币和燃烧功能方便地创建杠杆 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-dao-shou-ce/ui-yin-dao#zuo-kong">仓位</a> ，结合 Euler 的 1inch 和 Uniswap 集成，让用户可以高效一键生成做空做多头寸。</p>
-<h1 id="量表-gauges">量表 (Gauges)</h1>
-<p>Liquidity mining on an asset could be automatically enabled by locking a certain amount of EUL tokens. The emission would increase by locking/voting for that asset. This <a href="https://app.euler.finance/gaugeweight">feature</a> can empower communities to vote for their preferred assets and gain more voting rights in the protocol.</p>
-<p>通过锁定一定数量的 EUL 代币，可以自动启用资产的流动性挖掘。通过锁定/投票该资产，产出量可以增加。这个<a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-li/liang-biao">功能</a> 可以让社区为他们喜欢的资产投票，并在协议中获得更多的投票权。</p>
-<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/1*MML_qltRZNgVpsP8nDR1ZQ.png" alt="" loading="lazy"></figure>
-<h1 id="民主化流动性挖矿-democratised-liquidity-mining">民主化流动性挖矿 (Democratised Liquidity Mining)</h1>
-<p>Native mining functionality enables EUL tokens to get mined by <a href="https://docs.euler.finance/guides/faq#gauges-and-eul-distribution">anyone</a> at low costs. Any user can take part in the future of Euler due to the low learning curve and barrier to entry.</p>
-<p>原生挖矿功能使 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-dao-shou-ce/faq#liang-biao-he-eul-fen-bu-gauges-eul-distribution">任何人</a> 都能够以低成本挖掘 EUL 代币。因为学习曲线低且进入门槛低，任何用户都可以参与 Euler 的未来。</p>
-<h1 id="预计清算时间-estimated-time-to-liquidation">预计清算时间 (Estimated Time to Liquidation)</h1>
-<p>This <a href="https://docs.euler.finance/guides/faq#what-is-time-to-liquidation-ttl">feature</a> focuses on the estimated time in days until a liquidation will occur, assuming the asset prices and interest rates will not change. When crafting a position, users can understand the risk of liquidation due to the borrowing interest rate and better manage their leverage.</p>
-<p>此<a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-dao-shou-ce/faq#shen-me-shi-qing-suan-shi-jian-what-is-time-to-liquidation-ttl">功能</a> 的重心是：假定资产价格和利息不变的情况下，发生清算的预计天数。在构建头寸时，用户可以了解由于借款利率而导致的清算风险，并更好地管理自己的杠杆。</p>
-<figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/1400/1*Mue7yIL5WAJq-oYxr69RKg.png" alt="" loading="lazy"></figure>
-<p>While these are just some of Euler’s many unique features, even more can be found in the <a href="https://docs.euler.finance/getting-started/white-paper">white paper</a>. Please check out the <a href="https://discord.gg/CdG97VSYGk">Discord</a> community and governance <a href="https://forum.euler.finance/">forums</a> for even more info on how Euler is revolutionising lending and borrowing in DeFi.</p>
-<p>虽然这些只是 Euler 的众多独特功能中的一部分，但在<a href="https://docs.euler.finance/languages/white-paper-eng-chn">白皮书</a> 中可以找到更多功能。请查看 <a href="https://discord.gg/rMk7wSSxaG">Discord</a> 社区和治理 <a href="https://forum.euler.finance/">论坛</a> 了解有关 Euler 如何彻底改变 DeFi 借贷的更多信息.</p>
 <h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
 <p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
 <p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
