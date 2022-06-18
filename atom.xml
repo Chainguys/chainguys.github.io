@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-06-17T12:30:34.035Z</updated>
+    <updated>2022-06-18T03:14:18.237Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,64 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[在Tally的治理仪表盘上委托投票 (Delegating Voting Power on Tally Governance Dashboard)]]></title>
+        <id>https://chainguys.github.io/post/zai-tally-de-zhi-li-yi-biao-pan-shang-wei-tuo-tou-piao-delegating-voting-power-on-tally-governance-dashboard/</id>
+        <link href="https://chainguys.github.io/post/zai-tally-de-zhi-li-yi-biao-pan-shang-wei-tuo-tou-piao-delegating-voting-power-on-tally-governance-dashboard/">
+        </link>
+        <updated>2022-06-14T02:58:33.000Z</updated>
+        <content type="html"><![CDATA[<p><em>EulerDAO on-chain governance will soon launch and will use the Tally governance application.</em></p>
+<p><em>EulerDAO链上治理即将上线，将使用Tally作为治理的应用程序。</em></p>
+<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*eX771fPEjdTwyiMlMWLP_Q.png" alt="" loading="lazy"></figure>
+<p>In this guide, users can learn more about how governance will work with <a href="https://www.tally.xyz/">Tally</a> and the <a href="https://blog.euler.finance/eulerdao-launch-phases-2a154837b908">DAO launch phases</a>. This article explains the Euler on-chain governance process and how users can participate in order to be more prepared for the launch of EulerDAO.</p>
+<p>在本指南中，用户可以详细了解治理将如何与 <a href="https://www.tally.xyz/">Tally</a> 以及 <a href="https://chainguys.github.io/post/eulerdao-qi-dong-ge-jie-duan-jie-shao-eulerdao-launch-phases/">DAO 启动阶段</a>。本文将详述Euler 链上治理流程以及用户参与方法，以便为 EulerDAO 的推出做好准备。</p>
+<p>EulerDAO is based on the OpenZeppelin Governor smart contract for governance. It is a governance protocol which allows delegates to vote on active proposals to make changes to the EulerDAO and Euler protocol. To manage the governance process, Euler will be using the Tally governance dashboard / web application.</p>
+<p>EulerDAO 基于 OpenZeppelin Governor 智能合约来进行治理。它是一种治理协议，允许代表对活跃的提案进行投票，进而对 EulerDAO 和 Euler 协议进行更改。为了管理治理过程，Euler 将使用 Tally 治理仪表盘/网络应用。</p>
+<p>Through Tally, you can set up your wallet to become a delegate (i.e., delegate your voting power to yourself), create on-chain proposals, vote on active proposals, discover delegates in the community, and delegate your voting power to another community member.</p>
+<p>通过 Tally，您可以设置您的钱包成为代表（即自己委托自己投票）、创建链上提案、对活跃提案进行投票、发现社区中的代表以及将您的投票权委托给其他社区成员.</p>
+<p>As noted in the <a href="https://blog.euler.finance/eulerdao-call-for-delegates-3c3220066eaa">Call for Delegates</a> article, delegates represent EUL token holders who have delegated their voting power to vote on their behalf.</p>
+<p>正如 <a href="https://chainguys.github.io/post/eulerdao-zheng-ji-dai-biao-eulerdao-call-for-delegates/">Call for Delegates</a> 文章中所述，代表是EUL 代币持有者的代理人，并被授权代理持币人投票。</p>
+<p>Delegates are volunteers who actively participate in the EulerDAO governance, such as voting and creating proposals, so the role should be treated as a serious commitment. EulerDAO will aim to fairly and adequately reward its delegates for their significant efforts.</p>
+<p>代表是积极参与 EulerDAO 治理的志愿者，例如投票和创建提案，因此该角色应被视为一项认真的承诺。 EulerDAO 的目标是公平和充分地奖励其代表的重大努力。</p>
+<h1 id="如何成为代表how-do-you-become-a-delegate">如何成为代表？(How do you become a delegate?)</h1>
+<p>To become a delegate, you must delegate your voting power to yourself or be delegated by another community member, thus giving you the right to use their voting power.</p>
+<p>要成为代表，您必须将您的投票权委托给自己或被其他社区成员委托，从而赋予您使用其投票权的权利。</p>
+<p>To achieve this, token holders need to execute the delegate function of the EUL token to delegate another user or the token holder themselves to enable the governor contract to determine their voting power.</p>
+<p>为了实现这一点，代币持有者需要执行 EUL 代币的委托功能，来委托另一个用户或代币持有者自己，以使治理合约能够确定投票权的归属。</p>
+<p>The DAO will be launching soon. When it does, community members will be encouraged to delegate their votes. As part of that process, community members will be presented with a delegates list.</p>
+<p>DAO 即将推出。当它启动时，将鼓励社区成员委托投票。作为该过程的一部分，社区成员将收到一份代表名单。</p>
+<h1 id="委托对我的代币意味着什么what-does-delegation-mean-for-my-tokens">委托对我的代币意味着什么？(What does delegation mean for my tokens?)</h1>
+<p>When you delegate the voting power of your tokens, you retain 100% ownership of the token itself. There are no changes to the way you use or hold the token.</p>
+<p>当您委派代币的投票权时，您将保留代币本身 100% 的所有权。您使用或持有代币的方式没有变化。</p>
+<p>A healthy governance system is good for Euler and for all EUL token holders. Choosing a good delegate is in each EUL token holder’s best interest.</p>
+<p>一个健康的治理系统对 Euler 和所有 EUL 代币持有者都有好处。选择一个好的代表符合每个 EUL 代币持有者的最大利益。</p>
+<h1 id="使用-tally-治理仪表板委派投票权using-tally-governance-dashboard-to-delegate-voting-power">使用 Tally 治理仪表板委派投票权(Using Tally Governance Dashboard to Delegate Voting Power)</h1>
+<p>The first step in the delegation process via the Tally governance application is to visit the EulerDAO page on the Tally governance application and connect your wallet.</p>
+<p>通过 Tally 治理应用，进行委托过程的第一步是访问 Tally 上的 EulerDAO 页面并连接您的钱包。</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*DV6TXfmZObfkTEQS" alt="" loading="lazy"></figure>
+<p>The second step is to click on “Delegate vote” in the top-right corner of the screen.</p>
+<p>第二步，点击屏幕右上角的“代表投票(Delegate vote)”。</p>
+<p>Users can then decide to either delegate to themselves or to another wallet, delegate, or community member. By delegating to yourself, you retain your voting power. Next time there is an active proposal, you can vote in any way you choose.</p>
+<p>然后，用户可以决定是委托给自己还是委托给另一个钱包、受托人或社区成员。通过委派给自己，您保留了投票权。下次有活动提案时，您可以选择任何方式进行投票。</p>
+<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/0*rm5rqRrSPr-jV_3z" alt="" loading="lazy"></figure>
+<p>If you decide to delegate to an address or delegate, the following screen will be shown instead, where you can enter the address you wish to delegate your voting power to.</p>
+<p>如果您决定委托某个地址或受托人，则会显示以下屏幕，您可以在其中输入您希望将投票权委托给的地址。</p>
+<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/0*_STG_Us3ZZDc_1aS" alt="" loading="lazy"></figure>
+<p>This will not transfer any of your tokens to the delegate, you will only be delegating your voting power, i.e., voting via proxy who will be voting on your behalf or representing you at the polls! You can always change the delegate later on or delegate to yourself again. This helps to ensure that there is a good degree of participation from the community on on-chain governance proposals voting.</p>
+<p>这不会将您的任何代币转移给受托人，您只会委派您的投票权，即通过代理人投票，代理人将代表您投票或在投票中代表您！您以后可以随时更改委托或再次委托给自己。这有助于确保社区对链上治理提案投票的参与程度很高。</p>
+<p>Finally, regardless of whether you are delegating to yourself or delegating to a delegate, you will be required to confirm the transaction in your wallet which will cost gas.</p>
+<p>最后，无论您是委托给自己还是委托给受托人，您都需要在您的钱包中确认交易，这将花费 gas。</p>
+<figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/1400/0*eD611JjUJ9c7CvAC" alt="" loading="lazy"></figure>
+<p>To recap, delegates are token holders that have completed a one-time setup process. Once you become a delegate, you can then vote on active proposals, and create proposals if you have enough voting power. If you choose not to directly vote on proposals, you can pass your voting power on to a delegate, as shown above.</p>
+<p>最后回顾，代表是已完成(治理)一次性设置过程的代币持有者。一旦您成为代表，您就可以对活跃的提案进行投票，如果您有足够的投票权，您可以创建提案。如果您选择不直接对提案进行投票，您可以将您的投票权传递给代表，如上所示。</p>
+<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
+<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
+<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
+<h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
+<p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
+<p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Euler 用户指南：借贷 (Euler User Guide：Borrowing and Lending)]]></title>
         <id>https://chainguys.github.io/post/euler-yong-hu-zhi-nan-jie-dai-euler-user-guideborrowing-and-lending/</id>
@@ -1087,43 +1145,6 @@ EUL 代币尚未向公众发布。</p>
 <h3 id="你们有大使计划吗do-you-have-an-ambassador-programme">你们有大使计划吗？(Do you have an Ambassador programme?)</h3>
 <p>Not yet, but you can earn Epoints for contributing to the Euler community. For more information, please check out the blog post on <a href="https://blog.euler.finance/whats-the-point-in-points-31c2d3ae040f">Epoints</a>.</p>
 <p>还没有，但您可以通过为 Euler 社区做出贡献而获得 Epoints。有关更多信息，请查看关于 <a href="https://chainguys.github.io/post/ji-fen-de-yi-yi-he-zai-whats-the-point-in-points/">Epoints</a>的博客文章。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Euler来信-五月总结(Euler Newsletter May Summary)]]></title>
-        <id>https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-euler-newsletter-may-summary/</id>
-        <link href="https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-euler-newsletter-may-summary/">
-        </link>
-        <updated>2022-05-20T11:43:18.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="euler-update-20-may-2022">Euler Update [20 May 2022]</h1>
-<h3 id="让我们一起回顾过去几周都发生了什么lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么！(Let's recap what has happened over the past few weeks!)</h3>
-<h1 id="紧追潮流-keep-up-to-date">紧追潮流 (Keep up to Date!)</h1>
-<p>Amid the ongoing and <a href="https://twitter.com/eulerfinance/status/1524505880565362689">volatile</a> bear market, Euler has been making great progress, as noted in the previous <a href="https://newsletter.euler.finance/p/april2022-recap?s=w">newsletter</a>. Read below for our recent updates!</p>
-<p>正如<a href="https://chainguys.github.io/post/euler-lai-xin-si-yue-zong-jie-euler-newsletter-april-summary/">上一期通讯</a>所指出的，在持续动荡的<a href="https://twitter.com/eulerfinance/status/1524505880565362689">熊市</a>中，Euler取得了长足的进步。请阅读以下内容，了解我们最新进展！</p>
-<p><a href="https://twitter.com/eulerfinance/status/1522773234692681728">eIP10</a> passed, which enabled MKR as cross tier asset. <a href="https://twitter.com/MacroMate8/status/1522559717423210497">eIP11</a> also passed, which made wstETH as a collateral asset on Euler. wstETH’s Uniswap V3 oracle was <a href="https://twitter.com/MacroMate8/status/1524454435891544072">strengthened</a> by FTX, Jump, and others. Michael wrote a <a href="https://twitter.com/euler_mab/status/1525090390709346304">thread</a> about the stETH/ETH peg during the recent volatility as wstETH joined Euler’s <a href="https://twitter.com/eulerfinance/status/1522915982427234305">4th Epoch</a>.</p>
-<p><a href="https://twitter.com/eulerfinance/status/1522773234692681728">eIP10</a>通过了，这使得 MKR 成为跨层(交叉层)资产。  <a href="https://twitter.com/MacroMate8/status/1522559717423210497">eIP11</a> 也通过了，这使得 wstETH 作为 Euler 上的抵押资产。 wstETH 的 Uniswap V3 预言机通过 FTX、Jump 等得到了 <a href="https://twitter.com/MacroMate8/status/1524454435891544072">加强</a>。随着 wstETH 加入Euler的<a href="https://twitter.com/eulerfinance/status/1522915982427234305">第四个纪元</a>，Michael 在最近的波动中写了一篇关于 stETH/ETH 挂钩的<a href="https://twitter.com/euler_mab/status/1525090390709346304">帖子</a>。</p>
-<p><a href="https://twitter.com/MacroMate8/status/1526634236412690432">eIP7</a>, promote MATIC to collateral tier, is once again open for discussion as Polygon and FTX provided $300k worth of full-range liquidity, thus strengthening its oracle by 15 times. Uniswap’s Hayden Adams said the oracle sponsorship is “<a href="https://twitter.com/haydenzadams/status/1526704413867397120">very cool</a>”.</p>
-<p><a href="https://twitter.com/MacroMate8/status/1526634236412690432">eIP7</a> 即(是否)将 MATIC 提升为抵押层，会再次开放讨论，因为 Polygon 和 FTX 提供了价值 30 万美元的全方位流动性，从而将其预言机增强了 15 倍。 Uniswap 的 Hayden Adams 表示，预言机的赞助“<a href="https://twitter.com/haydenzadams/status/1526704413867397120">very cool</a>”。</p>
-<p>Euler has <a href="https://twitter.com/eulerfinance/status/1523933969951076353">updated</a> the Mint function and introduced the Estimated Time to Liquidation <a href="https://blog.euler.finance/announcing-new-features-of-euler-dapp-8cadabb111ac">feature</a>. The <a href="https://blog.euler.finance/announcing-the-euler-sdk-976f6e34c73">Euler SDK</a> was released open source to the public, so developers can easily build using Euler's smart contracts, launch a project with our batch transactions, and much more.</p>
-<p>Euler已经 <a href="https://twitter.com/eulerfinance/status/1523933969951076353">更新</a> Mint 功能并引入了预计清算时间 [功能](https://blog.euler.finance/announcing-new-features- of-euler-dapp-8cadabb111ac)。 <a href="https://blog.euler.finance/announcing-the-euler-sdk-976f6e34c73">Euler SDK</a> 已向公众开源，因此开发者可以使用 Euler 的智能合约轻松构建，使用我们的批量交易等等。</p>
-<p>altooptimo.eth created a new <a href="https://twitter.com/AltoOptimo/status/1524306937201975297">dune dashboard</a> for historical utilisation and borrow rates on Euler. The Euler <a href="https://twitter.com/eulerfinance/status/1526913090767314944">FAQ</a> section in the documentation page has been updated thanks to input from the community. Euler's merkle mining staking contract has been audited by <a href="https://omniscia.io/euler-merkle-mining-staking/">Omniscia</a>.</p>
-<p>altooptimo.eth 创建了一个新的 <a href="https://twitter.com/AltoOptimo/status/1524306937201975297">dune 仪表板</a> ，用于(展示)Euler的历史利用率和借款利率。由于社区的反馈，文档页面中的 Euler <a href="https://twitter.com/eulerfinance/status/1526913090767314944">FAQ</a> 部分已更新。 Euler 的 merkle 挖矿 staking 合约已通过 <a href="https://omniscia.io/euler-merkle-mining-staking/">Omniscia</a> 的审计。</p>
-<p>Seraphim talked with Simon Jones, co-founder of Voltz Labs, on the <a href="https://twitter.com/MacroMate8/status/1525114050081964033">DeFi 2.71 podcast</a> about DeFi and interest rate swaps and more. Euler COO Brandon Neal was recently quoted in a <a href="https://twitter.com/eulerfinance/status/1524031166742994944">Reuters article</a> about the latest downturn in the crypto markets.</p>
-<p>Seraphim 在 <a href="https://twitter.com/MacroMate8/status/1525114050081964033">DeFi 2.71 播客</a> 上与 Voltz Labs 的联合创始人 Simon Jones 就 DeFi 和利率互换(掉期)等进行了交谈。  最近一篇 <a href="https://twitter.com/eulerfinance/status/1524031166742994944">路透社关于加密市场最新低迷的报道文章</a> ，引用了Euler 首席运营官 Brandon Neal的意见。</p>
-<p>Michael was recently interviewed on the <a href="https://twitter.com/eulerfinance/status/1527339220234227741">Crypto 101 podcast</a>, having discussed DeFi innovation and Euler's features and risk management. If you're in Germany, join Michael at the inaugural <a href="https://twitter.com/euler_mab/status/1494075904154349573">Blockchain Oracle Summit</a> in Berlin on 7-9 June.</p>
-<p>Michael 最近在 <a href="https://twitter.com/eulerfinance/status/1527339220234227741">Crypto 101 播客</a>上接受了采访，讨论了 DeFi 创新和 Euler 的功能和风险管理。如果您在德国，请与迈克尔一起参加 6 月 7 日至 9 日在柏林举行的首届 <a href="https://twitter.com/euler_mab/status/1494075904154349573">区块链甲骨文峰会</a>。</p>
-<p>Euler currently has a total supply of $277.8M with TVL of $95.39M and $182.41 in total borrowed. Several new markets including <a href="https://twitter.com/eulerfinance/status/1525440882203250688">BABL</a> were activated, while the reserves have <a href="https://twitter.com/eulerfinance/status/1523710185201561600">increased</a> to $627.39k.</p>
-<p>Euler 目前的总供应量为 2.778 亿美元，TVL 为 9539 万美元，借款总额为 182.41 美元。包括<a href="https://twitter.com/eulerfinance/status/1525440882203250688">BABL</a>在内的几个新市场被激活，而储备金<a href="%EF%BC%88">增加</a>https://twitter.com/eulerfinance/status/1523710185201561600)至62.739万美元.</p>
-<h1 id="职业机会-career-opportunities">职业机会 (Career Opportunities)</h1>
-<figure data-type="image" tabindex="1"><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F649e27e9-817f-4163-b473-f755f321be30_4000x2250.jpeg" alt="" loading="lazy"></figure>
-<h2 id="图中招聘信息jobs-on-the-picture">图中招聘信息(Jobs on the Picture)</h2>
-<p><strong>Position: Social Media Manager</strong><br>
-<strong>职位：社交媒体经理</strong></p>
-<p><strong>JD</strong>:Euler is looking for a full-time social manager.Idearl condidates are crypto natives(degens are very welcome to apply) who know our platform, Defi audiences, and all the major and minor social media platforms.</p>
-<p><strong>工作描述</strong>：Euler 正在寻找一名全职的社交经理。理想的候选人是了解我们的平台、Defi 受众以及所有主次要社交媒体平台的加密原住民（非常欢迎 “degens” 申请）。</p>
-<hr>
-<h1 id="进展更新-progress-updates">进展更新 (Progress Updates)</h1>
-<figure data-type="image" tabindex="2"><img src="https://chainguys.github.io/post-images/1653047884616.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
