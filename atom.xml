@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-06-18T03:25:12.092Z</updated>
+    <updated>2022-06-18T08:29:32.007Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,54 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Euler来信-六月总结(Euler Newsletter June Summary)]]></title>
+        <id>https://chainguys.github.io/post/euler-lai-xin-liu-yue-zong-jie-euler-newsletter-june-summary/</id>
+        <link href="https://chainguys.github.io/post/euler-lai-xin-liu-yue-zong-jie-euler-newsletter-june-summary/">
+        </link>
+        <updated>2022-06-17T16:23:38.000Z</updated>
+        <content type="html"><![CDATA[<p>原文:https://newsletter.euler.finance/p/17june22</p>
+<h1 id="euler-update-17-june-2022">Euler Update [17 June 2022]</h1>
+<h3 id="让我们一起回顾过去几周都发生了什么-lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么! (Let's recap what has happened over the past few weeks!)</h3>
+<h1 id="紧追潮流-keep-up-to-date">紧追潮流 (Keep up to Date!)</h1>
+<p>Despite the heavy bear market conditions, Euler continues to make waves, as indicated in the last <a href="https://newsletter.euler.finance/p/may2022-recap?s=w">newsletter</a> and the updates below.</p>
+<p>尽管熊市形势严峻，但欧拉仍继续掀起波澜，如上一期 <a href="https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-2-euler-newsletter-may-summary-2/">来信</a> 和以下更新所示。</p>
+<p>Euler <a href="https://twitter.com/eulerfinance/status/1534163279349592064">announced</a> a $32M <a href="https://twitter.com/euler_mab/status/1534166009719844864">treasury diversification</a> round led by <a href="https://twitter.com/HaunVentures/status/1534171874053300224">Haun Ventures</a> along with FTX Ventures, <a href="https://twitter.com/spencernoon/status/1534174231877103621">Variant</a>, Jump, <a href="https://twitter.com/Uniswap/status/1534269309786198020">Uniswap Labs Ventures</a>, Coinbase Ventures and Jane Street.</p>
+<p>Euler <a href="https://twitter.com/eulerfinance/status/1534163279349592064">宣布</a> 了由 <a href="https://twitter.com/HaunVentures/status/1534171874053300224">Haun Ventures</a>以及 FTX Ventures，<a href="https://twitter.com/spencernoon/status/1534174231877103621">Variant</a>，Jump，<a href="https://twitter.com/Uniswap/status/1534269309786198020">Uniswap Labs Ventures</a> 领投、Coinbase Ventures 和 Jane Street参与的3200 万美元 <a href="https://twitter.com/euler_mab/status/1534166009719844864">金库资金多元化</a> 。</p>
+<p>The team attended <a href="https://twitter.com/euler_mab/status/1533712904184385537">Blockchain Oracle Summit</a> in Berlin and <a href="https://twitter.com/MacroMate8/status/1535884335689211905">Consensus</a>.</p>
+<p>团队参加了柏林的<a href="https://twitter.com/euler_mab/status/1533712904184385537">区块链甲骨文峰会</a>和<a href="https://twitter.com/MacroMate8/status/1535884335689211905">共识大会</a>。</p>
+<p>Euler hired <a href="https://twitter.com/aliciakatz">Alicia Katz</a> as Head of Marketing, <a href="https://www.linkedin.com/in/katheryn-milligan-b5659a1b7/">Katheryn Milligan</a> as a Summer Intern, and <a href="https://twitter.com/jungyoonlim">Jungyoon Lim (Joanne)</a> as a Risk Intern.</p>
+<p>Euler 聘请 <a href="https://twitter.com/aliciakatz">Alicia Katz</a> 作为营销主管，<a href="https://www.linkedin.com/in/katheryn-milligan-b5659a1b7/">Katheryn Milligan</a> 作为暑期实习生，以及 <a href="https://twitter.com/jungyoonlim">Jungyoon Lim (Joanne)</a> 作为风险实习生。</p>
+<p>Doug started a <a href="https://ethresear.ch/t/median-prices-as-alternative-to-twap-an-optimised-proof-of-concept-analysis-and-simulation/12778">discussion</a> on median prices as alternative to TWAP, which also received a comment from Vitalik Buterin.</p>
+<p>Doug 就中位数价格作为 TWAP 的替代方案开始了 <a href="https://ethresear.ch/t/median-prices-as-alternative-to-twap-an-optimized-proof-of-concept-analysis-and-simulation/12778">讨论</a>，后者也收到了 Vitalik Buterin 的评论。</p>
+<p>While Euler was <a href="https://twitter.com/Ethereum_Nation/status/1533962266408005633">noted</a> for its TVL gains during the rough market conditions, Euler was also recently highlighted in Huobi Research's <a href="https://twitter.com/eulerfinance/status/1537052305043824640">Weekly Industry Report</a>.</p>
+<p>Euler不仅因其在恶劣的市场条件下的 TVL 收益而受到 <a href="https://twitter.com/Ethereum_Nation/status/1533962266408005633">关注</a>，并且最近火币研究的 <a href="https://twitter.com/eulerfinance/status/1537052305043824640">每周行业报告</a>也强调了Euler。</p>
+<p>Euler's TWAP simulation tool v2 is coming, have a <a href="https://twitter.com/MacroMate8/status/1535658477447684096">sneak peek</a>.</p>
+<p>Euler 的 TWAP 模拟工具 v2 即将推出，<a href="https://twitter.com/MacroMate8/status/1535658477447684096">先睹为快</a></p>
+<p>Euler has <a href="https://twitter.com/eulerfinance/status/1537725833233588224">integrated</a> with Idle Finance's Perpetual Yield Tranches, while Tally mentioned Euler in their <a href="https://twitter.com/tallyxyz/status/1532807495294586880">DAO Talk</a> podcast.</p>
+<p>Euler 与 Idle Finance 的永久收益部分 <a href="https://twitter.com/eulerfinance/status/1537725833233588224">整合</a>，而 Tally 在他们的 <a href="https://twitter.com/tallyxyz/status/1532807495294586880">DAO Talk</a>播客中提及。</p>
+<p>Token Terminal wrote up their <a href="https://twitter.com/tokenterminal/status/1537346478385074179">interview</a> with Michael and also pointed out that Euler has been a popular platform for <a href="https://twitter.com/eulerfinance/status/1535977154751746050">stETH borrowers</a>.</p>
+<p>Token Terminal 与 Michael 一起撰写了他们的 <a href="https://twitter.com/tokenterminal/status/1537346478385074179">采访</a>，并指出 Euler 一直是 <a href="https://twitter.com/eulerfinance/status/1535977154751746050">stETH 借款人</a>的热门平台。</p>
+<p>Brandon talked about Lael Brainard’s ascent at the Fed and what it could mean for crypto on <a href="https://twitter.com/nycbrandonn/status/1533819668431003648">Forkast News</a>.</p>
+<p>Brandon 在 <a href="https://twitter.com/nycbrandonn/status/1533819668431003648">Forkast News</a> 上谈到了 Lael Brainard 在美联储的晋升以及这对加密货币的意义。</p>
+<p>A new series of articles were published including a guide on <a href="https://twitter.com/eulerfinance/status/1536328928683507712">borrowing and lending</a>, EulerDAO’s <a href="https://blog.euler.finance/eulerdao-launch-phases-2a154837b908">launch phases</a>, a <a href="https://twitter.com/eulerfinance/status/1534521617140678656">call for delegates</a>, <a href="https://twitter.com/eulerfinance/status/1536699676719599616">how to delegate votes with Tally</a>, and learn to use EulerDAO’s phase 1 <a href="https://blog.euler.finance/euler-governance-proposal-creation-tool-e72d24a0383d">governance proposal creation tool</a>.</p>
+<p>发布了一系列新文章，包括<a href="https://twitter.com/eulerfinance/status/1536328928683507712">借贷指南</a>、EulerDAO 的<a href="https://chainguys.github.io/post/eulerdao-qi-dong-ge-jie-duan-jie-shao-eulerdao-launch-phases/">启动阶段</a>，<a href="https://twitter.com/eulerfinance/status/1534521617140678656">召集代表</a>，<a href="https://twitter.com/eulerfinance/status/1536699676719599616">如何通过 Tally 委托投票</a>，并学习使用 EulerDAO 的第一阶段<a href="https://blog.euler.finance/euler-governance-proposal-creation-tool-e72d24a0383d">治理提案创建工具</a>。</p>
+<p>Seraphim wrote a <a href="https://twitter.com/MacroMate8/status/1536370171387863046">thread</a> about liquidations on Euler during the recent rapid price decreases and an overview <a href="https://twitter.com/MacroMate8/status/1534189355157159936">thread</a> on Euler. He also wrote a <a href="https://twitter.com/MacroMate8/status/1535257629429100544">thread</a> on stETH as the asset underwent some depegging and how it’s Uniswap v3 TWAP <a href="https://twitter.com/MacroMate8/status/1532756025194864641">performed</a>, along with other <a href="https://twitter.com/MacroMate8/status/1532724233343668226">examples</a>.</p>
+<p>Seraphim 写了一篇 <a href="https://twitter.com/MacroMate8/status/1536370171387863046">帖子</a> ，主要是关于欧拉在近期价格快速下跌期间的清算，还有一篇关于Euler的概述 [帖子](https://twitter.com/MacroMate8/status/ 1534189355157159936)。他还在 stETH 上写了一个 <a href="https://twitter.com/MacroMate8/status/1535257629429100544">帖子</a>，因为资产经历了一些脱钩以及 Uniswap v3 TWAP的 <a href="https://twitter.com/MacroMate8/status/1532756025194864641">表现</a>，以及其他<a href="https://twitter.com/MacroMate8/status/1532724233343668226">示例</a></p>
+<p>Michael wrote about <a href="https://twitter.com/euler_mab/status/1537091423748517889">liquidation bonuses</a> on Euler in comparison to Compound Finance and Aave, in addition to <a href="https://twitter.com/euler_mab/status/1536339559432065029">details</a> on the process. He also <a href="https://twitter.com/euler_mab/status/1535240813411811330">pointed out</a> how well TWAP oracles have stood against suddenly price drops. Michael <a href="https://twitter.com/euler_mab/status/1535624679091838976">detailed</a> a popular shorting strategy related to wstETH on Euler.</p>
+<p>Michael 在 Euler 上写了与Compound Finance 和 Aave相比，Euler的 <a href="https://twitter.com/euler_mab/status/1537091423748517889">清算奖励</a> 及其过程的 <a href="https://twitter.com/euler_mab/status/1536339559432065029">详细信息</a> 。他还 <a href="https://twitter.com/euler_mab/status/1535240813411811330">指出</a> TWAP 预言机在价格突然下跌的情况下表现如何。 Michael <a href="https://twitter.com/euler_mab/status/1535624679091838976">详述了</a> Euler上wstETH 相关流行的做空策略。</p>
+<p>Euler currently has a total supply of $458.54M with TVL of $214.32M and $244.22M in total borrowed. A few new markets were activated, while the reserves have <a href="https://twitter.com/eulerfinance/status/1523710185201561600">increased</a> to $789.31k. There are 3,962 lenders and 794 borrowers across 62 markets.</p>
+<p>Euler 目前的总供应量为 4.5854 亿美元，TVL 为 2.1432 亿美元，借款总额为 2.4422 亿美元。一些新市场被激活，而储备金 <a href="https://twitter.com/eulerfinance/status/1523710185201561600">增加</a> 至 789.31 万美元。 62 个市场有 3,962 名出借方和 794 名借款人。</p>
+<h1 id="职业机会-career-opportunities">职业机会 (Career Opportunities)</h1>
+<figure data-type="image" tabindex="1"><img src="Pasted%20image%2020220618160257.png" alt="" loading="lazy"></figure>
+<p>Job Title:Social Media Manager<br>
+职位名称：社交网络经理</p>
+<p>JD：Please see in the picture<br>
+职位描述：请参见图片</p>
+<h1 id="进度更新-progress-updates">进度更新 (Progress Updates)</h1>
+<figure data-type="image" tabindex="2"><img src="https://chainguys.github.io/post-images/1655540727727.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[在Tally的治理仪表盘上委派投票权 (Delegating Voting Power on Tally Governance Dashboard)]]></title>
         <id>https://chainguys.github.io/post/zai-tally-de-zhi-li-yi-biao-pan-shang-wei-tuo-tou-piao-delegating-voting-power-on-tally-governance-dashboard/</id>
@@ -1006,145 +1054,6 @@ Layer2 PRC地址</p>
 <h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
 <p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
 <p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Euler FAQ中英双语版(ENG-CHN)]]></title>
-        <id>https://chainguys.github.io/post/euler-faq-zhong-ying-shuang-yu-ban-eng-chn/</id>
-        <link href="https://chainguys.github.io/post/euler-faq-zhong-ying-shuang-yu-ban-eng-chn/">
-        </link>
-        <updated>2022-05-20T14:34:53.000Z</updated>
-        <content type="html"><![CDATA[<h2 id=""><img src="https://www.euler.finance/static/media/EF_logo__Euler_finance_lite-bg.b7e79ffc.svg" alt="" loading="lazy"></h2>
-<h2 id="一般问题-general">一般问题 (General)</h2>
-<h3 id="什么是euler-what-is-euler">什么是Euler? (What is Euler?)</h3>
-<p>Euler is a non-custodial protocol on Ethereum that allows users to lend and borrow almost any crypto asset. Learn more about how Euler works by reading the <a href="https://docs.euler.finance/getting-started/white-paper">white paper</a> here.</p>
-<p>Euler 是以太坊上的非托管协议，允许用户借出和借入几乎任何加密资产。阅读此处的 <a href="https://docs.euler.finance/languages/white-paper-eng-chn">白皮书</a>，了解有关 Euler 工作原理的更多信息。</p>
-<h3 id="谁开发了euler-who-developed-euler">谁开发了Euler? (Who developed Euler?)</h3>
-<p>Euler was initially created by a team of developers at a company called Euler XYZ Ltd (see website <a href="http://euler.xyz/">here</a>). Today it is progressively decentralising and receives contributions from the external developer community as well as ongoing contributions from Euler XYZ.</p>
-<p>Euler 最初是由一家名为 Euler XYZ Ltd 的公司的一组开发人员创建的（参见网站 <a href="http://euler.xyz/">点击此处</a>）。今天，它正在逐步去中心化，并同时接收外部开发者社区的贡献和Euler XYZ 的持续贡献。</p>
-<h3 id="什么是-what-is-eulerdao">什么是 (What is EulerDAO?)</h3>
-<p>EulerDAO is a decentralised autonomous organisation encapsulating all holders of a governance token called EUL. Holders of the token have voting powers to propose and make changes to the underlying code of the Euler Protocol.</p>
-<p>EulerDAO 是一个去中心化的自治组织，包含了所有持有名为 EUL 的治理代币的人。代币持有者拥有投票权，可以提议和更改Euler协议的底层代码。</p>
-<h3 id="什么是euler基金会-what-is-the-euler-foundation">什么是Euler基金会 (What is the Euler Foundation?)</h3>
-<p>Since DAOs not have a formal legal strucutre, the Euler Foundation was established as a non-profit Foundation Company designed to represent EulerDAO in the ‘real world’. The Euler Foundation has no shareholders and cannot pay out dividends to its members. Its purpose is to provide a vehicle by which EulerDAO can sign a contract or engage a company for a service that the DAO requires.</p>
-<p>由于 DAO 没有正式的法律结构，因此Euler基金会成立为一家非营利性基金会公司，旨在代表“现实世界”中的 EulerDAO。Euler基金会没有股东，不能向其成员支付股息。基金会的目的是提供一种工具，EulerDAO 可以通过该工具签署合同或聘请公司提供 DAO 所需的服务。</p>
-<h2 id="社区参与-community-involvement">社区参与 (Community Involvement)</h2>
-<h3 id="我如何才能参与-eulerdaohow-can-i-get-involved-in-eulerdao">我如何才能参与 EulerDAO？(How can I get involved in EulerDAO?)</h3>
-<p>Join the <a href="https://discord.gg/CdG97VSYGk">Discord</a> and meet the community, make proposals and discussion on the <a href="https://forum.euler.finance/">governance forum</a>, or send a message if you have other ideas of contributing to the protocol.</p>
-<p>通过加入 <a href="https://discord.gg/CdG97VSYGk">Discord</a> 来与社区互动，在 <a href="https://forum.euler.finance/">治理论坛</a> 上提出建议和讨论，如果您有对协议做出贡献的其他想法，请发送消息。</p>
-<h3 id="开发者文档在哪里where-is-the-developer-documentation">开发者文档在哪里？(Where is the developer documentation?)</h3>
-<p>Please refer to the <a href="https://docs.euler.finance/developers/integration-guide">Developers</a> section and check out the <a href="https://blog.euler.finance/announcing-the-euler-sdk-976f6e34c73">Euler SDK</a>.</p>
-<p>请参阅 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/kai-fa-zhe/he-yue-zheng-he-zhi-nan">开发文档</a> 部分并查看 <a href="https://chainguys.github.io/post/euler-sdk-lai-la-announcing-the-euler-sdk/">Euler SDK</a>。</p>
-<h3 id="您的品牌指南材料在哪里where-are-your-branding-guidelinesmaterials">您的品牌指南/材料在哪里？(Where are your branding guidelines/materials?)</h3>
-<p>The branding materials are located at the following link: <a href="https://www.euler.finance/branding/#branding">euler.finance/branding</a>. Copyright is owned by the Euler Foundation.</p>
-<p>品牌宣传材料位于以下链接：<a href="https://www.euler.finance/branding/#branding">euler.finance/branding</a>。版权归Euler基金会所有。</p>
-<h2 id="euler-dapp">Euler dApp</h2>
-<h3 id="我如何存款和借款how-do-i-deposit-and-borrow">我如何存款和借款？(How do I deposit and borrow?)</h3>
-<p>Go to the <a href="https://app.euler.finance/">Euler app</a>, login via the Connect button on ETH mainnet. Click on the Quick Action button. You can deposit and borrow through the same named action buttons. Choose the asset and amounts, then approve of the transactions.</p>
-<p>进入<a href="https://app.euler.finance/">Euler app</a>，通过ETH主网上的 &quot;连接 Connect&quot; 按钮登录。单击快速操作按钮。您可以通过相同命名的操作按钮进行存款和借款。选择“资产 asset&quot; 和 &quot;金额 amount&quot; ，然后批准交易。</p>
-<p><strong>如何激活市场？(How do I activate a market?</strong>)</p>
-<p>Search for an asset in the search bar on the <a href="https://app.euler.finance/">Euler app</a>. Unlisted assets can be activated by the Activate button, which will ask you to initiate the transaction. Once complete, the asset will be listed and activated.</p>
-<p>在 <a href="https://app.euler.finance/">Euler 应用</a> 的搜索栏中搜索资产。未列出的资产可以通过&quot;激活 Activate&quot; 按钮激活，它会要求您启动交易。完成后，资产将被列出并激活。</p>
-<h3 id="为什么我找不到要激活的特定代币why-cant-i-find-a-specific-token-to-activate">为什么我找不到要激活的特定代币？(Why can't I find a specific token to activate?)</h3>
-<p>Some tokens might not be on the token list or might not have a pool on Uniswap v3. Please <a href="https://discord.gg/CdG97VSYGk">send a message</a> if you have trouble finding an unlisted asset.</p>
-<p>某些代币可能不在代币列表中，或者在 Uniswap v3 上可能没有池。如果您在查找未列出的资产时遇到问题，请到discord<a href="https://discord.gg/CdG97VSYGk">发送消息</a>。</p>
-<h3 id="什么是资产分层what-are-asset-tiers">什么是资产分层？(What are asset tiers?)</h3>
-<p>Euler uses risk-based <a href="https://docs.euler.finance/getting-started/white-paper#asset-tiers">asset tiers</a> to protect the protocol and its users. Isolated and Cross assets cannot be used as collateral, but Cross assets can be borrowed alongside other assets, while Isolated assets cannot.</p>
-<p>Euler 使用基于风险的 <a href="https://docs.euler.finance/languages/white-paper-eng-chn#zi-chan-ti-dui-fen-ceng-asset-tiers">资产分层</a>来保护协议及其用户。隔离资产和跨层/交叉资产不能作为抵押品，但交叉资产可以与其他资产一起借用，而隔离资产不能。</p>
-<h3 id="子账户是是什么-what-are-sub-accounts">子账户是是什么? (What are sub-accounts?)</h3>
-<p><a href="https://docs.euler.finance/developers/architecture#sub-accounts">Sub-accounts</a> enable users to isolate positions into different accounts.</p>
-<p><a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/kai-fa-zhe/jia-gou#zi-zhang-hu">子账户</a> 使得用户可以将头寸隔离到不同的账户中。</p>
-<h3 id="euler-使用什么预言机what-oracle-does-euler-use">Euler 使用什么预言机？(What oracle does Euler use?)</h3>
-<p>Euler uses <a href="https://docs.uniswap.org/protocol/concepts/V3-overview/oracle">Uniswap</a> V3 Time Weighted Average Price (TWAP) as the pricing oracle.</p>
-<p>Euler 使用 <a href="https://docs.uniswap.org/protocol/concepts/V3-overview/oracle">Uniswap</a> V3 时间加权平均价格 (TWAP) 作为定价预言机。</p>
-<h3 id="什么是预言机评级what-is-the-oracle-rating">什么是预言机评级？(What is the oracle rating?)</h3>
-<p>The <a href="https://docs.euler.finance/risk-framework/oracle-rating">Oracle Rating system</a> attempts to rank Uniswap v3 price oracles for different markets high, medium, or low based on the ease with which they can be manipulated.</p>
-<p><a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/feng-xian-kuang-jia/yu-yan-ji-ping-ji">Oracle 评级系统</a> 尝试根据操纵 Uniswap v3 价格预言机的难易程度对不同市场的价格预言机进行高中低排名。</p>
-<h3 id="储备金是什么-what-are-the-reserves">储备金是什么? (What are the reserves?)</h3>
-<p><a href="https://docs.euler.finance/developers/architecture#reserves-1">Reserves</a> are protocol-owned liquidity deposited on Euler to provide a backstop against a 'run on the bank' scenario. Reserves build up over time as borrowers pay interest on their loans. The reserves are ultimately controlled by EulerDAO Governance.</p>
-<p><a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/kai-fa-zhe/jia-gou#zhun-bei-jin">Reserves</a> 是存放在 Euler 上，协议拥有的流动性，用于为“银行挤兑”情景提供支持。随着借款人为其贷款支付利息，储备金会随着时间的推移而增加。储备最终由 EulerDAO Governance 控制。</p>
-<h3 id="资产如何成为抵押品how-can-an-asset-become-collateral">资产如何成为抵押品？(How can an asset become collateral?)</h3>
-<p>An asset must have substantial liquidity with wide distribution in its Uniswap V3 WETH paired pool. If the asset has a low-risk oracle, it is in a better position to be regarded as a safer asset to become collateral through a <a href="https://forum.euler.finance/t/welcome-to-the-euler-governance-forum/7">governance proposal</a>.</p>
-<p>资产必须在其 Uniswap V3 WETH 池中具有广泛分布的大量流动性。如果该资产有一个低风险的预言机，通过[治理提案](https://forum.euler.finance/t/welcome-to-the -euler-governance-forum/7)，它就更有可能被视为更安全的资产。</p>
-<h3 id="euler-是否在任何其他链l2-上is-euler-on-any-other-chainsl2s">Euler 是否在任何其他链/L2 上？(Is Euler on any other chains/L2s?)</h3>
-<p>Euler is currently only on Ethereum Mainnet. Euler is open to and exploring other chains and layers, but nothing is currently imminent.</p>
-<p>Euler 目前仅在以太坊主网上。 Euler 对其他链和层持开放态度并将进行探索，但目前并无特别意愿去部署。</p>
-<h2 id="特色功能-features">特色功能 (Features)</h2>
-<h3 id="什么是铸币和燃烧what-are-mint-and-burn">什么是铸币和燃烧？(What are Mint and Burn?)</h3>
-<p><a href="https://docs.euler.finance/guides/ui#mint">Mint</a> enables users to more efficiently create leveraged positions of borrowers and deposits. For example, a user can deposit $1,000 USDC, and mint $2,000 USDC. Then you will have $3,000 USDC deposits, and $2,000 USDC liabilities. Burn closes Mint positions.</p>
-<p><a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-dao-shou-ce/ui-yin-dao#ran-shao">铸币 Mint</a> 使用户能够更有效地创建借款人和存款的杠杆头寸。例如，用户可以存入 $1,000 USDC，然后铸造 $2,000 USDC。然后你将有 3,000 美元的 USDC 存款和 2,000 美元的 USDC 负债。 &quot;燃烧 Burn&quot; 关闭 Mint 头寸。</p>
-<h3 id="转移操作有什么作用what-does-the-transfer-action-do">&quot;转移&quot;操作有什么作用？(What does the Transfer action do?)</h3>
-<p>Users can <a href="https://docs.euler.finance/guides/ui#transfer-etokens">transfer</a> deposits (eTokens) and debt (dTokens) to other accounts. Always check the accounts involved in your operation will have sufficient collateral to support it.</p>
-<p>用户可以 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-dao-shou-ce/ui-yin-dao#zhuan-yi-etoken">转移</a> 存款 (eTokens) 和债务 (dTokens) 到其他账户。请始终检查涉及您操作的帐户是否有足够的抵押品来支撑。</p>
-<h3 id="我可以交换代币吗can-i-swap-tokens">我可以交换代币吗？(Can I swap tokens?)</h3>
-<p>Yes, the swap feature enables users to exchange one deposited asset for another using Uniswap V3 and 1inch DEXes.</p>
-<p>是的，交换功能使用户能够使用 Uniswap V3 和 1inch DEXes 将一种存入的资产交换为另一种资产。</p>
-<h3 id="如何做空代币-how-can-i-short-a-token">如何做空代币 (How can I short a token?)</h3>
-<p>The <a href="https://docs.euler.finance/guides/ui#short">Short</a> action allows users to build a leveraged short position by borrowing and then immediately selling an asset on an external exchange, including 1inch and Uniswap.</p>
-<p><a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-dao-shou-ce/ui-yin-dao#zuo-kong">做空</a> 操作允许用户通过借入然后立即在外部交易所（包括 1inch 和 Uniswap）出售资产来建立杠杆空头头寸。</p>
-<h3 id="我应该以-19-倍的速度挖矿吗should-i-mine-at-19x">我应该以 19 倍的速度挖矿吗？(Should I mine at 19x?)</h3>
-<p>Euler does not give financial advice, but users should note that mining at 19x is highly risky and can lead to liquidation if the user’s collateral cannot cover the interest fees. Mining at 19x most often liquidates positions within the same day it is created.</p>
-<p>Euler 不提供财务建议，但用户需要注意，19 倍挖矿具有高风险，如果用户的抵押品无法支付利息费用，可能会导致清算。以 19 倍的速度挖矿通常会在创建的同一天就清算头寸。</p>
-<h3 id="什么是清算时间-what-is-time-to-liquidation-ttl">什么是清算时间-What is Time To Liquidation (TTL)?</h3>
-<p><a href="https://blog.euler.finance/announcing-new-features-of-euler-dapp-8cadabb111ac">TTL</a> allows users to see the amount of time they have until their position is liquidated based on the current interest rates and prices of those positions.</p>
-<p><a href="https://chainguys.github.io/post/euler-dapp-xin-gong-neng-lai-la-announcing-new-features-of-euler-dapp/">TTL</a> 允许用户查看根据当前利率和头寸价格计算的清算时间。</p>
-<h3 id="什么是软清算what-is-a-soft-liquidation">什么是软清算？(What is a soft liquidation?)</h3>
-<p>Euler allows <a href="https://docs.euler.finance/getting-started/white-paper#soft-liquidations">liquidators</a> to repay up to the amount needed to bring a violator back out of violation (plus an additional safety factor). Other protocols are fixed so that liquidators can pay off up to half a borrower's loan in one go, regardless of how underwater their position is.</p>
-<p>Euler 允许 <a href="https://docs.euler.finance/languages/white-paper-eng-chn#ruan-xing-qing-suan-soft-liquidations">清算人</a> 最多偿还使违规者恢复正常所需的金额（加上额外的安全因子）。而其他协议是固定的，因此清算人可以一次性偿还多达一半的借款人贷款，无论他们的头寸有多少。</p>
-<h2 id="量表和-eul-分布-gauges-eul-distribution">量表和 EUL 分布 (Gauges &amp; EUL Distribution)</h2>
-<h3 id="如何申领-eul-代币how-can-i-claim-eul-tokens">如何申领 EUL 代币？(How can I claim EUL tokens?)</h3>
-<p>Users can go to the <a href="https://app.euler.finance/">Euler app</a>, click on the Claim button in the navbar and claim any available tokens of previous epochs in the Distribution window once EUL tokens are available to claim.</p>
-<p>用户可以前往<a href="https://app.euler.finance/">Euler app</a>，点击导航栏中的“申领 Claim”按钮，并在EUL代币可申领时，在分发窗口中申领任何可用的代币。</p>
-<h3 id="eul-有什么用途-what-utility-does-eul-have">EUL 有什么用途？ (What utility does EUL have?)</h3>
-<p>EUL’s main utility is as a <a href="https://docs.euler.finance/governance/voting">governance token</a> for the Euler protocol. Users with EUL can have a say in the future decisions and direction, as well as the EUL distribution in the Euler gauges.</p>
-<p>EUL 的主要用途是作为 Euler 协议的 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-li/tou-piao">治理代理</a>。拥有 EUL 的用户可以对未来的决策和方向以及Euler量表中的 EUL 分布有发言权。</p>
-<h3 id="借款人的-eul-代币分配情况如何what-is-the-distribution-of-eul-tokens-for-borrowers">借款人的 EUL 代币分配情况如何？(What is the distribution of EUL tokens for borrowers?)</h3>
-<p>The distribution is decided by the amount of EUL tokens staked in the <a href="https://app.euler.finance/gaugeweight">gauges</a>.</p>
-<p>分配由在 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-li/liang-biao">量表</a> 中质押的 EUL 代币数量决定。</p>
-<h3 id="市场是如何决定每个纪元的how-are-markets-decided-for-each-epoch">市场是如何决定每个纪元的？(How are markets decided for each epoch?)</h3>
-<p>Users can add or remove EUL distribution eligible markets simply by staking EUL tokens in their preferred gauges. Markets not in the top 10 staked will not be eligible for EUL distribution.</p>
-<p>用户只需将 EUL 代币放在他们喜欢的量表中，即可添加或删除符合 EUL 分配条件的市场。不在前 10 名的市场将没有资格获得 EUL 分配。</p>
-<h2 id="eul代币-eul-token">EUL代币 (EUL Token)</h2>
-<h3 id="有代币吗我怎样才能获得它is-there-a-token-how-can-i-earn-it">有代币吗？我怎样才能获得它？(Is there a token? How can I earn it?)</h3>
-<p>The Euler token (EUL) is distributed to borrowers on select markets on the platform. Please see the <a href="https://docs.euler.finance/governance/eul">Governance</a> section for more details.</p>
-<p>Euler 代币 (EUL) 在平台特定市场上分发给借款人。有关详细信息，请参阅 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-li/eul">治理</a> 部分。</p>
-<h3 id="什么是代币经济学what-are-the-tokenomics">什么是代币经济学？(What are the tokenomics?)</h3>
-<p>Allocation, vesting and other information about the EUL token can be found in the EUL section under <a href="https://docs.euler.finance/governance/eul">Governance</a>.</p>
-<p>有关 EUL 代币的分配、归属和其他信息可以在<a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/zhi-li/eul">治理</a>下的 EUL 部分中找到。</p>
-<h3 id="是否有-tgeicoidois-there-a-tgeicoido">是否有 TGE/ICO/IDO？(Is there a TGE/ICO/IDO?)</h3>
-<p>There is no public sale.<br>
-没有公开销售。</p>
-<h3 id="我在哪里可以交易eulwhere-can-i-trade-eul">我在哪里可以交易EUL？(Where can I trade EUL?)</h3>
-<p>The EUL token is not yet released to the public.<br>
-EUL 代币尚未向公众发布。</p>
-<h3 id="我如何获得空投how-do-i-get-an-airdrop">我如何获得空投？(How do I get an airdrop?)</h3>
-<p>There is no airdrop. 1% of the supply was allocated to users who interacted with the dApp during <a href="https://docs.euler.finance/governance/distribution#epoch-0">Epoch 0</a> as a one-off retroactive distribution.</p>
-<p>没有空投。 1% 的代币会提供给 <a href="https://docs.euler.finance/governance/distribution#epoch-0">0纪元 Epoch 0</a> 期间与 dApp 交互的用户，作为一次性追溯分配。</p>
-<h3 id="测试网用户是否获得奖励do-testnet-users-receive-rewards">测试网用户是否获得奖励？(Do testnet users receive rewards?)</h3>
-<p>No, <a href="https://ropsten.euler.finance/">testnet</a> is to preview upcoming features and for users to learn about the protocol without any mainnet gas fees.</p>
-<p>不，<a href="https://ropsten.euler.finance/">testnet</a> 是为了预览即将推出的功能，并让用户了解协议，而无需任何主网 gas 费用。</p>
-<h3 id="我可以投资-euler-获得代币吗can-i-invest-in-euler-for-tokens">我可以投资 Euler 获得代币吗？(Can I invest in Euler for tokens?)</h3>
-<p>No, you can only receive EUL distribution by borrowing.</p>
-<p>不可以，您只能通过在平台借款获得 EUL。</p>
-<h3 id="有人给我发消息承诺免费代币iconft等这是真的吗someone-messaged-me-promising-free-tokensiconftsetc-is-it-real">有人给我发消息承诺免费代币/ICO/NFT/等，这是真的吗？(Someone messaged me promising free tokens/ICO/NFTs/etc, is it real?)</h3>
-<p>No, that is fake. No one related to Euler will ever message anyone directly, nor offer free tokens or investments of any kind.</p>
-<p>不，都是假的。与 Euler 相关的任何人都不会直接向个人发送消息，也不会提供免费代币或任何形式的投资。</p>
-<h2 id="合作-partnerships">合作 (Partnerships</h2>
-<h3 id="关于合作集成我可以联系谁who-can-i-contact-about-partnershipsintegrations">关于合作/集成，我可以联系谁？(Who can I contact about partnerships/integrations?)</h3>
-<p>Feel free to reach out through Discord or other platforms in the Quick Links section. Also read the <a href="https://docs.euler.finance/developers/integration-guide">integration guide</a> for more details.</p>
-<p>您可以随时通过“快速链接”部分中的 Discord 或其他平台与我们联系。另请阅读 <a href="https://zenofchain.gitbook.io/euler-wen-dang-+-bai-pi-shu/kai-fa-zhe/he-yue-ji-cheng-zhi-nan">集成指南</a> 了解更多详细信息。</p>
-<h3 id="我们可以在我们的交易所上架-eul-吗can-we-list-eul-on-our-exchange">我们可以在我们的交易所上架 EUL 吗？(Can we list EUL on our exchange?)</h3>
-<p>EulerDAO cannot advise on exchange listings, nor pay for any listings.</p>
-<p>EulerDAO 不能就交易所上市提供建议，也不会为任何上市付费。</p>
-<h3 id="我们可以在您的流动性挖矿计划中提供我们的代币吗can-we-offer-our-token-in-your-liquidity-mining-programme">我们可以在您的流动性挖矿计划中提供我们的代币吗？(Can we offer our token in your liquidity mining programme?)</h3>
-<p>Euler will be adding this feature in the near future. Please get in touch if you’d like to integrate with the distribution mechanisms.</p>
-<p>Euler 将在随后添加此功能。如果您想与分发机制集成，请与我们联系。</p>
-<h3 id="如果我们向您付款或激活我们的代币您能否推销我们的公司代币can-you-market-our-companytoken-if-we-pay-you-or-activate-our-token">如果我们向您付款或激活我们的代币，您能否推销我们的公司/代币？(Can you market our company/token if we pay you or activate our token?)</h3>
-<p>Sorry, Euler does not accept payments or donations of any kind to promote activated markets.</p>
-<p>抱歉，Euler 不接受任何形式的付款或捐赠来推广已激活的市场。</p>
-<h3 id="你们有大使计划吗do-you-have-an-ambassador-programme">你们有大使计划吗？(Do you have an Ambassador programme?)</h3>
-<p>Not yet, but you can earn Epoints for contributing to the Euler community. For more information, please check out the blog post on <a href="https://blog.euler.finance/whats-the-point-in-points-31c2d3ae040f">Epoints</a>.</p>
-<p>还没有，但您可以通过为 Euler 社区做出贡献而获得 Epoints。有关更多信息，请查看关于 <a href="https://chainguys.github.io/post/ji-fen-de-yi-yi-he-zai-whats-the-point-in-points/">Epoints</a>的博客文章。</p>
 ]]></content>
     </entry>
 </feed>
