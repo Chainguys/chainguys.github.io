@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>ZKCross文档 (ZKCross Docs) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1655692301123">
+<link rel="shortcut icon" href="/favicon.ico?v=1655801524067">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -215,13 +215,13 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">51</span>
+        <span class="site-item-stat-count">52</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">182</span>
+        <span class="site-item-stat-count">184</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -1376,6 +1376,133 @@ Layer2 PRC地址</p>
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-zhi-li-ti-an-chuang-jian-gong-ju-jian-jie-yong-yu-eulerdao-di-1-jie-duan-introducing-eulers-governance-proposal-creation-tool-for-eulerdao-phase-1/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*ulMLTrBc35Jnkqab9XT_iA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;原文：&lt;a href=&#34;https://blog.euler.finance/euler-governance-proposal-creation-tool-e72d24a0383d&#34;&gt;https://blog.euler.finance/euler-governance-proposal-creation-tool-e72d24a0383d&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Learn how to create on-chain proposals during EulerDAO’s phase 1 launch.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;了解如何在 EulerDAO 的第一阶段期间创建链上提案。&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;简介-introduction&#34;&gt;简介 (Introduction)&lt;/h1&gt;
+&lt;p&gt;In the first phase of the EulerDAO Governance launch actions performed directly on the Euler protocol smart contracts will be executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target a function in a stub smart contract (in place of the Euler protocol smart contracts).&lt;/p&gt;
+&lt;p&gt;在 EulerDAO 治理的第一阶段，直接在 Euler 协议智能合约上执行的操作将由 Euler 团队代表社区执行。在这种情况下，所有链上治理提案都将指向或针对樁(又译为“桩”，是指用来替换一部分功能的程序段)智能合约中的功能（代替Euler协议智能合约）。&lt;/p&gt;
+&lt;p&gt;Examples of the kinds of decisions token holders might vote on include proposals to modify:&lt;/p&gt;
+&lt;p&gt;代币持有者可能投票的决策包含以下类型：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The tier of an asset&lt;br&gt;
+资产的层级&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Collateral and borrow factors&lt;br&gt;
+抵押和借贷因子&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Price oracle parameters&lt;br&gt;
+价格预言机参数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reactive interest rate model parameters&lt;br&gt;
+回应性利率模型参数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reserve factors&lt;br&gt;
+储备因素&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Should the proposal become successful and executed, the target function will then be executed (via the TimelockController controller smart contract). It will emit the proposal description string and proposal transaction data, which will then be validated by the Euler team and executed against the Exec module via the Euler multisig (on OpenZeppelin Defender).&lt;/p&gt;
+&lt;p&gt;如果提案成功并被执行，目标函数将被执行（通过 TimelockController 控制器智能合约）。它将发出提案描述字符串和提案交易数据，然后由 Euler 团队验证并通过 Euler多重签名（在 OpenZeppelin Defender 上）针对 Exec 模块执行。&lt;/p&gt;
+&lt;p&gt;Hence, the governorOnly() modifier in the &lt;a href=&#34;https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol&#34;&gt;Euler Governance module&lt;/a&gt; will be checking that the caller of its functions is the Euler mulisig and not the &lt;a href=&#34;https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/governance/TimelockController.sol&#34;&gt;TimelockController&lt;/a&gt; smart contract of the DAO.&lt;/p&gt;
+&lt;p&gt;因此，&lt;a href=&#34;https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol&#34;&gt;Euler 治理模块&lt;/a&gt; 中的 GovernorOnly() 修改器将检查它的功能是 Euler mulisig 而不是 DAO 的 &lt;a href=&#34;https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/governance/TimelockController.sol&#34;&gt;TimelockController&lt;/a&gt; 智能合约。&lt;/p&gt;
+&lt;p&gt;To create the proposal transaction data, we have implemented a &lt;a href=&#34;https://proposal.euler.finance/&#34;&gt;tool&lt;/a&gt; which will help the proposal creator to auto-generate it depending on what actions should be executed. The proposal transaction data is simply an encoded version of the on-chain transaction to the Exec module’s &lt;a href=&#34;https://docs.euler.finance/developers/contract-reference#batchdispatch&#34;&gt;batchDispatch&lt;/a&gt; function.&lt;/p&gt;
+&lt;p&gt;为了创建提案交易数据，我们发布了一个&lt;a href=&#34;https://proposal.euler.finance/&#34;&gt;工具&lt;/a&gt;，这将帮助提案者根据应执行的操作自动生成此数据。提案交易数据只是 Exec 模块的 &lt;a href=&#34;https://docs.euler.finance/developers/contract-reference#batchdispatch&#34;&gt;batchDispatch&lt;/a&gt; 函数的链上交易的编码版本。&lt;/p&gt;
+&lt;p&gt;The rest of the article will describe the process of creating the proposal transaction data on Euler’s governance proposal creation tool and using the generated proposal transaction data to create an on-chain proposal on the &lt;a href=&#34;https://www.tally.xyz/&#34;&gt;Tally&lt;/a&gt; governance dashboard.&lt;/p&gt;
+&lt;p&gt;本文剩余部分将描述在Euler治理提案创建工具上创建提案交易数据，并使用生成的提案交易数据在 &lt;a href=&#34;https://www.tally.xyz&#34;&gt;Tally&lt;/a&gt; 治理仪表盘上创建链上提案的过程。&lt;/p&gt;
+&lt;h1 id=&#34;第1部分为-euler-的-exec-模块创建提案交易数据-section-1-creating-the-proposal-transaction-data-for-eulers-exec-module&#34;&gt;第1部分：为 Euler 的 Exec 模块创建提案交易数据 (Section 1: Creating the proposal transaction data for Euler’s Exec Module)&lt;/h1&gt;
+&lt;h2 id=&#34;第1步-step-1&#34;&gt;第1步 (Step 1)&lt;/h2&gt;
+&lt;p&gt;Navigate to the proposal transaction data creation tool at: &lt;a href=&#34;https://proposal.euler.finance/&#34;&gt;https://proposal.euler.finance/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;导航到提案交易数据创建工具：&lt;a href=&#34;https://proposal.euler.finance/&#34;&gt;https://proposal.euler.finance/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The web application should look like the following image:&lt;/p&gt;
+&lt;p&gt;Web应用应如下图所示：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*QjRA6hGpBUVhxZHC&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;第2步step-2&#34;&gt;第2步(Step 2)&lt;/h2&gt;
+&lt;p&gt;The tool requires MetaMask to be installed in your browser.&lt;/p&gt;
+&lt;p&gt;工具需要您在浏览器中安装 MetaMask。&lt;/p&gt;
+&lt;p&gt;Switch your MetaMask wallet to mainnet. The tool currently supports mainnet and our Ropsten testnet Exec modules. It will create the appropriate transaction data to be executed depending on the selected network.&lt;/p&gt;
+&lt;p&gt;将您的 MetaMask 钱包切换到ETH主网。该工具目前支持主网和Ropsten测试网 的Exec 模块。它将根据所选网络创建适当的将执行交易数据。&lt;/p&gt;
+&lt;h2 id=&#34;第3步step-3&#34;&gt;第3步(Step 3)&lt;/h2&gt;
+&lt;p&gt;At the top left of the window, we have a text field for proposal description and below that we have a dropdown menu representing a list of tokens, e.g., USDC, DAI, etc.&lt;/p&gt;
+&lt;p&gt;在窗口的左上角，有一个用于提案描述的文本字段，下面是一个代表代币列表的下拉菜单，例如 USDC、DAI 等。&lt;/p&gt;
+&lt;p&gt;At the left side of the window, under the token list, we have a set of dropdown menus and text fields which will be autopopulated with the current token configurations (if the token has an activated market on Euler).&lt;/p&gt;
+&lt;p&gt;在窗口的左侧，代币列表下，有一组下拉菜单和文本字段，它们将自动填充当前代币配置（假如代币在 Euler 上有一个激活的市场）。&lt;/p&gt;
+&lt;p&gt;To create the proposal transaction data, the proposer needs to enter a proposal description and then select a token from the token list. Once selected, the rest of the fields will be automatically populated with the current configuration of the token or market on Euler if it has an activated market.&lt;/p&gt;
+&lt;p&gt;要创建提案交易数据，提案者需要输入提案描述，然后从代币列表中选择一个代表。一旦选择，假如它有一个激活的市场，其余字段将自动填充Euler上代币或市场的当前配置。&lt;/p&gt;
+&lt;p&gt;The image below shows the proposal description and the fields on the left populated with the current market configuration for USDC on Euler.&lt;/p&gt;
+&lt;p&gt;下图显示了提案描述和左侧的字段，其中填充了Euler上 USDC 的当前市场配置。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*KAV4TFFCyUE2lWsz&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;第4步-step-4&#34;&gt;第4步 (Step 4)&lt;/h2&gt;
+&lt;p&gt;The proposer can then make modifications and generate the proposal transaction hex data to be executed via the Euler Exec module (batchDispatch() function) and use this hex data as the input to the target function in the stub smart contract when creating a proposal on Tally (this is described in Section 2 below).&lt;/p&gt;
+&lt;p&gt;提案者之后可以进行修改并生成要通过 Euler Exec 模块（batchDispatch() 函数）执行的十六进制提议交易数据，并在在 Tally 上创建提议时使用此十六进制数据作为樁(又译为“桩”，是指用来替换一部分功能的程序段)智能合约中目标函数的输入（这在下面的第 2 节中进行了描述）。&lt;/p&gt;
+&lt;p&gt;For example purposes, let’s change the borrow factor of USDC to 0.6. To do this, we simply change the collateral factor from 0.9 to 0.6 in the text field for collateral factor and click on “CREATE PROPOSAL DATA”. Once we do this, we should see the markdown table showing the changes we want to make to the asset. We will also see the batch item’s Hex transaction data which we need for our on-chain governance proposal stub smart contract on Tally.&lt;/p&gt;
+&lt;p&gt;例如，将 USDC 的借入因子更改为 0.6。为此，我们只需在抵押因子的文本字段中将抵押因子从 0.9 更改为 0.6，然后单击“创建提案数据”。完成此操作后，我们应该会看到markdown表格，其中显示了我们想要对资产进行的更改。我们还将看到我们在 Tally 上的链上治理提案樁(又译为“桩”）智能合约所需的批处理项的十六进制交易数据。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*Uph0lQuE59NWAy4T&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Note: This process can be repeated for multiple tokens and configurations (or multiple configurations of the same token). They will be added in a batch and encoded to form the transaction data for the batchDispatch functionality in the Euler Exec module.&lt;/p&gt;
+&lt;p&gt;注意：可以为多个代币和配置（或同一代币的多个配置）重复此过程。它们将被批量添加并编码，来形成 Euler Exec 模块中的 batchDispatch 功能的交易数据。&lt;/p&gt;
+&lt;p&gt;For example, let us select DAI from the token list and change the borrow factor of DAI to 0.3. Again, the fields are automatically populated when we select DAI and when we change the borrow factor to 0.3 and click on “CREATE PROPOSAL DATA”. The list of configuration updates is updated to reflect the change we are making to DAI, while the USDC update information remains. The transaction hex is also updated.&lt;/p&gt;
+&lt;p&gt;例如，从代币列表中选择 DAI，并将 DAI 的借入因子更改为 0.3。同样，当我们选择 DAI 并将借入因子更改为 0.3 并单击“创建提案数据 (CREATE PROPOSAL DATA)”时，这些字段会自动填充。配置更新列表将被更新，来反映我们对 DAI 所做的更改，而 USDC 更新信息仍然存在。交易十六进制数也被更新。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*wlRZerhDtbYR9nXs&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;第5步-step-5&#34;&gt;第5步 (Step 5)&lt;/h2&gt;
+&lt;p&gt;To validate the updates we have selected, we can copy the auto-generated hex under batch items hex TX data (under batch items, which is under proposal description) and click on “DEBUG TX HEX DATA” and paste the copied hex into the text field.&lt;/p&gt;
+&lt;p&gt;为了验证我们选择的更新，我们可以将自动生成的十六进制数据复制到批处理项目十六进制TX数据下（在在提案描述的批处理项下），然后单击“DEBUG TX HEX DATA”并将复制的十六进制粘贴到文本中场地。&lt;/p&gt;
+&lt;p&gt;The tool should also decode the hex and show us a markdown with the updates the Euler team will be applying to the selected tokens once the proposal gets executed. The Euler team will also follow this process to make sure that the proposal description reflects the updates to be made before executing the transaction in the Exec module on behalf of the community.&lt;/p&gt;
+&lt;p&gt;本工具还应解码十六进制数据并向我们显示markdwon内容，其中包含Euler团队将在提案执行生效后应用于所选代表的更新。 Euler 团队还将遵循此流程，以确保提案描述反映了社区在 Exec 模块中执行交易之前要进行的更新。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*wBi5_JnrfXyWBM9g&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;As shown in the image above, the hex data is decoded to show the updates we selected to be applied to DAI and USDC. There is a close button at the bottom right of the window to close the debug modal and return to the main page.&lt;/p&gt;
+&lt;p&gt;如上图所示，十六进制数据被解码，来显示选择应用于 DAI 和 USDC 的更新。窗口右下方有一个关闭按钮，用于关闭调试模式并返回主页面。&lt;/p&gt;
+&lt;p&gt;Once you get to this point, you now have your proposal transaction data which you can use to create your on-chain proposal on Tally. After the voting period, if successfully executed, the decoded hex data will be submitted to OpenZeppelin Defender for the Euler team to execute on behalf of the community.&lt;/p&gt;
+&lt;p&gt;一旦到达这一步，您现在就拥有了提案交易数据，您可以使用这些数据在 Tally 上创建您的链上提案。投票期结束后，如果执行成功，解码后的十六进制数据将提交给 OpenZeppelin Defender，供 Euler 团队代表社区执行。&lt;/p&gt;
+&lt;p&gt;Please let us know if you have any questions or feedback while using the tool in our &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt; Governance channel.&lt;/p&gt;
+&lt;p&gt;如果您在我们的 &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt; 治理频道中使用该工具时有任何问题或反馈，请告诉我们。&lt;/p&gt;
+&lt;h1 id=&#34;第2部分使用exec-模块自动生成的交易数据为-tally-上的-dao-创建链上提案-section-2-using-the-auto-generated-transaction-data-for-eulers-exec-module-to-create-an-on-chain-proposal-for-the-dao-on-tally&#34;&gt;第2部分：使用Exec 模块自动生成的交易数据为 Tally 上的 DAO 创建链上提案 (Section 2: Using the Auto-Generated transaction data for Euler’s Exec Module to Create an on-chain proposal for the DAO on Tally)&lt;/h1&gt;
+&lt;p&gt;At this point, we assume you now have the proposal transaction hex data needed for the Euler Exec module’s batchDispatch function. And now you want to create the on-chain proposal for members of the community (and delegates) to vote on. If so, please read on!&lt;/p&gt;
+&lt;p&gt;到此，我们假设您现在拥有Exec模块的 batchDispatch 函数所需的提案交易十六进制数据。现在，您想创建让社区成员（和代表）投票的链上提案。如此，请继续阅读！&lt;/p&gt;
+&lt;p&gt;Below, we will describe the steps required to accomplish this goal.&lt;/p&gt;
+&lt;p&gt;下面，我们将描述实现这一目标所需的步骤。&lt;/p&gt;
+&lt;h2 id=&#34;第1步-step-1-2&#34;&gt;第1步 (Step 1)&lt;/h2&gt;
+&lt;p&gt;Head over to the EulerDAO dashboard on &lt;a href=&#34;https://www.tally.xyz/&#34;&gt;Tally&lt;/a&gt; and connect your MetaMask wallet.&lt;/p&gt;
+&lt;p&gt;前往 &lt;a href=&#34;https://www.tally.xyz/&#34;&gt;Tally&lt;/a&gt; 上的 EulerDAO 仪表盘，并连接您的 MetaMask 钱包。&lt;/p&gt;
+&lt;h2 id=&#34;第2步-step-2&#34;&gt;第2步 (Step 2)&lt;/h2&gt;
+&lt;p&gt;Click on “Create new proposal” at the right corner of the window.&lt;/p&gt;
+&lt;p&gt;单击窗口右上角的“创建新提案(Create new proposal)”。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*E5WwdXclc-qZ8UMt&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;It should then take you to the proposal creation window below.&lt;/p&gt;
+&lt;p&gt;然后它应该带您到下面的提案创建窗口。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;8&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*mSPcLmHH9hd2o2Jk&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Click on “Continue” to move onto the next step (“Name your proposal”).&lt;/p&gt;
+&lt;p&gt;单击“继续 (Continue)”进入下一步（“命名您的提案”）。&lt;/p&gt;
+&lt;h2 id=&#34;第3步-step-3&#34;&gt;第3步 (Step 3)&lt;/h2&gt;
+&lt;p&gt;Enter a proposal title and description and click “Continue”.&lt;/p&gt;
+&lt;p&gt;输入提案标题和描述，然后单击“继续 (Continue)”。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;9&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*RfFL17gcUpPQHCSy&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;第4步-step-4-2&#34;&gt;第4步 (Step 4)&lt;/h2&gt;
+&lt;p&gt;In the next section, you will be required to specify the governance proposal actions, i.e., target smart contract, target function and parameters. The Tally dashboard allows you to specify multiple actions in a single proposal which will be called/executed if the proposal is successful and executed.&lt;/p&gt;
+&lt;p&gt;在下一节中，您将需要指定治理提案操作，即目标智能合约、目标函数和参数。 Tally 仪表盘允许您在单个提案中指定多个操作，如果提案成功并有效执行，这些操作将被调用/执行。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;10&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*2mkVUVKpgFYZJDtm&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;To add the proposal transaction hex from Section 1 and set the governance stub contract as the target smart contract, click on “Add custom action” =&amp;gt; enter the stub smart contract address as the target smart contract. Then select the “executeProposal” function from the dropdown menu under “contract method” as the target function in the target smart contract. Here’s the interesting part: enter the required parameters, i.e., proposal description string and the proposalData which is your proposal transaction hex data from Section 1.&lt;/p&gt;
+&lt;p&gt;要添加第1部分中的提案交易十六进制数据，并将治理合约设置为樁(又译为“桩”，是指用来替换一部分功能的程序段)目标智能合约，请单击“添加自定义操作 (Add custom action)”=&amp;gt; 输入樁智能合约地址作为目标智能合约。然后从“合约方法 (contract method)”下的下拉菜单中选择“执行提案 (executeProposal)”函数作为目标智能合约中的目标函数。这是有趣的部分：输入所需的参数，即提案描述字符串和“提案数据 (proposalData)&amp;quot;，这是您在第1部分中的提案交易十六进制数据。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;11&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*oOw8iaNWWan65rQ1&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;第5步-step-5-2&#34;&gt;第5步 (Step 5)&lt;/h2&gt;
+&lt;p&gt;Once done, click continue and review the proposal. Once you are happy, you can click “Submit on-chain” which will open a MetaMask pop-up window for you to sign the transaction to create the proposal on-chain, via the Governance smart contract.&lt;/p&gt;
+&lt;p&gt;完成后，单击&amp;quot;继续 (continue)&amp;quot;并查看提案。如果满意，您可以单击“提交链上 (Submit on-chain)”，这将打开一个 MetaMask 弹出窗口，供您通过治理智能合约签署交易来在链上创建提案。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;12&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*TKmnx2vL060-N-YR&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;关于euler-about-euler&#34;&gt;关于Euler (About Euler)&lt;/h1&gt;
+&lt;p&gt;Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit &lt;a href=&#34;https://www.euler.finance/&#34;&gt;euler.finance&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 &lt;a href=&#34;https://www.euler.finance/&#34;&gt;euler.finance&lt;/a&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;加入社区-join-the-community&#34;&gt;加入社区 (Join the Community)&lt;/h1&gt;
+&lt;p&gt;Follow us &lt;a href=&#34;https://twitter.com/eulerfinance&#34;&gt;Twitter&lt;/a&gt;. Join our &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;. Keep in touch on Telegram (&lt;a href=&#34;https://t.me/eulerfinance_official&#34;&gt;community&lt;/a&gt;, &lt;a href=&#34;https://t.me/eulerfinance&#34;&gt;announcements&lt;/a&gt;). Check out our &lt;a href=&#34;https://www.euler.finance/&#34;&gt;website&lt;/a&gt;. Connect with us on &lt;a href=&#34;https://www.linkedin.com/company/euler-xyz/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;关注我们 &lt;a href=&#34;https://twitter.com/eulerfinance&#34;&gt;Twitter&lt;/a&gt;。加入我们的 &lt;a href=&#34;https://discord.gg/CdG97VSYGk&#34;&gt;Discord&lt;/a&gt;。在 Telegram 上保持联系(&lt;a href=&#34;https://t.me/eulerfinance_official&#34;&gt;community&lt;/a&gt;、&lt;a href=&#34;https://t.me/eulerfinance&#34;&gt;announcements&lt;/a&gt;)。查看我们的&lt;a href=&#34;https://www.euler.finance/&#34;&gt;网站&lt;/a&gt;。在 &lt;a href=&#34;https://www.linkedin.com/company/euler-xyz/&#34;&gt;LinkedIn&lt;/a&gt; 上与我们联系。&lt;/p&gt;
+">Euler治理提案创建工具简介（用于EulerDAO第1阶段）- Introducing Euler’s Governance Proposal Creation Tool (for EulerDAO Phase 1)</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-lai-xin-liu-yue-zong-jie-euler-newsletter-june-summary/"" data-c="
@@ -2998,6 +3125,7 @@ const eagEurAddr = e
 &lt;h2 id=&#34;euler-用户指南借贷-euler-user-guideborrowing-and-lending&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/euler-yong-hu-zhi-nan-jie-dai-euler-user-guideborrowing-and-lending&#34;&gt;Euler 用户指南：借贷 (Euler User Guide：Borrowing and Lending)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;在tally的治理仪表盘上委托投票-delegating-voting-power-on-tally-governance-dashboard&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/zai-tally-de-zhi-li-yi-biao-pan-shang-wei-tuo-tou-piao-delegating-voting-power-on-tally-governance-dashboard&#34;&gt;在Tally的治理仪表盘上委托投票 (Delegating Voting Power on Tally Governance Dashboard)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;专访euler金融联合创始人兼首席执行官-michael-bentleyinterview-with-michael-bentley-co-founder-ceo-of-euler-finance&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/zhuan-fang-euler-jin-rong-lian-he-chuang-shi-ren-jian-shou-xi-zhi-xing-guan-michael-bentleyinterview-with-michael-bentley-co-founder-and-ceo-of-euler-finance&#34;&gt;专访Euler金融联合创始人兼首席执行官 Michael Bentley(Interview with Michael Bentley, Co-founder &amp;amp; CEO of Euler Finance)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;euler治理提案创建工具简介用于eulerdao第1阶段-introducing-eulers-governance-proposal-creation-tool-for-eulerdao-phase-1&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/euler-zhi-li-ti-an-chuang-jian-gong-ju-jian-jie-yong-yu-eulerdao-di-1-jie-duan-introducing-eulers-governance-proposal-creation-tool-for-eulerdao-phase-1&#34;&gt;Euler治理提案创建工具简介（用于EulerDAO第1阶段）- Introducing Euler’s Governance Proposal Creation Tool (for EulerDAO Phase 1)&lt;/a&gt;&lt;/h2&gt;
 ">Euler中文材料合集-不断更新中(Euler Chinese Materials-Updating)</a>
       </div>
       
