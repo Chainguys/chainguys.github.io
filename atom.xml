@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-06-24T15:36:42.215Z</updated>
+    <updated>2022-06-24T17:16:50.847Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,51 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[公共保管库已经到来！(Public vaults have arrived!)]]></title>
+        <id>https://chainguys.github.io/post/gong-gong-bao-guan-ku-yi-jing-dao-lai-public-vaults-have-arrived/</id>
+        <link href="https://chainguys.github.io/post/gong-gong-bao-guan-ku-yi-jing-dao-lai-public-vaults-have-arrived/">
+        </link>
+        <updated>2022-06-23T17:12:49.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/media/Public-Vaults-AK-blog.png" alt="Public Vaults AK blog" loading="lazy"></figure>
+<h2 id="akord上公共文件及其含义-public-files-on-akord-and-what-it-means">Akord上公共文件及其含义 (Public files on Akord and what it means)</h2>
+<p>Privacy and encryption was the starting point for Akord, and it would have struck us as strange to think when we founded the company that one day we’d be storing publicly available data. But back then we didn’t know about Arweave. The permanent data storage paradigm has opened our eyes to a far broader understanding of data ownership.</p>
+<p>隐私和加密是 Akord 的起点，当我们创立公司时，入伙想到有一天我们会存储公开可用的数据，这会让我们感到很奇怪。不过那时我们并不知道 Arweave。永久数据存储范式让我们对数据所有权有了更广泛的理解。</p>
+<p>By providing public file support on Arweave, we are opening the door to owning different types of data in different ways. The permanence of data on Arweave allows for files intended for the public domain to stay there – forever. In this context, ownership is not the ability of the individual to keep data private, but to keep data accessible for everyone and to never have it taken down by a centralised authority.</p>
+<p>通过在Arweave提供公共文件支持，我们打开了用不同方式拥有不同类型数据这扇大门。 Arweave 上数据的持久性允许用于公共领域的文件永远保留其上。在这种情况下，所有权不是个人保持数据私密性的能力，而是让每个人都可以访问数据并且永远不会被中心化机构删除的能力。</p>
+<h2 id="引入公共保管库-introducing-public-vaults">引入公共保管库 (Introducing public vaults)</h2>
+<p>Can a vault be public? I hear you say. Aren’t vaults places where we lock things away? Well, a vault is also defined as a space covered by an arch shape structure like a ceiling or roof. Which is a perfect way to to think about Akord’s public vaults. We provide the covering over head, but when you create your public vault anyone can walk in.</p>
+<p>保管库可以公开吗？我听取你的意见。保管库不是我们把东西锁起来的地方吗？嗯，拱顶也被定义为由拱形结构覆盖的空间，如天花板或屋顶。这是思考 Akord 公共保管库的完美方式。我们提供头顶覆盖物，但是当您创建公共保管库时，任何人都可以走进去。</p>
+<p>When you hit the “New vault” button in Akord, you’ll now be asked whether you want to create an Encrypted or Public vault.</p>
+<p>当您在 Akord 中点击“新建保管库”按钮时，系统会询问您是要创建加密保管库还是公共保管库。</p>
+<p><img src="https://akord.com/media/vault-setup.png" alt="Vault setup" loading="lazy"><br>
+在 Akord 中设置新保管库时的第一个屏幕。(The first screen when setting up a new vault in Akord.)</p>
+<p>If you create an Encrypted vault, the padlock icon will appear next to your vault title and all the asset icons will appear in the Akord orange colour. If you pick Public vault, the globe icon will appear next to the vault title and all the asset icons will be in our blue colour. We’ve tried to make the differences between the two vaults very clear at the visual level, so files are not mistakenly uploaded publicly when they were intended for private, encrypted storage.</p>
+<p>如果您创建加密保管库，则挂锁图标将出现在您保管库标题旁边，并且所有资产图标都将以Akord橙色显示。如果您选择公共保管库，地球图标将出现在保管库标题旁边，所有资产图标都将显示为蓝色。我们试图在视觉层面上非常清楚地显示两个保管库之间的差异，因此当文件用于私人加密存储时，不会错误地公开上传文件。</p>
+<p><img src="https://akord.com/media/encrypted-v-public.png" alt="Encrypted v public" loading="lazy"><br>
+加密保险库以橙色图标（左）和蓝色图标（右）显示公共保险库。—Encrypted vaults are displayed with orange icons (left) and Public vaults in blue (right).</p>
+<p>It’s important to note that in public vaults you most of the same features you have in encrypted vaults, like the ability to invite contributors or create an Akord Note, but unlike encrypted vaults there is no in-built chat in public vaults.</p>
+<p>请务必注意，在公共保险库中，您拥有与加密保险库中的大部分相同的功能，例如邀请贡献者或创建 Akord Note 的能力，但与加密保险库不同的是，公共保险库中没有内置聊天功能。</p>
+<p>When you view media in a public vault, you’ll see a Share button in the top right. This will enable you to copy a link to your file directly to your clipboard, allowing you to easily share the content with whoever and wherever you want.</p>
+<p>当您在公共保管库中查看媒体时，您会在右上角看到一个共享按钮。这将使您能够将指向文件的链接直接复制到剪贴板，您可以轻松地与任何人、任何地点共享内容。</p>
+<p><img src="https://akord.com/media/File-previewer.png" alt="File previewer" loading="lazy"><br>
+与任何人、所有人轻松共享公共保管库内容。(Easily share public vault content with anyone and everyone.)</p>
+<h2 id="未来优化upcoming-improvements">未来优化(Upcoming improvements)</h2>
+<h3 id="保险库分享-vault-sharing">保险库分享 (Vault sharing)</h3>
+<p>With this release, you can only share single files, not the whole public vault. The ability to share entire public vaults is a feature that is dependent on Akord Explorer, our Arweave explorer for data uploaded through the Akord protocol. Akord Explorer will be deployed directly on Arweave, so it makes sense that sharing public vaults will take people to Explorer. Akord Explorer will be arriving in the coming weeks.</p>
+<p>在此版本中，您只能共享单个文件，而不是整个公共保管库。共享整个公共保管库的能力依赖于 Akord Explorer，这是我们的 Arweave 浏览器，用于通过 Akord 协议上传的数据。 Akord Explorer 将直接部署在 Arweave 上，因此共享公共保管库有理由会将人们带到 Explorer 。 Akord Explorer 将在未来几周内更新。</p>
+<p><img src="https://akord.com/media/AK-Explorer.png" alt="AK Explorer" loading="lazy"><br>
+Akord Explorer用户界面抢先看 (Sneak peek at Akord Explorer UI)</p>
+<h3 id="上传时铸造-mint-on-upload">上传时铸造 (Mint on upload)</h3>
+<p>We see atomic NFTs on Arweave as a further step in data ownership within the public domain. By fusing the non-fungible token, asset and metadata, and sending it all to the weave, creators can have their work and its provenance easily and permanently verifiable on-chain.</p>
+<p>我们将 Arweave 上的原子NFT视为公共领域内数据所有权的又一进步。通过融合不可替代的代币、资产和元数据，并将其全部发送到编织中，创作者可以轻松且永久地在链上验证他们的工作及其出处。</p>
+<p>Later this year, we intend to implement a mint on upload feature within Akord public vaults, allowing for a user-friendly and quick way for people to mint atomic NFTs directly on Arweave.</p>
+<p>今年晚些时候，我们打算在 Akord 公共保险库中实现上传时铸币功能，从而为人们直接在 Arweave 上铸造原子NFT提供一种友好方便的方式。</p>
+<hr>
+<p>As with all our product development, we welcome feedback and feature requests. The best place to reach us is by joining our community on <a href="https://discord.com/invite/g4VXfauK5s">Discord</a>.</p>
+<p>与我们所有的产品开发一样，我们欢迎反馈和功能请求。请加入我们的 <a href="https://discord.com/invite/g4VXfauK5s">Discord</a> 社区。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[介绍 EulerDAO：社区提案和投票掌握治理(Introducing EulerDAO：Community Proposals and Voting Take Hold of Governance)]]></title>
         <id>https://chainguys.github.io/post/jie-shao-eulerdaoshe-qu-ti-an-he-tou-piao-zhang-wo-zhi-li-introducing-eulerdaocommunity-proposals-and-voting-take-hold-of-governance/</id>
@@ -643,77 +688,6 @@
 <p>下周 6 月 9 日至 12 日，在德克萨斯州奥斯汀的 Consensus 与团队会面。</p>
 <p>If you're in Germany, join Michael at the inaugural <a href="https://twitter.com/euler_mab/status/1494075904154349573">Blockchain Oracle Summit</a> in Berlin on 7-9 June.</p>
 <p>如果您在德国，请与迈克尔一起参加 6 月 7 日至 9 日在柏林举行的首届<a href="https://twitter.com/euler_mab/status/1494075904154349573">区块链甲骨文峰会</a> 。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[EulerDAO启动各阶段介绍 (EulerDAO Launch Phases)]]></title>
-        <id>https://chainguys.github.io/post/eulerdao-qi-dong-ge-jie-duan-jie-shao-eulerdao-launch-phases/</id>
-        <link href="https://chainguys.github.io/post/eulerdao-qi-dong-ge-jie-duan-jie-shao-eulerdao-launch-phases/">
-        </link>
-        <updated>2022-06-03T12:12:09.000Z</updated>
-        <content type="html"><![CDATA[<p><em>Learn more about the plans to launch the EulerDAO and participate in the governance process.</em><br>
-<em>详细了解EulerDAO启动并参与治理过程的计划。</em></p>
-<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*D0n8MzqmozLAZ4EVX4eY8w.png" alt="" loading="lazy"></figure>
-<hr>
-<p>EulerDAO will kick off in three phases for a guarded launch towards full decentralisation of the Euler protocol. Each phase is described below.</p>
-<p>EulerDAO 将分三个阶段来安全启动，进而将Euler 协议推向完全去中心化。每个阶段如下所述。</p>
-<p>The EulerDAO uses the OpenZeppelin Governor smart contracts (version 4.6.0) for governance (as well as the EUL token contract). It is a governance protocol — similar to the one Compound uses — where delegates vote on active proposals to make changes to the EulerDAO and Euler protocol.</p>
-<p>EulerDAO 使用 OpenZeppelin Governor 智能合约（4.6.0 版）进行治理（EUL 代币合约也是）。这是一种治理协议——类似Compound使用的协议——代表们对活动的提案进行投票，从而对 EulerDAO 和 Euler 协议进行更改。</p>
-<p>Euler uses the Tally governance dashboard application to manage the governance process. Through Tally, you can set up your wallet to become a delegate, create on-chain proposals, vote on active proposals, discover delegates in the community, and delegate your voting power to a community member.</p>
-<p>Euler 使用 Tally 治理仪表盘应用来管理治理过程。通过Tally，您可以设置您的钱包成为代表，创建链上提案，对活跃提案进行投票，或者在社区中发现代表，并将您的投票权委托给社区成员。</p>
-<h1 id="第1阶段-phase-1">第1阶段 (Phase 1)</h1>
-<p>The first phase of the launch will be such that actions to be performed directly on the Euler protocol smart contracts will be executed by the Euler team on behalf of the community. In this case, all on-chain governance proposals will point to or target a function in a stub smart contract (in place of the Euler protocol smart contracts).</p>
-<p>启动的第一阶段将由 Euler 团队代表社区，直接执行在 Euler 协议智能合约上的操作。在这种情况下，所有链上治理提案都将指向或针对樁(又译为“桩”，是指用来替换一部分功能的程序段)智能合约中的功能（代替Euler协议智能合约）。</p>
-<p>Should the proposal become successful and executed, the target function will then be executed (via the TimelockController controller smart contract). It will emit the proposal description string and proposal transaction data, which will then be validated by the Euler team and executed against the Exec module via the Euler multisig.</p>
-<p>如果提案成功并被执行，目标函数将被执行（通过 TimelockController 控制器智能合约）。它将发出描述提案的字符串和提案交易数据，然后由 Euler 团队验证并通过 Euler 多重签名针对 Exec 模块执行。</p>
-<p>Hence, the governorOnly() modifier in the Euler Governance module smart contract will be checking that the caller of its functions is the Euler mulisig and not the TimelockController smart contract.</p>
-<p>因此，Euler 治理模块智能合约中的 GovernorOnly() 修改器，将检查其函数的调用者是否为 Euler mulisig(而不应该是 TimelockController 智能合约）。</p>
-<p>To create the proposal transaction data, a <a href="https://governance.euler.finance/">tool</a> has been implemented which will help the proposer to auto-generate this depending on what actions should be executed. The proposer can select a token from the dropdown token list (this will autopopulate the fields with the current configuration for the token/market on Euler).</p>
-<p>为了创建提案交易数据，我们发布了一个 <a href="https://governance.euler.finance/">工具</a>，这将帮助提案者根据应执行的操作自动生成此数据。提议者可以从下拉代币列表中选择一个代币（这将使用 Euler 上代币/市场的当前配置，自动填充字段）。</p>
-<p>The proposer can then make modifications and generate the proposal transaction hex to be executed via the Euler Exec module (batchDispatch() function) and use this hex data as the input to the target function in the stub smart contract when creating a proposal on Tally.</p>
-<p>然后，提议者可以进行修改，并生成通过 Euler Exec 模块（batchDispatch() 函数）执行的提议交易十六进制信息，并于Tally上创建提议时，使用此十六进制数据作为樁智能合约中，目标函数的输入项。</p>
-<p>Examples of the kinds of decisions token holders might vote on include proposals to modify:</p>
-<p>代币持有者可能投票的决策类型示例，包括可以修改以下内容的提案：</p>
-<ul>
-<li>
-<p>The tier of an asset<br>
-资产的层级</p>
-</li>
-<li>
-<p>Collateral and borrow factors<br>
-抵押和借贷因子</p>
-</li>
-<li>
-<p>Price oracle parameters<br>
-价格预言机参数</p>
-</li>
-<li>
-<p>Reactive interest rate model parameters<br>
-回应性利率模型参数</p>
-</li>
-<li>
-<p>Reserve factors<br>
-储备因素</p>
-</li>
-</ul>
-<h1 id="第2阶段-phase-2">第2阶段 (Phase 2)</h1>
-<p>In the second phase, the governor admin for the Euler Governance module will switch from the Euler multisig to the TimelockController smart contract. Hence, the governorOnly() modifier in the Euler Governance module smart contract will be checking that the caller of its functions is the TimelockController smart contract.</p>
-<p>在第2阶段，Euler治理模块治理者的管理员将从 Euler 多重签名切，换到 TimelockController 智能合约。因此，Euler治理模块智能合约中的 GovernorOnly() 修改器将检查其函数的调用者是否为 TimelockController 智能合约。</p>
-<p>In this case, proposals created via the Tally governance dashboard will need to target the Euler <a href="https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol">Governance module</a> directly. Successful proposals which receive a higher number of votes in support will then be executed without the control of the Euler team.</p>
-<p>在这种情况下，通过 Tally 治理仪表盘创建的提案需要直接针对 Euler <a href="https://github.com/euler-xyz/euler-contracts/blob/master/contracts/modules/Governance.sol">治理模块</a>。获得更高票数支持的成功提案，会在没有Euler团队控制的情况下执行。</p>
-<p>During execution, the TimelockController smart contract will call the target function in the Euler Governance module as specified within the on-chain proposal. Proposers will be able to add a batch of actions / functions to be executed within the Euler Governance module into a single on-chain proposal as well.</p>
-<p>在执行期间，TimelockController 智能合约将调用链上提案中指定的 Euler 治理模块中的目标功能。提议者也可以把在 Euler 治理模块中执行的批处理操作/功能添加到单个链上提议中。</p>
-<h1 id="第3阶段-phase-3">第3阶段 (Phase 3)</h1>
-<p>In this phase, the Installer Admin will also be switched to the TimelockController smart contract.</p>
-<p>在这个阶段，负责安装的管理员(Installer Admin)也将切换到 TimelockController 智能合约。</p>
-<p>Not only giving the community control over the Governance module for asset configuration modifications but also full control over the protocol including the installer module. This module is used to bootstrap install the rest of the modules, and can later on be used to upgrade modules to add new features and/or fix bugs.</p>
-<p>这些不仅让社区能为资产配置修改而掌控治理模块，还可以完全控制包括安装模块在内的协议。安装模块用于引导安装其余模块，稍后可用于升级其他模块来添加新功能和/或修复错误。</p>
-<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
-<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
-<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
-<h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
-<p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
-<p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
 ]]></content>
     </entry>
 </feed>
