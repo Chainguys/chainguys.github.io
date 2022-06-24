@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-06-21T08:52:13.150Z</updated>
+    <updated>2022-06-24T15:36:42.215Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,57 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[介绍 EulerDAO：社区提案和投票掌握治理(Introducing EulerDAO：Community Proposals and Voting Take Hold of Governance)]]></title>
+        <id>https://chainguys.github.io/post/jie-shao-eulerdaoshe-qu-ti-an-he-tou-piao-zhang-wo-zhi-li-introducing-eulerdaocommunity-proposals-and-voting-take-hold-of-governance/</id>
+        <link href="https://chainguys.github.io/post/jie-shao-eulerdaoshe-qu-ti-an-he-tou-piao-zhang-wo-zhi-li-introducing-eulerdaocommunity-proposals-and-voting-take-hold-of-governance/">
+        </link>
+        <updated>2022-06-23T15:31:03.000Z</updated>
+        <content type="html"><![CDATA[<p><em>EulerDAO’s decentralised and on-chain governance has been launched, with the community now able to vote on proposals and gauges.</em></p>
+<p><em>EulerDAO 的去中心化和链上治理已经启动，社区现在可以对提案和规范进行投票。</em></p>
+<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*aPoXkCYYVMUyrS5USNv2DQ.png" alt="" loading="lazy"></figure>
+<p>EulerDAO’s launch signifies a new direction in decentralised financial markets, where community members can democratically vote on market and asset structures to fit their needs. Through a non-custodial experience, users have equal access to permissionless borrowing and lending markets.</p>
+<p>EulerDAO 的推出标志着去中心化金融市场的新方向：社区成员可以在市场和资产结构上进行民主投票来满足他们的需求。借由非托管式体验，用户可以平等地进入无许可的借贷市场。</p>
+<p>Starting today, community members can <a href="https://docs.euler.finance/governance/eul/distribution#how-to-claim">claim</a> any available EUL tokens from previous epochs, select a delegate on the <a href="https://app.euler.finance/delegates">delegates</a> page and participate in the future of decentralised finance.</p>
+<p>从今天开始，社区成员可以 <a href="https://docs.euler.finance/governance/eul/distribution#how-to-claim">声索</a> 任何来自之前时代的可用 EUL 代币，在 <a href="https://app.euler.finance/delegates">委托</a>页面并参与去中心化金融的未来。</p>
+<p>The development of the Euler Protocol has matured into a rapidly growing DeFi platform that is uniquely positioned as truly decentralised and permissionless. Handing over governance control to the community is not a first, but it is a groundbreaking leap as a risk-conscious protocol where users can list, borrow and lend nearly any asset.</p>
+<p>Euler协议已发展为一个快速增长的，以真正去中心化和无许可化为独特定位的DeFi平台。虽然将治理控制权移交给社区并不是历史首次，但Euler作为一种有风险意识的协议，却是一个突破性的飞跃：用户可以公开列出、借入和借出几乎任何资产。</p>
+<p>EulerDAO’s community-run governance enables users to vote or <a href="https://blog.euler.finance/eulerdao-call-for-delegates-3c3220066eaa">delegate</a> their voting power to others in order to unite behind a shared vision of the protocol’s future. Delegates, including those who have self-delegated, can create proposals that shape the functionality of the Euler Protocol. Delegates can propose changes to an asset’s tier, collateral and borrow factors, interest rate model parameters, reserve factors, and much more.</p>
+<p>EulerDAO 的社区运行治理，使用户能够投票或将他们的投票权<a href="https://blog.euler.finance/eulerdao-call-for-delegates-3c3220066eaa">委托</a> 给他人，进而团结一致，支持协议共同的未来愿景。代表，包括那些自我委托的代表，可以创建那些塑造Euler协议功能的提案。代表们可以提议对资产层级、抵押品和借入因子、利率模型参数、准备金因子等进行更改。</p>
+<p>The governance <a href="https://docs.euler.finance/governance/governance/governance-process">process</a> will see users discuss potential changes, initiate proposals, community on-chain voting, and execution if successful, as shown below.</p>
+<p>治理<a href="https://docs.euler.finance/governance/governance/governance-process">流程</a>将看到用户讨论潜在改变，发起提案，社区链上投票，如果成功则执行，如下所示。</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/1*MC7DJ_wAUHQeXPEq8a68Mw.png" alt="" loading="lazy"></figure>
+<p>More details and guides on the voting process can be found in the Euler <a href="https://docs.euler.finance/governance/governance/voting">documentation</a>. While anyone can become a delegate, delegation is a serious commitment as a volunteer to actively participate in governance, as EulerDAO will aim to fairly and adequately reward delegates for their significant efforts.</p>
+<p>更多有关投票过程详细信息和指南，请参阅 Euler <a href="https://docs.euler.finance/governance/governance/voting">文档</a>。虽然任何人都可以成为代表，但委托/代表是作为志愿者积极参与治理的严肃承诺，因为 EulerDAO 的目标是公平和充分地奖励代表的重大努力。</p>
+<p>As part of the <a href="https://blog.euler.finance/eulerdao-launch-phases-2a154837b908">phased launch</a>, proposals will be performed directly on the Euler Protocol smart contracts by the Euler team on behalf of the community. Governance proposers can use a <a href="https://proposal.euler.finance/">tool</a> to ensure the on-chain proposal is properly created.</p>
+<p>作为<a href="https://chainguys.github.io/post/eulerdao-qi-dong-ge-jie-duan-jie-shao-eulerdao-launch-phases/">分阶段发布</a> 的一部分，Euler团队将代表社区直接在Euler协议智能合约上执行提案。治理提议者可以使用 <a href="https://proposal.euler.finance/">工具</a> 来确保正确创建链上提议。</p>
+<p>The second phase will see a transition from the multisig to a TimelockController smart contract, while the final third phase will turn the Installer Admin to the TimelockController, thus placing the community in full direct control over governance. The phases are to provide a smooth and more secure transition process.</p>
+<p>第二阶段，我们将看到从多重签名到 TimelockController 智能合约的过渡，而最后的第三阶段会把安装程序的管理员转变为 TimelockController，从而使社区完全直接控制治理。这些阶段是为了提供一个平稳和更安全的过渡过程。</p>
+<h1 id="eul分发-eul-distribution">EUL分发 (EUL Distribution)</h1>
+<p>The Euler Protocol distributes EUL tokens to borrowers of certain assets, with the amount of EUL allocated to each market every epoch determined by EUL token holders through the gauges.</p>
+<p>Euler 协议将 EUL 代币分配给某些资产的借款人，每个市场分配的 EUL 数量由 EUL 代币持有者通过量表确定。</p>
+<p>Soon after Epoch 7 begins, EUL token holders can visit the <a href="https://app.euler.finance/gaugeweight">Gauge</a> page and stake their tokens against a particular market to indicate their preference for that market receiving an EUL distribution in future epochs.</p>
+<p>在 Epoch 7（第7纪元） 开始后不久，EUL 代币持有者可以访问 <a href="https://app.euler.finance/gaugeweight">量表</a> 页面并将他们的代币质押在特定市场上，从而表明他们对该市场未来纪元接收 EUL 分配的偏好。</p>
+<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/1*FmL9OxzGhARePbOp0vsskA.png" alt="" loading="lazy"></figure>
+<p>The EUL distribution <a href="https://docs.euler.finance/governance/eul/distribution-1">schedule</a> follows a bell curve model over a four-year period, with a peak around the middle. The schedule for the EUL distribution tries to match increasing protocol user numbers after launch with a concomitant increase in the EUL distribution, which should help to decentralise the supply of the token.</p>
+<p>EUL 分发 <a href="https://docs.euler.finance/governance/eul/distribution-1">图表</a> 在四年期间遵循钟形曲线（贝尔曲线）模型，在中间有一个峰值。 EUL 分发时间表试图在启动后增加协议用户数量，同时增加 EUL 分发，这将有助于分散代币的供应。</p>
+<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/1*2PXagLlZrVp-JkQn9lXoZQ.png" alt="" loading="lazy"></figure>
+<p>Users unfamiliar with the platform, delegation, on-chain voting, or anything else related to Euler and the DAO should refer to the various user <a href="https://blog.euler.finance/">guides</a> or feel welcome to join the Euler <a href="https://discord.gg/CdG97VSYGk">Discord</a> to ask questions and get involved.</p>
+<p>不熟悉平台、委托、链上投票或其他任何与 Euler 和 DAO 相关的用户，可以参考各种用户 <a href="https://blog.euler.finance/">指南</a> 或欢迎加入 Euler <a href="https://discord.gg/CdG97VSYGk">Discord</a> 提出问题并参与其中。</p>
+<p>The Euler Protocol has been developing over the past couple years, with the mainnet released earlier this year. Euler has partnered with several top security firms that resulted in <a href="https://github.com/euler-xyz/euler-audits/tree/master/smart_contract_audits">audits</a> and a <a href="https://immunefi.com/bounty/euler/">bug bounty</a>.</p>
+<p>Euler协议在过去几年中一直在发展，今年早些时候发布了主网。 Euler与几家顶级安全公司合作，进行了<a href="https://github.com/euler-xyz/euler-audits/tree/master/smart_contract_audits">审计</a> 和<a href="https://immunefi.com/bounty/euler/">漏洞赏金</a>.</p>
+<p>The EulerDAO launch comes at a unique yet volatile time in not only DeFi but also global history. Now anyone using Euler can manage their own risks, assets, and opportunities in a transparent and inclusive environment.</p>
+<p>EulerDAO 的发布正值 DeFi 乃至全球历史上一个独特而动荡的时期。现在，任何使用 Euler 的人都可以在透明和包容的环境中管理自己的风险、资产和机会。</p>
+<p>Welcome to the EulerDAO, we’re now live.</p>
+<p>欢迎来到 EulerDAO，我们已上线。</p>
+<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
+<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
+<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
+<h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
+<p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
+<p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Euler治理提案创建工具简介（用于EulerDAO第1阶段）- Introducing Euler’s Governance Proposal Creation Tool (for EulerDAO Phase 1)]]></title>
         <id>https://chainguys.github.io/post/euler-zhi-li-ti-an-chuang-jian-gong-ju-jian-jie-yong-yu-eulerdao-di-1-jie-duan-introducing-eulers-governance-proposal-creation-tool-for-eulerdao-phase-1/</id>
@@ -663,445 +714,6 @@
 <h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
 <p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
 <p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ZKCross文档 (ZKCross Docs)]]></title>
-        <id>https://chainguys.github.io/post/zkcross-wen-dang-zkcross-docs/</id>
-        <link href="https://chainguys.github.io/post/zkcross-wen-dang-zkcross-docs/">
-        </link>
-        <updated>2022-05-27T09:34:11.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="版权声明copyright-notice">版权声明（Copyright Notice）</h1>
-<p>本文翻译自<a href="https://twitter.com/thezkcross">@ZKCross</a>团队关于ZKCross项目的<a href="https://docs.zkcross.org/">文档</a>。已得到作者的授权。译者为<a href="https://twitter.com/Chainguys">@chainguys</a>。转载请注明作者和译者。</p>
-<p>（Coptyright©2021 by <a href="https://twitter.com/thezkcross">@ZKCross</a> ,translated by <a href="https://twitter.com/Chainguys">@chainguys</a>）</p>
-<p>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。</p>
-<p>(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</p>
-<p>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。</p>
-<p>(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</p>
-<h1 id="什么是-zkcross-what-is-zkcross">什么是 ZKCross (What is ZKCross)</h1>
-<p>ZKCross is a trustworthy cross-chain Layer2 network backed by zero-knowledge technology.</p>
-<p>ZKCross 是一个由零知识证明技术支持的可信跨链 Layer2 网络。</p>
-<p>It creates a universal layer that connects various blockchains, on top of which rich cross-chain applications can run safely and efficiently offering a seamless multi-chain user experience.</p>
-<p>它创建了一个连接各种区块链的通用层，在此之上丰富的跨链应用程序可以安全高效地运行，用户可以拥有无缝的多链体验。</p>
-<figure data-type="image" tabindex="1"><img src="https://48895477-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FigtsBvNmkbT2aozuE0Jm%2Fuploads%2FOYlx9BwRZiW1H6M5nW7F%2Fa.jpeg?alt=media&amp;token=195488f8-a2c1-4529-bb16-c9c671c68bd8" alt="" loading="lazy"></figure>
-<hr>
-<h1 id="zkcross为何如此独特-what-makes-zkcross-unique">ZKCross为何如此独特? (What makes ZKCross unique)</h1>
-<h2 id="安全可靠-security-trustworthy">安全可靠 (Security &amp; Trustworthy)</h2>
-<p>ZKCross addresses the third-party trust issue of cross-chain by verifying computations on the dest chain using <strong>zk-SNARK</strong> proofs.</p>
-<p>通过使用<strong>zk-SNARK</strong>证明来验证目标链上的计算，ZKCross 解决了跨链第三方信任问题。</p>
-<p><strong>zk-SNARK</strong> proofs are mathematically certified to guarantee that only valid cross-chain transactions are executed and cannot be manipulated or falsified, hence ensuring the security of funds.</p>
-<p><strong>zk-SNARK</strong> 证明已经过数学验证，保证只有有效的跨链交易被执行，而不能被操纵或伪造，进而确保资金安全。</p>
-<ul>
-<li>
-<p>Zero-knowledge proof guarantees that nobody, including the platform itself, can upload fake transactions or fund withdrawal request to the dest chain successfully.<br>
-零知识证明保证，包括平台本身在内的任何人都无法上传虚假交易或提款请求到目标链。</p>
-</li>
-<li>
-<p>In virtue of ZK-Rollup's on-chain data availability, account states can always be rolled back in case of attacks, even when all the data on ZKCross Layer2 is lost.<br>
-凭借 ZK-Rollup 的链上数据可用性，即使 ZKCross Layer2 上的所有数据都丢失，帐户状态也可以在受到攻击时始终回滚。</p>
-</li>
-</ul>
-<h2 id="低成本和高扩展性-low-cost-and-high-scalability">低成本和高扩展性 (Low Cost and High scalability)</h2>
-<p>ZKCross leverages <strong>zk-Rollup</strong> technology batching a large number of cross-chain transactions into a single one, so as to reduce the cost and improve cross-chain scalability without sacrificing security.</p>
-<p>ZKCross 利用 <strong>zk-Rollup</strong> 技术将大量跨链交易变为单个批量处理，从而在不牺牲安全性的情况下降低了成本并提高了跨链可扩展性。</p>
-<h2 id="通用layer2-universal-layer2">通用Layer2 (Universal Layer2)</h2>
-<p>ZKCross's target is to provide a universal layer to manipulate and synchronize the global state between various block-chains which support smart contracts. To achieve this, ZKCross introduces a Layer2 chain (ZKCross Layer2) to process most of the transactions that query or alter the state.</p>
-<p>ZKCross 的目标是：提供一个通用层，来操作和同步支持智能合约的各种区块链之间的全局状态。为了实现这一点，ZKCross 引入了 Layer2 链（ZKCross Layer2）来处理大部分查询或改变状态的交易。</p>
-<p>This model lets ZKCross scale communication across many chains, regardless of how many there are.</p>
-<p>无论有多少链，该模型都可以让 ZKCross跨多链扩展通信。</p>
-<h2 id="zkcross-vs-其他-zkcross-vs-others">ZKCross vs 其他 (ZKCross vs Others)</h2>
-<p>Compare with other cross-chain solutions: ZKCross is zero-knowledge-proof based which is more secure, trustworthy, and scalable(high throughput/low cost).</p>
-<p>与其他跨链解决方案相比：ZKCross 基于零知识证明，更加安全、可信、可扩展（高吞吐量/低成本）。</p>
-<hr>
-<h1 id="zkcross-如何工作-how-does-zkcross-work">ZKCross 如何工作? (How does ZKCross work)</h1>
-<p>ZKCross is designed to have a chain at layer-2 that acts as a relayer. This layer 2 chain monitors and synchronizes the state of many separate blockchains to ensure a consistent state throughout the whole network. Below is a normal zkRollup function within Ethereum.</p>
-<p>ZKCross 的设计是：在layer 2有一条链作为中继器。该layer 2链监控和同步许多独立区块链的状态，进而确保整个网络的状态一致。下面是以太坊中一个正常的 zkRollup功能。</p>
-<figure data-type="image" tabindex="2"><img src="https://48895477-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FigtsBvNmkbT2aozuE0Jm%2Fuploads%2FYVzvI6433HeRURW4R9Qn%2Fimage.png?alt=media&amp;token=1178c6a7-9f94-4902-aa6c-4d7927028db4" alt="" loading="lazy"></figure>
-<p>However, ZKCross uses this zero-knowledge technology as the foundation for cross-chain communication by solving the third parties' trustworthy problems that other zkRollup experience using a zk-SNARK proof.</p>
-<p>然而，ZKCross 使用这种零知识证明技术作为跨链通信的基础，然后使用 zk-SNARK 证明解决了其他 zkRollup 会遇到的第三方信任问题。</p>
-<figure data-type="image" tabindex="3"><img src="https://48895477-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FigtsBvNmkbT2aozuE0Jm%2Fuploads%2FVsAUkgbRVLRlKu0XP8cg%2Fimage.png?alt=media&amp;token=1b7a76ab-6b43-4ad7-a294-c921f7ba9a93" alt="" loading="lazy"></figure>
-<p>The zk-SNARK improves cross-chain security and solves the third parties' trustworthy problem by zk-SNARK proofs.</p>
-<p>通过 zk-SNARK 证明，zk-SNARK提高了跨链安全性并解决了第三方的信任问题。</p>
-<p>This proof will be generated to ensure that:<br>
-此证明会被用来确保：</p>
-<ul>
-<li>
-<p>All state changes are the result of accurately running the zk circuits.<br>
-所有状态变化都是准确运行 zk回路 (zk circuits) 的结果</p>
-</li>
-<li>
-<p>And then, these zk-SNARK proofs will be submitted to the Layer1 zk-Verify module smart contract.<br>
-然后，这些 zk-SNARK 证明将被提交给 Layer1 中zk-Verify 模块的智能合约。</p>
-</li>
-</ul>
-<p>Requests for funds flow will be executed only after zk-Verify returns success.</p>
-<p>只有在 zk-Verify 返回成功后，才会执行对资金的请求。</p>
-<p>The process guarantees that ZKCross can prevent almost all known cross-chain attacks. For example, even if the private keys of all trusted intermediates are leaked. The protocol funds are still safe because the zk-Verify module verifies signatures and zk-SNARKs proof, which is mathematical security.</p>
-<p>该过程保证了 ZKCross 可以阻止几乎所有已知的跨链攻击。例如，即使所有可信中间人的私钥都被泄露。协议的资金仍然是安全的，因为 zk-Verify 模块的验证签名和 zk-SNARKs 证明，这是数学层面的安全性。</p>
-<hr>
-<h1 id="zkcross架构-zkcross-architecture">ZKCross架构 (ZKCross Architecture)</h1>
-<p>The core part of ZKCross is a universal Layer2 chain with zk-Circuits running on top of it. Also, there are several Layer1-chain and off-chain components.</p>
-<p>ZKCross 的核心部分是一个通用的 Layer2 链，zk回路(zk-Circuits)在其上运行。此外，还有几个 Layer1 链和链下组件。</p>
-<h1 id="核心组件core-components">核心组件(Core components)</h1>
-<ul>
-<li>
-<p>ZKCross Layer2 Chain<br>
-ZKCross Layer2 链</p>
-</li>
-<li>
-<p>zk-Circuits<br>
-zk回路</p>
-</li>
-<li>
-<p>Layer2 zk-Relayers<br>
-Layer2 zk中继器</p>
-</li>
-<li>
-<p>Layer1 chain relayers<br>
-Layer1 链中继器</p>
-</li>
-</ul>
-<h2 id="在layer1链上-on-layer1-chain">在Layer1链上 (On Layer1-Chain)</h2>
-<ul>
-<li>zk-Bridge contracts<br>
-zk跨链桥合约</li>
-<li>zk-Verify contracts<br>
-zk验证合约</li>
-</ul>
-<hr>
-<h1 id="zkcross-layer2-链-zkcross-layer2-chain">ZKCross Layer2 链 (ZKCross Layer2 Chain)</h1>
-<p>ZKCross' target is to provide a universal layer to manipulate and synchronize the global state between various block-chains. To achieve this, ZKCross introduces a Layer2 chain (ZKCross Layer2) to process most of the transactions that query or alter the state.</p>
-<p>ZKCross 的目标是提供一个通用层，来操作和同步各种区块链之间的全局状态。为了实现这一点，ZKCross 引入了 Layer2 链（ZKCross Layer2）来处理大部分查询或改变状态的交易。</p>
-<p>Currently, ZKCross Layer2 Chain is a normal proof-of-stake chain, it produces blocks and validates transactions the same as other proof-of-stake chains except ZKCross Layer2 Chain uses ZKC token as gasfee instead of ETH.</p>
-<p>目前，ZKCross Layer2链是一个普通的 PoS 链，除了 ZKCross Layer2 链使用 ZKC 代币而不是 ETH 作为 gas费用 之外，它的出块和验证交易与其他 PoS 链相同。</p>
-<p>The biggest difference between ZKCross layer2 Chain and other chains is that all application running on top of ZKCross Layer2 is written using zk-Circuits. e.g for a cross-chain dex, an AMM curcit engineer is needed.</p>
-<p>ZKCross layer2 链与其他链的最大区别在于，所有运行在 ZKCross Layer2 之上的应用都是使用 zk回路(zk-Circuits) 编写的。例如，对于跨链 dex，需要 AMM 回路工程师。</p>
-<p>(If you are not familiar with zk-Circuits, please have a look at <a href="https://docs.circom.io/getting-started/writing-circuits/">this</a> document for reference.)</p>
-<p>（如果您不熟悉 zk-Circuits，请查看 <a href="https://docs.circom.io/getting-started/writing-circuits/">这篇文档</a> 以供参考。）</p>
-<hr>
-<h2 id="交易-transactions">交易 (Transactions)</h2>
-<p>In ZKCross the global state of an application is compressed as a Merkle hash tree. An application in ZKCross is a set of operations (f : S → S) which are defined as how the global state (S) of the application can be changed.</p>
-<p>在 ZKCross 中，应用的全局状态被压缩为 Merkle 哈希树。ZKCross 中的应用程是一组操作（f : S → S），被定义为如何更改应用的全局状态（S）。</p>
-<p>A ZKCross transaction is composed of four stages: Operating Stage, Batching Stage, Proving Stage, Finalizing Stage.</p>
-<p>ZKCross 交易由四个阶段组成：操作阶段(Operation Stage)、批处理阶段(Batching Stage)、证明阶段(Proving Stage)、完成阶段(Finalizing Stage)。</p>
-<h3 id="操作阶段-operating-stage">操作阶段 (Operating Stage)</h3>
-<p>At the operating stage, an operation is performed on ZKCross Layer2 and changes the global state (S) thus changing the Merkle root.</p>
-<p>在操作阶段，在ZKCross Layer2 进行操作并改变全局状态（S），进而改变 Merkle 根。</p>
-<h3 id="批处理阶段-batching-stage">批处理阶段 (Batching Stage)</h3>
-<p>After the operating stage, the ZKCross Layer2 relayers will notice it and then pack the operation information into a transaction pool.</p>
-<p>操作阶段结束后，ZKCross Layer2 中继器会注意到它，然后将操作信息打包到交易池中。</p>
-<h3 id="证明阶段-proving-stage">证明阶段 (Proving Stage)</h3>
-<p>When sufficient transactions are batched in ZKCross-Monitor, it compresses the computation into ZKSnark proof. The proof is encoded as the sequence of operation arguments together with an updated merkle tree.</p>
-<p>当在ZKCross监视器中的批处理交易足够多时，它会将计算压缩为 ZKSnark 证明。证明与更新的默克尔树一起被编码为操作参数序列。</p>
-<h3 id="完成阶段-finalizing-stage">完成阶段 (Finalizing Stage)</h3>
-<p>Once a proof of batched operation sequence is generated by a ZKCross Layer2 relayer, it will broadcast to various underlying block-chains. Each connected layer1 chain will verify the proof and then send acknowledge back to the ZKCross Layer2 to finalize the transaction.</p>
-<p>一旦 ZKCross Layer2 中继器生成批处理操作序列的证明，它将广播到各种基础/底层区块链。每个连接的 layer1 链将验证证明，然后将确认发送回 ZKCross Layer2 来完成交易。</p>
-<hr>
-<h2 id="申请-application">申请 (Application)</h2>
-<p>A ZKCross Layer2 application is defined by a bunch of operations (f : state → state) that alter and query the application state s.</p>
-<p>一个 ZKCross Layer2 应用程序由一组改变和查询应用状态 s 的操作（f : state → state）定义。</p>
-<figure data-type="image" tabindex="4"><img src="https://48895477-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FigtsBvNmkbT2aozuE0Jm%2Fuploads%2FTKvB995vR4jb6cY9ctr6%2Fa.jpeg?alt=media&amp;token=e78ee96e-7a38-4913-967f-b50380b253b0" alt="" loading="lazy"></figure>
-<p>Layer2 state can be encoded into a list of Merkle Tree leaf nodes from which a Merkle hash tree can be built.</p>
-<p>Layer2 状态可以编码为 Merkle 树叶节点列表，从中可以构建默克尔哈希树。</p>
-<p>A SNARK proof of f (s) = s' is a snark proof generated from the following circuit constraint:</p>
-<p>从以下回路约束生成一个f (s) = s' 的 SNARK 证明：</p>
-<figure data-type="image" tabindex="5"><img src="https://48895477-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FigtsBvNmkbT2aozuE0Jm%2Fuploads%2FLFyFFkblAB0fwSVM0oWs%2Fb.jpeg?alt=media&amp;token=93f96133-bc35-416b-884a-48d833fcc918" alt="" loading="lazy"></figure>
-<p>At the operation stage, s' is calculated and stored in the ZKCross Layer2. Furthermore, an operation Event is fired after the operation stage which will be captured by the ZKCross Layer2 relayer which will generate the related snark proof.</p>
-<p>在操作阶段，s' 被计算并存储在 ZKCross Layer2 中。此外，在操作阶段之后会触发一个操作事件，该事件会被 ZKCross Layer2 中继器捕获，并生成相关的 snark 证明。</p>
-<hr>
-<h2 id="merkely树编码的应用状态-merkely-tree-encoding-of-application-state">Merkely树编码的应用状态 (Merkely Tree Encoding of Application State)</h2>
-<p>Merkle tree is a tree in which every leaf node is labeled with the cryptographic hash of a data block, and every non-leaf node is labeled with the cryptographic hash of the labels of its child nodes.</p>
-<p>Merkle 树是一棵(逻辑)树，其中每个叶节点都用数据块的密码哈希标记，每个非叶节点都用其子节点标签的密码哈希标记。</p>
-<figure data-type="image" tabindex="6"><img src="https://48895477-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FigtsBvNmkbT2aozuE0Jm%2Fuploads%2FAjjNu8nh2qrVDEQI3svY%2Fimage.png?alt=media&amp;token=b17096ea-60c9-4996-905b-5f39c0e2f796" alt="" loading="lazy"></figure>
-<p>As shown in the above graph, each data block has a unique Merkle Tree Index(MTI) and each MTI encodes a unique path from top to leaf. For example, suppose that the height of the Merkle tree is k. Then there are 2(k)-1 non-leaf nodes and the first node of leaf node is a k length binary number key = 1000 · · · 00. Moreover, the path from the leaf node to the top node can be calculated by dividing the index by two:</p>
-<p>如上图所示，每个数据块都有一个唯一的默克尔树索引（MTI），每个 MTI 都将一个从顶部到叶子的唯一路径进行编码。例如，假设 Merkle 树的高度为 k。那么有2(k)-1个非叶子节点，叶子节点的第一个节点是一个长度为k的二进制数秘钥 = 1000···00。此外，从叶子节点到顶部节点的路径可以通过用索引除以2得到：</p>
-<figure data-type="image" tabindex="7"><img src="https://48895477-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FigtsBvNmkbT2aozuE0Jm%2Fuploads%2FyTIxp7MLGlq3YI5SWcct%2Fimage.png?alt=media&amp;token=4a2eb57c-e014-438d-b5ee-c3440cc8a80f" alt="" loading="lazy"></figure>
-<p>Also, the sibling path can be calculated as:<br>
-此外，兄弟路径可以计算为：</p>
-<figure data-type="image" tabindex="8"><img src="https://48895477-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FigtsBvNmkbT2aozuE0Jm%2Fuploads%2FiqORGcZoXKL6tc5dFqys%2Fimage.png?alt=media&amp;token=07065162-2667-4d02-83a2-5f0f43bf5cd0" alt="" loading="lazy"></figure>
-<p>To calculate the root hash after the modification of data of D(p0 ), we need to calculate new hash of H(pi) using the formula of the hash rule of Merkle Tree H(p i+1 ) = hash(pi , si )</p>
-<p>为了计算 D(p0 ) 数据修改后的根哈希，我们需要使用默克尔树的哈希规则 H(p i+1 ) = hash(pi,si ) 来计算新的哈希H(pi)</p>
-<p>Thus it follows that the entire constraints of the merkley tree can be represented as follows:</p>
-<p>因此，默克利树的整个约束可以表示如下：</p>
-<ul>
-<li>before modification<br>
-修改前</li>
-</ul>
-<figure data-type="image" tabindex="9"><img src="https://48895477-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FigtsBvNmkbT2aozuE0Jm%2Fuploads%2FVUQZV9y4hMeFMCYf7wOI%2Fimage.png?alt=media&amp;token=8b3f3cc3-fa75-49b1-9903-a269e30e1001" alt="" loading="lazy"></figure>
-<ul>
-<li>After modification<br>
-修改后</li>
-</ul>
-<figure data-type="image" tabindex="10"><img src="https://48895477-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FigtsBvNmkbT2aozuE0Jm%2Fuploads%2FZ5pEr2ikg0AtdZ1frN6q%2Fimage.png?alt=media&amp;token=fa40a06f-72ec-463f-be4c-20073c56ce54" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="11"><img src="https://48895477-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FigtsBvNmkbT2aozuE0Jm%2Fuploads%2FhOjPXmxvHGBAl6z5Irr3%2Fimage.png?alt=media&amp;token=87af0865-d55d-43f2-9136-e2e7f9cd1be4" alt="" loading="lazy"></figure>
-<hr>
-<h1 id="zk-snark-回路-zk-snark-circuits">zk-SNARK 回路 (zk-SNARK Circuits)</h1>
-<p>The circuits defined for ZKP can help Layer1 chain properly verify the following thing:</p>
-<p>为ZKP定义的回路可以帮助 Layer1 链正确验证以下内容：</p>
-<ul>
-<li>
-<p><strong>A Command is sent by an invalid end-user (by validating the signature and command target).</strong><br>
-<strong>命令是否由无效的最终用户发送（通过验证签名和命令目标）</strong></p>
-<ul>
-<li>
-<p>Validate the signature of the command.<br>
-验证命令的签名。</p>
-</li>
-<li>
-<p>Validate that the command’s target assets belong to the user.<br>
-验证命令的目标资产是否属于用户。</p>
-</li>
-<li>
-<p>Check the public key in storage.<br>
-检查存储中的公钥。</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>The storage is properly modified according to the command.</strong><br>
-<strong>是否根据命令正确修改存储。</strong></p>
-<ul>
-<li>The transaction logic is written into the circuits.<br>
-交易逻辑被写入回路。</li>
-</ul>
-</li>
-</ul>
-<h2 id="回路输入-circuit-inputs">回路输入 (Circuit Inputs)</h2>
-<ul>
-<li>
-<p>1.A batch of commands.<br>
-一组批处理命令</p>
-</li>
-<li>
-<p>2.A secure hash of the batch of commands, thus we can make these commands private.</p>
-<p>一组批处理命令的安全哈希，由此我们可以将这些命令转为私密。</p>
-</li>
-<li>
-<p>3.Signatures of these commands, can be private because to attack the circuits by giving a wrong signature is cryptographically difficult.</p>
-<p>这些命令的签名可以是私密的，因为通过出示错误签名来攻击回路，在密码学上是困难的。</p>
-</li>
-<li>
-<p>4.Merkle tree info<br>
-Merkle 树信息</p>
-<ul>
-<li>
-<p>inital root hash H(p0)<br>
-初始根哈希 H(p0)</p>
-</li>
-<li>
-<p>final root hash H(pK)<br>
-最终根哈希 H(pK)</p>
-</li>
-<li>
-<p>Paths that can help the circuits to verify the merkle tree change. These paths are private because the hash function for the merkle tree is a cryptographically secure hash.<br>
-可以帮助回路验证默克尔树变化的路径。这些路径是私密的，因为merkle树的哈希函数是加密安全函数。</p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="回路中的约束包括-the-constraint-in-that-circuits-include">回路中的约束包括 (The constraint in that circuits include)</h2>
-<ul>
-<li>
-<p>1.The hash of the commands is equal to the input hash.<br>
-命令的哈希值等于输入的哈希值。</p>
-</li>
-<li>
-<p>2.The signature of each command is valid.<br>
-每个命令的签名都是有效的。</p>
-</li>
-<li>
-<p>3.The public key should be the correct one stored in merkle tree (so it also needs to verify the merkle tree path for the public key).<br>
-公钥应该正确存储在merkle树中（所以还需要验证公钥的merkle树路径）。</p>
-</li>
-<li>
-<p>4.Each command has multiple steps on changing the merkle tree, so it needs to verify each merkle tree path, and also verify the changes (usually it only changes a leaf value, so the circuits can calculate the root hash after the change).<br>
-每个命令对merkle树的改变都有多个步骤，所以需要验证每一个merkle树的路径，还要验证变化（通常只改变一个叶子值，所以回路可以计算改变后的根哈希）</p>
-</li>
-<li>
-<p>5.The merkle tree root is truly changed from the start to the end through these change steps.<br>
-通过这些变更步骤，merkle树根从头到尾真正进行了变化。</p>
-</li>
-</ul>
-<hr>
-<h1 id="链上合约-on-chain-contracts">链上合约 (On-Chain contracts)</h1>
-<p>The On Layer1 Chain contracts mainly contains two parts: bridge interface and verification interface for token assets transfer.</p>
-<p>在Layer1 链上的合约主要包含两部分：代币资产转移的跨链桥接口和验证接口。</p>
-<h2 id="跨链桥接口-bridge-interface">跨链桥接口 (Bridge Interface)</h2>
-<ul>
-<li>
-<p>Deposit<br>
-存款</p>
-<p>Put assets into the account of the bridge contract from the user’s Layer1 account.<br>
-将资产从用户的 Layer1 账户放入跨链桥合约的账户。</p>
-</li>
-<li>
-<p>Withdraw<br>
-提款</p>
-<p>Withdraw assets from the account of the bridge contract back into the user’s Layer1 account.<br>
-将跨链桥合约账户中的资产提取回用户的 Layer1 账户。</p>
-</li>
-</ul>
-<h2 id="验证接口-verification-interface">验证接口 (Verification Interface)</h2>
-<p>The Verification interface verifies the ZK-SNARK proof generated by the Layer2 zk-Relayer.</p>
-<p>验证接口验证 Layer2 zk-中继器生成的 ZK-SNARK 证明。</p>
-<pre><code>function zk_verify(
-    uint256 l2account,
-    uint256[] memory tx_data,
-    uint256[] memory verify_data,
-    // [8]: old root, [9]: new root,
-    // [10]: sha_low, [11]: sha_high
-    uint256 vid,
-    uint256 nonce,
-    uint256 rid
-)
-</code></pre>
-<hr>
-<h1 id="链下组件-off-chain-components">链下组件 (Off Chain Components)</h1>
-<h2 id="zk中继器-zk-relayers">zk中继器 (zk-Relayers)</h2>
-<p>Each time ZKCross Layer2 zk-Relayer captures an event, it pushes the event into a rollup queue. Once the rollup queue reaches its maximal size, a zk proof will be generated by ZKCross Layer2 zk-Relayer.</p>
-<p>ZKCross Layer2的zk中继器 (zk-Relayers) 每次捕获到一个事件，它都会将该事件推送到一个汇总队列中。一旦汇总队列达到其上限，ZKCross Layer2 zk中继器 (zk-Relayers)将生成 zk 证明。</p>
-<p>ZKCross Layer2 zk-Relayer gives each batched transaction a unique transaction id and broadcasts its zk proof to ZKCross' zk bridge contract on Layer1 blockchains.</p>
-<p>ZKCross Layer2的中继器 (zk-Relayers)为每个批处理交易提供一个唯一交易 id，并将其 zk 证明广播到 ZKCross 在 Layer1 区块链上的zk跨链桥合约。</p>
-<h2 id="观察者-watchers">观察者 Watchers</h2>
-<p>The watcher observes the user's interactions with the zk-bridge contract (by watching the zk-bridge contract) and notifies to ZKCross Layer2.</p>
-<p>观察者观察用户与zk跨链桥(zk-bridge) 合约的交互（通过观察zk跨链桥合约）并通知 ZKCross Layer2。</p>
-<hr>
-<h1 id="现有应用-existing-applications">现有应用 (Existing Applications)</h1>
-<p>There are currently two existing applications built on top of ZKCross.<br>
-目前构建在 ZKCross 之上有两个应用。</p>
-<ul>
-<li>
-<p>Cross Chain Dex<br>
-跨链去中心化交易所</p>
-</li>
-<li>
-<p>NFT Bridge<br>
-NFT跨链桥</p>
-</li>
-</ul>
-<h2 id="第三方应用-third-party-applications">第三方应用 (Third-Party Applications)</h2>
-<p>There are currently no third-party applications implemented on top of the ZKCross message passing mechanism. If you are planning to build one cross-chain application on top of ZKCross, let us know in our Discord!</p>
-<p>目前没有在 ZKCross 消息传递机制之上实现的第三方应用。如果您计划在 ZKCross 之上构建一个跨链应用，请在我们的 Discord 中告诉我们！</p>
-<h2 id="跨链dex用户指南-crosschain-dex-userguide">跨链Dex用户指南 (CrossChain Dex UserGuide)</h2>
-<p>Let’s look at an example: Assume there are two blockchains: Chain A and Chain B. Now, what happens if we want to swap tokens of Chain A to tokens of Chain B? e.g swap 10 ETH to 10 BNB.</p>
-<p>让我们看一个例子：假设有两条区块链：链 A 和链 B。现在，如果我们想将链 A 的代币交换为链 B 的代币，那会发生什么？例如将 10 ETH 兑换成 10 BNB。</p>
-<p>To do a cross-chain token swap from Ethereum to BSC chain, ZKCross first monitors a deposit event to our zk-Bridge of Ethereum. (e.g user deposit 10 ETH event). And then the user can see his 10 ETH balance in ZKCross layer2 Chain.</p>
-<p>为了进行从以太坊到 BSC 链的跨链代币交换，ZKCross 首先监控到我们的以太坊 zk-Bridge 的存款事件—例如用户存入 10 ETH 事件。然后用户可以在 ZKCross layer2 链中看到他的 10 ETH 余额。</p>
-<p>Then he can swap ETH to BNB in cross-chain layer2 AMM-DEX which is high tps and low gas fees.</p>
-<p>然后他可以在跨链layer2 中高tps和低gas费的AMM-DEX里将ETH兑换成BNB。</p>
-<p>Then he can withdraw BNB from our layer2 chain to BSC Chain, the zk-Relayers will generate a zk-Proof together with withdraw request and submit them to zk-Verify module in BSC.</p>
-<p>然后他可以将 BNB 从我们的 layer2 链提取到 BSC 链，zk中继器 (zk-Relayers) 将生成一个 zk证明 (zk-Proof) 和一个提取请求，并将它们提交给 BSC 中的 zk验证 (zk-Verify) 模块。</p>
-<p>Once zk-Verify module confirms the zk-Proof is correct, the user can see BNB in his BSC account balance.</p>
-<p>一旦 zk验证 (zk-Verify) 模块确认zk证明 (zk-Proof) 是正确的，用户就可以在他的 BSC 账户余额中看到 BNB。</p>
-<h2 id="第三方应用-third-party-applications-2">第三方应用 (Third-Party Applications)</h2>
-<p>Coming Soon<br>
-即将添加</p>
-<h1 id="zkcross-sdk">ZKCross SDK</h1>
-<p>Many applications using ZKCross may require a frontend to interact with the underlying smart contracts and ZKCross Layer2. We currently provide an SDK that supplies several utilities for developers including:</p>
-<p>许多使用 ZKCross 的应用可能需要前端来与底层智能合约及ZKCross Layer2 交互。我们目前提供的 SDK 可为开发人员提供多种实用程序，包括：</p>
-<ul>
-<li>
-<p>Methods for interacting with ZKCross Layer 1 smart contracts.<br>
-与 ZKCross Layer 1的智能合约交互的方法。</p>
-</li>
-<li>
-<p>Tools for submitting and parsing structured messages through ZKCross.  通过 ZKCross 提交和解析结构化消息的工具。</p>
-</li>
-<li>
-<p>Methods for interactive with ZKCross Layer2.<br>
-与 ZKCross Layer2 交互的方法。</p>
-</li>
-</ul>
-<p>The SDK detail will be coming soon.<br>
-SDK 详细信息即将推出。</p>
-<hr>
-<h1 id="代币经济学-tokenomics">代币经济学 (Tokenomics)</h1>
-<p>ZKCross uses the veToken model, which is similar to curve finance. This model has been battle-tested with billions of dollars and attracted a thriving ecosystem around it.</p>
-<p>ZKCross 使用类似于曲线金融的 veToken 模型。这种模式已经过数十亿美元的实战考验，并吸引了围绕它的蓬勃发展的生态系统。</p>
-<p>There are two tokens of ZKCross: $ZKC and $veZKC.</p>
-<p>ZKCross 有两种代币：$ZKC 和 $veZKC。</p>
-<h2 id="zkc简介-introducing-zkc">$ZKC简介 (Introducing $ZKC)</h2>
-<p>$ZKC is the ZKCross DAO token. The main purpose of $ZKC is to incentivize the ZKCross community, including liquidity providers and node operators, and get as many users involved as possible in the protocol's governance.</p>
-<p>$ZKC 是 ZKCross DAO 代币。 $ZKC 的主要目的是激励 ZKCross 社区，包括流动性提供者和节点运营商，并让尽可能多的用户参与协议的治理。</p>
-<h3 id="总供应量-total-supply">总供应量 (Total Supply)</h3>
-<p>The total supply of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>Z</mi><mi>K</mi><mi>C</mi><mi>i</mi><mi>s</mi><mo>:</mo><mn>1</mn><mo separator="true">,</mo><mn>000</mn><mo separator="true">,</mo><mn>000</mn><mo separator="true">,</mo><mn>000</mn></mrow><annotation encoding="application/x-tex">ZKC is: 1,000,000,000  
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">Z</span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault">i</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span>ZKC 的总供应量为：1,000,000,000</p>
-<h2 id="代币分配和时间表-token-distribution-and-schedule">代币分配和时间表 (Token Distribution and Schedule)</h2>
-<ul>
-<li>
-<p>51%Community Treasury<br>
-51% - 社区金库</p>
-</li>
-<li>
-<p>20% Investors<br>
-20% - 投资者</p>
-</li>
-<li>
-<p>19% Team, Advisors, and Strategic Partners<br>
-19% - 团队、顾问和战略合作伙伴</p>
-</li>
-<li>
-<p>10% Marketing, Initial Liquidity, Airdrop<br>
-10%- 营销、初始流动性、空投</p>
-</li>
-</ul>
-<figure data-type="image" tabindex="12"><img src="https://lh3.googleusercontent.com/WMdfbc6OolW_fOlSDqxoZdgTt8jA8xom_42FHV8ZSdvopxZZeW5GcRN6I3N3Idmdh4ryXhD-DqtDFaatYz4IEnqdWVZFh8BOev5yKCqVzxSyXoiUYZdtAgGgpZ7LGYlvbDG44lLM" alt="" loading="lazy"></figure>
-<p>The portion allocation to the team will be subject to a one-year lockup followed by a two-year linear vesting period.</p>
-<p>分配给团队的部分将有一年的锁定期，然后是两年的线性归解锁。</p>
-<p>Investors' tokens will be vested in 2 years on a quarterly based.<br>
-投资者的代币将在 2 年内按季度解锁。</p>
-<h2 id="社区金库-community-treasury">社区金库 (Community Treasury)</h2>
-<p>A community-managed treasury opens up a world of infinite possibilities. We hope to see a variety of experimentation, including ecosystem grants and public goods funding, which can foster additional ZKCross ecosystem growth.</p>
-<p>社区管理的金库打开了一个无限可能的世界。我们希望看到各种各样的实验，包括生态系统赠款和公共产品资助，这可以促进 ZKCross 生态系统的额外增长。</p>
-<p>The community treasury will retain 51% of the $ZKC supply to distribute on an ongoing basis through contributor grants, community initiatives, liquidity mining, and other programs.</p>
-<p>社区金库将保留 51% 的 $ZKC 供应，通过贡献者赠款、社区倡议、流动性挖矿和其他计划持续分配。</p>
-<p>ZKCross community members control all $ZKC in the community treasury through voting governance.</p>
-<p>ZKCross 社区成员通过投票治理，控制社区金库中的所有 $ZKC。</p>
-<h2 id="vezkc是什么whats-vezkc">veZKC是什么?(What’s veZKC)</h2>
-<p>veZKC stands for vote-escrowed ZKC. It is a certificate of your ZKC locked for some time. Anyone intent to get veZKC can lock ZKC for any time between 1 year and four years.</p>
-<p>veZKC 表示投票托管的 ZKC。它是您ZKC 锁定一段时间的证书。任何想要获得 veZKC 的人都可以将 ZKC 锁定 1 年到 4 年。</p>
-<p>After the ZKC token is locked, the token holders will have a non-zero balance of veZKC. The longer you lock ZKC, the more veZKC you receive.</p>
-<p>ZKC 代币锁定后，代币持有者将拥有非零余额的 veZKC。您锁定 ZKC 的时间越长，您收到的 veZKC 就越多。</p>
-<h3 id="投票权-voting-power">投票权 (Voting power)</h3>
-<p>All ZKCross votes will be done based on voters' veZKC balances instead of ZKC balances. This ensures long-term alignment as only users locking $ZKC can participate in ZKCross’ governance and community treasury allocation.</p>
-<p>所有 ZKCross 投票将基于选民的 veZKC 余额而不是 ZKC 余额进行。这确保了长期一致性，因为只有锁定 $ZKC 的用户才能参与 ZKCross 的治理和社区金库分配。</p>
-<p>Any distribution of ZKC in community treasury, including grants, strategic partnerships, governance initiatives, liquidity minings, reward weight setting, and other programs, has to pass through the governance process via voting.</p>
-<p>ZKC 在社区金库中的任何分配，包括赠款、战略合作、治理举措、流动性挖矿、奖励权重设置等项目，都必须通过以投票进行的治理过程。</p>
-<h3 id="费用分享-fee-sharing">费用分享 (Fee Sharing)</h3>
-<p>A percentage of fees collected by ZKCross will be distributed to veZKC holders through community lead DAO proposals.</p>
-<p>ZKCross 收取的，一定比例的费用，将通过社区主导的 DAO 提案分配给 veZKC 持有者。</p>
-<h3 id="提升-boosting">提升 (Boosting)</h3>
-<p>Another main benefit for veZKC is the ability to boost your rewards on provided liquidity, node operators, or any other incentives you get from ZKCross Ecosystem.</p>
-<p>veZKC 的另一个主要好处是能够提高您对提供的流动性、节点运营商或您从 ZKCross 生态系统获得的任何其他激励措施的奖励。</p>
-<hr>
-<h1 id="faq">FAQ</h1>
-<p>Coming Soon<br>
-即将添加</p>
-<hr>
-<h1 id="社区-community">社区 (Community)</h1>
-<p>Discord: <a href="https://discord.gg/eveHqJqzdh">https://discord.gg/eveHqJqzdh</a></p>
-<p>Twitter: <a href="https://twitter.com/thezkcross">https://twitter.com/thezkcross</a></p>
-<p>Telegram: <a href="https://t.me/ZKCross">https://t.me/ZKCross</a></p>
-<p>Blog: <a href="https://blog.zkcross.org/">https://blog.zkcross.org</a></p>
-<hr>
-<h1 id="有用链接-links">有用链接 (Links)</h1>
-<ul>
-<li>
-<p><a href="https://github.com/zkcrossteam">Github</a></p>
-</li>
-<li>
-<p>Contracts &amp; Audits<br>
-智能合约 &amp; 审计</p>
-<p>Coming Soon<br>
-即将添加</p>
-</li>
-<li>
-<p>Layer2 RPC Address<br>
-Layer2 PRC地址</p>
-<p>Coming Soon<br>
-即将添加</p>
-</li>
-</ul>
 ]]></content>
     </entry>
 </feed>
