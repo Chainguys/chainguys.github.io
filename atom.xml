@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-06-24T17:16:50.847Z</updated>
+    <updated>2022-06-29T11:33:47.653Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,55 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[民主化EUL分发(Democratizing EUL distribution)]]></title>
+        <id>https://chainguys.github.io/post/min-zhu-hua-eul-fen-fa-democratizing-eul-distribution/</id>
+        <link href="https://chainguys.github.io/post/min-zhu-hua-eul-fen-fa-democratizing-eul-distribution/">
+        </link>
+        <updated>2022-06-29T11:29:37.000Z</updated>
+        <content type="html"><![CDATA[<p><em>Starting today on Euler, users can stake their EUL and redirect EUL distribution to their favorite markets. All of that with just a few clicks!</em></p>
+<p><em>从今天开始，在 Euler 上，用户可以质押他们的 EUL 并将 EUL 重新分发到他们最喜欢的市场。所有这一切只需点击几下！</em></p>
+<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/0*SRwZIXkPxTQWNcw2" alt="" loading="lazy"></figure>
+<p>Euler has been emphasizing for months the vision of efficient EUL distribution accessible to everyone, not only professionals. We developed a gas-efficient <em>Mint</em> functionality that allows every user to simply set up the desired position within a single transaction and without the need for recursive borrowing. From the very beginning, we have believed that such an approach is more democratic, more likely to decentralise, and more likely to create value for lenders (through increasing interest rates) if the market for EUL distribution is free and fair.</p>
+<p>几个月来，Euler一直在强调，不仅仅是专业人士，每个人都可以进行EUL高效分发的愿景。我们开发了一种节省gas的 <em>Mint</em> 功能，它允许每个用户在单个交易中简单地设置所需的头寸，而无需递归借款。从一开始，我们就认为，如果 EUL 分发市场是自由和公平的，那么这种方法更民主，更可能去中心化，并且更有可能为出借方创造价值（通过提高利率）。</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*eKbENV2Ei_xllftV" alt="" loading="lazy"></figure>
+<p>With the launch of Euler protocol’s governance token — EUL — it’s time for the next step. After 6 distribution epochs, the community now has the power to decide where the EUL distribution will flow. Users can vote for a market to receive EUL by staking their EUL tokens to affect the distribution of EUL in the subsequent epoch. Here is how the process works in detail.</p>
+<p>随着Euler协议治理代币 EUL 的推出，是时候进行下一步了。经过 6 个分发周期/纪元后，社区现在有权决定 EUL 分发的流向。用户可以通过质押他们的 EUL 代币来投票支持接收 EUL 的市场，以影响后续周期/纪元中 EUL 的分配。以下是该过程的详细工作原理。</p>
+<h1 id="分发细节-distribution-details">分发细节 (Distribution details)</h1>
+<p>EUL tokens are issued to users of the protocol who borrow assets, according to a time-weighted record of how long they retain those debts. The goal of this is to increase borrowing utilization of the pools, including for longer-tail assets. This should have the effect of increasing interest rates for depositors in the pool, which allow passive investors such as yield aggregators to indirectly benefit from EUL distribution without having to participate themselves.</p>
+<p>根据其保留债务的时间加权记录，EUL 代币将被发放给借入资产的协议用户。这样做的目的是提高池的借贷利用率，也包括长尾资产。这应该会提高池中储户的利率，从而允许收益聚合器等被动投资者间接受益于 EUL 分发，而无需自己参与。</p>
+<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/0*Jj0_2JG2n5Walmvx" alt="" loading="lazy"></figure>
+<p><em>随着时间的推移总 EUL 分布 (Total EUL distribution over time)</em></p>
+<p>Only a subset of markets will receive EUL tokens. This subset is determined by a staking system where participants allocate EUL tokens to the markets they would like to direct EUL distribution. Tokens are distributed in roughly 2 weeks intervals called epochs. In each epoch, the top <em>N</em> markets will be selected to earn EUL tokens during the following epoch.</p>
+<p>只有一部分市场会收到 EUL 代币。该子集由一个质押系统确定，参与者将 EUL 代币分配给他们希望EUL分配到的市场。代币以大约 2 周的间隔分发，称为纪元/时期。在每个纪元/时期中，将选择前 <em>N</em> 个市场，在下一个纪元/时期中赚取 EUL 代币。</p>
+<p>The proportion of the total distribution for a given epoch issued for each market is based on the quadratic voting method which corresponds to the square root of the time-weighted number of tokens staked on that market. Both the total EUL distributed and the <em>N</em> parameter that controls the number of tokens is controlled by Euler governance.</p>
+<p>一定时期内，针对每个市场发行的总分配比例，是基于二次投票方法，该方法对应于该市场上质押的时间加权代币数量的平方根。分配的总 EUL 和控制分发数量的 <em>N</em> 参数均由 Euler 治理控制。</p>
+<p>To understand it better, let’s use an example. At block height of 15,030,001 Epoch 7 started that will last for 100,000 blocks, until the block height of 15,130,000. A total of 43,231 EUL will be distributed to 10 markets:</p>
+<p>我们举个例子来更好地理解它。在块高度为 15,030,001 时，纪元/时期7 开始时，将持续 100,000 个块，直到块高度为 15,130,000。总共 43,231 EUL 将分配到 10 个市场：</p>
+<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/994/0*HkaDNPQqCsp78RPp" alt="" loading="lazy"></figure>
+<p>At the same time, voting for Epoch 8 distribution began. Until the block height of 15,130,000, EUL holders can vote by allocating their EUL tokens to selected markets. In Epoch 8, a total of 44,800 EUL will be distributed, and each market will receive the amount proportional to the square root of the time-weighted number of EUL staked on that market. It means that the longer and the more EUL is staked for a given market, the greater share of the total distribution given market will get in the subsequent epoch.</p>
+<p>同时，开始了纪元/时期8 分发的投票。在区块高度达到 15,130,000 之前，EUL 持有者可以通过将其 EUL 代币分配给选定的市场来进行投票。在 纪元/时期 8 中，总共将分发 44,800 EUL，每个市场将收到与该市场上 EUL 时间加权数量的平方根成正比的数量。这意味着对于给定市场的 EUL 质押时间越长越多，给定市场的总分配比将在随后的纪元/时期获得更大的份额。</p>
+<p>However, square rooting means there are diminishing returns to voting for an already popular market. I.e. that means if everyone piles in on USDC, eventually new votes will have little effect, allowing smaller assets to gain more of a share. It’s also an important fact that there is no lock-up period for staked EUL tokens. They can be unstaked anytime.</p>
+<p>然而，平方根意味着对一个已经很受欢迎的市场进行投票的回报正在递减。比如，这意味着如果每个人都涌入 USDC，最终新的投票将没有什么影响。这使得较小的资产也有可能获得更多份额。还有一个重要的事实是，质押的 EUL 代币没有锁定期。他们可以随时取消质押。</p>
+<h1 id="如何投票-how-to-vote">如何投票 (How to vote)</h1>
+<figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/1400/0*8R76SfU2IdY-Sl31" alt="" loading="lazy"></figure>
+<p>To vote, go to <a href="https://app.euler.finance/">https://app.euler.finance/</a> and select <em>Gauge</em> at the top bar. You can find a high-level description of the Gauge UI in the article <a href="https://blog.euler.finance/euler-user-guide-getting-started-4a91f9144c03"><em>Euler User Guide: Getting Started</em></a>. At this point, the user must have some EUL tokens in their wallet they wish to use for voting. The EUL balance will be shown at the top of the markets’ table as well as the amount of currently staked EUL (<em>No. of votes</em>). Then, users can start allocating their EUL to selected markets by inputting values into the most right column of the markets table or by using the <em>+/-</em> buttons.</p>
+<p>要投票，请转到 <a href="https://app.euler.finance/">https://app.euler.finance/</a> 并在顶部栏中选择 <em>量表 (Gauge)</em>。您可以在文章 <a href="https://chainguys.github.io/post/euler-yong-hu-shou-ce-zhun-bei-kai-shi-euler-user-guidegetting-started/">Euler用户手册：准备开始 (Euler User Guide：Getting Started)</a>中找到对 Gauge UI 的高级描述。此时，用户的钱包中必须有一些他们用于投票的 EUL 代币。 EUL 余额将显示在市场(markets)表格的顶部以及当前质押的 EUL 数量(即 <em>No. of votes</em>）。然后，用户可以将值输入到市场表格的最右侧列或使用 <em>+/-</em> 按钮来将其 EUL 分配给选定的市场。</p>
+<p>Inputting values simulates the view of the table as if the tokens were already staked. The simulation feature lets the user easily assess the impact of their action. They can see <em>Projected Distribution</em> and <em>Voting Rank</em> changing in real-time. When a user is happy with the outcome, they can submit a transaction by clicking on the <em>Update votes</em> button. The approval or signing permit is necessary if not made previously; an appropriate button should appear in place of the <em>Update votes</em> button if necessary.</p>
+<p>输入值会模拟表的视图，就好像代币已经质押一样。模拟功能让用户可以轻松评估其操作的影响。他们可以实时看到 <em>预计分布 (Distribution)</em> 和 <em>投票排名 (Voting Rank)</em> 的变化。当用户对结果感到满意时，他们可以通过点击 <em>更新投票 (Update votes)</em> 按钮提交交易。事先未取得批准时，签名或许可是必要的；如有必要，会出现一个适当的按钮来代替 <em>投票排名 (Voting Rank)</em> 按钮。</p>
+<h2 id="想要在-weth-上再质押-100-eul从-dai-中取消质押-50-eul-并在-usdc-上质押-80-eulwant-to-stake-100-eul-more-on-weth-unstake-50-eul-from-dai-and-stake-80-eul-on-usdc">想要在 WETH 上再质押 100 EUL，从 DAI 中取消质押 50 EUL 并在 USDC 上质押 80 EUL？(Want to stake 100 EUL more on WETH, unstake 50 EUL from DAI and stake 80 EUL on USDC?)</h2>
+<p>Not a problem, it can be done easily! <strong>The ability to make all changes within one transaction has become a flagship feature of Euler.</strong> It is not different for the Gauge UI. Users can add and lessen the amount of EUL staked for all the markets using just one transaction.</p>
+<p>没问题，轻松搞定！ <strong>在一次交易中进行所有更改，这一能力已成为 Euler 的旗舰功能。</strong> 对于 Gauge UI，它并没有什么不同。用户只需一次交易即可增加和减少所有市场的 EUL 数量。</p>
+<p>Hopefully, this guide helped you better understand the mechanics behind EUL distribution. If you have any questions, join us in <a href="https://discord.gg/CdG97VSYGk">Discord</a> and feel free to ask. Please make sure to browse other guides in the main collection as well.</p>
+<p>希望本指南能帮助您更好地了解 EUL 分发背后的机制。如果您有任何问题，请加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a> 并随时提问。请务必同时浏览系列文章中的其他指南。</p>
+<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
+<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
+<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
+<h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
+<p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
+<p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[公共保管库已经到来！(Public vaults have arrived!)]]></title>
         <id>https://chainguys.github.io/post/gong-gong-bao-guan-ku-yi-jing-dao-lai-public-vaults-have-arrived/</id>
@@ -650,44 +699,6 @@ Akord Explorer用户界面抢先看 (Sneak peek at Akord Explorer UI)</p>
 <h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
 <p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
 <p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Euler来信-五月总结2 (Euler Newsletter May Summary-2)]]></title>
-        <id>https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-2-euler-newsletter-may-summary-2/</id>
-        <link href="https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-2-euler-newsletter-may-summary-2/">
-        </link>
-        <updated>2022-06-04T12:48:45.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="让我们一起回顾过去几周都发生了什么lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么！(Let's recap what has happened over the past few weeks!)</h3>
-<p>If you read the last <a href="https://newsletter.euler.finance/p/20may22?s=w">newsletter</a>, you’ll know we have been quite busy over the last month, so here’s a summary of all our other major events in May!</p>
-<p>如果您阅读了上一期的<a href="https://chainguys.github.io/post/euler-lai-xin-wu-yue-zong-jie-euler-newsletter-may-summary/">Euler来信</a>，您就会知道我们在过去的一个月里一直很忙，所以请来看看我们 5 月份所有其他重大事件的摘要吧！</p>
-<p><a href="https://twitter.com/MacroMate8/status/1529849406853263360">eIP7</a> passed, MATIC is now a collateral asset.</p>
-<p><a href="https://twitter.com/MacroMate8/status/1529849406853263360">eIP7</a>  通过，MATIC 现在已经成为抵押资产。</p>
-<p>Euler has <a href="https://twitter.com/eulerfinance/status/1532378126294073344">integrated</a> with Zapper.</p>
-<p>Euler 已与 Zapper <a href="https://twitter.com/eulerfinance/status/1532378126294073344">集成</a>。</p>
-<p>The <a href="https://twitter.com/eulerfinance/status/1532005249988407301">EulerDAO</a> and on-chain governance will be going live soon, while the details of the <a href="https://blog.euler.finance/eulerdao-launch-phases-2a154837b908">launch phases</a> have been published.</p>
-<p><a href="https://twitter.com/eulerfinance/status/1532005249988407301">EulerDAO</a> 和链上治理将很快上线，同时<a href="https://chainguys.github.io/post/eulerdao-qi-dong-ge-jie-duan-jie-shao-eulerdao-launch-phases">发布阶段</a>的详细信息已经公布。</p>
-<p>The <a href="https://twitter.com/eulerfinance/status/1527688111873880064">Euler Features</a> education series continues with an article overview.</p>
-<p><a href="https://twitter.com/eulerfinance/status/1527688111873880064">Euler Features</a> 教育系列继续提供文章概述。</p>
-<p>A new <a href="https://twitter.com/eulerfinance/status/1529475124553912320">user guide</a> education series kicked off with an overview of Euler's UI, with more in-depth content yet to come.</p>
-<p>一个新的<a href="https://twitter.com/eulerfinance/status/1529475124553912320">用户指南</a>教育系列已从对 Euler 的 UI 的概述开始，还会有更深入的内容。</p>
-<p>altooptimo.eth updated an excellent <a href="https://twitter.com/eulerfinance/status/1529070599598837761">Dune dashboard</a> for various Euler metrics.</p>
-<p>altooptimo.eth 为Euler各种指标更新了一个出色的<a href="https://twitter.com/eulerfinance/status/1529070599598837761">Dune仪表盘</a>。</p>
-<p>A new front-end update has changed some UI sections and added a disclaimer to the dApp, so users can be more aware of the terms of use.</p>
-<p>新的前端更新了一些部分的UI,并在 dApp 中添加了免责声明，因此用户可以更了解使用条款。</p>
-<p>The Euler Canny page for feedback is being replaced with <a href="https://github.com/orgs/euler-xyz/discussions">GitHub Discussions</a></p>
-<p>用于反馈的 Euler Canny 页面正在被<a href="https://github.com/orgs/euler-xyz/discussions">GitHub Discussions</a> 取代。</p>
-<p><a href="https://twitter.com/Chainguys">@Chainguys</a> has <a href="https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/">translated</a> the Euler white paper and many other published articles into Chinese. 谢谢你！</p>
-<p><a href="https://twitter.com/Chainguys">@Chainguys</a> 已将Euler白皮书和许多其他已发表的文章<a href="https://chainguys.github.io/post/euler-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-euler-chinese-materials-updatingwei-ming-ming/">翻译</a>成中文。谢谢你！</p>
-<p>Seraphim wrote about <a href="https://twitter.com/MacroMate8/status/1531293562796576769">stress testing</a> of the Uniswap TWAPs during the recent market volatility, and also about Euler’s attracted <a href="https://twitter.com/MacroMate8/status/1529200959888367616">liquidation bonus</a> compared to other protocols. The latest <a href="https://twitter.com/aztecnetwork/status/1532741131523571713">DeFi 2.71 podcast</a> interview discussed privacy layer protocol Aztec with cofounder Joe Andrews.</p>
-<p>Seraphim 在近期市场波动期间写了Uniswap TWAP 的 <a href="https://twitter.com/MacroMate8/status/1531293562796576769">压力测试</a>，以及与其他歇息相比，Eule令人感到吸引的 [清算奖金](https://twitter.com/MacroMate8/status/1529200959888367616）与其他协议相比。最新的 <a href="https://twitter.com/aztecnetwork/status/1532741131523571713">DeFi 2.71 播客</a> 。最新的 <a href="https://twitter.com/aztecnetwork/status/1532741131523571713">DeFi 2.71 播客</a> 采访与联合创始人 Joe Andrews 讨论了隐私层协议 Aztec。</p>
-<p>Euler currently has a total supply of $292.65M with TVL of $87.9M and $204.75M in total borrowed, while the reserves have <a href="https://twitter.com/eulerfinance/status/1523710185201561600">increased</a> to $703.32k. There are 3,748 lenders and 722 borrowers over 60 markets.</p>
-<p>Euler 目前的总供应量为 2.9265 亿美元，TVL 为 8790 万美元，借款总额为 2.0475 亿美元，而储备金<a href="https://twitter.com/eulerfinance/status/1523710185201561600">增加</a> 至 703.32 万美元。超过 60 个市场，有 3,748 名出借方和 722 名借款人。</p>
-<h2 id="其他内容-in-other-news">其他内容 (In Other News)</h2>
-<p>Meet the team at Consensus in Austin, Texas next week from 9-12 June.</p>
-<p>下周 6 月 9 日至 12 日，在德克萨斯州奥斯汀的 Consensus 与团队会面。</p>
-<p>If you're in Germany, join Michael at the inaugural <a href="https://twitter.com/euler_mab/status/1494075904154349573">Blockchain Oracle Summit</a> in Berlin on 7-9 June.</p>
-<p>如果您在德国，请与迈克尔一起参加 6 月 7 日至 9 日在柏林举行的首届<a href="https://twitter.com/euler_mab/status/1494075904154349573">区块链甲骨文峰会</a> 。</p>
 ]]></content>
     </entry>
 </feed>
