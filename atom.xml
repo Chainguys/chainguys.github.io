@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-07-04T09:52:06.615Z</updated>
+    <updated>2022-07-06T03:31:18.667Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,61 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Euler来信-六月总结2(Euler Newsletter June Summary)]]></title>
+        <id>https://chainguys.github.io/post/euler-lai-xin-liu-yue-zong-jie-2euler-newsletter-june-summary/</id>
+        <link href="https://chainguys.github.io/post/euler-lai-xin-liu-yue-zong-jie-2euler-newsletter-june-summary/">
+        </link>
+        <updated>2022-07-06T03:04:13.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="让我们一起回顾过去几周都发生了什么-lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么! (Let's recap what has happened over the past few weeks!)</h3>
+<p>If you read the last <a href="https://newsletter.euler.finance/p/17june22">newsletter</a>, you’ll know we have been quite busy over the last month, so here’s a summary of all our other major events in June!</p>
+<p>如果您阅读了上一期的 <a href="https://chainguys.github.io/euler-lai-xin-liu-yue-zong-jie-euler-newsletter-june-summary">来信</a>，就会知道我们上个月一直非常忙，下面就请查看我们 6 月份所有其他重大活动的摘要！</p>
+<p>Let’s all celebrate as <a href="https://twitter.com/eulerfinance/status/1540023886917431297">EulerDAO is now live!</a></p>
+<p>让我们一起庆祝一下， <a href="https://twitter.com/eulerfinance/status/1540023886917431297">EulerDAO 现已上线！</a></p>
+<p>The <a href="https://twitter.com/eulerfinance/status/1539594329013989376">Delegates</a> page is up, so users can now apply to become a delegate to improve governance and the protocol.</p>
+<p><a href="https://twitter.com/eulerfinance/status/1539594329013989376">代表</a> 页面已启动，用户现在可以申请成为代表，改进治理和协议。</p>
+<p>The devs have launched a <a href="https://twitter.com/eulerfinance/status/1538890230576521218">Governance Proposal Creation Tool</a> to aid in creating proposals.</p>
+<p>开发人员推出了 <a href="https://twitter.com/eulerfinance/status/1538890230576521218">治理提案创建工具</a> 来帮助创建提案。</p>
+<p>Euler <a href="https://twitter.com/eulerfinance/status/1542115694573019136">Gauges</a> are now open for voting. Stake EUL to vote on future distribution.</p>
+<p>Euler <a href="https://twitter.com/eulerfinance/status/1542115694573019136">量表</a> 现已开放投票。质押EUL并对其未来的分配/分发进行投票。</p>
+<p><a href="https://twitter.com/MacroMate8/status/1539248229459578886">eIP12</a> aims to adjust UNI, LINK, and MATIC parameters to improve their Risk Profiles.</p>
+<p><a href="https://twitter.com/MacroMate8/status/1539248229459578886">eIP12</a> 旨在调整 UNI、LINK 和 MATIC 参数，进而改善其风险状况。</p>
+<p>A new <a href="https://twitter.com/MacroMate8/status/1542245005686845440">proposal</a> on Euler looks to allocate some of the treasury to <a href="https://twitter.com/circlepay/status/1542562034016985089">Circle's</a> EUROC and WETH.</p>
+<p>Euler的一项新 <a href="https://twitter.com/MacroMate8/status/1542245005686845440">提案</a> ，尝试将部分资金分配给 <a href="https://twitter.com/circlepay/status/1542562034016985089">Circle上的</a> EUROC 和WETH。</p>
+<p>Joining the Euler team is Alicia Katz, our newest Head of Marketing; Jungyoon Lim, our new Risk Intern; and Katheryn Milligan, our new Research Intern.</p>
+<p>最近加入Euler团队的是我们的营销主管 Alicia Katz； 还有我们新的风险实习生Jungyoon Lim和研究实习生 Katheryn Milligan。</p>
+<p>Euler was <a href="https://twitter.com/idlefinance/status/1537500267188523008">integrated</a> into Idle Finance’s Perpetual Yield Tranches and also mentioned in their <a href="https://twitter.com/idlefinance/status/1541707966876983298">report</a> on DAOs.</p>
+<p>Euler 被 <a href="https://twitter.com/idlefinance/status/1537500267188523008">集成</a> 进入 Idle Finance 的永久收益部分，并在他们的 <a href="https://twitter.com/idlefinance/status/1541707966876983298">报告</a> 中提到DAO。</p>
+<p>Timeless Finance added an ERC-4626 <a href="https://twitter.com/Timeless_Fi/status/1540144603180896257">wrapper</a> for Euler's eTokens to yield daddy.</p>
+<p>Timeless Finance 为Euler的 eToken，想Yield Daddy添加了 ERC-4626 <a href="https://twitter.com/Timeless_Fi/status/1540144603180896257">封装器</a> 。</p>
+<p>OurNetwork <a href="https://twitter.com/OurNetwork__/status/1542869184534700033">highlighted</a> Euler in their latest issue on decentralised lending.</p>
+<p>OurNetwork在他们关于去中心化借贷的最新一期分析中 <a href="https://twitter.com/OurNetwork__/status/1542869184534700033">突出显示</a> Euler。</p>
+<p>AladdinDAO had a research meeting to <a href="https://twitter.com/aladdindao/status/1542077812630331393">discuss</a> Euler Finance.</p>
+<p>AladdinDAO召开了一次研究会议来 <a href="https://twitter.com/aladdindao/status/1542077812630331393">讨论</a>Euler Finance。</p>
+<p>As centralised B&amp;L platforms suffer with contagion, Hasu pointed out that Euler is in a better <a href="https://twitter.com/hasufl/status/1540832877478387712">position</a> than ever.</p>
+<p>由于中心化 B&amp;L 平台受到污染，Hasu 指出 Euler 比以往任何时候都处于更好的 <a href="https://twitter.com/hasufl/status/1540832877478387712">位置</a>。</p>
+<p>Rari Capital's Jack Longarzo gave a <a href="https://twitter.com/JackLongarzo/status/1538859371177857029">shoutout</a> to Euler's deferred liquidity checks.</p>
+<p>Rari资本的Jack Longarzo 对 Euler 的展期流动性检查给予了<a href="https://twitter.com/JackLongarzo/status/1538859371177857029">大声叫好</a>。</p>
+<p>One Euler user wrote a thread <a href="https://twitter.com/solardefi/status/1538909625235476482">highlighting</a> a few trade <a href="https://twitter.com/solardefi/status/1541753865325920257">ideas</a> on Euler.</p>
+<p>一位 Euler 用户在 Euler 上写了一个帖子 <a href="https://twitter.com/solardefi/status/1538909625235476482">高亮了</a> 一些交易 <a href="https://twitter.com/solardefi/status/1541753865325920257">想法</a>。</p>
+<p>A Ukrainian influencer created an <a href="https://twitter.com/doubletop_io/status/1539715674926465027">overview</a> thread on Euler.</p>
+<p>一位乌克兰网红在推特上创建了一个 <a href="https://twitter.com/doubletop_io/status/1539715674926465027">概述</a> Euler的帖子。</p>
+<p>Euler currently has a total supply of $355.25M with TVL of $213.00M and $142.24M in total borrowed, while the reserves have increased to $853.06K. There are 4,044 lenders and 722 borrowers over 65 markets.</p>
+<p>Euler 目前的总供应量为 3.5525 亿美元，TVL 为 2.13 亿美元，借款总额为 1.4224 亿美元，而储备金已增加到 85.306 万美元。在 65 个市场上有 4,044 家出借方和 722 家借入方。</p>
+<hr>
+<h2 id="其他新闻-in-other-news">其他新闻 (In Other News)</h2>
+<p>Check out a <a href="https://twitter.com/snxambassadors/status/1542176162423644162">recording</a> of Michael speaking with Synthetix Ambassadors in their Spartan Call.</p>
+<p>查看 Michael 在 Spartan Call 中与 Synthetix 大使们交谈的 <a href="https://twitter.com/snxambassadors/status/1542176162423644162">录音</a>。</p>
+<p>Seraphim <a href="https://twitter.com/eulerfinance/status/1539329673317888002">talked</a> with ReFi’s head of investments about current market conditions, security in DeFi, and how Euler is leading the charge.</p>
+<p>Seraphim与ReFi的投资主管<a href="https://twitter.com/eulerfinance/status/1539329673317888002">讨论</a>了当前的市场状况、DeFi 的安全性以及 Euler 如何引领潮流。</p>
+<p>Seraphim also spoke with <a href="https://twitter.com/pkan90/status/1541446727286259729">VanEck's</a> Matthew Sigel and Pranav Kanade about crypto collateral and the DeFi Disruption.</p>
+<p>Seraphim 还与 <a href="https://twitter.com/pkan90/status/1541446727286259729">VanEck's</a> Matthew Sigel 和 Pranav Kanade 就加密抵押品和 DeFi的扰乱进行了交谈。</p>
+<p>Brandon was <a href="https://twitter.com/megdematteo/status/1540410111323258880">interviewed</a> in Time about crypto under the current volatile macro markets.</p>
+<p>Brandon就当前动荡的宏观市场，接受了时代杂志关于加密货币的 <a href="https://twitter.com/megdematteo/status/1540410111323258880">采访</a>。</p>
+<p>Seraphim will attend ETH CC5 in Paris from July 19-21. Come say hi if you're going.</p>
+<p>Seraphim 将于 7 月 19 日至 21 日参加在巴黎举行的 ETH CC5。如果你要去，来打个招呼吧。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Akord x Dedoco – 宣布合作! (Akord x Dedoco – partnership announcement)]]></title>
         <id>https://chainguys.github.io/post/akord-x-dedoco-xuan-bu-he-zuo-akord-x-dedoco-partnership-announcement/</id>
@@ -635,64 +690,6 @@ Akord Explorer用户界面抢先看 (Sneak peek at Akord Explorer UI)</p>
 <h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
 <p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
 <p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[握紧私钥，掌握自己的数据 (Own the keys, own your data)]]></title>
-        <id>https://chainguys.github.io/post/wo-jin-si-yao-zhang-wo-zi-ji-de-shu-ju-own-the-keys-own-your-data/</id>
-        <link href="https://chainguys.github.io/post/wo-jin-si-yao-zhang-wo-zi-ji-de-shu-ju-own-the-keys-own-your-data/">
-        </link>
-        <updated>2022-06-13T09:31:16.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/media/you_own_the_keys1.png" alt="You own the keys1" loading="lazy"></figure>
-<p>With Akord, you own the keys that encrypt and decrypt your data. Your keys are generated when you sign up and are represented by your backup phrase. In this article article, we'll explain the backup phrase, how we store and manage it, and demonstrate exactly how you 'own the keys'.</p>
-<p>使用 Akord，您才拥有加密和解密数据的密钥。您的密钥是在您注册时生成的，并由您的备份短语表示。在本文中，我们将解释备份短语、我们如何存储和管理它，并精确演示您如何“拥有密钥”。</p>
-<h2 id="关于您的备份短语-your-backup-phrase-explained">关于您的备份短语 (Your backup phrase explained)</h2>
-<p>For many web3 services, the backup phrase is required any time you would like to access your wallet from a new device. Let's first explain what the backup phrase is.</p>
-<p>对于许多 web3 服务，只要您想从新设备访问您的钱包，就需要备份短语。我们先来解释一下什么是备份短语。</p>
-<p>In order to generate unique keys, we need a unique random number that is known as a “seed”. Since it is difficult for us to read a large number, crypto-wallets use a backup phrase, which is a human-readable representation of the seed. It is also known by other names such as seed phrase, recovery phrase, mnemonic, or passphrase.</p>
-<p>为了生成唯一的密钥，我们需要一个被称为“种子”的唯一随机数。由于人类很难读取大量数字，因此加密钱包使用备用短语，其实是种子的人类可读表示。它也有其他名称，例如种子短语、恢复短语、助记词或密码短语。</p>
-<p>The backup phrase is typically generated using an algorithm called <a href="https://privacypros.io/wallets/mnemonic-phrase">BIP39</a> and assigned to a user when signing up. Akord uses this method to generate the backup phrase. It consists of 12 or 24 words that are chosen from a list of <a href="https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt">2,048 words</a> beginning with “abandon” and ending with “zoo”.</p>
-<p>备用短语通常使用称为 <a href="https://privacypros.io/wallets/mnemonic-phrase">BIP39</a> 的算法生成，并在注册时分配给用户。 Akord 使用这种方法来生成备份短语。它由从 <a href="https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt">2,048 个单词</a> 列表中选择的 12 或 24 个单词组成，以“abandon”开头并结束与“zoo”。</p>
-<p>How safe is a backup phrase that is made up of 12 words? Well, since there are plenty of possible combinations, the chance of drawing the right combination is 1 out of the big number below:</p>
-<p>由 12 个单词组成的备用短语有多安全？好吧，因为有很多可能的组合，所以得出正确组合的机会是下面大数字中的 1：</p>
-<p>2,048^12 = 5444517870735015415413993718908291383296 ≈ 5.4445179e+39</p>
-<p>So, as you can see, backup phrase is pretty much impossible to hack from a brute force attack that tries to guess what your backup phrase is. You just need to store it in a safe place.</p>
-<p>因此，正如您所看到的，备用短语几乎不可能从试图猜测您的备用短语是什么的蛮力攻击中破解。您只需将其存放在安全的地方。</p>
-<p>We recommend the following security practices:<br>
-我们推荐以下安全做法：</p>
-<ul>
-<li>Store your backup phrase in a few different secure locations offline.<br>
-将您的备份短语离线存储在几个不同的安全位置。</li>
-<li>Don’t communicate your backup phrase to anyone.<br>
-不要将您的备用短语传达给任何人。</li>
-<li>Don’t store your backup phrase unencrypted digitally.<br>
-不要以数字方式存储未加密的备份短语。</li>
-</ul>
-<h2 id="您拥有-akord-上的备用短语-you-own-the-backup-phrase-on-akord">您拥有 Akord 上的备用短语 (You own the backup phrase on Akord)</h2>
-<p>In Akord, we ask for an email address and password. We ask for your email so we can send you important notifications when other people in your vault take actions. Your password is used to decrypt your backup phrase locally when you want to sign in.</p>
-<p>在 Akord，我们要求提供电子邮件地址和密码。我们要求您提供电子邮件，以便在您保管库中的其他人采取行动时向您发送重要通知。当您要登录时，您的密码用于在本地解密您的备份短语。</p>
-<p>The backup phrase is encrypted using your actual password. This means that nobody can decrypt your backup phrase without knowing your password.</p>
-<p>备份短语使用您的实际密码加密。这意味着没有人可以在不知道您的密码的情况下解密您的备份短语。</p>
-<p>We store the following three things in our database:<br>
-我们在数据库中存储以下三项内容：</p>
-<p>1.E-mail address(电子邮件地址)<br>
-2.Encrypted backup phrase(加密备份短语)<br>
-3.Verifier of the password(密码验证者)</p>
-<p>We do not store your password, but rather a cryptographic verifier of it. This means that we can easily check if a password you entered is correct without ever seeing the password itself. For those who are curious about how this works in detail, you can read about this process in the <a href="https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol">Secure Remote Password protocol</a> (SRP).</p>
-<p>我们不存储您的密码，而是对其进行加密验证。这意味着我们可以轻松检查您输入的密码是否正确，而无需查看密码本身。对于那些对其详细工作原理感到好奇的人，您可以在 <a href="https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol">安全远程密码协议</a> (SRP) 中阅读有关此过程的信息。</p>
-<figure data-type="image" tabindex="2"><img src="https://akord.com/media/diagam.png" alt="Diagam" loading="lazy"></figure>
-<p>So here’s the process when you sign up with your email address and password. First, we encrypt your backup phrase with the password you entered, or more precisely, with a key derived from your password using <a href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a>. Then, we use the SRP protocol, to compute a cryptographic verifier: We send these two pieces of information along with your email address to our server. This makes it impossible for any middleman, or for anyone with access to the data, including Akord, to decrypt your backup phrase or obtain any information about your password.</p>
-<p>以上是您使用电子邮件地址和密码注册的过程。首先，我们使用您输入的密码加密您的备份短语，或者更准确地说，使用 <a href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a> 使用从您的密码派生的密钥来加密。然后，我们使用 SRP 协议来计算加密验证器：我们将这两条信息连同您的电子邮件地址一起发送到我们的服务器。这使得任何中间人或任何有权访问数据的人（包括 Akord）都无法解密您的备份短语或获取有关您的密码的任何信息。</p>
-<h2 id="akord-的简单登录-akords-simple-sign-in">Akord 的简单登录 (Akord’s simple sign in)</h2>
-<p>Most web3 services require you to connect with a wallet, but with Akord you just need your email and password. So how exactly are you using your keys to sign in?</p>
-<p>大多数 web3 服务都要求您连接钱包，但使用 Akord，您只需要您的电子邮件和密码。那么，您究竟是如何使用密钥登录的呢？</p>
-<p>When you sign in, we first look up your email address and use the SRP protocol to make sure that the password you provided is correct, again, without actually sending the password. If the provided email and password are correct, we send back the encrypted backup phrase. It is decrypted directly in your browser, meaning that nobody but you ever knows it.</p>
-<p>当您登录时，无需实际发送密码，我们首先会查找您的电子邮件地址并使用 SRP 协议,来确保您提供的密码正确无误。如果提供的电子邮件和密码正确，我们会发回加密的备份短语。它直接在您的浏览器中解密，这意味着除了您之外没有人知道它。</p>
-<p>At this point, you're ready to use our user-friendly UI to upload your files to Arweave, with all encryption and decryption happening directly in your browser .</p>
-<p>此时，您已准备好使用我们用户友好的 UI 将您的文件上传到 Arweave，所有加密和解密都直接在您的浏览器中进行。</p>
-<hr>
-<p><em>We believe in true collaboration with the people using our product. If you have feedback on Akord, the best place to reach us is by becoming part of our community on <a href="https://discord.gg/g4VXfauK5s">Discord</a>.</em></p>
-<p><em>我们相信与使用我们产品的人的真正合作。如果您对 Akord 有任何反馈，与我们联系的最佳方式是加入 <a href="https://discord.gg/g4VXfauK5s">Discord</a> 上的社区。</em></p>
 ]]></content>
     </entry>
 </feed>
