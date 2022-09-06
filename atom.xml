@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-08-26T08:16:43.271Z</updated>
+    <updated>2022-09-06T04:39:28.928Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,87 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Euler来信-八月总结(Euler Newsletter August Summary)]]></title>
+        <id>https://chainguys.github.io/post/euler-lai-xin-ba-yue-zong-jie-euler-newsletter-august-summary/</id>
+        <link href="https://chainguys.github.io/post/euler-lai-xin-ba-yue-zong-jie-euler-newsletter-august-summary/">
+        </link>
+        <updated>2022-08-24T02:33:19.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="euler-update-24-august-2022">Euler Update [24 August 2022]</h1>
+<h3 id="让我们一起回顾过去几周都发生了什么-lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么! (Let's recap what has happened over the past few weeks!)</h3>
+<h1 id="紧追潮流-keep-up-to-date">紧追潮流 (Keep up to Date!)</h1>
+<p>Check out last month’s summary <a href="https://newsletter.euler.finance/p/july2022-recap">newsletter</a>, if you’ve been missing out on our recent progress, or continue reading below for the latest news.</p>
+<p>如果您错过了我们最近的进展，请查看上个月的 <a href="https://chainguys.github.io/post/euler-lai-xin-qi-yue-zong-jie-2-euler-labs-newsletter-july-summary">通信摘要</a>，或继续阅读下面的最新消息。</p>
+<p>Euler Governance <a href="https://twitter.com/euler_mab/status/1558084648189808643">passed</a> eIP14 which upgraded the protocol to use Chainlink, added a new method for gas efficient <a href="https://twitter.com/eulerfinance/status/1562066144378245120">flash loans</a>, and a number of other improvements.</p>
+<p>Euler Governance <a href="https://twitter.com/euler_mab/status/1558084648189808643">通过</a> eIP14 升级协议，从而使用 Chainlink，添加了一种新的 gas 高效 [闪电贷](https://twitter.com/eulerfinance /status/1562066144378245120)，以及许多其他改进。</p>
+<p><a href="https://forum.euler.finance/t/eip-16-change-steth-pricing-to-chainlink-and-amend-the-interest-rate-model/347">eIP16</a> is now live for voting and aims to change stETH pricing to Chainlink and amend the interest rate model.</p>
+<p><a href="https://forum.euler.finance/t/eip-16-change-steth-pricing-to-chainlink-and-amend-the-interest-rate-model/347">eIP16</a> 现已上线投票——它旨在将 stETH 价格推送更改为 Chainlink，并修改利率模型。</p>
+<p>Another <a href="https://forum.euler.finance/t/changing-the-voting-system-and-increasing-the-amount-of-votes-necessary-for-quorum/342">proposal</a> is under request for comment in the forums and aims to change the voting system and increase the number of votes needed for Quorum.</p>
+<p>另一个<a href="https://forum.euler.finance/t/changeing-the-voting-system-and-increasing-the-amount-of-votes-necessary-for-quorum/342">提案</a> 正在论坛中征求意见，它旨在改变投票系统并增加(达到)门槛所需的票数。</p>
+<p><a href="https://twitter.com/eulerfinance/status/1559189323647291394">Epoch 10</a> underway, check out some tips on <a href="https://twitter.com/eulerfinance/status/1561742052001337346">voting</a>. Users can now get <a href="https://twitter.com/MacroMate8/status/1556560253424001026">alerts</a> about liquidations on Euler via Twitter. Euler Labs <a href="https://twitter.com/eulerfinance/status/1560293190086709248">Office Hours</a> were held on Aug 23.</p>
+<p><a href="https://twitter.com/eulerfinance/status/1559189323647291394">Epoch 10</a> 正在进行中，请查看<a href="https://twitter.com/eulerfinance/status/1561742052001337346">投票</a> 的一些提示。用户现在可以通过 Twitter 获得有关 Euler 的清算<a href="https://twitter.com/MacroMate8/status/1556560253424001026">警报</a>。 Euler Labs <a href="https://twitter.com/eulerfinance/status/1560293190086709248">连线时间</a> 于 8 月 23 日举行。</p>
+<p>The DeFi Investor wrote a <a href="https://twitter.com/TheDeFinvestor/status/1558090955802099714">thread</a> on Euler's liquidation process, and Guillaume Lambert <a href="https://twitter.com/guil_lambert/status/1557880343444742144">wrote</a> about perpetual options on power perpetuals using Euler.</p>
+<p>DeFi 投资者写了一篇关于Euler清算过程的 <a href="https://twitter.com/TheDeFinvestor/status/1558090955802099714">推文</a>，Guillaume Lambert <a href="https://twitter.com/guil_lambert/status/1557880343444742144">写了</a> 关于使用Euler的永久期权。</p>
+<p><a href="https://twitter.com/MacroMate8">Seraphim</a> wrote about how the new Chainlink integration could empower Euler's stETH/wstETH <a href="https://twitter.com/MacroMate8/status/1558127517701062656">markets</a>. He also <a href="https://twitter.com/MacroMate8/status/1559508887828570115">commented</a> on one trade strategy ahead of ETH Merge and a potential <a href="https://twitter.com/MacroMate8/status/1559652900556574720">risk</a>.</p>
+<p><a href="https://twitter.com/MacroMate8">Seraphim</a> 阐述了与 Chainlink 的全新集成如何增强 Euler 的 stETH/wstETH <a href="https://twitter.com/MacroMate8/status/1558127517701062656">市场</a>。他还 <a href="https://twitter.com/MacroMate8/status/1559508887828570115">评论</a> 了在 ETH 合并之前的一种交易策略和潜在的 <a href="https://twitter.com/MacroMate8/status/1559652900556574720">风险</a>。</p>
+<p><a href="https://twitter.com/nycbrandonn">Brandon Neal</a> was <a href="https://twitter.com/CointelegraphCr/status/1561684612614602754">featured</a> in Cointelegraph Innovation Circle <a href="https://twitter.com/CointelegraphCr/status/1559147895907041283">articles</a>. Brandon will also be <a href="https://twitter.com/MessariCrypto/status/1559178130211778561">on stage</a> at Messari's Mainnet 2022 in NYC on 21-23 Sept.</p>
+<p><a href="https://twitter.com/nycbrandonn">Brandon Neal</a> 在 Cointelegraph 创新圈<a href="https://twitter.com/CointelegraphCr/status/1559147895907041283">文章</a> 被提及。 Brandon 也将于 9 月 21 日至 23 日在纽约 Messari 的 Mainnet 2022 上<a href="https://twitter.com/MessariCrypto/status/1559178130211778561">登台</a>。</p>
+<p>Euler protocol was <a href="https://twitter.com/0xstrobe/status/1560567352457973761">integrated</a> in DefiLlama's liquidation levels dashboard, while DeFiYield.App has <a href="https://twitter.com/defiyield_app/status/1561714808852025344">integrated</a> Euler protocol into their platform.</p>
+<p>Euler 协议在 DefiLlama 的清算水平仪表板中<a href="https://twitter.com/0xstrobe/status/1560567352457973761">集成</a>，而 DeFiYield.App 已经<a href="https://twitter.com/defiyield_app/status/1561714808852025344">集成</a>Euler协议进入他们的平台。</p>
+<p>Euler currently has a total supply of $385.46M with TVL of $217.53M and $167.93M in total borrowed. New markets were activated, including <a href="https://twitter.com/eulerfinance/status/1559270716477886464">FPIS</a>, <a href="https://twitter.com/eulerfinance/status/1562441490613223430">FRAX</a> and <a href="https://twitter.com/eulerfinance/status/1559963297733980161">WAMPL</a>, while the reserves have increased to $1.14M. There are 4,277 lenders and 711 borrowers across 91 markets.</p>
+<p>Euler 目前的总供应量为 3.8546 亿美元，TVL 为 2.1753 亿美元，借款总额为 1.6793 亿美元。新市场被激活，包括 <a href="https://twitter.com/eulerfinance/status/1559270716477886464">FPIS</a>、<a href="https://twitter.com/eulerfinance/status/1562441490613223430">FRAX</a> 和 <a href="https://twitter.com/eulerfinance/status/1559963297733980161">WAMPL</a>，而储备金已增加到 114 万美元。 91 个市场有 4,277 名出借人和 711 名借款人。</p>
+<h1 id="职业机会-career-opportunities">职业机会 (Career Opportunities)</h1>
+<p>Please kindly see details below:<br>
+请参考以下内容：<br>
+<img src="https://chainguys.github.io/post-images/1662431734382.png" alt="" loading="lazy"></p>
+<h2 id="进度更新-progress-updates">进度更新 (Progress Updates)</h2>
+<figure data-type="image" tabindex="1"><img src="https://chainguys.github.io/post-images/1662431743049.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[只读型复入防护(Read-only re-entrancy guards)]]></title>
+        <id>https://chainguys.github.io/post/zhi-du-xing-fu-ru-fang-hu-read-only-re-entrancy-guards/</id>
+        <link href="https://chainguys.github.io/post/zhi-du-xing-fu-ru-fang-hu-read-only-re-entrancy-guards/">
+        </link>
+        <updated>2022-08-17T04:34:05.000Z</updated>
+        <content type="html"><![CDATA[<h2 id=""><img src="https://miro.medium.com/max/1400/1*zdly4EYwSrlQ6X76T9Ay5A.png" alt="" loading="lazy"></h2>
+<p>The Euler Labs team recently deployed a preventative update to the Euler smart contracts that protects contracts integrating with Euler against a class of manipulation attacks. As far as we know, no users were ever exploited by this issue, but it is quite an interesting attack vector and very likely applies to other projects as well.</p>
+<p>Euler Labs 团队最近为 Euler 智能合约部署了一个预防性更新，用来保护与 Euler 集成的合约免受一类操纵攻击。据我们所知，还没有用户被这个问题所利用/受害，但它是一个非常有趣的攻击媒介，也很可能也适用于其他项目。</p>
+<h1 id="背景-background">背景 (Background)</h1>
+<p>Like many other DeFi systems, Euler created a wrapper asset around deposited tokens. For example, eDAI is a wrapper for DAI. Since this is an interest-earning asset, each unit is redeemable for a growing amount of DAI. At any given point in time, the amount of DAI a user can receive for a unit of eDAI is given by the “exchange rate”. This value is computed by dividing the pool’s assets (balance plus outstanding borrows) by the total outstanding eToken balances. Protocols that integrate with Euler may use the exchange rate to compute the underlying value of an eToken deposit by calling <code>convertBalanceToUnderlying()</code> on an eToken.</p>
+<p>与许多其他 DeFi 系统一样，Euler 围绕存入的代币创建了一个封装资产。例如，eDAI 是 DAI 的封装器。由于这是一种生息资产，因此每个单位都可以赎回越来越多的 DAI。在任何给定的时间点，用户可以从一个单位的 eDAI 获得的 DAI 数量由“汇率”给出。该值是通过将池的资产(余额加上未偿还的借款)除以未偿还的 e代币(eToken) 余额总数来计算的。与 Euler 集成的协议可以通过在 e代币(eToken)  上调用<code>convertBalanceToUnderlying()</code>，使用汇率来计算 eToken 存款的标的价值。</p>
+<p>On July 25th, Sherlock notified the Euler Labs team about a bug bounty submission they received for their staking system, which uses Euler. It was a sophisticated attack that relied on the interactions between three separate protocols: Euler, Sherlock’s staking system, and the 1inch DEX aggregator.</p>
+<p>7 月 25 日，Sherlock 通知了 Euler Labs 团队，他们收到了其使用 Euler 质押系统提交的漏洞赏金。这是一种复杂的攻击，依赖于三个独立协议之间的交互：Euler、Sherlock 的质押系统和 1inch DEX 聚合器。</p>
+<p>The bug bounty detailed that the swap module allowed a user to exchange one eToken for another using either Uniswap or 1inch. However, with 1inch, the swap data was treated as a black box by the Euler contracts, and the 1inch router allowed the invocation of arbitrary contracts (including attacker created ones). Fortunately, the Euler system used a reentrancy guard that prevented re-entering into Euler at that time.</p>
+<p>漏洞赏金详细说明了交换模块允许用户使用 Uniswap 或 1inch 将一个 eToken 换成另一个。然而，对于 1inch，交易所数据被 Euler 合约视为黑盒，并且 1inch 路由器允许调用任意合约(包括攻击者创建的合约)。幸运的是，当时Euler系统使用了一个复入防护，阻止了其重新进入Euler。</p>
+<p>Unfortunately, during the 1inch execution, after a swap was performed the funds would have been moved into the Euler contract but have not yet been credited to the total balances, and in fact cannot have been because it did not know the precise amount that would be returned from 1inch. This meant that at this point calling <code>convertBalanceToUnderlying()</code> would return an incorrect value. An attacker could have invoked a victim contract, such as Sherlock’s staking contract, and it would have used an incorrect exchange rate for its computations.</p>
+<p>不幸的是，在 1inch执行期间，执行一笔交换(swap)后，资金被转移到 Euler 合约中，但尚未记入总余额，当然事实上也不可能(计入余额)，因为合约其实不知道从 1inch 返回的确切金。这意味着此时调用 <code>convertBalanceToUnderlying()</code> 将返回不正确的值。攻击者可能会调用受害者合约，例如 Sherlock 的质押合约，并且会使用不正确的汇率进行计算。</p>
+<p>Another way of describing this is that Swaps were not atomic operations in Euler: They consisted of underlying token transfers, followed by updates to EToken balances. Critically, due to the 1inch router’s flexibility, an attacker could have run code in between those two operations.</p>
+<p>另一种描述方式是交换不是Euler中的原子操作：它们包括底层代币转移，然后是对 e代币(eToken) 余额的更新。至关重要的是，由于 1inch 路由器的灵活性，攻击者可以在这两个操作之间运行代码。</p>
+<h1 id="解决之道-mitigation">解决之道 (Mitigation)</h1>
+<p>The Euler Labs team together with Sherlock discussed several ways of fixing this issue. Simply removing 1inch swapping support altogether was considered, but this is undesirable because Euler users can often receive better prices and execution from 1inch. Additionally, there may be other opportunities for attackers to run arbitrary code at times when Euler’s internal data was in an inconsistent state, so this was not a comprehensive solution.</p>
+<p>Euler Labs 团队与 Sherlock 一起讨论了解决此问题的几种方法。我们考虑过简单地完全删除 对 1inch 交换的支持，但这是不可取的，因为Euler用户通常可以从 1inch 获得更好的价格和执行。此外，当 Euler 的内部数据处于不一致状态时，攻击者可能还有其他机会运行任意代码，因此这不是一个全面的解决方案。</p>
+<p>Improving the atomicity of the swapping operation, or sanitising the 1inch “black box” swap data prior to a swap were other options, but these were 4 and still not comprehensive fixes.</p>
+<p>提高交换操作的原子性，或在交换之前清理 1inch “黑盒”的交换数据，是另一个选择，但这也非长久之计，依然不是全面的修复。</p>
+<p>The option selected was to add what we are calling a read-only re-entrancy guard. This works by having <code>convertBalanceToUnderlying()</code> (and all other methods that use the internal <code>loadAssetCacheRO</code> utility) verify that the re-entrancy guard has not been locked. If it has, then an error is thrown. Typical integrations will propagate this error and revert, preventing an attacker from taking advantage of inconsistent exchange rates.</p>
+<p>选择的选项是添加我们所谓的只读型复入防护。通过使用<code>convertBalanceToUnderlying()</code>(以及所有使用内部<code>loadAssetCacheRO</code> 用例程序的其他方法)验证复入防护没有被锁定来生效。如果有，则抛出错误。典型的集成将传播此错误并随后恢复，防止攻击者利用不一致的汇率。</p>
+<p>On Aug 4th, <a href="https://github.com/euler-xyz/euler-contracts/commit/91adeee39daf8ece00584b6f7ec3e60a1d226bc9">this fix</a> was deployed, which transparently fixed the issue for all existing and future Euler integrations.</p>
+<p>8 月 4 日，<a href="https://github.com/euler-xyz/euler-contracts/commit/91adeee39daf8ece00584b6f7ec3e60a1d226bc9">此修复程序</a> 被部署，它透明地修复了所有现有和未来 Euler 集成的问题。</p>
+<p>While this was technically a breaking change, existing integrations were analysed and future users were considered before determining that this restriction would not cause any significant issues for legitimate users. Instead, this provided a comprehensive solution to the attack identified in Sherlock’s bug bounty, as well as any future cases where users are able to execute arbitrary code during the execution of an Euler operation.</p>
+<p>虽然这在技术上是一项重大更改，但在确定此限制不会对合法用户造成任何重大问题之前，我们分析了现有集成并考虑了未来用户。这也为 Sherlock 的漏洞赏金中确定的攻击—未来用户能够在执行Euler运算期间执行任意代码—提供了一个全面的解决方案。</p>
+<h1 id="鸣谢-thanks">鸣谢 (Thanks)</h1>
+<p>Euler Labs would like to thank the Sherlock team, who brought this issue to attention and collaborated on designing and deploying the mitigation described above.</p>
+<p>Euler Labs 要感谢 Sherlock 团队，他们提请注意此问题并合作设计和部署上述解决方案。</p>
+<p>The Labs team would also like to thank the teams behind the various other Euler integrations for acting promptly and professionally to ensure no users’ funds were at risk.</p>
+<p>Labs 团队还要感谢其他各 Euler 集成背后的团队，他们迅速而专业地采取行动，确保没有用户的资金处于危险之中。</p>
+<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
+<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
+<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
+<h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
+<p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
+<p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[JETDAO第三次社区会议笔记(NOTES FROM JETDAO COMMUNITY CALL 3) (NOTES FROM JETDAO COMMUNITY CALL 3)]]></title>
         <id>https://chainguys.github.io/post/jetdao-she-qu-hui-yi-bi-ji-notes-from-jetdao-community-call-3/</id>
@@ -1153,102 +1234,6 @@ STRT 代币债券。</p>
 <p>没问题，轻松搞定！ <strong>在一次交易中进行所有更改，这一能力已成为 Euler 的旗舰功能。</strong> 对于 Gauge UI，它并没有什么不同。用户只需一次交易即可增加和减少所有市场的 EUL 数量。</p>
 <p>Hopefully, this guide helped you better understand the mechanics behind EUL distribution. If you have any questions, join us in <a href="https://discord.gg/CdG97VSYGk">Discord</a> and feel free to ask. Please make sure to browse other guides in the main collection as well.</p>
 <p>希望本指南能帮助您更好地了解 EUL 分发背后的机制。如果您有任何问题，请加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a> 并随时提问。请务必同时浏览系列文章中的其他指南。</p>
-<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
-<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
-<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
-<h1 id="加入社区-join-the-community">加入社区 (Join the Community)</h1>
-<p>Follow us <a href="https://twitter.com/eulerfinance">Twitter</a>. Join our <a href="https://discord.gg/CdG97VSYGk">Discord</a>. Keep in touch on Telegram (<a href="https://t.me/eulerfinance_official">community</a>, <a href="https://t.me/eulerfinance">announcements</a>). Check out our <a href="https://www.euler.finance/">website</a>. Connect with us on <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a>.</p>
-<p>关注我们 <a href="https://twitter.com/eulerfinance">Twitter</a>。加入我们的 <a href="https://discord.gg/CdG97VSYGk">Discord</a>。在 Telegram 上保持联系(<a href="https://t.me/eulerfinance_official">community</a>、<a href="https://t.me/eulerfinance">announcements</a>)。查看我们的<a href="https://www.euler.finance/">网站</a>。在 <a href="https://www.linkedin.com/company/euler-xyz/">LinkedIn</a> 上与我们联系。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[公共保管库已经到来！(Public vaults have arrived!)]]></title>
-        <id>https://chainguys.github.io/post/gong-gong-bao-guan-ku-yi-jing-dao-lai-public-vaults-have-arrived/</id>
-        <link href="https://chainguys.github.io/post/gong-gong-bao-guan-ku-yi-jing-dao-lai-public-vaults-have-arrived/">
-        </link>
-        <updated>2022-06-23T17:12:49.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/media/Public-Vaults-AK-blog.png" alt="Public Vaults AK blog" loading="lazy"></figure>
-<h2 id="akord上公共文件及其含义-public-files-on-akord-and-what-it-means">Akord上公共文件及其含义 (Public files on Akord and what it means)</h2>
-<p>Privacy and encryption was the starting point for Akord, and it would have struck us as strange to think when we founded the company that one day we’d be storing publicly available data. But back then we didn’t know about Arweave. The permanent data storage paradigm has opened our eyes to a far broader understanding of data ownership.</p>
-<p>隐私和加密是 Akord 的起点，当我们创立公司时，入伙想到有一天我们会存储公开可用的数据，这会让我们感到很奇怪。不过那时我们并不知道 Arweave。永久数据存储范式让我们对数据所有权有了更广泛的理解。</p>
-<p>By providing public file support on Arweave, we are opening the door to owning different types of data in different ways. The permanence of data on Arweave allows for files intended for the public domain to stay there – forever. In this context, ownership is not the ability of the individual to keep data private, but to keep data accessible for everyone and to never have it taken down by a centralised authority.</p>
-<p>通过在Arweave提供公共文件支持，我们打开了用不同方式拥有不同类型数据这扇大门。 Arweave 上数据的持久性允许用于公共领域的文件永远保留其上。在这种情况下，所有权不是个人保持数据私密性的能力，而是让每个人都可以访问数据并且永远不会被中心化机构删除的能力。</p>
-<h2 id="引入公共保管库-introducing-public-vaults">引入公共保管库 (Introducing public vaults)</h2>
-<p>Can a vault be public? I hear you say. Aren’t vaults places where we lock things away? Well, a vault is also defined as a space covered by an arch shape structure like a ceiling or roof. Which is a perfect way to to think about Akord’s public vaults. We provide the covering over head, but when you create your public vault anyone can walk in.</p>
-<p>保管库可以公开吗？我听取你的意见。保管库不是我们把东西锁起来的地方吗？嗯，拱顶也被定义为由拱形结构覆盖的空间，如天花板或屋顶。这是思考 Akord 公共保管库的完美方式。我们提供头顶覆盖物，但是当您创建公共保管库时，任何人都可以走进去。</p>
-<p>When you hit the “New vault” button in Akord, you’ll now be asked whether you want to create an Encrypted or Public vault.</p>
-<p>当您在 Akord 中点击“新建保管库”按钮时，系统会询问您是要创建加密保管库还是公共保管库。</p>
-<p><img src="https://akord.com/media/vault-setup.png" alt="Vault setup" loading="lazy"><br>
-在 Akord 中设置新保管库时的第一个屏幕。(The first screen when setting up a new vault in Akord.)</p>
-<p>If you create an Encrypted vault, the padlock icon will appear next to your vault title and all the asset icons will appear in the Akord orange colour. If you pick Public vault, the globe icon will appear next to the vault title and all the asset icons will be in our blue colour. We’ve tried to make the differences between the two vaults very clear at the visual level, so files are not mistakenly uploaded publicly when they were intended for private, encrypted storage.</p>
-<p>如果您创建加密保管库，则挂锁图标将出现在您保管库标题旁边，并且所有资产图标都将以Akord橙色显示。如果您选择公共保管库，地球图标将出现在保管库标题旁边，所有资产图标都将显示为蓝色。我们试图在视觉层面上非常清楚地显示两个保管库之间的差异，因此当文件用于私人加密存储时，不会错误地公开上传文件。</p>
-<p><img src="https://akord.com/media/encrypted-v-public.png" alt="Encrypted v public" loading="lazy"><br>
-加密保险库以橙色图标（左）和蓝色图标（右）显示公共保险库。—Encrypted vaults are displayed with orange icons (left) and Public vaults in blue (right).</p>
-<p>It’s important to note that in public vaults you most of the same features you have in encrypted vaults, like the ability to invite contributors or create an Akord Note, but unlike encrypted vaults there is no in-built chat in public vaults.</p>
-<p>请务必注意，在公共保险库中，您拥有与加密保险库中的大部分相同的功能，例如邀请贡献者或创建 Akord Note 的能力，但与加密保险库不同的是，公共保险库中没有内置聊天功能。</p>
-<p>When you view media in a public vault, you’ll see a Share button in the top right. This will enable you to copy a link to your file directly to your clipboard, allowing you to easily share the content with whoever and wherever you want.</p>
-<p>当您在公共保管库中查看媒体时，您会在右上角看到一个共享按钮。这将使您能够将指向文件的链接直接复制到剪贴板，您可以轻松地与任何人、任何地点共享内容。</p>
-<p><img src="https://akord.com/media/File-previewer.png" alt="File previewer" loading="lazy"><br>
-与任何人、所有人轻松共享公共保管库内容。(Easily share public vault content with anyone and everyone.)</p>
-<h2 id="未来优化upcoming-improvements">未来优化(Upcoming improvements)</h2>
-<h3 id="保险库分享-vault-sharing">保险库分享 (Vault sharing)</h3>
-<p>With this release, you can only share single files, not the whole public vault. The ability to share entire public vaults is a feature that is dependent on Akord Explorer, our Arweave explorer for data uploaded through the Akord protocol. Akord Explorer will be deployed directly on Arweave, so it makes sense that sharing public vaults will take people to Explorer. Akord Explorer will be arriving in the coming weeks.</p>
-<p>在此版本中，您只能共享单个文件，而不是整个公共保管库。共享整个公共保管库的能力依赖于 Akord Explorer，这是我们的 Arweave 浏览器，用于通过 Akord 协议上传的数据。 Akord Explorer 将直接部署在 Arweave 上，因此共享公共保管库有理由会将人们带到 Explorer 。 Akord Explorer 将在未来几周内更新。</p>
-<p><img src="https://akord.com/media/AK-Explorer.png" alt="AK Explorer" loading="lazy"><br>
-Akord Explorer用户界面抢先看 (Sneak peek at Akord Explorer UI)</p>
-<h3 id="上传时铸造-mint-on-upload">上传时铸造 (Mint on upload)</h3>
-<p>We see atomic NFTs on Arweave as a further step in data ownership within the public domain. By fusing the non-fungible token, asset and metadata, and sending it all to the weave, creators can have their work and its provenance easily and permanently verifiable on-chain.</p>
-<p>我们将 Arweave 上的原子NFT视为公共领域内数据所有权的又一进步。通过融合不可替代的代币、资产和元数据，并将其全部发送到编织中，创作者可以轻松且永久地在链上验证他们的工作及其出处。</p>
-<p>Later this year, we intend to implement a mint on upload feature within Akord public vaults, allowing for a user-friendly and quick way for people to mint atomic NFTs directly on Arweave.</p>
-<p>今年晚些时候，我们打算在 Akord 公共保险库中实现上传时铸币功能，从而为人们直接在 Arweave 上铸造原子NFT提供一种友好方便的方式。</p>
-<hr>
-<p>As with all our product development, we welcome feedback and feature requests. The best place to reach us is by joining our community on <a href="https://discord.com/invite/g4VXfauK5s">Discord</a>.</p>
-<p>与我们所有的产品开发一样，我们欢迎反馈和功能请求。请加入我们的 <a href="https://discord.com/invite/g4VXfauK5s">Discord</a> 社区。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[介绍 EulerDAO：社区提案和投票掌握治理(Introducing EulerDAO：Community Proposals and Voting Take Hold of Governance)]]></title>
-        <id>https://chainguys.github.io/post/jie-shao-eulerdaoshe-qu-ti-an-he-tou-piao-zhang-wo-zhi-li-introducing-eulerdaocommunity-proposals-and-voting-take-hold-of-governance/</id>
-        <link href="https://chainguys.github.io/post/jie-shao-eulerdaoshe-qu-ti-an-he-tou-piao-zhang-wo-zhi-li-introducing-eulerdaocommunity-proposals-and-voting-take-hold-of-governance/">
-        </link>
-        <updated>2022-06-23T15:31:03.000Z</updated>
-        <content type="html"><![CDATA[<p><em>EulerDAO’s decentralised and on-chain governance has been launched, with the community now able to vote on proposals and gauges.</em></p>
-<p><em>EulerDAO 的去中心化和链上治理已经启动，社区现在可以对提案和规范进行投票。</em></p>
-<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*aPoXkCYYVMUyrS5USNv2DQ.png" alt="" loading="lazy"></figure>
-<p>EulerDAO’s launch signifies a new direction in decentralised financial markets, where community members can democratically vote on market and asset structures to fit their needs. Through a non-custodial experience, users have equal access to permissionless borrowing and lending markets.</p>
-<p>EulerDAO 的推出标志着去中心化金融市场的新方向：社区成员可以在市场和资产结构上进行民主投票来满足他们的需求。借由非托管式体验，用户可以平等地进入无许可的借贷市场。</p>
-<p>Starting today, community members can <a href="https://docs.euler.finance/governance/eul/distribution#how-to-claim">claim</a> any available EUL tokens from previous epochs, select a delegate on the <a href="https://app.euler.finance/delegates">delegates</a> page and participate in the future of decentralised finance.</p>
-<p>从今天开始，社区成员可以 <a href="https://docs.euler.finance/governance/eul/distribution#how-to-claim">声索</a> 任何来自之前时代的可用 EUL 代币，在 <a href="https://app.euler.finance/delegates">委托</a>页面并参与去中心化金融的未来。</p>
-<p>The development of the Euler Protocol has matured into a rapidly growing DeFi platform that is uniquely positioned as truly decentralised and permissionless. Handing over governance control to the community is not a first, but it is a groundbreaking leap as a risk-conscious protocol where users can list, borrow and lend nearly any asset.</p>
-<p>Euler协议已发展为一个快速增长的，以真正去中心化和无许可化为独特定位的DeFi平台。虽然将治理控制权移交给社区并不是历史首次，但Euler作为一种有风险意识的协议，却是一个突破性的飞跃：用户可以公开列出、借入和借出几乎任何资产。</p>
-<p>EulerDAO’s community-run governance enables users to vote or <a href="https://blog.euler.finance/eulerdao-call-for-delegates-3c3220066eaa">delegate</a> their voting power to others in order to unite behind a shared vision of the protocol’s future. Delegates, including those who have self-delegated, can create proposals that shape the functionality of the Euler Protocol. Delegates can propose changes to an asset’s tier, collateral and borrow factors, interest rate model parameters, reserve factors, and much more.</p>
-<p>EulerDAO 的社区运行治理，使用户能够投票或将他们的投票权<a href="https://blog.euler.finance/eulerdao-call-for-delegates-3c3220066eaa">委托</a> 给他人，进而团结一致，支持协议共同的未来愿景。代表，包括那些自我委托的代表，可以创建那些塑造Euler协议功能的提案。代表们可以提议对资产层级、抵押品和借入因子、利率模型参数、准备金因子等进行更改。</p>
-<p>The governance <a href="https://docs.euler.finance/governance/governance/governance-process">process</a> will see users discuss potential changes, initiate proposals, community on-chain voting, and execution if successful, as shown below.</p>
-<p>治理<a href="https://docs.euler.finance/governance/governance/governance-process">流程</a>将看到用户讨论潜在改变，发起提案，社区链上投票，如果成功则执行，如下所示。</p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/1*MC7DJ_wAUHQeXPEq8a68Mw.png" alt="" loading="lazy"></figure>
-<p>More details and guides on the voting process can be found in the Euler <a href="https://docs.euler.finance/governance/governance/voting">documentation</a>. While anyone can become a delegate, delegation is a serious commitment as a volunteer to actively participate in governance, as EulerDAO will aim to fairly and adequately reward delegates for their significant efforts.</p>
-<p>更多有关投票过程详细信息和指南，请参阅 Euler <a href="https://docs.euler.finance/governance/governance/voting">文档</a>。虽然任何人都可以成为代表，但委托/代表是作为志愿者积极参与治理的严肃承诺，因为 EulerDAO 的目标是公平和充分地奖励代表的重大努力。</p>
-<p>As part of the <a href="https://blog.euler.finance/eulerdao-launch-phases-2a154837b908">phased launch</a>, proposals will be performed directly on the Euler Protocol smart contracts by the Euler team on behalf of the community. Governance proposers can use a <a href="https://proposal.euler.finance/">tool</a> to ensure the on-chain proposal is properly created.</p>
-<p>作为<a href="https://chainguys.github.io/post/eulerdao-qi-dong-ge-jie-duan-jie-shao-eulerdao-launch-phases/">分阶段发布</a> 的一部分，Euler团队将代表社区直接在Euler协议智能合约上执行提案。治理提议者可以使用 <a href="https://proposal.euler.finance/">工具</a> 来确保正确创建链上提议。</p>
-<p>The second phase will see a transition from the multisig to a TimelockController smart contract, while the final third phase will turn the Installer Admin to the TimelockController, thus placing the community in full direct control over governance. The phases are to provide a smooth and more secure transition process.</p>
-<p>第二阶段，我们将看到从多重签名到 TimelockController 智能合约的过渡，而最后的第三阶段会把安装程序的管理员转变为 TimelockController，从而使社区完全直接控制治理。这些阶段是为了提供一个平稳和更安全的过渡过程。</p>
-<h1 id="eul分发-eul-distribution">EUL分发 (EUL Distribution)</h1>
-<p>The Euler Protocol distributes EUL tokens to borrowers of certain assets, with the amount of EUL allocated to each market every epoch determined by EUL token holders through the gauges.</p>
-<p>Euler 协议将 EUL 代币分配给某些资产的借款人，每个市场分配的 EUL 数量由 EUL 代币持有者通过量表确定。</p>
-<p>Soon after Epoch 7 begins, EUL token holders can visit the <a href="https://app.euler.finance/gaugeweight">Gauge</a> page and stake their tokens against a particular market to indicate their preference for that market receiving an EUL distribution in future epochs.</p>
-<p>在 Epoch 7（第7纪元） 开始后不久，EUL 代币持有者可以访问 <a href="https://app.euler.finance/gaugeweight">量表</a> 页面并将他们的代币质押在特定市场上，从而表明他们对该市场未来纪元接收 EUL 分配的偏好。</p>
-<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/1*FmL9OxzGhARePbOp0vsskA.png" alt="" loading="lazy"></figure>
-<p>The EUL distribution <a href="https://docs.euler.finance/governance/eul/distribution-1">schedule</a> follows a bell curve model over a four-year period, with a peak around the middle. The schedule for the EUL distribution tries to match increasing protocol user numbers after launch with a concomitant increase in the EUL distribution, which should help to decentralise the supply of the token.</p>
-<p>EUL 分发 <a href="https://docs.euler.finance/governance/eul/distribution-1">图表</a> 在四年期间遵循钟形曲线（贝尔曲线）模型，在中间有一个峰值。 EUL 分发时间表试图在启动后增加协议用户数量，同时增加 EUL 分发，这将有助于分散代币的供应。</p>
-<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/1*2PXagLlZrVp-JkQn9lXoZQ.png" alt="" loading="lazy"></figure>
-<p>Users unfamiliar with the platform, delegation, on-chain voting, or anything else related to Euler and the DAO should refer to the various user <a href="https://blog.euler.finance/">guides</a> or feel welcome to join the Euler <a href="https://discord.gg/CdG97VSYGk">Discord</a> to ask questions and get involved.</p>
-<p>不熟悉平台、委托、链上投票或其他任何与 Euler 和 DAO 相关的用户，可以参考各种用户 <a href="https://blog.euler.finance/">指南</a> 或欢迎加入 Euler <a href="https://discord.gg/CdG97VSYGk">Discord</a> 提出问题并参与其中。</p>
-<p>The Euler Protocol has been developing over the past couple years, with the mainnet released earlier this year. Euler has partnered with several top security firms that resulted in <a href="https://github.com/euler-xyz/euler-audits/tree/master/smart_contract_audits">audits</a> and a <a href="https://immunefi.com/bounty/euler/">bug bounty</a>.</p>
-<p>Euler协议在过去几年中一直在发展，今年早些时候发布了主网。 Euler与几家顶级安全公司合作，进行了<a href="https://github.com/euler-xyz/euler-audits/tree/master/smart_contract_audits">审计</a> 和<a href="https://immunefi.com/bounty/euler/">漏洞赏金</a>.</p>
-<p>The EulerDAO launch comes at a unique yet volatile time in not only DeFi but also global history. Now anyone using Euler can manage their own risks, assets, and opportunities in a transparent and inclusive environment.</p>
-<p>EulerDAO 的发布正值 DeFi 乃至全球历史上一个独特而动荡的时期。现在，任何使用 Euler 的人都可以在透明和包容的环境中管理自己的风险、资产和机会。</p>
-<p>Welcome to the EulerDAO, we’re now live.</p>
-<p>欢迎来到 EulerDAO，我们已上线。</p>
 <h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
 <p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
 <p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
