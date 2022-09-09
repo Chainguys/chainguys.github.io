@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-09-09T05:15:20.492Z</updated>
+    <updated>2022-09-09T05:34:12.461Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
     <entry>
-        <title type="html"><![CDATA[stETH和可重置代币的一些”毛病“ (and the Hazards of Rebasing Tokens)]]></title>
+        <title type="html"><![CDATA[stETH和可重置代币的一些”毛病“ (stETH and the Hazards of Rebasing Tokens)]]></title>
         <id>https://chainguys.github.io/post/steth-he-ke-chong-zhi-dai-bi-de-yi-xie-mao-bing-and-the-hazards-of-rebasing-tokens/</id>
         <link href="https://chainguys.github.io/post/steth-he-ke-chong-zhi-dai-bi-de-yi-xie-mao-bing-and-the-hazards-of-rebasing-tokens/">
         </link>
