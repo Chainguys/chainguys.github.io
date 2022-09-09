@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-09-07T16:02:55.559Z</updated>
+    <updated>2022-09-09T05:15:20.492Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,117 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[stETH和可重置代币的一些”毛病“ (and the Hazards of Rebasing Tokens)]]></title>
+        <id>https://chainguys.github.io/post/steth-he-ke-chong-zhi-dai-bi-de-yi-xie-mao-bing-and-the-hazards-of-rebasing-tokens/</id>
+        <link href="https://chainguys.github.io/post/steth-he-ke-chong-zhi-dai-bi-de-yi-xie-mao-bing-and-the-hazards-of-rebasing-tokens/">
+        </link>
+        <updated>2022-09-09T05:10:06.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://chainguys.github.io/post/wei-ying-dui-eth-he-bing-euler-yi-jing-zhun-bei-hao-yu-chainlink-ji-cheng-euler-integrates-chainlink-to-get-ready-for-the-merge/">Chainlink was recently integrated with Euler</a> for asset pricing. As mentioned, we at Euler Labs believe this is necessary to protect Euler users during the Ethereum Merge upgrade (although we are still proponents of on-chain pricing like TWAPs wherever possible— see some of our <a href="https://ethresear.ch/t/median-prices-as-alternative-to-twap-an-optimised-proof-of-concept-analysis-and-simulation/12778">recent research</a>).</p>
+<p><a href="https://chainguys.github.io/post/wei-ying-dui-eth-he-bing-euler-yi-jing-zhun-bei-hao-yu-chainlink-ji-cheng-euler-integrates-chainlink-to-get-ready-for-the-merge/">Chainlink最近与Euler集成</a> ，用于资产定价。如前所述，我们 Euler Labs 认为这对于在 Ethereum Merge 升级期间保护 Euler 用户是必要的(尽管我们仍然尽可能支持 TWAP 等链上定价 - 请参阅我们的一些 <a href="https://ethresear.ch/t/median-prices-as-alternative-to-twap-an-optimized-proof-of-concept-analysis-and-simulation/12778">最近的研究</a>)。</p>
+<p>However, another benefit of Chainlink pricing is to securely support assets that don’t have liquid Uniswap3 pools. One such asset is Lido’s stETH token. This is a token that represents shares of Lido’s staking protocol. In order to maintain price parity with regular ETH as fees are accrued, the stETH contracts implement a daily rebase. This means that once per day the rewards (and slashing, if any) are credited to token holders by proportionally increasing everyone’s balances. This is a very convenient way to distribute rewards but causes many complications in down-stream products like Euler.</p>
+<p>然而，Chainlink 定价的另一个好处是安全地支持没有流动性 Uniswap3 池的资产。其中一项资产是 Lido 的 stETH 代币。这是一个代表 Lido 质押协议份额的代币。为了在产生费用时保持与常规 ETH 的价格平价，stETH 合约实施每日 重置。这意味着每天一次，奖励(和削减，如果有的话)按比例增加代币持有者的余额。这是一种非常方便的奖励分配方式，但会给 Euler 等下游产品带来许多复杂性。</p>
+<p>If you plan to deposit or borrow stETH on the Euler platform, please read the following article because there are some important points you should be aware of.</p>
+<p>如果您打算在 Euler 平台上存入或借入 stETH，请阅读以下文章，因为您应该注意一些要点。</p>
+<h2 id="重置和保险库-rebasing-and-vaults">重置和保险库 (Rebasing and Vaults)</h2>
+<p>One common issue with rebasing tokens is how they are handled by vault-like systems. For example, consider a contract that accepts an stETH deposit, records how much was deposited, and allows you to withdraw that amount later on. What happens when a rebase occurs? The contract’s balance increases but the record of how much you can withdraw does not, because it’s internal to the contract. So this means that the Lido rewards effectively accrue to the contract, not the depositor. If there is no way to “skim” unaccounted-for tokens out of the contract, then they are irretrievably lost.</p>
+<p>可重置代币的一个常见问题是它们如何被类似保险库的系统处理。例如，考虑一个接受 stETH 存款的合约，先记录存入的金额，并允许您稍后提取该金额。发生重置时会发生什么？合约的余额会增加，但你可以提取多少的记录不会增加，因为它是合约内部的。因此，这意味着 Lido 奖励有效地累积到合约，而不是存款人。如果没有办法从合约中“拿出”下落不明的代币，那么它们将无法挽回地丢失。</p>
+<p>This is actually the reason that Euler’s eTokens are <strong>not</strong> rebasing. Like Compound’s cTokens, balances don’t update with accrued interest, but are instead exchangeable for a growing amount of underlying tokens. By contrast, AAVE’s aTokens <strong>are</strong> rebasing, which results in the vault issue described above.</p>
+<p>这实际上是 Euler 的 eToken <strong>并非</strong> 可重置 的原因。与 Compound 的 cToken 一样，余额不会随着应计利息而更新，而是可以兑换成越来越多的对应/基础代币。相比之下，AAVE 的 aToken <strong>是</strong>  可重置的，这会导致上述保险库问题。</p>
+<p>Uniswap3 is another vault-like system. Because of the concentrated liquidity feature, each position’s balances are tracked internally in the contract (as opposed to using the contract address’s balance, like Uniswap2 and others). This is likely one of the reasons there are no liquid Uniswap3 pools for stETH. Although the pools exist, liquidity providers will not earn the Lido fees, which means they will most likely be less profitable than they would be on Curve or Uniswap2.</p>
+<p>Uniswap3 是另一个类似保险库的系统。由于集中流动性的特点，每个头寸的余额都在合约内部进行跟踪(而不是使用合约地址的余额，如 Uniswap2 等)。这可能是 stETH 没有流动性 Uniswap3 池的原因之一。尽管存在池，但流动性提供者不会赚取 Lido 费用，这意味着它们的利润很可能低于 Curve 或 Uniswap2 上的利润。</p>
+<h2 id="wsteth又如何what-about-wsteth">wstETH又如何？(What about wstETH?)</h2>
+<p>wstETH is a “wrapped stETH”. Its purpose is to provide a non-rebasing interface to stETH. Like Euler’s eTokens, wstETH becomes exchangeable for a growing amount of stETH over time (assuming earned rewards are greater than slashing). Because it is non-rebasing, the above issues do not apply.</p>
+<p>wstETH 是一个“封装的 stETH”。其目的是为 stETH 提供一个非重置的接口。与 Euler 的 eToken 一样，随着时间的推移，wstETH 可以兑换成越来越多的 stETH(假设获得的奖励大于削减)。因为它是非重置的，所以上述问题不适用。</p>
+<p>Euler has supported wstETH for some time, both as a collateral and borrowable asset. Its Oracle rating is currently Low Risk, which means the cost of manipulating its price on Uniswap3 is very high.</p>
+<p>无论是作为抵押品还是可借用资产，Euler 支持 wstETH 已经有一段时间了。它的 Oracle 评级目前为低风险，这意味着在 Uniswap3 上操纵其价格的成本非常高。</p>
+<p>However, there has been significant demand to also support stETH directly. stETH does have some advantages over wstETH. In particular it can be considered soft-pegged to the value of ETH, and as such is well-suited for use on systems like Curve1.</p>
+<p>然而，直接支持 stETH 的需求也很大。 stETH 确实比 wstETH 有一些优势。特别是它可以被认为与 ETH 的价值软挂钩，因此非常适合在像 Curve1 这样的系统上使用。</p>
+<h2 id="借入steth-borrowing-steth">借入stETH (Borrowing stETH)</h2>
+<p>On AAVE, stETH is supported as a collateral asset, but you cannot borrow it. Certainly its rebasing nature complicates borrowing, but Euler’s governance <a href="https://snapshot.org/#/eulerdao.eth/proposal/0x8d246cae198f742f057e237314c6855768b83994d4a0bbdebf93b34e5ad40212">has voted</a> to support borrowing stETH with a borrow factor of 0.91. At Euler Labs we agree with this decision because we believe that the ability to borrow (and therefore to short sell) an asset is key to a healthy market.</p>
+<p>在 AAVE 上，stETH 被支持作为抵押资产，但你不能借用它。当然，它的可重置性质使借贷复杂化，但Euler的治理<a href="https://snapshot.org/#/eulerdao.eth/proposal/0x8d246cae198f742f057e237314c6855768b83994d4a0bbdebf93b34e5ad40212">已投票</a> 支持使用0.091的借贷因子借入stETH。在 Euler Labs，我们同意这一决定，因为我们认为借入(并因此卖空)资产的能力是健康市场的关键。</p>
+<p>However, there are some caveats that stETH borrowers should be aware of, which we will describe below.</p>
+<p>但是，stETH 借款人应该注意一些警告，我们将在下面描述。</p>
+<h2 id="还款的复杂性-complications-with-repay">还款的复杂性 (Complications with Repay)</h2>
+<p>If you look into the implementation of the stETH contract, you will see that the way it implements rebasing is by tracking an internal “shares” value for each user, and then converting these shares to and from balances when <code>balanceOf()</code> , <code>transfer()</code>, etc are called. The unfortunate consequence of this is that when converting shares to balances or vice versa, rounding can occur. This means that there are some values for balances that cannot be precisely represented.</p>
+<p>如果你查看 stETH 合约的实现，你会发现它实现 可重置 的方式是跟踪每个用户的内部“份额”值，然后在 <code>balanceOf()</code> <code>transfer()</code>等被调用时将这些份额转换为余额。这样做的不幸后果是，当将股份转换为余额或反之亦然时，可能会发生四舍五入。这意味着有些余额值无法精确表示。</p>
+<p>For Euler users, this means that repaying stETH loans is slightly more complicated than with other assets. Because of the rounding, when the Euler contract pulls a precise amount from your wallet to repay a loan, it might receive a few wei less than requested, leaving you with a very small amount of “dust” debt. While this isn’t necessarily a problem, it does have some downsides:</p>
+<p>对于 Euler 用户来说，这意味着偿还 stETH 贷款比使用其他资产稍微复杂一些。由于四舍五入，当Euler合约从你的钱包中提取一个精确的金额来偿还贷款时，它可能会比要求的少一些 wei，给你留下非常少量的“尘埃”债务。虽然这不一定是问题，但它确实有一些缺点：</p>
+<ul>
+<li>
+<p>You will not be able to exit the stETH market on this sub-account</p>
+</li>
+<li>
+<p>You may not be able to take out any other loans on this sub-account due to <a href="https://docs.euler.finance/developers/getting-started/architecture#sub-accounts">borrow isolation</a></p>
+</li>
+<li>
+<p>You have to keep a small (dust) amount of collateral locked in this sub-account</p>
+</li>
+<li>
+<p>You don’t get the gas refund for setting a storage slot back to exactly 0</p>
+</li>
+<li>
+<p>您将无法在该子账户上退出 stETH 市场</p>
+</li>
+<li>
+<p>由于<a href="https://docs.euler.finance/developers/getting-started/architecture#sub-accounts">借入隔离</a>，您可能无法在此子账户上提取任何其他贷款</p>
+</li>
+<li>
+<p>您必须在此子账户中锁定少量(灰尘)抵押品</p>
+</li>
+<li>
+<p>将存储槽设置回 0 不会获得 gas 退款</p>
+</li>
+</ul>
+<p>Euler Labs is working on a UI-level fix for the Repay action that will automatically get rid of this dust for you. Please follow our discord for updates on this progress.</p>
+<p>Euler Labs 正在为还款操作进行 UI 级别的修复，它将自动为您清除这些灰尘。请关注我们的 Discord 以获取有关此进展的最新信息。</p>
+<h2 id="交换的复杂性-complications-with-swap">交换的复杂性 (Complications with Swap)</h2>
+<p>Unlike many other lending protocols, Euler has a built-in mechanism for Swapping tokens on DEXs like Uniswap3 and others (via 1inch). This is useful for setting up and unwinding leveraged positions with an EOA (non smart-contract) wallet.</p>
+<p>与许多其他借贷协议不同，Euler 具有用于在 Uniswap3 等 DEX 上交换代币的内置机制(通过 1inch)。这对于使用 EOA(非智能合约)钱包设置和平仓杠杆头寸很有用。</p>
+<p>However, a related problem can occur here as with repay. Currently, when a 1inch swap is requested, our Swap module checks the bought amount returned by 1inch. For rebasing tokens this amount is incorrect, as it is the amount that 1Inch requested to be transferred, not the actual amount that Euler received (which may be less). This can cause the swap to fail.</p>
+<p>但是，与还款一样，这里可能会出现相关问题。目前，当请求 1inch 交换时，我们的交换模块会检查 1inch 返回的购买金额。对于可重置代币，这个金额是不正确的，因为它是 1Inch 请求转移的金额，而不是 Euler 收到的实际金额(可能更少)。这可能会导致交换失败。</p>
+<p>While our swap module does also support directly swapping with Uniswap3, this is not a good option in this case since (as described above) there are no liquid stETH pools on Uniswap3.</p>
+<p>虽然我们的交换模块也支持直接与 Uniswap3 交换，但在这种情况下这不是一个好的选择，因为(如上所述)Uniswap3 上没有流动的 stETH 池。</p>
+<p>Euler Labs developers have designed a major improvement to the Swapping architecture (currently under audit) and believe we will have a comprehensive solution to this in the near future.</p>
+<p>Euler Labs 开发人员设计了对 Swapping 架构的重大改进(目前正在审核中)，并相信我们将在不久的将来有一个全面的解决方案。</p>
+<p>In the mean-time, if you have any issues with, or questions about, swapping, please open a support issue on discord and someone from Euler Labs will help figure out the best solution for your situation.</p>
+<p>同时，如果您对交换有任何问题或疑问，请在 discord 上打开支持问题，Euler Labs 的人员将帮助您找出适合您情况的最佳解决方案。</p>
+<h2 id="收益窃取攻击-yield-theft-attack">收益窃取攻击 (Yield Theft Attack)</h2>
+<p>Since stETH does a daily (as opposed to continuous) rebase, there is another issue to be aware of. While the previous issues only affect borrowers, the following affects depositors (but is a consequence of borrowing).</p>
+<p>由于 stETH 每天(而不是连续)进行重置，因此还有另一个问题需要注意。虽然之前的问题只影响借款人，但以下问题会影响存款人(但这是借款的结果)。</p>
+<p>When you deposit stETH into Euler, you are earning yield from two separate sources:</p>
+<p>当您将 stETH 存入 Euler 时，您将从两个不同的来源获得收益：</p>
+<ul>
+<li>
+<p>The portion of the pool that has been borrowed. The borrowers pay interest according to a special interest rate model. This model starts with the Lido rewards as a base interest rate, and then charges additional interest depending on the utilisation of the pool.</p>
+</li>
+<li>
+<p>The portion of the pool that has not been borrowed. This balance sits in the Euler contract and receives rebasing rewards which are proportionally allocated to stETH depositors.</p>
+</li>
+<li>
+<p>已借用的池部分。借款人根据特殊利率模型支付利息。该模型以 Lido 奖励作为基本利率，然后根据池的利用率收取额外的利息。</p>
+</li>
+<li>
+<p>池中未借用的部分。该余额位于 Euler 合约中，并获得按比例分配给 stETH 存款人的重置奖励。</p>
+</li>
+</ul>
+<p>The intent of the above is to ensure that depositors at least earn the Lido reward that they would by simply holding stETH, and maybe extra depending on the pool’s borrowing activity.</p>
+<p>上述内容的目的是确保储户至少能够通过持有 stETH 获得 Lido 奖励，并且可能会根据池的借贷活动获得额外奖励。</p>
+<p>However, there is a subtle attack that can be used to steal the daily yield on the rewards for the unborrowed amount. If you knew exactly when the rebasing was to occur, right before the rebase you could borrow the entire amount remaining in the pool, wait for the rebase, and then immediately repay the borrowed amount, pocketing the reward. This can even be done within a single block by sandwiching the transaction that triggers the rebase, in which case you would pay no interest on the borrow.</p>
+<p>但是，有一种微妙的攻击可用于窃取未借出金额奖励的每日收益。如果您确切知道重置发生的时间，那么在重置之前，您可以借入池中剩余的全部金额，等待重置，然后立即偿还借入的金额，将奖励收入囊中。这甚至可以通过将触发重置的交易在一个块内完成，在这种情况下，您无需为借款支付利息。</p>
+<p>In fact, you could do this for any system that allows you to temporarily withdraw stETH and re-deposit the same amount. For example, you could buy a ton of stETH on Curve right before the rebase, earn the reward, and then sell it back to Curve.</p>
+<p>事实上，您可以对任何允许您暂时提取 stETH 并重新存入相同金额的系统执行此操作。例如，您可以在重置之前在 Curve 上购买大量 stETH，获得奖励，然后将其卖回给 Curve。</p>
+<p>In general, this attack is only worthwhile if the amount earned is greater than the amount expended in terms of gas and protocol fees.</p>
+<p>一般来说，这种攻击只有在赚取的金额大于gas和协议费用的支出时才值得。</p>
+<p>While the fees charged by Curve almost certainly offset the profit you would earn, on Euler taking a loan and immediately repaying is free, except for gas. Fortunately, our analysis has shown that this attack will not become profitable until the Euler pool reaches a large TVL.</p>
+<p>虽然 Curve 收取的费用几乎肯定会抵消您将获得的利润，不过Euler贷款并立即偿还是免费的，虽然gas除外。幸运的是，我们的分析表明，在Euler池达到较大的 TVL 之前，这种攻击不会变得有利可图。</p>
+<p>Euler Labs will soon be proposing an upgrade to governance that allows assets to be configured with a “loan origination” fee, which will charge a very modest fee to borrowers when they initiate a loan. This should ensure that this attack is not possible, no matter the pool size.</p>
+<p>Euler Labs 很快将提议对治理进行升级，允许为资产配置“贷款发起”费用，这将在借款人发起贷款时向他们收取非常适中的费用。这应该确保这种攻击是不可能的，无论池大小如何。</p>
+<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
+<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
+<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[为应对ETH合并，Euler已经准备好与Chainlink集成(Euler Integrates Chainlink To Get Ready for the Merge)]]></title>
         <id>https://chainguys.github.io/post/wei-ying-dui-eth-he-bing-euler-yi-jing-zhun-bei-hao-yu-chainlink-ji-cheng-euler-integrates-chainlink-to-get-ready-for-the-merge/</id>
@@ -1164,64 +1275,6 @@ STRT 代币债券。</p>
 <p>Brandon就当前动荡的宏观市场，接受了时代杂志关于加密货币的 <a href="https://twitter.com/megdematteo/status/1540410111323258880">采访</a>。</p>
 <p>Seraphim will attend ETH CC5 in Paris from July 19-21. Come say hi if you're going.</p>
 <p>Seraphim 将于 7 月 19 日至 21 日参加在巴黎举行的 ETH CC5。如果你要去，来打个招呼吧。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Akord x Dedoco – 宣布合作! (Akord x Dedoco – partnership announcement)]]></title>
-        <id>https://chainguys.github.io/post/akord-x-dedoco-xuan-bu-he-zuo-akord-x-dedoco-partnership-announcement/</id>
-        <link href="https://chainguys.github.io/post/akord-x-dedoco-xuan-bu-he-zuo-akord-x-dedoco-partnership-announcement/">
-        </link>
-        <updated>2022-07-03T09:47:46.000Z</updated>
-        <content type="html"><![CDATA[<p>原文：<a href="https://akord.com/blog/akord-x-dedoco-partnership-announcement">https://akord.com/blog/akord-x-dedoco-partnership-announcement</a></p>
-<figure data-type="image" tabindex="1"><img src="https://akord.com/media/Akord-x-Dedoco-Announcement-01.png" alt="Akord x Dedoco Announcement 01" loading="lazy"></figure>
-<p>We are truly thrilled to announce our partnership with decentralized digital workflow signing provider, <a href="https://www.dedoco.com/">Dedoco</a>. This collaboration will bring together the Akord Protocol, our seamless user experience and Arweave’s storage layer to Dedoco’s next generation digital DMaaS (Document Management as-a-Service) platform.</p>
-<p>我们非常高兴地宣布：我们与去中心化数字工作流签名提供商 <a href="https://www.dedoco.com/">Dedoco</a> 建立合作伙伴关系。此次合作将把 Akord 协议、我们丝滑的用户体验和 Arweave 的存储层整合到 Dedoco 的下一代数字 DMaaS（文档管理即服务）平台。</p>
-<p>The partnership comes at the perfect time for both parties.</p>
-<p>双方这场合作恰逢其时。</p>
-<p>Dedoco recently raised funds from Web3-focused <a href="https://www.tgv4plus.com/">True Global Ventures 4 Plus</a> (TGV4 Plus) Fund and a follow-on from <a href="https://www.vertexventures.sg/">Vertex Ventures South East Asia</a> to support the expansion of their web3 capabilities.</p>
-<p>Dedoco 最近从专注于 Web3 的 <a href="https://www.tgv4plus.com/">True Global Ventures 4 Plus</a> (TGV4 Plus) 基金和 [Vertex Ventures South East Asia](https:// www.vertexventures.sg/) 获得资助，来支持其扩展 web3 功能。</p>
-<p>On Akord's side, we continue to strengthen our offering to companies in the web3 space, and in Dedoco we see a partner who shares our commitment to core ideals such as privacy and data ownership, making them the perfect company to help us deliver this killer feature to Akord vaults.</p>
-<p>在 Akord 方面，我们则继续加在 web3 领域为公司（B端用户）提供的服务，在 Dedoco，我们看到一个与我们同样认可隐私保护和数据产权等核心理念的合作伙伴，也使其成为帮助我们向Akord保管库提供这一杀手级功能的完美公司。</p>
-<h2 id="介绍-dedoco-introducing-dedoco">介绍 Dedoco (Introducing Dedoco)</h2>
-<p>Trusted by some of the largest names in banking, financial services and real estate across Asia Pacific, Dedoco have quickly established themselves as an emerging market leader for digital signatures.</p>
-<p>Dedoco 深受亚太地区银行、金融服务和房地产领域一些知名人士的信任，并且迅速确立了自己作为数字签名市场新兴领导者的地位。</p>
-<p>The core of Dedoco’s offering is geared toward providing increased data privacy and document security to its users, moving away from current solutions' reliance on centralized trust and taking custody of digital documents.</p>
-<p>Dedoco旨在为其用户提供更高的数据隐私和文档安全性，摆脱当前解决方案对中心化信任方和数字文档托管方的依赖。</p>
-<p>Dedoco’s decentralized approach and blockchain layer allows users to manage documents on their own terms, thus supporting organizations in adhering to document security, data residency and sovereignty obligations, especially those in highly-regulated industries.</p>
-<p>Dedoco 的去中心化方法以及区块链允许用户按自己意愿管理文档，（二者）共同支持各类组织来遵守和维护文档安全、数据存放和主权义务，尤其是那些在高度监管的行业中。</p>
-<h2 id="让企业掌控自身数据-empowering-business-to-seize-control-of-their-data">让企业掌控自身数据 (Empowering business to seize control of their data)</h2>
-<p>With this integration Akord continues to further its offering to companies in the web3 space, making it possible to simplify and further secure workflows.</p>
-<p>通过这种集成，Akord 继续为 web3 领域的公司提供更多服务，从而简化和进一步保护工作流程。</p>
-<p>Akord’s vaults provide private or public onchain storage, as well as team collaboration and permissions, end-to-end encrypted messaging and document creation.</p>
-<p>Akord 的保管库提供私密或公开的链上存储，以及团队协作及权限（管理）、端到端加密消息传递和文档创建。</p>
-<p>In the coming weeks, Akord’s Protocol will be released with a CLI, as well as a full set of developer documentation and tools. So if the Akord app does not fulfil your business requirements, we’ll happily support developers and companies who want to go straight to the source.</p>
-<p>在接下来的几周内，Akord 的协议将与 CLI 以及一整套开发人员文档&amp;工具，一起发布。因此，如果 Akord 应用不能满足您的业务需求，我们将很乐意支持想要直接访问源代码的开发人员和公司。</p>
-<h2 id="dedoco-x-akord">Dedoco x Akord</h2>
-<p>By integrating with Dedoco, people with an Akord account will be able to effortlessly send any document for signature in a few clicks.</p>
-<p>通过与 Dedoco 集成，拥有 Akord 帐户的人只需单击几下即可轻松发送任何文件进行签名。</p>
-<p>When the document is signed, the signed copy will appear in your vault as a new file version. As is standard, Dedoco will not store a copy of the document throughout the process.</p>
-<p>签署文件后，签署的副本将作为新版本文件出现在您的保管库中。按照标准，Dedoco 不会在整个过程中存储文档的副本。</p>
-<p>In order to realise the first release of this feature, Akord will be developing an <em>external share</em> feature. Essentially, the ability to share a document outside of Akord while maintaining the same level of security so data is never exposed.</p>
-<p>为了成功发布此功能，Akord 将开发一个 <em>外部共享 (external share)</em> 功能。本质上来说，它可以在 Akord 之外共享文档，但同时保持相同级别的安全性，从而永远不会暴露数据。</p>
-<figure data-type="image" tabindex="2"><img src="https://akord.com/media/Akord-x-Dedoco-Signing-Process-01.png" alt="Akord x Dedoco Signing Process 01" loading="lazy"></figure>
-<h2 id="接下来是什么what-next">接下来是什么？(What next?)</h2>
-<p>This partnership will move quickly. We plan to be on testnet this summer with a full release in the autumn.</p>
-<p>此类伙伴关系将迅速发展。我们计划今年夏天上线测试网，并在秋季全面发布。</p>
-<p>More on Dedoco:<br>
-更多关于 Dedoco的信息：</p>
-<ul>
-<li>
-<p><a href="https://www.dedoco.com/">www.dedoco.com</a></p>
-</li>
-<li>
-<p><a href="http://www.linkedin.com/company/dedoco">www.linkedin.com/company/dedoco</a></p>
-</li>
-</ul>
-<p>Get the latest news on this release and other Akord developments from our Discord:</p>
-<p>从我们的 Discord 获取有关此版本和其他 Akord 开发的最新消息：</p>
-<ul>
-<li><a href="https://discord.com/invite/g4VXfauK5s">discord.com/invite/g4VXfauK5s</a></li>
-</ul>
 ]]></content>
     </entry>
 </feed>
