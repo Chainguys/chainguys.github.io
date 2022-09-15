@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-09-13T10:35:28.052Z</updated>
+    <updated>2022-09-15T10:40:01.570Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -261,6 +261,523 @@
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[海啸金融 (Tsunami Finance)]]></title>
+        <id>https://chainguys.github.io/post/hai-xiao-jin-rong-tsunami-finance/</id>
+        <link href="https://chainguys.github.io/post/hai-xiao-jin-rong-tsunami-finance/">
+        </link>
+        <updated>2022-08-15T10:16:33.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://tsunami.finance/static/media/tsunami_logo.2082e0f4.svg" alt="" loading="lazy"></figure>
+<ul>
+<li><a href="#%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E-copyright-notice">版权声明 (CopyRight Notice）</a></li>
+<li><a href="#%E6%B5%B7%E5%95%B8%E9%87%91%E8%9E%8D-tsunami-finance">海啸金融 (Tsunami Finance)</a></li>
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%B7%E5%95%B8-why-tsunami">为什么是海啸? (Why Tsunami?)</a>
+<ul>
+<li><a href="#%E7%8E%B0%E8%B4%A7%E4%BA%A4%E6%98%93%E5%95%86%E5%92%8C%E6%B5%81%E5%8A%A8%E6%80%A7%E6%8F%90%E4%BE%9B%E8%80%85%E5%B9%B6%E6%9C%AA%E4%BA%AB%E5%8F%97%E5%88%B0%E5%85%85%E5%88%86%E6%9C%8D%E5%8A%A1-spot-traders-and-lps-everywhere-are-underserved">现货交易商和流动性提供者并未享受到充分服务 (Spot Traders and LPs Everywhere Are Underserved)</a>
+<ul>
+<li><a href="#%E8%87%AA%E5%8A%A8%E5%81%9A%E5%B8%82%E5%95%86-amms">自动做市商 (AMMs)</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B0%B8%E7%BB%AD%E5%90%88%E7%BA%A6%E5%92%8C%E4%BF%9D%E8%AF%81%E9%87%91%E4%BA%A4%E6%98%93%E8%80%85%E5%B9%B6%E6%9C%AA%E4%BA%AB%E5%8F%97%E5%88%B0%E5%85%85%E5%88%86%E6%9C%8D%E5%8A%A1-perpetual-and-margin-traders-are-underserved">永续合约和保证金交易者并未享受到充分服务 (Perpetual And Margin Traders are Underserved)</a>
+<ul>
+<li><a href="#%E8%99%9A%E6%8B%9Famm-vamms">虚拟AMM (VAMMs)</a></li>
+<li><a href="#%E4%B8%AD%E5%BF%83%E5%8C%96%E8%AE%A2%E5%8D%95%E7%B0%BF-clobs">中心化订单簿 (CLOBs)</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B5%B7%E5%95%B8%E9%87%91%E8%9E%8D-tsunami">海啸金融 (Tsunami)</a></li>
+</ul>
+</li>
+<li><a href="#lp-%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84-how-does-being-a-lp-work">LP 是如何工作的？ (How does being a LP work?)</a>
+<ul>
+<li><a href="#%E4%B8%80%E7%AF%AE%E5%AD%90%E8%B5%84%E4%BA%A7-the-basket">一篮子(资产) The Basket</a>
+<ul>
+<li><a href="#%E4%BA%A4%E6%98%93-trading">交易 (Trading)</a></li>
+<li><a href="#%E4%BA%A4%E6%98%93%E8%B4%B9%E6%B4%9E%E5%AF%9F-trading-fee-intuition">交易费洞察 (Trading Fee Intuition)</a></li>
+<li><a href="#%E5%AD%98%E5%85%A5%E5%92%8C%E5%8F%96%E5%87%BA-depositing-and-withdrawing">存入和取出 (Depositing And Withdrawing)</a></li>
+</ul>
+</li>
+<li><a href="#%E8%B4%B9%E7%94%A8%E5%92%8C%E9%A3%8E%E9%99%A9-fees-and-risks">费用和风险 (Fees and Risks)</a>
+<ul>
+<li><a href="#tlp">TLP</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BB%B7%E6%A0%BC%E9%A2%84%E8%A8%80%E6%9C%BA-price-oracles">价格预言机 (Price Oracles)</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BF%9D%E8%AF%81%E9%87%91%E4%BA%A4%E6%98%93%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C-how-does-margin-trading-work">保证金交易如何工作 (How does margin trading work?)</a>
+<ul>
+<li><a href="#%E5%BC%80%E5%A4%9A-going-long">开多 (Going Long)</a></li>
+<li><a href="#%E5%BC%80%E7%A9%BA-going-short">开空 (Going Short)</a></li>
+<li><a href="#%E6%B8%85%E7%AE%97-liquidations">清算 (Liquidations)</a></li>
+<li><a href="#funding-rates">Funding Rates</a></li>
+<li><a href="#%E4%BF%9D%E6%8A%A4lp%E4%BB%AC-protecting-lps">保护LP们 (Protecting LPs)</a></li>
+</ul>
+</li>
+<li><a href="#nami-governance-token">Nami Governance Token</a>
+<ul>
+<li><a href="#%E6%B2%BB%E7%90%86-governance">治理 (Governance)</a>
+<ul>
+<li><a href="#discord%E5%85%A5%E5%8F%A3-discord-access">Discord入口 (Discord Access)</a></li>
+<li><a href="#%E6%95%B0%E5%AD%97%E6%B4%BB%E5%8A%A8-digital-events">数字活动 (Digital Events)</a></li>
+<li><a href="#nft%E5%85%A5%E5%8F%A3-nft-access">NFT入口 (NFT Access)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E9%99%84%E5%8A%A0%E7%9A%84%E5%8A%9F%E8%83%BD-additional-features">附加的功能 (Additional Features)</a>
+<ul>
+<li><a href="#%E5%8A%9F%E8%83%BD-features">功能 (Features)</a>
+<ul>
+<li><a href="#%E9%99%90%E4%BB%B7%E5%8D%95-limit-orders">限价单 (Limit Orders)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#faqs">FAQs</a></li>
+<li><a href="#%E5%8F%AF%E8%83%BD%E7%9A%84%E8%B7%AF%E7%BA%BF%E5%9B%BE-potential-future-roadmap">可能的路线图 (Potential Future Roadmap)</a>
+<ul>
+<li><a href="#%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%8A%9F%E8%83%BD%E8%80%83%E8%99%91-further-out-feature-considerations">进一步功能考虑 (Further Out Feature Considerations)</a>
+<ul>
+<li><a href="#omni-nami%E6%B0%B8%E7%BB%AD%E5%90%88%E7%BA%A6-omni-nami-perpetual-futures">Omni Nami永续合约 (Omni Nami Perpetual Futures)</a></li>
+<li><a href="#omni-nami-swaps">Omni Nami Swaps</a></li>
+<li><a href="#%E8%B7%A8%E9%93%BE%E6%B5%81%E5%8A%A8%E6%80%A7%E6%B1%A0-cross-chain-liquidity-pools">跨链流动性池 (Cross-Chain Liquidity Pools)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="版权声明-copyright-notice">版权声明 (CopyRight Notice）</h1>
+<p>本文翻译原作者为 <a href="https://tsunami.finance/">海啸金融</a> ，原地址为<a href="https://mutabledev.gitbook.io/tsunami/">此处</a>，译者为 <a href="https://twitter.com/Chainguys">@chainguys</a>。转载请注明作者和译者。<br>
+(Coptyright©2022 by  <a href="https://tsunami.finance/">tsunami.finance</a>, translated by  <a href="https://twitter.com/Chainguys">@chainguys</a>)</p>
+<p>本翻译文章所展示的一切信息都只是为了学习和交流目的，不能也不应成为任何财务或投资建议。</p>
+<p>(All content shown are for communication and learning purposes, cannot and should not be viewed as any form of Financial or Investment Advice)</p>
+<h1 id="海啸金融-tsunami-finance">海啸金融 (Tsunami Finance)</h1>
+<blockquote>
+<p><strong>Good to know:</strong> Tsunami finance is a perpetual futures and spot exchange! These docs are in constant development so please submit a pull request if you see something that should be changed!</p>
+<p><strong>温馨提示：</strong> 海啸金融 (Tsunami Finance) 是永续合约和现货交易所！这些文档正在不断开发中，因此如果您发现需要更改的内容，请提交pull请求！</p>
+</blockquote>
+<p>What does Tsunami do?<br>
+海啸金融做什么?</p>
+<blockquote>
+<p>For Traders: We provide a way to trade with 0% slippage, known exit liquidity, low funding fees, a low spread, and collateral that grows in value over time.</p>
+<p>对于交易者：我们提供了一种交易方式，其滑点为零，已知退出流动性，资金费用低，价差低，抵押品价值随时间增长。</p>
+</blockquote>
+<blockquote>
+<p>For Yield Farmers: We provide a way to earn passive yield on your investments with less impermanent loss than typical AMMs AND with much higher upside!</p>
+<p>对于寻求受益的农夫：我们提供了一种通过您的投资，获得被动收益的方法，与典型的 AMM 相比，无常损失更少，而且上涨空间更大！</p>
+</blockquote>
+<hr>
+<h1 id="为什么是海啸-why-tsunami">为什么是海啸? (Why Tsunami?)</h1>
+<h2 id="现货交易商和流动性提供者并未享受到充分服务-spot-traders-and-lps-everywhere-are-underserved">现货交易商和流动性提供者并未享受到充分服务 (Spot Traders and LPs Everywhere Are Underserved)</h2>
+<h3 id="自动做市商-amms">自动做市商 (AMMs)</h3>
+<p>While AMMs have taken spot trading from 0 -&gt; 1 with decentralized exchanges, the blemishes and imperfections with such old models have come to light. AMMs like Uniswap, Curve, and Balancer use constant product curves. In this curve lays many of the problems that exist for both traders and LPs.</p>
+<p>虽然 AMM 已经在中心化交易所从0到1地进行现货交易，但这些旧模型的弊端和缺陷已经暴露出来。 Uniswap、Curve 和 Balancer 等 AMM 使用恒定乘积曲线。在这条曲线中，存在着许多交易者和 LP都有的问题。</p>
+<p>With constant product curves, traders experience significant slippage and open themselves to risk-free front running by others in the system. And while traders have it tough, LPs carry the largest burden in constant product curve AMMs.</p>
+<p>在恒定的乘积曲线中，交易者会经历明显的滑点，并让自己接受系统中其他人的无风险抢先交易。尽管交易者处境艰难，但 LP 在恒定乘积曲线 AMM 中承担着最大的负担。</p>
+<p>LPs fundamentally make markets and sell volatility. The source of loss for LPs is twofold.</p>
+<p>LP基本上是做市并卖出波动性。LP的损失来源是双重的。</p>
+<ol>
+<li>
+<p>LPs sell volatility way too cheaply<br>
+LP 以太便宜的方式出售波动率</p>
+</li>
+<li>
+<p>LPs use incorrect market price to make trades with external agents in the system<br>
+LP 使用错误的市场价格与系统中的外部代理进行交易</p>
+</li>
+</ol>
+<p>At first, many brushed off these losses as IL, or impermanent loss, but the market has observed that these losses tend to become permanent over time and represent a failure of the constant product curve to quote the price of assets fairly.</p>
+<p>起初，许多人将这些损失视为 IL(impermanent loss) 即无常损失，但市场观察到这些损失随着时间的推移往往会成为永久性损失，这表示恒定乘积曲线未能公平地反应资产价格。</p>
+<p><em>Trader Problems</em>: Slippage, Front running incentive<br>
+<em>交易者问题</em>：滑点、抢跑激励</p>
+<p><em>LP Problems</em>: LPing is unsustainable and destroying the capital of LPs, LPs get arbitraged, sell volatility too cheaply, and sustain a not-so-impermanent loss</p>
+<p><em>LP 问题</em>：做流动性提供者是不可持续的，它会破坏 LP 的资本，LP 会被套利，贱价出售波动性，并承受不太持久的损失</p>
+<h2 id="永续合约和保证金交易者并未享受到充分服务-perpetual-and-margin-traders-are-underserved">永续合约和保证金交易者并未享受到充分服务 (Perpetual And Margin Traders are Underserved)</h2>
+<h3 id="虚拟amm-vamms">虚拟AMM (VAMMs)</h3>
+<p>Virtual AMMs, or VAMMs, attempted to bring a solution to perpetual futures trading, but in only a year of VAMMs existing in production, obvious cracks have begun to form. These problems originate from the constant product curve that Uniswap brought to crypto.</p>
+<p>虚拟AMM，或称VAMM，试图为永续期货交易带来解决方案，但在VAMM投入生产仅一年的时间里，已经开始显现明显的弊端。这些问题源于 Uniswap 给加密货币带来的恒定乘积曲线。</p>
+<p>One difference is that there are no LPs in a VAMM, rather traders trade in a somewhat peer-to-peer-zero-sum fashion.</p>
+<p>一个区别是 VAMM 中没有 LP，而是交易者以某种点对点零和方式进行交易。</p>
+<p>Liquidity and slippage are the main issues at play here. Because a constant product curve is instantiated with particular assets at particular prices, once the market deviates from those prices, traders end up experiencing worse slippage. This has come to be known as the re-pegging problem with VAMMs.</p>
+<p>流动性和滑点是这里的主要问题。因为恒定乘积曲线是用特定价格的特定资产实例化的，一旦市场偏离这些价格，交易者最终会遇到更严重的滑点。这被称为 VAMM 的再锚定问题。</p>
+<p>And while some protocols claim to be able to mitigate concerns related to re-pegging, they introduce further uncertainty into the systems when they do so. For every re-pegging that occurs, one trader will have an instantaneous gain, and another will have a loss.</p>
+<p>虽然一些协议声称能够减轻与再锚定相关的担忧，但当它们这样做时，会给系统带来更多的不确定性。发生的每一次再锚定，一个交易者将获得瞬时收益，而另一个交易者将遭受损失。</p>
+<p><em>Trader Problems</em>: Uncertain exit liquidity, Uncertain exit price, Slippage<br>
+<em>交易者问题</em>：不确定的退出流动性，不确定的退出价格，滑点</p>
+<p><em>LP problems</em>: LPs cannot participate</p>
+<p><em>LP问题</em>：LP不能参与</p>
+<h3 id="中心化订单簿-clobs">中心化订单簿 (CLOBs)</h3>
+<p>For spot, futures, and options trading, central limit order books are some of the best mechanisms for facilitating trade. They have great price discovery, enable dynamic market-making strategies, and possess the most customization out of any option.</p>
+<p>对于现货、期货和期权交易，中心化订单簿(CLOB)是促进交易的某种最佳机制。他们有很好的价格发现能力，支持动态的做市策略，并拥有任何选项中最多的定制化。</p>
+<p>The problem is that CLOBs are very expensive to run on-chain and they are almost entirely inaccessible for the public to become market makers in any profitable function.</p>
+<p>但问题是中心化订单簿(CLOB)在链上运行非常昂贵，而且公众几乎完全无法在任何盈利功能中成为做市商。</p>
+<p>Problems: Computationally expensive on-chain<br>
+问题：链上计算成本高</p>
+<p>LP Problems: Passive LPs cannot participate<br>
+LP 问题：被动 LP 无法参与</p>
+<h2 id="海啸金融-tsunami">海啸金融 (Tsunami)</h2>
+<p>Tsunami Finance recognizes all of these existing problems and presents a solution that delivers the best trading and LP experience.</p>
+<p>海啸金融(Tsunami)认识到所有这些存在的问题，并提出了一个提供最佳交易和 LP 体验的解决方案。</p>
+<p>Given a world of constantly evolving technology and tradeoffs, we aim to build a product that is extremely easy, fun, and delightful to use from a trader and an LPs perspective.</p>
+<p>鉴于世界不断发展的技术和一些权衡思考，我们的目标是从交易者和 LP 的角度构建一个非常简单、有趣和令人愉快的产品。</p>
+<p>We have taken a new model to facilitate trade. One that serves both LPs and traders better than we believe has ever been done before.</p>
+<p>我们采取了一种新的模式来促进贸易。为 LP 和交易者提供的服务比我们以前认为的更好。</p>
+<p>And while such a statement is ambitious, if not ludicrous, we are confident we can deliver.</p>
+<p>虽然这样的声明即使看起来不荒谬，也非常雄心勃勃，但我们的确有信心可以实现。</p>
+<hr>
+<h1 id="lp-是如何工作的-how-does-being-a-lp-work">LP 是如何工作的？ (How does being a LP work?)</h1>
+<blockquote>
+<p><strong>Good to know:</strong> A LP is a liquidity provider. LPs are users that provide their assets to the protocol to be utilized by traders who want to perform swaps and open/close perpetual futures positions.</p>
+<p><strong>温馨提示：</strong> LP 是流动性提供者。 LP 是向协议提供资产以供希望执行交换和开/平永续期货头寸的交易者使用的用户。</p>
+</blockquote>
+<h2 id="一篮子资产-the-basket">一篮子(资产) The Basket</h2>
+<p>On Tsunami, a market, and its tradable assets, are held in a basket of assets like <a href="https://app.balancer.fi/">https://app.balancer.fi/</a>. In such a basket, arbitrary assets with arbitrary weights are defined ahead of time. Each basket is usually comprised of 50% stables and 50% blue chip crypto native assets.</p>
+<p>在海啸金融中，一个市场及其可交易资产被保存在一篮子资产中，例如 <a href="https://app.balancer.fi/">https://app.balancer.fi/</a>。在这样的篮子中，具有任意权重的任意资产被提前定义。每个篮子通常由 50% 的稳定币和 50% 的蓝筹加密原生资产组成。</p>
+<p>Let's take an example where Tsunami starts with a basket of WBTC and USDC. We pre-determine that this basket's &quot;Target Weights&quot; should be 50% WBTC and 50% USDC, to match the ratio of 50% stables and 50% crypto. The target weight is measured as the USD value equivalent of that asset compared to other assets in the basket.</p>
+<p>让我们举一个例子，海啸金融从一篮子 WBTC 和 USDC 开始。我们预先确定这个篮子的“目标权重”应该是 50% WBTC 和 50% USDC，以匹配 50% 稳定币和 50% 加密货币的比例。目标权重的衡量标准是该资产与篮中其他资产的美元价值之比。</p>
+<p>In this example, let's assume the price of WBTC is $100 USD and the price of USDC is $1. Tsunami then instantiates the basket with 1 unit of WBTC and 100 units of USDC. By doing so, we are instantiating the basket with actual weights being equivalent to the target weights of 50/50.</p>
+<p>在本例中，假设 WBTC 的价格为 100 美元，USDC 的价格为 1 美元。 Tsunami 然后用 1 个单位的 WBTC 和 100 个单位的 USDC 实例化。通过这样做，我们就实例化篮子，其实际权重等于目标权重 50/50。</p>
+<p>This is important because Tsunami punishes traders who move the actual weights away from the target weights with additional spread fees(30-60bps) and rewards traders who move assets towards the target weights with reduced spread fees (0-30bps)</p>
+<p>这很重要，因为海啸会以额外的点差费用（30-60 个基点）惩罚将实际权重远离目标权重的交易者，并以降低点差费用（0-30 个基点）奖励将资产移向目标权重的交易者。</p>
+<p>So far, this example Tsunami basket looks similar to Balancer's AMM pool, where users deposit two assets into a liquidity pool. The difference with Tsunami is that Tsunami does not use a price curve, instead price is informed entirely by price oracles such as Switchboard, Band, Pyth, or Chainlink.</p>
+<p>到目前为止，这个示例的海啸篮子看起来类似于 Balancer 的 AMM 池，用户将两种资产存入流动性池。与 Tsunami 的不同之处在于，Tsunami 不使用价格曲线，而是完全由价格预言机（如 Switchboard、Band、Pyth 或 Chainlink）告知价格。</p>
+<h3 id="交易-trading">交易 (Trading)</h3>
+<p>When a user trades an asset, Tsunami uses price oracles to look up the price of the asset the user wants to swap <em>from</em> and the price of the asset the user wants to swap <em>to.</em></p>
+<p>当用户交易资产时，海啸使用价格预言机来查找用户想要交换的资产的价格。</p>
+<p>Then the protocol determines the deltas of the weights of the two assets being traded.</p>
+<p>然后协议确定正在交易的两种资产的权重变化量。</p>
+<p>Tsunami calculates the change in the actual weight of the <em>from</em> asset and the change in the actual weight of the <em>to</em> asset that would result from the transaction. Once the protocol has the two weight deltas, the protocol then takes the delta that impacts the protocol worse, and uses that worse delta to determine the spread to charge to a trader.</p>
+<p>海啸金融计算交易导致的资产权重变化。一旦协议具有两个权重变化量，协议就会采用对协议产生更大影响的变化量，并使用其来确定向交易者收取的价差。</p>
+<p>Ex: A basket exists with target and actual weights of 50% USDC and 50% WBTC. One trader decides to buy half the USDC in the pool, the prices remain the same.</p>
+<p>例如：一个篮子的目标和实际权重分别为 50% USDC 和 50% WBTC。一位交易者决定购买池中一半的 USDC，价格保持不变。</p>
+<p>After this trade, the new weights would be 25%/75%. The change in USDC is 25% away from the target, and the change in WBTC is 25% away from the target. We can conclude that both deltas equally worsen the target weights of the assets related to the trade. We take that information to calculate a spread fee which should penalize the trader for making a trade that harms the basket as it moves the actual weights away from the target weights.</p>
+<p>此次交易后，新的权重为 25%/75%。 USDC的变动距离目标25%，WBTC的变动距离目标25%。我们可以得出结论，两个变化量都同样恶化了与交易相关的资产的目标权重。我们利用该信息来计算点差费用，该费用应惩罚交易者进行损害篮子的交易，因为它使实际权重远离目标权重。</p>
+<h3 id="交易费洞察-trading-fee-intuition">交易费洞察 (Trading Fee Intuition)</h3>
+<p>We want to incentivize the health of the basket, so we use penalties and discounts.</p>
+<p>我们想激励保持篮子的健康成都，所以我们使用惩罚和折扣。</p>
+<p><em>The maximum penalty fee is 30bps</em><br>
+<em>最高罚款30bps</em></p>
+<p><em>The maximum rebate is 30bps</em><br>
+<em>最高返利30bps</em></p>
+<p>Equation if the basket is harmed <em>: 30bps + penalty</em><br>
+篮子受损时的公式 <em>：30bps + 罚款</em></p>
+<p>Equation if the basket is helped: discounted_fee<br>
+篮子是否有帮助的方程：discounted_fee</p>
+<p><em><strong>initial_target_lp_usd_value</strong></em> <em>=</em> is the 'target' value of the asset <em><strong>BEFORE</strong></em> the swap occurs. The target exists according to the specified weights of the basket and the current AUM of the basket</p>
+<p><em><strong>initial_target_lp_usd_value</strong></em> <em>=</em> 是交换发生前资产的“目标”价值  。目标根据篮子的指定权重和篮子的当前AUM存在</p>
+<p><em><strong>new_target_lp_usd_value</strong></em> = is the 'target' value of the asset <em><strong>AFTER</strong></em> the swap occurs. The target exists according to the specified weights of the basket and the current AUM of the basket</p>
+<p><em><strong>new_target_lp_usd_value</strong></em> = 是资产交换发生之后后的“目标”值。目标根据篮子的指定权重和篮子的当前AUM存在</p>
+<p><em><strong>initial_distance</strong></em> = is the delta in dollars from the actual USD value of that asset in the basket <em><strong>BEFORE</strong></em> the swap occurs and what the target USD value of dollars the basket wants to have of that asset</p>
+<p><em><strong>initial_distance</strong></em> = 是与篮子中该资产的实际美元价值的美元差值</p>
+<p><strong><em>new_distance</em></strong> = is the delta in dollars from the actual USD value of that asset in the basket <em><strong>AFTER</strong></em> the swap occurs and what the target USD value of dollars the basket wants to have of that asset</p>
+<p><strong><em>new_distance</em></strong> = 是在交换后一篮子资产中该资产的实际美元价值与美元的差值</p>
+<p><strong><em>discounted_fee</em></strong> = ((initial_target_lp_usd_value - initial_distance.min(new_target_lp_usd_value))/initial_target_lp_usd_value)</p>
+<p><strong><em>discounted_fee</em></strong> = ((initial_target_lp_usd_value - initial_distance.min(new_target_lp_usd_value))/initial_target_lp_usd_value)</p>
+<p><strong>penalty</strong> = ((new_distance.min(new_target_lp_usd_value))/ new_target_lp_usd_value)</p>
+<h3 id="存入和取出-depositing-and-withdrawing">存入和取出 (Depositing And Withdrawing)</h3>
+<p>We use the nomenclature of <em>minting</em> to represent depositing assets into a pool and receiving an LP token as a result. Similarly, we use the nomenclature of <em>burning</em> to represent returning an LP token to the protocol and redeeming an asset, of the redeemer's choice, from the liquidity pool.</p>
+<p>我们使用 <em>minting(铸币)</em> 来表示将资产存入池中并以接收 LP 代币作为结果。同样，我们使用 <em>burning(燃烧)</em> 来表示将 LP 代币返还给协议并从流动性池中赎回其对应资产。</p>
+<p>When you mint LP tokens, you can do so by providing a whitelisted asset to the basket; however, keep in mind that minting and burning both functions similarly to a swap. When you mint/burn LP tokens, you will affect the actual weights in the basket.</p>
+<p>当您铸造 LP 代币时，您可以通过向篮子提供列入白名单的资产来实现；但是，请记住，铸造和销毁两者的功能类似于交换。当您铸造/燃烧 LP 代币时，您将影响篮子中的实际重量。</p>
+<p>Ex: A basket has both target and actual weights of 50% WBTC, 50% USDC. An LP decides to mint LP tokens by providing a lot of WBTC and shifts the actual weights to say 90% WBTC, 10% USDC, they will incur a spread of close to 60 basis points.</p>
+<p>例如：一个篮子的目标权重和实际权重分别为 50% WBTC、50% USDC。 LP 决定通过提供大量 WBTC 来铸造 LP 代币，并将实际权重转移到 90% WBTC、10% USDC，它们将产生接近 60 个基点的价差。</p>
+<p>If one were to burn LP tokens at this point and take USDC out of the basket, moving the distribution to 95% WBTC, 5% USDC in the process, they would experience a spread of even closer to 60 basis points as they take such an action.</p>
+<p>如果此时要销毁 LP 代币并将 USDC 从篮子中取出，在此过程中将分配转移到 95% WBTC、5% USDC，他们将经历更接近 60 个基点的价差，因为他们采取了这样的行动。</p>
+<p>Charging a spread to a minter/burner of LP tokens is incredibly important as a mint + burn is essentially synonymous with a swap.</p>
+<p>向 LP 代币的铸造者/燃烧者收取点差非常重要，因为铸造 + 燃烧本质上是交换的同义词。</p>
+<h2 id="费用和风险-fees-and-risks">费用和风险 (Fees and Risks)</h2>
+<p>As an LP, you are betting that traders lose more often than they win. Fortunately, this is historically correct to assume over the long run. The odds of traders losing when you take funding rate and position fees into account is even higher.</p>
+<p>作为 LP，您在打赌交易者输得比赢得更多。幸运的是，从长远来看，这在历史上是正确的。当您考虑资金费率和头寸费用时，交易者失败的几率会更高。</p>
+<p>The value of LP tokens in a given basket should reflect the market price for crypto-assets within that basket with dampened volatility. This dampened volatility comes from the fact that the basket is comprised of half stables and half native crypto assets.</p>
+<p>给定篮子中 LP 代币的价值应反映该篮子中加密资产的市场价格，波动性减弱。这种减弱的波动性来自于篮子由一半稳定币和一半原生加密资产组成的事实。</p>
+<p>If the basket of assets does have any unoccupied amount of a particular asset, traders cannot swap to that asset, nor can they take out leveraged positions with that asset.</p>
+<p>如果一篮子资产确实有任何未占用的特定资产数量，交易者不能交换到该资产，也不能使用该资产建立杠杆头寸。</p>
+<p>Inflows to the value of LP tokens come as traders lose, not including fees. Fees are paid out separately to LP tokens in the form of WBTC. All fees are converted in kind to WBTC and can be claimed at any point in time from a Tsunami vault contract that stores WBTC.</p>
+<p>LP 代币的价值随着交易者的损失而流入，不包括费用。费用以 WBTC 的形式单独支付给 LP 代币。所有费用都以实物形式转换为 WBTC，并且可以随时从存储 WBTC 的海啸保险库合约中索取。</p>
+<p><strong>LP Risk Scenario #1</strong><br>
+LP风险情景#1</p>
+<p>If an unhealthy position isn't liquidated in time and the collateral cannot cover the loss from the position, the LPs would eat the loss collectively.</p>
+<p>如果一个不健康的头寸没有及时清算，并且抵押品无法弥补该头寸的损失，LP们将集体承担损失。</p>
+<p><strong>LP Risk Scenario #2</strong><br>
+LP风险情景#2</p>
+<p>Ex: If there is a large sudden market upswing, long traders will be in profit, and since most traders go long, the LPs will experience an unrealized loss in such a moment.</p>
+<p>例：如果市场突然大幅上涨，多头交易者将获利，而由于大多数交易者做多，LP在这种情况下会出现未实现的亏损。</p>
+<p><strong>LP Risk Scenario #3</strong><br>
+LP风险情景#3</p>
+<p>Ex: There is a smart contract exploit that occurs in one of the money markets that Tsunami uses to generate excess yield for LPs.</p>
+<p>例如：在海啸金融用来为 LP 产生超额收益的货币市场之一中发生了智能合约漏洞。</p>
+<p><strong>LP Risk Scenario #4</strong><br>
+LP风险情景#4</p>
+<p>Ex: Tsunami is unable to accurately quote prices to traders and traders are able to make a risk-free profit at the expense of LPs.</p>
+<p>例如：海啸金融无法准确地向交易者报价，交易者能够以牺牲 LP 为代价获得无风险利润。</p>
+<h3 id="tlp">TLP</h3>
+<p>The Tsunami Liquidity Token, TLP, simply represents the underlying basket of assets in the liquidity pool.</p>
+<p>海啸金融流动性代币 TLP ，代表流动性池中的基础资产篮子。</p>
+<p>If there are 200LP tokens outstanding and the value of all assets in the basket are worth $200, then a TLP token is worth $1 and can be redeemed for $1 worth of any underlying asset at any time.</p>
+<p>如果有 200LP 代币流通，篮子中所有资产的价值都是 200 美元，那么一个 TLP 代币价值 1 美元，可以随时赎回价值 1 美元的任何标的资产。</p>
+<h2 id="价格预言机-price-oracles">价格预言机 (Price Oracles)</h2>
+<p>Where does 0% slippage come in? Price oracles. We use price oracles to get up-to-date global pricing from the market. We will be going live with Switchboard oracles after considering the accuracy and cost of the services.</p>
+<p>0% 滑点从何而来？价格预言机。我们使用价格预言机从市场上获取最新的全球定价。在考虑了服务的准确性和成本之后，我们将使用 Switchboard 预言机。</p>
+<p>When a trader makes a trade they do so at a price that the Price Oracle quotes with a spread(0-60bps) tacked on depending on how much the trader moves the actual weights towards or away from the target weights.</p>
+<p>当交易者进行交易时，他们会以价格预言机报价的价格进行交易，其中的点差 (0-60 基点) 取决于交易者将实际权重移向或远离目标权重的程度。</p>
+<hr>
+<h1 id="保证金交易如何工作-how-does-margin-trading-work">保证金交易如何工作 (How does margin trading work?)</h1>
+<blockquote>
+<p><strong>Good to know:</strong> Leverage is fairly synonymous with the concept of debt. In our system, traders take on leverage every time they borrow funds from the liquidity pool to increase the size of their position.</p>
+<p><strong>很高兴知道：</strong> 杠杆是债务概念的同义词。在我们的系统中，交易者每次从流动性池中借入资金时都会利用杠杆来增加头寸规模。</p>
+</blockquote>
+<h2 id="开多-going-long">开多 (Going Long)</h2>
+<p>Going long represents the concept of betting the price of an asset will go up. At Tsunami, traders have the ability to take out leverage to go long.</p>
+<p>做多代表押注资产价格会上涨的概念。在海啸，交易者有能力利用杠杆做多。</p>
+<p>To create a leveraged position, traders must provide collateral. Collateral represents the base amount from which a trader uses leverage to multiply the size of their position.</p>
+<p>要创建杠杆头寸，交易者必须提供抵押品。抵押品代表交易者使用杠杆增大其头寸。</p>
+<p>With Tsunami, users deposit collateral with the same asset they wish to go long on. Then the trader specifies the amount of leverage they wish to take, and that amount of leverage becomes reserved in the Liquidity Pool. Until that trader's position is closed, the reserved amount in the Liquidity Pool is occupied and cannot be swapped for nor reserved by any other traders. Additionally, LPs cannot redeem any quantity of reserved assets. When a trader opens a position on Tsunami, they can have full confidence that their position is backed by the amount of specified asset they have reserved.</p>
+<p>通过海啸，用户可以用他们希望长期持有的相同资产存入抵押品。然后交易者指定他们希望使用的杠杆背书，该倍数的杠杆将保留在流动性池中。在该交易者的头寸被平仓之前，流动性池中的保留金额被占用，并且不能被任何其他交易者交换或保留。此外，LP不能赎回任何数量保留资产。当交易者在海啸上开仓时，他们可以完全相信他们的仓位是由他们保留的指定资产数量支持的。</p>
+<p>When a trader wishes to close their position, the position is settled in kind, meaning they receive their payout in the asset they longed.</p>
+<p>当交易者希望平仓时，该头寸以实物结算，这意味着会以其渴望的资产获得回报。</p>
+<p>If the trader closes a position in profit, they will receive any excess profit denominated in their longed token. If they are at a loss, the protocol will harvest the appropriate amount of the collateral from the trader.</p>
+<p>如果交易者平仓获利，他们将获得以其渴望的代币计价的任何超额利润。如果他们亏损，协议将从交易者那里获得适当数量的抵押品。</p>
+<p>The moment the position is closed, the funds are available again to be reserved by any other trader on the platform.</p>
+<p>平仓的那一刻，对应资金就空出了，平台上的任何其他交易者都可以再次保留。</p>
+<p>Ex: If the price of the longed asset, WBTC, starts at $100 and the trader uses 10x leverage, their position is worth $1100. The Trader is long for 11 WBTC and has an obligation to pay back $1000 to the pool when they close their position. Thus, the trader has 1 WBTC worth of collateral and 10 WBTC of leverage, which is reserved WBTC from the LP.</p>
+<p>例如：如果多头资产 WBTC 的起价为 100 美元，而交易者使用 10 倍杠杆，那么他们的头寸价值为 1100 美元。交易者做多 11 WBTC，并且有义务在平仓时向池中偿还 1000 美元。因此，交易者拥有价值 1 WBTC 的抵押品和 10 WBTC 的杠杆，这是从 LP 保留的 WBTC。</p>
+<p>If the price of WBTC decreases to $95, then the position is now worth $1045, but the trader has an obligation of $1000 to pay back, meaning that they have a loss on their position of $55. If the trader now decides to close their position, they can do so and leave with their remaining $55 worth of WBTC from their position.</p>
+<p>如果 WBTC 的价格跌至 95 美元，则该头寸现在价值 1045 美元，但交易者有义务偿还 1000 美元，这意味着他们的头寸亏损 55 美元。如果交易者现在决定平仓，他们可以平仓，然后带着剩余的价值 55 美元的 WBTC 离开他们的仓位。</p>
+<p>If the price of WBTC increases to $105, then the position is now worth $1155, but the trader has an obligation of $1000 to pay back, meaning that they have a profit on their position of $55. If the trader now decides to close their position, they can do so and leave with their $155 worth of WBTC from their position.</p>
+<p>如果 WBTC 的价格上涨到 105 美元，那么该头寸现在价值 1155 美元，但交易者有义务偿还 1000 美元，这意味着他们从 55 美元的头寸中获利。如果交易者现在决定平仓，他们可以这样做，并从他们的仓位中带着价值 155 美元的 WBTC 离开。</p>
+<p>In both cases, the profit for the trader is a loss for the LPs, and the profit for the LPs is the loss for the trader.</p>
+<p>在这两种情况下，交易者的利润都是 LP 的损失，而 LP 的利润则是交易者的损失。</p>
+<h2 id="开空-going-short">开空 (Going Short)</h2>
+<p>The opposite of going long is going short. When going short, a trader is betting that the price of an asset will go down. You can also think of going short as going long USD against a separate crypto-asset.</p>
+<p>做多的反面是做空。做空时，交易者押注资产价格会下跌。您也可以将做空视为对单一加密资产做多美元。</p>
+<p>When a trader chooses to go short, they provide collateral via a native stable coin such as USDC and borrow more USDC from the pool as a result. The borrowed funds are measured against the price of the asset the trader is shorting.</p>
+<p>当交易者选择做空时，他们会通过 USDC 等原生稳定币提供抵押品，从而从池中借入更多 USDC。借入的资金是根据交易者卖空的资产价格来衡量的。</p>
+<p>Ex: A trader wants to short WBTC which starts at a price of $100. They deposit enough collateral and use enough leverage such that the starting value of their position is $1000. The Trader is long $1000 USDC against WBTC. Let's say this trader has $100 worth of collateral and $900 of leverage, which is reserved USDC from the LP. If the price of WBTC decreases to $50, then the position is still worth $1000, but the obligation that the trader has of 9 WBTC is now worth $450, meaning that they have a profit on their position of $450. If the trader now decides to close their position, they can do so and capture $450 in USDC of profit from the pool.</p>
+<p>例如：一位交易者想要做空 WBTC，其起价为 100 美元。他们存入足够的抵押品并使用足够的杠杆，使得他们头寸的起始价值为 1000 美元。交易者对 WBTC 做多 1000 美元 USDC。假设这个交易者有价值 100 美元的抵押品和 900 美元的杠杆，这是从 LP 保留的 USDC。如果 WBTC 的价格跌至 50 美元，那么该头寸仍然价值 1000 美元，但交易者所拥有的 9 个 WBTC 的义务现在价值 450 美元，这意味着他们从 450 美元的头寸中获利。如果交易者现在决定平仓，他们可以这样做并从池中获得 450 美元的 USDC 利润。</p>
+<h2 id="清算-liquidations">清算 (Liquidations)</h2>
+<p>At any moment in time, a trader's position could be at risk of liquidation. Liquidations can occur when a trader's collateral is ever worth less than 105% of their debt on a position.</p>
+<p>在任何时候，交易者的头寸都可能面临被清算的风险。当交易者的抵押品价值低于其头寸债务的 105% 时，就会发生清算。</p>
+<p><strong>Ex 1: Liquidation Occurs</strong><br>
+例 1：清算发生</p>
+<p>A trader has collateral worth $105 and debt worth $101.</p>
+<p>105/101 = ~103.96%, which is less than 105% and therefore subject to liquidation</p>
+<p>一个交易者有价值 105 美元的抵押品和价值 101 美元的债务。<br>
+105/101 = ~103.96%，低于 105%，因此需要清算</p>
+<p><strong>Ex 2: Liquidation Does Not Occur</strong><br>
+例 2：不发生清算</p>
+<p>A trader has collateral worth $106 and debt worth $100.</p>
+<p>106/100 = ~106%, which is more than 105% and therefore <strong>NOT</strong> subject to liquidation</p>
+<p>交易者有价值 106 美元的抵押品和价值 100 美元的债务。<br>
+106/100 = ~106%，超过 105%，因此无需清算</p>
+<p>All positions are public and viewable meaning that anyone in the system can audit which positions need to be liquidated at any point in time.</p>
+<p>所有头寸都是公开且可见的，这意味着系统中的任何人都可以在任何时间点审核哪些头寸需要清算。</p>
+<p>Third parties run liquidators to liquidate unhealthy positions which have less than 5% more collateral than debt. It costs no capital to liquidate a position as the liquidator just needs to pay for the gas of the transaction.</p>
+<p>第三方运行清算人清算不健康的头寸，这些头寸的抵押品比债务多不到 5%。清算头寸不需要任何资本，因为清算人只需要支付交易的gas。</p>
+<p>To manage their positions, traders have the ability to reduce their position size or add more collateral to reduce the likelihood of liquidation.</p>
+<p>为了管理他们的头寸，交易者有能力减少他们的头寸规模或增加更多的抵押品以减少清算的可能性。</p>
+<p>As a position gets liquidated, the liquidator receives a fee of at most $40 and at least of whatever collateral is left in the position that is under $40. If there is excess capital over $40, the pool LPs receive this amount as an additional fee.</p>
+<p>当头寸被清算时，清算人最多收取 40 美元的费用，并且至少收取低于 40 美元头寸的任何抵押品。如果清算费用超过 40 美元，池 LP 将收到这笔金额作为额外费用。</p>
+<p>This value is subject to change but is intended to be enough for liquidators to run bots but not so high as to extract an unfairly large quantity of capital from the system.</p>
+<p>该值可能会发生变化，但旨在足以让清算人运行机器人，但不会高到从系统中提取不公平的大量资金。</p>
+<h2 id="funding-rates">Funding Rates</h2>
+<p>Unlike most other perpetual exchanges, both longs and shorts pay funding rates to the LP. The funding rate a trader pays to keep a position open is determined by the utilization of the particular asset in the pool.</p>
+<p>与大多数其他永久交易所不同，多头和空头都向 LP 支付资金费率。交易者为保持持仓而支付的资金费率取决于池中特定资产的利用率。</p>
+<h2 id="保护lp们-protecting-lps">保护LP们 (Protecting LPs)</h2>
+<p>Most blockchains have a lag between even the most accurate price oracles and the actual market price of assets.</p>
+<p>大多数区块链即使是最准确的价格预言与资产的实际市场价格之间也存在滞后。</p>
+<p>Each chain's block times vary but generally range from block times of 1-6 seconds. This creates an issue that the price from price oracles will have staleness of six seconds. This staleness could potentially create opportunities for hostile order flow from sharks who are looking to make a practically risk free trade at the expense of LPs.</p>
+<p>每条链的出块时间各不相同，但通常在 1-6 秒的出块时间范围内。这产生了一个问题，即价格预言机的价格将具有 6 秒的滞后性。这种滞后性可能会为鲨鱼的恶意订单流创造机会，这些鲨鱼希望以牺牲 LP 为代价进行几乎无风险的交易。</p>
+<p>Because of this, we need to create protections either as traders are opening or closing orders to protect the LPs from such a hostile scenario.</p>
+<p>因此，我们需要在交易者开仓或平仓订单时创建保护措施，以保护 LP 免受这种敌对情况的影响。</p>
+<p><strong>Solution 1: Permissioned Entry Guard</strong><br>
+<strong>解决方案 1：许可型入口防护</strong></p>
+<p>In this implementation, every order that is made by traders are not filled immediately by a Tsunami contract. Instead, the order will be filled by a permissioned keeper. If and once the keeper determines that the price the price oracle has quoted for an order is fair, the keeper will execute the order on behalf of the trader. If the quoted price is determined to not be fair, the order will not be filled.</p>
+<p>在此实施中，交易者下的每个订单都不会立即被海啸合约执行。订单将由获得许可的保管人填写。并且一旦保管人确定价格预言机对订单的报价是公平的，保管人将代表交易者执行订单。如果确定报价不公平，订单将不会成交。</p>
+<p>This protection will ensure that LPs are quoting fair market prices, but has the tradeoff of slower and non-guaranteed execution of trades.</p>
+<p>这种保护将确保 LP 引用公平的市场价格，但要权衡交易执行速度较慢和成功率。</p>
+<p><strong>Solution 2: Permissionless Exit Guard</strong><br>
+<strong>解决方案 2：无许可的出口防护</strong></p>
+<p>Instead of protecting LPs from traders opening shark-like trades, we can also protect LPs from traders when traders attempt to close positions.</p>
+<p>当交易者试图平仓时，我们还可以保护 LP 免受交易者的影响，而不是保护 LP 免受交易者进行类似鲨鱼的交易。</p>
+<p>To mitigate the alpha that a trader has from taking advantage of six-second old prices, we can enforce a rule such that leveraged trades can only be closed when they are 1.5% in profit. This rule would cease to exist after a trade has been opened for more than 3 hours.</p>
+<p>为了减轻交易者利用 6 秒之后价格带来的 alpha，我们可以强制执行一条规则，即杠杆交易只能在获利 1.5% 时关闭。不过交易开盘超过 3 小时后，此规则将不复存在。</p>
+<hr>
+<h1 id="nami-governance-token">Nami Governance Token</h1>
+<blockquote>
+<p><strong>Watch out for scammers:</strong> Tsunami has not launched the NAMI governance token. We are in no way shape or form associated with any existing tokens.</p>
+<p>提防骗子：Tsunami 尚未推出 NAMI 治理代币。我们绝不会与任何现有代币扯上关系。</p>
+</blockquote>
+<h2 id="治理-governance">治理 (Governance)</h2>
+<p>NAMI will be the governance token of the Tsunami protocol. A DAO of NAMI token holders will determine more decisions governing NAMI over time. However, initially, NAMI will be used to determine its own relation to the protocol.</p>
+<p>NAMI 将成为海啸协议的治理代币。随着时间的推移，NAMI 代币持有者的 DAO 将决定更多管理 NAMI 的决定。然而，最初，NAMI 将用于确定它自己与协议的关系。</p>
+<p>In the future, utility token holders will be able to vote on fee rates within the protocol, and on the implementation of new concepts, perhaps like a fee take rate that the NAMI token would receive from the system. Nonetheless, every decision will be made by the DAO collective with equal weighting per token.</p>
+<p>未来，实用型代币持有者将能够对协议内的费率以及新概念的实施进行投票，例如 NAMI 代币将从系统收到的费率。尽管如此，每个决定都将由 DAO 集体做出，每个代币具有相同的权重。</p>
+<p>As Tsunami develops, the DAO can vote on an ever expanding quantity of issues related to emissions, developer team compensation, bribe mechanisms, feature development, and much more.</p>
+<p>随着海啸的发展，DAO 可以对越来越多的与排放、开发团队补偿、游说机制、功能开发等相关的问题进行投票。</p>
+<p>With the confirmation of the Tsunami DAO, NAMI token holders will be able to stake NAMI as a way to get access to special access to any NFTs or speciality NAMI goods.</p>
+<p>随着海啸 DAO 的确认，NAMI 代币持有者将能够质押 NAMI，作为获得对任何 NFT 或特殊 NAMI 商品的特殊访问权的一种方式。</p>
+<blockquote>
+<p><strong>Good to know:</strong> Governance tokens allow token holders to make changes to the protocol in the form of a vote.</p>
+<p><strong>温馨提示：</strong> 治理代币允许代币持有者以投票的形式对协议进行更改。</p>
+</blockquote>
+<h3 id="discord入口-discord-access">Discord入口 (Discord Access)</h3>
+<p>Token holders may receive special access to select discord channels that only other verified holders of NAMI will have access to.</p>
+<p>代币持有者可能会获得特殊访问权，来访问只有其他经过验证的 NAMI 持有者才能访问的Discord频道。</p>
+<h3 id="数字活动-digital-events">数字活动 (Digital Events)</h3>
+<p>There may be digital events and townhalls that only NAMI token holders with a certain threshold of ownership may be permitted entry to.</p>
+<p>可能有数字活动和活动厅，只有具有一定所有权门槛的 NAMI 代币持有者才能被允许进入。</p>
+<h3 id="nft入口-nft-access">NFT入口 (NFT Access)</h3>
+<p>For any future Tsunami NFT drops or sales, NAMI token holders may receive special rights.</p>
+<p>对于任何未来的海啸 NFT 空投或销售，NAMI 代币持有者可能会获得特殊权利。</p>
+<p>The exact benefits for any particular NFT drop could vary, but some potential benefits NAMI token holders could receive would be</p>
+<p>任何特定 NFT 空投的好处可能会有所不同，但 NAMI 代币持有者可以获得的一些潜在好处将是</p>
+<ul>
+<li>First access to mint 首先访问去铸币</li>
+<li>Discounted minting 打折铸币</li>
+<li>Free minting 免费铸币</li>
+<li>Higher likelihood of minting an NFT with rare attributes 铸造具有稀有属性的 NFT 的可能性更高</li>
+<li>Raffles for particular NFTs 特定 NFT 的抽奖活动</li>
+</ul>
+<hr>
+<h1 id="附加的功能-additional-features">附加的功能 (Additional Features)</h1>
+<h2 id="功能-features">功能 (Features)</h2>
+<ul>
+<li>
+<p>Volatility Oracle: Use oracles to adjust the fees charged to traders based on the volatility of quoted assets<br>
+波动率预言机：使用预言机根据报价资产的波动性调整向交易者收取的费用</p>
+</li>
+<li>
+<p>Weekly/Monthly/Yearly trader leaderboards accompanied by NFTs<br>
+附有 NFT 的每周/每月/每年交易者排行榜</p>
+</li>
+<li>
+<p>Enabling non-basket assets to be used as collateral<br>
+使非篮子资产可以用作抵押品</p>
+</li>
+<li>
+<p>Borrowing/Lending Pooled assets from/to external counterparties<br>
+从外部交易对手借入/借出集合资产</p>
+</li>
+<li>
+<p>Limit orders: enable traders to place orders that will execute in the future if the specified price of the order is hit.<br>
+限价单：使交易者能够下订单，如果订单的指定价格被击中，将在未来执行。</p>
+</li>
+</ul>
+<h3 id="限价单-limit-orders">限价单 (Limit Orders)</h3>
+<p>Limit orders will be enabled for traders that want to execute an order at a price in the future.</p>
+<p>为希望在未来以某个价格执行订单的交易者启用限价订单。</p>
+<p>We will support limit orders for both spot and margin trading.</p>
+<p>我们将支持现货和保证金交易的限价单。</p>
+<p>Keepers, off chain third-party participants, are incentivized to execute limit orders with a flat fee of $5. This fee may change in the future, and we may even enable users to set their own arbitrary keeper fees to use to incentivize keepers to execute their limit orders in a timely manner.</p>
+<p>保管人，即链下第三方参与者，被激励以 5 美元的固定费用执行限价单。该费用将来可能会发生变化，我们甚至可以让用户设置自己的任意保管人费用，用于激励保管人及时执行限价单。</p>
+<p>Since limit orders must be fulfilled by off-chain keepers, limit orders are not guaranteed to execute even if the specified price of a limit order is reached.</p>
+<p>由于限价单必须由链下保管人执行，因此即使达到限价单的指定价格，也不能保证限价单执行。</p>
+<p>Because of the keeper incentive fee, we do not recommend using limit order functionality for small trades.</p>
+<p>由于保管人有奖励费用，我们不建议对小额交易使用限价单功能。</p>
+<hr>
+<h1 id="faqs">FAQs</h1>
+<p>Q: What price oracles will you use day 1?<br>
+A: We are working closely with Switchboard and will integrate redudant low latency Switchboard price feeds for our Devnet and Mainnet launch on Aptos.</p>
+<p>问：您将在第一天使用什么价格的预言机？<br>
+答：我们正在与 Switchboard 密切合作，并将为我们在 Aptos 上发布的 Devnet 和 Mainnet 集成冗余低延迟 Switchboard 价格推送。</p>
+<p>Q: What are swap trading fees?<br>
+A1: 4bps for stable swaps, with another variable 4bps for punishing<br>
+A2: 30bps for all other swap types with another variable 30bps for punishing</p>
+<p>问：交换的交易费用是？<br>
+答1：4bps 用于稳定互换，另一个变量 4bps 用于惩罚<br>
+答2：30bps 用于所有其他互换类型，另一个变量 30bps 用于惩罚</p>
+<p>Q: What are the perps position fees?<br>
+A: 8bps to open or close a position</p>
+<p>问：永久持仓费用是多少？<br>
+答: 8bps 开仓或平仓</p>
+<p>Q: What are the funding rate fees? How are they calculated?<br>
+A: Variable based on utilization using a linear fee progression starting from 30% APY and going to 70%</p>
+<p>问：资金费率是多少？它们是如何计算的？<br>
+答: 使用从 30% APY 到 70% 的线性费用递增，根据使用情况变化</p>
+<p>Q: How often are funding rates updated?<br>
+A: As often as people call contract methods that update them, safe to assume at least every 8 hours, but mostly likely quite soon.</p>
+<p>问：资金费率多久更新一次？<br>
+答：人们经常调用更新它们的合约方法，可以安全地假设至少每 8 小时一次，但很可能很快。</p>
+<p>Q: Who earns the fees?<br>
+A: 100% of fees generated on platform go to LPs</p>
+<p>问：谁赚取费用？<br>
+答：平台产生的费用 100% 归 LP</p>
+<p>Q: What is the collateral ratio?<br>
+A: There must be 105% worth of collateral for every 100% worth of debt</p>
+<p>问：抵押率是多少？<br>
+答：每 100% 的债务价值必须有 105% 的抵押品</p>
+<p>Q: What are the trading use cases for Tsunami?<br>
+A: Traders looking to swap assets, hedge positions/risk, and speculate on the market</p>
+<p>问：海啸有哪些交易用例？<br>
+答: 希望交换资产、对冲头寸/风险并在市场上投机的交易者</p>
+<p>Q: What will the APY from LPing be?<br>
+A: It will be variable from trading fees, position fees, funding rate fees, and lending market fees, but we believe over 25% should be sustainable.</p>
+<p>问：做LP的 APY 是多少？<br>
+答：交易费用、头寸费用、资金费率费用和借贷市场费用会有所不同，但我们认为超过 25% 应该是可持续的。</p>
+<p>Q: Are you live on mainnet?<br>
+A: No.</p>
+<p>问：主网上了吗？<br>
+答：没有。</p>
+<p>Q: Are you live on testnet?<br>
+A: No, but we will be soon!</p>
+<p>问：你住在测试网上吗？<br>
+答：不，但很快！</p>
+<hr>
+<h1 id="可能的路线图-potential-future-roadmap">可能的路线图 (Potential Future Roadmap)</h1>
+<h2 id="进一步功能考虑-further-out-feature-considerations">进一步功能考虑 (Further Out Feature Considerations)</h2>
+<ul>
+<li>
+<p>Tsunami Orderbook: Build out perps on top of existing order book technology instead of using price oracles<br>
+海啸订单簿：在现有订单簿技术之上构建永续合约，而不是使用价格预言机</p>
+</li>
+<li>
+<p>Omni Nami: Deploy cross-chain<br>
+Omni Nami：部署跨链</p>
+</li>
+<li>
+<p>Omni Nami Swaps: Utilize cross-chain liquidity to swap between different assets on different chains<br>
+Omni Nami Swaps：利用跨链流动性在不同链上的不同资产之间进行交换</p>
+</li>
+<li>
+<p>Omni Nami Perps: Long or short assets across different chains<br>
+Omni Nami 永续合约：跨不同链的多头或空头资产</p>
+<ul>
+<li>Ex: Send USDC to Solana to use USDC as collateral to Long SOL<br>
+示例：向 Solana 发送 USDC 以使用 USDC 作为做多 SOL 的抵押品</li>
+</ul>
+</li>
+<li>
+<p>Omni Nami Yield: Implement cross-chain money market lending<br>
+Omni Nami(固定)收益：实施跨链货币市场借贷</p>
+</li>
+<li>
+<p>Omni Nami CLOB: Implement a cross-chain price discovery mechanism<br>
+Omni Nami中心化订单簿：实现跨链价格发现机制</p>
+</li>
+</ul>
+<h3 id="omni-nami永续合约-omni-nami-perpetual-futures">Omni Nami永续合约 (Omni Nami Perpetual Futures)</h3>
+<p>Traders may be able to long/short assets across ecosystems.<br>
+交易者可能能够跨生态系统做多/做空资产。</p>
+<p>Perpetual Cross-chain futures may be enabled by baskets that exist on multiple ecosystems with an overlap in the asset composition of the basket.</p>
+<p>永续跨链期货可以通过存在于多个生态系统中的篮子来实现，篮子的资产构成可以重叠。</p>
+<p>Ex: A trader on Aptos sends USDC to the basket on Solana to be used as collateral to open up a leveraged long position on SOL.</p>
+<p>例如：Aptos 上的交易员将 USDC 发送到 Solana 的篮子中，用作抵押品，在 SOL 上开立杠杆多头头寸。</p>
+<h3 id="omni-nami-swaps">Omni Nami Swaps</h3>
+<p>Traders may be able to swap assets across ecosystems.</p>
+<p>交易者或许能够跨生态系统交换资产。</p>
+<p>Cross-chain swaps may be enabled by baskets that exist on multiple ecosystems with an overlap in the asset composition of the basket.</p>
+<p>跨链交换可以通过存在于多个生态系统中的篮子来实现，篮子的资产构成存在重叠。</p>
+<p>Ex: A trader can take USDC on Aptos and use it to buy SOL on Solana.</p>
+<p>例如：交易者可以在 Aptos 上使用 USDC 并用它在 Solana 上购买 SOL。</p>
+<h3 id="跨链流动性池-cross-chain-liquidity-pools">跨链流动性池 (Cross-Chain Liquidity Pools)</h3>
+<p>Traders may be able to access liquidity on their native chain and other ecosystems with Tsunami liquidity pools.</p>
+<p>交易者可能能够通过海啸流动性池获得其原生链和其他生态系统上的流动性。</p>
+<p>When a trader goes to swap they will have the option to source liquidity from other chains with minimal friction and effort. The main question a trader has to answer when dealing with native vs. cross-chain liquidity is whether they want the asset at the lowest cost of time or money.</p>
+<p>当交易者进行交换时，他们可以选择以最小的摩擦和努力从其他链获取流动性。交易者在处理原生和跨链流动性时必须回答的主要问题是他们是否希望以最低的时间或金钱成本获得资产。</p>
+<p>Ex: A trade wants to swap USDC to SOL. SOL on Aptos may be bought but has a spread fee of 30bps, while SOL on Solana has a spread fee of 5bps. A trader who may be comfortable waiting for the cross-chain transaction to occur can do so and save 25bps during their trade.</p>
+<p>例如：交易者想将 USDC 换成 SOL。 Aptos 上的 SOL 可以购买，但点差费用为 30 个基点，而 Solana 上的 SOL 点差费用为 5 个基点。可能愿意等待跨链交易发生的交易者可以这样做并在交易期间节省 25 个基点。</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[JETDAO第三次社区会议笔记(NOTES FROM JETDAO COMMUNITY CALL 3) (NOTES FROM JETDAO COMMUNITY CALL 3)]]></title>
         <id>https://chainguys.github.io/post/jetdao-she-qu-hui-yi-bi-ji-notes-from-jetdao-community-call-3/</id>
         <link href="https://chainguys.github.io/post/jetdao-she-qu-hui-yi-bi-ji-notes-from-jetdao-community-call-3/">
@@ -385,58 +902,6 @@ Discord: <a href="https://t.co/dx2ViK9YEk">discord.gg/Orderly.Network</a></p>
 <p>Seraphim与 Idle DAO<a href="https://twitter.com/idlefinance/status/1546558833555808256">谈论了</a>  DeFi 和借贷市场。</p>
 <p>Seraphim attended <a href="https://twitter.com/MacroMate8/status/1548619222196133891">EthCC</a> and is on his way to Korea Blockchain Week.</p>
 <p>Seraphim 参加了 <a href="https://twitter.com/MacroMate8/status/1548619222196133891">EthCC</a>，并且正在前往韩国区块链周的路上。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Linera简介 (Introducing Linera)]]></title>
-        <id>https://chainguys.github.io/post/linera-jian-jie-introducing-linera/</id>
-        <link href="https://chainguys.github.io/post/linera-jian-jie-introducing-linera/">
-        </link>
-        <updated>2022-07-22T04:51:50.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="linera简介-introducing-linera">Linera简介 (Introducing Linera)</h1>
-<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*kPq71LOX3wioySgTkb-yqw.jpeg" alt="" loading="lazy"></figure>
-<p><em>This translation is a personal work by Linera enthusiast <a href="https://twitter.com/Chainguys">@Chainguys</a> .The <a href="https://linera.io/">Linera</a> team reserves the right of final explanation.</em></p>
-<p><em>本翻译为Linera爱好者<a href="https://twitter.com/Chainguys">@Chainguys</a>的个人作品。<a href="https://linera.io/">Linera</a>团队保留最终解释权。</em></p>
-<h2 id="为-web3-带来-web2-的性能和可靠性-bringing-web2-performance-and-reliability-to-web3">为 web3 带来 web2 的性能和可靠性 (Bringing web2 performance and reliability to web3)</h2>
-<p>Hello World! I’d like to introduce Linera, the project I founded with the mission to create the <strong>first low-latency blockchain that will scale as easily as a web2 application</strong>.</p>
-<p>你好，世界！现在我想向大家介绍 Linera，这个我创建的项目，其使命是创建<strong>第一个可以像 web2 应用程序一样轻松扩展的低延迟区块链</strong>。</p>
-<p>During my time at Meta/Novi, I had the privilege of working on the latest research in distributed systems. I was particularly passionate about two protocols aiming to revolutionize blockchain scalability: <a href="https://arxiv.org/pdf/2003.11506.pdf">FastPay</a> and <a href="https://linera.io/papers/zef.pdf">Zef</a>. As an infrastructure engineer, I couldn’t wait to put these ideas into practice, but it was clear that such an ambitious project required a dedicated structure and proper financial support.</p>
-<p>我在 Meta/Novi 工作期间，有幸从事分布式系统的最新研究。我对<a href="https://arxiv.org/pdf/2003.11506.pdf">FastPay</a> 和 <a href="https://linera.io/papers/zef.pdf">Zef</a>zh额两个意在彻底改变区块链可扩展性的两种协议非常感兴趣。作为一名基础设施工程师，我迫不及待地将这些想法付诸实践，但很明显，这样一个雄心勃勃的项目需要专门的结构和适当的资金支持。</p>
-<p>Today, I’m very pleased to announce that we have closed a $6M seed round led by a16z crypto, with participation from top investors including Cygni Capital, Kima Ventures, and Tribe Capital. This funding round will allow us to deliver on our vision of bringing the performance and reliability of web2 to the world of web3. We are excited to bring on board preeminent investors who share our passion for developing strong infrastructure to unlock the full potential of blockchain technologies.</p>
-<p>今天，我很高兴地宣布，我们已经完成了由 a16z 领投的 600 万美元种子轮融资，顶级投资者包括 Cygni Capital、Kima Ventures 和 Tribe Capital。本轮融资将使我们能够实现将 web2 的性能和可靠性带入 web3 世界的愿景。我们很高兴能邀请杰出的投资者加入，他们与我们一样热衷于开发强大的基础设施，进而释放区块链技术的全部潜力。</p>
-<h1 id="为什么我们需要低延迟区块链-why-we-need-low-latency-blockchains">为什么我们需要低延迟区块链 (Why we need low-latency blockchains)</h1>
-<p>Blockchains have historically excelled in use cases where censorship resistance was the most important function. Yet, a growing number of applications also require low latency — that is, predictably low confirmation times in response to user actions. Such use cases include, for instance: retail payments, micro-payments for gaming apps, proprietary trading, and bridges between blockchains. Unfortunately, confirmation times in the fastest blockchains still typically take a number of seconds due to the overhead of mempools and complex coordination between validators.</p>
-<p>是区块链历来最重借出的功能就是在用例中表现出色的“抗审查性”。然而，越来越多的应用也需要低延迟—即，可预测的，响应用户操作的低确认时间。此类用例包括：零售支付、游戏的小额支付、自营交易以及区块链之间跨链。不幸的是，由于内存池的开销和验证者之间的复杂协调，最快区块链中的确认时间通常仍然需要几秒钟。</p>
-<p>The <a href="https://arxiv.org/pdf/2003.11506.pdf">FastPay</a> and <a href="https://linera.io/papers/zef.pdf">Zef</a> academic work that I contributed to has shown that simple operations such as payments can be greatly accelerated by removing mempools altogether and minimizing interactions between validators. In this family of protocols, blockchain clients communicate directly with validators to submit and confirm new account operations.</p>
-<p>我参与的 <a href="https://arxiv.org/pdf/2003.11506.pdf">FastPay</a> 和 <a href="https://linera.io/papers/zef.pdf">Zef</a> 的学术工作表明，简单的操作，如支付，通过完全移除内存池和最小化验证者之间的交互，可以大大加快速度。在这一系列协议中，区块链客户端直接与验证者通信来提交和确认新账户操作。</p>
-<p>The Linera blockchain aims to generalize this approach and take it to production, <strong>enabling most account-based operations to be confirmed in a fraction of a second</strong>.</p>
-<p>Linera 区块链旨在推广这种方法并将其投入实际生产，<strong>使大多数基于帐户的操作能够在几分之一秒内得到确认</strong>。</p>
-<h1 id="线性扩展的案例-the-case-for-linear-scaling">线性扩展的案例 (The case for linear scaling)</h1>
-<p>Nowadays, large internet applications are built from the ground up with scalability in mind. Users rely on the internet for daily activities such as navigation, shopping, and video streaming. They have very low tolerance for slow-downs or discontinuity of service.</p>
-<p>现今，大型互联网应用是从头开始构建的，并已经考虑了可扩展性。用户依赖互联网进行日常活动，例如导航、购物和视频流。它们对速度变慢或服务中断的容忍度非常低。</p>
-<p>Web2 applications have not always met such levels of scalability and reliability. Arguably, the breakthrough came from the industry’s transition in the 2000s to a strict form of horizontal scalability called “linear scaling”. The database community <a href="https://redis.com/redis-enterprise/technology/linear-scaling-redis-enterprise">explains it well</a>: linear scaling means that it is always possible to double the capacity of a system by doubling the number of machines.</p>
-<p>Web2 应用并不总是能达到这样的可扩展性和可靠性水平。可以说，这一突破来自于 2000 年代行业向一种称为“线性扩展”的严格水平扩展形式的转变。数据库社区<a href="https://redis.com/redis-enterprise/technology/linear-scaling-redis-enterprise">解释得很好</a>：线性扩展意味着总是可以通过将系统的容量翻倍来翻倍机器数量。</p>
-<p>Until now, blockchains have prioritized a “sequential” model of execution that allows arbitrary interactions (e.g. flash loans) between user accounts and smart contracts in a succession of transactions. Unfortunately, sequential execution prevents linear scaling. <strong>We believe that a paradigm shift comparable to the evolution of databases from SQL to NoSQL is necessary for future decentralized systems to provide low-latency guarantees at arbitrary scale.</strong></p>
-<p>到目前为止，区块链优先考虑“序列”执行模型，该模型允许用户账户和智能合约在一系列交易中进行任意交互（例如闪电贷）。不幸的是，序列执行阻止了线性扩展。 <strong>我们认为，与数据库从 SQL 到 NoSQL 的演变相类似的范式转变，对于未来的去中心化系统提供任意规模的低延迟保证是必要的。</strong></p>
-<p>The Linera project will develop and promote a new model of execution suitable for linear scaling. In such a model, operations on separate user accounts will run concurrently by default — that is, in separate threads of execution. In this way, execution can always be scaled out by adding new processing units to each validator. In traditional web2 architectures, such additional processing units, known as “workers” or “shards”, are provisioned on demand in data-centers or by cloud providers.</p>
-<p>Linera 项目将开发和推广适用于线性扩展的全新的执行模型。在这样的模型中，默认情况下，对不同用户帐户的操作将同时运行——即在不同的执行线程中。通过这种方式，始终可以通过向每个验证者添加新的处理单元来扩展执行。在传统的 web2 架构中，这些额外的处理单元（称为“worker”或“shards”）由数据中心或云提供商按需提供。</p>
-<h1 id="等等如果验证者是数据中心这仍然是一个去中心化协议吗-wait-is-this-still-a-decentralized-protocol-if-validators-are-data-centers">等等，如果验证者是数据中心，这仍然是一个去中心化协议吗？ (Wait, is this still a decentralized protocol if validators are data-centers?)</h1>
-<p>The now-classical “blockchain trilemma” asserts the difficulty of simultaneously achieving scalability, security, and decentralization. While this observation certainly holds for validators of fixed size, we believe that insufficient efforts have been made in the definition and implementation of a satisfying notion of decentralization for large, high-throughput validators. In particular, auditing high-throughput systems using commodity hardware has historically been challenging because a single auditor cannot possibly run all transactions.</p>
-<p>现在，经典的“区块链困难三角”断言了同时实现可扩展性、安全性和去中心化的极高难度。这一观察虽然适用于固定规模的验证者，但我们认为在为大型、高吞吐量验证者进行定义和实施令人满意的去中心化概念方面，所做的努力还不够。特别是，使用商品硬件，审计高吞吐量系统历来具有挑战性，因为单个审计员不可能运行所有交易。</p>
-<p><strong>Our goal is to ensure decentralization of the Linera protocol using state-of-the-art proof-of-stake mechanisms together with scalable auditing procedures to ensure full accountability of validators.</strong></p>
-<p><strong>我们的目标是使用最先进的共识证明机制(state-of-the-art proof-of-stake mechanisms)和可扩展的审计程序来确保 Linera 协议的去中心化，以确保验证者的全面承担责任。</strong></p>
-<p>To support large-scale auditing by the community, we intend to leverage the concurrent execution model of Linera. To the same effect, we are also closely following the rapid and continuous progress made in the field of validity proofs.</p>
-<p>为了支持社区的大规模审计，我们打算利用 Linera 的并发执行模型。同样，我们也在密切关注有效性证明领域取得的快速持续进展。</p>
-<h1 id="这仅仅是开始-this-is-just-the-beginning">这仅仅是开始 (This is just the beginning)</h1>
-<p>We’re currently working on implementing the Linera protocol and the first steps towards an open-source launch.</p>
-<p>我们目前正致力于实施 Linera 协议以及迈向开源发布的第一步。</p>
-<p>Our founding team comprises engineers and researchers (ex-Zcash, ex-Meta/Novi, City University of London) with strong technical backgrounds both in web2 and web3. We believe that this combination of skills makes us uniquely positioned to execute on our vision to bring high performance and high reliability to decentralized applications.</p>
-<p>我们的创始团队包括工程师和研究人员（前 Zcash、前 Meta/Novi、伦敦城市大学）在 web2 和 web3 方面具有强大的技术背景。我们相信，这种技能组合使我们具有独特的优势，可以实现我们的愿景，为去中心化应用带来高性能和高可靠性。</p>
-<h1 id="我们正在招聘-were-hiring">我们正在招聘 (We’re hiring)</h1>
-<p>We’re passionate about blockchain technologies, distributed systems, and the Rust programming language. Visit our <a href="https://linera.io/">website</a>, follow us on <a href="https://twitter.com/linera_io">Twitter</a>, or <a href="mailto:contact@linera.io">drop us a note</a> to learn more about our open positions.</p>
-<p>我们对区块链技术、分布式系统和 Rust 编程语言充满热情。访问我们的 <a href="https://linera.io/">网站</a>，在 <a href="https://twitter.com/linera_io">Twitter</a> 上关注我们，或 <a href="mailto:contact@linera.io">给我们留言</a>了解更多关于我们的空缺职位。</p>
-<p>– Mathieu Baudet, Founder and CEO of Linera<br>
-—Linera 创始人兼首席执行官 Mathieu Baudet</p>
 ]]></content>
     </entry>
 </feed>
