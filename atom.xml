@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-09-19T10:27:37.215Z</updated>
+    <updated>2022-09-20T04:41:32.046Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -709,6 +709,55 @@ Produce Block API 现在可用于 SDK 测试；</p>
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[欢迎来到Xterio (Welcome To Xterio)]]></title>
+        <id>https://chainguys.github.io/post/huan-ying-lai-dao-xterio-welcome-to-xterio/</id>
+        <link href="https://chainguys.github.io/post/huan-ying-lai-dao-xterio-welcome-to-xterio/">
+        </link>
+        <updated>2022-08-30T04:35:58.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*QtD1Qq88xJVFxnbJ-8PLBw.jpeg" alt="" loading="lazy"></figure>
+<hr>
+<p>First of all, thank you so much for visiting our website. It means a lot to all of us at Xterio. It’s a wonderful feeling to announce Xterio after having spent months working in stealth mode on what I believe to be one of the boldest gaming bets in web3.</p>
+<p>首先，非常感谢您访问我们的网站。这对 Xterio 的所有人来说意义重大。我坚信这是 web3 中最大胆的游戏赌注之一，所以当我花了几个月的时间在隐形模式下工作之后，再宣布 Xterio(项目)，这是一种美妙的感觉。</p>
+<p>I’d like to share my thoughts on why we chose to form a new gaming developer and publisher, but first, as the press announced today, we have raised $40M from an incredible set of lead investors, led by FunPlus, Makers Fund, FTX Ventures, and XPLA, with notable participation from HashKey, Foresight Ventures, Infinity Ventures Crypto, Matrix Partners, and Animoca Brands.<br>
+We are especially grateful to FunPlus for trusting us to be their exclusive partner in web3.</p>
+<p>我想分享一下为什么选择组建一家新的游戏开发和发行商的想法，但首先，正如媒体今天宣布的那样，我们从一群令人难以置信的领军投资者那里筹集了 4000 万美元，由 FunPlus、Makers Fund 领投， FTX Ventures 和 XPLA，以及HashKey、Foresight Ventures、Infinity Ventures Crypto、Matrix Partners 和 Animoca Brands 的参与。<br>
+我们特别感谢 FunPlus 信任我们并成为他们在 web3 上的独家合作伙伴。</p>
+<p>This trust and success mark the first step in building the premier developer and publisher of cross-platform games powered by digital ownership.</p>
+<p>这种信任和成功，标志着建立由数字所有权驱动的跨平台游戏的第一开发商和发行商迈出了第一步。</p>
+<p>There is so much to do to hit our end goal: to create worlds and experiences that you will love.</p>
+<p>要实现我们的最终目标，还有很多工作要做：创造您会喜欢的世界和体验。</p>
+<p><strong>Xterio是什么? (What is Xterio?)</strong></p>
+<p>Xterio is a game developer and publisher with a global team footprint. Xterio’s cross-platform portfolio will focus on multiplayer games with deep, rich gaming experiences across multiple genres enhanced by player ownership. We aim to develop web3 native universes that will be expanded across all media and platforms.</p>
+<p>Xterio 是一家拥有全球团队足迹的游戏开发商和发行商。 Xterio 的跨平台产品组合将专注于多人游戏，通过玩家增强所有权，提供横跨多个类型、深度、丰富的游戏体验。我们的目标是开发将在所有媒体和平台上扩展的 web3 原生宇宙(native universes)。</p>
+<p>We are a group of proven game veterans from FunPlus, Electronic Arts, Zynga, Activision Blizzard, Krafton, Jam City, NetEase, and other top studios. We want to give legitimacy and trust to the nascent web3 gaming and bring the 3 billion gamers amazing worlds &amp; gameplay by leveraging our decades of AAA &amp; F2P learnings.</p>
+<p>我们是一群来自 FunPlus、Electronic Arts、Zynga、Activision Blizzard、Krafton、Jam City、网易等顶级工作室的资深游戏老手。我们希望通过利用我们数十年的 AAA 和 F2P 学习经验，为新生的 web3 游戏赋予合法性和信任，并为 30 亿游戏玩家带来令人惊叹的世界和游戏玩法。</p>
+<p>Stay tuned to our website &amp; socials for some really exciting announcements over the next several months!</p>
+<p>请继续关注我们的网站和社交网站，了解未来几个月的一些非常激动人心的公告！</p>
+<p><strong>为什么是Xterio (Why Xterio?)</strong></p>
+<p>Fun first: We are lifelong game makers and want to make kick-ass games with incredible graphics and gameplay. Blockchain is a tool in our toolkit to provide a great experience and not the end goal. What good is an on-chain asset if the game is boring? In the upcoming months, we will announce the games that, we hope, will impress you.</p>
+<p>乐趣为首：我们是终生的游戏制作者，希望制作具有难以置信的画面和玩法的精彩游戏。区块链是我们工具包中的一个工具，目的是提供出色的体验，而不是最终目标。如果游戏很无聊，链上资产有什么用？在接下来的几个月里，我们将公布我们希望能给您留下深刻印象的游戏。</p>
+<p>The importance of ownership: As a consumer, I have always been bothered by purchasing games on digital platforms as I had no right to resell them. In the physical world, I can buy a physical copy of the same game and resell it after use or buy a pack of collectible cards to obtain a rare one to keep, trade, or sell. Why can’t this be the case when it comes to digital goods? It makes no sense… At Xterio, we believe that the assets you win in the game or purchase should be yours to keep and own.</p>
+<p>所有权的重要性：作为消费者，我一直为在数字平台上购买游戏而烦恼，因为我无权转售它们。在现实世界中，我可以购买同款游戏的实体副本并在使用后转售，或者购买一包收藏卡来获得稀有卡，又或是保留、交易或出售。为什么在数字商品方面不能这样呢？这毫无意义……在 Xterio，我们相信您在游戏中赢得或购买的资产应该归您所有。</p>
+<p>We are community-driven: We want to build our games, IPs, and platform with you. Your direct participation will define the games we work on, the art styles, the partnerships we secure, the online and offline events we organize, the economic model that benefits the whole community, and much more… We want to be fully transparent about Xterio’s ongoing development (by the way: please join our Discord!).</p>
+<p>社区驱动：我们希望与您一起构建我们的游戏、IP 和平台。您的直接参与将定义我们开发的游戏、艺术风格、我们确保的合作关系、我们组织的线上和线下活动、造福整个社区的经济模式等等……我们希望对 Xterio 的持续进行完全透明开发（顺便说一句：请加入我们的 Discord！）。</p>
+<p>We are global and believe in a better tomorrow: We are a global team with people working together across borders, cultures, and backgrounds. This gives us a unique approach to reaching people worldwide by engaging with them directly. Making games together is our way of proving that regardless of our differences, nothing brings people closer than playing and building together. That’s the spirit of web3 for us.</p>
+<p>我们是全球化的，相信更美好的明天：我们是一个全球性的团队，人们跨越国界、文化和背景一起工作。这为我们提供了一种独特的方法，通过直接与世界各地的人们接触来接触他们。一起制作游戏是我们证明无论我们之间存在差异的方式，没有什么比一起玩和一起建造更能拉近人们的距离。这就是我们 web3 的精神。</p>
+<p><strong>我们向您承诺什么? (What do we promise you?)</strong></p>
+<p>Your trust is all we have: This is not just words on the walls. Xterio is not a “get rich” quick scheme, it’s a means to achieve our childhood dreams of building games that millions of people worldwide will love. We are excited to be among the first game makers to build enticing game worlds: Everything we do is to deliver fun and value to you. We hope to prove it to you soon and keep your trust for years to come.</p>
+<p>您的信任就是我们所拥有的：这不仅仅是墙上的文字。 Xterio 不是一个“致富”的快速计划，它是实现我们童年梦想的一种方式，即构建全世界数百万人喜爱的游戏。我们很高兴能成为第一批构建引人入胜的游戏世界的游戏制造商之一：我们所做的一切都是为了给您带来乐趣和价值。我们希望尽快向您证明这一点，并在未来几年保持您的信任。</p>
+<p>Games for everyone: We are building free-to-play games enhanced by blockchain technology. We offer experiences that everyone can enjoy without buying expensive NFTs. Also, we are building a platform that will, shortly, allow everyone to trade NFTs without going through the current friction points of today’s crypto and seamlessly onboard partner developers into the web3 ecosystem.</p>
+<p>适合所有人的游戏：我们正在构建由区块链技术增强的免费游戏。我们提供每个人都可以享受的体验，而无需购买昂贵的 NFT。此外，我们正在构建一个平台，该平台很快将允许每个人交易 NFT，而无需经历当今加密货币的当前摩擦点，并将合作开发人员无缝地加入 web3 生态系统。</p>
+<p>Bringing you fun and value: We want to build a healthy ecosystem that focuses on creating real value. Our NFTs will be interoperable and provide real value. I wish I could tell you about our upcoming announcements and products, but we want to save some secrets for later, too!</p>
+<p>为您带来乐趣和价值：我们希望建立一个专注于创造真正价值的健康生态系统。我们的 NFT 将是可交互的并提供真正的价值。我希望能告诉你即将发布的公告和产品，但我们也想为以后保存一些秘密！</p>
+<p>Once again, thank you so much for your interest. Please join the Xterio adventure to see what’s next by joining our Discord community and following our Twitter! We can’t wait to show you what we have been building in stealth mode for months!</p>
+<p>再次感谢您的关注。请加入我们的 <a href="https://discord.gg/9mXjYbRBZ5">Discord 社区</a>并关注我们的 <a href="https://twitter.com/XterioGames">Twitter</a>，加入 Xterio 冒险，看看接下来会发生什么！我们迫不及待地向您展示我们几个月来一直在隐身模式下构建的内容！</p>
+<p>Jeremy Horn,<br>
+Co-Founder &amp; COO</p>
+<p>Jeremy Horn,<br>
+联合创始人兼首席运营官</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Sei 与 Axelar Network 合作，为 Cosmos 上的 DeFi 启用跨链消息传递 (Sei has partnered with Axelar Network to enable cross-chain messaging for DeFi on Cosmos)]]></title>
         <id>https://chainguys.github.io/post/sei-yu-axelar-network-he-zuo-wei-cosmos-shang-de-defi-qi-yong-kua-lian-xiao-xi-chuan-di-sei-has-partnered-with-axelar-network-to-enable-cross-chain-messaging-for-defi-on-cosmos/</id>
         <link href="https://chainguys.github.io/post/sei-yu-axelar-network-he-zuo-wei-cosmos-shang-de-defi-qi-yong-kua-lian-xiao-xi-chuan-di-sei-has-partnered-with-axelar-network-to-enable-cross-chain-messaging-for-defi-on-cosmos/">
@@ -752,43 +801,6 @@ Produce Block API 现在可用于 SDK 测试；</p>
 <h2 id="关于sei-about-sei">关于Sei (About Sei)</h2>
 <p>Sei is the first layer 1 blockchain optimized for DeFi. Most layer 1’s fall into a barbell distribution: two extremes with general purpose chains on one end (e.g., Ethereum, Solana) and app-specific chains on the other (e.g., dYdX, Osmosis). Sei unlocks an entirely new design space between the two—not general-purpose nor app-specific, but DeFi-specific, which enables Sei to create an environment custom-built for DeFi applications. Sei features a built-in order matching engine, frontrunning protection, and the fastest finality of any chain (600 ms) currently in market. The combination of these optimizations make it possible for new types of financial products to emerge—everything ranging from live sports betting to complex options and futures.</p>
 <p>大多数layer1属于杠铃分布：两个极端，一端是通用链（例如 Ethereum、Solana），另一端是应用专用链（例如 dYdX、Osmosis）。Sei 在两者之间开辟了一个全新的设计空间——既不是通用的也不是特定应用的，而是特定于 DeFi 的，这使 Sei 能够创建一个为 DeFi 应用定制的环境。 Sei 具有内置的订单匹配引擎、抢跑保护和目前市场上任何链中最快的最终确定性（600 毫秒）。这些优化的结合使新型金融产品的出现成为可能——从现场体育博彩到复杂的期权和期货，应有尽有。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Euler来信-八月总结(Euler Newsletter August Summary)]]></title>
-        <id>https://chainguys.github.io/post/euler-lai-xin-ba-yue-zong-jie-euler-newsletter-august-summary/</id>
-        <link href="https://chainguys.github.io/post/euler-lai-xin-ba-yue-zong-jie-euler-newsletter-august-summary/">
-        </link>
-        <updated>2022-08-24T02:33:19.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="euler-update-24-august-2022">Euler Update [24 August 2022]</h1>
-<h3 id="让我们一起回顾过去几周都发生了什么-lets-recap-what-has-happened-over-the-past-few-weeks">让我们一起回顾过去几周都发生了什么! (Let's recap what has happened over the past few weeks!)</h3>
-<h1 id="紧追潮流-keep-up-to-date">紧追潮流 (Keep up to Date!)</h1>
-<p>Check out last month’s summary <a href="https://newsletter.euler.finance/p/july2022-recap">newsletter</a>, if you’ve been missing out on our recent progress, or continue reading below for the latest news.</p>
-<p>如果您错过了我们最近的进展，请查看上个月的 <a href="https://chainguys.github.io/post/euler-lai-xin-qi-yue-zong-jie-2-euler-labs-newsletter-july-summary">通信摘要</a>，或继续阅读下面的最新消息。</p>
-<p>Euler Governance <a href="https://twitter.com/euler_mab/status/1558084648189808643">passed</a> eIP14 which upgraded the protocol to use Chainlink, added a new method for gas efficient <a href="https://twitter.com/eulerfinance/status/1562066144378245120">flash loans</a>, and a number of other improvements.</p>
-<p>Euler Governance <a href="https://twitter.com/euler_mab/status/1558084648189808643">通过</a> eIP14 升级协议，从而使用 Chainlink，添加了一种新的 gas 高效 [闪电贷](https://twitter.com/eulerfinance /status/1562066144378245120)，以及许多其他改进。</p>
-<p><a href="https://forum.euler.finance/t/eip-16-change-steth-pricing-to-chainlink-and-amend-the-interest-rate-model/347">eIP16</a> is now live for voting and aims to change stETH pricing to Chainlink and amend the interest rate model.</p>
-<p><a href="https://forum.euler.finance/t/eip-16-change-steth-pricing-to-chainlink-and-amend-the-interest-rate-model/347">eIP16</a> 现已上线投票——它旨在将 stETH 价格推送更改为 Chainlink，并修改利率模型。</p>
-<p>Another <a href="https://forum.euler.finance/t/changing-the-voting-system-and-increasing-the-amount-of-votes-necessary-for-quorum/342">proposal</a> is under request for comment in the forums and aims to change the voting system and increase the number of votes needed for Quorum.</p>
-<p>另一个<a href="https://forum.euler.finance/t/changeing-the-voting-system-and-increasing-the-amount-of-votes-necessary-for-quorum/342">提案</a> 正在论坛中征求意见，它旨在改变投票系统并增加(达到)门槛所需的票数。</p>
-<p><a href="https://twitter.com/eulerfinance/status/1559189323647291394">Epoch 10</a> underway, check out some tips on <a href="https://twitter.com/eulerfinance/status/1561742052001337346">voting</a>. Users can now get <a href="https://twitter.com/MacroMate8/status/1556560253424001026">alerts</a> about liquidations on Euler via Twitter. Euler Labs <a href="https://twitter.com/eulerfinance/status/1560293190086709248">Office Hours</a> were held on Aug 23.</p>
-<p><a href="https://twitter.com/eulerfinance/status/1559189323647291394">Epoch 10</a> 正在进行中，请查看<a href="https://twitter.com/eulerfinance/status/1561742052001337346">投票</a> 的一些提示。用户现在可以通过 Twitter 获得有关 Euler 的清算<a href="https://twitter.com/MacroMate8/status/1556560253424001026">警报</a>。 Euler Labs <a href="https://twitter.com/eulerfinance/status/1560293190086709248">连线时间</a> 于 8 月 23 日举行。</p>
-<p>The DeFi Investor wrote a <a href="https://twitter.com/TheDeFinvestor/status/1558090955802099714">thread</a> on Euler's liquidation process, and Guillaume Lambert <a href="https://twitter.com/guil_lambert/status/1557880343444742144">wrote</a> about perpetual options on power perpetuals using Euler.</p>
-<p>DeFi 投资者写了一篇关于Euler清算过程的 <a href="https://twitter.com/TheDeFinvestor/status/1558090955802099714">推文</a>，Guillaume Lambert <a href="https://twitter.com/guil_lambert/status/1557880343444742144">写了</a> 关于使用Euler的永久期权。</p>
-<p><a href="https://twitter.com/MacroMate8">Seraphim</a> wrote about how the new Chainlink integration could empower Euler's stETH/wstETH <a href="https://twitter.com/MacroMate8/status/1558127517701062656">markets</a>. He also <a href="https://twitter.com/MacroMate8/status/1559508887828570115">commented</a> on one trade strategy ahead of ETH Merge and a potential <a href="https://twitter.com/MacroMate8/status/1559652900556574720">risk</a>.</p>
-<p><a href="https://twitter.com/MacroMate8">Seraphim</a> 阐述了与 Chainlink 的全新集成如何增强 Euler 的 stETH/wstETH <a href="https://twitter.com/MacroMate8/status/1558127517701062656">市场</a>。他还 <a href="https://twitter.com/MacroMate8/status/1559508887828570115">评论</a> 了在 ETH 合并之前的一种交易策略和潜在的 <a href="https://twitter.com/MacroMate8/status/1559652900556574720">风险</a>。</p>
-<p><a href="https://twitter.com/nycbrandonn">Brandon Neal</a> was <a href="https://twitter.com/CointelegraphCr/status/1561684612614602754">featured</a> in Cointelegraph Innovation Circle <a href="https://twitter.com/CointelegraphCr/status/1559147895907041283">articles</a>. Brandon will also be <a href="https://twitter.com/MessariCrypto/status/1559178130211778561">on stage</a> at Messari's Mainnet 2022 in NYC on 21-23 Sept.</p>
-<p><a href="https://twitter.com/nycbrandonn">Brandon Neal</a> 在 Cointelegraph 创新圈<a href="https://twitter.com/CointelegraphCr/status/1559147895907041283">文章</a> 被提及。 Brandon 也将于 9 月 21 日至 23 日在纽约 Messari 的 Mainnet 2022 上<a href="https://twitter.com/MessariCrypto/status/1559178130211778561">登台</a>。</p>
-<p>Euler protocol was <a href="https://twitter.com/0xstrobe/status/1560567352457973761">integrated</a> in DefiLlama's liquidation levels dashboard, while DeFiYield.App has <a href="https://twitter.com/defiyield_app/status/1561714808852025344">integrated</a> Euler protocol into their platform.</p>
-<p>Euler 协议在 DefiLlama 的清算水平仪表板中<a href="https://twitter.com/0xstrobe/status/1560567352457973761">集成</a>，而 DeFiYield.App 已经<a href="https://twitter.com/defiyield_app/status/1561714808852025344">集成</a>Euler协议进入他们的平台。</p>
-<p>Euler currently has a total supply of $385.46M with TVL of $217.53M and $167.93M in total borrowed. New markets were activated, including <a href="https://twitter.com/eulerfinance/status/1559270716477886464">FPIS</a>, <a href="https://twitter.com/eulerfinance/status/1562441490613223430">FRAX</a> and <a href="https://twitter.com/eulerfinance/status/1559963297733980161">WAMPL</a>, while the reserves have increased to $1.14M. There are 4,277 lenders and 711 borrowers across 91 markets.</p>
-<p>Euler 目前的总供应量为 3.8546 亿美元，TVL 为 2.1753 亿美元，借款总额为 1.6793 亿美元。新市场被激活，包括 <a href="https://twitter.com/eulerfinance/status/1559270716477886464">FPIS</a>、<a href="https://twitter.com/eulerfinance/status/1562441490613223430">FRAX</a> 和 <a href="https://twitter.com/eulerfinance/status/1559963297733980161">WAMPL</a>，而储备金已增加到 114 万美元。 91 个市场有 4,277 名出借人和 711 名借款人。</p>
-<h1 id="职业机会-career-opportunities">职业机会 (Career Opportunities)</h1>
-<p>Please kindly see details below:<br>
-请参考以下内容：<br>
-<img src="https://chainguys.github.io/post-images/1662431734382.png" alt="" loading="lazy"></p>
-<h2 id="进度更新-progress-updates">进度更新 (Progress Updates)</h2>
-<figure data-type="image" tabindex="1"><img src="https://chainguys.github.io/post-images/1662431743049.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
