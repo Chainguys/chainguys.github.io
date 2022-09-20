@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Euler来信-六月总结(Euler Newsletter June Summary) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1663648779149">
+<link rel="shortcut icon" href="/favicon.ico?v=1663671657912">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -215,13 +215,13 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">82</span>
+        <span class="site-item-stat-count">84</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">235</span>
+        <span class="site-item-stat-count">238</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -2405,6 +2405,40 @@ Discord: &lt;a href=&#34;https://t.co/dx2ViK9YEk&#34;&gt;discord.gg/Orderly.Net
       </div>
       
       <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/jie-shao-altlayerdi-er-bu-fen-zhi-chi-ding-zhi-ying-yong-hui-zong-de-dan-xing-kuo-zhan-ceng-introducing-altlayer-part-iian-elastic-scaling-layer-with-application-tailored-rollups/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*eYIU8ypZU0luVWZS_9AnKQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;GM! This blog post is the second part of the introductory series about AltLayer — a platform to allow application developers to launch highly scalable and disposable optimistic rollup-like execution layers. It can be seen as a system of individual optimistic rollups, each rollup tailored to a specific application.&lt;/p&gt;
+&lt;p&gt;GM！这篇博文是关于 AltLayer 的介绍系列文章的第二部分，AltLayer 是一个旨在使应用开发人员启动高度可扩展和一次性乐观汇总(optimistic rollup-ups)的执行层的平台。它可以看作是一个包含许多单独乐观汇总的系统，其中每个汇总都是针对特定应用量身定制的。&lt;/p&gt;
+&lt;p&gt;While the previous part of this introductory series is not a prerequisite reading for this post, we still recommend readers to read the first part that presents the “Why” of AltLayer. In this post, we focus on the “What” of AltLayer.&lt;/p&gt;
+&lt;p&gt;虽然本入门系列的前一部分不是阅读本文的先决条件，但我们仍然建议读者阅读第一部分，其中介绍了 AltLayer 的“为什么/原因”。在这篇文章中，我们关注 AltLayer 的“内容”。&lt;/p&gt;
+&lt;p&gt;Let’s dive in!&lt;/p&gt;
+&lt;p&gt;那就让我们一起深入了解吧！&lt;/p&gt;
+&lt;h1 id=&#34;什么是altlayer-what-is-altlayer&#34;&gt;什么是AltLayer (What is AltLayer?)&lt;/h1&gt;
+&lt;p&gt;AltLayer is a hyper-scalable and disposable execution layer that relies on optimistic execution similar to optimistic rollups. It can be viewed as a &lt;a href=&#34;https://medium.com/starkware/fractal-scaling-from-l2-to-l3-7fe238ecfb4f&#34;&gt;Layer 3 protocol&lt;/a&gt; that derives its security directly from a Layer 1 or indirectly from a Layer 2 in a recursive manner. It is designed with the following key features:&lt;/p&gt;
+&lt;p&gt;AltLayer 是一个超可扩展的一次性执行层，它依赖于类似乐观汇总的乐观执行。它可以被视为 &lt;a href=&#34;https://medium.com/starkware/fractal-scaling-from-l2-to-l3-7fe238ecfb4f&#34;&gt;Layer 3 协议&lt;/a&gt;，其安全性直接来自 Layer 1 或间接来自 Layer 2 递归方式。它的设计具有以下主要功能：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Application-Tailored:&lt;/strong&gt; Several applications such as GameFi, Metaverse, privacy-preserving applications among others often need specific tailoring or library support that is otherwise not available on a general purpose Layer 1 or Layer 2 due to the underlying limitation of the virtual machine. AltLayer not only comes with EVM support but also WASM support that will allow applications to access any web assembly code, thereby expanding the types of applications that can be built.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定制应用：&lt;/strong&gt; GameFi、Metaverse、隐私保护等多个应用通常需要特定的定制或库支持，否则由于虚拟机的底层限制，这些应用在通用layer1或layer2 上会不可用. AltLayer 不仅提供 EVM 支持，还提供 WASM 支持，允许应用程序访问任何 Web 汇编代码，从而扩展可构建的应用类型。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Resource Optimized:&lt;/strong&gt; Unlike all Layer 1s and Layer 2s, AltLayer presents a unique execution layer that can be instantiated at any time by a dApp developer, utilized for as long as needed, and then disposed of. AltLayer achieves this by providing a transient execution layer via a concept of &lt;em&gt;flash layering&lt;/em&gt;. Flash layering comes with a plug-and-play and cloud-service-like solution called &lt;em&gt;FlashLayer&lt;/em&gt; for dApp developers to use when the application expects a burst in demand. Once a &lt;em&gt;FlashLayer&lt;/em&gt; is disposed of, all the related resources are freed and the dApp’s state is rolled up to the underlying Layer 1 chain. A dApp developer will have the economic (or other) incentives to free the &lt;em&gt;FlashLayer&lt;/em&gt; when the blockspace on the underlying Layer 1 chain is not so scarce.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;资源优化：&lt;/strong&gt; 与所有layer1和layer2不同，AltLayer 提供了一个独特的执行层，可以由 dApp 开发人员随时实例化，根据需要使用，然后丢弃。 AltLayer 通过 &lt;em&gt;flash layering(瞬时分层)&lt;/em&gt; 的概念提供瞬间执行层来实现这一点。 Flash 分层附带一个即插即用和类似云服务的解决方案，称为 &lt;em&gt;FlashLayer(瞬时分层)&lt;/em&gt;，供 dApp 开发人员在应用预期需求激增时使用。一旦 &lt;em&gt;FlashLayer&lt;/em&gt; 被释放，所有相关资源都会被释放，dApp 的状态会汇总到底层的layer1。当底层layer1上的区块空间不是那么稀缺时，dApp 开发人员将有经济（或其他）激励来释放_FlashLayer_ 。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Modular Design with Multi-VM support:&lt;/strong&gt; AltLayer is designed to be a modular execution layer that performs optimistic execution and is easy to integrate with any Layer 1 or Layer 2 and therefore will have an outreach that spans developers across heterogeneous chains. Given the different runtime supported by different chains, AltLayer is designed to support multiple VMs in particular EVM and WASM among others.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;具有多虚拟机 支持的模块化设计：&lt;/strong&gt; AltLayer 被设计成一个模块化的执行层，可以进行乐观执行(optimistic execution)并且易于与任何layer1或layer2集成，因此将可触达/吸引异构链的开发人员。鉴于不同链支持不同运行时间，AltLayer被设计为支持多个虚拟机，特别是 EVM 和 WASM 等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. Tiered Security:&lt;/strong&gt; AltLayer offers a three-tiered approach to security that caters to a user’s &lt;em&gt;security budget&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;分层安全性：&lt;/strong&gt; AltLayer 提供了满足用户 &lt;em&gt;安全预算&lt;/em&gt; 的三层安全方法：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;a. Low Budget:&lt;/strong&gt; Blocks in AltLayer are produced by block producers which are similar to sequencers in optimistic rollup implementations such as Arbitrum, but, instead of having only one sequencer as in Arbitrum, AltLayer has several block producers that reach consensus on the next block. This avoids a single point of failure and mitigates any censorship from a malicious sequencer. A user with a low security budget may decide to accept a block as soon as at least one honest block producer generates the correct block.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;a.低预算：&lt;/strong&gt; AltLayer 中的区块由区块生产者生产，类似于 Arbitrum 等乐观汇总实现中的序列器，但不同于 Arbitrum 中只有一个排序器，AltLayer 有几个区块生产者会就下一个区块达成共识。这避免了单点故障并减轻了来自恶意序列器的任何审查。一旦至少有一个诚实的区块生产者生成了正确的区块，安全预算较低的用户就可以决定接受区块。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;b. Medium Budget:&lt;/strong&gt; Once a block is produced, verifiers in AltLayer check the validity of the block. Verifiers re-execute transactions and compare the generated state root with the Merkle root committed by the block producers. Verifiers are also required to commit data to the underlying Layer 1. A user with medium security budget may decide to wait until a given block is verified by at least one verifier. Note that a verifier can be run on different platforms, e.g., commodity x86/ARM machines, web browsers, dApp backends or hardware-assisted environments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;b.中等预算:&lt;/strong&gt; 一旦产生一个区块，AltLayer 中的验证者就会检查该区块的有效性。验证者重新执行交易，并将生成的状态根与块生产者提交的 Merkle 根进行比较。验证者还需要将数据提交到底层的layer1。具有中等安全预算的用户可以决定等到给定的块被至少一个验证者验证。请注意，验证程序可以在不同的平台上运行，例如商品级别的 x86/ARM 机器、Web 浏览器、dApp 后端或硬件辅助环境。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;c. High Budget:&lt;/strong&gt; As AltLayer ultimately derives security from the underlying Layer 1, a user with a high security budget may decide to wait until the &lt;em&gt;FlashLayer&lt;/em&gt; is disposed of and when the dApp state gets rolled up to Layer 1. At this stage the security achieved is the same as that of the sovereign Layer 1.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C.高预算：&lt;/strong&gt; 由于 AltLayer 最终从底层layer1获得安全性，因此具有高安全预算的用户可能会决定等到 &lt;em&gt;FlashLayer&lt;/em&gt; 被销毁并且 dApp 状态汇总到layer1。在此阶段，安全性实现与主权layer1相同。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5. Highly elastic with extremely low latency:&lt;/strong&gt; AltLayer presents a dApp developer with its own Layer 2 that is highly elastic and comes with very low latency. This is essentially because it implements an architecture similar to optimistic rollup design as in Arbitrum.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;高弹性和极低延迟：&lt;/strong&gt; AltLayer 为 dApp 开发人员提供了自己的layer2，该层具有高弹性和极低延迟。这本质上是因为它实现了类似于 Arbitrum 中的乐观汇总设计的架构。&lt;/p&gt;
+&lt;h1 id=&#34;何时上线-wen-launch&#34;&gt;何时上线 (Wen Launch?)&lt;/h1&gt;
+&lt;p&gt;We have been building AltLayer since Q4 2021 and we are happy to announce that we have a fully functioning MVP and devnet ready. Those interested in understanding how AltLayer works, check out this &lt;a href=&#34;https://medium.com/altlayer/the-first-nft-mint-event-on-altlayer-has-concluded-cc0a1926268c&#34;&gt;blog post&lt;/a&gt; on our first NFT mint event on a disposable execution layer. Our next development milestone is to finalize an alpha Testnet with several big milestones to follow.&lt;/p&gt;
+&lt;p&gt;自 2021 年第四季度以来，我们一直在构建 AltLayer，我们很高兴地宣布，已经准备好功能齐全的 MVP 和 devnet。有兴趣了解 AltLayer 工作原理的人，请查看我们的&lt;a href=&#34;https://medium.com/altlayer/the-first-nft-mint-event-on-altlayer-has-concluded-cc0a1926268c&#34;&gt;博客文章&lt;/a&gt;，即在一次性执行层上的第一个 NFT铸币活动。我们的下一个发展里程碑是完成一个 alpha 测试网，其中包含的几个重要的里程碑(会在之后公布)。&lt;/p&gt;
+">介绍 AltLayer(第二部分)：支持定制应用汇总的弹性扩展层 Introducing AltLayer (Part II)：An Elastic Scaling Layer with Application-Tailored Rollups</a>
+      </div>
+      
+      <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/euler-lai-xin-qi-yue-zong-jie-2-euler-labs-newsletter-july-summary/"" data-c="
           &lt;h3 id=&#34;让我们一起回顾过去几周都发生了什么-lets-recap-what-has-happened-over-the-past-few-weeks&#34;&gt;让我们一起回顾过去几周都发生了什么! (Let&#39;s recap what has happened over the past few weeks!)&lt;/h3&gt;
 &lt;p&gt;If you read the last &lt;a href=&#34;https://newsletter.euler.finance/p/june2022-recap&#34;&gt;newsletter&lt;/a&gt;, you’ll know the Labs team has been quite busy over the last month, so here’s a summary of all the other major events in July!&lt;/p&gt;
@@ -3558,6 +3592,90 @@ STRT 代币债券。&lt;/p&gt;
 &lt;p&gt;Seraphim will attend ETH CC5 in Paris from July 19-21. Come say hi if you&#39;re going.&lt;/p&gt;
 &lt;p&gt;Seraphim 将于 7 月 19 日至 21 日参加在巴黎举行的 ETH CC5。如果你要去，来打个招呼吧。&lt;/p&gt;
 ">Euler来信-六月总结2(Euler Newsletter June Summary)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/jie-shao-altlayerdi-yi-bu-fen-zhi-chi-ding-zhi-ying-yong-hui-zong-de-dan-xing-kuo-zhan-ceng-introducing-altlayer-part-ian-elastic-scaling-layer-with-application-tailored-rollups/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*PYuE3lvsspP0ccXR&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;p&gt;GM! This is the first of a series of introductory blog posts on the why, how and what of AltLayer. In this first part of the series, we focus on the “why”. To be precise, we answer two key questions: “why do we need an AltLayer-like solution?” and “why now?”. In the follow ups, we will dig into the “what” and “how” of AltLayer that will present the technical details of the platform and its features.&lt;/p&gt;
+&lt;p&gt;GM！这是关于 AltLayer 的起因、方法和内容的一系列介绍性文章中的第一篇。在本系列的第1部分，我们关注“为什么”。准确地说，我们回答了两个关键问题：“为什么我们需要类似 AltLayer 的解决方案？”和“为什么是现在？”。在后续内容中，我们将深入探讨 AltLayer 的“内容”和“方法”，这将展示平台的技术细节和功能。&lt;/p&gt;
+&lt;p&gt;For those new to AltLayer, let us remind our readers that AltLayer is a platform designed to allow application developers to launch highly scalable and disposable optimistic rollup-ups like execution layers. It can be seen as a system of many individual optimistic rollups, where each rollup is tailored to a specific application.&lt;/p&gt;
+&lt;p&gt;对于那些刚接触 AltLayer 的人，让我们提醒读者，AltLayer 是一个旨在使应用开发人员启动高度可扩展和一次性乐观汇总(optimistic rollup-ups)的执行层的平台。它可以看作是一个包含许多单独乐观汇总的系统，其中每个汇总都是针对特定应用量身定制的。&lt;/p&gt;
+&lt;p&gt;The system is designed for a multi-chain and a multi-VM world and therefore will have default support for EVM as well as WASM. As a result, AltLayer will not be tied to a single Layer 1 or Layer 2 but can operate as a modular and pluggable scaling solution for all EVM and WASM compatible chains.&lt;/p&gt;
+&lt;p&gt;该系统专为多链和多虚拟机世界而设计，因此默认支持 EVM 和 WASM。所以，AltLayer 不会绑定到单个layer1或layer2，而是可以作为所有 EVM 和 WASM 兼容链的模块化和可插拔扩展解决方案来运行。&lt;/p&gt;
+&lt;p&gt;With that settled, let’s dig in!&lt;/p&gt;
+&lt;p&gt;明白了这些，那就让我们一起深入了解吧！&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*orZEP5roPB-lLRGw&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;为什么我们要构建新基础设施-why-build-a-new-infrastructure&#34;&gt;为什么我们要构建新基础设施? (Why build a new infrastructure?)&lt;/h2&gt;
+&lt;p&gt;Seven years post the launch of Ethereum and several other chains, it is quite apparent today that the vision of building a general purpose and universal Layer 1 that could host and execute transactions to all the dApps of the world is difficult if not impossible to achieve without substantially sacrificing decentralisation or security of the network.&lt;/p&gt;
+&lt;p&gt;在以太坊和其他几条链推出七年后，今天很明显，不极大地牺牲网络的去中心化或安全性，构建一个通用的Layer 1 可以托管和执行世界上所有 dApp 的交易的愿景是很难实现的。&lt;/p&gt;
+&lt;p&gt;In light of this, several Layer 2 designs (that derive security from a Layer 1 chain) have been proposed such as Optimism, Arbitrum, StarkNet and zkSync among others. Layer 2s, particularly, the design followed by Arbitrum, Optimism, and zkSync provide a new execution layer while the associated Layer 1 chain, i.e., Ethereum acts as a consensus layer. By separating execution and consensus (i.e., by following a modular design philosophy), Layer 2s can scale the Layer 1 chain by several orders of magnitude. But, as these Layer 2s are designed to be general purpose, they still suffer from similar issues as Layer 1s, i.e., the more used dApps have to compete for the same blockspace with a large number of not-so-used dApps.&lt;/p&gt;
+&lt;p&gt;鉴于此，已经提出了几种layer2设计(从layer1获得安全性)，例如 Optimism、Arbitrum、StarkNet 和 zkSync 等。Layer2，特别是 Arbitrum、Optimism 和 zkSync 遵循的设计提供了一个新的执行层，而相关的layer1，即以太坊充当共识层。通过分离执行和共识（即遵循模块化设计理念），Layer 2 可以将 Layer 1 链扩展几个数量级。但是，由于这些layer 2 被设计为通用目的，它们仍然面临与第 1 层类似的问题，即使用较多的 dApp 必须与大量不常用的 dApp 竞争相同的区块空间。&lt;/p&gt;
+&lt;p&gt;Monolithic Layer 2 designs such as Polygon PoS (and BSC which is a sidechain to Ethereum) have already faced &lt;a href=&#34;https://www.playtoearn.online/2022/01/10/sunflower-farmers-hits-the-polygon-network-where-it-hurts-gas-fees/&#34;&gt;congestion issues in the past&lt;/a&gt; because of the shared blockspace across all dApps. We argue that even modular and execution-only layers such as Arbitrum will have similar issues in the future as they have the same shared blockspace design as monolithic Layer 2s however the ceiling might be a bit higher up. We saw a glimpse of such issues with the recent Odyssey campaign.&lt;/p&gt;
+&lt;p&gt;单片Layer 2设计，例如 Polygon PoS（以及作为以太坊侧链的 BSC）已经面临[过去的拥堵问题](https://www.playtoearn.online/2022/01/10/sunflower-farmers-hits -the-polygon-network-where-it-hurts-gas-fees/)，因为所有 dApp 共享区块空间。我们认为，即使是像 Arbitrum 这样的模块化和单一执行层在未来也会遇到类似的问题，因为它们具有与单片layer2相同的共享区块空间设计，只不过是上限可能会更高一些。我们在最近的 Odyssey 活动中看到了这些问题。&lt;/p&gt;
+&lt;p&gt;The inherent limitation of general purpose Layer 1s and Layer 2s on hosting and executing all types of transactions has also paved the idea of having application-specific chains such as Cosmos and Polkadot or subnets in case of Avalanche, where a popular dApp does not need to compete with other dApps for blockspace on the same network. Each dApp owns its dedicated blockspace.&lt;/p&gt;
+&lt;p&gt;通用layer1和layer2，在托管和执行所有类型的交易方面的固有限制，也为以下想法铺平了道路：拥有特定应用链（如 Cosmos 和 Polkadot）或在 Avalanche 的情况下拥有子网。流行的 dApp 不需要与其他 dApp 竞争同一网络上的块空间。每个 dApp 都拥有其专用的区块空间。&lt;/p&gt;
+&lt;p&gt;An application-specific chain however becomes a wastage of resource (physical or economic) if the dApp does not command enough user base. For example, in case of Avalanche, a dApp chain takes the form of a subnet that requires staking of the sovereign chain token (i.e., AVAX) for economic security and therefore a dApp that can barely consume its blockspace will end up hogging a scarce economic resource that could instead be utilised to secure a more used subnet.&lt;/p&gt;
+&lt;p&gt;但是，如果 dApp 没有获得足够的用户群，则特定应用的链会浪费资源（物理或经济）。例如，在 Avalanche 的情况下，dApp 链采用子网的形式，需要抵押主权链代币（即 AVAX）来确保经济安全，因此几乎无法消耗其区块空间的 dApp 最终将占用稀缺的经济可以用来保护更多使用的子网的资源。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;On the one hand, in case of general purpose chains, more used dApps compete for blockspace with a large number of unused dApps. While on the other hand, each dApp having its own chain becomes a wastage of resources. Therefore, there is a need to design an architecture that offers the best of both worlds as existing approaches and solutions present two opposite extremes.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一方面，在通用链的情况下，频繁使用的 dApp 与大量未使用的 dApp 竞争区块空间。而另一方面，每个拥有自己链的 dApp 都会浪费资源。因此，由于现有方法和解决方案呈现出两个相反的极端，因此需要设计一种能够提供两全其美的架构。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;为什么是现在-why-now&#34;&gt;为什么是现在? (Why now?)&lt;/h2&gt;
+&lt;p&gt;At AltLayer, we firmly believe that it is hard if not impossible to build a general purpose world computer (the initial vision of Ethereum) that can host any and every dApp without substantially sacrificing decentralisation and/or security. Blockspace is a scarce resource and monolithic chain designs (e.g., existing Layer 1s) do not optimise the usage of blockspace, thereby allowing a single popular application to cripple the entire network.&lt;/p&gt;
+&lt;p&gt;在 AltLayer，我们坚信，即使并非毫无希望，也是极难构建一个通用的世界计算机（以太坊的最初愿景），即可以托管任意 dApp，且不会大幅牺牲去中心化和/或安全性。区块空间是一种稀缺资源，单片链设计（例如，现有的layer1）并没有优化区块空间的使用，使得单个流行的应用瘫痪整个网络。&lt;/p&gt;
+&lt;p&gt;While, we have seen the failures of monolithic universal chains, on a positive note, we have started to see:&lt;/p&gt;
+&lt;p&gt;虽然，我们已经看到了单片通用链的失败，但从积极的方面来说，我们已经开始看到：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The successful deployment and adoption of modular execution-only layers such as StarkNet, Arbitrum and Optimism among others that use rollups.&lt;br&gt;
+成功部署和采用模块化单一执行层，例如 StarkNet、Arbitrum 和 Optimism 以及其他使用汇总(roll-up)的层。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Application-specific chains are picking up in demand. Several Cosmos and Polkadot-based projects and others such as Ronin have proven that chains that serve a certain application need can thrive in isolation.&lt;br&gt;
+特定应用链的需求正在回升。几个基于 Cosmos 和 Polkadot 的项目以及 Ronin 等其他项目已经证明，服务于特定应用需求的链可以独立发展。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;All these phenomena and events combined have increased the demand to build customizable modular execution layers that are application-specific. In other words, the space now has the appetite and the need for a Cosmos/Polkadot style network of execution-only layers.&lt;/p&gt;
+&lt;p&gt;所有这些现象和事件相结合，增加了构建特定应用的，可定制模块化单一执行层的需求。换句话说，市场空间目前对 Cosmos/Polkadot 风格的单一执行层网络有胃口和需求。&lt;/p&gt;
+&lt;h2 id=&#34;一些现实世界的动机-some-real-world-motivation&#34;&gt;一些现实世界的动机 (Some Real-World Motivation)&lt;/h2&gt;
+&lt;p&gt;A dApp developer today would like to have access to SDKs that allow him to spin up a rollup secured by a Layer 1 of his choice and then potentially dispose of it if needed. Several recent events are great motivating examples of the need to build such an infrastructure. We highlight three such events across three popular chains, namely, Solana, Ethereum and Polygon PoS.&lt;/p&gt;
+&lt;p&gt;今天的 dApp 开发人员希望能够访问 SDK，使他能够启动由他选择的layer1提供安全性/保护的汇总，然后在需要时可能将其处理/丢弃掉。最近发生的几起事件是构建此类基础设施的重要激励。我们重点介绍了三个流行链中的三个此类事件，即 Solana、以太坊和 Polygon PoS。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solana Outage on May 2, 2022:&lt;/strong&gt; The Solana network was down on May 2, 2022 for 7 hours due to a large number of transactions created by NFT minting bots.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solana 于 2022 年 5 月 2 日中断：&lt;/strong&gt; 由于 NFT 铸造机器人创建的大量交易，Solana 网络于 2022 年 5 月 2 日中断了 7 个小时。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*8Y4lx83-Lg1dgkWb&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;One of the Solana validators even proposed to censor transactions destined to the Metaplex contract to mitigate the issue resulting in other NFT issuers requesting validators not to block their contracts.&lt;/p&gt;
+&lt;p&gt;一位 Solana 验证人甚至提议审查以 Metaplex 合约为目标的交易，以缓解导致其他 NFT 发行人要求验证人不要阻止其合约的问题。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*nOMKF6lnYdTeLYVF&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*9iK4U6Se2Eoz_-PM&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Yuga Labs Minting Issue on Ethereum on May 1, 2022:&lt;/strong&gt; Yuga Labs had planned to do an NFT sale event on May 1, 2022 on Ethereum. However, the demand for the NFTs was so high that despite implementing an on-chain KYC process and a maximum allowed minting of 2 NFTs per KYC’d wallet, the Ethereum network was not able to handle the sudden surge in demand. As a result, Yuga Labs is now planning to migrate the project on its own chain. This was recently put to vote and about 47% of users voted in favor of an APEChain.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Yuga Labs 于 2022 年 5 月 1 日在以太坊上发行铸币问题：&lt;/strong&gt; Yuga Labs 计划于 2022 年 5 月 1 日在以太坊上进行 NFT 销售活动。然而，对 NFT 的需求如此之高，以至于尽管实施了链上 KYC 流程并且每个 KYC 钱包最多允许铸造 2 个 NFT，但以太坊网络无法应对突然激增的需求。因此，Yuga Labs 现在正计划将项目迁移到自己的链上。最近对此进行了投票，大约 47% 的用户投票支持 APEChain。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*lY_5epu6ladVsec_&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;If we pause for a moment and analyse these two particular events, then one key and common characteristic shows up — that NFT minting is a short-lived event. An NFT mint event is often over in a few days (sometimes in hours or even minutes) and it’s only during those few days that the user activity is extremely high. As soon as the mint event is over, the user activity slows down quite quickly to a point where the generated volume from secondary trading or other activities can be easily handled by any monolithic chain.&lt;/p&gt;
+&lt;p&gt;如果我们暂停片刻并分析这两个特定事件，那么就会出现一个关键的共同点——NFT 铸币是一个短暂的事件。 NFT 铸币活动通常会在几天内结束（有时是几小时甚至几分钟），而且只有在这几天内，用户活动才会非常活跃。铸币事件一结束，用户活动就会很快减慢到任何单片链可以轻松处理的二级交易或其他活动产生的交易量。&lt;/p&gt;
+&lt;p&gt;With this common characteristic about NFT mint events in mind, it would be quite wasteful to build a dedicated custom monolithic chain that won’t see much activity as soon as the mint event is over. Moreover, by setting up a monolithic chain, the project would also get isolated from other NFT projects such as third-party marketplaces, lending products backed by NFTs, games, etc., thereby breaking composability.&lt;/p&gt;
+&lt;p&gt;考虑到 NFT 铸币事件的这一共同特征，构建一个专用的定制单片链，一旦铸币事件结束就不会看到太多活动，这是非常浪费的。此外，通过建立单片链，该项目还将与第三方市场、NFT 支持的借贷产品、游戏等其他 NFT 项目隔离，从而破坏可组合性。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;The ideal solution to address the above two scenarios would be some sort of a transient rollup that developers could spin up prior to the mint event, launch the mint event on the rollup (i.e., all NFT sale and minting happens on the rollup) and once minting is over, the assets get settled on the underlying Layer 1 and the rollup gets disposed of.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决上述两种情况的理想解决方案是某种临时汇总，开发人员可以在铸币事件之前启动，在汇总上启动铸币事件（即，所有 NFT 销售和铸币都发生在汇总上)，一旦铸币结束，资产将在底层layer1结算，并且汇总处理。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;These transient rollups do not have to be all short-lived as other applications such as gaming which require standalone execution layers need to be long-lived and in most-cases require a fully persistent dedicated infrastructure. We discuss the last application that concerns gaming which would greatly benefit from a dedicated application-specific rollup.&lt;/p&gt;
+&lt;p&gt;这些临时汇总不一定都是短暂的，因为其他应用程序（例如需要独立执行层的游戏）需要长期存在，并且在大多数情况下需要完全持久的专用基础架构。我们讨论了最后一个涉及游戏的应用，它将极大地受益于特定应用的汇总。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Polygon PoS Network Congestion in January, 2022:&lt;/strong&gt; A play-to-earn game &lt;a href=&#34;https://www.playtoearn.online/2022/01/10/sunflower-farmers-hits-the-polygon-network-where-it-hurts-gas-fees/&#34;&gt;Sunflower was contributing over 40% of gas fees&lt;/a&gt; on Polygon PoS in early January. Given its contribution to the network, it would benefit from its own dedicated rollup that would also alleviate the load on Polygon. We have already seen game-dedicated monolithic chains such as Ronin (for Axie Infinity) and more recently DFK chain on Avalanche (for DeFi Kingdom).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Polygon PoS 网络在 2022 年 1 月拥塞：&lt;/strong&gt; 一个赚钱游戏[向日葵贡献了超过 40% 的gas](https://www.playtoearn.online/2022/01/10/sunflower- 1 月初，在 Polygon PoS 上，farmer-hits-the-polygon-network-where-it-hurts-gas-fees/)。鉴于它对网络的贡献，它将受益于自己的专用汇总，这也将减轻 Polygon 的负载。我们已经看到了游戏专用的单体链，例如 Ronin（用于 Axie Infinity）和最近在 Avalanche 上的 DFK 链（用于 DeFi Kingdom）。&lt;/p&gt;
+&lt;p&gt;While a non-popular game could still survive on a legacy monolithic chain, we argue that popular games would be better off having a dedicated rollup for its sub-second latency. A dedicated modular rollup can be hooked to any chain and therefore will enjoy the benefits of modularity compared to a non-modular subnet-style monolithic application chain.&lt;/p&gt;
+&lt;p&gt;虽然不流行的游戏仍然可以在传统的单片链上生存，但我们认为流行的游戏最好为其亚秒级延迟提供专门的汇总。专用的模块化汇总可以连接到任何链，因此与非模块化的子网模式的单片应用链相比，还是会享受模块化的好处。&lt;/p&gt;
+&lt;h2 id=&#34;结论-conclusion&#34;&gt;结论 (Conclusion)&lt;/h2&gt;
+&lt;p&gt;The blockchain space is at an important juncture to witness the cross between Cosmos/Polkadot style application chains and rollups that come with modularity built-in. This blog post introduces the &lt;strong&gt;&lt;em&gt;raison&lt;/em&gt;&lt;/strong&gt; &lt;strong&gt;&lt;em&gt;d’être&lt;/em&gt;&lt;/strong&gt; of AltLayer — a unique solution that builds an application-tailored scaling and execution layer similar to optimistic rollups for any EVM and WASM chain.&lt;/p&gt;
+&lt;p&gt;区块链空间正处于见证 Cosmos/Polkadot 风格的应用链和内置模块化的汇总之间的重要时刻。这篇博文介绍了 AltLayer 的 &lt;strong&gt;&lt;em&gt;原由&lt;/em&gt;&lt;/strong&gt;——一种独特的解决方案，它为任何 EVM 和 WASM 链构建类似于乐观汇总的定制应用扩展和单一执行层。&lt;/p&gt;
+&lt;p&gt;Stay tuned for the next posts of the series that will present the different features of AltLayer and how it works under the hood.&lt;/p&gt;
+&lt;p&gt;请继续关注该系列的下一篇文章，这些文章将介绍 AltLayer 的不同功能以及它在后台的工作原理。&lt;/p&gt;
+&lt;p&gt;Bye till then and become a part of our growing community!&lt;/p&gt;
+&lt;p&gt;再见，也欢迎成为我们不断发展的社区的一员！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/alt_layer&#34;&gt;Twitter&lt;/a&gt; : &lt;a href=&#34;https://twitter.com/alt_layer&#34;&gt;https://twitter.com/alt_layer&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://discord.gg/altlayer&#34;&gt;Discord&lt;/a&gt; : &lt;a href=&#34;http://discord.gg/altlayer&#34;&gt;https://discord.gg/altlayer&lt;/a&gt;&lt;/p&gt;
+">介绍 AltLayer(第一部分)：支持定制应用汇总的弹性扩展层 Introducing AltLayer (Part I)：An Elastic Scaling Layer with Application-Tailored Rollups</a>
       </div>
       
       <div class="item">
