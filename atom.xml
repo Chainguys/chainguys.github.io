@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-09-21T05:47:53.341Z</updated>
+    <updated>2022-09-21T15:21:39.113Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -21,6 +21,22 @@
 <h2 id="通用目的-vs-特定应用的l1sei处于中间-general-purpose-vs-app-specific-l1ssei-is-in-the-middle"><a href="https://chainguys.github.io/post/tong-yong-mu-de-vs-te-ding-ying-yong-de-l1sei-chu-yu-zhong-jian-general-purpose-vs-app-specific-l1ssei-is-in-the-middle/">通用目的 vs 特定应用的L1：Sei处于中间 (General Purpose vs App Specific L1s：Sei is in the middle)</a></h2>
 <h2 id="sei-获得500万美元融资由-multicoin-capital-牵头来构建针对-def-优化的layer1-sei-raises-5m-led-by-multicoin-capital-to-build-the-first-layer-1-blockchain-optimized-for-defi"><a href="https://chainguys.github.io/post/sei-huo-de-500-wan-mei-yuan-rong-zi-you-multicoin-capital-qian-tou-lai-gou-jian-zhen-dui-def-you-hua-de-layer1-sei-raises-dollar5m-led-by-multicoin-capital-to-build-the-first-layer-1-blockchain-optimized-for-defi/">Sei 获得500万美元融资，由 Multicoin Capital 牵头，来构建针对 DeF 优化的layer1 (Sei Raises $5M Led by Multicoin Capital to Build The First Layer 1 Blockchain Optimized for DeFi)</a></h2>
 <h2 id="sei-与-axelar-network-合作为-cosmos-上的-defi-启用跨链消息传递-sei-has-partnered-with-axelar-network-to-enable-cross-chain-messaging-for-defi-on-cosmos"><a href="https://chainguys.github.io/post/sei-yu-axelar-network-he-zuo-wei-cosmos-shang-de-defi-qi-yong-kua-lian-xiao-xi-chuan-di-sei-has-partnered-with-axelar-network-to-enable-cross-chain-messaging-for-defi-on-cosmos">Sei 与 Axelar Network 合作，为 Cosmos 上的 DeFi 启用跨链消息传递 (Sei has partnered with Axelar Network to enable cross-chain messaging for DeFi on Cosmos)</a></h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fuel中文材料合集-不断更新中(Fuel Chinese Materials-Updating)]]></title>
+        <id>https://chainguys.github.io/post/fuel-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-fuel-chinese-materials-updating/</id>
+        <link href="https://chainguys.github.io/post/fuel-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-fuel-chinese-materials-updating/">
+        </link>
+        <updated>2022-09-18T14:01:56.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/09/Fuel_Trailer_Still_10.jpeg" alt="" loading="lazy"></figure>
+<h1 id="blogs">Blogs</h1>
+<h2 id="自2022年夏天以来的项目进展-feul内幕project-update-since-summer-2022-inside-fuel"><a href="https://chainguys.github.io/post/fuel-nei-mu-2022-nian-xia-tian-inside-fuel-summer-2022/">自2022年夏天以来的项目进展-Feul内幕(Project update since Summer 2022-Inside Fuel)</a></h2>
+<h2 id="介绍beta-1第一个面向开发人员的模块化执行层fuel测试网-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet"><a href="https://chainguys.github.io/post/jie-shao-beta-1di-yi-ge-mian-xiang-kai-fa-ren-yuan-de-mo-kuai-hua-zhi-xing-ceng-fuel-ce-shi-wang-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet">介绍“Beta-1”，第一个面向开发人员的模块化执行层Fuel测试网 (Introducing &quot;Beta-1&quot;, the First Modular Execution Layer Developer-facing Fuel Testnet )</a></h2>
+<h1 id="2项目简介和关键文章project-introduction-and-key-articals">2.项目简介和关键文章(Project Introduction and key articals)</h1>
+<p>coming soon</p>
+<h1 id="3其他官方博客翻译-other-official-blogs-translated-into-chinese">3.其他官方博客翻译 (Other Official Blogs Translated into Chinese)</h1>
+<p>coming soon</p>
 ]]></content>
     </entry>
     <entry>
@@ -673,6 +689,77 @@ Produce Block API 现在可用于 SDK 测试；</p>
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[介绍“Beta-1”，第一个面向开发人员的模块化执行层Fuel测试网 (Introducing "Beta-1", the First Modular Execution Layer Developer-facing Fuel Testnet )]]></title>
+        <id>https://chainguys.github.io/post/jie-shao-beta-1di-yi-ge-mian-xiang-kai-fa-ren-yuan-de-mo-kuai-hua-zhi-xing-ceng-fuel-ce-shi-wang-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet/</id>
+        <link href="https://chainguys.github.io/post/jie-shao-beta-1di-yi-ge-mian-xiang-kai-fa-ren-yuan-de-mo-kuai-hua-zhi-xing-ceng-fuel-ce-shi-wang-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet/">
+        </link>
+        <updated>2022-09-05T15:15:53.000Z</updated>
+        <content type="html"><![CDATA[<p>Today, we are excited to announce the launch of the new Fuel beta-1 testnet! This marks a new milestone in our road towards Fuel mainnet—a modular execution layer that will provide never-before-seen scalability to Ethereum with parallel transaction execution.</p>
+<p>今天，我们很高兴地宣布推出新的 Fuel beta-1 测试网！这标志着我们在通往 Fuel 主网道路上的一个新里程碑——一个将通过并行交易执行为以太坊提供前所未有的可扩展性的模块化的执行层。</p>
+<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/09/Fuel_Trailer_Still_5-3.png" alt="Introducing &quot;Beta-1&quot;, the First Modular Execution Layer Developer-facing Fuel Testnet" loading="lazy"></figure>
+<hr>
+<p>Today, we are excited to announce the launch of the new Fuel <strong><code>beta-1</code></strong> testnet!</p>
+<p>今天，我们很高兴地宣布推出新的 Fuel <strong><code>beta-1</code></strong> 测试网！</p>
+<p>This marks a new milestone in our road towards Fuel mainnet—a modular execution layer (MEL) that will provide never-before-seen scalability to Ethereum with parallel transaction execution. The result will be a blockchain with maximum security and the highest flexible throughput for the Ethereum ecosystem.</p>
+<p>这标志着我们在通往 Fuel 主网道路上的一个新里程碑——一个将通过并行交易执行为以太坊提供前所未有的可扩展性的模块化执行层 (MEL)。带来的结果将是以太坊生态系统具有最高安全性和最高灵活吞吐量的区块链。</p>
+<blockquote>
+<p><em>Please note that <strong><code>beta-1</code></strong> is not an incentivized testnet. There will be no direct rewards for participation in this network.</em></p>
+<p><em>请注意，<strong><code>beta-1</code></strong> 不是激励测试网。参与此网络不会有直接奖励。</em></p>
+</blockquote>
+<h2 id="测试网-the-testnet">测试网 (The Testnet)</h2>
+<p>While local-development Fuel networks have been available for months, the <strong>beta-1</strong> network is the first public Fuel testnet, shared by all developers and users that interact with it. Developers may deploy contracts to it at will—no permission or whitelisting required—and users may interact with deployed contracts as well.</p>
+<p>虽然本地开发的 Fuel 网络已经推出了几个月，但<strong>beta-1</strong> 网络是第一个公共 Fuel 测试网，由交互的所有开发人员和用户共享。开发人员可以随意向其部署合约——无需许可或白名单——用户也可以与已部署的合约进行交互。</p>
+<h3 id="网络功能-network-features">网络功能 (Network Features)</h3>
+<p>Below is a list of key features for the <strong><code>beta-1</code></strong> testnet:</p>
+<p>以下是 <strong><code>beta-1</code></strong> 测试网的主要功能列表：</p>
+<p><strong>🤝 Single shared network.</strong> This is a shared, public developer- and user-facing testnet. Developers can deploy contracts and users can then interact with those contracts.</p>
+<p><strong>🤝 单一共享网络</strong> 这是一个共享的、公共面向开发人员和用户的测试网。开发人员可以部署合约，然后用户可以与这些合约进行交互。</p>
+<p><strong>🚰 Faucet.</strong> Anyone can use the faucet to get some test ETH to deploy contracts with or to interact with contracts. Available here: <a href="https://faucet-beta-1.fuel.network/">https://faucet-beta-1.fuel.network</a>.</p>
+<p><strong>🚰 水龙头</strong> 任何人都可以使用水龙头来获得一些测试 ETH 来部署合约或与合约交互。可在此处获取：<a href="https://faucet-beta-1.fuel.network/">https://faucet-beta-1.fuel.network</a>。</p>
+<p><strong>📃 GraphQL endpoint.</strong> The Fuel Core node uses GraphQL instead of JSON RPC. A playground for the public GraphQL endpoint for <strong>beta-1</strong> is available at <a href="https://node-beta-1.fuel.network/playground">https://node-beta-1.fuel.network/playground</a>.</p>
+<p><strong>📃 GraphQL 端点</strong> Fuel 核心节点使用 GraphQL 而不是 JSON RPC。 <strong>beta-1</strong> 的公共 GraphQL 端点的测试地址已经可用 <a href="https://node-beta-1.fuel.network/playground">https://node-beta-1.fuel.network/playground</a></p>
+<p><strong>✔️ No whitelists.</strong> Developers can deploy contracts to the testnet, permissionlessly. Users can interact with contracts, permissionlessly.</p>
+<p><strong>✔️ 没有白名单</strong> 开发人员可以在未经许可的情况下将合约部署到测试网。用户无需许可即可与合约交互。</p>
+<p>🔍 <strong>Block explorer.</strong> A block explorer (still heavily a work-in-progress) is available at <a href="https://fuellabs.github.io/block-explorer-v2/">https://fuellabs.github.io/block-explorer-v2</a>.</p>
+<p>🔍 <strong>区块浏览器</strong> <a href="https://fuellabs.github.io/block-explorer-v2/">https://fuellabs.github.io/block-explorer-v2</a>。</p>
+<p>If you have any questions (development-related or otherwise), you can join the <a href="https://discord.gg/xfpK4Pe">Fuel Labs Discord</a> and head to the <code>**🧪︱testnet-beta-1**</code> channel. Be sure to follow our <a href="https://twitter.com/fuellabs_">Twitter</a> for updates. Fuel Labs will host a community call soon to discuss the latest details around <strong><code>beta-1</code></strong>. So stay tuned for that.</p>
+<p>如果您有任何问题（开发相关或其他），您可以加入 <a href="https://discord.gg/xfpK4Pe">Fuel Labs Discord</a> 并前往 <code>**🧪︱testnet-beta-1**</code>渠道。请务必关注我们的 <a href="https://twitter.com/fuellabs_">Twitter</a> 以获取更新。 Fuel Labs 将很快召开社区电话会议，讨论有关 <strong><code>beta-1</code></strong> 的最新细节。所以请继续关注。</p>
+<h2 id="对开发者-for-developers">对开发者 (For Developers)</h2>
+<p>A few months ago, we launched the <a href="https://fuel-labs.ghost.io/introducing-swayswap/">SwaySwap demo</a> along with an internal testnet that users could interact with, but for which contracts could not be deployed.</p>
+<p>几个月前，我们推出了 <a href="https://fuel-labs.ghost.io/introducing-swaywap/">SwaySwap 演示</a> 以及用户可以交互的内部测试网，但无法为其部署合约。</p>
+<p>Contract deployment to the <strong><code>beta-1</code></strong> testnet does not require any whitelisting. A valid transaction is required however, which requires coins. Testnet ETH can be obtained from the faucet: <a href="https://faucet-beta-1.fuel.network/">https://faucet-beta-1.fuel.network</a> by completing a captcha.</p>
+<p><strong><code>beta-1</code></strong> 测试网的合约部署不需要任何白名单。但是，需要有效的交易，这需要硬币。测试网 ETH 可以通过完成验证码，从水龙头获得：<a href="https://faucet-beta-1.fuel.network/">https://faucet-beta-1.fuel.network</a>。</p>
+<p>A persistent CLI wallet is available here: <a href="https://github.com/FuelLabs/forc-wallet">https://github.com/FuelLabs/forc-wallet</a>. Note that currently it requires building from source. A web/browser plugin wallet is under active development, with contributions welcome: <a href="https://github.com/FuelLabs/fuels-wallet">https://github.com/FuelLabs/fuels-wallet</a>.</p>
+<p>可在此处获得持久性 CLI 钱包：<a href="https://github.com/FuelLabs/forc-wallet">https://github.com/FuelLabs/forc-wallet</a>。请注意，目前它需要从源代码构建。 Web/浏览器插件钱包正在积极开发中，欢迎贡献：<a href="https://github.com/FuelLabs/fuels-wallet">https://github.com/FuelLabs/fuels-wallet</a>。</p>
+<p>For an overview of Fuel, take a look at The Fuel documentation: <a href="https://fuellabs.github.io/fuel-docs/master/index.html">https://fuellabs.github.io/fuel-docs/master/index.html</a></p>
+<p>有关 Fuel 的概述，请查看 Fuel 文档：<a href="https://fuellabs.github.io/fuel-docs/%E4%B8%BB/index.html">https://fuellabs.github.io/fuel-docs/master/index.html</a></p>
+<p>To begin building on Fuel, check out the Developer Quickstart. This guide walks developers through building a dapp, end-to-end: <a href="https://fuellabs.github.io/fuel-docs/master/developer-quickstart.html">https://fuellabs.github.io/fuel-docs/master/developer-quickstart.html</a><br>
+要开始在 Fuel 上构建，请查看开发人员快速入门。本指南引导开发人员构建端到端的 dapp：[https://fuellabs.github.io/fuel-docs/master/developer-quickstart.html](https://fuellabs.github.io/fuel -docs/master/developer-quickstart.html)</p>
+<p>To begin developing a contract for Fuel, take a look at The Sway Book: <a href="https://fuellabs.github.io/sway/latest/">https://fuellabs.github.io/sway/latest/</a>, along with the Rust SDK (<a href="https://github.com/FuelLabs/fuels-rs">https://github.com/FuelLabs/fuels-rs</a>) and TypeScript SDK (<a href="https://github.com/FuelLabs/fuels-ts">https://github.com/FuelLabs/fuels-ts</a>).</p>
+<p>要开始为 Fuel 制定合约，请查看 The Sway Book：<a href="https://fuellabs.github.io/sway/latest/">https://fuellabs.github.io/sway/latest/</a>，以及使用 Rust SDK (<a href="https://github.com/FuelLabs/fuels-rs">https://github.com/FuelLabs/fuels-rs</a>) 和 TypeScript SDK (<a href="https://github.com/FuelLabs/fuels-ts">https://github.com/FuelLabs) /fuels-ts</a>)。</p>
+<p>If you're interested in going even further, we're supporting early-stage projects with our grants program, available here: <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">https://1v1l4ftv9zy.typeform.com/fuelgrants</a>.</p>
+<p>如果您有兴趣走得更远，我们将通过我们的赠款计划支持早期项目，可在此处获得：<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">https://1v1l4ftv9zy.typeform.com/fuelgrants</a>。</p>
+<blockquote>
+<p><em>Note that the <strong><code>beta-1</code></strong> testnet is under active development and may see breaking upgrades and even regenesis events (hence <strong><code>beta-1</code></strong> and not beta!) in the coming weeks.</em></p>
+<p><em>请注意，<strong><code>beta-1</code></strong> 测试网正在积极开发中，未来几周可能会出现重大升级甚至重生事件（因此 <strong><code>beta-1</code></strong> 而不是 beta！）。</em></p>
+</blockquote>
+<h2 id="对社区成员-for-community-members">对社区成员 (For Community Members)</h2>
+<p>Community members can participate in <strong><code>beta-1</code></strong> by testing applications. Since this is the launch of a new network, there will be no applications to start, but keep your eyes and ears open to the Fuel Labs <a href="https://twitter.com/fuellabs_">Twitter</a> for announcements of applications test launches. A list of applications in development is maintained here: <a href="https://github.com/FuelLabs/awesome-fuel#projects-building-on-fuel">https://github.com/FuelLabs/awesome-fuel#projects-building-on-fuel</a>. Please contribute any missing applications to the list!</p>
+<p>社区成员可以通过测试应用参与 <strong><code>beta-1</code></strong>。由于这是一个新网络的发布，因此不会启动任何应用，但请留意 Fuel Labs <a href="https://twitter.com/fuellabs_">Twitter</a> 以了解应用测试启动的公告。此处维护了开发中的应用程序列表：<a href="https://github.com/FuelLabs/awesome-fuel#projects-building-on-fuel">https://github.com/FuelLabs/awesome-fuel#projects-building-on-fuel</a>。请向列表中添加任何缺失的应用！</p>
+<p>As mentioned above, <strong><code>beta-1</code></strong> is not an incentivized testnet; there will be no direct incentives for participation in this network.</p>
+<p>如上所述，<strong><code>beta-1</code></strong> 不是激励测试网；参与该网络不会有直接的激励措施。</p>
+<h2 id="超越单片链-beyond-monolithic">超越单片链 (Beyond Monolithic)</h2>
+<p>Right now, there is an ongoing and significant shift happening in layer-1 (L1) blockchain architecture. The industry is fast moving away from monolithic blockchain designs and towards modular ones.</p>
+<p>目前，layer-1（L1）区块链架构正在发生重大转变。该行业正在迅速从单片区块链设计转向模块化设计。</p>
+<p>Fuel demonstrates that developing new monolithic L1s in 2022 is short-sighted and that building high-performance execution layers on top of modular blockchains can produce extremely high throughput while retaining incredible Ethereum-grade security guarantees. Innovation does not require launching a new L1, but can rather happen at the execution layer.</p>
+<p>Fuel 表明，在 2022 年开发新的单片 L1 是短视的，在模块化区块链之上构建高性能执行层可以产生极高的吞吐量，同时保留令人难以置信的以太坊级安全保证。创新不需要启动新的 L1，而是可以发生在执行层。</p>
+<p>Fuel features fraud-provable trust-minimized light clients that deliver better security and decentralization guarantees in addition to trust-minimized liquidity bridging, which is not possible between two L1s.</p>
+<p>Fuel 具有可证明欺诈的信任最小化轻客户端，除了信任最小化的流动性跨链之外，还提供更好的安全性和去中心化保证，这在两个 L1 之间是不可能的。</p>
+<p>With Fuel, we can now go <strong>#BeyondMonolithic</strong>.</p>
+<p>有了 Fuel，我们现在可以去<strong>超越单片链</strong>。</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Sei 获得500万美元融资，由 Multicoin Capital 牵头，来构建针对 DeFi 优化的layer1 (Sei Raises $5M Led by Multicoin Capital to Build The First Layer 1 Blockchain Optimized for DeFi)]]></title>
         <id>https://chainguys.github.io/post/sei-huo-de-500-wan-mei-yuan-rong-zi-you-multicoin-capital-qian-tou-lai-gou-jian-zhen-dui-def-you-hua-de-layer1-sei-raises-dollar5m-led-by-multicoin-capital-to-build-the-first-layer-1-blockchain-optimized-for-defi/</id>
         <link href="https://chainguys.github.io/post/sei-huo-de-500-wan-mei-yuan-rong-zi-you-multicoin-capital-qian-tou-lai-gou-jian-zhen-dui-def-you-hua-de-layer1-sei-raises-dollar5m-led-by-multicoin-capital-to-build-the-first-layer-1-blockchain-optimized-for-defi/">
@@ -706,101 +793,6 @@ Produce Block API 现在可用于 SDK 测试；</p>
 <p><strong>关于Multicoin Capital (About Multicoin Capital)</strong></p>
 <p>Multicoin Capital is a thesis-driven investment firm that invests in cryptocurrencies, tokens, and blockchain companies. Crypto networks and companies will create trillions of dollars of value over the next decade. But investing in tokens is fundamentally different than investing in companies. New tools, heuristics, and security measures are needed to responsibly invest in this ecosystem. We leverage our deep understanding of blockchain technology and crypto markets to deliver exceptional returns. For more information, visit: <a href="https://multicoin.capital/">https://multicoin.capital/.</a></p>
 <p>Multicoin Capital 是一家以论文为导向的投资公司，投资于加密货币、代币和区块链公司。加密网络和公司将在未来十年创造数万亿美元的价值。但投资代币与投资公司有着根本的不同。负责任地投资这个生态系统需要新的工具、启发式方法和安全措施。我们利用我们对区块链技术和加密市场的深刻理解来提供卓越的回报。如需更多信息，请访问：<a href="https://multicoin.capital/">https://multicoin.capital/</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[欢迎来到Xterio (Welcome To Xterio)]]></title>
-        <id>https://chainguys.github.io/post/huan-ying-lai-dao-xterio-welcome-to-xterio/</id>
-        <link href="https://chainguys.github.io/post/huan-ying-lai-dao-xterio-welcome-to-xterio/">
-        </link>
-        <updated>2022-08-30T04:35:58.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*QtD1Qq88xJVFxnbJ-8PLBw.jpeg" alt="" loading="lazy"></figure>
-<hr>
-<p>First of all, thank you so much for visiting our website. It means a lot to all of us at Xterio. It’s a wonderful feeling to announce Xterio after having spent months working in stealth mode on what I believe to be one of the boldest gaming bets in web3.</p>
-<p>首先，非常感谢您访问我们的网站。这对 Xterio 的所有人来说意义重大。我坚信这是 web3 中最大胆的游戏赌注之一，所以当我花了几个月的时间在隐形模式下工作之后，再宣布 Xterio(项目)，这是一种美妙的感觉。</p>
-<p>I’d like to share my thoughts on why we chose to form a new gaming developer and publisher, but first, as the press announced today, we have raised $40M from an incredible set of lead investors, led by FunPlus, Makers Fund, FTX Ventures, and XPLA, with notable participation from HashKey, Foresight Ventures, Infinity Ventures Crypto, Matrix Partners, and Animoca Brands.<br>
-We are especially grateful to FunPlus for trusting us to be their exclusive partner in web3.</p>
-<p>我想分享一下为什么选择组建一家新的游戏开发和发行商的想法，但首先，正如媒体今天宣布的那样，我们从一群令人难以置信的领军投资者那里筹集了 4000 万美元，由 FunPlus、Makers Fund 领投， FTX Ventures 和 XPLA，以及HashKey、Foresight Ventures、Infinity Ventures Crypto、Matrix Partners 和 Animoca Brands 的参与。<br>
-我们特别感谢 FunPlus 信任我们并成为他们在 web3 上的独家合作伙伴。</p>
-<p>This trust and success mark the first step in building the premier developer and publisher of cross-platform games powered by digital ownership.</p>
-<p>这种信任和成功，标志着建立由数字所有权驱动的跨平台游戏的第一开发商和发行商迈出了第一步。</p>
-<p>There is so much to do to hit our end goal: to create worlds and experiences that you will love.</p>
-<p>要实现我们的最终目标，还有很多工作要做：创造您会喜欢的世界和体验。</p>
-<p><strong>Xterio是什么? (What is Xterio?)</strong></p>
-<p>Xterio is a game developer and publisher with a global team footprint. Xterio’s cross-platform portfolio will focus on multiplayer games with deep, rich gaming experiences across multiple genres enhanced by player ownership. We aim to develop web3 native universes that will be expanded across all media and platforms.</p>
-<p>Xterio 是一家拥有全球团队足迹的游戏开发商和发行商。 Xterio 的跨平台产品组合将专注于多人游戏，通过玩家增强所有权，提供横跨多个类型、深度、丰富的游戏体验。我们的目标是开发将在所有媒体和平台上扩展的 web3 原生宇宙(native universes)。</p>
-<p>We are a group of proven game veterans from FunPlus, Electronic Arts, Zynga, Activision Blizzard, Krafton, Jam City, NetEase, and other top studios. We want to give legitimacy and trust to the nascent web3 gaming and bring the 3 billion gamers amazing worlds &amp; gameplay by leveraging our decades of AAA &amp; F2P learnings.</p>
-<p>我们是一群来自 FunPlus、Electronic Arts、Zynga、Activision Blizzard、Krafton、Jam City、网易等顶级工作室的资深游戏老手。我们希望通过利用我们数十年的 AAA 和 F2P 学习经验，为新生的 web3 游戏赋予合法性和信任，并为 30 亿游戏玩家带来令人惊叹的世界和游戏玩法。</p>
-<p>Stay tuned to our website &amp; socials for some really exciting announcements over the next several months!</p>
-<p>请继续关注我们的网站和社交网站，了解未来几个月的一些非常激动人心的公告！</p>
-<p><strong>为什么是Xterio (Why Xterio?)</strong></p>
-<p>Fun first: We are lifelong game makers and want to make kick-ass games with incredible graphics and gameplay. Blockchain is a tool in our toolkit to provide a great experience and not the end goal. What good is an on-chain asset if the game is boring? In the upcoming months, we will announce the games that, we hope, will impress you.</p>
-<p>乐趣为首：我们是终生的游戏制作者，希望制作具有难以置信的画面和玩法的精彩游戏。区块链是我们工具包中的一个工具，目的是提供出色的体验，而不是最终目标。如果游戏很无聊，链上资产有什么用？在接下来的几个月里，我们将公布我们希望能给您留下深刻印象的游戏。</p>
-<p>The importance of ownership: As a consumer, I have always been bothered by purchasing games on digital platforms as I had no right to resell them. In the physical world, I can buy a physical copy of the same game and resell it after use or buy a pack of collectible cards to obtain a rare one to keep, trade, or sell. Why can’t this be the case when it comes to digital goods? It makes no sense… At Xterio, we believe that the assets you win in the game or purchase should be yours to keep and own.</p>
-<p>所有权的重要性：作为消费者，我一直为在数字平台上购买游戏而烦恼，因为我无权转售它们。在现实世界中，我可以购买同款游戏的实体副本并在使用后转售，或者购买一包收藏卡来获得稀有卡，又或是保留、交易或出售。为什么在数字商品方面不能这样呢？这毫无意义……在 Xterio，我们相信您在游戏中赢得或购买的资产应该归您所有。</p>
-<p>We are community-driven: We want to build our games, IPs, and platform with you. Your direct participation will define the games we work on, the art styles, the partnerships we secure, the online and offline events we organize, the economic model that benefits the whole community, and much more… We want to be fully transparent about Xterio’s ongoing development (by the way: please join our Discord!).</p>
-<p>社区驱动：我们希望与您一起构建我们的游戏、IP 和平台。您的直接参与将定义我们开发的游戏、艺术风格、我们确保的合作关系、我们组织的线上和线下活动、造福整个社区的经济模式等等……我们希望对 Xterio 的持续进行完全透明开发（顺便说一句：请加入我们的 Discord！）。</p>
-<p>We are global and believe in a better tomorrow: We are a global team with people working together across borders, cultures, and backgrounds. This gives us a unique approach to reaching people worldwide by engaging with them directly. Making games together is our way of proving that regardless of our differences, nothing brings people closer than playing and building together. That’s the spirit of web3 for us.</p>
-<p>我们是全球化的，相信更美好的明天：我们是一个全球性的团队，人们跨越国界、文化和背景一起工作。这为我们提供了一种独特的方法，通过直接与世界各地的人们接触来接触他们。一起制作游戏是我们证明无论我们之间存在差异的方式，没有什么比一起玩和一起建造更能拉近人们的距离。这就是我们 web3 的精神。</p>
-<p><strong>我们向您承诺什么? (What do we promise you?)</strong></p>
-<p>Your trust is all we have: This is not just words on the walls. Xterio is not a “get rich” quick scheme, it’s a means to achieve our childhood dreams of building games that millions of people worldwide will love. We are excited to be among the first game makers to build enticing game worlds: Everything we do is to deliver fun and value to you. We hope to prove it to you soon and keep your trust for years to come.</p>
-<p>您的信任就是我们所拥有的：这不仅仅是墙上的文字。 Xterio 不是一个“致富”的快速计划，它是实现我们童年梦想的一种方式，即构建全世界数百万人喜爱的游戏。我们很高兴能成为第一批构建引人入胜的游戏世界的游戏制造商之一：我们所做的一切都是为了给您带来乐趣和价值。我们希望尽快向您证明这一点，并在未来几年保持您的信任。</p>
-<p>Games for everyone: We are building free-to-play games enhanced by blockchain technology. We offer experiences that everyone can enjoy without buying expensive NFTs. Also, we are building a platform that will, shortly, allow everyone to trade NFTs without going through the current friction points of today’s crypto and seamlessly onboard partner developers into the web3 ecosystem.</p>
-<p>适合所有人的游戏：我们正在构建由区块链技术增强的免费游戏。我们提供每个人都可以享受的体验，而无需购买昂贵的 NFT。此外，我们正在构建一个平台，该平台很快将允许每个人交易 NFT，而无需经历当今加密货币的当前摩擦点，并将合作开发人员无缝地加入 web3 生态系统。</p>
-<p>Bringing you fun and value: We want to build a healthy ecosystem that focuses on creating real value. Our NFTs will be interoperable and provide real value. I wish I could tell you about our upcoming announcements and products, but we want to save some secrets for later, too!</p>
-<p>为您带来乐趣和价值：我们希望建立一个专注于创造真正价值的健康生态系统。我们的 NFT 将是可交互的并提供真正的价值。我希望能告诉你即将发布的公告和产品，但我们也想为以后保存一些秘密！</p>
-<p>Once again, thank you so much for your interest. Please join the Xterio adventure to see what’s next by joining our Discord community and following our Twitter! We can’t wait to show you what we have been building in stealth mode for months!</p>
-<p>再次感谢您的关注。请加入我们的 <a href="https://discord.gg/9mXjYbRBZ5">Discord 社区</a>并关注我们的 <a href="https://twitter.com/XterioGames">Twitter</a>，加入 Xterio 冒险，看看接下来会发生什么！我们迫不及待地向您展示我们几个月来一直在隐身模式下构建的内容！</p>
-<p>Jeremy Horn,<br>
-Co-Founder &amp; COO</p>
-<p>Jeremy Horn,<br>
-联合创始人兼首席运营官</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sei 与 Axelar Network 合作，为 Cosmos 上的 DeFi 启用跨链消息传递 (Sei has partnered with Axelar Network to enable cross-chain messaging for DeFi on Cosmos)]]></title>
-        <id>https://chainguys.github.io/post/sei-yu-axelar-network-he-zuo-wei-cosmos-shang-de-defi-qi-yong-kua-lian-xiao-xi-chuan-di-sei-has-partnered-with-axelar-network-to-enable-cross-chain-messaging-for-defi-on-cosmos/</id>
-        <link href="https://chainguys.github.io/post/sei-yu-axelar-network-he-zuo-wei-cosmos-shang-de-defi-qi-yong-kua-lian-xiao-xi-chuan-di-sei-has-partnered-with-axelar-network-to-enable-cross-chain-messaging-for-defi-on-cosmos/">
-        </link>
-        <updated>2022-08-25T08:15:04.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://blog.seinetwork.io/content/images/size/w2000/2022/08/Untitled.png" alt="" loading="lazy"></figure>
-<hr>
-<p>Sei, the fastest Layer 1 optimized for DeFi, is partnering with Axelar to enable cross-chain messaging between DeFi on Cosmos and EVM chains. Axelar is the premier cross-chain infrastructure provider, and this partnership will open up novel possibilities for bridging, messaging, and execution across chains, programming languages, and virtual machines.</p>
-<p>Sei 是针对 DeFi 优化的最快layer1，它正在与 Axelar 合作，进而实现 Cosmos 上 DeFi 和 EVM 链之间跨链消息传递。 Axelar 是首屈一指的跨链基础设施提供商，此次合作将为各主链，各编程语言和各虚拟机之间的的跨链、消息传递和执行开辟新的可能性。</p>
-<p>One of the core bottlenecks for DeFi scalability is liquidity fragmentation across multiple ecosystems. Billions of dollars worth of crypto assets are locked, wrapped, minted, and burned each day, forcing every chain to compete for TVL in a zero-sum game. Inevitably, the success of DeFi protocols and their underlying chains are highly correlated.</p>
-<p>DeFi 可扩展性的核心瓶颈之，就是存在于多个生态系统的流动性碎片。每天都有价值数十亿美元的加密资产被锁定、封装、铸造和烧毁，迫使每条链在零和游戏中争夺 TVL。不可避免地，DeFi 协议的成功与其底层链是高度相关的。</p>
-<p>This partnership seeks to solve the issue of liquidity fragmentation by enabling interoperability and shared liquidity across IBC and EVM chains. At a high level, Sei expects to observe the following effects:</p>
-<p>这场合作关系旨在通过跨 IBC 和 EVM 链实现可交互性和共享流动性来解决流动性分散问题。在较高的维度上，Sei 预计会观察到以下效果：</p>
-<ol>
-<li>
-<p>Users will no longer be limited to interfacing with the “local” protocols (protocols built on the same chain as their wallets) and will not need to deal with the hassle of bridging to use “foreign” protocols (protocols on separate chains).<br>
-用户将不再局限于与“本地”协议（与他们的钱包建立在同一条链上的协议）接口，并且无需处理跨链使用“外国”协议（不同链上的协议）的麻烦.</p>
-</li>
-<li>
-<p>Developers will be able to query data and utilize logic/smart contracts from other chains.<br>
-开发者将能够查询数据并利用来自其他链的逻辑/智能合约。</p>
-</li>
-<li>
-<p>Ecosystems will be able to attract and interact with liquidity from “foreign chains” through back-end integrations.<br>
-生态系统将能够通过后端集成，吸引来自“外链”的流动性并与之互动。</p>
-</li>
-</ol>
-<h1 id="这种伙伴关系能带来什么what-does-this-partnership-enable">这种伙伴关系能带来什么？(What does this partnership enable?)</h1>
-<h2 id="ibc-和-evm-链之间跨链消息传递-cross-chain-messaging-between-ibc-and-evm-chains">(IBC 和 EVM 链之间跨链消息传递) Cross-Chain Messaging between IBC and EVM chains</h2>
-<p>With this partnership, cross-chain communication goes beyond wrapping and locking assets. Instead, Axelar’s infrastructure can enable protocol on an EVM chain (ie. Avalanche) to utilize smart contract functionality and logic from Sei and vice versa. Cross-chain messaging opens up new use cases and possibilities, such as multi-chain liquidity pools, cross-chain lending, cross-chain swapping, and cross-chain arbitrage.</p>
-<p>通过这种伙伴关系，跨链通信超越了封装和锁定资产。相反，Axelar 的基础设施可以启用 EVM 链（即 Avalanche）上的协议，以利用 Sei 的智能合约功能和逻辑，反之亦然。跨链消息传递开辟了新的用例和可能性，例如多链流动性池、跨链借贷、跨链交换和跨链套利。</p>
-<h2 id="结构化产品协议的跨链资金库-cross-chain-vaults-for-structured-product-protocols">结构化产品协议的跨链资金库 (Cross-Chain Vaults for Structured Product Protocols)</h2>
-<p>Cross-Chain Vaults will allow users to deposit assets into vault protocols and access unique strategies on any Axelar partnered chain. This would allow wallets on Ethereum to leverage novel derivative trading strategies on Sei without the complexity of bridging their assets or creating new crypto wallets. Users will have a simple “one-click” experience, interacting with any and all chains across Web3 with all the intricacies efficiently and securely abstracted from them.</p>
-<p>跨链资金库将允许用户将资产存入资金库协议并访问任何 Axelar 合作链上的独特策略。这将允许以太坊上的钱包在 Sei 上利用新颖的衍生品交易策略，而无需跨链其资产或创建新的加密钱包的复杂性。用户将获得简单的“一键式”体验，与 Web3 上的任何和所有链进行交互，并有效且安全地从其中抽象出所有复杂性。</p>
-<h2 id="跨链合成-cross-chain-synthetics">跨链合成 (Cross-Chain Synthetics)</h2>
-<p>This partnership will enable dApps building on Sei to securely query the prices and market conditions of various cross-chain assets and asset classes. This means that synthetics on Sei will not be limited to IBC assets but can span the entirety of Web2 and Web3. The ability to mint and maintain the peg for these novel synthetic assets will greatly democratize trading for all of crypto.</p>
-<p>这种合作伙伴关系将使基于 Sei 的 dApp 能够安全地查询各种跨链资产和类别的价格和市场状况。这意味着 Sei 上的合成将不限于 IBC 资产，而是可以跨越整个 Web2 和 Web3。为这些新型合成资产铸造和维持锚定的能力，将极大地加速所有加密货币的交易民主化。</p>
-<h2 id="关于axelar-about-axelar">关于Axelar (About Axelar)</h2>
-<p>Axelar delivers secure cross-chain communication for Web3. The infrastructure enables dApp users to interact with any asset or application, on any chain, with one click. Axelar is like Stripe for Web3. Axelar is backed by Binance, Coinbase Ventures, Dragonfly Capital, and Polychain Capital. Axelar is integrated with the Ethereum, Avalanche, Cosmos, and Polkadot ecosystems.</p>
-<p>Axelar 为 Web3 提供安全的跨链通信。该基础设施使 dApp 用户可以一键与任何链的任何资产或应用进行交互。 Axelar 就像 Web3 的 Stripe。 Axelar 得到 Binance、Coinbase Ventures、Dragonfly Capital 和 Polychain Capital 的支持。 Axelar 与 Ethereum、Avalanche、Cosmos 和 Polkadot 生态系统集成。</p>
-<h2 id="关于sei-about-sei">关于Sei (About Sei)</h2>
-<p>Sei is the first layer 1 blockchain optimized for DeFi. Most layer 1’s fall into a barbell distribution: two extremes with general purpose chains on one end (e.g., Ethereum, Solana) and app-specific chains on the other (e.g., dYdX, Osmosis). Sei unlocks an entirely new design space between the two—not general-purpose nor app-specific, but DeFi-specific, which enables Sei to create an environment custom-built for DeFi applications. Sei features a built-in order matching engine, frontrunning protection, and the fastest finality of any chain (600 ms) currently in market. The combination of these optimizations make it possible for new types of financial products to emerge—everything ranging from live sports betting to complex options and futures.</p>
-<p>大多数layer1属于杠铃分布：两个极端，一端是通用链（例如 Ethereum、Solana），另一端是应用专用链（例如 dYdX、Osmosis）。Sei 在两者之间开辟了一个全新的设计空间——既不是通用的也不是特定应用的，而是特定于 DeFi 的，这使 Sei 能够创建一个为 DeFi 应用定制的环境。 Sei 具有内置的订单匹配引擎、抢跑保护和目前市场上任何链中最快的最终确定性（600 毫秒）。这些优化的结合使新型金融产品的出现成为可能——从现场体育博彩到复杂的期权和期货，应有尽有。</p>
 ]]></content>
     </entry>
 </feed>
