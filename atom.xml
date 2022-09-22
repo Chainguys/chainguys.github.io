@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-09-21T15:21:39.113Z</updated>
+    <updated>2022-09-22T04:25:58.585Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Altlayer中文材料合集-不断更新中(Altlayer Chinese Materials-Updating)]]></title>
+        <id>https://chainguys.github.io/post/altlayer-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-altlayer-chinese-materials-updating/</id>
+        <link href="https://chainguys.github.io/post/altlayer-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-altlayer-chinese-materials-updating/">
+        </link>
+        <updated>2022-09-22T03:31:46.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://cdn-images-1.medium.com/max/980/1*t55z-bhSsloTou3D5JDTAA@2x.png" alt="" loading="lazy"></figure>
+<h1 id="blogs">Blogs</h1>
+<h2 id="介绍-altlayer第一部分支持定制应用汇总的弹性扩展层-introducing-altlayer-part-ian-elastic-scaling-layer-with-application-tailored-rollups"><a href="https://chainguys.github.io/post/jie-shao-altlayerdi-yi-bu-fen-zhi-chi-ding-zhi-ying-yong-hui-zong-de-dan-xing-kuo-zhan-ceng-introducing-altlayer-part-ian-elastic-scaling-layer-with-application-tailored-rollups/">介绍 AltLayer(第一部分)：支持定制应用汇总的弹性扩展层 Introducing AltLayer (Part I)：An Elastic Scaling Layer with Application-Tailored Rollups</a></h2>
+<h2 id="介绍-altlayer第二部分支持定制应用汇总的弹性扩展层-introducing-altlayer-part-iian-elastic-scaling-layer-with-application-tailored-rollups"><a href="https://chainguys.github.io/post/jie-shao-altlayerdi-er-bu-fen-zhi-chi-ding-zhi-ying-yong-hui-zong-de-dan-xing-kuo-zhan-ceng-introducing-altlayer-part-iian-elastic-scaling-layer-with-application-tailored-rollups/">介绍 AltLayer(第二部分)：支持定制应用汇总的弹性扩展层 Introducing AltLayer (Part II)：An Elastic Scaling Layer with Application-Tailored Rollups</a></h2>
+<h2 id="nft铸币如何扩展第一部分-nft-minting-made-scalable-part-i"><a href="https://chainguys.github.io/post/nft-zhu-bi-ru-he-kuo-zhan-di-yi-bu-fen-nft-minting-made-scalable-part-i/">NFT铸币如何扩展(第一部分)-NFT Minting Made Scalable (Part I)</a></h2>
+<h2 id="nft铸币如何可扩展第二部分-nft-minting-made-scalable-part-ii"><a href="https://chainguys.github.io/post/nft-zhu-bi-ru-he-ke-kuo-zhan-di-er-bu-fen-nft-minting-made-scalable-part-ii">NFT铸币如何可扩展(第二部分)-NFT Minting Made Scalable (Part II)</a></h2>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Sei中文材料合集-不断更新中(Sei Chinese Materials-Updating)]]></title>
         <id>https://chainguys.github.io/post/sei-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-sei-chinese-materials-updating/</id>
@@ -30,11 +44,11 @@
         </link>
         <updated>2022-09-18T14:01:56.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/09/Fuel_Trailer_Still_10.jpeg" alt="" loading="lazy"></figure>
-<h1 id="blogs">Blogs</h1>
+<h1 id="项目进展project-update">项目进展(Project Update)</h1>
 <h2 id="自2022年夏天以来的项目进展-feul内幕project-update-since-summer-2022-inside-fuel"><a href="https://chainguys.github.io/post/fuel-nei-mu-2022-nian-xia-tian-inside-fuel-summer-2022/">自2022年夏天以来的项目进展-Feul内幕(Project update since Summer 2022-Inside Fuel)</a></h2>
-<h2 id="介绍beta-1第一个面向开发人员的模块化执行层fuel测试网-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet"><a href="https://chainguys.github.io/post/jie-shao-beta-1di-yi-ge-mian-xiang-kai-fa-ren-yuan-de-mo-kuai-hua-zhi-xing-ceng-fuel-ce-shi-wang-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet">介绍“Beta-1”，第一个面向开发人员的模块化执行层Fuel测试网 (Introducing &quot;Beta-1&quot;, the First Modular Execution Layer Developer-facing Fuel Testnet )</a></h2>
+<h2 id="fuel实验室宣布为最快的模块化执行层提供-8000-万美元的支持-fuel-labs-announces-80-million-of-support-for-the-fastest-modular-execution-layer"><a href="https://chainguys.github.io/post/fuel-shi-yan-shi-xuan-bu-wei-zui-kuai-de-mo-kuai-hua-zhi-xing-ceng-ti-gong-8000-wan-mei-yuan-de-zhi-chi-fuel-labs-announces-dollar80-million-of-support-for-the-fastest-modular-execution-layer">Fuel实验室宣布为最快的模块化执行层提供 8000 万美元的支持 (Fuel Labs Announces $80 Million of Support for the Fastest Modular Execution Layer)</a></h2>
 <h1 id="2项目简介和关键文章project-introduction-and-key-articals">2.项目简介和关键文章(Project Introduction and key articals)</h1>
-<p>coming soon</p>
+<h2 id="介绍beta-1第一个面向开发人员的模块化执行层fuel测试网-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet"><a href="https://chainguys.github.io/post/jie-shao-beta-1di-yi-ge-mian-xiang-kai-fa-ren-yuan-de-mo-kuai-hua-zhi-xing-ceng-fuel-ce-shi-wang-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet">介绍“Beta-1”，第一个面向开发人员的模块化执行层Fuel测试网 (Introducing &quot;Beta-1&quot;, the First Modular Execution Layer Developer-facing Fuel Testnet )</a></h2>
 <h1 id="3其他官方博客翻译-other-official-blogs-translated-into-chinese">3.其他官方博客翻译 (Other Official Blogs Translated into Chinese)</h1>
 <p>coming soon</p>
 ]]></content>
@@ -689,110 +703,62 @@ Produce Block API 现在可用于 SDK 测试；</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[介绍“Beta-1”，第一个面向开发人员的模块化执行层Fuel测试网 (Introducing "Beta-1", the First Modular Execution Layer Developer-facing Fuel Testnet )]]></title>
-        <id>https://chainguys.github.io/post/jie-shao-beta-1di-yi-ge-mian-xiang-kai-fa-ren-yuan-de-mo-kuai-hua-zhi-xing-ceng-fuel-ce-shi-wang-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet/</id>
-        <link href="https://chainguys.github.io/post/jie-shao-beta-1di-yi-ge-mian-xiang-kai-fa-ren-yuan-de-mo-kuai-hua-zhi-xing-ceng-fuel-ce-shi-wang-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet/">
+        <title type="html"><![CDATA[NFT铸币如何可扩展(第二部分)-NFT Minting Made Scalable (Part II)]]></title>
+        <id>https://chainguys.github.io/post/nft-zhu-bi-ru-he-ke-kuo-zhan-di-er-bu-fen-nft-minting-made-scalable-part-ii/</id>
+        <link href="https://chainguys.github.io/post/nft-zhu-bi-ru-he-ke-kuo-zhan-di-er-bu-fen-nft-minting-made-scalable-part-ii/">
         </link>
-        <updated>2022-09-05T15:15:53.000Z</updated>
-        <content type="html"><![CDATA[<p>Today, we are excited to announce the launch of the new Fuel beta-1 testnet! This marks a new milestone in our road towards Fuel mainnet—a modular execution layer that will provide never-before-seen scalability to Ethereum with parallel transaction execution.</p>
-<p>今天，我们很高兴地宣布推出新的 Fuel beta-1 测试网！这标志着我们在通往 Fuel 主网道路上的一个新里程碑——一个将通过并行交易执行为以太坊提供前所未有的可扩展性的模块化的执行层。</p>
-<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/09/Fuel_Trailer_Still_5-3.png" alt="Introducing &quot;Beta-1&quot;, the First Modular Execution Layer Developer-facing Fuel Testnet" loading="lazy"></figure>
+        <updated>2022-09-06T03:28:02.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*J-VwaSdxqwlkci4lin0JLQ.png" alt="" loading="lazy"></figure>
 <hr>
-<p>Today, we are excited to announce the launch of the new Fuel <strong><code>beta-1</code></strong> testnet!</p>
-<p>今天，我们很高兴地宣布推出新的 Fuel <strong><code>beta-1</code></strong> 测试网！</p>
-<p>This marks a new milestone in our road towards Fuel mainnet—a modular execution layer (MEL) that will provide never-before-seen scalability to Ethereum with parallel transaction execution. The result will be a blockchain with maximum security and the highest flexible throughput for the Ethereum ecosystem.</p>
-<p>这标志着我们在通往 Fuel 主网道路上的一个新里程碑——一个将通过并行交易执行为以太坊提供前所未有的可扩展性的模块化执行层 (MEL)。带来的结果将是以太坊生态系统具有最高安全性和最高灵活吞吐量的区块链。</p>
-<blockquote>
-<p><em>Please note that <strong><code>beta-1</code></strong> is not an incentivized testnet. There will be no direct rewards for participation in this network.</em></p>
-<p><em>请注意，<strong><code>beta-1</code></strong> 不是激励测试网。参与此网络不会有直接奖励。</em></p>
-</blockquote>
-<h2 id="测试网-the-testnet">测试网 (The Testnet)</h2>
-<p>While local-development Fuel networks have been available for months, the <strong>beta-1</strong> network is the first public Fuel testnet, shared by all developers and users that interact with it. Developers may deploy contracts to it at will—no permission or whitelisting required—and users may interact with deployed contracts as well.</p>
-<p>虽然本地开发的 Fuel 网络已经推出了几个月，但<strong>beta-1</strong> 网络是第一个公共 Fuel 测试网，由交互的所有开发人员和用户共享。开发人员可以随意向其部署合约——无需许可或白名单——用户也可以与已部署的合约进行交互。</p>
-<h3 id="网络功能-network-features">网络功能 (Network Features)</h3>
-<p>Below is a list of key features for the <strong><code>beta-1</code></strong> testnet:</p>
-<p>以下是 <strong><code>beta-1</code></strong> 测试网的主要功能列表：</p>
-<p><strong>🤝 Single shared network.</strong> This is a shared, public developer- and user-facing testnet. Developers can deploy contracts and users can then interact with those contracts.</p>
-<p><strong>🤝 单一共享网络</strong> 这是一个共享的、公共面向开发人员和用户的测试网。开发人员可以部署合约，然后用户可以与这些合约进行交互。</p>
-<p><strong>🚰 Faucet.</strong> Anyone can use the faucet to get some test ETH to deploy contracts with or to interact with contracts. Available here: <a href="https://faucet-beta-1.fuel.network/">https://faucet-beta-1.fuel.network</a>.</p>
-<p><strong>🚰 水龙头</strong> 任何人都可以使用水龙头来获得一些测试 ETH 来部署合约或与合约交互。可在此处获取：<a href="https://faucet-beta-1.fuel.network/">https://faucet-beta-1.fuel.network</a>。</p>
-<p><strong>📃 GraphQL endpoint.</strong> The Fuel Core node uses GraphQL instead of JSON RPC. A playground for the public GraphQL endpoint for <strong>beta-1</strong> is available at <a href="https://node-beta-1.fuel.network/playground">https://node-beta-1.fuel.network/playground</a>.</p>
-<p><strong>📃 GraphQL 端点</strong> Fuel 核心节点使用 GraphQL 而不是 JSON RPC。 <strong>beta-1</strong> 的公共 GraphQL 端点的测试地址已经可用 <a href="https://node-beta-1.fuel.network/playground">https://node-beta-1.fuel.network/playground</a></p>
-<p><strong>✔️ No whitelists.</strong> Developers can deploy contracts to the testnet, permissionlessly. Users can interact with contracts, permissionlessly.</p>
-<p><strong>✔️ 没有白名单</strong> 开发人员可以在未经许可的情况下将合约部署到测试网。用户无需许可即可与合约交互。</p>
-<p>🔍 <strong>Block explorer.</strong> A block explorer (still heavily a work-in-progress) is available at <a href="https://fuellabs.github.io/block-explorer-v2/">https://fuellabs.github.io/block-explorer-v2</a>.</p>
-<p>🔍 <strong>区块浏览器</strong> <a href="https://fuellabs.github.io/block-explorer-v2/">https://fuellabs.github.io/block-explorer-v2</a>。</p>
-<p>If you have any questions (development-related or otherwise), you can join the <a href="https://discord.gg/xfpK4Pe">Fuel Labs Discord</a> and head to the <code>**🧪︱testnet-beta-1**</code> channel. Be sure to follow our <a href="https://twitter.com/fuellabs_">Twitter</a> for updates. Fuel Labs will host a community call soon to discuss the latest details around <strong><code>beta-1</code></strong>. So stay tuned for that.</p>
-<p>如果您有任何问题（开发相关或其他），您可以加入 <a href="https://discord.gg/xfpK4Pe">Fuel Labs Discord</a> 并前往 <code>**🧪︱testnet-beta-1**</code>渠道。请务必关注我们的 <a href="https://twitter.com/fuellabs_">Twitter</a> 以获取更新。 Fuel Labs 将很快召开社区电话会议，讨论有关 <strong><code>beta-1</code></strong> 的最新细节。所以请继续关注。</p>
-<h2 id="对开发者-for-developers">对开发者 (For Developers)</h2>
-<p>A few months ago, we launched the <a href="https://fuel-labs.ghost.io/introducing-swayswap/">SwaySwap demo</a> along with an internal testnet that users could interact with, but for which contracts could not be deployed.</p>
-<p>几个月前，我们推出了 <a href="https://fuel-labs.ghost.io/introducing-swaywap/">SwaySwap 演示</a> 以及用户可以交互的内部测试网，但无法为其部署合约。</p>
-<p>Contract deployment to the <strong><code>beta-1</code></strong> testnet does not require any whitelisting. A valid transaction is required however, which requires coins. Testnet ETH can be obtained from the faucet: <a href="https://faucet-beta-1.fuel.network/">https://faucet-beta-1.fuel.network</a> by completing a captcha.</p>
-<p><strong><code>beta-1</code></strong> 测试网的合约部署不需要任何白名单。但是，需要有效的交易，这需要硬币。测试网 ETH 可以通过完成验证码，从水龙头获得：<a href="https://faucet-beta-1.fuel.network/">https://faucet-beta-1.fuel.network</a>。</p>
-<p>A persistent CLI wallet is available here: <a href="https://github.com/FuelLabs/forc-wallet">https://github.com/FuelLabs/forc-wallet</a>. Note that currently it requires building from source. A web/browser plugin wallet is under active development, with contributions welcome: <a href="https://github.com/FuelLabs/fuels-wallet">https://github.com/FuelLabs/fuels-wallet</a>.</p>
-<p>可在此处获得持久性 CLI 钱包：<a href="https://github.com/FuelLabs/forc-wallet">https://github.com/FuelLabs/forc-wallet</a>。请注意，目前它需要从源代码构建。 Web/浏览器插件钱包正在积极开发中，欢迎贡献：<a href="https://github.com/FuelLabs/fuels-wallet">https://github.com/FuelLabs/fuels-wallet</a>。</p>
-<p>For an overview of Fuel, take a look at The Fuel documentation: <a href="https://fuellabs.github.io/fuel-docs/master/index.html">https://fuellabs.github.io/fuel-docs/master/index.html</a></p>
-<p>有关 Fuel 的概述，请查看 Fuel 文档：<a href="https://fuellabs.github.io/fuel-docs/%E4%B8%BB/index.html">https://fuellabs.github.io/fuel-docs/master/index.html</a></p>
-<p>To begin building on Fuel, check out the Developer Quickstart. This guide walks developers through building a dapp, end-to-end: <a href="https://fuellabs.github.io/fuel-docs/master/developer-quickstart.html">https://fuellabs.github.io/fuel-docs/master/developer-quickstart.html</a><br>
-要开始在 Fuel 上构建，请查看开发人员快速入门。本指南引导开发人员构建端到端的 dapp：[https://fuellabs.github.io/fuel-docs/master/developer-quickstart.html](https://fuellabs.github.io/fuel -docs/master/developer-quickstart.html)</p>
-<p>To begin developing a contract for Fuel, take a look at The Sway Book: <a href="https://fuellabs.github.io/sway/latest/">https://fuellabs.github.io/sway/latest/</a>, along with the Rust SDK (<a href="https://github.com/FuelLabs/fuels-rs">https://github.com/FuelLabs/fuels-rs</a>) and TypeScript SDK (<a href="https://github.com/FuelLabs/fuels-ts">https://github.com/FuelLabs/fuels-ts</a>).</p>
-<p>要开始为 Fuel 制定合约，请查看 The Sway Book：<a href="https://fuellabs.github.io/sway/latest/">https://fuellabs.github.io/sway/latest/</a>，以及使用 Rust SDK (<a href="https://github.com/FuelLabs/fuels-rs">https://github.com/FuelLabs/fuels-rs</a>) 和 TypeScript SDK (<a href="https://github.com/FuelLabs/fuels-ts">https://github.com/FuelLabs) /fuels-ts</a>)。</p>
-<p>If you're interested in going even further, we're supporting early-stage projects with our grants program, available here: <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">https://1v1l4ftv9zy.typeform.com/fuelgrants</a>.</p>
-<p>如果您有兴趣走得更远，我们将通过我们的赠款计划支持早期项目，可在此处获得：<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">https://1v1l4ftv9zy.typeform.com/fuelgrants</a>。</p>
-<blockquote>
-<p><em>Note that the <strong><code>beta-1</code></strong> testnet is under active development and may see breaking upgrades and even regenesis events (hence <strong><code>beta-1</code></strong> and not beta!) in the coming weeks.</em></p>
-<p><em>请注意，<strong><code>beta-1</code></strong> 测试网正在积极开发中，未来几周可能会出现重大升级甚至重生事件（因此 <strong><code>beta-1</code></strong> 而不是 beta！）。</em></p>
-</blockquote>
-<h2 id="对社区成员-for-community-members">对社区成员 (For Community Members)</h2>
-<p>Community members can participate in <strong><code>beta-1</code></strong> by testing applications. Since this is the launch of a new network, there will be no applications to start, but keep your eyes and ears open to the Fuel Labs <a href="https://twitter.com/fuellabs_">Twitter</a> for announcements of applications test launches. A list of applications in development is maintained here: <a href="https://github.com/FuelLabs/awesome-fuel#projects-building-on-fuel">https://github.com/FuelLabs/awesome-fuel#projects-building-on-fuel</a>. Please contribute any missing applications to the list!</p>
-<p>社区成员可以通过测试应用参与 <strong><code>beta-1</code></strong>。由于这是一个新网络的发布，因此不会启动任何应用，但请留意 Fuel Labs <a href="https://twitter.com/fuellabs_">Twitter</a> 以了解应用测试启动的公告。此处维护了开发中的应用程序列表：<a href="https://github.com/FuelLabs/awesome-fuel#projects-building-on-fuel">https://github.com/FuelLabs/awesome-fuel#projects-building-on-fuel</a>。请向列表中添加任何缺失的应用！</p>
-<p>As mentioned above, <strong><code>beta-1</code></strong> is not an incentivized testnet; there will be no direct incentives for participation in this network.</p>
-<p>如上所述，<strong><code>beta-1</code></strong> 不是激励测试网；参与该网络不会有直接的激励措施。</p>
-<h2 id="超越单片链-beyond-monolithic">超越单片链 (Beyond Monolithic)</h2>
-<p>Right now, there is an ongoing and significant shift happening in layer-1 (L1) blockchain architecture. The industry is fast moving away from monolithic blockchain designs and towards modular ones.</p>
-<p>目前，layer-1（L1）区块链架构正在发生重大转变。该行业正在迅速从单片区块链设计转向模块化设计。</p>
-<p>Fuel demonstrates that developing new monolithic L1s in 2022 is short-sighted and that building high-performance execution layers on top of modular blockchains can produce extremely high throughput while retaining incredible Ethereum-grade security guarantees. Innovation does not require launching a new L1, but can rather happen at the execution layer.</p>
-<p>Fuel 表明，在 2022 年开发新的单片 L1 是短视的，在模块化区块链之上构建高性能执行层可以产生极高的吞吐量，同时保留令人难以置信的以太坊级安全保证。创新不需要启动新的 L1，而是可以发生在执行层。</p>
-<p>Fuel features fraud-provable trust-minimized light clients that deliver better security and decentralization guarantees in addition to trust-minimized liquidity bridging, which is not possible between two L1s.</p>
-<p>Fuel 具有可证明欺诈的信任最小化轻客户端，除了信任最小化的流动性跨链之外，还提供更好的安全性和去中心化保证，这在两个 L1 之间是不可能的。</p>
-<p>With Fuel, we can now go <strong>#BeyondMonolithic</strong>.</p>
-<p>有了 Fuel，我们现在可以去<strong>超越单片链</strong>。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sei 获得500万美元融资，由 Multicoin Capital 牵头，来构建针对 DeFi 优化的layer1 (Sei Raises $5M Led by Multicoin Capital to Build The First Layer 1 Blockchain Optimized for DeFi)]]></title>
-        <id>https://chainguys.github.io/post/sei-huo-de-500-wan-mei-yuan-rong-zi-you-multicoin-capital-qian-tou-lai-gou-jian-zhen-dui-def-you-hua-de-layer1-sei-raises-dollar5m-led-by-multicoin-capital-to-build-the-first-layer-1-blockchain-optimized-for-defi/</id>
-        <link href="https://chainguys.github.io/post/sei-huo-de-500-wan-mei-yuan-rong-zi-you-multicoin-capital-qian-tou-lai-gou-jian-zhen-dui-def-you-hua-de-layer1-sei-raises-dollar5m-led-by-multicoin-capital-to-build-the-first-layer-1-blockchain-optimized-for-defi/">
-        </link>
-        <updated>2022-08-31T07:50:08.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://blog.seinetwork.io/content/images/size/w2000/2022/08/SEI_Announce_Poster_1.png" alt="Sei Raises $5M Led by Multicoin Capital to Build The First Layer 1 Blockchain Optimized for DeFi" loading="lazy"></figure>
+<p><strong>NFT 铸币的新奇案例 (The Curious Case of NFT Minting)</strong></p>
+<p>NFT mint events have a somewhat unique lifecycle compared to a fungible token. NFT minting is a short-lived event. An NFT mint event is often over in a few days (sometimes in hours or even minutes) and it’s only during that period that the user activity is extremely high. As soon as the mint event is over, the user activity slows down quite quickly to a point where the generated volume from secondary trading or other activities can be easily handled by any base-chain.</p>
+<p>与同质化代币相比，NFT 铸币事件具有某种独特的生命周期。 NFT 铸币是一个短暂的事件。NFT 铸币活动通常会在几天内结束(有时是几小时甚至几分钟)，而且只有在这几天内，用户活动才会非常活跃。铸币事件一结束，用户活动就会很快减慢到任何单片链可以轻松处理的二级交易或其他活动产生的交易量。</p>
+<p>Also, the experience offered to primary and secondary buyers can be very different. Primary buyers often have to go through a whitelisting mechanism while secondary buyers can buy an NFT from a marketplace of their choice. Also, as secondary buyers are the ones driving trading volume for NFTs, it is important to ensure that a drastically different UX is not forced upon them.</p>
+<p>此外，为一级和二级买家提供的体验可能非常不同。一级买家通常必须通过白名单机制，而二级买家可以从他们选择的市场购买 NFT。此外，由于二级买家是推动NFT交易量的人，因此要确保不会强迫他们使用截然不同的用户体验就很重要。</p>
+<p><strong>用于NFT铸币的瞬时层 (Flash Layer for NFT Minting)</strong></p>
+<p>A key innovation that AltLayer brings to the NFT mint scaling solution space is the idea of disposable execution layers. With AltLayer, a dApp developer expecting an increase in demand for his NFT could: 1) quickly spin up a fast and scalable rollup secured by a Layer 1, 2) use the rollup for as long as needed and thereby prevent clogging of the Layer 1, and then 3) dispose of the rollup by doing an “end-of-life” settlement on the Layer 1. This makes the entire system highly resource-optimised. The execution layer and its resources are called upon only when the dApp expects a considerable demand that a Layer 1 can’t handle and once the demand tapers off, the dApp can move back to the Layer 1.</p>
+<p>AltLayer 为NFT铸币扩展解决方案，带来的一项关键创新就是一次性执行层。借助 AltLayer，预计 NFT 需求会增加的 dApp 开发人员可以：1) 快速启动由layer1保护的快速且可扩展的汇总，2) 根据需要使用汇总，从而防止layer1阻塞，然后 3) 通过在layer1上进行“最后周期”结算来处理汇总。这使得整个系统高度资源优化。执行层及其资源仅在 dApp 预计layer1无法处理的大量需求时才被调用，并且一旦需求逐渐减少，dApp 可以移回第 1 层。</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/1*o46tdG0BRSxgseCmJAWtSg.png" alt="" loading="lazy"></figure>
 <hr>
-<p>Sei’s Built-in Order Matching Engine Makes It Possible for Apps to Instantly Spin Up Any Orderbook Market</p>
-<p>Sei 的内置订单匹配引擎使应用可以立即启动任何订单簿市场</p>
-<p><a href="https://seinetwork.io/">Sei</a>, the first layer 1 blockchain optimized for DeFi, today announced a $5 million funding round led by Multicoin Capital with participation from Coinbase Ventures, Delphi Digital, Hudson River Trading, GSR, Hypersphere, Flow Traders, Kronos Research and the founders of Anchorage, Frax, Yield Guild Games, and Tangent. The new capital will be used to support the network as it approaches mainnet launch and further accelerate the growth of over 20 dApps already building in the Sei ecosystem.</p>
-<p><a href="https://seinetwork.io/">Sei</a>，第一个为 DeFi 优化的 layer 1 区块链，今天宣布了由 Multicoin Capital 牵头的 500 万美元融资，参与方包括 Coinbase Ventures、Delphi Digital、Hudson River Trading、GSR、Hypersphere 、Flow Traders、Kronos Research 以及 Anchorage、Frax、Yield Guild Games 和 Tangent 的创始人。新资金将用于支持该网络，随着它接近主网启动，并进一步加速已经在 Sei 生态系统中构建的 20 多个 dApp 的增长。</p>
-<p>Over the past three years, there has been a cambrian explosion in decentralized finance as new apps enable fundamental parts of the modern financial system to move onto the blockchain. These new DeFi apps serve to collapse legacy cost structures and expand financial access globally, yet the infrastructure to support these rapidly-scaling financial apps has been insufficient, resulting in malicious exploits, network halts, and subpar user experiences. Sei addresses these problems by providing the first layer 1 blockchain specifically optimized for DeFi applications above all else.</p>
-<p>在过去三年中，去中心化金融出现了寒武纪爆炸式增长——随着新应用出现，使得现代金融系统的基础部件能够转移到区块链上。这些新的 DeFi 应用有助于打破传统的成本结构并在全球范围内扩大金融准入，但支持这些快速扩展的金融应用程序的基础设施不足，导致恶意攻击、网络停止和低于标准的用户体验。 Sei 通过提供专门为 DeFi 应用优化的layer1区块链来解决这些问题。</p>
-<p>“This round is a major step forward for Sei and the rapidly growing DeFi landscape. We’ve partnered with some of the most revered financial institutions in the world to drive forward the same mission: build the best layer 1 for financial applications,” said Jay Jog, Cofounder of Sei Labs.</p>
-<p>“这一轮是 Sei 和快速增长的 DeFi 格局向前迈出的重要一步。我们与世界上一些最受尊敬的金融机构合作，以推动相同的使命：为金融应用构建最佳的 layer 1，”Sei Labs 的联合创始人 Jay Jog 说。</p>
-<p>Most layer 1’s fall into a barbell distribution: two extremes with general purpose chains on one end (e.g., Ethereum, Solana) and app-specific chains on the other (e.g., dYdX, Osmosis). Sei unlocks an entirely new design space between the two—not general-purpose nor app-specific, but DeFi-specific, which enables Sei to create an environment custom-built for DeFi applications. Sei features a built-in order matching engine, frontrunning protection, and the fastest finality of any chain (600 ms) currently in market. The combination of these optimizations make it possible for new types of financial products to emerge—everything ranging from live sports betting to complex options and futures.</p>
-<p>大多数layer1属于杠铃分布：两个极端，一端是通用链（例如 Ethereum、Solana），另一端是应用专用链（例如 dYdX、Osmosis）。Sei 在两者之间开辟了一个全新的设计空间——既不是通用的也不是特定应用的，而是特定于 DeFi 的，这使 Sei 能够创建一个为 DeFi 应用定制的环境。 Sei 具有内置的订单匹配引擎、抢跑保护和目前市场上任何链中最快的最终确定性（600 毫秒）。这些优化的结合使新型金融产品的出现成为可能——从现场体育博彩到复杂的期权和期货，应有尽有。</p>
-<p>&quot;By exploring the new design space in between app-chains and general purpose Layer 1’s, Sei has carefully selected for a unique set of tradeoffs that make its Layer 1 an optimal environment for DeFi applications. They're unlocking new possibilities with built-in orderbook infrastructure, frontrunning prevention, and major speed improvements. Sei is already seeing a lot of interest from DeFi apps looking to build on top of them,&quot; said Tushar Jain, Managing Partner, Multicoin Capital.</p>
-<p>“通过探索应用链和通用layer1之间的新设计空间，Sei 精心选择了一组独特的权衡，使其layer1成为 DeFi 应用的最佳环境。他们通过内置的订单簿基础设施、抢跑预防和重大速度改进。Sei 已经收获了 DeFi 应用的极大兴趣，希望在其之上构建，“Multicoin Capital 执行合伙人 Tushar Jain 说。</p>
-<p>“The optimization that Sei has built into its core layer 1 makes it a clear destination for DeFi apps. They have addressed some of the major issues that teams come across on other ecosystems and we’re already starting to see apps move over. We look forward to building together with the Sei community,&quot; said Jason Choi, Co-Founder of Tangent.</p>
-<p>“Sei 在其核心layer1中内置的优化，使其成为 DeFi 应用的明确目标。他们已经解决了团队在其他生态系统中遇到的一些主要问题，我们已经开始看到应用转移。我们期待与 Sei 社区一起建设，”Tangent 联合创始人 Jason Choi 说。</p>
-<p>One of the killer application types on Sei is orderbook-based exchanges. Any application can leverage Sei’s built-in order matching engine to instantly spin up and customize an orderbook for spot, derivatives, options, sports betting and more. The fastest finality and native frontrunning protection on Sei also makes it compelling for large-scale orderbook exchanges.</p>
-<p>Sei 上的杀手级应用类型之一是基于订单簿的交易。任何应用程序都可以利用 Sei 的内置订单匹配引擎来立即启动和自定义现货、衍生品、期权、体育博彩等的订单簿。 Sei 上最快的确定性和原生的抢跑保护也使其对大规模订单簿交易具有吸引力。</p>
-<p>&quot;Sei has made advancements in speed, scalability, and security that address some of the major drawbacks of current general purpose chains. We’re confident that they can be a real challenger in the battle for Layer 1,&quot; said  Tom Shaughnessy, Co-Founder of Delphi Digital.</p>
-<p>“Sei 在速度、可扩展性和安全性方面取得了进步，解决了当前通用链的一些主要缺点。我们相信他们可以成为layer1争夺战中的真正挑战者，” Delphi Digital联合创始人Tom Shaughnessy 说。</p>
-<p>To join the community, please visit Sei on <a href="https://twitter.com/SeiNetwork">Twitter</a>, <a href="https://discord.gg/sei">Discord</a>, <a href="https://t.me/seinetwork">Telegram</a>, <a href="https://medium.com/@seinetwork">Medium</a>. To learn more about Sei, please visit <a href="https://www.seinetwork.io/">https://www.seinetwork.io/</a></p>
-<p>要加入社区，请访问 <a href="https://twitter.com/SeiNetwork">Twitter</a>、<a href="https://discord.gg/sei">Discord</a>、<a href="https://t.me">Telegram</a> 、<a href="https://medium.com/@seinetwork">Medium</a>。要了解有关 Sei 的更多信息，请访问 <a href="https://www.seinetwork.io/">https://www.seinetwork.io/</a></p>
-<p><strong>关于Sei (About Sei)</strong></p>
-<p>Sei is the first Layer 1 blockchain uniquely optimized for DeFi. To offer the best layer 1 for DeFi, Sei has optimized every part of the network to give DeFi apps an unfair advantage. Optimizations include a built-in order matching engine that any app can leverage, the fastest finality of any chain and native frontrunning resistance. For more information, visit <a href="http://seinetwork.io/">seinetwork.io</a>.</p>
-<p>Sei 是第一个专门针对 DeFi 优化的 Layer 1 区块链。为了给DeFi 提供最好的 layer 1，Sei 优化了网络的每个部分，为 DeFi 应用提供了最大化支持。优化包括：任何应用程序都可以利用的内置订单匹配引擎、最快最终确定性和原生的抢跑预防。有关详细信息，请访问 <a href="http://seinetwork.io/">seinetwork.io</a>。</p>
-<p><strong>关于Multicoin Capital (About Multicoin Capital)</strong></p>
-<p>Multicoin Capital is a thesis-driven investment firm that invests in cryptocurrencies, tokens, and blockchain companies. Crypto networks and companies will create trillions of dollars of value over the next decade. But investing in tokens is fundamentally different than investing in companies. New tools, heuristics, and security measures are needed to responsibly invest in this ecosystem. We leverage our deep understanding of blockchain technology and crypto markets to deliver exceptional returns. For more information, visit: <a href="https://multicoin.capital/">https://multicoin.capital/.</a></p>
-<p>Multicoin Capital 是一家以论文为导向的投资公司，投资于加密货币、代币和区块链公司。加密网络和公司将在未来十年创造数万亿美元的价值。但投资代币与投资公司有着根本的不同。负责任地投资这个生态系统需要新的工具、启发式方法和安全措施。我们利用我们对区块链技术和加密市场的深刻理解来提供卓越的回报。如需更多信息，请访问：<a href="https://multicoin.capital/">https://multicoin.capital/</a></p>
+<p><strong>瞬时层的价值主张与现有的 NFT 扩展解决方案 (Flash Layer’s Value Proposition vs. Existing NFT Scaling Solutions)</strong></p>
+<p>Flash layer’s value proposition for NFT projects can be summarised as follows:<br>
+瞬时层对 NFT 项目的价值主张可以总结如下：</p>
+<ol>
+<li>
+<p><strong>Mint-dedicated Scaling Layer:</strong> Flash layer allocates a mint-specific execution layer for each NFT project. As the blockspace is reserved for the project, this means that the mint event can be completely isolated from any other on-chain activity resulting in no network congestion. It will also be possible for the NFT project to make the minting process completely gasless. This feature cannot be offered on any general purpose Layer 1s, Layer 2s or EVM sidechains. In addition to the reserved blockspace for the mint event, flash layer comes with a high throughput execution environment capable of offering a dedicated 2000 TPS throughput with low block latency of 1–2s, providing a smooth experience for the mint event.</p>
+<p><strong>专注铸币的扩展层：</strong> 瞬时层为每个 NFT 项目分配一个特定的铸币执行层。由于区块空间是为项目保留的，这意味着铸币事件可以与任何其他链上活动完全隔离，而不会导致网络拥塞。 NFT 项目也有可能使铸币过程完全无gas。此功能无法在任何通用的layer1、layer1或 EVM 侧链上提供。除了为铸币活动预留的区块空间外， 瞬时层还带有一个高吞吐量的执行环境，能够提供 2000 TPS 的专用吞吐量和 1-2 秒的低区块延迟，为铸币活动提供流畅的体验。</p>
+</li>
+<li>
+<p><strong>Short-lived by Design:</strong> Flash layer is tailor-made for minting as it imbibes in itself the short-lived property of mint events. A flash layer gets disposed of as soon as the mint event is over. Participants in the mint event therefore stay on the flash layer for the shortest possible time (i.e., only during minting). This is in stark contrast to application-specific NFT scaling solutions which are designed to be persistent. Users of a flash layer can continue to enjoy the base-chain user experience that they are familiar with except for a very short period of time during the entire course of the NFT’s product lifecycle. This also ensures that there is no disruption to composability with third-party dApps like NFT lending applications or games.</p>
+<p><strong>短周期设计：</strong>  瞬时层是为铸币量身定制的，因为它本身吸收了铸币事件的短期属性。一旦铸币事件结束，瞬时层就会被处理掉。因此，铸币活动的参与者会在最短的时间内（即仅在铸币期间）停留在瞬时层上。这与意在持久化特定应用的 NFT 扩展解决方案形成鲜明对比。瞬时层的用户在 NFT 的整个产品生命周期中，除了极短的时间之外，可以继续享受他们熟悉的基础链用户体验。这也确保了与第三方 dApp（如 NFT 借贷应用或游戏）的可组合性不会受到干扰。</p>
+</li>
+<li>
+<p><strong>Automated Settlement of Assets on the Base-chain:</strong> When a flash layer set up for an NFT mint event gets disposed of, the system settles all the assets on the base-chain which basically means that all the NFTs end up on the base-chain post minting. Unlike solutions that require users to bridge assets manually, automated settlement ensures that all the NFTs get moved to the base-chain without requiring any user interference. By avoiding a manual bridging process, flash layers also entirely eliminate any bridge-associated security risks.</p>
+<p><strong>基础链上资产自动结算：</strong> 当为 NFT 铸币事件设置的瞬时层被销毁时，系统会结算基础链上的所有资产，这基本上意味着所有 NFT 在基础链铸币后回到主链。与需要用户手动跨链资产的解决方案不同，自动结算可确保所有 NFT 都移至基础链，而无需任何用户干预。通过避免手动跨链，瞬时层还完全消除了任何与跨链相关的安全风险。</p>
+</li>
+<li>
+<p><strong>Unfragmented Liquidity:</strong> As all the NFTs move to the base-chain at the end of the minting process, the system guarantees unfragmented liquidity on the base-chain. This ensures that secondary market participants do not have to hop from one chain to the other to find the NFT that they wish to purchase.</p>
+<p><strong>非碎片化流动性：</strong> 由于所有 NFT 在铸造过程结束时都转移到基础链，系统保证基础链上的非碎片化流动性。这确保了二级市场参与者不必从一条链跳到另一条链来寻找他们希望购买的 NFT。</p>
+</li>
+<li>
+<p><strong>Familiar UX for Mint Participants:</strong> As flash layers run the same execution engine as the base-chain, users participating in the mint event can enjoy a frictionless and familiar experience. For instance, if the base-chain is Ethereum, then users will be able to use Metamask or wallets that are EVM-compatible. They could also use familiar assets like USDC or ETH to participate in the NFT sale.</p>
+<p><strong>对铸币参与者提供熟悉的用户体验：</strong> 由于瞬时层与基础链运行相同的执行引擎，参与铸币活动的用户可以享受无摩擦和熟悉的体验。例如，如果基础链是以太坊，那么用户将能够使用与 EVM 兼容的 Metamask等钱包。他们还可以使用 USDC 或 ETH 等熟悉的资产参与 NFT 销售。</p>
+</li>
+<li>
+<p><strong>Transparent to Secondary Market Participants:</strong> Any user wishing to get involved with the NFT in the secondary market does not have to touch the flash layer. As secondary trading contributes massively to the overall NFT sales volume, this feature ensures that secondary traders do not get exposed to the flash layer at all.</p>
+<p><strong>对二级市场参与者透明：</strong> 任何希望在二级市场参与 NFT 的用户都不必接触瞬时层。由于二级交易对整体 NFT 销量有很大贡献，因此此功能可确保二级交易者根本不会接触到瞬时层。</p>
+</li>
+</ol>
+<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/1*ua4-fLjo7XtDJdfHSdHjSw.png" alt="" loading="lazy"></figure>
+<hr>
+<p>In a nutshell, Flash Layer minting solution enables one click deployment, multi-chain support, unfragmented liquidity and most importantly, elimination of gas war.</p>
+<p>简而言之，瞬时层铸币解决方案可实现一键部署、多链支持、完整流动性，最重要的是消除gas战争。</p>
+<p>If you are working on an NFT project and planning to do an NFT mint event, do reach out to us via <a href="mailto:support@altlayer.io">support@altlayer.io</a>. We would love to have a chat and see if we could be of any help.</p>
+<p>如果您正在从事 NFT 项目并计划举办 NFT 铸币活动，请通过 <a href="mailto:support@altlayer.io">support@altlayer.io</a> 与我们联系。我们很想聊聊看看我们是否可以提供任何帮助。</p>
+<p>Cheers!<br>
+干杯!</p>
+<p>The AltLayer Team<br>
+AltLayer 团队</p>
 ]]></content>
     </entry>
 </feed>
