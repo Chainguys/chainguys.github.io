@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-09-22T04:25:58.585Z</updated>
+    <updated>2022-09-23T05:18:28.343Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -22,6 +22,108 @@
 <h2 id="介绍-altlayer第二部分支持定制应用汇总的弹性扩展层-introducing-altlayer-part-iian-elastic-scaling-layer-with-application-tailored-rollups"><a href="https://chainguys.github.io/post/jie-shao-altlayerdi-er-bu-fen-zhi-chi-ding-zhi-ying-yong-hui-zong-de-dan-xing-kuo-zhan-ceng-introducing-altlayer-part-iian-elastic-scaling-layer-with-application-tailored-rollups/">介绍 AltLayer(第二部分)：支持定制应用汇总的弹性扩展层 Introducing AltLayer (Part II)：An Elastic Scaling Layer with Application-Tailored Rollups</a></h2>
 <h2 id="nft铸币如何扩展第一部分-nft-minting-made-scalable-part-i"><a href="https://chainguys.github.io/post/nft-zhu-bi-ru-he-kuo-zhan-di-yi-bu-fen-nft-minting-made-scalable-part-i/">NFT铸币如何扩展(第一部分)-NFT Minting Made Scalable (Part I)</a></h2>
 <h2 id="nft铸币如何可扩展第二部分-nft-minting-made-scalable-part-ii"><a href="https://chainguys.github.io/post/nft-zhu-bi-ru-he-ke-kuo-zhan-di-er-bu-fen-nft-minting-made-scalable-part-ii">NFT铸币如何可扩展(第二部分)-NFT Minting Made Scalable (Part II)</a></h2>
+<h2 id="黑暗森林的社区回合总结前20名已被选出-dark-forests-community-round-concludes-top-20-selected"><a href="https://chainguys.github.io/post/altlayer-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-altlayer-chinese-materials-updating">黑暗森林的社区回合总结，前20名已被选出 (Dark Forest’s Community Round Concludes, Top 20 Selected)</a></h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Neon EVM：如何用Remix部署dApps Neon (EVM： How to Deploy dApps Using Remix)]]></title>
+        <id>https://chainguys.github.io/post/neon-evmru-he-yong-remix-bu-shu-dapps-neon-evm-how-to-deploy-dapps-using-remix/</id>
+        <link href="https://chainguys.github.io/post/neon-evmru-he-yong-remix-bu-shu-dapps-neon-evm-how-to-deploy-dapps-using-remix/">
+        </link>
+        <updated>2022-09-21T05:12:12.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*EvE99HuqqOmjVqtW0qhJ7A.png" alt="" loading="lazy"></figure>
+<hr>
+<p>Deploying a decentralized application, or dApp for short, is the final stage of any developer’s process of bringing their vision of a crypto project to reality. Neon’s features as an Ethereum Virtual Machine (EVM) on Solana make it suitable for cheap and simple deployment of dApps written in Solidity. In this article series about dApp deployment, we will illustrate how to deploy a simple “Hello World” dApp using three different deployment tools: Remix, Truffle, and Hardhat.</p>
+<p>部署去中心化应用(简称 dApp)，是开发人员将他们的加密项目愿景变为现实的最后阶段。 Neon 作为 Solana 上以太坊虚拟机 (EVM) 的功能，使其适用于以 Solidity 编写的低成本且简单的 dApp 部署。在这个关于 dApp 部署的系列文章中，我们将说明如何使用三种不同的部署工具(Remix、Truffle 和 Hardhat)来部署一个简单的“Hello World”dApp：。</p>
+<p>This article will focus on deploying dApps with Remix. <a href="https://remix.ethereum.org/">Remix</a> is an online IDE for Solidity programs and can be used to run code without any local installation. This makes it convenient for deploying dApps from anywhere, so long as the user has the contract source code. However, since it is an online environment, its capacity for supporting large, complex projects is limited. Therefore, Remix should be used primarily for simple code, which can be deployed with ease and requires minimal dependency management.</p>
+<p>本文将重点介绍使用 Remix 部署 dApp。 <a href="https://remix.ethereum.org/">Remix</a> 是 Solidity 程序的在线 IDE，无需任何本地安装即可运行代码。这使得从任何地方部署 dApp 变得很方便，只要用户有合约源代码。然而，由于它是一个在线环境，它支持大型、复杂项目的能力是有限的。因此，Remix 主要用于简单的代码，可以轻松部署并且需要最少的依赖管理。</p>
+<h2 id="开始之前-before-you-begin">开始之前 Before You Begin</h2>
+<p>Before you start the tutorial below, make sure that the following is true:<br>
+在开始下面的教程之前，请确保满足以下条件：</p>
+<ul>
+<li>
+<p>MetaMask is installed on your device.<br>
+MetaMask 已安装在您的设备上。</p>
+</li>
+<li>
+<p>MetaMask is configured for the Neon EVM.<br>
+MetaMask 是为 Neon EVM 配置的。</p>
+</li>
+</ul>
+<p>To install and configure MetaMask, follow <a href="https://docs.neon-labs.org/docs/wallet/metamask_setup#installing-metamask">this guide</a>.<br>
+要安装和配置 MetaMask，请参照 <a href="https://docs.neon-labs.org/docs/wallet/metamask_setup#installing-metamask">本指南</a>。</p>
+<h2 id="你好世界指南-hello-world-tutorial">“你好，世界”指南 (Hello World Tutorial)</h2>
+<p>The following tutorial will explain how to deploy a simple Hello World contract to the Neon Devnet using Remix.</p>
+<p>以下教程将解释如何使用 Remix 将简单的 Hello World 合约部署到 Neon Devnet。</p>
+<p><strong>Step 1: Create a Simple Smart Contract in Remix</strong><br>
+<strong>第 1 步：在 Remix 中创建一个简单的智能合约</strong></p>
+<p>To add a smart contract to Remix, go to <a href="https://remix.ethereum.org/">https://remix.ethereum.org</a>, click on the “Create New File” icon, and type “helloWorld.sol” in the field that appears. Then, paste the following code into the empty file and press CTRL+S to save the smart contract file.</p>
+<p>要将智能合约添加到 Remix，请转到 <a href="https://remix.ethereum.org/">https://remix.ethereum.org</a>，单击“创建新文件(Create New File)”图标，然后输入“helloWorld.sol ”在出现的字段中。然后，将以下代码粘贴到空文件中，然后按 CTRL+S 保存智能合约文件。</p>
+<pre><code>// SPDX-License-Identifier: UNLICENSED
+
+pragma solidity ^0.8.7;
+
+contract helloWorld {
+
+string public text = &quot;Hello World!&quot;;
+
+function callHelloWorld() public view returns (string memory) {
+
+return text;
+
+}
+
+}
+</code></pre>
+<p>The process should look like in the image below (Fig. 1).<br>
+流程如图1所示：</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*jhoFdUFpjp--gf3d" alt="" loading="lazy"></figure>
+<p>图 1—加载 helloWorld 智能合约 (Fig. 1 — Loading the helloWorld smart contract)</p>
+<hr>
+<p><strong>Step 2: Compile the Smart Contract</strong><br>
+<strong>第 2 步：编译智能合约</strong></p>
+<p>Before the smart contract can be deployed, it must first be compiled. To accomplish this, select the “Solidity compiler” tab in the left side menu. The SOLIDITY COMPILER menu will appear.</p>
+<p>在部署智能合约之前，必须先对其进行编译。为此，请在左侧菜单中选择“Solidity 编译器(Solidity compiler)”选项卡。将出现 SOLIDITY 编译器菜单。</p>
+<p>Click on the Compile helloWorld.sol button to compile the smart contract (Fig. 2).</p>
+<p>点击 Compile helloWorld.sol 按钮编译智能合约(图 2)。</p>
+<p>If the compilation is successful, a green icon will appear near the Solidity compiler button.</p>
+<p>如果编译成功，Solidity 编译器按钮附近会出现一个绿色图标。</p>
+<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/0*mTH5pyz9-8CjjXR0" alt="" loading="lazy"></figure>
+<p>图 2—编译 helloWorld 智能合约 (Fig. 2 — Compiling helloWorld smart contract)</p>
+<hr>
+<p><strong>Step 3: Connect Remix to MetaMask</strong><br>
+<strong>第 3 步：将 Remix 连接到 MetaMask</strong></p>
+<p>Interactions between Remix and the Neon EVM are carried out through MetaMask. Before connecting Remix to MetaMask, select “Deploy &amp; run transactions” in the left sidebar menu. The DEPLOY &amp; RUN TRANSACTIONS menu will appear.</p>
+<p>Remix 和 Neon EVM 之间的交互是通过 MetaMask 进行的。在将 Remix 连接到 MetaMask 之前，请在左侧边栏菜单中选择“部署并运行交易(Deploy &amp; run transactions)”。 接着部署并运行交易(DEPLOY &amp; RUN TRANSACTIONS)菜单将会出现。</p>
+<p>Choose the “Injected Provider — Metamask” environment to connect Remix with an active account in MetaMask (Fig. 3). Make sure that your MetaMask wallet is set to display the Neon Devnet network before you complete this step.</p>
+<p>选择“Injected Provider - Metamask”环境以将 Remix 与 MetaMask 中的活动帐户连接起来(图 3)。在完成此步骤之前，请确保您的 MetaMask 钱包已设置为显示 Neon Devnet 网络。</p>
+<p>选择“Injected Provider - Metamask”环境，将 Remix 与 MetaMask 中的活动帐户连接起来(图 3)。在完成此步骤之前，请确保您的 MetaMask 钱包已设置为显示 Neon Devnet 网络。</p>
+<p>Once you do this, the MetaMask pop-up window should appear. It will display a list of available accounts, if you have multiple accounts. Choose your desired account and click “Next”. Then, click “Connect” to connect to this account.</p>
+<p>完成此操作后，应出现 MetaMask 弹出窗口。如果您有多个帐户，它将显示可用帐户列表。选择您想要的帐户，然后单击“下一步(Next)”。然后，单击“连接(Connect)”连接到该帐户。</p>
+<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/0*zxW9zWG7Y_gEbo3_" alt="" loading="lazy"></figure>
+<p>图 3—“Injected Provider” 将 Remix 与 Metamask 中的活动帐户连接起来 (Fig. 3 — “Injected Provider” connects Remix with an active account in Metamask)</p>
+<hr>
+<p><strong>Step 4: Deploy a Smart Contract on Solana Devnet</strong><br>
+<strong>第 4 步：在 Solana Devnet 上部署智能合约</strong></p>
+<p>The contract is finally ready to be deployed by clicking the “Deploy” button (Fig. 4).</p>
+<p>通过单击“部署(Deploy)”按钮，合约终于可以部署了(图 4)。</p>
+<figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/1400/0*Db3bsSp831RwsoVM" alt="" loading="lazy"></figure>
+<p>图 4—部署智能合约 (Fig. 4 — Deploying the smart contract)</p>
+<p>MetaMask will send a notification in the form of a pop-up window to confirm the transaction. Click “Confirm” to execute it.</p>
+<p>MetaMask 会以弹窗的形式发送通知以确认交易。点击“确认(Confirm)”执行。</p>
+<p>If all the above steps have been completed successfully, a green icon will appear near the “Deploy &amp; run transactions” button. The contract’s methods will now be present as buttons under the “Deployed Contracts” section (Fig. 5).</p>
+<p>如果上述所有步骤均已成功完成，“部署并运行交易(Deploy &amp; run transactions)”按钮附近将出现一个绿色图标。合约的方法现在将显示为“已部署合约(Deployed Contracts)”部分下的按钮(图 5)。</p>
+<figure data-type="image" tabindex="6"><img src="https://miro.medium.com/max/1400/0*Rs0FuXZXZE1km-gy" alt="" loading="lazy"></figure>
+<p>图 5—Remix 面板的最终视图 (Fig. 5 — Final view of the Remix panel)</p>
+<p>Finally, to obtain the desired ‘Hello World’ functionality, click on the “callHelloWorld” button, which will return the string “Hello World!” (Fig. 6).</p>
+<p>最后，要获得所需的“Hello World”功能，请单击“callHelloWorld(callHelloWorld)”按钮，该按钮将返回字符串“Hello World！” (图 6)。</p>
+<figure data-type="image" tabindex="7"><img src="https://miro.medium.com/max/1400/0*Jnxs0ejuRk-ArNZ_" alt="" loading="lazy"></figure>
+<p>图 6—调用智能合约方法 (Fig. 6 — Calling the smart contract methods)</p>
+<h1 id="结论-conclusion">结论 (Conclusion)</h1>
+<p>Fortunately for Solidity developers new to using Neon, Remix is a quick and easy solution for contract deployment. It allows this deployment to occur from any device and does not require any specific local installations or settings. However, as it is an online IDE, its security is limited (don’t include any mainnet private keys in your contract code here!) and it will not work well with large projects. Therefore, Remix is best for testing smaller contracts when a quick check is desired.</p>
+<p>Remix 是一种快速简便的合约部署解决方案，这对于刚开始使用 Neon 的 Solidity 开发人员来说是幸运的。它允许从任何设备进行部署，并且不需要任何特定的本地安装或设置。然而，由于它是一个在线 IDE，它的安全性是有限的(不要在你的合约代码中包含任何主网私钥！)并且它不适用于大型项目。因此，当需要快速检查时，Remix 最适合测试较小的合约。</p>
+<p>Visit our <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_remix">docs</a> for a complete tutorial on using Remix to deploy your dapps.</p>
+<p>请访问我们的 <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_remix">文档</a>，获取有关使用 Remix 部署 dapp 的完整教程。</p>
 ]]></content>
     </entry>
     <entry>
@@ -487,6 +589,60 @@ Produce Block API 现在可用于 SDK 测试；</p>
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[黑暗森林的社区回合总结，前20名已被选出 (Dark Forest’s Community Round Concludes, Top 20 Selected)]]></title>
+        <id>https://chainguys.github.io/post/hei-an-sen-lin-de-she-qu-hui-he-zong-jie-qian-20-ming-yi-bei-xuan-chu-dark-forests-community-round-concludes-top-20-selected/</id>
+        <link href="https://chainguys.github.io/post/hei-an-sen-lin-de-she-qu-hui-he-zong-jie-qian-20-ming-yi-bei-xuan-chu-dark-forests-community-round-concludes-top-20-selected/">
+        </link>
+        <updated>2022-09-13T02:24:38.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/0*fqtz_rajICDvqn8O" alt="" loading="lazy"></figure>
+<hr>
+<ul>
+<li>
+<p><strong><em>Game-layer alone seamlessly handles over 94K txns per day; txns equivalent to over 90% of daily txns on Optimism and over 60% of daily txns on Arbitrum.</em></strong><br>
+<strong><em>游戏层每天可以无缝处理超过 94K 的交易；交易量相当于 Optimism 每日交易量的 90% 以上和 Arbitrum 每日交易量的 60% 以上。</em></strong></p>
+</li>
+<li>
+<p><strong><em>All metrics point to a successful game launch!</em></strong><br>
+<strong><em>所有指标都表明游戏发布成功！</em></strong></p>
+</li>
+</ul>
+<p>Dark Forest’s community round wrapped up on a great note as Alters everywhere rallied to embark upon a favourite weekend hobby — space conquest! A huge thank you to all those who signed up and made the time to play; we value your participation and your contributions as an early community member.</p>
+<p>黑暗森林的社区活动以精彩的方式结束，各地的 Alters 齐心协力开展周末最喜欢的爱好——太空征服！非常感谢所有注册并抽出时间玩的人；我们重视您作为早期社区成员的参与和贡献。</p>
+<p>Let’s take a look at how it went. The community round welcomed 300+ players, around 100 of whom were able to strategise, stay the course and gather up great scores. The highest scorer recorded 747,777,777. The highest number of transactions from a single player was 15,324 while the total game transactions over the two-day period was 189,723.</p>
+<p>让我们来看看结果如何。社区回合迎来了 300 多名玩家，其中大约 100 人能够制定策略、坚持到底并获得高分。最高得分手记录为 747,777,777。单人最高交易量为 15,324 笔，而两天内的总游戏交易量为 189,723 笔。</p>
+<p>Here’s a snapshot from the game!<br>
+这是游戏截图！</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*sk7u6fGMC9HMR5pw" alt="" loading="lazy"></figure>
+<hr>
+<p><strong>前20数据 (Top 20 Leaderboard)</strong></p>
+<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/1*KcnarU8lKYDkmRSidfIKrQ.png" alt="" loading="lazy"></figure>
+<p><strong>事后分析 (Post-Event Analysis)</strong></p>
+<p><a href="https://altlayer.io/">Altlayer’s</a> scalability solution in the form of game-dedicated execution layers offers incredible value — it is user and cost-friendly, and is able to process large transaction volumes without any network congestion. This Dark Forest community round captures our value proposition perfectly. The game-layer alone seamlessly handled over 94K transactions per day; txns equivalent to approx 60% of txns on all Arbitrum dApps, and over 90% of all txns on Optimism.</p>
+<p><a href="https://altlayer.io/">Altlayer</a> 以游戏专用执行层的形式，提供的可扩展性解决方案展现了令人难以置信的价值——它对用户和成本都很友好，并且能够在没有任何网络拥塞的情况下处理大量交易。黑暗森林社区回合完美地体现了我们的价值主张。仅游戏层每天就可以无缝处理超过 94K 的交易；交易量相当于所有 Arbitrum dApp 上约 60% ，以及 Optimism 上超过 90% 。</p>
+<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/0*yhC2Sn2m7061efes" alt="" loading="lazy"></figure>
+<hr>
+<p><strong>为什么在Altlayer上运行游戏? (Why Run Games on AltLayer?)</strong></p>
+<p>Most of the blockchain games today have their core game logic off-chain and on-chain transactions are limited to token trades or withdrawals. One of the main reasons for keeping the game logic off-chain is the lack of scalability and poor latency offered by general-purpose blockchain platforms.</p>
+<p>当今大多数区块链游戏的核心，其逻辑都在链下，链上交易仅限于代币交易或提款。保持游戏逻辑脱链的主要原因之一是通用区块链平台缺乏可扩展性和低延迟。</p>
+<p>In fact, earlier this year, a simple play-to-earn game called <a href="https://thedefiant.io/sunflower-game-causes-polygon-fee-spike">Sunflower Farmers</a> on Polygon PoS became so popular that it started to consume over 40% of the entire blockchain space which in turn resulted in a spike in high gas fees for the gamers as well as for users of other dApps. Therefore, any on-chain game that enjoys some level of popularity should have its own dedicated blockspace to avoid any negative externalities to end users. AltLayer can be a great solution as developers can easily spin off a game-dedicated execution layer that can offer over 2,500 TPS with 1–2 seconds of latency.</p>
+<p>事实上，今年早些时候，Polygon PoS 上一款名为 <a href="https://thedefiant.io/sunflower-game-causes-polygon-fee-spike">向日葵农场</a> 的简单赚钱游戏，变得如此流行以至于它开始消耗超过 40% 的区块空间，这反过来导致游戏玩家以及其他 dApp 用户的高额 gas 费用飙升。因此，任何享有一定知名度的链上游戏，都应该有自己的专用区块空间，进而避免对最终用户产生任何负面外部性。 AltLayer可以是一个很好的解决方案，因为开发人员可以轻松地分离出一个游戏专用执行层，该执行层可以提供超过 2,500 TPS 和 1-2 秒的延迟。</p>
+<p>Moreover, most indie games have a short lifespan (i.e., usually about a few months) and as soon as the demand among gamers tapers off, it would be ideal to be able to wind up the resources required to maintain the network. AltLayer is uniquely positioned in the market to provide such disposable execution layers and hence can be an ideal solution for game studios looking to build fully on-chain and transparent games.</p>
+<p>此外，大多数独立游戏的生命周期都很短(即通常大约几个月)，一旦游戏玩家的需求逐渐减少，最好能够收回维持网络所需的资源。 AltLayer 在市场上具有独特的定位，可提供此类一次性执行层，因此对于希望构建完全链上透明游戏的工作室来说，它是一个理想的解决方案。</p>
+<p>AltLayer’s disposable flash layer also allows game developers to settle in-game NFTs (for example artefacts in the case of Dark Forest) to a chain of their choice (e.g. Ethereum) allowing those NFTs to be traded on secondary markets such as OpenSea. Later, once a new round is started or when a new game version is released, those NFTs can be brought back into the game.</p>
+<p>AltLayer 的一次性瞬时层，还允许游戏开发者将游戏中的 NFT(例如黑暗森林中的人工制品)结算到他们选择的链(例如以太坊)上，从而允许这些 NFT 在 OpenSea 等二级市场上进行交易。之后，一旦开始新一轮或发布新游戏版本，这些 NFT 就可以带回游戏中。</p>
+<p><strong>构建一个游戏专用的执行层 (Building a Gaming-Tailored Execution Layer)</strong></p>
+<p>Unlike existing solutions in the market (e.g. Cosmos SDK) that offer one-size-fits-all solution to spin application-chains, AltLayer takes a tailored approach by providing several useful tools, dApps and other infrastructure that come as add-ons with game and NFT-dedicated flash layers.</p>
+<p>与市场上现有的，为应用链提供万能解决方案(例如 Cosmos SDK)不同，AltLayer 采用量身定制的方法，提供多种有用的工具、dApp 和其他基础设施作为游戏附加组件和 NFT 专用的瞬时层。</p>
+<p>This allows game developers to focus on building the game and not worry about tertiary tools and infrastructure.</p>
+<p>这使游戏开发人员可以专注于构建游戏，而不必担心三方工具和基础设施。</p>
+<p>For example, in order to provide a seamless experience to end users, flash layers will come together with an in-game NFT marketplace allowing players to trade assets right within the game. As a result, users do not have to leave the game interface and visit a third-party provider such as OpenSea to trade in-game assets. Another interesting feature that we are working on is to provide a safe in-game session wallet to improve UX for crypto-native games like Dark Forest.</p>
+<p>例如，为了向最终用户提供无缝体验，瞬时层将与游戏内 NFT 市场相结合，允许玩家在游戏中直接交易资产。因此，用户无需离开游戏界面，访问 OpenSea 等第三方提供商即可交易游戏内资产。我们正在开发的另一个有趣的功能是提供一个安全的游戏内会话钱包，进而改善黑暗森林等加密原生游戏的用户体验。</p>
+<p>More to be announced on this in the near future. Stay tuned!</p>
+<p>更多信息将在不久的将来公布。敬请关注！</p>
+<figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/1400/0*DugRxjtuMc72RHB-" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Worldcoin中文材料合集-不断更新中(Worldcoin Chinese Materials-Updating)]]></title>
         <id>https://chainguys.github.io/post/worldcoin-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-worldcoin-chinese-materials-updating/</id>
         <link href="https://chainguys.github.io/post/worldcoin-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-worldcoin-chinese-materials-updating/">
@@ -669,96 +825,6 @@ Produce Block API 现在可用于 SDK 测试；</p>
 <p><strong>交互性</strong>：Sei 与 Axelar Network 合作利用其跨链消息传递技术。这使 Sei 不仅能够将资产与 IBC 和 EVM 链连接起来，而且还能够利用 Axelar 所有合作伙伴的智能合约功能和逻辑。这允许 Sei 与来自“外国”链的用户和流动性进行交互，从而极大地扩展了基于 Sei 构建协议的总可寻址市场(规模)。</p>
 <p>The goal of Web3 has always been to empower users and developers to interact in optimized and decentralized manners. The current state of the industry prevents new and upcoming protocols to prioritize reach instead of performance. Sei offers a middle ground, where DeFi protocols can build and scale with as few compromises as possible. Sei will unlock an entirely new DeFi design space, enabling existing protocols to grow and novel protocols to be created.</p>
 <p>Web3 的目标一直是让用户和开发者，能够以优化和去中心化的方式进行交互。行业的现状阻止了新的和即将推出的协议，优先考虑覆盖范围而不是性能。 Sei 提供了一个中间地带，DeFi 协议可以在尽可能少的妥协的情况下构建和扩展。 Sei 将解锁一个全新的 DeFi 设计空间，使现有协议得以发展并创建新协议。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[为应对ETH合并，Euler已经准备好与Chainlink集成(Euler Integrates Chainlink To Get Ready for the Merge)]]></title>
-        <id>https://chainguys.github.io/post/wei-ying-dui-eth-he-bing-euler-yi-jing-zhun-bei-hao-yu-chainlink-ji-cheng-euler-integrates-chainlink-to-get-ready-for-the-merge/</id>
-        <link href="https://chainguys.github.io/post/wei-ying-dui-eth-he-bing-euler-yi-jing-zhun-bei-hao-yu-chainlink-ji-cheng-euler-integrates-chainlink-to-get-ready-for-the-merge/">
-        </link>
-        <updated>2022-09-07T15:55:27.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*ShqdcDHPbGqUOwsk4yEcVw.png" alt="" loading="lazy"></figure>
-<p>Euler Finance — a non-custodial lending and borrowing protocol — is excited to announce that it has integrated <a href="http://data.chain.link/">Chainlink Price Feeds</a> on Ethereum mainnet.</p>
-<p>Euler Finance—一个非托管借贷协议——很高兴地宣布它已在以太坊主网上集成了 <a href="http://data.chain.link/">Chainlink 价格推流/喂价</a>。</p>
-<p>Operating as a risk-averse protocol, Euler places a strong emphasis on the protection of users’ funds. Through its unique risk management framework, users have exposure to a new approach to lending and borrowing markets.</p>
-<p>作为一种规避风险的协议，Euler 非常重视保护用户的资金。通过独特的风险管理框架，用户可以接触到借贷市场的新方法。</p>
-<p>Through its integration of Chainlink Price Feeds, Euler Finance now has access to industry-leading data that help underpin the airtight security and reliability that users expect of Euler’s lending and borrowing functionality. As Chainlink has already helped secure leading DeFi protocols responsible for tens of billions of dollars in smart contract value, this integration further prevents loss of funds for users.</p>
-<p>通过集成<a href="http://data.chain.link/">Chainlink 价格推流/喂价</a>，Euler金融现在可以访问行业领先的数据，这些数据有助于巩固用户对 Euler 借贷功能期望的无懈可击的安全性和可靠性。由于 Chainlink 已经帮助保障了价值数百亿美元的智能合约的领先 DeFi 协议，这种集成进一步防止了用户的资金损失。</p>
-<p>Chainlink was chosen to address concerns around TWAPs post-merge. There is enough research to suggest that Ethereum post-merge validation mechanism makes multi-block attacks more likely than on Ethereum before the merge.</p>
-<p>选择 Chainlink 是为了解决合并后对 TWAP 的担忧。有足够的研究表明，以太坊合并后的验证机制，使得多块攻击比合并前的以太坊更易发生。</p>
-<p>Additionally, the Chainlink integration enables direct deposits of stETH, the staked ETH version by Lido Finance. Being one of the first on-chain venues for borrowing stETH, lenders on Euler will benefit from additional yield generated by borrowers.</p>
-<p>此外，Chainlink 集成支持直接存入 stETH，这是 Lido金融的质押 ETH 版本。作为最早借入 stETH 的链上场所之一，Euler 上的出借方将受益于借款人产生的额外收益。</p>
-<p>By relying on Chainlink’s leading oracle network, Euler will be able to leverage the reliable and decentralized market data it provides to DeFi protocols, maintaining robust security and high availability even amidst unexpected events, such as exchange downtime, flash crashes, and data manipulation attacks via flash loans.</p>
-<p>借助 Chainlink 领先的预言机网络，Euler 将能够利用其为 DeFi 协议提供的可靠&amp;去中心化的市场数据，即使在交易所停机、闪崩和利用闪电贷的数据操纵攻击等意外事件中也能保持强大的安全性和高可用性。</p>
-<p><strong>Michael Bentley, CEO of Euler Labs</strong> said, “Price data is the lifeblood of DeFi lending protocols and Euler is no exception. As best-in-class price data infrastructure for smart contracts, Chainlink Price Feeds have a proven track record when it comes to securing lending protocols.”</p>
-<p>Euler Labs 首席执行官 Michael Bentley 说：“价格数据是 DeFi 借贷协议的命脉，Euler 也不例外。作为智能合约的一流价格数据基础设施，<a href="http://data.chain.link/">Chainlink 价格推流/喂价</a>在保护借贷协议方面有着良好的记录。”</p>
-<h1 id="关于chainlink-about-chainlink">关于Chainlink (About Chainlink)</h1>
-<p>Chainlink is the industry standard for building, accessing, and selling oracle services needed to power hybrid smart contracts on any blockchain. Chainlink oracle networks provide smart contracts with a way to reliably connect to any external API and leverage secure off-chain computations for enabling feature-rich applications. Chainlink currently secures tens of billions of dollars across DeFi, insurance, gaming, and other major industries, and offers global enterprises and leading data providers a universal gateway to all blockchains.</p>
-<p>Chainlink 是构建、访问和销售为任何区块链上的混合智能合约提供所需动能的预言机服务的行业标杆。 Chainlink 预言机网络为智能合约提供了一种可靠地连接到任何外部 API 并利用安全的链下计算来启用功能丰富应用的方法。 Chainlink 目前为 DeFi、保险、游戏和其他主要行业提供数百亿美元的安全保障，并为全球企业和领先的数据提供商提供通向所有区块链的通用网关。</p>
-<p>Learn more about Chainlink by visiting <a href="https://chain.link/">chain.link</a> or reading the developer documentation at <a href="http://docs.chain.link/">docs.chain.link</a>. To discuss an integration, <a href="https://chainlinkcommunity.typeform.com/to/OYQO67EF?page=announcement">reach out to an expert</a>.</p>
-<p>访问 <a href="https://chain.link/">chain.link</a> 或阅读 <a href="http://docs.chain.link/">docs.chain.link</a> 上的开发者文档，了解有关 Chainlink 的更多信息。如果要集成，请<a href="https://chainlinkcommunity.typeform.com/to/OYQO67EF?page=announcement">联系专家</a>。</p>
-<h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
-<p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
-<p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NFT铸币如何可扩展(第二部分)-NFT Minting Made Scalable (Part II)]]></title>
-        <id>https://chainguys.github.io/post/nft-zhu-bi-ru-he-ke-kuo-zhan-di-er-bu-fen-nft-minting-made-scalable-part-ii/</id>
-        <link href="https://chainguys.github.io/post/nft-zhu-bi-ru-he-ke-kuo-zhan-di-er-bu-fen-nft-minting-made-scalable-part-ii/">
-        </link>
-        <updated>2022-09-06T03:28:02.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*J-VwaSdxqwlkci4lin0JLQ.png" alt="" loading="lazy"></figure>
-<hr>
-<p><strong>NFT 铸币的新奇案例 (The Curious Case of NFT Minting)</strong></p>
-<p>NFT mint events have a somewhat unique lifecycle compared to a fungible token. NFT minting is a short-lived event. An NFT mint event is often over in a few days (sometimes in hours or even minutes) and it’s only during that period that the user activity is extremely high. As soon as the mint event is over, the user activity slows down quite quickly to a point where the generated volume from secondary trading or other activities can be easily handled by any base-chain.</p>
-<p>与同质化代币相比，NFT 铸币事件具有某种独特的生命周期。 NFT 铸币是一个短暂的事件。NFT 铸币活动通常会在几天内结束(有时是几小时甚至几分钟)，而且只有在这几天内，用户活动才会非常活跃。铸币事件一结束，用户活动就会很快减慢到任何单片链可以轻松处理的二级交易或其他活动产生的交易量。</p>
-<p>Also, the experience offered to primary and secondary buyers can be very different. Primary buyers often have to go through a whitelisting mechanism while secondary buyers can buy an NFT from a marketplace of their choice. Also, as secondary buyers are the ones driving trading volume for NFTs, it is important to ensure that a drastically different UX is not forced upon them.</p>
-<p>此外，为一级和二级买家提供的体验可能非常不同。一级买家通常必须通过白名单机制，而二级买家可以从他们选择的市场购买 NFT。此外，由于二级买家是推动NFT交易量的人，因此要确保不会强迫他们使用截然不同的用户体验就很重要。</p>
-<p><strong>用于NFT铸币的瞬时层 (Flash Layer for NFT Minting)</strong></p>
-<p>A key innovation that AltLayer brings to the NFT mint scaling solution space is the idea of disposable execution layers. With AltLayer, a dApp developer expecting an increase in demand for his NFT could: 1) quickly spin up a fast and scalable rollup secured by a Layer 1, 2) use the rollup for as long as needed and thereby prevent clogging of the Layer 1, and then 3) dispose of the rollup by doing an “end-of-life” settlement on the Layer 1. This makes the entire system highly resource-optimised. The execution layer and its resources are called upon only when the dApp expects a considerable demand that a Layer 1 can’t handle and once the demand tapers off, the dApp can move back to the Layer 1.</p>
-<p>AltLayer 为NFT铸币扩展解决方案，带来的一项关键创新就是一次性执行层。借助 AltLayer，预计 NFT 需求会增加的 dApp 开发人员可以：1) 快速启动由layer1保护的快速且可扩展的汇总，2) 根据需要使用汇总，从而防止layer1阻塞，然后 3) 通过在layer1上进行“最后周期”结算来处理汇总。这使得整个系统高度资源优化。执行层及其资源仅在 dApp 预计layer1无法处理的大量需求时才被调用，并且一旦需求逐渐减少，dApp 可以移回第 1 层。</p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/1*o46tdG0BRSxgseCmJAWtSg.png" alt="" loading="lazy"></figure>
-<hr>
-<p><strong>瞬时层的价值主张与现有的 NFT 扩展解决方案 (Flash Layer’s Value Proposition vs. Existing NFT Scaling Solutions)</strong></p>
-<p>Flash layer’s value proposition for NFT projects can be summarised as follows:<br>
-瞬时层对 NFT 项目的价值主张可以总结如下：</p>
-<ol>
-<li>
-<p><strong>Mint-dedicated Scaling Layer:</strong> Flash layer allocates a mint-specific execution layer for each NFT project. As the blockspace is reserved for the project, this means that the mint event can be completely isolated from any other on-chain activity resulting in no network congestion. It will also be possible for the NFT project to make the minting process completely gasless. This feature cannot be offered on any general purpose Layer 1s, Layer 2s or EVM sidechains. In addition to the reserved blockspace for the mint event, flash layer comes with a high throughput execution environment capable of offering a dedicated 2000 TPS throughput with low block latency of 1–2s, providing a smooth experience for the mint event.</p>
-<p><strong>专注铸币的扩展层：</strong> 瞬时层为每个 NFT 项目分配一个特定的铸币执行层。由于区块空间是为项目保留的，这意味着铸币事件可以与任何其他链上活动完全隔离，而不会导致网络拥塞。 NFT 项目也有可能使铸币过程完全无gas。此功能无法在任何通用的layer1、layer1或 EVM 侧链上提供。除了为铸币活动预留的区块空间外， 瞬时层还带有一个高吞吐量的执行环境，能够提供 2000 TPS 的专用吞吐量和 1-2 秒的低区块延迟，为铸币活动提供流畅的体验。</p>
-</li>
-<li>
-<p><strong>Short-lived by Design:</strong> Flash layer is tailor-made for minting as it imbibes in itself the short-lived property of mint events. A flash layer gets disposed of as soon as the mint event is over. Participants in the mint event therefore stay on the flash layer for the shortest possible time (i.e., only during minting). This is in stark contrast to application-specific NFT scaling solutions which are designed to be persistent. Users of a flash layer can continue to enjoy the base-chain user experience that they are familiar with except for a very short period of time during the entire course of the NFT’s product lifecycle. This also ensures that there is no disruption to composability with third-party dApps like NFT lending applications or games.</p>
-<p><strong>短周期设计：</strong>  瞬时层是为铸币量身定制的，因为它本身吸收了铸币事件的短期属性。一旦铸币事件结束，瞬时层就会被处理掉。因此，铸币活动的参与者会在最短的时间内（即仅在铸币期间）停留在瞬时层上。这与意在持久化特定应用的 NFT 扩展解决方案形成鲜明对比。瞬时层的用户在 NFT 的整个产品生命周期中，除了极短的时间之外，可以继续享受他们熟悉的基础链用户体验。这也确保了与第三方 dApp（如 NFT 借贷应用或游戏）的可组合性不会受到干扰。</p>
-</li>
-<li>
-<p><strong>Automated Settlement of Assets on the Base-chain:</strong> When a flash layer set up for an NFT mint event gets disposed of, the system settles all the assets on the base-chain which basically means that all the NFTs end up on the base-chain post minting. Unlike solutions that require users to bridge assets manually, automated settlement ensures that all the NFTs get moved to the base-chain without requiring any user interference. By avoiding a manual bridging process, flash layers also entirely eliminate any bridge-associated security risks.</p>
-<p><strong>基础链上资产自动结算：</strong> 当为 NFT 铸币事件设置的瞬时层被销毁时，系统会结算基础链上的所有资产，这基本上意味着所有 NFT 在基础链铸币后回到主链。与需要用户手动跨链资产的解决方案不同，自动结算可确保所有 NFT 都移至基础链，而无需任何用户干预。通过避免手动跨链，瞬时层还完全消除了任何与跨链相关的安全风险。</p>
-</li>
-<li>
-<p><strong>Unfragmented Liquidity:</strong> As all the NFTs move to the base-chain at the end of the minting process, the system guarantees unfragmented liquidity on the base-chain. This ensures that secondary market participants do not have to hop from one chain to the other to find the NFT that they wish to purchase.</p>
-<p><strong>非碎片化流动性：</strong> 由于所有 NFT 在铸造过程结束时都转移到基础链，系统保证基础链上的非碎片化流动性。这确保了二级市场参与者不必从一条链跳到另一条链来寻找他们希望购买的 NFT。</p>
-</li>
-<li>
-<p><strong>Familiar UX for Mint Participants:</strong> As flash layers run the same execution engine as the base-chain, users participating in the mint event can enjoy a frictionless and familiar experience. For instance, if the base-chain is Ethereum, then users will be able to use Metamask or wallets that are EVM-compatible. They could also use familiar assets like USDC or ETH to participate in the NFT sale.</p>
-<p><strong>对铸币参与者提供熟悉的用户体验：</strong> 由于瞬时层与基础链运行相同的执行引擎，参与铸币活动的用户可以享受无摩擦和熟悉的体验。例如，如果基础链是以太坊，那么用户将能够使用与 EVM 兼容的 Metamask等钱包。他们还可以使用 USDC 或 ETH 等熟悉的资产参与 NFT 销售。</p>
-</li>
-<li>
-<p><strong>Transparent to Secondary Market Participants:</strong> Any user wishing to get involved with the NFT in the secondary market does not have to touch the flash layer. As secondary trading contributes massively to the overall NFT sales volume, this feature ensures that secondary traders do not get exposed to the flash layer at all.</p>
-<p><strong>对二级市场参与者透明：</strong> 任何希望在二级市场参与 NFT 的用户都不必接触瞬时层。由于二级交易对整体 NFT 销量有很大贡献，因此此功能可确保二级交易者根本不会接触到瞬时层。</p>
-</li>
-</ol>
-<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/1*ua4-fLjo7XtDJdfHSdHjSw.png" alt="" loading="lazy"></figure>
-<hr>
-<p>In a nutshell, Flash Layer minting solution enables one click deployment, multi-chain support, unfragmented liquidity and most importantly, elimination of gas war.</p>
-<p>简而言之，瞬时层铸币解决方案可实现一键部署、多链支持、完整流动性，最重要的是消除gas战争。</p>
-<p>If you are working on an NFT project and planning to do an NFT mint event, do reach out to us via <a href="mailto:support@altlayer.io">support@altlayer.io</a>. We would love to have a chat and see if we could be of any help.</p>
-<p>如果您正在从事 NFT 项目并计划举办 NFT 铸币活动，请通过 <a href="mailto:support@altlayer.io">support@altlayer.io</a> 与我们联系。我们很想聊聊看看我们是否可以提供任何帮助。</p>
-<p>Cheers!<br>
-干杯!</p>
-<p>The AltLayer Team<br>
-AltLayer 团队</p>
 ]]></content>
     </entry>
 </feed>
