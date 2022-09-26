@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-09-26T03:25:21.890Z</updated>
+    <updated>2022-09-26T08:48:34.734Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -137,6 +137,8 @@ return text;
 <h2 id="通用目的-vs-特定应用的l1sei处于中间-general-purpose-vs-app-specific-l1ssei-is-in-the-middle"><a href="https://chainguys.github.io/post/tong-yong-mu-de-vs-te-ding-ying-yong-de-l1sei-chu-yu-zhong-jian-general-purpose-vs-app-specific-l1ssei-is-in-the-middle/">通用目的 vs 特定应用的L1：Sei处于中间 (General Purpose vs App Specific L1s：Sei is in the middle)</a></h2>
 <h2 id="sei-获得500万美元融资由-multicoin-capital-牵头来构建针对-def-优化的layer1-sei-raises-5m-led-by-multicoin-capital-to-build-the-first-layer-1-blockchain-optimized-for-defi"><a href="https://chainguys.github.io/post/sei-huo-de-500-wan-mei-yuan-rong-zi-you-multicoin-capital-qian-tou-lai-gou-jian-zhen-dui-def-you-hua-de-layer1-sei-raises-dollar5m-led-by-multicoin-capital-to-build-the-first-layer-1-blockchain-optimized-for-defi/">Sei 获得500万美元融资，由 Multicoin Capital 牵头，来构建针对 DeF 优化的layer1 (Sei Raises $5M Led by Multicoin Capital to Build The First Layer 1 Blockchain Optimized for DeFi)</a></h2>
 <h2 id="sei-与-axelar-network-合作为-cosmos-上的-defi-启用跨链消息传递-sei-has-partnered-with-axelar-network-to-enable-cross-chain-messaging-for-defi-on-cosmos"><a href="https://chainguys.github.io/post/sei-yu-axelar-network-he-zuo-wei-cosmos-shang-de-defi-qi-yong-kua-lian-xiao-xi-chuan-di-sei-has-partnered-with-axelar-network-to-enable-cross-chain-messaging-for-defi-on-cosmos">Sei 与 Axelar Network 合作，为 Cosmos 上的 DeFi 启用跨链消息传递 (Sei has partnered with Axelar Network to enable cross-chain messaging for DeFi on Cosmos)</a></h2>
+<h1 id="官方文档official-docs">官方文档(Official Docs)</h1>
+<h2 id="官方文档翻译-施工中official-docs-translation-updating"><a href="https://zenofchain.gitbook.io/sei-zhong-wen-wen-dang-sei-docs-chnby-chainguys/">官方文档翻译-施工中(Official Docs Translation-Updating)</a></h2>
 ]]></content>
     </entry>
     <entry>
