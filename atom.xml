@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-09-27T06:35:01.835Z</updated>
+    <updated>2022-09-27T10:09:10.272Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,152 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Akord协议—向所有构建者开源 (Akord protocol – open for builders)]]></title>
+        <id>https://chainguys.github.io/post/akord-xie-yi-xiang-suo-you-gou-jian-zhe-kai-yuan-akord-protocol-open-for-builders/</id>
+        <link href="https://chainguys.github.io/post/akord-xie-yi-xiang-suo-you-gou-jian-zhe-kai-yuan-akord-protocol-open-for-builders/">
+        </link>
+        <updated>2022-09-26T10:07:36.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/media/Akord-Builder-Blog.jpg" alt="Akord Builder Blog" loading="lazy"></figure>
+<hr>
+<p>The Akord protocol is now open source and available to all builders. In the coming weeks, we’ll be releasing details of new programs to incentivise builders working on the Akord protocol. But for now, let’s concentrate on the technology.</p>
+<p>Akord 协议现在开源了，可供所有构建者使用。在接下来的几周内，我们将发布新计划的详细信息，来激励致力于 Akord 协议的构建者。但现在，让我们专注于技术。</p>
+<h2 id="互联网出版正在改变又一次-internet-publishing-is-changing-again">互联网出版正在改变，又一次 (Internet publishing is changing, again)</h2>
+<p>We have seen the internet evolve from the early, read-only web1, to the dynamic read/write web2 that social media is built on.</p>
+<p>我们已经看到互联网从早期的只读 web1 发展到构建社交媒体的动态读/写 web2。</p>
+<p>Now we’re seeing how blockchains are enabling a new dimension to the web: ownership. Yet, for data ownership to be practical, we need data to persist just as an object in physical reality can.</p>
+<p>现在我们看到区块链如何为网络带来新的维度：所有权。然而，为了使数据所有权变得实用，我们需要数据像物理现实中的对象一样持久存在。</p>
+<p>Arweave enables that persistence, and true data ownership, by providing a public, global and permanent hard drive.</p>
+<p>Arweave 通过提供公共、全球和永久的硬盘驱动器来实现这种持久性，和真正的数据所有权。</p>
+<p>The Akord protocol, built on Arweave, will further advance true user ownership of data, which is the foundation of web3.</p>
+<p>基于 Arweave 构建的 Akord 协议将进一步促进用户对数据真正的所有权，这是 web3 的基础。</p>
+<h2 id="用户自有存储是一种新范式-user-owned-storage-is-a-new-paradigm">用户自有存储是一种新范式 (User-owned storage is a new paradigm)</h2>
+<p>In the classic client–server model, the application must have direct access to the data, usually behind the same firewall. The ‘backend’ of the website needs direct access to your data before it can render a website.</p>
+<p>在经典的客户端-服务器模型中，应用必须要直接访问数据，通常位于同一防火墙之后。网站的“后端”需要直接访问您的数据才能呈现网站。</p>
+<p>However, this opens several issues that work against the user:</p>
+<p>但是，这会引发一些对用户不利的问题：</p>
+<ul>
+<li>
+<p><strong>Privacy</strong>: most software-as-a-service providers, at a minimum, have a backdoor to customer data at rest, in transit or when processed.<br>
+<strong>隐私</strong>：大多数软件即服务提供商至少对静态、传输中或处理时的客户数据都有后门。</p>
+</li>
+<li>
+<p><strong>Censorship</strong>: SaaS providers can revoke access to your data, especially if forced to by a government or legal authority.<br>
+<strong>审查</strong>：SaaS 提供商可以撤销对您数据的访问权限，尤其是在政府或法律机构强制要求的情况下。</p>
+</li>
+<li>
+<p><strong>Lacking consent</strong>: your data is often bought and sold, analysed or traded, without your consent or compensation.<br>
+<strong>缺乏授权</strong>：您的数据经常在未经您同意或补偿的情况下被买卖、分析或交易。</p>
+</li>
+<li>
+<p><strong>Surveillance</strong>: nefarious actors, governments and cyber criminals can exploit customers by hacking data storage providers.<br>
+<strong>监视</strong>：不法分子、政府和网络犯罪分子可以通过入侵数据存储提供商来剥削客户。</p>
+</li>
+</ul>
+<p>To address these issues, we are introducing the Akord protocol, allowing developers to build applications on a new web3 decentralised architecture.<br>
+为了解决这些问题，我们引入了 Akord 协议，允许开发人员在新的 web3 去中心化架构上构建应用。</p>
+<p>With Akord, users’ data is encrypted and audited by the protocol. This gives the users the ability to store personal, private or sensitive data in a private vault.<br>
+使用 Akord，用户的数据被协议加密和审计。这使用户能够将个人、隐私或敏感数据存储在私人保管库中。</p>
+<p>Since users control the keys to the vault, they can consent to who accesses their data. Without a backdoor, backend services cannot have direct access to the data.</p>
+<p>由于用户控制保管库的密钥，他们可以同意谁访问他们的数据。因为没有后门，即使后端服务也无法直接访问数据。</p>
+<h2 id="保管库-促进数据所有权的功能-vaults-features-to-facilitate-data-ownership">保管库 - 促进数据所有权的功能 (Vaults – features to facilitate data ownership)</h2>
+<p>Akord vaults have the functionality and properties needed for data ownership:</p>
+<p>Akord 保管库具有数据所有权所需的功能和属性：</p>
+<ul>
+<li>
+<p><strong>Privacy:</strong> secured by end-to-end encryption.<br>
+<strong>隐私：</strong> 通过端到端加密保护。</p>
+</li>
+<li>
+<p><strong>Consent</strong>: access controlled by the user’s consent.<br>
+<strong>授权</strong>：由用户同意控制的访问。</p>
+</li>
+<li>
+<p><strong>ZKP</strong>: containers for verifiable claims and zero knowledge proofs.<br>
+<strong>零知识证明ZKP</strong>：可验证声明和零知识证明的容器。</p>
+</li>
+<li>
+<p><strong>Composable and extendable</strong> protocol, enabling custom extensions.<br>
+<strong>可组合和可扩展</strong> 协议，支持自定义扩展。</p>
+</li>
+<li>
+<p><strong>On-chain</strong> <strong>permanent storage</strong> for files and folders.<br>
+<strong>链上</strong> <strong>永久存储</strong> ，可用于文件和文件夹。</p>
+</li>
+<li>
+<p><strong>File versioning and auditing</strong>.<br>
+<strong>文件版本控制和审核</strong>。</p>
+</li>
+<li>
+<p><strong>Messaging and collaboration</strong>.<br>
+<strong>消息传递和协作</strong>。</p>
+</li>
+</ul>
+<p>Vaults are multi-user. The owner can control who has access to the vault and the members who have access to contribute.</p>
+<p>保管库是多用户的。所有者可以控制有权访问保管库的人员以及有权参与贡献的成员。</p>
+<p>Inside the vault, we can store files, messages, images, structured or unstructured data, and much more. Auditing and file revisions are built-in features of the vault.</p>
+<p>在保管库中，我们可以存储文件、消息、图像、结构化或非结构化数据等等。审核和文件修订是保管库 的内置功能。</p>
+<p>Designed for composability, vaults enable developers to program functionality such as submitting a document for signature or storage.</p>
+<p>保管库专为可组合性而设计，使开发人员能够对功能进行编程，例如提交文档以供签名或存储。</p>
+<h2 id="目前协议的用例-protocol-use-cases-so-far">目前协议的用例 (Protocol use cases, so far)</h2>
+<p>Here’s a short summary of the types of projects we’re helping to build on the Akord protocol:</p>
+<p>以下是我们在 Akord 协议上，帮助构建的项目类型的简短摘要：</p>
+<ul>
+<li>
+<p><strong>Web3:</strong> NFT projects, DAOs, funds, exclusive membership access.<br>
+<strong>Web3：</strong> NFT 项目、DAO、基金、独家会员访问。</p>
+</li>
+<li>
+<p><strong>Public goods</strong>: reforestation data, historical archives, documenting art objects.<br>
+<strong>公共物品</strong>：重新造林数据、历史档案、记录艺术品。</p>
+</li>
+<li>
+<p><strong>Enterprise</strong>: Health insurance data, genetic data, business archives.<br>
+<strong>企业</strong>：健康保险数据、基因数据、业务档案。</p>
+</li>
+</ul>
+<p>For web3, the private vaults enable decentralised sharing of sensitive data.</p>
+<p>对于 web3，私有保管库可以实现敏感数据的分散共享。</p>
+<p>For public goods, vaults are enabling dynamic access control, as well as perpetual and open access to data from reforestation projects to historical archives.</p>
+<p>对于公共产品，保管库正在实现动态访问控制，以及对从重新造林项目到历史档案的数据的永久和开放访问。</p>
+<p>For enterprise, our partners recognise the importance of having secure and permanent data. Health, genetic and personal information can be coordinated and shared with a user directly to their vaults, changing the relationship between company and user.</p>
+<p>对于企业而言，我们的合作伙伴认识到拥有安全和永久数据的重要性。健康、遗传和个人信息可以与用户直接协调并共享到他们的保险库，从而改变公司和用户之间的关系。</p>
+<p>In all cases, the user becomes the owner of their data. Then the company seeks the consent of the user to access their data.</p>
+<p>在所有情况下，用户都成为其数据的所有者。然后公司寻求用户的同意来访问他们的数据。</p>
+<h2 id="召集所有构建者您的新工具包已经到来-calling-all-builders-your-new-toolkit-has-arrived">召集所有构建者：您的新工具包已经到来 (Calling all builders: your new toolkit has arrived)</h2>
+<p>We invite all builders to check out the following latest releases.</p>
+<p>我们邀请所有构建者查看以下最新版本。</p>
+<ul>
+<li>
+<p><strong>Akord protocol</strong> on Arweave mainnet<br>
+Arweave 主网上的 <strong>Akord 协议</strong></p>
+</li>
+<li>
+<p><a href="https://github.com/akord-com/akord-js"><strong>Akord-js</strong></a> to interact with vaults using javascript/typescript<br>
+<a href="https://github.com/akord-com/akord-js"><strong>Akord-js</strong></a> 使用 javascript/typescript 与保管库交互</p>
+</li>
+<li>
+<p><a href="https://github.com/akord-com/akord-cli"><strong>Akord-cli</strong></a> for scripting vaults from the command line<br>
+<a href="https://github.com/akord-com/akord-cli"><strong>Akord-cli</strong></a> 用于从命令行编写保管库脚本</p>
+</li>
+<li>
+<p><strong>API &amp; App</strong> – new protocol version of the app is available at: <a href="http://v2.akord.com/">v2.akord.com</a><br>
+<strong>API 和应用程序</strong> - 应用程序的新协议版本可在以下网址获得：<a href="http://v2.akord.com/">v2.akord.com</a></p>
+</li>
+<li>
+<p><a href="https://docs.akord.com/"><strong>Docs</strong></a>, <a href="https://docs.akord.com/learn/technical-litepaper"><strong>Litepaper</strong></a> and <a href="https://docs.akord.com/learn/examples"><strong>tutorials</strong></a>.<br>
+<a href="https://docs.akord.com/"><strong>文档</strong></a>, <a href="https://docs.akord.com/learn/technical-litepaper"><strong>轻皮书</strong></a> 和 <a href="https://docs.akord.com/learn/examples"><strong>指导</strong></a>.</p>
+</li>
+</ul>
+<p>We'll be releasing a migration tool that will enable users to transfer data from v1 version of the app to the new v2.akord.com, which will not cost users anything to migrate.</p>
+<p>我们将发布一个迁移工具，使用户能够将数据从 v1 版本的应用转移到新的 v2.akord.com，这不会花费用户任何迁移费用。</p>
+<h2 id="现在抓住你构建的东西-now-seize-control-of-what-you-build">现在，抓住你构建的东西 (Now, seize control of what you build)</h2>
+<p>These tools are just the first step. We need you to imagine the possibilities. A future, built on user-owned data, is still yet to be written.</p>
+<p>这些工具只是第一步。我们需要您想象各种可能性。建立在用户拥有数据之上的未来，仍有待编写。</p>
+<p>We’re excited to help grow and support the developers and the dreamers who will take the Akord protocol to seize control of their data. We’ll soon be announcing details of the Akord Builders Grants to kickstart this journey.</p>
+<p>我们很高兴能够帮助发展和支持将采用 Akord 协议来控制其数据的开发人员和梦想家。我们很快将公布 Akord开发者奖金(Akord Builders Grants) 的详细信息，来启动这一旅程。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Altlayer中文材料合集-不断更新中(Altlayer Chinese Materials-Updating)]]></title>
         <id>https://chainguys.github.io/post/altlayer-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-altlayer-chinese-materials-updating/</id>
@@ -771,66 +917,6 @@ Produce Block API 现在可用于 SDK 测试；</p>
 <h1 id="关于euler-about-euler">关于Euler (About Euler)</h1>
 <p>Euler is a capital-efficient permissionless lending protocol that helps users to earn interest on their crypto assets or hedge against volatile markets without the need for a trusted third-party. Euler features a number of innovations not seen before in DeFi, including permissionless lending markets, reactive interest rates, protected collateral, MEV-resistant liquidations, multi-collateral stability pools, sub-accounts, risk-adjusted loans and much more. For more information, visit <a href="https://www.euler.finance/">euler.finance</a>.</p>
 <p>Euler 是一种资本效率高的无许可借贷协议，可帮助用户从其加密资产中赚取利息或对冲波动的市场，而无需受信第三方。 Euler 具有许多在 DeFi 中前所未有的创新，包括无许可的借贷市场、回应性利率、受保护的抵押品、抗 MEV 清算、多抵押品稳定池、子账户、风险调整贷款等等。有关更多信息，请访问 <a href="https://www.euler.finance/">euler.finance</a>。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[通用目的 vs 特定应用的L1：Sei处于中间 (General Purpose vs App Specific L1s：Sei is in the middle)]]></title>
-        <id>https://chainguys.github.io/post/tong-yong-mu-de-vs-te-ding-ying-yong-de-l1sei-chu-yu-zhong-jian-general-purpose-vs-app-specific-l1ssei-is-in-the-middle/</id>
-        <link href="https://chainguys.github.io/post/tong-yong-mu-de-vs-te-ding-ying-yong-de-l1sei-chu-yu-zhong-jian-general-purpose-vs-app-specific-l1ssei-is-in-the-middle/">
-        </link>
-        <updated>2022-09-08T09:58:49.000Z</updated>
-        <content type="html"><![CDATA[<h2 id=""><img src="https://blog.seinetwork.io/content/images/size/w2000/2022/09/unnamed-52.png" alt="" loading="lazy"></h2>
-<p>In the beginning, Vitalik created Ethereum. Ethereum expanded upon Bitcoin’s revolutionary distributed ledger by enabling smart contracts to be written and executed directly on-chain. This allowed users to have structured interactions, either with one another or with other smart contracts, and allowed for reliable, deterministic behavior. Crypto Twitter, though still in its infancy, gazed upon Ethereum smart contracts and decided they were good.</p>
-<p>最开始，Vitalik 创建了以太坊。以太坊通过支持直接在链上编写和执行智能合约，扩展了比特币革命性的分布式账本。这允许用户与彼此或与其他智能合约进行结构化交互，并使得许可靠、确定性的行为成为现实。虽然加密推特仍处于起步阶段，但仍然注视着以太坊智能合约，并认为它们很好。</p>
-<p>Being the first bonafide layer 1 gave Ethereum a huge first-mover advantage. An overwhelming majority of dApps and protocols had to build on Ethereum to leverage its liquidity and user base. In the early years of crypto, it was difficult enough to onboard users to Ethereum, the conditions simply were not favorable for new ecosystems. So for nearly half a decade, dApps and protocols were developed on Ethereum because it was the largest, easiest, and perhaps the only option.</p>
-<p>作为第一个真正的layer1，以太坊具有巨大的先发优势。绝大多数 dApp 和协议必须建立在以太坊之上，来利用其流动性和用户群体。在加密货币的早期，很难让用户加入以太坊，因为条件根本不利于新的生态系统。但近五年来，dApp 和协议都是在以太坊上开发的，因为它是最大、最简单、也许是唯一的选择。</p>
-<p>It wasn’t until 2020 that “Ethereum-killers” like Solana, Avalanche, and Binance Smart Chain (BSC) launched their own L1s to compete for Ethereum’s market share. Ethereum had grown too large to support its network traffic. Rising gas prices and latency concerns forced users and developers to seek L1 to improve user experience.</p>
-<p>直到 2020 年，像 Solana、Avalanche 和 Binance Smart Chain (BSC) 这样的“以太坊杀手”才推出了自己的 L1，进而争夺以太坊的市场份额。以太坊已经变得太大，而无法支持其网络流量。不断上涨的 gas 价格和延迟问题，迫使用户和开发人员寻求 L1 以改善用户体验。</p>
-<h2 id="什么是通用目的layer1-what-are-general-purpose-layer-1s">什么是通用目的layer1 (What are “General-Purpose Layer 1s”?)</h2>
-<p>General-purpose L1s are the Swiss Army Knives of Web3 infrastructure. They are blockchains that are not optimized for any specific application, instead, they allow a variety of decentralized applications to be built on top of them. Examples of general-purpose L1s include Ethereum, Solana, Avalanche, and BSC. These chains allow protocols to share (and compete) for users, liquidity, and blockspace.</p>
-<p>通用 L1 是 Web3 基础设施的瑞士军刀。它们是没有针对任何特定应用优化的区块链，相反，它们允许在之上构建各种去中心化应用。通用 L1 的示例包括 Ethereum、Solana、Avalanche 和 BSC。这些链允许协议共享（和竞争）用户、流动性和区块空间。</p>
-<h2 id="什么是特定应用layer1-what-are-app-specific-layer-1s">什么是特定应用layer1 (What are “App-Specific Layer 1s”?)</h2>
-<p>App-specific L1s are blockchains that have been developed exclusively for one or a few decentralized applications. These L1s can customize every aspect of their tech stack, such as their programming language, development frameworks, and consensus mechanisms to best suit their protocol(s) needs. Cosmos Zones are perfect examples of app-specific L1s. These chains are fully customizable and are completely sovereign within their own chains.</p>
-<p>特定应用的 L1 是专门为一个或几个去中心化应用开发的区块链。这些 L1 可以自定义其技术栈的各个方面，例如他们的编程语言、开发框架和共识机制，以最适合他们的协议需求。 Cosmos Zones 是应用特定 L1 的完美示例。这些链是完全可定制的，并且在它们自己的链中是完全主权的。</p>
-<h2 id="特定应用layer1很新吗-are-app-specific-l1s-new">特定应用layer1很新吗? (Are app-specific L1s new?)</h2>
-<p>The idea of app-specific blockchains has been around for a few years now. However, it has only become widely feasible in the past 2 years thanks to the tech stacks offered by “ecosystems” such as Cosmos and Polkadot. Before their contributions, it was prohibitively complex and labor intensive to build your own L1. Developers would need significant amounts of time and funding to build, market, and interconnect their L1s. New chains would have had to compete with Ethereum and Bitcoin for liquidity in what was essentially a zero-sum game. This made it virtually impossible for any single protocol to attempt to build its own chain.</p>
-<p>特定应用的区块链的想法已经存在了几年。然而，由于 Cosmos 和 Polkadot 等“生态系统”提供的技术栈，它在过去 2 年才变得广泛可行。在他们做出贡献之前，构建自己的 L1 非常复杂且劳动密集。开发人员需要大量时间和资金来构建、营销和交互这些 L1。在本质上是零和游戏的情况下，新链将不得不与以太坊和比特币竞争流动性。这使得任何单一协议几乎不可能尝试构建自己的链。</p>
-<h2 id="为什么是现在-why-now">为什么是现在 (Why now?)</h2>
-<p>With the advent of Cosmos and Polkadot, the process of building a blockchain has been significantly simplified. Dapps building on Cosmos can utilize the Cosmos SDK as their development framework and the Tendermint core as their consensus mechanism. This abstracts a huge amount of complexity from protocol developers, allowing them to focus on the application layer of their chains.</p>
-<p>随着 Cosmos 和 Polkadot 的出现，构建区块链的过程已经大大简化。基于 Cosmos 构建的 Dapp 可以使用 Cosmos SDK 作为开发框架，使用 Tendermint 核心作为共识机制。这从协议开发人员那里减少了大量的复杂性，使他们能够专注于其链的应用层。</p>
-<p>Another advancement that has significantly propelled the popularity and feasibility of app-specific L1s is the Inter-Blockchain Communication Protocol (IBC). The IBC allows sovereign blockchains within the Cosmos ecosystems to directly communicate and trade assets. This means that users will no longer be limited to the protocols, liquidity, and functionality of just one chain.</p>
-<p>另一个显着推动特定应用 L1 的普及和可行的进步，是区块链间通信协议 (IBC)。 IBC 允许 Cosmos 生态系统中的主权区块链直接通信和交易资产。这意味着用户将不再局限于单一链的协议、流动性和功能。</p>
-<h2 id="通用目的-l1-和特定应用-l1-之间的差异-differences-between-general-purpose-and-app-specific-l1s">通用目的 L1 和特定应用 L1 之间的差异 (Differences between general-purpose and app-specific L1s)</h2>
-<p><strong>Flexibility</strong>: App-specific L1s undoubtedly offer more flexibility than their general-purpose counterparts. Developers can customize the programming language, development framework, consensus mechanisms, and technical specifications of their chains.<br>
-<strong>灵活性</strong>：特定应用的 L1 无疑比通用的 L1 提供更大的灵活性。开发者可以自定义其链的编程语言、开发框架、共识机制和技术规范。</p>
-<p><strong>Simplicity</strong>: General-purpose blockchains are easier/less labor intensive for new protocols to launch on. While the Cosmos SDK and Tendermint Core abstract networking and consensus for IBC protocols, app-specific L1s still need to source their own validators which can be a difficult and time-consuming process.<br>
-<strong>简单</strong>：通用区块链对于启动新协议来说更容易/劳动强度更低。虽然 Cosmos SDK 和 Tendermint Core 为 IBC 协议抽象了网络和共识，但特定应用的 L1 仍然需要获取自己的验证者，这可能是一个困难且耗时的过程。</p>
-<p><strong>Performance</strong>: App-specific L1s typically offer better performance on a per-protocol basis. This is a by-product of the flexibility mentioned above. Chains can be optimized for speed, privacy, transaction volume, and much more. Furthermore, app-specific L1s do not need to deal with congestion stemming from “noisy neighbors”. Without having to compete with NFT mints or other protocols means that transaction speed and cost can remain constant for end users.<br>
-<strong>性能</strong>：特定应用的 L1 通常在每个协议的基础上提供更好的性能。这是上述灵活性的副产品。链可以针对速度、隐私、交易量等进行优化。此外，特定应用的 L1 不需要处理源自“嘈杂邻居”的拥塞。无需与 NFT铸币或其他协议竞争，这意味着最终用户的交易速度和成本可以保持不变。</p>
-<p><strong>Interoperability</strong>: IBC chains benefit from specialized interoperability. However, with bridges and interoperability layers such as Axelar, Multichain, and Synapse growing in popularity, both general purpose and app-specific chains will likely experience similar levels of interoperability.<br>
-<strong>可交互性</strong>：IBC 链受益于专门的可交互性性。但是，随着 Axelar、Multichain 和 Synapse 等跨链桥桥和交互层越来越受欢迎，通用链和特定应用链可能会经历相似级别的交互性。</p>
-<p><strong>Security</strong>: General-purpose blockchains are more difficult to secure, due to the sheer number of possible interactions between every user and protocol on the chain. It is exceedingly difficult to predict and prevent exploits when user behavior is so varied. In general, app-specific blockchains are easier to audit and secure, due to the smaller number of permitted interactions between users can chains.<br>
-<strong>安全性</strong>：通用区块链更难保护，因为链上每个用户和协议之间可能的交互数量众多。当用户行为如此多样时，很难预测和防止漏洞利用。一般来说，特定应用的区块链更容易审计和保护，因为用户与链之间，被允许的交互数量较少。</p>
-<p>On a chain level, proof-of-stake general-purpose L1s are more difficult to attack as the sheer amount of capital required is exponentially larger than app-specific chains. However, app-specific L1s may have closed validator sets or entirely novel consensus mechanisms that make them more secure and censorship-resistant.<br>
-在链层面上，权益证明类的通用 L1 更难攻击，因为所需的资本数量比特定应用的链大得多。但是，特定应用的 L1 可能具有封闭的验证者或全新的共识机制，使它们更加安全和抗审查。</p>
-<h2 id="有中间道路吗is-there-a-middle-ground">有中间道路吗？(Is there a middle ground?)</h2>
-<p>As it stands, protocols are still forced to make a difficult decision between building on a general-purpose L1 or creating their own app-specific chain. While most protocols will value the increased performance and flexibility of building their own L1, assembling a validator set and sourcing liquidity for a stand-alone chain can be prohibitively difficult.<br>
-就目前而言，协议仍然被迫在构建通用 L1 或创建自己的特定应用链之间做出艰难的决定。虽然大多数协议都重视构建自己的 L1 所提高的性能和灵活性，但为独立链组装验证者和寻找流动性可能非常困难。</p>
-<p>As such, even with innovations from the Cosmos and Polkadot teams, many protocols still opt to build on general-purpose chains. Sei has observed that only larger protocols with established user bases, such as dYdX and OKX, are willing to migrate from their “home” chains to Cosmos. These conditions have begun to frame app-specific L1 thesis as a “late game” move instead of an alternative starting point in the eyes of Web3.<br>
-因此，即使有 Cosmos 和 Polkadot 团队的创新，许多协议仍然选择建立在通用链上。 Sei 观察到，只有拥有成熟用户群的大型协议，例如 dYdX 和 OKX，才愿意从他们的“家”链迁移到 Cosmos。这些条件已经开始将特定应用的 L1 框架作为“游戏后期”的举措，而不是 Web3 眼中的另一个起点。</p>
-<h2 id="sei简介-introducing-sei">Sei简介 (Introducing Sei)</h2>
-<p><a href="https://www.seinetwork.io/">Sei</a> is the fastest DeFi L1, the fastest chain to finality in Web3, and it aims to change this perception. <strong>Sei envisions itself as a DeFi-specific L1 instead of an app-specific chain.</strong> This distinction allows Sei to optimize its chain for a class or subset of protocols instead of attempting to create a one-size-fits-all solution.</p>
-<p><a href="https://www.seinetwork.io/">Sei</a> 是最快的 DeFi L1，是 Web3 中达到最终态最快的链，它旨在改变上文描述的看法。 <strong>Sei 将自己设想为专门的 DeFi  L1，而不是特定应用的链。</strong> 这种区别使 Sei 可以针对一类或协议子集优化，而不是试图创建一个万能的解决方案.</p>
-<p>Sei is a purpose-built L1 that is opening up an entirely new DeFi design space. The team at Sei has thoroughly analyzed the current limitations and pain points of on-chain dApps and protocols to design a true DeFi-specific chain. This novel idea includes optimizations for performance, security, and interoperability.</p>
-<p>Sei 是一个专用的 L1，它正在开辟一个全新的 DeFi 设计空间。 Sei 团队彻底分析了当前链上 dApp 和协议的局限性和痛点，进而设计出真正的 DeFi 专用链。这个新颖的想法包括对性能、安全性和交互性的优化。</p>
-<p><strong>Performance</strong>: One of Sei’s core improvements over competing L1s is its speed. Sei currently offers the fastest Time To Finality (TTF) in Web3, sitting at approximately 600ms. Simply put, TTF measures the time taken between a transaction being submitted to the transaction being confirmed with a guarantee of irreversibility. TTF is analogous to latency as it measures the time taken for information to go from sender → validator → sender.<br>
-<strong>性能</strong>：相对于竞争者 L1 的核心改进之一，就是Sei 的速度。 Sei 目前在 Web3 中提供最快的 最终态生成时间，Time To Finality (TTF)，大约为 600 毫秒。简而言之，TTF 衡量的是从提交交易到确认交易之间所用的时间，并保证不可逆。 TTF 类似于延迟，因为它测量信息从发送者→验证者→发送者所花费的时间。</p>
-<p><strong>Security</strong>: Sei maintains a focused validator set, which has been rigorously tested throughout Seinami’s incentivized testnet. Protocols building on Sei will be able to leverage Sei’s validators inste1ad of assembling their own validator set. This alleviates one of the largest blockers for migration to Cosmos. Furthermore, Sei utilizes <a href="https://ethresear.ch/t/mev-auction-auctioning-transaction-ordering-rights-as-a-solution-to-miner-extractable-value/6788">frequent batch auctions</a> to prevent Minimum-Extractable-Value (MEV) from occurring on its chain. Batch auctions are fundamentally less vulnerable to MEV since the ordering of trades within a batch doesn’t affect the price. (<a href="https://coinmarketcap.com/alexandria/glossary/batch-auctions">Source</a>).<br>
-<strong>安全性</strong>：Sei 维护着一个专注的验证者集，该验证者集已在 Seinami 的激励测试网中经过严格测试。建立在 Sei 上的协议将能够利用 Sei 的验证者而不是组装自己的验证者集。这缓解了迁移到 Cosmos 的最大障碍之一。此外，Sei 利用 <a href="https://ethresear.ch/t/mev-auction-auctioning-transaction-ordering-rights-as-a-solution-to-miner-extractable-value/6788">频繁的批量拍卖</a> 来防止出现在其链上的最小可提取值 (MEV)。批量拍卖从根本上不太容易受到 MEV 的影响，因为批次内的交易顺序不会影响价格。 （[来源]（https://coinmarketcap.com/alexandria/glossary/batch-auctions））。</p>
-<p><strong>Interoperability</strong>: Sei has partnered with Axelar Network to leverage its cross-chain messaging technology. This has enabled Sei to not only bridge assets to and from both IBC and EVM chain, but also to utilize smart contract functionality and logic from all of Axelar’s partners. This allows Sei to interact with users and liquidity from “foreign” chains, greatly expanding the total addressable market for protocols building on Sei.</p>
-<p><strong>交互性</strong>：Sei 与 Axelar Network 合作利用其跨链消息传递技术。这使 Sei 不仅能够将资产与 IBC 和 EVM 链连接起来，而且还能够利用 Axelar 所有合作伙伴的智能合约功能和逻辑。这允许 Sei 与来自“外国”链的用户和流动性进行交互，从而极大地扩展了基于 Sei 构建协议的总可寻址市场(规模)。</p>
-<p>The goal of Web3 has always been to empower users and developers to interact in optimized and decentralized manners. The current state of the industry prevents new and upcoming protocols to prioritize reach instead of performance. Sei offers a middle ground, where DeFi protocols can build and scale with as few compromises as possible. Sei will unlock an entirely new DeFi design space, enabling existing protocols to grow and novel protocols to be created.</p>
-<p>Web3 的目标一直是让用户和开发者，能够以优化和去中心化的方式进行交互。行业的现状阻止了新的和即将推出的协议，优先考虑覆盖范围而不是性能。 Sei 提供了一个中间地带，DeFi 协议可以在尽可能少的妥协的情况下构建和扩展。 Sei 将解锁一个全新的 DeFi 设计空间，使现有协议得以发展并创建新协议。</p>
 ]]></content>
     </entry>
 </feed>
