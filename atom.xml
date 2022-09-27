@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-09-26T08:48:34.734Z</updated>
+    <updated>2022-09-27T06:35:01.835Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -23,6 +23,8 @@
 <h2 id="nft铸币如何扩展第一部分-nft-minting-made-scalable-part-i"><a href="https://chainguys.github.io/post/nft-zhu-bi-ru-he-kuo-zhan-di-yi-bu-fen-nft-minting-made-scalable-part-i/">NFT铸币如何扩展(第一部分)-NFT Minting Made Scalable (Part I)</a></h2>
 <h2 id="nft铸币如何可扩展第二部分-nft-minting-made-scalable-part-ii"><a href="https://chainguys.github.io/post/nft-zhu-bi-ru-he-ke-kuo-zhan-di-er-bu-fen-nft-minting-made-scalable-part-ii">NFT铸币如何可扩展(第二部分)-NFT Minting Made Scalable (Part II)</a></h2>
 <h2 id="黑暗森林的社区回合总结前20名已被选出-dark-forests-community-round-concludes-top-20-selected"><a href="https://chainguys.github.io/post/altlayer-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-altlayer-chinese-materials-updating">黑暗森林的社区回合总结，前20名已被选出 (Dark Forest’s Community Round Concludes, Top 20 Selected)</a></h2>
+<h2 id="altlayer又如何the-case-for-altlayer"><a href="https://chainguys.github.io/post/altlayer-you-ru-he-the-case-for-altlayer/">AltLayer又如何?(The Case for AltLayer)</a></h2>
+<h2 id="早安开发者和用户-gm-developers-and-users"><a href="https://chainguys.github.io/post/zao-an-kai-fa-zhe-he-yong-hu-gm-developers-and-users">早安，开发者和用户! (GM Developers and Users!)</a></h2>
 ]]></content>
     </entry>
     <entry>
@@ -154,6 +156,7 @@ return text;
 <h1 id="2项目简介和关键文章project-introduction-and-key-articals">2.项目简介和关键文章(Project Introduction and key articals)</h1>
 <h2 id="介绍beta-1第一个面向开发人员的模块化执行层fuel测试网-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet"><a href="https://chainguys.github.io/post/jie-shao-beta-1di-yi-ge-mian-xiang-kai-fa-ren-yuan-de-mo-kuai-hua-zhi-xing-ceng-fuel-ce-shi-wang-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet">介绍“Beta-1”，第一个面向开发人员的模块化执行层Fuel测试网 (Introducing &quot;Beta-1&quot;, the First Modular Execution Layer Developer-facing Fuel Testnet )</a></h2>
 <h2 id="swayswap简介以太坊模块化执行层上的极速-dex-introducing-swayswapa-blazingly-fast-dex-on-ethereums-modular-execution-layer"><a href="https://chainguys.github.io/post/swayswap-jian-jie-yi-tai-fang-mo-kuai-hua-zhi-xing-ceng-shang-de-ji-su-dex-introducing-swayswapa-blazingly-fast-dex-on-ethereums-modular-execution-layer">SwaySwap简介：以太坊模块化执行层上的极速 DEX (Introducing SwaySwap：A Blazingly Fast DEX on Ethereum's Modular Execution Layer)</a></h2>
+<h2 id="见一见feul背后的团队-第1集-meet-the-team-behind-fuel-episode-1"><a href="https://chainguys.github.io/post/jian-yi-jian-feul-bei-hou-de-tuan-dui-di-1-ji-meet-the-team-behind-fuel-episode-1">见一见Feul背后的团队-第1集 (Meet the team behind Fuel Episode 1)</a></h2>
 <h1 id="3其他官方博客翻译-other-official-blogs-translated-into-chinese">3.其他官方博客翻译 (Other Official Blogs Translated into Chinese)</h1>
 <p>coming soon</p>
 ]]></content>
