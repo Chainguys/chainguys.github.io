@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-09-29T03:43:12.273Z</updated>
+    <updated>2022-09-29T23:51:08.982Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -305,7 +305,7 @@ return text;
 <h2 id="见一见feul背后的团队-第1集-meet-the-team-behind-fuel-episode-1"><a href="https://chainguys.github.io/post/jian-yi-jian-feul-bei-hou-de-tuan-dui-di-1-ji-meet-the-team-behind-fuel-episode-1">见一见Feul背后的团队-第1集 (Meet the team behind Fuel Episode 1)</a></h2>
 <h2 id="见一见feul背后的团队-第2集-meet-the-team-behind-fuel-episode-2"><a href="https://chainguys.github.io/post/di-2-ji-alex-hansenji-zhu-tuan-dui-fu-ze-ren-episode-2-alex-hansen-technical-team-lead">见一见Feul背后的团队-第2集 (Meet the team behind Fuel Episode 2)</a></h2>
 <h1 id="3其他官方博客翻译-other-official-blogs-translated-into-chinese">3.其他官方博客翻译 (Other Official Blogs Translated into Chinese)</h1>
-<p>##<a href="https://chainguys.github.io/post/yuljian-jie-yi-ge-yi-tai-fang-de-quan-xin-di-ji-yu-yan-introducingyul-a-new-low-level-language-for-ethereum">Yul+简介—一个以太坊的全新低级语言 (Introducing：Yul+ — A new low-level language for Ethereum)</a></p>
+<h2 id="yul简介一个以太坊的全新低级语言-introducingyul-a-new-low-level-language-for-ethereum"><a href="https://chainguys.github.io/post/yuljian-jie-yi-ge-yi-tai-fang-de-quan-xin-di-ji-yu-yan-introducingyul-a-new-low-level-language-for-ethereum">Yul+简介—一个以太坊的全新低级语言 (Introducing：Yul+ — A new low-level language for Ethereum)</a></h2>
 ]]></content>
     </entry>
     <entry>
