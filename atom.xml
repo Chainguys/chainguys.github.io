@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-07T09:08:26.347Z</updated>
+    <updated>2022-10-07T14:01:19.307Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,67 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Akord应用V2介绍 (Introducing the V2 Akord app)]]></title>
+        <id>https://chainguys.github.io/post/akord-ying-yong-v2-jie-shao-introducing-the-v2-akord-app/</id>
+        <link href="https://chainguys.github.io/post/akord-ying-yong-v2-jie-shao-introducing-the-v2-akord-app/">
+        </link>
+        <updated>2022-10-06T12:16:32.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/media/akord-v2-post.png" alt="Akord v2 post" loading="lazy"></figure>
+<h2 id="新协议新应用-new-protocol-new-app">新协议，新应用 (New protocol, new app)</h2>
+<p>We recently released the new <a href="http://docs.akord.com/">Akord protocol</a> open source along with a raft of developer tools to help builders get going on the new protocol.</p>
+<p>我们最近发布了新的开源 <a href="http://docs.akord.com/">Akord 协议</a> 以及大量开发工具，以帮助构建者着手使用新协议。</p>
+<p>The Akord protocol marks a new beginning where we start to create an ecosystem of builders who will use our technology to integrate permanence, privacy and collaboration on Arweave into their own projects.</p>
+<p>Akord 协议标志着一个新的开始，我们开始创建一个构建者生态系统，他们将使用我们的技术把 Arweave 上永续、隐私和协作集成到他们自己的项目中。</p>
+<p>We built the Akord protocol for number of reasons, including:</p>
+<p>我们构建 Akord 协议的原因有很多，包括：</p>
+<ul>
+<li>
+<p>having a standard way of posting transactions to arweave<br>
+有一个标准的方式来发布交易到 arweave</p>
+</li>
+<li>
+<p>moving from base64 to binary uploads to get rid of unnecessary storage consumption caused by encoding<br>
+从 base64 迁移到二进制上传，以摆脱编码造成的不必要的存储消耗</p>
+</li>
+<li>
+<p>moving to arbundles to get finite and deterministic transaction references<br>
+转移到 arbundles 以获得有限和确定性的交易参考</p>
+</li>
+<li>
+<p>improving encryption to defend from quantum computing attacks<br>
+改进加密以防御量子计算攻击</p>
+</li>
+<li>
+<p>using Redstone warp to have each vault represented by warp contract with calculated state.<br>
+使用红石(Redstone)封装使每个保险库都由具有计算状态的封装合约表示。</p>
+</li>
+</ul>
+<p><strong>Along with the protocol release, we launched a new version of the Akord app – the first application to be built on top of the protocol.</strong></p>
+<p><strong>随着协议的发布，我们推出了新版本的 Akord 应用程序——第一个基于协议构建的应用程序。</strong></p>
+<p>These changes, while a big leap forward technologically, were breaking in the sense that we no longer maintain the code needed for the old decryption and encryption used on v1 (<a href="http://app.akord.com/">app.akord.com</a>).</p>
+<p>这些变化，虽然在技术上是一个巨大的飞跃，但从某种意义上说，我们不再维护 v1 上使用的旧解密和加密所需的代码 ([app.akord.com](http://app.akord.com /))。</p>
+<p><strong>You can login to <a href="http://v2.akord.com/">v2.akord.com</a> with the login credentials from app.akord.com, but you will not see any of your vaults or uploaded data.</strong></p>
+<p><strong>您可以使用 app.akord.com 的登录凭据登录 <a href="http://v2.akord.com/">v2.akord.com</a>，但您不会看到任何保管库或上传的数据。</strong></p>
+<h3 id="迁移工具-migration-tool">迁移工具 (Migration tool)</h3>
+<p>No data uploaded to app.akord.com will ever be lost. Eventually we will deprecate this app, as from now on all new features will be deployed on the new v2.akord.com. But for a while we will run both apps, giving people time to migrate their data to the new version.</p>
+<p>上传到 app.akord.com 的任何数据都不会丢失。最终我们将弃用此应用，因为从现在开始，所有新功能都将部署在新的 v2.akord.com 上。但在一段时间内，我们将同时运行这两个应用程序，让人们有时间将他们的数据迁移到新版本。</p>
+<p>We’re currently building a migration tool that will enable anyone who has vaults and data on app.akord.com to migrate everything to v2. **There will be no cost for this migration, the tool will be completely free to use.**If you have any questions concerning the migration of your data, the best place to reach our team is on the community <a href="https://discord.com/invite/g4VXfauK5s">Discord</a>.</p>
+<p>我们目前正在构建一个迁移工具，使任何在 app.akord.com 上拥有保管库和数据的人都可以将所有内容迁移到 v2。 <strong>此迁移不收取任何费用，该工具将完全免费使用。如果您对数据迁移有任何疑问，联系我们团队的最佳地点是社区 [Discord](https 😕/discord.com/invite/g4VXfauK5s)。</strong></p>
+<h3 id="查看合约-view-contracts">查看合约 (View contracts)</h3>
+<p>Most of these changes, being at the protocol level, are not noticeable when you use the new app by logging in to v2.akord.com. The exception is that you can now select “View contract” from the vault menu, and you will be taken to the Warp contract page for the vault on Redstone’s SonAR explorer.</p>
+<p>当您通过登录 v2.akord.com 使用新应用时，这些更改中的大部分内容在协议级别上都并不明显。唯一的例外是您现在可以从保险库菜单中选择“查看合约”，您将被带到 Redstone 的 SonAR 浏览器上保险库的 Warp(封装) 合同页面。</p>
+<figure data-type="image" tabindex="2"><img src="https://akord.com/media/Screenshot-2022-10-04-at-14.49.22.png" alt="Screenshot 2022 10 04 at 14 49 22" loading="lazy"></figure>
+<h3 id="共享公共保管库-share-public-vault">共享公共保管库 (Share public vault)</h3>
+<p>There is one other new change to v2.akord.com, which you will see from the vault menu: select “Share vault” and get a link to share with anyone and let them easily view your vault’s contents.</p>
+<p>v2.akord.com 还有另一项新变化，您将从保管库菜单中看到：选择“共享保管库”并获取与任何人共享的链接，让他们轻松查看您保管库的内容。</p>
+<figure data-type="image" tabindex="3"><img src="https://akord.com/media/Screenshot-2022-10-07-at-10.41.48.png" alt="Screenshot 2022 10 07 at 10 41 48" loading="lazy"></figure>
+<p>Please note that you can share your vault straight away, even while your uploads are in pending state. This means if you click on the “View transaction” link on individual files, it will display a 404 error on viewblock.io.</p>
+<p>请注意，即使您的上传处于待处理状态，您也可以立即共享您的保管库。这意味着如果您单击单个文件上的“查看交易”链接，它将在 viewblock.io 上显示 404 错误。</p>
+<p>If you want to share your public vault and have all the files to have working transaction links to viewblock.io, than ensure all content is no longer in pending state (file icons with orange dots are in pending).</p>
+<p>如果您想共享您的公共保管库并让所有文件都具有指向 viewblock.io 的有效交易链接，那么请确保所有内容不再处于待处理状态（带有橙色圆点的文件图标处于待处理状态）。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[介绍Fuel资助计划 (Introducing the Fuel Grants Program)]]></title>
         <id>https://chainguys.github.io/post/jie-shao-fuel-zi-zhu-ji-hua-introducing-the-fuel-grants-program/</id>
@@ -1058,60 +1119,6 @@ Produce Block API 现在可用于 SDK 测试；</p>
 <h2 id="orderly-如何构建迄今为止最先进的-defi-基础设施-how-orderly-is-building-the-most-advanced-defi-infrastructure-to-date"><a href="https://chainguys.github.io/post/orderly-ru-he-gou-jian-qi-jin-wei-zhi-zui-xian-jin-de-defi-ji-chu-she-shi-how-orderly-is-building-the-most-advanced-defi-infrastructure-to-date">Orderly 如何构建迄今为止最先进的 DeFi 基础设施 (How Orderly is building the most advanced DeFi infrastructure to date)</a></h2>
 <h2 id="orderly网络筹集2000万美元用于构建-defi-基础设施为基于-near-构建的dapp赋能-orderly-network-raises-us20-million-to-build-defi-infrastructure-to-empower-dapps-built-on-near"><a href="https://chainguys.github.io/orderly-wang-luo-chou-ji-2000-wan-mei-yuan-yong-yu-gou-jian-defi-ji-chu-she-shi-wei-ji-yu-near-gou-jian-de-dapp-fu-neng-orderly-network-raises-usdollar20-million-to-build-defi-infrastructure-to-empower-dapps-built-on-near">Orderly网络筹集2000万美元用于构建 DeFi 基础设施，为基于 NEAR 构建的dApp赋能 (Orderly Network Raises US$20 Million to Build DeFi Infrastructure to Empower dApps Built on NEAR)</a></h2>
 <h2 id="orderly网络简介an-introduction-to-orderly-network"><a href="https://chainguys.github.io/post/orderly-wang-luo-jian-jie-an-introduction-to-orderly-network">Orderly网络简介(An introduction to Orderly Network)</a></h2>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[黑暗森林的社区回合总结，前20名已被选出 (Dark Forest’s Community Round Concludes, Top 20 Selected)]]></title>
-        <id>https://chainguys.github.io/post/hei-an-sen-lin-de-she-qu-hui-he-zong-jie-qian-20-ming-yi-bei-xuan-chu-dark-forests-community-round-concludes-top-20-selected/</id>
-        <link href="https://chainguys.github.io/post/hei-an-sen-lin-de-she-qu-hui-he-zong-jie-qian-20-ming-yi-bei-xuan-chu-dark-forests-community-round-concludes-top-20-selected/">
-        </link>
-        <updated>2022-09-13T02:24:38.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/0*fqtz_rajICDvqn8O" alt="" loading="lazy"></figure>
-<hr>
-<ul>
-<li>
-<p><strong><em>Game-layer alone seamlessly handles over 94K txns per day; txns equivalent to over 90% of daily txns on Optimism and over 60% of daily txns on Arbitrum.</em></strong><br>
-<strong><em>游戏层每天可以无缝处理超过 94K 的交易；交易量相当于 Optimism 每日交易量的 90% 以上和 Arbitrum 每日交易量的 60% 以上。</em></strong></p>
-</li>
-<li>
-<p><strong><em>All metrics point to a successful game launch!</em></strong><br>
-<strong><em>所有指标都表明游戏发布成功！</em></strong></p>
-</li>
-</ul>
-<p>Dark Forest’s community round wrapped up on a great note as Alters everywhere rallied to embark upon a favourite weekend hobby — space conquest! A huge thank you to all those who signed up and made the time to play; we value your participation and your contributions as an early community member.</p>
-<p>黑暗森林的社区活动以精彩的方式结束，各地的 Alters 齐心协力开展周末最喜欢的爱好——太空征服！非常感谢所有注册并抽出时间玩的人；我们重视您作为早期社区成员的参与和贡献。</p>
-<p>Let’s take a look at how it went. The community round welcomed 300+ players, around 100 of whom were able to strategise, stay the course and gather up great scores. The highest scorer recorded 747,777,777. The highest number of transactions from a single player was 15,324 while the total game transactions over the two-day period was 189,723.</p>
-<p>让我们来看看结果如何。社区回合迎来了 300 多名玩家，其中大约 100 人能够制定策略、坚持到底并获得高分。最高得分手记录为 747,777,777。单人最高交易量为 15,324 笔，而两天内的总游戏交易量为 189,723 笔。</p>
-<p>Here’s a snapshot from the game!<br>
-这是游戏截图！</p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*sk7u6fGMC9HMR5pw" alt="" loading="lazy"></figure>
-<hr>
-<p><strong>前20数据 (Top 20 Leaderboard)</strong></p>
-<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/1*KcnarU8lKYDkmRSidfIKrQ.png" alt="" loading="lazy"></figure>
-<p><strong>事后分析 (Post-Event Analysis)</strong></p>
-<p><a href="https://altlayer.io/">Altlayer’s</a> scalability solution in the form of game-dedicated execution layers offers incredible value — it is user and cost-friendly, and is able to process large transaction volumes without any network congestion. This Dark Forest community round captures our value proposition perfectly. The game-layer alone seamlessly handled over 94K transactions per day; txns equivalent to approx 60% of txns on all Arbitrum dApps, and over 90% of all txns on Optimism.</p>
-<p><a href="https://altlayer.io/">Altlayer</a> 以游戏专用执行层的形式，提供的可扩展性解决方案展现了令人难以置信的价值——它对用户和成本都很友好，并且能够在没有任何网络拥塞的情况下处理大量交易。黑暗森林社区回合完美地体现了我们的价值主张。仅游戏层每天就可以无缝处理超过 94K 的交易；交易量相当于所有 Arbitrum dApp 上约 60% ，以及 Optimism 上超过 90% 。</p>
-<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/0*yhC2Sn2m7061efes" alt="" loading="lazy"></figure>
-<hr>
-<p><strong>为什么在Altlayer上运行游戏? (Why Run Games on AltLayer?)</strong></p>
-<p>Most of the blockchain games today have their core game logic off-chain and on-chain transactions are limited to token trades or withdrawals. One of the main reasons for keeping the game logic off-chain is the lack of scalability and poor latency offered by general-purpose blockchain platforms.</p>
-<p>当今大多数区块链游戏的核心，其逻辑都在链下，链上交易仅限于代币交易或提款。保持游戏逻辑脱链的主要原因之一是通用区块链平台缺乏可扩展性和低延迟。</p>
-<p>In fact, earlier this year, a simple play-to-earn game called <a href="https://thedefiant.io/sunflower-game-causes-polygon-fee-spike">Sunflower Farmers</a> on Polygon PoS became so popular that it started to consume over 40% of the entire blockchain space which in turn resulted in a spike in high gas fees for the gamers as well as for users of other dApps. Therefore, any on-chain game that enjoys some level of popularity should have its own dedicated blockspace to avoid any negative externalities to end users. AltLayer can be a great solution as developers can easily spin off a game-dedicated execution layer that can offer over 2,500 TPS with 1–2 seconds of latency.</p>
-<p>事实上，今年早些时候，Polygon PoS 上一款名为 <a href="https://thedefiant.io/sunflower-game-causes-polygon-fee-spike">向日葵农场</a> 的简单赚钱游戏，变得如此流行以至于它开始消耗超过 40% 的区块空间，这反过来导致游戏玩家以及其他 dApp 用户的高额 gas 费用飙升。因此，任何享有一定知名度的链上游戏，都应该有自己的专用区块空间，进而避免对最终用户产生任何负面外部性。 AltLayer可以是一个很好的解决方案，因为开发人员可以轻松地分离出一个游戏专用执行层，该执行层可以提供超过 2,500 TPS 和 1-2 秒的延迟。</p>
-<p>Moreover, most indie games have a short lifespan (i.e., usually about a few months) and as soon as the demand among gamers tapers off, it would be ideal to be able to wind up the resources required to maintain the network. AltLayer is uniquely positioned in the market to provide such disposable execution layers and hence can be an ideal solution for game studios looking to build fully on-chain and transparent games.</p>
-<p>此外，大多数独立游戏的生命周期都很短(即通常大约几个月)，一旦游戏玩家的需求逐渐减少，最好能够收回维持网络所需的资源。 AltLayer 在市场上具有独特的定位，可提供此类一次性执行层，因此对于希望构建完全链上透明游戏的工作室来说，它是一个理想的解决方案。</p>
-<p>AltLayer’s disposable flash layer also allows game developers to settle in-game NFTs (for example artefacts in the case of Dark Forest) to a chain of their choice (e.g. Ethereum) allowing those NFTs to be traded on secondary markets such as OpenSea. Later, once a new round is started or when a new game version is released, those NFTs can be brought back into the game.</p>
-<p>AltLayer 的一次性瞬时层，还允许游戏开发者将游戏中的 NFT(例如黑暗森林中的人工制品)结算到他们选择的链(例如以太坊)上，从而允许这些 NFT 在 OpenSea 等二级市场上进行交易。之后，一旦开始新一轮或发布新游戏版本，这些 NFT 就可以带回游戏中。</p>
-<p><strong>构建一个游戏专用的执行层 (Building a Gaming-Tailored Execution Layer)</strong></p>
-<p>Unlike existing solutions in the market (e.g. Cosmos SDK) that offer one-size-fits-all solution to spin application-chains, AltLayer takes a tailored approach by providing several useful tools, dApps and other infrastructure that come as add-ons with game and NFT-dedicated flash layers.</p>
-<p>与市场上现有的，为应用链提供万能解决方案(例如 Cosmos SDK)不同，AltLayer 采用量身定制的方法，提供多种有用的工具、dApp 和其他基础设施作为游戏附加组件和 NFT 专用的瞬时层。</p>
-<p>This allows game developers to focus on building the game and not worry about tertiary tools and infrastructure.</p>
-<p>这使游戏开发人员可以专注于构建游戏，而不必担心三方工具和基础设施。</p>
-<p>For example, in order to provide a seamless experience to end users, flash layers will come together with an in-game NFT marketplace allowing players to trade assets right within the game. As a result, users do not have to leave the game interface and visit a third-party provider such as OpenSea to trade in-game assets. Another interesting feature that we are working on is to provide a safe in-game session wallet to improve UX for crypto-native games like Dark Forest.</p>
-<p>例如，为了向最终用户提供无缝体验，瞬时层将与游戏内 NFT 市场相结合，允许玩家在游戏中直接交易资产。因此，用户无需离开游戏界面，访问 OpenSea 等第三方提供商即可交易游戏内资产。我们正在开发的另一个有趣的功能是提供一个安全的游戏内会话钱包，进而改善黑暗森林等加密原生游戏的用户体验。</p>
-<p>More to be announced on this in the near future. Stay tuned!</p>
-<p>更多信息将在不久的将来公布。敬请关注！</p>
-<figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/1400/0*DugRxjtuMc72RHB-" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
