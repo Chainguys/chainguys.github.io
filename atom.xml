@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-06T05:22:28.814Z</updated>
+    <updated>2022-10-07T09:08:26.347Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,142 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[介绍Fuel资助计划 (Introducing the Fuel Grants Program)]]></title>
+        <id>https://chainguys.github.io/post/jie-shao-fuel-zi-zhu-ji-hua-introducing-the-fuel-grants-program/</id>
+        <link href="https://chainguys.github.io/post/jie-shao-fuel-zi-zhu-ji-hua-introducing-the-fuel-grants-program/">
+        </link>
+        <updated>2022-10-06T09:03:47.000Z</updated>
+        <content type="html"><![CDATA[<p>Fuel is offering grants ranging from $10k-$150k USD to developers and creators building on Fuel, the fastest modular execution layer.</p>
+<p>Fuel 向基于最快模块化执行层 Fuel 的开发人员和构建者提供 1 万至 15 万美元不等的资助。</p>
+<p><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/10/FuelGrants.png" alt="Introducing the Fuel Grants Program" loading="lazy"><br>
+Apply for a grant <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">here</a><br>
+点<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">此处</a>  申请资助！</p>
+<hr>
+<p>Earlier this year, we introduced Fuel v2, the fastest modular execution layer. With the development of Fuel v2, we have begun to shift away from traditional monolithic structures, where all aspects of a blockchain, (consensus, data availability, and execution), are handled on a single layer.</p>
+<p>今年早些时候，我们推出了最快的模块化执行层 Fuel v2。随着 Fuel v2 的发展，我们已经开始摆脱传统的单片结构，在这种结构中，区块链的所有方面（共识、数据可用性和执行）都在单一层上处理。</p>
+<p>The introduction of the <strong>Fuel VM</strong> provides incredibly high levels of throughput through parallelization via UTXOs. The FuelVM learns from the Ethereum ecosystem, implementing improvements that were suggested to the Ethereum VM (EVM) for many years, but couldn’t be implemented due to the need of maintaining backward compatibility. We have seen a radical uptick of interest in Fuel, particularly from developers interested in building a modular future with us.</p>
+<p><strong>Fuel VM</strong> 的引入，通过 UTXO 并行化提供了令人难以置信的高水平吞吐量。 FuelVM 从以太坊生态系统中学习，实施了多年来对以太坊 VM (EVM) 提出的改进，但由于需要保持向后兼容性而无法实施。我们已经看到(市场)对 Fuel 的兴趣急剧上升，特别是有兴趣与我们一起构建模块化未来的开发人员。</p>
+<p>From decentralized exchanges to lending markets, oracles, NFT projects, and more, the Fuel ecosystem is growing significantly. Already, we have a large number of projects building, including:</p>
+<p>从去中心化交易所到借贷市场、预言机、NFT 项目等等，Fuel 生态系统正在显着增长。我们已经有大量的项目在建，包括：</p>
+<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/2022/10/GrantedApps.png" alt="" loading="lazy"></figure>
+<ul>
+<li>
+<p><strong><a href="https://elix.finance/#">Elix</a></strong> - an advanced decentralized exchange doing deep research into bonding curves - <a href="https://twitter.com/elixfinance">Twitter</a><br>
+<strong><a href="https://elix.finance/#">Elix</a></strong> - 一个对联合曲线进行深入研究的高级去中心化交易所 - <a href="https://twitter.com/elixfinance">Twitter</a></p>
+</li>
+<li>
+<p><strong><a href="https://microchain.systems/">Microchain</a></strong> - A low-cost, easy-to-use token swapping terminal with two major benefits... versatility and simplicity - <a href="https://twitter.com/MicrochainSys">Twitter</a><br>
+<strong><a href="https://microchain.systems/">Microchain</a></strong> - 一个低成本、易用的代币兑换终端，具有两大优势……多功能性和简单性 - [Twitter](https:// /twitter.com/MicrochainSys)</p>
+</li>
+<li>
+<p><a href="https://www.unic.io/"><strong>UNIC</strong></a> - Bringing real-world items on-chain as NFTs - <a href="https://twitter.com/0xUNIC">Twitter</a>  <br>
+<a href="https://www.unic.io/"><strong>UNIC</strong></a> - 将现实世界的物品以 NFT 形式上链 - <a href="https://twitter.com/0xUNIC">Twitter</a></p>
+</li>
+<li>
+<p><strong><a href="https://twitter.com/fuelnomen">Fuel Nomen</a></strong> - A decentralized naming service for Fuel<br>
+<strong><a href="https://twitter.com/fuelnomen">Fuel Nomen</a></strong> - Fuel 的去中心化命名服务</p>
+</li>
+<li>
+<p><strong>Thunder</strong> - A fully on-chain NFT marketplace allowing for batch listing and purchasing with an emphasis on UX/UI experience for users.<br>
+<strong>Thunder</strong> - 一个完全链上的 NFT 市场，允许批量上市和购买，重点是用户的 UX/UI 体验。</p>
+</li>
+<li>
+<p><strong><a href="https://docs.poolsharks.io/">Poolsharks</a></strong> - OceanBook is an open-source web3 protocol that makes it easy for users, protocols, and DAOs to set limit orders all in one aggregated orderbook. - <a href="https://twitter.com/poolsharks_labs">Twitter</a><br>
+<strong><a href="https://docs.poolsharks.io/">Poolsharks</a></strong> - OceanBook 是一种开源的 web3 协议，它使用户、协议和 DAO 可以在一个聚合订单簿中轻松设置限价单。 - <a href="https://twitter.com/poolsharks_labs">twitter</a></p>
+</li>
+<li>
+<p><a href="https://acumen.network/"><strong>Accumen</strong></a> - bridging DeFi and Traditional Finance, Accumen democratizes access to capital to thousands of SMEs and Entrepreneurs while allowing crypto lenders to earn an attractive, stable, and uncorrelated yield - <a href="https://twitter.com/acumenofficial">Twitter</a><br>
+<a href="https://acumen.network/"><strong>Accumen</strong></a> - 连接 DeFi 和传统金融，Accumen 使成千上万的中小企业和企业家获得资本的机会民主化，同时允许加密货币贷方获得有吸引力、稳定且不相关的收益- <a href="https://twitter.com/acumenofficial">twitter</a></p>
+</li>
+<li>
+<p><strong><a href="https://orao.network/">Orao</a></strong> - an oracle service for custom data feeds - <a href="https://twitter.com/OraoNetwork">Twitter</a><br>
+<strong><a href="https://orao.network/">Orao</a></strong> - 用于自定义数据推送的预言机服务 - <a href="https://twitter.com/OraoNetwork">Twitter</a></p>
+</li>
+</ul>
+<hr>
+<h2 id="什么是fuel资助计划what-is-the-fuel-grants-program">什么是Fuel资助计划？(What is the Fuel Grants Program?)</h2>
+<p>The Fuel Grants Program is designed to support projects building on Fuel. Currently, we are offering generous grants ranging from $10,000-$150,000 USD to developers, creators, and new or existing projects to build on the world's fastest modular execution layer.</p>
+<p>Fuel资助计划旨在支持以Fuel为基础的项目。目前，我们向开发人员、创作者以及新的或现有的项目提供 10,000 美元至 150,000 美元不等的慷慨资助，让其在世界上最快的模块化执行层上进行构建。</p>
+<p>We welcome all builders with a passion for decentralization, web3, and building the modular future. We envision an autonomous future, where systems are built to power the next generation of human coordination and cooperation. Building on Fuel means breaking free from the constraints of monolithic blockchains.</p>
+<p>我们欢迎所有对去中心化、web3 和构建模块化未来充满热情的构建者。我们设想一个自治的未来，建立系统来推动下一代人类协调与合作。基于 Fuel 的构建意味着摆脱单一区块链的限制。</p>
+<p>The grants program is not limited to what you see in this post, however; but will evolve over time. As interest grows both within our ecosystem, and external to it, we will take time to listen to the people building, understanding their needs, and wants for an ecosystem. This ecosystem is not defined by us, but by the projects building within it.</p>
+<p>但是，赠款计划不仅限于您在这篇文章中看到的内容；会随着时间的推移而发展。随着我们生态系统内外的兴趣不断增长，我们将花时间倾听人们的意见，了解他们对生态系统的需求和需求。这个生态系统不是由我们定义的，而是由在其中构建的项目定义的。</p>
+<h2 id="申请流程-the-application-process">申请流程 (The Application Process)</h2>
+<h3 id="分类-categories">分类 (Categories)</h3>
+<p>Fuel is a budding ecosystem, and we’re in search of a variety of exciting projects to build on our protocol. When applying for a grant, please consider the following categories, and in particular where your project fits in. Note that projects that do not fit into a specific category are still welcome to apply!</p>
+<p>Fuel 是一个新兴的生态系统，我们正在寻找各种令人兴奋的项目来构建我们的协议。申请资助时，请考虑以下类别，尤其是您的项目适合的类别。请注意，仍然欢迎不适合特定类别的项目申请！</p>
+<ul>
+<li>Protocol development  协议开发</li>
+<li>Applications and integrations (think DeFi apps)  应用和集成（比如DeFi 应用程序）</li>
+<li>Infrastructure  基础设施</li>
+<li>Developer tooling  开发者工具</li>
+<li>Auditing  审计</li>
+<li>Community (marketing and educational)  社区（营销和教育）</li>
+<li>Events and hackathons  活动和黑客马拉松</li>
+</ul>
+<h3 id="申请标准和指南-criteria-and-guidelines-for-applications">申请标准和指南 (Criteria and Guidelines for Applications)</h3>
+<p>When applying for an ecosystem grant, you will be asked to provide the following information:<br>
+申请生态系统补助金时，您将被要求提供以下信息：</p>
+<ul>
+<li>Project name;  项目名称;</li>
+<li>Description and stage of the project;  项目描述和阶段；</li>
+<li>Why do you want to build on Fuel, and how your project benefits Fuel;  你为什么要在 Fuel 上构建，以及你的项目如何使 Fuel 受益；</li>
+<li>The scope of your project and milestones;  您的项目范围和里程碑；</li>
+<li>How many people are working on the project;  有多少人在做这个项目；</li>
+</ul>
+<p>Additionally:<br>
+此外：</p>
+<ul>
+<li>
+<p>All projects must commit to being open source via MIT or Apache Licensing.<br>
+所有项目必须承诺通过 MIT 或 Apache Licensing 开源。</p>
+</li>
+<li>
+<p>We don't require developers to be public, but to receive funding we require identity verification.<br>
+我们不要求开发者公开，但要获得资金，我们需要进行身份验证。</p>
+</li>
+</ul>
+<p>We welcome applications from projects at varying stages of development, from early ideation to MVP and beyond. We’d also love to hear from projects already building on other chains who want to deploy on Fuel as well.</p>
+<p>我们欢迎处于不同开发阶段的项目的应用，从早期构思到 MVP 及之后。我们也很想听到已在其他链上构建的项目也想部署在 Fuel 上。</p>
+<h2 id="审核流程-review-process">审核流程 (Review Process)</h2>
+<p>We review applications on a rolling basis and will contact you after we have completed an internal review. This process can take up to two weeks, and we may contact you in the interim for any clarifications regarding your application.</p>
+<p>我们会滚动审核申请，并在完成内部审核后与您联系。此过程最多可能需要两周时间，我们可能会在此期间与您联系以了解有关您的申请的任何说明。</p>
+<p>The Fuel team will then reach out to you to arrange an interview, and following this, confirm our decision on the application. If your application is approved, we will work with you through an onboarding process, establish certain milestones for the project, and get you started on building on Fuel!</p>
+<p>Fuel 团队随后会联系您面试，并在此之后确认对申请的决定。如果您的申请获得批准，我们将通过入职流程与您合作，为项目建立某些里程碑，并让您开始在 Fuel 上进行构建！</p>
+<h2 id="申请-apply">申请 (Apply)</h2>
+<p>To apply for a grant, fill out <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">this</a> form.</p>
+<p>要申请资助，请填写 <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">这个</a> 表格。</p>
+<p>We’re incredibly excited to launch this Grants program, to see more of you building on Fuel, and taking the modular-pill. If you have any additional questions please feel free to reach out to <a href="mailto:grants@fuel.sh">grants@fuel.sh</a>.</p>
+<p>我们非常高兴能够启动这个赠款计划，看到更多人在 Fuel 上构建，并服用模块化药片。如果您有任何其他问题，请随时与 <a href="mailto:grants@fuel.sh">grants@fuel.sh</a> 联系。</p>
+<hr>
+<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
+<ul>
+<li><a href="https://twitter.com/fuellabs_"><strong><strong>Twitter</strong></strong></a></li>
+<li><a href="http://discord.com/invite/xfpK4Pe"><strong><strong>Discord</strong></strong></a></li>
+<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong><strong>LinkedIn</strong></strong></a></li>
+<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong><strong>YouTube</strong></strong></a></li>
+</ul>
+<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
+<p><a href="https://www.fuel.network/">Fuel</a> is the <strong><strong>fastest execution layer</strong></strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong><strong>highest flexible throughput</strong></strong> and <strong><strong>maximum security</strong></strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong><strong>superior developer experience</strong></strong> and the ability to go <strong><strong>beyond the limitations of the EVM</strong></strong>.</p>
+<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链堆栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制****。</p>
+<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
+<ul>
+<li>
+<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
+<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
+</li>
+<li>
+<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
+<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
+</li>
+<li>
+<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
+<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[超越单片链：模块化区块链范式 (Beyond Monolithic：The Modular Blockchain Paradigm)]]></title>
         <id>https://chainguys.github.io/post/chao-yue-dan-pian-lian-mo-kuai-hua-qu-kuai-lian-fan-shi-beyond-monolithicthe-modular-blockchain-paradigm/</id>
@@ -478,6 +614,7 @@ return text;
         <updated>2022-09-18T14:01:56.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/09/Fuel_Trailer_Still_10.jpeg" alt="" loading="lazy"></figure>
 <h1 id="项目进展project-update">项目进展(Project Update)</h1>
+<h2 id="介绍fuel资助计划-introducing-the-fuel-grants-program"><a href="https://chainguys.github.io/post/jie-shao-fuel-zi-zhu-ji-hua-introducing-the-fuel-grants-program">介绍Fuel资助计划 (Introducing the Fuel Grants Program)</a></h2>
 <h2 id="自2022年夏天以来的项目进展-feul内幕project-update-since-summer-2022-inside-fuel"><a href="https://chainguys.github.io/post/fuel-nei-mu-2022-nian-xia-tian-inside-fuel-summer-2022/">自2022年夏天以来的项目进展-Feul内幕(Project update since Summer 2022-Inside Fuel)</a></h2>
 <h2 id="fuel实验室宣布为最快的模块化执行层提供-8000-万美元的支持-fuel-labs-announces-80-million-of-support-for-the-fastest-modular-execution-layer"><a href="https://chainguys.github.io/post/fuel-shi-yan-shi-xuan-bu-wei-zui-kuai-de-mo-kuai-hua-zhi-xing-ceng-ti-gong-8000-wan-mei-yuan-de-zhi-chi-fuel-labs-announces-dollar80-million-of-support-for-the-fastest-modular-execution-layer">Fuel实验室宣布为最快的模块化执行层提供 8000 万美元的支持 (Fuel Labs Announces $80 Million of Support for the Fastest Modular Execution Layer)</a></h2>
 <h1 id="2项目简介和关键文章project-introduction-and-key-articals">2.项目简介和关键文章(Project Introduction and key articals)</h1>
@@ -975,20 +1112,6 @@ Produce Block API 现在可用于 SDK 测试；</p>
 <p>More to be announced on this in the near future. Stay tuned!</p>
 <p>更多信息将在不久的将来公布。敬请关注！</p>
 <figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/1400/0*DugRxjtuMc72RHB-" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Worldcoin中文材料合集-不断更新中(Worldcoin Chinese Materials-Updating)]]></title>
-        <id>https://chainguys.github.io/post/worldcoin-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-worldcoin-chinese-materials-updating/</id>
-        <link href="https://chainguys.github.io/post/worldcoin-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-worldcoin-chinese-materials-updating/">
-        </link>
-        <updated>2022-09-10T08:13:31.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://worldcoin.org/images/home/hero-bg.svg" alt="" loading="lazy"></figure>
-<h1 id="blogs">Blogs</h1>
-<h2 id="世界币简介introducing-worldcoin"><a href="https://chainguys.github.io/post/shi-jie-bi-jian-jie-introducing-worldcoin">世界币简介(Introducing Worldcoin)</a></h2>
-<h2 id="如何启动-how-the-launch-works"><a href="https://chainguys.github.io/post/ru-he-qi-dong-how-the-launch-works">如何启动? (How the Launch Works)</a></h2>
-<h2 id="开源的世界币open-sourcing-worldcoin"><a href="https://chainguys.github.io/post/kai-yuan-de-shi-jie-bi-open-sourcing-worldcoin">开源的世界币(Open Sourcing Worldcoin)</a></h2>
-<h2 id="保护隐私的人格证明协议-privacy-preserving-proof-of-personhood-protocol"><a href="https://chainguys.github.io/post/bao-hu-yin-si-de-ren-ge-zheng-ming-xie-yi-privacy-preserving-proof-of-personhood-protocol">保护隐私的人格证明协议 (Privacy-Preserving Proof-of-Personhood Protocol)</a></h2>
 ]]></content>
     </entry>
 </feed>
