@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-08T03:36:16.811Z</updated>
+    <updated>2022-10-10T02:05:16.649Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,66 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[@fuellabs_长推20221007(@fuellabs_threads20221007)]]></title>
+        <id>https://chainguys.github.io/post/fuellabs_-chang-tui-20221007fuellabs_threads20221007/</id>
+        <link href="https://chainguys.github.io/post/fuellabs_-chang-tui-20221007fuellabs_threads20221007/">
+        </link>
+        <updated>2022-10-07T10:03:51.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><a href="https://www.youtube.com/watch?v=DhBkrc9dECg"><img src="https://i.ytimg.com/vi/DhBkrc9dECg/maxresdefault.jpg" alt="" loading="lazy"></a></figure>
+<p>Our co-founder<a href="https://twitter.com/jadler0">@jadler0</a>recently sat down with<a href="https://twitter.com/LoganJastremski">@LoganJastremski</a>to discuss modular blockchains and Fuel Here are 7 highlights</p>
+<p>我们的联合创始人<a href="https://twitter.com/jadler0">@jadler0</a>最近与<a href="https://twitter.com/LoganJastremski">@LoganJastremski</a>坐下来讨论模块化区块链和Fuel 谈及7个亮点</p>
+<p>Highlight 1: Modularity and rollups enable new use cases It turns out a VM can be strictly better than the EVM. The FuelVM is the EVM but with higher performance and flexibility.</p>
+<p>亮点 1：模块化和汇总支持新用例。事实证明，VM 可以比 EVM 更好。 FuelVM 是 EVM，但具有更高的性能和灵活性。</p>
+<p>Highlight 2: Ethereum ≠ EVM Many believe that Ethereum comes only with the EVM and Solidity as the viable solution. Unknowing that you can actually innovate and improve the VM without sacrificing Ethereum's security as the core layer.</p>
+<p>亮点 2：以太坊≠ EVM 许多人认为以太坊只有 EVM 和 Solidity 能作为可行的解决方案。不知道你实际上可以在不牺牲以太坊作为核心层安全性的情况下，创新和改进虚拟机。</p>
+<p>Highlight 3: Blockchain bottlenecks are changing The EVM throughput is limited in order to facilitate full nodes to secure the network. The introduction of trust minimized light nodes with fraud and validity proofs is a game-changer, making execution the primary bottleneck.</p>
+<p>亮点 3：区块链瓶颈正在改变 EVM吞吐量受到限制，以促进全节点保护网络。引入具有欺诈和有效性证明的信任最小化轻节点改变了游戏规则，使执行成为主要瓶颈。</p>
+<p>Highlight 4: Rollups enable incredible innovation on the execution layer Why? Because there is no burden of state history (i.e. as with Ethereum) that otherwise needs to be considered. This allows for innovation from the ground up.</p>
+<p>亮点 4：汇总在执行层上实现了令人难以置信的创新。为什么？因为没有其他需要考虑的状态历史负担（即与以太坊一样）。这允许从头开始进行创新。</p>
+<p>Highlight 5: General purpose VMs that don't use parallel transaction execution will be left behind How come? It's pretty simple: If you don't, you will have leftover compute capacity that is left unused. This is not optimal for performance in the long term.</p>
+<p>亮点 5：不使用并行交易执行的通用 VM 将被抛弃。为什么？这很简单：如果不这样做，您将拥有未使用的剩余计算容量。从长远来看，这对性能来说并不是最佳的。</p>
+<p>Highlight 6: The current state of ORs are not improving on the EVM - but stagnating in terms of innovation. Fuel implements some EIPs that never got to production. For instance: EIP-648: Parallel transaction execution EIP-3074: AUTH and AUTHCALL opcodes</p>
+<p>亮点 6：ORs 的当前状态在 EVM 上没有改善 - 但在创新方面停滞不前。 Fuel 实现了一些从未投入生产的 EIP。例如： EIP-648：并行交易执行 EIP-3074：AUTH 和 AUTHCALL 操作码</p>
+<p>Highlight 7: A scalable data layer without a scalable execution layer is worthless Bytes per second (DA) is not Transactions per second. To solve the scalability problem you need to optimize for both DA and execution.</p>
+<p>亮点 7：没有可扩展执行层的可扩展数据层毫无价值。每秒字节数 (DA) 不是每秒交易数。要解决可扩展性问题，您需要针对 DA 和执行进行优化。</p>
+<p>The 7 Highlights !  7大亮点！</p>
+<ol>
+<li>
+<p>Modularity and rollups enable new use cases<br>
+模块化和汇总支持新用例</p>
+</li>
+<li>
+<p>Ethereum ≠ EVM<br>
+以太坊≠EVM</p>
+</li>
+<li>
+<p>Blockchain bottlenecks are changing<br>
+区块链的瓶颈正在改变</p>
+</li>
+<li>
+<p>Rollups enable incredible innovation on the execution layer<br>
+汇总在执行层上实现了令人难以置信的创新</p>
+</li>
+<li>
+<p>General purpose VMs that don't use parallel transaction execution will be left behind<br>
+不使用并行交易执行的通用 VM 将被抛在后面</p>
+</li>
+<li>
+<p>The current state of ORs are not improving on the EVM - but stagnating in terms of innovation.<br>
+ORs 的当前状态并没有在 EVM 上有所改善，且在创新方面停滞不前。</p>
+</li>
+<li>
+<p>A scalable data layerwithout a scalable execution layer is worthless<br>
+没有可扩展执行层的可扩展数据层毫无价值</p>
+</li>
+</ol>
+<p>Listen to the full podcast below ↓<br>
+收听下面的完整播客↓</p>
+<figure data-type="image" tabindex="2"><a href="https://www.youtube.com/watch?v=DhBkrc9dECg"><img src="https://i.ytimg.com/vi/DhBkrc9dECg/maxresdefault.jpg" alt="" loading="lazy"></a></figure>
+<p>原文地址：<a href="https://twitter.com/fuellabs_/status/1578412287957704704">https://twitter.com/fuellabs_/status/1578412287957704704</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Akord应用V2介绍 (Introducing the V2 Akord app)]]></title>
         <id>https://chainguys.github.io/post/akord-ying-yong-v2-jie-shao-introducing-the-v2-akord-app/</id>
@@ -535,6 +595,184 @@ Arweave 主网上的 <strong>Akord 协议</strong></p>
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[MixBytes在Neon EVM成功部署Uniswap V2 (MixBytes Successfully Deploys Uniswap V2 Protocol on Neon EVM)]]></title>
+        <id>https://chainguys.github.io/post/mixbytes-zai-neon-evm-cheng-gong-bu-shu-uniswap-v2-mixbytes-successfully-deploys-uniswap-v2-protocol-on-neon-evm/</id>
+        <link href="https://chainguys.github.io/post/mixbytes-zai-neon-evm-cheng-gong-bu-shu-uniswap-v2-mixbytes-successfully-deploys-uniswap-v2-protocol-on-neon-evm/">
+        </link>
+        <updated>2022-09-26T04:07:39.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*lu_ZhSuH91B8tIwWTHVeMw.png" alt="" loading="lazy"></figure>
+<p>Neon Labs recently partnered with MixBytes to prove the functionality and performance of Neon EVM via the deployment of Ethereum dApps. The exercise involved the MixBytes team deploying and assessing the Uniswap v2 protocol on both local network and Devnet. The Uniswap v2 protocol, which was originally developed on Ethereum, allows users to exchange tokens without relying on a centralized exchange, helping with asset liquidity and reducing volatility.</p>
+<p>Neon Labs 最近与 MixBytes 合作，通过部署以太坊 dApp 来证明 Neon EVM 的功能和性能。该练习涉及 MixBytes 团队在本地网络和 Devnet 上部署和评估 Uniswap v2 协议。 Uniswap v2 协议最初是在以太坊上开发的，允许用户在不依赖中心化交易所的情况下交换代币，有助于资产流动性和降低波动性。</p>
+<h2 id="谁是-mixbyteswho-is-mixbytes">谁是 MixBytes？(Who is MixBytes?)</h2>
+<p><a href="https://mixbytes.io/">MixBytes</a> is a blockchain solution advisory company that provides a comprehensive suite of services for smart contract development and testing, including security audits and protocol development.</p>
+<p><a href="https://mixbytes.io/">MixBytes</a> 是一家区块链解决方案咨询公司，为智能合约开发和测试提供一整套服务，包括安全审计和协议开发。</p>
+<h1 id="我们的目标-our-objective">我们的目标 (Our Objective)</h1>
+<p>The objective of deploying the Uniswap v2 protocol to Neon EVM was to verify that the level of effort required, and performance, is the same on both Ethereum and Neon. Upon successful deployment, the team also wanted to confirm the expected functionality of the Uniswap v2 protocol and test its performance in production-like scenarios.</p>
+<p>将 Uniswap v2 协议部署到 Neon EVM 的目的是验证所需的工作量和性能，在以太坊和 Neon 上是否相同。成功部署后，该团队还希望确认 Uniswap v2 协议的预期功能，并在类似生产的场景中测试其性能。</p>
+<h1 id="测试方法-testing-methodology">测试方法 (Testing Methodology)</h1>
+<p>MixBytes deployed the Uniswap v2 protocol on local Neon and Solana environments to test functionality and performance. The deployment included Uniswap v2 protocol contracts, required libraries, and testing artifacts. Firstly, the following script was executed:</p>
+<p>MixBytes 在本地 Neon 和 Solana 环境中部署了 Uniswap v2 协议，以测试功能和性能。该部署包括 Uniswap v2 协议合约、所需的库和测试工件。首先，执行以下脚本：</p>
+<p><em>npx hardhat run ./scripts/deploy.ts</em></p>
+<p>Then, the environment was deployed with <a href="https://github.com/dmitryn2018/Uniswap-V2-NEON/blob/02919149d17b0dc84d7ed7555b682d917dddc178/docker-compose.neon.yml">this Docker config</a> file by executing the below command:<br>
+然后，通过执行以下命令，使用 <a href="https://github.com/dmitryn2018/Uniswap-V2-NEON/blob/02919149d17b0dc84d7ed7555b682d917dddc178/docker-compose.neon.yml">此 Docker 配置</a> 文件部署环境：</p>
+<pre><code>//sudo NEON_EVM_COMMIT=v0.8.3 FAUCET_COMMIT=latest REVISION=v0.9.1 docker-compose -f docker-compose.neon.yml up -d
+</code></pre>
+<p>Additionally, the following network configurations were applied to the <a href="https://github.com/dmitryn2018/Uniswap-V2-NEON/blob/02919149d17b0dc84d7ed7555b682d917dddc178/hardhat.config.ts">hardhat.config.ts</a> file:</p>
+<p>此外，以下网络配置已应用于 <a href="https://github.com/dmitryn2018/Uniswap-V2-NEON/blob/02919149d17b0dc84d7ed7555b682d917dddc178/hardhat.config.ts">hardhat.config.ts</a> 文件：</p>
+<pre><code>import { HardhatUserConfig } from &quot;hardhat/config&quot;;
+
+import &quot;@nomicfoundation/hardhat-toolbox&quot;;
+
+const config: HardhatUserConfig = {
+
+solidity: {
+
+compilers: [
+
+{
+
+version: &quot;0.5.0&quot;
+
+},
+
+{
+
+version: &quot;0.5.16&quot;
+
+},
+
+{
+
+version: &quot;0.6.6&quot;
+
+},
+
+{
+
+version: &quot;0.6.12&quot;
+
+},
+
+],
+
+settings: {
+
+optimizer: {
+
+enabled: true,
+
+runs: 999999,
+
+},
+
+},
+
+},
+
+defaultNetwork: 'neonlabs',
+
+networks: {
+
+hardhat: {
+
+gas: 3000000000,
+
+blockGasLimit: 100000000429720,
+
+gasPrice: 875000000
+
+},
+
+neonlabs: {
+
+url: 'http://localhost:9090/solana',
+
+accounts: ['0x41167312f8c46439b2bcc5e5a6af929262efcd20357a56ebcbc455d835d9f080',
+
+'0x41167312f8c46439b2bcc5e5a6af929262efcd20357a56ebcbc455d835d9f081', '0x41167312f8c46439b2bcc5e5a6af929262efcd20357a56ebcbc455d835d9f082',
+
+'0x41167312f8c46439b2bcc5e5a6af929262efcd20357a56ebcbc455d835d9f083', '0x41167312f8c46439b2bcc5e5a6af929262efcd20357a56ebcbc455d835d9f084'],
+
+// @ts-ignore
+
+network_id: 111,
+
+chainId: 111,
+
+allowUnlimitedContractSize: false,
+
+timeout: 100000000,
+
+// @ts-ignore
+
+isFork: true
+
+}
+
+},
+
+};
+
+export default config;
+</code></pre>
+<h1 id="测试范围-testing-scope">测试范围 (Testing Scope)</h1>
+<p>The scope of the testing focused on the deployed contracts:<br>
+测试的范围集中在已部署的合约上：</p>
+<ul>
+<li>UniswapV2Factory contract</li>
+<li>UniswapV2Router01contract</li>
+<li>UniswapV2Pair contract</li>
+<li>Liquidity Pool (LP) token farming test contracts</li>
+</ul>
+<h1 id="测试执行-testing-execution">测试执行 (Testing Execution)</h1>
+<p>MixBytes assessed the liquidity pool creation functionality by deploying two liquidity pools: one liquidity pool containing only native SOL tokens, and the other containing two non-native tokens. Once the liquidity pools were created, the team tested the “swap_with_exact_input” and “swap_with_exact_output” variants.</p>
+<p>MixBytes 通过部署两个流动性池来评估流动性池创建功能：一个流动性池仅包含原生 SOL 代币，另一个包含两个非原生代币。创建流动性池后，团队测试了“swap_with_exact_input”和“swap_with_exact_output”变体。</p>
+<p>In regards to LP farming scenarios, the team tested the following common use cases:<br>
+针对 LP挖矿场景，团队测试了以下常见用例：</p>
+<ul>
+<li>
+<p>Adding tokens to the two newly created liquidity pools<br>
+将代币添加到两个新创建的流动性池中</p>
+</li>
+<li>
+<p>Receiving LP tokens after depositing liquidity<br>
+存入流动性后接收LP代币</p>
+</li>
+<li>
+<p>Performing token swaps using the liquidity pools<br>
+使用流动性池执行代币交换</p>
+</li>
+<li>
+<p>Transferring LP tokens to another beneficiary<br>
+将 LP 代币转移给另一个受益人</p>
+</li>
+<li>
+<p>Collecting rewards from liquidity pools<br>
+从流动资金池中收集奖励</p>
+</li>
+</ul>
+<p>The project deliverables can be found on <a href="https://github.com/dmitryn2018/Uniswap-V2-NEON/">Neon’s GitHub</a>. The contract and token addresses are noted below:</p>
+<p>项目可交付成果可在 <a href="https://github.com/dmitryn2018/Uniswap-V2-NEON/">Neon 的 GitHub</a> 上找到。合约和代币地址如下：</p>
+<ul>
+<li><strong>UniswapV2Factory address:</strong> 0x8eA3207A157106B68ECa73638cbacdD6973DaBda</li>
+<li><strong>UniswapV2Router01address:</strong> 0x4f8C61909f92c4c8f83E527D8f063F78322b35b7</li>
+<li><strong>UniswapV2Pair contract 1 (tokens 1,2) address:</strong> 0xDa0Ed5e2Adda73c6336A1ae9C87A4BbC3Ba46876</li>
+<li><strong>UniswapV2Pair contract 2 (tokens 2,3) address:</strong> 0xf285B885f0F113b5fF54354492a6Bac38a6AC188</li>
+<li><strong>Token1 address:</strong> 0x72acC5B7306FB3886Dbcea62eB8Cffd83bEE5b9c</li>
+<li><strong>Token2 address:</strong> 0x66dE9Ee76b78085ab73386741e20A82c6db09f2B</li>
+<li><strong>Token3 address:</strong> 0x8346aD3Ba1476890524eF262a47b589365633E30</li>
+</ul>
+<p>The following image highlights the output and status of the testing scenarios at each execution phase.</p>
+<p>下图突出显示了每个执行阶段的测试场景的输出和状态。</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*BTSYtAVch83CkiNQ" alt="" loading="lazy"></figure>
+<h1 id="发现-findings">发现 (Findings)</h1>
+<p>At the time of testing, all functions of the Uniswap v2 protocol within our testing scope performed as expected on the local Neon network and Devnet. The testing scenarios selected demonstrate the same output in the Hardhat network as in the Neon environment. Overall, the deployment of the Uniswap v2 protocol Solidity code to Neon was seamless and raised no issues. No modifications to the contracts’ source code were required.</p>
+<p>在测试时，我们测试范围内的 Uniswap v2 协议的所有功能在本地 Neon 网络和 Devnet 上都按预期执行。所选的测试场景展示了 Hardhat 网络中与 Neon 环境中相同的输出。总体而言，将 Uniswap v2 协议 Solidity 代码部署到 Neon 是无缝的，没有出现任何问题。无需修改合约的源代码。</p>
+<p>For more information on the Uniswap v2 deployment, check out our <a href="https://twitter.com/neonlabsorg/status/1572586328931586052?s=20&amp;t=sG9w6qNOgSZO_tPusl0c9Q">recent AMA</a>. Now, its your turn to deploy your own smart contracts to Neon EVM. Make sure to let us know what you think. If you run into any issues or need additional guidance, check out our <a href="https://docs.neon-labs.org/">Neon Docs</a> or reach out to a team member on <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a>. We know that you’ll create something great!</p>
+<p>有关 Uniswap v2 部署的更多信息，请查看我们的 <a href="https://twitter.com/neonlabsorg/status/1572586328931586052?s=20&amp;t=sG9w6qNOgSZO_tPusl0c9Q">最近的 AMA</a>。现在，轮到您将自己的智能合约部署到 Neon EVM。请务必让我们知道您的想法。如果您遇到任何问题或需要更多指导，请查看我们的 <a href="https://docs.neon-labs.org/">Neon Docs</a> 或通过 [Discord](https://discord. com/invite/9jVYEDVwn8) 联系。我们知道你会创造出伟大的东西！</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Altlayer中文材料合集-不断更新中(Altlayer Chinese Materials-Updating)]]></title>
         <id>https://chainguys.github.io/post/altlayer-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-altlayer-chinese-materials-updating/</id>
         <link href="https://chainguys.github.io/post/altlayer-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-altlayer-chinese-materials-updating/">
@@ -549,6 +787,7 @@ Arweave 主网上的 <strong>Akord 协议</strong></p>
 <h2 id="黑暗森林的社区回合总结前20名已被选出-dark-forests-community-round-concludes-top-20-selected"><a href="https://chainguys.github.io/post/altlayer-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-altlayer-chinese-materials-updating">黑暗森林的社区回合总结，前20名已被选出 (Dark Forest’s Community Round Concludes, Top 20 Selected)</a></h2>
 <h2 id="altlayer又如何the-case-for-altlayer"><a href="https://chainguys.github.io/post/altlayer-you-ru-he-the-case-for-altlayer/">AltLayer又如何?(The Case for AltLayer)</a></h2>
 <h2 id="早安开发者和用户-gm-developers-and-users"><a href="https://chainguys.github.io/post/zao-an-kai-fa-zhe-he-yong-hu-gm-developers-and-users">早安，开发者和用户! (GM Developers and Users!)</a></h2>
+<h2 id="altlayer-og-badge-nft空投-altlayer-og-badge-nft-drop"><a href="https://chainguys.github.io/post/altlayer-og-badge-nft-kong-tou-altlayer-og-badge-nft-drop">AltLayer OG Badge NFT空投 (AltLayer OG Badge NFT Drop)</a></h2>
 <h1 id="开发相关developpment-related">开发相关(Developpment Related)</h1>
 <h2 id="altlayer阿尔法开发网-altlayer-alpha-devnet"><a href="https://chainguys.github.io/post/altlayer-a-er-fa-kai-fa-wang-altlayer-alpha-devnet">AltLayer阿尔法开发网 (AltLayer Alpha Devnet)</a></h2>
 ]]></content>
@@ -688,441 +927,9 @@ return text;
 <h2 id="swayswap简介以太坊模块化执行层上的极速-dex-introducing-swayswapa-blazingly-fast-dex-on-ethereums-modular-execution-layer"><a href="https://chainguys.github.io/post/swayswap-jian-jie-yi-tai-fang-mo-kuai-hua-zhi-xing-ceng-shang-de-ji-su-dex-introducing-swayswapa-blazingly-fast-dex-on-ethereums-modular-execution-layer">SwaySwap简介：以太坊模块化执行层上的极速 DEX (Introducing SwaySwap：A Blazingly Fast DEX on Ethereum's Modular Execution Layer)</a></h2>
 <h2 id="见一见feul背后的团队-第1集-meet-the-team-behind-fuel-episode-1"><a href="https://chainguys.github.io/post/jian-yi-jian-feul-bei-hou-de-tuan-dui-di-1-ji-meet-the-team-behind-fuel-episode-1">见一见Feul背后的团队-第1集 (Meet the team behind Fuel Episode 1)</a></h2>
 <h2 id="见一见feul背后的团队-第2集-meet-the-team-behind-fuel-episode-2"><a href="https://chainguys.github.io/post/di-2-ji-alex-hansenji-zhu-tuan-dui-fu-ze-ren-episode-2-alex-hansen-technical-team-lead">见一见Feul背后的团队-第2集 (Meet the team behind Fuel Episode 2)</a></h2>
-<h1 id="3其他官方博客翻译-other-official-blogs-translated-into-chinese">3.其他官方博客翻译 (Other Official Blogs Translated into Chinese)</h1>
+<h1 id="3其他官方内容翻译-other-official-content-translated-into-chinese">3.其他官方内容翻译 (Other Official Content Translated into Chinese)</h1>
 <h2 id="yul简介一个以太坊的全新低级语言-introducingyul-a-new-low-level-language-for-ethereum"><a href="https://chainguys.github.io/post/yuljian-jie-yi-ge-yi-tai-fang-de-quan-xin-di-ji-yu-yan-introducingyul-a-new-low-level-language-for-ethereum">Yul+简介—一个以太坊的全新低级语言 (Introducing：Yul+ — A new low-level language for Ethereum)</a></h2>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fuel内幕-2022年的夏天 (Inside Fuel — Summer 2022)]]></title>
-        <id>https://chainguys.github.io/post/fuel-nei-mu-2022-nian-xia-tian-inside-fuel-summer-2022/</id>
-        <link href="https://chainguys.github.io/post/fuel-nei-mu-2022-nian-xia-tian-inside-fuel-summer-2022/">
-        </link>
-        <updated>2022-09-15T04:14:49.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/08/blog-banner.png" alt="Inside Fuel — Summer 2022" loading="lazy"></figure>
-<blockquote>
-<p>Welcome to <strong>Inside Fuel</strong>, our review of the technical developments on the Fuel Network. Take a moment to catch up with all of the latest news.</p>
-<p>欢迎来到 <strong>Inside Fuel</strong>，这是我们对 Fuel网络技术发展的回顾。欢迎您拨冗了解所有最新消息。</p>
-</blockquote>
-<h3 id="fuelup简介-introducing-fuelup">Fuelup简介 (### Introducing Fuelup)</h3>
-<hr>
-<h4 id="什么是fuelup-what-is-fuelup">什么是Fuelup (What is Fuelup?)</h4>
-<p><a href="https://github.com/FuelLabs/fuelup#installation">Fuelup</a> is the official package manager and multiplexer for <a href="https://fuel.network/">Fuel</a> that installs <strong>The Fuel Toolchain</strong> from the official release channels. It enables you to easily install pre-packaged toolchains, keep them up to date or even create custom toolchains and switch between them.</p>
-<p><a href="https://github.com/FuelLabs/fuelup#installation">Fuelup</a> 是 <a href="https://fuel.network/">Fuel</a> 的官方包管理器和复用器，它从官方发布渠道安装<strong>Fuel工具链 (The Fuel Toolchain)</strong>。它使您能够轻松安装预打包的工具链，使其保持最新状态，甚至创建自定义工具链并在它们之间切换。</p>
-<p>Binaries are executed through Fuelup as proxies which allow for flexibility in the execution of tools.</p>
-<p>二进制文件通过 Fuelup 作为代理执行，使得工具的执行变得灵活。</p>
-<p>It simplifies building and maintaining Sway applications with <a href="https://github.com/FuelLabs/sway/tree/master/forc">forc</a> and <a href="https://github.com/FuelLabs/fuel-core">fuel-core</a> for common platforms.</p>
-<p>它为一般平台使用 <a href="https://github.com/FuelLabs/sway/tree/master/forc">forc</a> 和 <a href="https://github.com/FuelLabs/fuel-core">fuel-core</a> 简化了 Sway 应用的构建和维护。</p>
-<hr>
-<p>Right now, fuelup has the <code>latest</code> toolchain as the only pre-packaged official toolchain. Components in this toolchain are tested for compatibility in our GitHub CI before being updated. For more flexibility at the cost of possible incompatibility or instability, advanced users can specify specific versions of components they want to install and use.</p>
-<p>目前，fuelup 拥有 <code>latest</code> 工具链，也是唯一预打包的官方工具链。此工具链中的组件在更新之前在我们的 GitHub CI 中进行了兼容性测试。以可能的不兼容或不稳定为代价，获得了更大的灵活性，高级用户可以指定他们想要安装和使用的特定版本的组件。</p>
-<p>Basic usages such as keeping the toolchain or Fuelup up to date can be found <a href="https://fuellabs.github.io/fuelup/master/basics.html">here</a>.</p>
-<p>可以在 <a href="https://fuellabs.github.io/fuelup/master/basics.html">此处</a> 找到基本用法，例如使工具链或保持更新 Fuelup 。</p>
-<p>For more details on how Fuelup works, as well as usage examples, please refer to <a href="https://fuellabs.github.io/fuelup/master/">The Fuelup Book</a>.</p>
-<p>有关 Fuelup 工作原理的更多详细信息以及用例，请参阅 <a href="https://fuellabs.github.io/fuelup/master/">The Fuelup Book</a>。</p>
-<blockquote>
-<p>Note that Fuelup is still in active development with more features soon to come. Opening issues for any bugs, or suggestions to improve it are welcome.</p>
-<p>请注意，Fuelup 仍在积极开发中，即将推出更多功能。欢迎指出任何错误，提出意见或建议。</p>
-</blockquote>
-<h2 id="swap应用-sway-applications">Swap应用 (Sway Applications)</h2>
-<hr>
-<h4 id="sway应用存储库-the-sway-applications-repository">Sway应用存储库 (The Sway Applications Repository)</h4>
-<p>The purpose of the <a href="https://github.com/FuelLabs/sway-applications">Sway Applications</a> repository is to demonstrate what can be built with <a href="https://github.com/FuelLabs/sway">Sway</a> and to promote good development practices.</p>
-<p>Sway 应用存储库的目标是，演示可以使用 Sway 构建什么并激发优秀的开发实践。</p>
-<p>That being said, the repository should be deemed as a living project since the applications will be actively maintained, and thus it is likely that none of them will ever reach their final form!</p>
-<p>也就是说，存储库应该被视为一个活的项目，因为应用将被积极维护，因此很可能它们都不会达到最终形式/一直更新！</p>
-<p>The repository is young so there isn't anything for anyone to use yet, however, we have lots of applications in development, and lots more planned to be worked on in the near future.</p>
-<p>存储库还很年轻，所以还没有任何东西可供任何人使用，但是，我们有很多应用正在开发中，并且计划在不久的将来进行更多工作。</p>
-<p>So far, the applications are planned to have a smart contract to demonstrate <a href="https://github.com/FuelLabs/sway">Sway</a>, tests written in <a href="https://www.rust-lang.org/">Rust</a> to demonstrate the <a href="https://github.com/FuelLabs/fuels-rs">Rust-SDK</a>, and a user interface to demonstrate the use of the <a href="https://github.com/FuelLabs/fuels-ts">Typescript-SDK</a>.</p>
-<p>到目前为止，这些应用计划有一个智能合约来演示 Sway，用 Rust 编写的测试来演示 Rust-SDK，以及一个用户界面来演示 Typescript-SDK 的使用。</p>
-<p>That isn't to say that you cannot have a CLI application, a plugin, or any other type of app. Those are simply not in development at the moment.</p>
-<p>这并不是说您不能拥有 CLI 应用程序、插件或任何其他类型的应用。只是说这些目前根本不在开发中。</p>
-<p>This part presents the applications that have gone through some level of scrutiny and have been deemed acceptable to be merged into the <code>master</code> branch.</p>
-<p>这部分介绍了经过一定程度审查并被认为可以合并到主分支中的应用。</p>
-<blockquote>
-<p><strong>NOTE</strong><br>
-This does not mean that they are complete nor that development has ceased.</p>
-<p><strong>注意</strong><br>
-这并不意味着它们是完整的，也不意味着开发已经停止。</p>
-</blockquote>
-<hr>
-<h3 id="全新的dao智能合约原型-new-dao-smart-contract-prototype">全新的DAO智能合约原型 (New DAO Smart-Contract prototype)</h3>
-<hr>
-<h4 id="dao是什么-what-is-a-dao">DAO是什么? (What is a DAO?)</h4>
-<p>A decentralized autonomous organization (DAO) is akin to an on-chain government where participants are able to cast votes on proposals using some governance token. Various consensus mechanisms may be implemented in order to determine whether a proposal will pass and if that happens then the DAO will begin to operate under the rules of the new proposal.</p>
-<p>去中心化自治组织（DAO）类似于链上政府，参与者可以使用一些治理代币对提案进行投票。可以实施各种共识机制来确定提案是否会通过，如果通过，那么 DAO 将开始根据新提案的规则运行。</p>
-<hr>
-<p>In this implementation, the user deposits governance tokens and receives some number of votes that can be cast and recast on different proposals. They can vote in favor or against proposals and they can transform their votes back into the governance tokens if they wish to withdraw.</p>
-<p>在此实施中，用户存入治理代币并获得一定数量的选票，这些选票可以针对不同的提案进行投票和重新投票。他们可以投票赞成或反对提案，如果他们希望撤回，他们可以将投票转换回治理代币。</p>
-<ul>
-<li>
-<p>The smart contract is mostly complete for the basic implementation. There are some issues that need to be worked out but a UI can be started.</p>
-<p>智能合约的实施基本完成。有一些问题需要解决，但已经可以启动 UI。</p>
-</li>
-<li>
-<p>The user interface does not currently exist.<br>
-用户界面当前还不存在。</p>
-</li>
-</ul>
-<h2 id="更新-updates">更新 (Updates)</h2>
-<h3 id="swap更新-sway-updates">Swap更新 (Sway Updates)</h3>
-<hr>
-<h4 id="什么是swap-what-is-sway">什么是Swap (What is Sway?)</h4>
-<p>Sway is a language for writing smart contracts for the <a href="https://github.com/FuelLabs/fuel-specs">Fuel Virtual Machine (FuelVM)</a>, a blazing-fast, blockchain-optimized VM designed for the Fuel blockchain. It is heavily inspired by Rust and aims to bring modern language development and performance to the blockchain ecosystem. Start learning the <a href="https://twitter.com/SwayLang">Sway language</a> today with the <a href="https://fuellabs.github.io/sway/latest/">Sway Book</a> and the <a href="https://www.youtube.com/watch?v=GKNuaFcPaXc">FuelVM Bootcamp</a>.</p>
-<p>Sway 是一种用于为 <a href="https://github.com/FuelLabs/fuel-specs">Fuel 虚拟机 (FuelVM)</a> 编写智能合约的语言，这是一种专为 Fuel 区块链设计的超快、区块链优化的虚拟机。它深受 Rust 的启发，旨在为区块链生态系统带来现代语言的开发和性能。现在可以立即开始学习 <a href="https://twitter.com/SwayLang">Sway 语言</a>，使用 <a href="https://fuellabs.github.io/sway/latest/">Sway Book</a> 和 [FuelVM 训练营](https: //www.youtube.com/watch?v=GKNuaFcPaXc)。</p>
-<hr>
-<h5 id="版本-0145-0210httpsgithubcomfuellabssway-releasestagv0210-已发布-versions-0145-0210-were-released">版本 <a href="https://github.com/FuelLabs/sway/releases/tag/v0.14.5">0.14.5</a> - [0.21.0](https://github.com/FuelLabs/sway /releases/tag/v0.21.0) 已发布 (Versions <a href="https://github.com/FuelLabs/sway/releases/tag/v0.14.5">0.14.5</a> - <a href="https://github.com/FuelLabs/sway/releases/tag/v0.21.0">0.21.0</a> were released)</h5>
-<ul>
-<li>
-<p>The addition of <code>U256</code> , <code>StorageVec</code> and more, in the standard library. These are useful data structures for writing Sway programs! And they also open up the doors for Sway users to implement their own complex data structures;<br>
-在标准库中添加了<code>U256</code>、<code>StorageVec</code> 等。这些是编写 Sway 程序的有用数据结构！它们还为 Sway 用户实现自己的复杂数据结构打开了大门；</p>
-</li>
-<li>
-<p>The <code>break</code> and <code>continue</code> statements are now supported;<br>
-现在支持 <code>break</code> 和 <code>continue</code> 语句；</p>
-</li>
-<li>
-<p>New <code>swap</code>  method now available on <code>Vec</code>;<br>
-新的 <code>swap</code> 方法现在可以在<code>Vec</code> 上使用；</p>
-</li>
-<li>
-<p>New <strong>JSON ABI</strong> format supporting generics has been added;<br>
-添加了支持泛型的新 <strong>JSON ABI</strong> 格式；</p>
-</li>
-<li>
-<p>A new minimum forc version field has been added to the <code>Forc.toml</code> manifest;<br>
-<code>Forc.toml</code> 清单中添加了一个新的最低强制版本字段；</p>
-</li>
-<li>
-<p>Introducing configuration-time constants in <code>Forc.toml</code>;<br>
-在 <code>Forc.toml</code> 中引入配置时间的常量；</p>
-</li>
-<li>
-<p>Bytecode size has been optimized;<br>
-字节码大小已优化</p>
-</li>
-</ul>
-<h3 id="fuel核心更新-fuel-core-updates">Fuel核心更新 (Fuel Core Updates)</h3>
-<h5 id="版本-091-0101httpsgithubcomfuellabsfuel-core-releasetagv0101-已发布-versions-091-0101-were-released">版本 <a href="https://github.com/FuelLabs/fuel-core/releases/tag/v0.9.1">0.9.1</a> - [0.10.1](https://github.com/FuelLabs/fuel-core/ release/tag/v0.10.1) 已发布 (Versions <a href="https://github.com/FuelLabs/fuel-core/releases/tag/v0.9.1">0.9.1</a> - <a href="https://github.com/FuelLabs/fuel-core/releases/tag/v0.10.1">0.10.1</a> were released)</h5>
-<ul>
-<li>
-<p>New <strong>fuel-debugger CLI</strong> with Automatic Storage Management (ASM) support;<br>
-新的 <strong>fuel-debugger CLI</strong> 具有自动存储管理 (ASM) 支持；</p>
-</li>
-<li>
-<p>New VM instructions are now supported:</p>
-<ul>
-<li><code>GTF</code> - get transaction field;</li>
-<li><code>SMO</code> - send message output;</li>
-<li><code>JMP/JNE</code> - dynamic jump;</li>
-</ul>
-<p>现在支持新的 VM 指令：</p>
-<ul>
-<li><code>GTF</code> - 获取交易字段；</li>
-<li><code>SMO</code> - 发送消息输出；</li>
-<li><code>JMP/JNE</code> - 动态跳转；</li>
-</ul>
-</li>
-<li>
-<p>The Produce Block API is now usable for SDK tests;<br>
-Produce Block API 现在可用于 SDK 测试；</p>
-</li>
-<li>
-<p>Integrated Ethereum contract event handling into fuel-core;<br>
-将以太坊合约事件处理集成到 fuel-core；</p>
-</li>
-<li>
-<p>Message inputs and outputs in Fuel Core:</p>
-<ul>
-<li>Message receiving in the Relayer from L1;</li>
-<li>TxPool validation of Message inputs;</li>
-<li>Block execution message spending validation;</li>
-<li>GraphQL APIs for querying available messages to include in a transaction;</li>
-</ul>
-<p>Fuel Core 中的消息输入和输出：</p>
-<ul>
-<li>在中继器中从 L1 接收消息；</li>
-<li>消息输入的 TxPool 验证；</li>
-<li>区块执行消息花费验证；</li>
-<li>用于查询包含在交易中的可用消息的 GraphQL API；</li>
-</ul>
-</li>
-<li>
-<p>Breaking Transaction format changes:</p>
-<ul>
-<li>Added TxPointer;</li>
-<li>Removed byte_price;</li>
-<li>Removed static contracts;</li>
-</ul>
-<p>打破交易格式的变化：</p>
-<ul>
-<li>添加了 TxPointer；</li>
-<li>删除了 byte_price；</li>
-<li>删除了静态合约；</li>
-</ul>
-</li>
-<li>
-<p>Integrated latest VM Changes into fuel-core v0.10.x node:</p>
-<ul>
-<li>Previously implemented opcodes such as <code>JMP</code> &amp; <code>GTF</code> are now available for use in the node;</li>
-<li>New <code>TIME</code> opcode to fetch the timestamp on the current block header;</li>
-</ul>
-<p>将最新的 VM 更改集成到fuel-core v0.10.x 节点中：</p>
-<ul>
-<li>以前实现的操作码，例如<code>JMP</code>和<code>GTF</code>现在可以在节点中使用；</li>
-<li>新的 TIME 操作码来获取当前区块头的时间戳；</li>
-</ul>
-</li>
-</ul>
-<h3 id="fuel-rs-rust-sdk-更新-fuel-rs-rust-sdk-updates">Fuel-rs (Rust SDK) 更新 Fuel-rs (Rust SDK) Updates</h3>
-<h5 id="版本-0170-0210httpsgithubcomfuellabsfuels-rs-releasetagv0210-已发布-versions-0170-0210-were-released">版本 <a href="https://github.com/FuelLabs/fuels-rs/releases/tag/v0.17.0">0.17.0</a> - [0.21.0](https://github.com/FuelLabs/fuels-rs/ release/tag/v0.21.0) 已发布 (Versions <a href="https://github.com/FuelLabs/fuels-rs/releases/tag/v0.17.0">0.17.0</a> - <a href="https://github.com/FuelLabs/fuels-rs/releases/tag/v0.21.0">0.21.0</a> were released)</h5>
-<ul>
-<li>
-<p>You can now bundle many contract calls into one, with <code>ContractMultiCall</code>, which has been officially released;<br>
-现在可以将多个合约调用捆绑为一个，使用正式发布的<code>ContractMultiCall</code>；</p>
-</li>
-<li>
-<p>New feature to directly convert raw bytes into contract-defined types;<br>
-直接将原始字节转换为合约定义类型的新功能；</p>
-</li>
-<li>
-<p>New API for manual and automatic storage initialization;<br>
-用于手动和自动存储初始化的新 API；</p>
-</li>
-<li>
-<p>New API to manipulate block height, very useful for testing specific conditions between contract calls;<br>
-操作区块高度的新 API，对于测试合约调用之间的特定条件非常有用；</p>
-</li>
-<li>
-<p>New API to fetch the contract ID and the wallet used to create a contract instance;<br>
-用于获取合约 ID 和用于创建合约实例的钱包新 API；</p>
-</li>
-<li>
-<p><code>Bech32</code> support: all of the internal addresses (<code>ContractId</code>, <code>Address</code>) are now represented as <code>Bech32</code>;<br>
-<code>Bech32</code> 支持：所有内部地址（<code>ContractId</code>、<code>Address</code>）现在都表示为``Bech32`；</p>
-</li>
-<li>
-<p>You can now create test wallets with multiple custom assets;<br>
-您现在可以创建具有多个自定义资产的测试钱包；</p>
-</li>
-<li>
-<p>You can now generate test nodes with configurable consensus parameters;<br>
-您现在可以生成具有可配置的共识参数的测试节点；</p>
-</li>
-<li>
-<p>You can now change the underlying wallet of a contract instance with the new contract API <code>._with_wallet()</code>;<br>
-您现在可以使用新的合约 API <code>._with_wallet()</code> 更改合约实例的对应钱包；</p>
-</li>
-<li>
-<p><code>Wallet.get_coins</code> improvement: now you can specify with assets to be returned;<br>
-<code>Wallet.get_coins</code> 改进：现在您可以指定要退回的资产；</p>
-</li>
-<li>
-<p>Support for the new <strong>JSON ABI</strong> — generics, <code>Vec</code>, <code>Option</code>, and <code>Result</code> support coming up!<br>
-支持新的 <strong>JSON ABI</strong> - 泛型、<code>Vec</code>、<code>Option</code> 和 <code>Result</code> 支持即将推出！</p>
-</li>
-<li>
-<p><code>Wallet</code> is now <code>Wallet</code> for read-only operations that don’t need a private key and <code>WalletUnlocked</code> for read-write operations. This reduces the scope of the default wallet and reduces security risks;</p>
-</li>
-</ul>
-<p><code>Wallet</code> 现在是 <code>Wallet</code> 用于不需要私钥的只读操作和 <code>WalletUnlocked</code> 用于读写操作。这减少了默认钱包的范围，降低了安全风险；</p>
-<ul>
-<li>Predicates are now supported;<br>
-现在支持谓词；</li>
-</ul>
-<p>For more details, check out the <strong>Rust SDK Book</strong> <a href="https://fuellabs.github.io/fuels-rs/latest/">here</a>.</p>
-<p>有关更多详细信息，请查看 <strong>Rust SDK 手册</strong> <a href="https://fuellabs.github.io/fuels-rs/latest/">此处</a>。</p>
-<h6 id="fuel-ts-typescript-sdk更新-fuel-ts-typescript-sdk-updates">Fuel-ts (Typescript SDK)更新 Fuel-ts (Typescript SDK) Updates</h6>
-<h5 id="版本-0145-0210httpsgithubcomfuellabssway-releasestagv0210-已发布-versions-070-0120-were-released">版本 <a href="https://github.com/FuelLabs/sway/releases/tag/v0.14.5">0.14.5</a> - [0.21.0](https://github.com/FuelLabs/sway /releases/tag/v0.21.0) 已发布 (Versions <a href="https://github.com/FuelLabs/fuels-ts/releases/tag/0.7.0">0.7.0</a> - <a href="https://github.com/FuelLabs/fuels-ts/releases/tag/0.12.0">0.12.0</a> were released)</h5>
-<hr>
-<ul>
-<li>
-<p>New way to pass <code>amount</code>/<code>assetId</code> overrides with the new <code>forward</code>;<br>
-传递<code>amount</code>/<code>assetId</code> 的新方法被新的<code>forward</code>覆盖；</p>
-</li>
-<li>
-<p>Added contract slots on contract deployments;<br>
-在合约部署中添加合约槽；</p>
-</li>
-<li>
-<p>New contract getter on the <code>Provider</code>;<br>
-<code>Provider</code> 上的新合约获取器；</p>
-</li>
-<li>
-<p>New balances API have been added;<br>
-添加了新的余额 API；</p>
-</li>
-<li>
-<p>New multicall (contract calls bundling) API;<br>
-新的多调用（合约调用捆绑）API；</p>
-</li>
-<li>
-<p>Full predicates support;<br>
-完整的谓词/判定支持；</p>
-</li>
-<li>
-<p>You can now set the gas for each call;<br>
-您现在可以为每次调用设置gas；</p>
-</li>
-<li>
-<p><code>Provider</code> now integrated with query chain information;<br>
-<code>Provider</code> 现在与查询链信息集成；</p>
-</li>
-<li>
-<p>Support for generic custom types;<br>
-支持通用自定义类型；</p>
-</li>
-<li>
-<p>Support for <code>Option</code> and <code>Result</code>;<br>
-支持“选项”和“结果”；</p>
-</li>
-<li>
-<p>Support for the new <strong>JSON ABI</strong> — <code>Vec</code> support is coming up!<br>
-支持新的 <strong>JSON ABI</strong> - <code>Vec</code> 支持即将推出！</p>
-</li>
-<li>
-<p>Fixes to the required amount of coins for contract calls;<br>
-修正了合约调用所需的代币数量；</p>
-</li>
-<li>
-<p>Automatic storage initialization upon contract deployment;<br>
-合约部署时自动初始化存储；</p>
-</li>
-<li>
-<p>Better interface for transaction fee payment;<br>
-更好的交易费用支付界面；</p>
-</li>
-</ul>
-<hr>
-<h1 id="今天就开始在fuel上构建-start-building-on-fuel-today">今天就开始在Fuel上构建! (Start building on Fuel today)</h1>
-<h2 id="使用fuel构建可用的开发资源-developer-resources-for-building-with-fuel">使用Fuel构建可用的开发资源 (Developer Resources for Building with Fuel)</h2>
-<ul>
-<li>A step-by-step guide to building a full-stack dapp on Fuel can be found <a href="https://github.com/camiinthisthang/fullstack-fuel/blob/main/README.md">here</a><br>
-<a href="https://github.com/camiinthisthang/fullstack-fuel/blob/main/README.md">这里</a> 可以找到在 Fuel 上构建全栈 dapp 的分步指南</li>
-<li>The <strong>Fuel Book</strong> can be found <a href="https://fuellabs.github.io/fuel-docs/master/index.html">here</a>. It contains everything you need to know about Fuel, from its modular design to its key features.<br>
-<strong>Fuel Book</strong> 可以在 <a href="https://fuellabs.github.io/fuel-docs/master/index.html">这里</a> 找到。它包含您需要了解的有关 Fuel 的所有信息，从模块化设计到主要功能。</li>
-<li>The <strong>Sway Book</strong> can be found <a href="https://fuellabs.github.io/sway/v0.24.1/">here</a>.<br>
-<strong>Sway Book</strong> 可以在 <a href="https://fuellabs.github.io/sway/v0.24.1/">这里</a> 找到。</li>
-</ul>
-<h2 id="介绍fuel补助计划-introducing-the-fuel-grants-program">介绍Fuel补助计划 (Introducing the Fuel Grants Program)</h2>
-<p>The <strong>Fuel Grants program</strong> is a way to support projects building on Fuel. Currently, we are offering generous grants ranging from <strong>10,000 - 150,000 USD</strong> to developers, creators, and new or existing projects to come build on the world's fastest modular execution layer. We welcome all builders with a passion for decentralization, web3, and building the future. We envision an autonomous future, where systems are built to power the next generation of human coordination and cooperation.</p>
-<p><strong>Fuel补助计划</strong>是支持以 Fuel 为基础的项目的一种方式。目前，我们向开发人员、创作者以及新的或现有的项目提供 <strong>10,000 - 150,000 美元</strong> 的慷慨赠款，来帮助在世界上最快的模块化执行层上构建。我们欢迎所有对去中心化、web3 和建设未来充满热情的建设者。我们设想一个自治的未来，建立系统来推动下一代人类协调与合作。</p>
-<p>Building on Fuel means breaking free from the constraints of monolithic blockchains that have held us back.</p>
-<p>以 Fuel 为基础意味着摆脱阻碍我们前进的单一区块链的限制。</p>
-<p>To get started applying for a grant, fill out <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">this form</a>. We’re incredibly excited to launch this program, see more people building on Fuel, and taking the modular pill. If you have any additional questions please feel free to reach out to <a href="mailto:grants@fuel.sh">grants@fuel.sh</a>.</p>
-<p>要开始申请资助，请填写 <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">此表格</a>。我们非常高兴能够启动这个计划，看到更多的人在 Fuel 上构建，并使用模块化服务。如果您有任何其他问题，请随时与 <a href="mailto:grants@fuel.sh">grants@fuel.sh</a> 联系。</p>
-<hr>
-<h2 id="其他-other">其他 (Other)</h2>
-<h3 id="播客和推特空间-podcasts-and-twitter-spaces">播客和推特空间 (Podcasts and Twitter Spaces)</h3>
-<h4 id="swayswap-ama">SwaySwap AMA</h4>
-<figure data-type="image" tabindex="2"><img src="https://fuel-labs.ghost.io/content/images/2022/09/SwaySwapAMA.png" alt="" loading="lazy"></figure>
-<p>In case you missed it, discover <a href="https://fuellabs.github.io/swayswap/"><strong>SwaySwap</strong></a><strong>,</strong> a blazingly fast <strong>DEX</strong> built on the <strong>fastest modular execution layer</strong> with the developers that built it during the <a href="https://twitter.com/i/spaces/1YpJkZZjevEGj">Twitter Space:</a> <em><a href="https://twitter.com/i/spaces/1YpJkZZjevEGj">SwaySwap AMA</a>.</em></p>
-<p>怕您错过了，现在请看 <a href="https://fuellabs.github.io/swaywap/"><strong>SwaySwap</strong></a><strong>,</strong> 一个建立在<strong>最快的模块化执行层之上的极快的DEX</strong>  并在 <a href="https://twitter.com/i/spaces/1YpJkZZjevEGj">Twitter Space:</a> <em><a href="https://twitter.com/i/spaces/1YpJkZZjevEGj">SwaySwap AMA</a> 期间与构建它的开发人员交流.</em></p>
-<h3 id="新闻-in-the-news">新闻 (In the News)</h3>
-<h4 id="️英文内容-english-content">☕ ️英文内容 (English Content)</h4>
-<ul>
-<li>
-<p><strong><a href="https://volt.capital/">Volt Capital</a></strong>:</p>
-<ul>
-<li><a href="https://volt.capital/blog/modular-blockchains">The Blockchain Modularity report</a></li>
-<li>Twitter threads by <a href="https://twitter.com/soona/status/1545177164169023488">Soona</a> and <a href="https://twitter.com/0xAlec/status/1545176941002575872">Alec</a></li>
-</ul>
-<p><strong><a href="https://volt.capital/">伏特资本</a></strong>:</p>
-<ul>
-<li><a href="https://volt.capital/blog/modular-blockchains">区块链模块化报告</a></li>
-<li><a href="https://twitter.com/soona/status/1545177164169023488">Soona</a> 和 <a href="https://twitter.com/0xAlec/status/1545176941002575872">Alec</a> 的 Twitter 推文</li>
-</ul>
-</li>
-<li>
-<p><strong><a href="https://messari.io/research">Messari</a></strong>:</p>
-<ul>
-<li>Rollups: <a href="https://twitter.com/MessariCrypto/status/1546886351467020288">Execution Through the Modular Lens</a> report from <a href="https://twitter.com/eshita/status/1546911451125649408">Eshita</a></li>
-</ul>
-</li>
-<li>
-<p><strong><a href="https://messari.io/research">Messari</a></strong>：<br>
--Rollups：<a href="https://twitter.com/MessariCrypto/status/1546886351467020288">通过模块化镜头执行</a>来自<a href="https://twitter.com/eshita/status/1546911451125649408">Eshita的报告</a></p>
-</li>
-<li>
-<p><strong><a href="https://delphidigital.io/">Delphi Digital</a></strong>:</p>
-<ul>
-<li><a href="https://twitter.com/Delphi_Digital/status/1551653384972865537">Is Fuel the best Modular Execution Layer?</a> report from <a href="https://twitter.com/CannnGurel">Can Gurel</a></li>
-</ul>
-<p><strong><a href="https://delphidigital.io/">德尔福数码</a></strong>:</p>
-<ul>
-<li><a href="https://twitter.com/Delphi_Digital/status/1551653384972865537">Fuel 是最好的模块化执行层吗？</a> 来自 <a href="https://twitter.com/CannnGurel">Can Gurel</a> 的报告</li>
-</ul>
-</li>
-</ul>
-<h4 id="土耳其语内容-turkish-content">🇹🇷 土耳其语内容 (Turkish Content)</h4>
-<ul>
-<li>
-<p><strong><a href="https://lytera.io/">Lytera</a></strong>:</p>
-<ul>
-<li><a href="https://twitter.com/lyteraio/status/1563217274395246592">A New Look at the Execution Layer</a>: Fuel Network report from <a href="https://twitter.com/caner_eth">Caner Budak</a></li>
-</ul>
-<p><strong><a href="https://lytera.io/">Lytera</a></strong>：</p>
-<ul>
-<li><a href="https://twitter.com/lyteraio/status/1563217274395246592">执行层的新视角</a>：来自 <a href="https://twitter.com/caner_eth">Caner Budak</a> 的燃料网络报告</li>
-</ul>
-</li>
-</ul>
-<h4 id="俄语内容-russian-content">🇷🇺 俄语内容 (Russian Content)</h4>
-<ul>
-<li><a href="https://medium.com/@balamosha/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-e7dca0630332">About the Fuel Project</a> report from <a href="https://twitter.com/0xbalamosha">Aryakeri</a> and <a href="https://twitter.com/ntwrkrcrpt">Netwrkcrypt</a><br>
-<a href="https://medium.com/@balamosha/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-e7dca0630332">关于燃料项目</a> 来自 <a href="https://twitter.com/0xbalamosha">Aryakeri</a> 和 <a href="https://twitter.com/ntwrkrcrpt">Netwrkcrypt</a> 的报告</li>
-</ul>
-<hr>
-<figure data-type="image" tabindex="3"><img src="https://fuel-labs.ghost.io/content/images/2022/06/image.png" alt="" loading="lazy"></figure>
-<p>According to the <strong>Rust In Blockchain</strong> monthly review (<a href="https://rustinblockchain.org/newsletters/rib-newsletter-38/">July</a> and <a href="https://rustinblockchain.org/newsletters/rib-newsletter-39/">August</a>), Fuel is still one of the most active Rust-based projects this summer. Fuel ranked 5th in July and August 2022, right behind Sui, Aptos, Parity, and Solana, with 225 merged PRs, 203 closed issues, and 142 open issues in July and 253 merged PRs, 193 closed issues, and 139 open issues in August.</p>
-<p>根据<strong>Rust In Blockchain</strong> 月度审查（<a href="https://rustinblockchain.org/newsletters/rib-newsletter-38/">7 月</a> 和[8 月](https://rustinblockchain.org/newsletters/rib -newsletter-39/))，Fuel 仍然是今年夏天最活跃的基于 Rust 的项目之一。 Fuel 在 7 月和 2022 年 8 月排名第五，紧随 Sui、Aptos、Parity 和 Solana，7 月份有 225 个合并 PR、203 个已关闭问题和 142 个未解决问题，8 月份有 253 个合并 PR、193 个已关闭问题和 139 个未解决问题.</p>
-<hr>
-<h3 id="公开展示-public-appearances">公开展示 (Public Appearances)</h3>
-<h3 id="ethcc">🇫🇷 EthCC</h3>
-<p>We had the opportunity to give several talks during the EthCC in Paris (July 19-21). In case you missed them, here are the replay links below:</p>
-<ul>
-<li><strong><a href="https://twitter.com/emilyaherbert">Emily Herbert</a></strong>: <em><a href="https://www.youtube.com/watch?v=Zh44cEQDoLc&amp;list=PLUt355rCCNrSL-n6G7vxavNv7AKdrdfkS&amp;t=3s">Developing Smart Contracts in Sway;</a></em></li>
-<li><strong><a href="https://twitter.com/jadler0">John Adler</a></strong>: <em><a href="https://www.youtube.com/watch?v=Zq8uwpX39oI">&quot;Always Has Been&quot; (or, &quot;Wait, It's All Resource Pricing?&quot; Part 2)</a></em> in continuation of last year's talk;</li>
-<li><strong><a href="https://twitter.com/awleckss">Alex Hansen</a></strong>: <em><a href="https://www.youtube.com/watch?v=Zq8uwpX39oI">A year's progress in Sway, the Smart Contract language for the Fuel VM</a>;</em></li>
-</ul>
-<p>我们有机会在巴黎的 EthCC（7 月 19 日至 21 日）期间进行了几次会谈。如果您错过了它们，以下是重播链接：</p>
-<ul>
-<li><strong><a href="https://twitter.com/emilyaherbert">Emily Herbert</a></strong>: <em>[在 Sway 中开发智能合约；](https://www.youtube.com/watch?v=Zh44cEQDoLc&amp;list=PLUt355rCCNrSL-n6G7vxavNv7AKdrdfkS&amp;t =3s)</em></li>
-<li><strong><a href="https://twitter.com/jadler0">John Adler</a></strong>：<em><a href="https://www.youtube.com/watch?v=Zq8uwpX39oI">“一直都是”（或者，“等等，这都是资源定价？”第 2 部分）</a></em> 继续去年的谈话；</li>
-<li><strong><a href="https://twitter.com/awleckss">Alex Hansen</a></strong>：<em>[Sway 一年的进展，Fuel VM 的智能合约语言](https://www.youtube.com/watch ?v=Zq8uwpX39oI);</em></li>
-</ul>
-<h3 id="柏林区块链周和-ethberlin-berlin-blockchain-week-ethberlin">🇩🇪 柏林区块链周和 EthBerlin (Berlin Blockchain week &amp; EthBerlin)</h3>
-<p>Some of the Fuel contributors will be attending the <a href="https://blockchainweek.berlin/"><strong>Berlin Blockchain week</strong></a> (Sept 12-18) and <a href="https://ethberlin.ooo/"><strong>EthBerlin</strong></a> (Sept 16-18). Come say hi and grab some swag if you're around.</p>
-<p>一些 Fuel 贡献者将参加 <a href="https://blockchainweek.berlin/"><strong>柏林区块链周</strong></a>（9 月 12 日至 18 日）和 [<strong>EthBerlin</strong>](https://ethberlin.ooo /)（9 月 16 日至 18 日）。如果你在附近，来打个招呼，拿些东西！</p>
-<figure data-type="image" tabindex="4"><img src="https://fuel-labs.ghost.io/content/images/2022/09/image-1.png" alt="" loading="lazy"></figure>
-<hr>
-<h2 id="关注我们-follow-us">关注我们 (Follow us)</h2>
-<p>If you don’t want to miss any update on the Fuel Network, simply follow us and activate the notification bell:</p>
-<p>如果您不想错过 Fuel Network 的任何更新，只需关注我们并激活通知铃！</p>
-<ul>
-<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
-<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
-<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
-<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
-</ul>
-<h2 id="关于我们-about-us">关于我们 (About us)</h2>
-<p>Fuel is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the FuelVM for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
-<p>Fuel 是模块化区块链堆栈的<strong>最快的执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 FuelVM 是因为它的<strong>卓越的开发人员体验</strong>以及<strong>超越 EVM</strong> 限制的能力。</p>
-<h2 id="加入我们-join-us">加入我们 (Join us)</h2>
-<p>If you want to join us in this journey, here are our <a href="https://jobs.lever.co/fuellabs">current job openings</a>.</p>
-<p>如果您想加入我们的旅程，这里是我们的<a href="https://jobs.lever.co/fuellabs">当前职位空缺</a>。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Orderly网络中文材料合集-不断更新中(Orderly Network Chinese Materials-Updating)]]></title>
-        <id>https://chainguys.github.io/post/orderly/</id>
-        <link href="https://chainguys.github.io/post/orderly/">
-        </link>
-        <updated>2022-09-13T10:15:02.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*ZT5nhNYmVwErdrZrO81EIA.png" alt="" loading="lazy"></figure>
-<h1 id="blogs">Blogs</h1>
-<h2 id="orderly-如何构建迄今为止最先进的-defi-基础设施-how-orderly-is-building-the-most-advanced-defi-infrastructure-to-date"><a href="https://chainguys.github.io/post/orderly-ru-he-gou-jian-qi-jin-wei-zhi-zui-xian-jin-de-defi-ji-chu-she-shi-how-orderly-is-building-the-most-advanced-defi-infrastructure-to-date">Orderly 如何构建迄今为止最先进的 DeFi 基础设施 (How Orderly is building the most advanced DeFi infrastructure to date)</a></h2>
-<h2 id="orderly网络筹集2000万美元用于构建-defi-基础设施为基于-near-构建的dapp赋能-orderly-network-raises-us20-million-to-build-defi-infrastructure-to-empower-dapps-built-on-near"><a href="https://chainguys.github.io/orderly-wang-luo-chou-ji-2000-wan-mei-yuan-yong-yu-gou-jian-defi-ji-chu-she-shi-wei-ji-yu-near-gou-jian-de-dapp-fu-neng-orderly-network-raises-usdollar20-million-to-build-defi-infrastructure-to-empower-dapps-built-on-near">Orderly网络筹集2000万美元用于构建 DeFi 基础设施，为基于 NEAR 构建的dApp赋能 (Orderly Network Raises US$20 Million to Build DeFi Infrastructure to Empower dApps Built on NEAR)</a></h2>
-<h2 id="orderly网络简介an-introduction-to-orderly-network"><a href="https://chainguys.github.io/post/orderly-wang-luo-jian-jie-an-introduction-to-orderly-network">Orderly网络简介(An introduction to Orderly Network)</a></h2>
+<h2 id="fuellabs_长推20221007fuellabs_threads20221007"><a href="https://chainguys.github.io/post/fuellabs_-chang-tui-20221007fuellabs_threads20221007">@fuellabs_长推20221007(@fuellabs_threads20221007)</a></h2>
 ]]></content>
     </entry>
 </feed>
