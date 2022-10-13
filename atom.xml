@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-12T00:36:43.860Z</updated>
+    <updated>2022-10-13T00:34:28.699Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -480,9 +480,9 @@ Apply for a grant <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">here</a
 <em>“可扩展性”可以定义为区块链的吞吐量除以验证所有交易的成本（来源：<a href="https://celestia.org/learn/first-principles-of-modular-blockchains/#scalability">Celestia</a>）</em> <em>“Scalability” can be defined as a blockchain’s throughput divided by the cost to validate all transactions (source: <a href="https://celestia.org/learn/first-principles-of-modular-blockchains/#scalability">Celestia</a>)</em></p>
 <p>Under this definition, in order to scale, blockchains must increase throughput without increasing the cost to verify the network. This kind of “true scalability” is what modular blockchains are designed to enable.</p>
 <p>根据这个定义，为了扩展，区块链必须在不增加验证网络成本的情况下增加吞吐量。这种“真正的可扩展性”是模块化区块链旨在实现的。</p>
-<h3 id="-当前的单片-l1-和-l2-扩展解决方案不足以实现真正的可扩展性-4-current-monolithic-l1-and-l2-scaling-solutions-are-not-sufficient-to-achieve-true-scalability">- 当前的单片 L1 和 L2 扩展解决方案不足以实现真正的可扩展性 (4 - Current Monolithic L1 and L2 Scaling Solutions are Not Sufficient to Achieve True Scalability)</h3>
+<h3 id="4-当前的单片-l1-和-l2-扩展解决方案不足以实现真正的可扩展性-4-current-monolithic-l1-and-l2-scaling-solutions-are-not-sufficient-to-achieve-true-scalability">4 - 当前的单片 L1 和 L2 扩展解决方案不足以实现真正的可扩展性 (4 - Current Monolithic L1 and L2 Scaling Solutions are Not Sufficient to Achieve True Scalability)</h3>
 <p>There are many proposed scaling solutions for monolithic blockchains, some of which are already under development. Solutions like <a href="https://ethereum.org/en/upgrades/sharding/">sharding</a>, <a href="https://ethereum.org/en/developers/docs/scaling/#rollups">rollups</a>, <a href="https://ethereum.org/en/glossary/#fraud-proof">fraud</a>/<a href="https://ethereum.org/en/glossary/#validity-proof">validity proofs</a>, and <a href="https://ethereum.org/en/developers/docs/data-availability/#data-availability-and-light-clients">light client innovations</a> aim to increase throughput without increasing the cost to verify the network.</p>
-<p>有许多针对单片区块链的扩展解决方案，其中一些已经在开发中， <a href="https://ethereum.org/en/upgrades/sharding/">sharding</a>、<a href="https://ethereum.org/en/developers/docs/scaling/#rollups">rollups</a>、<a href="https://ethereum.org/en/glossary/#fraud-proof">fraud</a>/<a href="https://ethereum.org/en/glossary/#validity-proof">有效性证明</a>和[轻客户端创新](https: //ethereum.org/en/developers/docs/data-availability/#data-availability-and-light-clients)，都旨在增加吞吐量而不增加验证网络的成本。</p>
+<p>有许多针对单片区块链的扩展解决方案，其中一些已经在开发中， <a href="https://ethereum.org/en/upgrades/sharding/">sharding</a>、<a href="https://ethereum.org/en/developers/docs/scaling/#rollups">rollups</a>、<a href="https://ethereum.org/en/glossary/#fraud-proof">fraud</a>/<a href="https://ethereum.org/en/glossary/#validity-proof">有效性证明</a>和<a href="https://ethereum.org/en/developers/docs/data-availability/#data-availability-and-light-clients">轻客户端创新</a>，都旨在增加吞吐量而不增加验证网络的成本。</p>
 <p>Some of these solutions are adopting aspects of modularity in order to scale, such as outsourcing execution to L2s. However, L2s are severely restricted by the performance of the main network, so as long as they continue to rely on monolithic L1s for finality, the scalability trilemma remains an issue.</p>
 <p>其中一些解决方案正在采用模块化方面来实现扩展，例如将执行外包给 L2。然而，L2s 受到主网性能的严重限制，因此只要它们继续依赖单片 L1s 来实现最终性，可扩展性三难困境仍然是一个问题。</p>
 <p>For example, rollups on Ethereum post their blocks directly to the Ethereum blockchain, essentially using L1 Ethereum as a settlement, consensus, and data availability layer. The problem with this is that Ethereum is already congested, and rollups are competing for bandwidth with users of “monolithic Ethereum” (i.e. non-rollup use cases).</p>
@@ -531,6 +531,61 @@ Apply for a grant <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">here</a
 <a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
 </li>
 </ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SeiNetwork长推-20221004 (SeiNetwork twitter threads-20221004)]]></title>
+        <id>https://chainguys.github.io/post/seinetwork-chang-tui-20221004-seinetwork-twitter-threads-20221004/</id>
+        <link href="https://chainguys.github.io/post/seinetwork-chang-tui-20221004-seinetwork-twitter-threads-20221004/">
+        </link>
+        <updated>2022-10-04T00:16:54.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.seinetwork.io/_next/static/media/logo.fccb4544.svg" alt="" loading="lazy"></figure>
+<p>原文地址:<a href="https://twitter.com/SeiNetwork/status/1577086292730396672">https://twitter.com/SeiNetwork/status/1577086292730396672</a></p>
+<p>What does it mean to be optimized for <a href="https://twitter.com/hashtag/DeFI?src=hashtag_click">#DeFI</a>? Block times, finality, and latency are crucial when optimizing for financial applications. Sei optimizes for these from the ground up. A thread on why Sei gives <a href="https://twitter.com/hashtag/DeFI?src=hashtag_click">#DeFI</a> an unfair advantage</p>
+<p>针对 <a href="https://twitter.com/hashtag/DeFI?src=hashtag_click">#DeFI</a> 进行优化意味着什么？在优化金融应用时，出块时间、最终性和延迟至关重要。 Sei 从头开始优化这些。这是关于 Sei 为何给予 <a href="https://twitter.com/hashtag/DeFI?src=hashtag_click">#DeFI</a> 无与伦比优势的主题(长推)</p>
+<p>Short block times mean small price changes between blocks, tighter spreads, and less risk to MMs. Large block times are impractical for high-frequency finance. A standard <a href="https://twitter.com/hashtag/Cosmos?src=hashtag_click">#Cosmos</a> L1 has ~6s block times which makes orderbooks suboptimal. However, Sei is different.</p>
+<p>较短的区块时间意味着区块之间的价格变化较小，买卖点差较小，并且对做市商的风险较小。冗长的区块时间对于高频金融来说是不切实际的。标准的 <a href="https://twitter.com/hashtag/Cosmos?src=hashtag_click">#Cosmos</a> L1 有大约 6 秒的阻塞时间，这使得订单簿不是最理想的。然而，Sei不一样。</p>
+<p>Sei focuses on making changes to overload consensus to make it as fast as possible (~300-600ms). The three biggest areas of focus are to foster the best environment for DeFi:  optimistic block processing  intelligent block propagation  parallel order execution</p>
+<p>Sei 专注于对重载共识进行更改，以使其尽可能快（~300-600ms）。有三大重点领域为 DeFi 营造最佳环境：乐观区块处理 智能区块传播 并行订单执行。</p>
+<p>Sei does this by leveraging ABCI++. ABCI++ adds programmability to every step of consensus, allowing applications to reorder, modify, drop, delay, or add transactions, and speed up block times by introducing the ability to optimistically process blocks.</p>
+<p>Sei 通过利用 ABCI++ 来做到这一点。 ABCI++ 为共识的每一步增加了可编程性，允许应用重新排序、修改、删除、延迟或添加交易，并通过引入乐观处理区块的能力来加快出块时间。</p>
+<figure data-type="image" tabindex="2"><img src="https://pbs.twimg.com/media/FeLvoqlVIAAcIJs?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>By optimistically processing the state changes, Sei speeds up block times and reduces latency. Allowing validators to construct blocks locally rather than waiting to receive block chunks over the network, leading to blocks finalizing faster.</p>
+<p>通过乐观地处理状态变化，Sei 加快了出块时间并减少了延迟。允许验证者在本地构建区块，而不是等待通过网络接收，从而更快地完成区块。</p>
+<p>To learn more about Twin-Turbo Consensus, check out the <a href="https://twitter.com/hashtag/Cosmoverse?src=hashtag_click">#Cosmoverse</a> talk by <a href="https://twitter.com/jayendra_jog">@jayendra_jog</a><br>
+要了解有关 Twin-Turbo(双生涡轮) 共识的更多信息，请查看 <a href="https://twitter.com/jayendra_jog">@jayendra_jog</a> 的 <a href="https://twitter.com/hashtag/Cosmoverse?src=hashtag_click">#Cosmoverse</a> 谈话</p>
+<p><a href="https://twitter.com/jayendra_jog/status/1576263799635464192">https://twitter.com/jayendra_jog/status/1576263799635464192</a></p>
+<p>In addition to Twin Turbo Consensus, Sei implements parallel order execution and is able to see 75-90% reductions in block times.</p>
+<p>除了Twin-Turbo(双生涡轮) 共识之外，Sei 还实现了并行订单执行，并且能够实现 75-90% 的区块时间减少。</p>
+<figure data-type="image" tabindex="3"><img src="https://pbs.twimg.com/media/FeLvpZoVQAAQ9xc?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p><a href="https://twitter.com/jayendra_jog/status/1560305088362528768">https://twitter.com/jayendra_jog/status/1560305088362528768</a></p>
+<p>Sei has also added:  native price oracle:<br>
+Sei 还添加了：</p>
+<ul>
+<li>
+<p>oracle built into the base layer<br>
+原生价格预言机：内置于基础层的预言机</p>
+</li>
+<li>
+<p>single block order execution<br>
+单块订单执行</p>
+</li>
+<li>
+<p>order bundling: updating prices on multiple markets in 1 tx<br>
+订单捆绑：在单笔交易内更新多个市场的价格</p>
+</li>
+<li>
+<p>frequent batch auctioning: aggregating orders at the end of the block to clear at a single price<br>
+频繁批量拍卖：在块结束时聚合订单以单一价格清算</p>
+</li>
+</ul>
+<p>To learn more about how Sei creates an environment custom-built for <a href="https://twitter.com/hashtag/DEX?src=hashtag_click">#DEX</a> applications in-depth check out our GitBook: <a href="https://t.co/F4HHZRFDo7">https://docs.seinetwork.io/introduction/overview…</a></p>
+<p>要深入了解 Sei 如何为 <a href="https://twitter.com/hashtag/DEX?src=hashtag_click">#DEX</a> 应用程序创建定制环境的更多信息，请查看我们的 GitBook：<a href="https://t.co/F4HHZRFDo7">https://docs. seinetwork.io/introduction/overview…</a></p>
+<p>Huge shoutout to the<a href="https://twitter.com/Delphi_Digital">@Delphi_Digital</a></p>
+<p>对 <a href="https://twitter.com/Delphi_Digital">@Delphi_Digital</a> 大声感谢！</p>
+<p>team for writing in-depth research about Sei! Read the full report here</p>
+<p>撰写有关 Sei 的深入研究的团队！在此处阅读完整报告</p>
+<p><a href="https://twitter.com/Delphi_Digital/status/1575538338651869184">https://twitter.com/Delphi_Digital/status/1575538338651869184</a></p>
 ]]></content>
     </entry>
     <entry>
@@ -976,23 +1031,6 @@ return text;
 <p>Remix 是一种快速简便的合约部署解决方案，这对于刚开始使用 Neon 的 Solidity 开发人员来说是幸运的。它允许从任何设备进行部署，并且不需要任何特定的本地安装或设置。然而，由于它是一个在线 IDE，它的安全性是有限的(不要在你的合约代码中包含任何主网私钥！)并且它不适用于大型项目。因此，当需要快速检查时，Remix 最适合测试较小的合约。</p>
 <p>Visit our <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_remix">docs</a> for a complete tutorial on using Remix to deploy your dapps.</p>
 <p>请访问我们的 <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_remix">文档</a>，获取有关使用 Remix 部署 dapp 的完整教程。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sei中文材料合集-不断更新中(Sei Chinese Materials-Updating)]]></title>
-        <id>https://chainguys.github.io/post/sei-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-sei-chinese-materials-updating/</id>
-        <link href="https://chainguys.github.io/post/sei-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-sei-chinese-materials-updating/">
-        </link>
-        <updated>2022-09-19T10:19:18.000Z</updated>
-        <content type="html"><![CDATA[<h2 id=""><img src="https://pbs.twimg.com/profile_banners/1515104342906327045/1655924054/1500x500" alt="" loading="lazy"></h2>
-<h1 id="blogs">Blogs</h1>
-<h2 id="通用目的-vs-特定应用的l1sei处于中间-general-purpose-vs-app-specific-l1ssei-is-in-the-middle"><a href="https://chainguys.github.io/post/tong-yong-mu-de-vs-te-ding-ying-yong-de-l1sei-chu-yu-zhong-jian-general-purpose-vs-app-specific-l1ssei-is-in-the-middle/">通用目的 vs 特定应用的L1：Sei处于中间 (General Purpose vs App Specific L1s：Sei is in the middle)</a></h2>
-<h2 id="sei-获得500万美元融资由-multicoin-capital-牵头来构建针对-def-优化的layer1-sei-raises-5m-led-by-multicoin-capital-to-build-the-first-layer-1-blockchain-optimized-for-defi"><a href="https://chainguys.github.io/post/sei-huo-de-500-wan-mei-yuan-rong-zi-you-multicoin-capital-qian-tou-lai-gou-jian-zhen-dui-def-you-hua-de-layer1-sei-raises-dollar5m-led-by-multicoin-capital-to-build-the-first-layer-1-blockchain-optimized-for-defi/">Sei 获得500万美元融资，由 Multicoin Capital 牵头，来构建针对 DeF 优化的layer1 (Sei Raises $5M Led by Multicoin Capital to Build The First Layer 1 Blockchain Optimized for DeFi)</a></h2>
-<h2 id="sei-与-axelar-network-合作为-cosmos-上的-defi-启用跨链消息传递-sei-has-partnered-with-axelar-network-to-enable-cross-chain-messaging-for-defi-on-cosmos"><a href="https://chainguys.github.io/post/sei-yu-axelar-network-he-zuo-wei-cosmos-shang-de-defi-qi-yong-kua-lian-xiao-xi-chuan-di-sei-has-partnered-with-axelar-network-to-enable-cross-chain-messaging-for-defi-on-cosmos">Sei 与 Axelar Network 合作，为 Cosmos 上的 DeFi 启用跨链消息传递 (Sei has partnered with Axelar Network to enable cross-chain messaging for DeFi on Cosmos)</a></h2>
-<h1 id="官方文档official-docs">官方文档(Official Docs)</h1>
-<h2 id="官方文档翻译-施工中official-docs-translation-updating"><a href="https://zenofchain.gitbook.io/sei-zhong-wen-wen-dang-sei-docs-chnby-chainguys/">官方文档翻译-施工中(Official Docs Translation-Updating)</a></h2>
-<h1 id="精彩推文amazing-threads">精彩推文(Amazing Threads)</h1>
-<h2 id="jayendra_jog长推-1560305088362528768jayendra_jog-twitter-threads-1560305088362528768"><a href="https://chainguys.github.io/post/jayendra_jog-chang-tui-1560305088362528768jayendra_jog-twitter-threads-1560305088362528768">jayendra_jog长推-1560305088362528768(jayendra_jog twitter threads-1560305088362528768)</a></h2>
 ]]></content>
     </entry>
 </feed>

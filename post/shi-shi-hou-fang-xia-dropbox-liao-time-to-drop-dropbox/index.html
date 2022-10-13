@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>是时候放下Dropbox了 (Time To Drop Dropbox) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1665534980125">
+<link rel="shortcut icon" href="/favicon.ico?v=1665620416705">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -1427,9 +1427,9 @@ Apply for a grant &lt;a href=&#34;https://1v1l4ftv9zy.typeform.com/fuelgrants&#
 &lt;em&gt;“可扩展性”可以定义为区块链的吞吐量除以验证所有交易的成本（来源：&lt;a href=&#34;https://celestia.org/learn/first-principles-of-modular-blockchains/#scalability&#34;&gt;Celestia&lt;/a&gt;）&lt;/em&gt; &lt;em&gt;“Scalability” can be defined as a blockchain’s throughput divided by the cost to validate all transactions (source: &lt;a href=&#34;https://celestia.org/learn/first-principles-of-modular-blockchains/#scalability&#34;&gt;Celestia&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Under this definition, in order to scale, blockchains must increase throughput without increasing the cost to verify the network. This kind of “true scalability” is what modular blockchains are designed to enable.&lt;/p&gt;
 &lt;p&gt;根据这个定义，为了扩展，区块链必须在不增加验证网络成本的情况下增加吞吐量。这种“真正的可扩展性”是模块化区块链旨在实现的。&lt;/p&gt;
-&lt;h3 id=&#34;-当前的单片-l1-和-l2-扩展解决方案不足以实现真正的可扩展性-4-current-monolithic-l1-and-l2-scaling-solutions-are-not-sufficient-to-achieve-true-scalability&#34;&gt;- 当前的单片 L1 和 L2 扩展解决方案不足以实现真正的可扩展性 (4 - Current Monolithic L1 and L2 Scaling Solutions are Not Sufficient to Achieve True Scalability)&lt;/h3&gt;
+&lt;h3 id=&#34;4-当前的单片-l1-和-l2-扩展解决方案不足以实现真正的可扩展性-4-current-monolithic-l1-and-l2-scaling-solutions-are-not-sufficient-to-achieve-true-scalability&#34;&gt;4 - 当前的单片 L1 和 L2 扩展解决方案不足以实现真正的可扩展性 (4 - Current Monolithic L1 and L2 Scaling Solutions are Not Sufficient to Achieve True Scalability)&lt;/h3&gt;
 &lt;p&gt;There are many proposed scaling solutions for monolithic blockchains, some of which are already under development. Solutions like &lt;a href=&#34;https://ethereum.org/en/upgrades/sharding/&#34;&gt;sharding&lt;/a&gt;, &lt;a href=&#34;https://ethereum.org/en/developers/docs/scaling/#rollups&#34;&gt;rollups&lt;/a&gt;, &lt;a href=&#34;https://ethereum.org/en/glossary/#fraud-proof&#34;&gt;fraud&lt;/a&gt;/&lt;a href=&#34;https://ethereum.org/en/glossary/#validity-proof&#34;&gt;validity proofs&lt;/a&gt;, and &lt;a href=&#34;https://ethereum.org/en/developers/docs/data-availability/#data-availability-and-light-clients&#34;&gt;light client innovations&lt;/a&gt; aim to increase throughput without increasing the cost to verify the network.&lt;/p&gt;
-&lt;p&gt;有许多针对单片区块链的扩展解决方案，其中一些已经在开发中， &lt;a href=&#34;https://ethereum.org/en/upgrades/sharding/&#34;&gt;sharding&lt;/a&gt;、&lt;a href=&#34;https://ethereum.org/en/developers/docs/scaling/#rollups&#34;&gt;rollups&lt;/a&gt;、&lt;a href=&#34;https://ethereum.org/en/glossary/#fraud-proof&#34;&gt;fraud&lt;/a&gt;/&lt;a href=&#34;https://ethereum.org/en/glossary/#validity-proof&#34;&gt;有效性证明&lt;/a&gt;和[轻客户端创新](https: //ethereum.org/en/developers/docs/data-availability/#data-availability-and-light-clients)，都旨在增加吞吐量而不增加验证网络的成本。&lt;/p&gt;
+&lt;p&gt;有许多针对单片区块链的扩展解决方案，其中一些已经在开发中， &lt;a href=&#34;https://ethereum.org/en/upgrades/sharding/&#34;&gt;sharding&lt;/a&gt;、&lt;a href=&#34;https://ethereum.org/en/developers/docs/scaling/#rollups&#34;&gt;rollups&lt;/a&gt;、&lt;a href=&#34;https://ethereum.org/en/glossary/#fraud-proof&#34;&gt;fraud&lt;/a&gt;/&lt;a href=&#34;https://ethereum.org/en/glossary/#validity-proof&#34;&gt;有效性证明&lt;/a&gt;和&lt;a href=&#34;https://ethereum.org/en/developers/docs/data-availability/#data-availability-and-light-clients&#34;&gt;轻客户端创新&lt;/a&gt;，都旨在增加吞吐量而不增加验证网络的成本。&lt;/p&gt;
 &lt;p&gt;Some of these solutions are adopting aspects of modularity in order to scale, such as outsourcing execution to L2s. However, L2s are severely restricted by the performance of the main network, so as long as they continue to rely on monolithic L1s for finality, the scalability trilemma remains an issue.&lt;/p&gt;
 &lt;p&gt;其中一些解决方案正在采用模块化方面来实现扩展，例如将执行外包给 L2。然而，L2s 受到主网性能的严重限制，因此只要它们继续依赖单片 L1s 来实现最终性，可扩展性三难困境仍然是一个问题。&lt;/p&gt;
 &lt;p&gt;For example, rollups on Ethereum post their blocks directly to the Ethereum blockchain, essentially using L1 Ethereum as a settlement, consensus, and data availability layer. The problem with this is that Ethereum is already congested, and rollups are competing for bandwidth with users of “monolithic Ethereum” (i.e. non-rollup use cases).&lt;/p&gt;
@@ -1479,6 +1479,58 @@ Apply for a grant &lt;a href=&#34;https://1v1l4ftv9zy.typeform.com/fuelgrants&#
 &lt;/li&gt;
 &lt;/ul&gt;
 ">超越单片链：模块化区块链范式 (Beyond Monolithic：The Modular Blockchain Paradigm)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/seinetwork-chang-tui-20221004-seinetwork-twitter-threads-20221004/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://www.seinetwork.io/_next/static/media/logo.fccb4544.svg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;原文地址:&lt;a href=&#34;https://twitter.com/SeiNetwork/status/1577086292730396672&#34;&gt;https://twitter.com/SeiNetwork/status/1577086292730396672&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What does it mean to be optimized for &lt;a href=&#34;https://twitter.com/hashtag/DeFI?src=hashtag_click&#34;&gt;#DeFI&lt;/a&gt;? Block times, finality, and latency are crucial when optimizing for financial applications. Sei optimizes for these from the ground up. A thread on why Sei gives &lt;a href=&#34;https://twitter.com/hashtag/DeFI?src=hashtag_click&#34;&gt;#DeFI&lt;/a&gt; an unfair advantage&lt;/p&gt;
+&lt;p&gt;针对 &lt;a href=&#34;https://twitter.com/hashtag/DeFI?src=hashtag_click&#34;&gt;#DeFI&lt;/a&gt; 进行优化意味着什么？在优化金融应用时，出块时间、最终性和延迟至关重要。 Sei 从头开始优化这些。这是关于 Sei 为何给予 &lt;a href=&#34;https://twitter.com/hashtag/DeFI?src=hashtag_click&#34;&gt;#DeFI&lt;/a&gt; 无与伦比优势的主题(长推)&lt;/p&gt;
+&lt;p&gt;Short block times mean small price changes between blocks, tighter spreads, and less risk to MMs. Large block times are impractical for high-frequency finance. A standard &lt;a href=&#34;https://twitter.com/hashtag/Cosmos?src=hashtag_click&#34;&gt;#Cosmos&lt;/a&gt; L1 has ~6s block times which makes orderbooks suboptimal. However, Sei is different.&lt;/p&gt;
+&lt;p&gt;较短的区块时间意味着区块之间的价格变化较小，买卖点差较小，并且对做市商的风险较小。冗长的区块时间对于高频金融来说是不切实际的。标准的 &lt;a href=&#34;https://twitter.com/hashtag/Cosmos?src=hashtag_click&#34;&gt;#Cosmos&lt;/a&gt; L1 有大约 6 秒的阻塞时间，这使得订单簿不是最理想的。然而，Sei不一样。&lt;/p&gt;
+&lt;p&gt;Sei focuses on making changes to overload consensus to make it as fast as possible (~300-600ms). The three biggest areas of focus are to foster the best environment for DeFi:  optimistic block processing  intelligent block propagation  parallel order execution&lt;/p&gt;
+&lt;p&gt;Sei 专注于对重载共识进行更改，以使其尽可能快（~300-600ms）。有三大重点领域为 DeFi 营造最佳环境：乐观区块处理 智能区块传播 并行订单执行。&lt;/p&gt;
+&lt;p&gt;Sei does this by leveraging ABCI++. ABCI++ adds programmability to every step of consensus, allowing applications to reorder, modify, drop, delay, or add transactions, and speed up block times by introducing the ability to optimistically process blocks.&lt;/p&gt;
+&lt;p&gt;Sei 通过利用 ABCI++ 来做到这一点。 ABCI++ 为共识的每一步增加了可编程性，允许应用重新排序、修改、删除、延迟或添加交易，并通过引入乐观处理区块的能力来加快出块时间。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://pbs.twimg.com/media/FeLvoqlVIAAcIJs?format=jpg&amp;amp;name=medium&#34; alt=&#34;Image&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;By optimistically processing the state changes, Sei speeds up block times and reduces latency. Allowing validators to construct blocks locally rather than waiting to receive block chunks over the network, leading to blocks finalizing faster.&lt;/p&gt;
+&lt;p&gt;通过乐观地处理状态变化，Sei 加快了出块时间并减少了延迟。允许验证者在本地构建区块，而不是等待通过网络接收，从而更快地完成区块。&lt;/p&gt;
+&lt;p&gt;To learn more about Twin-Turbo Consensus, check out the &lt;a href=&#34;https://twitter.com/hashtag/Cosmoverse?src=hashtag_click&#34;&gt;#Cosmoverse&lt;/a&gt; talk by &lt;a href=&#34;https://twitter.com/jayendra_jog&#34;&gt;@jayendra_jog&lt;/a&gt;&lt;br&gt;
+要了解有关 Twin-Turbo(双生涡轮) 共识的更多信息，请查看 &lt;a href=&#34;https://twitter.com/jayendra_jog&#34;&gt;@jayendra_jog&lt;/a&gt; 的 &lt;a href=&#34;https://twitter.com/hashtag/Cosmoverse?src=hashtag_click&#34;&gt;#Cosmoverse&lt;/a&gt; 谈话&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/jayendra_jog/status/1576263799635464192&#34;&gt;https://twitter.com/jayendra_jog/status/1576263799635464192&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In addition to Twin Turbo Consensus, Sei implements parallel order execution and is able to see 75-90% reductions in block times.&lt;/p&gt;
+&lt;p&gt;除了Twin-Turbo(双生涡轮) 共识之外，Sei 还实现了并行订单执行，并且能够实现 75-90% 的区块时间减少。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://pbs.twimg.com/media/FeLvpZoVQAAQ9xc?format=jpg&amp;amp;name=medium&#34; alt=&#34;Image&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/jayendra_jog/status/1560305088362528768&#34;&gt;https://twitter.com/jayendra_jog/status/1560305088362528768&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sei has also added:  native price oracle:&lt;br&gt;
+Sei 还添加了：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;oracle built into the base layer&lt;br&gt;
+原生价格预言机：内置于基础层的预言机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;single block order execution&lt;br&gt;
+单块订单执行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;order bundling: updating prices on multiple markets in 1 tx&lt;br&gt;
+订单捆绑：在单笔交易内更新多个市场的价格&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;frequent batch auctioning: aggregating orders at the end of the block to clear at a single price&lt;br&gt;
+频繁批量拍卖：在块结束时聚合订单以单一价格清算&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To learn more about how Sei creates an environment custom-built for &lt;a href=&#34;https://twitter.com/hashtag/DEX?src=hashtag_click&#34;&gt;#DEX&lt;/a&gt; applications in-depth check out our GitBook: &lt;a href=&#34;https://t.co/F4HHZRFDo7&#34;&gt;https://docs.seinetwork.io/introduction/overview…&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;要深入了解 Sei 如何为 &lt;a href=&#34;https://twitter.com/hashtag/DEX?src=hashtag_click&#34;&gt;#DEX&lt;/a&gt; 应用程序创建定制环境的更多信息，请查看我们的 GitBook：&lt;a href=&#34;https://t.co/F4HHZRFDo7&#34;&gt;https://docs. seinetwork.io/introduction/overview…&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Huge shoutout to the&lt;a href=&#34;https://twitter.com/Delphi_Digital&#34;&gt;@Delphi_Digital&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;对 &lt;a href=&#34;https://twitter.com/Delphi_Digital&#34;&gt;@Delphi_Digital&lt;/a&gt; 大声感谢！&lt;/p&gt;
+&lt;p&gt;team for writing in-depth research about Sei! Read the full report here&lt;/p&gt;
+&lt;p&gt;撰写有关 Sei 的深入研究的团队！在此处阅读完整报告&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/Delphi_Digital/status/1575538338651869184&#34;&gt;https://twitter.com/Delphi_Digital/status/1575538338651869184&lt;/a&gt;&lt;/p&gt;
+">SeiNetwork长推-20221004 (SeiNetwork twitter threads-20221004)</a>
       </div>
       
       <div class="item">
@@ -1925,6 +1977,7 @@ return text;
 &lt;h2 id=&#34;官方文档翻译-施工中official-docs-translation-updating&#34;&gt;&lt;a href=&#34;https://zenofchain.gitbook.io/sei-zhong-wen-wen-dang-sei-docs-chnby-chainguys/&#34;&gt;官方文档翻译-施工中(Official Docs Translation-Updating)&lt;/a&gt;&lt;/h2&gt;
 &lt;h1 id=&#34;精彩推文amazing-threads&#34;&gt;精彩推文(Amazing Threads)&lt;/h1&gt;
 &lt;h2 id=&#34;jayendra_jog长推-1560305088362528768jayendra_jog-twitter-threads-1560305088362528768&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/jayendra_jog-chang-tui-1560305088362528768jayendra_jog-twitter-threads-1560305088362528768&#34;&gt;jayendra_jog长推-1560305088362528768(jayendra_jog twitter threads-1560305088362528768)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;seinetwork长推-20221004-seinetwork-twitter-threads-20221004&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/seinetwork-chang-tui-20221004-seinetwork-twitter-threads-20221004&#34;&gt;SeiNetwork长推-20221004 (SeiNetwork twitter threads-20221004)&lt;/a&gt;&lt;/h2&gt;
 ">Sei中文材料合集-不断更新中(Sei Chinese Materials-Updating)</a>
       </div>
       
