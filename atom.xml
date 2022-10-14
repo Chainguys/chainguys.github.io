@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-13T00:34:28.699Z</updated>
+    <updated>2022-10-14T03:25:12.918Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,273 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[模块化执行的案例(第一部分) The Case for Modular Execution (Part 1)]]></title>
+        <id>https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/</id>
+        <link href="https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/">
+        </link>
+        <updated>2022-10-13T03:22:52.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/10/the-case-for-modular-execution-part-1.png" alt="The Case for Modular Execution (Part 1)" loading="lazy"><br>
+How modular execution layers enable scalability by decoupling computation from verification.<br>
+模块化执行层如何通过将计算与验证解耦来实现可扩展性。</p>
+<hr>
+<h2 id="模块化执行案例-the-case-for-modular-execution">模块化执行案例 (The Case for Modular Execution)</h2>
+<p>The blockchain space is increasingly moving toward a modular architecture in order to achieve true scalability. Even chains like Ethereum, which were previously fully monolithic, are <a href="https://ethereum.org/en/upgrades/sharding/">shifting</a> to a modular design to overcome the challenges that come with monolithic blockchain designs.</p>
+<p>为了实现真正的可扩展性，区块链空间正越来越多地向模块化架构发展。甚至像以太坊这样以前完全是单片的，现在正在 <a href="https://ethereum.org/en/upgrades/sharding/">转变</a> 到模块化设计，进而克服单片区块链设计带来的挑战。</p>
+<p>One of the core components of the <a href="https://fuel-labs.ghost.io/beyond-monolithic-the-modular-blockchain-paradigm/">modular blockchain stack</a> is the execution layer. <strong><a href="https://www.fuel.network/">Fuel</a> is building the fastest execution layer for the modular blockchain stack.</strong></p>
+<p><a href="https://fuel-labs.ghost.io/beyond-monolithic-the-modular-blockchain-paradigm/">模块化区块链技术栈</a> 的核心组件之一是执行层。 <strong><a href="https://www.fuel.network/">Fuel</a> 正在为模块化区块链技术栈构建最快的执行层。</strong></p>
+<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/2022/10/image-13.png" alt="" loading="lazy"></figure>
+<p><strong>What is a modular execution layer? And how will they enable more scalable blockchain systems?</strong></p>
+<p><strong>什么是模块化执行层？他们将如何启用更具可扩展性的区块链系统？</strong></p>
+<p>Modular execution layers offer two core benefits over their monolithic counterparts:<br>
+与单体执行层相比，模块化执行层提供了两个核心优势：</p>
+<ol>
+<li>
+<p>Monolithic chains couple computation and verification on the same layer, leading to sub-par security and limited scalability. <strong>Modular execution layers</strong> avoid this by decoupling computation and verification, allowing for much more robust security guarantees at scale.<br>
+单片链将计算和验证耦合在同一层，导致安全性低于标准，可扩展性有限。 <strong>模块化执行层</strong>通过解耦计算和验证来避免这种情况，在规模上提供更强大的安全保证。</p>
+</li>
+<li>
+<p>Monolithic chains are locked into inefficient technologies when it comes to the speed and variety of computation they can support. On the other hand, <strong>modular execution layers</strong> can be specifically designed to optimize for efficient computation.<br>
+单片链在可以支持的计算速度和多样性方面被锁定在低效的技术中。另一方面，<strong>模块化执行层</strong>可以专门设计用于优化高效计算。</p>
+</li>
+</ol>
+<p>This post elaborates on the first core benefit, with the second being explored in an upcoming Part 2.</p>
+<p>本文详细阐述第一个核心优势，第二个核心优势将在即将发布的第二部分中进行探讨。</p>
+<hr>
+<h2 id="单片区块链基础知识计算和验证-monolithic-blockchain-basics-computation-verification">单片区块链基础知识：计算和验证 (Monolithic Blockchain Basics: Computation &amp; Verification)</h2>
+<p>To understand the innovations that come from modular execution layers (MELs), first we need to understand how monolithic blockchains handle computation and verification.</p>
+<p>了解来自模块化执行层 (MEL) 的创新，需要我们首先了解单片区块链如何处理计算和验证。</p>
+<p>Blockchains rely on a network of entities which execute transactions and bundle them together into a block - these are known as <em>block producers</em>. Without checks and balances, a malicious block producer could include invalid transactions in a block (for example, minting tokens to their own address). To prevent this, blockchains rely on a network of other nodes to determine the validity of a block before adding it to their version of the chain.</p>
+<p>区块链依赖于一个实体网络，这些实体执行交易并将它们打包在一起形成一个区块——这些被称为 <em>区块生产者</em> 。如果没有制衡，恶意区块生产者可能会在区块中包含无效交易(例如，将代币铸造到他们自己的地址)。为了防止这种情况，区块链依赖于其他节点的网络来确定一个块的有效性，然后再将其添加到他们链的版本中。</p>
+<p>This leads to two core functions required for a blockchain to operate:<br>
+这导致了区块链运行所需的两个核心功能：</p>
+<ul>
+<li><strong>Block Production (i.e. computation)</strong> - Executing transactions and applying individual state transitions to build a block.<br>
+<strong>区块生产(即计算)</strong> - 执行交易并应用单个状态转换来构建块。</li>
+<li><strong>Block Validation (i.e. verification)</strong> - Confirming that the state transitions are valid.<br>
+<strong>区块验证(即验证)</strong> - 确认状态转换有效。</li>
+</ul>
+<h3 id="单片链上的计算和验证-computation-verification-on-monolithic-chains">单片链上的计算和验证 (Computation &amp; Verification on Monolithic Chains)</h3>
+<p><em>NOTE: For ease of understanding, this section provides a simplified explanation of how block production and verification work on monolithic blockchains. In reality, the process is more complex, and may differ depending on the design of the specific chain. However, many of the same core principles apply.</em></p>
+<p><em>注意：为方便理解，本节提供了对如何在单片区块链上进行区块生产和验证工作的简化说明。实际上，该过程更复杂，并且可能因特定链的设计而异。然而，许多相同的核心原则也适用。</em></p>
+<p>In most monolithic blockchain designs, computation and verification are performed by the same entities - validators (i.e. full nodes). When a user sends a transaction, a validator will execute the transaction and then include the corresponding state transition in a block. Once a block is created and propagated, other full nodes download the block and re-execute the transactions in the block in order to confirm it is valid. If the block is valid, assuming they are honest, the full nodes append that block onto their version of the chain, thereby attesting to its validity.</p>
+<p>在大多数单片区块链设计中，计算和验证由相同的实体 - 验证者(即完整节点)执行。当用户发送交易时，验证者将执行交易，然后将相应的状态转换包含在块中。一旦创建并传播了一个块，其他完整节点就会下载该块并重新执行该块中的交易来确认它是有效的。如果该块是有效的，假设他们是诚实的，那么全节点将该块附加到他们链的版本上，从而证明它的有效性。</p>
+<p>Sometimes, applications or users need to access the state of the blockchain, but don’t want to incur the high resource requirements of running a full node and independently validating all transactions. For this purpose they can run <a href="https://www.parity.io/blog/what-is-a-light-client/">light clients</a>, which assume the blocks provided by full nodes include only valid transactions. They do not download the full blockchain, nor do they verify that all previous transactions are valid. Instead, they have to trust that the majority of full nodes are honest (i.e. have only included valid blocks in their copy of the chain).</p>
+<p>有时，应用或用户需要访问区块链的状态，但不希望产生运行完整节点和独立验证所有交易的高资源需求。为此，他们可以运行 <a href="https://www.parity.io/blog/what-is-a-light-client/">轻客户端</a>，假设全节点提供的块仅包含有效交易。他们不会下载完整的区块链，也不会验证所有之前的交易是否有效。相反，他们必须相信大多数完整节点是诚实的(即在其链副本中仅包含有效块)。</p>
+<figure data-type="image" tabindex="2"><img src="https://fuel-labs.ghost.io/content/images/2022/10/image-14.png" alt="" loading="lazy"></figure>
+<p>This is called the <em>honest majority assumption</em>, and is the reason that most monolithic blockchains are vulnerable to 51% attacks. Under the monolithic model, because an honest majority of full nodes is required to verify that the blockchain is valid, light clients are forced to trust the majority. If more than half of the full nodes are dishonest, light clients have no way of knowing this, so they will end up following an invalid chain.</p>
+<p>这被称为 <em>诚实大多数假设</em>，这也是大多数单片区块链容易受到 51% 攻击的原因。在单片模型下，由于需要诚实的大多数完整节点来验证区块链是否有效，因此轻客户端被迫信任大多数。如果超过一半的全节点不诚实，轻客户端无法知道这一点，因此他们最终会跟随一条无效的链。</p>
+<h3 id="诚实多数假设-可扩展性的限制-honest-majority-assumption-limits-to-scalability">诚实多数假设 - 可扩展性的限制 (Honest Majority Assumption - Limits to Scalability)</h3>
+<p>The scalability of monolithic chains is severely limited by their reliance on this honest majority assumption. This is because, in order to increase transaction throughput, block size and/or frequency must be increased to enable more transactions to be processed in the same amount of time. This increases the resource requirements (and associated costs) for full nodes; bigger/faster blocks = more computation = higher costs.</p>
+<p>单片链的可扩展性，受到其对这种诚实多数假设依赖的严重限制。这是因为，为了增加交易吞吐量，必须增加块大小和/或频率，以使更多交易能够在相同的时间内处理。这增加了全节点的资源需求(和相关成本)；更大/更快的块 = 更多的计算 = 更高的成本。</p>
+<figure data-type="image" tabindex="3"><img src="https://fuel-labs.ghost.io/content/images/2022/10/image-15.png" alt="" loading="lazy"></figure>
+<p>As the cost of running a full node increases, more entities will opt to run a light client instead, relying on a smaller and smaller network of full nodes to verify the validity of the chain. <strong>This increasing centralization of block validation is a major threat to security for monolithic chains</strong>, as a more centralized pool of validators is more vulnerable to attacks and also more easily able to collude.</p>
+<p>随着运行全节点成本的增加，更多实体将选择运行轻客户端，依靠越来越小的全节点网络来验证链的有效性。 <strong>这种日益集中的区块验证是对单片链安全性的主要威胁</strong>，因为更集中的验证者池更容易受到攻击，也更容易串通。</p>
+<hr>
+<h2 id="模块化执行解耦计算和验证-modular-execution-decoupling-computation-verification">模块化执行：解耦计算和验证 (Modular Execution: Decoupling Computation &amp; Verification)</h2>
+<p>The good news is that blockchain systems can move away from designs that rely on an honest majority assumption. In order to avoid this pitfall of monolithic design, <strong>the modular blockchain stack decouples computation from verification</strong>. By moving execution (i.e. computation) off the base chain (often referred to as the “parent chain”), increased scale can be achieved without compromising on decentralization.</p>
+<p>好消息是区块链系统可以摆脱依赖诚实大多数假设的设计。为了避免这种单片设计的缺陷，<strong>模块化区块链技术栈将计算与验证分离</strong>。通过将执行(即计算)移出基础链(通常称为“父链”)，可以在不影响去中心化的情况下实现规模扩大。</p>
+<h3 id="什么是模块化执行层-what-is-a-modular-execution-layer">什么是模块化执行层？ (What is a Modular Execution Layer?)</h3>
+<p>Within the modular blockchain stack, the execution layer is responsible for computation - in other words, processing transactions and applying individual state transitions.</p>
+<p>在模块化区块链技术栈中，执行层负责计算——换句话说，处理交易和应用单独的状态转换。</p>
+<p>Fuel <a href="https://fuel-labs.ghost.io/introducing-fuel-the-fastest-modular-execution-layer/">defines</a> a modular execution layer as: <strong>a verifiable computation system designed for the modular blockchain stack</strong>. More concretely, a fraud- or validity-provable blockchain (or other computation system) that leverages a modular blockchain for data availability.</p>
+<p>Fuel <a href="https://fuel-labs.ghost.io/introducing-fuel-the-fastest-modular-execution-layer/">定义</a> 了模块化执行层：<strong>为模块化区块链技术栈设计的可验证计算系统</strong>。更具体地说，一种可验证欺诈或有效性的区块链(或其他计算系统)，它利用模块化区块链来实现数据可用性。</p>
+<figure data-type="image" tabindex="4"><img src="https://fuel-labs.ghost.io/content/images/2022/10/image-16.png" alt="" loading="lazy"></figure>
+<p>To clarify further, computation systems are not modular execution layers if they: 1) are not fraud- or validity-provable, or 2) do not offload data availability to another layer.</p>
+<p>为了进一步澄清，如果计算系统：1) 不能证明欺诈或有效性，或 2) 不将数据可用性重载到另一层，则它们不是模块化执行层。</p>
+<p>Like monolithic blockchains, modular execution layers employ a network of dedicated block producers. These entities handle the resource-intensive process of executing transactions and producing blocks. However, unlike in monolithic systems, <strong>verification is not handled on the execution layer</strong>, but rather on the lower levels of the modular blockchain stack.</p>
+<p>与单片区块链一样，模块化执行层采用专门的区块生产者网络。这些实体处理执行交易和生成区块的资源密集型过程。但是，与单片系统不同，<strong>验证不在执行层处理</strong>，而是在模块化区块链技术栈的较低级别处理。</p>
+<h3 id="验证-让区块生产者保持诚实-verification-keeping-block-producers-honest">验证 - 让区块生产者保持诚实 (Verification - Keeping Block Producers Honest)</h3>
+<p>The genius of modular execution is that as long as verification (i.e. block validation) is decentralized, computation (i.e. block production) does not need to be decentralized. Block sizes can be increased, leading to centralization of nodes which produce blocks - but as long as verification is decoupled, invalid blocks will not be added to the chain.</p>
+<p>模块化执行的天才之处在于，只要验证(即区块验证)是去中心化的，计算(即区块生产)就不需要去中心化。可以增加块大小，从而导致产生块的节点集中化——但只要将验证解耦，无效块就不会被添加到链中。</p>
+<p>But how does this work? <strong>How can we ensure security is preserved if we allow block production to remain centralized?</strong> This is where modularity comes into play.</p>
+<p>但这是如何工作的？ <strong>如果我们允许块生产保持中心化，我们如何确保安全性？</strong> 这就是模块化发挥作用的地方。</p>
+<p>Modular execution layers abstract the resource-intensive function of execution to powerful block producers which bundle and execute batches of transactions, and periodically post these as blocks to the parent chain (settlement/consensus/data availability layers). In order to keep these block producers honest, there are additional non-block-producing full nodes (often referred to as “verifiers” or “provers”) which download and re-execute the blocks posted to the parent chain to ensure they contain only valid transactions.</p>
+<p>模块化执行层将资源密集型执行功能抽象给强大的区块生产者，这些区块生产者打包并执行批量交易，定期将这些作为区块发布到父链(结算/共识/数据可用性层)。为了让这些区块生产者保持诚实，还有额外的非区块生产完整节点(通常称为“验证者”或“证明者”)下载并重新执行发布到父链的区块，以确保它们仅包含有效交易。</p>
+<p>The specifics of how these full nodes communicate the validity or invalidity of transactions differs depending on whether the modular execution layer employs an optimistic or zero-knowledge model. In the case of optimistic MELs, full nodes only take action (via fraud proofs) when they detect an invalid transaction. Conversely, in the case of zero-knowledge MELs, full nodes actively attest to the validity of transactions (via validity proofs). In either case, <strong>the validity or invalidity of all transactions provided by the block producer is attested to on the parent chain, not on the modular execution layer</strong>.</p>
+<p>这些完整节点如何传达交易的有效性或无效性的细节，取决于模块化执行层是采用乐观模型还是零知识模型。在乐观 MEL 的情况下，全节点仅在检测到无效交易时才采取行动(通过欺诈证明)。相反，在零知识 MEL 的情况下，全节点主动证明交易的有效性(通过有效性证明)。无论哪种情况，<strong>区块生产者提供的所有交易的有效性或无效性都在父链上证明，而不是在模块化执行层上</strong>。</p>
+<h3 id="一个例子乐观模块化执行层的欺诈证明-an-example-fraud-proofs-on-optimistic-modular-execution-layers">一个例子：乐观模块化执行层的欺诈证明 (An Example: Fraud Proofs on Optimistic Modular Execution Layers)</h3>
+<p>To provide a deeper illustration, let’s explore the case of optimistic MELs (under which it is assumed that all transactions are valid unless otherwise proven). If even a single full node on the modular execution layer detects an invalid transaction within a block posted on the parent chain, they can generate a fraud proof (within a predefined “dispute resolution window”) which cryptographically proves that the transaction is invalid.</p>
+<p>为了提供更深入的说明，让我们探讨乐观 MEL 的情况(假设所有交易都是有效的，除非另有证明)。即使模块化执行层上的单个完整节点检测到发布在父链上的块中的无效交易，它们也可以生成欺诈证明(在预定义的“争议解决窗口”内)，以加密方式证明交易无效。</p>
+<p>Depending on the structure of the particular modular stack, this may be dealt with in several ways, for example:</p>
+<p>根据特定模块化技术栈的结构，这可以通过多种方式处理，例如：</p>
+<p><strong>In modular stacks with a settlement layer:</strong></p>
+<p><strong>在具有结算层的模块化技术栈中：</strong></p>
+<ul>
+<li>
+<p>The full node submits the fraud proof to a dedicated dispute resolution contract on the settlement layer, which re-executes the transaction directly (note that this requires the MEL transactions to be structured in a way which makes them fraud-provable on the settlement layer’s VM in a deterministic manner - for example, the <a href="https://fuellabs.github.io/fuel-docs/master/technology/fraud_proofs.html">FuelVM is designed to be fraud-provable within the EVM</a> to enable settlement on Ethereum).<br>
+全节点将欺诈证明提交给结算层上的专用争议解决合约，该合约直接重新执行交易(请注意，这要求 MEL 交易的结构使其在结算层的欺诈可证明VM 以一种确定性的方式 - 例如，<a href="https://fuellabs.github.io/fuel-docs/master/technology/fraud_proofs.html">FuelVM被设计在 EVM 内完成可证明欺诈性</a> 来获得在以太坊的结算能力)。</p>
+</li>
+<li>
+<p>If the transaction is invalid, the offending block producer is punished via slashing (i.e. they lose funds), the “whistleblower” is rewarded with a portion of these funds, and the state of the chain is reverted to before the invalid transaction. Because there is no guarantee that any transaction following the invalid one corresponds to a valid state, these subsequent transactions are re-executed.</p>
+</li>
+<li>
+<p>如果交易无效，违规的区块生产者将受到惩罚(即他们损失资金)，“举报人”将获得部分资金奖励，并将链的状态恢复到无效交易之前的状态。因为不能保证在无效交易之后的任何交易都对应于有效状态，所以这些后续交易被重新执行。</p>
+</li>
+</ul>
+<p><strong>In modular stacks <a href="https://forum.celestia.org/t/rollups-on-celestia/55#optimistic-rollups-10">without a settlement layer</a>:</strong></p>
+<p><strong>在模块化技术栈中若<a href="https://forum.celestia.org/t/rollups-on-celestia/55#optimistic-rollups-10">没有结算层</a>：</strong></p>
+<ul>
+<li>
+<p>The full node gossips the fraud proof via a peer-to-peer network to warn light clients that the block contains an invalid transaction. Using the fraud proof as evidence of the block producer’s dishonest behavior, full nodes can propose a penalty transaction on the parent chain, which slashes the block producer’s funds.<br>
+全节点通过点对点网络传播欺诈证明，警告轻客户端该块包含无效交易。使用欺诈证明作为出块人不诚实行为的证据，全节点可以在父链上提出惩罚交易，从而削减出块人的资金。</p>
+</li>
+<li>
+<p>Because there is no settlement layer to dictate the “canonical” version of the chain, malicious full nodes could theoretically choose not to reject the block; however, the fraud proof has already been communicated to light clients, so they know not to follow a malicious full node’s version of the chain. As a result, social consensus guarantees that the invalid block will be rejected.<br>
+由于没有结算层来规定链的“规范”版本，恶意全节点理论上可以选择不拒绝区块；但是，欺诈证明已经传达给轻客户端，因此他们知道不要遵循恶意的全节点版本的链。结果，社会共识保证了无效块将被拒绝。</p>
+</li>
+</ul>
+<p>In either case, because the verification process is enshrined on the parent chain instead of the execution layer, security is outsourced to the parent chain, meaning the execution layer on its own can operate with lower security guarantees. <strong>Even if 99% of full nodes on the execution layer are dishonest, it only takes one honest full node to ensure the execution layer only includes valid transactions.</strong></p>
+<p>在任何一种情况下，由于验证过程是在父链上而不是在执行层上进行的，因此安全性被外包给了父链，这意味着执行层本身可以在较低的安全保证下运行。 <strong>即使执行层上 99% 的全节点都是不诚实的，也只需要一个诚实的全节点来确保执行层只包含有效交易。</strong></p>
+<p>This means that instead of relying on an honest majority of full nodes, modular execution layers (and MEL light clients) can operate on a <em>single honest minority assumption</em>.</p>
+<p>这意味着，模块化执行层(和 MEL 轻客户端)可以在 <em>单个诚实少数假设</em> 上运行，而不是依赖于诚实的大多数完整节点。</p>
+<figure data-type="image" tabindex="5"><img src="https://fuel-labs.ghost.io/content/images/2022/10/image-17.png" alt="" loading="lazy"></figure>
+<p><em>On modular execution layers, light clients only need to rely on there being a single honest full node in order to guarantee the validity of the chain</em></p>
+<p><em>在模块化执行层上，轻客户端只需要依赖一个诚实的全节点就可以保证链的有效性</em></p>
+<p>Whereas an invalid block can only be reverted by a majority of full nodes in a monolithic system, a single full node in a modular system can force an invalid transaction to be reverted by using fraud/validity proofs.</p>
+<p>无效块只能由单片系统中的大多数完整节点恢复，而模块化系统中的单个完整节点可以通过使用欺诈/有效性证明来强制恢复无效交易。</p>
+<h3 id="这如何实现可扩展性-how-this-enables-scalability">这如何实现可扩展性 (How this Enables Scalability)</h3>
+<p>Allowing computation to happen off the parent chain allows for massive increases in transaction throughput. Block size can be significantly increased without concerns about centralization of block production, as the separate block validation process keeps block producers honest.</p>
+<p>允许在父链之外进行计算可以大幅增加交易吞吐量。区块大小可以显着增加，而无需担心块生产的中心化，因为单独的块验证过程使块生产者保持诚实。</p>
+<p>While larger blocks do place a higher burden on the full nodes performing validation, the honest minority assumption means that centralization in this area is less of a threat, as centralization-based vulnerabilities which rely on a dishonest majority are rendered impossible.</p>
+<p>虽然较大的区块确实会给执行验证的完整节点带来更高的负担，但诚实的少数假设意味着该领域的中心化威胁较小，因为依赖不诚实多数的基于中心化的漏洞变得不可能。</p>
+<p>Light clients can also run with significantly higher security guarantees under a modular architecture, as fraud proofs enable them to identify invalid transactions based on a proof from a single honest full node (as opposed to monolithic systems, which require light clients to trust that at least half of the full nodes are honest).</p>
+<p>轻客户端还可以在模块化架构下以显着更高的安全保证运行，因为欺诈证明使他们能够根据来自单个诚实完整节点的证明来识别无效交易(与单片系统相反，单片系统至少需要轻客户端信任一半的完整节点是诚实的)。</p>
+<figure data-type="image" tabindex="6"><img src="https://fuel-labs.ghost.io/content/images/2022/10/image-18.png" alt="" loading="lazy"></figure>
+<p><em>Light clients on modular execution layers have significantly higher security guarantees than their monolithic counterparts</em> <em>模块化执行层上的轻客户端比它们的单体客户端具有更高的安全保证</em></p>
+<p>In addition, block producers are aware that any malicious activity will be detected and will result in slashing, so they are less likely to even attempt to behave dishonestly. As such, the execution layer can be computation-optimized (i.e. handle a lot of transactions) while relying on security-optimized lower levels of the modular stack.</p>
+<p>此外，区块生产者知道任何恶意活动都会被检测到并导致处罚，因此他们甚至不太可能试图做出不诚实的行为。因此，执行层可以进行计算优化(即处理大量交易)，同时依赖模块化技术栈的安全优化的较低级别。</p>
+<hr>
+<h2 id="模块化执行潜在挑战-modular-execution-potential-challenges">模块化执行：潜在挑战 (Modular Execution: Potential Challenges)</h2>
+<p>This modular architecture does present some additional technical and game-theoretic challenges.</p>
+<p>这种模块化架构确实提出了一些额外的技术和博弈论挑战。</p>
+<h3 id="数据可用性-data-availability">数据可用性 (Data Availability)</h3>
+<p>While fraud/validity proofs enable honest full nodes to prove fraud, there is an additional problem: <strong>data availability</strong>. In order to generate proofs, full nodes rely on block availability, as they need to download and re-execute all transactions in a block to determine its validity and generate a proof.</p>
+<p>虽然欺诈/有效性证明使诚实的完整节点能够证明欺诈，但还有一个问题：<strong>数据可用性</strong>。为了生成证明，全节点依赖于区块的可用性，因为它们需要下载并重新执行块中的所有交易以确定其有效性并生成证明。</p>
+<p>A malicious block producer could theoretically publish only block headers to the parent chain, potentially withholding some or all of the corresponding data. This prevents full nodes from being able to generate fraud/validity proofs to alert light clients to the issue.</p>
+<p>理论上，恶意区块生产者可以只向父链发布区块头，可能会保留部分或全部相应数据。这可以防止完整节点生成欺诈/有效性证明来提醒轻客户端注意问题。</p>
+<p>When attempting to validate a block, it is trivial for full nodes to identify when data has been withheld by a malicious block producer. In this case, they can simply assume the chain is invalid and fork away from it. <strong>But how can light clients determine whether data has been withheld by a block producer without downloading the whole block?</strong></p>
+<p>当尝试验证一个块时，全节点很容易识别数据何时被恶意块生产者扣留。在这种情况下，他们可以简单地假设该链无效并从中分叉。 <strong>但是轻客户端如何在不下载整个区块的情况下确定数据是否被区块生产者扣留？</strong></p>
+<p>A new technology called <a href="https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling">data availability sampling</a> (DAS) enables light clients to probabilistically determine whether the entirety of a block has been published. In short, light clients request small random small portions (or “samples”) of the block from full nodes.</p>
+<p>一种称为<a href="https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling">数据可用性采样</a> (DAS) 的新技术使轻客户端能够以概率方式确定是否已发布整个块。简而言之，轻客户端从完整节点请求块的小随机小部分(或“样本”)。</p>
+<figure data-type="image" tabindex="7"><img src="https://fuel-labs.ghost.io/content/images/2022/10/image-19.png" alt="" loading="lazy"></figure>
+<p><em>Light clients request subsets (“samples”) of the block from full nodes (source:</em> <a href="https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling"><em>Vitalik Buterin</em></a><em>)</em> <em>轻客户端从完整节点请求区块的子集(“样本”)(来源：</em> <a href="https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling"><em>Vitalik Buterin</em></a><em>)</em></p>
+<p>If all the requested samples are available, then assuming there are enough light clients performing data availability sampling, this probabilistically proves that the entire block is available. If any portions of the block are not available, light clients know that data has been withheld, and can therefore fork away from that version of the chain.</p>
+<p>如果所有请求的样本都可用，那么假设有足够多的轻客户端执行数据可用性采样，这在概率上证明了整个块是可用的。如果块的任何部分不可用，轻客户端知道数据已被保留，因此可以从该版本的链中分叉。</p>
+<p>A full explanation of this technology is out of scope for this post, but you can read more about it <a href="https://www.paradigm.xyz/2022/08/das">here</a>. Ultimately, the important takeaway is that DAS enables light clients to identify invalid blocks even when a malicious block producer withholds data.</p>
+<p>对这项技术的完整解释超出了本文的范围，但您可以在 <a href="https://www.paradigm.xyz/2022/08/das">此处</a> 阅读更多相关信息。最终，重要的一点是 DAS 使轻客户端能够识别无效块，即使恶意块生产者隐瞒数据也是如此。</p>
+<h3 id="验证者的困境-verifiers-dilemma">验证者的困境 (Verifier’s Dilemma)</h3>
+<p>Another potential issue is the phenomenon referred to as the “verifier’s dilemma”. The simplified version is as follows:</p>
+<p>另一个潜在的问题是被称为“验证者困境”的现象。简化版如下：</p>
+<ul>
+<li>
+<p>If block producers know that full nodes will identify dishonest activity, they will behave honestly in order to avoid being slashed.<br>
+如果区块生产者知道全节点会识别不诚实的活动，他们会诚实行事以避免被处罚。</p>
+</li>
+<li>
+<p>Over time, if full nodes assume block producers will continue to behave honestly, they have no incentive to continue validating blocks, as they will never receive a reward for identifying an invalid transaction.<br>
+随着时间的推移，如果全节点假设区块生产者将继续诚实行事，他们就没有动力继续验证区块，因为他们永远不会因识别无效交易而获得奖励。</p>
+</li>
+<li>
+<p>If full nodes are not financially incentivized to continue validating blocks, they may stop doing so. At this point, it becomes viable for block producers to behave dishonestly. Even if there is still a non-zero amount of full nodes, it may become financially viable for the block producer to bribe the remaining full nodes to ignore a sufficiently valuable invalid transaction.<br>
+如果全节点没有经济上的激励来继续验证区块，他们可能会停止这样做。在这一点上，区块生产者的不诚实行为变得可行。即使仍然存在非零数量的完整节点，对于区块生产者而言，贿赂剩余的完整节点以忽略足够有价值的无效交易可能在财务上是可行的。</p>
+</li>
+</ul>
+<p>This ends in a circular conundrum whereby the more secure a modular execution layer becomes (i.e. the less incentive there is for a block producer to behave dishonestly), the more it tends toward lower security (i.e. full nodes are no longer incentivized to validate blocks). On the other hand, the less secure it is, the more it tends toward higher security.</p>
+<p>这以一个循环难题告终，即模块化执行层变得越安全(即区块生产者不诚实行为的动机越少)，它就越倾向于降低安全性(即不再激励完整节点来验证区块) .另一方面，它越不安全，它就越倾向于更高的安全性。</p>
+<figure data-type="image" tabindex="8"><img src="https://fuel-labs.ghost.io/content/images/2022/10/image-22.png" alt="" loading="lazy"></figure>
+<p>This dilemma can be mitigated through a number of avenues (for a game-theoretic analysis of these factors, <a href="https://medium.com/onther-tech/optimistic-rollup-is-not-secure-enough-than-you-think-cb23e6e6f11c">see this extensive post</a>):</p>
+<p>可以通过多种途径缓解这种困境(有关这些因素的博弈论分析，<a href="https://medium.com/onther-tech/optimistic-rollup-is-not-secure-%E6%AF%94%E4%BD%A0%E6%83%B3%E8%B1%A1%E7%9A%84%E8%BF%98%E5%A4%9A-cb23e6e6f11c">请参阅这篇帖子</a>)：</p>
+<ul>
+<li>
+<p><strong>Altruism</strong> - Because MELs only require a single honest validator, as long as there is at least one altruistic full node operating, the system remains secure. However, while this may be secure enough in practice, it is not a sufficient guarantee for a system controlling a large amount of assets.<br>
+<strong>利他主义</strong> - 因为 MEL 只需要一个诚实的验证者，只要至少有一个利他的全节点在运行，系统就会保持安全。然而，虽然这在实践中可能足够安全，但对于控制大量资产的系统来说，这并不是充分的保证。</p>
+</li>
+<li>
+<p><strong>Economic interest</strong> - There are many entities which have financial incentives to run full nodes that go beyond the potential whistleblower reward. For example, products and services like block explorers, liquidity providers, or dapps need to access the full state of the MEL to effectively run their business. However, these entities are (in theory) susceptible to being bribed by a malicious block producer.<br>
+<strong>经济利益</strong> - 许多实体拥有运行完整节点的经济激励，这些激励超出了潜在的举报人奖励。例如，区块浏览器、流动性提供者或 dapp 等产品和服务需要访问 MEL 的完整状态才能有效地开展业务。然而，这些实体(理论上)容易受到恶意区块生产者的贿赂。</p>
+</li>
+<li>
+<p><strong>Whales</strong> - Entities with a large number of assets on an MEL may choose to run a full node in order to ensure their interests are protected and that the chain is secure.<br>
+<strong>巨鲸</strong> - 在 MEL 上拥有大量资产的实体可以选择运行一个完整节点，以确保他们的利益受到保护并且链是安全的。</p>
+</li>
+<li>
+<p><strong>Fast withdrawals</strong> - Because optimistic MELs rely on a dispute resolution window before guaranteeing finality on the lower layers of the modular stack, withdrawals from the MEL to the settlement layer are not finalized until this window has elapsed. As such, there is a market for third-party services which offer fast withdrawals, accepting tokens on the MEL and instantly sending the same tokens (minus a fee) to the user on the settlement layer. In order to ensure the MEL state isn’t reverted after they have sent funds on the settlement layer, the service provider is incentivized to verify the validity of the chain before entering into such a transaction.<br>
+<strong>快速取款</strong> - 因为乐观 MEL 在保证模块化技术栈较低层的最终确定性之前，依赖争议解决窗口，所以在此窗口过去之前，从 MEL 到结算层的取款不会最终确定。因此，存在提供快速提款、在 MEL 上接受代币并在结算层立即向用户发送相同代币(减去费用)的第三方服务市场。为了确保 MEL 状态在他们在结算层发送资金后不会恢复，激励服务提供商在进行此类交易之前验证链的有效性。</p>
+</li>
+<li>
+<p><strong>Block producers</strong> - It is possible to introduce a penalty for block producers who submit blocks which build on top of previous invalid blocks. With such a mechanism in place, block producers would be incentivized to verify the validity of the chain before submitting a block.<br>
+<strong>区块生产者</strong> - 可以对提交构建在先前无效块之上的新块的生产者引入惩罚。有了这样的机制，区块生产者将被激励在提交区块之前验证链的有效性。</p>
+</li>
+</ul>
+<p>While the above mitigation strategies may not be completely effective on their own, when combined there is a clear incentive for a number of different parties to continue running full nodes on the MEL and validating the state of the chain.</p>
+<p>虽然上述缓解策略本身可能并不完全有效，但当结合使用时，有明显的动机让许多不同的各方继续在 MEL 上运行完整节点并验证链的状态。</p>
+<hr>
+<h2 id="新的设计空间超越-evm-a-new-design-space-going-beyond-the-evm">新的设计空间：超越 EVM (A New Design Space: Going Beyond the EVM)</h2>
+<p>By adopting a design that enables high security under a single honest minority assumption, the modular blockchain stack enables the development of much higher-throughput blockchains than have previously been possible under monolithic designs.</p>
+<p>通过采用在单一诚实少数假设下实现高安全性的设计，模块化区块链技术栈能够开发比以前在单片设计下可实现的更高吞吐量的区块链。</p>
+<p>However, alongside the scalability benefits that come from separating computation from verification, further strides can be made in scalability by focusing specifically on the design of the top of the stack: the modular execution layer. <strong>Making computation more scalable and efficient on this layer is the next step in building better blockchains.</strong></p>
+<p>然而，除了计算与验证分离带来的可扩展性优势之外，还可以通过专门关注技术栈顶部的设计：模块化执行层，在可扩展性方面取得进一步进展。 <strong>在这一层上使计算更具可扩展性和效率是构建更好的区块链的下一步。</strong></p>
+<p>Most modular execution layers currently under development use Ethereum as their parent chain, so default to using the EVM as an execution environment. This is the design equivalent of improving the energy efficiency of an internal combustion engine: an incremental improvement on an already outdated technology.</p>
+<p>目前正在开发的大多数模块化执行层都使用以太坊作为其父链，因此默认使用 EVM 作为执行环境。这相当于提高内燃机的能源效率的设计：对已经过时的技术进行增量改进。</p>
+<p>In reality, the modular stack opens up a much wider design space, removing the need for modular execution layers to rely on the inefficient EVM. <strong>Fuel is taking advantage of this newly expanded design space to build a modular execution layer which <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">goes beyond the EVM</a></strong>, optimizing for efficient &amp; scalable computation, superior developer experience, and maximum security.</p>
+<p>实际上，模块化技术栈开辟了更广阔的设计空间，不再需要模块化执行层来依赖低效的 EVM。 <strong>Fuel 正在利用这个新扩展的设计空间来构建一个<a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">超越 EVM</a> 的模块化执行层</strong> ，优化高效和可扩展的计算、卓越的开发人员体验和最大的安全性。</p>
+<p>In Part 2, we will explore the ways in which modular execution layers can transcend the technological limitations of the previous generation of blockchain design to achieve true scalability.</p>
+<p>在第 2 部分中，我们将探讨模块化执行层如何超越上一代区块链设计的技术限制以实现真正的可扩展性。</p>
+<hr>
+<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
+<ul>
+<li><a href="https://twitter.com/fuellabs_"><strong><strong>Twitter</strong></strong></a></li>
+<li><a href="http://discord.com/invite/xfpK4Pe"><strong><strong>Discord</strong></strong></a></li>
+<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong><strong>LinkedIn</strong></strong></a></li>
+<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong><strong>YouTube</strong></strong></a></li>
+</ul>
+<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
+<p><a href="https://www.fuel.network/">Fuel</a> is the <strong><strong>fastest execution layer</strong></strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong><strong>highest flexible throughput</strong></strong> and <strong><strong>maximum security</strong></strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong><strong>superior developer experience</strong></strong> and the ability to go <strong><strong>beyond the limitations of the EVM</strong></strong>.</p>
+<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制****。</p>
+<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
+<ul>
+<li>
+<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
+<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
+</li>
+<li>
+<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
+<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
+</li>
+<li>
+<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
+<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SeiNetwork长推-20221012 (SeiNetwork twitter threads-20221012)]]></title>
+        <id>https://chainguys.github.io/post/seinetwork-chang-tui-20221012-seinetwork-twitter-threads-20221012/</id>
+        <link href="https://chainguys.github.io/post/seinetwork-chang-tui-20221012-seinetwork-twitter-threads-20221012/">
+        </link>
+        <updated>2022-10-12T00:57:55.000Z</updated>
+        <content type="html"><![CDATA[<p>原文地址:https://twitter.com/SeiNetwork/status/1575181008349302785</p>
+<p>A $50,000,000 ecosystem &amp; liquidity fund awaits strong teams that build on Sei.  every week we work with<a href="https://twitter.com/Cryptocito">@Cryptocito</a> <a href="https://twitter.com/strangelovelabs">@strangelovelabs</a> <a href="https://twitter.com/Galileo_xyz">@galileo_xyz</a>to lay out the best developer opportunities in Web3. This week we're highlighting Tokenized Time.</p>
+<p>一个价值 50,000,000 美元的生态系统和流动性基金正在等待建立在 Sei 之上的强大团队。每周我们都使用<a href="https://twitter.com/Cryptocito">@Cryptocito</a> <a href="https://twitter.com/strangelovelabs">@strangelovelabs</a> <a href="https://twitter.com/Galileo_xyz">@galileo_xyz</a>布局 Web3 中最好的开发人员机会。本周我们将重点介绍代币化时间。</p>
+<p>Crypto has not yet disrupted one of the largest markets: Labor ![👷‍♂️]( Sei has been brainstorming ways to tokenize developer time, allowing for protocols and ecosystems to make better use of their valuable war-chests.</p>
+<p>加密货币尚未扰乱最大的市场之一：人工！[👷‍♂️]（Sei 一直在集思广益，来标记开发人员的时间，允许协议和生态系统更好地利用其宝贵的资金。</p>
+<p>Rather than giving out millions of incentives via liquidity mining, protocols can instead pay for developer hours to deploy towards key projects. We’re looking for the right team to explore this exciting, wide-open concept on crypto rails Ready to SEIze the opportunity?</p>
+<p>与其通过流动性挖矿提供数百万的奖励，协议可以支付开发人员的时间来部署关键项目。我们正在寻找合适的团队来探索这个令人兴奋的、广泛开放的加密轨道概念 准备好抓住机会了吗？</p>
+<p>Sei's Mission:<br>
+Give DeFI protocols an unfair advantage.  Create a robust ecosystem tailored for trading.  Enable what cannot be done on any other Layer 1.</p>
+<p>Sei的使命：<br>
+给 DeFI 协议一个无与伦比优势。创建一个为交易量身定制的强大生态系统。达成在任何其他第 1 层上无法完成的事情。</p>
+<p>To learn more about the $50 Million ecosystem fund check out these resources below</p>
+<p>要了解有关 5000 万美元生态系统基金的更多信息，请查看以下资源</p>
+<p><a href="https://twitter.com/SeiNetwork/status/1575181008349302785">点击此处</a></p>
+<p>If you're interested in building anything on the chain made for DeFi fill out the ecosystem form:</p>
+<p>如果您有兴趣在为 DeFi 制造的链上构建任何东西，请填写生态系统表格：</p>
+<figure data-type="image" tabindex="1"><img src="https://pbs.twimg.com/card_img/1577423600331771905/qq_JGYRE?format=png&amp;name=900x900" alt="" loading="lazy"></figure>
+<p><a href="https://y8e47wadwqp.typeform.com/to/Ia7t8DxY?typeform-source=t.co">https://y8e47wadwqp.typeform.com/to/Ia7t8DxY?typeform-source=t.co</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[当我们都Dedoco我们的文档 (When we all Dedoco our documents)]]></title>
         <id>https://chainguys.github.io/post/dang-wo-men-du-dedoco-wo-men-de-wen-dang-when-we-all-dedoco-our-documents/</id>
@@ -910,127 +1177,6 @@ export default config;
 <p>在测试时，我们测试范围内的 Uniswap v2 协议的所有功能在本地 Neon 网络和 Devnet 上都按预期执行。所选的测试场景展示了 Hardhat 网络中与 Neon 环境中相同的输出。总体而言，将 Uniswap v2 协议 Solidity 代码部署到 Neon 是无缝的，没有出现任何问题。无需修改合约的源代码。</p>
 <p>For more information on the Uniswap v2 deployment, check out our <a href="https://twitter.com/neonlabsorg/status/1572586328931586052?s=20&amp;t=sG9w6qNOgSZO_tPusl0c9Q">recent AMA</a>. Now, its your turn to deploy your own smart contracts to Neon EVM. Make sure to let us know what you think. If you run into any issues or need additional guidance, check out our <a href="https://docs.neon-labs.org/">Neon Docs</a> or reach out to a team member on <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a>. We know that you’ll create something great!</p>
 <p>有关 Uniswap v2 部署的更多信息，请查看我们的 <a href="https://twitter.com/neonlabsorg/status/1572586328931586052?s=20&amp;t=sG9w6qNOgSZO_tPusl0c9Q">最近的 AMA</a>。现在，轮到您将自己的智能合约部署到 Neon EVM。请务必让我们知道您的想法。如果您遇到任何问题或需要更多指导，请查看我们的 <a href="https://docs.neon-labs.org/">Neon Docs</a> 或通过 [Discord](https://discord. com/invite/9jVYEDVwn8) 联系。我们知道你会创造出伟大的东西！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Altlayer中文材料合集-不断更新中(Altlayer Chinese Materials-Updating)]]></title>
-        <id>https://chainguys.github.io/post/altlayer-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-altlayer-chinese-materials-updating/</id>
-        <link href="https://chainguys.github.io/post/altlayer-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-altlayer-chinese-materials-updating/">
-        </link>
-        <updated>2022-09-22T03:31:46.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://cdn-images-1.medium.com/max/980/1*t55z-bhSsloTou3D5JDTAA@2x.png" alt="" loading="lazy"></figure>
-<h1 id="blogs">Blogs</h1>
-<h2 id="介绍-altlayer第一部分支持定制应用汇总的弹性扩展层-introducing-altlayer-part-ian-elastic-scaling-layer-with-application-tailored-rollups"><a href="https://chainguys.github.io/post/jie-shao-altlayerdi-yi-bu-fen-zhi-chi-ding-zhi-ying-yong-hui-zong-de-dan-xing-kuo-zhan-ceng-introducing-altlayer-part-ian-elastic-scaling-layer-with-application-tailored-rollups/">介绍 AltLayer(第一部分)：支持定制应用汇总的弹性扩展层 Introducing AltLayer (Part I)：An Elastic Scaling Layer with Application-Tailored Rollups</a></h2>
-<h2 id="介绍-altlayer第二部分支持定制应用汇总的弹性扩展层-introducing-altlayer-part-iian-elastic-scaling-layer-with-application-tailored-rollups"><a href="https://chainguys.github.io/post/jie-shao-altlayerdi-er-bu-fen-zhi-chi-ding-zhi-ying-yong-hui-zong-de-dan-xing-kuo-zhan-ceng-introducing-altlayer-part-iian-elastic-scaling-layer-with-application-tailored-rollups/">介绍 AltLayer(第二部分)：支持定制应用汇总的弹性扩展层 Introducing AltLayer (Part II)：An Elastic Scaling Layer with Application-Tailored Rollups</a></h2>
-<h2 id="nft铸币如何扩展第一部分-nft-minting-made-scalable-part-i"><a href="https://chainguys.github.io/post/nft-zhu-bi-ru-he-kuo-zhan-di-yi-bu-fen-nft-minting-made-scalable-part-i/">NFT铸币如何扩展(第一部分)-NFT Minting Made Scalable (Part I)</a></h2>
-<h2 id="nft铸币如何可扩展第二部分-nft-minting-made-scalable-part-ii"><a href="https://chainguys.github.io/post/nft-zhu-bi-ru-he-ke-kuo-zhan-di-er-bu-fen-nft-minting-made-scalable-part-ii">NFT铸币如何可扩展(第二部分)-NFT Minting Made Scalable (Part II)</a></h2>
-<h2 id="黑暗森林的社区回合总结前20名已被选出-dark-forests-community-round-concludes-top-20-selected"><a href="https://chainguys.github.io/post/altlayer-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-altlayer-chinese-materials-updating">黑暗森林的社区回合总结，前20名已被选出 (Dark Forest’s Community Round Concludes, Top 20 Selected)</a></h2>
-<h2 id="altlayer又如何the-case-for-altlayer"><a href="https://chainguys.github.io/post/altlayer-you-ru-he-the-case-for-altlayer/">AltLayer又如何?(The Case for AltLayer)</a></h2>
-<h2 id="早安开发者和用户-gm-developers-and-users"><a href="https://chainguys.github.io/post/zao-an-kai-fa-zhe-he-yong-hu-gm-developers-and-users">早安，开发者和用户! (GM Developers and Users!)</a></h2>
-<h2 id="altlayer-og-badge-nft空投-altlayer-og-badge-nft-drop"><a href="https://chainguys.github.io/post/altlayer-og-badge-nft-kong-tou-altlayer-og-badge-nft-drop">AltLayer OG Badge NFT空投 (AltLayer OG Badge NFT Drop)</a></h2>
-<h1 id="开发相关developpment-related">开发相关(Developpment Related)</h1>
-<h2 id="altlayer阿尔法开发网-altlayer-alpha-devnet"><a href="https://chainguys.github.io/post/altlayer-a-er-fa-kai-fa-wang-altlayer-alpha-devnet">AltLayer阿尔法开发网 (AltLayer Alpha Devnet)</a></h2>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Neon EVM：如何用Remix部署dApps (Neon EVM： How to Deploy dApps Using Remix)]]></title>
-        <id>https://chainguys.github.io/post/neon-evmru-he-yong-remix-bu-shu-dapps-neon-evm-how-to-deploy-dapps-using-remix/</id>
-        <link href="https://chainguys.github.io/post/neon-evmru-he-yong-remix-bu-shu-dapps-neon-evm-how-to-deploy-dapps-using-remix/">
-        </link>
-        <updated>2022-09-21T05:12:12.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*EvE99HuqqOmjVqtW0qhJ7A.png" alt="" loading="lazy"></figure>
-<hr>
-<p>Deploying a decentralized application, or dApp for short, is the final stage of any developer’s process of bringing their vision of a crypto project to reality. Neon’s features as an Ethereum Virtual Machine (EVM) on Solana make it suitable for cheap and simple deployment of dApps written in Solidity. In this article series about dApp deployment, we will illustrate how to deploy a simple “Hello World” dApp using three different deployment tools: Remix, Truffle, and Hardhat.</p>
-<p>部署去中心化应用(简称 dApp)，是开发人员将他们的加密项目愿景变为现实的最后阶段。 Neon 作为 Solana 上以太坊虚拟机 (EVM) 的功能，使其适用于以 Solidity 编写的低成本且简单的 dApp 部署。在这个关于 dApp 部署的系列文章中，我们将说明如何使用三种不同的部署工具(Remix、Truffle 和 Hardhat)来部署一个简单的“Hello World”dApp：。</p>
-<p>This article will focus on deploying dApps with Remix. <a href="https://remix.ethereum.org/">Remix</a> is an online IDE for Solidity programs and can be used to run code without any local installation. This makes it convenient for deploying dApps from anywhere, so long as the user has the contract source code. However, since it is an online environment, its capacity for supporting large, complex projects is limited. Therefore, Remix should be used primarily for simple code, which can be deployed with ease and requires minimal dependency management.</p>
-<p>本文将重点介绍使用 Remix 部署 dApp。 <a href="https://remix.ethereum.org/">Remix</a> 是 Solidity 程序的在线 IDE，无需任何本地安装即可运行代码。这使得从任何地方部署 dApp 变得很方便，只要用户有合约源代码。然而，由于它是一个在线环境，它支持大型、复杂项目的能力是有限的。因此，Remix 主要用于简单的代码，可以轻松部署并且需要最少的依赖管理。</p>
-<h2 id="开始之前-before-you-begin">开始之前 Before You Begin</h2>
-<p>Before you start the tutorial below, make sure that the following is true:<br>
-在开始下面的教程之前，请确保满足以下条件：</p>
-<ul>
-<li>
-<p>MetaMask is installed on your device.<br>
-MetaMask 已安装在您的设备上。</p>
-</li>
-<li>
-<p>MetaMask is configured for the Neon EVM.<br>
-MetaMask 是为 Neon EVM 配置的。</p>
-</li>
-</ul>
-<p>To install and configure MetaMask, follow <a href="https://docs.neon-labs.org/docs/wallet/metamask_setup#installing-metamask">this guide</a>.<br>
-要安装和配置 MetaMask，请参照 <a href="https://docs.neon-labs.org/docs/wallet/metamask_setup#installing-metamask">本指南</a>。</p>
-<h2 id="你好世界指南-hello-world-tutorial">“你好，世界”指南 (Hello World Tutorial)</h2>
-<p>The following tutorial will explain how to deploy a simple Hello World contract to the Neon Devnet using Remix.</p>
-<p>以下教程将解释如何使用 Remix 将简单的 Hello World 合约部署到 Neon Devnet。</p>
-<p><strong>Step 1: Create a Simple Smart Contract in Remix</strong><br>
-<strong>第 1 步：在 Remix 中创建一个简单的智能合约</strong></p>
-<p>To add a smart contract to Remix, go to <a href="https://remix.ethereum.org/">https://remix.ethereum.org</a>, click on the “Create New File” icon, and type “helloWorld.sol” in the field that appears. Then, paste the following code into the empty file and press CTRL+S to save the smart contract file.</p>
-<p>要将智能合约添加到 Remix，请转到 <a href="https://remix.ethereum.org/">https://remix.ethereum.org</a>，单击“创建新文件(Create New File)”图标，然后输入“helloWorld.sol ”在出现的字段中。然后，将以下代码粘贴到空文件中，然后按 CTRL+S 保存智能合约文件。</p>
-<pre><code>// SPDX-License-Identifier: UNLICENSED
-
-pragma solidity ^0.8.7;
-
-contract helloWorld {
-
-string public text = &quot;Hello World!&quot;;
-
-function callHelloWorld() public view returns (string memory) {
-
-return text;
-
-}
-
-}
-</code></pre>
-<p>The process should look like in the image below (Fig. 1).<br>
-流程如图1所示：</p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*jhoFdUFpjp--gf3d" alt="" loading="lazy"></figure>
-<p>图 1—加载 helloWorld 智能合约 (Fig. 1 — Loading the helloWorld smart contract)</p>
-<hr>
-<p><strong>Step 2: Compile the Smart Contract</strong><br>
-<strong>第 2 步：编译智能合约</strong></p>
-<p>Before the smart contract can be deployed, it must first be compiled. To accomplish this, select the “Solidity compiler” tab in the left side menu. The SOLIDITY COMPILER menu will appear.</p>
-<p>在部署智能合约之前，必须先对其进行编译。为此，请在左侧菜单中选择“Solidity 编译器(Solidity compiler)”选项卡。将出现 SOLIDITY 编译器菜单。</p>
-<p>Click on the Compile helloWorld.sol button to compile the smart contract (Fig. 2).</p>
-<p>点击 Compile helloWorld.sol 按钮编译智能合约(图 2)。</p>
-<p>If the compilation is successful, a green icon will appear near the Solidity compiler button.</p>
-<p>如果编译成功，Solidity 编译器按钮附近会出现一个绿色图标。</p>
-<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/0*mTH5pyz9-8CjjXR0" alt="" loading="lazy"></figure>
-<p>图 2—编译 helloWorld 智能合约 (Fig. 2 — Compiling helloWorld smart contract)</p>
-<hr>
-<p><strong>Step 3: Connect Remix to MetaMask</strong><br>
-<strong>第 3 步：将 Remix 连接到 MetaMask</strong></p>
-<p>Interactions between Remix and the Neon EVM are carried out through MetaMask. Before connecting Remix to MetaMask, select “Deploy &amp; run transactions” in the left sidebar menu. The DEPLOY &amp; RUN TRANSACTIONS menu will appear.</p>
-<p>Remix 和 Neon EVM 之间的交互是通过 MetaMask 进行的。在将 Remix 连接到 MetaMask 之前，请在左侧边栏菜单中选择“部署并运行交易(Deploy &amp; run transactions)”。 接着部署并运行交易(DEPLOY &amp; RUN TRANSACTIONS)菜单将会出现。</p>
-<p>Choose the “Injected Provider — Metamask” environment to connect Remix with an active account in MetaMask (Fig. 3). Make sure that your MetaMask wallet is set to display the Neon Devnet network before you complete this step.</p>
-<p>选择“Injected Provider - Metamask”环境以将 Remix 与 MetaMask 中的活动帐户连接起来(图 3)。在完成此步骤之前，请确保您的 MetaMask 钱包已设置为显示 Neon Devnet 网络。</p>
-<p>选择“Injected Provider - Metamask”环境，将 Remix 与 MetaMask 中的活动帐户连接起来(图 3)。在完成此步骤之前，请确保您的 MetaMask 钱包已设置为显示 Neon Devnet 网络。</p>
-<p>Once you do this, the MetaMask pop-up window should appear. It will display a list of available accounts, if you have multiple accounts. Choose your desired account and click “Next”. Then, click “Connect” to connect to this account.</p>
-<p>完成此操作后，应出现 MetaMask 弹出窗口。如果您有多个帐户，它将显示可用帐户列表。选择您想要的帐户，然后单击“下一步(Next)”。然后，单击“连接(Connect)”连接到该帐户。</p>
-<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/0*zxW9zWG7Y_gEbo3_" alt="" loading="lazy"></figure>
-<p>图 3—“Injected Provider” 将 Remix 与 Metamask 中的活动帐户连接起来 (Fig. 3 — “Injected Provider” connects Remix with an active account in Metamask)</p>
-<hr>
-<p><strong>Step 4: Deploy a Smart Contract on Solana Devnet</strong><br>
-<strong>第 4 步：在 Solana Devnet 上部署智能合约</strong></p>
-<p>The contract is finally ready to be deployed by clicking the “Deploy” button (Fig. 4).</p>
-<p>通过单击“部署(Deploy)”按钮，合约终于可以部署了(图 4)。</p>
-<figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/1400/0*Db3bsSp831RwsoVM" alt="" loading="lazy"></figure>
-<p>图 4—部署智能合约 (Fig. 4 — Deploying the smart contract)</p>
-<p>MetaMask will send a notification in the form of a pop-up window to confirm the transaction. Click “Confirm” to execute it.</p>
-<p>MetaMask 会以弹窗的形式发送通知以确认交易。点击“确认(Confirm)”执行。</p>
-<p>If all the above steps have been completed successfully, a green icon will appear near the “Deploy &amp; run transactions” button. The contract’s methods will now be present as buttons under the “Deployed Contracts” section (Fig. 5).</p>
-<p>如果上述所有步骤均已成功完成，“部署并运行交易(Deploy &amp; run transactions)”按钮附近将出现一个绿色图标。合约的方法现在将显示为“已部署合约(Deployed Contracts)”部分下的按钮(图 5)。</p>
-<figure data-type="image" tabindex="6"><img src="https://miro.medium.com/max/1400/0*Rs0FuXZXZE1km-gy" alt="" loading="lazy"></figure>
-<p>图 5—Remix 面板的最终视图 (Fig. 5 — Final view of the Remix panel)</p>
-<p>Finally, to obtain the desired ‘Hello World’ functionality, click on the “callHelloWorld” button, which will return the string “Hello World!” (Fig. 6).</p>
-<p>最后，要获得所需的“Hello World”功能，请单击“callHelloWorld(callHelloWorld)”按钮，该按钮将返回字符串“Hello World！” (图 6)。</p>
-<figure data-type="image" tabindex="7"><img src="https://miro.medium.com/max/1400/0*Jnxs0ejuRk-ArNZ_" alt="" loading="lazy"></figure>
-<p>图 6—调用智能合约方法 (Fig. 6 — Calling the smart contract methods)</p>
-<h1 id="结论-conclusion">结论 (Conclusion)</h1>
-<p>Fortunately for Solidity developers new to using Neon, Remix is a quick and easy solution for contract deployment. It allows this deployment to occur from any device and does not require any specific local installations or settings. However, as it is an online IDE, its security is limited (don’t include any mainnet private keys in your contract code here!) and it will not work well with large projects. Therefore, Remix is best for testing smaller contracts when a quick check is desired.</p>
-<p>Remix 是一种快速简便的合约部署解决方案，这对于刚开始使用 Neon 的 Solidity 开发人员来说是幸运的。它允许从任何设备进行部署，并且不需要任何特定的本地安装或设置。然而，由于它是一个在线 IDE，它的安全性是有限的(不要在你的合约代码中包含任何主网私钥！)并且它不适用于大型项目。因此，当需要快速检查时，Remix 最适合测试较小的合约。</p>
-<p>Visit our <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_remix">docs</a> for a complete tutorial on using Remix to deploy your dapps.</p>
-<p>请访问我们的 <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_remix">文档</a>，获取有关使用 Remix 部署 dapp 的完整教程。</p>
 ]]></content>
     </entry>
 </feed>
