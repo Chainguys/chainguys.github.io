@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>积分的意义何在？(What’s the point in points?) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1665717886050">
+<link rel="shortcut icon" href="/favicon.ico?v=1666000886355">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -977,6 +977,76 @@
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/ackee-qu-kuai-lian-wan-cheng-neon-de-zhi-li-shen-ji-ackee-blockchain-completes-neons-governance-audit/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*s1rfUjRRm0Qki1m78ESBcA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Between June 27 and July 22, 2022, &lt;a href=&#34;https://ackeeblockchain.com/&#34;&gt;Ackee Blockchain&lt;/a&gt; conducted a security audit of Neon’s Governance contract. The Ackee Blockchain team is composed of auditors and white hat hackers who perform security audits and assessments including code review, testing, automated analysis, and local deployment/hacking.&lt;/p&gt;
+&lt;p&gt;在 2022 年 6 月 27 日至 7 月 22 日期间，&lt;a href=&#34;https://ackeeblockchain.com/&#34;&gt;Ackee区块链&lt;/a&gt; 对 Neon 的治理合约进行了安全审计。 Ackee 区块链团队由审计员和白帽黑客组成，他们执行安全审计和评估，包括代码审查、测试、自动分析和本地部署/黑客攻击。&lt;/p&gt;
+&lt;p&gt;At the end of the 26-day audit process, a &lt;em&gt;Findings and Recommendations&lt;/em&gt; report was delivered to the Neon Labs team. In this article, we’ll outline the scope, goals, and process of the Ackee security audit and summarize the notable findings.&lt;/p&gt;
+&lt;p&gt;在 26 天的审核过程结束时，一份 &lt;em&gt;调查结果和建议&lt;/em&gt; 报告已提交给 Neon Labs 团队。在本文中，我们将概述 Ackee 安全审计的范围、目标和过程，并总结值得注意的发现。&lt;/p&gt;
+&lt;h1 id=&#34;安全审计的范围-scope-of-the-security-audit&#34;&gt;安全审计的范围 (Scope of the Security Audit)&lt;/h1&gt;
+&lt;p&gt;Ackee Blockchain focused the security audit on understanding and reviewing the Neon SPL Governance contract. In addition, the team reviewed the source code and security of the Neon maintenance program and custom add-ins. The specific commit audited was &lt;em&gt;f13d7e7c1507819306797688ce0bb1f6950a5038&lt;/em&gt; of the &lt;a href=&#34;https://github.com/neonlabsorg/neon-spl-governance&#34;&gt;neonlabsorg/neon-spl-governance&lt;/a&gt; repository.&lt;/p&gt;
+&lt;p&gt;Ackee区块链将安全审计的重点放在理解和审查 Neon SPL 治理合约上。此外，团队还审查了 Neon 维护程序和自定义插件的源代码和安全性。审核的具体提交是 &lt;a href=&#34;https://github.com/neonlabsorg/neon-spl-governance&#34;&gt;neonlabsorg/neon-spl-governance&lt;/a&gt; 存储库的 &lt;em&gt;f13d7e7c1507819306797688ce0bb1f6950a5038&lt;/em&gt;。&lt;/p&gt;
+&lt;p&gt;The programs covered include:&lt;br&gt;
+涵盖的计划包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;maintanance/program 维护/程序&lt;/li&gt;
+&lt;li&gt;addin-fixed-weights/program 附加固定权重/程序&lt;/li&gt;
+&lt;li&gt;addin- vesting/program 附加注入/计划&lt;/li&gt;
+&lt;li&gt;governance-lib 治理库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;During the review, Ackee paid particular attention to:&lt;br&gt;
+在审核过程中，Ackee 特别关注：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;whether the SPL-governance contract specifications are implemented correctly for the custom add-ins.&lt;br&gt;
+是否为自定义加载项正确实施了 SPL 治理合约规范。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;whether the programs correctly use dependencies or other supporting programs (e.g., SPL dependencies).&lt;br&gt;
+程序是否正确使用依赖项或其他支持程序(例如，SPL 依赖项)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;whether the code is vulnerable to voting manipulation.&lt;br&gt;
+代码是否容易受到投票操纵。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;安全审计的目的目标-purposegoals-of-the-security-audit&#34;&gt;安全审计的目的/目标 (Purpose/Goals of the Security Audit)&lt;/h1&gt;
+&lt;p&gt;Neon Labs always strives to reach the highest security standard for our services and platforms, including Neon Governance. The Ackee discovered findings from the audit that will be urgently addressed and will continue to challenge and motivate our product team.&lt;/p&gt;
+&lt;p&gt;Neon Labs 始终致力于为我们的服务和平台(包括 Neon Governance)达到最高安全标准。 Ackee 发现审计结果将被紧急处理，并将继续挑战和激励我们的产品团队。&lt;/p&gt;
+&lt;p&gt;The main goal of the security audit was to assess the security posture of the SPL governance contract and associated programs to identify potential vulnerabilities. Ackee Blockchain aimed to meet this goal through a review of the targeted source code and documentation, execution of a penetration test, and evaluation of the testing process.&lt;/p&gt;
+&lt;p&gt;安全审计的主要目标是评估 SPL 治理合约和相关程序的安全状况，进而识别潜在的漏洞。 Ackee 区块链旨在通过审查目标源代码和文档、执行渗透测试和评估测试过程来实现这一目标。&lt;/p&gt;
+&lt;h1 id=&#34;安全审计程序-the-security-audit-procedure&#34;&gt;安全审计程序 (The Security Audit Procedure)&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;1. 代码审查 Code Review&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ackee began the security audit by reviewing the specifications, sources, and instructions related to Neon’s SPL Governance contract. Following the initial review, the Ackee team conducted a manual line-by-line review of Neon’s in-scope source code.&lt;/p&gt;
+&lt;p&gt;Ackee 通过审查与 Neon 的 SPL 治理合约相关的规范、来源和说明开始了安全审计。在初步审查之后，Ackee 团队对 Neon 范围内的源代码进行了手动逐行审查。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. 测试和自动分析 Testing and Automated Analysis&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Following the code review, Ackee ran automated tests to ensure the SPL Governance contract functioned as intended. As part of the testing, Ackee also wrote missing unit or “fuzzy tests” using their Solana testing framework, &lt;a href=&#34;https://solana.com/riptide/voting/trdelnik&#34;&gt;Trdelnik&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;在代码审查之后，Ackee 运行自动化测试来确保 SPL 治理合约按预期运行。作为测试的一部分，Ackee 还使用他们的 Solana 测试框架 &lt;a href=&#34;https://solana.com/riptide/voting/trdelnik&#34;&gt;Trdelnik&lt;/a&gt; 编写了缺失的单元或“模糊测试”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. 本地部署 + 黑客攻击 Local Deployment + Hacking&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the final steps of the security audit, Ackee initiated a white hat hacking campaign to try and manipulate the system based on their findings from steps one and two. Programs were deployed locally in an attempt to attack and break the in-scope system. Hacking is a beneficial way to round out the audit and ensure there are no additional holes in the source code and platform.&lt;/p&gt;
+&lt;p&gt;在安全审计的最后阶段，Ackee 发起了一场白帽黑客攻击活动，试图根据他们在第一步和第二步中的发现来操纵系统。程序被部署在本地，试图攻击和破坏范围内的系统。黑客攻击是完成审计并确保源代码和平台中没有额外漏洞的有益方式。&lt;/p&gt;
+&lt;h1 id=&#34;neon-evm-安全审计结果-neon-evm-security-audit-outcome&#34;&gt;Neon EVM 安全审计结果 (Neon EVM Security Audit Outcome)&lt;/h1&gt;
+&lt;p&gt;The Ackee Security Audit presented findings by categorizing issues according to severity, impact, and likelihood. The results identified some core issues and mandatory clean-ups for the Neon Labs team to address, along with some recommendations to be implemented.&lt;/p&gt;
+&lt;p&gt;Ackee 安全审计通过根据严重性、影响和可能性对问题进行分类来展示调查结果。结果确定了 Neon Labs 团队需要解决的一些核心问题和要做的强制清理，以及一些需要实施的建议。&lt;/p&gt;
+&lt;p&gt;The security audit identified eight issues that range from critical to informational in terms of severity. The Neon Labs team has reviewed these issues and has already begun to address them.&lt;/p&gt;
+&lt;p&gt;安全审计确定了八个问题，从严重程度来看，从严重到知会不等。 Neon Labs 团队已经审查了这些问题，并且已经开始着手解决这些问题。&lt;/p&gt;
+&lt;p&gt;The two critical issues identified by the audit are as:&lt;/p&gt;
+&lt;p&gt;审计发现的两个关键问题如下：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. It is possible to manipulate the voting process while using the fixed-weights addin.&lt;/strong&gt;&lt;br&gt;
+可以在使用固定权重插件时操纵投票过程&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This vulnerability allows users to select a number higher than 100%, which gives additional weight to their vote to such an extent that a single user (member of governance) could practically decide on any proposal by themself.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;此漏洞允许用户选择高于 100% 的数字，这为他们的投票提供了额外的权重，以至于单个用户(治理成员)实际上可以自己决定任何提案&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. When using the add in-vesting (for realm), the first user will be able to decide on any proposal after their deposit.&lt;/strong&gt;&lt;br&gt;
+使用附加注入时(针对领域)时，第一个用户将能够在存款后决定任何提案。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In this scenario, the first user who calls a deposit can immediately create a proposal and vote for it. Since their vote would have 100% weight, the proposal would be marked as successful.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;在这种情况下，第一个调用存款的用户可以立即创建提案并对其进行投票。由于他们的投票权重为 100%，因此提案将被标记为成功。&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;结论-conclusion&#34;&gt;结论 (Conclusion)&lt;/h1&gt;
+&lt;p&gt;We hope you found this article informative. If you have any questions about the security audit of Neon’s SPL Governance contract, don’t hesitate to reach out. You can contact the team via &lt;a href=&#34;https://discord.com/invite/9jVYEDVwn8&#34;&gt;Discord&lt;/a&gt;. Lastly, stay connected with the team on &lt;a href=&#34;https://twitter.com/neonlabsorg&#34;&gt;Twitter&lt;/a&gt;, &lt;a href=&#34;https://github.com/neonlabsorg&#34;&gt;GitHub&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/channel/UCAL2uFkKkfBgz3mXFN3UDTQ&#34;&gt;YouTube&lt;/a&gt;, and &lt;a href=&#34;https://neonlabsorg.medium.com/&#34;&gt;Medium&lt;/a&gt; for more development updates and announcements.&lt;/p&gt;
+&lt;p&gt;我们希望您发现这篇文章内容丰富。如果您对 Neon 的 SPL 治理合约的安全审计有任何疑问，请随时与我们联系。您可以通过 &lt;a href=&#34;https://discord.com/invite/9jVYEDVwn8&#34;&gt;Discord&lt;/a&gt; 联系团队。最后，在 &lt;a href=&#34;https://twitter.com/neonlabsorg&#34;&gt;Twitter&lt;/a&gt;、&lt;a href=&#34;https://github.com/neonlabsorg&#34;&gt;GitHub&lt;/a&gt;、&lt;a href=&#34;https://www.youtube&#34;&gt;YouTube&lt;/a&gt;  &lt;a href=&#34;https://neonlabsorg.medium.com/&#34;&gt;Medium&lt;/a&gt; 了解更多开发更新和公告，与团队保持联系。&lt;/p&gt;
+">Ackee区块链完成 Neon 的治理审计 (Ackee Blockchain Completes Neon’s Governance Audit)</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/"" data-c="
@@ -8481,6 +8551,7 @@ Ce blog stockera toutes les œuvres de &lt;a href=&#34;https://twitter.com/Chain
 &lt;h2 id=&#34;neon-evm技术文档-neon-evm-docs&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/neonwp/&#34;&gt;Neon EVM技术文档 (Neon EVM Docs)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;neon-evm白皮书-neon-evm-whitepaper&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/neonwp/11wp/wp&#34;&gt;Neon EVM白皮书  (Neon EVM Whitepaper)&lt;/a&gt;&lt;/h2&gt;
 &lt;h1 id=&#34;项目进展project-updating&#34;&gt;项目进展(Project Updating)&lt;/h1&gt;
+&lt;h2 id=&#34;ackee区块链完成-neon-的治理审计-ackee-blockchain-completes-neons-governance-audit&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/ackee-qu-kuai-lian-wan-cheng-neon-de-zhi-li-shen-ji-ackee-blockchain-completes-neons-governance-audit&#34;&gt;Ackee区块链完成 Neon 的治理审计 (Ackee Blockchain Completes Neon’s Governance Audit)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;mixbytes在neon-evm成功部署uniswap-v2-mixbytes-successfully-deploys-uniswap-v2-protocol-on-neon-evm&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/mixbytes-zai-neon-evm-cheng-gong-bu-shu-uniswap-v2-mixbytes-successfully-deploys-uniswap-v2-protocol-on-neon-evm&#34;&gt;MixBytes在Neon EVM成功部署Uniswap V2 (MixBytes Successfully Deploys Uniswap V2 Protocol on Neon EVM)&lt;/a&gt;&lt;/h2&gt;
 ">Neon中文材料合集-不断更新中(Neon Chinese Materials-Updating)</a>
       </div>

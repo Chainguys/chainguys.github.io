@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-14T03:25:12.918Z</updated>
+    <updated>2022-10-17T10:01:48.508Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,79 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Ackee区块链完成 Neon 的治理审计 (Ackee Blockchain Completes Neon’s Governance Audit)]]></title>
+        <id>https://chainguys.github.io/post/ackee-qu-kuai-lian-wan-cheng-neon-de-zhi-li-shen-ji-ackee-blockchain-completes-neons-governance-audit/</id>
+        <link href="https://chainguys.github.io/post/ackee-qu-kuai-lian-wan-cheng-neon-de-zhi-li-shen-ji-ackee-blockchain-completes-neons-governance-audit/">
+        </link>
+        <updated>2022-10-13T10:00:17.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*s1rfUjRRm0Qki1m78ESBcA.png" alt="" loading="lazy"></figure>
+<p>Between June 27 and July 22, 2022, <a href="https://ackeeblockchain.com/">Ackee Blockchain</a> conducted a security audit of Neon’s Governance contract. The Ackee Blockchain team is composed of auditors and white hat hackers who perform security audits and assessments including code review, testing, automated analysis, and local deployment/hacking.</p>
+<p>在 2022 年 6 月 27 日至 7 月 22 日期间，<a href="https://ackeeblockchain.com/">Ackee区块链</a> 对 Neon 的治理合约进行了安全审计。 Ackee 区块链团队由审计员和白帽黑客组成，他们执行安全审计和评估，包括代码审查、测试、自动分析和本地部署/黑客攻击。</p>
+<p>At the end of the 26-day audit process, a <em>Findings and Recommendations</em> report was delivered to the Neon Labs team. In this article, we’ll outline the scope, goals, and process of the Ackee security audit and summarize the notable findings.</p>
+<p>在 26 天的审核过程结束时，一份 <em>调查结果和建议</em> 报告已提交给 Neon Labs 团队。在本文中，我们将概述 Ackee 安全审计的范围、目标和过程，并总结值得注意的发现。</p>
+<h1 id="安全审计的范围-scope-of-the-security-audit">安全审计的范围 (Scope of the Security Audit)</h1>
+<p>Ackee Blockchain focused the security audit on understanding and reviewing the Neon SPL Governance contract. In addition, the team reviewed the source code and security of the Neon maintenance program and custom add-ins. The specific commit audited was <em>f13d7e7c1507819306797688ce0bb1f6950a5038</em> of the <a href="https://github.com/neonlabsorg/neon-spl-governance">neonlabsorg/neon-spl-governance</a> repository.</p>
+<p>Ackee区块链将安全审计的重点放在理解和审查 Neon SPL 治理合约上。此外，团队还审查了 Neon 维护程序和自定义插件的源代码和安全性。审核的具体提交是 <a href="https://github.com/neonlabsorg/neon-spl-governance">neonlabsorg/neon-spl-governance</a> 存储库的 <em>f13d7e7c1507819306797688ce0bb1f6950a5038</em>。</p>
+<p>The programs covered include:<br>
+涵盖的计划包括：</p>
+<ul>
+<li>maintanance/program 维护/程序</li>
+<li>addin-fixed-weights/program 附加固定权重/程序</li>
+<li>addin- vesting/program 附加注入/计划</li>
+<li>governance-lib 治理库</li>
+</ul>
+<p>During the review, Ackee paid particular attention to:<br>
+在审核过程中，Ackee 特别关注：</p>
+<ul>
+<li>
+<p>whether the SPL-governance contract specifications are implemented correctly for the custom add-ins.<br>
+是否为自定义加载项正确实施了 SPL 治理合约规范。</p>
+</li>
+<li>
+<p>whether the programs correctly use dependencies or other supporting programs (e.g., SPL dependencies).<br>
+程序是否正确使用依赖项或其他支持程序(例如，SPL 依赖项)。</p>
+</li>
+<li>
+<p>whether the code is vulnerable to voting manipulation.<br>
+代码是否容易受到投票操纵。</p>
+</li>
+</ul>
+<h1 id="安全审计的目的目标-purposegoals-of-the-security-audit">安全审计的目的/目标 (Purpose/Goals of the Security Audit)</h1>
+<p>Neon Labs always strives to reach the highest security standard for our services and platforms, including Neon Governance. The Ackee discovered findings from the audit that will be urgently addressed and will continue to challenge and motivate our product team.</p>
+<p>Neon Labs 始终致力于为我们的服务和平台(包括 Neon Governance)达到最高安全标准。 Ackee 发现审计结果将被紧急处理，并将继续挑战和激励我们的产品团队。</p>
+<p>The main goal of the security audit was to assess the security posture of the SPL governance contract and associated programs to identify potential vulnerabilities. Ackee Blockchain aimed to meet this goal through a review of the targeted source code and documentation, execution of a penetration test, and evaluation of the testing process.</p>
+<p>安全审计的主要目标是评估 SPL 治理合约和相关程序的安全状况，进而识别潜在的漏洞。 Ackee 区块链旨在通过审查目标源代码和文档、执行渗透测试和评估测试过程来实现这一目标。</p>
+<h1 id="安全审计程序-the-security-audit-procedure">安全审计程序 (The Security Audit Procedure)</h1>
+<p><strong>1. 代码审查 Code Review</strong></p>
+<p>Ackee began the security audit by reviewing the specifications, sources, and instructions related to Neon’s SPL Governance contract. Following the initial review, the Ackee team conducted a manual line-by-line review of Neon’s in-scope source code.</p>
+<p>Ackee 通过审查与 Neon 的 SPL 治理合约相关的规范、来源和说明开始了安全审计。在初步审查之后，Ackee 团队对 Neon 范围内的源代码进行了手动逐行审查。</p>
+<p><strong>2. 测试和自动分析 Testing and Automated Analysis</strong></p>
+<p>Following the code review, Ackee ran automated tests to ensure the SPL Governance contract functioned as intended. As part of the testing, Ackee also wrote missing unit or “fuzzy tests” using their Solana testing framework, <a href="https://solana.com/riptide/voting/trdelnik">Trdelnik</a>.</p>
+<p>在代码审查之后，Ackee 运行自动化测试来确保 SPL 治理合约按预期运行。作为测试的一部分，Ackee 还使用他们的 Solana 测试框架 <a href="https://solana.com/riptide/voting/trdelnik">Trdelnik</a> 编写了缺失的单元或“模糊测试”。</p>
+<p><strong>3. 本地部署 + 黑客攻击 Local Deployment + Hacking</strong></p>
+<p>In the final steps of the security audit, Ackee initiated a white hat hacking campaign to try and manipulate the system based on their findings from steps one and two. Programs were deployed locally in an attempt to attack and break the in-scope system. Hacking is a beneficial way to round out the audit and ensure there are no additional holes in the source code and platform.</p>
+<p>在安全审计的最后阶段，Ackee 发起了一场白帽黑客攻击活动，试图根据他们在第一步和第二步中的发现来操纵系统。程序被部署在本地，试图攻击和破坏范围内的系统。黑客攻击是完成审计并确保源代码和平台中没有额外漏洞的有益方式。</p>
+<h1 id="neon-evm-安全审计结果-neon-evm-security-audit-outcome">Neon EVM 安全审计结果 (Neon EVM Security Audit Outcome)</h1>
+<p>The Ackee Security Audit presented findings by categorizing issues according to severity, impact, and likelihood. The results identified some core issues and mandatory clean-ups for the Neon Labs team to address, along with some recommendations to be implemented.</p>
+<p>Ackee 安全审计通过根据严重性、影响和可能性对问题进行分类来展示调查结果。结果确定了 Neon Labs 团队需要解决的一些核心问题和要做的强制清理，以及一些需要实施的建议。</p>
+<p>The security audit identified eight issues that range from critical to informational in terms of severity. The Neon Labs team has reviewed these issues and has already begun to address them.</p>
+<p>安全审计确定了八个问题，从严重程度来看，从严重到知会不等。 Neon Labs 团队已经审查了这些问题，并且已经开始着手解决这些问题。</p>
+<p>The two critical issues identified by the audit are as:</p>
+<p>审计发现的两个关键问题如下：</p>
+<p><strong>1. It is possible to manipulate the voting process while using the fixed-weights addin.</strong><br>
+可以在使用固定权重插件时操纵投票过程</p>
+<p><em>This vulnerability allows users to select a number higher than 100%, which gives additional weight to their vote to such an extent that a single user (member of governance) could practically decide on any proposal by themself.</em></p>
+<p><em>此漏洞允许用户选择高于 100% 的数字，这为他们的投票提供了额外的权重，以至于单个用户(治理成员)实际上可以自己决定任何提案</em></p>
+<p><strong>2. When using the add in-vesting (for realm), the first user will be able to decide on any proposal after their deposit.</strong><br>
+使用附加注入时(针对领域)时，第一个用户将能够在存款后决定任何提案。</p>
+<p><em>In this scenario, the first user who calls a deposit can immediately create a proposal and vote for it. Since their vote would have 100% weight, the proposal would be marked as successful.</em></p>
+<p><em>在这种情况下，第一个调用存款的用户可以立即创建提案并对其进行投票。由于他们的投票权重为 100%，因此提案将被标记为成功。</em></p>
+<h1 id="结论-conclusion">结论 (Conclusion)</h1>
+<p>We hope you found this article informative. If you have any questions about the security audit of Neon’s SPL Governance contract, don’t hesitate to reach out. You can contact the team via <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a>. Lastly, stay connected with the team on <a href="https://twitter.com/neonlabsorg">Twitter</a>, <a href="https://github.com/neonlabsorg">GitHub</a>, <a href="https://www.youtube.com/channel/UCAL2uFkKkfBgz3mXFN3UDTQ">YouTube</a>, and <a href="https://neonlabsorg.medium.com/">Medium</a> for more development updates and announcements.</p>
+<p>我们希望您发现这篇文章内容丰富。如果您对 Neon 的 SPL 治理合约的安全审计有任何疑问，请随时与我们联系。您可以通过 <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a> 联系团队。最后，在 <a href="https://twitter.com/neonlabsorg">Twitter</a>、<a href="https://github.com/neonlabsorg">GitHub</a>、<a href="https://www.youtube">YouTube</a>  <a href="https://neonlabsorg.medium.com/">Medium</a> 了解更多开发更新和公告，与团队保持联系。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[模块化执行的案例(第一部分) The Case for Modular Execution (Part 1)]]></title>
         <id>https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/</id>
@@ -999,184 +1072,6 @@ Arweave 主网上的 <strong>Akord 协议</strong></p>
 <p>这些工具只是第一步。我们需要您想象各种可能性。建立在用户拥有数据之上的未来，仍有待编写。</p>
 <p>We’re excited to help grow and support the developers and the dreamers who will take the Akord protocol to seize control of their data. We’ll soon be announcing details of the Akord Builders Grants to kickstart this journey.</p>
 <p>我们很高兴能够帮助发展和支持将采用 Akord 协议来控制其数据的开发人员和梦想家。我们很快将公布 Akord开发者奖金(Akord Builders Grants) 的详细信息，来启动这一旅程。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MixBytes在Neon EVM成功部署Uniswap V2 (MixBytes Successfully Deploys Uniswap V2 Protocol on Neon EVM)]]></title>
-        <id>https://chainguys.github.io/post/mixbytes-zai-neon-evm-cheng-gong-bu-shu-uniswap-v2-mixbytes-successfully-deploys-uniswap-v2-protocol-on-neon-evm/</id>
-        <link href="https://chainguys.github.io/post/mixbytes-zai-neon-evm-cheng-gong-bu-shu-uniswap-v2-mixbytes-successfully-deploys-uniswap-v2-protocol-on-neon-evm/">
-        </link>
-        <updated>2022-09-26T04:07:39.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*lu_ZhSuH91B8tIwWTHVeMw.png" alt="" loading="lazy"></figure>
-<p>Neon Labs recently partnered with MixBytes to prove the functionality and performance of Neon EVM via the deployment of Ethereum dApps. The exercise involved the MixBytes team deploying and assessing the Uniswap v2 protocol on both local network and Devnet. The Uniswap v2 protocol, which was originally developed on Ethereum, allows users to exchange tokens without relying on a centralized exchange, helping with asset liquidity and reducing volatility.</p>
-<p>Neon Labs 最近与 MixBytes 合作，通过部署以太坊 dApp 来证明 Neon EVM 的功能和性能。该练习涉及 MixBytes 团队在本地网络和 Devnet 上部署和评估 Uniswap v2 协议。 Uniswap v2 协议最初是在以太坊上开发的，允许用户在不依赖中心化交易所的情况下交换代币，有助于资产流动性和降低波动性。</p>
-<h2 id="谁是-mixbyteswho-is-mixbytes">谁是 MixBytes？(Who is MixBytes?)</h2>
-<p><a href="https://mixbytes.io/">MixBytes</a> is a blockchain solution advisory company that provides a comprehensive suite of services for smart contract development and testing, including security audits and protocol development.</p>
-<p><a href="https://mixbytes.io/">MixBytes</a> 是一家区块链解决方案咨询公司，为智能合约开发和测试提供一整套服务，包括安全审计和协议开发。</p>
-<h1 id="我们的目标-our-objective">我们的目标 (Our Objective)</h1>
-<p>The objective of deploying the Uniswap v2 protocol to Neon EVM was to verify that the level of effort required, and performance, is the same on both Ethereum and Neon. Upon successful deployment, the team also wanted to confirm the expected functionality of the Uniswap v2 protocol and test its performance in production-like scenarios.</p>
-<p>将 Uniswap v2 协议部署到 Neon EVM 的目的是验证所需的工作量和性能，在以太坊和 Neon 上是否相同。成功部署后，该团队还希望确认 Uniswap v2 协议的预期功能，并在类似生产的场景中测试其性能。</p>
-<h1 id="测试方法-testing-methodology">测试方法 (Testing Methodology)</h1>
-<p>MixBytes deployed the Uniswap v2 protocol on local Neon and Solana environments to test functionality and performance. The deployment included Uniswap v2 protocol contracts, required libraries, and testing artifacts. Firstly, the following script was executed:</p>
-<p>MixBytes 在本地 Neon 和 Solana 环境中部署了 Uniswap v2 协议，以测试功能和性能。该部署包括 Uniswap v2 协议合约、所需的库和测试工件。首先，执行以下脚本：</p>
-<p><em>npx hardhat run ./scripts/deploy.ts</em></p>
-<p>Then, the environment was deployed with <a href="https://github.com/dmitryn2018/Uniswap-V2-NEON/blob/02919149d17b0dc84d7ed7555b682d917dddc178/docker-compose.neon.yml">this Docker config</a> file by executing the below command:<br>
-然后，通过执行以下命令，使用 <a href="https://github.com/dmitryn2018/Uniswap-V2-NEON/blob/02919149d17b0dc84d7ed7555b682d917dddc178/docker-compose.neon.yml">此 Docker 配置</a> 文件部署环境：</p>
-<pre><code>//sudo NEON_EVM_COMMIT=v0.8.3 FAUCET_COMMIT=latest REVISION=v0.9.1 docker-compose -f docker-compose.neon.yml up -d
-</code></pre>
-<p>Additionally, the following network configurations were applied to the <a href="https://github.com/dmitryn2018/Uniswap-V2-NEON/blob/02919149d17b0dc84d7ed7555b682d917dddc178/hardhat.config.ts">hardhat.config.ts</a> file:</p>
-<p>此外，以下网络配置已应用于 <a href="https://github.com/dmitryn2018/Uniswap-V2-NEON/blob/02919149d17b0dc84d7ed7555b682d917dddc178/hardhat.config.ts">hardhat.config.ts</a> 文件：</p>
-<pre><code>import { HardhatUserConfig } from &quot;hardhat/config&quot;;
-
-import &quot;@nomicfoundation/hardhat-toolbox&quot;;
-
-const config: HardhatUserConfig = {
-
-solidity: {
-
-compilers: [
-
-{
-
-version: &quot;0.5.0&quot;
-
-},
-
-{
-
-version: &quot;0.5.16&quot;
-
-},
-
-{
-
-version: &quot;0.6.6&quot;
-
-},
-
-{
-
-version: &quot;0.6.12&quot;
-
-},
-
-],
-
-settings: {
-
-optimizer: {
-
-enabled: true,
-
-runs: 999999,
-
-},
-
-},
-
-},
-
-defaultNetwork: 'neonlabs',
-
-networks: {
-
-hardhat: {
-
-gas: 3000000000,
-
-blockGasLimit: 100000000429720,
-
-gasPrice: 875000000
-
-},
-
-neonlabs: {
-
-url: 'http://localhost:9090/solana',
-
-accounts: ['0x41167312f8c46439b2bcc5e5a6af929262efcd20357a56ebcbc455d835d9f080',
-
-'0x41167312f8c46439b2bcc5e5a6af929262efcd20357a56ebcbc455d835d9f081', '0x41167312f8c46439b2bcc5e5a6af929262efcd20357a56ebcbc455d835d9f082',
-
-'0x41167312f8c46439b2bcc5e5a6af929262efcd20357a56ebcbc455d835d9f083', '0x41167312f8c46439b2bcc5e5a6af929262efcd20357a56ebcbc455d835d9f084'],
-
-// @ts-ignore
-
-network_id: 111,
-
-chainId: 111,
-
-allowUnlimitedContractSize: false,
-
-timeout: 100000000,
-
-// @ts-ignore
-
-isFork: true
-
-}
-
-},
-
-};
-
-export default config;
-</code></pre>
-<h1 id="测试范围-testing-scope">测试范围 (Testing Scope)</h1>
-<p>The scope of the testing focused on the deployed contracts:<br>
-测试的范围集中在已部署的合约上：</p>
-<ul>
-<li>UniswapV2Factory contract</li>
-<li>UniswapV2Router01contract</li>
-<li>UniswapV2Pair contract</li>
-<li>Liquidity Pool (LP) token farming test contracts</li>
-</ul>
-<h1 id="测试执行-testing-execution">测试执行 (Testing Execution)</h1>
-<p>MixBytes assessed the liquidity pool creation functionality by deploying two liquidity pools: one liquidity pool containing only native SOL tokens, and the other containing two non-native tokens. Once the liquidity pools were created, the team tested the “swap_with_exact_input” and “swap_with_exact_output” variants.</p>
-<p>MixBytes 通过部署两个流动性池来评估流动性池创建功能：一个流动性池仅包含原生 SOL 代币，另一个包含两个非原生代币。创建流动性池后，团队测试了“swap_with_exact_input”和“swap_with_exact_output”变体。</p>
-<p>In regards to LP farming scenarios, the team tested the following common use cases:<br>
-针对 LP挖矿场景，团队测试了以下常见用例：</p>
-<ul>
-<li>
-<p>Adding tokens to the two newly created liquidity pools<br>
-将代币添加到两个新创建的流动性池中</p>
-</li>
-<li>
-<p>Receiving LP tokens after depositing liquidity<br>
-存入流动性后接收LP代币</p>
-</li>
-<li>
-<p>Performing token swaps using the liquidity pools<br>
-使用流动性池执行代币交换</p>
-</li>
-<li>
-<p>Transferring LP tokens to another beneficiary<br>
-将 LP 代币转移给另一个受益人</p>
-</li>
-<li>
-<p>Collecting rewards from liquidity pools<br>
-从流动资金池中收集奖励</p>
-</li>
-</ul>
-<p>The project deliverables can be found on <a href="https://github.com/dmitryn2018/Uniswap-V2-NEON/">Neon’s GitHub</a>. The contract and token addresses are noted below:</p>
-<p>项目可交付成果可在 <a href="https://github.com/dmitryn2018/Uniswap-V2-NEON/">Neon 的 GitHub</a> 上找到。合约和代币地址如下：</p>
-<ul>
-<li><strong>UniswapV2Factory address:</strong> 0x8eA3207A157106B68ECa73638cbacdD6973DaBda</li>
-<li><strong>UniswapV2Router01address:</strong> 0x4f8C61909f92c4c8f83E527D8f063F78322b35b7</li>
-<li><strong>UniswapV2Pair contract 1 (tokens 1,2) address:</strong> 0xDa0Ed5e2Adda73c6336A1ae9C87A4BbC3Ba46876</li>
-<li><strong>UniswapV2Pair contract 2 (tokens 2,3) address:</strong> 0xf285B885f0F113b5fF54354492a6Bac38a6AC188</li>
-<li><strong>Token1 address:</strong> 0x72acC5B7306FB3886Dbcea62eB8Cffd83bEE5b9c</li>
-<li><strong>Token2 address:</strong> 0x66dE9Ee76b78085ab73386741e20A82c6db09f2B</li>
-<li><strong>Token3 address:</strong> 0x8346aD3Ba1476890524eF262a47b589365633E30</li>
-</ul>
-<p>The following image highlights the output and status of the testing scenarios at each execution phase.</p>
-<p>下图突出显示了每个执行阶段的测试场景的输出和状态。</p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*BTSYtAVch83CkiNQ" alt="" loading="lazy"></figure>
-<h1 id="发现-findings">发现 (Findings)</h1>
-<p>At the time of testing, all functions of the Uniswap v2 protocol within our testing scope performed as expected on the local Neon network and Devnet. The testing scenarios selected demonstrate the same output in the Hardhat network as in the Neon environment. Overall, the deployment of the Uniswap v2 protocol Solidity code to Neon was seamless and raised no issues. No modifications to the contracts’ source code were required.</p>
-<p>在测试时，我们测试范围内的 Uniswap v2 协议的所有功能在本地 Neon 网络和 Devnet 上都按预期执行。所选的测试场景展示了 Hardhat 网络中与 Neon 环境中相同的输出。总体而言，将 Uniswap v2 协议 Solidity 代码部署到 Neon 是无缝的，没有出现任何问题。无需修改合约的源代码。</p>
-<p>For more information on the Uniswap v2 deployment, check out our <a href="https://twitter.com/neonlabsorg/status/1572586328931586052?s=20&amp;t=sG9w6qNOgSZO_tPusl0c9Q">recent AMA</a>. Now, its your turn to deploy your own smart contracts to Neon EVM. Make sure to let us know what you think. If you run into any issues or need additional guidance, check out our <a href="https://docs.neon-labs.org/">Neon Docs</a> or reach out to a team member on <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a>. We know that you’ll create something great!</p>
-<p>有关 Uniswap v2 部署的更多信息，请查看我们的 <a href="https://twitter.com/neonlabsorg/status/1572586328931586052?s=20&amp;t=sG9w6qNOgSZO_tPusl0c9Q">最近的 AMA</a>。现在，轮到您将自己的智能合约部署到 Neon EVM。请务必让我们知道您的想法。如果您遇到任何问题或需要更多指导，请查看我们的 <a href="https://docs.neon-labs.org/">Neon Docs</a> 或通过 [Discord](https://discord. com/invite/9jVYEDVwn8) 联系。我们知道你会创造出伟大的东西！</p>
 ]]></content>
     </entry>
 </feed>
