@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-17T10:01:48.508Z</updated>
+    <updated>2022-10-19T09:49:10.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,41 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[SeiNetwork长推-20221014 (SeiNetwork twitter threads-20221014)]]></title>
+        <id>https://chainguys.github.io/post/seinetwork-chang-tui-20221014-seinetwork-twitter-threads-20221014/</id>
+        <link href="https://chainguys.github.io/post/seinetwork-chang-tui-20221014-seinetwork-twitter-threads-20221014/">
+        </link>
+        <updated>2022-10-14T09:39:53.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://pbs.twimg.com/profile_images/1579219797392474118/_PpJrD9Z_x96.jpg" alt="" loading="lazy"></figure>
+<p>原文地址:<a href="https://twitter.com/SeiNetwork/status/1580703985836515329">https://twitter.com/SeiNetwork/status/1580703985836515329</a></p>
+<p>1/ Minimizing latency is crucial. A thread on what that means and how Sei is making strides to have extremely fast time to finality through collocating validators.</p>
+<p>最小化延迟至关重要。这篇长推将解释这意味着什么，以及 Sei 如何通过并置验证者来以极快的速度完成最终确定。</p>
+<p>2/ What is &quot;time to finality&quot;? &quot;Time to finality&quot; describes the time between when blocks are committed to the blockchain. Sei has a strong focus on minimizing our network latency to create the best environment for decentralized exchanges to deploy and scale.</p>
+<p>什么是“完成时间”？ “完成时间”描述了将块提交到区块链之间的时间。 Sei 非常注重最大限度地减少的网络延迟，为去中心化交易所的部署和扩展创造最佳环境。</p>
+<p>3/ For optimal performance, sei ran load tests with a smaller validator set that was colocated.</p>
+<p>为了获得最佳性能，sei 使用托管的较小验证者集进行负载测试。</p>
+<figure data-type="image" tabindex="2"><img src="https://pbs.twimg.com/media/Fe_J5_nUoAAdq_v?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<hr>
+<p>4/ Why colocation? Internationally scattered validators have higher latency when reaching consensus and producing blocks because it takes longer for messages to travel between them.</p>
+<p>为什么要托管？国际上分散的验证者在达成共识和生成区块时具有更高的延迟，因为消息在它们之间传输需要更长的时间。</p>
+<p>5/ After extensive research on colocation Sei found:<br>
+Colocation reduces latency by ~46% vs. international dispersion<br>
+50 validators is the limit before seeing increased latency by adding more validators Full research here</p>
+<p>Sei 在对托管进行广泛研究后发现：<br>
+与国际分散相比，托管可将延迟降低约 46%<br>
+50 个验证器是通过添加更多验证器来增加延迟之前的限制，您可以查看以下研究</p>
+<p><a href="https://twitter.com/jayendra_jog/status/1552830894091644929">https://twitter.com/jayendra_jog/status/1552830894091644929</a></p>
+<p>6/ Although testing for the software and hardware designs is still ongoing, interested teams are actively considering expanding to Sei. A number of protocols are prepared to deploy on Sei at mainnet launch.</p>
+<p>尽管软件和硬件设计的测试仍在进行中，但感兴趣的团队正在积极考虑扩展到 Sei。许多协议准备在主网启动时部署在 Sei 上。</p>
+<p>7/ To learn more about how Sei creates an environment custom-built for <a href="https://twitter.com/hashtag/DEX?src=hashtag_click">#DEX</a> applications in-depth check out our GitBook: <a href="https://t.co/F4HHZRnu9Z">https://docs.seinetwork.io/introduction/overview…</a></p>
+<p>要深入了解 Sei 如何为 <a href="https://twitter.com/hashtag/DEX?src=hashtag_click">#DEX</a> 应用创建定制环境的更多信息，请查看我们的 GitBook：<a href="https://t.co/F4HHZRnu9Z">https:// docs.seinetwork.io/introduction/overview…</a></p>
+<p>8/ Shoutout to the<a href="https://twitter.com/Delphi_Digital">@Delphi_Digital</a> team for writing in-depth research about Sei! Read the full report here<br>
+[Learn more in our new PRO report.]</p>
+<p>向 <a href="https://twitter.com/Delphi_Digital">@Delphi_Digital</a> 团队致敬，感谢他们撰写有关 Sei 的深入研究！在此处阅读完整报告</p>
+<p>[在新 PRO 报告中了解更多信息。]</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Ackee区块链完成 Neon 的治理审计 (Ackee Blockchain Completes Neon’s Governance Audit)]]></title>
         <id>https://chainguys.github.io/post/ackee-qu-kuai-lian-wan-cheng-neon-de-zhi-li-shen-ji-ackee-blockchain-completes-neons-governance-audit/</id>
@@ -693,6 +728,108 @@ Apply for a grant <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">here</a
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Neon EVM：如何使用Truffle部署dApps (Neon EVM：How to Deploy dApps Using Truffle)]]></title>
+        <id>https://chainguys.github.io/post/neon-evmru-he-shi-yong-truffle-bu-shu-dapps-neon-evmhow-to-deploy-dapps-using-truffle/</id>
+        <link href="https://chainguys.github.io/post/neon-evmru-he-shi-yong-truffle-bu-shu-dapps-neon-evmhow-to-deploy-dapps-using-truffle/">
+        </link>
+        <updated>2022-10-05T09:42:34.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*FyXVoy4GqE7wr39rFjBN8A.png" alt="" loading="lazy"></figure>
+<hr>
+<p>As a developer, you know the importance of understanding how to deploy the smart contract code you’ve written onto the blockchain. Our Deploying Neon dApps article series provides this crucial information in a simple and straightforward way. This article, the second in the series, will show you how to deploy Solidity dApps using Truffle. You can also check out our articles on deploying Neon with <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2">Remix</a> and Hardhat.</p>
+<p>作为开发人员，您知道这件事的重要性：了解如何将您编写的智能合约代码部署到区块链上。我们的 Deploying Neon dApps(部署Neon dApps) 系列文章以简单直接的方式提供了这些重要信息。本文是该系列的第二篇，将向您展示如何使用 Truffle 部署 Solidity dApp。您还可以查看我们关于使用 <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2">Remix</a> 和 Hardhat 部署 Neon 的文章。</p>
+<p><a href="https://trufflesuite.com/">Truffle</a> is a deployment tool, development environment, and asset pipeline that makes it easy for developers to test and debug their code on-chain. Unlike Remix, which only supports a few functions and can’t run automated tests, Truffle is an advanced and flexible tool that can support much more complex code. However, Truffle can only be used via a command-line interface and is not an IDE.</p>
+<p><a href="https://trufflesuite.com/">Truffle</a> 是一个部署工具、开发环境和资产管道，可让开发人员轻松测试和调试其链上代码。与仅支持少数功能且无法运行自动化测试的 Remix 不同，Truffle 是一种先进且灵活的工具，可以支持更复杂的代码。但是，Truffle 只能通过命令行界面使用，而不是 IDE。</p>
+<p>To deploy your contracts successfully, you will need to modify the publicly available Truffle configuration file, which contains the private keys for the wallets the contract interacts with. For this reason, you should only use Truffle for debugging or testing purposes and not for mainnet deployment.</p>
+<p>要成功部署您的合约，您需要修改公开可用的 Truffle 配置文件，其中包含与合约交互的钱包的私钥。出于这个原因，你应该只将 Truffle 用于调试或测试目的，而不是用于主网部署。</p>
+<p><strong>Before You Begin</strong><br>
+<strong>准备工作</strong></p>
+<p>Before you start the tutorial below, make that the following is true:<br>
+在开始下面的教程之前，请确保以下内容为真：</p>
+<ul>
+<li>
+<p>MetaMask is installed on your device<br>
+MetaMask 已安装在您的设备上</p>
+</li>
+<li>
+<p>MetaMask is configured for Neon EVM<br>
+MetaMask 已配置 Neon EVM</p>
+</li>
+<li>
+<p>NodeJS v8.9.4 or later is installed on your device<br>
+您的设备上已安装 NodeJS v8.9.4 或更高版本</p>
+</li>
+<li>
+<p>Git is installed on your device (on Windows, use Git Bash)<br>
+Git 已安装在您的设备上(在 Windows 上，使用 Git Bash)</p>
+</li>
+</ul>
+<p>To install and configure MetaMask, follow <a href="https://docs.neon-labs.org/docs/wallet/metamask_setup">this guide</a>.<br>
+要安装和配置 MetaMask，请按照 <a href="https://docs.neon-labs.org/docs/wallet/metamask_setup">本指南</a>。</p>
+<p><strong>ERC-20 Tutorial</strong><br>
+<strong>ERC-20 教程</strong></p>
+<p>The following tutorial will explain how to deploy a simple ERC-20 token contract to the Neon Devnet using Truffle.</p>
+<p>以下教程将解释如何使用 Truffle 将简单的 ERC-20 代币合约部署到 Neon Devnet。</p>
+<p><strong>第1步：安装 Truffle (Step 1: Install Truffle)</strong></p>
+<p>Using Git, clone the ERC-20 Truffle project from Neon’s remote repository and navigate to it with the following commands:</p>
+<p>使用 Git，从 Neon 的远程存储库中克隆 ERC-20 Truffle 项目，并使用以下命令导航到该项目：</p>
+<pre><code>git clone https://github.com/neonlabsorg/examples.git
+
+cd examples/simple-erc20-truffle
+</code></pre>
+<p>Then, run the following command to install Truffle and the dependencies necessary to run the example project:</p>
+<p>然后，运行以下命令来安装 Truffle 和运行示例项目所需的依赖项：</p>
+<pre><code>npm install
+</code></pre>
+<p>If the above command results in an error, run the following command:</p>
+<p>如果上述命令导致错误，请运行以下命令：</p>
+<pre><code>npm cache clear --force
+
+npm install
+</code></pre>
+<p><strong>第2步：设置 MetaMask 帐户和配置文件 (Step 2: Set Up the MetaMask Accounts and Configuration File)</strong></p>
+<p>To interact with the soon-to-be-deployed contracts, you’ll need to create two new accounts in MetaMask. Before you begin, make sure that MetaMask is connected to the Neon Devnet.</p>
+<p>要与即将部署的合约交互，您需要在 MetaMask 中创建两个新账户。在开始之前，请确保 MetaMask 已连接到 Neon Devnet。</p>
+<p>In MetaMask, create two new accounts by clicking on your current account’s icon in the top right of the MetaMask extension pop-up, and then when the drop-down menu appears, click on “Create an Account”. Then, use the <a href="https://docs.neon-labs.org/docs/developing/utilities/faucet">NeonFaucet</a> to obtain some Devnet NEON tokens for these accounts.</p>
+<p>在 MetaMask 中，通过单击 MetaMask 扩展弹出窗口右上角的当前帐户图标创建两个新帐户，然后在出现下拉菜单时单击“创建帐户”。然后，使用 <a href="https://docs.neon-labs.org/docs/developing/utilities/faucet">NeonFaucet</a> 为这些帐户获取一些 Devnet NEON代币。</p>
+<p>Next, click on the three vertical dots to the right of your currently displayed account name and wallet address to open a drop-down menu. Select “Account Details” then “Export Private Key”. Enter your password and select “Confirm” to get access to the private key for that account. Copy both accounts’ private keys and paste them into the truffle-config.js file in the project folder, replacing the placeholder text in lines 11 and 12 of that file. Make sure to prefix these keys with “0x” in the configuration file.</p>
+<p>接下来，单击您当前显示的帐户名称和钱包地址右侧的三个垂直点，打开下拉菜单。选择“帐户详细信息”，然后选择“导出私钥”。输入您的密码并选择“确认”，访问该帐户的私钥。复制两个帐户的私钥并将它们粘贴到项目文件夹中的 truffle-config.js 文件中，替换该文件第 11 行和第 12 行中的占位符文本。确保在配置文件中为这些键添加前缀“0x”。</p>
+<p><strong>第3步：编译合约 (Step 3: Compile Contracts)</strong></p>
+<p>To compile the project’s contracts (which are located in the “contracts/” folder), run the following command:</p>
+<p>要编译项目的合约(位于“contracts/”文件夹中)，请运行以下命令：</p>
+<pre><code>./node_modules/.bin/truffle compile
+</code></pre>
+<p>The output from this command should be similar to the following:</p>
+<p>此命令的输出应类似于以下内容：</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*LtZtr_3WXLE0jqRh" alt="" loading="lazy"></figure>
+<p><strong>第4步：运行测试 (Step 4: Run Tests)</strong></p>
+<p>To run the project tests before deploying, run the following command. It will compile the contracts, deploy them to the Neon Devnet, and run all the tests in the “tests/” folder to make sure the contracts are working as expected.</p>
+<p>要在部署之前运行项目测试，请运行以下命令。它将编译合约，将它们部署到 Neon Devnet，并运行“tests/”文件夹中的所有测试，确保合约按预期工作。</p>
+<pre><code>./node_modules/.bin/truffle test --network neonlabs
+</code></pre>
+<p>If the tests all pass, the output of this command should look something like this</p>
+<p>如果测试全部通过，则此命令的输出应如下所示：</p>
+<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/0*N8dpM4prX_eNh3zV" alt="" loading="lazy"></figure>
+<p><strong>第5步：运行迁移 (Step 5: Run Migrations)</strong></p>
+<p>Deploying the contracts to Neon requires running some migration scripts, which are located in the “migrations/” folder. To do this, run the following command:</p>
+<p>将合约部署到 Neon 需要运行一些迁移脚本，这些脚本位于“migrations/”文件夹中。为此，请运行以下命令：</p>
+<pre><code>./node_modules/.bin/truffle migrate --network neonlabs
+</code></pre>
+<p>You should see output in your terminal similar to the following:</p>
+<p>您应该会在终端中看到类似于以下内容的输出：</p>
+<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/0*V9cMb296apRFdj4R" alt="" loading="lazy"></figure>
+<p><strong>第6步：将项目连接到 MetaMask (Step 6: Connect the Project to MetaMask)</strong></p>
+<p>To use this newly deployed ERC-20-style Neon Devnet token with ease, follow <a href="https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H">these instructions</a> to import the token as an asset in MetaMask. Use the “contract address” from the output in Step 5 for the “Token Contract Address” in the instructions.</p>
+<p>要轻松使用这个新部署的 ERC-20 式 Neon Devnet代币，请按照 <a href="https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H">这些说明</a>将代币作为资产导入 MetaMask。将步骤 5 输出中的“合约地址”用于说明中的“代币合约地址”。</p>
+<p>Once you complete this final step, you will be able to see your new ERC-20 assets in the MetaMask profiles of the new test accounts.</p>
+<p>完成最后一步后，您将能够在新测试帐户的 MetaMask 配置文件中看到您的新 ERC-20 资产。</p>
+<h2 id="结论-conclusion">结论 (Conclusion)</h2>
+<p>Truffle is a versatile, flexible solution for deploying dApps on Neon, with a lot of room for customization and playing with advanced features. However, because it has some security vulnerabilities when deploying to Neon, it remains usable only for testing and development. Therefore, while Truffle is great for Neon developers during the development process itself, the final deployment must be done with a different tool.</p>
+<p>Truffle 是用于在 Neon 上部署 dApp 的多功能、灵活的解决方案，具有很大的定制和使用高级功能的空间。但是，由于它在部署到 Neon 时存在一些安全漏洞，因此只能用于测试和开发。因此，虽然 Truffle 在开发过程中非常适合 Neon 开发人员，但最终部署必须使用不同的工具来完成。</p>
+<p>Visit the <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_truffle">Neon docs</a> for a complete tutorial on using Truffle to deploy your dApps.</p>
+<p>访问 <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_truffle">Neon docs</a>，获取有关使用 Truffle 部署 dApp 的完整教程。</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[超越单片链：模块化区块链范式 (Beyond Monolithic：The Modular Blockchain Paradigm)]]></title>
         <id>https://chainguys.github.io/post/chao-yue-dan-pian-lian-mo-kuai-hua-qu-kuai-lian-fan-shi-beyond-monolithicthe-modular-blockchain-paradigm/</id>
         <link href="https://chainguys.github.io/post/chao-yue-dan-pian-lian-mo-kuai-hua-qu-kuai-lian-fan-shi-beyond-monolithicthe-modular-blockchain-paradigm/">
@@ -871,207 +1008,6 @@ Apply for a grant <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">here</a
 <a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
 </li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SeiNetwork长推-20221004 (SeiNetwork twitter threads-20221004)]]></title>
-        <id>https://chainguys.github.io/post/seinetwork-chang-tui-20221004-seinetwork-twitter-threads-20221004/</id>
-        <link href="https://chainguys.github.io/post/seinetwork-chang-tui-20221004-seinetwork-twitter-threads-20221004/">
-        </link>
-        <updated>2022-10-04T00:16:54.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.seinetwork.io/_next/static/media/logo.fccb4544.svg" alt="" loading="lazy"></figure>
-<p>原文地址:<a href="https://twitter.com/SeiNetwork/status/1577086292730396672">https://twitter.com/SeiNetwork/status/1577086292730396672</a></p>
-<p>What does it mean to be optimized for <a href="https://twitter.com/hashtag/DeFI?src=hashtag_click">#DeFI</a>? Block times, finality, and latency are crucial when optimizing for financial applications. Sei optimizes for these from the ground up. A thread on why Sei gives <a href="https://twitter.com/hashtag/DeFI?src=hashtag_click">#DeFI</a> an unfair advantage</p>
-<p>针对 <a href="https://twitter.com/hashtag/DeFI?src=hashtag_click">#DeFI</a> 进行优化意味着什么？在优化金融应用时，出块时间、最终性和延迟至关重要。 Sei 从头开始优化这些。这是关于 Sei 为何给予 <a href="https://twitter.com/hashtag/DeFI?src=hashtag_click">#DeFI</a> 无与伦比优势的主题(长推)</p>
-<p>Short block times mean small price changes between blocks, tighter spreads, and less risk to MMs. Large block times are impractical for high-frequency finance. A standard <a href="https://twitter.com/hashtag/Cosmos?src=hashtag_click">#Cosmos</a> L1 has ~6s block times which makes orderbooks suboptimal. However, Sei is different.</p>
-<p>较短的区块时间意味着区块之间的价格变化较小，买卖点差较小，并且对做市商的风险较小。冗长的区块时间对于高频金融来说是不切实际的。标准的 <a href="https://twitter.com/hashtag/Cosmos?src=hashtag_click">#Cosmos</a> L1 有大约 6 秒的阻塞时间，这使得订单簿不是最理想的。然而，Sei不一样。</p>
-<p>Sei focuses on making changes to overload consensus to make it as fast as possible (~300-600ms). The three biggest areas of focus are to foster the best environment for DeFi:  optimistic block processing  intelligent block propagation  parallel order execution</p>
-<p>Sei 专注于对重载共识进行更改，以使其尽可能快（~300-600ms）。有三大重点领域为 DeFi 营造最佳环境：乐观区块处理 智能区块传播 并行订单执行。</p>
-<p>Sei does this by leveraging ABCI++. ABCI++ adds programmability to every step of consensus, allowing applications to reorder, modify, drop, delay, or add transactions, and speed up block times by introducing the ability to optimistically process blocks.</p>
-<p>Sei 通过利用 ABCI++ 来做到这一点。 ABCI++ 为共识的每一步增加了可编程性，允许应用重新排序、修改、删除、延迟或添加交易，并通过引入乐观处理区块的能力来加快出块时间。</p>
-<figure data-type="image" tabindex="2"><img src="https://pbs.twimg.com/media/FeLvoqlVIAAcIJs?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<p>By optimistically processing the state changes, Sei speeds up block times and reduces latency. Allowing validators to construct blocks locally rather than waiting to receive block chunks over the network, leading to blocks finalizing faster.</p>
-<p>通过乐观地处理状态变化，Sei 加快了出块时间并减少了延迟。允许验证者在本地构建区块，而不是等待通过网络接收，从而更快地完成区块。</p>
-<p>To learn more about Twin-Turbo Consensus, check out the <a href="https://twitter.com/hashtag/Cosmoverse?src=hashtag_click">#Cosmoverse</a> talk by <a href="https://twitter.com/jayendra_jog">@jayendra_jog</a><br>
-要了解有关 Twin-Turbo(双生涡轮) 共识的更多信息，请查看 <a href="https://twitter.com/jayendra_jog">@jayendra_jog</a> 的 <a href="https://twitter.com/hashtag/Cosmoverse?src=hashtag_click">#Cosmoverse</a> 谈话</p>
-<p><a href="https://twitter.com/jayendra_jog/status/1576263799635464192">https://twitter.com/jayendra_jog/status/1576263799635464192</a></p>
-<p>In addition to Twin Turbo Consensus, Sei implements parallel order execution and is able to see 75-90% reductions in block times.</p>
-<p>除了Twin-Turbo(双生涡轮) 共识之外，Sei 还实现了并行订单执行，并且能够实现 75-90% 的区块时间减少。</p>
-<figure data-type="image" tabindex="3"><img src="https://pbs.twimg.com/media/FeLvpZoVQAAQ9xc?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<p><a href="https://twitter.com/jayendra_jog/status/1560305088362528768">https://twitter.com/jayendra_jog/status/1560305088362528768</a></p>
-<p>Sei has also added:  native price oracle:<br>
-Sei 还添加了：</p>
-<ul>
-<li>
-<p>oracle built into the base layer<br>
-原生价格预言机：内置于基础层的预言机</p>
-</li>
-<li>
-<p>single block order execution<br>
-单块订单执行</p>
-</li>
-<li>
-<p>order bundling: updating prices on multiple markets in 1 tx<br>
-订单捆绑：在单笔交易内更新多个市场的价格</p>
-</li>
-<li>
-<p>frequent batch auctioning: aggregating orders at the end of the block to clear at a single price<br>
-频繁批量拍卖：在块结束时聚合订单以单一价格清算</p>
-</li>
-</ul>
-<p>To learn more about how Sei creates an environment custom-built for <a href="https://twitter.com/hashtag/DEX?src=hashtag_click">#DEX</a> applications in-depth check out our GitBook: <a href="https://t.co/F4HHZRFDo7">https://docs.seinetwork.io/introduction/overview…</a></p>
-<p>要深入了解 Sei 如何为 <a href="https://twitter.com/hashtag/DEX?src=hashtag_click">#DEX</a> 应用程序创建定制环境的更多信息，请查看我们的 GitBook：<a href="https://t.co/F4HHZRFDo7">https://docs. seinetwork.io/introduction/overview…</a></p>
-<p>Huge shoutout to the<a href="https://twitter.com/Delphi_Digital">@Delphi_Digital</a></p>
-<p>对 <a href="https://twitter.com/Delphi_Digital">@Delphi_Digital</a> 大声感谢！</p>
-<p>team for writing in-depth research about Sei! Read the full report here</p>
-<p>撰写有关 Sei 的深入研究的团队！在此处阅读完整报告</p>
-<p><a href="https://twitter.com/Delphi_Digital/status/1575538338651869184">https://twitter.com/Delphi_Digital/status/1575538338651869184</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Akord协议—向所有构建者开源 (Akord protocol – open for builders)]]></title>
-        <id>https://chainguys.github.io/post/akord-xie-yi-xiang-suo-you-gou-jian-zhe-kai-yuan-akord-protocol-open-for-builders/</id>
-        <link href="https://chainguys.github.io/post/akord-xie-yi-xiang-suo-you-gou-jian-zhe-kai-yuan-akord-protocol-open-for-builders/">
-        </link>
-        <updated>2022-09-26T10:07:36.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/media/Akord-Builder-Blog.jpg" alt="Akord Builder Blog" loading="lazy"></figure>
-<hr>
-<p>The Akord protocol is now open source and available to all builders. In the coming weeks, we’ll be releasing details of new programs to incentivise builders working on the Akord protocol. But for now, let’s concentrate on the technology.</p>
-<p>Akord 协议现在开源了，可供所有构建者使用。在接下来的几周内，我们将发布新计划的详细信息，来激励致力于 Akord 协议的构建者。但现在，让我们专注于技术。</p>
-<h2 id="互联网出版正在改变又一次-internet-publishing-is-changing-again">互联网出版正在改变，又一次 (Internet publishing is changing, again)</h2>
-<p>We have seen the internet evolve from the early, read-only web1, to the dynamic read/write web2 that social media is built on.</p>
-<p>我们已经看到互联网从早期的只读 web1 发展到构建社交媒体的动态读/写 web2。</p>
-<p>Now we’re seeing how blockchains are enabling a new dimension to the web: ownership. Yet, for data ownership to be practical, we need data to persist just as an object in physical reality can.</p>
-<p>现在我们看到区块链如何为网络带来新的维度：所有权。然而，为了使数据所有权变得实用，我们需要数据像物理现实中的对象一样持久存在。</p>
-<p>Arweave enables that persistence, and true data ownership, by providing a public, global and permanent hard drive.</p>
-<p>Arweave 通过提供公共、全球和永久的硬盘驱动器来实现这种持久性，和真正的数据所有权。</p>
-<p>The Akord protocol, built on Arweave, will further advance true user ownership of data, which is the foundation of web3.</p>
-<p>基于 Arweave 构建的 Akord 协议将进一步促进用户对数据真正的所有权，这是 web3 的基础。</p>
-<h2 id="用户自有存储是一种新范式-user-owned-storage-is-a-new-paradigm">用户自有存储是一种新范式 (User-owned storage is a new paradigm)</h2>
-<p>In the classic client–server model, the application must have direct access to the data, usually behind the same firewall. The ‘backend’ of the website needs direct access to your data before it can render a website.</p>
-<p>在经典的客户端-服务器模型中，应用必须要直接访问数据，通常位于同一防火墙之后。网站的“后端”需要直接访问您的数据才能呈现网站。</p>
-<p>However, this opens several issues that work against the user:</p>
-<p>但是，这会引发一些对用户不利的问题：</p>
-<ul>
-<li>
-<p><strong>Privacy</strong>: most software-as-a-service providers, at a minimum, have a backdoor to customer data at rest, in transit or when processed.<br>
-<strong>隐私</strong>：大多数软件即服务提供商至少对静态、传输中或处理时的客户数据都有后门。</p>
-</li>
-<li>
-<p><strong>Censorship</strong>: SaaS providers can revoke access to your data, especially if forced to by a government or legal authority.<br>
-<strong>审查</strong>：SaaS 提供商可以撤销对您数据的访问权限，尤其是在政府或法律机构强制要求的情况下。</p>
-</li>
-<li>
-<p><strong>Lacking consent</strong>: your data is often bought and sold, analysed or traded, without your consent or compensation.<br>
-<strong>缺乏授权</strong>：您的数据经常在未经您同意或补偿的情况下被买卖、分析或交易。</p>
-</li>
-<li>
-<p><strong>Surveillance</strong>: nefarious actors, governments and cyber criminals can exploit customers by hacking data storage providers.<br>
-<strong>监视</strong>：不法分子、政府和网络犯罪分子可以通过入侵数据存储提供商来剥削客户。</p>
-</li>
-</ul>
-<p>To address these issues, we are introducing the Akord protocol, allowing developers to build applications on a new web3 decentralised architecture.<br>
-为了解决这些问题，我们引入了 Akord 协议，允许开发人员在新的 web3 去中心化架构上构建应用。</p>
-<p>With Akord, users’ data is encrypted and audited by the protocol. This gives the users the ability to store personal, private or sensitive data in a private vault.<br>
-使用 Akord，用户的数据被协议加密和审计。这使用户能够将个人、隐私或敏感数据存储在私人保管库中。</p>
-<p>Since users control the keys to the vault, they can consent to who accesses their data. Without a backdoor, backend services cannot have direct access to the data.</p>
-<p>由于用户控制保管库的密钥，他们可以同意谁访问他们的数据。因为没有后门，即使后端服务也无法直接访问数据。</p>
-<h2 id="保管库-促进数据所有权的功能-vaults-features-to-facilitate-data-ownership">保管库 - 促进数据所有权的功能 (Vaults – features to facilitate data ownership)</h2>
-<p>Akord vaults have the functionality and properties needed for data ownership:</p>
-<p>Akord 保管库具有数据所有权所需的功能和属性：</p>
-<ul>
-<li>
-<p><strong>Privacy:</strong> secured by end-to-end encryption.<br>
-<strong>隐私：</strong> 通过端到端加密保护。</p>
-</li>
-<li>
-<p><strong>Consent</strong>: access controlled by the user’s consent.<br>
-<strong>授权</strong>：由用户同意控制的访问。</p>
-</li>
-<li>
-<p><strong>ZKP</strong>: containers for verifiable claims and zero knowledge proofs.<br>
-<strong>零知识证明ZKP</strong>：可验证声明和零知识证明的容器。</p>
-</li>
-<li>
-<p><strong>Composable and extendable</strong> protocol, enabling custom extensions.<br>
-<strong>可组合和可扩展</strong> 协议，支持自定义扩展。</p>
-</li>
-<li>
-<p><strong>On-chain</strong> <strong>permanent storage</strong> for files and folders.<br>
-<strong>链上</strong> <strong>永久存储</strong> ，可用于文件和文件夹。</p>
-</li>
-<li>
-<p><strong>File versioning and auditing</strong>.<br>
-<strong>文件版本控制和审核</strong>。</p>
-</li>
-<li>
-<p><strong>Messaging and collaboration</strong>.<br>
-<strong>消息传递和协作</strong>。</p>
-</li>
-</ul>
-<p>Vaults are multi-user. The owner can control who has access to the vault and the members who have access to contribute.</p>
-<p>保管库是多用户的。所有者可以控制有权访问保管库的人员以及有权参与贡献的成员。</p>
-<p>Inside the vault, we can store files, messages, images, structured or unstructured data, and much more. Auditing and file revisions are built-in features of the vault.</p>
-<p>在保管库中，我们可以存储文件、消息、图像、结构化或非结构化数据等等。审核和文件修订是保管库 的内置功能。</p>
-<p>Designed for composability, vaults enable developers to program functionality such as submitting a document for signature or storage.</p>
-<p>保管库专为可组合性而设计，使开发人员能够对功能进行编程，例如提交文档以供签名或存储。</p>
-<h2 id="目前协议的用例-protocol-use-cases-so-far">目前协议的用例 (Protocol use cases, so far)</h2>
-<p>Here’s a short summary of the types of projects we’re helping to build on the Akord protocol:</p>
-<p>以下是我们在 Akord 协议上，帮助构建的项目类型的简短摘要：</p>
-<ul>
-<li>
-<p><strong>Web3:</strong> NFT projects, DAOs, funds, exclusive membership access.<br>
-<strong>Web3：</strong> NFT 项目、DAO、基金、独家会员访问。</p>
-</li>
-<li>
-<p><strong>Public goods</strong>: reforestation data, historical archives, documenting art objects.<br>
-<strong>公共物品</strong>：重新造林数据、历史档案、记录艺术品。</p>
-</li>
-<li>
-<p><strong>Enterprise</strong>: Health insurance data, genetic data, business archives.<br>
-<strong>企业</strong>：健康保险数据、基因数据、业务档案。</p>
-</li>
-</ul>
-<p>For web3, the private vaults enable decentralised sharing of sensitive data.</p>
-<p>对于 web3，私有保管库可以实现敏感数据的分散共享。</p>
-<p>For public goods, vaults are enabling dynamic access control, as well as perpetual and open access to data from reforestation projects to historical archives.</p>
-<p>对于公共产品，保管库正在实现动态访问控制，以及对从重新造林项目到历史档案的数据的永久和开放访问。</p>
-<p>For enterprise, our partners recognise the importance of having secure and permanent data. Health, genetic and personal information can be coordinated and shared with a user directly to their vaults, changing the relationship between company and user.</p>
-<p>对于企业而言，我们的合作伙伴认识到拥有安全和永久数据的重要性。健康、遗传和个人信息可以与用户直接协调并共享到他们的保险库，从而改变公司和用户之间的关系。</p>
-<p>In all cases, the user becomes the owner of their data. Then the company seeks the consent of the user to access their data.</p>
-<p>在所有情况下，用户都成为其数据的所有者。然后公司寻求用户的同意来访问他们的数据。</p>
-<h2 id="召集所有构建者您的新工具包已经到来-calling-all-builders-your-new-toolkit-has-arrived">召集所有构建者：您的新工具包已经到来 (Calling all builders: your new toolkit has arrived)</h2>
-<p>We invite all builders to check out the following latest releases.</p>
-<p>我们邀请所有构建者查看以下最新版本。</p>
-<ul>
-<li>
-<p><strong>Akord protocol</strong> on Arweave mainnet<br>
-Arweave 主网上的 <strong>Akord 协议</strong></p>
-</li>
-<li>
-<p><a href="https://github.com/akord-com/akord-js"><strong>Akord-js</strong></a> to interact with vaults using javascript/typescript<br>
-<a href="https://github.com/akord-com/akord-js"><strong>Akord-js</strong></a> 使用 javascript/typescript 与保管库交互</p>
-</li>
-<li>
-<p><a href="https://github.com/akord-com/akord-cli"><strong>Akord-cli</strong></a> for scripting vaults from the command line<br>
-<a href="https://github.com/akord-com/akord-cli"><strong>Akord-cli</strong></a> 用于从命令行编写保管库脚本</p>
-</li>
-<li>
-<p><strong>API &amp; App</strong> – new protocol version of the app is available at: <a href="http://v2.akord.com/">v2.akord.com</a><br>
-<strong>API 和应用程序</strong> - 应用程序的新协议版本可在以下网址获得：<a href="http://v2.akord.com/">v2.akord.com</a></p>
-</li>
-<li>
-<p><a href="https://docs.akord.com/"><strong>Docs</strong></a>, <a href="https://docs.akord.com/learn/technical-litepaper"><strong>Litepaper</strong></a> and <a href="https://docs.akord.com/learn/examples"><strong>tutorials</strong></a>.<br>
-<a href="https://docs.akord.com/"><strong>文档</strong></a>, <a href="https://docs.akord.com/learn/technical-litepaper"><strong>轻皮书</strong></a> 和 <a href="https://docs.akord.com/learn/examples"><strong>指导</strong></a>.</p>
-</li>
-</ul>
-<p>We'll be releasing a migration tool that will enable users to transfer data from v1 version of the app to the new v2.akord.com, which will not cost users anything to migrate.</p>
-<p>我们将发布一个迁移工具，使用户能够将数据从 v1 版本的应用转移到新的 v2.akord.com，这不会花费用户任何迁移费用。</p>
-<h2 id="现在抓住你构建的东西-now-seize-control-of-what-you-build">现在，抓住你构建的东西 (Now, seize control of what you build)</h2>
-<p>These tools are just the first step. We need you to imagine the possibilities. A future, built on user-owned data, is still yet to be written.</p>
-<p>这些工具只是第一步。我们需要您想象各种可能性。建立在用户拥有数据之上的未来，仍有待编写。</p>
-<p>We’re excited to help grow and support the developers and the dreamers who will take the Akord protocol to seize control of their data. We’ll soon be announcing details of the Akord Builders Grants to kickstart this journey.</p>
-<p>我们很高兴能够帮助发展和支持将采用 Akord 协议来控制其数据的开发人员和梦想家。我们很快将公布 Akord开发者奖金(Akord Builders Grants) 的详细信息，来启动这一旅程。</p>
 ]]></content>
     </entry>
 </feed>
