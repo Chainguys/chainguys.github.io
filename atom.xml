@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-19T09:49:10.000Z</updated>
+    <updated>2022-10-20T01:35:02.156Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,99 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[@camiinthisthang长推-20221019(@camiinthisthang twitter threads-20221019)]]></title>
+        <id>https://chainguys.github.io/post/camiinthisthang-chang-tui-20221019camiinthisthang-twitter-threads-20221019/</id>
+        <link href="https://chainguys.github.io/post/camiinthisthang-chang-tui-20221019camiinthisthang-twitter-threads-20221019/">
+        </link>
+        <updated>2022-10-20T01:30:32.000Z</updated>
+        <content type="html"><![CDATA[<p>原文地址:<a href="https://twitter.com/camiinthisthang/status/1582408630443180035">https://twitter.com/camiinthisthang/status/1582408630443180035</a></p>
+<p>Machismo, Inflation, Remittance: Scaling Ethereum to Widespread Adoption in LATAM</p>
+<p>大男子主义、通货膨胀、汇款：扩展以太坊以在拉丁美洲得到广泛采用重新创新第 2 层，但更擅长 <a href="https://twitter.com/fuellabs_">@fuellabs_</a></p>
+<p>My most recent talk from<a href="https://twitter.com/EFDevcon">@EFDevcon</a>as a thread</p>
+<p>我最近来自 <a href="https://twitter.com/EFDevcon">@EFDevcon</a> 的谈话作为一个长推</p>
+<p>A pragmatic perspective on the social and technical pieces missing and how we're innovating a layer 2 but better at<a href="https://twitter.com/fuellabs_">@fuellabs_</a></p>
+<p>关于缺少的社交和技术部分以及我们如何创新layer2但更 <a href="https://twitter.com/fuellabs_">@fuellabs_</a> 的务实观点却更好</p>
+<p>First, a look at the current state of the industry. When building a product, you want to solve a big problem for many people. Right now, crypto sits in the quadrant of solving a small problem for a few people.</p>
+<p>首先，看一下行业的现状。在构建产品时，您想为许多人解决一个大问题。目前，加密货币处于为少数人解决小问题的象限。</p>
+<figure data-type="image" tabindex="1"><img src="https://pbs.twimg.com/media/FfXYRJoVUAATSxM?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
+<p>As an industry, we're all working towards identifying killer use cases for crypto that unlock functionality and coordination not previously available. I deeply respect everyone working in this industry, and this is not a knock on our work, but this is just today's reality.</p>
+<p>作为一个行业，我们都在努力确定加密的杀手级用例，进而解锁以前不可用的功能和协作。我非常尊重在这个行业工作的每一个人，这不是对我们工作的打击，但这只是今天的现实。</p>
+<figure data-type="image" tabindex="2"><img src="https://pbs.twimg.com/media/FfXYRuSUcAAo-N0?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://twitter.com/camiinthisthang/status/1582408652727517187/photo/1" alt="" loading="lazy"></figure>
+<p>We want to solve a big problem for a lot of people. How do we get there? Not from a theoretical pov, but what are the tactical steps we need to execute to get here?</p>
+<p>我们想为很多人解决一个大问题。我们怎么实现？不是从理论上的观点出发，而是我们需要执行哪些战术步骤才能到达这里？</p>
+<figure data-type="image" tabindex="4"><img src="https://pbs.twimg.com/media/FfXYSbeUAAcCw3j?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>In this talk, I point out the three most pressing issues we can address NOW. These are probably obvious, but <em>how</em> exactly do we address these issues to empower both developers and end users to build and use novel applications?</p>
+<p>在这次演讲中，我指出了我们现在可以解决的三个最紧迫的问题。这些可能是显而易见的，但<em>我们如何</em>解决这些问题，进而使开发人员和最终用户能够构建和使用新颖的应用？</p>
+<figure data-type="image" tabindex="5"><img src="https://pbs.twimg.com/media/FfXYS-HUoAARpNu?format=jpg&amp;name=medium" alt="image" loading="lazy"></figure>
+<p>1.Solve real problems The bull case for LATAM and a case study on how solving hyperlocal problems (a big problem for many people) drives 100x+ growth, and what crypto can learn from these orgs</p>
+<p>解决实际问题 拉美的牛市案例和关于解决超本地问题（对许多人来说是个大问题）如何推动 100 倍以上增长的案例研究，以及加密可以从这些组织中学到什么</p>
+<figure data-type="image" tabindex="6"><img src="https://pbs.twimg.com/media/FfXYTnLVIAAHxMH?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>Latin America seems to be one of the best places to explore crypto because they already exhibit behaviors that make them ripe for crypto adoption</p>
+<p>拉丁美洲似乎是探索加密货币的最佳地点之一，因为它们已经表现出成熟采用加密货币的行为</p>
+<figure data-type="image" tabindex="7"><img src="https://pbs.twimg.com/media/FfXYUORUAAExN5b?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
+<p>Some stats highlight that Latinos are already operating and transacting outside of the rails of traditional finance Despite half of the population being unbanked, most consumers access neobank and nonbank financial services.</p>
+<p>一些统计数据表明，拉丁美洲人已经在传统金融的轨道之外开展业务和交易，尽管有一半的人口没有银行账户，但大多数消费者都可以使用新银行和非银行金融服务。</p>
+<figure data-type="image" tabindex="8"><img src="https://pbs.twimg.com/media/FfXYUzWUAAkgIAQ?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>Remittance in 2021 represented almost 25% of total GDP in Honduras and El Salvador and ~15% of GDP in Guatemala. Do you know how insane that is</p>
+<p>2021 年的汇款占洪都拉斯和萨尔瓦多 GDP 总额的近 25%，占危地马拉 GDP 的约 15%。你知道那有多疯狂吗！</p>
+<figure data-type="image" tabindex="9"><img src="https://pbs.twimg.com/media/FfXYVWnUAAYTBhc?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>Data by Gemini indicates that women in LATAM are transacting and holding crypto at higher rates than women in Europe. Crypto offers a new way for women to exercise financial freedom while operating within the bounds of what is culturally acceptable.</p>
+<p>Gemini 的数据表明，拉丁美洲的女性交易和持有加密货币的比率高于欧洲女性。加密货币为女性提供了一种行使财务自由的新方式，同时在文化可接受的范围内运作。</p>
+<figure data-type="image" tabindex="10"><img src="https://pbs.twimg.com/media/FfXYV5uUYAAsQ5e?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
+<p>In a culture of machismo, patriarchy with a little hot sauce on it, I can see how crypto offers a workaround for women to exercise the ability to hold and earn value without breaking social and cultural norms like opening a bank account without your husband, etc.</p>
+<p>在大男子主义、带有少许辣酱的父权制文化中，我可以看到加密货币如何为女性提供一种解决方法，让她们能够在不违反社会和文化规范的情况下行使持有和赚取价值的能力，例如在没有丈夫的情况下开设银行账户等.</p>
+<p>Mercado Pago and PicsPay in Colombia and Brazil are great case studies for what happens when you solve hyperlocal problems for consumers. Both are now financial giants in the space, and it all started from a relatively simple, not-so-novel payments platform.</p>
+<p>哥伦比亚和巴西的 Mercado Pago 和 PicsPay 是很好的案例研究，说明当您为消费者解决超本地化问题时会发生什么。两者现在都是该领域的金融巨头，这一切都始于一个相对简单、不那么新颖的支付平台。</p>
+<figure data-type="image" tabindex="11"><img src="https://pbs.twimg.com/media/FfXYWiuUAAYBCA7?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<figure data-type="image" tabindex="12"><img src="https://pbs.twimg.com/media/FfXYW6sVUAA8Yza?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>We covered the social. What technical milestones do we still have to reach to make Ethereum and blockchains in general usable to the masses?</p>
+<ul>
+<li>
+<p>Scalability</p>
+</li>
+<li>
+<p>More secure applications</p>
+<p>These next slides are also core to the reason why I joined Fuel.</p>
+</li>
+</ul>
+<p>我们涵盖了社会面。我们还需要达到哪些技术里程碑才能使以太坊和区块链普遍适用于大众？</p>
+<ul>
+<li>可扩展性</li>
+<li>更安全的应用程序</li>
+</ul>
+<p>这些下一张幻灯片也是我加入 Fuel 的核心原因。</p>
+<figure data-type="image" tabindex="13"><img src="https://pbs.twimg.com/media/FfXYXhFUAAIlDVM?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>Scalability without sacrificing decentralization. There are 666M people in LATAM. We need systems that can handle the load without impacts to performance. Fuel's execution model allows for parallelized transaction execution, resulting in a significant net gain in TPS.</p>
+<p>不牺牲去中心化的可扩展性。拉丁美洲有 6.66 亿人。我们需要能够在不影响性能的情况下处理负载的系统。 Fuel 的执行模型允许并行执行交易，从而导致 TPS 的显着净收益。</p>
+<figure data-type="image" tabindex="14"><img src="https://pbs.twimg.com/media/FfXYYGkUAAIWcnC?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>In LATAM, you're dealing with a population that is more price-sensitive. The average monthly income is ~$500. We have to take steps to minimize the risk of hacks and losses. The<a href="https://twitter.com/SwayLang">@SwayLang</a>compiler will call out reentrancy bugs and won't let you deploy a vulnerable contractS</p>
+<p>在拉丁美洲，您面对的是对价格更加敏感的人群。平均月收入约为 500 美元。我们必须采取措施将黑客入侵和损失的风险降至最低。 <a href="https://twitter.com/SwayLang">@SwayLang</a> 编译器将调用可重入性错误，并且不会让您部署易受攻击的合约</p>
+<figure data-type="image" tabindex="15"><img src="https://pbs.twimg.com/media/FfXYYtjUAAM4Sro?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>The Sway compiler forces developers to handle all variant control flow paths. Check out this thread by compiler engineer<a href="https://twitter.com/emilyaherbert">@emilyaherbert</a>for more on Sway features</p>
+<p>Sway 编译器强制开发人员处理所有变体控制流路径。查看编译器工程师 <a href="https://twitter.com/emilyaherbert">@emilyaherbert</a> 的此长推，了解有关 Sway 功能的更多信息</p>
+<figure data-type="image" tabindex="16"><img src="https://pbs.twimg.com/media/FfXYZTuUAAA45vv?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<hr>
+<figure data-type="image" tabindex="17"><img src="https://pbs.twimg.com/profile_images/1183078593078923264/M1WaFAKA_normal.jpg" alt="" loading="lazy"></figure>
+<p><a href="https://twitter.com/emilyaherbert/status/1575906743254908928">https://twitter.com/emilyaherbert/status/1575906743254908928</a></p>
+<hr>
+<p>Write more secure smart contracts in Sway with our namespace storage access. Each function's storage access must be annotated, giving clarity to developers and users alike who will never accidentally access storage, causing unintended consequences.</p>
+<p>使用我们命名的空间存储，访问在 Sway 中编写的更安全的智能合约。每个函数的存储访问都必须进行注释，让开发人员和用户清楚地知道他们永远不会意外访问存储，从而导致意想不到的后果。</p>
+<figure data-type="image" tabindex="18"><img src="https://pbs.twimg.com/media/FfXYZ6OUAAUH0JG?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<figure data-type="image" tabindex="19"><img src="https://pbs.twimg.com/media/FfXYaRnUAAkzoA5?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>Thank you to the whole Devcon team for organizing and allowing me to give this talk.</p>
+<p>感谢整个 Devcon 团队组织并允许我进行这次演讲。</p>
+<p>If you're interested in experiencing the top-tier developer experience we're crafting at<a href="https://twitter.com/fuellabs_">@fuellabs_</a>, check out our developer quickstart <a href="https://t.co/6QmJCUaOt7">https://fuellabs.github.io/fuel-docs/master/developer-quickstart.html…</a></p>
+<p>如果您有兴趣体验我们在 <a href="https://twitter.com/fuellabs_">@fuellabs_</a> 打造的顶级开发人员体验，请查看我们的开发人员快速入门 <a href="https://t.co/6QmJCUaOt7">https://fuellabs.github.io/ Fuel-docs/master/developer-quickstart.html…</a></p>
+<p>Expanded thoughts and sources cited from the numbers and stats referenced in this talk</p>
+<p>从本次演讲中引用的数字和统计数据中引用的扩展思想和来源</p>
+<p><a href="https://twitter.com/camiinthisthang/status/1577688321991417856">https://twitter.com/camiinthisthang/status/1577688321991417856</a></p>
+<p>The link to my slides: <a href="https://t.co/RXQbhMAoxL">https://docs.google.com/presentation/d/12EpcqMBJtyJXvWlmIY00kttPv-Y_Mwlpnb8GnkOulnw/edit?usp=sharing…</a>. I'll share the recording of the talk as soon as it's ready. THANK YOU !</p>
+<p>我的幻灯片的链接：<a href="https://t.co/RXQbhMAoxL">https://docs.google.com/presentation/d/12EpcqMBJtyJXvWlmIY00kttPv-Y_Mwlpnb8GnkOulnw/edit?usp=sharing...</a>。一旦准备好，我会分享谈话的录音。谢谢你 ！</p>
+<figure data-type="image" tabindex="20"><img src="https://pbs.twimg.com/card_img/1582408809128939520/O8w6U0hF?format=jpg&amp;name=small" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SeiNetwork长推-20221014 (SeiNetwork twitter threads-20221014)]]></title>
         <id>https://chainguys.github.io/post/seinetwork-chang-tui-20221014-seinetwork-twitter-threads-20221014/</id>
@@ -827,187 +920,6 @@ npm install
 <p>Truffle 是用于在 Neon 上部署 dApp 的多功能、灵活的解决方案，具有很大的定制和使用高级功能的空间。但是，由于它在部署到 Neon 时存在一些安全漏洞，因此只能用于测试和开发。因此，虽然 Truffle 在开发过程中非常适合 Neon 开发人员，但最终部署必须使用不同的工具来完成。</p>
 <p>Visit the <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_truffle">Neon docs</a> for a complete tutorial on using Truffle to deploy your dApps.</p>
 <p>访问 <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_truffle">Neon docs</a>，获取有关使用 Truffle 部署 dApp 的完整教程。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[超越单片链：模块化区块链范式 (Beyond Monolithic：The Modular Blockchain Paradigm)]]></title>
-        <id>https://chainguys.github.io/post/chao-yue-dan-pian-lian-mo-kuai-hua-qu-kuai-lian-fan-shi-beyond-monolithicthe-modular-blockchain-paradigm/</id>
-        <link href="https://chainguys.github.io/post/chao-yue-dan-pian-lian-mo-kuai-hua-qu-kuai-lian-fan-shi-beyond-monolithicthe-modular-blockchain-paradigm/">
-        </link>
-        <updated>2022-10-05T05:15:48.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/09/blog-banner-V2.png" alt="Beyond Monolithic: The Modular Blockchain Paradigm" loading="lazy"><br>
-<strong>How modular design will enable blockchains to scale by orders of magnitude.</strong><br>
-<strong>模块化设计如何赋能区块链按订单量级扩展</strong></p>
-<h2 id="模块化区块链范式-the-modular-blockchain-paradigm">模块化区块链范式 (The Modular Blockchain Paradigm)</h2>
-<p>Modular blockchains are the latest paradigm in blockchain design. Originated by <a href="https://celestia.org/">Celestia</a>, the concept of modularity is rapidly becoming a category-defining narrative when it comes to the challenge of scaling blockchains by orders of magnitude.</p>
-<p>模块化区块链是区块链设计的最新范式。由 <a href="https://celestia.org/">Celestia</a> 发起，当涉及到将区块链按数量级扩展的挑战时，模块化的概念正在迅速成为一种类别定义的描述。</p>
-<p>But why do we need modular blockchains? Consider the following four theses:</p>
-<p>但为什么我们需要模块化区块链？考虑以下四个论点：</p>
-<hr>
-<p><img src="https://fuel-labs.ghost.io/content/images/2022/09/image-12.png" alt="" loading="lazy"><br>
-上图翻译：</p>
-<p>1.增加吞吐量是我们实现Web3愿景的必经之路<br>
-2.去中心化是我们实现Web3愿景的必经之路<br>
-3.增加了吞吐量却牺牲了去中心化，那就不是扩容<br>
-4.当前的单篇L1和L2扩展解决方案不足以实现真正的扩展</p>
-<hr>
-<p>Based on these principles, it becomes clear that we need to look to new paradigms in order to achieve our vision for web3. Modular blockchains are the most promising new paradigm.</p>
-<p>基于这些原则，很明显我们需要寻找新的范式，来实现我们对 web3 的愿景。模块化区块链是最有前途的新范式。</p>
-<h2 id="什么是模块化区块链-what-is-a-modular-blockchain">什么是模块化区块链 (What is a Modular Blockchain?)</h2>
-<p>Before diving deeper into the four statements above, it is important to understand the basics of monolithic and modular blockchains.</p>
-<p>在深入研究上述四个陈述之前，了解单片和模块化区块链的基础知识非常重要。</p>
-<p>The core functions of a blockchain are:<br>
-区块链的核心功能是：</p>
-<ul>
-<li>
-<p><strong>Execution</strong> - Transaction processing and computation.<br>
-<strong>执行</strong> - 事务处理和计算。</p>
-</li>
-<li>
-<p><strong>Settlement</strong> - Dispute resolution and bridging.<br>
-<strong>清算</strong> - 争议解决和跨链。</p>
-</li>
-<li>
-<p><strong>Consensus</strong> - Transaction ordering.<br>
-<strong>共识</strong> - 交易排序</p>
-</li>
-<li>
-<p><strong>Data availability</strong> - Ensures data is available.<br>
-<strong>数据可用性</strong> - 确保数据可用</p>
-</li>
-</ul>
-<p>Traditionally, blockchain designs have been <em>monolithic</em>. This means that all the functions of the blockchain are handled on a single layer.</p>
-<p>传统上，区块链设计一直是 <em>单片</em>。这意味着区块链的所有功能都在单层维度上处理。</p>
-<p>The thesis of <em>modular</em> blockchains is that a single blockchain doesn’t need to handle all these components on its own. Instead, by disaggregating these core components, individual blockchains can focus on specializing in a specific area, leading to significant optimizations.</p>
-<p><em>模块化</em> 区块链的论点是单个区块链不需要自己处理所有这些组件。相反，通过分解这些核心组件，单个区块链可以专注于特定领域，从而实现显着优化。</p>
-<p><img src="https://fuel-labs.ghost.io/content/images/2022/09/image-4.png" alt="" loading="lazy"><br>
-<em>单片 vs. 模块化区块链堆栈(<a href="https://celestia.org/learn/basics-of-modular-blockchains/#monolithic-blockchains">原图来源</a>)</em> <em>Monolithic vs. modular blockchain stack (<a href="https://celestia.org/learn/basics-of-modular-blockchains/#monolithic-blockchains">original image source</a>)</em></p>
-<p>A modular blockchain stack consists of layers of modular blockchains which rely on each other to create a system with all of the above components. A modular blockchain is any chain which is part of a modular blockchain stack.</p>
-<p>模块化区块链技术栈由多层模块化区块链组成，它们相互依赖以创建具有所有上述组件的系统。模块化区块链是作为模块化区块链技术栈一部分的任何链。</p>
-<blockquote>
-<p>Modular blockchain (noun): a blockchain that fully outsources at least one component to an external chain:</p>
-<ul>
-<li>Execution</li>
-<li>Settlement</li>
-<li>Consensus</li>
-<li>Data availability</li>
-</ul>
-<p>— Celestia (@CelestiaOrg) <a href="https://twitter.com/CelestiaOrg/status/1541507149620056064?ref_src=twsrc%5Etfw">June 27, 2022</a></p>
-<p>模块化区块链（名词）：将至少一个组件完全外包给外部链的区块链：</p>
-<ul>
-<li>执行</li>
-<li>结算</li>
-<li>共识</li>
-<li>数据可用性</li>
-</ul>
-<p>— Celestia (@CelestiaOrg) <a href="https://twitter.com/CelestiaOrg/status/1541507149620056064?ref_src=twsrc%5Etfw">2022 年 6 月 27 日</a></p>
-</blockquote>
-<hr>
-<h2 id="为什么要模块化-why-modular">为什么要模块化? (Why Modular?)</h2>
-<p>Fundamentally, blockchains are designed to protect and promote the sovereignty of the individual. <strong>Our vision for web3 is a world where the systems that form the fabric of our digital world are accessible by everyone, and are decentralized, scalable, and secure.</strong></p>
-<p>从根本上说，区块链旨在保护和促进个人的主权。 <strong>我们对 web3 的愿景是一个这样的世界：在这个世界中，构成我们数字世界结构的系统可供所有人访问，并且是去中心化的、可扩展的和安全的。</strong></p>
-<p>Above, we considered four statements which justify the development of a new paradigm for blockchains - specifically, the modular paradigm. Let's explore these further.</p>
-<p>上面，我们考虑了四个开发区块链新范式的陈述——特别是模块化范式。让我们进一步探讨这些。</p>
-<h3 id="1-提高吞吐量对于实现我们的-web3-愿景至关重要-1-increased-throughput-is-essential-in-order-to-achieve-our-vision-for-web3">1 - 提高吞吐量对于实现我们的 Web3 愿景至关重要 (1 - Increased Throughput is Essential In Order to Achieve our Vision for Web3)</h3>
-<p>Despite the expansive ecosystem of existing blockchains, demand still far outstrips supply when it comes to throughput. This leads to network congestion, making blockchain networks increasingly inaccessible for many potential users.</p>
-<p>尽管现有区块链的生态系统很广阔，但在吞吐量方面，需求仍然远远超过供应。这导致网络拥塞，使许多潜在用户越来越无法访问区块链网络。</p>
-<p><img src="https://fuel-labs.ghost.io/content/images/2022/09/image-11.png" alt="" loading="lazy"><br>
-<em>像以太坊这样的网络变得越来越拥挤（来源：</em> <a href="https://etherscan.io/chart/gasused"><em>Etherscan</em></a><em>)</em> <em>Networks like Ethereum are becoming increasingly congested (source:</em> <a href="https://etherscan.io/chart/gasused"><em>Etherscan</em></a><em>)</em></p>
-<p>This challenge has plagued the blockchain space since its inception, even though adoption is still relatively low. Without new technologies to increase throughput, it will only become more of a problem as adoption scales to the billions.</p>
-<p>这一挑战自诞生以来就一直困扰着区块链领域，尽管区块链采用率仍然相对较低。如果没有新技术来提高吞吐量，随着采用规模扩大到数十亿，它只会成为一个更大的问题。</p>
-<p><strong>To achieve our vision of making web3 systems accessible by everyone, they need to be able to scale accordingly.</strong> Mass adoption requires a massive increase in transactional and computational throughput.</p>
-<p><strong>为了实现我们让每个人都可以访问 web3 系统的愿景，他们需要能够相应地扩展。</strong> 大规模采用需要大量增加事务和计算吞吐量。</p>
-<h3 id="2-为了实现我们对-web3-的愿景去中心化是必需的-2-decentralization-is-essential-in-order-to-achieve-our-vision-for-web3">2 - 为了实现我们对 Web3 的愿景，去中心化是必需的 (2 - Decentralization is Essential In Order to Achieve our Vision for Web3)</h3>
-<p>Decentralization is the key differentiator between web2 and web3 systems, and as such should be the core focus of any web3 system. Without decentralization, web3 systems are no better than their web2 predecessors.</p>
-<p>去中心化是 web2 和 web3 系统之间的关键区别，因此也会是任何 web3 系统的核心焦点。如果没有去中心化，web3 系统并不比它们的 web2 前辈更好。</p>
-<p>The following principles are essential to achieving decentralization:</p>
-<p>以下原则对于实现去中心化至关重要：</p>
-<ul>
-<li>
-<p><strong>Openness</strong> - Anyone can view and access the system.<br>
-<strong>开放性</strong> - 任何人都可以查看和访问系统。</p>
-</li>
-<li>
-<p><strong>Verifiability</strong> - Anyone can verify the validity of the system. Any user can operate a node and guarantee that the blockchain is operating correctly and that its rules are being upheld by validators.<br>
-<strong>可验证性</strong> - 任何人都可以验证系统的有效/合法性。任何用户都可以操作一个节点并保证区块链正确运行并且其规则得到验证者的支持。</p>
-</li>
-<li>
-<p><strong>Censorship resistance</strong> - Anyone can participate in the system as a user without the risk of being locked out by validators.<br>
-<strong>抗审查性</strong> - 任何人都可以作为用户参与系统，而不会有被验证者锁定的风险。</p>
-</li>
-</ul>
-<p>Thus, in order to achieve our vision for web3, any blockchain system must guarantee openness, verifiability, and censorship resistance - and all at a scale that can service billions of users.</p>
-<p>因此，为了实现我们对 web3 的愿景，任何区块链系统都必须保证开放性、可验证性和抗审查性——并且所有这些都必须具备能够为数十亿用户提供服务的规模。</p>
-<h3 id="3-增加吞吐量却不保持去中心化就不是真正的可扩展性-3-increasing-throughput-without-maintaining-decentralization-is-not-scaling">3 - 增加吞吐量却不保持去中心化，就不是真正的可扩展性 (3 - Increasing Throughput Without Maintaining Decentralization is Not Scaling)</h3>
-<p>The now-notorious <a href="https://medium.com/certik/the-blockchain-trilemma-decentralized-scalable-and-secure-e9d8c41a87b3">Blockchain Scalability Trilemma</a> describes the compromise monolithic blockchains must make between <em>security</em>, <em>throughput</em>, and <em>decentralization</em>. In order to improve one of these three components, sacrifices must be made in one or more of the others.</p>
-<p>现在臭名昭著的<a href="https://medium.com/certik/the-blockchain-trilemma-decentralized-scalable-and-secure-e9d8c41a87b3">区块链可扩展性三难困境</a>描述了单片区块链必须在 <em>安全</em>、<em>吞吐量</em> 和 <em>去中心化</em> 之间做出妥协.为了改进这三个组成部分中的一个，必须在其他一个或多个方面做出牺牲。</p>
-<p><img src="https://fuel-labs.ghost.io/content/images/2022/09/image-5.png" alt="" loading="lazy"><br>
-<em>大多数单片区块链将自己定位在 A、B 或 C 组中，从而牺牲了三个核心方面之一</em> <em>Most monolithic blockchains position themselves in group A, B, or C, thereby sacrificing one of the three core facets</em></p>
-<p>Plenty of existing blockchains promise high throughput. However, in order to achieve this, they often make unacceptable sacrifices when it comes to decentralization.</p>
-<p>大量现有的区块链承诺高吞吐量。然而，为了实现这一点，他们在去中心化方面经常做出不可接受的牺牲。</p>
-<p>In today’s monolithic blockchain systems, increased throughput is correlated with an increased cost to verify the chain. As blocks become larger or more frequent, the resource requirements for verifying the validity of a block and/or blockchain increase. As such, fewer users are able to verify the chain, instead having to rely on an increasingly centralized group of trusted third parties to run nodes.</p>
-<p>在当今的单片区块链系统中，增加的吞吐量与增加的验证成本相关。随着区块变得更大或更频繁，验证区块和/或区块链有效性的资源需求增加。因此，能够验证链的用户更少，而不得不依赖越来越集中的可信第三方来运行节点。</p>
-<blockquote>
-<p><strong>It is important to note: sacrificing decentralization to increase throughput is not scaling.</strong><br>
-<strong>重要的是要注意：牺牲去中心化来增加吞吐量不是扩展。</strong></p>
-</blockquote>
-<p>While the term “scalability” has often been used to refer to a blockchain’s capacity to process transactions, there is a movement to redefine scalability as <em>a blockchain’s throughput divided by the cost to verify the chain</em>.</p>
-<p>虽然“可扩展性”一词经常被用来指代区块链处理交易的能力，但有一种趋势是重新定义可扩展性为 <em>区块链的吞吐量除以验证链的成本</em>。</p>
-<p><img src="https://fuel-labs.ghost.io/content/images/2022/10/image-4.png" alt="" loading="lazy"><br>
-<em>“可扩展性”可以定义为区块链的吞吐量除以验证所有交易的成本（来源：<a href="https://celestia.org/learn/first-principles-of-modular-blockchains/#scalability">Celestia</a>）</em> <em>“Scalability” can be defined as a blockchain’s throughput divided by the cost to validate all transactions (source: <a href="https://celestia.org/learn/first-principles-of-modular-blockchains/#scalability">Celestia</a>)</em></p>
-<p>Under this definition, in order to scale, blockchains must increase throughput without increasing the cost to verify the network. This kind of “true scalability” is what modular blockchains are designed to enable.</p>
-<p>根据这个定义，为了扩展，区块链必须在不增加验证网络成本的情况下增加吞吐量。这种“真正的可扩展性”是模块化区块链旨在实现的。</p>
-<h3 id="4-当前的单片-l1-和-l2-扩展解决方案不足以实现真正的可扩展性-4-current-monolithic-l1-and-l2-scaling-solutions-are-not-sufficient-to-achieve-true-scalability">4 - 当前的单片 L1 和 L2 扩展解决方案不足以实现真正的可扩展性 (4 - Current Monolithic L1 and L2 Scaling Solutions are Not Sufficient to Achieve True Scalability)</h3>
-<p>There are many proposed scaling solutions for monolithic blockchains, some of which are already under development. Solutions like <a href="https://ethereum.org/en/upgrades/sharding/">sharding</a>, <a href="https://ethereum.org/en/developers/docs/scaling/#rollups">rollups</a>, <a href="https://ethereum.org/en/glossary/#fraud-proof">fraud</a>/<a href="https://ethereum.org/en/glossary/#validity-proof">validity proofs</a>, and <a href="https://ethereum.org/en/developers/docs/data-availability/#data-availability-and-light-clients">light client innovations</a> aim to increase throughput without increasing the cost to verify the network.</p>
-<p>有许多针对单片区块链的扩展解决方案，其中一些已经在开发中， <a href="https://ethereum.org/en/upgrades/sharding/">sharding</a>、<a href="https://ethereum.org/en/developers/docs/scaling/#rollups">rollups</a>、<a href="https://ethereum.org/en/glossary/#fraud-proof">fraud</a>/<a href="https://ethereum.org/en/glossary/#validity-proof">有效性证明</a>和<a href="https://ethereum.org/en/developers/docs/data-availability/#data-availability-and-light-clients">轻客户端创新</a>，都旨在增加吞吐量而不增加验证网络的成本。</p>
-<p>Some of these solutions are adopting aspects of modularity in order to scale, such as outsourcing execution to L2s. However, L2s are severely restricted by the performance of the main network, so as long as they continue to rely on monolithic L1s for finality, the scalability trilemma remains an issue.</p>
-<p>其中一些解决方案正在采用模块化方面来实现扩展，例如将执行外包给 L2。然而，L2s 受到主网性能的严重限制，因此只要它们继续依赖单片 L1s 来实现最终性，可扩展性三难困境仍然是一个问题。</p>
-<p>For example, rollups on Ethereum post their blocks directly to the Ethereum blockchain, essentially using L1 Ethereum as a settlement, consensus, and data availability layer. The problem with this is that Ethereum is already congested, and rollups are competing for bandwidth with users of “monolithic Ethereum” (i.e. non-rollup use cases).</p>
-<p>例如，以太坊上的汇总将其块直接发布到以太坊区块链，本质上使用 L1 以太坊作为结算、共识和数据可用性层。这样做的问题是以太坊已经拥塞，并且汇总正在与“单片以太坊”（即非汇总用例）的用户竞争带宽。</p>
-<p>Because of their growing popularity, rollups are causing further congestion on Ethereum, thereby inadvertently driving Ethereum toward a more modular-first design. For example, there are already <a href="https://eips.ethereum.org/EIPS/eip-4488">several</a> <a href="https://www.eip4844.com/">proposals</a> to make gas costs cheaper for rollups on Ethereum (i.e. prioritizing modularity), but this move is <a href="https://notes.ethereum.org/EH_xVCD8SnaLCEDrXxUyYA">controversial</a>, as it will make typical Ethereum transactions more expensive, essentially forcing users of L1 Ethereum to subsidize rollups.</p>
-<p>由于它们越来越受欢迎，汇总正在导致以太坊进一步拥塞，从而无意中将以太坊推向更加模块化优先的设计。例如，已经有 <a href="https://eips.ethereum.org/EIPS/eip-4488">几个</a> <a href="https://www.eip4844.com/">提案</a> 来降低以太坊上汇总的 gas 成本（即优先考虑模块化），但这一举措是<a href="https://notes.ethereum.org/EH_xVCD8SnaLCEDrXxUyYA">有争议的</a>，因为它将使典型的以太坊交易更加昂贵，实质上迫使L1以太坊的用户补贴汇总。</p>
-<p><img src="https://fuel-labs.ghost.io/content/images/2022/09/image-2.png" alt="" loading="lazy"><br>
-<em>在以太坊之上的汇总必须与整体以太坊的非汇总用例竞争空间，这是模块化优先区块链避免的问题（</em>[<em>原始图像源</em>](https://twitter.com/ptrwtts/status/ 1509869606906650626)<em>)</em> <em>Rollups on top of Ethereum have to compete for space with non-rollup use cases of monolithic Ethereum, a problem which is avoided by modular-first blockchains (</em><a href="https://twitter.com/ptrwtts/status/1509869606906650626"><em>original image source</em></a><em>)</em></p>
-<p>This conflict between modular and monolithic use cases of Ethereum means it is failing to effectively optimize for modularity. As long as it remains unspecialized, it will have reduced scale compared to modular-first alternatives.</p>
-<p>以太坊的模块化和单片用例之间的冲突意味着它未能有效地优化模块化。只要它保持非专业化，与模块化优先的替代方案相比，它的容量就会减少。</p>
-<p><strong>True scalability - that is, massively increased throughput which preserves decentralization - is not a viable goal for monolithic blockchains.</strong> In order to scale, chains like Ethereum will need to optimize for modularity, which will mean outsourcing execution entirely.</p>
-<p><strong>真正的可扩展性 - 即在保持去中心化的情况下大幅增加吞吐量 - 对于单片区块链来说不是一个可行的目标。</strong> 为了扩展，像以太坊这样的链需要针对模块化进行优化，这意味着完全外包执行。</p>
-<hr>
-<h2 id="模块化区块链的承诺-the-promise-of-modular-blockchains">模块化区块链的承诺 (The Promise of Modular Blockchains)</h2>
-<p>Novel modular blockchain systems are designed from the ground up to solve barriers to scalability. Rather than building on top of dated technology, the aim is to learn from the suboptimal elements of previous generations of blockchain tech and create an <strong>entirely new paradigm which optimizes for scalability and decentralization while maintaining security</strong>.</p>
-<p>全新的模块化区块链系统是从头开始设计的，进而来解决可扩展性的障碍。其目标不是建立在过时的技术之上，而是从前几代区块链技术的次优元素中学习，并创建一个<strong>全新的范式，在保持安全性的同时优化可扩展性和去中心化</strong>。</p>
-<p>In a modular system, protocols can specialize their offering for a specific layer in the stack. With teams like <a href="https://celestia.org/">Celestia</a> working on a dedicated data availability and consensus layer, there is a new drive for projects which optimize for solving bottlenecks on the execution layer. <a href="https://www.fuel.network/">Fuel</a> is tackling this challenge by building the world’s <strong>fastest execution layer for the modular stack</strong>.</p>
-<p>在模块化系统中，协议可以专门针对堆栈中的特定层提供定制服务。随着像 <a href="https://celestia.org/">Celestia</a> 这样的团队致力于专门的数据可用性和共识层，对于优化解决执行层瓶颈的项目有了新的驱动力。 <a href="https://www.fuel.network/">Fuel</a> 正在通过构建世界上<strong>最快的模块化堆栈执行层</strong>来应对这一挑战。</p>
-<p>Unconstrained by the limitations of Ethereum and the EVM, Fuel approaches scalable execution from a modular-first perspective, allowing for <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">significant improvements over the EVM</a>’s inefficient execution environment and thus enabling maximum decentralization and the highest flexible throughput.</p>
-<p>不受以太坊和 EVM 的限制，Fuel 从模块化优先的角度实现可扩展的执行，允许 [对 EVM的低效执行环境进行重大改进](https://fuellabs.github.io/fuel-docs/master/vs-evm .html) ，从而实现最大程度的去中心化和最大的灵活吞吐量。</p>
-<p>With this new movement, we have an opportunity to start fresh and build a fundamentally new generation of blockchains that go <strong>beyond monolithic</strong>.</p>
-<p>借助这一新运动，我们有机会重新开始并构建从根本上超越单片**的新一代区块链。</p>
-<hr>
-<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
-<ul>
-<li><a href="https://twitter.com/fuellabs_"><strong><strong>Twitter</strong></strong></a></li>
-<li><a href="http://discord.com/invite/xfpK4Pe"><strong><strong>Discord</strong></strong></a></li>
-<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong><strong>LinkedIn</strong></strong></a></li>
-<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong><strong>YouTube</strong></strong></a></li>
-</ul>
-<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
-<p><a href="https://www.fuel.network/">Fuel</a> is the <strong><strong>fastest execution layer</strong></strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong><strong>highest flexible throughput</strong></strong> and <strong><strong>maximum security</strong></strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong><strong>superior developer experience</strong></strong> and the ability to go <strong><strong>beyond the limitations of the EVM</strong></strong>.</p>
-<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链堆栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制****。</p>
-<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
-<ul>
-<li>
-<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
-<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
-</li>
-<li>
-<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
-<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
-</li>
-<li>
-<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
-<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
-</li>
-</ul>
 ]]></content>
     </entry>
 </feed>
