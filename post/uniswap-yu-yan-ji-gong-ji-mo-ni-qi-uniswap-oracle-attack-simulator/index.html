@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Uniswap预言机攻击模拟器 (Uniswap Oracle Attack Simulator ) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1666229679499">
+<link rel="shortcut icon" href="/favicon.ico?v=1666342315703">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -1193,6 +1193,104 @@ Colocation reduces latency by ~46% vs. international dispersion&lt;br&gt;
 &lt;p&gt;We hope you found this article informative. If you have any questions about the security audit of Neon’s SPL Governance contract, don’t hesitate to reach out. You can contact the team via &lt;a href=&#34;https://discord.com/invite/9jVYEDVwn8&#34;&gt;Discord&lt;/a&gt;. Lastly, stay connected with the team on &lt;a href=&#34;https://twitter.com/neonlabsorg&#34;&gt;Twitter&lt;/a&gt;, &lt;a href=&#34;https://github.com/neonlabsorg&#34;&gt;GitHub&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/channel/UCAL2uFkKkfBgz3mXFN3UDTQ&#34;&gt;YouTube&lt;/a&gt;, and &lt;a href=&#34;https://neonlabsorg.medium.com/&#34;&gt;Medium&lt;/a&gt; for more development updates and announcements.&lt;/p&gt;
 &lt;p&gt;我们希望您发现这篇文章内容丰富。如果您对 Neon 的 SPL 治理合约的安全审计有任何疑问，请随时与我们联系。您可以通过 &lt;a href=&#34;https://discord.com/invite/9jVYEDVwn8&#34;&gt;Discord&lt;/a&gt; 联系团队。最后，在 &lt;a href=&#34;https://twitter.com/neonlabsorg&#34;&gt;Twitter&lt;/a&gt;、&lt;a href=&#34;https://github.com/neonlabsorg&#34;&gt;GitHub&lt;/a&gt;、&lt;a href=&#34;https://www.youtube&#34;&gt;YouTube&lt;/a&gt;  &lt;a href=&#34;https://neonlabsorg.medium.com/&#34;&gt;Medium&lt;/a&gt; 了解更多开发更新和公告，与团队保持联系。&lt;/p&gt;
 ">Ackee区块链完成 Neon 的治理审计 (Ackee Blockchain Completes Neon’s Governance Audit)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/neon-evmru-he-shi-yong-hardhat-bu-shu-neon-dapps-neon-evmhow-to-deploy-neon-dapps-using-hardhat/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*ilG7YYUkiJdBFDadmhcmJg.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;The third and final article in our Deploying Neon dApps series explores how to deploy Solidity dApps using Hardhat. (We previously discussed how to deploy Neon with &lt;a href=&#34;https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2&#34;&gt;Remix&lt;/a&gt; and &lt;a href=&#34;https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-truffle-4a80e57395c2&#34;&gt;Truffle&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;我们部署 Neon dApps 系列的第三篇也是最后一篇文章探讨了如何使用 Hardhat 部署 Solidity dApp。 （我们之前讨论过如何使用 &lt;a href=&#34;https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2&#34;&gt;Remix&lt;/a&gt; 和 [Truffle](https: //medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-truffle-4a80e57395c2)。)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hardhat.org/&#34;&gt;Hardhat&lt;/a&gt; is a development and deployment tool for EVM contracts and applications. Of the three deployment tools explored in this series, Hardhat is the most versatile, allowing for plenty of customizable settings and secure deployment to Neon’s mainnet, devnet, and testnet. However, unlike Remix, hHardhat can only be used via a command-line interface, and is not an IDE.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hardhat.org/&#34;&gt;Hardhat&lt;/a&gt; 是用于 EVM 合约和应用的开发和部署工具。在本系列探讨的三种部署工具中，Hardhat 是最通用的，它允许大量可自定义的设置并安全地部署到 Neon 的主网、开发网和测试网。但是，与 Remix 不同的是，Hardhat 只能通过命令行界面使用，而不是 IDE。&lt;/p&gt;
+&lt;h2 id=&#34;准备工作before-you-begin&#34;&gt;准备工作(Before You Begin)&lt;/h2&gt;
+&lt;p&gt;Before you start the tutorial below, make sure that the following is true:&lt;/p&gt;
+&lt;p&gt;在开始下面的教程之前，请确保满足以下条件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;MetaMask is installed on your device.&lt;br&gt;
+MetaMask 已安装在您的设备上。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MetaMask is configured for the Neon EVM.&lt;br&gt;
+MetaMask已为Neon EVM 配置过。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NodeJS v8.9.4 or later is installed on your device.&lt;br&gt;
+NodeJS v8.9.4 或更高版本已安装在您的设备上。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Git is installed on your device. On Windows, use Git Bash.&lt;br&gt;
+Git 已安装在您的设备上。在 Windows 上，使用 Git Bash。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.neon-labs.org/docs/wallet/metamask_setup&#34;&gt;Follow this guide to install and configure MetaMask&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.neon-labs.org/docs/wallet/metamask_setup&#34;&gt;按照本指南安装和配置 MetaMask&lt;/a&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;erc-20-教程-erc-20-tutorial&#34;&gt;ERC-20 教程 (ERC-20 Tutorial)&lt;/h1&gt;
+&lt;p&gt;The following tutorial will explain how to deploy a simple ERC-20 token contract to the Neon Devnet using Hardhat.&lt;/p&gt;
+&lt;p&gt;以下教程将解释如何使用 Hardhat 将简单的 ERC-20 代币合约部署到 Neon Devnet。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第1步：安装Hardhat (Step 1: Install Hardhat)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Using Git, clone the ERC-20 Hardhat project from Neon’s remote repository and navigate to it with the following commands:&lt;/p&gt;
+&lt;p&gt;使用 Git，从 Neon 的远程存储库中克隆 ERC-20 Hardhat 项目，并使用以下命令导航到该项目：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/neonlabsorg/examples.git
+
+cd examples/simple-erc20-hardhat
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, run the following command to install Hardhat and the dependencies necessary to run the example project:&lt;/p&gt;
+&lt;p&gt;然后，运行以下命令来安装 Hardhat 和运行示例项目所需的依赖项：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the above command results in an error, run the following command:&lt;/p&gt;
+&lt;p&gt;如果上述命令导致错误，请运行以下命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm cache clear --force
+
+npm install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;第2步：设置 MetaMask 帐户 (Step 2: Set Up MetaMask Accounts)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To interact with the soon-to-be-deployed contracts, you’ll need to create two new accounts in MetaMask. Before you begin this step, make sure that MetaMask is connected to the Neon Devnet.&lt;/p&gt;
+&lt;p&gt;要与即将部署的合约交互，您需要在 MetaMask 中创建两个新账户。在开始此步骤之前，请确保 MetaMask 已连接到 Neon Devnet。&lt;/p&gt;
+&lt;p&gt;In MetaMask, create two new accounts. To create a new account in MetaMask, click on your current account’s icon in the top right of the MetaMask extension pop-up. A drop-down menu will appear. From the drop-down menu, select“Create an Account”.&lt;/p&gt;
+&lt;p&gt;在 MetaMask 中，创建两个新帐户。要在 MetaMask 中创建新帐户，请单击 MetaMask 扩展弹出窗口右上角的当前帐户图标。将出现一个下拉菜单。从下拉菜单中，选择“创建帐户”。&lt;/p&gt;
+&lt;p&gt;Then, obtain some Devnet NEON tokens for these accounts using the &lt;a href=&#34;https://docs.neon-labs.org/docs/developing/utilities/faucet&#34;&gt;NeonFaucet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;然后，使用 &lt;a href=&#34;https://docs.neon-labs.org/docs/developing/utilities/faucet&#34;&gt;NeonFaucet&lt;/a&gt; 为这些帐户获取一些 Devnet NEON代币。&lt;/p&gt;
+&lt;p&gt;Next, click on the three vertical dots to the right of your currently displayed account name and wallet address. In this drop-down menu that opens, select “Account Details” then “Export Private Key”. Enter your password and select “Confirm” to get access to the private key for that account.&lt;/p&gt;
+&lt;p&gt;接下来，单击您当前显示的帐户名称和钱包地址右侧的三个垂直点。在打开的下拉菜单中，选择“帐户详细信息”，然后选择“导出私钥”。输入您的密码并选择“确认”，访问该帐户的私钥。&lt;/p&gt;
+&lt;p&gt;Copy both accounts’ private keys and paste them into the hardhat.config.js file in the project folder, replacing the placeholder text in lines 11 and 12 of that file. Make sure to prefix these keys with “0x” in the configuration file.&lt;/p&gt;
+&lt;p&gt;复制两个帐户的私钥并将它们粘贴到项目文件夹中的 hardhat.config.js 文件中，替换该文件第 11 行和第 12 行中的占位符文本。确保在配置文件中为这些键添加前缀“0x”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第3步：编译合约 (Step 3: Compile Contracts)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To compile the project’s contracts (located in the “contracts/” folder), run the following command:&lt;/p&gt;
+&lt;p&gt;要编译项目的合约（位于“contracts/”文件夹中），请运行以下命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./node_modules/.bin/hardhat compile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The output from this command should be similar to the following:&lt;/p&gt;
+&lt;p&gt;此命令的输出应类似于以下内容：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1390/0*3UmBzLArH17UDm8a&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;第4步：运行测试 (Step 4: Run Tests)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To run the project tests before deploying, run the following command. It will compile the contracts, deploy them to the Neon Devnet, and run all the tests in the “tests/” folder to make sure the contracts are working as expected.&lt;/p&gt;
+&lt;p&gt;要在部署之前运行项目测试，请运行以下命令。它将编译合约，将它们部署到 Neon Devnet，并运行“tests/”文件夹中的所有测试，确保合约按预期工作。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./node_modules/.bin/hardhat test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the tests all pass, the output of this command should look something like this:&lt;/p&gt;
+&lt;p&gt;如果测试全部通过，则此命令的输出应如下所示：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*HTPrkW1NlR4db3rW&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;第5步：部署合约 (Step 5: Deploy Contracts)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To deploy the project’s contracts, simply run the command below to run the deployment script in the “scripts/” directory:&lt;/p&gt;
+&lt;p&gt;要部署项目的合约，只需运行以下命令以运行“scripts/”目录中的部署脚本：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./node_modules/.bin/hardhat run ./scripts/deploy.js
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You should see output in your terminal similar to the following:&lt;/p&gt;
+&lt;p&gt;您应该会在终端中看到类似于以下内容的输出：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*yc0OWZJ6bh44kzuc&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;第6步：将项目连接到 (MetaMaskStep 6: Connect Project to MetaMask)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To use this newly deployed ERC-20-style Neon Devnet token with ease, follow &lt;a href=&#34;https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H&#34;&gt;these instructions&lt;/a&gt; to import the token as an asset in MetaMask. Use the “contract address” from the output in Step 5 for the “Token Contract Address” in the instructions.&lt;/p&gt;
+&lt;p&gt;要轻松使用这个新部署的 ERC-20 式 Neon Devnet 代币，请按照 &lt;a href=&#34;https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H&#34;&gt;这些说明&lt;/a&gt;将代币作为资产导入 MetaMask。将步骤 5 输出中的“合约地址”用于说明中的“代币合约地址”。&lt;/p&gt;
+&lt;p&gt;Once you complete this final step, you will be able to see your new ERC-20 assets in the MetaMask profiles of the new test accounts.&lt;/p&gt;
+&lt;p&gt;完成最后一步后，您将能够在新测试帐户的 MetaMask 配置文件中看到您的新 ERC-20 资产。&lt;/p&gt;
+&lt;h2 id=&#34;结论-conclusion&#34;&gt;结论 (Conclusion)&lt;/h2&gt;
+&lt;p&gt;Of the three tools for Neon deployment explored over the course of this article series, Hardhat is the most useful and versatile. With a variety of customization options available, plus the ability to deploy to Mainnet due to no security vulnerabilities like with Truffle, Hardhat is the go-to tool for developers looking to launch their project into the “real world” using Neon.&lt;/p&gt;
+&lt;p&gt;在本系列文章中探讨的用于 Neon 部署的三种工具中，Hardhat 是最有用和最通用的。凭借各种可用的自定义选项，以及没有Truffle类似的安全漏洞，而有能力可以部署到主网，Hardhat 是希望使用 Neon 将项目启动到“现实世界”的开发人员的首选工具。&lt;/p&gt;
+&lt;p&gt;Visit the &lt;a href=&#34;https://docs.neon-labs.org/docs/developing/deploy_facilities/using_truffle&#34;&gt;Neon docs&lt;/a&gt; for a complete tutorial on using Hardhat to deploy your dApps.&lt;/p&gt;
+&lt;p&gt;访问 &lt;a href=&#34;https://docs.neon-labs.org/docs/developing/deploy_facilities/using_truffle&#34;&gt;Neon 文档&lt;/a&gt;，获取有关使用 Hardhat 部署 dApp 的完整教程。&lt;/p&gt;
+">Neon EVM：如何使用 Hardhat 部署 Neon dApps (Neon EVM：How to Deploy Neon dApps Using Hardhat)</a>
       </div>
       
       <div class="item">
@@ -8813,6 +8911,7 @@ Ce blog stockera toutes les œuvres de &lt;a href=&#34;https://twitter.com/Chain
 &lt;h1 id=&#34;1blogs&#34;&gt;1.Blogs&lt;/h1&gt;
 &lt;h2 id=&#34;neonscan-与-neon-evm-的集成-neonscan-integration-with-the-neon-evm&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/neonscan-yu-neon-evm-de-ji-cheng-neonscan-integration-with-the-neon-evm&#34;&gt;NeonScan 与 Neon EVM 的集成 (NeonScan Integration with the Neon EVM)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;neon水龙头如何获取代币来测试你的-neon-dapp-the-neon-faucethow-to-get-tokens-to-test-your-neon-dapp&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/neon-shui-long-tou-ru-he-huo-qu-dai-bi-lai-ce-shi-ni-de-neon-dapp-the-neon-faucethow-to-get-tokens-to-test-your-neon-dapp&#34;&gt;Neon水龙头：如何获取代币来测试你的 Neon dApp (The Neon Faucet：How to Get Tokens to Test your Neon dApp)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;neon-evm如何使用-hardhat-部署-neon-dapps-neon-evmhow-to-deploy-neon-dapps-using-hardhat&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/neon-evmru-he-shi-yong-hardhat-bu-shu-neon-dapps-neon-evmhow-to-deploy-neon-dapps-using-hardhat&#34;&gt;Neon EVM：如何使用 Hardhat 部署 Neon dApps (Neon EVM：How to Deploy Neon dApps Using Hardhat)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;neon-evm如何使用truffle部署dapps-neon-evmhow-to-deploy-dapps-using-truffle&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/neon-evmru-he-shi-yong-truffle-bu-shu-dapps-neon-evmhow-to-deploy-dapps-using-truffle&#34;&gt;Neon EVM：如何使用Truffle部署dApps (Neon EVM：How to Deploy dApps Using Truffle)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;neon-evm如何用remix部署dapps-neon-evm-how-to-deploy-dapps-using-remix&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/neon-evmru-he-yong-remix-bu-shu-dapps-neon-evm-how-to-deploy-dapps-using-remix&#34;&gt;Neon EVM：如何用Remix部署dApps Neon (EVM： How to Deploy dApps Using Remix)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;neon-evm中neon代币余额存储和维护-neon-token-balance-storage-and-maintenance-in-neon-evm&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/neon-evm-zhong-neon-dai-bi-yu-e-cun-chu-he-wei-hu-neon-token-balance-storage-and-maintenance-in-neon-evm&#34;&gt;Neon EVM中NEON代币余额存储和维护 (NEON Token Balance Storage and Maintenance in Neon EVM)&lt;/a&gt;&lt;/h2&gt;

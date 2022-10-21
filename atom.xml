@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-20T01:35:02.156Z</updated>
+    <updated>2022-10-21T08:52:22.317Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -209,6 +209,107 @@ Colocation reduces latency by ~46% vs. international dispersion<br>
 <h1 id="结论-conclusion">结论 (Conclusion)</h1>
 <p>We hope you found this article informative. If you have any questions about the security audit of Neon’s SPL Governance contract, don’t hesitate to reach out. You can contact the team via <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a>. Lastly, stay connected with the team on <a href="https://twitter.com/neonlabsorg">Twitter</a>, <a href="https://github.com/neonlabsorg">GitHub</a>, <a href="https://www.youtube.com/channel/UCAL2uFkKkfBgz3mXFN3UDTQ">YouTube</a>, and <a href="https://neonlabsorg.medium.com/">Medium</a> for more development updates and announcements.</p>
 <p>我们希望您发现这篇文章内容丰富。如果您对 Neon 的 SPL 治理合约的安全审计有任何疑问，请随时与我们联系。您可以通过 <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a> 联系团队。最后，在 <a href="https://twitter.com/neonlabsorg">Twitter</a>、<a href="https://github.com/neonlabsorg">GitHub</a>、<a href="https://www.youtube">YouTube</a>  <a href="https://neonlabsorg.medium.com/">Medium</a> 了解更多开发更新和公告，与团队保持联系。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Neon EVM：如何使用 Hardhat 部署 Neon dApps (Neon EVM：How to Deploy Neon dApps Using Hardhat)]]></title>
+        <id>https://chainguys.github.io/post/neon-evmru-he-shi-yong-hardhat-bu-shu-neon-dapps-neon-evmhow-to-deploy-neon-dapps-using-hardhat/</id>
+        <link href="https://chainguys.github.io/post/neon-evmru-he-shi-yong-hardhat-bu-shu-neon-dapps-neon-evmhow-to-deploy-neon-dapps-using-hardhat/">
+        </link>
+        <updated>2022-10-13T08:48:48.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*ilG7YYUkiJdBFDadmhcmJg.png" alt="" loading="lazy"></figure>
+<p>The third and final article in our Deploying Neon dApps series explores how to deploy Solidity dApps using Hardhat. (We previously discussed how to deploy Neon with <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2">Remix</a> and <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-truffle-4a80e57395c2">Truffle</a>.</p>
+<p>我们部署 Neon dApps 系列的第三篇也是最后一篇文章探讨了如何使用 Hardhat 部署 Solidity dApp。 （我们之前讨论过如何使用 <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2">Remix</a> 和 [Truffle](https: //medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-truffle-4a80e57395c2)。)</p>
+<p><a href="https://hardhat.org/">Hardhat</a> is a development and deployment tool for EVM contracts and applications. Of the three deployment tools explored in this series, Hardhat is the most versatile, allowing for plenty of customizable settings and secure deployment to Neon’s mainnet, devnet, and testnet. However, unlike Remix, hHardhat can only be used via a command-line interface, and is not an IDE.</p>
+<p><a href="https://hardhat.org/">Hardhat</a> 是用于 EVM 合约和应用的开发和部署工具。在本系列探讨的三种部署工具中，Hardhat 是最通用的，它允许大量可自定义的设置并安全地部署到 Neon 的主网、开发网和测试网。但是，与 Remix 不同的是，Hardhat 只能通过命令行界面使用，而不是 IDE。</p>
+<h2 id="准备工作before-you-begin">准备工作(Before You Begin)</h2>
+<p>Before you start the tutorial below, make sure that the following is true:</p>
+<p>在开始下面的教程之前，请确保满足以下条件：</p>
+<ul>
+<li>
+<p>MetaMask is installed on your device.<br>
+MetaMask 已安装在您的设备上。</p>
+</li>
+<li>
+<p>MetaMask is configured for the Neon EVM.<br>
+MetaMask已为Neon EVM 配置过。</p>
+</li>
+<li>
+<p>NodeJS v8.9.4 or later is installed on your device.<br>
+NodeJS v8.9.4 或更高版本已安装在您的设备上。</p>
+</li>
+<li>
+<p>Git is installed on your device. On Windows, use Git Bash.<br>
+Git 已安装在您的设备上。在 Windows 上，使用 Git Bash。</p>
+</li>
+</ul>
+<p><a href="https://docs.neon-labs.org/docs/wallet/metamask_setup">Follow this guide to install and configure MetaMask</a>.</p>
+<p><a href="https://docs.neon-labs.org/docs/wallet/metamask_setup">按照本指南安装和配置 MetaMask</a>。</p>
+<h1 id="erc-20-教程-erc-20-tutorial">ERC-20 教程 (ERC-20 Tutorial)</h1>
+<p>The following tutorial will explain how to deploy a simple ERC-20 token contract to the Neon Devnet using Hardhat.</p>
+<p>以下教程将解释如何使用 Hardhat 将简单的 ERC-20 代币合约部署到 Neon Devnet。</p>
+<p><strong>第1步：安装Hardhat (Step 1: Install Hardhat)</strong></p>
+<p>Using Git, clone the ERC-20 Hardhat project from Neon’s remote repository and navigate to it with the following commands:</p>
+<p>使用 Git，从 Neon 的远程存储库中克隆 ERC-20 Hardhat 项目，并使用以下命令导航到该项目：</p>
+<pre><code>git clone https://github.com/neonlabsorg/examples.git
+
+cd examples/simple-erc20-hardhat
+</code></pre>
+<p>Then, run the following command to install Hardhat and the dependencies necessary to run the example project:</p>
+<p>然后，运行以下命令来安装 Hardhat 和运行示例项目所需的依赖项：</p>
+<pre><code>npm install
+</code></pre>
+<p>If the above command results in an error, run the following command:</p>
+<p>如果上述命令导致错误，请运行以下命令：</p>
+<pre><code>npm cache clear --force
+
+npm install
+</code></pre>
+<p><strong>第2步：设置 MetaMask 帐户 (Step 2: Set Up MetaMask Accounts)</strong></p>
+<p>To interact with the soon-to-be-deployed contracts, you’ll need to create two new accounts in MetaMask. Before you begin this step, make sure that MetaMask is connected to the Neon Devnet.</p>
+<p>要与即将部署的合约交互，您需要在 MetaMask 中创建两个新账户。在开始此步骤之前，请确保 MetaMask 已连接到 Neon Devnet。</p>
+<p>In MetaMask, create two new accounts. To create a new account in MetaMask, click on your current account’s icon in the top right of the MetaMask extension pop-up. A drop-down menu will appear. From the drop-down menu, select“Create an Account”.</p>
+<p>在 MetaMask 中，创建两个新帐户。要在 MetaMask 中创建新帐户，请单击 MetaMask 扩展弹出窗口右上角的当前帐户图标。将出现一个下拉菜单。从下拉菜单中，选择“创建帐户”。</p>
+<p>Then, obtain some Devnet NEON tokens for these accounts using the <a href="https://docs.neon-labs.org/docs/developing/utilities/faucet">NeonFaucet</a>.</p>
+<p>然后，使用 <a href="https://docs.neon-labs.org/docs/developing/utilities/faucet">NeonFaucet</a> 为这些帐户获取一些 Devnet NEON代币。</p>
+<p>Next, click on the three vertical dots to the right of your currently displayed account name and wallet address. In this drop-down menu that opens, select “Account Details” then “Export Private Key”. Enter your password and select “Confirm” to get access to the private key for that account.</p>
+<p>接下来，单击您当前显示的帐户名称和钱包地址右侧的三个垂直点。在打开的下拉菜单中，选择“帐户详细信息”，然后选择“导出私钥”。输入您的密码并选择“确认”，访问该帐户的私钥。</p>
+<p>Copy both accounts’ private keys and paste them into the hardhat.config.js file in the project folder, replacing the placeholder text in lines 11 and 12 of that file. Make sure to prefix these keys with “0x” in the configuration file.</p>
+<p>复制两个帐户的私钥并将它们粘贴到项目文件夹中的 hardhat.config.js 文件中，替换该文件第 11 行和第 12 行中的占位符文本。确保在配置文件中为这些键添加前缀“0x”。</p>
+<p><strong>第3步：编译合约 (Step 3: Compile Contracts)</strong></p>
+<p>To compile the project’s contracts (located in the “contracts/” folder), run the following command:</p>
+<p>要编译项目的合约（位于“contracts/”文件夹中），请运行以下命令：</p>
+<pre><code>./node_modules/.bin/hardhat compile
+</code></pre>
+<p>The output from this command should be similar to the following:</p>
+<p>此命令的输出应类似于以下内容：</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1390/0*3UmBzLArH17UDm8a" alt="" loading="lazy"></figure>
+<p><strong>第4步：运行测试 (Step 4: Run Tests)</strong></p>
+<p>To run the project tests before deploying, run the following command. It will compile the contracts, deploy them to the Neon Devnet, and run all the tests in the “tests/” folder to make sure the contracts are working as expected.</p>
+<p>要在部署之前运行项目测试，请运行以下命令。它将编译合约，将它们部署到 Neon Devnet，并运行“tests/”文件夹中的所有测试，确保合约按预期工作。</p>
+<pre><code>./node_modules/.bin/hardhat test
+</code></pre>
+<p>If the tests all pass, the output of this command should look something like this:</p>
+<p>如果测试全部通过，则此命令的输出应如下所示：</p>
+<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/0*HTPrkW1NlR4db3rW" alt="" loading="lazy"></figure>
+<p><strong>第5步：部署合约 (Step 5: Deploy Contracts)</strong></p>
+<p>To deploy the project’s contracts, simply run the command below to run the deployment script in the “scripts/” directory:</p>
+<p>要部署项目的合约，只需运行以下命令以运行“scripts/”目录中的部署脚本：</p>
+<pre><code>./node_modules/.bin/hardhat run ./scripts/deploy.js
+</code></pre>
+<p>You should see output in your terminal similar to the following:</p>
+<p>您应该会在终端中看到类似于以下内容的输出：</p>
+<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/0*yc0OWZJ6bh44kzuc" alt="" loading="lazy"></figure>
+<p><strong>第6步：将项目连接到 (MetaMaskStep 6: Connect Project to MetaMask)</strong></p>
+<p>To use this newly deployed ERC-20-style Neon Devnet token with ease, follow <a href="https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H">these instructions</a> to import the token as an asset in MetaMask. Use the “contract address” from the output in Step 5 for the “Token Contract Address” in the instructions.</p>
+<p>要轻松使用这个新部署的 ERC-20 式 Neon Devnet 代币，请按照 <a href="https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H">这些说明</a>将代币作为资产导入 MetaMask。将步骤 5 输出中的“合约地址”用于说明中的“代币合约地址”。</p>
+<p>Once you complete this final step, you will be able to see your new ERC-20 assets in the MetaMask profiles of the new test accounts.</p>
+<p>完成最后一步后，您将能够在新测试帐户的 MetaMask 配置文件中看到您的新 ERC-20 资产。</p>
+<h2 id="结论-conclusion">结论 (Conclusion)</h2>
+<p>Of the three tools for Neon deployment explored over the course of this article series, Hardhat is the most useful and versatile. With a variety of customization options available, plus the ability to deploy to Mainnet due to no security vulnerabilities like with Truffle, Hardhat is the go-to tool for developers looking to launch their project into the “real world” using Neon.</p>
+<p>在本系列文章中探讨的用于 Neon 部署的三种工具中，Hardhat 是最有用和最通用的。凭借各种可用的自定义选项，以及没有Truffle类似的安全漏洞，而有能力可以部署到主网，Hardhat 是希望使用 Neon 将项目启动到“现实世界”的开发人员的首选工具。</p>
+<p>Visit the <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_truffle">Neon docs</a> for a complete tutorial on using Hardhat to deploy your dApps.</p>
+<p>访问 <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_truffle">Neon 文档</a>，获取有关使用 Hardhat 部署 dApp 的完整教程。</p>
 ]]></content>
     </entry>
     <entry>
@@ -818,108 +919,6 @@ Apply for a grant <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">here</a
 <a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
 </li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Neon EVM：如何使用Truffle部署dApps (Neon EVM：How to Deploy dApps Using Truffle)]]></title>
-        <id>https://chainguys.github.io/post/neon-evmru-he-shi-yong-truffle-bu-shu-dapps-neon-evmhow-to-deploy-dapps-using-truffle/</id>
-        <link href="https://chainguys.github.io/post/neon-evmru-he-shi-yong-truffle-bu-shu-dapps-neon-evmhow-to-deploy-dapps-using-truffle/">
-        </link>
-        <updated>2022-10-05T09:42:34.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*FyXVoy4GqE7wr39rFjBN8A.png" alt="" loading="lazy"></figure>
-<hr>
-<p>As a developer, you know the importance of understanding how to deploy the smart contract code you’ve written onto the blockchain. Our Deploying Neon dApps article series provides this crucial information in a simple and straightforward way. This article, the second in the series, will show you how to deploy Solidity dApps using Truffle. You can also check out our articles on deploying Neon with <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2">Remix</a> and Hardhat.</p>
-<p>作为开发人员，您知道这件事的重要性：了解如何将您编写的智能合约代码部署到区块链上。我们的 Deploying Neon dApps(部署Neon dApps) 系列文章以简单直接的方式提供了这些重要信息。本文是该系列的第二篇，将向您展示如何使用 Truffle 部署 Solidity dApp。您还可以查看我们关于使用 <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2">Remix</a> 和 Hardhat 部署 Neon 的文章。</p>
-<p><a href="https://trufflesuite.com/">Truffle</a> is a deployment tool, development environment, and asset pipeline that makes it easy for developers to test and debug their code on-chain. Unlike Remix, which only supports a few functions and can’t run automated tests, Truffle is an advanced and flexible tool that can support much more complex code. However, Truffle can only be used via a command-line interface and is not an IDE.</p>
-<p><a href="https://trufflesuite.com/">Truffle</a> 是一个部署工具、开发环境和资产管道，可让开发人员轻松测试和调试其链上代码。与仅支持少数功能且无法运行自动化测试的 Remix 不同，Truffle 是一种先进且灵活的工具，可以支持更复杂的代码。但是，Truffle 只能通过命令行界面使用，而不是 IDE。</p>
-<p>To deploy your contracts successfully, you will need to modify the publicly available Truffle configuration file, which contains the private keys for the wallets the contract interacts with. For this reason, you should only use Truffle for debugging or testing purposes and not for mainnet deployment.</p>
-<p>要成功部署您的合约，您需要修改公开可用的 Truffle 配置文件，其中包含与合约交互的钱包的私钥。出于这个原因，你应该只将 Truffle 用于调试或测试目的，而不是用于主网部署。</p>
-<p><strong>Before You Begin</strong><br>
-<strong>准备工作</strong></p>
-<p>Before you start the tutorial below, make that the following is true:<br>
-在开始下面的教程之前，请确保以下内容为真：</p>
-<ul>
-<li>
-<p>MetaMask is installed on your device<br>
-MetaMask 已安装在您的设备上</p>
-</li>
-<li>
-<p>MetaMask is configured for Neon EVM<br>
-MetaMask 已配置 Neon EVM</p>
-</li>
-<li>
-<p>NodeJS v8.9.4 or later is installed on your device<br>
-您的设备上已安装 NodeJS v8.9.4 或更高版本</p>
-</li>
-<li>
-<p>Git is installed on your device (on Windows, use Git Bash)<br>
-Git 已安装在您的设备上(在 Windows 上，使用 Git Bash)</p>
-</li>
-</ul>
-<p>To install and configure MetaMask, follow <a href="https://docs.neon-labs.org/docs/wallet/metamask_setup">this guide</a>.<br>
-要安装和配置 MetaMask，请按照 <a href="https://docs.neon-labs.org/docs/wallet/metamask_setup">本指南</a>。</p>
-<p><strong>ERC-20 Tutorial</strong><br>
-<strong>ERC-20 教程</strong></p>
-<p>The following tutorial will explain how to deploy a simple ERC-20 token contract to the Neon Devnet using Truffle.</p>
-<p>以下教程将解释如何使用 Truffle 将简单的 ERC-20 代币合约部署到 Neon Devnet。</p>
-<p><strong>第1步：安装 Truffle (Step 1: Install Truffle)</strong></p>
-<p>Using Git, clone the ERC-20 Truffle project from Neon’s remote repository and navigate to it with the following commands:</p>
-<p>使用 Git，从 Neon 的远程存储库中克隆 ERC-20 Truffle 项目，并使用以下命令导航到该项目：</p>
-<pre><code>git clone https://github.com/neonlabsorg/examples.git
-
-cd examples/simple-erc20-truffle
-</code></pre>
-<p>Then, run the following command to install Truffle and the dependencies necessary to run the example project:</p>
-<p>然后，运行以下命令来安装 Truffle 和运行示例项目所需的依赖项：</p>
-<pre><code>npm install
-</code></pre>
-<p>If the above command results in an error, run the following command:</p>
-<p>如果上述命令导致错误，请运行以下命令：</p>
-<pre><code>npm cache clear --force
-
-npm install
-</code></pre>
-<p><strong>第2步：设置 MetaMask 帐户和配置文件 (Step 2: Set Up the MetaMask Accounts and Configuration File)</strong></p>
-<p>To interact with the soon-to-be-deployed contracts, you’ll need to create two new accounts in MetaMask. Before you begin, make sure that MetaMask is connected to the Neon Devnet.</p>
-<p>要与即将部署的合约交互，您需要在 MetaMask 中创建两个新账户。在开始之前，请确保 MetaMask 已连接到 Neon Devnet。</p>
-<p>In MetaMask, create two new accounts by clicking on your current account’s icon in the top right of the MetaMask extension pop-up, and then when the drop-down menu appears, click on “Create an Account”. Then, use the <a href="https://docs.neon-labs.org/docs/developing/utilities/faucet">NeonFaucet</a> to obtain some Devnet NEON tokens for these accounts.</p>
-<p>在 MetaMask 中，通过单击 MetaMask 扩展弹出窗口右上角的当前帐户图标创建两个新帐户，然后在出现下拉菜单时单击“创建帐户”。然后，使用 <a href="https://docs.neon-labs.org/docs/developing/utilities/faucet">NeonFaucet</a> 为这些帐户获取一些 Devnet NEON代币。</p>
-<p>Next, click on the three vertical dots to the right of your currently displayed account name and wallet address to open a drop-down menu. Select “Account Details” then “Export Private Key”. Enter your password and select “Confirm” to get access to the private key for that account. Copy both accounts’ private keys and paste them into the truffle-config.js file in the project folder, replacing the placeholder text in lines 11 and 12 of that file. Make sure to prefix these keys with “0x” in the configuration file.</p>
-<p>接下来，单击您当前显示的帐户名称和钱包地址右侧的三个垂直点，打开下拉菜单。选择“帐户详细信息”，然后选择“导出私钥”。输入您的密码并选择“确认”，访问该帐户的私钥。复制两个帐户的私钥并将它们粘贴到项目文件夹中的 truffle-config.js 文件中，替换该文件第 11 行和第 12 行中的占位符文本。确保在配置文件中为这些键添加前缀“0x”。</p>
-<p><strong>第3步：编译合约 (Step 3: Compile Contracts)</strong></p>
-<p>To compile the project’s contracts (which are located in the “contracts/” folder), run the following command:</p>
-<p>要编译项目的合约(位于“contracts/”文件夹中)，请运行以下命令：</p>
-<pre><code>./node_modules/.bin/truffle compile
-</code></pre>
-<p>The output from this command should be similar to the following:</p>
-<p>此命令的输出应类似于以下内容：</p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/0*LtZtr_3WXLE0jqRh" alt="" loading="lazy"></figure>
-<p><strong>第4步：运行测试 (Step 4: Run Tests)</strong></p>
-<p>To run the project tests before deploying, run the following command. It will compile the contracts, deploy them to the Neon Devnet, and run all the tests in the “tests/” folder to make sure the contracts are working as expected.</p>
-<p>要在部署之前运行项目测试，请运行以下命令。它将编译合约，将它们部署到 Neon Devnet，并运行“tests/”文件夹中的所有测试，确保合约按预期工作。</p>
-<pre><code>./node_modules/.bin/truffle test --network neonlabs
-</code></pre>
-<p>If the tests all pass, the output of this command should look something like this</p>
-<p>如果测试全部通过，则此命令的输出应如下所示：</p>
-<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/0*N8dpM4prX_eNh3zV" alt="" loading="lazy"></figure>
-<p><strong>第5步：运行迁移 (Step 5: Run Migrations)</strong></p>
-<p>Deploying the contracts to Neon requires running some migration scripts, which are located in the “migrations/” folder. To do this, run the following command:</p>
-<p>将合约部署到 Neon 需要运行一些迁移脚本，这些脚本位于“migrations/”文件夹中。为此，请运行以下命令：</p>
-<pre><code>./node_modules/.bin/truffle migrate --network neonlabs
-</code></pre>
-<p>You should see output in your terminal similar to the following:</p>
-<p>您应该会在终端中看到类似于以下内容的输出：</p>
-<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/0*V9cMb296apRFdj4R" alt="" loading="lazy"></figure>
-<p><strong>第6步：将项目连接到 MetaMask (Step 6: Connect the Project to MetaMask)</strong></p>
-<p>To use this newly deployed ERC-20-style Neon Devnet token with ease, follow <a href="https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H">these instructions</a> to import the token as an asset in MetaMask. Use the “contract address” from the output in Step 5 for the “Token Contract Address” in the instructions.</p>
-<p>要轻松使用这个新部署的 ERC-20 式 Neon Devnet代币，请按照 <a href="https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H">这些说明</a>将代币作为资产导入 MetaMask。将步骤 5 输出中的“合约地址”用于说明中的“代币合约地址”。</p>
-<p>Once you complete this final step, you will be able to see your new ERC-20 assets in the MetaMask profiles of the new test accounts.</p>
-<p>完成最后一步后，您将能够在新测试帐户的 MetaMask 配置文件中看到您的新 ERC-20 资产。</p>
-<h2 id="结论-conclusion">结论 (Conclusion)</h2>
-<p>Truffle is a versatile, flexible solution for deploying dApps on Neon, with a lot of room for customization and playing with advanced features. However, because it has some security vulnerabilities when deploying to Neon, it remains usable only for testing and development. Therefore, while Truffle is great for Neon developers during the development process itself, the final deployment must be done with a different tool.</p>
-<p>Truffle 是用于在 Neon 上部署 dApp 的多功能、灵活的解决方案，具有很大的定制和使用高级功能的空间。但是，由于它在部署到 Neon 时存在一些安全漏洞，因此只能用于测试和开发。因此，虽然 Truffle 在开发过程中非常适合 Neon 开发人员，但最终部署必须使用不同的工具来完成。</p>
-<p>Visit the <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_truffle">Neon docs</a> for a complete tutorial on using Truffle to deploy your dApps.</p>
-<p>访问 <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_truffle">Neon docs</a>，获取有关使用 Truffle 部署 dApp 的完整教程。</p>
 ]]></content>
     </entry>
 </feed>
