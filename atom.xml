@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-21T08:52:22.317Z</updated>
+    <updated>2022-10-21T09:12:32.858Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -219,7 +219,7 @@ Colocation reduces latency by ~46% vs. international dispersion<br>
         <updated>2022-10-13T08:48:48.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*ilG7YYUkiJdBFDadmhcmJg.png" alt="" loading="lazy"></figure>
 <p>The third and final article in our Deploying Neon dApps series explores how to deploy Solidity dApps using Hardhat. (We previously discussed how to deploy Neon with <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2">Remix</a> and <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-truffle-4a80e57395c2">Truffle</a>.</p>
-<p>我们部署 Neon dApps 系列的第三篇也是最后一篇文章探讨了如何使用 Hardhat 部署 Solidity dApp。 （我们之前讨论过如何使用 <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2">Remix</a> 和 [Truffle](https: //medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-truffle-4a80e57395c2)。)</p>
+<p>我们部署 Neon dApps 系列的第三篇也是最后一篇文章探讨了如何使用 Hardhat 部署 Solidity dApp。 （我们之前讨论过如何使用 <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2">Remix</a> 和 <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-truffle-4a80e57395c2">Truffle</a>。)</p>
 <p><a href="https://hardhat.org/">Hardhat</a> is a development and deployment tool for EVM contracts and applications. Of the three deployment tools explored in this series, Hardhat is the most versatile, allowing for plenty of customizable settings and secure deployment to Neon’s mainnet, devnet, and testnet. However, unlike Remix, hHardhat can only be used via a command-line interface, and is not an IDE.</p>
 <p><a href="https://hardhat.org/">Hardhat</a> 是用于 EVM 合约和应用的开发和部署工具。在本系列探讨的三种部署工具中，Hardhat 是最通用的，它允许大量可自定义的设置并安全地部署到 Neon 的主网、开发网和测试网。但是，与 Remix 不同的是，Hardhat 只能通过命令行界面使用，而不是 IDE。</p>
 <h2 id="准备工作before-you-begin">准备工作(Before You Begin)</h2>
@@ -278,7 +278,7 @@ npm install
 <p>复制两个帐户的私钥并将它们粘贴到项目文件夹中的 hardhat.config.js 文件中，替换该文件第 11 行和第 12 行中的占位符文本。确保在配置文件中为这些键添加前缀“0x”。</p>
 <p><strong>第3步：编译合约 (Step 3: Compile Contracts)</strong></p>
 <p>To compile the project’s contracts (located in the “contracts/” folder), run the following command:</p>
-<p>要编译项目的合约（位于“contracts/”文件夹中），请运行以下命令：</p>
+<p>要编译项目的合约（位于“contracts/”文件夹中)，请运行以下命令：</p>
 <pre><code>./node_modules/.bin/hardhat compile
 </code></pre>
 <p>The output from this command should be similar to the following:</p>
