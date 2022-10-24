@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-21T09:12:32.858Z</updated>
+    <updated>2022-10-24T11:00:28.620Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,168 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[探索Fuel虚拟机(FuelVM)-Exploring the FuelVM]]></title>
+        <id>https://chainguys.github.io/post/tan-suo-fuel-xu-ni-ji-fuelvm-exploring-the-fuelvm/</id>
+        <link href="https://chainguys.github.io/post/tan-suo-fuel-xu-ni-ji-fuelvm-exploring-the-fuelvm/">
+        </link>
+        <updated>2022-10-20T01:40:18.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/0*Wp6jt8fQD2RkhhB0.png" alt="" loading="lazy"></figure>
+<hr>
+<h1 id="版权提示-copyright-notice">版权提示 (Copyright Notice)</h1>
+<p>Thanks to the great article <a href="https://medium.com/blockchain-capital-blog/exploring-the-fuelvm-86cf9ccdc159">Exploring the FuelVM</a> by <a href="https://twitter.com/sproule_">Ryan Sproule</a> ,we could deeply explore the Fuel Project in an easy way.</p>
+<p>感谢这篇杰出的文章： <a href="https://medium.com/blockchain-capital-blog/exploring-the-fuelvm-86cf9ccdc159">探索Fuel虚拟机(FuelVM)-Exploring the FuelVM</a>(作者为 <a href="https://twitter.com/sproule_">Ryan Sproule</a>)让我们能深入浅出地了解 <a href="https://twitter.com/fuellabs_">Fuel</a>项目。</p>
+<p><em>This translation is a personal work</em> by <a href="https://twitter.com/fuellabs_">Fuel</a> enthusiast <a href="https://twitter.com/Chainguys">@Chainguys</a> , with permission from the author. <strong>The author reserves the right of final explanation</strong>. <strong>This translation should NEVER EVER be regarded as any types or forms of Financial Advice</strong></p>
+<p><em>本翻译为 <a href="https://twitter.com/fuellabs_">Fuel</a>爱好者<a href="https://twitter.com/Chainguys">@Chainguys</a>的个人作品，已经过作者本人授权。<strong>作者享有最终解释权</strong></em>。<strong>本作品不应被视为任何形式的财务投资建议</strong></p>
+<hr>
+<h1 id="sway-和-fuelvm初探-introducing-sway-and-the-fuelvm">Sway 和 FuelVM初探 (Introducing Sway and the FuelVM)</h1>
+<p>Fuel Labs is building a novel execution layer for scaling the next generation of blockchain applications. The FuelVM is designed to be modular — it can plug in as the execution engine for any blockchain. Primarily, the FuelVM will be deployed as a Layer 2 rollup on Ethereum, but in theory, it can be deployed anywhere as an L2 or even as another L1. The FuelVM is designed to scale Ethereum without increasing the node requirements but rather by getting <em>more</em> out of the existing hardware.</p>
+<p>Fuel Labs 正在构建一个全新的执行层，用于扩展下一代区块链应用。 FuelVM 被设计成模块化的——它可以作为任何区块链的执行引擎插入。首先，FuelVM 将作为layer2汇总，部署在以太坊上，但理论上，它可以作为 L2 甚至作为另一个 L1 部署在任何地方。 FuelVM 旨在在不增加节点要求的情况下扩展以太坊，即从现有硬件中获得更多。</p>
+<p>Fuel Labs is also building a novel DSL for writing contracts for the FuelVM called Sway. Sway is inspired by both Rust and Solidity to create the ideal smart contract programming language.</p>
+<p>Fuel Labs 还在构建一种全新的 DSL，用于为 FuelVM 编写合约，称为 Sway。 Sway 受到 Rust 和 Solidity 的启发，创建了理想的智能合约编程语言。</p>
+<h1 id="什么是-fuelvmwhat-is-the-fuelvm">什么是 FuelVM？(What is the FuelVM?)</h1>
+<p>The FuelVM is a fully purpose-built, custom virtual machine for executing smart contracts. Designed from the start to be easily fraud-provable, the Fuel VM can be used as the transaction execution layer for an optimistic rollup.</p>
+<p>FuelVM 是一个完全专用的定制虚拟机，用于执行智能合约。 Fuel VM 从一开始就设计为易于欺诈证明的，可用作乐观汇总的交易执行层。</p>
+<p>The FuelVM is optimized to better utilize hardware to increase the throughput of transaction execution. Concretely, it is UTXO based and forces every transaction to explicitly define the UTXOs that it will touch. Since the execution engine can identify exactly what state every transaction touches, it is able to trivially find the transactions that are not contentious and parallelize them.</p>
+<p>FuelVM 经过优化，可以更好地利用硬件来提高交易执行的吞吐量。具体来说，它是基于 UTXO 的，并强制每笔交易明确定义它将触及的 UTXO。由于执行引擎可以准确识别每个交易涉及的状态，因此它能够轻松找到没有争议的交易并将它们并行(执行)。</p>
+<p>You can read the full FuelVM spec <a href="https://github.com/FuelLabs/fuel-specs">here</a> or watch John Adler’s video run-through <a href="https://youtu.be/GKNuaFcPaXc">here</a>.</p>
+<p>您可以阅读完整的 FuelVM 规范 <a href="https://github.com/FuelLabs/fuel-specs">此处</a> 或观看 John Adler 的视频演示 <a href="https://youtu.be/GKNuaFcPaXc">此处</a>。</p>
+<h1 id="为什么虚拟机如期重要why-does-the-vm-matter">为什么虚拟机如期重要？Why does the VM matter?</h1>
+<p>In a smart contract blockchain system, the VM is the system that can understand smart contract code and execute state transitions based on the rules defined in this code. <em>The VM is the operating system for the smart contract blockchain.</em></p>
+<p>在智能合约区块链系统中，虚拟机(VM)是能够理解智能合约代码并根据该代码中定义的规则执行状态转换的系统。 <em>VM是智能合约区块链的操作系统。</em></p>
+<p>As of today, smart contract VMs have not iterated much beyond the initial versions presented in Ethereum. All widely used smart contract chains (bar Solana) today are using the same VM as Ethereum: the EVM.</p>
+<p>截至今天，智能合约虚拟机的迭代并没有超出以太坊中提供的初始版本。今天所有广泛使用的智能合约链(除了Solana)都使用与以太坊相同的VM：EVM。</p>
+<p>In today’s world, the EVM is “good enough” because the main bottleneck of scaling is not the rate at which transactions are executed, but rather the bandwidth that the consensus engine can support (blockspace). With the progression of layer 2 scaling solutions and DA solutions like Celestia, EIP-4844, Danksharding, and EigenDA, the cost of posting rollup transaction data to L1 will no longer be the primary constraint.</p>
+<p>在当今世界，EVM 已经“足够好”，因为扩展的主要瓶颈不是交易执行的速度，而是共识引擎可以支持的带宽(区块空间)。随着layer2扩展解决方案和 DA 解决方案(如 Celestia、EIP-4844、Danksharding 和 EigenDA)的发展，将汇总交易数据发布到 L1 的成本将不再是主要限制因素。</p>
+<p>In this imminent environment where bandwidth is cheap, the next bottleneck will be computational throughput: how fast a system can execute transactions while keeping the underlying hardware requirements <em>low enough</em> for sufficient decentralization. The FuelVM has the advantage of being designed with these considerations for the future in mind and can optimize accordingly.</p>
+<p>在这个带宽便宜的迫在眉睫的环境中，下一个瓶颈将是计算吞吐量：系统可以多快执行交易，同时保持底层硬件要求 <em>足够低</em> ，进而实现足够的去中心化。 FuelVM 的优点是在设计时考虑到了这些考虑因素，并且可以相应地进行优化。</p>
+<h1 id="fuelvm-的优势-fuelvms-differentiators">FuelVM 的优势 (FuelVM’s Differentiators)</h1>
+<h2 id="执行-验证并行化-execution-validation-parallelization">执行 + 验证并行化 (Execution + Validation Parallelization)</h2>
+<p>The secret behind the FuelVM’s parallelizable virtual machine is its <em>strict access lists —</em> which require users (in reality, clients or wallets) to indicate which contract(s) their transaction will touch. It is helpful to inspect what exactly makes up a transaction in the FuelVM.</p>
+<p>FuelVM 可并行化虚拟机背后的秘密在于它的 <em>严格访问列表——</em> 要求用户(实际上是客户端或钱包)指明他们的交易将触及哪些合约。检查 FuelVM 中事务的确切组成是很有帮助的。</p>
+<ul>
+<li>
+<p><strong>Inputs</strong>: list of all contract UTXOs that the transaction will touch + data to unlock the UTXO or predicate script.<br>
+<strong>输入</strong>：交易将触及的所有合约 UTXO 的列表 + 用于解锁 UTXO 或谓词脚本的数据。</p>
+</li>
+<li>
+<p><strong>Outputs</strong>: define the UTXOs that will be created<br>
+<strong>输出</strong>：定义将被创建的 UTXO</p>
+</li>
+<li>
+<p><strong>Gas Information</strong>: gas price + gas limits<br>
+<strong>Gas 信息</strong>：Gas 价格 + Gas 限制</p>
+</li>
+<li>
+<p><strong>Witnesses</strong>: metadata + digital signature for authorization<br>
+<strong>见证人</strong>：元数据+授权数字签名</p>
+</li>
+</ul>
+<p>The critical point here is the explicit “inputs” list, which lists all the UTXOs that will be consumed. This includes “special” contract UTXOs. If, before executing any code, the VM is able to tell which contracts a transaction will touch, it can safely execute all other non-contentious state-accessing transactions in parallel.</p>
+<p>这里的关键点是明确的“输入”列表，它列出了所有将被消耗的 UTXO。这包括“特殊”合约 UTXO。如果在执行任何代码之前，VM 能够判断交易将触及哪些合约，它就可以安全地并行执行所有其他无争议的状态访问交易。</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/4000/1*1avkHndlTD9RhwMMYBaL7w.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/4000/1*nIXbEQkuMQ2p2g5GF-R9IQ.png" alt="" loading="lazy"></figure>
+<p>Both transaction execution and validation can take advantage of parallelism (validation can to an even greater extent).</p>
+<p>交易执行和验证都可以利用并行性(验证可以在更大程度上利用)。</p>
+<p>Notice that since transaction outputs are explicitly included for validation, in the process of asserting that a block that another node proposed was correct, there is no need to execute the overlapping transactions sequentially. This means that validation can happen fully in parallel regardless of state contention. In practice, this means that when nodes are syncing the network, they can achieve even greater parallelization and can catch up faster.</p>
+<p>请注意，由于交易输出被明确包含用于验证，因此在判别另一个节点提出的块是否正确的过程中，不需要顺序执行重叠的交易。这意味着无论状态争用如何，验证都可以完全并行进行。在实践中，这意味着当节点同步网络时，它们可以实现更大的并行化，并且可以更快地赶上。</p>
+<h2 id="原生资产系统-native-asset-system">原生资产系统 (Native Asset System)</h2>
+<p>In the EVM, there is one native asset: ETH. All other assets are implemented via a smart contract that handles accounting for balances (ERC20). In Fuel, developers are free to implement assets in smart contracts, BUT, there is an option to allow the VM to handle this natively.</p>
+<p>在 EVM 中，有一种原生资产：ETH。所有其他资产都是通过处理余额会计的智能合约 (ERC20) 实现的。在 Fuel 中，开发人员可以自由地在智能合约中实现资产，但是，有一个选项允许 VM 进行本地处理。</p>
+<p>There are a few considerable advantages to native assets over an ERC20-style smart contract for balance management. First, native asset manipulation is cheaper (in terms of gas) than manipulating state in a smart contract. This can be attributed to its running at lower-level primitives (UTXO system is used instead of manipulating storage). Second, native assets have better UX, similar to how sending ETH is much simpler than sending ERC20s (no need for setting approvals).</p>
+<p>与 ERC20 风格的智能合约相比，原生资产在余额管理方面有一些相当大的优势。首先，原生资产操作(就gas而言)比在智能合约中操纵状态更便宜。这可以归因于它在较低级别的语言上运行(使用 UTXO 系统而不是操纵存储)。其次，原生资产具有更好的用户体验，类似于发送 ETH 比发送 ERC20 简单得多(无需设置批准)。</p>
+<h2 id="本地帐户抽象-谓词-native-account-abstraction-predicates">本地帐户抽象 + 谓词 (Native Account Abstraction + Predicates)</h2>
+<p>Account abstraction has been a hot topic of research and several attempts have been made at EIPs (<a href="https://eips.ethereum.org/EIPS/eip-86">EIP-86</a>, <a href="https://eips.ethereum.org/EIPS/eip-2938">EIP-2938</a>, <a href="https://eips.ethereum.org/EIPS/eip-3074">EIP-3074</a>, <a href="https://eips.ethereum.org/EIPS/eip-4337">EIP-4337</a>, <a href="https://eips.ethereum.org/EIPS/eip-5003">EIP-5003</a>) over the years in the Ethereum community. It is difficult to implement and upgrade Ethereum to support account abstraction primarily because of the engineering bandwidth of core teams/technical debt plus the associated complexity, and a long list of higher priority items. Many rollups have the opportunity to implement account abstraction from the start on their novel execution environments. Among these is the FuelVM, which, in addition to native account abstraction, will also include an interesting new primitive: predicates.</p>
+<p>帐户抽象一直是研究的热门话题，并且EIP (<a href="https://eips.ethereum.org/EIPS/eip-86">EIP-86</a>、<a href="https://eips.ethereum.org/EIPS/eip-2938">EIP-2938</a>、<a href="https://eips.ethereum.org/EIPS/eip-3074">EIP-3074</a>、<a href="https://eips.ethereum.org/EIPS/eip-4337">EIP-4337</a>, <a href="https://eips.ethereum.org/EIPS/eip-5003">EIP-5003</a>) 多年来在以太坊社区中有所应用。但很难实施和升级以太坊来支持帐户抽象，主要是因为核心团队的工程带宽/技术债务加上相关的复杂性，以及一长串更高优先级项目。许多汇总有机会从一开始就在全新的执行环境中实现帐户抽象。其中包括 FuelVM，除了原生帐户抽象之外，它还将包括一个有趣的新原语：谓词。</p>
+<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1360/1*_AYV990rgjSyaGYa-VpkQw.png" alt="" loading="lazy"></figure>
+<p>meme原始地址 (meme credit): <a href="https://twitter.com/fueldrinker69/status/1582439702069551109?s=20&amp;t=HJJ_ZwWw8x8f83NLxeo5uw">https://twitter.com/fueldrinker69/status/1582439702069551109?s=20&amp;t=HJJ_ZwWw8x8f83NLxeo5uw</a></p>
+<p>A predicate is a pure (does not access state) contract script that simply returns a boolean (true or false). UTXOs can be locked behind a predicate so they can only be spent whenever the conditions defined in the predicate are met. This leads to an interesting UX opportunity where users can set a transaction to execute only under certain conditions, and then once the predicate is met, their transaction can automatically execute. Also, predicates can be pruned when they are destroyed, so they do not contribute to state bloat.</p>
+<p>谓词是一个纯粹的(不访问状态)合约脚本，它只返回一个布尔值(真或假)。 UTXO 可以锁定在谓词后面，因此只有在满足谓词中定义的条件时才能使用它们。这带来了一个有趣的 UX 机会，用户可以将交易设置为仅在特定条件下执行，然后一旦满足谓词，他们的交易就可以自动执行。此外，谓词在销毁时可以被修剪，因此它们不会导致状态膨胀。</p>
+<blockquote>
+<p><em>Trivial demonstrative example: User sets a transaction to buy X tokens whenever the price meets the threshold defined in the predicate. Voila, the pièce de résistance, fully on chain trustless limit orders that won’t bloat the state!</em></p>
+<p><em>小示范示例：只要价格达到谓词中定义的阈值，用户就会设置交易来购买 X 个代币。瞧，一点抵抗力量，完全在链上，不会使状态膨胀的去信任化限价订单！</em></p>
+</blockquote>
+<h2 id="多维资源定价-multi-dimensional-resource-pricing">多维资源定价 (Multi-dimensional Resource Pricing)</h2>
+<p>Resource pricing is one of the most critical components of a smart contract blockchain. Decentralization is maintained by keeping the resource requirements of the chain at reasonable, affordable levels. Resource pricing allows the system to charge users for consuming “work” from the nodes in the network.</p>
+<p>资源定价是智能合约区块链最关键的组成部分之一。通过将链的资源需求保持在合理、可负担的水平来维持去中心化。资源定价允许系统向用户收取从网络节点消耗“工作”的费用。</p>
+<p>In the EVM, one of the most common reasons for the introduction of EIPs has been for opcode re-pricing. This is inherent to the fact that opcodes have hardcoded gas prices, and <strong>the underlying price of resources do not scale proportionally to each other (historically, CPUs improve more rapidly than SSDs)</strong>. Ideally, these systems would be able to price each resource completely independently, so that the entire fee system can dynamically adjust for the underlying hardware system changes.</p>
+<p>在 EVM 中，引入 EIP 的最常见原因之一是操作码重新定价。这是操作码硬编码gas价格所固有的，并且<strong>资源的基础价格彼此之间不成比例(从历史上看，CPU 的改进速度比 SSD 快)</strong>。理想情况下，这些系统将能够完全独立地对每个资源进行定价，以便整个收费系统可以针对底层硬件系统的变化进行动态调整。</p>
+<p>The FuelVM will be able to implement dynamic multi-resource pricing that can incentivize node runners to optimize their underlying hardware better while still optimizing for the maximum “utility per block.”</p>
+<p>FuelVM 将能够实现动态多资源定价，可以激励节点运行者更好地优化其底层硬件，同时仍然优化最大“每块效用”。</p>
+<figure data-type="image" tabindex="5"><img src="https://miro.medium.com/max/1400/1*bLvTVR8HlGdSYIgoZvd8AQ.png" alt="" loading="lazy"></figure>
+<p>This drawing demonstrates a situation where one smart contract has significantly higher demand than others. With localized resource pricing, other contracts are not impacted to the same extent. An NFT drop is a good example of this. This is not <em>exactly</em> how it works with resource pricing vs contract pricing (proposed Solana style), but the effect is very similar. A smart contract with a specific resource profile will be priced differently than another contract. For the NFT drop example, the hot contract might have a resource profile that is very storage intensive but very computationally cheap. Smart contracts that have high compute requirements relative to storage would not be as impacted by the noisy NFT drop.</p>
+<p>该图展示了一种智能合约的需求明显高于其他智能合约的情况。通过本地化资源定价，其他合约不会受到同样程度的影响。 NFT投放/落地就是一个很好的例子。这与资源定价与合约定价(提议的 Solana 风格)不完全一样，但效果非常相似。具有特定资源配置文件的智能合约的定价将与另一个合约不同。对于 NFT 投放示例，有热度的合约可能具有非常存储密集但计算成本非常低的资源配置文件。相对于存储具有高计算要求的智能合约不会受到嘈杂的 NFT投放/落地的影响。</p>
+<p>The Solana strategy of breaking the fee markets on accounts or contracts adds a layer of abstraction between the actual underlying resources and the demand for them. This means that there can still be situations where fees are very low, but the strain on the nodes is very high. For example, there can be an extremely high storage load on the system because of an event where, for example, many different NFTs are being minted simultaneously, but the fees are very low because not all this traffic is happening on a single account. The per-account fee model does solve the hot partition problem for accounts but leaves scenarios where the system is not correctly pricing underlying resources, so it can still lead to failures.</p>
+<p>Solana 打破账户或合约费用市场的策略，在实际基础资源和对它们的需求之间增加了一层抽象。这意味着仍然可能存在费用非常低，但节点压力非常大的情况。例如，系统上的存储负载可能非常高，例如同时铸造了许多不同的 NFT，但费用却非常低，因为并非所有这些流量都发生在一个帐户上。每账户费用模型确实解决了账户的热分区问题，但留下了系统没有正确定价底层资源的情况，因此仍然可能导致失败。</p>
+<p>It is simply cleaner and more accurate to price the system based on the underlying hardware resources instead of trying to add a network-specific abstraction layer like accounts to base the multi-market resource pricing on.</p>
+<p>根据底层硬件资源为系统定价更简洁、更准确，而不是尝试添加一个特定于网络的抽象层(如帐户)来作为多市场资源定价的基础。</p>
+<h2 id="状态膨胀注意事项-state-bloat-considerations">状态膨胀注意事项 (State-bloat Considerations)</h2>
+<p>As mentioned multiple times by the geth team, the current bottleneck in geth is with I/O for state read and write access. Initially, the idea was that 100% of the state Merkle-Patricia-trie (MPT) would fit on the RAM of a standard device. This is not the case anymore as the state has grown to over 900 GB and is expected to grow approx 50–100 GB per year, which is unreasonably large for anyone to fit in RAM, so most nodes have turned to SSDs to store state. Historically, SSDs do not improve as quickly as the state size is growing, so this cost will continue to impact the decentralization of the network. This is a critical problem that <a href="https://hackmd.io/@vbuterin/state_size_management">Ethereum researchers have been discussing for some time.</a></p>
+<p>正如 geth 团队多次提到的，当前 geth 的瓶颈在于状态读写访问的 I/O。最初的想法是标准设备的 RAM去与 100% 的状态 Merkle-Patricia-trie (MPT) 适配。现在情况已不再如此，因为状态已增长到超过 900 GB，并且预计每年将增长约 50-100 GB，这对于任何人来说都无法期容纳在 RAM 中，因此大多数节点都转向 SSD 来存储状态。从历史上看，SSD 的改进速度不会随着状态规模的增长而迅速提高，因此这种成本将继续影响网络的去中心化。这是 <a href="https://hackmd.io/@vbuterin/state_size_management">以太坊研究人员已经讨论了一段时间的关键问题。</a></p>
+<p>The FuelVM is instead being constructed with this problem front of mind. There have been a couple of talks by Fuel Labs’ co-founder, John Adler, about the role resource pricing plays in the way that state or other resources are consumed by smart contracts. By a combination of appropriate resource pricing and a more clear data model for state pruning with the UTXO system, the FuelVM will be able to keep the state under control, reducing the cost of running a node, which is equivalent to increasing the decentralization of the network.</p>
+<p>FuelVM 是在考虑这个问题的前提下构建的。 Fuel Labs 的联合创始人 John Adler 就资源定价在智能合约消耗状态或其他资源的方式中所起的作用，进行了几次会谈。通过适当的资源定价和更清晰的状态剪枝数据模型与 UTXO 系统相结合，FuelVM 将能够控制状态，降低运行节点的成本，这相当于增加了节点的去中心化程度。</p>
+<h2 id="序列器的去中心化-decentralization-of-the-sequencer">“序列器”的去中心化 (Decentralization of the “sequencer”)</h2>
+<p>Although Layer 2s allow us to offload computation effort from the main chain, they still need to provide a mechanism to order transactions. Many layer 2 solutions are launching with what has been referred to as the “sequencer”. The sequencer is a privileged node that is responsible for ordering transactions, executing state transitions, and then submitting the state root update along with compressed transaction information to Layer 1 Ethereum. It is obvious, but notable, that a single super-computer responsible for sequencing can execute more transactions per epoch than a multitude of smaller computers redundantly executing the same sequence of transactions.</p>
+<p>尽管layer2允许我们从主链上卸去计算工作，但它们仍然需要提供一种机制来对交易进行排序。许多layer2解决方案都使用所谓的“序列器”启动。序列器是一个特权节点，负责对交易进行排序、执行状态转换，然后将状态根更新连同压缩的交易信息一起提交到layer1以太坊。很明显，但值得注意的是，一台负责排序的超级计算机每个时期可以执行更多的交易，而不是多个小型计算机冗余地执行相同交易序列。</p>
+<p><strong>There are several key problems with this centralized sequence role that needs to be getting more attention!</strong></p>
+<p><strong>这个中心化的排序角色有几个关键问题需要引起更多关注！</strong></p>
+<ol>
+<li>
+<p>Controlling the ordering of transactions is very profitable. We have observed in Ethereum and other blockchains that MEV is one of the main sources of income for those who order blocks. A single party controlling ordering and MEV capture eventually leads to worse execution for users as we see in traditional finance today.<br>
+控制交易的顺序是非常有利可图的。我们在以太坊和其他区块链中观察到，MEV 是订购区块的人的主要收入来源之一。正如我们今天在传统金融中看到的那样，单方控制订购和 MEV 捕获最终会导致用户执行更差。</p>
+</li>
+<li>
+<p>A centralized sequencer can be a single point of failure both from an availability and regulatory perspective. If a single or a small number of organizations are running sequencers they can go down or be taken down. This is a liveness risk to the network.<br>
+从可用性和监管角度来看，中心化序列器可能是单点故障。如果单个或少数组织正在运行序列器，它们可能会关闭或被劫持。这对网络来说是一个活跃的风险。</p>
+</li>
+<li>
+<p>A centralized sequencer may censor transactions on the Layer 2. The sequencer gets to choose whatever transactions and place them in any order during the construction of a block, this leads to the ability to censor. In fairness, many L2s handle this case by providing “forced transaction” mechanisms, which allow users to bypass the sequencer and directly get transactions included by leveraging the L1.<br>
+中心化序列器可以审查layer2上的交易。序列器可以选择任何交易并在构建块期间以任何顺序放置，这导致了审查的能力。公平地说，许多 L2 通过提供“强制交易”机制来处理这种情况，该机制允许用户绕过序列器并通过利用 L1 直接获取包含的交易。</p>
+</li>
+<li>
+<p>Sequencers can make inconsistent promises about the state of the chain to users of the rollup. This is often referred to as equivocation, which basically means that the sequencer can make a misleading promise about some state of the L2. This comes from the fact that fast finality on the rollup is a trusted step, a sequencer can abuse this trust that leads users to do things they do not intend.<br>
+序列器可以对汇总的用户做出链状态不一致承诺，通常被称为模棱两可，这基本上意味着序列器可以对 L2 的某些状态做出误导性的承诺。这源于这样一个事实，即汇总的快速确定性是一个值得信赖的步骤，序列器可以滥用这种信任，导致用户做他们不想做的事情。</p>
+</li>
+</ol>
+<h2 id="fuel如何解决这些问题-how-does-fuel-solve-these-problems">Fuel如何解决这些问题？ (How does Fuel solve these problems?)</h2>
+<p>First of all, Fuel is not just a rollup or an L1 blockchain, rather, it is a system that simply applies state transitions that <em>can</em> be posted to an L1 if configured as a rollup or operate in a network to achieve consensus as an L1. The key difference is that the Fuel execution engine does not care about consensus or transaction ordering. Fuel is only responsible for applying the transactions as quickly as possible. <strong>But</strong>, since Fuel can run on such light hardware and verification is so cheap, it is plausible that Fuel can bootstrap a diverse and decentralized consensus network that does do consensus for much cheaper than an equivalent system running a less performant execution engine like the EVM.</p>
+<p>首先，Fuel 不仅仅是一个汇总或 L1 区块链，相反，它是一个简单地应用状态转换的系统，如果配置为 汇总或在网络中运行来实现 L1 的共识，就可以将其发布到 L1。关键区别在于 Fuel 执行引擎不关心共识或交易顺序。 Fuel只负责尽快应用交易。 <strong>但是</strong>，由于 Fuel 可以在如此轻量级的硬件上运行并且验证非常便宜，因此以下内容就变得合理起来： Fuel 可以引导一个多样化和去中心化的共识网络，该网络实现共识确实以比运行性能较低执行引擎的同等系统(如EVM)要便宜得多。</p>
+<p>Additionally, the Fuel team is thinking about layer 2 tokenomics with decentralization, MEV, and these other considerations in mind. Fuel co-founder, John Adler, wrote a post on <a href="https://fuel-labs.ghost.io/token-model-layer-2-block-production/">a token model for layer-2 blockchains</a> in January that lays out a design for a token that helps decentralize block production by allowing rollups <strong>to tokenize block space scarcity through the right to collect fees as a block producer.</strong> Fee collection is only one portion of the income for block producers, as we have seen in other chains, MEV is another large portion of the income. Similarly to block space scarcity, MEV income will <em>also</em> be tokenized via the right to produce blocks.</p>
+<p>此外，Fuel 团队正在考虑去中心化、MEV 和其他因素的layer2代币经济学。 Fuel 联合创始人 John Adler 在 1 月份写了一篇关于 <a href="https://fuel-labs.ghost.io/token-model-layer-2-block-production/">layer2区块链的代币模型</a> 的帖子,它设计了一种代币(模型)，该代币通过允许汇总**作为区块生产者收取费用的权利，来标记区块空间的稀缺性，进而帮助分散区块生产。**收费只是区块生产者收入的一部分，因为我们在其他链中看到，MEV 是收入的另一大部分。与区块空间的稀缺性类似，MEV 收入也将通过生产区块的权利进行代币化。</p>
+<h2 id="状态模型utxo-vs-基于账户-the-state-model-utxo-vs-account-based">状态模型：UTXO vs 基于账户 (The State Model: UTXO vs Account Based)</h2>
+<p>The best way to conceptualize the difference between the UTXO data model and the account model is as follows: UTXOs can be likened to cash bills, whereas the account model is more similar to a bank ledger. Account systems naturally lead to hot pieces of state because every transaction is trying to access the same account, while the UTXO, if designed correctly, is less contentious. This characteristic enables better parallelization and also can prevent state bloat by simplifying the process of state pruning.</p>
+<p>概念化 UTXO 数据模型和账户模型之间差异的最佳方法如下：UTXO 可以比作现金票据，而账户模型更类似于银行账本。账户系统自然会导致热点状态，因为每笔交易都试图访问同一个账户，而 UTXO，如果设计得当，争议较小。这个特性可以实现更好的并行化，也可以通过简化状态修剪的过程来防止状态膨胀。</p>
+<figure data-type="image" tabindex="6"><img src="https://miro.medium.com/max/4000/1*sjfvqbqpQT_MLCe_HsPhNg.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://miro.medium.com/max/4000/1*daR6MsOjX5wPl5BRyypIpA.png" alt="" loading="lazy"></figure>
+<p>Sticking with the cash vs. bank ledger metaphor, it becomes clear why parallelization can tend to be much easier with UTXO. 2 cash transactions can happen at the same time and they don’t need to have any knowledge of each other, while if there were to be 2 account updates on a ledger, both transactions would have to update the same shared ledger.</p>
+<p>坚持现金与银行分类账的比喻，很明显为什么使用 UTXO 可以更容易地实现并行化。 2 笔现金交易可以同时发生，它们不需要相互了解，而如果分类账上有 2 个账户更新，则两个交易都必须更新同一个共享分类账。</p>
+<h1 id="虚拟机大战-the-vm-wars">虚拟机大战 (The VM Wars)</h1>
+<p>Other teams, beyond Fuel, are working on next-generation virtual machines for smart contract blockchains such as Mysten Labs and Aptos, who are working with the MoveVM that was originally designed by engineers at Facebook as part of the Libra project. This further bolsters the thesis that there is demand for novel execution environments in order to support the next generation of blockchain applications. All of these projects have interesting approaches and make different trade-offs.</p>
+<p>除了 Fuel 之外，其他团队正在开发用于智能合约区块链的下一代虚拟机，例如 Mysten Labs 和 Aptos，他们正在使用最初由 Facebook 工程师设计的 MoveVM(最初作为 Libra 项目的一部分)。这进一步支持了需要新型执行环境来支撑下一代区块链应用的论点。所有这些项目都有有趣的方法并做出不同的权衡。</p>
+<p>In the years that the MoveVM sat stagnant when Libra was busy fighting legal battles, a lot changed in the crypto world. Fuel was able to adapt to those changes and stay agile in an extremely fast-paced industry, while Move fell slightly behind. That being said, since Move has spun out of Facebook and new large financing rounds have been completed, they are certainly getting ready to go to war!</p>
+<p>在 Libra 忙于打官司，MoveVM 停滞不前的几年里，加密世界发生了很大变化。 Fuel 能够适应这些变化并在这个快节奏的行业中保持敏捷，而 Move 则略微落后。话虽如此，既然 Move 已经从 Facebook 分拆出来，并且新一轮的大额融资已经完成，他们肯定已经做好了开战的准备！</p>
+<figure data-type="image" tabindex="8"><img src="https://miro.medium.com/max/400/0*jeQ293mTqR91ylk3" alt="" loading="lazy"></figure>
+<h1 id="结论-conclusion">结论 (Conclusion)</h1>
+<ul>
+<li>
+<p>Unlike other L2s, Fuel has plans to decentralize the sequencer role from the start by designing the VM so that expensive hardware is not required to increase scale.<br>
+与其他 L2 不同，Fuel 计划从一开始就通过设计虚拟机来分散序列器的角色，这样就不需要昂贵的硬件来扩大规模。</p>
+</li>
+<li>
+<p>Fuel is flexible. It can be deployed in many environments, but the priority is to be Ethereum aligned as an Optimistic Rollup.<br>
+Gas是灵活的。它可以部署在许多环境中，但优先级是作为乐观汇总与以太坊对齐。</p>
+</li>
+<li>
+<p>Fuel’s UX will be much better than the EVM’s because of native and novel ways of interacting with the chain, such as account abstraction, scripts, and predicates.<br>
+由于与链交互的原生和新颖的方式，例如帐户抽象、脚本和谓词，Fuel 的用户体验将比 EVM 好得多。</p>
+</li>
+<li>
+<p>The UTXO data model is naturally less contentious than the account data model and will lead to more parallelism AND less state bloat.<br>
+UTXO 数据模型自然比账户数据模型更少争议，并且会导致更多并行(处理)和更少的状态膨胀。</p>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[@camiinthisthang长推-20221019(@camiinthisthang twitter threads-20221019)]]></title>
         <id>https://chainguys.github.io/post/camiinthisthang-chang-tui-20221019camiinthisthang-twitter-threads-20221019/</id>
@@ -783,142 +945,6 @@ ORs 的当前状态并没有在 EVM 上有所改善，且在创新方面停滞�
 <p>请注意，即使您的上传处于待处理状态，您也可以立即共享您的保管库。这意味着如果您单击单个文件上的“查看交易”链接，它将在 viewblock.io 上显示 404 错误。</p>
 <p>If you want to share your public vault and have all the files to have working transaction links to viewblock.io, than ensure all content is no longer in pending state (file icons with orange dots are in pending).</p>
 <p>如果您想共享您的公共保管库并让所有文件都具有指向 viewblock.io 的有效交易链接，那么请确保所有内容不再处于待处理状态（带有橙色圆点的文件图标处于待处理状态）。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[介绍Fuel资助计划 (Introducing the Fuel Grants Program)]]></title>
-        <id>https://chainguys.github.io/post/jie-shao-fuel-zi-zhu-ji-hua-introducing-the-fuel-grants-program/</id>
-        <link href="https://chainguys.github.io/post/jie-shao-fuel-zi-zhu-ji-hua-introducing-the-fuel-grants-program/">
-        </link>
-        <updated>2022-10-06T09:03:47.000Z</updated>
-        <content type="html"><![CDATA[<p>Fuel is offering grants ranging from $10k-$150k USD to developers and creators building on Fuel, the fastest modular execution layer.</p>
-<p>Fuel 向基于最快模块化执行层 Fuel 的开发人员和构建者提供 1 万至 15 万美元不等的资助。</p>
-<p><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/10/FuelGrants.png" alt="Introducing the Fuel Grants Program" loading="lazy"><br>
-Apply for a grant <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">here</a><br>
-点<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">此处</a>  申请资助！</p>
-<hr>
-<p>Earlier this year, we introduced Fuel v2, the fastest modular execution layer. With the development of Fuel v2, we have begun to shift away from traditional monolithic structures, where all aspects of a blockchain, (consensus, data availability, and execution), are handled on a single layer.</p>
-<p>今年早些时候，我们推出了最快的模块化执行层 Fuel v2。随着 Fuel v2 的发展，我们已经开始摆脱传统的单片结构，在这种结构中，区块链的所有方面（共识、数据可用性和执行）都在单一层上处理。</p>
-<p>The introduction of the <strong>Fuel VM</strong> provides incredibly high levels of throughput through parallelization via UTXOs. The FuelVM learns from the Ethereum ecosystem, implementing improvements that were suggested to the Ethereum VM (EVM) for many years, but couldn’t be implemented due to the need of maintaining backward compatibility. We have seen a radical uptick of interest in Fuel, particularly from developers interested in building a modular future with us.</p>
-<p><strong>Fuel VM</strong> 的引入，通过 UTXO 并行化提供了令人难以置信的高水平吞吐量。 FuelVM 从以太坊生态系统中学习，实施了多年来对以太坊 VM (EVM) 提出的改进，但由于需要保持向后兼容性而无法实施。我们已经看到(市场)对 Fuel 的兴趣急剧上升，特别是有兴趣与我们一起构建模块化未来的开发人员。</p>
-<p>From decentralized exchanges to lending markets, oracles, NFT projects, and more, the Fuel ecosystem is growing significantly. Already, we have a large number of projects building, including:</p>
-<p>从去中心化交易所到借贷市场、预言机、NFT 项目等等，Fuel 生态系统正在显着增长。我们已经有大量的项目在建，包括：</p>
-<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/2022/10/GrantedApps.png" alt="" loading="lazy"></figure>
-<ul>
-<li>
-<p><strong><a href="https://elix.finance/#">Elix</a></strong> - an advanced decentralized exchange doing deep research into bonding curves - <a href="https://twitter.com/elixfinance">Twitter</a><br>
-<strong><a href="https://elix.finance/#">Elix</a></strong> - 一个对联合曲线进行深入研究的高级去中心化交易所 - <a href="https://twitter.com/elixfinance">Twitter</a></p>
-</li>
-<li>
-<p><strong><a href="https://microchain.systems/">Microchain</a></strong> - A low-cost, easy-to-use token swapping terminal with two major benefits... versatility and simplicity - <a href="https://twitter.com/MicrochainSys">Twitter</a><br>
-<strong><a href="https://microchain.systems/">Microchain</a></strong> - 一个低成本、易用的代币兑换终端，具有两大优势……多功能性和简单性 - [Twitter](https:// /twitter.com/MicrochainSys)</p>
-</li>
-<li>
-<p><a href="https://www.unic.io/"><strong>UNIC</strong></a> - Bringing real-world items on-chain as NFTs - <a href="https://twitter.com/0xUNIC">Twitter</a>  <br>
-<a href="https://www.unic.io/"><strong>UNIC</strong></a> - 将现实世界的物品以 NFT 形式上链 - <a href="https://twitter.com/0xUNIC">Twitter</a></p>
-</li>
-<li>
-<p><strong><a href="https://twitter.com/fuelnomen">Fuel Nomen</a></strong> - A decentralized naming service for Fuel<br>
-<strong><a href="https://twitter.com/fuelnomen">Fuel Nomen</a></strong> - Fuel 的去中心化命名服务</p>
-</li>
-<li>
-<p><strong>Thunder</strong> - A fully on-chain NFT marketplace allowing for batch listing and purchasing with an emphasis on UX/UI experience for users.<br>
-<strong>Thunder</strong> - 一个完全链上的 NFT 市场，允许批量上市和购买，重点是用户的 UX/UI 体验。</p>
-</li>
-<li>
-<p><strong><a href="https://docs.poolsharks.io/">Poolsharks</a></strong> - OceanBook is an open-source web3 protocol that makes it easy for users, protocols, and DAOs to set limit orders all in one aggregated orderbook. - <a href="https://twitter.com/poolsharks_labs">Twitter</a><br>
-<strong><a href="https://docs.poolsharks.io/">Poolsharks</a></strong> - OceanBook 是一种开源的 web3 协议，它使用户、协议和 DAO 可以在一个聚合订单簿中轻松设置限价单。 - <a href="https://twitter.com/poolsharks_labs">twitter</a></p>
-</li>
-<li>
-<p><a href="https://acumen.network/"><strong>Accumen</strong></a> - bridging DeFi and Traditional Finance, Accumen democratizes access to capital to thousands of SMEs and Entrepreneurs while allowing crypto lenders to earn an attractive, stable, and uncorrelated yield - <a href="https://twitter.com/acumenofficial">Twitter</a><br>
-<a href="https://acumen.network/"><strong>Accumen</strong></a> - 连接 DeFi 和传统金融，Accumen 使成千上万的中小企业和企业家获得资本的机会民主化，同时允许加密货币贷方获得有吸引力、稳定且不相关的收益- <a href="https://twitter.com/acumenofficial">twitter</a></p>
-</li>
-<li>
-<p><strong><a href="https://orao.network/">Orao</a></strong> - an oracle service for custom data feeds - <a href="https://twitter.com/OraoNetwork">Twitter</a><br>
-<strong><a href="https://orao.network/">Orao</a></strong> - 用于自定义数据推送的预言机服务 - <a href="https://twitter.com/OraoNetwork">Twitter</a></p>
-</li>
-</ul>
-<hr>
-<h2 id="什么是fuel资助计划what-is-the-fuel-grants-program">什么是Fuel资助计划？(What is the Fuel Grants Program?)</h2>
-<p>The Fuel Grants Program is designed to support projects building on Fuel. Currently, we are offering generous grants ranging from $10,000-$150,000 USD to developers, creators, and new or existing projects to build on the world's fastest modular execution layer.</p>
-<p>Fuel资助计划旨在支持以Fuel为基础的项目。目前，我们向开发人员、创作者以及新的或现有的项目提供 10,000 美元至 150,000 美元不等的慷慨资助，让其在世界上最快的模块化执行层上进行构建。</p>
-<p>We welcome all builders with a passion for decentralization, web3, and building the modular future. We envision an autonomous future, where systems are built to power the next generation of human coordination and cooperation. Building on Fuel means breaking free from the constraints of monolithic blockchains.</p>
-<p>我们欢迎所有对去中心化、web3 和构建模块化未来充满热情的构建者。我们设想一个自治的未来，建立系统来推动下一代人类协调与合作。基于 Fuel 的构建意味着摆脱单一区块链的限制。</p>
-<p>The grants program is not limited to what you see in this post, however; but will evolve over time. As interest grows both within our ecosystem, and external to it, we will take time to listen to the people building, understanding their needs, and wants for an ecosystem. This ecosystem is not defined by us, but by the projects building within it.</p>
-<p>但是，赠款计划不仅限于您在这篇文章中看到的内容；会随着时间的推移而发展。随着我们生态系统内外的兴趣不断增长，我们将花时间倾听人们的意见，了解他们对生态系统的需求和需求。这个生态系统不是由我们定义的，而是由在其中构建的项目定义的。</p>
-<h2 id="申请流程-the-application-process">申请流程 (The Application Process)</h2>
-<h3 id="分类-categories">分类 (Categories)</h3>
-<p>Fuel is a budding ecosystem, and we’re in search of a variety of exciting projects to build on our protocol. When applying for a grant, please consider the following categories, and in particular where your project fits in. Note that projects that do not fit into a specific category are still welcome to apply!</p>
-<p>Fuel 是一个新兴的生态系统，我们正在寻找各种令人兴奋的项目来构建我们的协议。申请资助时，请考虑以下类别，尤其是您的项目适合的类别。请注意，仍然欢迎不适合特定类别的项目申请！</p>
-<ul>
-<li>Protocol development  协议开发</li>
-<li>Applications and integrations (think DeFi apps)  应用和集成（比如DeFi 应用程序）</li>
-<li>Infrastructure  基础设施</li>
-<li>Developer tooling  开发者工具</li>
-<li>Auditing  审计</li>
-<li>Community (marketing and educational)  社区（营销和教育）</li>
-<li>Events and hackathons  活动和黑客马拉松</li>
-</ul>
-<h3 id="申请标准和指南-criteria-and-guidelines-for-applications">申请标准和指南 (Criteria and Guidelines for Applications)</h3>
-<p>When applying for an ecosystem grant, you will be asked to provide the following information:<br>
-申请生态系统补助金时，您将被要求提供以下信息：</p>
-<ul>
-<li>Project name;  项目名称;</li>
-<li>Description and stage of the project;  项目描述和阶段；</li>
-<li>Why do you want to build on Fuel, and how your project benefits Fuel;  你为什么要在 Fuel 上构建，以及你的项目如何使 Fuel 受益；</li>
-<li>The scope of your project and milestones;  您的项目范围和里程碑；</li>
-<li>How many people are working on the project;  有多少人在做这个项目；</li>
-</ul>
-<p>Additionally:<br>
-此外：</p>
-<ul>
-<li>
-<p>All projects must commit to being open source via MIT or Apache Licensing.<br>
-所有项目必须承诺通过 MIT 或 Apache Licensing 开源。</p>
-</li>
-<li>
-<p>We don't require developers to be public, but to receive funding we require identity verification.<br>
-我们不要求开发者公开，但要获得资金，我们需要进行身份验证。</p>
-</li>
-</ul>
-<p>We welcome applications from projects at varying stages of development, from early ideation to MVP and beyond. We’d also love to hear from projects already building on other chains who want to deploy on Fuel as well.</p>
-<p>我们欢迎处于不同开发阶段的项目的应用，从早期构思到 MVP 及之后。我们也很想听到已在其他链上构建的项目也想部署在 Fuel 上。</p>
-<h2 id="审核流程-review-process">审核流程 (Review Process)</h2>
-<p>We review applications on a rolling basis and will contact you after we have completed an internal review. This process can take up to two weeks, and we may contact you in the interim for any clarifications regarding your application.</p>
-<p>我们会滚动审核申请，并在完成内部审核后与您联系。此过程最多可能需要两周时间，我们可能会在此期间与您联系以了解有关您的申请的任何说明。</p>
-<p>The Fuel team will then reach out to you to arrange an interview, and following this, confirm our decision on the application. If your application is approved, we will work with you through an onboarding process, establish certain milestones for the project, and get you started on building on Fuel!</p>
-<p>Fuel 团队随后会联系您面试，并在此之后确认对申请的决定。如果您的申请获得批准，我们将通过入职流程与您合作，为项目建立某些里程碑，并让您开始在 Fuel 上进行构建！</p>
-<h2 id="申请-apply">申请 (Apply)</h2>
-<p>To apply for a grant, fill out <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">this</a> form.</p>
-<p>要申请资助，请填写 <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">这个</a> 表格。</p>
-<p>We’re incredibly excited to launch this Grants program, to see more of you building on Fuel, and taking the modular-pill. If you have any additional questions please feel free to reach out to <a href="mailto:grants@fuel.sh">grants@fuel.sh</a>.</p>
-<p>我们非常高兴能够启动这个赠款计划，看到更多人在 Fuel 上构建，并服用模块化药片。如果您有任何其他问题，请随时与 <a href="mailto:grants@fuel.sh">grants@fuel.sh</a> 联系。</p>
-<hr>
-<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
-<ul>
-<li><a href="https://twitter.com/fuellabs_"><strong><strong>Twitter</strong></strong></a></li>
-<li><a href="http://discord.com/invite/xfpK4Pe"><strong><strong>Discord</strong></strong></a></li>
-<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong><strong>LinkedIn</strong></strong></a></li>
-<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong><strong>YouTube</strong></strong></a></li>
-</ul>
-<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
-<p><a href="https://www.fuel.network/">Fuel</a> is the <strong><strong>fastest execution layer</strong></strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong><strong>highest flexible throughput</strong></strong> and <strong><strong>maximum security</strong></strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong><strong>superior developer experience</strong></strong> and the ability to go <strong><strong>beyond the limitations of the EVM</strong></strong>.</p>
-<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链堆栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制****。</p>
-<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
-<ul>
-<li>
-<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
-<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
-</li>
-<li>
-<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
-<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
-</li>
-<li>
-<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
-<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
-</li>
-</ul>
 ]]></content>
     </entry>
 </feed>

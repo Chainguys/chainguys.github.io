@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>介绍Fuel资助计划 (Introducing the Fuel Grants Program) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1666343530724">
+<link rel="shortcut icon" href="/favicon.ico?v=1666609187392">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -997,6 +997,165 @@ Apply for a grant <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">here</a
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/tan-suo-fuel-xu-ni-ji-fuelvm-exploring-the-fuelvm/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*Wp6jt8fQD2RkhhB0.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;版权提示-copyright-notice&#34;&gt;版权提示 (Copyright Notice)&lt;/h1&gt;
+&lt;p&gt;Thanks to the great article &lt;a href=&#34;https://medium.com/blockchain-capital-blog/exploring-the-fuelvm-86cf9ccdc159&#34;&gt;Exploring the FuelVM&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/sproule_&#34;&gt;Ryan Sproule&lt;/a&gt; ,we could deeply explore the Fuel Project in an easy way.&lt;/p&gt;
+&lt;p&gt;感谢这篇杰出的文章： &lt;a href=&#34;https://medium.com/blockchain-capital-blog/exploring-the-fuelvm-86cf9ccdc159&#34;&gt;探索Fuel虚拟机(FuelVM)-Exploring the FuelVM&lt;/a&gt;(作者为 &lt;a href=&#34;https://twitter.com/sproule_&#34;&gt;Ryan Sproule&lt;/a&gt;)让我们能深入浅出地了解 &lt;a href=&#34;https://twitter.com/fuellabs_&#34;&gt;Fuel&lt;/a&gt;项目。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This translation is a personal work&lt;/em&gt; by &lt;a href=&#34;https://twitter.com/fuellabs_&#34;&gt;Fuel&lt;/a&gt; enthusiast &lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt; , with permission from the author. &lt;strong&gt;The author reserves the right of final explanation&lt;/strong&gt;. &lt;strong&gt;This translation should NEVER EVER be regarded as any types or forms of Financial Advice&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;本翻译为 &lt;a href=&#34;https://twitter.com/fuellabs_&#34;&gt;Fuel&lt;/a&gt;爱好者&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;的个人作品，已经过作者本人授权。&lt;strong&gt;作者享有最终解释权&lt;/strong&gt;&lt;/em&gt;。&lt;strong&gt;本作品不应被视为任何形式的财务投资建议&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;sway-和-fuelvm初探-introducing-sway-and-the-fuelvm&#34;&gt;Sway 和 FuelVM初探 (Introducing Sway and the FuelVM)&lt;/h1&gt;
+&lt;p&gt;Fuel Labs is building a novel execution layer for scaling the next generation of blockchain applications. The FuelVM is designed to be modular — it can plug in as the execution engine for any blockchain. Primarily, the FuelVM will be deployed as a Layer 2 rollup on Ethereum, but in theory, it can be deployed anywhere as an L2 or even as another L1. The FuelVM is designed to scale Ethereum without increasing the node requirements but rather by getting &lt;em&gt;more&lt;/em&gt; out of the existing hardware.&lt;/p&gt;
+&lt;p&gt;Fuel Labs 正在构建一个全新的执行层，用于扩展下一代区块链应用。 FuelVM 被设计成模块化的——它可以作为任何区块链的执行引擎插入。首先，FuelVM 将作为layer2汇总，部署在以太坊上，但理论上，它可以作为 L2 甚至作为另一个 L1 部署在任何地方。 FuelVM 旨在在不增加节点要求的情况下扩展以太坊，即从现有硬件中获得更多。&lt;/p&gt;
+&lt;p&gt;Fuel Labs is also building a novel DSL for writing contracts for the FuelVM called Sway. Sway is inspired by both Rust and Solidity to create the ideal smart contract programming language.&lt;/p&gt;
+&lt;p&gt;Fuel Labs 还在构建一种全新的 DSL，用于为 FuelVM 编写合约，称为 Sway。 Sway 受到 Rust 和 Solidity 的启发，创建了理想的智能合约编程语言。&lt;/p&gt;
+&lt;h1 id=&#34;什么是-fuelvmwhat-is-the-fuelvm&#34;&gt;什么是 FuelVM？(What is the FuelVM?)&lt;/h1&gt;
+&lt;p&gt;The FuelVM is a fully purpose-built, custom virtual machine for executing smart contracts. Designed from the start to be easily fraud-provable, the Fuel VM can be used as the transaction execution layer for an optimistic rollup.&lt;/p&gt;
+&lt;p&gt;FuelVM 是一个完全专用的定制虚拟机，用于执行智能合约。 Fuel VM 从一开始就设计为易于欺诈证明的，可用作乐观汇总的交易执行层。&lt;/p&gt;
+&lt;p&gt;The FuelVM is optimized to better utilize hardware to increase the throughput of transaction execution. Concretely, it is UTXO based and forces every transaction to explicitly define the UTXOs that it will touch. Since the execution engine can identify exactly what state every transaction touches, it is able to trivially find the transactions that are not contentious and parallelize them.&lt;/p&gt;
+&lt;p&gt;FuelVM 经过优化，可以更好地利用硬件来提高交易执行的吞吐量。具体来说，它是基于 UTXO 的，并强制每笔交易明确定义它将触及的 UTXO。由于执行引擎可以准确识别每个交易涉及的状态，因此它能够轻松找到没有争议的交易并将它们并行(执行)。&lt;/p&gt;
+&lt;p&gt;You can read the full FuelVM spec &lt;a href=&#34;https://github.com/FuelLabs/fuel-specs&#34;&gt;here&lt;/a&gt; or watch John Adler’s video run-through &lt;a href=&#34;https://youtu.be/GKNuaFcPaXc&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;您可以阅读完整的 FuelVM 规范 &lt;a href=&#34;https://github.com/FuelLabs/fuel-specs&#34;&gt;此处&lt;/a&gt; 或观看 John Adler 的视频演示 &lt;a href=&#34;https://youtu.be/GKNuaFcPaXc&#34;&gt;此处&lt;/a&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;为什么虚拟机如期重要why-does-the-vm-matter&#34;&gt;为什么虚拟机如期重要？Why does the VM matter?&lt;/h1&gt;
+&lt;p&gt;In a smart contract blockchain system, the VM is the system that can understand smart contract code and execute state transitions based on the rules defined in this code. &lt;em&gt;The VM is the operating system for the smart contract blockchain.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;在智能合约区块链系统中，虚拟机(VM)是能够理解智能合约代码并根据该代码中定义的规则执行状态转换的系统。 &lt;em&gt;VM是智能合约区块链的操作系统。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As of today, smart contract VMs have not iterated much beyond the initial versions presented in Ethereum. All widely used smart contract chains (bar Solana) today are using the same VM as Ethereum: the EVM.&lt;/p&gt;
+&lt;p&gt;截至今天，智能合约虚拟机的迭代并没有超出以太坊中提供的初始版本。今天所有广泛使用的智能合约链(除了Solana)都使用与以太坊相同的VM：EVM。&lt;/p&gt;
+&lt;p&gt;In today’s world, the EVM is “good enough” because the main bottleneck of scaling is not the rate at which transactions are executed, but rather the bandwidth that the consensus engine can support (blockspace). With the progression of layer 2 scaling solutions and DA solutions like Celestia, EIP-4844, Danksharding, and EigenDA, the cost of posting rollup transaction data to L1 will no longer be the primary constraint.&lt;/p&gt;
+&lt;p&gt;在当今世界，EVM 已经“足够好”，因为扩展的主要瓶颈不是交易执行的速度，而是共识引擎可以支持的带宽(区块空间)。随着layer2扩展解决方案和 DA 解决方案(如 Celestia、EIP-4844、Danksharding 和 EigenDA)的发展，将汇总交易数据发布到 L1 的成本将不再是主要限制因素。&lt;/p&gt;
+&lt;p&gt;In this imminent environment where bandwidth is cheap, the next bottleneck will be computational throughput: how fast a system can execute transactions while keeping the underlying hardware requirements &lt;em&gt;low enough&lt;/em&gt; for sufficient decentralization. The FuelVM has the advantage of being designed with these considerations for the future in mind and can optimize accordingly.&lt;/p&gt;
+&lt;p&gt;在这个带宽便宜的迫在眉睫的环境中，下一个瓶颈将是计算吞吐量：系统可以多快执行交易，同时保持底层硬件要求 &lt;em&gt;足够低&lt;/em&gt; ，进而实现足够的去中心化。 FuelVM 的优点是在设计时考虑到了这些考虑因素，并且可以相应地进行优化。&lt;/p&gt;
+&lt;h1 id=&#34;fuelvm-的优势-fuelvms-differentiators&#34;&gt;FuelVM 的优势 (FuelVM’s Differentiators)&lt;/h1&gt;
+&lt;h2 id=&#34;执行-验证并行化-execution-validation-parallelization&#34;&gt;执行 + 验证并行化 (Execution + Validation Parallelization)&lt;/h2&gt;
+&lt;p&gt;The secret behind the FuelVM’s parallelizable virtual machine is its &lt;em&gt;strict access lists —&lt;/em&gt; which require users (in reality, clients or wallets) to indicate which contract(s) their transaction will touch. It is helpful to inspect what exactly makes up a transaction in the FuelVM.&lt;/p&gt;
+&lt;p&gt;FuelVM 可并行化虚拟机背后的秘密在于它的 &lt;em&gt;严格访问列表——&lt;/em&gt; 要求用户(实际上是客户端或钱包)指明他们的交易将触及哪些合约。检查 FuelVM 中事务的确切组成是很有帮助的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Inputs&lt;/strong&gt;: list of all contract UTXOs that the transaction will touch + data to unlock the UTXO or predicate script.&lt;br&gt;
+&lt;strong&gt;输入&lt;/strong&gt;：交易将触及的所有合约 UTXO 的列表 + 用于解锁 UTXO 或谓词脚本的数据。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Outputs&lt;/strong&gt;: define the UTXOs that will be created&lt;br&gt;
+&lt;strong&gt;输出&lt;/strong&gt;：定义将被创建的 UTXO&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Gas Information&lt;/strong&gt;: gas price + gas limits&lt;br&gt;
+&lt;strong&gt;Gas 信息&lt;/strong&gt;：Gas 价格 + Gas 限制&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Witnesses&lt;/strong&gt;: metadata + digital signature for authorization&lt;br&gt;
+&lt;strong&gt;见证人&lt;/strong&gt;：元数据+授权数字签名&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The critical point here is the explicit “inputs” list, which lists all the UTXOs that will be consumed. This includes “special” contract UTXOs. If, before executing any code, the VM is able to tell which contracts a transaction will touch, it can safely execute all other non-contentious state-accessing transactions in parallel.&lt;/p&gt;
+&lt;p&gt;这里的关键点是明确的“输入”列表，它列出了所有将被消耗的 UTXO。这包括“特殊”合约 UTXO。如果在执行任何代码之前，VM 能够判断交易将触及哪些合约，它就可以安全地并行执行所有其他无争议的状态访问交易。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/4000/1*1avkHndlTD9RhwMMYBaL7w.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/4000/1*nIXbEQkuMQ2p2g5GF-R9IQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Both transaction execution and validation can take advantage of parallelism (validation can to an even greater extent).&lt;/p&gt;
+&lt;p&gt;交易执行和验证都可以利用并行性(验证可以在更大程度上利用)。&lt;/p&gt;
+&lt;p&gt;Notice that since transaction outputs are explicitly included for validation, in the process of asserting that a block that another node proposed was correct, there is no need to execute the overlapping transactions sequentially. This means that validation can happen fully in parallel regardless of state contention. In practice, this means that when nodes are syncing the network, they can achieve even greater parallelization and can catch up faster.&lt;/p&gt;
+&lt;p&gt;请注意，由于交易输出被明确包含用于验证，因此在判别另一个节点提出的块是否正确的过程中，不需要顺序执行重叠的交易。这意味着无论状态争用如何，验证都可以完全并行进行。在实践中，这意味着当节点同步网络时，它们可以实现更大的并行化，并且可以更快地赶上。&lt;/p&gt;
+&lt;h2 id=&#34;原生资产系统-native-asset-system&#34;&gt;原生资产系统 (Native Asset System)&lt;/h2&gt;
+&lt;p&gt;In the EVM, there is one native asset: ETH. All other assets are implemented via a smart contract that handles accounting for balances (ERC20). In Fuel, developers are free to implement assets in smart contracts, BUT, there is an option to allow the VM to handle this natively.&lt;/p&gt;
+&lt;p&gt;在 EVM 中，有一种原生资产：ETH。所有其他资产都是通过处理余额会计的智能合约 (ERC20) 实现的。在 Fuel 中，开发人员可以自由地在智能合约中实现资产，但是，有一个选项允许 VM 进行本地处理。&lt;/p&gt;
+&lt;p&gt;There are a few considerable advantages to native assets over an ERC20-style smart contract for balance management. First, native asset manipulation is cheaper (in terms of gas) than manipulating state in a smart contract. This can be attributed to its running at lower-level primitives (UTXO system is used instead of manipulating storage). Second, native assets have better UX, similar to how sending ETH is much simpler than sending ERC20s (no need for setting approvals).&lt;/p&gt;
+&lt;p&gt;与 ERC20 风格的智能合约相比，原生资产在余额管理方面有一些相当大的优势。首先，原生资产操作(就gas而言)比在智能合约中操纵状态更便宜。这可以归因于它在较低级别的语言上运行(使用 UTXO 系统而不是操纵存储)。其次，原生资产具有更好的用户体验，类似于发送 ETH 比发送 ERC20 简单得多(无需设置批准)。&lt;/p&gt;
+&lt;h2 id=&#34;本地帐户抽象-谓词-native-account-abstraction-predicates&#34;&gt;本地帐户抽象 + 谓词 (Native Account Abstraction + Predicates)&lt;/h2&gt;
+&lt;p&gt;Account abstraction has been a hot topic of research and several attempts have been made at EIPs (&lt;a href=&#34;https://eips.ethereum.org/EIPS/eip-86&#34;&gt;EIP-86&lt;/a&gt;, &lt;a href=&#34;https://eips.ethereum.org/EIPS/eip-2938&#34;&gt;EIP-2938&lt;/a&gt;, &lt;a href=&#34;https://eips.ethereum.org/EIPS/eip-3074&#34;&gt;EIP-3074&lt;/a&gt;, &lt;a href=&#34;https://eips.ethereum.org/EIPS/eip-4337&#34;&gt;EIP-4337&lt;/a&gt;, &lt;a href=&#34;https://eips.ethereum.org/EIPS/eip-5003&#34;&gt;EIP-5003&lt;/a&gt;) over the years in the Ethereum community. It is difficult to implement and upgrade Ethereum to support account abstraction primarily because of the engineering bandwidth of core teams/technical debt plus the associated complexity, and a long list of higher priority items. Many rollups have the opportunity to implement account abstraction from the start on their novel execution environments. Among these is the FuelVM, which, in addition to native account abstraction, will also include an interesting new primitive: predicates.&lt;/p&gt;
+&lt;p&gt;帐户抽象一直是研究的热门话题，并且EIP (&lt;a href=&#34;https://eips.ethereum.org/EIPS/eip-86&#34;&gt;EIP-86&lt;/a&gt;、&lt;a href=&#34;https://eips.ethereum.org/EIPS/eip-2938&#34;&gt;EIP-2938&lt;/a&gt;、&lt;a href=&#34;https://eips.ethereum.org/EIPS/eip-3074&#34;&gt;EIP-3074&lt;/a&gt;、&lt;a href=&#34;https://eips.ethereum.org/EIPS/eip-4337&#34;&gt;EIP-4337&lt;/a&gt;, &lt;a href=&#34;https://eips.ethereum.org/EIPS/eip-5003&#34;&gt;EIP-5003&lt;/a&gt;) 多年来在以太坊社区中有所应用。但很难实施和升级以太坊来支持帐户抽象，主要是因为核心团队的工程带宽/技术债务加上相关的复杂性，以及一长串更高优先级项目。许多汇总有机会从一开始就在全新的执行环境中实现帐户抽象。其中包括 FuelVM，除了原生帐户抽象之外，它还将包括一个有趣的新原语：谓词。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1360/1*_AYV990rgjSyaGYa-VpkQw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;meme原始地址 (meme credit): &lt;a href=&#34;https://twitter.com/fueldrinker69/status/1582439702069551109?s=20&amp;amp;t=HJJ_ZwWw8x8f83NLxeo5uw&#34;&gt;https://twitter.com/fueldrinker69/status/1582439702069551109?s=20&amp;amp;t=HJJ_ZwWw8x8f83NLxeo5uw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A predicate is a pure (does not access state) contract script that simply returns a boolean (true or false). UTXOs can be locked behind a predicate so they can only be spent whenever the conditions defined in the predicate are met. This leads to an interesting UX opportunity where users can set a transaction to execute only under certain conditions, and then once the predicate is met, their transaction can automatically execute. Also, predicates can be pruned when they are destroyed, so they do not contribute to state bloat.&lt;/p&gt;
+&lt;p&gt;谓词是一个纯粹的(不访问状态)合约脚本，它只返回一个布尔值(真或假)。 UTXO 可以锁定在谓词后面，因此只有在满足谓词中定义的条件时才能使用它们。这带来了一个有趣的 UX 机会，用户可以将交易设置为仅在特定条件下执行，然后一旦满足谓词，他们的交易就可以自动执行。此外，谓词在销毁时可以被修剪，因此它们不会导致状态膨胀。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Trivial demonstrative example: User sets a transaction to buy X tokens whenever the price meets the threshold defined in the predicate. Voila, the pièce de résistance, fully on chain trustless limit orders that won’t bloat the state!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;小示范示例：只要价格达到谓词中定义的阈值，用户就会设置交易来购买 X 个代币。瞧，一点抵抗力量，完全在链上，不会使状态膨胀的去信任化限价订单！&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;多维资源定价-multi-dimensional-resource-pricing&#34;&gt;多维资源定价 (Multi-dimensional Resource Pricing)&lt;/h2&gt;
+&lt;p&gt;Resource pricing is one of the most critical components of a smart contract blockchain. Decentralization is maintained by keeping the resource requirements of the chain at reasonable, affordable levels. Resource pricing allows the system to charge users for consuming “work” from the nodes in the network.&lt;/p&gt;
+&lt;p&gt;资源定价是智能合约区块链最关键的组成部分之一。通过将链的资源需求保持在合理、可负担的水平来维持去中心化。资源定价允许系统向用户收取从网络节点消耗“工作”的费用。&lt;/p&gt;
+&lt;p&gt;In the EVM, one of the most common reasons for the introduction of EIPs has been for opcode re-pricing. This is inherent to the fact that opcodes have hardcoded gas prices, and &lt;strong&gt;the underlying price of resources do not scale proportionally to each other (historically, CPUs improve more rapidly than SSDs)&lt;/strong&gt;. Ideally, these systems would be able to price each resource completely independently, so that the entire fee system can dynamically adjust for the underlying hardware system changes.&lt;/p&gt;
+&lt;p&gt;在 EVM 中，引入 EIP 的最常见原因之一是操作码重新定价。这是操作码硬编码gas价格所固有的，并且&lt;strong&gt;资源的基础价格彼此之间不成比例(从历史上看，CPU 的改进速度比 SSD 快)&lt;/strong&gt;。理想情况下，这些系统将能够完全独立地对每个资源进行定价，以便整个收费系统可以针对底层硬件系统的变化进行动态调整。&lt;/p&gt;
+&lt;p&gt;The FuelVM will be able to implement dynamic multi-resource pricing that can incentivize node runners to optimize their underlying hardware better while still optimizing for the maximum “utility per block.”&lt;/p&gt;
+&lt;p&gt;FuelVM 将能够实现动态多资源定价，可以激励节点运行者更好地优化其底层硬件，同时仍然优化最大“每块效用”。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*bLvTVR8HlGdSYIgoZvd8AQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;This drawing demonstrates a situation where one smart contract has significantly higher demand than others. With localized resource pricing, other contracts are not impacted to the same extent. An NFT drop is a good example of this. This is not &lt;em&gt;exactly&lt;/em&gt; how it works with resource pricing vs contract pricing (proposed Solana style), but the effect is very similar. A smart contract with a specific resource profile will be priced differently than another contract. For the NFT drop example, the hot contract might have a resource profile that is very storage intensive but very computationally cheap. Smart contracts that have high compute requirements relative to storage would not be as impacted by the noisy NFT drop.&lt;/p&gt;
+&lt;p&gt;该图展示了一种智能合约的需求明显高于其他智能合约的情况。通过本地化资源定价，其他合约不会受到同样程度的影响。 NFT投放/落地就是一个很好的例子。这与资源定价与合约定价(提议的 Solana 风格)不完全一样，但效果非常相似。具有特定资源配置文件的智能合约的定价将与另一个合约不同。对于 NFT 投放示例，有热度的合约可能具有非常存储密集但计算成本非常低的资源配置文件。相对于存储具有高计算要求的智能合约不会受到嘈杂的 NFT投放/落地的影响。&lt;/p&gt;
+&lt;p&gt;The Solana strategy of breaking the fee markets on accounts or contracts adds a layer of abstraction between the actual underlying resources and the demand for them. This means that there can still be situations where fees are very low, but the strain on the nodes is very high. For example, there can be an extremely high storage load on the system because of an event where, for example, many different NFTs are being minted simultaneously, but the fees are very low because not all this traffic is happening on a single account. The per-account fee model does solve the hot partition problem for accounts but leaves scenarios where the system is not correctly pricing underlying resources, so it can still lead to failures.&lt;/p&gt;
+&lt;p&gt;Solana 打破账户或合约费用市场的策略，在实际基础资源和对它们的需求之间增加了一层抽象。这意味着仍然可能存在费用非常低，但节点压力非常大的情况。例如，系统上的存储负载可能非常高，例如同时铸造了许多不同的 NFT，但费用却非常低，因为并非所有这些流量都发生在一个帐户上。每账户费用模型确实解决了账户的热分区问题，但留下了系统没有正确定价底层资源的情况，因此仍然可能导致失败。&lt;/p&gt;
+&lt;p&gt;It is simply cleaner and more accurate to price the system based on the underlying hardware resources instead of trying to add a network-specific abstraction layer like accounts to base the multi-market resource pricing on.&lt;/p&gt;
+&lt;p&gt;根据底层硬件资源为系统定价更简洁、更准确，而不是尝试添加一个特定于网络的抽象层(如帐户)来作为多市场资源定价的基础。&lt;/p&gt;
+&lt;h2 id=&#34;状态膨胀注意事项-state-bloat-considerations&#34;&gt;状态膨胀注意事项 (State-bloat Considerations)&lt;/h2&gt;
+&lt;p&gt;As mentioned multiple times by the geth team, the current bottleneck in geth is with I/O for state read and write access. Initially, the idea was that 100% of the state Merkle-Patricia-trie (MPT) would fit on the RAM of a standard device. This is not the case anymore as the state has grown to over 900 GB and is expected to grow approx 50–100 GB per year, which is unreasonably large for anyone to fit in RAM, so most nodes have turned to SSDs to store state. Historically, SSDs do not improve as quickly as the state size is growing, so this cost will continue to impact the decentralization of the network. This is a critical problem that &lt;a href=&#34;https://hackmd.io/@vbuterin/state_size_management&#34;&gt;Ethereum researchers have been discussing for some time.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;正如 geth 团队多次提到的，当前 geth 的瓶颈在于状态读写访问的 I/O。最初的想法是标准设备的 RAM去与 100% 的状态 Merkle-Patricia-trie (MPT) 适配。现在情况已不再如此，因为状态已增长到超过 900 GB，并且预计每年将增长约 50-100 GB，这对于任何人来说都无法期容纳在 RAM 中，因此大多数节点都转向 SSD 来存储状态。从历史上看，SSD 的改进速度不会随着状态规模的增长而迅速提高，因此这种成本将继续影响网络的去中心化。这是 &lt;a href=&#34;https://hackmd.io/@vbuterin/state_size_management&#34;&gt;以太坊研究人员已经讨论了一段时间的关键问题。&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The FuelVM is instead being constructed with this problem front of mind. There have been a couple of talks by Fuel Labs’ co-founder, John Adler, about the role resource pricing plays in the way that state or other resources are consumed by smart contracts. By a combination of appropriate resource pricing and a more clear data model for state pruning with the UTXO system, the FuelVM will be able to keep the state under control, reducing the cost of running a node, which is equivalent to increasing the decentralization of the network.&lt;/p&gt;
+&lt;p&gt;FuelVM 是在考虑这个问题的前提下构建的。 Fuel Labs 的联合创始人 John Adler 就资源定价在智能合约消耗状态或其他资源的方式中所起的作用，进行了几次会谈。通过适当的资源定价和更清晰的状态剪枝数据模型与 UTXO 系统相结合，FuelVM 将能够控制状态，降低运行节点的成本，这相当于增加了节点的去中心化程度。&lt;/p&gt;
+&lt;h2 id=&#34;序列器的去中心化-decentralization-of-the-sequencer&#34;&gt;“序列器”的去中心化 (Decentralization of the “sequencer”)&lt;/h2&gt;
+&lt;p&gt;Although Layer 2s allow us to offload computation effort from the main chain, they still need to provide a mechanism to order transactions. Many layer 2 solutions are launching with what has been referred to as the “sequencer”. The sequencer is a privileged node that is responsible for ordering transactions, executing state transitions, and then submitting the state root update along with compressed transaction information to Layer 1 Ethereum. It is obvious, but notable, that a single super-computer responsible for sequencing can execute more transactions per epoch than a multitude of smaller computers redundantly executing the same sequence of transactions.&lt;/p&gt;
+&lt;p&gt;尽管layer2允许我们从主链上卸去计算工作，但它们仍然需要提供一种机制来对交易进行排序。许多layer2解决方案都使用所谓的“序列器”启动。序列器是一个特权节点，负责对交易进行排序、执行状态转换，然后将状态根更新连同压缩的交易信息一起提交到layer1以太坊。很明显，但值得注意的是，一台负责排序的超级计算机每个时期可以执行更多的交易，而不是多个小型计算机冗余地执行相同交易序列。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;There are several key problems with this centralized sequence role that needs to be getting more attention!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这个中心化的排序角色有几个关键问题需要引起更多关注！&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Controlling the ordering of transactions is very profitable. We have observed in Ethereum and other blockchains that MEV is one of the main sources of income for those who order blocks. A single party controlling ordering and MEV capture eventually leads to worse execution for users as we see in traditional finance today.&lt;br&gt;
+控制交易的顺序是非常有利可图的。我们在以太坊和其他区块链中观察到，MEV 是订购区块的人的主要收入来源之一。正如我们今天在传统金融中看到的那样，单方控制订购和 MEV 捕获最终会导致用户执行更差。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A centralized sequencer can be a single point of failure both from an availability and regulatory perspective. If a single or a small number of organizations are running sequencers they can go down or be taken down. This is a liveness risk to the network.&lt;br&gt;
+从可用性和监管角度来看，中心化序列器可能是单点故障。如果单个或少数组织正在运行序列器，它们可能会关闭或被劫持。这对网络来说是一个活跃的风险。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A centralized sequencer may censor transactions on the Layer 2. The sequencer gets to choose whatever transactions and place them in any order during the construction of a block, this leads to the ability to censor. In fairness, many L2s handle this case by providing “forced transaction” mechanisms, which allow users to bypass the sequencer and directly get transactions included by leveraging the L1.&lt;br&gt;
+中心化序列器可以审查layer2上的交易。序列器可以选择任何交易并在构建块期间以任何顺序放置，这导致了审查的能力。公平地说，许多 L2 通过提供“强制交易”机制来处理这种情况，该机制允许用户绕过序列器并通过利用 L1 直接获取包含的交易。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sequencers can make inconsistent promises about the state of the chain to users of the rollup. This is often referred to as equivocation, which basically means that the sequencer can make a misleading promise about some state of the L2. This comes from the fact that fast finality on the rollup is a trusted step, a sequencer can abuse this trust that leads users to do things they do not intend.&lt;br&gt;
+序列器可以对汇总的用户做出链状态不一致承诺，通常被称为模棱两可，这基本上意味着序列器可以对 L2 的某些状态做出误导性的承诺。这源于这样一个事实，即汇总的快速确定性是一个值得信赖的步骤，序列器可以滥用这种信任，导致用户做他们不想做的事情。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;fuel如何解决这些问题-how-does-fuel-solve-these-problems&#34;&gt;Fuel如何解决这些问题？ (How does Fuel solve these problems?)&lt;/h2&gt;
+&lt;p&gt;First of all, Fuel is not just a rollup or an L1 blockchain, rather, it is a system that simply applies state transitions that &lt;em&gt;can&lt;/em&gt; be posted to an L1 if configured as a rollup or operate in a network to achieve consensus as an L1. The key difference is that the Fuel execution engine does not care about consensus or transaction ordering. Fuel is only responsible for applying the transactions as quickly as possible. &lt;strong&gt;But&lt;/strong&gt;, since Fuel can run on such light hardware and verification is so cheap, it is plausible that Fuel can bootstrap a diverse and decentralized consensus network that does do consensus for much cheaper than an equivalent system running a less performant execution engine like the EVM.&lt;/p&gt;
+&lt;p&gt;首先，Fuel 不仅仅是一个汇总或 L1 区块链，相反，它是一个简单地应用状态转换的系统，如果配置为 汇总或在网络中运行来实现 L1 的共识，就可以将其发布到 L1。关键区别在于 Fuel 执行引擎不关心共识或交易顺序。 Fuel只负责尽快应用交易。 &lt;strong&gt;但是&lt;/strong&gt;，由于 Fuel 可以在如此轻量级的硬件上运行并且验证非常便宜，因此以下内容就变得合理起来： Fuel 可以引导一个多样化和去中心化的共识网络，该网络实现共识确实以比运行性能较低执行引擎的同等系统(如EVM)要便宜得多。&lt;/p&gt;
+&lt;p&gt;Additionally, the Fuel team is thinking about layer 2 tokenomics with decentralization, MEV, and these other considerations in mind. Fuel co-founder, John Adler, wrote a post on &lt;a href=&#34;https://fuel-labs.ghost.io/token-model-layer-2-block-production/&#34;&gt;a token model for layer-2 blockchains&lt;/a&gt; in January that lays out a design for a token that helps decentralize block production by allowing rollups &lt;strong&gt;to tokenize block space scarcity through the right to collect fees as a block producer.&lt;/strong&gt; Fee collection is only one portion of the income for block producers, as we have seen in other chains, MEV is another large portion of the income. Similarly to block space scarcity, MEV income will &lt;em&gt;also&lt;/em&gt; be tokenized via the right to produce blocks.&lt;/p&gt;
+&lt;p&gt;此外，Fuel 团队正在考虑去中心化、MEV 和其他因素的layer2代币经济学。 Fuel 联合创始人 John Adler 在 1 月份写了一篇关于 &lt;a href=&#34;https://fuel-labs.ghost.io/token-model-layer-2-block-production/&#34;&gt;layer2区块链的代币模型&lt;/a&gt; 的帖子,它设计了一种代币(模型)，该代币通过允许汇总**作为区块生产者收取费用的权利，来标记区块空间的稀缺性，进而帮助分散区块生产。**收费只是区块生产者收入的一部分，因为我们在其他链中看到，MEV 是收入的另一大部分。与区块空间的稀缺性类似，MEV 收入也将通过生产区块的权利进行代币化。&lt;/p&gt;
+&lt;h2 id=&#34;状态模型utxo-vs-基于账户-the-state-model-utxo-vs-account-based&#34;&gt;状态模型：UTXO vs 基于账户 (The State Model: UTXO vs Account Based)&lt;/h2&gt;
+&lt;p&gt;The best way to conceptualize the difference between the UTXO data model and the account model is as follows: UTXOs can be likened to cash bills, whereas the account model is more similar to a bank ledger. Account systems naturally lead to hot pieces of state because every transaction is trying to access the same account, while the UTXO, if designed correctly, is less contentious. This characteristic enables better parallelization and also can prevent state bloat by simplifying the process of state pruning.&lt;/p&gt;
+&lt;p&gt;概念化 UTXO 数据模型和账户模型之间差异的最佳方法如下：UTXO 可以比作现金票据，而账户模型更类似于银行账本。账户系统自然会导致热点状态，因为每笔交易都试图访问同一个账户，而 UTXO，如果设计得当，争议较小。这个特性可以实现更好的并行化，也可以通过简化状态修剪的过程来防止状态膨胀。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/4000/1*sjfvqbqpQT_MLCe_HsPhNg.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/4000/1*daR6MsOjX5wPl5BRyypIpA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Sticking with the cash vs. bank ledger metaphor, it becomes clear why parallelization can tend to be much easier with UTXO. 2 cash transactions can happen at the same time and they don’t need to have any knowledge of each other, while if there were to be 2 account updates on a ledger, both transactions would have to update the same shared ledger.&lt;/p&gt;
+&lt;p&gt;坚持现金与银行分类账的比喻，很明显为什么使用 UTXO 可以更容易地实现并行化。 2 笔现金交易可以同时发生，它们不需要相互了解，而如果分类账上有 2 个账户更新，则两个交易都必须更新同一个共享分类账。&lt;/p&gt;
+&lt;h1 id=&#34;虚拟机大战-the-vm-wars&#34;&gt;虚拟机大战 (The VM Wars)&lt;/h1&gt;
+&lt;p&gt;Other teams, beyond Fuel, are working on next-generation virtual machines for smart contract blockchains such as Mysten Labs and Aptos, who are working with the MoveVM that was originally designed by engineers at Facebook as part of the Libra project. This further bolsters the thesis that there is demand for novel execution environments in order to support the next generation of blockchain applications. All of these projects have interesting approaches and make different trade-offs.&lt;/p&gt;
+&lt;p&gt;除了 Fuel 之外，其他团队正在开发用于智能合约区块链的下一代虚拟机，例如 Mysten Labs 和 Aptos，他们正在使用最初由 Facebook 工程师设计的 MoveVM(最初作为 Libra 项目的一部分)。这进一步支持了需要新型执行环境来支撑下一代区块链应用的论点。所有这些项目都有有趣的方法并做出不同的权衡。&lt;/p&gt;
+&lt;p&gt;In the years that the MoveVM sat stagnant when Libra was busy fighting legal battles, a lot changed in the crypto world. Fuel was able to adapt to those changes and stay agile in an extremely fast-paced industry, while Move fell slightly behind. That being said, since Move has spun out of Facebook and new large financing rounds have been completed, they are certainly getting ready to go to war!&lt;/p&gt;
+&lt;p&gt;在 Libra 忙于打官司，MoveVM 停滞不前的几年里，加密世界发生了很大变化。 Fuel 能够适应这些变化并在这个快节奏的行业中保持敏捷，而 Move 则略微落后。话虽如此，既然 Move 已经从 Facebook 分拆出来，并且新一轮的大额融资已经完成，他们肯定已经做好了开战的准备！&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;8&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/400/0*jeQ293mTqR91ylk3&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;结论-conclusion&#34;&gt;结论 (Conclusion)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Unlike other L2s, Fuel has plans to decentralize the sequencer role from the start by designing the VM so that expensive hardware is not required to increase scale.&lt;br&gt;
+与其他 L2 不同，Fuel 计划从一开始就通过设计虚拟机来分散序列器的角色，这样就不需要昂贵的硬件来扩大规模。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fuel is flexible. It can be deployed in many environments, but the priority is to be Ethereum aligned as an Optimistic Rollup.&lt;br&gt;
+Gas是灵活的。它可以部署在许多环境中，但优先级是作为乐观汇总与以太坊对齐。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fuel’s UX will be much better than the EVM’s because of native and novel ways of interacting with the chain, such as account abstraction, scripts, and predicates.&lt;br&gt;
+由于与链交互的原生和新颖的方式，例如帐户抽象、脚本和谓词，Fuel 的用户体验将比 EVM 好得多。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The UTXO data model is naturally less contentious than the account data model and will lead to more parallelism AND less state bloat.&lt;br&gt;
+UTXO 数据模型自然比账户数据模型更少争议，并且会导致更多并行(处理)和更少的状态膨胀。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+">探索Fuel虚拟机(FuelVM)-Exploring the FuelVM</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/camiinthisthang-chang-tui-20221019camiinthisthang-twitter-threads-20221019/"" data-c="
@@ -2157,6 +2316,76 @@ npm install
       </div>
       
       <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/robonomics-wang-luo-de-ze-ren-he-yue-zai-neon-evm-shang-cheng-gong-zhi-xing-robonomics-networks-liability-contract-is-successfully-executed-on-neon-evm/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*kHK1O71PuWEjYB01Cr-MWg.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Neon Labs recently partnered with &lt;a href=&#34;https://robonomics.network/&#34;&gt;Robonomics Network&lt;/a&gt; to validate the readiness of the Neon platform for production using a complex workflow. The exercise involved deploying and testing Robonomics’ smart contracts to Neon EVM. The deployed contracts allow cyber-physical systems (robots) to perform certain actions based on technical-economic transactions.&lt;/p&gt;
+&lt;p&gt;Neon Labs 最近与 &lt;a href=&#34;https://robonomics.network/&#34;&gt;Robonomics网络(机器人经济学)&lt;/a&gt; 合作，使用复杂的工作流程验证 Neon 平台是否已准备好进行生产。该练习涉及将 Robonomics 的智能合约部署和测试到 Neon EVM。部署的合约允许网络物理系统(机器人)根据技术经济交易执行某些操作。&lt;/p&gt;
+&lt;p&gt;In the Robonomics network, engagement is formed between two parties: the Promisee, who orders the service, provides a technical task description and funds for its execution, and the Promisor, who actually executes the service. The interaction is coordinated by a special node called the Provider. The Provider is constantly observing the network for signals from Promisee and Promisor.&lt;/p&gt;
+&lt;p&gt;在 Robonomics 网络中，参与在两方之间形成的：订购服务的承诺人，提供技术任务描述和执行资金，以及实际执行服务的被承诺人。交互由称为Provider(供应者) 的特殊节点协调。Provider(供应者) 不断观察网络以获取来自 承诺人和被承诺人的信号。&lt;/p&gt;
+&lt;p&gt;The exercise examined a common use case flow:&lt;br&gt;
+该练习检查了一个常见的用例流程：&lt;/p&gt;
+&lt;p&gt;1.A contract between a Promisee and a Promisor was established.&lt;br&gt;
+承诺人和被承诺人之间的合约成立&lt;/p&gt;
+&lt;p&gt;2.The resulting “work/action” was executed by the Promisor and validated by a third party.&lt;br&gt;
+由此产生的“工作/行动”由承诺人执行并由第三方验证&lt;/p&gt;
+&lt;p&gt;3.The node that facilitated the contract between the two parties (Promisee and Promisor) was paid a commission.&lt;br&gt;
+促成双方(承诺人和被承诺人)之间合约的节点获得了佣金。&lt;/p&gt;
+&lt;p&gt;For the commissioned work/action, a simulation of a robotic arm performed a sequence of actions based on the contract between the Promisee and Promisor. Telemetry data representing the robot’s actions was recorded by the robot and saved in order to verify the completion of work.&lt;/p&gt;
+&lt;p&gt;对于委托的工作/动作，机器人手臂的模拟根据承诺人和被承诺人之间的合约执行一系列动作。代表机器人动作的遥测数据由机器人记录并保存，以验证工作是否完成。&lt;/p&gt;
+&lt;h2 id=&#34;谁是robonomicswho-is-robonomics&#34;&gt;谁是Robonomics？(Who is Robonomics?)&lt;/h2&gt;
+&lt;p&gt;Robonomics Network is an open-source IoT application platform that aims to leverage decentralized architecture by atomically transferring technical and financial data between user applications, IoT services, and sophisticated robotics. Launching secure, serverless dApps that put user data privacy and device security first at every level of communication is made easy by Robonomics.&lt;/p&gt;
+&lt;p&gt;Robonomics网络是一个开源物联网应用平台，旨在通过在通过以下方式利用去中心化架构架构：用户应用、物联网服务和复杂机器人技术之间自动传输技术和财务数据。 Robonomics 可以轻松启动安全的无需服务器的，将用户数据隐私和设备安全放在各个通信级别首位的dApp。&lt;/p&gt;
+&lt;h1 id=&#34;我们的目标-our-objective&#34;&gt;我们的目标 (Our Objective)&lt;/h1&gt;
+&lt;p&gt;The objective of deploying and testing the Robonomics smart contracts via Neon EVM was to verify the efficacy of the Neon network with complex workflows. That workflow involves:&lt;/p&gt;
+&lt;p&gt;通过 Neon EVM 部署和测试 Robonomics 智能合约的目的是通过复杂的工作流验证 Neon 网络的有效性。该工作流程涉及：&lt;/p&gt;
+&lt;p&gt;1.A successful commitment between a Promisee and a Promisor as defined by a &lt;a href=&#34;https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol&#34;&gt;Liability&lt;/a&gt; contract. The Liability contract is a smart contract that replicates the regular connection between a service’s Promisee (the consumer) and Promisor (the services provider). It also includes the technical and financial terms of their exchange. The Promisee and Promisor can be autonomous agents or humans.&lt;br&gt;
+&lt;a href=&#34;https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Liability.sol&#34;&gt;责任&lt;/a&gt; 合同所定义的承诺人与被承诺人之间的成功承诺。责任合约是一个智能合约，它复原了服务的承诺者(消费者)和被承诺者(服务提供者)之间的常规连接。还包括他们交换的技术和财务条款。 承诺人和被承诺人可以是自主代理或人类。&lt;/p&gt;
+&lt;p&gt;2.A payment to the Promisor (service provider) by the Promisee after the successful execution of an agreed upon “work/action”.&lt;br&gt;
+承诺人在成功执行约定的“工作/行动”后向被承诺人(服务提供商)付款。&lt;/p&gt;
+&lt;p&gt;3.A verification of the Promisor’s agreed upon “work/action” by a third party observing the Neon network.&lt;br&gt;
+由观察 Neon 网络的第三方对承诺人同意的“工作/行动”进行验证。&lt;/p&gt;
+&lt;h1 id=&#34;测试方法-testing-methodology&#34;&gt;测试方法 (Testing Methodology)&lt;/h1&gt;
+&lt;p&gt;To simulate a use case involving fully automated businesses and services delivered by cyber-physical systems (CPS), we chose a scenario with two autonomous agents acting as Promisee and Promisor. The use case illustrates how future “smart cities” or enterprises might make use of blockchain networks. Neon EVM’s success with this use case will demonstrate its viability as a cutting-edge product.&lt;/p&gt;
+&lt;p&gt;为了模拟涉及由网络物理系统 (CPS) 提供的全自动业务和服务的用例，我们选择了一个场景，其中两个自治代理分别充当承诺人与被承诺人。该用例说明了未来的“智慧城市”或企业如何利用区块链网络。 Neon EVM 在此用例上的成功将证明其作为尖端产品的可行性。&lt;/p&gt;
+&lt;p&gt;The testing will assess the Liability contract life cycle in the Robonomics network as depicted below:&lt;/p&gt;
+&lt;p&gt;该测试将评估 Robonomics 网络中的责任合同生命周期，如下所示：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*0mcK66uAuOGuTCwG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;The illustration shows the actions that are taken to construct a Liability contract. First, the Robonomics network provider calls the &lt;a href=&#34;https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol&#34;&gt;Lighthouse contract&lt;/a&gt;, a special smart contract that executes a transaction when a Provider node establishes a market match between a Promisee and a Promisor pair. The Lighthouse contract in turn calls the Factory contract. Information regarding the transaction, including the terms of reference, payment for the service, the address of the validator, and the deadline, is contained in the Liability contract.&lt;/p&gt;
+&lt;p&gt;该图显示了为构建责任合同而采取的行动。首先，Robonomics 网络提供商调用&lt;a href=&#34;https://github.com/airalab/robonomics_contracts/blob/master/contracts/robonomics/Lighthouse.sol&#34;&gt;Lighthouse 合约&lt;/a&gt;，这是一个特殊的智能合约，当Provider在承诺人和被承诺人之间建立匹配时会产生一个交易。 Lighthouse 合约又调用 Factory 合约。有关交易的信息，包括职权范围、服务付款、验证者的地址和截止日期，都包含在责任合同中。&lt;/p&gt;
+&lt;p&gt;The team implemented a robot launch scenario through a Liability contract similar to &lt;a href=&#34;https://wiki.robonomics.network/docs/en/kuka/&#34;&gt;this example&lt;/a&gt; in order to replicate the Robonomics infrastructure on the Neon network. If you’re interested in more potential use cases for Robonomics, check out the &lt;a href=&#34;https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/#launching-a-drone-under-the-control-of-a-decentralized-computer&#34;&gt;Robonomics R&amp;amp;D page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;该团队通过类似于 &lt;a href=&#34;https://wiki.robonomics.network/docs/en/kuka/&#34;&gt;这个例子&lt;/a&gt; 的责任合约实施了机器人启动场景，以便在 Neon 网络上复制 Robonomics 基础设施。如果您对 Robonomics 的更多潜在用例感兴趣，请查看 &lt;a href=&#34;https://wiki.robonomics.network/docs/en/r-and-d-based-on-robonomics-network/#launching-a-drone-under-the-control-of-a-decentralized-computer&#34;&gt;Robonomics 研发页面&lt;/a&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;测试范围-testing-scope&#34;&gt;测试范围 (Testing Scope)&lt;/h1&gt;
+&lt;p&gt;The scope of the testing focused on the deployed contracts:&lt;br&gt;
+测试的范围集中在已部署的合约上：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*ZujGZaiJSJLa3Cuz0ojlHA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;测试执行-testing-execution&#34;&gt;测试执行 (Testing Execution)&lt;/h1&gt;
+&lt;p&gt;The Robonomics team began the simulation by creating an offer message and a demand message from the Promisee. During this stage, the team expected the open offer message and demand message to trigger the creation of a Liability contract via the Lighthouse contract’s createLiability function.&lt;/p&gt;
+&lt;p&gt;Robonomics 团队通过创建来自被承诺人的报价消息和需求消息来开始模拟。在这个阶段，团队期望公开报价消息和需求消息，通过 Lighthouse 合约的 createLiability 函数触发创建一个责任合约。&lt;/p&gt;
+&lt;p&gt;Following the creation of the Liability contract, the XRT contract was observed to verify that tokens were transferred correctly from the Promisee’s address to the address of the Liability contract&lt;/p&gt;
+&lt;p&gt;在创建责任合约之后，观察到 XRT 合约验证代币是否正确地从承诺人的地址转移到了责任合约的地址。&lt;/p&gt;
+&lt;p&gt;Once the new Liability contract was detected on the Neon devnet, the Promisor agent (simulated robot) began working according to the instructions in the Liability contract. The telemetry data representing the simulated robot’s work output was written to a file and sent to IPFS. The hash of the telemetry data file was saved as a result.&lt;/p&gt;
+&lt;p&gt;一旦在 Neon devnet 上检测到新的责任合同，被承诺人的代理(模拟机器人)就开始按照责任合同中的说明工作。代表模拟机器人工作输出的遥测数据被写入文件并发送到 IPFS。结果，遥测数据文件的哈希值被保存。&lt;/p&gt;
+&lt;p&gt;The Liability contract was then finalized using the Lighthouse contract’s finalizeLiability() function. In the final phase, the Robonomics team confirmed that tokens were transferred from the Liability contract’s address to the addresses of the Promisor and Validator.&lt;/p&gt;
+&lt;p&gt;然后使用 Lighthouse 合约的 finalizeLiability() 函数完成责任合约。在最后阶段，Robonomics 团队确认代币已从责任合约的地址转移到被承诺人和验证人的地址。&lt;/p&gt;
+&lt;p&gt;You can watch a recording of the process &lt;a href=&#34;https://www.youtube.com/watch?v=fYJVF7KrNnI&#34;&gt;here&lt;/a&gt;. Below is a diagram outlining the test scenario on Neon EVM.&lt;/p&gt;
+&lt;p&gt;您可以在 &lt;a href=&#34;https://www.youtube.com/watch?v=fYJVF7KrNnI&#34;&gt;此处&lt;/a&gt; 观看该过程的记录。下图概述了 Neon EVM 上的测试场景。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*iSm38sYRg8EugqT-&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;The project deliverables include &lt;a href=&#34;https://github.com/airalab/robonomics_contracts&#34;&gt;source code for the Robonomics contracts&lt;/a&gt; and the &lt;a href=&#34;https://github.com/Multi-Agent-io/neon-kuka-demo&#34;&gt;source code for implementing the test scenario&lt;/a&gt;. All the contracts are written for Solidity 0.5.0. As such, no changes were required when deploying and using the contracts on Neon EVM. Step-by-step instructions for launching the test exercise can also be found in &lt;a href=&#34;https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;项目可交付成果包括&lt;a href=&#34;https://github.com/airalab/robonomics_contracts&#34;&gt;Robonomics 合约的源代码&lt;/a&gt; 和[实现测试场景的源代码](https://github.com/Multi-Agent-io /霓虹灯库卡演示)。所有合约都是为 Solidity 0.5.0 编写的。因此，在 Neon EVM 上部署和使用合约时无需进行任何更改。也可以在 &lt;a href=&#34;https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md&#34;&gt;README.md&lt;/a&gt; 。所有合约都是为 Solidity 0.5.0 编写的。因此，在 Neon EVM 上部署和使用合约时无需进行任何更改。启动测试练习的分步说明也可以在 &lt;a href=&#34;https://github.com/Multi-Agent-io/neon-kuka-demo/blob/main/README.md&#34;&gt;README.md&lt;/a&gt; 中找到。&lt;/p&gt;
+&lt;h1 id=&#34;发现-findings&#34;&gt;发现 (Findings)&lt;/h1&gt;
+&lt;p&gt;All contracts functioned as expected. The simulated robot fulfilled its obligation to the Promisee party and delivered a file with telemetry data documenting its actions. The Provider node also correctly facilitated the engagement between the Promisor (simulated robot) and Promisee, and was compensated accurately for its involvement. The work output was also verified by a third party.&lt;/p&gt;
+&lt;p&gt;所有合约都按预期运行。模拟机器人履行了对承诺人的义务，并交付了一份包含遥测数据的文件，记录了其行为。Provider(供应者) 节点也正确地促进了被承诺人(模拟机器人)和承诺人之间的接合，并因其参与得到了准确的补偿。工作输出也经过第三方验证。&lt;/p&gt;
+&lt;p&gt;In regards to Neon platform drawbacks, the Robonomics team noted an interesting network trait to be investigated by Neon Labs:&lt;/p&gt;
+&lt;p&gt;关于 Neon 平台的缺点，Robonomics 团队注意到 Neon Labs 需要研究的一个有趣的网络特征：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Neon EVM does not have a WS/WSS endpoint.&lt;/strong&gt; Unlike Ethereum, Neon EVM doesn’t have a WS/WSS endpoint, which makes it impossible to subscribe to events from the network. As a result, the Robonomics Team monitored the events manually during testing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Neon EVM 没有 WS/WSS 端点。&lt;/strong&gt; 与以太坊不同，Neon EVM 没有 WS/WSS 端点，因此无法从网络订阅事件。因此，Robonomics 团队在测试期间手动监控事件。&lt;/p&gt;
+&lt;h1 id=&#34;结论-conclusion&#34;&gt;结论 (Conclusion)&lt;/h1&gt;
+&lt;p&gt;Now it’s your turn to deploy your smart contracts to Neon EVM. Make sure to let us know what you think. If you have any issues or need additional guidance, check out our &lt;a href=&#34;https://docs.neon-labs.org/&#34;&gt;Neon Docs&lt;/a&gt; or reach out to a team member on &lt;a href=&#34;https://discord.com/invite/9jVYEDVwn8&#34;&gt;Discord&lt;/a&gt;. We know that you’ll create something great!&lt;/p&gt;
+&lt;p&gt;现在轮到您将智能合约部署到 Neon EVM。请务必让我们知道您的想法。如果您有任何问题或需要更多指导，请查看我们的 &lt;a href=&#34;https://docs.neon-labs.org/&#34;&gt;Neon Docs&lt;/a&gt; 或通过 &lt;a href=&#34;https://discord.com&#34;&gt;Discord&lt;/a&gt; 联系团队成员/邀请。我们知道你会创造出伟大的东西！&lt;/p&gt;
+">Robonomics网络的责任合约在 Neon EVM 上成功执行 (Robonomics Network’s Liability Contract is Successfully Executed on Neon EVM)</a>
+      </div>
+      
+      <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/seinetwork-chang-tui-20221004-seinetwork-twitter-threads-20221004/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://www.seinetwork.io/_next/static/media/logo.fccb4544.svg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;p&gt;原文地址:&lt;a href=&#34;https://twitter.com/SeiNetwork/status/1577086292730396672&#34;&gt;https://twitter.com/SeiNetwork/status/1577086292730396672&lt;/a&gt;&lt;/p&gt;
@@ -2677,6 +2906,8 @@ return text;
 &lt;h2 id=&#34;yul简介一个以太坊的全新低级语言-introducingyul-a-new-low-level-language-for-ethereum&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/yuljian-jie-yi-ge-yi-tai-fang-de-quan-xin-di-ji-yu-yan-introducingyul-a-new-low-level-language-for-ethereum&#34;&gt;Yul+简介—一个以太坊的全新低级语言 (Introducing：Yul+ — A new low-level language for Ethereum)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;fuellabs_长推20221007fuellabs_threads20221007&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/fuellabs_-chang-tui-20221007fuellabs_threads20221007&#34;&gt;@fuellabs_长推20221007(@fuellabs_threads20221007)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;camiinthisthang长推-20221019camiinthisthang-twitter-threads-20221019&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/camiinthisthang-chang-tui-20221019camiinthisthang-twitter-threads-20221019&#34;&gt;@camiinthisthang长推-20221019(@camiinthisthang twitter threads-20221019)&lt;/a&gt;&lt;/h2&gt;
+&lt;h1 id=&#34;第三方研究报告3rd-party-research-reports&#34;&gt;第三方研究报告(3rd Party Research reports)&lt;/h1&gt;
+&lt;h2 id=&#34;探索fuel虚拟机fuelvm-exploring-the-fuelvm&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/tan-suo-fuel-xu-ni-ji-fuelvm-exploring-the-fuelvm&#34;&gt;探索Fuel虚拟机(FuelVM)-Exploring the FuelVM&lt;/a&gt;&lt;/h2&gt;
 ">Fuel中文材料合集-不断更新中(Fuel Chinese Materials-Updating)</a>
       </div>
       
@@ -5794,7 +6025,7 @@ API 方法的一些使用示例包括：&lt;/p&gt;
 &lt;p&gt;In light of this, several Layer 2 designs (that derive security from a Layer 1 chain) have been proposed such as Optimism, Arbitrum, StarkNet and zkSync among others. Layer 2s, particularly, the design followed by Arbitrum, Optimism, and zkSync provide a new execution layer while the associated Layer 1 chain, i.e., Ethereum acts as a consensus layer. By separating execution and consensus (i.e., by following a modular design philosophy), Layer 2s can scale the Layer 1 chain by several orders of magnitude. But, as these Layer 2s are designed to be general purpose, they still suffer from similar issues as Layer 1s, i.e., the more used dApps have to compete for the same blockspace with a large number of not-so-used dApps.&lt;/p&gt;
 &lt;p&gt;鉴于此，已经提出了几种layer2设计(从layer1获得安全性)，例如 Optimism、Arbitrum、StarkNet 和 zkSync 等。Layer2，特别是 Arbitrum、Optimism 和 zkSync 遵循的设计提供了一个新的执行层，而相关的layer1，即以太坊充当共识层。通过分离执行和共识（即遵循模块化设计理念），Layer 2 可以将 Layer 1 链扩展几个数量级。但是，由于这些layer 2 被设计为通用目的，它们仍然面临与第 1 层类似的问题，即使用较多的 dApp 必须与大量不常用的 dApp 竞争相同的区块空间。&lt;/p&gt;
 &lt;p&gt;Monolithic Layer 2 designs such as Polygon PoS (and BSC which is a sidechain to Ethereum) have already faced &lt;a href=&#34;https://www.playtoearn.online/2022/01/10/sunflower-farmers-hits-the-polygon-network-where-it-hurts-gas-fees/&#34;&gt;congestion issues in the past&lt;/a&gt; because of the shared blockspace across all dApps. We argue that even modular and execution-only layers such as Arbitrum will have similar issues in the future as they have the same shared blockspace design as monolithic Layer 2s however the ceiling might be a bit higher up. We saw a glimpse of such issues with the recent Odyssey campaign.&lt;/p&gt;
-&lt;p&gt;单片Layer 2设计，例如 Polygon PoS（以及作为以太坊侧链的 BSC）已经面临[过去的拥堵问题](https://www.playtoearn.online/2022/01/10/sunflower-farmers-hits -the-polygon-network-where-it-hurts-gas-fees/)，因为所有 dApp 共享区块空间。我们认为，即使是像 Arbitrum 这样的模块化和单一执行层在未来也会遇到类似的问题，因为它们具有与单片layer2相同的共享区块空间设计，只不过是上限可能会更高一些。我们在最近的 Odyssey 活动中看到了这些问题。&lt;/p&gt;
+&lt;p&gt;单片Layer 2设计，例如 Polygon PoS（以及作为以太坊侧链的 BSC）已经面临&lt;a href=&#34;https://www.playtoearn.online/2022/01/10/sunflower-farmers-hits-the-polygon-network-where-it-hurts-gas-fees/&#34;&gt;过去的拥堵问题&lt;/a&gt;，因为所有 dApp 共享区块空间。我们认为，即使是像 Arbitrum 这样的模块化和单一执行层在未来也会遇到类似的问题，因为它们具有与单片layer2相同的共享区块空间设计，只不过是上限可能会更高一些。我们在最近的 Odyssey 活动中看到了这些问题。&lt;/p&gt;
 &lt;p&gt;The inherent limitation of general purpose Layer 1s and Layer 2s on hosting and executing all types of transactions has also paved the idea of having application-specific chains such as Cosmos and Polkadot or subnets in case of Avalanche, where a popular dApp does not need to compete with other dApps for blockspace on the same network. Each dApp owns its dedicated blockspace.&lt;/p&gt;
 &lt;p&gt;通用layer1和layer2，在托管和执行所有类型的交易方面的固有限制，也为以下想法铺平了道路：拥有特定应用链（如 Cosmos 和 Polkadot）或在 Avalanche 的情况下拥有子网。流行的 dApp 不需要与其他 dApp 竞争同一网络上的块空间。每个 dApp 都拥有其专用的区块空间。&lt;/p&gt;
 &lt;p&gt;An application-specific chain however becomes a wastage of resource (physical or economic) if the dApp does not command enough user base. For example, in case of Avalanche, a dApp chain takes the form of a subnet that requires staking of the sovereign chain token (i.e., AVAX) for economic security and therefore a dApp that can barely consume its blockspace will end up hogging a scarce economic resource that could instead be utilised to secure a more used subnet.&lt;/p&gt;
@@ -5844,7 +6075,7 @@ API 方法的一些使用示例包括：&lt;/p&gt;
 &lt;p&gt;These transient rollups do not have to be all short-lived as other applications such as gaming which require standalone execution layers need to be long-lived and in most-cases require a fully persistent dedicated infrastructure. We discuss the last application that concerns gaming which would greatly benefit from a dedicated application-specific rollup.&lt;/p&gt;
 &lt;p&gt;这些临时汇总不一定都是短暂的，因为其他应用程序（例如需要独立执行层的游戏）需要长期存在，并且在大多数情况下需要完全持久的专用基础架构。我们讨论了最后一个涉及游戏的应用，它将极大地受益于特定应用的汇总。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Polygon PoS Network Congestion in January, 2022:&lt;/strong&gt; A play-to-earn game &lt;a href=&#34;https://www.playtoearn.online/2022/01/10/sunflower-farmers-hits-the-polygon-network-where-it-hurts-gas-fees/&#34;&gt;Sunflower was contributing over 40% of gas fees&lt;/a&gt; on Polygon PoS in early January. Given its contribution to the network, it would benefit from its own dedicated rollup that would also alleviate the load on Polygon. We have already seen game-dedicated monolithic chains such as Ronin (for Axie Infinity) and more recently DFK chain on Avalanche (for DeFi Kingdom).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Polygon PoS 网络在 2022 年 1 月拥塞：&lt;/strong&gt; 一个赚钱游戏[向日葵贡献了超过 40% 的gas](https://www.playtoearn.online/2022/01/10/sunflower- 1 月初，在 Polygon PoS 上，farmer-hits-the-polygon-network-where-it-hurts-gas-fees/)。鉴于它对网络的贡献，它将受益于自己的专用汇总，这也将减轻 Polygon 的负载。我们已经看到了游戏专用的单体链，例如 Ronin（用于 Axie Infinity）和最近在 Avalanche 上的 DFK 链（用于 DeFi Kingdom）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Polygon PoS 网络在 2022 年 1 月拥塞：&lt;/strong&gt; 一个赚钱游戏&lt;a href=&#34;https://www.playtoearn.online/2022/01/10/sunflower-farmer-hits-the-polygon-network-where-it-hurts-gas-fees/&#34;&gt;向日葵贡献了超过 40% 的gas&lt;/a&gt;。鉴于它对网络的贡献，它将受益于自己的专用汇总，这也将减轻 Polygon 的负载。我们已经看到了游戏专用的单体链，例如 Ronin（用于 Axie Infinity）和最近在 Avalanche 上的 DFK 链（用于 DeFi Kingdom）。&lt;/p&gt;
 &lt;p&gt;While a non-popular game could still survive on a legacy monolithic chain, we argue that popular games would be better off having a dedicated rollup for its sub-second latency. A dedicated modular rollup can be hooked to any chain and therefore will enjoy the benefits of modularity compared to a non-modular subnet-style monolithic application chain.&lt;/p&gt;
 &lt;p&gt;虽然不流行的游戏仍然可以在传统的单片链上生存，但我们认为流行的游戏最好为其亚秒级延迟提供专门的汇总。专用的模块化汇总可以连接到任何链，因此与非模块化的子网模式的单片应用链相比，还是会享受模块化的好处。&lt;/p&gt;
 &lt;h2 id=&#34;结论-conclusion&#34;&gt;结论 (Conclusion)&lt;/h2&gt;
@@ -8918,6 +9149,7 @@ Ce blog stockera toutes les œuvres de &lt;a href=&#34;https://twitter.com/Chain
 &lt;h2 id=&#34;neon-evm白皮书-neon-evm-whitepaper&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/neonwp/11wp/wp&#34;&gt;Neon EVM白皮书  (Neon EVM Whitepaper)&lt;/a&gt;&lt;/h2&gt;
 &lt;h1 id=&#34;项目进展project-updating&#34;&gt;项目进展(Project Updating)&lt;/h1&gt;
 &lt;h2 id=&#34;ackee区块链完成-neon-的治理审计-ackee-blockchain-completes-neons-governance-audit&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/ackee-qu-kuai-lian-wan-cheng-neon-de-zhi-li-shen-ji-ackee-blockchain-completes-neons-governance-audit&#34;&gt;Ackee区块链完成 Neon 的治理审计 (Ackee Blockchain Completes Neon’s Governance Audit)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;robonomics网络的责任合约在-neon-evm-上成功执行-robonomics-networks-liability-contract-is-successfully-executed-on-neon-evm&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/robonomics-wang-luo-de-ze-ren-he-yue-zai-neon-evm-shang-cheng-gong-zhi-xing-robonomics-networks-liability-contract-is-successfully-executed-on-neon-evm&#34;&gt;Robonomics网络的责任合约在 Neon EVM 上成功执行 (Robonomics Network’s Liability Contract is Successfully Executed on Neon EVM)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;mixbytes在neon-evm成功部署uniswap-v2-mixbytes-successfully-deploys-uniswap-v2-protocol-on-neon-evm&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/mixbytes-zai-neon-evm-cheng-gong-bu-shu-uniswap-v2-mixbytes-successfully-deploys-uniswap-v2-protocol-on-neon-evm&#34;&gt;MixBytes在Neon EVM成功部署Uniswap V2 (MixBytes Successfully Deploys Uniswap V2 Protocol on Neon EVM)&lt;/a&gt;&lt;/h2&gt;
 ">Neon中文材料合集-不断更新中(Neon Chinese Materials-Updating)</a>
       </div>
