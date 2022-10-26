@@ -8,7 +8,7 @@
 <meta name="keywords" content="crypto blockchain translation meme coin 区块链 加密货币 翻译 白皮书 文档 doc">
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
-<title>Chainguys&#39;Blog</title>
+<title>Halborn 完成对 Neon 治理计划的审计 (Halborn Completes Audit of Neon’s Governance Programs) | Chainguys&#39;Blog</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1666752283969">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -61,6 +61,8 @@
 
 
 
+  <meta name="description" content="Halborn 完成对 Neon 治理计划的审计 (Halborn Completes Audit of Neon’s Governance Programs)" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -175,1377 +177,256 @@
   <div class="main-continer">
     
     <div
-      class="section-layout  pisces">
+      class="section-layout pisces ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
-<div class="sidebar-wrapper box-shadow-wrapper bg-color">
-  <div class="sidebar-item">
-    <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name">Chainguys</p>
-    
-    <div class="site-description right-motion">
-      
-      
-      
-        <p>A blockchain guy who likes making memes and translating tech articles </p>
-      
-        <p>All Information NOT Financial Adivice</p>
-      
-        <p> 一个区块链的老韭菜 </p>
-      
-        <p>兴趣是做meme和翻译技术文章 </p>
-      
-        <p>一切均非投资建议</p>
-      
-      
-    </div>
-    
-  </div>
-  <div class="sidebar-item side-item-stat right-motion">
-    <div class="sidebar-item-box">
-      <a href="/archives/">
         
-        <span class="site-item-stat-count">128</span>
-        <span class="site-item-stat-name language" data-lan="article">文章</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="/tags/">
-        <span class="site-item-stat-count">296</span>
-        <span class="site-item-stat-name language" data-lan="tag">标签</span>
-      </a>
-    </div>
-  </div>
-  
-    
-      <div class="sidebar-item">
-        <span class="site-item-rss">
-            <i class="fa fa-rss"></i>
-            <a href="https://chainguys.github.io/atom.xml" target="_blank">RSS</a>
-        </span>
-      </div>
-    
-  
-  
 
+<div class="sidebar">
   
-
-
-
-</div>
 </div>
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'pisces';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    jQuery.Velocity(hideElement, 'stop');
+    jQuery.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        jQuery.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
       }
-    });
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
   }
-  </script>
-        <div class="section-box tag-line box-shadow-wrapper">
-          <section class="section tags-section posts-expand bg-color">
-            <div class="padding-wrapper">
-  <div class="tag-timeline-box">
-    <div class="tag-timeline-wrapper">
-      <div class="tag-timeline-title">
-        <h2>
-          rebase
-          <small class="language" data-lan="tag">标签</small>
-        </h2>
-      </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <a href="https://chainguys.github.io/post/steth-he-ke-chong-zhi-dai-bi-de-yi-xie-mao-bing-and-the-hazards-of-rebasing-tokens/">
-        <div class="motion-warpper">
-          <div class="tag-post-node">
-            <h1>
-              09-09
-              <small>stETH和可重置代币的一些”毛病“ (stETH and the Hazards of Rebasing Tokens)</small>
-            </h1>
-          </div>
-        </div>
-      </a>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://chainguys.github.io/post/halborn-wan-cheng-dui-neon-zhi-li-ji-hua-de-shen-ji-halborn-completes-audit-of-neons-governance-programs/"> Halborn 完成对 Neon 治理计划的审计 (Halborn Completes Audit of Neon’s Governance Programs) </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2022-10-18 13:43:07">2022-10-18</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span
+        >10<span class="language" data-lan="minute"
+          >分钟</span
+        ></span
+      >
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span
+        >2072<span class="pc-show language" data-lan="words"
+          >字数</span
+        ></span
+      >
+    </span>
+      
+    <span
+      id="/post/halborn-wan-cheng-dui-neon-zhi-li-ji-hua-de-shen-ji-halborn-completes-audit-of-neons-governance-programs/"
+      data-flag-title="Halborn 完成对 Neon 治理计划的审计 (Halborn Completes Audit of Neon’s Governance Programs)"
+      class="meta-item pc-show leancloud_visitors"
+    >
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span
+        ><span class="language" data-lan="view">浏览量:</span>:<span
+          class="leancloud-visitors-count"
+        ></span
+      ></span>
+    </span>
+    
+  </div>
+</section>
+
+            <div class="post-body next-md-body" id="post_body">
+              <figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*1s1lfMuwBrmMBw_tymxr-Q.png" alt="" loading="lazy"></figure>
+<hr>
+<p><a href="https://halborn.com/about/who-we-are/">Halborn</a>, a security engineering team, has completed a security audit of Neon’s Governance Programs. The audit began on April 27, 2022 and ended on May 8, 2022. This security audit was conducted in addition to <a href="https://medium.com/neon-labs/ackee-blockchain-completes-neons-governance-audit-ff04d69a002c">Ackee Blockchain’s audit</a>, which was completed on July 22, 2022.</p>
+<p>安全工程团队 <a href="https://halborn.com/about/who-we-are/">Halborn</a> 已完成对 Neon 治理计划的安全审计。审计于 2022 年 4 月 27 日开始，于 2022 年 5 月 8 日结束。本次安全审计是 <a href="https://chainguys.github.io/post/ackee-qu-kuai-lian-wan-cheng-neon-de-zhi-li-shen-ji-ackee-blockchain-completes-neons-governance-audit/">Ackee Blockchain 审计</a> 的附属，于 2022 年 7 月 22 日完成。</p>
+<p>A final <a href="https://github.com/neonlabsorg/neon-spl-governance/blob/main/audit/NEON_Labs_Governance_Solana_Program_Security_Audit_Report_Halborn_Final.pdf">report</a> was delivered to the Neon Labs team at the end of the audit process. In this article, we’ll go over the scope, goals, process, and significant findings of the Halborn security audit as documented in the final audit report.</p>
+<p>最终的<a href="https://github.com/neonlabsorg/neon-spl-governance/blob/main/audit/NEON_Labs_Governance_Solana_Program_Security_Audit_Report_Halborn_Final.pdf">报告</a> 已在审核流程结束时交付给 Neon Labs 团队。在本文中，我们将介绍最终审计报告中记录的 Halborn 安全审计的范围、目标、流程和重要发现。</p>
+<h1 id="安全审计的范围-scope-of-the-security-audit">安全审计的范围 (Scope of the Security Audit)</h1>
+<p>The security assessment was scoped to two Solana programs: the <strong><em>spl-governance-addin-fixed-weights contract</em></strong> and the <strong><em>spl-governance-addin-vesting contract</em></strong>. The specific commit audited was <a href="https://github.com/neonlabsorg/neon-spl-governance/commit/c0c3732cf0aa0b90527f54a0068367d8d03af748">c0c3732cf0aa0b90527f54a0068367d8d03af748</a> of the <a href="https://github.com/neonlabsorg/neon-spl-governance">nonlabsorg/neon-spl-governance</a> repository. These programs are related to Neon project governance and rely on SPL-Governance and various other Solana libraries to deliver a custom governance process for participants in the Neon ecosystem.</p>
+<p>安全评估的范围是两个 Solana 计划：<strong><em>spl-governance-addin-fixed-weights contract</em></strong> 和 <strong><em>spl-governance-addin-vesting contract</em></strong>。审核的具体提交是 <a href="https://github.com/neonlabsorg/neon-spl-governance/commit/c0c3732cf0aa0b90527f54a0068367d8d03af748">c0c3732cf0aa0b90527f54a0068367d8d03af748</a> 的 <a href="https://github.com/neonlaborg">nonlabsorg/neon-splon-governance</a> 存储库。这些程序与 Neon 项目治理相关，并依靠 SPL-Governance 和各种其他 Solana 库为 Neon 生态系统的参与者提供自定义治理流程。</p>
+<p>External libraries and finance-related attacks were out-of-scope for the Halborn audit.</p>
+<p>外部库和与财务相关的攻击超出了 Halborn 审计的范围。</p>
+<h1 id="安全审计的目的和目标-purpose-and-goals-of-the-security-audit">安全审计的目的和目标 (Purpose and Goals of the Security Audit)</h1>
+<p>Neon Labs continuously emphasizes the importance of high security standards. This is why the team decided to work with Halborn, as well as Ackee Blockchain, to review Neon’s Governance contracts. The security audits were conducted to ensure that the in-scope Solana programs were functioning properly and identify potential security vulnerabilities.</p>
+<p>Neon Labs 不断强调高安全标准的重要性。这就是团队决定与 Halborn 以及 Ackee Blockchain 合作审查 Neon治理合约的原因。进行安全审计来确保范围内的 Solana 程序正常运行并识别潜在的安全漏洞。</p>
+<h1 id="安全审计过程-the-security-audit-process">安全审计过程 (The Security Audit Process)</h1>
+<p>Halborn used a combination of manual code review and automated security testing to deliver an accurate auditing service while keeping efficiency, timeliness and practicality in mind. Manual testing is primarily used to uncover flaws in logic, process, and implementation. To supplement manual testing, automated testing techniques help to improve program coverage and quickly identify items that do not adhere to security best practices.</p>
+<p>Halborn 结合使用手动代码审查和自动安全测试来提供准确的审计服务，同时j坚持效率、及时性和实用性。手动测试主要用于发现逻辑、流程和实施中的缺陷。为了补充手动测试，自动化测试技术有助于提高程序覆盖率并快速识别不符合最佳安全实践的项目。</p>
+<p>The audit procedure and associated tools are as follows:<br>
+审计程序和相关工具如下：</p>
+<ol>
+<li>
+<p>Research the architecture, purpose, and use of the Neon platform.<br>
+研究Neon平台的架构、目的和用途。</p>
+</li>
+<li>
+<p>Review and walkthrough the Solana program manual code review to identify logic issues.<br>
+审查和演练 Solana 程序手动代码审查来确定逻辑问题。</p>
+</li>
+<li>
+<p>Thoroughly assess the safety and usage of critical in-scope Rust variables and functions that could lead to arithmetic vulnerabilities.<br>
+彻底评估可能导致算术漏洞的关键范围 Rust 变量和函数的安全性和使用情况。</p>
+</li>
+<li>
+<p>Find unsafe Rust code usage with the <strong><em>cargo-geiger</em></strong> security tool, which lists statistics related to the use of unsafe Rust code present in a Rust codebase and its dependencies.<br>
+使用 <strong><em>cargo-geiger</em></strong> 安全工具查找不安全的 Rust 代码使用情况，该工具列出了与使用 Rust 代码库中存在不安全的 Rust 代码及其依赖项相关的统计信息。</p>
+</li>
+<li>
+<p>Scan dependencies for known vulnerabilities with the <strong><em>cargo audit</em></strong> tool, which scans for vulnerabilities reported to the RustSec Advisory Database. The RustSec Advisory Database stores all vulnerabilities published in <a href="https://crates.io./">https://crates.io.</a><br>
+使用 <strong><em>cargo audit</em></strong> 工具扫描依赖关系中的已知漏洞，该工具会扫描报告给 RustSec 咨询数据库的漏洞。 RustSec 咨询数据库在 <a href="https://crates.io./">https://crates.io.</a> 中存储发布的所有漏洞</p>
+</li>
+<li>
+<p>Deploy the local cluster (<strong><em>solana-test-validator</em></strong>).<br>
+部署本地集群（<strong><em>solana-test-validator</em></strong>）。</p>
+</li>
+<li>
+<p>Scan for common Solana vulnerabilities using <strong><em>soteria</em></strong>, a security analysis service for Solana programs that assists with the detection of well-known security issues.<br>
+使用 <strong><em>soteria</em></strong> 扫描常见的 Solana 漏洞，这是一种针对 Solana 程序的安全分析服务，可帮助检测众所周知的安全问题。</p>
+</li>
+</ol>
+<h1 id="neon-evm-安全审计的结果-outcome-of-the-neon-evm-security-audit">Neon EVM 安全审计的结果 (Outcome of the Neon EVM Security Audit)</h1>
+<p>Halborn ranks vulnerabilities or issues by calculating the <strong><em>likelihood</em></strong> of a security incident and the <strong><em>impact</em></strong> if an incident occurs. The likelihood and impact ratings are then ingested into a scoring framework to determine a risk’s severity level (informational, low, medium, high, and critical). The framework is useful for communicating the characteristics and consequences of technological vulnerabilities. The quantitative model ensures consistent and accurate measurement while also allowing users to see the underlying vulnerability characteristics considered when prioritizing risks.</p>
+<p>Halborn 通过计算安全事件的 <strong><em>likelihood</em></strong> 和事件发生时的 <strong><em>impact</em></strong> 来对漏洞或问题进行排名。然后将可能性和影响评级纳入评分框架，以确定风险的严重程度（信息、低、中、高和严重）。该框架对于传达技术漏洞的特征和后果很有用。定量模型确保了一致和准确的测量，同时还允许用户在判定风险时查看考虑的对应对应风险特征。</p>
+<p>As an output to the security audit, Halborn identified two main risks: <strong><em>(HAL-01) Cargo Overflow Checks Missing</em></strong> and <strong><em>(HAL-02) Outdated Dependencies Version.</em></strong> Both risks have now been addressed by the Neon Labs team. Additional details can be found below.</p>
+<p>作为安全审计的输出，Halborn 确定了两个主要风险：<strong><em>(HAL-01) Cargo Overflow Checks Missing</em></strong> 和 <strong><em>(HAL-02) Outdated Dependencies Version.</em></strong> 这两个风险现已由Neon Lab团队解决。可以在下面找到更多详细信息。</p>
+<h1 id="cargo溢出检查缺失-hal-01-cargo-overflow-checks-missing-hal-01">Cargo溢出检查缺失 (HAL-01)-Cargo Overflow Checks Missing (HAL-01)</h1>
+<p>It was observed that there is no overflow-checks=true in any Cargo.toml file. By default, overflow checks are disabled in optimized release builds. Therefore, if there is an overflow in the release build, it will pass silently, causing unexpected behavior of an application. Even when checked arithmetic is used (checked_*), it is still recommended to have those checks in Cargo.toml.</p>
+<p>观察到在任何 Cargo.toml 文件中都没有 overflow-checks=true。默认情况下，溢出检查在优化的发布版本中被禁用。因此，如果发布构建中出现溢出，它将默默通过，从而导致应用程序出现意外行为。即使使用检查算法（checked_*），仍然建议在 Cargo.toml 中进行检查。</p>
+<p>The finding was rated as low-risk and has since been addressed. The Neon Labs team fixed the issue by adding overflows-check=true in the workspace Cargo.toml file in commit <a href="https://github.com/neonlabsorg/neon-spl-governance/commit/5425078d1c45c62f92b5bb90492bbaeac751ec7b">5425078d1c45c62f92b5bb90492bbaeac751ec7b</a>.</p>
+<p>该发现被评为低风险，并已得到解决。 Neon Labs 团队通过提交 <a href="https://github.com/neonlabsorg/neon-spl-governance/commit/5425078d1c45c62f92b5bb90492bbaeac751ec7b">5425078d1c45c62f92b5bb90492bbaeac751ec7b</a>  向工作区的Cargo.toml 文件中添加 overflows-check=true 解决了这个问题。</p>
+<h1 id="过时的依赖版本-hal-02-outdated-dependencies-version-hal-02">过时的依赖版本 (HAL-02)-Outdated Dependencies Version (HAL-02)</h1>
+<p>Software is continuously updated for various reasons. Drivers introduce updates including adding new features, removing old features, and patching bugs and vulnerabilities. The Halborn team detected that the versions of spl-governance-addin-vesting and spl-governance-addin-fixed-wights packages assessed referenced outdated versions of solana-program and spl-token, which could cause logic flows to malfunction.</p>
+<p>由于各种原因，软件不断更新。驱动程序引入更新，包括添加新功能、删除旧功能以及修补错误和漏洞。 Halborn 团队检测到 spl-governance-addin-vesting 和 spl-governance-addin-fixed-wights 软件包的版本,评估了引用的 solana-program 和 spl-token 的过时版本，这可能导致逻辑流程出现故障。</p>
+<p>The finding was rated as an informational risk and has since been addressed. The Neon Labs team fixed the issue by updating solana-program and spl-token to their latest versions in commit <a href="https://github.com/neonlabsorg/neon-spl-governance/commit/5425078d1c45c62f92b5bb90492bbaeac751ec7b">5425078d1c45c62f92b5bb90492bbaeac751ec7b</a>.</p>
+<p>该发现被评为信息风险(知会级别)，并已得到解决。 Neon Labs 团队通过提交 <a href="https://github.com/neonlabsorg/neon-spl-governance/commit/5425078d1c45c62f92b5bb90492bbaeac751ec7b">5425078d1c45c62f92b5bb90492bbaeac751ec7b</a> 将 solana-program 和 spl-token 更新到最新版本来解决此问题。</p>
+<h1 id="结论-conclusion">结论 (Conclusion)</h1>
+<p>Thank you for taking the time to review the outcome of the Halborn security audit. If you have any questions about the security audit or the associated findings, don’t hesitate to reach out. You can contact the team via <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a>. Lastly, stay connected with the team on <a href="https://twitter.com/neonlabsorg">Twitter</a>, <a href="https://github.com/neonlabsorg">GitHub</a>, <a href="https://www.youtube.com/channel/UCAL2uFkKkfBgz3mXFN3UDTQ">YouTube</a>, and <a href="https://neonlabsorg.medium.com/">Medium</a> for more development updates and announcements.</p>
+<p>感谢您抽出宝贵时间查看 Halborn 安全审计的结果。如果您对安全审计或相关调查结果有任何疑问，请随时与我们联系。您可以通过 <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a> 联系团队。最后，在 <a href="https://twitter.com/neonlabsorg">Twitter</a>、<a href="https://github.com/neonlabsorg">GitHub</a>、<a href="https://www.youtube">YouTube</a>  和 <a href="https://neonlabsorg.medium.com/">Medium</a>上与团队保持联系，了解更多开发更新和公告。</p>
+
+            </div>
+            
+              <div class="reward-btn">
+                <div class="reward-btn-text">赞赏</div>
+              </div>
+            
+            
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      Chainguys
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://chainguys.github.io/post/halborn-wan-cheng-dui-neon-zhi-li-ji-hua-de-shen-ji-halborn-completes-audit-of-neons-governance-programs/" title="Halborn 完成对 Neon 治理计划的审计 (Halborn Completes Audit of Neon’s Governance Programs)">https://chainguys.github.io/post/halborn-wan-cheng-dui-neon-zhi-li-ji-hua-de-shen-ji-halborn-completes-audit-of-neons-governance-programs/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="@camiinthisthang长推-20221019(@camiinthisthang twitter threads-20221019)" href="https://chainguys.github.io/post/camiinthisthang-chang-tui-20221019camiinthisthang-twitter-threads-20221019/">@camiinthisthang长推-20221019(@camiinthisthang twitter threads-20221019)</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="@camiinthisthang长推-20221019(@camiinthisthang twitter threads-20221019)" href="https://chainguys.github.io/post/camiinthisthang-chang-tui-20221019camiinthisthang-twitter-threads-20221019/">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="SeiNetwork长推-20221014 (SeiNetwork twitter threads-20221014)" href="https://chainguys.github.io/post/seinetwork-chang-tui-20221014-seinetwork-twitter-threads-20221014/">SeiNetwork长推-20221014 (SeiNetwork twitter threads-20221014)</a>
+        <a class="nav-mobile-next" title="SeiNetwork长推-20221014 (SeiNetwork twitter threads-20221014)" href="https://chainguys.github.io/post/seinetwork-chang-tui-20221014-seinetwork-twitter-threads-20221014/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
 </div>
-          </section>
+            
+            
+  
+
+          </div>
         </div>
       </div>
     </div>
@@ -1790,6 +671,235 @@
     parent.insertBefore(aelem, next);
   });
 </script>
+    <div class="reward-mask" style="display: none;">
+  <div class="reward-relative">
+    <span class="close" aria-hidden="true">x</span>
+    <div class="reward-body">
+      <h2>感谢您的支持，我会继续努力的!</h2>
+      <div class="reward-img-box">
+        <div style="position: relative; width: 140px; height: 140px;">
+          
+          
+            <img id="zfb" class="reward-img" src="/media/images/custom-zfbImg.png" alt="赞赏码">
+          
+          
+            <img id="wx" class="reward-img" src="/media/images/custom-wxImg.png" alt="赞赏码">
+          
+        </div>
+      </div>
+      <p class="reward-word">ETH:0xeaD95E58791e42D89EF144A2BaB00B1BfAFC0a3C</p>
+      <p class="reward-tip">Solana:7TqTNNvnduqKNGkDVAcGXfkena35PJGyR6tby3QWNzC2</p>
+    </div>
+    <div class="bottom">
+      
+      <div id="zfbBtn" class="pay-text">
+        ETH QR Code
+      </div>
+      
+      
+      <div id="wxBtn" class="pay-text">
+        Solana QR Code
+      </div>
+      
+    </div>
+  </div>
+</div>
+<style>
+  .reward-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000054;
+  }
+
+  .reward-relative {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -205px;
+  }
+
+  .reward-relative .close {
+    position: absolute;
+    right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+  }
+
+  .reward-body {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .reward-btn {
+    text-align: center;
+  }
+
+  .reward-btn-text {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ff9734;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .pay-text {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    transition: all .2s linear;
+  }
+
+  .pay-text:hover {
+    background-color: #a5a5a536;
+  }
+
+  .reward-body h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
+  .reward-body h2:after,
+  .reward-body h2:before {
+    font-family: Arial, Helvetica, sans-serif;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    font-style: normal;
+    color: #eee;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .reward-body h2:before {
+    content: '\201c';
+    left: 50px;
+  }
+
+  .reward-body h2:after {
+    content: '\201d';
+    right: 80px;
+  }
+
+  .reward-img-box {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .reward-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .reward-relative {
+      height: 100%;
+      top: 0px;
+      margin-top: 0;
+      width: auto;
+    }
+
+    .reward-relative .bottom {
+      flex-direction: column;
+    }
+
+    .reward-relative .pay-text {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid silver;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .reward-body h2:after {
+      right: 40px;
+    }
+
+    .reward-body h2:after,
+    .reward-body h2:before {
+      font-size: 60px;
+    }
+
+    .reward-body h2:before {
+      left: 20px;
+    }
+  }
+</style>
+<script>
+  !function () {
+    var mask = document.querySelector('.reward-mask');
+    let close = document.querySelector('.reward-relative .close');
+    let rewardBtn = document.querySelector('.reward-btn');
+
+    let zfb = document.querySelector('#zfb'),
+      wx = document.querySelector('#wx'),
+      zfbBtn = document.querySelector('#zfbBtn'),
+      wxBtn = document.querySelector('#wxBtn');
+
+    if (zfbBtn && wxBtn) {
+      zfbBtn.addEventListener('click', () => {
+        jQuery.Velocity(zfb, 'transition.slideLeftIn', {
+          duration: 400
+        });
+        jQuery.Velocity(wx, 'transition.slideRightOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+
+      wxBtn.addEventListener('click', () => {
+        jQuery.Velocity(wx, 'transition.slideRightIn', {
+          duration: 400
+        });
+        jQuery.Velocity(zfb, 'transition.slideLeftOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+    }
+
+    rewardBtn.addEventListener('click', (e) => {
+      jQuery.Velocity(mask, 'transition.slideDownIn', {
+        duration: 400
+      })
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      jQuery.Velocity(mask, 'transition.slideUpOut', {
+        duration: 400
+      })
+    })
+  }()
+</script>
+
   </div>
 </body>
 
@@ -16102,7 +15212,6 @@ SomeCalldata.size(0) // equals 36 (i.e. 4 + 32)
       speed: 200
     });
   </script>
-
 
 
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-24T11:00:28.620Z</updated>
+    <updated>2022-10-26T08:20:49.101Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -263,6 +263,81 @@ UTXO 数据模型自然比账户数据模型更少争议，并且会导致更多
 <p>The link to my slides: <a href="https://t.co/RXQbhMAoxL">https://docs.google.com/presentation/d/12EpcqMBJtyJXvWlmIY00kttPv-Y_Mwlpnb8GnkOulnw/edit?usp=sharing…</a>. I'll share the recording of the talk as soon as it's ready. THANK YOU !</p>
 <p>我的幻灯片的链接：<a href="https://t.co/RXQbhMAoxL">https://docs.google.com/presentation/d/12EpcqMBJtyJXvWlmIY00kttPv-Y_Mwlpnb8GnkOulnw/edit?usp=sharing...</a>。一旦准备好，我会分享谈话的录音。谢谢你 ！</p>
 <figure data-type="image" tabindex="20"><img src="https://pbs.twimg.com/card_img/1582408809128939520/O8w6U0hF?format=jpg&amp;name=small" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Halborn 完成对 Neon 治理计划的审计 (Halborn Completes Audit of Neon’s Governance Programs)]]></title>
+        <id>https://chainguys.github.io/post/halborn-wan-cheng-dui-neon-zhi-li-ji-hua-de-shen-ji-halborn-completes-audit-of-neons-governance-programs/</id>
+        <link href="https://chainguys.github.io/post/halborn-wan-cheng-dui-neon-zhi-li-ji-hua-de-shen-ji-halborn-completes-audit-of-neons-governance-programs/">
+        </link>
+        <updated>2022-10-18T05:43:07.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*1s1lfMuwBrmMBw_tymxr-Q.png" alt="" loading="lazy"></figure>
+<hr>
+<p><a href="https://halborn.com/about/who-we-are/">Halborn</a>, a security engineering team, has completed a security audit of Neon’s Governance Programs. The audit began on April 27, 2022 and ended on May 8, 2022. This security audit was conducted in addition to <a href="https://medium.com/neon-labs/ackee-blockchain-completes-neons-governance-audit-ff04d69a002c">Ackee Blockchain’s audit</a>, which was completed on July 22, 2022.</p>
+<p>安全工程团队 <a href="https://halborn.com/about/who-we-are/">Halborn</a> 已完成对 Neon 治理计划的安全审计。审计于 2022 年 4 月 27 日开始，于 2022 年 5 月 8 日结束。本次安全审计是 <a href="https://chainguys.github.io/post/ackee-qu-kuai-lian-wan-cheng-neon-de-zhi-li-shen-ji-ackee-blockchain-completes-neons-governance-audit/">Ackee Blockchain 审计</a> 的附属，于 2022 年 7 月 22 日完成。</p>
+<p>A final <a href="https://github.com/neonlabsorg/neon-spl-governance/blob/main/audit/NEON_Labs_Governance_Solana_Program_Security_Audit_Report_Halborn_Final.pdf">report</a> was delivered to the Neon Labs team at the end of the audit process. In this article, we’ll go over the scope, goals, process, and significant findings of the Halborn security audit as documented in the final audit report.</p>
+<p>最终的<a href="https://github.com/neonlabsorg/neon-spl-governance/blob/main/audit/NEON_Labs_Governance_Solana_Program_Security_Audit_Report_Halborn_Final.pdf">报告</a> 已在审核流程结束时交付给 Neon Labs 团队。在本文中，我们将介绍最终审计报告中记录的 Halborn 安全审计的范围、目标、流程和重要发现。</p>
+<h1 id="安全审计的范围-scope-of-the-security-audit">安全审计的范围 (Scope of the Security Audit)</h1>
+<p>The security assessment was scoped to two Solana programs: the <strong><em>spl-governance-addin-fixed-weights contract</em></strong> and the <strong><em>spl-governance-addin-vesting contract</em></strong>. The specific commit audited was <a href="https://github.com/neonlabsorg/neon-spl-governance/commit/c0c3732cf0aa0b90527f54a0068367d8d03af748">c0c3732cf0aa0b90527f54a0068367d8d03af748</a> of the <a href="https://github.com/neonlabsorg/neon-spl-governance">nonlabsorg/neon-spl-governance</a> repository. These programs are related to Neon project governance and rely on SPL-Governance and various other Solana libraries to deliver a custom governance process for participants in the Neon ecosystem.</p>
+<p>安全评估的范围是两个 Solana 计划：<strong><em>spl-governance-addin-fixed-weights contract</em></strong> 和 <strong><em>spl-governance-addin-vesting contract</em></strong>。审核的具体提交是 <a href="https://github.com/neonlabsorg/neon-spl-governance/commit/c0c3732cf0aa0b90527f54a0068367d8d03af748">c0c3732cf0aa0b90527f54a0068367d8d03af748</a> 的 <a href="https://github.com/neonlaborg">nonlabsorg/neon-splon-governance</a> 存储库。这些程序与 Neon 项目治理相关，并依靠 SPL-Governance 和各种其他 Solana 库为 Neon 生态系统的参与者提供自定义治理流程。</p>
+<p>External libraries and finance-related attacks were out-of-scope for the Halborn audit.</p>
+<p>外部库和与财务相关的攻击超出了 Halborn 审计的范围。</p>
+<h1 id="安全审计的目的和目标-purpose-and-goals-of-the-security-audit">安全审计的目的和目标 (Purpose and Goals of the Security Audit)</h1>
+<p>Neon Labs continuously emphasizes the importance of high security standards. This is why the team decided to work with Halborn, as well as Ackee Blockchain, to review Neon’s Governance contracts. The security audits were conducted to ensure that the in-scope Solana programs were functioning properly and identify potential security vulnerabilities.</p>
+<p>Neon Labs 不断强调高安全标准的重要性。这就是团队决定与 Halborn 以及 Ackee Blockchain 合作审查 Neon治理合约的原因。进行安全审计来确保范围内的 Solana 程序正常运行并识别潜在的安全漏洞。</p>
+<h1 id="安全审计过程-the-security-audit-process">安全审计过程 (The Security Audit Process)</h1>
+<p>Halborn used a combination of manual code review and automated security testing to deliver an accurate auditing service while keeping efficiency, timeliness and practicality in mind. Manual testing is primarily used to uncover flaws in logic, process, and implementation. To supplement manual testing, automated testing techniques help to improve program coverage and quickly identify items that do not adhere to security best practices.</p>
+<p>Halborn 结合使用手动代码审查和自动安全测试来提供准确的审计服务，同时j坚持效率、及时性和实用性。手动测试主要用于发现逻辑、流程和实施中的缺陷。为了补充手动测试，自动化测试技术有助于提高程序覆盖率并快速识别不符合最佳安全实践的项目。</p>
+<p>The audit procedure and associated tools are as follows:<br>
+审计程序和相关工具如下：</p>
+<ol>
+<li>
+<p>Research the architecture, purpose, and use of the Neon platform.<br>
+研究Neon平台的架构、目的和用途。</p>
+</li>
+<li>
+<p>Review and walkthrough the Solana program manual code review to identify logic issues.<br>
+审查和演练 Solana 程序手动代码审查来确定逻辑问题。</p>
+</li>
+<li>
+<p>Thoroughly assess the safety and usage of critical in-scope Rust variables and functions that could lead to arithmetic vulnerabilities.<br>
+彻底评估可能导致算术漏洞的关键范围 Rust 变量和函数的安全性和使用情况。</p>
+</li>
+<li>
+<p>Find unsafe Rust code usage with the <strong><em>cargo-geiger</em></strong> security tool, which lists statistics related to the use of unsafe Rust code present in a Rust codebase and its dependencies.<br>
+使用 <strong><em>cargo-geiger</em></strong> 安全工具查找不安全的 Rust 代码使用情况，该工具列出了与使用 Rust 代码库中存在不安全的 Rust 代码及其依赖项相关的统计信息。</p>
+</li>
+<li>
+<p>Scan dependencies for known vulnerabilities with the <strong><em>cargo audit</em></strong> tool, which scans for vulnerabilities reported to the RustSec Advisory Database. The RustSec Advisory Database stores all vulnerabilities published in <a href="https://crates.io./">https://crates.io.</a><br>
+使用 <strong><em>cargo audit</em></strong> 工具扫描依赖关系中的已知漏洞，该工具会扫描报告给 RustSec 咨询数据库的漏洞。 RustSec 咨询数据库在 <a href="https://crates.io./">https://crates.io.</a> 中存储发布的所有漏洞</p>
+</li>
+<li>
+<p>Deploy the local cluster (<strong><em>solana-test-validator</em></strong>).<br>
+部署本地集群（<strong><em>solana-test-validator</em></strong>）。</p>
+</li>
+<li>
+<p>Scan for common Solana vulnerabilities using <strong><em>soteria</em></strong>, a security analysis service for Solana programs that assists with the detection of well-known security issues.<br>
+使用 <strong><em>soteria</em></strong> 扫描常见的 Solana 漏洞，这是一种针对 Solana 程序的安全分析服务，可帮助检测众所周知的安全问题。</p>
+</li>
+</ol>
+<h1 id="neon-evm-安全审计的结果-outcome-of-the-neon-evm-security-audit">Neon EVM 安全审计的结果 (Outcome of the Neon EVM Security Audit)</h1>
+<p>Halborn ranks vulnerabilities or issues by calculating the <strong><em>likelihood</em></strong> of a security incident and the <strong><em>impact</em></strong> if an incident occurs. The likelihood and impact ratings are then ingested into a scoring framework to determine a risk’s severity level (informational, low, medium, high, and critical). The framework is useful for communicating the characteristics and consequences of technological vulnerabilities. The quantitative model ensures consistent and accurate measurement while also allowing users to see the underlying vulnerability characteristics considered when prioritizing risks.</p>
+<p>Halborn 通过计算安全事件的 <strong><em>likelihood</em></strong> 和事件发生时的 <strong><em>impact</em></strong> 来对漏洞或问题进行排名。然后将可能性和影响评级纳入评分框架，以确定风险的严重程度（信息、低、中、高和严重）。该框架对于传达技术漏洞的特征和后果很有用。定量模型确保了一致和准确的测量，同时还允许用户在判定风险时查看考虑的对应对应风险特征。</p>
+<p>As an output to the security audit, Halborn identified two main risks: <strong><em>(HAL-01) Cargo Overflow Checks Missing</em></strong> and <strong><em>(HAL-02) Outdated Dependencies Version.</em></strong> Both risks have now been addressed by the Neon Labs team. Additional details can be found below.</p>
+<p>作为安全审计的输出，Halborn 确定了两个主要风险：<strong><em>(HAL-01) Cargo Overflow Checks Missing</em></strong> 和 <strong><em>(HAL-02) Outdated Dependencies Version.</em></strong> 这两个风险现已由Neon Lab团队解决。可以在下面找到更多详细信息。</p>
+<h1 id="cargo溢出检查缺失-hal-01-cargo-overflow-checks-missing-hal-01">Cargo溢出检查缺失 (HAL-01)-Cargo Overflow Checks Missing (HAL-01)</h1>
+<p>It was observed that there is no overflow-checks=true in any Cargo.toml file. By default, overflow checks are disabled in optimized release builds. Therefore, if there is an overflow in the release build, it will pass silently, causing unexpected behavior of an application. Even when checked arithmetic is used (checked_*), it is still recommended to have those checks in Cargo.toml.</p>
+<p>观察到在任何 Cargo.toml 文件中都没有 overflow-checks=true。默认情况下，溢出检查在优化的发布版本中被禁用。因此，如果发布构建中出现溢出，它将默默通过，从而导致应用程序出现意外行为。即使使用检查算法（checked_*），仍然建议在 Cargo.toml 中进行检查。</p>
+<p>The finding was rated as low-risk and has since been addressed. The Neon Labs team fixed the issue by adding overflows-check=true in the workspace Cargo.toml file in commit <a href="https://github.com/neonlabsorg/neon-spl-governance/commit/5425078d1c45c62f92b5bb90492bbaeac751ec7b">5425078d1c45c62f92b5bb90492bbaeac751ec7b</a>.</p>
+<p>该发现被评为低风险，并已得到解决。 Neon Labs 团队通过提交 <a href="https://github.com/neonlabsorg/neon-spl-governance/commit/5425078d1c45c62f92b5bb90492bbaeac751ec7b">5425078d1c45c62f92b5bb90492bbaeac751ec7b</a>  向工作区的Cargo.toml 文件中添加 overflows-check=true 解决了这个问题。</p>
+<h1 id="过时的依赖版本-hal-02-outdated-dependencies-version-hal-02">过时的依赖版本 (HAL-02)-Outdated Dependencies Version (HAL-02)</h1>
+<p>Software is continuously updated for various reasons. Drivers introduce updates including adding new features, removing old features, and patching bugs and vulnerabilities. The Halborn team detected that the versions of spl-governance-addin-vesting and spl-governance-addin-fixed-wights packages assessed referenced outdated versions of solana-program and spl-token, which could cause logic flows to malfunction.</p>
+<p>由于各种原因，软件不断更新。驱动程序引入更新，包括添加新功能、删除旧功能以及修补错误和漏洞。 Halborn 团队检测到 spl-governance-addin-vesting 和 spl-governance-addin-fixed-wights 软件包的版本,评估了引用的 solana-program 和 spl-token 的过时版本，这可能导致逻辑流程出现故障。</p>
+<p>The finding was rated as an informational risk and has since been addressed. The Neon Labs team fixed the issue by updating solana-program and spl-token to their latest versions in commit <a href="https://github.com/neonlabsorg/neon-spl-governance/commit/5425078d1c45c62f92b5bb90492bbaeac751ec7b">5425078d1c45c62f92b5bb90492bbaeac751ec7b</a>.</p>
+<p>该发现被评为信息风险(知会级别)，并已得到解决。 Neon Labs 团队通过提交 <a href="https://github.com/neonlabsorg/neon-spl-governance/commit/5425078d1c45c62f92b5bb90492bbaeac751ec7b">5425078d1c45c62f92b5bb90492bbaeac751ec7b</a> 将 solana-program 和 spl-token 更新到最新版本来解决此问题。</p>
+<h1 id="结论-conclusion">结论 (Conclusion)</h1>
+<p>Thank you for taking the time to review the outcome of the Halborn security audit. If you have any questions about the security audit or the associated findings, don’t hesitate to reach out. You can contact the team via <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a>. Lastly, stay connected with the team on <a href="https://twitter.com/neonlabsorg">Twitter</a>, <a href="https://github.com/neonlabsorg">GitHub</a>, <a href="https://www.youtube.com/channel/UCAL2uFkKkfBgz3mXFN3UDTQ">YouTube</a>, and <a href="https://neonlabsorg.medium.com/">Medium</a> for more development updates and announcements.</p>
+<p>感谢您抽出宝贵时间查看 Halborn 安全审计的结果。如果您对安全审计或相关调查结果有任何疑问，请随时与我们联系。您可以通过 <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a> 联系团队。最后，在 <a href="https://twitter.com/neonlabsorg">Twitter</a>、<a href="https://github.com/neonlabsorg">GitHub</a>、<a href="https://www.youtube">YouTube</a>  和 <a href="https://neonlabsorg.medium.com/">Medium</a>上与团队保持联系，了解更多开发更新和公告。</p>
 ]]></content>
     </entry>
     <entry>
@@ -884,67 +959,6 @@ ORs 的当前状态并没有在 EVM 上有所改善，且在创新方面停滞�
 收听下面的完整播客↓</p>
 <figure data-type="image" tabindex="2"><a href="https://www.youtube.com/watch?v=DhBkrc9dECg"><img src="https://i.ytimg.com/vi/DhBkrc9dECg/maxresdefault.jpg" alt="" loading="lazy"></a></figure>
 <p>原文地址：<a href="https://twitter.com/fuellabs_/status/1578412287957704704">https://twitter.com/fuellabs_/status/1578412287957704704</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Akord应用V2介绍 (Introducing the V2 Akord app)]]></title>
-        <id>https://chainguys.github.io/post/akord-ying-yong-v2-jie-shao-introducing-the-v2-akord-app/</id>
-        <link href="https://chainguys.github.io/post/akord-ying-yong-v2-jie-shao-introducing-the-v2-akord-app/">
-        </link>
-        <updated>2022-10-06T12:16:32.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/media/akord-v2-post.png" alt="Akord v2 post" loading="lazy"></figure>
-<h2 id="新协议新应用-new-protocol-new-app">新协议，新应用 (New protocol, new app)</h2>
-<p>We recently released the new <a href="http://docs.akord.com/">Akord protocol</a> open source along with a raft of developer tools to help builders get going on the new protocol.</p>
-<p>我们最近发布了新的开源 <a href="http://docs.akord.com/">Akord 协议</a> 以及大量开发工具，以帮助构建者着手使用新协议。</p>
-<p>The Akord protocol marks a new beginning where we start to create an ecosystem of builders who will use our technology to integrate permanence, privacy and collaboration on Arweave into their own projects.</p>
-<p>Akord 协议标志着一个新的开始，我们开始创建一个构建者生态系统，他们将使用我们的技术把 Arweave 上永续、隐私和协作集成到他们自己的项目中。</p>
-<p>We built the Akord protocol for number of reasons, including:</p>
-<p>我们构建 Akord 协议的原因有很多，包括：</p>
-<ul>
-<li>
-<p>having a standard way of posting transactions to arweave<br>
-有一个标准的方式来发布交易到 arweave</p>
-</li>
-<li>
-<p>moving from base64 to binary uploads to get rid of unnecessary storage consumption caused by encoding<br>
-从 base64 迁移到二进制上传，以摆脱编码造成的不必要的存储消耗</p>
-</li>
-<li>
-<p>moving to arbundles to get finite and deterministic transaction references<br>
-转移到 arbundles 以获得有限和确定性的交易参考</p>
-</li>
-<li>
-<p>improving encryption to defend from quantum computing attacks<br>
-改进加密以防御量子计算攻击</p>
-</li>
-<li>
-<p>using Redstone warp to have each vault represented by warp contract with calculated state.<br>
-使用红石(Redstone)封装使每个保险库都由具有计算状态的封装合约表示。</p>
-</li>
-</ul>
-<p><strong>Along with the protocol release, we launched a new version of the Akord app – the first application to be built on top of the protocol.</strong></p>
-<p><strong>随着协议的发布，我们推出了新版本的 Akord 应用程序——第一个基于协议构建的应用程序。</strong></p>
-<p>These changes, while a big leap forward technologically, were breaking in the sense that we no longer maintain the code needed for the old decryption and encryption used on v1 (<a href="http://app.akord.com/">app.akord.com</a>).</p>
-<p>这些变化，虽然在技术上是一个巨大的飞跃，但从某种意义上说，我们不再维护 v1 上使用的旧解密和加密所需的代码 ([app.akord.com](http://app.akord.com /))。</p>
-<p><strong>You can login to <a href="http://v2.akord.com/">v2.akord.com</a> with the login credentials from app.akord.com, but you will not see any of your vaults or uploaded data.</strong></p>
-<p><strong>您可以使用 app.akord.com 的登录凭据登录 <a href="http://v2.akord.com/">v2.akord.com</a>，但您不会看到任何保管库或上传的数据。</strong></p>
-<h3 id="迁移工具-migration-tool">迁移工具 (Migration tool)</h3>
-<p>No data uploaded to app.akord.com will ever be lost. Eventually we will deprecate this app, as from now on all new features will be deployed on the new v2.akord.com. But for a while we will run both apps, giving people time to migrate their data to the new version.</p>
-<p>上传到 app.akord.com 的任何数据都不会丢失。最终我们将弃用此应用，因为从现在开始，所有新功能都将部署在新的 v2.akord.com 上。但在一段时间内，我们将同时运行这两个应用程序，让人们有时间将他们的数据迁移到新版本。</p>
-<p>We’re currently building a migration tool that will enable anyone who has vaults and data on app.akord.com to migrate everything to v2. **There will be no cost for this migration, the tool will be completely free to use.**If you have any questions concerning the migration of your data, the best place to reach our team is on the community <a href="https://discord.com/invite/g4VXfauK5s">Discord</a>.</p>
-<p>我们目前正在构建一个迁移工具，使任何在 app.akord.com 上拥有保管库和数据的人都可以将所有内容迁移到 v2。 <strong>此迁移不收取任何费用，该工具将完全免费使用。如果您对数据迁移有任何疑问，联系我们团队的最佳地点是社区 [Discord](https 😕/discord.com/invite/g4VXfauK5s)。</strong></p>
-<h3 id="查看合约-view-contracts">查看合约 (View contracts)</h3>
-<p>Most of these changes, being at the protocol level, are not noticeable when you use the new app by logging in to v2.akord.com. The exception is that you can now select “View contract” from the vault menu, and you will be taken to the Warp contract page for the vault on Redstone’s SonAR explorer.</p>
-<p>当您通过登录 v2.akord.com 使用新应用时，这些更改中的大部分内容在协议级别上都并不明显。唯一的例外是您现在可以从保险库菜单中选择“查看合约”，您将被带到 Redstone 的 SonAR 浏览器上保险库的 Warp(封装) 合同页面。</p>
-<figure data-type="image" tabindex="2"><img src="https://akord.com/media/Screenshot-2022-10-04-at-14.49.22.png" alt="Screenshot 2022 10 04 at 14 49 22" loading="lazy"></figure>
-<h3 id="共享公共保管库-share-public-vault">共享公共保管库 (Share public vault)</h3>
-<p>There is one other new change to v2.akord.com, which you will see from the vault menu: select “Share vault” and get a link to share with anyone and let them easily view your vault’s contents.</p>
-<p>v2.akord.com 还有另一项新变化，您将从保管库菜单中看到：选择“共享保管库”并获取与任何人共享的链接，让他们轻松查看您保管库的内容。</p>
-<figure data-type="image" tabindex="3"><img src="https://akord.com/media/Screenshot-2022-10-07-at-10.41.48.png" alt="Screenshot 2022 10 07 at 10 41 48" loading="lazy"></figure>
-<p>Please note that you can share your vault straight away, even while your uploads are in pending state. This means if you click on the “View transaction” link on individual files, it will display a 404 error on viewblock.io.</p>
-<p>请注意，即使您的上传处于待处理状态，您也可以立即共享您的保管库。这意味着如果您单击单个文件上的“查看交易”链接，它将在 viewblock.io 上显示 404 错误。</p>
-<p>If you want to share your public vault and have all the files to have working transaction links to viewblock.io, than ensure all content is no longer in pending state (file icons with orange dots are in pending).</p>
-<p>如果您想共享您的公共保管库并让所有文件都具有指向 viewblock.io 的有效交易链接，那么请确保所有内容不再处于待处理状态（带有橙色圆点的文件图标处于待处理状态）。</p>
 ]]></content>
     </entry>
 </feed>
