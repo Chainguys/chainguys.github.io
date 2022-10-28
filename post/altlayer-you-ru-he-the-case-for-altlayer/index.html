@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>AltLayer又如何?(The Case for AltLayer) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1666842563223">
+<link rel="shortcut icon" href="/favicon.ico?v=1666935594786">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -1008,6 +1008,193 @@ AltLayer — 具有专用区块空间，按需扩展和执行的环境</p>
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-er-bu-fen-the-case-for-modular-execution-part-2/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://fuel-labs.ghost.io/content/images/size/w2000/2022/10/BlogPost3-V1.png&#34; alt=&#34;The Case for Modular Execution (Part 2)&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;How modular execution layers can achieve scalability by optimizing for efficient computation.&lt;br&gt;
+模块化执行层如何通过优化高效计算，来实现可扩展性。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;模块化执行的案例-the-case-for-modular-execution&#34;&gt;模块化执行的案例 (The Case for Modular Execution)&lt;/h2&gt;
+&lt;p&gt;Modular architecture will enable blockchains to &lt;a href=&#34;https://fuel-labs.ghost.io/beyond-monolithic-the-modular-blockchain-paradigm/&#34;&gt;scale by orders of magnitude&lt;/a&gt;. As a core part of the modular stack, execution layers are in a stage of rapid innovation.&lt;/p&gt;
+&lt;p&gt;模块化架构将使区块链能够&lt;a href=&#34;https://fuel-labs.ghost.io/beyond-monolithic-the-modular-blockchain-paradigm/&#34;&gt;按数量级扩展&lt;/a&gt;。作为模块化技术栈的核心部分，执行层正处于快速创新的阶段。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fuel is building the fastest execution layer for the modular blockchain stack.&lt;/strong&gt; In &lt;a href=&#34;https://fuel-labs.ghost.io/the-case-for-modular-execution-part-1/&#34;&gt;Part 1&lt;/a&gt; we explored how modular execution layers enable scalability by decoupling computation from verification.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fuel 正在为模块化区块链技术栈构建最快的执行层。&lt;/strong&gt; 在 &lt;a href=&#34;https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/&#34;&gt;第一部分&lt;/a&gt;我们探索了模块化执行层如何通过将计算与验证解耦来实现可扩展性。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/&#34;&gt;模块化执行的案例(第一部分) The Case for Modular Execution (Part 1)&lt;/a&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://fuel-labs.ghost.io/content/images/2022/10/the-case-for-modular-execution-part-1.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;We also touched on a second core benefit which enables modular execution layers to scale by orders of magnitude more than their monolithic counterparts:&lt;/p&gt;
+&lt;p&gt;我们还谈到了第二个核心优势，它使模块化执行层能够比其单片执行层扩展几个数量级：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Monolithic chains are locked into inefficient technologies when it comes to the speed and variety of computation they can support. On the other hand, modular execution layers can be specifically designed to optimize for efficient computation.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;单片链在它们可以支持的计算速度和多样性方面被锁定在低效的技术中。另一方面，模块化执行层可以专门设计用于优化高效计算。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This post explores this second core benefit, with a specific focus on how Fuel is revolutionizing the way blockchains handle computation.&lt;/p&gt;
+&lt;p&gt;这篇文章探讨了第二个核心优势，特别关注 Fuel 如何彻底改变区块链处理计算的方式。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;单片链layer1迭代的挑战-monolithic-chains-the-challenge-of-iterating-on-layer-1s&#34;&gt;单片链：Layer1迭代的挑战 (Monolithic Chains: The Challenge of Iterating on Layer-1s)&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Monolithic chains are locked into inefficient technologies when it comes to the speed and variety of computation they can support.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;单片链在其可以支持的计算速度和多样性方面，被锁定在低效的技术中。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When blockchains were first conceived of, there was a single use case in mind: digital cash. The Bitcoin blockchain was designed to optimize for this one narrow use case.&lt;/p&gt;
+&lt;p&gt;首次构想区块链时，脑海中只有一个用例：数字现金。比特币区块链旨在优化这一狭窄用例。&lt;/p&gt;
+&lt;p&gt;Soon after the launch of Bitcoin, people started to realize the potential of blockchains for use cases far beyond money. The narrative quickly shifted from “distributed ledger” to “distributed computer”. The Bitcoin community attempted to support this use case through &lt;a href=&#34;https://en.wikipedia.org/wiki/Colored_Coins&#34;&gt;colored coins&lt;/a&gt;, but it was clear that it was not versatile enough to truly support trustless distributed computing; it was locked into its original use case. A new architecture was required.&lt;/p&gt;
+&lt;p&gt;比特币推出后不久，人们开始意识到区块链远超金钱用例的潜力。叙事迅速从“分布式账本”转变为“分布式计算机”。比特币社区试图通过 &lt;a href=&#34;https://en.wikipedia.org/wiki/Colored_Coins&#34;&gt;色彩币&lt;/a&gt; 来支持这个用例，但很明显它的通用性不足以真正支持去信任分布式计算；它被锁定在其原始用例中。(我们)需要一种新的架构。&lt;/p&gt;
+&lt;p&gt;Recognizing this problem, the creators of Ethereum set out to build a blockchain which could support a distributed Turing-complete virtual machine: the Ethereum Virtual Machine (EVM). With the launch of Ethereum in 2015, blockchains had evolved to support arbitrary computation in a trustless environment. Now, anyone could build and launch a computer program (smart contract) and have it run on a distributed computer.&lt;/p&gt;
+&lt;p&gt;认识到这个问题，以太坊的创建者着手构建一个可以支持分布式图灵完备虚拟机的区块链：以太坊虚拟机(EVM)。随着 2015 年以太坊的推出，区块链已经发展到支持去信任环境中的任意计算。现在，任何人都可以构建和启动一个计算机程序(智能合约)并让它在分布式计算机上运行。&lt;/p&gt;
+&lt;p&gt;Ethereum was conceived of less than half a decade after the concept of blockchains came into existence. In the 7 years since Ethereum launched, new concepts have been invented which represent an even greater leap forward than the progress Ethereum made over Bitcoin. But like Bitcoin, the Ethereum blockchain is mostly locked into the core architecture it launched with.&lt;/p&gt;
+&lt;p&gt;以太坊是在区块链概念出现后不到五年的时间构思出来的。自以太坊推出以来的 7 年里，人们发明了新概念，这代表了以太坊相对比特币所取得进步的更大飞跃。但就像比特币一样，以太坊区块链大多被锁定在它推出的核心架构中。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;For every improvement that has been made to the Ethereum blockchain and the EVM over the years, there are many more potential innovations that cannot be implemented due to the need to maintain backward compatibility.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;对于多年来对以太坊区块链和 EVM 所做的每一项改进，由于需要保持向后兼容性，还有许多潜在的创新无法实施。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As a result, the blockchain community has continued funding, building, and launching new blockchains every time a new innovation is hatched. Countless new layer-1 blockchains have launched on the promise of iterating on the concept of trustless distributed computing, but they all run into the same challenge: it’s hard (and often impossible) to upgrade blockchains to support new functionalities and improvements.&lt;/p&gt;
+&lt;p&gt;因此，每次孵化出新创新时，区块链社区都会继续资助、构建和推出新的区块链。无数新的Layer1区块链已经推出，承诺迭代去信任分布式计算的概念，但它们都遇到了同样的挑战：升级区块链来支持新功能和改进是困难的(而且通常是不可能的)。&lt;/p&gt;
+&lt;p&gt;And so the cycle continues, where we continue to see new blockchains launching with piecemeal improvements over their predecessors. In the process, we are left with an ecosystem of mostly incompatible blockchains, with ever-increasing fragmentation of liquidity, funding, user experience, and developer-mindshare. Meanwhile, the energy that could be spent on true innovation is instead directed toward getting attention from investors, developers, and end-users.&lt;/p&gt;
+&lt;p&gt;所以这个循环还在继续，我们也继续看到新区块链推出，对它们的前辈进行零碎的改进。在这个过程中，我们留下了一个由大部分不兼容的区块链组成的生态系统，流动性、资金、用户体验和开发者的思想份额越来越分散。与此同时，可以花在真正创新上的精力反而被用于吸引投资者、开发商和最终用户的关注。&lt;/p&gt;
+&lt;p&gt;Competition is healthy and necessary for a thriving ecosystem. But this competition is happening at the wrong level.&lt;/p&gt;
+&lt;p&gt;竞争对于繁荣的生态系统是健康的和必要的。但这场竞争发生在错误的层面。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The modular blockchain paradigm promises to solve this problem.&lt;/strong&gt; Because each layer in the modular stack is independent of the others, innovation can happen on one layer without a complete overhaul of the entire stack. Execution layers can compete on execution. Data availability layers can compete on data availability. Every layer can optimize for its intended purpose without breaking backward compatibility.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;模块化区块链范式有望解决这个问题。&lt;/strong&gt; 由于模块化技术栈中的每一层都独立于其他层，因此创新可以发生在一个单独层上，而无需对整个技术栈进行彻底检修。执行层可以竞争执行。数据可用性层可以在数据可用性上竞争。每一层都可以针对其预期目的进行优化，而不会破坏向后兼容性。&lt;/p&gt;
+&lt;p&gt;Shared settlement layers enable liquidity to be pooled in one place, so new execution layers can be built without fragmenting liquidity or adding friction to the end-user experience. Natively enabled trust-minimized bridging means the community can reduce the resources spent on interoperability efforts and instead focus them on exploring meaningful innovations.&lt;/p&gt;
+&lt;p&gt;共享结算层可以将流动性集中在一个地方，因此可以构建新的执行层，而不会分散流动性或增加最终用户体验的摩擦。原生支持的信任最小化桥接意味着社区可以减少在交互性工作上花费的资源，而是将它们集中在探索有意义的创新上。&lt;/p&gt;
+&lt;p&gt;With the advent of the modular stack, we can move away from a disparate ecosystem of L1s competing on vanity metrics, and toward a more cohesive, interoperable, upgradeable stack.&lt;/p&gt;
+&lt;p&gt;随着模块化技术栈的出现，我们可以摆脱在虚荣指标上竞争的不同的 L1 生态系统，而转向更具凝聚力、可交互、可升级的技术栈。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;模块化执行超越-evm-modular-execution-moving-beyond-the-evm&#34;&gt;模块化执行：超越 EVM (Modular Execution: Moving Beyond the EVM)&lt;/h2&gt;
+&lt;p&gt;Despite the plethora of layer-1 blockchains promising improvements over the EVM&#39;s original design, its first-mover advantage enabled the EVM to gain a foothold as the &amp;quot;default&amp;quot; runtime environment in the blockchain ecosystem. Smart contract development became synonymous with Solidity (the EVM&#39;s programming language), which has captured the majority of would-be blockchain developers. Because of this, most execution layers currently under development are EVM-based rollups.&lt;/p&gt;
+&lt;p&gt;尽管有过多的Layer1区块链有望对 EVM 的原始设计进行改进，但其先发优势使 EVM 作为区块链生态系统中的“默认”运行时环境获得了立足点。智能合约开发成为 Solidity(EVM 的编程语言)的代名词，它吸引了大多数潜在的区块链开发人员。因此，目前正在开发的大多数执行层都是基于 EVM 的汇总。&lt;/p&gt;
+&lt;p&gt;There is a good reason for this: using the EVM enables rollups to tap into a market of existing applications written in Solidity, as well as a large cohort of end-users who are already familiar with those applications. The EVM is a great tool for seeding a new ecosystem, as it already has such a large share of the developer market.&lt;/p&gt;
+&lt;p&gt;这有一个很好的理由：使用 EVM 使汇总能够进入使用 Solidity 编写的现有应用程序的市场，以及已经熟悉这些应用程序的大量最终用户。 EVM 是播种新生态系统的绝佳工具，因为它已经在开发者市场占有如此大的份额。&lt;/p&gt;
+&lt;p&gt;However, as we already explored, the need to maintain backward compatibility means that the EVM has been unable to adopt many innovations. In addition, the core design of the EVM is optimized for a monolithic chain, not a modular stack.&lt;/p&gt;
+&lt;p&gt;然而，正如我们已经探讨过的，保持向后兼容性的需要意味着 EVM 无法采用许多创新。此外，EVM 的核心设计针对单片链而非模块化技术栈进行了优化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Just some limitations of the EVM include:&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;EVM 的一些限制包括：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Sequential Execution&lt;/strong&gt; - The EVM does not support parallel transaction execution, making it much less computationally efficient than other VM designs.&lt;br&gt;
+&lt;strong&gt;顺序执行&lt;/strong&gt; - EVM 不支持并行交易执行，使其计算效率低于其他 VM 设计。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Fraud Proofs&lt;/strong&gt; - Ethereum’s account-based model means generating and executing fraud proofs on EVM chains is extremely costly and inefficient, making it sub-optimal for modular execution layers.&lt;br&gt;
+&lt;strong&gt;欺诈证明&lt;/strong&gt; - 以太坊基于账户的模型意味着在 EVM 链上生成和执行欺诈证明的成本极高且效率低下，因此对于模块化执行层来说并非最优。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Solidity&lt;/strong&gt; - The most popular programming language for the EVM, Solidity, is notorious for providing a poor developer experience, and is designed in a way that makes it difficult to write secure smart contracts.&lt;br&gt;
+&lt;strong&gt;Solidity&lt;/strong&gt; - EVM 最流行的编程语言 Solidity 因提供糟糕的开发者体验而声名狼藉，并且其设计方式使得编写安全的智能合约变得困难.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fuel优化的模块化执行-fuel-optimized-for-modular-execution&#34;&gt;Fuel：优化的模块化执行 (Fuel: Optimized for Modular Execution)&lt;/h2&gt;
+&lt;p&gt;The advent of modularism means that execution layers can leverage Ethereum’s liquidity and security without being restricted by the limitations of the EVM.&lt;/p&gt;
+&lt;p&gt;模块化的出现意味着执行层可以利用以太坊的流动性和安全性，而不受 EVM 的限制。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://fuel-labs.ghost.io/content/images/2022/10/image-23.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;By adopting new and improved VM design principles, modular execution layers can specifically optimize for efficient &amp;amp; scalable computation, superior developer experience, and maximum security.&lt;/p&gt;
+&lt;p&gt;通过采用全新和改进的 VM 设计原则，模块化执行层可以专门针对高效和可扩展计算、卓越的开发者体验和最大的安全性进行优化。&lt;/p&gt;
+&lt;p&gt;Fuel is taking advantage of this new design space to build &lt;a href=&#34;https://www.fuel.network/&#34;&gt;the fastest modular execution layer&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Fuel 正在利用这个新的设计空间来构建 &lt;a href=&#34;https://www.fuel.network/&#34;&gt;最快的模块化执行层&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;fuel虚拟机-fuelvm&#34;&gt;Fuel虚拟机 (FuelVM)&lt;/h3&gt;
+&lt;p&gt;One of the core innovations of Fuel is a &lt;strong&gt;completely new virtual machine, the &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/vs-evm.html&#34;&gt;FuelVM&lt;/a&gt;&lt;/strong&gt;. The advent of execution layers built on Ethereum presents a new opportunity to improve on past VM designs, unconstrained by the need to be backward compatible.&lt;/p&gt;
+&lt;p&gt;Fuel 的核心创新之一是&lt;strong&gt;全新的虚拟机，&lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/vs-evm.html&#34;&gt;FuelVM&lt;/a&gt;&lt;/strong&gt;。基于以太坊构建的执行层的出现，为改进过去的 VM 设计提供了新的机会，不受向后兼容需求的限制。&lt;/p&gt;
+&lt;p&gt;While the EVM’s slow transaction execution may have been sufficient in a pre-modular world where bandwidth was the core bottleneck, improvements made within the new modular stack (including on L1 Ethereum) mean that computational throughput is becoming the primary constraint when it comes to scaling.&lt;/p&gt;
+&lt;p&gt;虽然在带宽是核心瓶颈的前模块化世界中，EVM 的缓慢交易执行可能已经足够，但在新的模块化技术栈(包括 L1 以太坊)中所做的改进意味着计算吞吐量正在成为扩展时的主要限制.&lt;/p&gt;
+&lt;p&gt;In anticipation of this new paradigm, &lt;strong&gt;the FuelVM is designed to optimize for fast transaction execution&lt;/strong&gt;. Taking learnings from the EVM, Solana, WASM, Bitcoin, and Cosmos, the FuelVM is designed to reduce wasteful processing of traditional blockchain virtual machine architectures, while vastly increasing the potential design space for developers.&lt;/p&gt;
+&lt;p&gt;出于对这种新范式的预期，&lt;strong&gt;FuelVM 旨在优化快速交易执行&lt;/strong&gt;。 FuelVM 借鉴了 EVM、Solana、WASM、比特币和 Cosmos，旨在减少传统区块链虚拟机架构的浪费处理，同时极大地增加开发人员的潜在设计空间。&lt;/p&gt;
+&lt;p&gt;The FuelVM adopts many innovations that have been suggested and supported by the EVM community, but couldn&#39;t be implemented due to the need to maintain backward compatibility. Just a few examples are highlighted below (&lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/vs-evm.html#eips-implemented-in-fuel&#34;&gt;see here for the full list&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;FuelVM 采用了许多 EVM 社区已经建议和支持的创新，但由于需要保持向后兼容性而无法实施。下面仅突出显示了几个示例(&lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/vs-evm.html#eips-implemented-in-fuel&#34;&gt;完整列表请参见此处&lt;/a&gt;)。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://fuel-labs.ghost.io/content/images/2022/10/image-24.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;These are just a few examples of EIPs which were ultimately rejected for the EVM due to backward compatibility issues, but have been implemented in Fuel (source:&lt;/em&gt; &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/vs-evm.html#eips-implemented-in-fuel&#34;&gt;&lt;em&gt;Fuel&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;这些只是 EIP 的几个示例，由于向后兼容性问题最终被 EVM 拒绝，但已在 Fuel 中实现(来源：&lt;/em&gt; [&lt;em&gt;Fuel&lt;/em&gt;](https://fuellabs.github.io/fuel-docs/master /vs-evm.html#eips-implemented-in-fuel)&lt;em&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;用sway和force实现的高级devex-superior-devex-with-sway-and-forc&#34;&gt;用Sway和Force实现的高级DevEx (Superior DevEx with Sway and Forc)&lt;/h3&gt;
+&lt;p&gt;The Fuel protocol was designed with developer experience at the forefront. &lt;strong&gt;The FuelVM has been built alongside its companion language, &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/sway-language.html&#34;&gt;Sway&lt;/a&gt;&lt;/strong&gt;: a Rust-based domain-specific language designed specifically to leverage a blockchain VM. Unlike Solidity, which was developed after the creation of the EVM, Sway has been created from the ground up to have convenient and efficient ops built-in. By basing Sway on Rust, Fuel makes smart contract development safer and more performant through the use of strong static analysis and compiler feedback.&lt;/p&gt;
+&lt;p&gt;Fuel 协议的设计凝结最前沿的开发人员经验。 &lt;strong&gt;FuelVM 是与它的配套语言 &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/sway-language.html&#34;&gt;Sway&lt;/a&gt; 一起构建的&lt;/strong&gt;：一种基于 Rust 设计的特定领域语言，专门来使用区块链虚拟机。与在创建 EVM 之后开发的 Solidity 不同，Sway 是从头开始创建的，内置了方便高效的操作。通过基于 Rust 的 Sway，Fuel 通过使用强大的静态分析和编译器反馈使智能合约开发更安全、更高效。&lt;/p&gt;
+&lt;p&gt;From a tooling perspective, &lt;strong&gt;Fuel improves on the EVM ecosystem with the &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/fuel-toolchain.html&#34;&gt;Forc toolchain&lt;/a&gt;&lt;/strong&gt;. With Forc, developers can get everything they need to start creating Sway applications for the Fuel VM with a single toolchain. Fuel takes a curated, &amp;quot;batteries-included&amp;quot;-yet-modular approach to providing tooling, with a comprehensive, standardized, canonical set of tools that covers not only the lower levels of the stack (like protocol and VM implementations), but also the higher levels (such as package management, editor support, common-use plugins, and much more).&lt;/p&gt;
+&lt;p&gt;从工具的角度来看，&lt;strong&gt;Fuel 通过 &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/fuel-toolchain.html&#34;&gt;Forc 工具链&lt;/a&gt;&lt;/strong&gt; 改进了 EVM 生态系统。借助 Forc，开发人员可以使用单个工具链获得开始为 Fuel VM 创建 Sway 应用所需的一切。 Fuel 采用精心策划的“包含电池”但模块化的方法来提供工具，具有全面、标准化、规范的工具集，不仅涵盖技术栈的较低级别(如协议和 VM 实现)，也包括更高级别(例如包管理、编辑器支持、常用插件等等)。&lt;/p&gt;
+&lt;p&gt;Fuel’s developer environment retains the benefits of smart contract languages like Solidity while adopting the paradigms introduced in the Rust tooling ecosystem, making the learning curve for Sway easily manageable for all levels of developer experience.&lt;/p&gt;
+&lt;p&gt;Fuel 的开发人员环境保留了 Solidity 等智能合约语言的优势，同时采用了 Rust 工具生态系统中引入的范式，使 Sway 的学习曲线易于管理，适合所有级别的开发人员体验。&lt;/p&gt;
+&lt;h3 id=&#34;并行交易执行-parallel-transaction-execution&#34;&gt;并行交易执行 (Parallel Transaction Execution)&lt;/h3&gt;
+&lt;p&gt;The ability to execute transactions in parallel is a highly desirable property, especially as modern processors become increasingly multi-threaded. As such, it was a core consideration when designing the Fuel protocol.&lt;/p&gt;
+&lt;p&gt;并行执行交易的能力是一个非常理想的属性，尤其是在现代处理器变得越来越多线程的情况下。因此，这是设计 Fuel 协议时的核心考虑因素。&lt;/p&gt;
+&lt;p&gt;Parallel transaction execution requires the ability to determine and handle &lt;a href=&#34;https://en.wikipedia.org/wiki/Parallel_computing#Dependencies&#34;&gt;dependencies&lt;/a&gt; between transactions. In order to avoid overlap when processing the transactions on separate cores, the shared state that may be touched by each transaction needs to be identified upfront (via “access lists”), so transactions can be partitioned into sets which don’t have any possible interactions with one another.&lt;/p&gt;
+&lt;p&gt;并行交易执行需要能够确定和处理交易之间的&lt;a href=&#34;https://en.wikipedia.org/wiki/Parallel_computing#Dependencies&#34;&gt;依赖项&lt;/a&gt;。为了避免在不同核上处理交易时发生重叠，需要预先识别每个交易可能涉及的共享状态(通过“访问列表”)，因此可以将交易划分为没有任何可能彼此互动的集合。&lt;/p&gt;
+&lt;p&gt;Because of the constraints of its account-based design, Ethereum is not able to support these access lists, so is forced to process transactions sequentially (i.e. one after the other). &lt;a href=&#34;https://github.com/ethereum/EIPs/issues/648&#34;&gt;EIP-648&lt;/a&gt; proposed the addition of access lists to Ethereum, but this has never been implemented due to other inefficiencies it would introduce.&lt;/p&gt;
+&lt;p&gt;因为其基于帐户的设计的限制，以太坊无法支持这些访问列表，因此被迫按顺序处理交易(即一个接一个)。 &lt;a href=&#34;https://github.com/ethereum/EIPs/issues/648&#34;&gt;EIP-648&lt;/a&gt; 提议向以太坊添加访问列表，但由于它会引入其他类型的低效率，所以这从未实施过。&lt;/p&gt;
+&lt;p&gt;Learning from this limitation, Fuel has implemented &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/technology/parallel_tx_execution.html#state-access-lists-and-utxos&#34;&gt;strict state access lists&lt;/a&gt; in the form of a UTXO model, giving it the ability to use multiple CPU threads and cores that are typically idle in single-threaded blockchains. As a result, &lt;strong&gt;Fuel can execute transactions in parallel&lt;/strong&gt;, delivering far more compute, state accesses, and transactional throughput than its single-threaded counterparts.&lt;/p&gt;
+&lt;p&gt;从这个限制中吸取教训，Fuel 实施了形同UTXO 模型的 &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/technology/parallel_tx_execution.html#state-access-lists-and-utxos&#34;&gt;严格的状态访问列表&lt;/a&gt; ，使其能够使用通常在单线程区块链中空闲的多个 CPU 线程和内核。因此，**Fuel 可以并行执行交易，提供比单线程更多的计算、状态访问和交易吞吐量。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/3XJEoCTGhPZl6T44ob4P2bAYrHi-TqggBsNYVCpegu5WSh5upC6kxrAZR6r-ErgSk69TwYmH6ex4hysI4-EoHZGZ1lSdB6-rcdRJpsbbYVipnjNHQPIyZqcvvOwrOfHVaa8pWd-9pHi0pKOwH1lDpDYsrt1K0kFInV7tq51t6ZfpZiBAd7mJC7IOgg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;Fuel’s support for parallel transaction execution means validators can maximize efficiency by using all of their hardware (source:&lt;/em&gt; &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/why-fuel.html#parallel-execution&#34;&gt;&lt;em&gt;Fuel&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Fuel 对并行交易执行的支持意味着验证者可以通过使用其所有的硬件来最大化效率(来源：&lt;/em&gt; &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/why-fuel.html#parallel-execution&#34;&gt;&lt;em&gt;Fuel&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As well as providing efficiency optimizations, &lt;strong&gt;the ability to process multiple transactions in parallel allows for security improvements&lt;/strong&gt;, as it enables transaction throughput to scale without a comparable increase in the resource requirements to verify those transactions. This reduces the barrier for running a full node, leading to a more decentralized network of verifiers.&lt;/p&gt;
+&lt;p&gt;除了提供效率优化外，&lt;strong&gt;并行处理多个交易的能力还可以提高安全性&lt;/strong&gt;，因为它可以扩展交易吞吐量，而不会增加用于验证这些交易的资源需求。这降低了运行完整节点的障碍，从而导致验证者网络更加分散。&lt;/p&gt;
+&lt;h3 id=&#34;为欺诈证明而优化-optimized-for-fraud-proofs&#34;&gt;为欺诈证明而优化 (Optimized for Fraud Proofs)&lt;/h3&gt;
+&lt;p&gt;Fraud proofs are a core technology in the modular blockchain stack. In &lt;a href=&#34;https://fuel-labs.ghost.io/the-case-for-modular-execution-part-1/&#34;&gt;Part 1&lt;/a&gt;, we explored how modular execution layers can leverage fraud proofs to enable trust-minimized light clients, allowing for security under the assumption that only a single honest full node is available.&lt;/p&gt;
+&lt;p&gt;欺诈证明是模块化区块链技术栈中的核心技术。在 &lt;a href=&#34;https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/&#34;&gt;第一部分&lt;/a&gt; 中，我们探讨了模块化执行层如何利用欺诈证明来启用信任最小化的轻客户端，在只有一个诚实的全节点可用的假设下确保安全性。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://fuel-labs.ghost.io/content/images/2022/10/image-25.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;Fraud proofs enable trust-minimized light clients which rely on a single honest minority, giving them much greater security guarantees than monolithic light clients (source:&lt;/em&gt; &lt;a href=&#34;https://fuel-labs.ghost.io/the-case-for-modular-execution-part-1/&#34;&gt;&lt;em&gt;Fuel&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;欺诈证明使信任最小化的轻客户端依赖于一个诚实的少数，为他们提供比单体轻客户端更大的安全保证(来源：&lt;/em&gt; [&lt;em&gt;Fuel&lt;/em&gt;](https://fuel-labs.ghost.io/the-case- for-modular-execution-part-1/)&lt;em&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;With trust-minimized light clients and shared settlement &amp;amp; data availability layers, it is possible to build trust-minimized bridges between modular execution layers, something which is impossible to achieve between L1s. This allows for the experimentation with and deployment of new blockchain designs without fragmenting security or liquidity.&lt;/p&gt;
+&lt;p&gt;通过信任最小化的轻客户端和共享结算和数据可用性层，可以在模块化执行层之间建立信任最小化的桥接，这是 L1 之间无法实现的。这允许在不破坏安全性或流动性的情况下试验和部署新的区块链设计。&lt;/p&gt;
+&lt;p&gt;Because of the benefits fraud proofs provide, &lt;strong&gt;Fuel was designed and built specifically to be fraud-provable&lt;/strong&gt; in a low-cost, efficient manner.&lt;/p&gt;
+&lt;p&gt;由于欺诈证明提供的好处，&lt;strong&gt;Fuel 被设计和产出专门的低成本和高效的方式证明欺诈&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;Whereas Ethereum’s account-based model means that the cost of constructing fraud proofs for it is unbound, Fuel optimizes for fraud proofs by using the UTXO model. &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/technology/fraud_proofs.html&#34;&gt;UTXO fraud proofs&lt;/a&gt; achieve efficiency by simply requiring each spend of a UTXO to &amp;quot;point&amp;quot; to the creation of the UTXO, without having to refer to a global state tree. Proving that either a) the pointer is invalid, or b) whatever is being pointed to doesn&#39;t match whatever is being spent, is sufficient for exhaustively proving fraud.&lt;/p&gt;
+&lt;p&gt;以太坊基于账户的模型意味着为其构建欺诈证明的成本是无限的，而 Fuel 通过使用 UTXO 模型来优化欺诈证明。 &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/technology/fraud_proofs.html&#34;&gt;UTXO 欺诈证明&lt;/a&gt; 通过简单地要求 UTXO 的每笔支出“指向”UTXO 的创建来实现效率，无需强制参考全局状态树。证明 a) 指针无效，或 b) 所指向的内容与所花费的内容不匹配，足以彻底证明欺诈。&lt;/p&gt;
+&lt;p&gt;As an added benefit, the &lt;a href=&#34;https://github.com/FuelLabs/fuel-specs/blob/master/specs/vm/instruction_set.md&#34;&gt;FuelVM instruction set&lt;/a&gt; is designed to be fraud-provable within the EVM. This means Fuel can use Ethereum as a settlement layer, leveraging its deep liquidity and large user base while remaining unconstrained by the limitations of the EVM.&lt;/p&gt;
+&lt;p&gt;还有一个额外的好处，&lt;a href=&#34;https://github.com/FuelLabs/fuel-specs/blob/master/specs/vm/instruction_set.md&#34;&gt;FuelVM 指令集&lt;/a&gt; 被设计在 EVM 中进行欺诈证明。这意味着 Fuel 可以使用以太坊作为结算层，利用其深厚的流动性和庞大的用户群，同时不受 EVM 的限制。&lt;/p&gt;
+&lt;h3 id=&#34;其他益处-other-benefits&#34;&gt;其他益处 (Other Benefits)&lt;/h3&gt;
+&lt;p&gt;On top of the above points, Fuel has implemented a number of other improvements, including:&lt;br&gt;
+除了上述几点之外，Fuel 还实施了许多其他改进，包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for multiple native assets  支持多种原生资产&lt;/li&gt;
+&lt;li&gt;Native account abstraction &amp;amp; predicates  原生支持帐户抽象和谓词&lt;/li&gt;
+&lt;li&gt;Multi-dimensional resource pricing  本机帐户抽象和谓词&lt;/li&gt;
+&lt;li&gt;Sequencer decentralization  序列器去中心化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An explanation of these improvements is out of scope for this article, but Blockchain Capital provides an excellent &lt;a href=&#34;https://medium.com/blockchain-capital-blog/exploring-the-fuelvm-86cf9ccdc159&#34;&gt;deep dive into these additional benefits&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;对这些改进的解释超出了本文的范围，但 Blockchain Capital 提供了出色报告，告诉大家 &lt;a href=&#34;https://chainguys.github.io/post/tan-suo-fuel-xu-ni-ji-fuelvm-exploring-the-fuelvm/&#34;&gt;深入了解这些额外好处&lt;/a&gt; .&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;结论-summary&#34;&gt;结论 (Summary)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The monolithic paradigm leads to an ecosystem of incompatible L1s competing on vanity metrics, fragmenting liquidity, funding, and developer-mindshare. Fuel adopts the premise that &lt;strong&gt;innovation does not require launching a new L1, but can happen at the execution layer&lt;/strong&gt;.&lt;br&gt;
+单片范式导致不兼容的 L1 生态系统在虚荣的指标上竞争、分散流动性、资金和开发者的思想份额。 Fuel 采用的前提是&lt;strong&gt;创新不需要启动新的 L1，但可以发生在执行层&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modular architecture enables MELs such as Fuel to focus on efficient computation without worrying about backward compatibility. Faster computation not only leads to higher throughput, but also makes running validators more efficient, improving decentralization. This enables Fuel to contribute to Ethereum’s scalability without being held back by the inefficiencies of the EVM.&lt;br&gt;
+模块化架构使诸如 Fuel 之类的 MEL 能够专注于高效计算，而无需担心向后兼容性。更快的计算不仅可以带来更高的吞吐量，还可以让运行验证器的效率更高，从而增强去中心化。这使 Fuel 能够为以太坊的扩容做出贡献，而不会因 EVM 的低效而受阻。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execution layers that use the EVM can capitalize on the existing ecosystem of Solidity applications and developers, but fail to make the most of the design space offered by the modular stack. Fuel is leveraging this new design space with the FuelVM, designed from the ground up to be fraud-provable and to provide the best developer experience.&lt;br&gt;
+使用 EVM 的执行层可以利用现有的 Solidity 应用和开发人员生态系统，但无法充分利用模块化技术栈提供的设计空间。 Fuel 正在通过 FuelVM 充分利用这一新的设计空间，该设计从一开始就设计为可防欺诈并提供最佳的开发者体验。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fuel introduces innovations that optimize for the rapidly approaching modular future, enabling a new generation of blockchains that go #BeyondMonolithic..&lt;br&gt;
+Fuel 引入了针对快速接近的模块化未来进行优化的创新，使新一代区块链成为可能 #超越单片链..&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;敬请关注-follow-us&#34;&gt;&lt;strong&gt;敬请关注 (Follow Us)&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/fuellabs_&#34;&gt;&lt;strong&gt;Twitter&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://discord.com/invite/xfpK4Pe&#34;&gt;&lt;strong&gt;Discord&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/company/fuel-labs/&#34;&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ&#34;&gt;&lt;strong&gt;YouTube&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;关于我们-about-us&#34;&gt;&lt;strong&gt;关于我们 (About Us)&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.fuel.network/&#34;&gt;Fuel&lt;/a&gt; is the &lt;strong&gt;fastest execution layer&lt;/strong&gt; for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the &lt;strong&gt;highest flexible throughput&lt;/strong&gt; and &lt;strong&gt;maximum security&lt;/strong&gt; required to scale. Developers choose the &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/vs-evm.html&#34;&gt;FuelVM&lt;/a&gt; for its &lt;strong&gt;superior developer experience&lt;/strong&gt; and the ability to go &lt;strong&gt;beyond the limitations of the EVM&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.fuel.network/&#34;&gt;Fuel&lt;/a&gt; 是模块化区块链技术栈的&lt;strong&gt;最快执行层&lt;/strong&gt;。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的&lt;strong&gt;最高灵活吞吐量&lt;/strong&gt;和&lt;strong&gt;最大安全性&lt;/strong&gt;。开发人员选择 &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/vs-evm.html&#34;&gt;FuelVM&lt;/a&gt; 是因为它&lt;strong&gt;卓越的开发人员体验和运行能力&lt;/strong&gt; ，突破了 EVM 的限制**。&lt;/p&gt;
+&lt;h2 id=&#34;成为贡献者-become-a-contributor&#34;&gt;&lt;strong&gt;成为贡献者 (Become a Contributor)&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://jobs.lever.co/fuellabs&#34;&gt;Explore our current job openings&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://jobs.lever.co/fuellabs&#34;&gt;探索我们目前的职位空缺&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://1v1l4ftv9zy.typeform.com/fuelgrants&#34;&gt;Apply for a grant&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://1v1l4ftv9zy.typeform.com/fuelgrants&#34;&gt;申请资助&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://fuellabs.github.io/sway/v0.24.5/&#34;&gt;Learn Sway&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://fuellabs.github.io/sway/v0.24.5/&#34;&gt;学习Sway&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+">模块化执行的案例(第二部分) The Case for Modular Execution (Part 2)</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/zpoken-cheng-gong-zai-neon-evm-shang-bu-shu-compound-xie-yi-zpoken-successfully-deploys-the-compound-protocol-on-neon-evm/"" data-c="
@@ -3108,6 +3295,7 @@ return text;
 &lt;h2 id=&#34;自2022年夏天以来的项目进展-feul内幕project-update-since-summer-2022-inside-fuel&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/fuel-nei-mu-2022-nian-xia-tian-inside-fuel-summer-2022/&#34;&gt;自2022年夏天以来的项目进展-Feul内幕(Project update since Summer 2022-Inside Fuel)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;fuel实验室宣布为最快的模块化执行层提供-8000-万美元的支持-fuel-labs-announces-80-million-of-support-for-the-fastest-modular-execution-layer&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/fuel-shi-yan-shi-xuan-bu-wei-zui-kuai-de-mo-kuai-hua-zhi-xing-ceng-ti-gong-8000-wan-mei-yuan-de-zhi-chi-fuel-labs-announces-dollar80-million-of-support-for-the-fastest-modular-execution-layer&#34;&gt;Fuel实验室宣布为最快的模块化执行层提供 8000 万美元的支持 (Fuel Labs Announces $80 Million of Support for the Fastest Modular Execution Layer)&lt;/a&gt;&lt;/h2&gt;
 &lt;h1 id=&#34;2项目简介和关键文章project-introduction-and-key-articals&#34;&gt;2.项目简介和关键文章(Project Introduction and key articals)&lt;/h1&gt;
+&lt;h2 id=&#34;模块化执行的案例第二部分-the-case-for-modular-execution-part-2&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-er-bu-fen-the-case-for-modular-execution-part-2&#34;&gt;模块化执行的案例(第二部分) The Case for Modular Execution (Part 2)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;模块化执行的案例第一部分-the-case-for-modular-execution-part-1&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1&#34;&gt;模块化执行的案例(第一部分) The Case for Modular Execution (Part 1)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;超越单片链模块化区块链范式-beyond-monolithicthe-modular-blockchain-paradigm&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/chao-yue-dan-pian-lian-mo-kuai-hua-qu-kuai-lian-fan-shi-beyond-monolithicthe-modular-blockchain-paradigm&#34;&gt;超越单片链：模块化区块链范式 (Beyond Monolithic：The Modular Blockchain Paradigm)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;介绍beta-1第一个面向开发人员的模块化执行层fuel测试网-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/jie-shao-beta-1di-yi-ge-mian-xiang-kai-fa-ren-yuan-de-mo-kuai-hua-zhi-xing-ceng-fuel-ce-shi-wang-introducing-beta-1-the-first-modular-execution-layer-developer-facing-fuel-testnet&#34;&gt;介绍“Beta-1”，第一个面向开发人员的模块化执行层Fuel测试网 (Introducing &amp;quot;Beta-1&amp;quot;, the First Modular Execution Layer Developer-facing Fuel Testnet )&lt;/a&gt;&lt;/h2&gt;
