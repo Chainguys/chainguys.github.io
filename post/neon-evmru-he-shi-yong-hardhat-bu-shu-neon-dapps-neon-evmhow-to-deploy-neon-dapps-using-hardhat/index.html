@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Neon EVM：如何使用 Hardhat 部署 Neon dApps (Neon EVM：How to Deploy Neon dApps Using Hardhat) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1666935594786">
+<link rel="shortcut icon" href="/favicon.ico?v=1667273024730">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -965,6 +965,97 @@ npm install
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/fuellabs_-chang-tui-20221027fuellabs_threads20221027/"" data-c="
+          &lt;p&gt;原文地址：&lt;a href=&#34;https://twitter.com/fuellabs_/status/1585658150396387328&#34;&gt;https://twitter.com/fuellabs_/status/1585658150396387328&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What makes modular execution layers truly groundbreaking? In this series, we cover everything there is to know about modular execution. Including some of the innovative properties that will enable it to scale Ethereum, without compromise.&lt;/p&gt;
+&lt;p&gt;让模块化执行层真正具有开创性的到底是什么？在本系列中，我们将介绍有关模块化执行的所有知识。包括一些能够毫不妥协地扩容以太坊的创新属性。&lt;br&gt;
+（全文见下面链接）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://fuel-labs.ghost.io/the-case-for-modular-execution-part-2/&#34;&gt;Article P2 here &lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/&#34;&gt;中文翻译版在此&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Today, we cover:&lt;br&gt;
+今天，我们介绍：&lt;/p&gt;
+&lt;p&gt;The challenge of iterating on L1s !&lt;br&gt;
+在 L1 上迭代的挑战！&lt;br&gt;
+Possibilities beyond the EVM !&lt;br&gt;
+超越 EVM 的可能性！&lt;br&gt;
+Optimizing for modular execution!&lt;br&gt;
+优化模块化执行！&lt;br&gt;
+Conclusions&lt;br&gt;
+结论&lt;br&gt;
+Let&#39;s go !&lt;br&gt;
+我们开始吧&lt;/p&gt;
+&lt;p&gt;Part one, in case you missed it:&lt;br&gt;
+第一部分，以防你错过了：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://fuel-labs.ghost.io/the-case-for-modular-execution-part-1/&#34;&gt;Article P1 here&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-er-bu-fen-the-case-for-modular-execution-part-2/&#34;&gt;中文翻译版在此&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The EVM is a great tool for seeding new ecosystems.&lt;br&gt;
+EVM 是播种新生态系统的绝佳工具。&lt;/p&gt;
+&lt;p&gt;However:&lt;br&gt;
+然而：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The need to maintain backward compatibility means that the EVM has been unable to adopt many innovations.&lt;br&gt;
+保持向后兼容性的需要意味着 EVM 无法采用许多创新。&lt;/li&gt;
+&lt;li&gt;The core design of the EVM is optimized for a monolithic chain, not a modular stack.&lt;br&gt;
+EVM 的核心设计是针对单片链而非模块化技术栈进行优化。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This has left us stuck in a loop of incremental monolithic innovation&lt;br&gt;
+这让我们陷入了增量式单体创新的循环中&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;a href=&#34;https://twitter.com/musalbas/status/1582396496229507072&#34;&gt;&lt;img src=&#34;https://pbs.twimg.com/media/FfXNOg9VEAEMe1e?format=png&amp;amp;name=small&#34; alt=&#34;alt text&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/figure&gt;
+&lt;p&gt;With the advent of the modular stack, we can move away from a disparate ecosystem of L1s competing on vanity metrics, and toward a more cohesive, interoperable, upgradeable stack.&lt;/p&gt;
+&lt;p&gt;随着模块化技术栈的出现，我们可以摆脱不同 L1 生态系统在虚荣指标上的竞争，转向更具凝聚力、可交互和可升级的技术栈。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/fuellabs_/status/1569753111983722496&#34;&gt;https://twitter.com/fuellabs_/status/1569753111983722496&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;EVM 之外的可能性 (Possibilities beyond the EVM)&lt;/p&gt;
+&lt;p&gt;The advent of modularism means that execution layers can leverage Ethereum’s liquidity and security without being restricted by the limitations of the EVM.&lt;/p&gt;
+&lt;p&gt;模块化的出现意味着执行层可以利用以太坊的流动性和安全性，而不受 EVM 的限制。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://pbs.twimg.com/media/FgFjs21UYAYcAap?format=png&amp;amp;name=medium&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;These are just a few examples of EIPs which were ultimately rejected for the EVM due to backward compatibility issues, but have been implemented in Fuel. See the complete list:&lt;/p&gt;
+&lt;p&gt;这些只是 EIP 的几个示例，由于向后兼容性问题最终被 EVM 拒绝，但已在 Fuel 中实现。查看完整列表：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://t.co/fwZkuFJrnA&#34;&gt;https://fuellabs.github.io/fuel-docs/master/vs-evm.html#eips-implemented-in-fuel…&lt;/a&gt;&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://pbs.twimg.com/media/FgFjtSvUUAEvw-K?format=jpg&amp;amp;name=medium&#34; alt=&#34;Image&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Fuel is optimized for modular execution&lt;br&gt;
+Fuel针对模块化执行进行了优化&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Superior DevEx with&lt;a href=&#34;https://twitter.com/SwayLang&#34;&gt;@SwayLang&lt;/a&gt;and Forc&lt;br&gt;
+具有 &lt;a href=&#34;https://twitter.com/SwayLang&#34;&gt;@SwayLang&lt;/a&gt; 和 Forc 的高级 DevEx&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Parallel Transaction Execution&lt;br&gt;
+并行事务执行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Designed for fraud proofs and light clients&lt;br&gt;
+专为防欺诈和轻客户端而设计&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/camiinthisthang/status/1577738478699171845&#34;&gt;https://twitter.com/camiinthisthang/status/1577738478699171845&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Additional benefits of the FuelVM by&lt;a href=&#34;https://twitter.com/sproule_&#34;&gt;@sproule_&lt;/a&gt;of&lt;a href=&#34;https://twitter.com/blockchaincap&#34;&gt;@blockchaincap&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;FuelVM 的其他好处，可查看 &lt;a href=&#34;https://twitter.com/blockchaincap&#34;&gt;@blockchaincap&lt;/a&gt; 的&lt;a href=&#34;https://twitter.com/sproule_&#34;&gt;@sproule_&lt;/a&gt; 撰写的&lt;a href=&#34;https://chainguys.github.io/post/tan-suo-fuel-xu-ni-ji-fuelvm-exploring-the-fuelvm/&#34;&gt;报告&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Conclusions&lt;br&gt;
+结论&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Innovation does not require launching a new L1, but can happen at the execution layer.&lt;br&gt;
+创新不需要启动新的 L1，可以只发生在执行层。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;EVM-compatible execution layers can capitalize on the existing Solidity ecosystem, but fail to make the most of the design space offered by the modular stack.&lt;br&gt;
+EVM 兼容的执行层可以利用现有的 Solidity 生态系统，但无法充分利用模块化技术栈提供的设计空间。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cont.&lt;br&gt;
+序&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Focusing on efficient computation without worrying about backward compatibility enable MELs to contribute to Ethereum&#39;s scalability without being held back by the inefficiencies of the EVM.&lt;br&gt;
+专注于高效计算而不担心向后兼容性，使 MEL 能够为以太坊的扩容做出贡献，而不会因 EVM 的低效率而受阻。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Learn more about how Fuel, the fastest modular execution layer, unlocks the future of scalability:&lt;/p&gt;
+&lt;p&gt;详细了解最快的模块化执行层 Fuel 如何开启可扩展性的未来：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.fuel.network/&#34;&gt;https://www.fuel.network/&lt;/a&gt;&lt;/p&gt;
+">@fuellabs_长推20221027(@fuellabs_threads20221027)</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-er-bu-fen-the-case-for-modular-execution-part-2/"" data-c="
@@ -3260,6 +3351,7 @@ return text;
 &lt;h2 id=&#34;见一见feul背后的团队-第1集-meet-the-team-behind-fuel-episode-1&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/jian-yi-jian-feul-bei-hou-de-tuan-dui-di-1-ji-meet-the-team-behind-fuel-episode-1&#34;&gt;见一见Feul背后的团队-第1集 (Meet the team behind Fuel Episode 1)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;见一见feul背后的团队-第2集-meet-the-team-behind-fuel-episode-2&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/di-2-ji-alex-hansenji-zhu-tuan-dui-fu-ze-ren-episode-2-alex-hansen-technical-team-lead&#34;&gt;见一见Feul背后的团队-第2集 (Meet the team behind Fuel Episode 2)&lt;/a&gt;&lt;/h2&gt;
 &lt;h1 id=&#34;3其他官方内容翻译-other-official-content-translated-into-chinese&#34;&gt;3.其他官方内容翻译 (Other Official Content Translated into Chinese)&lt;/h1&gt;
+&lt;h2 id=&#34;fuellabs_长推20221027fuellabs_threads20221027&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/fuellabs_-chang-tui-20221027fuellabs_threads20221027&#34;&gt;@fuellabs_长推20221027(@fuellabs_threads20221027)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;yul简介一个以太坊的全新低级语言-introducingyul-a-new-low-level-language-for-ethereum&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/yuljian-jie-yi-ge-yi-tai-fang-de-quan-xin-di-ji-yu-yan-introducingyul-a-new-low-level-language-for-ethereum&#34;&gt;Yul+简介—一个以太坊的全新低级语言 (Introducing：Yul+ — A new low-level language for Ethereum)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;fuellabs_长推20221007fuellabs_threads20221007&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/fuellabs_-chang-tui-20221007fuellabs_threads20221007&#34;&gt;@fuellabs_长推20221007(@fuellabs_threads20221007)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;camiinthisthang长推-20221019camiinthisthang-twitter-threads-20221019&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/camiinthisthang-chang-tui-20221019camiinthisthang-twitter-threads-20221019&#34;&gt;@camiinthisthang长推-20221019(@camiinthisthang twitter threads-20221019)&lt;/a&gt;&lt;/h2&gt;

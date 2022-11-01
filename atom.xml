@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-10-28T05:40:18.782Z</updated>
+    <updated>2022-11-01T03:24:07.572Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,100 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[@fuellabs_长推20221027(@fuellabs_threads20221027)]]></title>
+        <id>https://chainguys.github.io/post/fuellabs_-chang-tui-20221027fuellabs_threads20221027/</id>
+        <link href="https://chainguys.github.io/post/fuellabs_-chang-tui-20221027fuellabs_threads20221027/">
+        </link>
+        <updated>2022-11-27T03:20:40.000Z</updated>
+        <content type="html"><![CDATA[<p>原文地址：<a href="https://twitter.com/fuellabs_/status/1585658150396387328">https://twitter.com/fuellabs_/status/1585658150396387328</a></p>
+<p>What makes modular execution layers truly groundbreaking? In this series, we cover everything there is to know about modular execution. Including some of the innovative properties that will enable it to scale Ethereum, without compromise.</p>
+<p>让模块化执行层真正具有开创性的到底是什么？在本系列中，我们将介绍有关模块化执行的所有知识。包括一些能够毫不妥协地扩容以太坊的创新属性。<br>
+（全文见下面链接）</p>
+<p><a href="https://fuel-labs.ghost.io/the-case-for-modular-execution-part-2/">Article P2 here </a><br>
+<a href="https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/">中文翻译版在此</a></p>
+<p>Today, we cover:<br>
+今天，我们介绍：</p>
+<p>The challenge of iterating on L1s !<br>
+在 L1 上迭代的挑战！<br>
+Possibilities beyond the EVM !<br>
+超越 EVM 的可能性！<br>
+Optimizing for modular execution!<br>
+优化模块化执行！<br>
+Conclusions<br>
+结论<br>
+Let's go !<br>
+我们开始吧</p>
+<p>Part one, in case you missed it:<br>
+第一部分，以防你错过了：</p>
+<p><a href="https://fuel-labs.ghost.io/the-case-for-modular-execution-part-1/">Article P1 here</a><br>
+<a href="https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-er-bu-fen-the-case-for-modular-execution-part-2/">中文翻译版在此</a></p>
+<p>The EVM is a great tool for seeding new ecosystems.<br>
+EVM 是播种新生态系统的绝佳工具。</p>
+<p>However:<br>
+然而：</p>
+<ul>
+<li>The need to maintain backward compatibility means that the EVM has been unable to adopt many innovations.<br>
+保持向后兼容性的需要意味着 EVM 无法采用许多创新。</li>
+<li>The core design of the EVM is optimized for a monolithic chain, not a modular stack.<br>
+EVM 的核心设计是针对单片链而非模块化技术栈进行优化。</li>
+</ul>
+<p>This has left us stuck in a loop of incremental monolithic innovation<br>
+这让我们陷入了增量式单体创新的循环中</p>
+<figure data-type="image" tabindex="1"><a href="https://twitter.com/musalbas/status/1582396496229507072"><img src="https://pbs.twimg.com/media/FfXNOg9VEAEMe1e?format=png&amp;name=small" alt="alt text" loading="lazy"></a></figure>
+<p>With the advent of the modular stack, we can move away from a disparate ecosystem of L1s competing on vanity metrics, and toward a more cohesive, interoperable, upgradeable stack.</p>
+<p>随着模块化技术栈的出现，我们可以摆脱不同 L1 生态系统在虚荣指标上的竞争，转向更具凝聚力、可交互和可升级的技术栈。</p>
+<p><a href="https://twitter.com/fuellabs_/status/1569753111983722496">https://twitter.com/fuellabs_/status/1569753111983722496</a></p>
+<p>EVM 之外的可能性 (Possibilities beyond the EVM)</p>
+<p>The advent of modularism means that execution layers can leverage Ethereum’s liquidity and security without being restricted by the limitations of the EVM.</p>
+<p>模块化的出现意味着执行层可以利用以太坊的流动性和安全性，而不受 EVM 的限制。</p>
+<figure data-type="image" tabindex="2"><img src="https://pbs.twimg.com/media/FgFjs21UYAYcAap?format=png&amp;name=medium" alt="" loading="lazy"></figure>
+<p>These are just a few examples of EIPs which were ultimately rejected for the EVM due to backward compatibility issues, but have been implemented in Fuel. See the complete list:</p>
+<p>这些只是 EIP 的几个示例，由于向后兼容性问题最终被 EVM 拒绝，但已在 Fuel 中实现。查看完整列表：</p>
+<p><a href="https://t.co/fwZkuFJrnA">https://fuellabs.github.io/fuel-docs/master/vs-evm.html#eips-implemented-in-fuel…</a></p>
+<figure data-type="image" tabindex="3"><img src="https://pbs.twimg.com/media/FgFjtSvUUAEvw-K?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>Fuel is optimized for modular execution<br>
+Fuel针对模块化执行进行了优化</p>
+<ul>
+<li>
+<p>Superior DevEx with<a href="https://twitter.com/SwayLang">@SwayLang</a>and Forc<br>
+具有 <a href="https://twitter.com/SwayLang">@SwayLang</a> 和 Forc 的高级 DevEx</p>
+</li>
+<li>
+<p>Parallel Transaction Execution<br>
+并行事务执行</p>
+</li>
+<li>
+<p>Designed for fraud proofs and light clients<br>
+专为防欺诈和轻客户端而设计</p>
+</li>
+</ul>
+<p><a href="https://twitter.com/camiinthisthang/status/1577738478699171845">https://twitter.com/camiinthisthang/status/1577738478699171845</a></p>
+<p>Additional benefits of the FuelVM by<a href="https://twitter.com/sproule_">@sproule_</a>of<a href="https://twitter.com/blockchaincap">@blockchaincap</a></p>
+<p>FuelVM 的其他好处，可查看 <a href="https://twitter.com/blockchaincap">@blockchaincap</a> 的<a href="https://twitter.com/sproule_">@sproule_</a> 撰写的<a href="https://chainguys.github.io/post/tan-suo-fuel-xu-ni-ji-fuelvm-exploring-the-fuelvm/">报告</a></p>
+<p>Conclusions<br>
+结论</p>
+<ul>
+<li>
+<p>Innovation does not require launching a new L1, but can happen at the execution layer.<br>
+创新不需要启动新的 L1，可以只发生在执行层。</p>
+</li>
+<li>
+<p>EVM-compatible execution layers can capitalize on the existing Solidity ecosystem, but fail to make the most of the design space offered by the modular stack.<br>
+EVM 兼容的执行层可以利用现有的 Solidity 生态系统，但无法充分利用模块化技术栈提供的设计空间。</p>
+</li>
+</ul>
+<p>Cont.<br>
+序</p>
+<ul>
+<li>Focusing on efficient computation without worrying about backward compatibility enable MELs to contribute to Ethereum's scalability without being held back by the inefficiencies of the EVM.<br>
+专注于高效计算而不担心向后兼容性，使 MEL 能够为以太坊的扩容做出贡献，而不会因 EVM 的低效率而受阻。</li>
+</ul>
+<p>Learn more about how Fuel, the fastest modular execution layer, unlocks the future of scalability:</p>
+<p>详细了解最快的模块化执行层 Fuel 如何开启可扩展性的未来：</p>
+<p><a href="https://www.fuel.network/">https://www.fuel.network/</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[模块化执行的案例(第二部分) The Case for Modular Execution (Part 2)]]></title>
         <id>https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-er-bu-fen-the-case-for-modular-execution-part-2/</id>
@@ -1110,32 +1204,6 @@ How modular execution layers enable scalability by decoupling computation from v
 <a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
 </li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SeiNetwork长推-20221012 (SeiNetwork twitter threads-20221012)]]></title>
-        <id>https://chainguys.github.io/post/seinetwork-chang-tui-20221012-seinetwork-twitter-threads-20221012/</id>
-        <link href="https://chainguys.github.io/post/seinetwork-chang-tui-20221012-seinetwork-twitter-threads-20221012/">
-        </link>
-        <updated>2022-10-12T00:57:55.000Z</updated>
-        <content type="html"><![CDATA[<p>原文地址:https://twitter.com/SeiNetwork/status/1575181008349302785</p>
-<p>A $50,000,000 ecosystem &amp; liquidity fund awaits strong teams that build on Sei.  every week we work with<a href="https://twitter.com/Cryptocito">@Cryptocito</a> <a href="https://twitter.com/strangelovelabs">@strangelovelabs</a> <a href="https://twitter.com/Galileo_xyz">@galileo_xyz</a>to lay out the best developer opportunities in Web3. This week we're highlighting Tokenized Time.</p>
-<p>一个价值 50,000,000 美元的生态系统和流动性基金正在等待建立在 Sei 之上的强大团队。每周我们都使用<a href="https://twitter.com/Cryptocito">@Cryptocito</a> <a href="https://twitter.com/strangelovelabs">@strangelovelabs</a> <a href="https://twitter.com/Galileo_xyz">@galileo_xyz</a>布局 Web3 中最好的开发人员机会。本周我们将重点介绍代币化时间。</p>
-<p>Crypto has not yet disrupted one of the largest markets: Labor ![👷‍♂️]( Sei has been brainstorming ways to tokenize developer time, allowing for protocols and ecosystems to make better use of their valuable war-chests.</p>
-<p>加密货币尚未扰乱最大的市场之一：人工！[👷‍♂️]（Sei 一直在集思广益，来标记开发人员的时间，允许协议和生态系统更好地利用其宝贵的资金。</p>
-<p>Rather than giving out millions of incentives via liquidity mining, protocols can instead pay for developer hours to deploy towards key projects. We’re looking for the right team to explore this exciting, wide-open concept on crypto rails Ready to SEIze the opportunity?</p>
-<p>与其通过流动性挖矿提供数百万的奖励，协议可以支付开发人员的时间来部署关键项目。我们正在寻找合适的团队来探索这个令人兴奋的、广泛开放的加密轨道概念 准备好抓住机会了吗？</p>
-<p>Sei's Mission:<br>
-Give DeFI protocols an unfair advantage.  Create a robust ecosystem tailored for trading.  Enable what cannot be done on any other Layer 1.</p>
-<p>Sei的使命：<br>
-给 DeFI 协议一个无与伦比优势。创建一个为交易量身定制的强大生态系统。达成在任何其他第 1 层上无法完成的事情。</p>
-<p>To learn more about the $50 Million ecosystem fund check out these resources below</p>
-<p>要了解有关 5000 万美元生态系统基金的更多信息，请查看以下资源</p>
-<p><a href="https://twitter.com/SeiNetwork/status/1575181008349302785">点击此处</a></p>
-<p>If you're interested in building anything on the chain made for DeFi fill out the ecosystem form:</p>
-<p>如果您有兴趣在为 DeFi 制造的链上构建任何东西，请填写生态系统表格：</p>
-<figure data-type="image" tabindex="1"><img src="https://pbs.twimg.com/card_img/1577423600331771905/qq_JGYRE?format=png&amp;name=900x900" alt="" loading="lazy"></figure>
-<p><a href="https://y8e47wadwqp.typeform.com/to/Ia7t8DxY?typeform-source=t.co">https://y8e47wadwqp.typeform.com/to/Ia7t8DxY?typeform-source=t.co</a></p>
 ]]></content>
     </entry>
 </feed>
