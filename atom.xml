@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-11-04T08:57:27.782Z</updated>
+    <updated>2022-11-07T08:03:46.133Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -102,6 +102,129 @@ EVM 兼容的执行层可以利用现有的 Solidity 生态系统，但无法充
 <p>Learn more about how Fuel, the fastest modular execution layer, unlocks the future of scalability:</p>
 <p>详细了解最快的模块化执行层 Fuel 如何开启可扩展性的未来：</p>
 <p><a href="https://www.fuel.network/">https://www.fuel.network/</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ETH里斯本活动回顾 (ETH Lisbon Recap)]]></title>
+        <id>https://chainguys.github.io/post/eth-li-si-ben-huo-dong-hui-gu-eth-lisbon-recap/</id>
+        <link href="https://chainguys.github.io/post/eth-li-si-ben-huo-dong-hui-gu-eth-lisbon-recap/">
+        </link>
+        <updated>2022-11-04T08:02:12.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/10/EthLisbonRecap-3.png" alt="🇵🇹 — ETH Lisbon Recap" loading="lazy"></figure>
+<p>During 3 days (October 28 - 30), hackers from around the world gathered at the Academia das Ciências in Lisbon for hacking. Here is an in-depth look at the winning projects.</p>
+<p>在3天内(10 月 28 日至 30 日），来自世界各地的黑客聚集在里斯本的 Academia das Ciências 进行黑客活动。以下是对获奖项目的深入观察。</p>
+<hr>
+<p>During 3 days (October 28 - 30), hackers from all over the world gathered at the <em>Academia das Ciências</em> in Lisbon for hacking. For this occasion, we sponsored 3 open bounties for bold hackers eager to build on <strong>Fuel</strong> <strong>Beta-1</strong> testnet using <strong>Sway</strong>:</p>
+<p>在3天内(10 月 28 日至 30 日），来自世界各地的黑客聚集在里斯本的 Academia das Ciências 进行黑客活动。为此，我们为渴望使用 <strong>Sway</strong> 在 <strong>Fuel</strong> <strong>Beta-1</strong> 测试网上构建的大胆黑客赞助了 3 项公开赏金：</p>
+<ul>
+<li>🥇 <strong>First Prize 1等奖</strong>  — $3,000</li>
+<li>🥈 <strong>Second Prize 2等奖</strong>** — $2,000</li>
+<li>🥉 <strong>Third Prize 3等奖</strong>** — $1,000</li>
+</ul>
+<h2 id="获胜者-the-winners">🏆 获胜者 (The winners)</h2>
+<p>Let's go over the winning projects:<br>
+让我们一起回顾这些获奖项目</p>
+<h3 id="一等奖authsome-first-prize-authsome">🥇 一等奖—Authsome (First Prize — Authsome)</h3>
+<p>Authsome implements a multi-signature wallet using the predicate system of the FuelVM and Sway. This wallet is then used as the basis for a pluggable authentication infrastructure, similar to <a href="https://web3auth.io/docs/overview/what-is-web3auth">Web3Auth</a>.</p>
+<p>Authsome 使用 FuelVM 和 Sway 的谓词系统实现了一个多签钱包。然后将此钱包用作可插入身份验证基础设施的底层，类似于 <a href="https://web3auth.io/docs/overview/what-is-web3auth">Web3Auth</a>。</p>
+<blockquote>
+<p>Fuel Predicates<br>
+Fuel谓词</p>
+<p>Fuel predicates work in a similar way to scripts for pay-to-script-hash (P2SH) transactions in Bitcoin. This offers a number of important advantages over implementing account abstraction on the smart contract layer:</p>
+<p>Fuel 谓词的工作方式与比特币中支付-脚本-哈希（P2SH）交易的脚本类似。这给在智能合约层实现账户抽象提供了许多重要的优势。</p>
+<ul>
+<li>Reduced gas cost, as signature aggregation can be done off-chain and verification can be done as a single step without smart contract function calls;<br>
+降低了gas成本，因为签名聚合可以在链外完成，验证可以作为一个单一的步骤完成，不需要调用智能合约函数。</li>
+<li>Improved flexibility, because different signature schemes can be swapped in by implementing them as on-chain smart contract libraries and using them in predicates; and<br>
+提高了灵活性，因为不同的签名方案可以通过作为链上智能合约库实现进而转换并在谓词中使用而；以及</li>
+<li>Minimal state bloat, because predicate byte code is processed once as part of the transaction validation, and then discarded - thus never entering the blockchain state.<br>
+最小的状态膨胀，因为谓词字节码作为交易验证的一部分被处理一次，然后被丢弃--因此从未进入区块链状态。</li>
+</ul>
+</blockquote>
+<p>This project leverages the power of account abstraction and multi-signatures to create Web2-like experiences with Web3 custodial properties.</p>
+<p>该项目利用帐户抽象和多重签名的力量来创建具有 Web3 托管属性的类似 Web2 的体验。</p>
+<p>Check out their demo video below:</p>
+<p>在下面查看他们的演示视频：</p>
+<iframe width="720" height="540" src="https://www.youtube.com/embed/3CwjZpXR1SM" title="Authsome  ETH Lisbon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 id="它是如何工作-how-does-it-work">它是如何工作? (How does it work?)</h3>
+<p>You first need to log in with an email address and a password of your choice. Authsome will then generate a 2 of 3 addresses multi-signature wallet, which means that you need 2 addresses to execute a transaction or log in to Authsome. Each key will be stored in different places.</p>
+<p>你首先需要一个电子邮件和密码登录。然后，Authsome将生成一组2-3个地址的多签钱包，这意味着你需要2个地址来执行交易或登录Authsome。每个密钥将被存储在不同的地方。</p>
+<p>Then you're all set to execute blazingly fast payments: You log in with your password to unlock the first key, and the second key is loaded from your browser's local storage.</p>
+<p>然后你就可以执行极快的支付了。你用你的密码登录来解锁第一把秘钥，第二把秘钥从你的浏览器的本地存储中加载。</p>
+<p>When you confirm your transaction on the Frontend, the DApp will generate a two-signature predicate transaction for each spended UTXO.</p>
+<p>当你在前台确认你的交易时，DApp将为每个花费的UTXO生成一个双签名的谓词交易。</p>
+<p>The real benefit of this application is that it supports spending multiple UTXOs with distinct predicate data.</p>
+<p>这个应用真正的好处是，它支持用不同的谓词数据来花费(影响)多个UTXO。</p>
+<p>For more information, check out their <a href="https://github.com/authsome/authsome">GitHub repository</a>.</p>
+<p>欲了解更多信息，请查看他们的<a href="https://github.com/authsome/authsome">GitHub仓库</a>。</p>
+<h3 id="二等奖fuel价格预言机-second-prize-fuel-price-oracle">🥈 二等奖—Fuel价格预言机 (Second Prize — Fuel Price Oracle)</h3>
+<p>Fuel Price Oracle implements a simple ETH - DAI tokens price oracle. This project allows retrieving token prices from the outside world on the Fuel chain with a Sway smart contract.</p>
+<p>Fuel价格预言机实现了一个简单的ETH-DAI代币的价格预言机。这个项目允许使用Sway智能合约从外界检索Fuel链上的代币价格。</p>
+<p>Check out their demo video below:</p>
+<p>请看下面的演示视频:</p>
+<iframe width="720" height="540" src="https://www.youtube.com/embed/geJ-aKOZQTU" title="Fuel price oracle (ETH, DAI) demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>For more information, check out their <a href="https://github.com/chlenc/fuel-price-oracle">GitHub repository</a>.</p>
+<p>欲了解更多信息，请查看他们的<a href="https://github.com/chlenc/fuel-price-oracle">GitHub仓库</a>。</p>
+<h3 id="三等奖资本家猪-third-prize-capitalist-pigs">🥉 三等奖—资本家猪 (Third Prize — Capitalist Pigs)</h3>
+<p>Enter the world of Capitalist Pigs, a Gamify staking for fees in a DeFi project using a set of NFTs.</p>
+<p>进入Capitalist Pigs的世界，这是一个使用一套NFTs在DeFi项目中质押产生费用(收益)的Gamify。</p>
+<p>Check out their demo video below:</p>
+<p>请看下面他们的演示视频</p>
+<iframe width="720" height="407" src="https://www.youtube.com/embed/WeVj2tXGa-M" title="Capitalist Pigs - 30 October 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 id="它如何工作-how-does-it-work">它如何工作? (How does it work?)</h3>
+<p>First of all, you begin by generating a burner wallet on the upper right corner of the DApp. To start playing, you need to claim a <strong>Pig</strong>, a stakable collectible NFT asset. By staking it, you will earn <strong>Truffles</strong> and <strong>staking fees</strong> represented by <strong>Bacon</strong>. Truffles can be turned into <strong>Piglets</strong>. With those Piglets, you have 2 possibilities: you can either turn them into Pigs or delegate them to existing Pigs to increase their staking fee generation. And this is it, you're a Capitalist Pig! You can check in the lower right corner the evolution of your supply (Pigs, Piglets, Truffles, and Bacon).</p>
+<p>首先，你开始在DApp的右上角生成一个燃烧钱包。要开始玩，你需要认领一只<strong>猪</strong>，这是一种可收藏的NFT资产。通过抵押，你将获得<strong>松露</strong>和<strong>培根</strong>代表的<strong>抵押费。松露可以转化为小猪</strong>。对于这些小猪，你有两种可能：你可以把它们变成小猪，或者把它们委托给现有的小猪，来增加它们的产出。就这样，你就是一只资本家猪了！你可以在右下角检查。你可以在右下角检查你的供应（猪、小猪、松露和培根）的演变。</p>
+<p>Try it out now <a href="https://capitalistpi.gs/">here</a>.</p>
+<p>现在就试试吧<a href="https://capitalistpi.gs/">这里</a>。</p>
+<p>For more information, check out their <a href="https://github.com/afsardo/capitalist-pigs">GitHub repository</a>.</p>
+<p>欲了解更多信息，请查看他们的<a href="https://github.com/afsardo/capitalist-pigs">GitHub仓库</a>。</p>
+<hr>
+<h1 id="今天就开始在fuel构建吧-start-building-on-fuel-today">今天就开始在Fuel构建吧! （Start Building On Fuel Today）</h1>
+<blockquote>
+<p>Building on Fuel means breaking free from the constraints of monolithic blockchains that have held us back.<br>
+以 Fuel 为基础意味着摆脱阻碍我们前进的单片区块链的限制。</p>
+</blockquote>
+<h2 id="fuel的开发人员资源-developer-resources-for-building-with-fuel">Fuel的开发人员资源 (Developer Resources for Building with Fuel)</h2>
+<ul>
+<li>
+<p>A step-by-step guide to building a full-stack dapp on Fuel can be found <a href="https://github.com/camiinthisthang/fullstack-fuel/blob/main/README.md">here</a>.<br>
+<a href="https://github.com/camiinthisthang/fullstack-fuel/blob/main/README.md">这里</a> 可以找到在 Fuel 上构建全栈 dapp 的分步指南</p>
+</li>
+<li>
+<p>The <strong>Fuel Book</strong> can be found <a href="https://fuellabs.github.io/fuel-docs/master/index.html">here</a>. It contains everything you need to know about Fuel, from its modular design to its key features.<br>
+<strong>Fuel全书</strong> 可以在 <a href="https://fuellabs.github.io/fuel-docs/master/index.html">这里</a> 找到。它包含您需要了解的有关 Fuel 的所有信息，从模块化设计到主要功能。</p>
+</li>
+<li>
+<p>The <strong>Sway Book</strong> can be found <a href="https://fuellabs.github.io/sway/v0.24.1/">here</a>.<br>
+<strong>Sway全书</strong> 可以在 <a href="https://fuellabs.github.io/sway/v0.24.1/">这里</a> 找到。</p>
+</li>
+</ul>
+<hr>
+<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
+<ul>
+<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
+<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
+<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
+<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
+</ul>
+<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
+<p><a href="https://www.fuel.network/">Fuel</a> is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
+<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制**。</p>
+<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
+<ul>
+<li>
+<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
+<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
+</li>
+<li>
+<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
+<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
+</li>
+<li>
+<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
+<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
+</li>
+</ul>
 ]]></content>
     </entry>
     <entry>
@@ -913,107 +1036,6 @@ Colocation reduces latency by ~46% vs. international dispersion<br>
 <h1 id="结论-conclusion">结论 (Conclusion)</h1>
 <p>We hope you found this article informative. If you have any questions about the security audit of Neon’s SPL Governance contract, don’t hesitate to reach out. You can contact the team via <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a>. Lastly, stay connected with the team on <a href="https://twitter.com/neonlabsorg">Twitter</a>, <a href="https://github.com/neonlabsorg">GitHub</a>, <a href="https://www.youtube.com/channel/UCAL2uFkKkfBgz3mXFN3UDTQ">YouTube</a>, and <a href="https://neonlabsorg.medium.com/">Medium</a> for more development updates and announcements.</p>
 <p>我们希望您发现这篇文章内容丰富。如果您对 Neon 的 SPL 治理合约的安全审计有任何疑问，请随时与我们联系。您可以通过 <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a> 联系团队。最后，在 <a href="https://twitter.com/neonlabsorg">Twitter</a>、<a href="https://github.com/neonlabsorg">GitHub</a>、<a href="https://www.youtube">YouTube</a>  <a href="https://neonlabsorg.medium.com/">Medium</a> 了解更多开发更新和公告，与团队保持联系。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Neon EVM：如何使用 Hardhat 部署 Neon dApps (Neon EVM：How to Deploy Neon dApps Using Hardhat)]]></title>
-        <id>https://chainguys.github.io/post/neon-evmru-he-shi-yong-hardhat-bu-shu-neon-dapps-neon-evmhow-to-deploy-neon-dapps-using-hardhat/</id>
-        <link href="https://chainguys.github.io/post/neon-evmru-he-shi-yong-hardhat-bu-shu-neon-dapps-neon-evmhow-to-deploy-neon-dapps-using-hardhat/">
-        </link>
-        <updated>2022-10-13T08:48:48.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*ilG7YYUkiJdBFDadmhcmJg.png" alt="" loading="lazy"></figure>
-<p>The third and final article in our Deploying Neon dApps series explores how to deploy Solidity dApps using Hardhat. (We previously discussed how to deploy Neon with <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2">Remix</a> and <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-truffle-4a80e57395c2">Truffle</a>.</p>
-<p>我们部署 Neon dApps 系列的第三篇也是最后一篇文章探讨了如何使用 Hardhat 部署 Solidity dApp。 （我们之前讨论过如何使用 <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-remix-363ebe946ed2">Remix</a> 和 <a href="https://medium.com/neon-labs/neon-evm-how-to-deploy-dapps-using-truffle-4a80e57395c2">Truffle</a>。)</p>
-<p><a href="https://hardhat.org/">Hardhat</a> is a development and deployment tool for EVM contracts and applications. Of the three deployment tools explored in this series, Hardhat is the most versatile, allowing for plenty of customizable settings and secure deployment to Neon’s mainnet, devnet, and testnet. However, unlike Remix, hHardhat can only be used via a command-line interface, and is not an IDE.</p>
-<p><a href="https://hardhat.org/">Hardhat</a> 是用于 EVM 合约和应用的开发和部署工具。在本系列探讨的三种部署工具中，Hardhat 是最通用的，它允许大量可自定义的设置并安全地部署到 Neon 的主网、开发网和测试网。但是，与 Remix 不同的是，Hardhat 只能通过命令行界面使用，而不是 IDE。</p>
-<h2 id="准备工作before-you-begin">准备工作(Before You Begin)</h2>
-<p>Before you start the tutorial below, make sure that the following is true:</p>
-<p>在开始下面的教程之前，请确保满足以下条件：</p>
-<ul>
-<li>
-<p>MetaMask is installed on your device.<br>
-MetaMask 已安装在您的设备上。</p>
-</li>
-<li>
-<p>MetaMask is configured for the Neon EVM.<br>
-MetaMask已为Neon EVM 配置过。</p>
-</li>
-<li>
-<p>NodeJS v8.9.4 or later is installed on your device.<br>
-NodeJS v8.9.4 或更高版本已安装在您的设备上。</p>
-</li>
-<li>
-<p>Git is installed on your device. On Windows, use Git Bash.<br>
-Git 已安装在您的设备上。在 Windows 上，使用 Git Bash。</p>
-</li>
-</ul>
-<p><a href="https://docs.neon-labs.org/docs/wallet/metamask_setup">Follow this guide to install and configure MetaMask</a>.</p>
-<p><a href="https://docs.neon-labs.org/docs/wallet/metamask_setup">按照本指南安装和配置 MetaMask</a>。</p>
-<h1 id="erc-20-教程-erc-20-tutorial">ERC-20 教程 (ERC-20 Tutorial)</h1>
-<p>The following tutorial will explain how to deploy a simple ERC-20 token contract to the Neon Devnet using Hardhat.</p>
-<p>以下教程将解释如何使用 Hardhat 将简单的 ERC-20 代币合约部署到 Neon Devnet。</p>
-<p><strong>第1步：安装Hardhat (Step 1: Install Hardhat)</strong></p>
-<p>Using Git, clone the ERC-20 Hardhat project from Neon’s remote repository and navigate to it with the following commands:</p>
-<p>使用 Git，从 Neon 的远程存储库中克隆 ERC-20 Hardhat 项目，并使用以下命令导航到该项目：</p>
-<pre><code>git clone https://github.com/neonlabsorg/examples.git
-
-cd examples/simple-erc20-hardhat
-</code></pre>
-<p>Then, run the following command to install Hardhat and the dependencies necessary to run the example project:</p>
-<p>然后，运行以下命令来安装 Hardhat 和运行示例项目所需的依赖项：</p>
-<pre><code>npm install
-</code></pre>
-<p>If the above command results in an error, run the following command:</p>
-<p>如果上述命令导致错误，请运行以下命令：</p>
-<pre><code>npm cache clear --force
-
-npm install
-</code></pre>
-<p><strong>第2步：设置 MetaMask 帐户 (Step 2: Set Up MetaMask Accounts)</strong></p>
-<p>To interact with the soon-to-be-deployed contracts, you’ll need to create two new accounts in MetaMask. Before you begin this step, make sure that MetaMask is connected to the Neon Devnet.</p>
-<p>要与即将部署的合约交互，您需要在 MetaMask 中创建两个新账户。在开始此步骤之前，请确保 MetaMask 已连接到 Neon Devnet。</p>
-<p>In MetaMask, create two new accounts. To create a new account in MetaMask, click on your current account’s icon in the top right of the MetaMask extension pop-up. A drop-down menu will appear. From the drop-down menu, select“Create an Account”.</p>
-<p>在 MetaMask 中，创建两个新帐户。要在 MetaMask 中创建新帐户，请单击 MetaMask 扩展弹出窗口右上角的当前帐户图标。将出现一个下拉菜单。从下拉菜单中，选择“创建帐户”。</p>
-<p>Then, obtain some Devnet NEON tokens for these accounts using the <a href="https://docs.neon-labs.org/docs/developing/utilities/faucet">NeonFaucet</a>.</p>
-<p>然后，使用 <a href="https://docs.neon-labs.org/docs/developing/utilities/faucet">NeonFaucet</a> 为这些帐户获取一些 Devnet NEON代币。</p>
-<p>Next, click on the three vertical dots to the right of your currently displayed account name and wallet address. In this drop-down menu that opens, select “Account Details” then “Export Private Key”. Enter your password and select “Confirm” to get access to the private key for that account.</p>
-<p>接下来，单击您当前显示的帐户名称和钱包地址右侧的三个垂直点。在打开的下拉菜单中，选择“帐户详细信息”，然后选择“导出私钥”。输入您的密码并选择“确认”，访问该帐户的私钥。</p>
-<p>Copy both accounts’ private keys and paste them into the hardhat.config.js file in the project folder, replacing the placeholder text in lines 11 and 12 of that file. Make sure to prefix these keys with “0x” in the configuration file.</p>
-<p>复制两个帐户的私钥并将它们粘贴到项目文件夹中的 hardhat.config.js 文件中，替换该文件第 11 行和第 12 行中的占位符文本。确保在配置文件中为这些键添加前缀“0x”。</p>
-<p><strong>第3步：编译合约 (Step 3: Compile Contracts)</strong></p>
-<p>To compile the project’s contracts (located in the “contracts/” folder), run the following command:</p>
-<p>要编译项目的合约（位于“contracts/”文件夹中)，请运行以下命令：</p>
-<pre><code>./node_modules/.bin/hardhat compile
-</code></pre>
-<p>The output from this command should be similar to the following:</p>
-<p>此命令的输出应类似于以下内容：</p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1390/0*3UmBzLArH17UDm8a" alt="" loading="lazy"></figure>
-<p><strong>第4步：运行测试 (Step 4: Run Tests)</strong></p>
-<p>To run the project tests before deploying, run the following command. It will compile the contracts, deploy them to the Neon Devnet, and run all the tests in the “tests/” folder to make sure the contracts are working as expected.</p>
-<p>要在部署之前运行项目测试，请运行以下命令。它将编译合约，将它们部署到 Neon Devnet，并运行“tests/”文件夹中的所有测试，确保合约按预期工作。</p>
-<pre><code>./node_modules/.bin/hardhat test
-</code></pre>
-<p>If the tests all pass, the output of this command should look something like this:</p>
-<p>如果测试全部通过，则此命令的输出应如下所示：</p>
-<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/0*HTPrkW1NlR4db3rW" alt="" loading="lazy"></figure>
-<p><strong>第5步：部署合约 (Step 5: Deploy Contracts)</strong></p>
-<p>To deploy the project’s contracts, simply run the command below to run the deployment script in the “scripts/” directory:</p>
-<p>要部署项目的合约，只需运行以下命令以运行“scripts/”目录中的部署脚本：</p>
-<pre><code>./node_modules/.bin/hardhat run ./scripts/deploy.js
-</code></pre>
-<p>You should see output in your terminal similar to the following:</p>
-<p>您应该会在终端中看到类似于以下内容的输出：</p>
-<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/0*yc0OWZJ6bh44kzuc" alt="" loading="lazy"></figure>
-<p><strong>第6步：将项目连接到 (MetaMaskStep 6: Connect Project to MetaMask)</strong></p>
-<p>To use this newly deployed ERC-20-style Neon Devnet token with ease, follow <a href="https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H">these instructions</a> to import the token as an asset in MetaMask. Use the “contract address” from the output in Step 5 for the “Token Contract Address” in the instructions.</p>
-<p>要轻松使用这个新部署的 ERC-20 式 Neon Devnet 代币，请按照 <a href="https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask#h_01FWH492CHY60HWPC28RW0872H">这些说明</a>将代币作为资产导入 MetaMask。将步骤 5 输出中的“合约地址”用于说明中的“代币合约地址”。</p>
-<p>Once you complete this final step, you will be able to see your new ERC-20 assets in the MetaMask profiles of the new test accounts.</p>
-<p>完成最后一步后，您将能够在新测试帐户的 MetaMask 配置文件中看到您的新 ERC-20 资产。</p>
-<h2 id="结论-conclusion">结论 (Conclusion)</h2>
-<p>Of the three tools for Neon deployment explored over the course of this article series, Hardhat is the most useful and versatile. With a variety of customization options available, plus the ability to deploy to Mainnet due to no security vulnerabilities like with Truffle, Hardhat is the go-to tool for developers looking to launch their project into the “real world” using Neon.</p>
-<p>在本系列文章中探讨的用于 Neon 部署的三种工具中，Hardhat 是最有用和最通用的。凭借各种可用的自定义选项，以及没有Truffle类似的安全漏洞，而有能力可以部署到主网，Hardhat 是希望使用 Neon 将项目启动到“现实世界”的开发人员的首选工具。</p>
-<p>Visit the <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_truffle">Neon docs</a> for a complete tutorial on using Hardhat to deploy your dApps.</p>
-<p>访问 <a href="https://docs.neon-labs.org/docs/developing/deploy_facilities/using_truffle">Neon 文档</a>，获取有关使用 Hardhat 部署 dApp 的完整教程。</p>
 ]]></content>
     </entry>
 </feed>

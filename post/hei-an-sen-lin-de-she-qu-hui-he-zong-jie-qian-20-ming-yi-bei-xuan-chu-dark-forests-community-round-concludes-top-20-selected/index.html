@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>黑暗森林的社区回合总结，前20名已被选出 (Dark Forest’s Community Round Concludes, Top 20 Selected) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1667552222504">
+<link rel="shortcut icon" href="/favicon.ico?v=1667808201206">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -1002,6 +1002,126 @@ EVM 兼容的执行层可以利用现有的 Solidity 生态系统，但无法充
 &lt;p&gt;详细了解最快的模块化执行层 Fuel 如何开启可扩展性的未来：&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.fuel.network/&#34;&gt;https://www.fuel.network/&lt;/a&gt;&lt;/p&gt;
 ">@fuellabs_长推20221027(@fuellabs_threads20221027)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/eth-li-si-ben-huo-dong-hui-gu-eth-lisbon-recap/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://fuel-labs.ghost.io/content/images/size/w2000/2022/10/EthLisbonRecap-3.png&#34; alt=&#34;🇵🇹 — ETH Lisbon Recap&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;During 3 days (October 28 - 30), hackers from around the world gathered at the Academia das Ciências in Lisbon for hacking. Here is an in-depth look at the winning projects.&lt;/p&gt;
+&lt;p&gt;在3天内(10 月 28 日至 30 日），来自世界各地的黑客聚集在里斯本的 Academia das Ciências 进行黑客活动。以下是对获奖项目的深入观察。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;During 3 days (October 28 - 30), hackers from all over the world gathered at the &lt;em&gt;Academia das Ciências&lt;/em&gt; in Lisbon for hacking. For this occasion, we sponsored 3 open bounties for bold hackers eager to build on &lt;strong&gt;Fuel&lt;/strong&gt; &lt;strong&gt;Beta-1&lt;/strong&gt; testnet using &lt;strong&gt;Sway&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;在3天内(10 月 28 日至 30 日），来自世界各地的黑客聚集在里斯本的 Academia das Ciências 进行黑客活动。为此，我们为渴望使用 &lt;strong&gt;Sway&lt;/strong&gt; 在 &lt;strong&gt;Fuel&lt;/strong&gt; &lt;strong&gt;Beta-1&lt;/strong&gt; 测试网上构建的大胆黑客赞助了 3 项公开赏金：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🥇 &lt;strong&gt;First Prize 1等奖&lt;/strong&gt;  — $3,000&lt;/li&gt;
+&lt;li&gt;🥈 &lt;strong&gt;Second Prize 2等奖&lt;/strong&gt;** — $2,000&lt;/li&gt;
+&lt;li&gt;🥉 &lt;strong&gt;Third Prize 3等奖&lt;/strong&gt;** — $1,000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;获胜者-the-winners&#34;&gt;🏆 获胜者 (The winners)&lt;/h2&gt;
+&lt;p&gt;Let&#39;s go over the winning projects:&lt;br&gt;
+让我们一起回顾这些获奖项目&lt;/p&gt;
+&lt;h3 id=&#34;一等奖authsome-first-prize-authsome&#34;&gt;🥇 一等奖—Authsome (First Prize — Authsome)&lt;/h3&gt;
+&lt;p&gt;Authsome implements a multi-signature wallet using the predicate system of the FuelVM and Sway. This wallet is then used as the basis for a pluggable authentication infrastructure, similar to &lt;a href=&#34;https://web3auth.io/docs/overview/what-is-web3auth&#34;&gt;Web3Auth&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Authsome 使用 FuelVM 和 Sway 的谓词系统实现了一个多签钱包。然后将此钱包用作可插入身份验证基础设施的底层，类似于 &lt;a href=&#34;https://web3auth.io/docs/overview/what-is-web3auth&#34;&gt;Web3Auth&lt;/a&gt;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Fuel Predicates&lt;br&gt;
+Fuel谓词&lt;/p&gt;
+&lt;p&gt;Fuel predicates work in a similar way to scripts for pay-to-script-hash (P2SH) transactions in Bitcoin. This offers a number of important advantages over implementing account abstraction on the smart contract layer:&lt;/p&gt;
+&lt;p&gt;Fuel 谓词的工作方式与比特币中支付-脚本-哈希（P2SH）交易的脚本类似。这给在智能合约层实现账户抽象提供了许多重要的优势。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduced gas cost, as signature aggregation can be done off-chain and verification can be done as a single step without smart contract function calls;&lt;br&gt;
+降低了gas成本，因为签名聚合可以在链外完成，验证可以作为一个单一的步骤完成，不需要调用智能合约函数。&lt;/li&gt;
+&lt;li&gt;Improved flexibility, because different signature schemes can be swapped in by implementing them as on-chain smart contract libraries and using them in predicates; and&lt;br&gt;
+提高了灵活性，因为不同的签名方案可以通过作为链上智能合约库实现进而转换并在谓词中使用而；以及&lt;/li&gt;
+&lt;li&gt;Minimal state bloat, because predicate byte code is processed once as part of the transaction validation, and then discarded - thus never entering the blockchain state.&lt;br&gt;
+最小的状态膨胀，因为谓词字节码作为交易验证的一部分被处理一次，然后被丢弃--因此从未进入区块链状态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This project leverages the power of account abstraction and multi-signatures to create Web2-like experiences with Web3 custodial properties.&lt;/p&gt;
+&lt;p&gt;该项目利用帐户抽象和多重签名的力量来创建具有 Web3 托管属性的类似 Web2 的体验。&lt;/p&gt;
+&lt;p&gt;Check out their demo video below:&lt;/p&gt;
+&lt;p&gt;在下面查看他们的演示视频：&lt;/p&gt;
+&lt;iframe width=&#34;720&#34; height=&#34;540&#34; src=&#34;https://www.youtube.com/embed/3CwjZpXR1SM&#34; title=&#34;Authsome  ETH Lisbon&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h3 id=&#34;它是如何工作-how-does-it-work&#34;&gt;它是如何工作? (How does it work?)&lt;/h3&gt;
+&lt;p&gt;You first need to log in with an email address and a password of your choice. Authsome will then generate a 2 of 3 addresses multi-signature wallet, which means that you need 2 addresses to execute a transaction or log in to Authsome. Each key will be stored in different places.&lt;/p&gt;
+&lt;p&gt;你首先需要一个电子邮件和密码登录。然后，Authsome将生成一组2-3个地址的多签钱包，这意味着你需要2个地址来执行交易或登录Authsome。每个密钥将被存储在不同的地方。&lt;/p&gt;
+&lt;p&gt;Then you&#39;re all set to execute blazingly fast payments: You log in with your password to unlock the first key, and the second key is loaded from your browser&#39;s local storage.&lt;/p&gt;
+&lt;p&gt;然后你就可以执行极快的支付了。你用你的密码登录来解锁第一把秘钥，第二把秘钥从你的浏览器的本地存储中加载。&lt;/p&gt;
+&lt;p&gt;When you confirm your transaction on the Frontend, the DApp will generate a two-signature predicate transaction for each spended UTXO.&lt;/p&gt;
+&lt;p&gt;当你在前台确认你的交易时，DApp将为每个花费的UTXO生成一个双签名的谓词交易。&lt;/p&gt;
+&lt;p&gt;The real benefit of this application is that it supports spending multiple UTXOs with distinct predicate data.&lt;/p&gt;
+&lt;p&gt;这个应用真正的好处是，它支持用不同的谓词数据来花费(影响)多个UTXO。&lt;/p&gt;
+&lt;p&gt;For more information, check out their &lt;a href=&#34;https://github.com/authsome/authsome&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;欲了解更多信息，请查看他们的&lt;a href=&#34;https://github.com/authsome/authsome&#34;&gt;GitHub仓库&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;二等奖fuel价格预言机-second-prize-fuel-price-oracle&#34;&gt;🥈 二等奖—Fuel价格预言机 (Second Prize — Fuel Price Oracle)&lt;/h3&gt;
+&lt;p&gt;Fuel Price Oracle implements a simple ETH - DAI tokens price oracle. This project allows retrieving token prices from the outside world on the Fuel chain with a Sway smart contract.&lt;/p&gt;
+&lt;p&gt;Fuel价格预言机实现了一个简单的ETH-DAI代币的价格预言机。这个项目允许使用Sway智能合约从外界检索Fuel链上的代币价格。&lt;/p&gt;
+&lt;p&gt;Check out their demo video below:&lt;/p&gt;
+&lt;p&gt;请看下面的演示视频:&lt;/p&gt;
+&lt;iframe width=&#34;720&#34; height=&#34;540&#34; src=&#34;https://www.youtube.com/embed/geJ-aKOZQTU&#34; title=&#34;Fuel price oracle (ETH, DAI) demo&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;For more information, check out their &lt;a href=&#34;https://github.com/chlenc/fuel-price-oracle&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;欲了解更多信息，请查看他们的&lt;a href=&#34;https://github.com/chlenc/fuel-price-oracle&#34;&gt;GitHub仓库&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;三等奖资本家猪-third-prize-capitalist-pigs&#34;&gt;🥉 三等奖—资本家猪 (Third Prize — Capitalist Pigs)&lt;/h3&gt;
+&lt;p&gt;Enter the world of Capitalist Pigs, a Gamify staking for fees in a DeFi project using a set of NFTs.&lt;/p&gt;
+&lt;p&gt;进入Capitalist Pigs的世界，这是一个使用一套NFTs在DeFi项目中质押产生费用(收益)的Gamify。&lt;/p&gt;
+&lt;p&gt;Check out their demo video below:&lt;/p&gt;
+&lt;p&gt;请看下面他们的演示视频&lt;/p&gt;
+&lt;iframe width=&#34;720&#34; height=&#34;407&#34; src=&#34;https://www.youtube.com/embed/WeVj2tXGa-M&#34; title=&#34;Capitalist Pigs - 30 October 2022&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h3 id=&#34;它如何工作-how-does-it-work&#34;&gt;它如何工作? (How does it work?)&lt;/h3&gt;
+&lt;p&gt;First of all, you begin by generating a burner wallet on the upper right corner of the DApp. To start playing, you need to claim a &lt;strong&gt;Pig&lt;/strong&gt;, a stakable collectible NFT asset. By staking it, you will earn &lt;strong&gt;Truffles&lt;/strong&gt; and &lt;strong&gt;staking fees&lt;/strong&gt; represented by &lt;strong&gt;Bacon&lt;/strong&gt;. Truffles can be turned into &lt;strong&gt;Piglets&lt;/strong&gt;. With those Piglets, you have 2 possibilities: you can either turn them into Pigs or delegate them to existing Pigs to increase their staking fee generation. And this is it, you&#39;re a Capitalist Pig! You can check in the lower right corner the evolution of your supply (Pigs, Piglets, Truffles, and Bacon).&lt;/p&gt;
+&lt;p&gt;首先，你开始在DApp的右上角生成一个燃烧钱包。要开始玩，你需要认领一只&lt;strong&gt;猪&lt;/strong&gt;，这是一种可收藏的NFT资产。通过抵押，你将获得&lt;strong&gt;松露&lt;/strong&gt;和&lt;strong&gt;培根&lt;/strong&gt;代表的&lt;strong&gt;抵押费。松露可以转化为小猪&lt;/strong&gt;。对于这些小猪，你有两种可能：你可以把它们变成小猪，或者把它们委托给现有的小猪，来增加它们的产出。就这样，你就是一只资本家猪了！你可以在右下角检查。你可以在右下角检查你的供应（猪、小猪、松露和培根）的演变。&lt;/p&gt;
+&lt;p&gt;Try it out now &lt;a href=&#34;https://capitalistpi.gs/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;现在就试试吧&lt;a href=&#34;https://capitalistpi.gs/&#34;&gt;这里&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;For more information, check out their &lt;a href=&#34;https://github.com/afsardo/capitalist-pigs&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;欲了解更多信息，请查看他们的&lt;a href=&#34;https://github.com/afsardo/capitalist-pigs&#34;&gt;GitHub仓库&lt;/a&gt;。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;今天就开始在fuel构建吧-start-building-on-fuel-today&#34;&gt;今天就开始在Fuel构建吧! （Start Building On Fuel Today）&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Building on Fuel means breaking free from the constraints of monolithic blockchains that have held us back.&lt;br&gt;
+以 Fuel 为基础意味着摆脱阻碍我们前进的单片区块链的限制。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;fuel的开发人员资源-developer-resources-for-building-with-fuel&#34;&gt;Fuel的开发人员资源 (Developer Resources for Building with Fuel)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A step-by-step guide to building a full-stack dapp on Fuel can be found &lt;a href=&#34;https://github.com/camiinthisthang/fullstack-fuel/blob/main/README.md&#34;&gt;here&lt;/a&gt;.&lt;br&gt;
+&lt;a href=&#34;https://github.com/camiinthisthang/fullstack-fuel/blob/main/README.md&#34;&gt;这里&lt;/a&gt; 可以找到在 Fuel 上构建全栈 dapp 的分步指南&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;strong&gt;Fuel Book&lt;/strong&gt; can be found &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/index.html&#34;&gt;here&lt;/a&gt;. It contains everything you need to know about Fuel, from its modular design to its key features.&lt;br&gt;
+&lt;strong&gt;Fuel全书&lt;/strong&gt; 可以在 &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/index.html&#34;&gt;这里&lt;/a&gt; 找到。它包含您需要了解的有关 Fuel 的所有信息，从模块化设计到主要功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;strong&gt;Sway Book&lt;/strong&gt; can be found &lt;a href=&#34;https://fuellabs.github.io/sway/v0.24.1/&#34;&gt;here&lt;/a&gt;.&lt;br&gt;
+&lt;strong&gt;Sway全书&lt;/strong&gt; 可以在 &lt;a href=&#34;https://fuellabs.github.io/sway/v0.24.1/&#34;&gt;这里&lt;/a&gt; 找到。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;敬请关注-follow-us&#34;&gt;&lt;strong&gt;敬请关注 (Follow Us)&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/fuellabs_&#34;&gt;&lt;strong&gt;Twitter&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://discord.com/invite/xfpK4Pe&#34;&gt;&lt;strong&gt;Discord&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/company/fuel-labs/&#34;&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ&#34;&gt;&lt;strong&gt;YouTube&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;关于我们-about-us&#34;&gt;&lt;strong&gt;关于我们 (About Us)&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.fuel.network/&#34;&gt;Fuel&lt;/a&gt; is the &lt;strong&gt;fastest execution layer&lt;/strong&gt; for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the &lt;strong&gt;highest flexible throughput&lt;/strong&gt; and &lt;strong&gt;maximum security&lt;/strong&gt; required to scale. Developers choose the &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/vs-evm.html&#34;&gt;FuelVM&lt;/a&gt; for its &lt;strong&gt;superior developer experience&lt;/strong&gt; and the ability to go &lt;strong&gt;beyond the limitations of the EVM&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.fuel.network/&#34;&gt;Fuel&lt;/a&gt; 是模块化区块链技术栈的&lt;strong&gt;最快执行层&lt;/strong&gt;。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的&lt;strong&gt;最高灵活吞吐量&lt;/strong&gt;和&lt;strong&gt;最大安全性&lt;/strong&gt;。开发人员选择 &lt;a href=&#34;https://fuellabs.github.io/fuel-docs/master/vs-evm.html&#34;&gt;FuelVM&lt;/a&gt; 是因为它&lt;strong&gt;卓越的开发人员体验和运行能力&lt;/strong&gt; ，突破了 EVM 的限制**。&lt;/p&gt;
+&lt;h2 id=&#34;成为贡献者-become-a-contributor&#34;&gt;&lt;strong&gt;成为贡献者 (Become a Contributor)&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://jobs.lever.co/fuellabs&#34;&gt;Explore our current job openings&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://jobs.lever.co/fuellabs&#34;&gt;探索我们目前的职位空缺&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://1v1l4ftv9zy.typeform.com/fuelgrants&#34;&gt;Apply for a grant&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://1v1l4ftv9zy.typeform.com/fuelgrants&#34;&gt;申请资助&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://fuellabs.github.io/sway/v0.24.5/&#34;&gt;Learn Sway&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://fuellabs.github.io/sway/v0.24.5/&#34;&gt;学习Sway&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+">ETH里斯本活动回顾 (ETH Lisbon Recap)</a>
       </div>
       
       <div class="item">
@@ -3335,6 +3455,7 @@ return text;
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/fuel-zhong-wen-cai-liao-he-ji-bu-duan-geng-xin-zhong-fuel-chinese-materials-updating/"" data-c="
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://fuel-labs.ghost.io/content/images/size/w2000/2022/09/Fuel_Trailer_Still_10.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;h1 id=&#34;项目进展project-update&#34;&gt;项目进展(Project Update)&lt;/h1&gt;
+&lt;h2 id=&#34;eth里斯本活动回顾-eth-lisbon-recap&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/eth-li-si-ben-huo-dong-hui-gu-eth-lisbon-recap&#34;&gt;ETH里斯本活动回顾 (ETH Lisbon Recap)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;介绍fuel资助计划-introducing-the-fuel-grants-program&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/jie-shao-fuel-zi-zhu-ji-hua-introducing-the-fuel-grants-program&#34;&gt;介绍Fuel资助计划 (Introducing the Fuel Grants Program)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;自2022年夏天以来的项目进展-feul内幕project-update-since-summer-2022-inside-fuel&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/fuel-nei-mu-2022-nian-xia-tian-inside-fuel-summer-2022/&#34;&gt;自2022年夏天以来的项目进展-Feul内幕(Project update since Summer 2022-Inside Fuel)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;fuel实验室宣布为最快的模块化执行层提供-8000-万美元的支持-fuel-labs-announces-80-million-of-support-for-the-fastest-modular-execution-layer&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/fuel-shi-yan-shi-xuan-bu-wei-zui-kuai-de-mo-kuai-hua-zhi-xing-ceng-ti-gong-8000-wan-mei-yuan-de-zhi-chi-fuel-labs-announces-dollar80-million-of-support-for-the-fastest-modular-execution-layer&#34;&gt;Fuel实验室宣布为最快的模块化执行层提供 8000 万美元的支持 (Fuel Labs Announces $80 Million of Support for the Fastest Modular Execution Layer)&lt;/a&gt;&lt;/h2&gt;
