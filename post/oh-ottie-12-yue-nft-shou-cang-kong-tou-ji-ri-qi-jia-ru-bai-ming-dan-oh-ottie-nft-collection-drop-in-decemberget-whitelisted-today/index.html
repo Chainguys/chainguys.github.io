@@ -8,7 +8,7 @@
 <meta name="keywords" content="crypto blockchain translation meme coin 区块链 加密货币 翻译 白皮书 文档 doc">
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
-<title>Chainguys&#39;Blog</title>
+<title>“Oh Ottie！” 12月NFT收藏空投：即日起加入白名单！(“Oh Ottie!” NFT Collection Drop in December：Get Whitelisted today!) | Chainguys&#39;Blog</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1667964738695">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -61,6 +61,8 @@
 
 
 
+  <meta name="description" content="“Oh Ottie！” 12月NFT收藏空投：即日起加入白名单！(“Oh Ottie!” NFT Collection Drop in December：Get Whitelisted today!)" />
+  <meta name="keywords" content="NFT,altlayer" />
 </head>
 
 <body>
@@ -175,1415 +177,346 @@
   <div class="main-continer">
     
     <div
-      class="section-layout  pisces">
+      class="section-layout pisces ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
-<div class="sidebar-wrapper box-shadow-wrapper bg-color">
-  <div class="sidebar-item">
-    <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name">Chainguys</p>
-    
-    <div class="site-description right-motion">
-      
-      
-      
-        <p>A blockchain guy who likes making memes and translating tech articles </p>
-      
-        <p>All Information NOT Financial Adivice</p>
-      
-        <p> 一个区块链的老韭菜 </p>
-      
-        <p>兴趣是做meme和翻译技术文章 </p>
-      
-        <p>一切均非投资建议</p>
-      
-      
-    </div>
-    
-  </div>
-  <div class="sidebar-item side-item-stat right-motion">
-    <div class="sidebar-item-box">
-      <a href="/archives/">
         
-        <span class="site-item-stat-count">134</span>
-        <span class="site-item-stat-name language" data-lan="article">文章</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="/tags/">
-        <span class="site-item-stat-count">300</span>
-        <span class="site-item-stat-name language" data-lan="tag">标签</span>
-      </a>
-    </div>
-  </div>
-  
-    
-      <div class="sidebar-item">
-        <span class="site-item-rss">
-            <i class="fa fa-rss"></i>
-            <a href="https://chainguys.github.io/atom.xml" target="_blank">RSS</a>
-        </span>
-      </div>
-    
-  
-  
 
+<div class="sidebar">
   
-
-
-
-</div>
 </div>
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'pisces';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    jQuery.Velocity(hideElement, 'stop');
+    jQuery.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        jQuery.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
       }
-    });
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
   }
-  </script>
-        <div class="section-box tag-line box-shadow-wrapper">
-          <section class="section tags-section posts-expand bg-color">
-            <div class="padding-wrapper">
-  <div class="tag-timeline-box">
-    <div class="tag-timeline-wrapper">
-      <div class="tag-timeline-title">
-        <h2>
-          dashboard
-          <small class="language" data-lan="tag">标签</small>
-        </h2>
-      </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <a href="https://chainguys.github.io/post/shippooordao-ti-gong-de-euler-dune-fen-xi-yi-biao-ban-eulers-dune-analytics-dashboard-by-shippooordao/">
-        <div class="motion-warpper">
-          <div class="tag-post-node">
-            <h1>
-              02-22
-              <small>ShippooorDAO提供的Euler Dune分析仪表板 (Euler’s Dune Analytics Dashboard by ShippooorDAO)</small>
-            </h1>
-          </div>
-        </div>
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://chainguys.github.io/post/oh-ottie-12-yue-nft-shou-cang-kong-tou-ji-ri-qi-jia-ru-bai-ming-dan-oh-ottie-nft-collection-drop-in-decemberget-whitelisted-today/"> “Oh Ottie！” 12月NFT收藏空投：即日起加入白名单！(“Oh Ottie!” NFT Collection Drop in December：Get Whitelisted today!) </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2022-11-07 11:30:28">2022-11-07</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show language" data-lan="category-in">标签:</span>
+       
+      <a href="https://chainguys.github.io/tag/4WxlPGTxK/"> <span>NFT</span> </a>、   
+      <a href="https://chainguys.github.io/tag/VcTZe5BT3/">
+        <span>altlayer</span>
       </a>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+       
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span
+        >10<span class="language" data-lan="minute"
+          >分钟</span
+        ></span
+      >
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span
+        >1939<span class="pc-show language" data-lan="words"
+          >字数</span
+        ></span
+      >
+    </span>
+      
+    <span
+      id="/post/oh-ottie-12-yue-nft-shou-cang-kong-tou-ji-ri-qi-jia-ru-bai-ming-dan-oh-ottie-nft-collection-drop-in-decemberget-whitelisted-today/"
+      data-flag-title="“Oh Ottie！” 12月NFT收藏空投：即日起加入白名单！(“Oh Ottie!” NFT Collection Drop in December：Get Whitelisted today!)"
+      class="meta-item pc-show leancloud_visitors"
+    >
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span
+        ><span class="language" data-lan="view">浏览量:</span>:<span
+          class="leancloud-visitors-count"
+        ></span
+      ></span>
+    </span>
+    
+  </div>
+</section>
+
+            <div class="post-body next-md-body" id="post_body">
+              <figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*YSjiQ3jrelHE8SmHtSjXyA.png" alt="" loading="lazy"></figure>
+<ul>
+<li>
+<p>Mint Oh Ottie! using native assets bridged from Ethereum, BNB Chain &amp; Polygon<br>
+铸币Ottie！使用从以太坊、BNB 链和Polygon跨链原生资产</p>
+</li>
+<li>
+<p>Read Instructions &amp; Whitelist <a href="https://sograph.xyz/space/altlayer/campaign/yVFDYdj1ao">Here</a> from 8 November — 4 December<br>
+从 11月8日至12月4日：阅读说明和白名单 [此处]</p>
+</li>
+</ul>
+<hr>
+<p>We’ve got some exciting news for you. Following the great feedback we’ve had on our loving mascot Ottie since we introduced him to you all, we’ve decided to release a collection of 2,000 unique Ottie avatars as part of an NFT collection titled <strong>‘<em>Oh Ottie</em>!’</strong></p>
+<p>我们有一些让人兴奋的消息要告诉你。自从我们向大家介绍可爱的吉祥物 Ottie 以来，我们收到了很好的反馈，我们决定发布一个包含 2,000 个独特 Ottie 头像的集合，作为 NFT 集合的一部分，标题为 <strong>‘<em>Oh Ottie</em>！’</strong></p>
+<p>Each avatar represents Ottie with his different facets — be it hobbies, professions or moods! Each of them will entail special rights and privileges.</p>
+<p>每个头像都代表着Ottie的不同方面——无论是爱好、职业还是心情！他们每个人都将有不同的权利和好处。</p>
+<p>Similar to the OG Badge Drop, the <strong>Oh Ottie!</strong> mint will showcase Altlayer’s superior flashlayer technology, which enables NFT minting in a gasless manner across EVM and non-EVM chains.</p>
+<p>与 OG Badge Drop 类似，<strong>Oh Ottie!</strong> 铸币将展示 Altlayer 卓越的 flashlayer 技术，该技术可以跨 EVM 和非 EVM 链以无gas方式进行 NFT 铸币。</p>
+<p>But this time around, we’re taking it to the next level. <strong>Oh Ottie!</strong> NFTs can be minted using native assets bridged from Ethereum, BNB Chain and Polygon, and eventually roll up the assets to Ethereum for trading.</p>
+<p>但这一次，我们将其提升到了一个新的水平。 <strong>Oh Ottie！</strong> NFT 可以使用从以太坊、BNB 链和Polygon跨链的原生资产铸币，并最终将资产汇总到以太坊进行交易。</p>
+<h2 id="总供应量-total-supply"><strong>总供应量 (Total Supply)</strong></h2>
+<p>Of the 2,000 avatars in the <strong>Oh Ottie!</strong> collection:<br>
+在 <strong>Oh Ottie!</strong> 系列中的 2,000 个头像中：</p>
+<ul>
+<li>
+<p>1,200 will be minted on our flashlayer at a mint price of 0.08 ETH or equivalent on 9 December<br>
+12月9日将在我们的 flashlayer 上以 0.08 ETH 或等值的价格铸币 1,200 个</p>
+</li>
+<li>
+<p>420 will be airdropped to existing OG Badge NFT holders prior to the mint event<br>
+420 将在铸币活动之前空投给现有的 OG Badge NFT 持有者</p>
+</li>
+<li>
+<p>180 will be distributed to partner projects and communities for lucky draws before the mint event<br>
+180个将在铸币活动前分发给合作项目和社区进行幸运抽奖</p>
+</li>
+<li>
+<p>200 avatars will be specially reserved for future community engagement and partnership usage<br>
+200个头像将专门为未来的社区参与和合作伙伴使用而保留</p>
+</li>
+</ul>
+<h2 id="为什么要得到-oh-ottie-nftwhy-get-an-oh-ottie-nft"><strong>为什么要得到 Oh Ottie NFT？Why get an Oh Ottie NFT?</strong></h2>
+<p>We’ll be sharing our love for Ottie with our community via online and offline engagement, and social impact activities. Here are some of the privileges for <strong>Oh Ottie!</strong> holders.</p>
+<p>我们将通过在线和离线参与，以及社会影响活动与我们的社区分享对 Ottie 的热爱。以下是 <strong>Oh Ottie!</strong> 持有者的一些特权。</p>
+<ul>
+<li>
+<p>Future claim to token/NFT airdrop<br>
+未来声索代币/NFT 空投</p>
+</li>
+<li>
+<p>Exclusive access to merchandise and offline events<br>
+独家访问商品和线下活动</p>
+</li>
+<li>
+<p>Priority access to testnet validator program<br>
+优先访问测试网验证程序</p>
+</li>
+<li>
+<p>AltLayer will represent the community to adopt &amp; sponsor otters in zoos globally including but not limited to Singapore Zoo<br>
+AltLayer 将代表社区在全球动物园收养和赞助水獭，包括但不限于新加坡动物园</p>
+</li>
+</ul>
+<h2 id="重要的日子-important-dates"><strong>重要的日子 (Important Dates)</strong></h2>
+<ul>
+<li>
+<p>Whitelisting opens at 18.00 PM SGT on <strong>8 November</strong> and ends on <strong>4 December</strong> at 23.59 PM SGT.<br>
+白名单于 <strong>11月8日</strong> 晚上 18:00 SGT 开始，并于<strong>12 月 4 日</strong> 下午 23:59 SGT 结束。</p>
+</li>
+<li>
+<p>On <strong>7 December,</strong> we will publish the how-to-mint guide and open the <strong><em>one-way</em> <em>bridge</em></strong> for you to transfer your ETH, BNB and Matic tokens to our flashlayer.<br>
+<strong>12 月 7 日</strong>  我们将发布铸币指南并打开 <strong><em>one-way</em> <em>bridge</em></strong> 供您将您的 ETH、BNB 和 Matic 代币转移到我们的 flashlayer。</p>
+</li>
+</ul>
+<p>Note that there will be only one flashlayer rollup that spans across Ethereum, BNB Chain and Polygon, and supports ETH, BNB and Matic tokens. Users can opt for one or more token types (among ETH, BNB and Matic) to mint, as long as you have sufficient balance of the relevant token on our flashlayer.</p>
+<p>请注意，只有一个 flashlayer rollup 跨越以太坊、BNB 链和Polygon，并支持 ETH、BNB 和 Matic 代币。用户可以选择一种或多种代币类型（ETH、BNB 和 Matic）来铸币，只要您在我们的 flashlayer 上有足够的相关代币余额即可。</p>
+<p>Also note that you <strong><em>won’t</em></strong> be able to withdraw your bridged token assets on our flashlayer until the mint event is over. Please be mindful of the token amount to bridge for minting.</p>
+<p>另请注意，在铸币活动结束之前，您 <strong><em>不能</em></strong>  在我们的 flashlayer 上提取您的跨链代币资产。请注意用于铸币的代币数量。</p>
+<h2 id="铸币活动-mint-event"><strong>铸币活动 (Mint Event)</strong></h2>
+<p>The mint event lasts for 24 hours and has two parts.</p>
+<p>铸币事件持续 24 小时，分为两部分。</p>
+<p><strong><em>Part 1 — Private Mint:</em></strong> On 9 December, we’ll start private minting for whitelisted addresses between 12.00 PM — 16.00 PM SGT .<br>
+<em>第 1 部分 - 私密铸币：</em>**12 月 9 日，我们将在 12.00 PM - 16.00 PM SGT 之间开始对列入白名单的地址进行私密铸币。</p>
+<p><strong><em>Part 2 — Public Mint:</em></strong> Public minting is open for all. It starts at 16.00 PM SGT on 9 December and lasts for the next 20 hours. The one-way bridge will remain open until the mint event is over.<br>
+<em>第 2 部分——公开铸币：</em> **公开铸币对所有人开放。它从 12 月 9 日 SGT 下午 16 点开始，持续接下来的 20 个小时。单向跨链桥将保持开放，直到铸币活动结束。</p>
+<ul>
+<li>
+<p>The mint event ends either when all 1,200 avatars are fully minted or when the 24 hour mint period is over.<br>
+当所有 1,200 个头像全部铸币完毕或 24 小时铸币期结束时，铸币活动结束。</p>
+</li>
+<li>
+<p>Each wallet address is allowed to mint a maximum of 10 avatars regardless of the token used.<br>
+无论使用何种代币，每个钱包地址最多可铸造 10 个头像。</p>
+</li>
+<li>
+<p>Note that only $ETH, $BNB and Matic tokens are supported on our flashlayer. You won’t be able to bridge over other tokens.<br>
+请注意，我们的 flashlayer 仅支持 $ETH、 $BNB 和 Matic 代币。您将无法跨越其他代币。</p>
+</li>
+</ul>
+<h2 id="铸币后活动-post-mint-event"><strong>铸币后活动 (Post Mint Event)</strong></h2>
+<ul>
+<li>
+<p>After the end of the mint event, we will automatically bridge all the minted avatars back to Ethereum and all the remaining token assets back to Ethereum, BNB Chain and Polygon via rollup process. You won’t have to bridge your assets back to L1 yourselves.<br>
+铸币活动结束后，我们将通过汇总流程，将所有铸币头像自动跨链回以太坊，并将所有剩余的代币资产跨链回以太坊、BNB 链和 Polygon。您不必自己将资产跨链到 L1。</p>
+</li>
+<li>
+<p>Upon receiving your minted avatars on Ethereum mainnet, you will be able to trade the <strong>Oh Ottie!</strong> Collection on Opensea, Looksrare, X2Y2 and Blur, etc<br>
+在以太坊主网上收到您铸造的头像后，您将能够在 Opensea、Looksrare、X2Y2 和 Blur 等平台上交易 <strong>Oh Ottie!</strong> 收藏</p>
+</li>
+</ul>
+<h2 id="如何获得空投资格how-can-you-qualify-for-the-airdrop"><strong>如何获得空投资格？(How can you qualify for the airdrop?)</strong></h2>
+<p>If you are holders of our existing OG Badge NFTs, you can just sit tight and will automatically receive an airdrop of <strong>Oh Ottie!</strong> avatar prior to our mint event. We will disclose details including snapshot time later.</p>
+<p>如果您是我们现有的 OG 徽章 NFT 的持有者，您只需坐好，就会在我们的铸币活动开始前自动收到 <strong>Oh Ottie!</strong> 头像的空投。我们将在稍后披露包括快照时间在内的详细信息。</p>
+<h2 id="如何才能有资格参加铸币活动how-can-you-qualify-for-the-mint-event"><strong>如何才能有资格参加铸币活动？(How can you qualify for the mint event?)</strong></h2>
+<p>You can increase the odds of getting hold of the <strong>Oh Ottie!</strong> avatars by <strong>joining the whitelisting process.</strong></p>
+<p>您可以通过加入白名单流程来增加获得 <strong>Oh Ottie!</strong> 头像的几率。</p>
+<p>Please complete the following tasks on <a href="https://sograph.xyz/space/altlayer/campaign/yVFDYdj1ao">this</a> page.</p>
+<p>请在 <a href="https://sograph.xyz/space/altlayer/campaign/yVFDYdj1ao">这个</a> 页面上完成以下任务。</p>
+<ul>
+<li>
+<p>Follow <a href="https://twitter.com/alt_layer">Yaoqi Jia</a> on Twitter<br>
+在 Twitter 上关注 <a href="https://twitter.com/alt_layer">Yaoqi Jia</a></p>
+</li>
+<li>
+<p>Follow <a href="https://twitter.com/alt_layer">Altlayer</a> on Twitter<br>
+在 Twitter 上关注 <a href="https://twitter.com/alt_layer">Altlayer</a></p>
+</li>
+<li>
+<p>Like and Retweet the pinned <strong>Oh Ottie!</strong> <a href="https://twitter.com/alt_layer/status/1589918467377205248">announcement</a><br>
+喜欢并转发置顶的****Oh Ottie！** <a href="https://twitter.com/alt_layer/status/1589918467377205248">公告</a></p>
+</li>
+<li>
+<p>Join our <a href="https://discord.gg/altlayer">Discord server</a> and complete the necessary steps<br>
+加入我们的 <a href="https://discord.gg/altlayer">Discord 服务器</a> 并完成必要的步骤</p>
+</li>
+<li>
+<p>Connect with your Ethereum wallet address<br>
+连接您的以太坊钱包地址</p>
+</li>
+</ul>
+<p>让白名单开始吧！<br>
+Let the whitelisting begin!</p>
+
+            </div>
+            
+              <div class="reward-btn">
+                <div class="reward-btn-text">赞赏</div>
+              </div>
+            
+            
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      Chainguys
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://chainguys.github.io/post/oh-ottie-12-yue-nft-shou-cang-kong-tou-ji-ri-qi-jia-ru-bai-ming-dan-oh-ottie-nft-collection-drop-in-decemberget-whitelisted-today/" title="“Oh Ottie！” 12月NFT收藏空投：即日起加入白名单！(“Oh Ottie!” NFT Collection Drop in December：Get Whitelisted today!)">https://chainguys.github.io/post/oh-ottie-12-yue-nft-shou-cang-kong-tou-ji-ri-qi-jia-ru-bai-ming-dan-oh-ottie-nft-collection-drop-in-decemberget-whitelisted-today/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://chainguys.github.io/tag/4WxlPGTxK/"># NFT</a>
+    
+      <a href="https://chainguys.github.io/tag/VcTZe5BT3/"># altlayer</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="@fuellabs_长推20221027(@fuellabs_threads20221027)" href="https://chainguys.github.io/post/fuellabs-chang-tui-20221027fuellabs_threads20221027/">@fuellabs_长推20221027(@fuellabs_threads20221027)</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="@fuellabs_长推20221027(@fuellabs_threads20221027)" href="https://chainguys.github.io/post/fuellabs-chang-tui-20221027fuellabs_threads20221027/">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="ETH里斯本活动回顾 (ETH Lisbon Recap)" href="https://chainguys.github.io/post/eth-li-si-ben-huo-dong-hui-gu-eth-lisbon-recap/">ETH里斯本活动回顾 (ETH Lisbon Recap)</a>
+        <a class="nav-mobile-next" title="ETH里斯本活动回顾 (ETH Lisbon Recap)" href="https://chainguys.github.io/post/eth-li-si-ben-huo-dong-hui-gu-eth-lisbon-recap/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
 </div>
-          </section>
+            
+            
+  
+
+          </div>
         </div>
       </div>
     </div>
@@ -1828,6 +761,235 @@
     parent.insertBefore(aelem, next);
   });
 </script>
+    <div class="reward-mask" style="display: none;">
+  <div class="reward-relative">
+    <span class="close" aria-hidden="true">x</span>
+    <div class="reward-body">
+      <h2>感谢您的支持，我会继续努力的!</h2>
+      <div class="reward-img-box">
+        <div style="position: relative; width: 140px; height: 140px;">
+          
+          
+            <img id="zfb" class="reward-img" src="/media/images/custom-zfbImg.png" alt="赞赏码">
+          
+          
+            <img id="wx" class="reward-img" src="/media/images/custom-wxImg.png" alt="赞赏码">
+          
+        </div>
+      </div>
+      <p class="reward-word">ETH:0xeaD95E58791e42D89EF144A2BaB00B1BfAFC0a3C</p>
+      <p class="reward-tip">Solana:7TqTNNvnduqKNGkDVAcGXfkena35PJGyR6tby3QWNzC2</p>
+    </div>
+    <div class="bottom">
+      
+      <div id="zfbBtn" class="pay-text">
+        ETH QR Code
+      </div>
+      
+      
+      <div id="wxBtn" class="pay-text">
+        Solana QR Code
+      </div>
+      
+    </div>
+  </div>
+</div>
+<style>
+  .reward-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000054;
+  }
+
+  .reward-relative {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -205px;
+  }
+
+  .reward-relative .close {
+    position: absolute;
+    right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+  }
+
+  .reward-body {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .reward-btn {
+    text-align: center;
+  }
+
+  .reward-btn-text {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ff9734;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .pay-text {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    transition: all .2s linear;
+  }
+
+  .pay-text:hover {
+    background-color: #a5a5a536;
+  }
+
+  .reward-body h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
+  .reward-body h2:after,
+  .reward-body h2:before {
+    font-family: Arial, Helvetica, sans-serif;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    font-style: normal;
+    color: #eee;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .reward-body h2:before {
+    content: '\201c';
+    left: 50px;
+  }
+
+  .reward-body h2:after {
+    content: '\201d';
+    right: 80px;
+  }
+
+  .reward-img-box {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .reward-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .reward-relative {
+      height: 100%;
+      top: 0px;
+      margin-top: 0;
+      width: auto;
+    }
+
+    .reward-relative .bottom {
+      flex-direction: column;
+    }
+
+    .reward-relative .pay-text {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid silver;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .reward-body h2:after {
+      right: 40px;
+    }
+
+    .reward-body h2:after,
+    .reward-body h2:before {
+      font-size: 60px;
+    }
+
+    .reward-body h2:before {
+      left: 20px;
+    }
+  }
+</style>
+<script>
+  !function () {
+    var mask = document.querySelector('.reward-mask');
+    let close = document.querySelector('.reward-relative .close');
+    let rewardBtn = document.querySelector('.reward-btn');
+
+    let zfb = document.querySelector('#zfb'),
+      wx = document.querySelector('#wx'),
+      zfbBtn = document.querySelector('#zfbBtn'),
+      wxBtn = document.querySelector('#wxBtn');
+
+    if (zfbBtn && wxBtn) {
+      zfbBtn.addEventListener('click', () => {
+        jQuery.Velocity(zfb, 'transition.slideLeftIn', {
+          duration: 400
+        });
+        jQuery.Velocity(wx, 'transition.slideRightOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+
+      wxBtn.addEventListener('click', () => {
+        jQuery.Velocity(wx, 'transition.slideRightIn', {
+          duration: 400
+        });
+        jQuery.Velocity(zfb, 'transition.slideLeftOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+    }
+
+    rewardBtn.addEventListener('click', (e) => {
+      jQuery.Velocity(mask, 'transition.slideDownIn', {
+        duration: 400
+      })
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      jQuery.Velocity(mask, 'transition.slideUpOut', {
+        duration: 400
+      })
+    })
+  }()
+</script>
+
   </div>
 </body>
 
@@ -16867,7 +16029,6 @@ SomeCalldata.size(0) // equals 36 (i.e. 4 + 32)
       speed: 200
     });
   </script>
-
 
 
 
