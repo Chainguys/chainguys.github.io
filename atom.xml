@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-11-18T07:59:02.870Z</updated>
+    <updated>2022-11-21T07:24:43.891Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -356,6 +356,159 @@ Coinbase* 交易；</p>
 自动变量输出估计</p>
 </li>
 </ul>
+<hr>
+<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
+<ul>
+<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
+<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
+<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
+<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
+</ul>
+<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
+<p><a href="https://www.fuel.network/">Fuel</a> is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
+<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制**。</p>
+<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
+<ul>
+<li>
+<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
+<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
+</li>
+<li>
+<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
+<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
+</li>
+<li>
+<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
+<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[“Beta-2”官宣：Fuel的第二次公开测试(Announcing “Beta-2”： Fuel's Second Public Testnet)]]></title>
+        <id>https://chainguys.github.io/post/beta-2guan-xuan-fuel-de-di-er-ci-gong-kai-ce-shi-announcing-beta-2-fuels-second-public-testnet/</id>
+        <link href="https://chainguys.github.io/post/beta-2guan-xuan-fuel-de-di-er-ci-gong-kai-ce-shi-announcing-beta-2-fuels-second-public-testnet/">
+        </link>
+        <updated>2022-11-15T07:23:13.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/11/Beta-2-TestnetV2.png" alt="Announcing “Beta-2”: Fuel's Second Public Testnet" loading="lazy"></figure>
+<hr>
+<p>We are excited to announce the launch of the new Fuel <code>beta-2</code> testnet! This represents yet another milestone in our journey towards mainnet, and a modular execution layer that will bring true scalability to the Ethereum ecosystem.</p>
+<p>我们很高兴地宣布推出全新的 Fuel <code>beta-2</code> 测试网！这代表了我们迈向主网和模块化执行层的又一个里程碑，它将为以太坊生统带来真正的可扩展性！</p>
+<p>In September, <a href="https://fuel-labs.ghost.io/introducing-beta-1-testnet/">we launched <code>beta-1</code></a>, the first public Fuel testnet, offering open access for developers and users. This has already seen significant traction, with over 130,000 transactions in the span of 2 months. In addition, we've been amazed at the number of exciting new applications already building on Fuel, with <a href="https://github.com/FuelLabs/awesome-fuel#projects-building-on-fuel">over ten applications publicly launched</a> and many more in the works.</p>
+<p>9 月，<a href="https://fuel-labs.ghost.io/introducing-beta-1-testnet/">我们推出了 <code>beta-1</code></a>，第一个公共 Fuel 测试网，向开发人员和用户开放访问。这已经产生了巨大的吸引力，在 2 个月内完成了超过 130,000 笔交易。此外，我们对已经在 Fuel 上构建的，令人兴奋的新应用数量感到惊讶，我们<a href="https://github.com/FuelLabs/awesome-fuel#projects-building-on-fuel">公开发布了十多个应用</a> 以及更多作品。</p>
+<h2 id="在fuel-进行跨链-cross-chain-bridging-now-on-fuel">在Fuel 进行跨链 (Cross-Chain Bridging Now on Fuel)</h2>
+<p>Expanding on the features of <code>beta-1</code>, the <code>beta-2</code> testnet is launching with a bridge to Ethereum's Goerli test network. Now, developers will be able to build and test cross-chain dapps, laying the foundations for projects building on Fuel to tap into Ethereum's massive liquidity and existing user base.</p>
+<p>扩展了 <code>beta-1</code> 的功能，<code>beta-2</code> 测试网正在启动，并与以太坊的 Goerli 测试网络建立了跨链桥。现在，开发人员将能够构建和测试跨链 dapp，为基于 Fuel 构建的项目奠定基础，以利用以太坊的巨大流动性和用户群。</p>
+<blockquote>
+<p><em>Please note that <code>beta-2</code> is not an incentivized testnet. There will be no direct rewards for participation in this network.</em></p>
+<p><em>请注意，<code>beta-2</code> 不是激励测试网。参与该网络不会有直接奖励。</em></p>
+</blockquote>
+<hr>
+<h2 id="主要特征-key-features">主要特征 (Key Features)</h2>
+<p>Below is a full list of key features for the <code>beta-2</code> testnet:</p>
+<p>以下是 <code>beta-2</code> 测试网的主要功能的完整列表：</p>
+<h3 id="跨链桥-bridge">🌉 跨链桥 (Bridge)</h3>
+<p>The Fuel (<code>beta-2</code> testnet) &lt;&gt; Ethereum (Goerli testnet) bridge enables arbitrary message-passing between the two networks. It also supports enshrined ETH bridging, and ERC-20 token bridging <a href="https://github.com/FuelLabs/bridge-message-predicates">at the application level</a> thanks to account abstraction.</p>
+<p>Fuel (<code>beta-2</code> 测试网) &lt;&gt; Ethereum (Goerli 测试网) 跨链桥支持两个网络之间的任意消息传递。感谢帐户抽象，它还<a href="https://github.com/FuelLabs/bridge-message-predicates">在应用级别</a>支持ETH 桥接和 ERC-20 代币桥接。</p>
+<h3 id="单一共享网络-single-shared-network">🤝 单一共享网络 (Single Shared Network)</h3>
+<p><code>beta-2</code> is a shared, public developer- and user-facing testnet. Developers can deploy contracts and users can then interact with those contracts.</p>
+<p><code>beta-2</code> 是一个共享的、面向开发人员和用户的公共测试网。开发人员可以部署合约，然后用户可以与这些合约进行交互。</p>
+<h3 id="水龙头-faucet">🚰 水龙头 (Faucet)</h3>
+<p>Anyone can use the faucet to get some test ETH to deploy or interact with contracts. <a href="https://faucet-beta-2.fuel.network/">Available here</a>.</p>
+<p>任何人都可以使用水龙头获得测试 ETH 来部署或与合约交互。 <a href="https://faucet-beta-2.fuel.network/">在此处获取</a>。</p>
+<h3 id="graphql-端点-graphql-endpoint">📃 GraphQL 端点 (GraphQL Endpoint)</h3>
+<p>The <a href="https://github.com/FuelLabs/fuel-core">Fuel Core</a> node uses GraphQL instead of JSON RPC. A playground for the public GraphQL endpoint for <code>beta-2</code> is <a href="https://node-beta-2.fuel.network/playground">available here</a>.</p>
+<p><a href="https://github.com/FuelLabs/fuel-core">Fuel Core</a> 节点使用 GraphQL 而不是 JSON RPC。 <code>beta-2</code> 的公共 GraphQL 端点的游乐场/模拟处<a href="https://node-beta-2.fuel.network/playground">在此处可用</a>。</p>
+<h3 id="区块浏览器-block-explorer">🔍 区块浏览器 (Block Explorer)</h3>
+<p>A block explorer (still heavily a work-in-progress) is <a href="https://fuellabs.github.io/block-explorer-v2">available here</a>.</p>
+<p>区块浏览器（仍在大量开发中）<a href="https://fuellabs.github.io/block-explorer-v2">可在此处获得</a>。</p>
+<p><em>If you have any questions (development-related or otherwise), you can join the <a href="https://discord.gg/xfpK4Pe">Fuel Labs Discord</a> and head to the #questions channel under the Testnet category. Be sure to follow our <a href="https://twitter.com/fuellabs_">Twitter</a> for updates.</em></p>
+<p><em>如果您有任何问题（与开发相关或其他），您可以加入 <a href="https://discord.gg/xfpK4Pe">Fuel Labs Discord</a> 并前往 Testnet 类别下的 #questions 频道。请务必关注我们的 <a href="https://twitter.com/fuellabs_">Twitter</a> 获取更新。</em></p>
+<hr>
+<h2 id="什么是新的-whats-new">什么是新的? (What's New)</h2>
+<h3 id="️-sdks">⚙️ SDKs</h3>
+<p>Both the <a href="https://github.com/FuelLabs/fuels-rs">Rust</a> and <a href="https://github.com/FuelLabs/fuels-ts">TypeScript</a> SDKs now support automatic log parsing. This allows developers to respond to events emitted during transaction execution, making their frontends responsive.</p>
+<p><a href="https://github.com/FuelLabs/fuels-rs">Rust</a> 和 <a href="https://github.com/FuelLabs/fuels-ts">TypeScript</a> SDK 现在都支持自动日志解析。这允许开发人员响应交易执行期间发出的事件，使其前端可以响应。</p>
+<p>Both SDKs also now support the Vec type as inputs to a contract call, enabling users to pass in variable-length input. If you're coming from Solidity, this is analogous to a dynamic-length array.</p>
+<p>这两个 SDK 现在还支持 Vec 类型作为合约的调用来输入，使用户能够传入可变长度的输入。如果您来自 Solidity，这类似于动态长度数组。</p>
+<h3 id="sway">🌴 Sway</h3>
+<p>The compiler now produces bytecode that is 20-40% smaller in size, depending on the application. In addition to this, <a href="https://fuellabs.github.io/sway/v0.31.0/">Sway</a> now supports generic traits and trait constraints, allowing for more expressive libraries and abstractions.</p>
+<p>编译器现在生成的字节码大小减少了 20-40%，具体取决于应用。除此之外，<a href="https://fuellabs.github.io/sway/v0.31.0/">Sway</a> 现在支持通用特征和特征约束，允许更具表现力的库和抽象。</p>
+<p>Additional static analysis passes have been added, including one that enforces the checks-effects-interactions pattern when calling external contracts. In-language unit tests are also supported now, denoted by the #[test] annotation, similarly to Rust.</p>
+<p>额外静态分析通道得到添加，包括在调用外部合约时强制执行检查-效果-交互模式的通道。现在也支持语言内单元测试，由 #[test] 注释表示，类似于 Rust。</p>
+<p>The Sway compiler is now more performant, with 10-30% performance gains depending on the situation.</p>
+<p>Sway 编译器现在性能更高，根据情况可提高 10-30% 的性能。</p>
+<h3 id="lsp">🧩 LSP</h3>
+<p>The language server now provides inlay hints for variables, allowing users to see the types their let expressions are resolved to.</p>
+<p>语言服务器现在为变量提供内嵌提示，允许用户查看其 let 表达式解析的类型。</p>
+<p>Hover support has been added, showing information such as the type, mutability and visibility of variables and parameters, function signatures, and formatted markdown documentation complete with syntax highlighting for in-documentation examples.</p>
+<p>添加了悬停支持，显示变量和参数的类型、可变性和可见性、函数签名和格式化的 markdown 文档等信息，以及文档中示例的语法高亮。</p>
+<h3 id="工具-tooling">🔧 工具 (Tooling)</h3>
+<p><a href="https://github.com/FuelLabs/sway/tree/master/forc">Forc</a> now provides support for declaring contract dependencies in your Forc.toml. This feature provides a simple way to pin contracts and refer to their unique IDs in code, avoiding the need to manually update each contract dependency's address on each change.</p>
+<p><a href="https://github.com/FuelLabs/sway/tree/master/forc">Forc</a> 现在支持在 Forc.toml 中声明的合约依赖。此功能提供了一种简单的方法来固定合约，并在代码中引用其唯一 ID，避免嘞在每次更改时手动更新每个合约依赖的地址。</p>
+<p>Forc also introduces support for workspaces, allowing to build, deploy or run multiple Forc projects under a single command. Initial support for a <code>forc doc</code> command has landed, aimed at generating a package's reference documentation from its doc-comments (i.e. <code>///</code>), though the output is still quite raw for now.</p>
+<p>Forc 还引入了对工作区的支持，允许在单个命令下构建、部署或运行多个 Forc 项目。对 <code>forc doc</code> 命令的初步支持已经落地，旨在从其文档注释（即 <code>///</code>）生成包的参考文档，尽管目前输出仍然很原始。</p>
+<p>Offline support has greatly improved as Forc gains the ability to share its dependency source cache between projects. This is further improved by fuelup’s new toolchain installation behavior which now pre-populates the cache with the core and std libraries.</p>
+<p>随着 Forc 获得在项目之间共享其依赖源之缓存的能力，离线支持得到了极大的改善。 fuelup 的新工具链安装行为进一步改进了这一点，该行为现在使用核心和标准库预填缓存。</p>
+<h3 id="客户端-client">🌐 客户端 (Client)</h3>
+<p>The <a href="https://github.com/FuelLabs/fuel-core">Fuel client</a> now has support for bridging via a new kind of message UTXO, as well as a built-in relayer which interacts with Ethereum. It also now supports multi-transaction blocks in a proof-of-authority configuration. This allows for a diverse set of block production modes such as instant (for testing), fixed interval, and also dynamic block times based on the txpool size.</p>
+<p><a href="https://github.com/FuelLabs/fuel-core">Fuel 客户端</a> 现在支持通过一种新型消息 UTXO 以及与以太坊交互的内置中继器，进行跨链。它现在还支持权威证明配置中的多交易块。这允许一组不同的块生产模式，例如即时（用于测试）、固定间隔以及基于 txpool 大小的动态块时间。</p>
+<h3 id="钱包扩展-wallet-extension">🔌 钱包扩展 (Wallet Extension)</h3>
+<p>Fuel now has a <a href="https://github.com/FuelLabs/fuels-wallet">browser extension wallet</a> that enables users to manage their assets and interact with dapps. This wallet was built from scratch and also exposes an SDK API directly on the user's browser, enabling developers to just focus on developing their application without the need to bundle an application-specific wallet.</p>
+<p>Fuel 现在有一个<a href="https://github.com/FuelLabs/fuels-wallet">浏览器扩展钱包</a>，使用户能够管理他们的资产并与 dapp 交互。这个钱包是从头开始构建的，还直接在用户的浏览器上公开了一个 SDK API，使开发人员能够专注于开发他们的应用，而无需捆绑特定于应用的钱包。</p>
+<hr>
+<h2 id="对于开发者-for-developers">对于开发者 (For Developers)</h2>
+<h3 id="水龙头-faucet-2">🚰 水龙头 (Faucet)</h3>
+<ul>
+<li>Valid transactions are required to deploy contracts and interact with the network, which require coins. Testnet ETH can be obtained from the <a href="https://faucet-beta-2.fuel.network/">faucet</a> by completing a captcha.<br>
+需要有效交易才能部署合约并与网络交互，这需要代币。可以通过完成验证码从 <a href="https://faucet-beta-2.fuel.network/">水龙头</a> 获得测试 ETH。</li>
+</ul>
+<h3 id="钱包-wallet">💰 钱包 (Wallet)</h3>
+<ul>
+<li>
+<p>A persistent CLI wallet (with binaries for Linux and MacOS) is <a href="https://github.com/FuelLabs/forc-wallet/releases/latest">available here</a>.<br>
+持续性CLI 钱包（带有适用于 Linux 和 MacOS 的二进制文件）<a href="https://github.com/FuelLabs/forc-wallet/releases/latest">可在此处获得</a></p>
+</li>
+<li>
+<p>A web/browser plugin wallet is under active development, <a href="https://github.com/FuelLabs/fuels-wallet">available here</a>.<br>
+网络/浏览器插件钱包正在积极开发中，<a href="https://github.com/FuelLabs/fuels-wallet">可在此处获得</a>。</p>
+</li>
+</ul>
+<h3 id="️-开始-getting-started">⚡️ 开始 (Getting Started)</h3>
+<ul>
+<li>
+<p>For an overview of Fuel, take a look at the <a href="https://fuellabs.github.io/fuel-docs/master/index.html">Fuel documentation</a>.<br>
+有关 Fuel 的概述，请查看 <a href="https://fuellabs.github.io/fuel-docs/master/index.html">Fuel 文档</a>。</p>
+</li>
+<li>
+<p>To begin building on Fuel, check out the <a href="https://fuellabs.github.io/fuel-docs/master/developer-quickstart.html">developer quickstart</a>. This guide provides an end-to-end walkthrough for developers building a dapp on Fuel.<br>
+要开始在 Fuel 上构建，请查看 <a href="https://fuellabs.github.io/fuel-docs/master/developer-quickstart.html">开发人员快速入门</a>。本指南为开发人员在 Fuel 上构建 dapp 提供了端到端的指导。</p>
+</li>
+</ul>
+<h3 id="智能合约语言sway-smart-contract-language-sway">🌴 智能合约语言(Sway)-Smart Contract Language (Sway)</h3>
+<ul>
+<li>To begin developing a contract for Fuel, take a look at the <a href="https://fuellabs.github.io/sway/latest">Sway Book</a>, along with the <a href="https://github.com/FuelLabs/fuels-rs">Rust SDK</a> and <a href="https://github.com/FuelLabs/fuels-ts">TypeScript SDK</a>.<br>
+要开始为 Fuel 开发合约，请查看 <a href="https://fuellabs.github.io/sway/latest">Sway Book</a>，以及 [Rust SDK](https://github.com/ FuelLabs/fuels-rs) 和 <a href="https://github.com/FuelLabs/fuels-ts">TypeScript SDK</a>。</li>
+</ul>
+<h3 id="申请自助-apply-for-a-grant">💸 申请自助 (Apply for a Grant)</h3>
+<ul>
+<li>If you're interested in going even further, we're supporting early-stage projects with our grants program, <a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">available here</a>.<br>
+如果您有兴趣更进一步，我们将通过我们的<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">资助计划</a> 来支持早期项目。</li>
+</ul>
+<blockquote>
+<p><em>Note that the <code>beta-2</code> testnet is under active development and may see breaking upgrades and even regenesis events.</em><br>
+<em>请注意，<code>beta-2</code> 测试网正在积极开发中，可能会出现重大升级甚至重启事件。</em></p>
+</blockquote>
+<hr>
+<h2 id="超越单片链-beyond-monolithic">超越单片链 (Beyond Monolithic)</h2>
+<p>Modular blockchain design is quickly becoming the foremost solution to the challenge of scaling blockchains by orders of magnitude. The industry is rapidly moving away from monolithic blockchain designs and towards modular ones.</p>
+<p>模块化区块链设计正迅速成为应对数量级扩展区块链挑战的最重要解决方案。该行业正在迅速从单一的区块链设计转向模块化设计。</p>
+<p>We believe innovation does not require launching a new L1, but can rather happen at the execution layer. Fuel Labs is leading this charge with <a href="https://www.fuel.network/">Fuel</a>, the fastest modular execution layer.</p>
+<p>我们认为创新不需要启动新的 L1，而是可以发生在执行层。 Fuel Labs 以最快的模块化执行层 <a href="https://www.fuel.network/">Fuel</a> 成为行业领先。</p>
+<p>Unconstrained by the limitations of the EVM, Fuel approaches scalable execution from a modular-first perspective, allowing for <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">significant improvements over the EVM</a>'s inefficient execution environment and thus enabling maximum decentralization and the highest flexible throughput.</p>
+<p>不受 EVM 限制，Fuel 从模块化优先的角度实现可扩展执行，使得 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html"> EVM显着改进</a> 其低效执行环境，从而实现最大程度的去中心化和最高的灵活吞吐量。</p>
+<p>With this new movement, we have an opportunity to start fresh and build a fundamentally new generation of blockchains that go <strong>#BeyondMonolithic</strong>.</p>
+<p>通过这一新运动，我们有机会重新开始并构建从根本上走向 <strong>#超越单片链</strong> 的新一代区块链。</p>
 <hr>
 <h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
 <ul>
@@ -1318,99 +1471,6 @@ Gas是灵活的。它可以部署在许多环境中，但优先级是作为乐�
 UTXO 数据模型自然比账户数据模型更少争议，并且会导致更多并行(处理)和更少的状态膨胀。</p>
 </li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[@camiinthisthang长推-20221019(@camiinthisthang twitter threads-20221019)]]></title>
-        <id>https://chainguys.github.io/post/camiinthisthang-chang-tui-20221019camiinthisthang-twitter-threads-20221019/</id>
-        <link href="https://chainguys.github.io/post/camiinthisthang-chang-tui-20221019camiinthisthang-twitter-threads-20221019/">
-        </link>
-        <updated>2022-10-20T01:30:32.000Z</updated>
-        <content type="html"><![CDATA[<p>原文地址:<a href="https://twitter.com/camiinthisthang/status/1582408630443180035">https://twitter.com/camiinthisthang/status/1582408630443180035</a></p>
-<p>Machismo, Inflation, Remittance: Scaling Ethereum to Widespread Adoption in LATAM</p>
-<p>大男子主义、通货膨胀、汇款：扩展以太坊以在拉丁美洲得到广泛采用重新创新第 2 层，但更擅长 <a href="https://twitter.com/fuellabs_">@fuellabs_</a></p>
-<p>My most recent talk from<a href="https://twitter.com/EFDevcon">@EFDevcon</a>as a thread</p>
-<p>我最近来自 <a href="https://twitter.com/EFDevcon">@EFDevcon</a> 的谈话作为一个长推</p>
-<p>A pragmatic perspective on the social and technical pieces missing and how we're innovating a layer 2 but better at<a href="https://twitter.com/fuellabs_">@fuellabs_</a></p>
-<p>关于缺少的社交和技术部分以及我们如何创新layer2但更 <a href="https://twitter.com/fuellabs_">@fuellabs_</a> 的务实观点却更好</p>
-<p>First, a look at the current state of the industry. When building a product, you want to solve a big problem for many people. Right now, crypto sits in the quadrant of solving a small problem for a few people.</p>
-<p>首先，看一下行业的现状。在构建产品时，您想为许多人解决一个大问题。目前，加密货币处于为少数人解决小问题的象限。</p>
-<figure data-type="image" tabindex="1"><img src="https://pbs.twimg.com/media/FfXYRJoVUAATSxM?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
-<p>As an industry, we're all working towards identifying killer use cases for crypto that unlock functionality and coordination not previously available. I deeply respect everyone working in this industry, and this is not a knock on our work, but this is just today's reality.</p>
-<p>作为一个行业，我们都在努力确定加密的杀手级用例，进而解锁以前不可用的功能和协作。我非常尊重在这个行业工作的每一个人，这不是对我们工作的打击，但这只是今天的现实。</p>
-<figure data-type="image" tabindex="2"><img src="https://pbs.twimg.com/media/FfXYRuSUcAAo-N0?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<figure data-type="image" tabindex="3"><img src="https://twitter.com/camiinthisthang/status/1582408652727517187/photo/1" alt="" loading="lazy"></figure>
-<p>We want to solve a big problem for a lot of people. How do we get there? Not from a theoretical pov, but what are the tactical steps we need to execute to get here?</p>
-<p>我们想为很多人解决一个大问题。我们怎么实现？不是从理论上的观点出发，而是我们需要执行哪些战术步骤才能到达这里？</p>
-<figure data-type="image" tabindex="4"><img src="https://pbs.twimg.com/media/FfXYSbeUAAcCw3j?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<p>In this talk, I point out the three most pressing issues we can address NOW. These are probably obvious, but <em>how</em> exactly do we address these issues to empower both developers and end users to build and use novel applications?</p>
-<p>在这次演讲中，我指出了我们现在可以解决的三个最紧迫的问题。这些可能是显而易见的，但<em>我们如何</em>解决这些问题，进而使开发人员和最终用户能够构建和使用新颖的应用？</p>
-<figure data-type="image" tabindex="5"><img src="https://pbs.twimg.com/media/FfXYS-HUoAARpNu?format=jpg&amp;name=medium" alt="image" loading="lazy"></figure>
-<p>1.Solve real problems The bull case for LATAM and a case study on how solving hyperlocal problems (a big problem for many people) drives 100x+ growth, and what crypto can learn from these orgs</p>
-<p>解决实际问题 拉美的牛市案例和关于解决超本地问题（对许多人来说是个大问题）如何推动 100 倍以上增长的案例研究，以及加密可以从这些组织中学到什么</p>
-<figure data-type="image" tabindex="6"><img src="https://pbs.twimg.com/media/FfXYTnLVIAAHxMH?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<p>Latin America seems to be one of the best places to explore crypto because they already exhibit behaviors that make them ripe for crypto adoption</p>
-<p>拉丁美洲似乎是探索加密货币的最佳地点之一，因为它们已经表现出成熟采用加密货币的行为</p>
-<figure data-type="image" tabindex="7"><img src="https://pbs.twimg.com/media/FfXYUORUAAExN5b?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
-<p>Some stats highlight that Latinos are already operating and transacting outside of the rails of traditional finance Despite half of the population being unbanked, most consumers access neobank and nonbank financial services.</p>
-<p>一些统计数据表明，拉丁美洲人已经在传统金融的轨道之外开展业务和交易，尽管有一半的人口没有银行账户，但大多数消费者都可以使用新银行和非银行金融服务。</p>
-<figure data-type="image" tabindex="8"><img src="https://pbs.twimg.com/media/FfXYUzWUAAkgIAQ?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<p>Remittance in 2021 represented almost 25% of total GDP in Honduras and El Salvador and ~15% of GDP in Guatemala. Do you know how insane that is</p>
-<p>2021 年的汇款占洪都拉斯和萨尔瓦多 GDP 总额的近 25%，占危地马拉 GDP 的约 15%。你知道那有多疯狂吗！</p>
-<figure data-type="image" tabindex="9"><img src="https://pbs.twimg.com/media/FfXYVWnUAAYTBhc?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<p>Data by Gemini indicates that women in LATAM are transacting and holding crypto at higher rates than women in Europe. Crypto offers a new way for women to exercise financial freedom while operating within the bounds of what is culturally acceptable.</p>
-<p>Gemini 的数据表明，拉丁美洲的女性交易和持有加密货币的比率高于欧洲女性。加密货币为女性提供了一种行使财务自由的新方式，同时在文化可接受的范围内运作。</p>
-<figure data-type="image" tabindex="10"><img src="https://pbs.twimg.com/media/FfXYV5uUYAAsQ5e?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
-<p>In a culture of machismo, patriarchy with a little hot sauce on it, I can see how crypto offers a workaround for women to exercise the ability to hold and earn value without breaking social and cultural norms like opening a bank account without your husband, etc.</p>
-<p>在大男子主义、带有少许辣酱的父权制文化中，我可以看到加密货币如何为女性提供一种解决方法，让她们能够在不违反社会和文化规范的情况下行使持有和赚取价值的能力，例如在没有丈夫的情况下开设银行账户等.</p>
-<p>Mercado Pago and PicsPay in Colombia and Brazil are great case studies for what happens when you solve hyperlocal problems for consumers. Both are now financial giants in the space, and it all started from a relatively simple, not-so-novel payments platform.</p>
-<p>哥伦比亚和巴西的 Mercado Pago 和 PicsPay 是很好的案例研究，说明当您为消费者解决超本地化问题时会发生什么。两者现在都是该领域的金融巨头，这一切都始于一个相对简单、不那么新颖的支付平台。</p>
-<figure data-type="image" tabindex="11"><img src="https://pbs.twimg.com/media/FfXYWiuUAAYBCA7?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<figure data-type="image" tabindex="12"><img src="https://pbs.twimg.com/media/FfXYW6sVUAA8Yza?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<p>We covered the social. What technical milestones do we still have to reach to make Ethereum and blockchains in general usable to the masses?</p>
-<ul>
-<li>
-<p>Scalability</p>
-</li>
-<li>
-<p>More secure applications</p>
-<p>These next slides are also core to the reason why I joined Fuel.</p>
-</li>
-</ul>
-<p>我们涵盖了社会面。我们还需要达到哪些技术里程碑才能使以太坊和区块链普遍适用于大众？</p>
-<ul>
-<li>可扩展性</li>
-<li>更安全的应用程序</li>
-</ul>
-<p>这些下一张幻灯片也是我加入 Fuel 的核心原因。</p>
-<figure data-type="image" tabindex="13"><img src="https://pbs.twimg.com/media/FfXYXhFUAAIlDVM?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<p>Scalability without sacrificing decentralization. There are 666M people in LATAM. We need systems that can handle the load without impacts to performance. Fuel's execution model allows for parallelized transaction execution, resulting in a significant net gain in TPS.</p>
-<p>不牺牲去中心化的可扩展性。拉丁美洲有 6.66 亿人。我们需要能够在不影响性能的情况下处理负载的系统。 Fuel 的执行模型允许并行执行交易，从而导致 TPS 的显着净收益。</p>
-<figure data-type="image" tabindex="14"><img src="https://pbs.twimg.com/media/FfXYYGkUAAIWcnC?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<p>In LATAM, you're dealing with a population that is more price-sensitive. The average monthly income is ~$500. We have to take steps to minimize the risk of hacks and losses. The<a href="https://twitter.com/SwayLang">@SwayLang</a>compiler will call out reentrancy bugs and won't let you deploy a vulnerable contractS</p>
-<p>在拉丁美洲，您面对的是对价格更加敏感的人群。平均月收入约为 500 美元。我们必须采取措施将黑客入侵和损失的风险降至最低。 <a href="https://twitter.com/SwayLang">@SwayLang</a> 编译器将调用可重入性错误，并且不会让您部署易受攻击的合约</p>
-<figure data-type="image" tabindex="15"><img src="https://pbs.twimg.com/media/FfXYYtjUAAM4Sro?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<p>The Sway compiler forces developers to handle all variant control flow paths. Check out this thread by compiler engineer<a href="https://twitter.com/emilyaherbert">@emilyaherbert</a>for more on Sway features</p>
-<p>Sway 编译器强制开发人员处理所有变体控制流路径。查看编译器工程师 <a href="https://twitter.com/emilyaherbert">@emilyaherbert</a> 的此长推，了解有关 Sway 功能的更多信息</p>
-<figure data-type="image" tabindex="16"><img src="https://pbs.twimg.com/media/FfXYZTuUAAA45vv?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<hr>
-<figure data-type="image" tabindex="17"><img src="https://pbs.twimg.com/profile_images/1183078593078923264/M1WaFAKA_normal.jpg" alt="" loading="lazy"></figure>
-<p><a href="https://twitter.com/emilyaherbert/status/1575906743254908928">https://twitter.com/emilyaherbert/status/1575906743254908928</a></p>
-<hr>
-<p>Write more secure smart contracts in Sway with our namespace storage access. Each function's storage access must be annotated, giving clarity to developers and users alike who will never accidentally access storage, causing unintended consequences.</p>
-<p>使用我们命名的空间存储，访问在 Sway 中编写的更安全的智能合约。每个函数的存储访问都必须进行注释，让开发人员和用户清楚地知道他们永远不会意外访问存储，从而导致意想不到的后果。</p>
-<figure data-type="image" tabindex="18"><img src="https://pbs.twimg.com/media/FfXYZ6OUAAUH0JG?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<figure data-type="image" tabindex="19"><img src="https://pbs.twimg.com/media/FfXYaRnUAAkzoA5?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<p>Thank you to the whole Devcon team for organizing and allowing me to give this talk.</p>
-<p>感谢整个 Devcon 团队组织并允许我进行这次演讲。</p>
-<p>If you're interested in experiencing the top-tier developer experience we're crafting at<a href="https://twitter.com/fuellabs_">@fuellabs_</a>, check out our developer quickstart <a href="https://t.co/6QmJCUaOt7">https://fuellabs.github.io/fuel-docs/master/developer-quickstart.html…</a></p>
-<p>如果您有兴趣体验我们在 <a href="https://twitter.com/fuellabs_">@fuellabs_</a> 打造的顶级开发人员体验，请查看我们的开发人员快速入门 <a href="https://t.co/6QmJCUaOt7">https://fuellabs.github.io/ Fuel-docs/master/developer-quickstart.html…</a></p>
-<p>Expanded thoughts and sources cited from the numbers and stats referenced in this talk</p>
-<p>从本次演讲中引用的数字和统计数据中引用的扩展思想和来源</p>
-<p><a href="https://twitter.com/camiinthisthang/status/1577688321991417856">https://twitter.com/camiinthisthang/status/1577688321991417856</a></p>
-<p>The link to my slides: <a href="https://t.co/RXQbhMAoxL">https://docs.google.com/presentation/d/12EpcqMBJtyJXvWlmIY00kttPv-Y_Mwlpnb8GnkOulnw/edit?usp=sharing…</a>. I'll share the recording of the talk as soon as it's ready. THANK YOU !</p>
-<p>我的幻灯片的链接：<a href="https://t.co/RXQbhMAoxL">https://docs.google.com/presentation/d/12EpcqMBJtyJXvWlmIY00kttPv-Y_Mwlpnb8GnkOulnw/edit?usp=sharing...</a>。一旦准备好，我会分享谈话的录音。谢谢你 ！</p>
-<figure data-type="image" tabindex="20"><img src="https://pbs.twimg.com/card_img/1582408809128939520/O8w6U0hF?format=jpg&amp;name=small" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
