@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-11-22T04:56:30.993Z</updated>
+    <updated>2022-11-23T04:11:36.917Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Scroll中文材料汇总]]></title>
+        <id>https://chainguys.github.io/post/scroll-zhong-wen-cai-liao-hui-zong/</id>
+        <link href="https://chainguys.github.io/post/scroll-zhong-wen-cai-liao-hui-zong/">
+        </link>
+        <updated>2022-11-23T04:08:42.000Z</updated>
+        <content type="html"><![CDATA[<h2 id=""><img src="https://scroll.io/img/logo_with_text.ff8e8db3.png" alt="" loading="lazy"></h2>
+<h1 id="blog">Blog</h1>
+<h2 id="zkevm"><a href="https://chainguys.github.io/post/zkevm/">zkEVM</a></h2>
+<h2 id="scroll简介-愿景和价值观-introducing-scroll-vision-and-values"><a href="https://chainguys.github.io/post/scroll-jian-jie-yuan-jing-he-jie-zhi-guan-introducing-scroll-vision-and-values">Scroll简介-愿景和价值观 (Introducing Scroll - Vision and Values)</a></h2>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[zkEVM]]></title>
         <id>https://chainguys.github.io/post/zkevm/</id>
@@ -1401,138 +1413,6 @@ EVM 兼容的执行层可以利用现有的 Solidity 生态系统，但无法充
 <p>Learn more about how Fuel, the fastest modular execution layer, unlocks the future of scalability:</p>
 <p>详细了解最快的模块化执行层 Fuel 如何开启可扩展性的未来：</p>
 <p><a href="https://www.fuel.network/">https://www.fuel.network/</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Zpoken 成功在 Neon EVM 上部署 Compound 协议(Zpoken Successfully Deploys the Compound Protocol on Neon EVM)]]></title>
-        <id>https://chainguys.github.io/post/zpoken-cheng-gong-zai-neon-evm-shang-bu-shu-compound-xie-yi-zpoken-successfully-deploys-the-compound-protocol-on-neon-evm/</id>
-        <link href="https://chainguys.github.io/post/zpoken-cheng-gong-zai-neon-evm-shang-bu-shu-compound-xie-yi-zpoken-successfully-deploys-the-compound-protocol-on-neon-evm/">
-        </link>
-        <updated>2022-10-21T03:40:35.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*gmc_nXaOC8Reo4m24EF0WA.png" alt="" loading="lazy"></figure>
-<hr>
-<p>Over the last few months, Neon Labs has partnered with several organizations to test and deploy various protocols and projects on Neon EVM. Neon Labs’ most recent partnership with <a href="https://zpoken.io/">Zpoken</a> has resulted in the successful deployment of the <a href="https://compound.finance/">Compound protocol</a> on Neon EVM. The deployment of Compound on Neon EVM serves to further test the readiness of Neon EVM for production and the onboarding of complex dApps to its ecosystem.</p>
-<p>在过去几个月中，Neon Labs 与多家组织合作，在 Neon EVM 上测试和部署各种协议和项目。 Neon Labs 与 Zpoken 的最新合作，就是在 Neon EVM 上成功部署 Compound 协议。在 Neon EVM 上部署 Compound 有助于进一步测试 Neon EVM 的生产准备情况以及复杂 dApp 加入其生态系统的情况。</p>
-<p>Compound is a DeFi dApp that first launched in September, 2018 on Ethereum. The protocol allows users to lend and borrow cryptocurrencies without an intermediary</p>
-<p>Compound 是一个 DeFi dApp，于 2018 年 9 月在以太坊上首次推出。该协议允许用户在没有中介的情况下借出和借入加密货币。</p>
-<h1 id="zpoken是谁-who-is-zpoken">Zpoken是谁? (Who is Zpoken?)</h1>
-<p>Zpoken is a full-stack Web3 development firm. The company has shipped more than 50 projects and has 30 active builders across 10+ blockchain networks. Zpoken’s specializations include high-end web3 development, cryptography, capital markets, token design, and liquidity.</p>
-<p>Zpoken是一家全栈 Web3 开发公司。该公司已经交付了 50 多个项目，并在 10 多个区块链网络中拥有 30 名活跃的建设者。 Zpoken 的专长包括高端 web3 开发、密码学、资本市场、代币设计和流动性。</p>
-<h1 id="我们的目标-our-objective">我们的目标 (Our Objective)</h1>
-<p>The main objective of the exercise with Zpoken was to test Neon EVM’s performance and functionality during the deployment of the Compound protocol contracts to <a href="https://proxy.devnet.neonlabs.org/solana">Neon Devnet</a>.</p>
-<p>Zpoken练习的主要目的，是在将 Compound 协议合约部署到 Neon Devnet 期间测试 Neon EVM 的性能和功能。</p>
-<p>Following the successful deployment, Zpoken conducted unit tests on the protocol. The goal was to ensure the appropriate performance and workflow of the protocol contracts as well as the correctness of the contract calculations and logic.</p>
-<p>成功部署后，Zpoken 对该协议进行了单元测试。目标是确保协议合约的适当性能，工作流程以及合约计算和逻辑的正确性。</p>
-<h1 id="测试方法-testing-methodology">测试方法 (Testing Methodology)</h1>
-<p>Zpoken tested the following smart contract functions to verify the performance of Compound on Neon EVM:</p>
-<p>Zpoken测试了以下智能合约函数来验证 Compound 在 Neon EVM 上的性能：</p>
-<ul>
-<li>
-<p>Deploy compound contracts to Neon Devnet network;<br>
-将compound合约部署到 Neon Devnet 网络；</p>
-</li>
-<li>
-<p>Test cToken contract functions 测试cToken合约函数:<br>
-(constructor, mint, mintFresh, redeem, redeemFreshTokens, redeemFreshAmount, liquidateBorrow, liquidateBorrowFresh, seize, _setComptroller, transfer, balanceOfUnderlying, borrow, borrowRatePerBlock, supplyRatePerBlock, borrowBalanceCurrent, borrowBalanceStored, exchangeRateStored, getCash, borrowFresh, repayBorrowFresh, repayBorrow, repayBorrowBehalf, accrueInterest, _setInterestRateModel, _setInterestRateModelFresh, _setReserveFactor, _setReserveFactorFresh, _reduceReserves, _reduceReservesFresh, admin, pendingAdmin, _setPendingAdmin, _acceptAdmin);</p>
-</li>
-<li>
-<p>Test CEther contract functions   测试 CEther 合约函数:<br>
-(getCashPrior, doTransferIn, doTransferOut, mintExplicit, mintFallback, redeemCTokens, redeemUnderlying, borrow, borrowFresh, repayBorrow, repayBorrowFresh, repayBorrowBehalf, addReserves);</p>
-</li>
-<li>
-<p>Test Comptroller contract functions 测试Comptroller合约函数:<br>
-(constructor, _setLiquidationIncentive, _setPriceOracle, _setCloseFactor, _setCollateralFactor, _supportMarket, liquidateBorrowAllowed, redeemVerify, liquidateCalculateAmountSeize, _setPauseGuardian, setting paused, liquidity, getAccountLiquidity, getHypotheticalAccountLiquidity, admin, pendingAdmin, _setPendingAdmin, _acceptAdmin);</p>
-</li>
-<li>
-<p>Test CompoundLens contract functions 测试 CompoundLens 合约函数:<br>
-(cTokenMetadata, cTokenMetadataAll, cTokenBalances, cTokenBalancesAll, cTokenUnderlyingPrice, cTokenUnderlyingPriceAll, getAccountLimits, governance, comp);</p>
-</li>
-<li>
-<p>Test PriceOracleProxy contract functions 测试 PriceOracleProxy 合约函数:<br>
-(constructor, getUnderlyingPrice);</p>
-</li>
-<li>
-<p>Test Timelock contract functions 测试Timelock合约函数:<br>
-(constructor, setDelay, setPendingAdmin, acceptAdmin, queueTransaction, cancelTransaction, executeTransaction, executeTransaction, queue and cancel empty);</p>
-</li>
-<li>
-<p>Test InterestRateModel contract functions 测试 InterestRateModel 合约函数:<br>
-(baseP025-slopeP20, jump rate tests, baseP05-slopeP45, isInterestRateModel, calculates correct borrow value, jump-rate);</p>
-</li>
-<li>
-<p>Test CCompLikeDelegate contract functions  测试 CCompLikeDelegate 合约函数:<br>
-(_delegateCompLikeTo);</p>
-</li>
-<li>
-<p>Test Maximillion contract functions 测试Maximillion合约函数:<br>
-(constructor, repayBehalf);</p>
-</li>
-<li>
-<p>Test DAIInterestRateModelV3 contract functions 测试 DAIInterestRateModelV3 合约函数:<br>
-(constructor, getBorrowRate, getSupplyRate);</p>
-</li>
-<li>
-<p>Test Flywheel contract functions 测试飞轮合约函数:<br>
-(_grantComp, getCompMarkets, _setCompSpeeds, updateCompBorrowIndex, updateCompSupplyIndex, distributeBorrowerComp, distributeSupplierComp, transferComp, claimComp, claimComp batch, harnessRefreshCompSpeeds, harnessSetCompSpeeds, harnessAddCompMarkets, updateContributorRewards, _setContributorCompSpeed).</p>
-</li>
-</ul>
-<h1 id="测试范围-testing-scope">测试范围 (Testing Scope)</h1>
-<p>The scope of testing focused on the following deployed contracts:<br>
-测试范围集中在以下已部署的合约上：</p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1286/1*NAz_LBdDsp1BTirY_JAwbQ.png" alt="" loading="lazy"></figure>
-<h1 id="测试执行-testing-execution">测试执行 (Testing Execution)</h1>
-<p>Prior to deployment and testing, Zpoken made two primary changes to the Compound protocol smart contracts:<br>
-在部署和测试之前，Zpoken 对 Compound 协议智能合约进行了两项主要更改：</p>
-<ul>
-<li>
-<p>The first change was made to the GRACE_PERIOD and MINIMUM_DELAY constants in <a href="https://raw.githubusercontent.com/neon-smart-contract-dev/compound-finance/neon_test/contracts/Timelock.sol">Timelock.sol</a>. The constants influence time limits for function execution in contracts. The changes were required as the Zpoken team conducted tests on live Neon network nodes and were not able to manipulate time and block numbers.<br>
-对 <a href="https://raw.githubusercontent.com/neon-smart-contract-dev/compound-finance/neon_test/contracts/Timelock.sol">Timelock.sol</a> 中的 GRACE_PERIOD 和 MINIMUM_DELAY 常量进行了第一次更改。常量影响合约中函数执行的时间限制。由于 Zpoken 团队在实时 Neon 网络节点上进行了测试，并且无法操纵时间和块数，因此需要进行这些更改。</p>
-</li>
-<li>
-<p>The second change adjusted the address of the external Comp contract in the <a href="https://raw.githubusercontent.com/neon-smart-contract-dev/compound-finance/neon_test/contracts/Comptroller.sol">Comptroller.sol</a> contract (via the function getCompAddress()).<br>
-第二个改动调整了<a href="https://raw.githubusercontent.com/neon-smart-contract-dev/compound-finance/neon_test/contracts/Comptroller.sol">Comptroller.sol</a>中外部Comp合约的地址合约(通过函数 getCompAddress())。</p>
-</li>
-</ul>
-<p>Once the contract adjustments were made, the Zpoken team deployed to Neon Devnet from the repository <a href="https://github.com/neon-smart-contract-dev/compound-finance">neon-smart-contract-dev/compound-finance</a> using the <strong><em>yarn deploy -n neon</em></strong> command.</p>
-<p>合约调整完成后，Zpoken 团队从存储库 <a href="https://github.com/neon-smart-contract-dev/compound-finance">neon-smart-contract-dev/compound-finance</a> 部署到 Neon Devnet ) 使用 <strong><em>yarn deploy -n neon</em></strong> 命令。</p>
-<p>Following the deployment, tests were run from the repository <a href="https://github.com/neon-smart-contract-dev/compound-finance">neon-smart-contract-dev/compound-finance</a>. To run the tests, the local Neon environment first needed to be configured and the private keys added to ~/.neon/neon. The command to run the tests was <strong><em>. start.sh</em></strong></p>
-<p>部署之后，从存储库 <a href="https://github.com/neon-smart-contract-dev/compound-finance">neon-smart-contract-dev/compound-finance</a> 运行测试。要运行测试，首先需要配置本地 Neon 环境并将私钥添加到 ~/.neon/neon。运行测试的命令是 <strong><em>。开始.sh</em></strong></p>
-<p>Tests were also run in the local Neon environment via Docker in the repository <a href="https://github.com/neon-smart-contract-dev/compound-finance">neon-smart-contract-dev/compound-finance</a>. The steps to conduct the test are as follows:</p>
-<p>测试还通过存储库中的 Docker 在本地 Neon 环境中运行 <a href="https://github.com/neon-smart-contract-dev/compound-finance">neon-smart-contract-dev/compound-finance</a>。进行测试的步骤如下：</p>
-<ol>
-<li>
-<p>Run a local Neon node using <a href="https://github.com/neonlabsorg/proxy-model.py">proxy-model.py</a><br>
-使用 <a href="https://github.com/neonlabsorg/proxy-model.py">proxy-model.py</a> 运行本地 Neon 节点</p>
-</li>
-<li>
-<p>Build the docker image using <strong><em>sudo docker build -t compound-protocol</em></strong><br>
-使用 <strong><em>sudo docker build -t Compound-protocol</em></strong> 构建 docker 镜像</p>
-</li>
-<li>
-<p>Run the container using <strong><em>sudo docker run -it — net=host compound-protocol</em></strong><br>
-使用 <strong><em>sudo docker run -it --net=host Compound-protocol</em></strong> 运行容器</p>
-</li>
-</ol>
-<p>Project deliverables include deployment and test scripts, as well as integration and unit tests. Deployment and test scripts can be accessed via the <a href="https://github.com/neon-smart-contract-dev/compound-finance">repository</a>. The integration and unit tests performed are available in a <a href="https://github.com/neon-smart-contract-dev/compound-finance/tree/neon_test/tests">GitHub repository</a> and can be run in a <a href="https://github.com/neon-smart-contract-dev/compound-finance/blob/neon_test/Dockerfile">Docker container</a> to re-play the testing scenarios.</p>
-<p>项目可交付成果包括部署和测试脚本，以及集成和单元测试。可以点击 <a href="https://github.com/neon-smart-contract-dev/compound-finance">repository</a> 访问部署和测试脚本。执行的集成和单元测试可在 <a href="https://github.com/neon-smart-contract-dev/compound-finance/tree/neon_test/tests">GitHub 存储库</a> 中获得，并且可以在 <a href="https://github.com/neon-smart-contract-dev/compound-finance/blob/neon_test/Dockerfile">Docker 容器中运行</a>重现测试场景。</p>
-<h1 id="发现-findings">发现 (Findings)</h1>
-<p>Zpoken successfully deployed and tested the Compound protocol base contracts as well as swap pool. The deployment and associated tests indicated that Neon EVM is running correctly and is fully compatible with Ethereum with regards to running complex dApps like Compound. All integration and unit tests were passed. The contract deployment, logic, math, and functionality are working as expected by the Compound developer team. The only thing that could not be tested was the Compound Web Application due to the lack of the Compound API in public GitHub repositories.</p>
-<p>Zpoken 成功部署并测试了 Compound 协议基础合约以及交换池。部署和相关测试表明，Neon EVM 运行正常，并且在运行 Compound 等复杂 dApp 方面与以太坊完全兼容。所有的集成和单元测试都通过了。合约部署、逻辑、数学和功能都按照 Compound 开发团队的预期工作。由于公共 GitHub 存储库中缺少 Compound API，唯一无法测试的是 Compound Web 应用。</p>
-<p>Zpoken also identified two issues with the Neon platform:</p>
-<p>Zpoken 还发现了 Neon 平台的两个问题：</p>
-<ol>
-<li>
-<p>Deploying and testing the Compound contracts required support for RPC eth_accounts. The method has been implemented but there are errors that Neon Labs is currently addressing.<br>
-部署和测试 Compound 合约需要支持 RPC eth_accounts。该方法已实施，但 Neon Labs 目前正在解决一些错误。</p>
-</li>
-<li>
-<p>The multi-threaded execution of test scripts implemented in the original Compound tests is not supported by the Neon network. The tests were created for <a href="https://trufflesuite.com/ganache/">Ganache</a>, a personal Ethereum blockchain simulator, rather than a live node. Attempting to use multiple threads results in “nonce too low” errors. To avoid the error, each script should be run from a different deployer address. However, in tests that use multiple threads within a single test, the error cannot be avoided. The tests could not be run in these scenarios and were skipped.<br>
-Neon 网络不支持多线程执行原 Compound 测试中实现的测试脚本。这些测试是为个人以太坊区块链模拟器 <a href="https://trufflesuite.com/ganache/">Ganache</a> 而不是实时节点创建的。尝试使用多个线程会导致“nonce too low”错误。为避免该错误，应从不同部署者地址运行每个脚本。但是，在单个测试中使用多个线程的测试中，错误是无法避免的。测试无法在这些场景中运行并被跳过。</p>
-</li>
-</ol>
-<h1 id="结论-conclusion">结论 (Conclusion)</h1>
-<p>It’s time for <strong>YOU</strong> to deploy your own smart contracts to Neon EVM. Make sure to share your Neon EVM feedback with us throughout the process. If you have any issues or need additional guidance, check out our <a href="https://docs.neon-labs.org/">Neon Docs</a> or reach out to a team member on <a href="https://discord.com/invite/9jVYEDVwn8">Discord</a>. We know that you’ll create something great!</p>
-<p>现在是 <strong>您</strong> 将您自己的智能合约部署到 Neon EVM 的时候了。确保在整个过程中与我们分享您对 Neon EVM 的反馈。如果您有任何问题或需要额外指导，请查看我们的 <a href="https://docs.neon-labs.org/">Neon Docs</a> 或通过 <a href="https://discord.com">Discord</a> 联系团队。我们知道你会创造出伟大的东西！</p>
 ]]></content>
     </entry>
 </feed>
