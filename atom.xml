@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-11-23T04:11:36.917Z</updated>
+    <updated>2022-11-28T03:03:00.330Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -20,6 +20,7 @@
 <h1 id="blog">Blog</h1>
 <h2 id="zkevm"><a href="https://chainguys.github.io/post/zkevm/">zkEVM</a></h2>
 <h2 id="scroll简介-愿景和价值观-introducing-scroll-vision-and-values"><a href="https://chainguys.github.io/post/scroll-jian-jie-yuan-jing-he-jie-zhi-guan-introducing-scroll-vision-and-values">Scroll简介-愿景和价值观 (Introducing Scroll - Vision and Values)</a></h2>
+<h2 id="介绍scroll技术原则-introducing-scroll-technical-principles"><a href="https://chainguys.github.io/post/jie-shao-scroll-ji-zhu-yuan-ze-introducing-scroll-technical-principles">介绍Scroll—技术原则 (Introducing Scroll – Technical principles)</a></h2>
 ]]></content>
     </entry>
     <entry>

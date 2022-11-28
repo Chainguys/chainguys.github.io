@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Neon EVM中NEON代币余额存储和维护 (NEON Token Balance Storage and Maintenance in Neon EVM) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1669176660240">
+<link rel="shortcut icon" href="/favicon.ico?v=1669604549187">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -897,6 +897,7 @@
 &lt;h1 id=&#34;blog&#34;&gt;Blog&lt;/h1&gt;
 &lt;h2 id=&#34;zkevm&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/zkevm/&#34;&gt;zkEVM&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;scroll简介-愿景和价值观-introducing-scroll-vision-and-values&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/scroll-jian-jie-yuan-jing-he-jie-zhi-guan-introducing-scroll-vision-and-values&#34;&gt;Scroll简介-愿景和价值观 (Introducing Scroll - Vision and Values)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;介绍scroll技术原则-introducing-scroll-technical-principles&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/jie-shao-scroll-ji-zhu-yuan-ze-introducing-scroll-technical-principles&#34;&gt;介绍Scroll—技术原则 (Introducing Scroll – Technical principles)&lt;/a&gt;&lt;/h2&gt;
 ">Scroll中文材料汇总</a>
       </div>
       
@@ -6547,6 +6548,102 @@ L1 上的数据&lt;/p&gt;
 &lt;p&gt;– Mathieu Baudet, Founder and CEO of Linera&lt;br&gt;
 —Linera 创始人兼首席执行官 Mathieu Baudet&lt;/p&gt;
 ">Linera简介 (Introducing Linera)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/jie-shao-scroll-ji-zhu-yuan-ze-introducing-scroll-technical-principles/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://mirror-media.imgix.net/publication-images/4gYLr9Q8ifQtbQdF3Aa-s.png?height=624&amp;amp;width=1248&amp;amp;h=624&amp;amp;w=1248&amp;amp;auto=compress&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;To scale Ethereum with our zkEVM-based zkRollup, we have designed Scroll based on a set of technical principles which uphold Scroll&#39;s &lt;a href=&#34;https://mirror.xyz/scroll.eth/EYn7ODhQAnNWABwWcu5xZLts_wEXTZAEWyTgExGS1DA&#34;&gt;core values&lt;/a&gt;. This post lays out these principles and how they relate to our broader design for Scroll.&lt;/p&gt;
+&lt;p&gt;为了用基于zkEVM的zkRollup对Ethereum进行扩展，我们根据一套技术原则来设计了Scroll，这些原则也维护了Scroll的&lt;a href=&#34;https://mirror.xyz/scroll.eth/EYn7ODhQAnNWABwWcu5xZLts_wEXTZAEWyTgExGS1DA&#34;&gt;核心价值&lt;/a&gt;。这篇文章阐述了这些原则以及其与我们更广泛意义上的Scroll设计间的关系。&lt;/p&gt;
+&lt;h2 id=&#34;我们的技术原则-our-technical-principles&#34;&gt;我们的技术原则 (Our technical principles)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;1.  确保用户安全 (Ensuring user security)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the context of blockchain scaling solutions, the most important form of security concerns the integrity of user funds and data. Although a scaling solution may offer users additional capabilities, we believe ensuring users maintain access to their funds comes first. For Scroll, this means users should not need to rely on the honesty of Layer 2 nodes for security and can instead take advantage of full Layer 1 security even when transacting on Layer 2. By building on Ethereum according to this principle, we are rooting the security of Scroll in the most secure and decentralized consensus of the Ethereum base layer.&lt;/p&gt;
+&lt;p&gt;在区块链扩容解决方案的背景下，最重要的安全形式会涉及用户资金和数据的完整性。虽然扩容解决方案可以为用户提供额外的“功能”，但我们认为确保用户保持对其资金的访问/获取才是第一位的。对于Scroll来说，这意味着用户不应该需要依赖第2层节点的诚实性来保证安全，即使在第2层进行交易，也是可以利用完整的第1层安全性。根据这一原则在以太坊上进行构建，我们将Scroll的安全性植根于以太坊底层最安全的、去中心化的共识。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. 保持EVM的等价性 (Maintaining EVM-equivalence)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In addition to giving users additional capabilities, an effective Ethereum scaling solution should give users and developers a seamless migration path from existing dapps and developer tooling. We believe maintaining EVM-equivalence is the best way to achieve this. An EVM-equivalent environment behaves exactly the same as the Ethereum Virtual Machine specification in the &lt;a href=&#34;https://ethereum.github.io/yellowpaper/paper.pdf&#34;&gt;Ethereum yellow paper&lt;/a&gt;. This means that users and developers can migrate without additional code changes, expensive audits, or disruptive changes to their development workflow.&lt;/p&gt;
+&lt;p&gt;除了给用户提供额外的“能力”，一个行之有效的以太坊夸荣解决方案，应该给用户和开发者提供一个从现有dapp和开发者工具无缝迁移的路径。我们相信，保持EVM等价性是实现这一目标的最佳途径。一个EVM等价环境的行为与&lt;a href=&#34;https://ethereum.github.io/yellowpaper/paper.pdf&#34;&gt;Ethereum黄皮书&lt;/a&gt;中的Ethereum虚拟机规范完全相同。这意味着，用户和开发人员可以在没有额外的代码修改、昂贵的审计或对其开发工作流程破坏性改变的情况下进行迁移。&lt;/p&gt;
+&lt;p&gt;EVM-equivalence provides substantially stronger guarantees than simple compatibility with the EVM through solutions such as transpilation. Settling for mere compatibility can force users and developers to modify or even completely reimplement large portions of Ethereum’s supporting infrastructure. In addition, maintaining security becomes much more difficult without EVM-equivalence. As a result, to be maximally developer and user friendly, Scroll is EVM-equivalent, not simply EVM-compatible.&lt;/p&gt;
+&lt;p&gt;EVM等价性提供了比通过转译等解决方案来与EVM简单兼容的更强大的保证。仅仅满足于兼容性会迫使用户和开发者修改甚至完全重新实现以太坊的大部分支持性基础设施。此外，如果没有EVM的等价性，维护安全变得更加困难。因此，为了最大限度地方便开发者和用户，Scroll是EVM等价的，而不是简单的EVM兼容。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. 效率 (Efficiency)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In order for users to enjoy a great experience on a Layer 2, we believe that:&lt;/p&gt;
+&lt;p&gt;为了让用户在第二层享受到良好的体验，我们认为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Transaction fees should be low, orders of magnitude cheaper than on the base layer.&lt;br&gt;
+交易费用应该很低，应比基础层便宜好几个数量级。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Users should experience instant pre-confirmation on the Layer 2 and reasonably fast finality on the base layer (Ethereum in our case).&lt;br&gt;
+用户应该在第2层体验到即时的预先确认，并在基础层（在我们的例子中是以太坊）体验到合理的快速最终态。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Though these conditions are easy to satisfy with a centralized operator, in order to preserve security they must continue to hold in a decentralized environment. In the Layer 2 context, we believe Scroll should be as efficient as possible while maintaining user security and decentralization in both Layer 2 and the base layer.&lt;/p&gt;
+&lt;p&gt;虽然这些条件在中心化的运营商那里很容易满足，但为了维护安全，它们必须在去中心化环境中继续保持。在第2层的背景下，我们认为Scroll应该尽可能高效，同时在第2层和基础层保持用户安全和去中心化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. 跨越社区各层的去中心化 (Decentralization across all layers of the community)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Decentralization is a core property of blockchains that is often overlooked or improperly traded for efficiency. We believe it is one of the most valuable aspects of blockchains and ensures that protocols and communities are vibrant and resilient against censorship or coordinated attacks. We consider decentralization across many aspects of Scroll, including node operators, provers, and the community of developers and users. By building in the open with the community and charting a credible path to decentralizing both proving and sequencing, Scroll is committed to ensuring decentralization across all dimensions.&lt;/p&gt;
+&lt;p&gt;去中心化是区块链的一个核心属性，但经常被忽视或不适当地以效率的名义牺牲掉。我们认为它是区块链最有价值的方面之一，并确保协议和社区具有活力，并能抵御审查制度或协同攻击。我们认为去中心化贯穿于Scroll的许多方面，包括节点运营者、证明者以及开发者和用户的社区。通过与社区一起公开建设，并为证明和排序的去中心化制定可靠的路径，Scroll致力于确保所有层面的去中心化。&lt;/p&gt;
+&lt;h2 id=&#34;我们的原则如何融入了scroll的设计-how-our-principles-lead-to-scrolls-design&#34;&gt;我们的原则如何融入了Scroll的设计  (How our principles lead to Scroll&#39;s design)&lt;/h2&gt;
+&lt;p&gt;The major design choices for Scroll are naturally motivated by these technical principles.&lt;/p&gt;
+&lt;p&gt;Scroll的主要设计选择自然而然是由这些技术原则促成的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 安全性和EVM等价性使我们选择了基于zkEVM的zkRollup解决方案 (Security and EVM-equivalence lead us to a zkEVM-based zkRollup solution)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In building Scroll, security is our first priority. In our zkRollup-based design, the integrity of Layer 2 transactions executed on Scroll is guaranteed by succinct zero-knowledge proofs verified in a smart contract on the Ethereum base layer. This makes Scroll transactions as secure as transactions on the Ethereum base layer itself. As a result, users do not have to place trust in any third party to keep their funds safe -- security comes from the security of the Ethereum base layer and the mathematical guarantees of zero-knowledge cryptography. We believe this is the minimal possible set of trust assumptions, which provides the best security for our users.&lt;/p&gt;
+&lt;p&gt;在构建Scroll时，安全是我们的首要任务。在我们基于zkRollup的设计中，在Scroll上执行的第二层交易之完整性，由以太坊底层智能合约中验证的简洁零知识证明来保证。这使得Scroll交易与Ethereum基础层上的交易本身一样安全。因此，用户不必信任任何第三方来保证他们的资金安全—安全性来自于以太坊底层的安全性和零知识密码学的数学保证。我们相信这是一套尽可能少的信任假设，为我们的用户提供最好的安全。&lt;/p&gt;
+&lt;p&gt;After deciding on a zkRollup approach, we had to grapple with making it accessible to users and developers. We quickly realized that achieving EVM-equivalence through a &lt;a href=&#34;https://scroll.io/blog/zkEVM&#34;&gt;zkEVM&lt;/a&gt; was the holy grail. Although breaking equivalence would substantially simplify this task, once we realized building a zkEVM was possible using recent breakthroughs in zero-knowledge cryptography, we decided it was the best choice. By taking on this technically involved and difficult task, Scroll aims to offer the best user and developer experience. Our zkEVM proves the correct execution of native EVM bytecode using succinct ZK proofs, providing guarantees on the state transition function of the EVM itself and allowing Scroll to support Ethereum native developer tooling such as the JSON-RPC interface and transaction format.&lt;/p&gt;
+&lt;p&gt;在决定了zkRollup的方法后，我们不得不努力使其为用户和开发者所接受。我们很快意识到，通过&lt;a href=&#34;https://scroll.io/blog/zkEVM&#34;&gt;zkEVM&lt;/a&gt;实现EVM的等价性是一个圣杯。尽管打破等价关系会大大简化这项任务，但一旦我们意识到利用零知识密码学的最新突破建立一个zkEVM是可能的，我们就决定这是最佳选择。通过承担这项技术上的艰巨任务，Scroll旨在提供最佳的用户和开发者体验。我们的zkEVM使用简洁的ZK证明来证明原生EVM字节码的正确执行，为EVM本身的状态转换提供保证，并允许Scroll支持Ethereum本地开发者工具，如JSON-RPC接口和交易格式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. 去中心化将我们引向一个去中心化的验证者网络 (Decentralization leads us to a decentralized prover network)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In designing our zkEVM, we quickly realized putting the EVM into a ZK proof would result in a large proving overhead due to incompatibility between native fields. To reduce time to finality on Layer 1 resulting from this proving time, we decided to build our Roller network, a permissionless and decentralized network of provers who generate proofs for Scroll Layer 2 blocks.&lt;/p&gt;
+&lt;p&gt;在设计我们的zkEVM时，我们很快意识到将EVM放入ZK证明中会由于原生字段之间的不兼容而导致大量证明开销。为了减少受此影响产生的达到最终态的(额外)时间，我们决定建立我们的Roller网络，一个去审批和去中心化的证明者网络，他们为Scroll的第2层区块产生证明。&lt;/p&gt;
+&lt;p&gt;There are two major technical benefits of our decentralized prover network:&lt;/p&gt;
+&lt;p&gt;我们的去中心化证明者网络有两个主要的技术优势。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;We have designed our proving infrastructure to be highly parallelizable. This means that Scroll is able to massively scale proving compute simply by adding more proving nodes.&lt;/p&gt;
+&lt;p&gt;我们将证明的基础设施设计成高度可并行的。这意味着，Scroll能够通过增加更多的证明节点来大规模地扩展证明计算。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The community will be incentivized to build substantially better hardware solutions and run provers themselves instead of relying only on the Scroll team in a centralized way. To bootstrap in the initial phase of the network, we are building GPU prover solutions internally which we will open-source for public usage. As this matures, we are exploring ASIC and FPGA solutions with several hardware companies. In the long run, we look forward to vibrant competition in this domain and firmly believe that latency and cost for proof generation will decrease exponentially.&lt;br&gt;
+社区将被激励去建立更好的硬件解决方案，并自己运行验证器，而不是仅仅依靠Scroll团队的中心化方式。为了在网络的初始阶段进行引导，我们正在内部建立GPU验证器解决方案，并将其开源供公众使用。随着这一点的成熟，我们正在与一些硬件公司探索ASIC和FPGA解决方案。从长远来看，我们期待这一领域充满活力的竞争，并坚信证明生成的延迟和成本将成倍地减少。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally and most importantly, beginning with this first step of decentralizing the prover is a credible commitment to our principles of community engagement and decentralization. As Scroll approaches mainnet, we plan to also decentralize the sequencer alongside our prover network, providing greater censorship resistance and robustness for the protocol.&lt;/p&gt;
+&lt;p&gt;最后，也是最重要的一点，从将验证器去中心化的第一步开始，就是对我们社区参与和去中心化原则的可靠承诺。随着Scroll接近主网，我们计划将序列器和验证器网络一起去中心化，为协议提供更大的抗审查性和稳健性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. 效率使我们专注于开放研究驱动的创新 (Efficiency leads us to focus on open research-driven innovation)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To make Scroll&#39;s zkEVM practical under the strong constraints imposed by security and decentralization, we leveraged innovative research-driven solutions from the entire community. Our &lt;a href=&#34;https://scroll.io/blog/zkEVM&#34;&gt;zkEVM design&lt;/a&gt; integrates recent breakthroughs in proof systems, proof aggregation, and ZK hardware acceleration, just to name a few. Our open development approach has allowed us to work with the PSE (Privacy and Scaling Explorations) group at the Ethereum Foundation and other collaborators to find the best ideas, and we believe this open-source research approach will produce the best and most efficient solution.&lt;/p&gt;
+&lt;p&gt;为了使Scroll的zkEVM在安全和去中心化的强大约束下保持实用性，我们利用整个社区的创新研究驱动解决方案。我们的&lt;a href=&#34;https://scroll.io/blog/zkEVM&#34;&gt;zkEVM设计&lt;/a&gt;整合了最近在证明系统、证明聚合和ZK硬件加速方面的突破，仅举几例。我们的开放开发方式使我们能够与以太坊基金会的PSE（隐私和扩展探索）小组和其他合作者合作，找到最佳想法，我们相信这种开源的研究方式将产生最佳最有效的解决方案。&lt;/p&gt;
+&lt;p&gt;As we approach the first production version of our zkEVM, we continue to focus on optimization and integrating the newest and best techniques. In this vein, we are currently exploring:&lt;/p&gt;
+&lt;p&gt;随着我们的zkEVM的第一个生产版本的接近，我们继续专注于优化和整合最新和最好的技术。本着这一精神，我们目前正在探索。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;How data blob&#39;s post-danksharding can improve Scroll efficiency.&lt;br&gt;
+data blob的后潮湿分片(post-danksharding)如何提高Scroll的效率&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How to co-optimize Scroll&#39;s zkEVM with new hardware-friendly ZK algorithms&lt;br&gt;
+如何将Scroll的zkEVM与新的硬件友好型ZK算法共同优化。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How to expose new ZK primitives to Layer 2 application developers&lt;br&gt;
+如何将新的ZK原语推送给第二层的应用开发者&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;尝试所有-tying-it-all-together&#34;&gt;📜 尝试所有 (Tying it all together)&lt;/h2&gt;
+&lt;p&gt;The technical principles outlined in this article have led Scroll to a protocol design which aligns with the existing Ethereum community and provides a scaling path for the future billions of users who are not yet on-chain. In the next few weeks, we will release more posts with concrete details about Scroll&#39;s architecture and the corresponding user and developer experience. Stay tuned to learn more about those and sign up to try out our pre-alpha testnet at &lt;a href=&#34;http://signup.scroll.io/&#34;&gt;signup.scroll.io&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;本文概述的技术原则使Scroll的协议设计与现有的以太坊社区保持一致，并为未来尚未上链的数十亿用户提供了扩荣路径。在接下来的几周里，我们将发布更多关于Scroll架构以及相应的用户和开发者体验具体细节的文章。请继续关注，了解更多信息，并在&lt;a href=&#34;http://signup.scroll.io/&#34;&gt;signup.roll.io&lt;/a&gt;注册试用我们的pre-alpha测试网!&lt;/p&gt;
+&lt;p&gt;If our vision of scaling Ethereum in an open and community-driven way resonates with you, we are looking for values-aligned individuals to help Scroll become the most developer- and user-friendly scaling solution for Ethereum.&lt;/p&gt;
+&lt;p&gt;如果我们以开放和社区驱动的方式来扩展以太坊的愿景，与你产生了共鸣，那我们正在寻找价值观一致的人，帮助Scroll成为最适合开发者和用户的以太坊扩展解决方案。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you are a ZK researcher, ZKP, Go or Solidity developer, or a GPU engineer, we are working on many interesting technical challenges at the edge of what’s possible. Come build cutting-edge solutions to these problems with us in the open!&lt;br&gt;
+如果你是ZK研究员、ZKP、Go或Solidity开发人员，或者是GPU工程师，我们正在研究许多有趣的技术挑战，处于可能的前缘。请来和我们一起在开放的环境中建立解决这些问题的最前沿解决方案吧&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you love nurturing and growing ecosystems or communities, we are looking for developer advocates and community organizers to make sure we are building in a community-aligned and user-friendly way.&lt;br&gt;
+如果你喜欢培育和发展生态系统或社区，我们正在寻找开发者倡导者和社区组织者，来确保我们以一种与社区融洽和用户友好的方式进行建设。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To learn more about these roles and about Scroll, check out our &lt;a href=&#34;https://scroll.io/&#34;&gt;website&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/Scroll_ZKP&#34;&gt;Twitter&lt;/a&gt;, &lt;a href=&#34;https://discord.gg/CNzNVt4Feu&#34;&gt;Discord&lt;/a&gt;, or &lt;a href=&#34;https://jobs.lever.co/ScrollFoundation&#34;&gt;jobs page&lt;/a&gt;. If you want to get straight to the code and build with us, you can find our repos at &lt;a href=&#34;https://github.com/scroll-tech&#34;&gt;github.com/scroll-tech&lt;/a&gt; and &lt;a href=&#34;https://github.com/privacy-scaling-explorations/zkevm-circuits&#34;&gt;github.com/privacy-scaling-explorations/zkevm-circuits&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;要了解更多关于这些角色和Scroll的信息，请查看我们的&lt;a href=&#34;https://scroll.io/&#34;&gt;网站&lt;/a&gt;、&lt;a href=&#34;https://twitter.com/Scroll_ZKP&#34;&gt;Twitter&lt;/a&gt;、&lt;a href=&#34;https://discord.gg/CNzNVt4Feu&#34;&gt;Discord&lt;/a&gt;，或&lt;a href=&#34;https://jobs.lever.co/ScrollFoundation&#34;&gt;工作机会页面&lt;/a&gt;。如果你想直接接触代码并与我们一起构建，你可以在&lt;a href=&#34;https://github.com/scroll-tech&#34;&gt;github.com/scroll-tech&lt;/a&gt;和&lt;a href=&#34;https://github.com/privacy-scaling-explorations/zkevm-circuits&#34;&gt;github.com/privacy-scaling-explorations/zkevm-circuits&lt;/a&gt;找到我们的资料库。&lt;/p&gt;
+">介绍Scroll—技术原则 (Introducing Scroll – Technical principles)</a>
       </div>
       
       <div class="item">
