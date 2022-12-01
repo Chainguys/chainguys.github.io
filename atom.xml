@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-11-28T03:03:00.330Z</updated>
+    <updated>2022-12-01T02:49:00.952Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,230 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Fuel大使计划简介 (Introducing the Fuel Ambassador Program)]]></title>
+        <id>https://chainguys.github.io/post/fuel-da-shi-ji-hua-jian-jie-introducing-the-fuel-ambassador-program/</id>
+        <link href="https://chainguys.github.io/post/fuel-da-shi-ji-hua-jian-jie-introducing-the-fuel-ambassador-program/">
+        </link>
+        <updated>2022-12-29T01:53:32.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/11/Ambassadors-ProgramV8.png" alt="Introducing the Fuel Ambassador Program" loading="lazy"></figure>
+<p>Join us on our mission to grow a passionate community of developers and advocates that want to bring true scalability to the Ethereum ecosystem, and beyond.</p>
+<p>加入我们的使命吧：发展一个热情满满的开发者和推广者社区，他们希望为以太坊生态系统及其他生态系统带来真正的可扩展性，甚至更多。</p>
+<hr>
+<p>We are extremely proud of how the <strong><a href="https://twitter.com/fuellabs_">Fuel</a></strong> and <strong><a href="https://twitter.com/SwayLang">Sway</a></strong> communities have grown organically so far with such a high level of passion and engagement. This is why today, we are thrilled to announce the launch of the <strong>Fuel Ambassador Program</strong>. Being a Fuel Ambassador means helping the Fuel community to learn, understand and spread our vision to the world.</p>
+<p>我们对 <strong><a href="https://twitter.com/fuellabs_">Fuel</a></strong> 和 <strong><a href="https://twitter.com/SwayLang">Sway</a></strong> 社区迄今为止以如此高的热情和参与度的有机/自然发展，感到非常自豪。这就是为什么今天，我们很高兴地宣布启动<strong>Fuel大使计划</strong>。成为 Fuel 大使意味着帮助 Fuel 社区学习、理解并将我们的愿景传播到世界。</p>
+<p>Join us on our mission to grow a passionate community of developers and advocates that want to bring true scalability to the Ethereum ecosystem, and beyond.</p>
+<p>加入我们的使命吧：发展一个热情满满的开发者和推广者社区，他们希望为以太坊生态系统及其他生态系统带来真正的可扩展性，甚至更多。</p>
+<h2 id="谁可以加入-who-can-join">谁可以加入 (Who can join?)</h2>
+<p>We will initially accept 10 applicants to join the journey as the first group of Fuel Ambassadors with more ambassadors to be added in the future. You can apply to the Fuel Ambassador Program if:</p>
+<p>我们最初将接受 10 位申请者作为第一批 Fuel 大使加入旅程，未来还会有更多大使加入。如果满足以下条件，您可以申请加入Fuel大使计划：</p>
+<ul>
+<li>
+<p>You are a passionate developer who wants to be on the cutting edge of the future of blockchains by educating more people about Fuel and Sway.<br>
+您是一位充满激情的开发人员，希望通过向更多人介绍 Fuel 和 Sway 来走在区块链未来的前沿。</p>
+</li>
+<li>
+<p>You’re not a developer but have a deep understanding of the blockchain paradigm and are enthusiastic about the future of the fastest modular execution layer.<br>
+你不是开发人员，但对区块链范式有深刻的理解，并对最快的模块化执行层的未来充满热情。</p>
+</li>
+<li>
+<p>You are patient and a good communicator.<br>
+你很有耐心，善于沟通。</p>
+</li>
+<li>
+<p>You don’t live in an OFAC country.<br>
+您不住在 OFAC 国家/地区。</p>
+</li>
+</ul>
+<blockquote>
+<p>Note that all ambassadors will be subject to KYC checks in order to receive monetary rewards.</p>
+<p>请注意，所有大使都需要接受 KYC 检查才能获得金钱奖励。</p>
+</blockquote>
+<h2 id="该计划的结构如何how-is-the-program-structured">该计划的结构如何？(How is the Program structured?)</h2>
+<p>The program is tier-based (5 tiers in total), the higher you get, the more rewards and responsibilities you’ll get.</p>
+<p>该计划是基于等级的（总共 5 个等级），您获得的等级越高，您获得的奖励和责任就越多。</p>
+<p>As an ambassador, you’ll have several tasks to complete in order to be rewarded each month (translating content, moderating chats, creating tutorials, etc.).</p>
+<p>作为大使，您需要完成几项任务才能每月获得奖励（翻译内容、管理聊天、创建教程等）。</p>
+<p>After each quarter, the highest-ranking ambassadors will be promoted to the next tier.</p>
+<p>每个季度结束后，排名最高的大使将晋升到下一个级别。</p>
+<blockquote>
+<p>Any enrolment in the program or promotion to the next tier can be revoked at any time if you don't live up to the program's expectations or don’t respect other members.</p>
+<p>如果您没有达到该计划的期望或不尊重其他成员，则回被随时取消任何注册该计划或升级到下一级的资格。</p>
+</blockquote>
+<h2 id="现在注册-register-now">现在注册 (Register now)</h2>
+<blockquote>
+<p>Registrations will be open from today (November 29th) until December 4th at 6 pm CET.</p>
+<p>注册将于今天（11 月 29 日）至 12 月 4 日欧洲中部时间下午 6 点开放。</p>
+</blockquote>
+<p><a href="https://1v1l4ftv9zy.typeform.com/FuelAmbassadors">https://1v1l4ftv9zy.typeform.com/FuelAmbassadors</a></p>
+<hr>
+<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
+<ul>
+<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
+<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
+<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
+<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
+</ul>
+<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
+<p><a href="https://www.fuel.network/">Fuel</a> is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
+<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制**。</p>
+<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
+<ul>
+<li>
+<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
+<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
+</li>
+<li>
+<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
+<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
+</li>
+<li>
+<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
+<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Altlayer 的 L2 内幕-2022 年 11 月 (Altlayer's L2 Lowdown, November 2022)]]></title>
+        <id>https://chainguys.github.io/post/altlayer-de-l2-nei-mu-2022-nian-11-yue-altlayers-l2-lowdown-november-2022/</id>
+        <link href="https://chainguys.github.io/post/altlayer-de-l2-nei-mu-2022-nian-11-yue-altlayers-l2-lowdown-november-2022/">
+        </link>
+        <updated>2022-11-28T02:35:42.000Z</updated>
+        <content type="html"><![CDATA[<p>原文：<a href="https://twitter.com/alt_layer/status/1597101038620012545">https://twitter.com/alt_layer/status/1597101038620012545</a></p>
+<p>1/7 Altlayer's L2 Lowdown, November 2022 A snapshot of the<a href="https://twitter.com/ethereum">@Ethereum</a><br>
+based L2 rollups, scalability and zk space.</p>
+<p>Altlayer 的 L2内幕，2022 年 11 月快照：基于 <a href="https://twitter.com/ethereum">@Ethereum</a> 的 L2 汇总、可扩展性和 zk 空间</p>
+<p>2/7 <a href="https://twitter.com/ethereum">@Ethereum</a>is officially profitable, with L2 transactions surpassing L1 transactions again. <a href="https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDSh1R9IHA">https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDSh1R9IHA…</a></p>
+<p><a href="https://twitter.com/ethereum">@Ethereum</a>正式盈利，L2交易再次超过L1交易。 <a href="https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDS">https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDSh1R9IHA…</a></p>
+<p><a href="https://twitter.com/zksync">@zksync</a>to support<a href="https://twitter.com/RNS_global">@RNS_global</a>on-Chain KYC solution. <a href="https://t.co/XH7m2DoiST">https://prnewswire.com/news-releases/zksync-to-support-rnsids-on-chain-kyc-solution-301684486.html</a></p>
+<p><a href="https://twitter.com/zksync">@zksync</a>支持<a href="https://twitter.com/RNS_global">@RNS_global</a>链上KYC解决方案。 <a href="https://t.co/XH7m2DoiST">https://prnewswire.com/news-releases/zksync-to-support-rnsids-on-chain-kyc-solution-301684486.html</a></p>
+ <iframe  
+ src="https://twitter.com/CryptoGucci/status/1594880262784942080"  
+ frameborder=0  
+ allowfullscreen>
+ </iframe>
+————————————————
+<p>3/7 <a href="https://twitter.com/the_matter_labs">@the_matter_labs</a>raises $200M to grow team behind Ethereum scaling solution: <a href="https://t.co/HbbOhFTbcE">https://fortune.com/crypto/2022/11/16/matter-labs-raises-200-million-ethereum-scaling-solution/…</a></p>
+<p><a href="https://twitter.com/the_matter_labs">@the_matter_labs</a> 筹集了 2 亿美元，来发展以太坊扩展解决方案背后的团队：<a href="https://t.co/HbbOhFTbcE">https://fortune.com/crypto/2022/11/16/matter-labs- raises-200-million-ethereum-scaling-solution/…</a></p>
+<p><a href="https://twitter.com/GameStop">@GameStop</a>Wallet now has L1 and L2 support. It harnesses the power of zk-rollup - an Ethereum Layer 2 scaling protocol. <a href="https://t.co/UjgOHrb0cX">https://shacknews.com/article/133230/gamestop-wallet-ios-release</a></p>
+<p><a href="https://twitter.com/GameStop">@GameStop</a>钱包现在支持 L1 和 L2。它利用了 zk-rollup 的力量—一种以太坊第 2 层扩展协议。 <a href="https://t.co/UjgOHrb0cX">https://shacknews.com/article/133230/gamestop-wallet-ios-release</a></p>
+<p>4/7<a href="https://twitter.com/MakerDAO">@MakerDAO</a>works on its Layer2 proposition and building up rollup bundles on Ethereum. <a href="https://t.co/0Pv79iPONj">https://thedefiant.io/makerdao-transfer-feature…</a> Want to read about zkEVM’s scalability thesis for the next billion users?</p>
+<p><a href="https://twitter.com/MakerDAO">@MakerDAO</a>致力于其 Layer2 提议并在以太坊上构建汇总包。 <a href="https://t.co/0Pv79iPONj">https://thedefiant.io/makerdao-transfer-feature…</a> 想了解 zkEVM 针对下一个十亿用户的可扩展性论文吗？</p>
+ <iframe  
+ src="https://twitter.com/pseudotheos/status/1594799592427507712"  
+ frameborder=0  
+ allowfullscreen>
+ </iframe>
+<p>5/7<a href="https://twitter.com/zksync">@zksync</a>successfully completes Layer1 audit <a href="https://twitter.com/zksync/status/1595440748215685120">https://twitter.com/zksync/status/1595440748215685120…</a> Blockchain veteran Amrit Kumar appointed COO of Altlayer<a href="https://twitter.com/maqstik">@maqstik</a><a href="https://twitter.com/CoinDesk">@CoinDesk</a></p>
+<p><a href="https://twitter.com/zksync">@zksync</a> 成功完成第 1 层审计 <a href="https://twitter.com/zksync/status/1595440748215685120">https://twitter.com/zksync/status/1595440748215685120…</a>区块链资深人士 Amrit Kumar 被任命为 Altlayer 的首席运营官<a href="https://twitter.com/maqstik">@maqstik</a><a href="https://twitter.com/CoinDesk">@CoinDesk</a></p>
+<p><a href="https://t.co/J3betjRalt">https://coindesk.com/business/2022/11/15/blockchain-company-altlayer-appoints-amrit-kumar-as-coo/</a></p>
+ <iframe  
+ src="https://twitter.com/zksync/status/1595440748215685120"  
+ frameborder=0  
+ allowfullscreen>
+ </iframe>
+<p>6/7 Oh Ottie! NFT Collection to exhibit to power of rollups for NFT Minting <a href="https://t.co/gBSk4evCIF">https://blog.altlayer.io/altlayer-to-drop-2000-delightful-mascot-iterations-as-part-of-an-oh-ottie-d9649bb910f4…</a> &quot;We should all be paying more attention to hardening rollups with multi-proofs&quot; according to<a href="https://twitter.com/VitalikButerin">@VitalikButerin</a><br>
+<a href="https://twitter.com/Forkast_News">@Forkast_News</a></p>
+<p>Oh Ottie!  NFT Collection 展示 NFT 铸币汇总的力量 <a href="https://t.co/gBSk4evCIF">https://blog.altlayer.io/altlayer-to-drop-2000-delightful-mascot-iterations-as-part-of-an-oh-ottie-d9649bb910f4… </a> <a href="https://twitter.com/VitalikButerin">@VitalikButerin</a> 表示，“我们都应该更加关注通过多重证明强化汇总”</p>
+<p><a href="https://t.co/xrDXcatscp">https://forkast.news/headlines/vitalik-buterin-sounds-warning-over-risks-of-defi/</a></p>
+<p>7/7<a href="https://twitter.com/paradigm">@paradigm</a>building Rust Ethereum Execution Layer <a href="https://twitter.com/gakonst/status/1595648232226291712">https://twitter.com/gakonst/status/1595648232226291712…</a></p>
+<p><a href="https://twitter.com/paradigm">@paradigm</a>构建 Rust 以太坊执行层 <a href="https://twitter.com/gakonst/status/1595648232226291712">https://twitter.com/gakonst/status/1595648232226291712…</a></p>
+<p><a href="https://twitter.com/eigenlayer">@eigenlayer</a>: Bringing Ethereum-Level Trust to Middleware <a href="https://twitter.com/Elegy4TheArctic/status/1595080179659210753">https://twitter.com/Elegy4TheArctic/status/1595080179659210753…</a></p>
+<p><a href="https://twitter.com/eigenlayer">@eigenlayer</a>：将以太坊级信任引入中间件<a href="https://twitter.com/Elegy4TheArctic/%E7%8A%B6%E6%80%81/1595080179659210753">https://twitter.com/Elegy4TheArctic/status/1595080179659210753…</a></p>
+<p>Thesis on why <a href="https://twitter.com/hashtag/EVM?src=hashtag_click">#EVM</a> compatibility will be crucial for any protocol <a href="https://twitter.com/toghrulmaharram/status/1595503593192362007">https://twitter.com/toghrulmaharram/status/1595503593192362007…</a> Until next time! !</p>
+<p>关于为什么 <a href="https://twitter.com/hashtag/EVM?src=hashtag_click">#EVM</a> 兼容性对任何协议都至关重要的论文 [https://twitter.com/toghrulmaharram/status/1595503593192362007…](https: //twitter.com/toghrulmaharram/status/1595503593192362007) 下次见！ ！</p>
+ <iframe  
+ src="https://twitter.com/toghrulmaharram/status/1595503593192362007"  
+ frameborder=0  
+ allowfullscreen>
+ </iframe>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[认识 Akord：基于区块链的永久存储和发布协议 (Meet Akord：the blockchain-based permanent storage and publishing protocol)]]></title>
+        <id>https://chainguys.github.io/post/ren-shi-akordji-yu-qu-kuai-lian-de-yong-jiu-cun-chu-he-fa-bu-xie-yi-meet-akordthe-blockchain-based-permanent-storage-and-publishing-protocol/</id>
+        <link href="https://chainguys.github.io/post/ren-shi-akordji-yu-qu-kuai-lian-de-yong-jiu-cun-chu-he-fa-bu-xie-yi-meet-akordthe-blockchain-based-permanent-storage-and-publishing-protocol/">
+        </link>
+        <updated>2022-11-26T13:22:26.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://res.cloudinary.com/coinpaper/f_auto,c_limit,w_1920,q_100/Akord_blockchain_234b87a197" alt="" loading="lazy"></figure>
+<p>原文：<a href="https://coinpaper.com/715/meet-akord-the-blockchain-based-permanent-storage-and-publishing-protocol">Meet Akord: the blockchain-based permanent storage and publishing protocol</a><br>
+by Taisiia Prosvirova</p>
+<p><strong>“We believe privacy is a fundamental human right”: Akord co-founder Richard Caetano and cryptography engineer Weronika Kolodziejak on the future of data storage and privacy in Web3.</strong></p>
+<p><strong>“我们相信隐私是一项基本人权”：Akord 联合创始人 Richard Caetano 和密码学工程师 Weronika Kolodziejak 谈 Web3 中数据存储和隐私的未来。</strong></p>
+<hr>
+<p>Web2 platforms changed how we interact with our world — at the cost of our personal data being collected, analyzed, and used to influence our decisions. Now, Web3 aims to solve this issue by returning content rights to authors — and <a href="https://akord.com/">Akord</a> is ready to be part of the change.</p>
+<p>Web2平台改变了我们与世界的互动方式--代价是我们的个人数据被收集、分析，并被用来影响决策。现在，Web3旨在通过将内容权利归还给作者来解决这个问题--而<a href="https://akord.com/">Akord</a>已经准备好成为变革的一部分。</p>
+<p>“Nowadays, we produce petabytes of data but are very limited by centralized control of it. What we want to create is proper incentives for people with surplus storage to store data in perpetuity. We aim to empower data ownership and protect users’ privacy by bringing their content to <a href="https://www.arweave.org/">Arweave</a> blockchain, where it can be preserved indefinitely for a one-time fee,” says <a href="https://twitter.com/arsydotorg">Richard Caetano</a>, CEO and co-founder of Akord, a decentralized data storage protocol with private messaging.</p>
+<p>&quot;如今，我们产生拍字节级别(1PB=1024TB)的数据，但由于对其进行中心化控制而受到很大限制。我们想创造的是适当的激励措施，让拥有剩余存储空间的人永久地存储数据。Akord公司首席执行官兼联合创始人<a href="https://twitter.com/arsydotorg">Richard Caetano</a>说：&quot;我们的目标是赋予数据所有权并保护用户的隐私，把他们的内容带到<a href="https://www.arweave.org/">Arweave</a>区块链上，只要一次性付费就可以无限期地保存下来。</p>
+<p><em>This interview has been condensed and lightly edited for clarity.</em><br>
+为清晰起见，本采访经过了浓缩和轻度编辑。</p>
+<p><strong>So Akord is a protocol built on top of Arweave blockchain, which, in turn, consists of permaweb and blockweave. Can you explain it all to me like I’m five years old?</strong></p>
+<p><strong>那么，Akord是一个建立在Arweave区块链之上的协议，而Arweave又由permaweb和blockweave组成。你能像我五岁时那样向我解释这一切吗</strong>？</p>
+<p>Richard: Sure. To begin with, we have Arweave, which is a unique blockchain where people can store data permanently for a one-time fee. The users pay for storage with AR tokens just once, upfront, and the network is incentivized to keep their data stored for hundreds of years. Think of Arweave as a permanent hard drive that everybody can write to and read from — and Akord is a protocol layer built on top of that hard drive. Akord allows users to create special containers for their data — called vaults — and exchange encrypted messages with other network peers.</p>
+<p>Richard: 当然。首先，我们有Arweave，这是一个独特的区块链，人们可以通过一次付费来永久地存储数据。用户只需在前期用AR代币支付一次存储费用，网络就会受到激励，将他们的数据存储数百年。把Arweave想象成一个永久的硬盘，每个人都可以写入和读出—而Akord是建立在这个硬盘之上的协议层。Akord允许用户为他们的数据创建特殊的容器—称为保险库/资料库/存储库—并与其他网络对等者交换加密信息。</p>
+<p><a href="https://twitter.com/w_kolodziejak">Weronika</a>: So to clarify, the blockweave, Arweave’s core technology, is a blockchain-like structure where every block is linked not only to the last previous block but also to a random block from the past, thus inciting miners to archive as much data as possible — and that’s why it’s called, well, a weave. While permaweb is basically a network of applications and documents that sits on top of Arweave. I think it’s a very brilliant design</p>
+<p><a href="https://twitter.com/w_kolodziejak">Weronika</a>: 所以澄清一下，Arweave的核心技术blockweave，是一个类似区块链的结构，每个区块不仅与上一个区块相连，而且与过去的一个随机区块相连，从而鼓励矿工尽可能多地存档数据—这就是为什么它被称为，嗯，weave。而permaweb基本上是一个应用和文件的网络，位于Arweave的顶部。我认为这是一个非常出色的设计</p>
+<p><strong>You mentioned that the data is stored for “hundreds of years” — for how long exactly? I remember there was a big discussion about</strong> <a href="https://coinpaper.com/416/what-is-ethereum-name-service"><strong>ENS</strong></a> <strong>domains’ recurring fees and I’m curious to hear how Akord plans to sustain incentives over time, especially since you mentioned that users pay just once.</strong></p>
+<p><strong>你提到数据被储存 &quot;数百年&quot;—具体有多长时间？我记得有一个关于</strong><a href="https://coinpaper.com/416/what-is-ethereum-name-service"><strong>ENS</strong></a><strong>域名日常费用的大讨论，我很想知道Akord计划如何长期维持激励机制，尤其是你提到用户只需支付一次。</strong></p>
+<p>Richard: What makes us different from other traditional blockchains is that Arweave was specifically designed for data storage. It incentivizes nodes to store data by setting up a crypto endowment — basically a fund that lives on chain. When users purchase storage, their one-time payments are pooled together in this fund, and its value increases over time due to token appreciation. Meanwhile, the cost of storage is steadily decreasing as new advances in technology are embraced.</p>
+<p>Richard: 我们与其他传统区块链的不同之处在于，Arweave是专门为数据存储设计的。它通过设立一个加密货币捐赠基金—基本上是一个生活在链上的基金，来激励节点存储数据。当用户购买存储时，他们的一次性付款被汇集到这个基金中，由于代币升值，其价值随着时间的推移而增加。同时，随着技术的新进展被接受，存储的成本也在稳步下降。</p>
+<p>Now imagine two curves, one is going up as the value of endowment increases and the other is going down as new technologies are lowering the cost of storage. The spread between these two curves is where we’re able to create an incentive for nodes to keep storing data.</p>
+<p>现在想象一下两条曲线，一条随着捐赠价值的增加而上升，另一条随着新技术降低存储成本而下降。这两条曲线之间的差额就是我们能够为节点创造一个激励机制来持续存储数据的地方。</p>
+<p>I can imagine that in the future, there will be much more efficient ways to store data than current magnetic hard drives. There might be lasers that write data into crystals or something else, completely unimaginable for modern people to conceive of today. Regardless of what the technology will look like, the next generation of data storage will be much cheaper and more resilient.</p>
+<p>我可以想象，在未来，将有比目前的磁盘更有效的方法来存储数据。可能会有激光将数据写入晶体或其他东西，对于今天的现代人来说完全无法想象。不管技术会是什么样子，下一代的数据存储将更便宜，更有弹性。</p>
+<p><strong>For now, it looks to me like Akord’s tokenomics lies on two assumptions: that token will steadily appreciate in value and that the price of storage space will decrease over time, while the demand for storage will remain the same. I’m convinced that the more data storage capacity improves, the more storage space our data consumes. Correct me if I’m wrong.</strong></p>
+<p><strong>目前，在我看来，Akord的tokenomics在于两个假设：token将稳步升值；存储空间的价格将随着时间的推移而降低，而对存储的需求将保持不变。我相信，数据存储能力越是提高，我们的数据所消耗的存储空间就越多。如果我错了，请纠正我。</strong></p>
+<p>Richard: Well, what I hear is that there are two questions. The first one is about the viability of our token model — and that’s a valid critique. And the second one is similar to a highway problem — the one that asserts that car traffic always costumes extra lanes — but in relation to data storage.</p>
+<p>Richard: 好，我所听到的是两个问题。第一个是关于我们代币模式的可行性—这是一个合理的质疑。而第二个问题类似于高速公路问题—断言汽车交通总是需要额外的车道—但与数据存储有关。</p>
+<p>So, starting with your first question regarding tokenomics. We could say, blockchains never die — they may become a zombie at some point when nobody uses the network, while nodes are keeping it running. If our project is useful, if there is a demand for permanent storage — then this would be the response to your criticism. If Akord provides value to its users and creates proper incentives, we are going to eventually find ourselves in a virtuous cycle of rising demand.</p>
+<p>那么，从你关于tokenomics的第一个问题开始。我们可以说，区块链永远不会死—没有人使用网络时，它们可能会在某个时候变成僵尸，而节点却在维持其运行。如果我们的项目是有用的，如果对永久存储有需求—那么这将是对你的批评的回应。如果Akord为其用户提供价值，并创造适当的激励，我们最终会发现自己处于需求上升的良性循环中。</p>
+<p>Obviously, the opposite can happen as well. If what we’re doing is worthless and people would rather pay Amazon to store their data, then our project will become a zombie — that’s it. Currently, Arweave’s endowment can pay for two to three hundred years of storage — under conservative estimates that the price of token will remain the same.</p>
+<p>很明显，相反的情况也会发生。如果我们所做的事情毫无价值，人们宁愿付钱给亚马逊来存储其数据，那么我们的项目将成为僵尸—就是这样。目前，Arweave的捐赠可以支付两到三百年的存储费用—根据保守估计，即代币的价格将保持不变。</p>
+<p>So coming to your second question, what makes Arweave different from other traditional blockchains is its unique Proof-of-Access consensus model. Your ability to earn rewards from the network is not based on how much computation you perform or how many tokens you own. It's based solely on how much data you're storing on the network — and you need to be able to create a proof of that data to add new blocks. Every node is incentivized to store random blocks and store as much data as possible. So, the highway problem becomes a theoretical problem that may not really apply to the network — the greater number of nodes simply means that more copies of data are stored in different sets on different nodes.</p>
+<p>那么来到你的第二个问题，Arweave与其他传统区块链的不同之处在于其独特的访问证明共识模型。你从网络中获得奖励的能力，不是基于你进行了多少计算或你拥有多少代币。它完全基于你在网络上存储了多少数据—而且你需要能够创建一个数据证明来增加新区块。每个节点都被激励去存储随机区块并尽可能多地存储数据。因此，高速公路问题变成了一个理论上的问题，可能并不真正适用于网络—更多的节点只是意味着更多的数据副本被存储在不同的节点上的不同集合而已。</p>
+<p><strong>How did you come up with the idea of founding Akord?</strong></p>
+<p>**你是怎么想到要创办Akord的？</p>
+<p>Richard: Before starting Akord, I co-founded Stratum, a blockchain company focused on enterprise traceability, where I was responsible for the vision and the research involving cryptography. But then Pascal [Barry] and I left the company to work on Akord, we built on the principle of “privacy as a fundamental human right”. We started it right at the beginning of the pandemic, in March 2020.</p>
+<p>Richard: 在创办Akord之前，我共同创办了Stratum公司，这是一家专注于企业追踪的区块链公司，我负责愿景和涉及密码学的研究。但后来帕斯卡尔[巴里]和我离开了公司，从事Akord的工作，我们建立在 &quot;隐私是一项基本人权 &quot;的原则之上。我们在大流行病开始时就开动了，在2020年3月。</p>
+<p>At the very beginning, we were lucky to meet Weronika, who brought cryptography knowledge and expertise. It was a match and we started building our protocol around the concept of secure storage vaults in zero-knowledge. We were able to deliver a working protocol quite early while waiting for the right blockchain to come. One year later, we discovered Arweave that was a perfect fit for Akord, and that’s how all it started.</p>
+<p>在一开始，我们很幸运地遇到了Weronika，她带来了密码学知识和专业知识。这是一个天作之合，我们开始围绕零知识的安全存储库的概念建立我们的协议。在等待合适区块链到来的同时，我们能够很早就提供一个可以使用的协议。一年后，我们发现Arweave与Akord完美契合，这就是一切的开始。</p>
+<p>Weronika: But yeah, privacy has always been the core of our mission. We were really inspired by Signal’s approach to end-to-end encryption and wanted to create something similar but on a blockchain.</p>
+<p>Weronika：是的，隐私一直是我们的核心任务。我们真的受到了Signal端到端加密方法的启发，想在区块链上创建类似的东西。</p>
+<p><strong>How closely are you affiliated with Arweave? Your website states that they participated in your funding round</strong></p>
+<p><strong>你们与Arweave的关系有多密切？你们的网站上说，他们参与了你们的融资</strong>。</p>
+<p>Richard: Well, we were part of their startup incubator program, The Open Web Foundry, that encourages founders to get on board and adopt Arweave as a data layer for their projects. And when we did our fundraising, they decided to invest in Akord as well, because they saw the value our protocol brings to the ecosystem.</p>
+<p>理查德：嗯，我们是他们的创业孵化器项目的一部分，The Open Web Foundry，鼓励创始人加入并采用Arweave作为其项目的数据层。当我们进行筹资时，他们决定也投资于Akord，因为他们看到了我们协议为生态系统带来的价值。</p>
+<p>So, we went through the program, became friends with Arweave’s team and other projects in the ecosystem — and the cross-pollination and feedback from other builders has been very beneficial. I think one of the things that we like about Arweave is how the ecosystem is constructed. It's a very decentralized structure, so there’s no place for any kind of dictatorship or rigid hierarchy.</p>
+<p>因此，我们通过该计划，与Arweave的团队和生态系统中的其他项目成为朋友—而来自其他建设者的交叉和反馈是非常有益的。我认为我们喜欢Arweave的原因之一就是它的生态系统构建。它是一个非常去中心化的结构，所以没有任何形式的独裁或僵化的等级制度。</p>
+<p><strong>You’ve mentioned that you became close with other Arweave projects as well. Can you name some that are, in your opinion, worth keeping an eye on?</strong></p>
+<p><strong>你曾提到你与其他Arweave项目也变得很密切。你能说出一些在你看来值得关注的项目吗</strong>？</p>
+<p>Weronika: Currently, we are working closely with <a href="https://redstone.finance/">RedStone</a> that brings the smart contract functionality — the <a href="https://twitter.com/warp_contracts">Warp contracts</a> — to Arweave. Then there are <a href="https://everpay.io/">everPay</a>, a payment protocol that uploads the digital asset ledger of financial institutions to Arweave, and <a href="https://bundlr.network/">Bundlr</a>, a decentralized storage scaling platform.</p>
+<p>Weronika: 目前，我们正在与<a href="https://redstone.finance/">RedStone</a>紧密合作，它将智能合约功能--<a href="https://twitter.com/warp_contracts">封装合约(Warp contracts)</a> —带到了Arweave。然后是<a href="https://everpay.io/">everPay</a>，一个将金融机构数字资产分类账上传到Arweave的支付协议，以及<a href="https://bundlr.network/">Bundlr</a>，一个去中心化的存储扩展平台。</p>
+<p>I also remember there is an interesting <a href="https://arweave.news/tag/ukraine/">project</a> that collects and uploads to Arweave all information surrounding the Ukraine conflict. I think they preserved terabytes of data so far.</p>
+<p>我还记得有一个有趣的<a href="https://arweave.news/tag/ukraine/">项目</a>，收集并上传到Arweave的所有围绕乌克兰冲突的信息。我想他们到目前为止保存了数兆字节的数据。</p>
+<p><strong>“The Web2 model is broken,” your website reads. How can Web3 fix it, and what is Akord’s role in it?</strong></p>
+<p>**&quot;Web2模式已经坏了，&quot;你的网站这样写道。Web3如何修复它，Akord在其中的作用是什么？</p>
+<p>Richard: Well, that's a good question. So what exactly do we mean by Web2 model? Web1 was about static contents, where everyone can upload and access data. Web2 brought the read/write functionality, and that’s when dynamic websites and social media came into play. As users interact with these services, they [collectively] produce massive amounts of data, which is basically “the new oil” and is worth a lot of money. And the main issue of Web2 platforms is the ownership of this data. When platforms own it, it’s the customer who becomes the product — and ultimately falls victim to data exploitation.</p>
+<p>Richard: 嗯，这是个好问题。那么，我们所说的Web2模式到底是什么意思？Web1是关于静态内容，每个人都可以上传和访问数据。Web2带来了读/写功能，这时动态网站和社交媒体才开始发挥作用。当用户与这些服务互动时，他们[集体]产生了大量的数据，这些数据基本上是 &quot;新石油&quot;，价值不菲。而Web2平台的主要问题是这些数据的所有权。当平台拥有这些数据时，客户就成了产品—并最终成为数据剥削的受害者。</p>
+<p>And Web3 aims to solve this issue by giving users control over their data, so everyone can own a piece of Web3 space. In turn, data ownership is closely connected to privacy, and the first thing I think about when I hear about privacy is consent. The user should get to decide who can see their data and who can’t. And that is what excites me most about Akord — along with Arweave, it provides a foundational layer for Web3 where you pay for your space with tokens and own it forever. And you get to choose who you allow to have access to your data.</p>
+<p>而Web3旨在通过让用户控制他们的数据来解决这个问题，所以每个人都可以拥有一块Web3的空间。反过来，数据所有权与隐私密切相关，而当我听到隐私时，我首先想到的是同意/授权。用户应该能够决定谁能看到他们的数据，谁不能。这就是Akord最让我兴奋的地方—与Arweave一起，它为Web3提供了一个基础层，你用代币支付你的空间并永远拥有它。而且你可以选择允许谁访问数据。</p>
+<p>So yes, what we really bring is control over your data — and the right to decide who you want to share it with.</p>
+<p>因此，是的，我们真正带来的是对你的数据的控制—以及决定你想与谁分享的权利。</p>
+<p><strong>It may be just my social bubble, but it seems to me that Musk’s Twitter takeover made many rethink their presence on the traditional Web2 social media platforms. We see that Mastodon, a decentralized Twitter alternative, almost doubled its user base — and I’m just curious whether Akord has, too, experienced a noticeable influx of new users.</strong></p>
+<p>**这可能只是我的社会泡沫，但在我看来，马斯克的Twitter接管使许多人重新思考他们在传统的Web2社交媒体平台上的存在。我们看到，Mastodon，一个去中心化的Twitter替代品，其用户群几乎翻了一番—我只是好奇Akord是否也经历了明显的新用户涌入。</p>
+<p>Richard: Not necessarily connected to Musk’s deal, but I feel like the recent announcement by Meta — when they revealed their plan to store Instagram <a href="https://coinpaper.com/670/meta-integrates-arweave-protocol-to-store-nf-ts-from-instagram">NFTs on Arweave</a> — really attracted a lot of attention to the ecosystem. I think, for our project, that could be a tipping point that could trigger mass adoption.</p>
+<p>Richard: 与Musk的交易没有必然联系，但我觉得Meta最近的公告—当他们透露他们计划在Arweave上存储Instagram <a href="https://coinpaper.com/670/meta-integrates-arweave-protocol-to-store-nf-ts-from-instagram">NFTs</a>--确实吸引了很多人对生态系统的关注。我认为，对我们的项目来说，这可能是一个转折点，可以引发大规模的采用。</p>
+<p>And coming back to Elon Musk, the Twitter deal got us discussing the same Web2 issues that has been present there from the very beginning. I think if Elon really wants to make his platform “future-proof,” then the adoption of decentralized protocols is a must. I’m not too familiar with Mastodon, but from what I understand, it’s a federated system where each server is governed by its own set of rules. And that, I think, is a step in the right direction.</p>
+<p>再回到埃隆-马斯克，Twitter的交易让我们讨论了从一开始就存在的同样的Web2问题。我认为如果埃隆真的想让他的平台 &quot;面向未来&quot;，那么采用去中心化的协议是必须的。我对Mastodon不是很熟悉，但据我所知，它是一个联合系统，每个服务器都由自己的一套规则来管理。而这，我认为是朝着正确方向迈出的一步。</p>
+<p><strong>In ten years, how do you see Akord?</strong><br>
+**在十年内，你如何看待Akord？</p>
+<p>Richard: What I see is a massive long tail of content creator use cases — like scientists, journalists, and poets – publishing and protecting their work for everyone into the future, families privately storing their photos for five generations down the line. We want Akord to be the prime publishing platform for Arweave’s permaweb that offers the best user experience for its content creators.</p>
+<p>Richard: 我所看到的是一个巨大的长尾内容创作者用例—比如科学家、记者和诗人—为每个人在未来发布和保护他们的作品，家庭私密地为五代人储存他们的照片。我们希望Akord成为Arweave的permaweb的主要发布平台，为其内容创作者提供最佳的用户体验。</p>
+<p>Weronika: Even in our most pessimistic scenario that the project is abandoned and becomes a zombie, people will still have access to their encrypted data because it lives on the blockchain — even if we won’t be there. But I hope that even in ten years we’ll still be there because I believe that what we do now is important and will be around for a really long time.</p>
+<p>Weronika：即使在我们最悲观的情况下，项目被放弃并成为僵尸，人们仍然可以访问他们的加密数据，因为它生活在区块链上—即使我们不在那里。但我希望，即使在十年后，我们仍然在那里，因为我相信我们现在所做的是重要/关键的，并将在很长一段时间内存在。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Scroll中文材料汇总]]></title>
         <id>https://chainguys.github.io/post/scroll-zhong-wen-cai-liao-hui-zong/</id>
@@ -21,6 +245,7 @@
 <h2 id="zkevm"><a href="https://chainguys.github.io/post/zkevm/">zkEVM</a></h2>
 <h2 id="scroll简介-愿景和价值观-introducing-scroll-vision-and-values"><a href="https://chainguys.github.io/post/scroll-jian-jie-yuan-jing-he-jie-zhi-guan-introducing-scroll-vision-and-values">Scroll简介-愿景和价值观 (Introducing Scroll - Vision and Values)</a></h2>
 <h2 id="介绍scroll技术原则-introducing-scroll-technical-principles"><a href="https://chainguys.github.io/post/jie-shao-scroll-ji-zhu-yuan-ze-introducing-scroll-technical-principles">介绍Scroll—技术原则 (Introducing Scroll – Technical principles)</a></h2>
+<h2 id="scroll架构概览-an-overview-of-scrolls-architecture"><a href="https://chainguys.github.io/post/scroll-jia-gou-gai-lan-an-overview-of-scrolls-architecture">Scroll架构概览 (An overview of Scroll's architecture)</a></h2>
 ]]></content>
     </entry>
     <entry>
@@ -1079,341 +1304,6 @@ Fuel谓词</p>
 <p><a href="https://www.globenewswire.com/Tracker?data=Y-8Un8RH5mFnkKszqYslY6PIVrSCqoODNgmiHPATJISGpUxOXyQyHg285vdYOiPasBsALorE2VpjOrOVRWUJBQ==">Sei</a> serves as plumbing for the future financial system - infrastructure to support capital markets, starting with exchanges. As the first Layer 1 specialized for trading, Sei is the fastest chain to finality, optimizing every layer of its stack to give exchanges an unfair advantage. Exchanges are the killer app of crypto, but current Layer 1s hold them back. Most L1s fall into two extremes, general purpose and app-specific. Sei unlocks a new design space in between as a sector-specific L1. There are currently 60+ teams from Solana, Polkadot, Terra, and NEAR building on top of Sei going into mainnet launch. Sei is backed by Multicoin, Delphi, Tangent, and several MMs like Hudson River Trading, GSR.</p>
 <p><a href="https://www.globenewswire.com/Tracker?data=Y-8Un8RH5mFnkKszqYslY6PIVrSCqoODNgmiHPATJISGpUxOXyQyHg285vdYOiPasBsALorE2VpjOrOVRWUJBQ==">Sei</a>作为未来金融系统的管道--支持资本市场的基础设施，从交易所开始。作为第一个专门用于交易的layer1，Sei是实现终态最快的链条，优化其技术栈的每一层，使交易所具有无可比拟的优势。交易所是加密货币的杀手级应用，但目前的layer1却阻碍了其发展。大多数L1属于两个极端，即通用型和特定应用型。Sei作为特定场景的L1，在两者之间解锁了一个新的设计空间。目前有60多个来自Solana、Polkadot、Terra和NEAR的团队在Sei的基础上进行建设，准备进入主网发布。Sei得到了Multicoin、Delphi、Tangent和几个MM的支持，如Hudson River Trading、GSR。</p>
 <p>Follow Sei 关注Sei: <a href="https://www.globenewswire.com/Tracker?data=gJV1aps37SgJXrYurIhxNFLNIzjD7uwlWlWi7904kMBwDRWJ_IPig4-covnDFjykmv0MqykIoFPGzQQollUtgA==">Twitter</a> | <a href="https://www.globenewswire.com/Tracker?data=8NshhCUvF7cs4fWULYbggxVffsazGYDW1kd_umJSRI-yJqZqUFZCY845mn0zQ8HVEuUkTEeFQz4A9FTE0qBzyA==">Discord</a> | <a href="https://www.globenewswire.com/Tracker?data=gC7edtvYm2bed_6lTKfcyF4yQrhSt92ssqpESw6Dw3sz9OL6cp4R3-DUa209J4_jW-BQkRqVLfYn36-PExAeZQ==">Telegram</a> | <a href="https://www.globenewswire.com/Tracker?data=c5Z9k80VYenqHkiocr46Eyd55foNuU7j1urr2KSsZqR3S91fgZITgml7_03m0NwGshqrBs9XgklklcKduSHZJw==">Website</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[试播回顾!Alt View 欢迎来自以太坊基金会的 Barnabé Monnot, 看看我们都聊了什么? (Pilot recap! Alt View welcomed Barnabé Monnot from the Ethereum Foundation and here’s everything we chatted about)]]></title>
-        <id>https://chainguys.github.io/post/shi-bo-hui-gu-alt-view-huan-ying-lai-zi-yi-tai-fang-ji-jin-hui-de-barnabe-monnot-kan-kan-wo-men-du-liao-liao-shi-me-pilot-recap-alt-view-welcomed-barnabe-monnot-from-the-ethereum-foundation-and-heres-everything-we-chatted-about/</id>
-        <link href="https://chainguys.github.io/post/shi-bo-hui-gu-alt-view-huan-ying-lai-zi-yi-tai-fang-ji-jin-hui-de-barnabe-monnot-kan-kan-wo-men-du-liao-liao-shi-me-pilot-recap-alt-view-welcomed-barnabe-monnot-from-the-ethereum-foundation-and-heres-everything-we-chatted-about/">
-        </link>
-        <updated>2022-11-01T11:55:19.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*49kLlkhgxO0PF8EKRajiQA.png" alt="" loading="lazy"></figure>
-<p>We kick off our Youtube show Alternative View or ‘Alt View’ this week! A no fuss, knowledge-focussed content channel for all things crypto, blockchain, L2s, scalability, Web3 and more, we will be hosting numerous industry leaders and researchers who are at the top of their game. For our pilot episode, we were honoured to have <a href="https://barnabemonnot.com/">Barnabé Monnot</a> from the Robust Incentives Group (RIG), Ethereum Foundation. His research expertise spans game theory, like large systems, crypto economics, and also decentralised systems. Here’s a quick summary on what he had to say on the subject of rollups, PBS, MEV, and the general state of L2s today.</p>
-<p>我们本周开始了 Youtube 节目 Alternative View 或“Alt View”！对于加密、区块链、L2、扩容、Web3 等所有事物，我们将提供一个简单、以知识为中心的内容频道，我们将接待众多处于行业领先地位的行业领导者和研究人员。至于试播集，我们很荣幸邀请到来自以太坊基金会稳健激励小组 (RIG) 的 <a href="https://barnabemonnot.com/">Barnabé Monnot</a>。他的研究专长涵盖博弈论，如大型系统、加密经济学以及去中心化系统。以下是关于他在以下内容的快速总结：对汇总、PBS、MEV 和今天 L2 一般状态不得不说的话。</p>
-<p>Catch the <a href="https://www.youtube.com/watch?v=viJqYMi6DMo">full episode</a> on our Youtube channel. Don’t forget to hit Subscribe!</p>
-<p>我们的 Youtube 频道上可以观看 <a href="https://www.youtube.com/watch?v=viJqYMi6DMo">完整剧集</a>。不要忘记点击订阅！</p>
-<p><strong>Summary</strong><br>
-总结</p>
-<ul>
-<li>
-<p><a href="https://barnabemonnot.com/">Barnabé</a> first touched upon proposal builder separation (PBS), a design philosophy for protocol. The idea behind it is that in block construction (<em>the roles that validators today have in the system of making blocks</em>) there are specialised aspects, which can potentially be done by people rather than the validators themselves.<br>
-<a href="https://barnabemonnot.com/">Barnabé</a> 首先谈到了提案构建器分离 (PBS)，这是一种协议的设计理念。其背后的想法是，在区块构建中（<em>如今验证者在制作区块的系统中所扮演的角色</em>）有一些专门的方面，这些方面可能由(众)人而不是验证者自己来完成。</p>
-</li>
-<li>
-<p>He explained: “<em>We can outsource bouts of block construction to players or to entities that are not necessarily part of the protocol. And the rationale behind the scenes, but do you have these filter things that intervene in block construction, you always ensure that block verification, so the fact that the data, so even full nodes that are not participating in the consensus, they are still able to verify the work. Verification remains cheap</em>.” Specialised parts of block construction are done by actors who have maybe better resources or better knowledge of how to do it.<br>
-他解释说：“<em>我们可以将区块构建外包给玩家或不一定是协议一部分的实体。幕后的道理，是你有没有这些过滤器介入区块构建的东西，(如果)你总是确保区块验证，所以数据的事实(是)，即使是不参与共识的全节点，他们仍然能够来验证工作。验证仍然很便宜</em>。”区块构建的专门部分由可能拥有更好资源或更了解如何操作的参与者完成。</p>
-</li>
-<li>
-<p>There are many ways to formalise PBS. Question is, what is the best way to do it? Most of PBS is done out of protocols. But when you see that the protocol starts depending so heavily on a third party network, but the protocol doesn’t necessarily have a view into it, there should be considerations about whether some of it can be brought back into the protocol. However, one must exercise caution before bringing too much into the protocol first as making changes to a protocol can be complicated.<br>
-有很多方法可以使 PBS 形式化。问题是，最好的方法是什么？大部分 PBS 都是在协议之外完成的。但是当你看到协议开始严重依赖第三方网络，但协议不一定对其有态度时，应该考虑是否可以将其中的一部分带回协议中。但是，在对协议进行过多更改之前，必须谨慎行事，因为对协议进行更改可能会很复杂。</p>
-</li>
-<li>
-<p><strong><em>MEV (Maximal extractable value) and PBS:</em></strong> Our guest stated that MEV is a deep reason why we are getting to PBS in a more formalised way. He explained: “MEV is when you send a transaction, as a user, sometimes your transaction exposes more value that can be captured. For instance, if you do a trade, there might be a possible arbitrage after your trade. And so people will see your transaction, they really want to be the next transaction, so that they can capture that arbitrage. And so to to extract any value, you need, kind of two things you need first, knowledge, so information that this is a strategy that I can deploy and capture the value. And the second thing, which is I would say, not necessary, but it’s kind of ultimate power is to be the proposer.” The power really lies in the hands of the proposer.<br>
-<em><strong>MEV（最大可提取值）和 PBS</strong></em>  我们的客人表示，MEV 是我们以更正式方式进入 PBS 的深层原因。他解释说：“MEV 是当您发送交易时，作为用户，有时您的交易会暴露更多可捕获的价值(被别人截胡)。例如，如果您进行(可能存在套利)的交易，别人会看到你的交易，那他们真的很想成为下一笔交易，这样就可以抓住套利。因此，要提取任何价值，您首先需要两件事，即知识，这是我可以部署和获取价值的策略的信息。第二件事，我会说，没有必要，但它是一种终极权力，就是成为提议者/提案人。”权力真正掌握在提议者的手中。</p>
-</li>
-<li>
-<p><strong><em>Outsourcing for a fairer market?</em></strong> <a href="https://barnabemonnot.com/">Barnabé</a> noted that PBS might have a positive impact, if you are able to outsource and provide a fair market for everyone, when everybody kind of has the same return, there is no economies of scale. But you have to be very sophisticated to be a good builder, However, a common problem within this is the principal-agent problem — the idea that you’re outsourcing things to someone, that person might not share the same value function, as you’re saying, we might not want to make the block the way you would have made. So both good because you get more, but also bad because your preferences as a proposer might not be shared by the builder. One has to make a trade off between providing censorship resistance to the network and getting the best value block.<br>
-<em><strong>为更公平的市场而外包？</strong></em> <a href="https://barnabemonnot.com/">Barnabé</a> 指出，如果能够外包并为每个人提供公平的市场，当每个人收益率都差别不大，没有规模经济时，PBS 可能会产生积极影响的收益。但是您必须非常成熟才能成为一名优秀的建设者，其中的一个常见问题是委托代理问题-您将事物外包给某人的想法，该人可能与您共享相同的价值函数，意思是，我们可能不想按照您的方式生成区块。因此，这既是好事，因为你得到了更多，但也不好，因为你作为提议者的偏好可能不会被建造者分享。人们必须在为网络提供审查阻力和获得最佳价值区块之间做出权衡。</p>
-</li>
-<li>
-<p><strong><em>Let’s talk rollups! Where is there value in using rollups?</em></strong> When you could get savings in rollups, this motivates the end users to transact and use the solutions more. In terms of value inflow, one must understand how rollups derive economic value before they use it in their operations. Roll up operators need to pay for their full nodes, <em>or</em> they need to pay for when they have to make proofs. Basically, there are many ways value can get distributed through the chain pipeline.<br>
-<strong><em>让我们谈谈汇总！使用汇总有什么价值？</em></strong> 当您可以在使用汇总时获得储蓄，这会激励最终用户进行交易并更多地使用解决方案。在价值流入方面，必须了解，汇总如何在将其用于运营之前获得经济价值。 R汇总运营商需要为他们的完整节点付费，或者他们需要在必须制作证明时付费。基本上，价值可以通过多种方式通过链式管道进行分配。</p>
-</li>
-<li>
-<p><strong>Where are L2 scaling solutions at right now?</strong> According to <a href="https://barnabemonnot.com/">Barnabé</a>, we’re not exactly where we thought we would be maybe a year ago. There’s definitely been a lot more adoption for rollups than previously. Perhaps we had higher expectations of where the market would be. For instance, during the development cycles that went into making the merge happen, which is like a very complicated update. In reality it takes a lot longer to get things into production, especially elements that involve a huge piece of engineering. This is clear for instance when you see Bedrock for Optimism, Nitro for Arbitrum, which differentiate from each other and address different parts of the market and not just the EVM. But it will come to fruition eventually, even if a little later than expected.<br>
-<strong>目前 L2 扩展解决方案在哪里？</strong> 根据 <a href="https://barnabemonnot.com/">Barnabé</a> 的说法，我们可能并不与一年前的预期完全一致。与以前相比，汇总的采用肯定要多得多。也许我们对市场的位置有更高的期望。例如，在进行合并的开发周期中，这就像一个非常复杂的更新。实际上，将产品投入生产需要更长的时间，尤其是涉及大量工程的元素。例如，当您看到 Optimism 的 Bedrock 和 Arbitrum 的 Nitro 时，这一点就很清楚，它们相互区分并针对市场的不同部分，而不仅仅是 EVM。但它最终会实现，即使比预期晚一点。</p>
-</li>
-<li>
-<p><a href="https://barnabemonnot.com/"><strong>Barnabé</strong></a><strong>’s Advice to Listeners:</strong> He says imposter syndrome is real and never goes away. Don’t let that keep you from building and innovating and learning in this space! Don’t feel scared and try to find something that speaks to you. There’s a lot of things that nobody really understands, or even knows about. So. So generally, people are just kind of happy to talk about it. So ask questions, and to try and make sense of it. Together.<br>
-<a href="https://barnabemonnot.com/"><strong>Barnabé</strong></a> <strong>对听众的忠告：</strong> 他说冒充者综合征(译者注：冒充者综合症Impostor syndrome，又称自我能力否定倾向，是指个体按照客观标准评价为已经获得了成功或取得成就，但是其本人却认为这是不可能的，他们没有能力取得成功，感觉是在欺骗他人，并且害怕被他人发现此欺骗行为的一种现象-解释来自网络)是真实存在的，并且永远不会消失。不要让这阻止您在这个空间中构建、创新和学习！不要感到害怕，试着找到对你说话的东西。有很多事情没有人真正了解，甚至不知道。所以。所以一般来说，人们只是乐于谈论它。所以提出问题，并尝试理解它。让我一路同行！</p>
-</li>
-</ul>
-<p>Thanks Barnabe for being such a fantastic guest. As mentioned above, please follow our Youtube channel to watch all upcoming episodes (we’ve got some great guests lined up!)</p>
-<p>感谢 Barnabe 成为如此出色的客人。如上所述，请关注我们的 Youtube 频道观看所有即将播出的剧集（我们有一些很棒的嘉宾排队！）</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[模块化执行的案例(第二部分) The Case for Modular Execution (Part 2)]]></title>
-        <id>https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-er-bu-fen-the-case-for-modular-execution-part-2/</id>
-        <link href="https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-er-bu-fen-the-case-for-modular-execution-part-2/">
-        </link>
-        <updated>2022-10-27T05:32:47.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/10/BlogPost3-V1.png" alt="The Case for Modular Execution (Part 2)" loading="lazy"></figure>
-<p>How modular execution layers can achieve scalability by optimizing for efficient computation.<br>
-模块化执行层如何通过优化高效计算，来实现可扩展性。</p>
-<hr>
-<h2 id="模块化执行的案例-the-case-for-modular-execution">模块化执行的案例 (The Case for Modular Execution)</h2>
-<p>Modular architecture will enable blockchains to <a href="https://fuel-labs.ghost.io/beyond-monolithic-the-modular-blockchain-paradigm/">scale by orders of magnitude</a>. As a core part of the modular stack, execution layers are in a stage of rapid innovation.</p>
-<p>模块化架构将使区块链能够<a href="https://fuel-labs.ghost.io/beyond-monolithic-the-modular-blockchain-paradigm/">按数量级扩展</a>。作为模块化技术栈的核心部分，执行层正处于快速创新的阶段。</p>
-<p><strong>Fuel is building the fastest execution layer for the modular blockchain stack.</strong> In <a href="https://fuel-labs.ghost.io/the-case-for-modular-execution-part-1/">Part 1</a> we explored how modular execution layers enable scalability by decoupling computation from verification.</p>
-<p><strong>Fuel 正在为模块化区块链技术栈构建最快的执行层。</strong> 在 <a href="https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/">第一部分</a>我们探索了模块化执行层如何通过将计算与验证解耦来实现可扩展性。</p>
-<p><a href="https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/">模块化执行的案例(第一部分) The Case for Modular Execution (Part 1)</a></p>
-<figure data-type="image" tabindex="2"><img src="https://fuel-labs.ghost.io/content/images/2022/10/the-case-for-modular-execution-part-1.png" alt="" loading="lazy"></figure>
-<p>We also touched on a second core benefit which enables modular execution layers to scale by orders of magnitude more than their monolithic counterparts:</p>
-<p>我们还谈到了第二个核心优势，它使模块化执行层能够比其单片执行层扩展几个数量级：</p>
-<blockquote>
-<p><em><strong>Monolithic chains are locked into inefficient technologies when it comes to the speed and variety of computation they can support. On the other hand, modular execution layers can be specifically designed to optimize for efficient computation.</strong></em></p>
-<p><em><strong>单片链在它们可以支持的计算速度和多样性方面被锁定在低效的技术中。另一方面，模块化执行层可以专门设计用于优化高效计算。</strong></em></p>
-</blockquote>
-<p>This post explores this second core benefit, with a specific focus on how Fuel is revolutionizing the way blockchains handle computation.</p>
-<p>这篇文章探讨了第二个核心优势，特别关注 Fuel 如何彻底改变区块链处理计算的方式。</p>
-<hr>
-<h2 id="单片链layer1迭代的挑战-monolithic-chains-the-challenge-of-iterating-on-layer-1s">单片链：Layer1迭代的挑战 (Monolithic Chains: The Challenge of Iterating on Layer-1s)</h2>
-<p><em>Monolithic chains are locked into inefficient technologies when it comes to the speed and variety of computation they can support.</em></p>
-<p><em>单片链在其可以支持的计算速度和多样性方面，被锁定在低效的技术中。</em></p>
-<p>When blockchains were first conceived of, there was a single use case in mind: digital cash. The Bitcoin blockchain was designed to optimize for this one narrow use case.</p>
-<p>首次构想区块链时，脑海中只有一个用例：数字现金。比特币区块链旨在优化这一狭窄用例。</p>
-<p>Soon after the launch of Bitcoin, people started to realize the potential of blockchains for use cases far beyond money. The narrative quickly shifted from “distributed ledger” to “distributed computer”. The Bitcoin community attempted to support this use case through <a href="https://en.wikipedia.org/wiki/Colored_Coins">colored coins</a>, but it was clear that it was not versatile enough to truly support trustless distributed computing; it was locked into its original use case. A new architecture was required.</p>
-<p>比特币推出后不久，人们开始意识到区块链远超金钱用例的潜力。叙事迅速从“分布式账本”转变为“分布式计算机”。比特币社区试图通过 <a href="https://en.wikipedia.org/wiki/Colored_Coins">色彩币</a> 来支持这个用例，但很明显它的通用性不足以真正支持去信任分布式计算；它被锁定在其原始用例中。(我们)需要一种新的架构。</p>
-<p>Recognizing this problem, the creators of Ethereum set out to build a blockchain which could support a distributed Turing-complete virtual machine: the Ethereum Virtual Machine (EVM). With the launch of Ethereum in 2015, blockchains had evolved to support arbitrary computation in a trustless environment. Now, anyone could build and launch a computer program (smart contract) and have it run on a distributed computer.</p>
-<p>认识到这个问题，以太坊的创建者着手构建一个可以支持分布式图灵完备虚拟机的区块链：以太坊虚拟机(EVM)。随着 2015 年以太坊的推出，区块链已经发展到支持去信任环境中的任意计算。现在，任何人都可以构建和启动一个计算机程序(智能合约)并让它在分布式计算机上运行。</p>
-<p>Ethereum was conceived of less than half a decade after the concept of blockchains came into existence. In the 7 years since Ethereum launched, new concepts have been invented which represent an even greater leap forward than the progress Ethereum made over Bitcoin. But like Bitcoin, the Ethereum blockchain is mostly locked into the core architecture it launched with.</p>
-<p>以太坊是在区块链概念出现后不到五年的时间构思出来的。自以太坊推出以来的 7 年里，人们发明了新概念，这代表了以太坊相对比特币所取得进步的更大飞跃。但就像比特币一样，以太坊区块链大多被锁定在它推出的核心架构中。</p>
-<p><em><strong>For every improvement that has been made to the Ethereum blockchain and the EVM over the years, there are many more potential innovations that cannot be implemented due to the need to maintain backward compatibility.</strong></em></p>
-<p><em><strong>对于多年来对以太坊区块链和 EVM 所做的每一项改进，由于需要保持向后兼容性，还有许多潜在的创新无法实施。</strong></em></p>
-<p>As a result, the blockchain community has continued funding, building, and launching new blockchains every time a new innovation is hatched. Countless new layer-1 blockchains have launched on the promise of iterating on the concept of trustless distributed computing, but they all run into the same challenge: it’s hard (and often impossible) to upgrade blockchains to support new functionalities and improvements.</p>
-<p>因此，每次孵化出新创新时，区块链社区都会继续资助、构建和推出新的区块链。无数新的Layer1区块链已经推出，承诺迭代去信任分布式计算的概念，但它们都遇到了同样的挑战：升级区块链来支持新功能和改进是困难的(而且通常是不可能的)。</p>
-<p>And so the cycle continues, where we continue to see new blockchains launching with piecemeal improvements over their predecessors. In the process, we are left with an ecosystem of mostly incompatible blockchains, with ever-increasing fragmentation of liquidity, funding, user experience, and developer-mindshare. Meanwhile, the energy that could be spent on true innovation is instead directed toward getting attention from investors, developers, and end-users.</p>
-<p>所以这个循环还在继续，我们也继续看到新区块链推出，对它们的前辈进行零碎的改进。在这个过程中，我们留下了一个由大部分不兼容的区块链组成的生态系统，流动性、资金、用户体验和开发者的思想份额越来越分散。与此同时，可以花在真正创新上的精力反而被用于吸引投资者、开发商和最终用户的关注。</p>
-<p>Competition is healthy and necessary for a thriving ecosystem. But this competition is happening at the wrong level.</p>
-<p>竞争对于繁荣的生态系统是健康的和必要的。但这场竞争发生在错误的层面。</p>
-<p><strong>The modular blockchain paradigm promises to solve this problem.</strong> Because each layer in the modular stack is independent of the others, innovation can happen on one layer without a complete overhaul of the entire stack. Execution layers can compete on execution. Data availability layers can compete on data availability. Every layer can optimize for its intended purpose without breaking backward compatibility.</p>
-<p><strong>模块化区块链范式有望解决这个问题。</strong> 由于模块化技术栈中的每一层都独立于其他层，因此创新可以发生在一个单独层上，而无需对整个技术栈进行彻底检修。执行层可以竞争执行。数据可用性层可以在数据可用性上竞争。每一层都可以针对其预期目的进行优化，而不会破坏向后兼容性。</p>
-<p>Shared settlement layers enable liquidity to be pooled in one place, so new execution layers can be built without fragmenting liquidity or adding friction to the end-user experience. Natively enabled trust-minimized bridging means the community can reduce the resources spent on interoperability efforts and instead focus them on exploring meaningful innovations.</p>
-<p>共享结算层可以将流动性集中在一个地方，因此可以构建新的执行层，而不会分散流动性或增加最终用户体验的摩擦。原生支持的信任最小化桥接意味着社区可以减少在交互性工作上花费的资源，而是将它们集中在探索有意义的创新上。</p>
-<p>With the advent of the modular stack, we can move away from a disparate ecosystem of L1s competing on vanity metrics, and toward a more cohesive, interoperable, upgradeable stack.</p>
-<p>随着模块化技术栈的出现，我们可以摆脱在虚荣指标上竞争的不同的 L1 生态系统，而转向更具凝聚力、可交互、可升级的技术栈。</p>
-<hr>
-<h2 id="模块化执行超越-evm-modular-execution-moving-beyond-the-evm">模块化执行：超越 EVM (Modular Execution: Moving Beyond the EVM)</h2>
-<p>Despite the plethora of layer-1 blockchains promising improvements over the EVM's original design, its first-mover advantage enabled the EVM to gain a foothold as the &quot;default&quot; runtime environment in the blockchain ecosystem. Smart contract development became synonymous with Solidity (the EVM's programming language), which has captured the majority of would-be blockchain developers. Because of this, most execution layers currently under development are EVM-based rollups.</p>
-<p>尽管有过多的Layer1区块链有望对 EVM 的原始设计进行改进，但其先发优势使 EVM 作为区块链生态系统中的“默认”运行时环境获得了立足点。智能合约开发成为 Solidity(EVM 的编程语言)的代名词，它吸引了大多数潜在的区块链开发人员。因此，目前正在开发的大多数执行层都是基于 EVM 的汇总。</p>
-<p>There is a good reason for this: using the EVM enables rollups to tap into a market of existing applications written in Solidity, as well as a large cohort of end-users who are already familiar with those applications. The EVM is a great tool for seeding a new ecosystem, as it already has such a large share of the developer market.</p>
-<p>这有一个很好的理由：使用 EVM 使汇总能够进入使用 Solidity 编写的现有应用程序的市场，以及已经熟悉这些应用程序的大量最终用户。 EVM 是播种新生态系统的绝佳工具，因为它已经在开发者市场占有如此大的份额。</p>
-<p>However, as we already explored, the need to maintain backward compatibility means that the EVM has been unable to adopt many innovations. In addition, the core design of the EVM is optimized for a monolithic chain, not a modular stack.</p>
-<p>然而，正如我们已经探讨过的，保持向后兼容性的需要意味着 EVM 无法采用许多创新。此外，EVM 的核心设计针对单片链而非模块化技术栈进行了优化。</p>
-<p><strong>Just some limitations of the EVM include:</strong><br>
-<strong>EVM 的一些限制包括：</strong></p>
-<ul>
-<li>
-<p><strong>Sequential Execution</strong> - The EVM does not support parallel transaction execution, making it much less computationally efficient than other VM designs.<br>
-<strong>顺序执行</strong> - EVM 不支持并行交易执行，使其计算效率低于其他 VM 设计。</p>
-</li>
-<li>
-<p><strong>Fraud Proofs</strong> - Ethereum’s account-based model means generating and executing fraud proofs on EVM chains is extremely costly and inefficient, making it sub-optimal for modular execution layers.<br>
-<strong>欺诈证明</strong> - 以太坊基于账户的模型意味着在 EVM 链上生成和执行欺诈证明的成本极高且效率低下，因此对于模块化执行层来说并非最优。</p>
-</li>
-<li>
-<p><strong>Solidity</strong> - The most popular programming language for the EVM, Solidity, is notorious for providing a poor developer experience, and is designed in a way that makes it difficult to write secure smart contracts.<br>
-<strong>Solidity</strong> - EVM 最流行的编程语言 Solidity 因提供糟糕的开发者体验而声名狼藉，并且其设计方式使得编写安全的智能合约变得困难.</p>
-</li>
-</ul>
-<hr>
-<h2 id="fuel优化的模块化执行-fuel-optimized-for-modular-execution">Fuel：优化的模块化执行 (Fuel: Optimized for Modular Execution)</h2>
-<p>The advent of modularism means that execution layers can leverage Ethereum’s liquidity and security without being restricted by the limitations of the EVM.</p>
-<p>模块化的出现意味着执行层可以利用以太坊的流动性和安全性，而不受 EVM 的限制。</p>
-<figure data-type="image" tabindex="3"><img src="https://fuel-labs.ghost.io/content/images/2022/10/image-23.png" alt="" loading="lazy"></figure>
-<p>By adopting new and improved VM design principles, modular execution layers can specifically optimize for efficient &amp; scalable computation, superior developer experience, and maximum security.</p>
-<p>通过采用全新和改进的 VM 设计原则，模块化执行层可以专门针对高效和可扩展计算、卓越的开发者体验和最大的安全性进行优化。</p>
-<p>Fuel is taking advantage of this new design space to build <a href="https://www.fuel.network/">the fastest modular execution layer</a>.</p>
-<p>Fuel 正在利用这个新的设计空间来构建 <a href="https://www.fuel.network/">最快的模块化执行层</a>。</p>
-<h3 id="fuel虚拟机-fuelvm">Fuel虚拟机 (FuelVM)</h3>
-<p>One of the core innovations of Fuel is a <strong>completely new virtual machine, the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a></strong>. The advent of execution layers built on Ethereum presents a new opportunity to improve on past VM designs, unconstrained by the need to be backward compatible.</p>
-<p>Fuel 的核心创新之一是<strong>全新的虚拟机，<a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a></strong>。基于以太坊构建的执行层的出现，为改进过去的 VM 设计提供了新的机会，不受向后兼容需求的限制。</p>
-<p>While the EVM’s slow transaction execution may have been sufficient in a pre-modular world where bandwidth was the core bottleneck, improvements made within the new modular stack (including on L1 Ethereum) mean that computational throughput is becoming the primary constraint when it comes to scaling.</p>
-<p>虽然在带宽是核心瓶颈的前模块化世界中，EVM 的缓慢交易执行可能已经足够，但在新的模块化技术栈(包括 L1 以太坊)中所做的改进意味着计算吞吐量正在成为扩展时的主要限制.</p>
-<p>In anticipation of this new paradigm, <strong>the FuelVM is designed to optimize for fast transaction execution</strong>. Taking learnings from the EVM, Solana, WASM, Bitcoin, and Cosmos, the FuelVM is designed to reduce wasteful processing of traditional blockchain virtual machine architectures, while vastly increasing the potential design space for developers.</p>
-<p>出于对这种新范式的预期，<strong>FuelVM 旨在优化快速交易执行</strong>。 FuelVM 借鉴了 EVM、Solana、WASM、比特币和 Cosmos，旨在减少传统区块链虚拟机架构的浪费处理，同时极大地增加开发人员的潜在设计空间。</p>
-<p>The FuelVM adopts many innovations that have been suggested and supported by the EVM community, but couldn't be implemented due to the need to maintain backward compatibility. Just a few examples are highlighted below (<a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html#eips-implemented-in-fuel">see here for the full list</a>).</p>
-<p>FuelVM 采用了许多 EVM 社区已经建议和支持的创新，但由于需要保持向后兼容性而无法实施。下面仅突出显示了几个示例(<a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html#eips-implemented-in-fuel">完整列表请参见此处</a>)。</p>
-<figure data-type="image" tabindex="4"><img src="https://fuel-labs.ghost.io/content/images/2022/10/image-24.png" alt="" loading="lazy"></figure>
-<p><em>These are just a few examples of EIPs which were ultimately rejected for the EVM due to backward compatibility issues, but have been implemented in Fuel (source:</em> <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html#eips-implemented-in-fuel"><em>Fuel</em></a><em>)</em><br>
-<em>这些只是 EIP 的几个示例，由于向后兼容性问题最终被 EVM 拒绝，但已在 Fuel 中实现(来源：</em> [<em>Fuel</em>](https://fuellabs.github.io/fuel-docs/master /vs-evm.html#eips-implemented-in-fuel)<em>)</em></p>
-<h3 id="用sway和force实现的高级devex-superior-devex-with-sway-and-forc">用Sway和Force实现的高级DevEx (Superior DevEx with Sway and Forc)</h3>
-<p>The Fuel protocol was designed with developer experience at the forefront. <strong>The FuelVM has been built alongside its companion language, <a href="https://fuellabs.github.io/fuel-docs/master/sway-language.html">Sway</a></strong>: a Rust-based domain-specific language designed specifically to leverage a blockchain VM. Unlike Solidity, which was developed after the creation of the EVM, Sway has been created from the ground up to have convenient and efficient ops built-in. By basing Sway on Rust, Fuel makes smart contract development safer and more performant through the use of strong static analysis and compiler feedback.</p>
-<p>Fuel 协议的设计凝结最前沿的开发人员经验。 <strong>FuelVM 是与它的配套语言 <a href="https://fuellabs.github.io/fuel-docs/master/sway-language.html">Sway</a> 一起构建的</strong>：一种基于 Rust 设计的特定领域语言，专门来使用区块链虚拟机。与在创建 EVM 之后开发的 Solidity 不同，Sway 是从头开始创建的，内置了方便高效的操作。通过基于 Rust 的 Sway，Fuel 通过使用强大的静态分析和编译器反馈使智能合约开发更安全、更高效。</p>
-<p>From a tooling perspective, <strong>Fuel improves on the EVM ecosystem with the <a href="https://fuellabs.github.io/fuel-docs/master/fuel-toolchain.html">Forc toolchain</a></strong>. With Forc, developers can get everything they need to start creating Sway applications for the Fuel VM with a single toolchain. Fuel takes a curated, &quot;batteries-included&quot;-yet-modular approach to providing tooling, with a comprehensive, standardized, canonical set of tools that covers not only the lower levels of the stack (like protocol and VM implementations), but also the higher levels (such as package management, editor support, common-use plugins, and much more).</p>
-<p>从工具的角度来看，<strong>Fuel 通过 <a href="https://fuellabs.github.io/fuel-docs/master/fuel-toolchain.html">Forc 工具链</a></strong> 改进了 EVM 生态系统。借助 Forc，开发人员可以使用单个工具链获得开始为 Fuel VM 创建 Sway 应用所需的一切。 Fuel 采用精心策划的“包含电池”但模块化的方法来提供工具，具有全面、标准化、规范的工具集，不仅涵盖技术栈的较低级别(如协议和 VM 实现)，也包括更高级别(例如包管理、编辑器支持、常用插件等等)。</p>
-<p>Fuel’s developer environment retains the benefits of smart contract languages like Solidity while adopting the paradigms introduced in the Rust tooling ecosystem, making the learning curve for Sway easily manageable for all levels of developer experience.</p>
-<p>Fuel 的开发人员环境保留了 Solidity 等智能合约语言的优势，同时采用了 Rust 工具生态系统中引入的范式，使 Sway 的学习曲线易于管理，适合所有级别的开发人员体验。</p>
-<h3 id="并行交易执行-parallel-transaction-execution">并行交易执行 (Parallel Transaction Execution)</h3>
-<p>The ability to execute transactions in parallel is a highly desirable property, especially as modern processors become increasingly multi-threaded. As such, it was a core consideration when designing the Fuel protocol.</p>
-<p>并行执行交易的能力是一个非常理想的属性，尤其是在现代处理器变得越来越多线程的情况下。因此，这是设计 Fuel 协议时的核心考虑因素。</p>
-<p>Parallel transaction execution requires the ability to determine and handle <a href="https://en.wikipedia.org/wiki/Parallel_computing#Dependencies">dependencies</a> between transactions. In order to avoid overlap when processing the transactions on separate cores, the shared state that may be touched by each transaction needs to be identified upfront (via “access lists”), so transactions can be partitioned into sets which don’t have any possible interactions with one another.</p>
-<p>并行交易执行需要能够确定和处理交易之间的<a href="https://en.wikipedia.org/wiki/Parallel_computing#Dependencies">依赖项</a>。为了避免在不同核上处理交易时发生重叠，需要预先识别每个交易可能涉及的共享状态(通过“访问列表”)，因此可以将交易划分为没有任何可能彼此互动的集合。</p>
-<p>Because of the constraints of its account-based design, Ethereum is not able to support these access lists, so is forced to process transactions sequentially (i.e. one after the other). <a href="https://github.com/ethereum/EIPs/issues/648">EIP-648</a> proposed the addition of access lists to Ethereum, but this has never been implemented due to other inefficiencies it would introduce.</p>
-<p>因为其基于帐户的设计的限制，以太坊无法支持这些访问列表，因此被迫按顺序处理交易(即一个接一个)。 <a href="https://github.com/ethereum/EIPs/issues/648">EIP-648</a> 提议向以太坊添加访问列表，但由于它会引入其他类型的低效率，所以这从未实施过。</p>
-<p>Learning from this limitation, Fuel has implemented <a href="https://fuellabs.github.io/fuel-docs/master/technology/parallel_tx_execution.html#state-access-lists-and-utxos">strict state access lists</a> in the form of a UTXO model, giving it the ability to use multiple CPU threads and cores that are typically idle in single-threaded blockchains. As a result, <strong>Fuel can execute transactions in parallel</strong>, delivering far more compute, state accesses, and transactional throughput than its single-threaded counterparts.</p>
-<p>从这个限制中吸取教训，Fuel 实施了形同UTXO 模型的 <a href="https://fuellabs.github.io/fuel-docs/master/technology/parallel_tx_execution.html#state-access-lists-and-utxos">严格的状态访问列表</a> ，使其能够使用通常在单线程区块链中空闲的多个 CPU 线程和内核。因此，**Fuel 可以并行执行交易，提供比单线程更多的计算、状态访问和交易吞吐量。</p>
-<figure data-type="image" tabindex="5"><img src="https://lh5.googleusercontent.com/3XJEoCTGhPZl6T44ob4P2bAYrHi-TqggBsNYVCpegu5WSh5upC6kxrAZR6r-ErgSk69TwYmH6ex4hysI4-EoHZGZ1lSdB6-rcdRJpsbbYVipnjNHQPIyZqcvvOwrOfHVaa8pWd-9pHi0pKOwH1lDpDYsrt1K0kFInV7tq51t6ZfpZiBAd7mJC7IOgg" alt="" loading="lazy"></figure>
-<p><em>Fuel’s support for parallel transaction execution means validators can maximize efficiency by using all of their hardware (source:</em> <a href="https://fuellabs.github.io/fuel-docs/master/why-fuel.html#parallel-execution"><em>Fuel</em></a><em>)</em><br>
-<em>Fuel 对并行交易执行的支持意味着验证者可以通过使用其所有的硬件来最大化效率(来源：</em> <a href="https://fuellabs.github.io/fuel-docs/master/why-fuel.html#parallel-execution"><em>Fuel</em></a><em>)</em></p>
-<p>As well as providing efficiency optimizations, <strong>the ability to process multiple transactions in parallel allows for security improvements</strong>, as it enables transaction throughput to scale without a comparable increase in the resource requirements to verify those transactions. This reduces the barrier for running a full node, leading to a more decentralized network of verifiers.</p>
-<p>除了提供效率优化外，<strong>并行处理多个交易的能力还可以提高安全性</strong>，因为它可以扩展交易吞吐量，而不会增加用于验证这些交易的资源需求。这降低了运行完整节点的障碍，从而导致验证者网络更加分散。</p>
-<h3 id="为欺诈证明而优化-optimized-for-fraud-proofs">为欺诈证明而优化 (Optimized for Fraud Proofs)</h3>
-<p>Fraud proofs are a core technology in the modular blockchain stack. In <a href="https://fuel-labs.ghost.io/the-case-for-modular-execution-part-1/">Part 1</a>, we explored how modular execution layers can leverage fraud proofs to enable trust-minimized light clients, allowing for security under the assumption that only a single honest full node is available.</p>
-<p>欺诈证明是模块化区块链技术栈中的核心技术。在 <a href="https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/">第一部分</a> 中，我们探讨了模块化执行层如何利用欺诈证明来启用信任最小化的轻客户端，在只有一个诚实的全节点可用的假设下确保安全性。</p>
-<figure data-type="image" tabindex="6"><img src="https://fuel-labs.ghost.io/content/images/2022/10/image-25.png" alt="" loading="lazy"></figure>
-<p><em>Fraud proofs enable trust-minimized light clients which rely on a single honest minority, giving them much greater security guarantees than monolithic light clients (source:</em> <a href="https://fuel-labs.ghost.io/the-case-for-modular-execution-part-1/"><em>Fuel</em></a><em>)</em><br>
-<em>欺诈证明使信任最小化的轻客户端依赖于一个诚实的少数，为他们提供比单体轻客户端更大的安全保证(来源：</em> [<em>Fuel</em>](https://fuel-labs.ghost.io/the-case- for-modular-execution-part-1/)<em>)</em></p>
-<p>With trust-minimized light clients and shared settlement &amp; data availability layers, it is possible to build trust-minimized bridges between modular execution layers, something which is impossible to achieve between L1s. This allows for the experimentation with and deployment of new blockchain designs without fragmenting security or liquidity.</p>
-<p>通过信任最小化的轻客户端和共享结算和数据可用性层，可以在模块化执行层之间建立信任最小化的桥接，这是 L1 之间无法实现的。这允许在不破坏安全性或流动性的情况下试验和部署新的区块链设计。</p>
-<p>Because of the benefits fraud proofs provide, <strong>Fuel was designed and built specifically to be fraud-provable</strong> in a low-cost, efficient manner.</p>
-<p>由于欺诈证明提供的好处，<strong>Fuel 被设计和产出专门的低成本和高效的方式证明欺诈</strong>。</p>
-<p>Whereas Ethereum’s account-based model means that the cost of constructing fraud proofs for it is unbound, Fuel optimizes for fraud proofs by using the UTXO model. <a href="https://fuellabs.github.io/fuel-docs/master/technology/fraud_proofs.html">UTXO fraud proofs</a> achieve efficiency by simply requiring each spend of a UTXO to &quot;point&quot; to the creation of the UTXO, without having to refer to a global state tree. Proving that either a) the pointer is invalid, or b) whatever is being pointed to doesn't match whatever is being spent, is sufficient for exhaustively proving fraud.</p>
-<p>以太坊基于账户的模型意味着为其构建欺诈证明的成本是无限的，而 Fuel 通过使用 UTXO 模型来优化欺诈证明。 <a href="https://fuellabs.github.io/fuel-docs/master/technology/fraud_proofs.html">UTXO 欺诈证明</a> 通过简单地要求 UTXO 的每笔支出“指向”UTXO 的创建来实现效率，无需强制参考全局状态树。证明 a) 指针无效，或 b) 所指向的内容与所花费的内容不匹配，足以彻底证明欺诈。</p>
-<p>As an added benefit, the <a href="https://github.com/FuelLabs/fuel-specs/blob/master/specs/vm/instruction_set.md">FuelVM instruction set</a> is designed to be fraud-provable within the EVM. This means Fuel can use Ethereum as a settlement layer, leveraging its deep liquidity and large user base while remaining unconstrained by the limitations of the EVM.</p>
-<p>还有一个额外的好处，<a href="https://github.com/FuelLabs/fuel-specs/blob/master/specs/vm/instruction_set.md">FuelVM 指令集</a> 被设计在 EVM 中进行欺诈证明。这意味着 Fuel 可以使用以太坊作为结算层，利用其深厚的流动性和庞大的用户群，同时不受 EVM 的限制。</p>
-<h3 id="其他益处-other-benefits">其他益处 (Other Benefits)</h3>
-<p>On top of the above points, Fuel has implemented a number of other improvements, including:<br>
-除了上述几点之外，Fuel 还实施了许多其他改进，包括：</p>
-<ul>
-<li>Support for multiple native assets  支持多种原生资产</li>
-<li>Native account abstraction &amp; predicates  原生支持帐户抽象和谓词</li>
-<li>Multi-dimensional resource pricing  本机帐户抽象和谓词</li>
-<li>Sequencer decentralization  序列器去中心化</li>
-</ul>
-<p>An explanation of these improvements is out of scope for this article, but Blockchain Capital provides an excellent <a href="https://medium.com/blockchain-capital-blog/exploring-the-fuelvm-86cf9ccdc159">deep dive into these additional benefits</a>.</p>
-<p>对这些改进的解释超出了本文的范围，但 Blockchain Capital 提供了出色报告，告诉大家 <a href="https://chainguys.github.io/post/tan-suo-fuel-xu-ni-ji-fuelvm-exploring-the-fuelvm/">深入了解这些额外好处</a> .</p>
-<hr>
-<h2 id="结论-summary">结论 (Summary)</h2>
-<ul>
-<li>
-<p>The monolithic paradigm leads to an ecosystem of incompatible L1s competing on vanity metrics, fragmenting liquidity, funding, and developer-mindshare. Fuel adopts the premise that <strong>innovation does not require launching a new L1, but can happen at the execution layer</strong>.<br>
-单片范式导致不兼容的 L1 生态系统在虚荣的指标上竞争、分散流动性、资金和开发者的思想份额。 Fuel 采用的前提是<strong>创新不需要启动新的 L1，但可以发生在执行层</strong></p>
-</li>
-<li>
-<p>Modular architecture enables MELs such as Fuel to focus on efficient computation without worrying about backward compatibility. Faster computation not only leads to higher throughput, but also makes running validators more efficient, improving decentralization. This enables Fuel to contribute to Ethereum’s scalability without being held back by the inefficiencies of the EVM.<br>
-模块化架构使诸如 Fuel 之类的 MEL 能够专注于高效计算，而无需担心向后兼容性。更快的计算不仅可以带来更高的吞吐量，还可以让运行验证器的效率更高，从而增强去中心化。这使 Fuel 能够为以太坊的扩容做出贡献，而不会因 EVM 的低效而受阻。</p>
-</li>
-<li>
-<p>Execution layers that use the EVM can capitalize on the existing ecosystem of Solidity applications and developers, but fail to make the most of the design space offered by the modular stack. Fuel is leveraging this new design space with the FuelVM, designed from the ground up to be fraud-provable and to provide the best developer experience.<br>
-使用 EVM 的执行层可以利用现有的 Solidity 应用和开发人员生态系统，但无法充分利用模块化技术栈提供的设计空间。 Fuel 正在通过 FuelVM 充分利用这一新的设计空间，该设计从一开始就设计为可防欺诈并提供最佳的开发者体验。</p>
-</li>
-<li>
-<p>Fuel introduces innovations that optimize for the rapidly approaching modular future, enabling a new generation of blockchains that go #BeyondMonolithic..<br>
-Fuel 引入了针对快速接近的模块化未来进行优化的创新，使新一代区块链成为可能 #超越单片链..</p>
-</li>
-</ul>
-<hr>
-<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
-<ul>
-<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
-<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
-<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
-<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
-</ul>
-<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
-<p><a href="https://www.fuel.network/">Fuel</a> is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
-<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制**。</p>
-<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
-<ul>
-<li>
-<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
-<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
-</li>
-<li>
-<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
-<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
-</li>
-<li>
-<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
-<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
-</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[@fuellabs_长推20221027(@fuellabs_threads20221027)]]></title>
-        <id>https://chainguys.github.io/post/fuellabs-chang-tui-20221027fuellabs_threads20221027/</id>
-        <link href="https://chainguys.github.io/post/fuellabs-chang-tui-20221027fuellabs_threads20221027/">
-        </link>
-        <updated>2022-10-27T03:20:40.000Z</updated>
-        <content type="html"><![CDATA[<p>原文地址：<a href="https://twitter.com/fuellabs_/status/1585658150396387328">https://twitter.com/fuellabs_/status/1585658150396387328</a></p>
-<p>What makes modular execution layers truly groundbreaking? In this series, we cover everything there is to know about modular execution. Including some of the innovative properties that will enable it to scale Ethereum, without compromise.</p>
-<p>让模块化执行层真正具有开创性的到底是什么？在本系列中，我们将介绍有关模块化执行的所有知识。包括一些能够毫不妥协地扩容以太坊的创新属性。<br>
-（全文见下面链接）</p>
-<p><a href="https://fuel-labs.ghost.io/the-case-for-modular-execution-part-2/">Article P2 here </a><br>
-<a href="https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-yi-bu-fen-the-case-for-modular-execution-part-1/">中文翻译版在此</a></p>
-<p>Today, we cover:<br>
-今天，我们介绍：</p>
-<p>The challenge of iterating on L1s !<br>
-在 L1 上迭代的挑战！<br>
-Possibilities beyond the EVM !<br>
-超越 EVM 的可能性！<br>
-Optimizing for modular execution!<br>
-优化模块化执行！<br>
-Conclusions<br>
-结论<br>
-Let's go !<br>
-我们开始吧</p>
-<p>Part one, in case you missed it:<br>
-第一部分，以防你错过了：</p>
-<p><a href="https://fuel-labs.ghost.io/the-case-for-modular-execution-part-1/">Article P1 here</a><br>
-<a href="https://chainguys.github.io/post/mo-kuai-hua-zhi-xing-de-an-li-di-er-bu-fen-the-case-for-modular-execution-part-2/">中文翻译版在此</a></p>
-<p>The EVM is a great tool for seeding new ecosystems.<br>
-EVM 是播种新生态系统的绝佳工具。</p>
-<p>However:<br>
-然而：</p>
-<ul>
-<li>The need to maintain backward compatibility means that the EVM has been unable to adopt many innovations.<br>
-保持向后兼容性的需要意味着 EVM 无法采用许多创新。</li>
-<li>The core design of the EVM is optimized for a monolithic chain, not a modular stack.<br>
-EVM 的核心设计是针对单片链而非模块化技术栈进行优化。</li>
-</ul>
-<p>This has left us stuck in a loop of incremental monolithic innovation<br>
-这让我们陷入了增量式单体创新的循环中</p>
-<figure data-type="image" tabindex="1"><a href="https://twitter.com/musalbas/status/1582396496229507072"><img src="https://pbs.twimg.com/media/FfXNOg9VEAEMe1e?format=png&amp;name=small" alt="alt text" loading="lazy"></a></figure>
-<p>With the advent of the modular stack, we can move away from a disparate ecosystem of L1s competing on vanity metrics, and toward a more cohesive, interoperable, upgradeable stack.</p>
-<p>随着模块化技术栈的出现，我们可以摆脱不同 L1 生态系统在虚荣指标上的竞争，转向更具凝聚力、可交互和可升级的技术栈。</p>
-<p><a href="https://twitter.com/fuellabs_/status/1569753111983722496">https://twitter.com/fuellabs_/status/1569753111983722496</a></p>
-<p>EVM 之外的可能性 (Possibilities beyond the EVM)</p>
-<p>The advent of modularism means that execution layers can leverage Ethereum’s liquidity and security without being restricted by the limitations of the EVM.</p>
-<p>模块化的出现意味着执行层可以利用以太坊的流动性和安全性，而不受 EVM 的限制。</p>
-<figure data-type="image" tabindex="2"><img src="https://pbs.twimg.com/media/FgFjs21UYAYcAap?format=png&amp;name=medium" alt="" loading="lazy"></figure>
-<p>These are just a few examples of EIPs which were ultimately rejected for the EVM due to backward compatibility issues, but have been implemented in Fuel. See the complete list:</p>
-<p>这些只是 EIP 的几个示例，由于向后兼容性问题最终被 EVM 拒绝，但已在 Fuel 中实现。查看完整列表：</p>
-<p><a href="https://t.co/fwZkuFJrnA">https://fuellabs.github.io/fuel-docs/master/vs-evm.html#eips-implemented-in-fuel…</a></p>
-<figure data-type="image" tabindex="3"><img src="https://pbs.twimg.com/media/FgFjtSvUUAEvw-K?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
-<p>Fuel is optimized for modular execution<br>
-Fuel针对模块化执行进行了优化</p>
-<ul>
-<li>
-<p>Superior DevEx with<a href="https://twitter.com/SwayLang">@SwayLang</a>and Forc<br>
-具有 <a href="https://twitter.com/SwayLang">@SwayLang</a> 和 Forc 的高级 DevEx</p>
-</li>
-<li>
-<p>Parallel Transaction Execution<br>
-并行事务执行</p>
-</li>
-<li>
-<p>Designed for fraud proofs and light clients<br>
-专为防欺诈和轻客户端而设计</p>
-</li>
-</ul>
-<p><a href="https://twitter.com/camiinthisthang/status/1577738478699171845">https://twitter.com/camiinthisthang/status/1577738478699171845</a></p>
-<p>Additional benefits of the FuelVM by<a href="https://twitter.com/sproule_">@sproule_</a>of<a href="https://twitter.com/blockchaincap">@blockchaincap</a></p>
-<p>FuelVM 的其他好处，可查看 <a href="https://twitter.com/blockchaincap">@blockchaincap</a> 的<a href="https://twitter.com/sproule_">@sproule_</a> 撰写的<a href="https://chainguys.github.io/post/tan-suo-fuel-xu-ni-ji-fuelvm-exploring-the-fuelvm/">报告</a></p>
-<p>Conclusions<br>
-结论</p>
-<ul>
-<li>
-<p>Innovation does not require launching a new L1, but can happen at the execution layer.<br>
-创新不需要启动新的 L1，可以只发生在执行层。</p>
-</li>
-<li>
-<p>EVM-compatible execution layers can capitalize on the existing Solidity ecosystem, but fail to make the most of the design space offered by the modular stack.<br>
-EVM 兼容的执行层可以利用现有的 Solidity 生态系统，但无法充分利用模块化技术栈提供的设计空间。</p>
-</li>
-</ul>
-<p>Cont.<br>
-序</p>
-<ul>
-<li>Focusing on efficient computation without worrying about backward compatibility enable MELs to contribute to Ethereum's scalability without being held back by the inefficiencies of the EVM.<br>
-专注于高效计算而不担心向后兼容性，使 MEL 能够为以太坊的扩容做出贡献，而不会因 EVM 的低效率而受阻。</li>
-</ul>
-<p>Learn more about how Fuel, the fastest modular execution layer, unlocks the future of scalability:</p>
-<p>详细了解最快的模块化执行层 Fuel 如何开启可扩展性的未来：</p>
-<p><a href="https://www.fuel.network/">https://www.fuel.network/</a></p>
 ]]></content>
     </entry>
 </feed>
