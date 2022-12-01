@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-12-01T03:42:40.764Z</updated>
+    <updated>2022-12-01T04:32:09.834Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -104,32 +104,53 @@
 <p>1/7 Altlayer's L2 Lowdown, November 2022 A snapshot of the<a href="https://twitter.com/ethereum">@Ethereum</a><br>
 based L2 rollups, scalability and zk space.</p>
 <p>Altlayer 的 L2内幕，2022 年 11 月快照：基于 <a href="https://twitter.com/ethereum">@Ethereum</a> 的 L2 汇总、可扩展性和 zk 空间</p>
-<p>2/7 <a href="https://twitter.com/ethereum">@Ethereum</a>is officially profitable, with L2 transactions surpassing L1 transactions again. <a href="https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDSh1R9IHA">https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDSh1R9IHA…</a></p>
-<p><a href="https://twitter.com/ethereum">@Ethereum</a>正式盈利，L2交易再次超过L1交易。 <a href="https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDS">https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDSh1R9IHA…</a></p>
-<p><a href="https://twitter.com/zksync">@zksync</a>to support<a href="https://twitter.com/RNS_global">@RNS_global</a>on-Chain KYC solution. <a href="https://t.co/XH7m2DoiST">https://prnewswire.com/news-releases/zksync-to-support-rnsids-on-chain-kyc-solution-301684486.html</a></p>
-<p><a href="https://twitter.com/zksync">@zksync</a>支持<a href="https://twitter.com/RNS_global">@RNS_global</a>链上KYC解决方案。 <a href="https://t.co/XH7m2DoiST">https://prnewswire.com/news-releases/zksync-to-support-rnsids-on-chain-kyc-solution-301684486.html</a></p>
+<p>2/7 <a href="https://twitter.com/ethereum">@Ethereum</a>is officially profitable, with L2 transactions surpassing L1 transactions again.<br>
+<a href="https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDSh1R9IHA">https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDSh1R9IHA…</a></p>
+<p><a href="https://twitter.com/ethereum">@Ethereum</a>正式盈利，L2交易再次超过L1交易。<br>
+<a href="https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDS">https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDSh1R9IHA…</a></p>
+<p><a href="https://twitter.com/zksync">@zksync</a>to support<a href="https://twitter.com/RNS_global">@RNS_global</a>on-Chain KYC solution.<br>
+<a href="https://t.co/XH7m2DoiST">https://prnewswire.com/news-releases/zksync-to-support-rnsids-on-chain-kyc-solution-301684486.html</a></p>
+<p><a href="https://twitter.com/zksync">@zksync</a>支持<a href="https://twitter.com/RNS_global">@RNS_global</a>链上KYC解决方案。<br>
+<a href="https://t.co/XH7m2DoiST">https://prnewswire.com/news-releases/zksync-to-support-rnsids-on-chain-kyc-solution-301684486.html</a></p>
 <p><a href="https://twitter.com/CryptoGucci/status/1594880262784942080">https://twitter.com/CryptoGucci/status/1594880262784942080</a></p>
-<p>3/7 <a href="https://twitter.com/the_matter_labs">@the_matter_labs</a>raises $200M to grow team behind Ethereum scaling solution: <a href="https://t.co/HbbOhFTbcE">https://fortune.com/crypto/2022/11/16/matter-labs-raises-200-million-ethereum-scaling-solution/…</a></p>
-<p><a href="https://twitter.com/the_matter_labs">@the_matter_labs</a> 筹集了 2 亿美元，来发展以太坊扩展解决方案背后的团队：<a href="https://t.co/HbbOhFTbcE">https://fortune.com/crypto/2022/11/16/matter-labs- raises-200-million-ethereum-scaling-solution/…</a></p>
-<p><a href="https://twitter.com/GameStop">@GameStop</a>Wallet now has L1 and L2 support. It harnesses the power of zk-rollup - an Ethereum Layer 2 scaling protocol. <a href="https://t.co/UjgOHrb0cX">https://shacknews.com/article/133230/gamestop-wallet-ios-release</a></p>
-<p><a href="https://twitter.com/GameStop">@GameStop</a>钱包现在支持 L1 和 L2。它利用了 zk-rollup 的力量—一种以太坊第 2 层扩展协议。 <a href="https://t.co/UjgOHrb0cX">https://shacknews.com/article/133230/gamestop-wallet-ios-release</a></p>
-<p>4/7<a href="https://twitter.com/MakerDAO">@MakerDAO</a>works on its Layer2 proposition and building up rollup bundles on Ethereum. <a href="https://t.co/0Pv79iPONj">https://thedefiant.io/makerdao-transfer-feature…</a> Want to read about zkEVM’s scalability thesis for the next billion users?</p>
-<p><a href="https://twitter.com/MakerDAO">@MakerDAO</a>致力于其 Layer2 提议并在以太坊上构建汇总包。 <a href="https://t.co/0Pv79iPONj">https://thedefiant.io/makerdao-transfer-feature…</a> 想了解 zkEVM 针对下一个十亿用户的可扩展性论文吗？</p>
+<p>3/7 <a href="https://twitter.com/the_matter_labs">@the_matter_labs</a>raises $200M to grow team behind Ethereum scaling solution:<br>
+<a href="https://t.co/HbbOhFTbcE">https://fortune.com/crypto/2022/11/16/matter-labs-raises-200-million-ethereum-scaling-solution/…</a></p>
+<p><a href="https://twitter.com/the_matter_labs">@the_matter_labs</a> 筹集了 2 亿美元，来发展以太坊扩展解决方案背后的团队：<br>
+<a href="https://t.co/HbbOhFTbcE">https://fortune.com/crypto/2022/11/16/matter-labs- raises-200-million-ethereum-scaling-solution/…</a></p>
+<p><a href="https://twitter.com/GameStop">@GameStop</a>Wallet now has L1 and L2 support. It harnesses the power of zk-rollup - an Ethereum Layer 2 scaling protocol.<br>
+<a href="https://t.co/UjgOHrb0cX">https://shacknews.com/article/133230/gamestop-wallet-ios-release</a></p>
+<p><a href="https://twitter.com/GameStop">@GameStop</a>钱包现在支持 L1 和 L2。它利用了 zk-rollup 的力量—一种以太坊第 2 层扩展协议。<br>
+<a href="https://t.co/UjgOHrb0cX">https://shacknews.com/article/133230/gamestop-wallet-ios-release</a></p>
+<p>4/7<a href="https://twitter.com/MakerDAO">@MakerDAO</a> works on its Layer2 proposition and building up rollup bundles on Ethereum.<br>
+<a href="https://t.co/0Pv79iPONj">https://thedefiant.io/makerdao-transfer-feature…</a> Want to read about zkEVM’s scalability thesis for the next billion users?</p>
+<p><a href="https://twitter.com/MakerDAO">@MakerDAO</a>致力于其 Layer2 提议并在以太坊上构建汇汇总。   <a href="https://t.co/0Pv79iPONj">https://thedefiant.io/makerdao-transfer-feature…</a><br>
+想了解 zkEVM 针对下一个十亿用户的可扩展性论文吗？</p>
 <p><a href="https://twitter.com/pseudotheos/status/1594799592427507712">https://twitter.com/pseudotheos/status/1594799592427507712</a></p>
-<p>5/7<a href="https://twitter.com/zksync">@zksync</a>successfully completes Layer1 audit <a href="https://twitter.com/zksync/status/1595440748215685120">https://twitter.com/zksync/status/1595440748215685120…</a> Blockchain veteran Amrit Kumar appointed COO of Altlayer<a href="https://twitter.com/maqstik">@maqstik</a><a href="https://twitter.com/CoinDesk">@CoinDesk</a></p>
-<p><a href="https://twitter.com/zksync">@zksync</a> 成功完成第 1 层审计 <a href="https://twitter.com/zksync/status/1595440748215685120">https://twitter.com/zksync/status/1595440748215685120…</a>区块链资深人士 Amrit Kumar 被任命为 Altlayer 的首席运营官<a href="https://twitter.com/maqstik">@maqstik</a><a href="https://twitter.com/CoinDesk">@CoinDesk</a></p>
+<p>5/7<a href="https://twitter.com/zksync">@zksync</a>successfully completes Layer1 audit<br>
+<a href="https://twitter.com/zksync/status/1595440748215685120">https://twitter.com/zksync/status/1595440748215685120…</a></p>
+<p>Blockchain veteran Amrit Kumar appointed COO of Altlayer<a href="https://twitter.com/maqstik">@maqstik</a><a href="https://twitter.com/CoinDesk">@CoinDesk</a></p>
+<p><a href="https://twitter.com/zksync">@zksync</a> 成功完成第 1 层审计<br>
+<a href="https://twitter.com/zksync/status/1595440748215685120">https://twitter.com/zksync/status/1595440748215685120…</a><br>
+区块链资深人士 Amrit Kumar 被任命为 Altlayer 的首席运营官<a href="https://twitter.com/maqstik">@maqstik</a><a href="https://twitter.com/CoinDesk">@CoinDesk</a></p>
 <p><a href="https://t.co/J3betjRalt">https://coindesk.com/business/2022/11/15/blockchain-company-altlayer-appoints-amrit-kumar-as-coo/</a></p>
 <p><a href="https://twitter.com/zksync/status/1595440748215685120">https://twitter.com/zksync/status/1595440748215685120 </a></p>
-<p>6/7 Oh Ottie! NFT Collection to exhibit to power of rollups for NFT Minting <a href="https://t.co/gBSk4evCIF">https://blog.altlayer.io/altlayer-to-drop-2000-delightful-mascot-iterations-as-part-of-an-oh-ottie-d9649bb910f4…</a> &quot;We should all be paying more attention to hardening rollups with multi-proofs&quot; according to<a href="https://twitter.com/VitalikButerin">@VitalikButerin</a><br>
-<a href="https://twitter.com/Forkast_News">@Forkast_News</a></p>
-<p>Oh Ottie!  NFT Collection 展示 NFT 铸币汇总的力量 <a href="https://t.co/gBSk4evCIF">https://blog.altlayer.io/altlayer-to-drop-2000-delightful-mascot-iterations-as-part-of-an-oh-ottie-d9649bb910f4… </a> <a href="https://twitter.com/VitalikButerin">@VitalikButerin</a> 表示，“我们都应该更加关注通过多重证明强化汇总”</p>
+<p>6/7 Oh Ottie! NFT Collection to exhibit to power of rollups for NFT Minting<br>
+<a href="https://t.co/gBSk4evCIF">https://blog.altlayer.io/altlayer-to-drop-2000-delightful-mascot-iterations-as-part-of-an-oh-ottie-d9649bb910f4…</a><br>
+&quot;We should all be paying more attention to hardening rollups with multi-proofs&quot; according to<a href="https://twitter.com/VitalikButerin">@VitalikButerin</a> <a href="https://twitter.com/Forkast_News">@Forkast_News</a></p>
+<p>Oh Ottie!  NFT Collection 展示 NFT 铸币汇总的力量<br>
+<a href="https://t.co/gBSk4evCIF">https://blog.altlayer.io/altlayer-to-drop-2000-delightful-mascot-iterations-as-part-of-an-oh-ottie-d9649bb910f4… </a> <a href="https://twitter.com/VitalikButerin">@VitalikButerin</a> 表示，“我们都应该更加关注通过多重证明强化汇总”</p>
 <p><a href="https://t.co/xrDXcatscp">https://forkast.news/headlines/vitalik-buterin-sounds-warning-over-risks-of-defi/</a></p>
-<p>7/7<a href="https://twitter.com/paradigm">@paradigm</a>building Rust Ethereum Execution Layer <a href="https://twitter.com/gakonst/status/1595648232226291712">https://twitter.com/gakonst/status/1595648232226291712…</a></p>
-<p><a href="https://twitter.com/paradigm">@paradigm</a>构建 Rust 以太坊执行层 <a href="https://twitter.com/gakonst/status/1595648232226291712">https://twitter.com/gakonst/status/1595648232226291712…</a></p>
-<p><a href="https://twitter.com/eigenlayer">@eigenlayer</a>: Bringing Ethereum-Level Trust to Middleware <a href="https://twitter.com/Elegy4TheArctic/status/1595080179659210753">https://twitter.com/Elegy4TheArctic/status/1595080179659210753…</a></p>
-<p><a href="https://twitter.com/eigenlayer">@eigenlayer</a>：将以太坊级信任引入中间件<a href="https://twitter.com/Elegy4TheArctic/%E7%8A%B6%E6%80%81/1595080179659210753">https://twitter.com/Elegy4TheArctic/status/1595080179659210753…</a></p>
-<p>Thesis on why <a href="https://twitter.com/hashtag/EVM?src=hashtag_click">#EVM</a> compatibility will be crucial for any protocol <a href="https://twitter.com/toghrulmaharram/status/1595503593192362007">https://twitter.com/toghrulmaharram/status/1595503593192362007…</a> Until next time! !</p>
-<p>关于为什么 <a href="https://twitter.com/hashtag/EVM?src=hashtag_click">#EVM</a> 兼容性对任何协议都至关重要的论文 <a href="https://twitter.com/toghrulmaharram/status/1595503593192362007">https://twitter.com/toghrulmaharram/status/1595503593192362007…</a> 下次见！ ！</p>
+<p>7/7<a href="https://twitter.com/paradigm">@paradigm</a> building Rust Ethereum Execution Layer <a href="https://twitter.com/gakonst/status/1595648232226291712">https://twitter.com/gakonst/status/1595648232226291712…</a></p>
+<p><a href="https://twitter.com/paradigm">@paradigm</a>构建 Rust 以太坊执行层<br>
+<a href="https://twitter.com/gakonst/status/1595648232226291712">https://twitter.com/gakonst/status/1595648232226291712…</a></p>
+<p><a href="https://twitter.com/eigenlayer">@eigenlayer</a>: Bringing Ethereum-Level Trust to Middleware<br>
+<a href="https://twitter.com/Elegy4TheArctic/status/1595080179659210753">https://twitter.com/Elegy4TheArctic/status/1595080179659210753…</a></p>
+<p><a href="https://twitter.com/eigenlayer">@eigenlayer</a>：将以太坊级信任引入中间件<br>
+<a href="https://twitter.com/Elegy4TheArctic/%E7%8A%B6%E6%80%81/1595080179659210753">https://twitter.com/Elegy4TheArctic/status/1595080179659210753…</a></p>
+<p>Thesis on why <a href="https://twitter.com/hashtag/EVM?src=hashtag_click">#EVM</a> compatibility will be crucial for any protocol<br>
+<a href="https://twitter.com/toghrulmaharram/status/1595503593192362007">https://twitter.com/toghrulmaharram/status/1595503593192362007…</a> Until next time! !</p>
+<p>关于为什么 <a href="https://twitter.com/hashtag/EVM?src=hashtag_click">#EVM</a> 兼容性对任何协议都至关重要的论文<br>
+<a href="https://twitter.com/toghrulmaharram/status/1595503593192362007">https://twitter.com/toghrulmaharram/status/1595503593192362007…</a> 下次见！ ！</p>
 ]]></content>
     </entry>
     <entry>
