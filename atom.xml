@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-12-01T05:24:44.850Z</updated>
+    <updated>2022-12-02T03:55:24.162Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -92,6 +92,48 @@
 <a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
 </li>
 </ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[新功能：账号健康模拟 (New Feature：Account Health Simulation)]]></title>
+        <id>https://chainguys.github.io/post/xin-gong-neng-zhang-hao-jian-kang-mo-ni-new-featureaccount-health-simulation/</id>
+        <link href="https://chainguys.github.io/post/xin-gong-neng-zhang-hao-jian-kang-mo-ni-new-featureaccount-health-simulation/">
+        </link>
+        <updated>2022-12-01T03:52:35.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://euler-finance.ghost.io/content/images/2022/12/ahs-tag.png" alt="New Feature: Account Health Simulation" loading="lazy"></figure>
+<p>Euler Finance’s frontend has had a significant improvement to the health monitor! Thanks to the hard work of contributors, users can clearly understand the risk of other events while having no effect on a position. Given that this is a simulation (and has no effect on the user’s existing position), this will assist a significant refinement in risk management.</p>
+<p>Euler金融前端的健康监测有了显着提升！由于贡献者的辛勤工作，用户可以在不影响仓位的情况下清楚地了解其他事件的风险。鉴于这是一个模拟（并且对用户的现有仓位没有影响），这将有助于大幅改进风险管理。</p>
+<p>Thanks to this boost to the Health Monitor, Users can now have a much clearer idea of what conditions might be met in order for their accounts to be flagged for liquidation. In addition, projected earnings changes are still clearly visible to enable a risk / return analysis.</p>
+<p>由于对健康监控起的这一提升，用户现在可以更清醒地了解可能满足哪些条件其帐户才会被标记为清算。此外，预测的收益变化仍然清晰可见，可以进行风险/回报分析。</p>
+<h2 id="euler-的健康监视器-eulers-health-monitor">Euler 的健康监视器 (Euler’s health monitor)</h2>
+<p>As it stands, users enjoy a health monitor that is linked to an existing position in the protocol. Be it their own or another's (using the account spy), getting information about their positions is straightforward and easy to understand. Key metrics like time to liquidation, health score, collateral and liabilities (as well as their risk adjusted values) have been front and centre of any user’s dashboard.</p>
+<p>就目前而言，用户享用与协议中现有仓位相关联的健康监视器。无论是其自身还是其他人的（使用账户间谍），获取有关其仓位信息都是简单易懂的。清算时间、健康评分、抵押品和负债（及其风险调整值）等关键指标一直是任何用户仪表板的前沿和中心。</p>
+<figure data-type="image" tabindex="2"><img src="https://lh3.googleusercontent.com/OWP7mpZyeBVYZu0Nn68WOh0Ht0WQACo0pVX9tSRP76voUob7FpUT-y5zk9I6wul_MVYWfAjrYDkS6nkFKswdjtHPLtRNUqWVMtw7eAh8VP8Gvx8r74zTBbWkTcBfbz460bZbgL5Y-nD0xlkmXpPM-2LymW6z_0PClWjdYl6pmipzDjA6DWBKCp-XGoN8hQ" alt="" loading="lazy"></figure>
+<p>This has made fitting their risk profiles to their activities on the protocol straightforward. In continuing with this spirit, users will now be able to simulate the health of their account with just a few clicks.</p>
+<p>这使得他们的风险概况明明白白地契合其在协议上的活动。本着这种精神，用户现在只需单击几下即可模拟其帐户的健康状况。</p>
+<h2 id="新功能账户健康模拟-new-feature-account-health-simulation">新功能：账户健康模拟 (New feature: Account Health Simulation)</h2>
+<p>This new feature can be easily accessed by clicking on the “Simulate Account Health” button. Users will be met with a screen that overviews all of their assets and liabilities presented alongside sliders that can be modified alongside text boxes for more accurate and exact asset adjustments.</p>
+<p>单击“模拟帐户健康”按钮，即可轻松访问此新功能。用户将看到一个屏幕，该屏幕概述了他们所有的资产和负债，以及可以与文本框一起修改的滑块，来进行更准确/精准的资产调整。</p>
+<figure data-type="image" tabindex="3"><img src="https://lh6.googleusercontent.com/4bionXD5CrTxvu_fC4y1xaJR9D9lzp8WGMKPETZUNZbo9VFysTg6NDcgDeGpEQRuS6ESVyW3lCZ9Di673X0dTzO2C1lTr2ncxK_5ByYAOIH-IrxsdKxgq2oRxrE271T59UILTYj8uz8VbQFWU_27bC_Ih9kYwhw1PV4Uef49tT0OFBh7la-yT0_9W41Bqw" alt="" loading="lazy"></figure>
+<p>These sliders can change both the value of the assets and the cost of borrowing the asset in APY terms. By changing these two variables, users will see an estimate of the standing of their new position at the bottom of the dashboard.</p>
+<p>这些滑块可以改变资产的价值和以 APY 计算的借入资产的成本。通过更改这两个变量，用户将在仪表板底部看到对其新仓位的估计。</p>
+<p>In addition, this health simulator can be used in conjuction with batch transations. Users can batch multiple activities to set up a position they have in mind, and then use the tool to double check how that position is exposed to market movements. After that users can execute, modify further or cancel the transaction without paying any gas or changing any on-chain position.</p>
+<p>此外，这个健康模拟器可以与批量交易结合使用。用户可以批处理多个活动，建立其心目中的仓位，然后使用该工具仔细检查该仓位如何受到市场变动的影响。之后，用户可以执行、进一步修改或取消交易，而无需支付任何 gas 或更改任何链上位置。</p>
+<p>Remember: this is a simulation (and is separate entirely from the reality of the existing position). A significantly greater sense of risk management can come from this. It will be far easier to identify what changes have to occur in order to suffer liquidation. Furthermore, projected earnings deltas are front and centre to evaluate risk versus return.</p>
+<p>请记住：这是一个模拟（并且完全独立于现有仓位的现实）。由此可以激发明显更强的风险管理意识。这比坐实一定会发生哪些变化才会遭受清算要容易得多。此外，预计收益增量是评估风险与回报的前沿和中心。</p>
+<h2 id="模拟变化simulated-change">模拟变化：(Simulated change:)</h2>
+<p>To show the Account Health Simulation tool in action, let’s take the address used in the example above.</p>
+<p>为了展示帐户健康模拟工具的运行情况，让我们以上面示例中使用的地址为例。</p>
+<p>Say a user changes the value of WBTC to $24,000. Let’s also presume that given this increased WBTC price, those looking to short sell WBTC have driven up utilisation, increasing the cost of borrowing to almost 20%.</p>
+<p>假设用户将 WBTC 的价值更改为 24,000 美元。再假设，鉴于 WBTC 价格上涨，那些希望卖空 WBTC 的人提高了利率，将借贷成本提高到近 20％。</p>
+<p>Alongside this, our prospective user will simulate that with this appreciation of BTC, more users have rotated from ETH based assets and so the utilisation has decreased, thereby decreasing the lending APY earnings of wstETH (to 4.81%) and cost to borrow WETH (to 0.99%).</p>
+<p>除此之外，我们的潜在用户将模拟，随着 BTC 的升值，更多用户从基于 ETH 的资产中转移，因此利率下降，从而降低 wstETH 的借贷 APY 收益（至 4.81%）和借入 WETH 的成本（至0.99%）。</p>
+<figure data-type="image" tabindex="4"><img src="https://lh5.googleusercontent.com/WsM2WOSkBGd7lUuNiJwe-qFnRf2-I2lB4EJvhr4cZX3P4t0vzPkuUkZjJx8oCOTo9pIvi5dGNQbG8CInuZA2BL2_E4TbNPPr6-eZTDX5siBo3MG5UJ38aGkF-YfvamYKuwCSs7ryXMWT4MGzMUaEdPEyyeu4sB6kJmfbXXLy_3INKJIoK1TJakpp45DSOg" alt="" loading="lazy"></figure>
+<p>Thanks to this new Account Health Simulation, new statistics relating to health under these conditions can easily be identified. The user is losing a substantial sum of money under these conditions, is close to liquidation should the value of BTC appreciate further / his collateral depreciate and if things remain as they are, he stands to be liquidated in around 300 days.</p>
+<p>多亏了这个新的账户健康模拟，可以很容易地识别在这些条件下与健康相关的新统计数据。在这种情况下，用户将损失大量资金，如果 BTC 的价值进一步升值/他的抵押品贬值，他将接近清算，如果情况保持原样，他将在大约 300 天后被清算。</p>
+<h2 id="总结-roundup">总结: (Roundup:)</h2>
+<p>Thanks to this new tool implemented onto Euler Finance’s frontend, users can more clearly visualise different conditions to help develop a comprehensive and robust risk profile. This tool builds on an already well-fleshed out suite of tools that users of Euler’s front-end currently enjoy.</p>
+<p>由于在Euler金融的前端实施了这一新工具，用户可以更清楚地看到不同的情况，帮助制定全面而稳健的风险策略。该工具建立在 Euler 前端用户目前喜欢的一套已完善的工具之上。</p>
 ]]></content>
     </entry>
     <entry>
@@ -1274,41 +1316,6 @@ Fuel谓词</p>
 <a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
 </li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Alpha Venture DAO 和 Sei 携手推动 DeFi 创新 (Alpha Venture DAO and Sei Join Forces to Supercharge DeFi Innovations)]]></title>
-        <id>https://chainguys.github.io/post/alpha-venture-dao-he-sei-xi-shou-tui-dong-defi-chuang-xin-alpha-venture-dao-and-sei-join-forces-to-supercharge-defi-innovations/</id>
-        <link href="https://chainguys.github.io/post/alpha-venture-dao-he-sei-xi-shou-tui-dong-defi-chuang-xin-alpha-venture-dao-and-sei-join-forces-to-supercharge-defi-innovations/">
-        </link>
-        <updated>2022-11-03T02:06:15.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://blog.seinetwork.io/content/images/size/w2000/2022/11/FgannAiXEAAUKG7.jpg" alt="Alpha Venture DAO and Sei Join Forces to Supercharge DeFi Innovations" loading="lazy"></figure>
-<p><em>Sei brings hands-on mentorship to Alpha Incubate Batch 2, a bespoke DeFi incubation program that serves as your Build Partner</em><br>
-<em>Sei 为 Alpha Incubate Batch 2 带来实践指导，作为构建的合作伙伴，这是一个定制的 DeFi 孵化计划。</em></p>
-<hr>
-<p><a href="https://www.globenewswire.com/Tracker?data=y2KLbsD6XLpIrFf5U4-mTzyCGy_mH4juTq96w1MjUsooERoOgeq_rl_QGb1ckaNm1dxYIbwEsNbtUe7jRLErSg==">Sei</a>, a first sector specific Layer 1 specialized for trading and fastest chain to finality, joins together with <a href="https://www.globenewswire.com/Tracker?data=b8zfepe181ZtyeY-2vcAlZnbH7O7_d5yvL7PWJicpjPB87KfR1qeWUGGH6ToQi2NQB4M7BzHOCsMJrDfbKX6lMsPVyIIJs_l8LCh-be03QU=">Alpha Venture DAO</a>, a renowned Web 3.0 venture builder, to deliver the most competitive incubation program, ‘<a href="https://www.globenewswire.com/Tracker?data=b8zfepe181ZtyeY-2vcAlSOe2M-i9XQdUEgwX3S6PoEmC2-4Y54KEX-SUxWZqjRcb-f7v9DXEDNLHA6gbIqTg5WgDsOIOWy-EMtrUv2bc_TAUi7jSwfu5Bsheu7ZRs_o"><strong>Alpha Incubate Batch 2</strong></a>’ to DeFi builders. We collaborate to give innovators with hands-on mentorship experience in creating simple, secure, scalable dApps on Sei and to accelerate the growth of DeFi projects.</p>
-<p><a href="https://www.globenewswire.com/Tracker?data=y2KLbsD6XLpIrFf5U4-mTzyCGy_mH4juTq96w1MjUsooERoOgeq_rl_QGb1ckaNm1dxYIbwEsNbtUe7jRLErSg==">Sei</a>是第一个专门用于交易的特定layer1，也是最快完成交易的链条，它与<a href="https://www.globenewswire.com/Tracker?data=b8zfepe181ZtyeY-2vcAlZnbH7O7_d5yvL7PWJicpjPB87KfR1qeWUGGH6ToQi2NQB4M7BzHOCsMJrDfbKX6lMsPVyIIJs_l8LCh-be03QU=">Alpha Venture DAO</a>，一个著名的Web 3.0风投建设者联合起来，向DeFi建设者提供最具竞争力的孵化计划，&quot;<a href="https://www.globenewswire.com/Tracker?data=b8zfepe181ZtyeY-2vcAlSOe2M-i9XQdUEgwX3S6PoEmC2-4Y54KEX-SUxWZqjRcb-f7v9DXEDNLHA6gbIqTg5WgDsOIOWy-EMtrUv2bc_TAUi7jSwfu5Bsheu7ZRs_o"><strong>Alpha Incubate Batch</strong></a>。我们的合作是为了给创新者提供在Sei上创建简单、安全、可扩展dApps的实践指导经验，并加速DeFi项目的发展。</p>
-<p><strong>Alpha Incubate Batch 2</strong> is a 12-week DeFi-focused program that provides guidance, resources and support to innovative startups. We analyze each project 1 by 1 to find their areas of need and pair them with top-tier investors, operators, and founders who provide advice on strategy and the steps that incubatees should take to get to their milestones and move from 0 to 1 through the program. In short, successful candidates will receive personalized actionable steps specific to their sector and stage. These bespoke mentorships will be led by mentors from the <strong>Alpha Network</strong>, such as investors and operators from <strong>The Spartan Group, Nansen, 1Kx, Parafi Capital,</strong> and many others, including <strong>Sei</strong>.</p>
-<p><strong>Alpha Incubate Batch 2</strong>是一个为期12周，以DeFi为重点的项目，给予创新创业公司指导、资源和支持。我们对每个项目进行逐一分析，找到其需求领域，并将他们与顶级投资者、运营商和创始人配对，由他们提供战略建议和被孵化者的未来行动，进而助力其达到里程碑，并通过该项目从0到1。简而言之，成功的候选人将收到针对其行业和阶段的个性化可实操指导。这些定制的指导将由来自<strong>Alpha网络的导师领导，例如来自</strong>斯巴达集团、南森、1Kx、Parafi资本<strong>和许多其他公司的投资者和经营者，包括</strong>Sei。</p>
-<p>Sei has one of the most well-rounded ecosystems fully equipped to support DeFi projects to success.  The chain emphasizes reliability, security and high throughput above all else, enabling an entirely new echelon of ultra-high performance DeFi products built on top. By exploring the new design space in between app-chains and general purpose Layer 1's, Sei has carefully selected for a unique set of tradeoffs that make its Layer 1 the optimal environment for DEXs. In this program, projects will have the opportunity to get personalized mentorship from Sei and tap into a community of industry experts that will help them raise funds from top-tier investors hand-selected by Alpha Venture DAO after the Demo Day. Moreover, startups will also be fast tracked to be considered for grants from Sei, receive marketing support, and many more perks that builders can leverage. With the addition of Sei to our ecosystem, we hope to incubate the next generation of disruptive DeFi innovations that raise the standard for all DeFi projects, and move towards mass-adoption.</p>
-<p>Sei拥有最全面的生态系统之一，完全有能力支持DeFi项目取得成功。Sei链强调可靠性、安全性和高吞吐量，使建立在上面的超高性能DeFi产品形成了一个全新的梯队。通过探索介于应用链和通用layer1之间的新设计空间，Sei已经精心选择了一套独特的折衷方案，使其layer1成为DEX的最佳环境。在这批孵化中，参与的项目将有机会得到Sei的个性化指导，并进入一个行业专家社区，帮助他们在演示日之后从Alpha Venture DAO精心挑选的顶级投资者那里筹集资金。此外，初创企业还将被快速考虑获得Sei的资助，获得营销支持，以及更多建设者可以利用的福利。随着Sei加入我们的生态系统，我们希望孵化下一代颠覆性的DeFi创新，提高所有DeFi项目的标准，并朝着大规模普及的方向发展。</p>
-<p>The application window is now open until <strong>November 27, 2022 at 11:59pm UTC.</strong> Builders can apply <a href="https://www.globenewswire.com/Tracker?data=E2Osx27KvG8nMdskMAYYT1BJBamM--APtD6c4ZFSYH_X_DgWiBGMC5rWA3nQZUJ8Q9t9UEn7XG27m1l-OvgXtQ==">here</a> to join the Alpha Incubate Batch 2 program.</p>
-<p>申请窗口现在开放，直到2022年11月27日11:59pm UTC。**建设者可以申请<a href="https://www.globenewswire.com/Tracker?data=E2Osx27KvG8nMdskMAYYT1BJBamM--APtD6c4ZFSYH_X_DgWiBGMC5rWA3nQZUJ8Q9t9UEn7XG27m1l-OvgXtQ==">这里</a>加入Alpha孵化器第二批项目。</p>
-<p><em>Any questions regarding the application process can be directed to <a href="https://www.globenewswire.com/Tracker?data=zHKtHbT12Ubg3VrSoR7_odM8iyClz90d6iiN-KegNk3ub_LNBVFYqoV_dC9nX0Xn_-LTGSZEm1kUgTMv3FcFEkGofgvxR44-4lLpc7XRFuuZkyOkl3Xe77WimLdIEP43">here</a>.<br>
-任何关于申请过程的问题都可以直接联系<a href="https://www.globenewswire.com/Tracker?data=zHKtHbT12Ubg3VrSoR7_odM8iyClz90d6iiN-KegNk3ub_LNBVFYqoV_dC9nX0Xn_-LTGSZEm1kUgTMv3FcFEkGofgvxR44-4lLpc7XRFuuZkyOkl3Xe77WimLdIEP43">这里</a>。</em></p>
-<p>&quot;We are confident that our partnership with Sei will bring immense value to Web 3.0 builders through the Alpha Incubate Batch 2,” said Tascha Punyaneramitdee, Project Lead and Co-founder of Alpha Venture DAO. “Given Sei is one of the most user-friendly layer-1 blockchains that also provides tools and tutorials to help builders easily onboard and get started, and especially with the direct mentorship from Sei through the Alpha Incubate program that is tailored for each of our incubatees, this will definitely accelerate the growth of DeFi projects that are of high-quality.”</p>
-<p>&quot;我们相信，我们与Sei的合作将通过Alpha Incubate Batch 2为Web 3.0建设者带来巨大的价值，&quot;Alpha Venture DAO的项目负责人和联合创始人Tascha Punyaneramitdee说。&quot;鉴于Sei是最方便用户的layer1区块链之一，还提供工具和教程，帮助建设者轻松上手，尤其是通过Alpha Incubate项目，Sei为我们每个孵化者量身定做的直接指导，这肯定会加速高质量的DeFi项目的发展。&quot;</p>
-<p>“We are thrilled to join the most competitive incubation program through our partnership with Alpha Venture DAO, helping to accelerate Web 3.0 startups exploring the rapidly growing DeFi design space,” said Dan Edlebeck, Head of Ecosystem at Sei. “Alpha Incubate Batch 2 will deliver multiple exciting, scalable dApps through this cohort. I'm interested to see which DeFi applications are born and expand the Sei ecosystem leveraging Batch 2 program mentors' expertise, network, and long-term support.”</p>
-<p>&quot;我们很高兴通过与Alpha Venture DAO的合作加入最具竞争力的孵化计划，帮助加速Web 3.0初创企业探索快速增长的DeFi设计领域，&quot;Sei公司生态系统主管Dan Edlebeck说。&quot;Alpha Incubate Batch 2将通过这批孵化提供多个令人兴奋、可扩展的dApps。我有兴趣看到哪些DeFi应用的诞生，并利用第2批(Batch 2)项目导师的专业知识、网络和长期支持来扩大Sei生态系统。&quot;</p>
-<p><strong>关于Alpha Venture DAO (About Alpha Venture DAO)</strong></p>
-<p><a href="https://www.globenewswire.com/Tracker?data=b8zfepe181ZtyeY-2vcAlbUrMwDByHLqoU3774qnIjLx28lGvJt-y6U0eW_9Hwtp-8vCgl9xq4k3jUizpCAgGFiCpCBonhl91FnAc1d4NCo=">Alpha Venture DAO</a> is a community-driven venture builder that builds and incubates Web 3.0 decentralized applications (dApp). Alpha Venture DAO is the team behind Alpha Homora, the top leveraged yield farming protocol that was ranked in the Top 10 DeFi protocol. Its vision is to become a multi-chain dApp ecosystem. By being a part of Alpha Venture DAO, anyone can build, contribute, and own Web 3.0 innovation. Builders now have a complete ecosystem to bootstrap their Web 3.0 projects.</p>
-<p><a href="https://www.globenewswire.com/Tracker?data=b8zfepe181ZtyeY-2vcAlbUrMwDByHLqoU3774qnIjLx28lGvJt-y6U0eW_9Hwtp-8vCgl9xq4k3jUizpCAgGFiCpCBonhl91FnAc1d4NCo=">Alpha Venture DAO</a>是一个社区驱动的风险构建者，建立和孵化Web 3.0去中心化应用（dApp）。Alpha Venture DAO是Alpha Homora背后的团队，Alpha Homora是顶级的杠杆收益协议，曾被列入Top 10 DeFi协议。它的愿景是成为一个多链dApp生态系统。通过成为Alpha Venture DAO的一部分，任何人都可以建立、贡献和拥有Web 3.0创新。建设者现在有一个完整的生态系统来引导他们的Web 3.0项目。</p>
-<p>Website 网站: <a href="https://www.globenewswire.com/Tracker?data=Fc_qTlMjBtPItlJk_BZn2M8I0zhCE4EsSlNppUbSzDuIafQHBdVS8d4QXfejE92mSORE_BhWGOhCMOObA04G_9z_t1YyjjqqVF4B9U6XGO4=">https://alphaventuredao.io/</a></p>
-<p>Twitter 推特: <a href="https://www.globenewswire.com/Tracker?data=Fc_qTlMjBtPItlJk_BZn2FrjeM8HAk3Wo4FTRPnOSZT9MRrBftRs6zPBvLpGX827yhVDfMbieN7IGN3NPi62I91MoABUsKRjU16eGTYTQgDZHu5X9fTy-h90mrPeMjL6">https://twitter.com/alphaventuredao</a></p>
-<p><strong>关于Sei (About Sei)</strong></p>
-<p><a href="https://www.globenewswire.com/Tracker?data=Y-8Un8RH5mFnkKszqYslY6PIVrSCqoODNgmiHPATJISGpUxOXyQyHg285vdYOiPasBsALorE2VpjOrOVRWUJBQ==">Sei</a> serves as plumbing for the future financial system - infrastructure to support capital markets, starting with exchanges. As the first Layer 1 specialized for trading, Sei is the fastest chain to finality, optimizing every layer of its stack to give exchanges an unfair advantage. Exchanges are the killer app of crypto, but current Layer 1s hold them back. Most L1s fall into two extremes, general purpose and app-specific. Sei unlocks a new design space in between as a sector-specific L1. There are currently 60+ teams from Solana, Polkadot, Terra, and NEAR building on top of Sei going into mainnet launch. Sei is backed by Multicoin, Delphi, Tangent, and several MMs like Hudson River Trading, GSR.</p>
-<p><a href="https://www.globenewswire.com/Tracker?data=Y-8Un8RH5mFnkKszqYslY6PIVrSCqoODNgmiHPATJISGpUxOXyQyHg285vdYOiPasBsALorE2VpjOrOVRWUJBQ==">Sei</a>作为未来金融系统的管道--支持资本市场的基础设施，从交易所开始。作为第一个专门用于交易的layer1，Sei是实现终态最快的链条，优化其技术栈的每一层，使交易所具有无可比拟的优势。交易所是加密货币的杀手级应用，但目前的layer1却阻碍了其发展。大多数L1属于两个极端，即通用型和特定应用型。Sei作为特定场景的L1，在两者之间解锁了一个新的设计空间。目前有60多个来自Solana、Polkadot、Terra和NEAR的团队在Sei的基础上进行建设，准备进入主网发布。Sei得到了Multicoin、Delphi、Tangent和几个MM的支持，如Hudson River Trading、GSR。</p>
-<p>Follow Sei 关注Sei: <a href="https://www.globenewswire.com/Tracker?data=gJV1aps37SgJXrYurIhxNFLNIzjD7uwlWlWi7904kMBwDRWJ_IPig4-covnDFjykmv0MqykIoFPGzQQollUtgA==">Twitter</a> | <a href="https://www.globenewswire.com/Tracker?data=8NshhCUvF7cs4fWULYbggxVffsazGYDW1kd_umJSRI-yJqZqUFZCY845mn0zQ8HVEuUkTEeFQz4A9FTE0qBzyA==">Discord</a> | <a href="https://www.globenewswire.com/Tracker?data=gC7edtvYm2bed_6lTKfcyF4yQrhSt92ssqpESw6Dw3sz9OL6cp4R3-DUa209J4_jW-BQkRqVLfYn36-PExAeZQ==">Telegram</a> | <a href="https://www.globenewswire.com/Tracker?data=c5Z9k80VYenqHkiocr46Eyd55foNuU7j1urr2KSsZqR3S91fgZITgml7_03m0NwGshqrBs9XgklklcKduSHZJw==">Website</a></p>
 ]]></content>
     </entry>
 </feed>
