@@ -8,7 +8,7 @@
 <meta name="keywords" content="crypto blockchain translation meme coin 区块链 加密货币 翻译 白皮书 文档 doc">
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
-<title>Chainguys&#39;Blog</title>
+<title>Altlayer月报Altlayer Monthly Recap-Nov.2022 | Chainguys&#39;Blog</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1670326093736">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -61,6 +61,8 @@
 
 
 
+  <meta name="description" content="Altlayer月报Altlayer Monthly Recap-Nov.2022" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -175,1505 +177,281 @@
   <div class="main-continer">
     
     <div
-      class="section-layout  pisces">
+      class="section-layout pisces ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
-<div class="sidebar-wrapper box-shadow-wrapper bg-color">
-  <div class="sidebar-item">
-    <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name">Chainguys</p>
-    
-    <div class="site-description right-motion">
-      
-      
-      
-        <p>A blockchain guy who likes making memes and translating tech articles </p>
-      
-        <p>All Information NOT Financial Adivice</p>
-      
-        <p> 一个区块链的老韭菜 </p>
-      
-        <p>兴趣是做meme和翻译技术文章 </p>
-      
-        <p>一切均非投资建议</p>
-      
-      
-    </div>
-    
-  </div>
-  <div class="sidebar-item side-item-stat right-motion">
-    <div class="sidebar-item-box">
-      <a href="/archives/">
         
-        <span class="site-item-stat-count">150</span>
-        <span class="site-item-stat-name language" data-lan="article">文章</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="/tags/">
-        <span class="site-item-stat-count">316</span>
-        <span class="site-item-stat-name language" data-lan="tag">标签</span>
-      </a>
-    </div>
-  </div>
-  
-    
-      <div class="sidebar-item">
-        <span class="site-item-rss">
-            <i class="fa fa-rss"></i>
-            <a href="https://chainguys.github.io/atom.xml" target="_blank">RSS</a>
-        </span>
-      </div>
-    
-  
-  
 
+<div class="sidebar">
   
-
-
-
-</div>
 </div>
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'pisces';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    jQuery.Velocity(hideElement, 'stop');
+    jQuery.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        jQuery.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
       }
-    });
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
   }
-  </script>
-        <div class="section-box tag-line box-shadow-wrapper">
-          <section class="section tags-section posts-expand bg-color">
-            <div class="padding-wrapper">
-  <div class="tag-timeline-box">
-    <div class="tag-timeline-wrapper">
-      <div class="tag-timeline-title">
-        <h2>
-          neon
-          <small class="language" data-lan="tag">标签</small>
-        </h2>
-      </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <a href="https://chainguys.github.io/post/neondocwp/">
-        <div class="motion-warpper">
-          <div class="tag-post-node">
-            <h1>
-              04-27
-              <small>Neon中文材料合集-不断更新中(Neon Chinese Materials-Updating)</small>
-            </h1>
-          </div>
-        </div>
-      </a>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://chainguys.github.io/post/altlayer-yue-bao-altlayer-monthly-recap-nov2022/"> Altlayer月报Altlayer Monthly Recap-Nov.2022 </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2022-12-05 19:10:24">2022-12-05</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span
+        >8<span class="language" data-lan="minute"
+          >分钟</span
+        ></span
+      >
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span
+        >1526<span class="pc-show language" data-lan="words"
+          >字数</span
+        ></span
+      >
+    </span>
+      
+    <span
+      id="/post/altlayer-yue-bao-altlayer-monthly-recap-nov2022/"
+      data-flag-title="Altlayer月报Altlayer Monthly Recap-Nov.2022"
+      class="meta-item pc-show leancloud_visitors"
+    >
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span
+        ><span class="language" data-lan="view">浏览量:</span>:<span
+          class="leancloud-visitors-count"
+        ></span
+      ></span>
+    </span>
+    
+  </div>
+</section>
+
+            <div class="post-body next-md-body" id="post_body">
+              <p>原文地址:<a href="https://twitter.com/Kenwt_1/status/1599039582770978822">https://twitter.com/Kenwt_1/status/1599039582770978822</a></p>
+<p>1/ Greetings Alters, November was a big month for<a href="https://twitter.com/alt_layer">@alt_layer</a></p>
+<p>1/ Alters们好，11 月对 <a href="https://twitter.com/alt_layer">@alt_layer</a> 来说是重要的一个月</p>
+<p>We had many great news &amp; achievements as we continued to <a href="https://twitter.com/hashtag/BUIDL?src=hashtag_click">#BUIDL</a> while the community has thrived thanks to several activities. If you still cannot catch up, don't worry. Here comes November Recap for y'all</p>
+<p>在我们继续 <a href="https://twitter.com/hashtag/BUIDL?src=hashtag_click">#BUIDL</a> 的过程中，我们获得了许多好消息和成就，同时社区因多项活动而蓬勃发展。如果您仍然无法赶上，也请不要担心。 现在为大家回顾一下11月发生的事情。</p>
+<figure data-type="image" tabindex="1"><img src="https://pbs.twimg.com/media/FjDPoUcacAE3Gar?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
+<p>2/ On Nov. 8, we started the month by announcing launch of new NFT collection &quot;Oh Ottie!&quot;  The collection consists of overall 2,000 unique avatars of our beloved mascot &quot;Ottie&quot; to showcase flash layer technology, enabling NFT minting in a gasless manner across all L1s.</p>
+<p>2/ 11 月 8 日，我们以宣布推出新的 NFT 系列“Oh Ottie！”，开启了本月。该系列包含我们心爱的吉祥物“Ottie”的 2,000 个独特头像，用来展示闪存层/瞬时层技术，使 NFT 能够在所有 L1 上以无gas的方式铸造。</p>
+<p>https://twitter.com/i/status/1599039611682291712</p>
+<p>3/ Here is detail for the drop;</p>
+<ul>
+<li>
+<p>1,200/2,000 NFT will be launched on Dec.9<br>
+1,200/2,000 NFT 将于 12 月 9 日上线</p>
+</li>
+<li>
+<p>Mint will take place on Flash Layer on FCFS basis<br>
+铸币将在先到先得基础上在闪存层/瞬时层上进行</p>
+</li>
+<li>
+<p>Mint price will be 0.08 <a href="https://twitter.com/search?q=%24BNB&amp;src=cashtag_click"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mi>T</mi><mi>H</mi><mo>]</mo><mo>(</mo><mi>h</mi><mi>t</mi><mi>t</mi><mi>p</mi><mi>s</mi><mo>:</mo><mi mathvariant="normal">/</mi><mi mathvariant="normal">/</mi><mi>t</mi><mi>w</mi><mi>i</mi><mi>t</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi mathvariant="normal">.</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi mathvariant="normal">/</mi><mi>s</mi><mi>e</mi><mi>a</mi><mi>r</mi><mi>c</mi><mi>h</mi><mo>?</mo><mi>q</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">ETH](https://twitter.com/search?q=%24ETH&amp;src=cashtag_click) or equal in [</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mclose">]</span><span class="mopen">(</span><span class="mord mathdefault">h</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">p</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">/</span><span class="mord">/</span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord">.</span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">m</span><span class="mord">/</span><span class="mord mathdefault">s</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">c</span><span class="mord mathdefault">h</span><span class="mclose">?</span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span></span></span>BNB</a> &amp; <a href="https://twitter.com/search?q=%24ETH&amp;src=cashtag_click"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>A</mi><mi>T</mi><mi>I</mi><mi>C</mi><mo>]</mo><mo>(</mo><mi>h</mi><mi>t</mi><mi>t</mi><mi>p</mi><mi>s</mi><mo>:</mo><mi mathvariant="normal">/</mi><mi mathvariant="normal">/</mi><mi>t</mi><mi>w</mi><mi>i</mi><mi>t</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi mathvariant="normal">.</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi mathvariant="normal">/</mi><mi>s</mi><mi>e</mi><mi>a</mi><mi>r</mi><mi>c</mi><mi>h</mi><mo>?</mo><mi>q</mi><mo>=</mo><mi>M</mi><mi>i</mi><mi>n</mi><mi>t</mi><mi mathvariant="normal">价</mi><mi mathvariant="normal">格</mi><mi mathvariant="normal">将</mi><mi mathvariant="normal">为</mi><mn>0.08</mn><mo>[</mo></mrow><annotation encoding="application/x-tex">MATIC](https://twitter.com/search?q=%24MATIC&amp;src=cashtag_click) bridged from[@Ethereum](https://twitter.com/ethereum) [@BNBCHAIN](https://twitter.com/BNBCHAIN) [@0xPolygon](https://twitter.com/0xPolygon)chains  
+Mint 价格将为 0.08 [</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mclose">]</span><span class="mopen">(</span><span class="mord mathdefault">h</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">p</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">/</span><span class="mord">/</span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord">.</span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">m</span><span class="mord">/</span><span class="mord mathdefault">s</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">c</span><span class="mord mathdefault">h</span><span class="mclose">?</span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mord cjk_fallback">价</span><span class="mord cjk_fallback">格</span><span class="mord cjk_fallback">将</span><span class="mord cjk_fallback">为</span><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span><span class="mord">8</span><span class="mopen">[</span></span></span></span>ETH</a> 或等值的 <a href="https://twitter.com/search?q=%24MATIC&amp;src=cashtag_click"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi><mi>N</mi><mi>B</mi><mo>]</mo><mo>(</mo><mi>h</mi><mi>t</mi><mi>t</mi><mi>p</mi><mi>s</mi><mo>:</mo><mi mathvariant="normal">/</mi><mi mathvariant="normal">/</mi><mi>t</mi><mi>w</mi><mi>i</mi><mi>t</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi mathvariant="normal">.</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi mathvariant="normal">/</mi><mi>s</mi><mi>e</mi><mi>a</mi><mi>r</mi><mi>c</mi><mi>h</mi><mo>?</mo><mi>q</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">BNB](https:/ /twitter.com/search?q=%24BNB&amp;src=cashtag_click) &amp; [</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mclose">]</span><span class="mopen">(</span><span class="mord mathdefault">h</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">p</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">/</span><span class="mord">/</span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord">.</span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">m</span><span class="mord">/</span><span class="mord mathdefault">s</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">c</span><span class="mord mathdefault">h</span><span class="mclose">?</span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span></span></span>MATIC</a> 从[@Ethereum](https://twitter. com/ethereum) <a href="https://twitter.com/BNBCHAIN">@BNBCHAIN</a> <a href="https://twitter.com/0xPolygon">@0xPolygon</a></p>
+</li>
+<li>
+<p>How-to guide will be published on Dec.7<br>
+操作指南将于 12 月 7 日发布</p>
+</li>
+</ul>
+<p>4/ What’s more, there will be benefits by holding NFT;<br>
+4/ 更重要的是，持有NFT会有收益；</p>
+<p>Future claim to token/NFT airdrop<br>
+未来对代币/NFT 空投的要求</p>
+<p>VIP access to merch/events<br>
+商品/活动的 VIP 访问权限</p>
+<p>Priority access to testnet validator program<br>
+优先访问测试网验证程序</p>
+<p>Social impact programmes for Otters !<br>
+水獭的社会影响计划！</p>
+<p>GET WL<br>
+获取白名单<br>
+<a href="https://t.co/lYgac5SQ7w">https://sograph.xyz/space/altlayer/campaign/yVFDYdj1ao…</a></p>
+<p>More info;<br>
+更多信息;<br>
+https://blog.altlayer.io/altlayer-to-drop-2000-delightful-mascot-iterations-as-part-of-an-oh-ottie-d9649bb910f4</p>
+<p>5/ In regard of Oh Ottie! NFT campaign, <a href="https://twitter.com/alt_layer">@alt_layer</a>, represented by Head of Growth, <a href="https://twitter.com/Dorothy_defi">@Dorothy_defi</a>, has also collaborated &amp; conducted several AMAs w/ leading Web3 projects, namely,<a href="https://twitter.com/Port3Network">@Port3Network</a> <a href="https://twitter.com/UltiverseDAO">@UltiverseDAO</a> <a href="https://twitter.com/Element_Market">@Element_Market</a> <a href="https://twitter.com/MEXC_Global">@MEXC_Global</a> <a href="https://twitter.com/NEST_Protocol">@NEST_Protocol</a> <a href="https://twitter.com/HypeX_io">@HypeX_io</a> <a href="https://twitter.com/okxweb3">@okxweb3</a> etc.</p>
+<p>5/ 关于哦奥蒂！ NFT 活动 <a href="https://twitter.com/alt_layer">@alt_layer</a> 由增长负责人 <a href="https://twitter.com/Dorothy_defi">@Dorothy_defi</a> 代表，还与领先的 Web3 项目进行了多场联合AMA，比如<a href="https://twitter.com/Port3Network">@Port3Network</a> <a href="https://twitter.com/UltiverseDAO">@UltiverseDAO</a> <a href="https://twitter.com/Element_Market">@Element_Market</a> <a href="https://twitter.com/MEXC_Global">@MEXC_Global</a> <a href="https://twitter.com/NEST_Protocol">@NEST_Protocol</a> <a href="https://twitter.com/HypeX_io">@HypeX_io</a> [@okxweb3](https://twitter .com/okxweb3) 等</p>
+<figure data-type="image" tabindex="2"><img src="https://pbs.twimg.com/media/FjDjHNaaUAEXJyb?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
+<p>6/ Afterwards, on Nov.15, AltLayer announced one of the biggest news in the space – Amrit Kumar has joined the team as COO W/ full of experience &amp; knowledge, he will be in charge of operation strategy &amp; drive the company forwards w/ the aim to build custom rollup-as-a-service</p>
+<p>6/ 随后，11 月 15 日，AltLayer 宣布了该领域最大的新闻之一——Amrit Kumar 已加入团队，担任首席运营官，他拥有丰富的经验和知识，他将负责运营战略，并推动公司向前发展/ 构建自定义汇总即服务的目标</p>
+<figure data-type="image" tabindex="3"><img src="https://pbs.twimg.com/media/FjDKslFaYAAJzK-?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>7/ In addition,on Nov.23, Ep#2 of Alt View was out! This time, we have <a href="https://twitter.com/stonecoldpat0">@stonecoldpat0</a>from Infura as exclusive guest. He has shared insights on scalability &amp; also discussed w/ <a href="https://twitter.com/jiayaoqi">@jiayaoqi</a> whether app-specific rollups are promising solution for Web3 dApps</p>
+<p>7/ 此外，11 月 23 日，Alt View 的第 2 集已经发布！这一次，我们有来自 Infura 的 <a href="https://twitter.com/stonecoldpat0">@stonecoldpat0</a> 作为独家嘉宾。他分享了关于可扩展性的见解，还与 <a href="https://twitter.com/jiayaoqi">@jiayaoqi</a> 讨论了应用特定汇总是否是 Web3 dApps 有前途的解决方案</p>
+<p>https://www.youtube.com/watch?v=SO4PavkkAFg</p>
+<p>8/ Apart from the talk session w/ Patrick McCorry,<a href="https://twitter.com/jiayaoqi">@jiayaoqi</a>, CEO of AltLayer, also talked about the project on Podcast w/<a href="https://twitter.com/coasthawk">@coasthawk</a>; <a href="https://t.co/JBMMI7As8E">https://open.spotify.com/episode/2xqNOslVydtQeTn7NWjn9d…</a></p>
+<p>8/ 除了与 Patrick McCorry 的谈话外，AltLayer 首席执行官 <a href="https://twitter.com/jiayaoqi">@jiayaoqi</a> 还在 Podcast 上与 [@coasthawk](https:// twitter.com/coasthawk）； <a href="https://t.co/JBMMI7As8E">https://open.spotify.com/episode/2xqNOslVydtQeTn7NWjn9d…</a></p>
+<p><a href="https://twitter.com/alt_layer">@alt_layer</a>&amp;<a href="https://twitter.com/jiayaoqi">@jiayaoqi</a><br>
+还登上了媒体文章；</p>
+<ol>
+<li>
+<p><a href="https://t.co/Z2Hqgrv6RG">https://grab.com/sg/press/others/straitsx-and-grab-pilot-use-of-purpose-bound-money-during-singapore-fintech-festival-2022/…</a></p>
+</li>
+<li>
+<p>https://cointelegraph.com/innovation-circle/value-migration-from-the-fat-protocol-to-fat-application-layer-how-to-adapt</p>
+</li>
+</ol>
+<p>9/ Moreover, regarding partnership updates, on Nov. 25, AltLayer announced strategic partnership w/<a href="https://twitter.com/chirpley">@chirpley</a>, Web3 Influencer Marketing Platform.</p>
+<p>9/ 此外，关于合作伙伴关系更新，11 月 25 日，AltLayer 宣布与 Web3 Influencer Marketing Platform <a href="https://twitter.com/chirpley">@chirpley</a> 建立战略合作伙伴关系。</p>
+<p>The project will use AltLayer's elastic roll-up solution for upcoming <a href="https://twitter.com/hashtag/NFT?src=hashtag_click">#NFT</a> - enabling highly scalable &amp; gasless NFT Minting.</p>
+<p>该项目将为即将到来的 <a href="https://twitter.com/hashtag/NFT?src=hashtag_click">#NFT</a> 使用 AltLayer 的弹性汇总解决方案 - 实现高度可扩展和无gas的 NFT 铸币。</p>
+<p>https://twitter.com/i/status/1599039697581666306</p>
+<p>10/ We ended the month attending one of the first and biggest Blockchain events in Vietnam! <a href="https://twitter.com/eth_vietnam">@eth_vietnam</a></p>
+<p>10/ 我们在月底参加了越南最早也是最大的区块链活动之一！ <a href="https://twitter.com/eth_vietnam">@eth_vietnam</a></p>
+<p>in which AltLayer has been the sponsor for the event. The event was held 2 days at Independence Palace, HCMC during Nov. 25 - 26</p>
+<p>其中 AltLayer 是该活动的赞助商。该活动于 11 月 25 日至 26 日在胡志明市独立宫举行，为期两天</p>
+<figure data-type="image" tabindex="4"><img src="https://pbs.twimg.com/media/FjDMUShacAIUyLN?format=jpg&amp;name=large" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://pbs.twimg.com/media/FjDMYhXagAA8iWV?format=jpg&amp;name=4096x4096" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://pbs.twimg.com/media/FjDMiubaMAAo-8w?format=jpg&amp;name=4096x4096" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://pbs.twimg.com/media/FjDMkBNaYAEKiEM?format=png&amp;name=900x900" alt="" loading="lazy"></figure>
+<p>11/ During the event, AltLayer’s Head of Growth, <a href="https://twitter.com/Dorothy_defi">@Dorothy_defi</a> moderated a panel discussion w/ topic &quot;Scaling <a href="https://twitter.com/hashtag/DeFi?src=hashtag_click">#DeFi</a> toward mass adoption&quot; along w/ <a href="https://twitter.com/KyberNetwork">@kybernetwork</a><br>
+<a href="https://twitter.com/okx">@okx</a> <a href="https://twitter.com/HuobiGlobal">@HuobiGlobal</a> <a href="https://twitter.com/1inch">@1inch</a></p>
+<p>11/ 在活动期间，AltLayer 的增长主管 <a href="https://twitter.com/Dorothy_defi">@Dorothy_defi</a> 主持了一场小组讨论，主题为“扩展 [#DeFi](https://twitter.com/hashtag/ DeFi?src=hashtag_click）走向大规模采用”以及 <a href="https://twitter.com/KyberNetwork">@kybernetwork</a><br>
+<a href="https://twitter.com/okx">@okx</a> <a href="https://twitter.com/HuobiGlobal">@HuobiGlobal</a> <a href="https://twitter.com/1inch">@1inch</a></p>
+<figure data-type="image" tabindex="8"><img src="https://pbs.twimg.com/media/FjDKHeTaYAAv2d-?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
+<p>12/ Meanwhile, AltLayer’s Head of Product Engineering,<a href="https://twitter.com/junhaotan_">@junhaotan_</a>took the stage &amp; explained how AltLayer’s highly customisable rollups &amp; versatile tooling options fuel <a href="https://twitter.com/hashtag/dApps?src=hashtag_click">#dApps</a> execution needs, which will take <a href="https://twitter.com/hashtag/Web3?src=hashtag_click">#Web3</a> one step further!</p>
+<p>12/ 与此同时，AltLayer 的产品工程主管<a href="https://twitter.com/junhaotan_">@junhaotan_</a>上台解释了 AltLayer 的高度可定制汇总和多功能工具选项如何推动 [#dApps](https://twitter .com/hashtag/dApps?src=hashtag_click) 执行需求，这将使 <a href="https://twitter.com/hashtag/Web3?src=hashtag_click">#Web3</a> 更进一步！</p>
+<figure data-type="image" tabindex="9"><img src="https://pbs.twimg.com/media/FjDKKJEakAE-Z3z?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
+<p>13/ This is all the project updates/community activities of AltLayer during November 2022. To stay updated &amp; be the part of our community;</p>
+<p>13/ 这是 AltLayer 在 2022 年 11 月期间的所有项目更新/社区活动。保持更新并成为我们社区的一部分；</p>
+<p>Website: <a href="https://t.co/QTtzqbrsnO">https://altlayer.io</a><br>
+Discord: <a href="https://t.co/qiQJx5z3ZA">https://discord.com/invite/altlayer</a><br>
+Youtube: <a href="https://t.co/KyuEm1ws1X">https://youtube.com/@altlayer7257</a><br>
+Medium: https://medium.com/@altlayer</p>
+
+            </div>
+            
+              <div class="reward-btn">
+                <div class="reward-btn-text">赞赏</div>
+              </div>
+            
+            
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      Chainguys
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://chainguys.github.io/post/altlayer-yue-bao-altlayer-monthly-recap-nov2022/" title="Altlayer月报Altlayer Monthly Recap-Nov.2022">https://chainguys.github.io/post/altlayer-yue-bao-altlayer-monthly-recap-nov2022/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="Fuel大使计划简介 (Introducing the Fuel Ambassador Program)" href="https://chainguys.github.io/post/fuel-da-shi-ji-hua-jian-jie-introducing-the-fuel-ambassador-program/">Fuel大使计划简介 (Introducing the Fuel Ambassador Program)</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="Fuel大使计划简介 (Introducing the Fuel Ambassador Program)" href="https://chainguys.github.io/post/fuel-da-shi-ji-hua-jian-jie-introducing-the-fuel-ambassador-program/">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="新功能：账号健康模拟 (New Feature：Account Health Simulation)" href="https://chainguys.github.io/post/xin-gong-neng-zhang-hao-jian-kang-mo-ni-new-featureaccount-health-simulation/">新功能：账号健康模拟 (New Feature：Account Health Simulation)</a>
+        <a class="nav-mobile-next" title="新功能：账号健康模拟 (New Feature：Account Health Simulation)" href="https://chainguys.github.io/post/xin-gong-neng-zhang-hao-jian-kang-mo-ni-new-featureaccount-health-simulation/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
 </div>
-          </section>
+            
+            
+  
+
+          </div>
         </div>
       </div>
     </div>
@@ -1918,6 +696,235 @@
     parent.insertBefore(aelem, next);
   });
 </script>
+    <div class="reward-mask" style="display: none;">
+  <div class="reward-relative">
+    <span class="close" aria-hidden="true">x</span>
+    <div class="reward-body">
+      <h2>感谢您的支持，我会继续努力的!</h2>
+      <div class="reward-img-box">
+        <div style="position: relative; width: 140px; height: 140px;">
+          
+          
+            <img id="zfb" class="reward-img" src="/media/images/custom-zfbImg.png" alt="赞赏码">
+          
+          
+            <img id="wx" class="reward-img" src="/media/images/custom-wxImg.png" alt="赞赏码">
+          
+        </div>
+      </div>
+      <p class="reward-word">ETH:0xeaD95E58791e42D89EF144A2BaB00B1BfAFC0a3C</p>
+      <p class="reward-tip">Solana:7TqTNNvnduqKNGkDVAcGXfkena35PJGyR6tby3QWNzC2</p>
+    </div>
+    <div class="bottom">
+      
+      <div id="zfbBtn" class="pay-text">
+        ETH QR Code
+      </div>
+      
+      
+      <div id="wxBtn" class="pay-text">
+        Solana QR Code
+      </div>
+      
+    </div>
+  </div>
+</div>
+<style>
+  .reward-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000054;
+  }
+
+  .reward-relative {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -205px;
+  }
+
+  .reward-relative .close {
+    position: absolute;
+    right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+  }
+
+  .reward-body {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .reward-btn {
+    text-align: center;
+  }
+
+  .reward-btn-text {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ff9734;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .pay-text {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    transition: all .2s linear;
+  }
+
+  .pay-text:hover {
+    background-color: #a5a5a536;
+  }
+
+  .reward-body h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
+  .reward-body h2:after,
+  .reward-body h2:before {
+    font-family: Arial, Helvetica, sans-serif;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    font-style: normal;
+    color: #eee;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .reward-body h2:before {
+    content: '\201c';
+    left: 50px;
+  }
+
+  .reward-body h2:after {
+    content: '\201d';
+    right: 80px;
+  }
+
+  .reward-img-box {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .reward-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .reward-relative {
+      height: 100%;
+      top: 0px;
+      margin-top: 0;
+      width: auto;
+    }
+
+    .reward-relative .bottom {
+      flex-direction: column;
+    }
+
+    .reward-relative .pay-text {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid silver;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .reward-body h2:after {
+      right: 40px;
+    }
+
+    .reward-body h2:after,
+    .reward-body h2:before {
+      font-size: 60px;
+    }
+
+    .reward-body h2:before {
+      left: 20px;
+    }
+  }
+</style>
+<script>
+  !function () {
+    var mask = document.querySelector('.reward-mask');
+    let close = document.querySelector('.reward-relative .close');
+    let rewardBtn = document.querySelector('.reward-btn');
+
+    let zfb = document.querySelector('#zfb'),
+      wx = document.querySelector('#wx'),
+      zfbBtn = document.querySelector('#zfbBtn'),
+      wxBtn = document.querySelector('#wxBtn');
+
+    if (zfbBtn && wxBtn) {
+      zfbBtn.addEventListener('click', () => {
+        jQuery.Velocity(zfb, 'transition.slideLeftIn', {
+          duration: 400
+        });
+        jQuery.Velocity(wx, 'transition.slideRightOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+
+      wxBtn.addEventListener('click', () => {
+        jQuery.Velocity(wx, 'transition.slideRightIn', {
+          duration: 400
+        });
+        jQuery.Velocity(zfb, 'transition.slideLeftOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+    }
+
+    rewardBtn.addEventListener('click', (e) => {
+      jQuery.Velocity(mask, 'transition.slideDownIn', {
+        duration: 400
+      })
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      jQuery.Velocity(mask, 'transition.slideUpOut', {
+        duration: 400
+      })
+    })
+  }()
+</script>
+
   </div>
 </body>
 
@@ -18472,7 +17479,6 @@ SomeCalldata.size(0) // equals 36 (i.e. 4 + 32)
       speed: 200
     });
   </script>
-
 
 
 

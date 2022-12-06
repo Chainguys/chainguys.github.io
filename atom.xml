@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-12-02T04:21:17.166Z</updated>
+    <updated>2022-12-06T11:28:42.728Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -92,6 +92,106 @@
 <a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
 </li>
 </ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Altlayer月报Altlayer Monthly Recap-Nov.2022]]></title>
+        <id>https://chainguys.github.io/post/altlayer-yue-bao-altlayer-monthly-recap-nov2022/</id>
+        <link href="https://chainguys.github.io/post/altlayer-yue-bao-altlayer-monthly-recap-nov2022/">
+        </link>
+        <updated>2022-12-05T11:10:24.000Z</updated>
+        <content type="html"><![CDATA[<p>原文地址:<a href="https://twitter.com/Kenwt_1/status/1599039582770978822">https://twitter.com/Kenwt_1/status/1599039582770978822</a></p>
+<p>1/ Greetings Alters, November was a big month for<a href="https://twitter.com/alt_layer">@alt_layer</a></p>
+<p>1/ Alters们好，11 月对 <a href="https://twitter.com/alt_layer">@alt_layer</a> 来说是重要的一个月</p>
+<p>We had many great news &amp; achievements as we continued to <a href="https://twitter.com/hashtag/BUIDL?src=hashtag_click">#BUIDL</a> while the community has thrived thanks to several activities. If you still cannot catch up, don't worry. Here comes November Recap for y'all</p>
+<p>在我们继续 <a href="https://twitter.com/hashtag/BUIDL?src=hashtag_click">#BUIDL</a> 的过程中，我们获得了许多好消息和成就，同时社区因多项活动而蓬勃发展。如果您仍然无法赶上，也请不要担心。 现在为大家回顾一下11月发生的事情。</p>
+<figure data-type="image" tabindex="1"><img src="https://pbs.twimg.com/media/FjDPoUcacAE3Gar?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
+<p>2/ On Nov. 8, we started the month by announcing launch of new NFT collection &quot;Oh Ottie!&quot;  The collection consists of overall 2,000 unique avatars of our beloved mascot &quot;Ottie&quot; to showcase flash layer technology, enabling NFT minting in a gasless manner across all L1s.</p>
+<p>2/ 11 月 8 日，我们以宣布推出新的 NFT 系列“Oh Ottie！”，开启了本月。该系列包含我们心爱的吉祥物“Ottie”的 2,000 个独特头像，用来展示闪存层/瞬时层技术，使 NFT 能够在所有 L1 上以无gas的方式铸造。</p>
+<p>https://twitter.com/i/status/1599039611682291712</p>
+<p>3/ Here is detail for the drop;</p>
+<ul>
+<li>
+<p>1,200/2,000 NFT will be launched on Dec.9<br>
+1,200/2,000 NFT 将于 12 月 9 日上线</p>
+</li>
+<li>
+<p>Mint will take place on Flash Layer on FCFS basis<br>
+铸币将在先到先得基础上在闪存层/瞬时层上进行</p>
+</li>
+<li>
+<p>Mint price will be 0.08 <a href="https://twitter.com/search?q=%24BNB&amp;src=cashtag_click"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mi>T</mi><mi>H</mi><mo>]</mo><mo>(</mo><mi>h</mi><mi>t</mi><mi>t</mi><mi>p</mi><mi>s</mi><mo>:</mo><mi mathvariant="normal">/</mi><mi mathvariant="normal">/</mi><mi>t</mi><mi>w</mi><mi>i</mi><mi>t</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi mathvariant="normal">.</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi mathvariant="normal">/</mi><mi>s</mi><mi>e</mi><mi>a</mi><mi>r</mi><mi>c</mi><mi>h</mi><mo>?</mo><mi>q</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">ETH](https://twitter.com/search?q=%24ETH&amp;src=cashtag_click) or equal in [</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mclose">]</span><span class="mopen">(</span><span class="mord mathdefault">h</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">p</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">/</span><span class="mord">/</span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord">.</span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">m</span><span class="mord">/</span><span class="mord mathdefault">s</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">c</span><span class="mord mathdefault">h</span><span class="mclose">?</span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span></span></span>BNB</a> &amp; <a href="https://twitter.com/search?q=%24ETH&amp;src=cashtag_click"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>A</mi><mi>T</mi><mi>I</mi><mi>C</mi><mo>]</mo><mo>(</mo><mi>h</mi><mi>t</mi><mi>t</mi><mi>p</mi><mi>s</mi><mo>:</mo><mi mathvariant="normal">/</mi><mi mathvariant="normal">/</mi><mi>t</mi><mi>w</mi><mi>i</mi><mi>t</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi mathvariant="normal">.</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi mathvariant="normal">/</mi><mi>s</mi><mi>e</mi><mi>a</mi><mi>r</mi><mi>c</mi><mi>h</mi><mo>?</mo><mi>q</mi><mo>=</mo><mi>M</mi><mi>i</mi><mi>n</mi><mi>t</mi><mi mathvariant="normal">价</mi><mi mathvariant="normal">格</mi><mi mathvariant="normal">将</mi><mi mathvariant="normal">为</mi><mn>0.08</mn><mo>[</mo></mrow><annotation encoding="application/x-tex">MATIC](https://twitter.com/search?q=%24MATIC&amp;src=cashtag_click) bridged from[@Ethereum](https://twitter.com/ethereum) [@BNBCHAIN](https://twitter.com/BNBCHAIN) [@0xPolygon](https://twitter.com/0xPolygon)chains  
+Mint 价格将为 0.08 [</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mclose">]</span><span class="mopen">(</span><span class="mord mathdefault">h</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">p</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">/</span><span class="mord">/</span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord">.</span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">m</span><span class="mord">/</span><span class="mord mathdefault">s</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">c</span><span class="mord mathdefault">h</span><span class="mclose">?</span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mord cjk_fallback">价</span><span class="mord cjk_fallback">格</span><span class="mord cjk_fallback">将</span><span class="mord cjk_fallback">为</span><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span><span class="mord">8</span><span class="mopen">[</span></span></span></span>ETH</a> 或等值的 <a href="https://twitter.com/search?q=%24MATIC&amp;src=cashtag_click"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi><mi>N</mi><mi>B</mi><mo>]</mo><mo>(</mo><mi>h</mi><mi>t</mi><mi>t</mi><mi>p</mi><mi>s</mi><mo>:</mo><mi mathvariant="normal">/</mi><mi mathvariant="normal">/</mi><mi>t</mi><mi>w</mi><mi>i</mi><mi>t</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi mathvariant="normal">.</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi mathvariant="normal">/</mi><mi>s</mi><mi>e</mi><mi>a</mi><mi>r</mi><mi>c</mi><mi>h</mi><mo>?</mo><mi>q</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">BNB](https:/ /twitter.com/search?q=%24BNB&amp;src=cashtag_click) &amp; [</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mclose">]</span><span class="mopen">(</span><span class="mord mathdefault">h</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">p</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">/</span><span class="mord">/</span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord">.</span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">m</span><span class="mord">/</span><span class="mord mathdefault">s</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">c</span><span class="mord mathdefault">h</span><span class="mclose">?</span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span></span></span>MATIC</a> 从[@Ethereum](https://twitter. com/ethereum) <a href="https://twitter.com/BNBCHAIN">@BNBCHAIN</a> <a href="https://twitter.com/0xPolygon">@0xPolygon</a></p>
+</li>
+<li>
+<p>How-to guide will be published on Dec.7<br>
+操作指南将于 12 月 7 日发布</p>
+</li>
+</ul>
+<p>4/ What’s more, there will be benefits by holding NFT;<br>
+4/ 更重要的是，持有NFT会有收益；</p>
+<p>Future claim to token/NFT airdrop<br>
+未来对代币/NFT 空投的要求</p>
+<p>VIP access to merch/events<br>
+商品/活动的 VIP 访问权限</p>
+<p>Priority access to testnet validator program<br>
+优先访问测试网验证程序</p>
+<p>Social impact programmes for Otters !<br>
+水獭的社会影响计划！</p>
+<p>GET WL<br>
+获取白名单<br>
+<a href="https://t.co/lYgac5SQ7w">https://sograph.xyz/space/altlayer/campaign/yVFDYdj1ao…</a></p>
+<p>More info;<br>
+更多信息;<br>
+https://blog.altlayer.io/altlayer-to-drop-2000-delightful-mascot-iterations-as-part-of-an-oh-ottie-d9649bb910f4</p>
+<p>5/ In regard of Oh Ottie! NFT campaign, <a href="https://twitter.com/alt_layer">@alt_layer</a>, represented by Head of Growth, <a href="https://twitter.com/Dorothy_defi">@Dorothy_defi</a>, has also collaborated &amp; conducted several AMAs w/ leading Web3 projects, namely,<a href="https://twitter.com/Port3Network">@Port3Network</a> <a href="https://twitter.com/UltiverseDAO">@UltiverseDAO</a> <a href="https://twitter.com/Element_Market">@Element_Market</a> <a href="https://twitter.com/MEXC_Global">@MEXC_Global</a> <a href="https://twitter.com/NEST_Protocol">@NEST_Protocol</a> <a href="https://twitter.com/HypeX_io">@HypeX_io</a> <a href="https://twitter.com/okxweb3">@okxweb3</a> etc.</p>
+<p>5/ 关于哦奥蒂！ NFT 活动 <a href="https://twitter.com/alt_layer">@alt_layer</a> 由增长负责人 <a href="https://twitter.com/Dorothy_defi">@Dorothy_defi</a> 代表，还与领先的 Web3 项目进行了多场联合AMA，比如<a href="https://twitter.com/Port3Network">@Port3Network</a> <a href="https://twitter.com/UltiverseDAO">@UltiverseDAO</a> <a href="https://twitter.com/Element_Market">@Element_Market</a> <a href="https://twitter.com/MEXC_Global">@MEXC_Global</a> <a href="https://twitter.com/NEST_Protocol">@NEST_Protocol</a> <a href="https://twitter.com/HypeX_io">@HypeX_io</a> [@okxweb3](https://twitter .com/okxweb3) 等</p>
+<figure data-type="image" tabindex="2"><img src="https://pbs.twimg.com/media/FjDjHNaaUAEXJyb?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
+<p>6/ Afterwards, on Nov.15, AltLayer announced one of the biggest news in the space – Amrit Kumar has joined the team as COO W/ full of experience &amp; knowledge, he will be in charge of operation strategy &amp; drive the company forwards w/ the aim to build custom rollup-as-a-service</p>
+<p>6/ 随后，11 月 15 日，AltLayer 宣布了该领域最大的新闻之一——Amrit Kumar 已加入团队，担任首席运营官，他拥有丰富的经验和知识，他将负责运营战略，并推动公司向前发展/ 构建自定义汇总即服务的目标</p>
+<figure data-type="image" tabindex="3"><img src="https://pbs.twimg.com/media/FjDKslFaYAAJzK-?format=jpg&amp;name=medium" alt="Image" loading="lazy"></figure>
+<p>7/ In addition,on Nov.23, Ep#2 of Alt View was out! This time, we have <a href="https://twitter.com/stonecoldpat0">@stonecoldpat0</a>from Infura as exclusive guest. He has shared insights on scalability &amp; also discussed w/ <a href="https://twitter.com/jiayaoqi">@jiayaoqi</a> whether app-specific rollups are promising solution for Web3 dApps</p>
+<p>7/ 此外，11 月 23 日，Alt View 的第 2 集已经发布！这一次，我们有来自 Infura 的 <a href="https://twitter.com/stonecoldpat0">@stonecoldpat0</a> 作为独家嘉宾。他分享了关于可扩展性的见解，还与 <a href="https://twitter.com/jiayaoqi">@jiayaoqi</a> 讨论了应用特定汇总是否是 Web3 dApps 有前途的解决方案</p>
+<p>https://www.youtube.com/watch?v=SO4PavkkAFg</p>
+<p>8/ Apart from the talk session w/ Patrick McCorry,<a href="https://twitter.com/jiayaoqi">@jiayaoqi</a>, CEO of AltLayer, also talked about the project on Podcast w/<a href="https://twitter.com/coasthawk">@coasthawk</a>; <a href="https://t.co/JBMMI7As8E">https://open.spotify.com/episode/2xqNOslVydtQeTn7NWjn9d…</a></p>
+<p>8/ 除了与 Patrick McCorry 的谈话外，AltLayer 首席执行官 <a href="https://twitter.com/jiayaoqi">@jiayaoqi</a> 还在 Podcast 上与 [@coasthawk](https:// twitter.com/coasthawk）； <a href="https://t.co/JBMMI7As8E">https://open.spotify.com/episode/2xqNOslVydtQeTn7NWjn9d…</a></p>
+<p><a href="https://twitter.com/alt_layer">@alt_layer</a>&amp;<a href="https://twitter.com/jiayaoqi">@jiayaoqi</a><br>
+还登上了媒体文章；</p>
+<ol>
+<li>
+<p><a href="https://t.co/Z2Hqgrv6RG">https://grab.com/sg/press/others/straitsx-and-grab-pilot-use-of-purpose-bound-money-during-singapore-fintech-festival-2022/…</a></p>
+</li>
+<li>
+<p>https://cointelegraph.com/innovation-circle/value-migration-from-the-fat-protocol-to-fat-application-layer-how-to-adapt</p>
+</li>
+</ol>
+<p>9/ Moreover, regarding partnership updates, on Nov. 25, AltLayer announced strategic partnership w/<a href="https://twitter.com/chirpley">@chirpley</a>, Web3 Influencer Marketing Platform.</p>
+<p>9/ 此外，关于合作伙伴关系更新，11 月 25 日，AltLayer 宣布与 Web3 Influencer Marketing Platform <a href="https://twitter.com/chirpley">@chirpley</a> 建立战略合作伙伴关系。</p>
+<p>The project will use AltLayer's elastic roll-up solution for upcoming <a href="https://twitter.com/hashtag/NFT?src=hashtag_click">#NFT</a> - enabling highly scalable &amp; gasless NFT Minting.</p>
+<p>该项目将为即将到来的 <a href="https://twitter.com/hashtag/NFT?src=hashtag_click">#NFT</a> 使用 AltLayer 的弹性汇总解决方案 - 实现高度可扩展和无gas的 NFT 铸币。</p>
+<p>https://twitter.com/i/status/1599039697581666306</p>
+<p>10/ We ended the month attending one of the first and biggest Blockchain events in Vietnam! <a href="https://twitter.com/eth_vietnam">@eth_vietnam</a></p>
+<p>10/ 我们在月底参加了越南最早也是最大的区块链活动之一！ <a href="https://twitter.com/eth_vietnam">@eth_vietnam</a></p>
+<p>in which AltLayer has been the sponsor for the event. The event was held 2 days at Independence Palace, HCMC during Nov. 25 - 26</p>
+<p>其中 AltLayer 是该活动的赞助商。该活动于 11 月 25 日至 26 日在胡志明市独立宫举行，为期两天</p>
+<figure data-type="image" tabindex="4"><img src="https://pbs.twimg.com/media/FjDMUShacAIUyLN?format=jpg&amp;name=large" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://pbs.twimg.com/media/FjDMYhXagAA8iWV?format=jpg&amp;name=4096x4096" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://pbs.twimg.com/media/FjDMiubaMAAo-8w?format=jpg&amp;name=4096x4096" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://pbs.twimg.com/media/FjDMkBNaYAEKiEM?format=png&amp;name=900x900" alt="" loading="lazy"></figure>
+<p>11/ During the event, AltLayer’s Head of Growth, <a href="https://twitter.com/Dorothy_defi">@Dorothy_defi</a> moderated a panel discussion w/ topic &quot;Scaling <a href="https://twitter.com/hashtag/DeFi?src=hashtag_click">#DeFi</a> toward mass adoption&quot; along w/ <a href="https://twitter.com/KyberNetwork">@kybernetwork</a><br>
+<a href="https://twitter.com/okx">@okx</a> <a href="https://twitter.com/HuobiGlobal">@HuobiGlobal</a> <a href="https://twitter.com/1inch">@1inch</a></p>
+<p>11/ 在活动期间，AltLayer 的增长主管 <a href="https://twitter.com/Dorothy_defi">@Dorothy_defi</a> 主持了一场小组讨论，主题为“扩展 [#DeFi](https://twitter.com/hashtag/ DeFi?src=hashtag_click）走向大规模采用”以及 <a href="https://twitter.com/KyberNetwork">@kybernetwork</a><br>
+<a href="https://twitter.com/okx">@okx</a> <a href="https://twitter.com/HuobiGlobal">@HuobiGlobal</a> <a href="https://twitter.com/1inch">@1inch</a></p>
+<figure data-type="image" tabindex="8"><img src="https://pbs.twimg.com/media/FjDKHeTaYAAv2d-?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
+<p>12/ Meanwhile, AltLayer’s Head of Product Engineering,<a href="https://twitter.com/junhaotan_">@junhaotan_</a>took the stage &amp; explained how AltLayer’s highly customisable rollups &amp; versatile tooling options fuel <a href="https://twitter.com/hashtag/dApps?src=hashtag_click">#dApps</a> execution needs, which will take <a href="https://twitter.com/hashtag/Web3?src=hashtag_click">#Web3</a> one step further!</p>
+<p>12/ 与此同时，AltLayer 的产品工程主管<a href="https://twitter.com/junhaotan_">@junhaotan_</a>上台解释了 AltLayer 的高度可定制汇总和多功能工具选项如何推动 [#dApps](https://twitter .com/hashtag/dApps?src=hashtag_click) 执行需求，这将使 <a href="https://twitter.com/hashtag/Web3?src=hashtag_click">#Web3</a> 更进一步！</p>
+<figure data-type="image" tabindex="9"><img src="https://pbs.twimg.com/media/FjDKKJEakAE-Z3z?format=jpg&amp;name=medium" alt="" loading="lazy"></figure>
+<p>13/ This is all the project updates/community activities of AltLayer during November 2022. To stay updated &amp; be the part of our community;</p>
+<p>13/ 这是 AltLayer 在 2022 年 11 月期间的所有项目更新/社区活动。保持更新并成为我们社区的一部分；</p>
+<p>Website: <a href="https://t.co/QTtzqbrsnO">https://altlayer.io</a><br>
+Discord: <a href="https://t.co/qiQJx5z3ZA">https://discord.com/invite/altlayer</a><br>
+Youtube: <a href="https://t.co/KyuEm1ws1X">https://youtube.com/@altlayer7257</a><br>
+Medium: https://medium.com/@altlayer</p>
 ]]></content>
     </entry>
     <entry>
@@ -1193,129 +1293,6 @@ AltLayer 将代表社区在全球动物园收养和赞助水獭，包括但不�
 </ul>
 <p>让白名单开始吧！<br>
 Let the whitelisting begin!</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ETH里斯本活动回顾 (ETH Lisbon Recap)]]></title>
-        <id>https://chainguys.github.io/post/eth-li-si-ben-huo-dong-hui-gu-eth-lisbon-recap/</id>
-        <link href="https://chainguys.github.io/post/eth-li-si-ben-huo-dong-hui-gu-eth-lisbon-recap/">
-        </link>
-        <updated>2022-11-04T08:02:12.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/10/EthLisbonRecap-3.png" alt="🇵🇹 — ETH Lisbon Recap" loading="lazy"></figure>
-<p>During 3 days (October 28 - 30), hackers from around the world gathered at the Academia das Ciências in Lisbon for hacking. Here is an in-depth look at the winning projects.</p>
-<p>在3天内(10 月 28 日至 30 日），来自世界各地的黑客聚集在里斯本的 Academia das Ciências 进行黑客活动。以下是对获奖项目的深入观察。</p>
-<hr>
-<p>During 3 days (October 28 - 30), hackers from all over the world gathered at the <em>Academia das Ciências</em> in Lisbon for hacking. For this occasion, we sponsored 3 open bounties for bold hackers eager to build on <strong>Fuel</strong> <strong>Beta-1</strong> testnet using <strong>Sway</strong>:</p>
-<p>在3天内(10 月 28 日至 30 日），来自世界各地的黑客聚集在里斯本的 Academia das Ciências 进行黑客活动。为此，我们为渴望使用 <strong>Sway</strong> 在 <strong>Fuel</strong> <strong>Beta-1</strong> 测试网上构建的大胆黑客赞助了 3 项公开赏金：</p>
-<ul>
-<li>🥇 <strong>First Prize 1等奖</strong>  — $3,000</li>
-<li>🥈 <strong>Second Prize 2等奖</strong>** — $2,000</li>
-<li>🥉 <strong>Third Prize 3等奖</strong>** — $1,000</li>
-</ul>
-<h2 id="获胜者-the-winners">🏆 获胜者 (The winners)</h2>
-<p>Let's go over the winning projects:<br>
-让我们一起回顾这些获奖项目</p>
-<h3 id="一等奖authsome-first-prize-authsome">🥇 一等奖—Authsome (First Prize — Authsome)</h3>
-<p>Authsome implements a multi-signature wallet using the predicate system of the FuelVM and Sway. This wallet is then used as the basis for a pluggable authentication infrastructure, similar to <a href="https://web3auth.io/docs/overview/what-is-web3auth">Web3Auth</a>.</p>
-<p>Authsome 使用 FuelVM 和 Sway 的谓词系统实现了一个多签钱包。然后将此钱包用作可插入身份验证基础设施的底层，类似于 <a href="https://web3auth.io/docs/overview/what-is-web3auth">Web3Auth</a>。</p>
-<blockquote>
-<p>Fuel Predicates<br>
-Fuel谓词</p>
-<p>Fuel predicates work in a similar way to scripts for pay-to-script-hash (P2SH) transactions in Bitcoin. This offers a number of important advantages over implementing account abstraction on the smart contract layer:</p>
-<p>Fuel 谓词的工作方式与比特币中支付-脚本-哈希（P2SH）交易的脚本类似。这给在智能合约层实现账户抽象提供了许多重要的优势。</p>
-<ul>
-<li>Reduced gas cost, as signature aggregation can be done off-chain and verification can be done as a single step without smart contract function calls;<br>
-降低了gas成本，因为签名聚合可以在链外完成，验证可以作为一个单一的步骤完成，不需要调用智能合约函数。</li>
-<li>Improved flexibility, because different signature schemes can be swapped in by implementing them as on-chain smart contract libraries and using them in predicates; and<br>
-提高了灵活性，因为不同的签名方案可以通过作为链上智能合约库实现进而转换并在谓词中使用而；以及</li>
-<li>Minimal state bloat, because predicate byte code is processed once as part of the transaction validation, and then discarded - thus never entering the blockchain state.<br>
-最小的状态膨胀，因为谓词字节码作为交易验证的一部分被处理一次，然后被丢弃--因此从未进入区块链状态。</li>
-</ul>
-</blockquote>
-<p>This project leverages the power of account abstraction and multi-signatures to create Web2-like experiences with Web3 custodial properties.</p>
-<p>该项目利用帐户抽象和多重签名的力量来创建具有 Web3 托管属性的类似 Web2 的体验。</p>
-<p>Check out their demo video below:</p>
-<p>在下面查看他们的演示视频：</p>
-<iframe width="720" height="540" src="https://www.youtube.com/embed/3CwjZpXR1SM" title="Authsome  ETH Lisbon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 id="它是如何工作-how-does-it-work">它是如何工作? (How does it work?)</h3>
-<p>You first need to log in with an email address and a password of your choice. Authsome will then generate a 2 of 3 addresses multi-signature wallet, which means that you need 2 addresses to execute a transaction or log in to Authsome. Each key will be stored in different places.</p>
-<p>你首先需要一个电子邮件和密码登录。然后，Authsome将生成一组2-3个地址的多签钱包，这意味着你需要2个地址来执行交易或登录Authsome。每个密钥将被存储在不同的地方。</p>
-<p>Then you're all set to execute blazingly fast payments: You log in with your password to unlock the first key, and the second key is loaded from your browser's local storage.</p>
-<p>然后你就可以执行极快的支付了。你用你的密码登录来解锁第一把秘钥，第二把秘钥从你的浏览器的本地存储中加载。</p>
-<p>When you confirm your transaction on the Frontend, the DApp will generate a two-signature predicate transaction for each spended UTXO.</p>
-<p>当你在前台确认你的交易时，DApp将为每个花费的UTXO生成一个双签名的谓词交易。</p>
-<p>The real benefit of this application is that it supports spending multiple UTXOs with distinct predicate data.</p>
-<p>这个应用真正的好处是，它支持用不同的谓词数据来花费(影响)多个UTXO。</p>
-<p>For more information, check out their <a href="https://github.com/authsome/authsome">GitHub repository</a>.</p>
-<p>欲了解更多信息，请查看他们的<a href="https://github.com/authsome/authsome">GitHub仓库</a>。</p>
-<h3 id="二等奖fuel价格预言机-second-prize-fuel-price-oracle">🥈 二等奖—Fuel价格预言机 (Second Prize — Fuel Price Oracle)</h3>
-<p>Fuel Price Oracle implements a simple ETH - DAI tokens price oracle. This project allows retrieving token prices from the outside world on the Fuel chain with a Sway smart contract.</p>
-<p>Fuel价格预言机实现了一个简单的ETH-DAI代币的价格预言机。这个项目允许使用Sway智能合约从外界检索Fuel链上的代币价格。</p>
-<p>Check out their demo video below:</p>
-<p>请看下面的演示视频:</p>
-<iframe width="720" height="540" src="https://www.youtube.com/embed/geJ-aKOZQTU" title="Fuel price oracle (ETH, DAI) demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>For more information, check out their <a href="https://github.com/chlenc/fuel-price-oracle">GitHub repository</a>.</p>
-<p>欲了解更多信息，请查看他们的<a href="https://github.com/chlenc/fuel-price-oracle">GitHub仓库</a>。</p>
-<h3 id="三等奖资本家猪-third-prize-capitalist-pigs">🥉 三等奖—资本家猪 (Third Prize — Capitalist Pigs)</h3>
-<p>Enter the world of Capitalist Pigs, a Gamify staking for fees in a DeFi project using a set of NFTs.</p>
-<p>进入Capitalist Pigs的世界，这是一个使用一套NFTs在DeFi项目中质押产生费用(收益)的Gamify。</p>
-<p>Check out their demo video below:</p>
-<p>请看下面他们的演示视频</p>
-<iframe width="720" height="407" src="https://www.youtube.com/embed/WeVj2tXGa-M" title="Capitalist Pigs - 30 October 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 id="它如何工作-how-does-it-work">它如何工作? (How does it work?)</h3>
-<p>First of all, you begin by generating a burner wallet on the upper right corner of the DApp. To start playing, you need to claim a <strong>Pig</strong>, a stakable collectible NFT asset. By staking it, you will earn <strong>Truffles</strong> and <strong>staking fees</strong> represented by <strong>Bacon</strong>. Truffles can be turned into <strong>Piglets</strong>. With those Piglets, you have 2 possibilities: you can either turn them into Pigs or delegate them to existing Pigs to increase their staking fee generation. And this is it, you're a Capitalist Pig! You can check in the lower right corner the evolution of your supply (Pigs, Piglets, Truffles, and Bacon).</p>
-<p>首先，你开始在DApp的右上角生成一个燃烧钱包。要开始玩，你需要认领一只<strong>猪</strong>，这是一种可收藏的NFT资产。通过抵押，你将获得<strong>松露</strong>和<strong>培根</strong>代表的<strong>抵押费。松露可以转化为小猪</strong>。对于这些小猪，你有两种可能：你可以把它们变成小猪，或者把它们委托给现有的小猪，来增加它们的产出。就这样，你就是一只资本家猪了！你可以在右下角检查。你可以在右下角检查你的供应（猪、小猪、松露和培根）的演变。</p>
-<p>Try it out now <a href="https://capitalistpi.gs/">here</a>.</p>
-<p>现在就试试吧<a href="https://capitalistpi.gs/">这里</a>。</p>
-<p>For more information, check out their <a href="https://github.com/afsardo/capitalist-pigs">GitHub repository</a>.</p>
-<p>欲了解更多信息，请查看他们的<a href="https://github.com/afsardo/capitalist-pigs">GitHub仓库</a>。</p>
-<hr>
-<h1 id="今天就开始在fuel构建吧-start-building-on-fuel-today">今天就开始在Fuel构建吧! （Start Building On Fuel Today）</h1>
-<blockquote>
-<p>Building on Fuel means breaking free from the constraints of monolithic blockchains that have held us back.<br>
-以 Fuel 为基础意味着摆脱阻碍我们前进的单片区块链的限制。</p>
-</blockquote>
-<h2 id="fuel的开发人员资源-developer-resources-for-building-with-fuel">Fuel的开发人员资源 (Developer Resources for Building with Fuel)</h2>
-<ul>
-<li>
-<p>A step-by-step guide to building a full-stack dapp on Fuel can be found <a href="https://github.com/camiinthisthang/fullstack-fuel/blob/main/README.md">here</a>.<br>
-<a href="https://github.com/camiinthisthang/fullstack-fuel/blob/main/README.md">这里</a> 可以找到在 Fuel 上构建全栈 dapp 的分步指南</p>
-</li>
-<li>
-<p>The <strong>Fuel Book</strong> can be found <a href="https://fuellabs.github.io/fuel-docs/master/index.html">here</a>. It contains everything you need to know about Fuel, from its modular design to its key features.<br>
-<strong>Fuel全书</strong> 可以在 <a href="https://fuellabs.github.io/fuel-docs/master/index.html">这里</a> 找到。它包含您需要了解的有关 Fuel 的所有信息，从模块化设计到主要功能。</p>
-</li>
-<li>
-<p>The <strong>Sway Book</strong> can be found <a href="https://fuellabs.github.io/sway/v0.24.1/">here</a>.<br>
-<strong>Sway全书</strong> 可以在 <a href="https://fuellabs.github.io/sway/v0.24.1/">这里</a> 找到。</p>
-</li>
-</ul>
-<hr>
-<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
-<ul>
-<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
-<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
-<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
-<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
-</ul>
-<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
-<p><a href="https://www.fuel.network/">Fuel</a> is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
-<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制**。</p>
-<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
-<ul>
-<li>
-<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
-<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
-</li>
-<li>
-<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
-<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
-</li>
-<li>
-<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
-<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
-</li>
-</ul>
 ]]></content>
     </entry>
 </feed>
