@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2022-12-06T13:27:21.021Z</updated>
+    <updated>2022-12-08T04:05:25.991Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -66,6 +66,134 @@
 <p>注册将于今天（11 月 29 日）至 12 月 4 日欧洲中部时间下午 6 点开放。</p>
 </blockquote>
 <p><a href="https://1v1l4ftv9zy.typeform.com/FuelAmbassadors">https://1v1l4ftv9zy.typeform.com/FuelAmbassadors</a></p>
+<hr>
+<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
+<ul>
+<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
+<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
+<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
+<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
+</ul>
+<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
+<p><a href="https://www.fuel.network/">Fuel</a> is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
+<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制**。</p>
+<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
+<ul>
+<li>
+<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
+<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
+</li>
+<li>
+<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
+<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
+</li>
+<li>
+<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
+<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[用Fuel扩展以太坊 (Scaling Ethereum with Fuel)]]></title>
+        <id>https://chainguys.github.io/post/yong-fuel-kuo-zhan-yi-tai-fang-scaling-ethereum-with-fuel/</id>
+        <link href="https://chainguys.github.io/post/yong-fuel-kuo-zhan-yi-tai-fang-scaling-ethereum-with-fuel/">
+        </link>
+        <updated>2022-12-06T03:59:56.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/12/Scaling-Ethereum-1.png" alt="Scaling Ethereum with Fuel" loading="lazy"><br>
+Why alternative VMs are crucial to scaling Ethereum. 为什么其他(替代)虚拟机对以太坊如此重要</p>
+<h2 id="其他替代虚拟机对以太坊扩容十分关键-alternative-vms-are-crucial-to-enable-ethereum-to-scale">其他(替代)虚拟机对以太坊扩容十分关键 (Alternative VMs are Crucial to Enable Ethereum to Scale)</h2>
+<p>Despite existing in an environment where new L1s are becoming increasingly popular, Ethereum still leads the web3 space in many ways. It has a large ecosystem of developers and end users, a strong roadmap toward scalability on the consensus &amp; data availability layer, and massive amounts of liquidity.</p>
+<p>尽管我们处在一个新L1越来越流行的大环境中，但以太坊仍然在许多方面领先于 web3 领域。它拥有一个由开发人员和最终用户组成的大型生态系统，一个强大的针对共识和数据可用层的扩展路线图，以及大量的流动性。</p>
+<p><img src="https://fuel-labs.ghost.io/content/images/2022/12/image.png" alt="" loading="lazy"><br>
+<em>Ethereum hosts significantly more assets than any other blockchain (source: <a href="https://defillama.com/chains">DefiLlama</a>)</em><br>
+<em>以太坊拥有比任何其他区块链都多得多的资产(来源：<a href="https://defillama.com/chains">DefiLlama</a>)</em></p>
+<p>There is undoubtedly a lot of value to be captured by building within the existing Ethereum ecosystem, as evidenced by the many rollups and L2 scaling solutions building on Ethereum.</p>
+<p>毫无疑问，在现有以太坊生态系统中构建可以获取很多价值，正如在以太坊上构建的许多汇总和 L2 扩展解决方案所证明的那样。</p>
+<p>But at the same time, there is a growing narrative that the EVM and Solidity are becoming less important.</p>
+<p>但与此同时，越来越多的人认为 EVM 和 Solidity 变得不那么重要了。</p>
+<blockquote>
+<p>New theory:</p>
+<p>As more and more L1s role out, EVM compatibility will become:</p>
+<p>A) less important<br>
+B) a negative signal</p>
+<p>Why such a radical change of opinion? When I previously thought EVM compatibility was critical for a blockchain success?</p>
+<p>A mini thread-</p>
+<p>— Dennison.og (@DennisonBertram) <a href="https://twitter.com/DennisonBertram/status/1586114575107244032?ref_src=twsrc%5Etfw">October 28, 2022</a></p>
+</blockquote>
+<blockquote>
+<p>新理论：</p>
+<p>随着越来越多的 L1 发挥作用，EVM 兼容性将变为：</p>
+<p>A) 不太重要<br>
+B) 负面信号</p>
+<p>为什么观点会发生如此根本性的变化？当我以前认为 EVM 兼容性对区块链成功至关重要时？</p>
+<p>一条迷你推文-</p>
+<p>— Dennison.og (@DennisonBertram) <a href="https://twitter.com/DennisonBertram/status/1586114575107244032?ref_src=twsrc%5Etfw">2022 年 10 月 28 日</a></p>
+</blockquote>
+<p>EVM compatibility is no longer a make-or-break feature when it comes to new blockchains - even ones building on top of Ethereum.</p>
+<p>当涉及到新区块链时，EVM 兼容性不再是一个成败攸关的特性—即使对那些构建在以太坊之上的区块链。</p>
+<h3 id="机会-the-opportunity">机会 (The Opportunity)</h3>
+<p>Currently, the main bottleneck to scalability is not the speed of transaction execution; rather, it is the limited bandwidth that the consensus &amp; data availability layer can support. In this environment, the EVM’s slow transaction execution capabilities are “good enough”, because they still outpace the bandwidth Ethereum can provide.</p>
+<p>目前，可扩展性的主要瓶颈不是交易的速度；相反，它是共识和数据可用层可以支持的有限带宽。在这种环境下，EVM 的慢交易执行能力“足够好”，因为它们仍然超过以太坊可以提供的带宽。</p>
+<p>However, Ethereum is on a path toward massive scalability on the consensus &amp; data availability layer, with <a href="https://www.eip4844.com/">proto-danksharding</a> coming soon and <a href="https://ethereum.org/en/upgrades/sharding/">sharding</a> scheduled to ship in 2023. With base layer scalability on the horizon, blockspace will no longer be the core constraint. <strong>The next bottleneck will be computation: how fast execution layers can process transactions.</strong></p>
+<p>然而，以太坊正朝着共识和数据可用性层的大规模可扩展性迈进，<a href="https://www.eip4844.com/">proto-danksharding</a> 即将推出，<a href="https://ethereum.org/en/upgrades/sharding/">分片</a> 计划于 2023 年发布。随着基础层可扩展性的出现，区块空间将不再是核心限制。 <strong>下一个瓶颈将是计算：执行层处理交易的速度有多快。</strong></p>
+<p>In this future, the relatively slow and computationally costly EVM will no longer be sufficient to keep up with the expanding supply of bandwidth on the consensus &amp; data availability layer.</p>
+<p>在未来，相对缓慢且计算成本高昂的 EVM 将不再足以跟上共识和数据可用层上不断扩大的带宽供应。</p>
+<p>The EVM was designed to be sufficiently performant in the context of the original version of the Ethereum blockchain. While both have seen improvements since their initial release, meaningful progress on the EVM side has been continually restricted by the need to maintain backward compatibility.</p>
+<p>EVM 意在以太坊区块链原始版本的环境中维持足够性能。虽然自最初发布以来两者都取得了改进，但 EVM 方面有意义的进展一直受到保持向后兼容性需求的限制。</p>
+<p><img src="https://fuel-labs.ghost.io/content/images/2022/12/image-1.png" alt="" loading="lazy"><br>
+<em>The EVM has been unable to keep up with innovations in scaling computation (<a href="https://twitter.com/lightclients/status/1593270266909450241">image source</a>)</em><br>
+<em>EVM 一直跟不上扩展计算方面的创新(<a href="https://twitter.com/lightclients/status/1593270266909450241">图片来源</a>)</em></p>
+<p>In order to maximize the value added by increasing bandwidth on the Ethereum base layer, <strong>L2s will need to match these scalability improvements by building and deploying more performant VMs on the execution layer</strong>.</p>
+<p>为了通过增加以太坊基础层上的带宽来最大化价值，<strong>L2 需要通过在执行层上构建和部署更多高性能 VM 来匹配这些可扩展性改进</strong>。</p>
+<p>This new paradigm provides an opportunity (and a challenge) for execution layers to pursue true scalability for Ethereum by going beyond the EVM.</p>
+<p>这种新范式为执行层提供了一个机会(也是一个挑战)，可以通过超越 EVM 来为以太坊追求真正的可扩展性。</p>
+<h3 id="解决方案-the-solution">解决方案 (The Solution)</h3>
+<p>Fuel was designed for this exact purpose: scaling Ethereum by transcending the EVM.</p>
+<p>Fuel 正是为此而生：通过超越 EVM 来扩展以太坊。</p>
+<p>Current L2s and rollups are primarily designed for monolithic blockchain stacks, meaning they are typically not optimized for large amounts of L1 bandwidth potential. Fuel is uniquely configured to handle this potential.</p>
+<p>当前的 L2 和汇总主要是为单片区块链堆栈设计的，这意味着它们通常没有针对大量 L1 带宽潜力进行优化。Fuel 的独特配置可以处理这种潜力。</p>
+<p>By adopting new and improved VM design principles, modular execution layers like Fuel can specifically optimize for efficient &amp; scalable computation, superior developer experience, and maximum security - all while contributing directly to scaling Ethereum.</p>
+<p>通过采用新的和改进的 VM 设计原则，像 Fuel 这样的模块化执行层可以专门优化高效和可扩展的计算、卓越的开发者体验和最大的安全性——所有这些都直接有助于扩展以太坊。</p>
+<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/2022/12/image-2.png" alt="" loading="lazy"></figure>
+<hr>
+<h2 id="fuel-将如何帮助扩展以太坊how-will-fuel-help-scale-ethereum">Fuel 将如何帮助扩展以太坊？(How Will Fuel Help Scale Ethereum?)</h2>
+<p>With all this established, how will Fuel help to scale Ethereum? There are a number of factors to this:</p>
+<p>有了这一切，Fuel 将如何帮助扩展以太坊？这有很多因素：</p>
+<h3 id="️-在以太坊上部署-deployment-on-ethereum">♦️ 在以太坊上部署 (Deployment on Ethereum)</h3>
+<p>The current roadmap for Fuel includes deploying on Ethereum mainnet. The <a href="https://fuel-labs.ghost.io/announcing-beta-2-testnet/">beta-2 testnet</a> has already been launched with a bridge to Ethereum’s Goerli testnet, and a full mainnet implementation is planned for 2023.</p>
+<p>Fuel 当前的路线图包括在以太坊主网上部署。 <a href="https://fuel-labs.ghost.io/announcing-beta-2-testnet/">beta-2 测试网</a> 已经启动，跨链到以太坊的 Goerli 测试网，计划在 2023 年实现完整的主网.</p>
+<h3 id="️-与以太坊路线图保持一致-alignment-with-ethereum-roadmap">🛣️ 与以太坊路线图保持一致 (Alignment with Ethereum Roadmap)</h3>
+<p>The Ethereum core dev community has explicitly stated that it is building toward a <a href="https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698">rollup-centric Ethereum</a>. As part of this roadmap, Vitalik has noted that “Ethereum base-layer scaling [will] primarily be focused on scaling how much data blocks can hold, and not efficiency of on-chain computation”.</p>
+<p>以太坊核心开发社区明确表示，它正在构建一个 <a href="https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698">以汇总为中心的以太坊</a>。作为该路线图的一部分，Vitalik 指出“以太坊基础层扩展 [将会] 主要关注扩展可以容纳多少数据块，而不是链上计算的效率”。</p>
+<p>In other words, Ethereum’s scaling efforts are focused on providing bandwidth for modular execution layers, while relying on those layers to make improvements in the speed of transaction execution. As such, Fuel is focused on providing fast &amp; efficient computation on the execution layer to support Ethereum’s scaling roadmap.</p>
+<p>换句话说，以太坊的扩展努力集中在为模块化执行层提供带宽，同时依靠这些层来提高交易执行速度。因此，Fuel 专注于在执行层上提供快速高效的计算，来支持以太坊的扩展路线图。</p>
+<h3 id="fuelvmevm-内的欺诈可证明-fuelvm-fraud-provable-within-the-evm">🔐 FuelVM：EVM 内的欺诈可证明 (FuelVM: Fraud-Provable within the EVM)</h3>
+<p>The <a href="https://fuellabs.github.io/fuel-specs/master/vm/instruction_set">FuelVM instruction set</a> is specifically designed to be both expressive yet fraud-provable within the EVM. In other words, Fuel has been designed with the express goal of supporting the use of Ethereum as a settlement layer.</p>
+<p><a href="https://fuellabs.github.io/fuel-specs/master/vm/instruction_set">FuelVM 指令集</a> 专门设计用于在 EVM 中既能表达又能证明欺诈。换句话说，Fuel 的设计明确目标是支持使用以太坊作为结算层。</p>
+<h3 id="️-将开发人员带入以太坊生态系统-bringing-developers-to-the-ethereum-ecosystem">⛓️ 将开发人员带入以太坊生态系统 (Bringing Developers to the Ethereum Ecosystem)</h3>
+<p>Fuel has been designed with <a href="https://fuellabs.github.io/fuel-docs/master/why-fuel.html#superior-devex">developer experience</a> at the forefront, and the <a href="https://fuellabs.github.io/sway/latest/">Sway language</a> is already gaining significant traction. By building a Rust-based DSL and <a href="https://fuellabs.github.io/fuel-docs/master/fuel-toolchain.html">comprehensive tooling</a> that developers love, Fuel is positioned to attract scores of new developers to the ecosystem.</p>
+<p>Fuel 的设计以<a href="https://fuellabs.github.io/fuel-docs/master/why-fuel.html#superior-devex">开发者经验</a> 为先，<a href="https://fuellabs.github.io/sway/latest/">Sway 语言</a> 已经获得了很大的关注。通过构建开发人员喜爱的基于 Rust 的 DSL 和<a href="https://fuellabs.github.io/fuel-docs/master/fuel-toolchain.html">综合工具</a>，Fuel 定位于吸引大量新开发人员加入生态系统。</p>
+<blockquote>
+<p>devX provided by <a href="https://twitter.com/SwayLang?ref_src=twsrc%5Etfw">@SwayLang</a> is on another level, and the design choices made by <a href="https://twitter.com/fuellabs_?ref_src=twsrc%5Etfw">@fuellabs_</a> for its vm are very interesting.</p>
+<p>Considering creating a short but intensive and comprehensive course on fuel and sway through <a href="https://twitter.com/Artemis_HQ?ref_src=twsrc%5Etfw">@Artemis_HQ</a>, once my knowledge is solidified.</p>
+<p>— Reimão (@reimao42) <a href="https://twitter.com/reimao42/status/1589240548170563584?ref_src=twsrc%5Etfw">November 6, 2022</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://twitter.com/SwayLang?ref_src=twsrc%5Etfw">@SwayLang</a> 提供的 devX 处于另一个层次，<a href="https://twitter.com/fuellabs_">@fuellabs_</a> 为它的VM(虚拟机)做出的设计非常有趣。</p>
+<p>考虑通过 <a href="https://twitter.com/Artemis_HQ?ref_src=twsrc%5Etfw">@Artemis_HQ</a> 创建一门关于Fuel和Sway的短期但密集且全面的课程，一旦我的知识得到巩固。</p>
+<p>— Reimão (@reimao42) <a href="https://twitter.com/reimao42/status/1589240548170563584?ref_src=twsrc%5Etfw">2022 年 11 月 6 日</a></p>
+</blockquote>
+<p>In addition, the FuelVM’s design enables new use cases that <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">can’t be feasibly built on the EVM</a> (such as orderbook DEXs). More features &amp; a better developer experience will lead to more projects, more versatile use cases, and more end users.</p>
+<p>此外，FuelVM 的设计支持<a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">不在 EVM 上实质构建</a> 的用例(例如订单簿).更多功能和更好的开发者体验将带来更多项目、更丰富的用例和更多最终用户。</p>
+<p>Because Fuel will be deployed on Ethereum with a trust-minimized bridge between the two networks, these developers and users will be directly contributing to the growth of the Ethereum ecosystem, rather than migrating to alternative L1s.</p>
+<p>由于 Fuel 将部署在以太坊上，并在两个网络之间建立信任最小化的跨链桥，因此这些开发人员和用户将直接为以太坊生态系统的发展做出贡献，而不是迁移到替代的 L1。</p>
+<hr>
+<h2 id="fuel全力以赴扩展以太坊-fuel-all-in-on-scaling-ethereum">Fuel：全力以赴扩展以太坊 (Fuel: All In on Scaling Ethereum)</h2>
+<p>Ethereum’s commitment to a modular roadmap means that making computation more scalable and efficient on the execution layer is the next step in building a more scalable Ethereum ecosystem. Alternative VMs are a crucial piece of this puzzle, and Fuel is leading the charge when it comes to this challenge.</p>
+<p>以太坊对模块化路线图的承诺，意味着在执行层上提高计算可扩展性和效率，是构建更具可扩展性的以太坊生态系统的下一步。替代 VM 是这个难题的关键部分，而 Fuel 在应对这一挑战时处于领先地位。</p>
+<p>By building the fastest modular execution layer, Fuel is bringing maximum security and the highest flexible throughput to Ethereum.</p>
+<p>通过构建最快的模块化执行层，Fuel 为以太坊带来了最高的安全性和最高的灵活吞吐量。</p>
 <hr>
 <h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
 <ul>
@@ -1145,155 +1273,6 @@ Coinbase* 交易；</p>
 <a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
 </li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[“Oh Ottie！” 12月NFT收藏空投：即日起加入白名单！(“Oh Ottie!” NFT Collection Drop in December：Get Whitelisted today!)]]></title>
-        <id>https://chainguys.github.io/post/oh-ottie-12-yue-nft-shou-cang-kong-tou-ji-ri-qi-jia-ru-bai-ming-dan-oh-ottie-nft-collection-drop-in-decemberget-whitelisted-today/</id>
-        <link href="https://chainguys.github.io/post/oh-ottie-12-yue-nft-shou-cang-kong-tou-ji-ri-qi-jia-ru-bai-ming-dan-oh-ottie-nft-collection-drop-in-decemberget-whitelisted-today/">
-        </link>
-        <updated>2022-11-07T03:30:28.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*YSjiQ3jrelHE8SmHtSjXyA.png" alt="" loading="lazy"></figure>
-<ul>
-<li>
-<p>Mint Oh Ottie! using native assets bridged from Ethereum, BNB Chain &amp; Polygon<br>
-铸币Ottie！使用从以太坊、BNB 链和Polygon跨链原生资产</p>
-</li>
-<li>
-<p>Read Instructions &amp; Whitelist <a href="https://sograph.xyz/space/altlayer/campaign/yVFDYdj1ao">Here</a> from 8 November — 4 December<br>
-从 11月8日至12月4日：阅读说明和白名单 [此处]</p>
-</li>
-</ul>
-<hr>
-<p>We’ve got some exciting news for you. Following the great feedback we’ve had on our loving mascot Ottie since we introduced him to you all, we’ve decided to release a collection of 2,000 unique Ottie avatars as part of an NFT collection titled <strong>‘<em>Oh Ottie</em>!’</strong></p>
-<p>我们有一些让人兴奋的消息要告诉你。自从我们向大家介绍可爱的吉祥物 Ottie 以来，我们收到了很好的反馈，我们决定发布一个包含 2,000 个独特 Ottie 头像的集合，作为 NFT 集合的一部分，标题为 <strong>‘<em>Oh Ottie</em>！’</strong></p>
-<p>Each avatar represents Ottie with his different facets — be it hobbies, professions or moods! Each of them will entail special rights and privileges.</p>
-<p>每个头像都代表着Ottie的不同方面——无论是爱好、职业还是心情！他们每个人都将有不同的权利和好处。</p>
-<p>Similar to the OG Badge Drop, the <strong>Oh Ottie!</strong> mint will showcase Altlayer’s superior flashlayer technology, which enables NFT minting in a gasless manner across EVM and non-EVM chains.</p>
-<p>与 OG Badge Drop 类似，<strong>Oh Ottie!</strong> 铸币将展示 Altlayer 卓越的 flashlayer 技术，该技术可以跨 EVM 和非 EVM 链以无gas方式进行 NFT 铸币。</p>
-<p>But this time around, we’re taking it to the next level. <strong>Oh Ottie!</strong> NFTs can be minted using native assets bridged from Ethereum, BNB Chain and Polygon, and eventually roll up the assets to Ethereum for trading.</p>
-<p>但这一次，我们将其提升到了一个新的水平。 <strong>Oh Ottie！</strong> NFT 可以使用从以太坊、BNB 链和Polygon跨链的原生资产铸币，并最终将资产汇总到以太坊进行交易。</p>
-<h2 id="总供应量-total-supply"><strong>总供应量 (Total Supply)</strong></h2>
-<p>Of the 2,000 avatars in the <strong>Oh Ottie!</strong> collection:<br>
-在 <strong>Oh Ottie!</strong> 系列中的 2,000 个头像中：</p>
-<ul>
-<li>
-<p>1,200 will be minted on our flashlayer at a mint price of 0.08 ETH or equivalent on 9 December<br>
-12月9日将在我们的 flashlayer 上以 0.08 ETH 或等值的价格铸币 1,200 个</p>
-</li>
-<li>
-<p>420 will be airdropped to existing OG Badge NFT holders prior to the mint event<br>
-420 将在铸币活动之前空投给现有的 OG Badge NFT 持有者</p>
-</li>
-<li>
-<p>180 will be distributed to partner projects and communities for lucky draws before the mint event<br>
-180个将在铸币活动前分发给合作项目和社区进行幸运抽奖</p>
-</li>
-<li>
-<p>200 avatars will be specially reserved for future community engagement and partnership usage<br>
-200个头像将专门为未来的社区参与和合作伙伴使用而保留</p>
-</li>
-</ul>
-<h2 id="为什么要得到-oh-ottie-nftwhy-get-an-oh-ottie-nft"><strong>为什么要得到 Oh Ottie NFT？Why get an Oh Ottie NFT?</strong></h2>
-<p>We’ll be sharing our love for Ottie with our community via online and offline engagement, and social impact activities. Here are some of the privileges for <strong>Oh Ottie!</strong> holders.</p>
-<p>我们将通过在线和离线参与，以及社会影响活动与我们的社区分享对 Ottie 的热爱。以下是 <strong>Oh Ottie!</strong> 持有者的一些特权。</p>
-<ul>
-<li>
-<p>Future claim to token/NFT airdrop<br>
-未来声索代币/NFT 空投</p>
-</li>
-<li>
-<p>Exclusive access to merchandise and offline events<br>
-独家访问商品和线下活动</p>
-</li>
-<li>
-<p>Priority access to testnet validator program<br>
-优先访问测试网验证程序</p>
-</li>
-<li>
-<p>AltLayer will represent the community to adopt &amp; sponsor otters in zoos globally including but not limited to Singapore Zoo<br>
-AltLayer 将代表社区在全球动物园收养和赞助水獭，包括但不限于新加坡动物园</p>
-</li>
-</ul>
-<h2 id="重要的日子-important-dates"><strong>重要的日子 (Important Dates)</strong></h2>
-<ul>
-<li>
-<p>Whitelisting opens at 18.00 PM SGT on <strong>8 November</strong> and ends on <strong>4 December</strong> at 23.59 PM SGT.<br>
-白名单于 <strong>11月8日</strong> 晚上 18:00 SGT 开始，并于<strong>12 月 4 日</strong> 下午 23:59 SGT 结束。</p>
-</li>
-<li>
-<p>On <strong>7 December,</strong> we will publish the how-to-mint guide and open the <strong><em>one-way</em> <em>bridge</em></strong> for you to transfer your ETH, BNB and Matic tokens to our flashlayer.<br>
-<strong>12 月 7 日</strong>  我们将发布铸币指南并打开 <strong><em>one-way</em> <em>bridge</em></strong> 供您将您的 ETH、BNB 和 Matic 代币转移到我们的 flashlayer。</p>
-</li>
-</ul>
-<p>Note that there will be only one flashlayer rollup that spans across Ethereum, BNB Chain and Polygon, and supports ETH, BNB and Matic tokens. Users can opt for one or more token types (among ETH, BNB and Matic) to mint, as long as you have sufficient balance of the relevant token on our flashlayer.</p>
-<p>请注意，只有一个 flashlayer rollup 跨越以太坊、BNB 链和Polygon，并支持 ETH、BNB 和 Matic 代币。用户可以选择一种或多种代币类型（ETH、BNB 和 Matic）来铸币，只要您在我们的 flashlayer 上有足够的相关代币余额即可。</p>
-<p>Also note that you <strong><em>won’t</em></strong> be able to withdraw your bridged token assets on our flashlayer until the mint event is over. Please be mindful of the token amount to bridge for minting.</p>
-<p>另请注意，在铸币活动结束之前，您 <strong><em>不能</em></strong>  在我们的 flashlayer 上提取您的跨链代币资产。请注意用于铸币的代币数量。</p>
-<h2 id="铸币活动-mint-event"><strong>铸币活动 (Mint Event)</strong></h2>
-<p>The mint event lasts for 24 hours and has two parts.</p>
-<p>铸币事件持续 24 小时，分为两部分。</p>
-<p><strong><em>Part 1 — Private Mint:</em></strong> On 9 December, we’ll start private minting for whitelisted addresses between 12.00 PM — 16.00 PM SGT .<br>
-<em>第 1 部分 - 私密铸币：</em>**12 月 9 日，我们将在 12.00 PM - 16.00 PM SGT 之间开始对列入白名单的地址进行私密铸币。</p>
-<p><strong><em>Part 2 — Public Mint:</em></strong> Public minting is open for all. It starts at 16.00 PM SGT on 9 December and lasts for the next 20 hours. The one-way bridge will remain open until the mint event is over.<br>
-<em>第 2 部分——公开铸币：</em> **公开铸币对所有人开放。它从 12 月 9 日 SGT 下午 16 点开始，持续接下来的 20 个小时。单向跨链桥将保持开放，直到铸币活动结束。</p>
-<ul>
-<li>
-<p>The mint event ends either when all 1,200 avatars are fully minted or when the 24 hour mint period is over.<br>
-当所有 1,200 个头像全部铸币完毕或 24 小时铸币期结束时，铸币活动结束。</p>
-</li>
-<li>
-<p>Each wallet address is allowed to mint a maximum of 10 avatars regardless of the token used.<br>
-无论使用何种代币，每个钱包地址最多可铸造 10 个头像。</p>
-</li>
-<li>
-<p>Note that only $ETH, $BNB and Matic tokens are supported on our flashlayer. You won’t be able to bridge over other tokens.<br>
-请注意，我们的 flashlayer 仅支持 $ETH、 $BNB 和 Matic 代币。您将无法跨越其他代币。</p>
-</li>
-</ul>
-<h2 id="铸币后活动-post-mint-event"><strong>铸币后活动 (Post Mint Event)</strong></h2>
-<ul>
-<li>
-<p>After the end of the mint event, we will automatically bridge all the minted avatars back to Ethereum and all the remaining token assets back to Ethereum, BNB Chain and Polygon via rollup process. You won’t have to bridge your assets back to L1 yourselves.<br>
-铸币活动结束后，我们将通过汇总流程，将所有铸币头像自动跨链回以太坊，并将所有剩余的代币资产跨链回以太坊、BNB 链和 Polygon。您不必自己将资产跨链到 L1。</p>
-</li>
-<li>
-<p>Upon receiving your minted avatars on Ethereum mainnet, you will be able to trade the <strong>Oh Ottie!</strong> Collection on Opensea, Looksrare, X2Y2 and Blur, etc<br>
-在以太坊主网上收到您铸造的头像后，您将能够在 Opensea、Looksrare、X2Y2 和 Blur 等平台上交易 <strong>Oh Ottie!</strong> 收藏</p>
-</li>
-</ul>
-<h2 id="如何获得空投资格how-can-you-qualify-for-the-airdrop"><strong>如何获得空投资格？(How can you qualify for the airdrop?)</strong></h2>
-<p>If you are holders of our existing OG Badge NFTs, you can just sit tight and will automatically receive an airdrop of <strong>Oh Ottie!</strong> avatar prior to our mint event. We will disclose details including snapshot time later.</p>
-<p>如果您是我们现有的 OG 徽章 NFT 的持有者，您只需坐好，就会在我们的铸币活动开始前自动收到 <strong>Oh Ottie!</strong> 头像的空投。我们将在稍后披露包括快照时间在内的详细信息。</p>
-<h2 id="如何才能有资格参加铸币活动how-can-you-qualify-for-the-mint-event"><strong>如何才能有资格参加铸币活动？(How can you qualify for the mint event?)</strong></h2>
-<p>You can increase the odds of getting hold of the <strong>Oh Ottie!</strong> avatars by <strong>joining the whitelisting process.</strong></p>
-<p>您可以通过加入白名单流程来增加获得 <strong>Oh Ottie!</strong> 头像的几率。</p>
-<p>Please complete the following tasks on <a href="https://sograph.xyz/space/altlayer/campaign/yVFDYdj1ao">this</a> page.</p>
-<p>请在 <a href="https://sograph.xyz/space/altlayer/campaign/yVFDYdj1ao">这个</a> 页面上完成以下任务。</p>
-<ul>
-<li>
-<p>Follow <a href="https://twitter.com/alt_layer">Yaoqi Jia</a> on Twitter<br>
-在 Twitter 上关注 <a href="https://twitter.com/alt_layer">Yaoqi Jia</a></p>
-</li>
-<li>
-<p>Follow <a href="https://twitter.com/alt_layer">Altlayer</a> on Twitter<br>
-在 Twitter 上关注 <a href="https://twitter.com/alt_layer">Altlayer</a></p>
-</li>
-<li>
-<p>Like and Retweet the pinned <strong>Oh Ottie!</strong> <a href="https://twitter.com/alt_layer/status/1589918467377205248">announcement</a><br>
-喜欢并转发置顶的****Oh Ottie！** <a href="https://twitter.com/alt_layer/status/1589918467377205248">公告</a></p>
-</li>
-<li>
-<p>Join our <a href="https://discord.gg/altlayer">Discord server</a> and complete the necessary steps<br>
-加入我们的 <a href="https://discord.gg/altlayer">Discord 服务器</a> 并完成必要的步骤</p>
-</li>
-<li>
-<p>Connect with your Ethereum wallet address<br>
-连接您的以太坊钱包地址</p>
-</li>
-</ul>
-<p>让白名单开始吧！<br>
-Let the whitelisting begin!</p>
 ]]></content>
     </entry>
 </feed>
