@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-01-10T04:07:19.783Z</updated>
+    <updated>2023-01-10T04:33:51.155Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -16,7 +16,7 @@
         <link href="https://chainguys.github.io/post/chong-su-wo-men-de-pin-pai-rebuilding-our-brand/">
         </link>
         <updated>2023-01-06T04:04:11.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://optimise2.assets-servd.host/akord-web/production/vision.png?w=200&amp;q=5&amp;auto=format&amp;fit=crop&amp;dm=1670949034&amp;s=20de180d1b0e6331a695827af3494469" alt="Vision" loading="lazy"></figure>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://optimise2.assets-servd.host/akord-web/production/vision.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1670949034&amp;s=fd1bdd19617e65efadcc7bd5e39f1e91" alt="Vision" loading="lazy"></figure>
 <p><strong>When we started Akord back in 2020, it was with a clear focus on protecting privacy and empowering data ownership. We didn’t know about Arweave back then.</strong></p>
 <p><strong>当我们在 2020 年启动 Akord 时，它明确关注保护隐私和赋能数据所有权。那时我们不知道 Arweave。</strong></p>
 <p>In 2021, we discovered the Weave, the Permaweb and joined the Open Web Foundry.</p>
@@ -84,7 +84,7 @@ Akord 的最佳用例是什么？</p>
 <p>接下来是什么？我们不知道。这是由社区决定和体现的。</p>
 <p>Our new brand captures these ideas with the <a href="https://en.wikipedia.org/wiki/Mad_Libs">Mad Libs</a> typography, split screen illustrations and the incomplete A of the logo. We're inviting you to complete the picture, to be inspired and add your own ideas.</p>
 <p>我们的新品牌通过 <a href="https://en.wikipedia.org/wiki/Mad_Libs">Mad Libs</a> 排版、分屏插图和不完整的徽标 A 捕捉了这些想法。我们邀请您完成图片，获得灵感并添加您自己的想法。</p>
-<figure data-type="image" tabindex="3"><img src="https://optimise2.assets-servd.host/akord-web/production/Group-10.png?w=200&amp;q=5&amp;auto=format&amp;fit=crop&amp;dm=1671015386&amp;s=be2fedfb40ef0c279d398f08c546667c" alt="Brand Grid" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://optimise2.assets-servd.host/akord-web/production/Group-10.png?w=2600&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1671015386&amp;s=0619cdeb8c7ab1a93061d4b91788e046" alt="Brand Grid" loading="lazy"></figure>
 <h2 id="加入社区-join-the-community">加入社区 (Join the community)</h2>
 <p>We plan on making 2023 an astounding year for Akord. We have some massive milestones in our sights. We hope you'll join us for the journey.</p>
 <p>我们计划让 2023 年成为 Akord 令人震惊的一年。我们有一些巨大的里程碑。我们希望您能加入我们的旅程。</p>
