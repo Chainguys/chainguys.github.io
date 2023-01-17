@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-01-11T01:08:26.824Z</updated>
+    <updated>2023-01-17T01:56:55.080Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,92 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Euler和FloorDAO (Euler and FloorDAO)]]></title>
+        <id>https://chainguys.github.io/post/euler-he-floordao-euler-and-floordao/</id>
+        <link href="https://chainguys.github.io/post/euler-he-floordao-euler-and-floordao/">
+        </link>
+        <updated>2023-01-10T01:54:18.000Z</updated>
+        <content type="html"><![CDATA[<h2 id=""><img src="https://euler-labs.ghost.io/content/images/2023/01/floordao-euler.png" alt="Euler and FloorDAO" loading="lazy"></h2>
+<p>This is a piece made in collaboration with FloorDAO and Euler contributors to share the unique possibilities presented to NFTs when mixed with permissionless lending and borrowing markets.</p>
+<p>这是一篇与 FloorDAO 和 Euler 贡献者合作的文章，旨在分享 NFT 在与无许可借贷市场结合时呈现的独特可能性。</p>
+<p><strong>什么是 NFT-Fi？ What is NFT-Fi?</strong></p>
+<p>The financialisation of NFTs, while a relatively new thing, has already seen some impressive growth. This has taken off as of late due to large amounts of value being stored in largely illiquid assets that are inefficient stores of value when compared to something like ETH: you can borrow against it, you can lend it, you can stake it and so forth.</p>
+<p>NFT 的金融化虽然是一个相对较新的事物，但业已取得了令人瞩目的增长。由于大量价值存储在流动性差的资产中，与 ETH 之类的东西相比，这些资产的价值存储效率低下，因此最近才开始流行：你可以借进借出抵押等等.</p>
+<p>With an NFT, the utility used to simply be tied to the purchase price, and even this was handled via bidding - which contributes more to existing market inefficiency. Other applications involve real world utility such as tickets (all my homies hate ticketmaster) or joining social clubs and so forth.</p>
+<p>对于 NFT，其效用过去常常简单地与购买价格挂钩，甚至是通过投标来处理——这对现有市场的低效率起到了推波助澜作用。其他应用涉及现实世界的实际用例，例如门票（我所有的朋友都讨厌售票员）或加入社交俱乐部等。</p>
+<p>NFT communities strive for efficiency, and so different protocols began to spring up offering creative fusions of existing DeFi building blocks compatible with established NFT projects. Once these really got moving users were lending, borrowing, paying in instalments, hedging and so forth.</p>
+<p>NFT 社区力求效率，因此不同的协议开始涌现，提供与已其 NFT 项目兼容的现有 DeFi 构建区块的创造性融合。一旦这些真正动起来，用户就会借贷、分期付款、对冲等等。</p>
+<figure data-type="image" tabindex="1"><img src="https://euler-labs.ghost.io/content/images/2023/01/image.png" alt="" loading="lazy"></figure>
+<p>This brings yield to an asset that previously didn’t have any. While you may snigger at the idea, you won’t snigger at the performance: <a href="https://twitter.com/FloorDAO/status/1600592478096265233">26ETH in just one month</a>! This is against the backdrop of November's gigantic blowup (try and tell me you weren’t red in November). NFT-Fi is here to stay.</p>
+<p>这为资产带来了以前没有的收益。虽然您可能会对这个想法窃笑，但您不会对它的表现窃笑：<a href="https://twitter.com/FloorDAO/status/1600592478096265233">仅一个月内就有 26 个 ETH</a>！这是在 11 月的巨大爆炸的背景下（试着告诉我你在 11 月没亏钱）。 NFT-Fi 将继续存在。</p>
+<p><strong>什么是 FloorDAO？What is FloorDAO?</strong></p>
+<p>In their own words: FloorDAO is an NFT market making protocol that uses OlympusDAO bonding mechanisms to deepen NFT liquidity for the NFTs in the FloorDAO treasury. These collections are deployed in strategies like NFTX, which generates yield.</p>
+<p>用他们自己的话说：FloorDAO 是一种 NFT 做市协议，它使用 OlympusDAO 绑定机制来加深 FloorDAO 库中 NFT 的 流动性。这些集合部署在 NFTX 等策略中，从而产生收益。</p>
+<p><strong>Euler 和 FloorDAO 是如何结合在一起的？How do Euler and FloorDAO fit together?</strong></p>
+<p>As it stands, FloorDAO is earning yield on 7 different collections. This has the advantage of a) bringing yield to FloorDAO on otherwise dormant assets and b) enabling speculators to long and short different NFT floor prices. This furthers FloorDAO’s goal to deepen NFT liquidity driving further activity and helps Euler by driving more demand to the protocol.</p>
+<p>目前，FloorDAO 在 7 个不同的收藏上赚取收益。这样做的好处是 a) 为 FloorDAO 带来其他休眠资产的收益，以及 b) 使投机者能够做多和做空不同的 NFT 底价。这进一步推进了 FloorDAO 的目标，即深化 NFT 流动性来推动进一步的活动，并通过推动对该协议的更多需求来帮助 Euler。</p>
+<p>Euler is a unique lending and borrowing protocol: any asset can be supplied and borrowed. Unlike other protocols in the space, it is open to any asset that can be put into an ERC-20 standard. No governance approval is required and the risks that this entails are by default managed by conservative smart contract code.</p>
+<p>Euler 是一种独特的借贷协议：可以提供和借用任何资产。与该领域的其他协议不同，它对任何可以放入 ERC-20 标准的资产开放。不需要治理批准，默认情况下，这带来的风险由保守的智能合约代码管理。</p>
+<p>As it stands, Euler and FloorDAO are already interfacing with each other thanks to FloorDAO’s tokenization of 40 Milady Maker and 1.5 CryptoPunk NFTs which were then deposited. Since then, users have been longing and shorting miladys constantly.</p>
+<p>就目前而言，由于 FloorDAO 对 40 个 Milady Maker 和 1.5 个 CryptoPunk NFT 进行了代币化，Euler 和 FloorDAO 已经相互连接。此后，用户可以持续对miladys的看多和看空。</p>
+<p>While it’s clear that  CryptoPunk NFTs (being largely considered to be held by “OGs” who have been in DeFi since the start) have seen some <a href="https://decrypt.co/97190/ethereum-nft-backed-loan-market-heats-up-as-cryptopunks-owner-borrows-8-3m">good lending and borrowing activity</a>, Miladys are catching up fast in terms of activity and may even supercede them in terms of creativity. Will miladys steal the crown for the most innovative DeFi pfp? Do I even need to draw attention to the famous <a href="https://slate.com/technology/2022/06/bored-ape-yacht-club-thefts-nfts-cryptocurrency.html">financial literacy of Ape holders?</a></p>
+<p>虽然很明显，CryptoPunk NFT（主要被认为由从一开始就在 DeFi 中的“OG”持有）已经看到了一些 [良好的借贷活动](https://decrypt.co/97190/ethereum-nft -backed-loan-market-heats-up-as-cryptopunks-owner-borrows-8-3m)，Miladys 在活动方面正在快速追赶，甚至可能在创造力方面超过他们。 miladys 会夺得最具创新性的 DeFi pfp 桂冠吗？我是否需要提请注意著名的 <a href="https://slate.com/technology/2022/06/bored-ape-yacht-club-thefts-nfts-cryptocurrency.html">Ape 持有者的金融知识？</a></p>
+<figure data-type="image" tabindex="2"><img src="https://lh4.googleusercontent.com/8Wy7sHtIC8kJQ0cZK4_RdnxsXTo7gaiFRK6LD7uUqHfYqM-fxKPNZrwVcT8S6sgjPBU5BoJTzop1yBf7h5jFNfzej-CTx_cSywCQqU1kJ3RTSmbYo75CcsB_8-k4LN0Joc21lyVJbf0K0k-ruDjWH1fd_HtLhiOEnMfSupAPFvRr089buV1XZsSqIelOiw" alt="" loading="lazy"></figure>
+<p>Breaking: milady</p>
+<h3 id="我如何在-euler-上做多和做空-nft或者如何展示我作为自称-og-的金融知识-how-do-i-long-and-short-nfts-on-euler-alternatively-how-do-i-demonstrate-my-financial-literacy-as-a-self-proclaimed-og">我如何在 Euler 上做多和做空 NFT（或者如何展示我作为自称 OG 的金融知识）？- How do I long and short NFTs on Euler (alternatively how do I demonstrate my financial literacy as a self-proclaimed OG)?</h3>
+<p>It’s quite straightforward to prove that OG CryptoPunk users are financially literate using Euler. To begin, supply some collateral to Euler. This will depend on whether or not you are long or short on CryptoPunks.</p>
+<p>使用 Euler 证明 OG CryptoPunk 用户具备金融知识非常简单。首先，向 Euler 提供一些抵押品。这将取决于您是做多还是做空 CryptoPunks。</p>
+<p>You are as ever subject to liquidation. This wallet <a href="https://twitter.com/eulLiquidations/status/1612336788856606720">was, and so is the first Milady liquidation of 2023.</a> For an overview on liquidations please see this <a href="https://docs.euler.finance/developers/getting-started/architecture#liquidations">here</a>.</p>
+<p>你一如既往地会被清算。这个钱包 <a href="https://twitter.com/eulLiquidations/status/1612336788856606720">过去是，现在也是 2023 年的第一次 Milady 清算。</a> 有关清算的概述，请参阅此<a href="https://docs.euler.finance/developers/getting-started/architecture#liquidations">此处</a>。</p>
+<p><em><strong>如何做多欧拉上的 CryptoPunk How one might long a CryptoPunk on Euler</strong></em></p>
+<p><a href="https://app.euler.finance/market/0x269616d549d7e8eaa82dfb17028d0b212d11232a">To view the PUNK market, see here.</a><br>
+<a href="https://app.euler.finance/market/0x269616d549d7e8eaa82dfb17028d0b212d11232a">要查看 PUNK 市场，请参见此处。</a></p>
+<p>This can be achieved in the following way:<br>
+这可以通过以下方式实现：</p>
+<ul>
+<li>
+<p>Supply any collateral to Euler and then borrow a USDC stable asset (or indeed any asset that you think will appreciate less than your PUNK, such as ETH) like USDC.<br>
+向 Euler 提供任何抵押品，然后借入 USDC 稳定资产（或者任何你认为升值低于你的 PUNK 的资产，例如 ETH），如 USDC。</p>
+</li>
+<li>
+<p>Swap the asset that you’ve borrowed and buy an equal amount of PUNK. This can be all handled inside the Euler finance app transaction builder, which uses 1inch.<br>
+交换您借入的资产并购买等量的 PUNK。这一切都可以在使用 1inch 的 Euler 金融交易构建器中处理。</p>
+</li>
+<li>
+<p>If the PUNK has appreciated in value say 1.5x, you can repay the USDC loan which you earlier took to finance the PUNK swap.<br>
+如果 PUNK 的价值升值了 1.5 倍，您可以偿还您之前为 PUNK 交换提供资金的 USDC 贷款。</p>
+</li>
+</ul>
+<p>The increased PUNK price means you earn profit. You keep the difference, though this is only if the value of PUNK increases. Be mindful that if PUNK decreases the value of your USDC borrow will not - you have lost money here. Note also you’ll be paying some interest on the loan.</p>
+<p>PUNK 价格上涨意味着您赚取利润。你保留差额，尽管这只是在 PUNK 的值增加的情况下。请注意，如果 PUNK 降低您借入的 USDC 的价值，则不会——这意味着您在这里亏了钱。另请注意，您将支付一些贷款利息。</p>
+<p><strong><em>如何在 Euler 上做空 CryptoPunk How one might short a CryptoPunk on Euler</em></strong></p>
+<p>It could be essentially the same, but in reverse.</p>
+<p>它可能本质上是相同的，但操作相反。</p>
+<ul>
+<li>
+<p>Supply any asset, but this time borrow PUNK against it.<br>
+提供任何资产，但这次借用 PUNK 作为抵押。</p>
+</li>
+<li>
+<p>Sell the PUNK for an asset you believe will appreciate in value against the PUNK,<br>
+出售 PUNK 以获得您认为相对于 PUNK 会升值的资产，</p>
+</li>
+<li>
+<p>Once the PUNK decreases in value enough for you to be satisfied, close the short by buying back the same amount of PUNK. You keep the difference once more.<br>
+一旦 PUNK 的价值下降到足以让您满意，通过回购相同数量的 PUNK 来平仓。</p>
+</li>
+</ul>
+<p>In doing so, you might prove to your rival NFT community you know your way around a trade.</p>
+<p>这样做，您可能会向您的竞争对手 NFT 社区证明您了解交易。</p>
+<p>As ever, none of this constitutes financial advice and only you or your financial advisor can tailor your market activities to your risk profile. Consider how that conversation might go (lol).</p>
+<p>与以往一样，这些都不构成财务建议，只有您或您的财务顾问，可以根据您的风险状况调整您的市场活动。考虑一下那个对话可能会如何进行（笑）。</p>
+<figure data-type="image" tabindex="3"><img src="https://lh4.googleusercontent.com/kB_dFBsrjy6ZT0Z7if3X-I6slGnMCNN_NTvIQWijAnqWx80_DzUG7TfCiBGVSGr74zigPBktuc6cyUAfy9YA4aQmKEWFnXgMXtvwbF5vS4rlSiKE8NT2ji_FdTWzo8LrfQL04rAC1GrfEIV5KweT5rAYWhPS7chOOozmN1oHirolBPofeAjajA-al0YNyQ" alt="" loading="lazy"></figure>
+<p><strong>未来 The future?</strong></p>
+<p>NFT financialisation is here to stay. While there’s yield to be earned and floors to be raised, FloorDAO will continue to do this. Without spilling too many juicy details, FloorDAO is looking to completely rebuild their protocol and introduce veFLOOR which will allow new collections into the portfolio and give holders the ability to direct liquidity and treasury yield to their preferred collections. Euler contributors, on the other hand, are currently working on Baby Euler where anyone can spin up a lending and borrowing pool as and when they please. Combine the two and what do you get?</p>
+<p>NFT 金融化将继续存在。虽然要赚取收益并提高底部收益，但 FloorDAO 将继续这样做。在不泄露太多有趣细节的情况下，FloorDAO 希望完全重建他们的协议并引入 veFLOOR，这将允许新的收藏品进入投资组合，并让持有人能够将流动性和国债收益率引导到他们喜欢的收藏品。另一方面，Euler 贡献者目前正在开发 Baby Euler，任何人都可以在任何时候随意启动借贷池。将两者结合起来，你会得到什么？</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[重塑我们的品牌 (Rebuilding our brand)]]></title>
         <id>https://chainguys.github.io/post/chong-su-wo-men-de-pin-pai-rebuilding-our-brand/</id>
@@ -940,90 +1026,6 @@ based L2 rollups, scalability and zk space.</p>
 <p>关于为什么 <a href="https://twitter.com/hashtag/EVM?src=hashtag_click">#EVM</a> 兼容性对任何协议都至关重要的论文</p>
 <p><a href="https://twitter.com/toghrulmaharram/status/1595503593192362007">https://twitter.com/toghrulmaharram/status/1595503593192362007…</a><br>
 下次见！ ！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[认识 Akord：基于区块链的永久存储和发布协议 (Meet Akord：the blockchain-based permanent storage and publishing protocol)]]></title>
-        <id>https://chainguys.github.io/post/ren-shi-akordji-yu-qu-kuai-lian-de-yong-jiu-cun-chu-he-fa-bu-xie-yi-meet-akordthe-blockchain-based-permanent-storage-and-publishing-protocol/</id>
-        <link href="https://chainguys.github.io/post/ren-shi-akordji-yu-qu-kuai-lian-de-yong-jiu-cun-chu-he-fa-bu-xie-yi-meet-akordthe-blockchain-based-permanent-storage-and-publishing-protocol/">
-        </link>
-        <updated>2022-11-26T13:22:26.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://res.cloudinary.com/coinpaper/f_auto,c_limit,w_1920,q_100/Akord_blockchain_234b87a197" alt="" loading="lazy"></figure>
-<p>原文：<a href="https://coinpaper.com/715/meet-akord-the-blockchain-based-permanent-storage-and-publishing-protocol">Meet Akord: the blockchain-based permanent storage and publishing protocol</a><br>
-by Taisiia Prosvirova</p>
-<p><strong>“We believe privacy is a fundamental human right”: Akord co-founder Richard Caetano and cryptography engineer Weronika Kolodziejak on the future of data storage and privacy in Web3.</strong></p>
-<p><strong>“我们相信隐私是一项基本人权”：Akord 联合创始人 Richard Caetano 和密码学工程师 Weronika Kolodziejak 谈 Web3 中数据存储和隐私的未来。</strong></p>
-<hr>
-<p>Web2 platforms changed how we interact with our world — at the cost of our personal data being collected, analyzed, and used to influence our decisions. Now, Web3 aims to solve this issue by returning content rights to authors — and <a href="https://akord.com/">Akord</a> is ready to be part of the change.</p>
-<p>Web2平台改变了我们与世界的互动方式--代价是我们的个人数据被收集、分析，并被用来影响决策。现在，Web3旨在通过将内容权利归还给作者来解决这个问题--而<a href="https://akord.com/">Akord</a>已经准备好成为变革的一部分。</p>
-<p>“Nowadays, we produce petabytes of data but are very limited by centralized control of it. What we want to create is proper incentives for people with surplus storage to store data in perpetuity. We aim to empower data ownership and protect users’ privacy by bringing their content to <a href="https://www.arweave.org/">Arweave</a> blockchain, where it can be preserved indefinitely for a one-time fee,” says <a href="https://twitter.com/arsydotorg">Richard Caetano</a>, CEO and co-founder of Akord, a decentralized data storage protocol with private messaging.</p>
-<p>&quot;如今，我们产生拍字节级别(1PB=1024TB)的数据，但由于对其进行中心化控制而受到很大限制。我们想创造的是适当的激励措施，让拥有剩余存储空间的人永久地存储数据。Akord公司首席执行官兼联合创始人<a href="https://twitter.com/arsydotorg">Richard Caetano</a>说：&quot;我们的目标是赋予数据所有权并保护用户的隐私，把他们的内容带到<a href="https://www.arweave.org/">Arweave</a>区块链上，只要一次性付费就可以无限期地保存下来。</p>
-<p><em>This interview has been condensed and lightly edited for clarity.</em><br>
-为清晰起见，本采访经过了浓缩和轻度编辑。</p>
-<p><strong>So Akord is a protocol built on top of Arweave blockchain, which, in turn, consists of permaweb and blockweave. Can you explain it all to me like I’m five years old?</strong></p>
-<p><strong>那么，Akord是一个建立在Arweave区块链之上的协议，而Arweave又由permaweb和blockweave组成。你能像我五岁时那样向我解释这一切吗</strong>？</p>
-<p>Richard: Sure. To begin with, we have Arweave, which is a unique blockchain where people can store data permanently for a one-time fee. The users pay for storage with AR tokens just once, upfront, and the network is incentivized to keep their data stored for hundreds of years. Think of Arweave as a permanent hard drive that everybody can write to and read from — and Akord is a protocol layer built on top of that hard drive. Akord allows users to create special containers for their data — called vaults — and exchange encrypted messages with other network peers.</p>
-<p>Richard: 当然。首先，我们有Arweave，这是一个独特的区块链，人们可以通过一次付费来永久地存储数据。用户只需在前期用AR代币支付一次存储费用，网络就会受到激励，将他们的数据存储数百年。把Arweave想象成一个永久的硬盘，每个人都可以写入和读出—而Akord是建立在这个硬盘之上的协议层。Akord允许用户为他们的数据创建特殊的容器—称为保险库/资料库/存储库—并与其他网络对等者交换加密信息。</p>
-<p><a href="https://twitter.com/w_kolodziejak">Weronika</a>: So to clarify, the blockweave, Arweave’s core technology, is a blockchain-like structure where every block is linked not only to the last previous block but also to a random block from the past, thus inciting miners to archive as much data as possible — and that’s why it’s called, well, a weave. While permaweb is basically a network of applications and documents that sits on top of Arweave. I think it’s a very brilliant design</p>
-<p><a href="https://twitter.com/w_kolodziejak">Weronika</a>: 所以澄清一下，Arweave的核心技术blockweave，是一个类似区块链的结构，每个区块不仅与上一个区块相连，而且与过去的一个随机区块相连，从而鼓励矿工尽可能多地存档数据—这就是为什么它被称为，嗯，weave。而permaweb基本上是一个应用和文件的网络，位于Arweave的顶部。我认为这是一个非常出色的设计</p>
-<p><strong>You mentioned that the data is stored for “hundreds of years” — for how long exactly? I remember there was a big discussion about</strong> <a href="https://coinpaper.com/416/what-is-ethereum-name-service"><strong>ENS</strong></a> <strong>domains’ recurring fees and I’m curious to hear how Akord plans to sustain incentives over time, especially since you mentioned that users pay just once.</strong></p>
-<p><strong>你提到数据被储存 &quot;数百年&quot;—具体有多长时间？我记得有一个关于</strong><a href="https://coinpaper.com/416/what-is-ethereum-name-service"><strong>ENS</strong></a><strong>域名日常费用的大讨论，我很想知道Akord计划如何长期维持激励机制，尤其是你提到用户只需支付一次。</strong></p>
-<p>Richard: What makes us different from other traditional blockchains is that Arweave was specifically designed for data storage. It incentivizes nodes to store data by setting up a crypto endowment — basically a fund that lives on chain. When users purchase storage, their one-time payments are pooled together in this fund, and its value increases over time due to token appreciation. Meanwhile, the cost of storage is steadily decreasing as new advances in technology are embraced.</p>
-<p>Richard: 我们与其他传统区块链的不同之处在于，Arweave是专门为数据存储设计的。它通过设立一个加密货币捐赠基金—基本上是一个生活在链上的基金，来激励节点存储数据。当用户购买存储时，他们的一次性付款被汇集到这个基金中，由于代币升值，其价值随着时间的推移而增加。同时，随着技术的新进展被接受，存储的成本也在稳步下降。</p>
-<p>Now imagine two curves, one is going up as the value of endowment increases and the other is going down as new technologies are lowering the cost of storage. The spread between these two curves is where we’re able to create an incentive for nodes to keep storing data.</p>
-<p>现在想象一下两条曲线，一条随着捐赠价值的增加而上升，另一条随着新技术降低存储成本而下降。这两条曲线之间的差额就是我们能够为节点创造一个激励机制来持续存储数据的地方。</p>
-<p>I can imagine that in the future, there will be much more efficient ways to store data than current magnetic hard drives. There might be lasers that write data into crystals or something else, completely unimaginable for modern people to conceive of today. Regardless of what the technology will look like, the next generation of data storage will be much cheaper and more resilient.</p>
-<p>我可以想象，在未来，将有比目前的磁盘更有效的方法来存储数据。可能会有激光将数据写入晶体或其他东西，对于今天的现代人来说完全无法想象。不管技术会是什么样子，下一代的数据存储将更便宜，更有弹性。</p>
-<p><strong>For now, it looks to me like Akord’s tokenomics lies on two assumptions: that token will steadily appreciate in value and that the price of storage space will decrease over time, while the demand for storage will remain the same. I’m convinced that the more data storage capacity improves, the more storage space our data consumes. Correct me if I’m wrong.</strong></p>
-<p><strong>目前，在我看来，Akord的tokenomics在于两个假设：token将稳步升值；存储空间的价格将随着时间的推移而降低，而对存储的需求将保持不变。我相信，数据存储能力越是提高，我们的数据所消耗的存储空间就越多。如果我错了，请纠正我。</strong></p>
-<p>Richard: Well, what I hear is that there are two questions. The first one is about the viability of our token model — and that’s a valid critique. And the second one is similar to a highway problem — the one that asserts that car traffic always costumes extra lanes — but in relation to data storage.</p>
-<p>Richard: 好，我所听到的是两个问题。第一个是关于我们代币模式的可行性—这是一个合理的质疑。而第二个问题类似于高速公路问题—断言汽车交通总是需要额外的车道—但与数据存储有关。</p>
-<p>So, starting with your first question regarding tokenomics. We could say, blockchains never die — they may become a zombie at some point when nobody uses the network, while nodes are keeping it running. If our project is useful, if there is a demand for permanent storage — then this would be the response to your criticism. If Akord provides value to its users and creates proper incentives, we are going to eventually find ourselves in a virtuous cycle of rising demand.</p>
-<p>那么，从你关于tokenomics的第一个问题开始。我们可以说，区块链永远不会死—没有人使用网络时，它们可能会在某个时候变成僵尸，而节点却在维持其运行。如果我们的项目是有用的，如果对永久存储有需求—那么这将是对你的批评的回应。如果Akord为其用户提供价值，并创造适当的激励，我们最终会发现自己处于需求上升的良性循环中。</p>
-<p>Obviously, the opposite can happen as well. If what we’re doing is worthless and people would rather pay Amazon to store their data, then our project will become a zombie — that’s it. Currently, Arweave’s endowment can pay for two to three hundred years of storage — under conservative estimates that the price of token will remain the same.</p>
-<p>很明显，相反的情况也会发生。如果我们所做的事情毫无价值，人们宁愿付钱给亚马逊来存储其数据，那么我们的项目将成为僵尸—就是这样。目前，Arweave的捐赠可以支付两到三百年的存储费用—根据保守估计，即代币的价格将保持不变。</p>
-<p>So coming to your second question, what makes Arweave different from other traditional blockchains is its unique Proof-of-Access consensus model. Your ability to earn rewards from the network is not based on how much computation you perform or how many tokens you own. It's based solely on how much data you're storing on the network — and you need to be able to create a proof of that data to add new blocks. Every node is incentivized to store random blocks and store as much data as possible. So, the highway problem becomes a theoretical problem that may not really apply to the network — the greater number of nodes simply means that more copies of data are stored in different sets on different nodes.</p>
-<p>那么来到你的第二个问题，Arweave与其他传统区块链的不同之处在于其独特的访问证明共识模型。你从网络中获得奖励的能力，不是基于你进行了多少计算或你拥有多少代币。它完全基于你在网络上存储了多少数据—而且你需要能够创建一个数据证明来增加新区块。每个节点都被激励去存储随机区块并尽可能多地存储数据。因此，高速公路问题变成了一个理论上的问题，可能并不真正适用于网络—更多的节点只是意味着更多的数据副本被存储在不同的节点上的不同集合而已。</p>
-<p><strong>How did you come up with the idea of founding Akord?</strong></p>
-<p>**你是怎么想到要创办Akord的？</p>
-<p>Richard: Before starting Akord, I co-founded Stratum, a blockchain company focused on enterprise traceability, where I was responsible for the vision and the research involving cryptography. But then Pascal [Barry] and I left the company to work on Akord, we built on the principle of “privacy as a fundamental human right”. We started it right at the beginning of the pandemic, in March 2020.</p>
-<p>Richard: 在创办Akord之前，我共同创办了Stratum公司，这是一家专注于企业追踪的区块链公司，我负责愿景和涉及密码学的研究。但后来帕斯卡尔[巴里]和我离开了公司，从事Akord的工作，我们建立在 &quot;隐私是一项基本人权 &quot;的原则之上。我们在大流行病开始时就开动了，在2020年3月。</p>
-<p>At the very beginning, we were lucky to meet Weronika, who brought cryptography knowledge and expertise. It was a match and we started building our protocol around the concept of secure storage vaults in zero-knowledge. We were able to deliver a working protocol quite early while waiting for the right blockchain to come. One year later, we discovered Arweave that was a perfect fit for Akord, and that’s how all it started.</p>
-<p>在一开始，我们很幸运地遇到了Weronika，她带来了密码学知识和专业知识。这是一个天作之合，我们开始围绕零知识的安全存储库的概念建立我们的协议。在等待合适区块链到来的同时，我们能够很早就提供一个可以使用的协议。一年后，我们发现Arweave与Akord完美契合，这就是一切的开始。</p>
-<p>Weronika: But yeah, privacy has always been the core of our mission. We were really inspired by Signal’s approach to end-to-end encryption and wanted to create something similar but on a blockchain.</p>
-<p>Weronika：是的，隐私一直是我们的核心任务。我们真的受到了Signal端到端加密方法的启发，想在区块链上创建类似的东西。</p>
-<p><strong>How closely are you affiliated with Arweave? Your website states that they participated in your funding round</strong></p>
-<p><strong>你们与Arweave的关系有多密切？你们的网站上说，他们参与了你们的融资</strong>。</p>
-<p>Richard: Well, we were part of their startup incubator program, The Open Web Foundry, that encourages founders to get on board and adopt Arweave as a data layer for their projects. And when we did our fundraising, they decided to invest in Akord as well, because they saw the value our protocol brings to the ecosystem.</p>
-<p>理查德：嗯，我们是他们的创业孵化器项目的一部分，The Open Web Foundry，鼓励创始人加入并采用Arweave作为其项目的数据层。当我们进行筹资时，他们决定也投资于Akord，因为他们看到了我们协议为生态系统带来的价值。</p>
-<p>So, we went through the program, became friends with Arweave’s team and other projects in the ecosystem — and the cross-pollination and feedback from other builders has been very beneficial. I think one of the things that we like about Arweave is how the ecosystem is constructed. It's a very decentralized structure, so there’s no place for any kind of dictatorship or rigid hierarchy.</p>
-<p>因此，我们通过该计划，与Arweave的团队和生态系统中的其他项目成为朋友—而来自其他建设者的交叉和反馈是非常有益的。我认为我们喜欢Arweave的原因之一就是它的生态系统构建。它是一个非常去中心化的结构，所以没有任何形式的独裁或僵化的等级制度。</p>
-<p><strong>You’ve mentioned that you became close with other Arweave projects as well. Can you name some that are, in your opinion, worth keeping an eye on?</strong></p>
-<p><strong>你曾提到你与其他Arweave项目也变得很密切。你能说出一些在你看来值得关注的项目吗</strong>？</p>
-<p>Weronika: Currently, we are working closely with <a href="https://redstone.finance/">RedStone</a> that brings the smart contract functionality — the <a href="https://twitter.com/warp_contracts">Warp contracts</a> — to Arweave. Then there are <a href="https://everpay.io/">everPay</a>, a payment protocol that uploads the digital asset ledger of financial institutions to Arweave, and <a href="https://bundlr.network/">Bundlr</a>, a decentralized storage scaling platform.</p>
-<p>Weronika: 目前，我们正在与<a href="https://redstone.finance/">RedStone</a>紧密合作，它将智能合约功能--<a href="https://twitter.com/warp_contracts">封装合约(Warp contracts)</a> —带到了Arweave。然后是<a href="https://everpay.io/">everPay</a>，一个将金融机构数字资产分类账上传到Arweave的支付协议，以及<a href="https://bundlr.network/">Bundlr</a>，一个去中心化的存储扩展平台。</p>
-<p>I also remember there is an interesting <a href="https://arweave.news/tag/ukraine/">project</a> that collects and uploads to Arweave all information surrounding the Ukraine conflict. I think they preserved terabytes of data so far.</p>
-<p>我还记得有一个有趣的<a href="https://arweave.news/tag/ukraine/">项目</a>，收集并上传到Arweave的所有围绕乌克兰冲突的信息。我想他们到目前为止保存了数兆字节的数据。</p>
-<p><strong>“The Web2 model is broken,” your website reads. How can Web3 fix it, and what is Akord’s role in it?</strong></p>
-<p>**&quot;Web2模式已经坏了，&quot;你的网站这样写道。Web3如何修复它，Akord在其中的作用是什么？</p>
-<p>Richard: Well, that's a good question. So what exactly do we mean by Web2 model? Web1 was about static contents, where everyone can upload and access data. Web2 brought the read/write functionality, and that’s when dynamic websites and social media came into play. As users interact with these services, they [collectively] produce massive amounts of data, which is basically “the new oil” and is worth a lot of money. And the main issue of Web2 platforms is the ownership of this data. When platforms own it, it’s the customer who becomes the product — and ultimately falls victim to data exploitation.</p>
-<p>Richard: 嗯，这是个好问题。那么，我们所说的Web2模式到底是什么意思？Web1是关于静态内容，每个人都可以上传和访问数据。Web2带来了读/写功能，这时动态网站和社交媒体才开始发挥作用。当用户与这些服务互动时，他们[集体]产生了大量的数据，这些数据基本上是 &quot;新石油&quot;，价值不菲。而Web2平台的主要问题是这些数据的所有权。当平台拥有这些数据时，客户就成了产品—并最终成为数据剥削的受害者。</p>
-<p>And Web3 aims to solve this issue by giving users control over their data, so everyone can own a piece of Web3 space. In turn, data ownership is closely connected to privacy, and the first thing I think about when I hear about privacy is consent. The user should get to decide who can see their data and who can’t. And that is what excites me most about Akord — along with Arweave, it provides a foundational layer for Web3 where you pay for your space with tokens and own it forever. And you get to choose who you allow to have access to your data.</p>
-<p>而Web3旨在通过让用户控制他们的数据来解决这个问题，所以每个人都可以拥有一块Web3的空间。反过来，数据所有权与隐私密切相关，而当我听到隐私时，我首先想到的是同意/授权。用户应该能够决定谁能看到他们的数据，谁不能。这就是Akord最让我兴奋的地方—与Arweave一起，它为Web3提供了一个基础层，你用代币支付你的空间并永远拥有它。而且你可以选择允许谁访问数据。</p>
-<p>So yes, what we really bring is control over your data — and the right to decide who you want to share it with.</p>
-<p>因此，是的，我们真正带来的是对你的数据的控制—以及决定你想与谁分享的权利。</p>
-<p><strong>It may be just my social bubble, but it seems to me that Musk’s Twitter takeover made many rethink their presence on the traditional Web2 social media platforms. We see that Mastodon, a decentralized Twitter alternative, almost doubled its user base — and I’m just curious whether Akord has, too, experienced a noticeable influx of new users.</strong></p>
-<p>**这可能只是我的社会泡沫，但在我看来，马斯克的Twitter接管使许多人重新思考他们在传统的Web2社交媒体平台上的存在。我们看到，Mastodon，一个去中心化的Twitter替代品，其用户群几乎翻了一番—我只是好奇Akord是否也经历了明显的新用户涌入。</p>
-<p>Richard: Not necessarily connected to Musk’s deal, but I feel like the recent announcement by Meta — when they revealed their plan to store Instagram <a href="https://coinpaper.com/670/meta-integrates-arweave-protocol-to-store-nf-ts-from-instagram">NFTs on Arweave</a> — really attracted a lot of attention to the ecosystem. I think, for our project, that could be a tipping point that could trigger mass adoption.</p>
-<p>Richard: 与Musk的交易没有必然联系，但我觉得Meta最近的公告—当他们透露他们计划在Arweave上存储Instagram <a href="https://coinpaper.com/670/meta-integrates-arweave-protocol-to-store-nf-ts-from-instagram">NFTs</a>--确实吸引了很多人对生态系统的关注。我认为，对我们的项目来说，这可能是一个转折点，可以引发大规模的采用。</p>
-<p>And coming back to Elon Musk, the Twitter deal got us discussing the same Web2 issues that has been present there from the very beginning. I think if Elon really wants to make his platform “future-proof,” then the adoption of decentralized protocols is a must. I’m not too familiar with Mastodon, but from what I understand, it’s a federated system where each server is governed by its own set of rules. And that, I think, is a step in the right direction.</p>
-<p>再回到埃隆-马斯克，Twitter的交易让我们讨论了从一开始就存在的同样的Web2问题。我认为如果埃隆真的想让他的平台 &quot;面向未来&quot;，那么采用去中心化的协议是必须的。我对Mastodon不是很熟悉，但据我所知，它是一个联合系统，每个服务器都由自己的一套规则来管理。而这，我认为是朝着正确方向迈出的一步。</p>
-<p><strong>In ten years, how do you see Akord?</strong><br>
-**在十年内，你如何看待Akord？</p>
-<p>Richard: What I see is a massive long tail of content creator use cases — like scientists, journalists, and poets – publishing and protecting their work for everyone into the future, families privately storing their photos for five generations down the line. We want Akord to be the prime publishing platform for Arweave’s permaweb that offers the best user experience for its content creators.</p>
-<p>Richard: 我所看到的是一个巨大的长尾内容创作者用例—比如科学家、记者和诗人—为每个人在未来发布和保护他们的作品，家庭私密地为五代人储存他们的照片。我们希望Akord成为Arweave的permaweb的主要发布平台，为其内容创作者提供最佳的用户体验。</p>
-<p>Weronika: Even in our most pessimistic scenario that the project is abandoned and becomes a zombie, people will still have access to their encrypted data because it lives on the blockchain — even if we won’t be there. But I hope that even in ten years we’ll still be there because I believe that what we do now is important and will be around for a really long time.</p>
-<p>Weronika：即使在我们最悲观的情况下，项目被放弃并成为僵尸，人们仍然可以访问他们的加密数据，因为它生活在区块链上—即使我们不在那里。但我希望，即使在十年后，我们仍然在那里，因为我相信我们现在所做的是重要/关键的，并将在很长一段时间内存在。</p>
 ]]></content>
     </entry>
 </feed>
