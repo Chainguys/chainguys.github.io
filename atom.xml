@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-01-17T01:56:55.080Z</updated>
+    <updated>2023-01-20T00:10:36.638Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -347,6 +347,115 @@ Akord 的最佳用例是什么？</p>
 <a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
 </li>
 </ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Euler实验室的2022总结 (Euler Labs’ 2022 send off)]]></title>
+        <id>https://chainguys.github.io/post/euler-shi-yan-shi-de-2022-zong-jie-euler-labs-2022-send-off/</id>
+        <link href="https://chainguys.github.io/post/euler-shi-yan-shi-de-2022-zong-jie-euler-labs-2022-send-off/">
+        </link>
+        <updated>2022-12-29T00:07:30.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://euler-labs.ghost.io/content/images/2022/12/euler-in-lisbon.png" alt="Euler Labs’ 2022 send off" loading="lazy"></figure>
+<hr>
+<p>Wow, what a year! Where to begin? The Euler protocol has gone from a few lines of code on mainnet to competing with the leading lending and borrowing protocols. Despite some ups and downs in the industry, the Euler protocol has persisted throughout! The Euler Labs team has been equally busy to match. The following is a brief overview of what the team and the protocol have been up to.</p>
+<p>哇，多么美好的一年！从哪里开始？ Euler 协议已经从主网上的几行代码发展到与领先的借贷协议竞争。尽管这个行业有些起起落落，但Euler协议始终如一！ Euler Labs 团队同样沉迷工作。以下是团队和协议所做工作的简报。</p>
+<h3 id="人员-people">人员 (People)</h3>
+<p>The Euler Labs team has overseen some incredible growth. Given the scale of this growth, we’ll only touch briefly on the highlights:</p>
+<p>Euler Labs 团队见证了一些令人难以置信的增长。鉴于这种增长的规模，我们将只简要介绍一下亮点：</p>
+<ul>
+<li>
+<p>Brandon Neal <a href="https://www.coindesk.com/business/2022/03/16/ny-fed-staffer-jumps-into-defi-as-euler-coo/">joined the Labs team as COO</a>. He spent 20 years on Wall Street, 10 years of which were at the NY Fed.<br>
+Brandon Neal <a href="https://www.coindesk.com/business/2022/03/16/ny-fed-staffer-jumps-into-defi-as-euler-coo/">加入实验室团队担任首席运营官</a>。他在华尔街工作了 20 年，其中 10 年在纽约联储。</p>
+</li>
+<li>
+<p>Maryam Beria, previously a Senior Product Manager at Ridgeline, <a href="https://www.linkedin.com/posts/maryamberia_letsgo-defi-ugcPost-7013921146815361024-v5Rn">joined us</a> as Head of Strategy and Operations.<br>
+Maryam Beria，之前是 Ridgeline 的高级产品经理，<a href="https://www.linkedin.com/posts/maryamberia_letsgo-defi-ugcPost-7013921146815361024-v5Rn">加入我们</a> 作为战略和运营主管。</p>
+</li>
+<li>
+<p>Wojtek Zajac, came on as a tech lead - more on him in <a href="https://twitter.com/eulerfinance/status/1583163902828810241/">this thread</a><br>
+Wojtek Zajac，作为技术主管出现 - 在 <a href="https://twitter.com/eulerfinance/status/1583163902828810241/">此查看</a> 更多关于他的信息</p>
+</li>
+<li>
+<p>Lee Mount, an ex-tradfi trader (MS and Citadel), joined and is actively contributing to EulerSwap<br>
+Lee Mount，前交易员（MS 和 Citadel），加入 EulerSwap 并积极为 EulerSwap 做贡献</p>
+</li>
+<li>
+<p><a href="https://twitter.com/aliciakatz">Alicia Katz</a>, Euler Labs’ Head of Marketing, came aboard as well. Alicia had spent the last decade and a half in media.<br>
+<a href="https://twitter.com/aliciakatz">Alicia Katz</a> 作为Euler Labs 的营销主管加入。在过去的十五年里，Alicia一直从事媒体工作。</p>
+</li>
+</ul>
+<p>Other areas in the Labs team have grown too: community, ecosystem growth, front end development, smart contract engineering, governance systems implementation, open-source DeFi risk tooling and writing (among other areas). For a complete list, see <a href="https://www.eulerlabs.com/#team">https://www.eulerlabs.com/#team</a>.</p>
+<p>实验室团队的其他领域也有所发展：社区、生态系统发展、前端开发、智能合约工程、治理系统实施、开源 DeFi 风险工具和写作（以及其他领域）。如需完整列表，请参阅 <a href="https://www.eulerlabs.com/#team">https://www.eulerlabs.com/#team</a>。</p>
+<p>Euler Labs will continue to invest in people and build on the vision of an “Olympic team” in 2023.</p>
+<p>Euler Labs 将继续投资于人才，并在 2023 年建立“奥运团队”的愿景。</p>
+<h3 id="旅行拜访-excursions">旅行拜访 (Excursions)</h3>
+<p>Euler Labs team members have been far and wide this year, with representatives visiting almost every continent. The Labs team visited four main events this year: Paris Blockchain Week, Consensus, Messari Mainnet, and ETH Lisbon. Paris was especially exciting since for the first time, many Labs people actually met each other. We made friends with many at Consensus in Austin, despite the incredible heat.</p>
+<p>欧拉实验室的团队成员今年走得很远，代表们几乎走访了每一个大洲。实验室团队今年参观了四个主要活动：巴黎区块链周、共识大会、Messari 主网和 ETH Lisbon。巴黎特别令人兴奋，因为许多实验室人员第一次真正见面。尽管酷热难耐，我们还是在奥斯汀的 Consensus 结交了许多朋友。</p>
+<p>At Messari Mainnet, we spoke onstage and hosted a happy hour at one of NYC’s most beloved beer gardens. Finally, Euler Labs sponsored the ETH Lisbon hackathon, where Michael was invited to adjudicate. See the hackers in the image above (they won a prize for Gnosis). Euler Labs also sent representatives to the Blockchain Oracle Summit, Permissionless, Korea Blockchain Week, Devconnect, TOKEN2049 and ETH CC. It’s been a truly global year for the team.  Michael, Brandon, and Alicia were all fortunate enough to be invited to engage with policymakers in DC on responsible development, including on Capitol Hill and a special visit to The White House.</p>
+<p>在 Messari 主网，我们在舞台上发表了演讲，并在纽约市最受欢迎的啤酒花园之一举办了欢乐时光。最后，Euler Labs 赞助了 ETH Lisbon 黑客马拉松，Michael 受邀担任评委。请参见上图中的黑客（他们因 Gnosis 获奖）。Euler实验室还派代表参加了区块链甲骨文峰会、Permissionless、韩国区块链周、Devconnect、TOKEN2049和ETH CC。对于团队来说，这是真正全球化的一年。 Michael、Brandon 和 Alicia 都有幸受邀与华盛顿特区的政策制定者就负责任的发展进行交流，包括在国会山和对白宫的特别访问。</p>
+<figure data-type="image" tabindex="2"><img src="https://euler-labs.ghost.io/content/images/2022/12/image.png" alt="" loading="lazy"></figure>
+<p>Token2049 的 Seraphim，和 Aave 的 Stani一起 (Seraphim at Token2049, alongside Stani of Aave)</p>
+<h3 id="euler更新-euler-updates">Euler更新 (Euler updates)</h3>
+<p>Euler has seen a huge number of updates over the course of this year. To begin with, and most importantly, the <a href="https://www.euler.finance/blog/introducing-eulerdao-community-proposals-and-voting-take-hold-of-governance">DAO was launched</a> with the aim of decentralising control of the protocol. This has been quietly proceeding on the <a href="http://forum.euler.finance/">forum</a>, with many <a href="http://app.euler.finance/delegates">delegates participating</a> in Euler DAO.</p>
+<p>在今年的过程中，Euler 经历了大量的更新。首先，最重要的是，<a href="https://www.euler.finance/blog/introducing-eulerdao-community-proposals-and-voting-take-hold-of-governance">启动了DAO</a> ，其目的是协议的去中心化控制。这一直在 <a href="http://forum.euler.finance/">论坛</a> 上悄悄进行，许多 <a href="http://app.euler.finance/delegates">代表参与</a> 在 Euler DAO 中。</p>
+<p>In terms of contract improvements, governance was further assisted with the implementation of <a href="https://www.euler.finance/blog/introducing-eulers-governance-proposal-creation-tool-for-eulerdao-phase-1">Tally.</a> Countless <a href="https://github.com/euler-xyz/euler-audits">audits happened</a> on the protocol (and will continue to), and Euler partnered with Immunefi to offer a bug bounty for any <a href="https://euler-finance.ghost.io/content/images/2022/12/immune.png">security researchers.</a> It also partnered with <a href="https://www.euler.finance/blog/euler-partners-with-sherlock-for-decentralized-exploit-protection">Sherlock to get TVL insurance</a> (alongside an audit).</p>
+<p>在合约改进方面，通过 [Tally] 的实施进一步协助治理。 该协议进行了无数次<a href="https://github.com/euler-xyz/euler-audits">审计</a>（并将继续），同时Euler 与 Immunefi 合作，为任何 <a href="https://euler-finance.ghost.io/content/images/2022/12/immune.png">安全研究人员</a> 提供漏洞奖励。 它还与 <a href="https://www.euler.finance/blog/euler-partners-with-sherlock-for-decentralized-exploit-protection">Sherlock 获得 TVL 保险</a>（与审计一起）。</p>
+<p>For users looking to get more information about their positions in Euler, it’s been a great year. The <a href="https://www.euler.finance/blog/account-health-sim">Account Health Simulator</a> gave them a good insight as to what effects different market conditions would have. The <a href="https://app.euler.finance/account/0?spy=0x62c0025c6fffa9912b82ea4955923b0c68db0bdb">account spy</a> is also a great tool that launched, enabling users to see how other users are operating Euler. Dune dashboards, DeFillama tools, subgraphs, social media bots, APY tools and more have been included this year. Many are included <a href="https://www.euler.finance/blog/researching-euler">in this roundup.</a><br>
+对于希望获得其在 Euler 中的仓位更多信息的用户来说，这是美好的一年。 <a href="https://www.euler.finance/blog/account-health-sim">账户健康模拟器</a> 让他们很好地了解不同的市场条件会产生什么影响。 <a href="https://app.euler.finance/account/0?spy=0x62c0025c6fffa9912b82ea4955923b0c68db0bdb">account spy</a> 也是一个很棒的工具，可以让用户看到其他用户如何操作 Euler。 Dune 仪表板、DeFillama 工具、子图、社交媒体机器人、APY 工具等已于今年包含在内。许多都包含在<a href="https://www.euler.finance/blog/researching-euler">本综述中</a></p>
+<p>The <a href="https://snapshot.org/#/eulerdao.eth/proposal/0x7e65ffa930507d9116ebc83663000ade6ff93fc452f437a3e95d755ccc324f93">gauge system</a> has been reworked to include more assets while also ensuring core Euler assets remain sufficiently considered. Governance has been extremely active and important to euler so for a list of all changes please see <a href="https://snapshot.org/#/eulerdao.eth">https://snapshot.org/#/eulerdao.eth</a>.</p>
+<p><a href="https://snapshot.org/#/eulerdao.eth/proposal/0x7e65ffa930507d9116ebc83663000ade6ff93fc452f437a3e95d755ccc324f93">仪表系统</a> 已经过重新设计，包含更多资产，同时确保核心 Euler 资产得到充分考虑。治理对 euler 来说非常活跃和重要，因此有关所有更改的列表，请参阅 <a href="https://snapshot.org/#/eulerdao.eth">https://snapshot.org/#/eulerdao.eth</a>。</p>
+<h3 id="euler的数字-euler-by-the-numbers">Euler的数字 (Euler by the numbers)</h3>
+<p>Euler has had a good year in terms of clear metric growth.</p>
+<p>就明确的指标增长而言，欧拉今年表现不错。</p>
+<figure data-type="image" tabindex="3"><img src="https://lh6.googleusercontent.com/_QJuoDP1K5TseJuWvxONjDKKjpb9u4GQAyVHJCFwjDtA8opFv9kfPxdKy03EMIh83rG0AB5yBuxE7WVxzfEA0LAshGI7zTyDwbJjNsZQ7I_MS85SqkHM-lw4oZXtCvlWgg5JCak2NtXrC5m6EAkWWyUKbFCcay7wVRmYyhwFcPVxDYQSe9H4U5aZFwA2Iw" alt="" loading="lazy"></figure>
+<p>用户数量逐年增加 (Users have increased over the year.)</p>
+<p>Users, the primary metric for any growing DeFi protocol, are steadily increasing. Over the course of the year, some 6,000 users came to know and love Euler’s innovations over existing lending and borrowing protocols. In addition, many different DeFi protocols began to build on top of Euler such Sushi, Angle, Opyn amongst many others.</p>
+<p>用户数，任何增长的 DeFi 协议的主要指标，正在稳步增长。在这一年中，约 6,000 名用户开始了解并喜欢 Euler 对现有借贷协议的创新。此外，许多不同的 DeFi 协议开始建立在 Euler 之上，例如 Sushi、Angle、Opyn 等。</p>
+<figure data-type="image" tabindex="4"><img src="https://lh3.googleusercontent.com/anvlaR1rSl4BXWmO6wqj43P1yH18aNTZrvYg8QIo-QlO1ph8kcWC3QA6rUTGEEKSit7wvx9tJGyw-y--lTqAadIcfkaIlt7dZYARpUO0s34Jno9BNWSb5GYpEN6HIJ4q3dpfeEfnTRAsmCFFNFSRi_PsCuU2MsHSQU1lC9ziB0nlilBOqsiLihDohbVrew" alt="" loading="lazy"></figure>
+<p>在残酷大市之下依旧稳健的TVL (TVL is up against a harsh backdrop)</p>
+<p>While the protocol started the year with a very modest TVL, it has grown well with an especially good run in between the months of June and November. Even despite the setback the protocol faced in the wake of broader market fallout, Euler TVL is up. Since the base was essentially 0, making % comparisons isn’t especially valuable but it is still notable that Euler has seen some good growth. This is remarkable for a lending and borrowing protocol (where TVL isn’t the most perfect indicator) in such a crowded market against such a tumultuous background.</p>
+<p>虽然本协议在今年年初的 TVL 非常适中，但它在 6 月至 11 月期间的运行情况特别好，增长良好。尽管本协议在更广泛的市场影响后面临挫折，但 Euler TVL 仍在上涨。由于基数基本上为 0，因此进行 % 比较并不是特别有价值，但值得注意的是 Euler 已经取得了一些良好的增长。在如此混乱的背景下，在如此拥挤的市场中，对于借贷协议（其中 TVL 不是最完美的指标）来说，这是非常了不起的。</p>
+<figure data-type="image" tabindex="5"><img src="https://lh6.googleusercontent.com/NPb_MSgoPH4EsM9ch5YEiJOM0ismWfa2S7qoTnzg4O_5igt4tkhZgJ6AJZ0MMR0zBXyGmKm9YosiYRqxf6wLFiPTKdrONVfKQ-VhceoBShXYsQYoAazMo6NwMywVdKOEN-4LgmMwT6Cb4IlU4No4iTXfRg7YQlkVdi8jV_avVNaQ-fYC_rZyuHmnMEZYog" alt="" loading="lazy"></figure>
+<p>Euler 的使用率仍然很高 (Utilisation on Euler remains strong)</p>
+<p>Thanks to a <a href="https://members.delphidigital.io/reports/can-euler-finance-carve-out-a-moat">great report by Delphi Digital</a>, we can see that utilisation on Euler (another key metric for DeFi protocols), is consistently higher than other leading money markets. Since Euler has a smaller TVL, this makes sense, but it is still impressive and indicates higher capital efficiency - something all DeFi protocols should aspire to enjoy.</p>
+<p>感谢 <a href="https://members.delphidigital.io/reports/can-euler-finance-carve-out-a-moat">Delphi Digital 的出色报告</a>，我们可以看到 Euler 的利用率（另一个关键指标DeFi 协议），一直高于其他领先的货币市场。由于 Euler 的 TVL 较小，这是有道理的，但它仍然令人印象深刻，并表明更高的资本效率——这是所有 DeFi 协议都应该渴望享受的。</p>
+<figure data-type="image" tabindex="6"><img src="https://lh4.googleusercontent.com/jQoATSbOMm8XObfFfCbU862n5mzgE1c3dDe1dQJWfNmQSPKeVX3F2FGVupfPEygFV4QGDc_qJ0bnjNF7pEwoivj2yzizUkma4TKzqieJrj030hJ48xjlB7v4WFf3YEEfjIRmtQP6AlXvBGRFqegs9kMuu8VCHpZ4Ypzf85TwPWYtsZa8nvwRHSX8R4jieQ" alt="" loading="lazy"></figure>
+<p>Euler 的收入增长良好 (Revenue on Euler is growing nicely.)</p>
+<p>In addition, we can see Euler is competing with the best in terms of revenue vs far larger TVL DeFi protocols despite distributing far lower than <a href="https://tokenterminal.com/leaderboards/earnings">them in token emission terms.</a></p>
+<p>此外，我们可以看到 Euler 在收入方面与最大的 TVL DeFi 协议竞争，尽管<a href="https://tokenterminal.com/leaderboards/earnings">在代币释放方面</a> 分配远低于其。</p>
+<figure data-type="image" tabindex="7"><img src="https://lh4.googleusercontent.com/dQIdfRGJQHXLLQG1YTdKDRg9X2IGTVl7dwR-o8qJK3FiauCvcaaLTc9x_S3lbLikRJJmcCwvlxA8zXBQa4fuSl0PlYVml7LQAE3-kIrT9lx528qdTQlZ06KNGZT89bQ4cFQJFlSO9Usja-H-ShVsGGjwjUVUaiXxWFdKKgHq2CiO3OE9THwWS8VXf-mHag" alt="" loading="lazy"></figure>
+<p>存款 &gt; 取款，正如人们所希望的那样！(Deposits &gt; withdrawals, as one might hope!)</p>
+<p>Among perhaps the most important of all metrics is the deposits versus withdrawals. So long as Euler can keep this gap consistently widening while remaining sustainable, the protocol is sure to continue its upwards trajectory.</p>
+<p>也许所有指标中最重要的是存款与取款。只要 Euler 能够在保持可持续性的同时不断扩大这一差距，协议就一定会继续其上升轨迹。</p>
+<h3 id="下一步-next-steps">下一步 (Next steps)</h3>
+<p>Looking to the future, Euler Labs has many plans. A few particular highlights involve some of the following raised by <a href="https://twitter.com/MacroMate8/status/1605647502849544196">Seraphim, Euler’s Head of Risk</a>:</p>
+<p>展望未来，欧拉实验室有很多计划。 <a href="https://twitter.com/MacroMate8/status/1605647502849544196">Seraphim，Euler 的风险主管</a> 提出了一些特别的亮点：</p>
+<ul>
+<li>
+<p>EulerSwap</p>
+</li>
+<li>
+<p>Isolated lending pools that allow people to spin up their own DeFi protocols<br>
+允许人们启动自己的 DeFi 协议的独立借贷池</p>
+</li>
+<li>
+<p>A new chain deployment<br>
+新链部署</p>
+</li>
+<li>
+<p>Liquid Staking Derivatives being further integrated into Euler<br>
+流动性质押衍生品被进一步整合到 Euler 中</p>
+</li>
+<li>
+<p>More UI enhancements for users to enjoy<br>
+更多用户界面增强功能供用户享受</p>
+</li>
+<li>
+<p>“<a href="https://emojipedia.org/eyes/"><strong>👀</strong></a>”</p>
+</li>
+</ul>
+<p>It’s been a great pleasure for the Euler Labs team to operate in such a dynamic environment and interact with so many unique people. From our family to yours, Happy Holidays and Happy New Year! We’ll see you all in 2023!</p>
+<p>Euler Labs 团队非常高兴能够在这样一个充满活力的环境中运作并与这么多独特的人互动。从我们的家人到你的家人，节日快乐，新年快乐！我们2023年见！</p>
 ]]></content>
     </entry>
     <entry>
@@ -965,67 +1074,6 @@ Medium: <a href="https://medium.com/@altlayer">https://medium.com/@altlayer</a><
 <h2 id="总结-roundup">总结: (Roundup:)</h2>
 <p>Thanks to this new tool implemented onto Euler Finance’s frontend, users can more clearly visualise different conditions to help develop a comprehensive and robust risk profile. This tool builds on an already well-fleshed out suite of tools that users of Euler’s front-end currently enjoy.</p>
 <p>由于在Euler金融的前端实施了这一新工具，用户可以更清楚地看到不同的情况，帮助制定全面而稳健的风险策略。该工具建立在 Euler 前端用户目前喜欢的一套已完善的工具之上。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Altlayer 的 L2 内幕-2022 年 11 月 (Altlayer's L2 Lowdown, November 2022)]]></title>
-        <id>https://chainguys.github.io/post/altlayer-de-l2-nei-mu-2022-nian-11-yue-altlayers-l2-lowdown-november-2022/</id>
-        <link href="https://chainguys.github.io/post/altlayer-de-l2-nei-mu-2022-nian-11-yue-altlayers-l2-lowdown-november-2022/">
-        </link>
-        <updated>2022-11-28T02:35:42.000Z</updated>
-        <content type="html"><![CDATA[<p>原文：<a href="https://twitter.com/alt_layer/status/1597101038620012545">https://twitter.com/alt_layer/status/1597101038620012545</a></p>
-<p>1/7 Altlayer's L2 Lowdown, November 2022 A snapshot of the<a href="https://twitter.com/ethereum">@Ethereum</a><br>
-based L2 rollups, scalability and zk space.</p>
-<p>Altlayer 的 L2内幕，2022 年 11 月快照：基于 <a href="https://twitter.com/ethereum">@Ethereum</a> 的 L2 汇总、可扩展性和 zk 空间</p>
-<p>2/7 <a href="https://twitter.com/ethereum">@Ethereum</a>is officially profitable, with L2 transactions surpassing L1 transactions again.</p>
-<p><a href="https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDSh1R9IHA">https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDSh1R9IHA…</a></p>
-<p><a href="https://twitter.com/ethereum">@Ethereum</a>正式盈利，L2交易再次超过L1交易。</p>
-<p><a href="https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDS">https://twitter.com/cryptogucci/status/1594880262784942080?s=46&amp;t=oo-N30aQy1wSWDSh1R9IHA…</a></p>
-<p><a href="https://twitter.com/zksync">@zksync</a>to support<a href="https://twitter.com/RNS_global">@RNS_global</a>on-Chain KYC solution.</p>
-<p><a href="https://t.co/XH7m2DoiST">https://prnewswire.com/news-releases/zksync-to-support-rnsids-on-chain-kyc-solution-301684486.html</a></p>
-<p><a href="https://twitter.com/zksync">@zksync</a>支持<a href="https://twitter.com/RNS_global">@RNS_global</a>链上KYC解决方案。</p>
-<p><a href="https://t.co/XH7m2DoiST">https://prnewswire.com/news-releases/zksync-to-support-rnsids-on-chain-kyc-solution-301684486.html</a></p>
-<p><a href="https://twitter.com/CryptoGucci/status/1594880262784942080">https://twitter.com/CryptoGucci/status/1594880262784942080</a></p>
-<p>3/7 <a href="https://twitter.com/the_matter_labs">@the_matter_labs</a>raises $200M to grow team behind Ethereum scaling solution:<br>
-<a href="https://t.co/HbbOhFTbcE">https://fortune.com/crypto/2022/11/16/matter-labs-raises-200-million-ethereum-scaling-solution/…</a></p>
-<p><a href="https://twitter.com/the_matter_labs">@the_matter_labs</a> 筹集了 2 亿美元，来发展以太坊扩展解决方案背后的团队：<br>
-<a href="https://t.co/HbbOhFTbcE">https://fortune.com/crypto/2022/11/16/matter-labs- raises-200-million-ethereum-scaling-solution/…</a></p>
-<p><a href="https://twitter.com/GameStop">@GameStop</a>Wallet now has L1 and L2 support. It harnesses the power of zk-rollup - an Ethereum Layer 2 scaling protocol.<br>
-<a href="https://t.co/UjgOHrb0cX">https://shacknews.com/article/133230/gamestop-wallet-ios-release</a></p>
-<p><a href="https://twitter.com/GameStop">@GameStop</a>钱包现在支持 L1 和 L2。它利用了 zk-rollup 的力量—一种以太坊第 2 层扩展协议。<br>
-<a href="https://t.co/UjgOHrb0cX">https://shacknews.com/article/133230/gamestop-wallet-ios-release</a></p>
-<p>4/7<a href="https://twitter.com/MakerDAO">@MakerDAO</a> works on its Layer2 proposition and building up rollup bundles on Ethereum.<br>
-<a href="https://t.co/0Pv79iPONj">https://thedefiant.io/makerdao-transfer-feature…</a> Want to read about zkEVM’s scalability thesis for the next billion users?</p>
-<p><a href="https://twitter.com/MakerDAO">@MakerDAO</a>致力于其 Layer2 提议并在以太坊上构建汇汇总。   <a href="https://t.co/0Pv79iPONj">https://thedefiant.io/makerdao-transfer-feature…</a><br>
-想了解 zkEVM 针对下一个十亿用户的可扩展性论文吗？</p>
-<p><a href="https://twitter.com/pseudotheos/status/1594799592427507712">https://twitter.com/pseudotheos/status/1594799592427507712</a></p>
-<p>5/7<a href="https://twitter.com/zksync">@zksync</a>successfully completes Layer1 audit<br>
-<a href="https://twitter.com/zksync/status/1595440748215685120">https://twitter.com/zksync/status/1595440748215685120…</a></p>
-<p>Blockchain veteran Amrit Kumar appointed COO of Altlayer<a href="https://twitter.com/maqstik">@maqstik</a><a href="https://twitter.com/CoinDesk">@CoinDesk</a></p>
-<p><a href="https://twitter.com/zksync">@zksync</a> 成功完成第 1 层审计<br>
-<a href="https://twitter.com/zksync/status/1595440748215685120">https://twitter.com/zksync/status/1595440748215685120…</a><br>
-区块链资深人士 Amrit Kumar 被任命为 Altlayer 的首席运营官<a href="https://twitter.com/maqstik">@maqstik</a><a href="https://twitter.com/CoinDesk">@CoinDesk</a></p>
-<p><a href="https://t.co/J3betjRalt">https://coindesk.com/business/2022/11/15/blockchain-company-altlayer-appoints-amrit-kumar-as-coo/</a></p>
-<p><a href="https://twitter.com/zksync/status/1595440748215685120">https://twitter.com/zksync/status/1595440748215685120 </a></p>
-<p>6/7 Oh Ottie! NFT Collection to exhibit to power of rollups for NFT Minting<br>
-<a href="https://t.co/gBSk4evCIF">https://blog.altlayer.io/altlayer-to-drop-2000-delightful-mascot-iterations-as-part-of-an-oh-ottie-d9649bb910f4…</a><br>
-&quot;We should all be paying more attention to hardening rollups with multi-proofs&quot; according to<a href="https://twitter.com/VitalikButerin">@VitalikButerin</a> <a href="https://twitter.com/Forkast_News">@Forkast_News</a></p>
-<p>Oh Ottie!  NFT Collection 展示 NFT 铸币汇总的力量<br>
-<a href="https://t.co/gBSk4evCIF">https://blog.altlayer.io/altlayer-to-drop-2000-delightful-mascot-iterations-as-part-of-an-oh-ottie-d9649bb910f4… </a> <a href="https://twitter.com/VitalikButerin">@VitalikButerin</a> 表示，“我们都应该更加关注通过多重证明强化汇总”</p>
-<p><a href="https://t.co/xrDXcatscp">https://forkast.news/headlines/vitalik-buterin-sounds-warning-over-risks-of-defi/</a></p>
-<p>7/7 <a href="https://twitter.com/paradigm">@paradigm</a>  building Rust Ethereum Execution Layer</p>
-<p><a href="https://twitter.com/gakonst/status/1595648232226291712">https://twitter.com/gakonst/status/1595648232226291712…</a></p>
-<p><a href="https://twitter.com/paradigm">@paradigm</a>构建 Rust 以太坊执行层</p>
-<p><a href="https://twitter.com/gakonst/status/1595648232226291712">https://twitter.com/gakonst/status/1595648232226291712…</a></p>
-<p><a href="https://twitter.com/eigenlayer">@eigenlayer</a>: Bringing Ethereum-Level Trust to Middleware</p>
-<p><a href="https://twitter.com/Elegy4TheArctic/status/1595080179659210753">https://twitter.com/Elegy4TheArctic/status/1595080179659210753…</a></p>
-<p><a href="https://twitter.com/eigenlayer">@eigenlayer</a>：将以太坊级信任引入中间件</p>
-<p><a href="https://twitter.com/Elegy4TheArctic/%E7%8A%B6%E6%80%81/1595080179659210753">https://twitter.com/Elegy4TheArctic/status/1595080179659210753…</a></p>
-<p>Thesis on why <a href="https://twitter.com/hashtag/EVM?src=hashtag_click">#EVM</a> compatibility will be crucial for any protocol</p>
-<p><a href="https://twitter.com/toghrulmaharram/status/1595503593192362007">https://twitter.com/toghrulmaharram/status/1595503593192362007…</a> Until next time! !</p>
-<p>关于为什么 <a href="https://twitter.com/hashtag/EVM?src=hashtag_click">#EVM</a> 兼容性对任何协议都至关重要的论文</p>
-<p><a href="https://twitter.com/toghrulmaharram/status/1595503593192362007">https://twitter.com/toghrulmaharram/status/1595503593192362007…</a><br>
-下次见！ ！</p>
 ]]></content>
     </entry>
 </feed>
