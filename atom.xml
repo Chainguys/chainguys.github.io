@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-01-25T04:33:57.833Z</updated>
+    <updated>2023-02-03T03:23:34.516Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,79 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[介绍Sunscreen (Introducing Sunscreen)]]></title>
+        <id>https://chainguys.github.io/post/jie-shao-sunscreen-introducing-sunscreen/</id>
+        <link href="https://chainguys.github.io/post/jie-shao-sunscreen-introducing-sunscreen/">
+        </link>
+        <updated>2023-02-02T03:22:33.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDE1fHxlbmNyeXB0aW9ufGVufDB8fHx8MTY3NTM2MzUzNA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000" alt="" loading="lazy"></figure>
+<hr>
+<p>More and more people are realizing the importance of privacy, particularly in web3. Front-running attacks plague multiple blockchains. Sophisticated users want to hide their financial holdings and trading strategies while still reaping the benefits of the DeFi ecosystem. While there has been an explosion of web3 companies, privacy is needed for the space is to have any real longevity. Without confidential voting, users may feel forced to self censor; concerningly, there's a possibility of tracking and analyzing user behavior across DAOs.</p>
+<p>越来越多的人意识到隐私的重要性，尤其在 web3.0 中。抢跑交易攻击困扰着多个区块链。老练的用户希望隐藏其金融资产和交易策略的同时，仍能从 DeFi 生态系统中获益。虽然 web3 公司呈爆炸式增长，但要让这个领域真正长寿，就需要隐私。如果没有秘密投票，用户可能会感到被迫进行自我审查；令人担忧的是，还可能会有跨 DAO 跟踪和分析用户行为。</p>
+<p>However, existing privacy solutions are difficult to work with and fall short when it comes to user experience. As we believe privacy should be built into applications from the ground up, our goal is to make it easy for developers to bring privacy to whatever application they envisage. To achieve this, two privacy technologies are needed—fully homomorphic encryption and zero knowledge proofs. With fully homomorphic encryption, anyone can perform computations on anyone else’s private data; no need to delegate access to your unencrypted data and no need to trust some third party with your privacy. Current approaches to privacy treat zero knowledge proofs (ZKPs) as the holy grail; however, ZKPs fall short when it comes to supporting lightweight users and private shared state.<a href="https://blog.sunscreen.tech/roadmap/#fn1">[1]</a> Fully homomorphic encryption in combination with zero knowledge proofs will enable the creation of a richer variety of private apps.</p>
+<p>然而，现有的隐私解决方案难以奏效，并在用户体验方面存在不足。我们认为隐私应该从头开始构建到应用中，因此我们的目标是让开发人员能够轻松地将隐私引入他们设想的任何应用。为此，需要两种隐私技术——全同态加密和零知识证明。通过全同态加密，任何人都可以对其他人的私人数据进行计算；无需委托对未加密数据的访问权限，也无需将您的隐私托付给第三方。当前的隐私保护方法将零知识证明 (ZKP) 视为圣杯；然而，ZKP 在支持轻量级用户和私有共享状态方面存在不足。完全同态加密与零知识证明相结合，将创建更丰富的隐私应用。</p>
+<p>Sunscreen's goal is to turn the above dream into a reality; we're hard at work making FHE usable for web3 applications via an SDK and are lucky to be supported by an incredible group of investors in our mission.</p>
+<p>Sunscreen的目标就是将上述梦想变为现实；我们正在努力通过 SDK 使 FHE 可用于 web3 应用，并且很幸运能够在我们的使命中得到一群令人难以置信的投资者的支持。</p>
+<hr>
+<ol>
+<li>For more details, we recommend starting with <a href="https://eprint.iacr.org/2021/727">this paper.</a><br>
+有关更多详细信息，我们建议从<a href="https://eprint.iacr.org/2021/727">本文</a><a href="https://blog.sunscreen.tech/roadmap/#fnref1">↩︎</a>开始</li>
+</ol>
+<hr>
+<h2 id="我们的线路图-our-roadmap">我们的线路图 (Our roadmap)</h2>
+<p>Our mission is to enable the next generation of private applications, starting first with (d)apps as we think privacy is most urgently needed there. However, to support FHE in web3, we need to solve a few major challenges first:</p>
+<p>我们的使命是启用下一代隐私应用，首先从 (d)apps 开始，因为我们认为那里最迫切需要隐私。然而，要在 web3 中支持 FHE，我们首先需要解决几个主要挑战：</p>
+<ol>
+<li>
+<p>Performance is incredibly important for all sorts of applications but even more so for those related to finance and trading. Unfortunately, FHE is difficult for developers to effectively use–both because there's a steep learning curve and also because it's incredibly hard to set up FHE programs to get good performance.<br>
+性能对于各种应用来说都非常重要，对于那些与金融和贸易相关的应用来说更是如此。不幸的是，FHE 很难让开发人员有效地使用——既因为学习曲线陡峭，也因为设置 FHE 程序来获得良好的性能非常困难。</p>
+</li>
+<li>
+<p>One of the tenets of web3 is &quot;don't trust, verify.&quot; If the user provides a (d)app with encrypted data, how do we know the user-provided inputs satisfy the conditions of the application and aren’t just some garbage values? Remember that no one else can inspect the inputs since they're always encrypted!<br>
+web3的信条之一是“不信任，验证”。如果用户提供带有加密数据的 (d)app，我们怎么知道用户提供的输入满足应用的条件，而不是一些垃圾值？请记住，没有其他人可以检查输入，因为它们始终是加密的！</p>
+</li>
+<li>
+<p>While storage is incredibly cheap in web2, the same doesn’t always hold for web3. Fully homomorphic encryption is incredibly fast for certain classes of applications but it’s not very space efficient. How then can we use FHE in web3?<br>
+虽然 web2 的存储非常便宜，但 web3 并不总是如此。完全同态加密对于某些类别的应用来说速度非常快，但它的空间效率不是很高。那么我们如何在 web3 中使用 FHE？</p>
+</li>
+</ol>
+<p>At Sunscreen, we're working to solve these problems in phases. Our priority so far has been to tackle the first point; in doing so, we've built an FHE compiler tailored to the needs of web3 developers. We're now turning our focus to solving problems #2 and #3; to do that, we've been working on a zero knowledge proof compiler that is compatible with our FHE compiler (so that we can prove things about encrypted data), as well as an integration with a decentralized storage system that can be used to store larger ciphertexts off-chain.</p>
+<p>在 Sunscreen，我们正在努力分阶段解决这些问题。到目前为止，我们的首要任务是解决第一点；为此，我们构建了一个专为 web3 开发人员的需求量身定制的 FHE 编译器。我们现在将注意力转向解决问题 #2 和#3；为此，我们一直在研究与我们的 FHE 编译器兼容的零知识证明编译器（以便我们可以证明有关加密数据的事情），以及可用于存储更大链下密文的，与去中心化存储系统的集成。</p>
+<h3 id="全同态加密编译器-fully-homomorphic-encryption-compiler">全同态加密编译器 (Fully homomorphic encryption compiler)</h3>
+<p>So you want to use FHE? Awesome! Let’s see what the current experience is like as a developer looking to integrate FHE into your application.</p>
+<p>所以你想使用 FHE？太好了！让我们看看作为希望将 FHE 集成到您应用中的开发人员的当前体验。</p>
+<p>As hinted at in challenge #1, existing FHE libraries expect that you as the developer have a deep understanding of the underlying cryptography and mathematics. To compound the problem, runtime can vary by orders of magnitudes depending on how well the developer selected the FHE scheme parameters for their particular application. As a result, it’s difficult for anyone but experts to get good performance out of FHE.</p>
+<p>正如挑战 #1 中所暗示的，现有的 FHE 库希望您作为开发人员对底层密码学和数学有深刻的理解。但运行时间可能会相差几个数量级，则会让问题复杂化。具体取决于开发人员为其特定应用选择的FHE 方案参数的(复杂)程度。因此，除了专家之外，任何人都很难从 FHE 中获得良好的性能。</p>
+<p>To solve this problem, we've built <a href="https://github.com/Sunscreen-tech/Sunscreen">an FHE compiler</a>. The idea here is that a developer only needs to know the very basics of public key cryptography (e.g. key generation, encryption, decryption). Behind the scenes, our compiler transforms a normal Rust function into an FHE equivalent with privacy. It figures out the best parameters for optimal performance, inserts special FHE-specific operations in automatically, generates all the circuits, and even parallelizes the program for you if it can!</p>
+<p>为了解决这个问题，我们构建了<a href="https://github.com/Sunscreen-tech/Sunscreen">一个 FHE 编译器</a>。这里的想法是开发人员只需要了解公钥密码学的基础知识（例如密钥生成、加密、解密）。在幕后，我们的编译器将普通的 Rust 函数转换为具有隐私的 FHE 等价物。它计算出最佳性能的最佳参数，自动插入特殊的 FHE 特定操作，生成所有回路，如果可以的话，甚至可以为您并行(运行)程序！</p>
+<p>Initially, we support the <a href="https://github.com/microsoft/SEAL">BFV fully homomorphic encryption scheme</a>. However, we have designed our compiler so that we can swap out the backend FHE scheme in the future. If you've already tried out our compiler, you likely suspected this after typing:</p>
+<p>最初，我们支持 <a href="https://github.com/microsoft/SEAL">BFV 全同态加密方案</a>。但是，我们设计了编译器，以便将来可以调整后端 FHE 方案。如果您已经尝试过我们的编译器，您可能会在键入以下内容后仍有怀疑：</p>
+<pre><code class="language-rust">[fhe_program(scheme=&quot;bfv&quot;)]
+</code></pre>
+<p>We believe BFV is one of the most suitable FHE schemes for web3 use cases. BFV is one of the few FHE schemes that supports 32+ bit computation without a severe degradation in performance, provides fast arithmetic, and has relatively small key sizes. Sounds too good to be true? Check out <a href="https://playground.sunscreen.tech/">our playground</a> or <a href="https://docs.sunscreen.tech/compiler/performance.html">read more</a> about how our compiler measures up to existing attempts.</p>
+<p>我们相信 BFV 是最适合 web3 用例的 FHE 方案之一。 BFV 是为数不多的 FHE 方案之一，它支持 32 位以上的计算而不会严重降低性能，提供快速算法，并且具有相对较小的密钥大小。听起来好得令人难以置信？查看<a href="https://playground.sunscreen.tech/">我们的游乐场</a> 或<a href="https://docs.sunscreen.tech/compiler/performance.html">阅读更多</a>，了解我们的编译器如何衡量现有尝试。</p>
+<p>We're also exploring support of FHE extensions like multi-party FHE and multi-key FHE. These extensions make it easy to combine and perform computation on multiple users' encrypted data.</p>
+<p>我们还在探索对 FHE 扩展的支持，例如多方 FHE 和多密钥 FHE。这些扩展使得对多个用户的加密数据进行合并和计算变得容易。</p>
+<h3 id="零知识证明编译器-zero-knowledge-proof-compiler">零知识证明编译器 (Zero knowledge proof compiler)</h3>
+<p>Next, let’s look at how we might address challenge #2.</p>
+<p>接下来，让我们看看如何应对挑战#2。</p>
+<p>Zero knowledge proofs to the rescue! The user can prove that their encrypted inputs satisfy the conditions of the application without actually revealing their data.</p>
+<p>零知识证明来救场了！用户可以证明他们的加密输入满足应用的要求，而无需实际透露他们的数据。</p>
+<p>While there are quite a few ZKP libraries out there, it can be difficult to combine these off the shelf with FHE. FHE relies on a special type of cryptography using lattices whereas the most efficient ZKP constructions don't. Combining such proof systems with FHE often leads to poor performance in practice.</p>
+<p>虽然有很多 ZKP 库，但很难将这些现成的库与 FHE 结合起来。 FHE 依赖于一种特殊类型的使用格的密码术，而最有效的 ZKP 结构则不需要。将此类证明系统与 FHE 相结合通常会导致实践中表现不佳。</p>
+<p>We’re currently evaluating a few proof systems to determine which offers the best tradeoffs with regards to space and time. If necessary, we will implement a lower level library with the proof system ourselves. As our goal is to make privacy easy for developers, we will also provide a compiler to work with ZKPs. With so much interest and innovation within the ZKP space, our focus is on designing a compiler in which the backend proof system can be swapped out further down the line. We plan to package the ZKP compiler with our existing FHE compiler for developer ease of use. In terms of API, we will try to keep it consistent with that of our FHE compiler.</p>
+<p>我们目前正在评估一些证明系统，以确定哪一方在空间和时间方面提供最佳权衡。如果有必要，我们将自己实现一个带有证明系统的较低级别的库。由于我们的目标是让开发人员更容易保护隐私，我们还将提供一个编译器来使用 ZKP。由于 ZKP 空间内有如此多的新奇和创新，我们的重点是设计一个编译器，在该编译器中，后端证明系统可以被进一步替换。我们计划将 ZKP 编译器与我们现有的 FHE 编译器打包在一起，以方便开发人员使用。在API方面，我们会尽量和我们的FHE编译器保持一致。</p>
+<h3 id="去中心化存储系统-decentralized-storage-system">去中心化存储系统 (Decentralized storage system)</h3>
+<p>The last puzzle piece requires addressing where to store large FHE ciphertexts. In integrating FHE into decentralized applications, we want to avoid massively blowing up the underlying blockchain's size. However, if we store FHE ciphertexts elsewhere, we need to ensure users and validators can quickly and easily retrieve these off-chain ciphertexts. There are a few interesting decentralized storage systems out there (<a href="https://www.arweave.org/">arweave</a>, <a href="https://ipfs.tech/">IPFS</a>, etc.) that could serve as a potential solution for us. Our efforts here are still at the earlier stages and we're hoping to share more about this piece in the coming months.</p>
+<p>最后一块拼图需要解决存储大型 FHE 密文的位置。在将 FHE 集成到去中心化应用中时，我们希望避免大量破坏对应区块链的大小。但是，如果我们将 FHE 密文存储在别处，我们需要确保用户和验证者可以快速轻松地检索这些链下密文。有一些有趣的去中心化存储系统（<a href="https://www.arweave.org/">arweave</a>、[IPFS](https://ipfs.tech/ 等）可以作为潜在的为我们解决。我们在这方面的努力仍处于早期阶段，我们希望在未来几个月内分享更多关于这件作品的信息。</p>
+<h2 id="推出我们的技术-rolling-out-our-tech">推出我们的技术 (Rolling out our tech)</h2>
+<p>We expect to deploy our technology in phases–starting first with support of private transactions in a testnet, then with support of pre-determined private programs, and finally allowing developers to author arbitrary private programs using our FHE and ZKP compilers. The ambition is to make private programs easy for web3 (and eventually web2) developers to create via Sunscreen's SDK.</p>
+<p>我们希望分阶段部署我们的技术——首先支持测试网中的隐私交易，然后支持预先确定的隐私程序，最后允许开发人员使用我们的 FHE 和 ZKP 编译器编写任意隐私程序。目标是让 web3（最终是 web2）开发人员可以通过 Sunscreen 的 SDK 轻松创建隐私程序。</p>
+<p>If you'd like to get involved, you can join our <a href="https://discord.gg/sunscreen">Discord</a> or follow us on Twitter for updates. To learn more about what we're doing, check out our <a href="https://github.com/Sunscreen-tech">Github</a> or come say hi to us at ETHDenver!</p>
+<p>如果您想参与，可以加入我们的 <a href="https://discord.gg/sunscreen">Discord</a> 或在 Twitter 上关注我们以获取更新。要了解有关我们正在做的事情的更多信息，请查看我们的 <a href="https://github.com/Sunscreen-tech">Github</a> 或来 ETHDenver 向我们问好！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[存储日本昭和时代的老照片 (Archiving photos from the Japanese Shōwa era)]]></title>
         <id>https://chainguys.github.io/post/cun-chu-ri-ben-zhao-he-shi-dai-de-lao-zhao-pian-archiving-photos-from-the-japanese-showa-era/</id>
@@ -962,134 +1035,6 @@ Bug修复-控制流图节点的唯一性以防止错误的**<code>从未使用�
 <p>如果您想了解更多关于在闪存/瞬时层上铸造的好处，请查看我们的<a href="https://blog.altlayer.io/nft-minting-made-scalable-part-ii-60ed39bbf419">专用博文</a>这个主题并联系我们的团队寻求支持。</p>
 <p>Thank you for your kind support and we welcome all feedback. Join our <a href="https://discord.gg/altlayer">Discord</a> to share your thoughts!</p>
 <p>感谢您的支持，我们欢迎所有反馈。加入我们的 <a href="https://discord.gg/altlayer">Discord</a> 分享您的想法！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[用Fuel扩展以太坊 (Scaling Ethereum with Fuel)]]></title>
-        <id>https://chainguys.github.io/post/yong-fuel-kuo-zhan-yi-tai-fang-scaling-ethereum-with-fuel/</id>
-        <link href="https://chainguys.github.io/post/yong-fuel-kuo-zhan-yi-tai-fang-scaling-ethereum-with-fuel/">
-        </link>
-        <updated>2022-12-06T03:59:56.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/12/Scaling-Ethereum-1.png" alt="Scaling Ethereum with Fuel" loading="lazy"><br>
-Why alternative VMs are crucial to scaling Ethereum. 为什么其他(替代)虚拟机对以太坊如此重要</p>
-<h2 id="其他替代虚拟机对以太坊扩容十分关键-alternative-vms-are-crucial-to-enable-ethereum-to-scale">其他(替代)虚拟机对以太坊扩容十分关键 (Alternative VMs are Crucial to Enable Ethereum to Scale)</h2>
-<p>Despite existing in an environment where new L1s are becoming increasingly popular, Ethereum still leads the web3 space in many ways. It has a large ecosystem of developers and end users, a strong roadmap toward scalability on the consensus &amp; data availability layer, and massive amounts of liquidity.</p>
-<p>尽管我们处在一个新L1越来越流行的大环境中，但以太坊仍然在许多方面领先于 web3 领域。它拥有一个由开发人员和最终用户组成的大型生态系统，一个强大的针对共识和数据可用层的扩展路线图，以及大量的流动性。</p>
-<p><img src="https://fuel-labs.ghost.io/content/images/2022/12/image.png" alt="" loading="lazy"><br>
-<em>Ethereum hosts significantly more assets than any other blockchain (source: <a href="https://defillama.com/chains">DefiLlama</a>)</em><br>
-<em>以太坊拥有比任何其他区块链都多得多的资产(来源：<a href="https://defillama.com/chains">DefiLlama</a>)</em></p>
-<p>There is undoubtedly a lot of value to be captured by building within the existing Ethereum ecosystem, as evidenced by the many rollups and L2 scaling solutions building on Ethereum.</p>
-<p>毫无疑问，在现有以太坊生态系统中构建可以获取很多价值，正如在以太坊上构建的许多汇总和 L2 扩展解决方案所证明的那样。</p>
-<p>But at the same time, there is a growing narrative that the EVM and Solidity are becoming less important.</p>
-<p>但与此同时，越来越多的人认为 EVM 和 Solidity 变得不那么重要了。</p>
-<blockquote>
-<p>New theory:</p>
-<p>As more and more L1s role out, EVM compatibility will become:</p>
-<p>A) less important<br>
-B) a negative signal</p>
-<p>Why such a radical change of opinion? When I previously thought EVM compatibility was critical for a blockchain success?</p>
-<p>A mini thread-</p>
-<p>— Dennison.og (@DennisonBertram) <a href="https://twitter.com/DennisonBertram/status/1586114575107244032?ref_src=twsrc%5Etfw">October 28, 2022</a></p>
-</blockquote>
-<blockquote>
-<p>新理论：</p>
-<p>随着越来越多的 L1 发挥作用，EVM 兼容性将变为：</p>
-<p>A) 不太重要<br>
-B) 负面信号</p>
-<p>为什么观点会发生如此根本性的变化？当我以前认为 EVM 兼容性对区块链成功至关重要时？</p>
-<p>一条迷你推文-</p>
-<p>— Dennison.og (@DennisonBertram) <a href="https://twitter.com/DennisonBertram/status/1586114575107244032?ref_src=twsrc%5Etfw">2022 年 10 月 28 日</a></p>
-</blockquote>
-<p>EVM compatibility is no longer a make-or-break feature when it comes to new blockchains - even ones building on top of Ethereum.</p>
-<p>当涉及到新区块链时，EVM 兼容性不再是一个成败攸关的特性—即使对那些构建在以太坊之上的区块链。</p>
-<h3 id="机会-the-opportunity">机会 (The Opportunity)</h3>
-<p>Currently, the main bottleneck to scalability is not the speed of transaction execution; rather, it is the limited bandwidth that the consensus &amp; data availability layer can support. In this environment, the EVM’s slow transaction execution capabilities are “good enough”, because they still outpace the bandwidth Ethereum can provide.</p>
-<p>目前，可扩展性的主要瓶颈不是交易的速度；相反，它是共识和数据可用层可以支持的有限带宽。在这种环境下，EVM 的慢交易执行能力“足够好”，因为它们仍然超过以太坊可以提供的带宽。</p>
-<p>However, Ethereum is on a path toward massive scalability on the consensus &amp; data availability layer, with <a href="https://www.eip4844.com/">proto-danksharding</a> coming soon and <a href="https://ethereum.org/en/upgrades/sharding/">sharding</a> scheduled to ship in 2023. With base layer scalability on the horizon, blockspace will no longer be the core constraint. <strong>The next bottleneck will be computation: how fast execution layers can process transactions.</strong></p>
-<p>然而，以太坊正朝着共识和数据可用性层的大规模可扩展性迈进，<a href="https://www.eip4844.com/">proto-danksharding</a> 即将推出，<a href="https://ethereum.org/en/upgrades/sharding/">分片</a> 计划于 2023 年发布。随着基础层可扩展性的出现，区块空间将不再是核心限制。 <strong>下一个瓶颈将是计算：执行层处理交易的速度有多快。</strong></p>
-<p>In this future, the relatively slow and computationally costly EVM will no longer be sufficient to keep up with the expanding supply of bandwidth on the consensus &amp; data availability layer.</p>
-<p>在未来，相对缓慢且计算成本高昂的 EVM 将不再足以跟上共识和数据可用层上不断扩大的带宽供应。</p>
-<p>The EVM was designed to be sufficiently performant in the context of the original version of the Ethereum blockchain. While both have seen improvements since their initial release, meaningful progress on the EVM side has been continually restricted by the need to maintain backward compatibility.</p>
-<p>EVM 意在以太坊区块链原始版本的环境中维持足够性能。虽然自最初发布以来两者都取得了改进，但 EVM 方面有意义的进展一直受到保持向后兼容性需求的限制。</p>
-<p><img src="https://fuel-labs.ghost.io/content/images/2022/12/image-1.png" alt="" loading="lazy"><br>
-<em>The EVM has been unable to keep up with innovations in scaling computation (<a href="https://twitter.com/lightclients/status/1593270266909450241">image source</a>)</em><br>
-<em>EVM 一直跟不上扩展计算方面的创新(<a href="https://twitter.com/lightclients/status/1593270266909450241">图片来源</a>)</em></p>
-<p>In order to maximize the value added by increasing bandwidth on the Ethereum base layer, <strong>L2s will need to match these scalability improvements by building and deploying more performant VMs on the execution layer</strong>.</p>
-<p>为了通过增加以太坊基础层上的带宽来最大化价值，<strong>L2 需要通过在执行层上构建和部署更多高性能 VM 来匹配这些可扩展性改进</strong>。</p>
-<p>This new paradigm provides an opportunity (and a challenge) for execution layers to pursue true scalability for Ethereum by going beyond the EVM.</p>
-<p>这种新范式为执行层提供了一个机会(也是一个挑战)，可以通过超越 EVM 来为以太坊追求真正的可扩展性。</p>
-<h3 id="解决方案-the-solution">解决方案 (The Solution)</h3>
-<p>Fuel was designed for this exact purpose: scaling Ethereum by transcending the EVM.</p>
-<p>Fuel 正是为此而生：通过超越 EVM 来扩展以太坊。</p>
-<p>Current L2s and rollups are primarily designed for monolithic blockchain stacks, meaning they are typically not optimized for large amounts of L1 bandwidth potential. Fuel is uniquely configured to handle this potential.</p>
-<p>当前的 L2 和汇总主要是为单片区块链堆栈设计的，这意味着它们通常没有针对大量 L1 带宽潜力进行优化。Fuel 的独特配置可以处理这种潜力。</p>
-<p>By adopting new and improved VM design principles, modular execution layers like Fuel can specifically optimize for efficient &amp; scalable computation, superior developer experience, and maximum security - all while contributing directly to scaling Ethereum.</p>
-<p>通过采用新的和改进的 VM 设计原则，像 Fuel 这样的模块化执行层可以专门优化高效和可扩展的计算、卓越的开发者体验和最大的安全性——所有这些都直接有助于扩展以太坊。</p>
-<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/2022/12/image-2.png" alt="" loading="lazy"></figure>
-<hr>
-<h2 id="fuel-将如何帮助扩展以太坊how-will-fuel-help-scale-ethereum">Fuel 将如何帮助扩展以太坊？(How Will Fuel Help Scale Ethereum?)</h2>
-<p>With all this established, how will Fuel help to scale Ethereum? There are a number of factors to this:</p>
-<p>有了这一切，Fuel 将如何帮助扩展以太坊？这有很多因素：</p>
-<h3 id="️-在以太坊上部署-deployment-on-ethereum">♦️ 在以太坊上部署 (Deployment on Ethereum)</h3>
-<p>The current roadmap for Fuel includes deploying on Ethereum mainnet. The <a href="https://fuel-labs.ghost.io/announcing-beta-2-testnet/">beta-2 testnet</a> has already been launched with a bridge to Ethereum’s Goerli testnet, and a full mainnet implementation is planned for 2023.</p>
-<p>Fuel 当前的路线图包括在以太坊主网上部署。 <a href="https://fuel-labs.ghost.io/announcing-beta-2-testnet/">beta-2 测试网</a> 已经启动，跨链到以太坊的 Goerli 测试网，计划在 2023 年实现完整的主网.</p>
-<h3 id="️-与以太坊路线图保持一致-alignment-with-ethereum-roadmap">🛣️ 与以太坊路线图保持一致 (Alignment with Ethereum Roadmap)</h3>
-<p>The Ethereum core dev community has explicitly stated that it is building toward a <a href="https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698">rollup-centric Ethereum</a>. As part of this roadmap, Vitalik has noted that “Ethereum base-layer scaling [will] primarily be focused on scaling how much data blocks can hold, and not efficiency of on-chain computation”.</p>
-<p>以太坊核心开发社区明确表示，它正在构建一个 <a href="https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698">以汇总为中心的以太坊</a>。作为该路线图的一部分，Vitalik 指出“以太坊基础层扩展 [将会] 主要关注扩展可以容纳多少数据块，而不是链上计算的效率”。</p>
-<p>In other words, Ethereum’s scaling efforts are focused on providing bandwidth for modular execution layers, while relying on those layers to make improvements in the speed of transaction execution. As such, Fuel is focused on providing fast &amp; efficient computation on the execution layer to support Ethereum’s scaling roadmap.</p>
-<p>换句话说，以太坊的扩展努力集中在为模块化执行层提供带宽，同时依靠这些层来提高交易执行速度。因此，Fuel 专注于在执行层上提供快速高效的计算，来支持以太坊的扩展路线图。</p>
-<h3 id="fuelvmevm-内的欺诈可证明-fuelvm-fraud-provable-within-the-evm">🔐 FuelVM：EVM 内的欺诈可证明 (FuelVM: Fraud-Provable within the EVM)</h3>
-<p>The <a href="https://fuellabs.github.io/fuel-specs/master/vm/instruction_set">FuelVM instruction set</a> is specifically designed to be both expressive yet fraud-provable within the EVM. In other words, Fuel has been designed with the express goal of supporting the use of Ethereum as a settlement layer.</p>
-<p><a href="https://fuellabs.github.io/fuel-specs/master/vm/instruction_set">FuelVM 指令集</a> 专门设计用于在 EVM 中既能表达又能证明欺诈。换句话说，Fuel 的设计明确目标是支持使用以太坊作为结算层。</p>
-<h3 id="️-将开发人员带入以太坊生态系统-bringing-developers-to-the-ethereum-ecosystem">⛓️ 将开发人员带入以太坊生态系统 (Bringing Developers to the Ethereum Ecosystem)</h3>
-<p>Fuel has been designed with <a href="https://fuellabs.github.io/fuel-docs/master/why-fuel.html#superior-devex">developer experience</a> at the forefront, and the <a href="https://fuellabs.github.io/sway/latest/">Sway language</a> is already gaining significant traction. By building a Rust-based DSL and <a href="https://fuellabs.github.io/fuel-docs/master/fuel-toolchain.html">comprehensive tooling</a> that developers love, Fuel is positioned to attract scores of new developers to the ecosystem.</p>
-<p>Fuel 的设计以<a href="https://fuellabs.github.io/fuel-docs/master/why-fuel.html#superior-devex">开发者经验</a> 为先，<a href="https://fuellabs.github.io/sway/latest/">Sway 语言</a> 已经获得了很大的关注。通过构建开发人员喜爱的基于 Rust 的 DSL 和<a href="https://fuellabs.github.io/fuel-docs/master/fuel-toolchain.html">综合工具</a>，Fuel 定位于吸引大量新开发人员加入生态系统。</p>
-<blockquote>
-<p>devX provided by <a href="https://twitter.com/SwayLang?ref_src=twsrc%5Etfw">@SwayLang</a> is on another level, and the design choices made by <a href="https://twitter.com/fuellabs_?ref_src=twsrc%5Etfw">@fuellabs_</a> for its vm are very interesting.</p>
-<p>Considering creating a short but intensive and comprehensive course on fuel and sway through <a href="https://twitter.com/Artemis_HQ?ref_src=twsrc%5Etfw">@Artemis_HQ</a>, once my knowledge is solidified.</p>
-<p>— Reimão (@reimao42) <a href="https://twitter.com/reimao42/status/1589240548170563584?ref_src=twsrc%5Etfw">November 6, 2022</a></p>
-</blockquote>
-<blockquote>
-<p><a href="https://twitter.com/SwayLang?ref_src=twsrc%5Etfw">@SwayLang</a> 提供的 devX 处于另一个层次，<a href="https://twitter.com/fuellabs_">@fuellabs_</a> 为它的VM(虚拟机)做出的设计非常有趣。</p>
-<p>考虑通过 <a href="https://twitter.com/Artemis_HQ?ref_src=twsrc%5Etfw">@Artemis_HQ</a> 创建一门关于Fuel和Sway的短期但密集且全面的课程，一旦我的知识得到巩固。</p>
-<p>— Reimão (@reimao42) <a href="https://twitter.com/reimao42/status/1589240548170563584?ref_src=twsrc%5Etfw">2022 年 11 月 6 日</a></p>
-</blockquote>
-<p>In addition, the FuelVM’s design enables new use cases that <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">can’t be feasibly built on the EVM</a> (such as orderbook DEXs). More features &amp; a better developer experience will lead to more projects, more versatile use cases, and more end users.</p>
-<p>此外，FuelVM 的设计支持<a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">不在 EVM 上实质构建</a> 的用例(例如订单簿).更多功能和更好的开发者体验将带来更多项目、更丰富的用例和更多最终用户。</p>
-<p>Because Fuel will be deployed on Ethereum with a trust-minimized bridge between the two networks, these developers and users will be directly contributing to the growth of the Ethereum ecosystem, rather than migrating to alternative L1s.</p>
-<p>由于 Fuel 将部署在以太坊上，并在两个网络之间建立信任最小化的跨链桥，因此这些开发人员和用户将直接为以太坊生态系统的发展做出贡献，而不是迁移到替代的 L1。</p>
-<hr>
-<h2 id="fuel全力以赴扩展以太坊-fuel-all-in-on-scaling-ethereum">Fuel：全力以赴扩展以太坊 (Fuel: All In on Scaling Ethereum)</h2>
-<p>Ethereum’s commitment to a modular roadmap means that making computation more scalable and efficient on the execution layer is the next step in building a more scalable Ethereum ecosystem. Alternative VMs are a crucial piece of this puzzle, and Fuel is leading the charge when it comes to this challenge.</p>
-<p>以太坊对模块化路线图的承诺，意味着在执行层上提高计算可扩展性和效率，是构建更具可扩展性的以太坊生态系统的下一步。替代 VM 是这个难题的关键部分，而 Fuel 在应对这一挑战时处于领先地位。</p>
-<p>By building the fastest modular execution layer, Fuel is bringing maximum security and the highest flexible throughput to Ethereum.</p>
-<p>通过构建最快的模块化执行层，Fuel 为以太坊带来了最高的安全性和最高的灵活吞吐量。</p>
-<hr>
-<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
-<ul>
-<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
-<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
-<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
-<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
-</ul>
-<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
-<p><a href="https://www.fuel.network/">Fuel</a> is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
-<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制**。</p>
-<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
-<ul>
-<li>
-<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
-<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
-</li>
-<li>
-<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
-<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
-</li>
-<li>
-<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
-<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
-</li>
-</ul>
 ]]></content>
     </entry>
 </feed>
