@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-02-03T03:23:34.516Z</updated>
+    <updated>2023-02-12T16:30:17.660Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -81,6 +81,154 @@ web3的信条之一是“不信任，验证”。如果用户提供带有加密�
 <p>我们希望分阶段部署我们的技术——首先支持测试网中的隐私交易，然后支持预先确定的隐私程序，最后允许开发人员使用我们的 FHE 和 ZKP 编译器编写任意隐私程序。目标是让 web3（最终是 web2）开发人员可以通过 Sunscreen 的 SDK 轻松创建隐私程序。</p>
 <p>If you'd like to get involved, you can join our <a href="https://discord.gg/sunscreen">Discord</a> or follow us on Twitter for updates. To learn more about what we're doing, check out our <a href="https://github.com/Sunscreen-tech">Github</a> or come say hi to us at ETHDenver!</p>
 <p>如果您想参与，可以加入我们的 <a href="https://discord.gg/sunscreen">Discord</a> 或在 Twitter 上关注我们以获取更新。要了解有关我们正在做的事情的更多信息，请查看我们的 <a href="https://github.com/Sunscreen-tech">Github</a> 或来 ETHDenver 向我们问好！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AkordJS：Arweave 上的隐私、协作和文件管理(AkordJS：privacy, collaboration and file management on Arweave)]]></title>
+        <id>https://chainguys.github.io/post/akordjsarweave-shang-de-yin-si-xie-zuo-he-wen-jian-guan-li-akordjsprivacy-collaboration-and-file-management-on-arweave/</id>
+        <link href="https://chainguys.github.io/post/akordjsarweave-shang-de-yin-si-xie-zuo-he-wen-jian-guan-li-akordjsprivacy-collaboration-and-file-management-on-arweave/">
+        </link>
+        <updated>2023-01-30T14:34:47.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://optimise2.assets-servd.host/akord-web/production/Akord-JS.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1674913254&amp;s=0354064eb00382cae2aaec600f6ab81c" alt="" loading="lazy"></figure>
+<p><strong>Building on Arweave’s immutable and permanent file storage, AkordJS provides the privacy layer and means to collaborate securely with messaging and notes.</strong></p>
+<p><strong>基于 Arweave 的不可变和永久文件存储，AkordJS 提供了隐私层和与消息传递和注释间安全协作的方法。</strong></p>
+<h2 id="akordjs介绍-introducing-akordjs">AkordJS介绍 (Introducing AkordJS)</h2>
+<p>Implementing the core functions of the Akord protocol, <a href="https://github.com/akord-com/akord-js">AkordJS</a> enables developers to integrate user-owned storage into their (d)Apps with our digital vaults</p>
+<p>实施 Akord 协议的核心功能，<a href="https://github.com/akord-com/akord-js">AkordJS</a> 使开发人员能够使用我们的数字保险库保管库，将用户拥有的存储集成到其(d)Apps 中。</p>
+<p>Specifically, AkordJS allows developers to do the following.</p>
+<p>具体来说，AkordJS 允许开发人员执行以下操作。</p>
+<ul>
+<li>
+<p>Create end-to-end encrypted and permanent vaults for archiving and preserving documents, images, structured data, and other forms of data. Applications can be granted access to a user’s vault to get or save data related to the application. The vaults are managed by a contract on Arweave and all data is stored on-chain.<br>
+创建端到端的加密和永久保管库，用于归档和保存文档、图像、结构化数据和其他形式的数据。可以授予应用访问用户保管库的权限，获取或保存与应用相关的数据。保险库由 Arweave 上的合约管理，所有数据都存储在链上。</p>
+</li>
+<li>
+<p>Add or remove members to vaults who can be assigned as contributors or have view-only permission. Keys are generated and rotated by the client. The agreement between members is maintained by the protocol and verified by the members’ clients.<br>
+添加或删除可以被指定为贡献者或具有只读权限的保险库成员。密钥由客户端生成和轮换。成员之间的协议由协议维护，并由成员的客户验证。</p>
+</li>
+<li>
+<p>Files, messages and other data sets can be encrypted client side and stored in the vault. Data that is managed by the vault can be arranged within folders, as well as allowing for file revisions and audits of an immutable timeline of events.<br>
+文件、消息和其他数据集可以在客户端加密并存储在保管库中。由保管库管理的数据可以安排在文件夹中，并允许对不可变的事件时间线进行文件修订和审计。</p>
+</li>
+</ul>
+<h2 id="20发布-20-release">2.0发布 (2.0 release)</h2>
+<p>We're excited to announce the release of <a href="https://github.com/Akord-com/akord-js">AkordJS 2.0</a>. This release makes some major improvements, addressing the feedback we received from the community. It includes the following updates.</p>
+<p>我们很高兴地宣布发布 <a href="https://github.com/Akord-com/akord-js">AkordJS 2.0</a> 。此版本进行了一些重大改进，回应了我们从社区收到的反馈。它包括以下更新。</p>
+<ul>
+<li>
+<p>Abstracted external services and other APIs from AkordJS core, replacing them with a single, deployable and public endpoint. Developers can now choose their preferred backend for accessing and committing transactions to Arweave.<br>
+从 AkordJS 核心中，抽象出外部服务和其他 API，将它们替换为一个单一的、可部署的公共端点。开发人员现在可以选择他们喜欢的后端来访问 Arweave 并将交易提交给 Arweave。</p>
+</li>
+<li>
+<p>Removed unneeded dependencies from the abstraction above, therefore reducing the size of AkordJS.<br>
+从上面的抽象中删除了不需要的依赖项，因此减少了 AkordJS 的大小。</p>
+</li>
+<li>
+<p>Renamed and improved the consistency of the project – naming conventions and codebase.<br>
+重命名并改进了项目的一致性—命名约定和代码库。</p>
+</li>
+</ul>
+<h2 id="使用-akordjs-构建-building-with-akordjs">使用 AkordJS 构建 (Building with AkordJS)</h2>
+<p>We believe the ability to collaborate in an end-to-end encrypted environment where data is immutable and permanent will open up exciting new opportunities; products and services that will be built on a foundation of data ownership.</p>
+<p>我们相信，在数据不可变且永久的端到端加密环境中来进行协作的能力，将开辟令人兴奋的新机会；将建立在数据所有权基础上的产品和服务。</p>
+<p>Listed below are just a few simple ideas for how AkordJS could be used.</p>
+<p>下面列出的只是关于如何使用 AkordJS 的一些简单想法。</p>
+<ul>
+<li>
+<p>Writing or blogging where content is published and shared exclusively.<br>
+专门发布和共享内容的写作或博客。</p>
+</li>
+<li>
+<p>Creating archives of important files that need to be stored for many years or even indefinitely, and where ownership can easily be managed and passed on.<br>
+为需要保存多年甚至无限期的重要文件创建存档，并且所有权可以轻松管理和传递。</p>
+</li>
+<li>
+<p>Airdropping token-gated access to vaults, containing files and message threads for specific communities.<br>
+对保管库空投代币化门禁，包含特定社区的文件和消息线程。</p>
+</li>
+<li>
+<p>Printing a QR code that provides access to a vault containing additional information, media or rewards.<br>
+打印二维码码，提供对包含额外信息、媒体或奖励的保管库的访问。</p>
+</li>
+<li>
+<p>Build a content vault, where viewers sign and agree to terms to access a specific resource.<br>
+建立一个内容库，观众可以在其中签署并同意访问特定资源的条款。</p>
+</li>
+</ul>
+<p>AkordJS, like all our tools, is just the start. Now it’s over to you to start building with privacy and permanence.</p>
+<p>与我们所有的工具一样，AkordJS 只是一个开始。现在轮到您开始构建具有隐私和永久性的产物了。</p>
+<h2 id="代码示例永久博客-code-example-a-permablog">代码示例—永久博客 (Code example – a Permablog)</h2>
+<p>Using AkordJS, we’ll easily build a simple, private and permanent blog – a Permablog!</p>
+<p>使用 AkordJS，我们将轻松构建一个简单、私人和永久的博客——永久博客！</p>
+<p>Out of the box, we’ll get end-to-end encryption of the blog posts, permanent storage on the Arweave blockchain and access control using key rotation provided by Akord protocol.</p>
+<p>开箱即用，我们将获得博客文章的端到端加密、Arweave 区块链上的永久存储以及使用 Akord 协议提供的密钥轮换来获得的访问控制。</p>
+<h3 id="从-akord-钱包开始-start-with-an-akord-wallet">从 Akord 钱包开始 (Start with an Akord wallet)</h3>
+<p>First, you’ll first need to <a href="https://v2.akord.com/signup">create your Akord account and wallet here</a>.</p>
+<p>首先，您首先需要<a href="https://v2.akord.com/signup">在此处创建您的 Akord 帐户和钱包</a>。</p>
+<p>By creating an Akord account, you’ll be able to access your wallet across devices. The wallet is where you secure your keys.</p>
+<p>通过创建 Akord 帐户，您将能够跨设备访问您的钱包。钱包是您保护密钥的地方。</p>
+<p>Make sure to safely store your recovery phrase. Akord does not have access to your recovery phrase and will never ask for it.</p>
+<p>确保安全地存储您的助记词。 Akord 无法访问您的助记词，也绝不会要求它。</p>
+<h3 id="创建保管库-create-the-vault">创建保管库 (Create the vault)</h3>
+<p>Next, we’ll start by creating a new vault for our Permablog.</p>
+<p>接下来，我们将从为永久博客创建一个新的保险库开始。</p>
+<p>NOTE: You’ll need to build with Node v16.x</p>
+<p>注意：您需要使用 Node v16.x 进行构建</p>
+<pre><code class="language-javascript">const { Akord } = require(&quot;@akord/akord-js&quot;);
+</code></pre>
+<p>Using the credentials from our Akord account to retrieve the wallet, along with the keys contained in it, we’re able to create the vault with the title “My Permablog”.</p>
+<p>使用我们 Akord 帐户的凭据来检索钱包，连同其中包含的密钥，我们能够创建标题为“My Permablog”的保管库。</p>
+<p><em>Note: you can sign up for a <a href="http://v2.akord.com/">free Akord account</a> to conveniently store and secure your wallet.</em></p>
+<p><em>注意：您可以注册一个<a href="http://v2.akord.com/">免费的 Akord 帐户</a> 来方便地存储和保护您的钱包。</em></p>
+<pre><code class="language-javascript">// access your Akord wallet 
+const email = &quot;--akord username--&quot;
+const pass = &quot;--akord password--&quot;
+const { akord } = Akord.auth.signIn(email, password);
+
+// create the vault
+const { vaultId } = await akord.vault.create(&quot;my first vault&quot;);
+</code></pre>
+<p>To finish the Vault setup, let’s create a folder to store our blog posts:</p>
+<p>要完成保管库设置，让我们创建一个文件夹来存储我们的博客文章：</p>
+<pre><code class="language-javascript">// create a folder for blog posts
+const { folderId } = await akord.folder.create(vaultId, &quot;posts&quot;);
+</code></pre>
+<h3 id="发布到永久博客-posting-to-the-permablog">发布到永久博客 (Posting to the Permablog)</h3>
+<p>We now have our Akord wallet, vault and folder ready for our blog posts. Next, we’ll post our content:</p>
+<p>我们现在已经为我们的博客文章准备好了 Akord 钱包、保险库和文件夹。接下来，我们将发布我们的内容：</p>
+<pre><code class="language-javascript">// post content to the vault
+const title = “Hello world!”
+const body = “# Welcome to my Permablog! \nThis is how it starts.&quot;
+
+const { noteId } = await akord.note.create(vaultId, body, title, folderId);
+</code></pre>
+<p>A ‘note’ is a primitive in the AkordJS library that enables you to post markdown to your vault. It’s simply a file that’s uploaded as a ‘stack’ in the Akord Protocol.</p>
+<p>“注释”是 AkordJS 库中的原语，可让您将 markdown 发布到您的保险库。它只是一个在 Akord 协议中作为“栈”上传的文件。</p>
+<p>Stacks are a useful primitive enabling you to upload a file along with any revisions. Each revision is stored in a stack like structure, meaning you keep all revisions and history of the file.</p>
+<p>栈是一种有用的原语，使您可以上传文件以及任何修订。每个修订都存储在类似栈的结构中，这意味着您可以保留文件的所有修订和历史记录。</p>
+<h3 id="从永久博客读取-reading-from-the-permablog">从永久博客读取 (Reading from the Permablog)</h3>
+<p>Now that we’ve posted content to our vault, next we’ll read from the vault display our blog post:</p>
+<p>现在我们已经将内容发布到我们的保管库中，接下来我们将从保管库中读取显示我们的博客文章：</p>
+<pre><code class="language-javascript">// get a list of notes in the vault
+const notes = await akord.note.list(vaultId);
+
+// download each note from the vault
+notes.forEach(async (note) =&gt; {
+const { data } = await akord.note.getVersion(note.id);
+console.log(data);
+});
+</code></pre>
+<h3 id="使用-akord-app-验证-verify-with-akord-app">使用 Akord App 验证 (Verify with Akord App)</h3>
+<p>Until now, we have used javascript and AkordJs to interact with our vault. Using the Akord App (<a href="http://v2.akord.com/">http://v2.akord.com</a>) we can open the vault and verify the results.</p>
+<p>到目前为止，我们已经使用 javascript 和 AkordJs 与我们的保管库进行交互。使用 Akord 应用(<a href="http://v2.akord.com/">http://v2.akord.com</a>)，我们可以打开保管库并验证结果。</p>
+<figure data-type="image" tabindex="2"><img src="https://optimise2.assets-servd.host/akord-web/production/permablog.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1674913370&amp;s=ed9c2dbcf1922294c87330c48ed1bf58" alt="" loading="lazy"></figure>
+<h2 id="更多教程和构建器支持-more-tutorials-and-builder-support">更多教程和构建器支持 (More tutorials and builder support)</h2>
+<p>You can <a href="http://js.akord.com/">find a similar tutorial here</a>. We also recommend checking out the <a href="https://docs.akord.com/">full documentation for Akord protocol here</a>, as well as our <a href="https://871123434-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0GR33YblhLmalhKSoV1D%2Fuploads%2F1A2zqgsrszDpOZYj28X6%2FAkord%20Litepaper.pdf?alt=media&amp;token=ae2870e0-5981-4c0f-9430-6b1b3d6eafa0">Litepaper</a>.</p>
+<p>您可以<a href="http://js.akord.com/">在此处找到类似的教程</a>。我们还建议您在此处查看<a href="https://docs.akord.com/">Akord 协议的完整文档</a>，以及我们的[Litepaper](https://871123434-files.gitbook.io/~/files /v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0GR33YblhLmalhKSoV1D%2Fuploads%2F1A2zqgsrszDpOZYj28X6%2FAkord%20Litepaper.pdf?alt=media&amp;token=ae2870e0-5981-4c0f-9430-6b1b3d6eafa0)。</p>
+<p>This article will be followed with a more another more detailed tutorial looking at different ways to use and access Akord's vaults.</p>
+<p>这篇文章之后将有一个更详细的教程，介绍使用和访问 Akord 保险库的不同方式。</p>
+<p>If you want to connect directly with our developers, jump into the discord and join the <a href="https://discord.gg/vArB88mYJs">#builder-chat</a>.</p>
+<p>如果您想直接与我们的开发人员联系，请加入 Discord 并加入 <a href="https://discord.gg/vArB88mYJs">#builder-chat</a>。</p>
 ]]></content>
     </entry>
     <entry>
@@ -982,59 +1130,6 @@ Bug修复-控制流图节点的唯一性以防止错误的**<code>从未使用�
 <a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
 </li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Oh Ottie!NFT 系列：铸币后分析报告 (Oh Ottie! NFT collection：A Post-Mint Analysis Report)]]></title>
-        <id>https://chainguys.github.io/post/oh-ottienft-xi-lie-zhu-bi-hou-fen-xi-bao-gao-oh-ottie-nft-collectiona-post-mint-analysis-report/</id>
-        <link href="https://chainguys.github.io/post/oh-ottienft-xi-lie-zhu-bi-hou-fen-xi-bao-gao-oh-ottie-nft-collectiona-post-mint-analysis-report/">
-        </link>
-        <updated>2022-12-09T02:31:59.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/max/1400/1*7N6rLKgkLhMDOhY6u42VJg.jpeg" alt="" loading="lazy"></figure>
-<p>Dear Alters,<br>
-亲爱的Alters，</p>
-<p>Earlier today, Altlayer conducted a mint event for our NFT Collection titled, <em>Oh Ottie!</em> which successfully sold out within 100 seconds.</p>
-<p>今天早些时候，Altlayer 为我们的 NFT 系列举办了一场铸币活动，名为 <em>Oh Ottie！</em>，该活动在 100 秒内成功售罄。</p>
-<p>This collection’s namesake, Ottie, is our mascot, much adored by our global community. <strong>1,200 avatars of Ottie</strong> were up for grabs for the private sale event and we had 35,000+ people whitelisted — and almost instantly, they were sold out! Users minted seamlessly with native assets from <strong>Ethereum, BNB Chain and Polygon.</strong></p>
-<p>这个系列的同名 Ottie 是我们的吉祥物，深受全球社区的喜爱。 <strong>Ottie 的 1,200 个头像</strong>在私人销售活动中等待争夺，我们有 35,000 多人列入白名单 - 它们几乎立即就被抢购一空！用户使用来自 <strong>Ethereum、BNB Chain 和 Polygon 的原生资产进行无缝铸造。</strong></p>
-<p>Here’s a breakdown of the successful and highly anticipated multi-chain <em>Oh Ottie!</em> mint event, conducted on our dedicated flash layer.</p>
-<p>以下是在我们的专用闪存/瞬时层上进行的成功且备受期待的多链 <em>Oh Ottie!</em> mint 活动的细分。</p>
-<h1 id="宏观统计-high-level-stats">宏观统计 (High-level Stats)</h1>
-<p><strong>35,000+</strong> addresses were whitelisted to join this event via bridging ETH, BNB and MATIC tokens to the Ottie Flash Layer. <strong>The mint event ended in a flash within 100 seconds.</strong></p>
-<p><strong>35,000+</strong> 地址被列入白名单，通过将 ETH、BNB 和 MATIC 代币跨链到 Ottie 闪存/瞬时层来加入此活动。 <strong>铸币活动在100秒内一闪而过</strong></p>
-<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/max/1400/1*7N6rLKgkLhMDOhY6u42VJg.jpeg" alt="" loading="lazy"></figure>
-<p>523 unique addresses successfully minted all 1,200 Oh Ottie! NFTs in what was planned as the “Private Sale” round. Note that each address was allowed to mint a maximum of 3 NFTs.</p>
-<p>523 个唯一地址在计划的“私人销售”回合中，成功铸造了全部 1,200 Oh Ottie! NFTs 。请注意，每个地址最多可以铸造 3 个 NFT。</p>
-<p>An additional 456 addresses received direct airdrop of the remaining 800 <em>Oh Ottie!</em> NFTs. They include OG badge owners (420 NFTs), collab raffles winners (180 NFTs) and reserve (200 NFTs).</p>
-<p>另外 456 个地址收到了剩余 800 _Oh Ottie!_NFT 的直接空投。他们包括 OG 徽章所有者（420 个 NFT）、合作抽奖获奖者（180 个 NFT）和储备金（200 个 NFT）。</p>
-<h1 id="无gas铸币体验-gasless-mint-experience">无gas铸币体验 (Gasless Mint Experience)</h1>
-<p>The Ottie Flash Layer was designed to eliminate gas war. We pre-funded each whitelisted address with 1 ALT token (valueless gas token) for the mint event, and all the NFTs were minted on a ‘first-come, first-serve’ basis within 100 seconds without any gas costs.</p>
-<p>Ottie 闪存/瞬时层旨在消除gas战争。我们铸币活动预先为每个列入白名单的地址提供了 1 个 ALT 代币（无价值的 gas 代币），并且所有 NFT 都是在 100 秒内以“先到先得”的方式铸造的，没有任何 gas 费用。</p>
-<p>The graph below shows the number of transactions in each block for both approval and mint actions (one block lasts 2 seconds). We see most actions from block 22 to block 45.</p>
-<p>下图显示了每个区块中批准和铸造操作的交易数量（一个区块持续 2 秒）。我们看到从块 22 到块 45 的大多数操作。</p>
-<figure data-type="image" tabindex="3"><img src="https://miro.medium.com/max/1400/1*-NZFZBJkMW6qOuhSsNt6LA.png" alt="" loading="lazy"></figure>
-<h1 id="高网络吞吐量-high-network-throughput">高网络吞吐量 (High Network Throughput)</h1>
-<p>As mentioned above, the mint event showcased Ottie Flash Layer’s high throughput.</p>
-<p>如上所述，铸币活动展示了 Ottie 闪存/瞬时层的高吞吐量。</p>
-<p>The chart below shows the observed TPS during the event (x-axis is Singapore Time). The mint started at 12:00 PM SGT (4:00 AM UTC), and the network peaked to about <strong>55 TPS</strong> at 12:01 PM SGT (4:01 AM UTC).</p>
-<p>下图显示了事件期间观察到的 TPS（x 轴是新加坡时间）。铸币始于 SGT 中午 12:00（UTC 上午 4:00）开始，网络在 SGT 中午 12:01（UTC 上午 4:01）达到约<strong>55 TPS</strong> 的峰值。</p>
-<figure data-type="image" tabindex="4"><img src="https://miro.medium.com/max/1400/1*RHFEXLt9eniPwBDlJfRHww.png" alt="" loading="lazy"></figure>
-<p>To put this TPS observed with the NFT minting in perspective, the <a href="https://optimistic.etherscan.io/chart/tx">highest number of transactions processed per day so far by Optimism is 487,814</a> which translates to 5.6 TPS. This coincided with their OP token airdrop. In a similar vein, <a href="https://arbiscan.io/chart/tx">the highest number of transactions processed per day so far by Arbitrum is 287,019</a> which translates to 3.3 TPS. This coincided with their NFT drop.</p>
-<p>从观察 NFT 铸造的 TPS 来看，<a href="https://optimistic.etherscan.io/chart/tx">Optimism 迄今为止每天处理的最高交易量为 487,814</a>，相当于 5.6 TPS。这与他们的 OP 代币空投吻合。同样，<a href="https://arbiscan.io/chart/tx">Arbitrum 迄今为止每天处理的最高交易量为 287,019</a>，相当于 3.3 TPS。这与他们NFT落地吻合。</p>
-<h1 id="以太坊结算-settlement-on-ethereum">以太坊结算 (Settlement on Ethereum)</h1>
-<p>After the <em>Oh Ottie!</em> NFTs were fully minted on the Ottie Flash Layer, we waited on all the pending transactions on the bridge to clear out. Once we saw all the pending transactions being processed, we initiated the rollup process in which all the minted NFTs were transferred to the users’ Ethereum mainnet wallet, and all the unspent $ETH, $BNB and $MATIC tokens were transferred back to the users’ original address on the respective chain (Ethereum, BNB Chain and Polygon).</p>
-<p>在 <em>Oh Ottie！</em> NFT 在 Ottie 瞬时/闪存层上完全铸造之后，我们等待跨链桥上所有待处理的交易被清除。一旦我们看到所有待处理的交易都在处理中，我们就启动了汇总过程，其中所有铸造的 NFT 都被转移到用户的以太坊主网钱包，所有未花费的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mi>T</mi><mi>H</mi><mi mathvariant="normal">、</mi></mrow><annotation encoding="application/x-tex">ETH、</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mord cjk_fallback">、</span></span></span></span>BNB 和 $MATIC 代币都被转移回用户各自链（以太坊、BNB 链和多边形）上的原始地址。</p>
-<p>In summary, the settlement of the 2,000 <em>Oh Ottie!</em> NFTs on the Ethereum mainnet took about <strong>16</strong> mins and cost <strong>2.28776112</strong> ETH in gas. Kindly note that the speed and gas cost of this asset settlement process are dependent on the Ethereum mainnet.</p>
-<p>总之，以太坊主网上 2,000 <em>Oh Ottie!</em> NFT 的结算花费了大约 <strong>16</strong> 分钟，并花费了 <strong>2.28776112</strong> ETH 的 gas。请注意，此资产结算过程的速度和 gas 成本取决于以太坊主网。</p>
-<p>Users didn’t have to make any transactions themselves in the whole settlement process as the system settles both the NFT and token assets on behalf of them at the protocol-level.</p>
-<p>在整个结算过程中，用户无需自己进行任何交易，因为系统会在协议级别代表他们结算 NFT 和代币资产。</p>
-<h1 id="结束语-ending-notes">结束语 (Ending notes)</h1>
-<p>The Oh Ottie! NFTs are now available on marketplaces such as <a href="https://opensea.io/collection/oh-ottie">OpenSea</a>.</p>
-<p>Oh Ottie!  NFT 现在可以在 <a href="https://opensea.io/collection/oh-ottie">OpenSea</a> 等市场上购买。</p>
-<p>If you wish to learn more about the benefits of minting on a flash layer, do check out our <a href="https://blog.altlayer.io/nft-minting-made-scalable-part-ii-60ed39bbf419">dedicated blogpost</a> on this topic and reach out to our team for support.</p>
-<p>如果您想了解更多关于在闪存/瞬时层上铸造的好处，请查看我们的<a href="https://blog.altlayer.io/nft-minting-made-scalable-part-ii-60ed39bbf419">专用博文</a>这个主题并联系我们的团队寻求支持。</p>
-<p>Thank you for your kind support and we welcome all feedback. Join our <a href="https://discord.gg/altlayer">Discord</a> to share your thoughts!</p>
-<p>感谢您的支持，我们欢迎所有反馈。加入我们的 <a href="https://discord.gg/altlayer">Discord</a> 分享您的想法！</p>
 ]]></content>
     </entry>
 </feed>
