@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-02-12T16:30:17.660Z</updated>
+    <updated>2023-02-13T03:30:09.619Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -224,7 +224,7 @@ console.log(data);
 <figure data-type="image" tabindex="2"><img src="https://optimise2.assets-servd.host/akord-web/production/permablog.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1674913370&amp;s=ed9c2dbcf1922294c87330c48ed1bf58" alt="" loading="lazy"></figure>
 <h2 id="更多教程和构建器支持-more-tutorials-and-builder-support">更多教程和构建器支持 (More tutorials and builder support)</h2>
 <p>You can <a href="http://js.akord.com/">find a similar tutorial here</a>. We also recommend checking out the <a href="https://docs.akord.com/">full documentation for Akord protocol here</a>, as well as our <a href="https://871123434-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0GR33YblhLmalhKSoV1D%2Fuploads%2F1A2zqgsrszDpOZYj28X6%2FAkord%20Litepaper.pdf?alt=media&amp;token=ae2870e0-5981-4c0f-9430-6b1b3d6eafa0">Litepaper</a>.</p>
-<p>您可以<a href="http://js.akord.com/">在此处找到类似的教程</a>。我们还建议您在此处查看<a href="https://docs.akord.com/">Akord 协议的完整文档</a>，以及我们的[Litepaper](https://871123434-files.gitbook.io/~/files /v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0GR33YblhLmalhKSoV1D%2Fuploads%2F1A2zqgsrszDpOZYj28X6%2FAkord%20Litepaper.pdf?alt=media&amp;token=ae2870e0-5981-4c0f-9430-6b1b3d6eafa0)。</p>
+<p>您可以<a href="http://js.akord.com/">在此处找到类似的教程</a>。我们还建议您在此处查看<a href="https://docs.akord.com/">Akord 协议的完整文档</a>，以及我们的<a href="https://871123434-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0GR33YblhLmalhKSoV1D%2Fuploads%2F1A2zqgsrszDpOZYj28X6%2FAkord%20Litepaper.pdf?alt=media&amp;token=ae2870e0-5981-4c0f-9430-6b1b3d6eafa0">Litepaper</a>。</p>
 <p>This article will be followed with a more another more detailed tutorial looking at different ways to use and access Akord's vaults.</p>
 <p>这篇文章之后将有一个更详细的教程，介绍使用和访问 Akord 保险库的不同方式。</p>
 <p>If you want to connect directly with our developers, jump into the discord and join the <a href="https://discord.gg/vArB88mYJs">#builder-chat</a>.</p>
