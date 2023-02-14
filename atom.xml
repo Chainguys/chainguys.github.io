@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-02-13T03:30:09.619Z</updated>
+    <updated>2023-02-14T00:23:54.233Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -81,6 +81,156 @@ web3的信条之一是“不信任，验证”。如果用户提供带有加密�
 <p>我们希望分阶段部署我们的技术——首先支持测试网中的隐私交易，然后支持预先确定的隐私程序，最后允许开发人员使用我们的 FHE 和 ZKP 编译器编写任意隐私程序。目标是让 web3（最终是 web2）开发人员可以通过 Sunscreen 的 SDK 轻松创建隐私程序。</p>
 <p>If you'd like to get involved, you can join our <a href="https://discord.gg/sunscreen">Discord</a> or follow us on Twitter for updates. To learn more about what we're doing, check out our <a href="https://github.com/Sunscreen-tech">Github</a> or come say hi to us at ETHDenver!</p>
 <p>如果您想参与，可以加入我们的 <a href="https://discord.gg/sunscreen">Discord</a> 或在 Twitter 上关注我们以获取更新。要了解有关我们正在做的事情的更多信息，请查看我们的 <a href="https://github.com/Sunscreen-tech">Github</a> 或来 ETHDenver 向我们问好！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[web3存档 (The web3 archive)]]></title>
+        <id>https://chainguys.github.io/post/web3-cun-dang-the-web3-archive/</id>
+        <link href="https://chainguys.github.io/post/web3-cun-dang-the-web3-archive/">
+        </link>
+        <updated>2023-01-30T16:13:37.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://optimise2.assets-servd.host/akord-web/production/Web3-Archive.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1675153887&amp;s=b7f82262879720024a48f96c6f2dba72" alt="" loading="lazy"></figure>
+<h2 id="简介-introduction">简介 (Introduction)</h2>
+<p>Let’s be upfront: archiving is not a hot topic. It’s not your go-to dinner table chat. And it’s not what most people think of when it comes to cutting edge tech and the blockchain space.</p>
+<p>让我们提前说：存档不是一个热门话题。这不是你去餐桌聊天的首选。在谈到尖端技术和区块链领域时，大多数人不会想到这一点。</p>
+<p>But in this article I’m going to show you how web3 technology, specifically Akord and Arweave, are completely reimagining what an archive can do and how it can be experienced. It’s actually pretty exciting, and I’ll prove it.</p>
+<p>但在这篇文章中，我将向您展示 web3 技术，特别是 Akord 和 Arweave，如何完全重新构想存档的功能以及体验方式。这实际上非常令人兴奋，我会证明这一点。</p>
+<p>The web3 archive has 11 fundamental properties which we’ll explore in this article: permanent, sustainable, decentralised, immutable, self-sovereign, secure, accessible, cost-efficient, scalable, collaborative and user-friendly.</p>
+<p>web3 存档有 11 个基本属性，我们将在本文中探讨这些属性：永久、可持续、去中心化、不可变、自主、安全、可访问、成本高效、可扩展、协作和用户友好。</p>
+<h2 id="永久和可持续-permanent-and-sustainable">永久和可持续 (Permanent and sustainable)</h2>
+<p>Longevity is <em>the</em> key component in an archive. The more resilient and the longer an archive survives, the better.</p>
+<p>寿命是存档中的关键组成部分。档案保存得越有弹性/适应性，保存时间越长越好。</p>
+<p>When we stored information on clay tablets and papyrus as mediums for storing data, they were not particularly permanent for obvious reasons.</p>
+<p>当我们将信息以粘土片和纸莎草纸为媒介存储时，由于显而易见的原因，它们并不是特别长久。</p>
+<p>The printing press and computer technology represented massive leaps forward, increasing the degree of permanence to an archive by orders of magnitude.</p>
+<p>印刷机和计算机技术代表了巨大的飞跃，将档案的永久性程度提高了几个数量级。</p>
+<p>Still, an archive without a shelf life and that didn't need constant maintenance has remained (until now) out of reach.</p>
+<p>尽管如此，没有保质期且不需要经常维护的档案仍然（直到目前）遥不可及。</p>
+<p>Current mainstream archiving solutions use either <a href="https://en.wikipedia.org/wiki/Magnetic-tape_data_storage">tape</a> or centralised cloud-storage technology. Tapes have a 20–30 year lifespan, but the technology to manage them lasts ~10 years.</p>
+<p>当前的主流存档解决方案使用<a href="https://en.wikipedia.org/wiki/Magnetic-tape_data_storage">磁带</a> 或中心化云存储技术。磁带的使用寿命为 20-30 年，但管理它们的技术可持续约 10 年。</p>
+<p>Centralised cloud storage depends on third party providers and managing monthly payments and complex contracts. Who knows if Google Cloud will exist in 30 years? Will you still want to pay their prices or agree to their terms next year, in 5 years, or 10?</p>
+<p>中心化云存储依赖于第三方提供商并需要管理每月付款和复杂的合同。谁知道谷歌云是否会在 30 年后存在？明年、5 年或 10 年后，您是否仍愿意支付他们的价格或同意其条款？</p>
+<p>Arweave delivers permanent, user-owned data through a decentralised network, like Bitcoin, and uses a blockchain consensus mechanism called the <a href="https://arweave.medium.com/what-is-arweave-explain-like-im-five-425362144eb5">blockweave</a>.</p>
+<p>Arweave 使用称为 <a href="https://arweave.medium.com/what-is-arweave-explain-like-im-five-425362144eb5">blockweave</a> 的机制，通过去中心化网络（如比特币）提供永久的、用户拥有的数据。</p>
+<p>When you upload to Arweave, you pay once. And never again. That payment goes into an endowment that can pay for your data’s perpetual storage, because the cost of storage decreases in a predictable fashion over time.</p>
+<p>当您上传到 Arweave 时，您只需支付一次。再也不会了。这笔款项将进入一项捐赠基金，该基金可以支付您数据的永久存储费用，因为存储成本会随着时间的推移以可预测的方式降低。</p>
+<figure data-type="image" tabindex="2"><img src="https://optimise2.assets-servd.host/akord-web/production/storage-decreasing-cost.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1674916162&amp;s=62832c64975377f12f513fd7268c08c0" alt="" loading="lazy"></figure>
+<p>日期与 $/GB 小时对数刻度，1980 年至今。资料来源：arwiki.wiki (Date vs $/GB-hour logarithmic scale, 1980 - present. Source: arwiki.wiki)</p>
+<p>The network incentivises miners to store all data uploaded to Arweave, and <a href="https://arwiki.wiki/#/en/storage-endowment">the endowment is structured to be funded for at least 200 years</a>. Critically, for archives, this permanence means an end to data migrations, which are costly, time consuming and open the door to human error and data loss.</p>
+<p>该网络激励矿工存储所有上传到 Arweave 的数据，并且<a href="https://arwiki.wiki/#/en/storage-endowment">该捐赠基金的结构是至少资助 200 年</a>。至关重要的是，对于档案来说，这种永久性意味着数据迁移的结束，数据迁移既昂贵又耗时，并且容易导致人为错误和数据丢失。</p>
+<p>While the traditional data storage industry is scheming at the theoretical level about <a href="https://www.brighttalk.com/webcast/13139/433244">the anatomy of the 100 year archive</a>, Arweave has 2x that ambition and realised the infrastructure with a sustainable model that will keep running without centralised control and maintenance.</p>
+<p>当传统的数据存储行业在理论层面策划 <a href="https://www.brighttalk.com/webcast/13139/433244">100 年档案的解剖</a> 时，Arweave 有 2 倍的雄心，并实现了基础设施一种无需集中控制和维护即可持续运行的可持续模型。</p>
+<figure data-type="image" tabindex="3"><img src="https://optimise2.assets-servd.host/akord-web/production/100-year-archive.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1675078163&amp;s=cbdc23f5bcb565551282b2202d93e357" alt="" loading="lazy"></figure>
+<p>尝试使用硬件和 web2 技术构建长期归档解决方案。来源：地平线 (An attempt to architect long-term archiving solution using hardware and web2 technology. Source: Horison)</p>
+<p>These traditional models at long-term storage attempt to spread data across different geographical locations to increase resiliency. Arweave already has hundreds of nodes spread across the globe, making it an inherently more resilient network for long-term data storage.</p>
+<p>这些长期存储的传统模型试图将数据分布在不同的地理位置来提高弹性/适应性。 Arweave 已经在全球范围内拥有数百个节点，这使其成为一个本质上更具弹性的长期数据存储网络。</p>
+<p>In 2022, Arweave upgraded the protocol to version 2.6, declaring that work on the protocol is for the most part finished. Using Bitcoin as a parallel, a blockchain protocol does not unlock its full value until it is stable – a prerequisite for businesses and organisations to confidently build on the network.</p>
+<p>2022 年，Arweave 将协议升级到 2.6 版本，宣布协议的大部分工作已经完成。以比特币为例，区块链协议在稳定之前不会释放其全部价值—这是企业和组织自信地在网络上构建的先决条件。</p>
+<p>But unlike Bitcoin, Arweave is an incredibly energy efficient network. <a href="https://youtu.be/_GfBqnnsODQ?t=2088">In the words of founder Sam Williams</a>, “it’s all about more data, less energy.” Arweave has a Proof of Access consensus mechanism, described as Proof of Work (Eg, Bitcoin) security, with Proof of Stake (Eg, Ethereum) efficiency.</p>
+<p>但与比特币不同的是，Arweave 是一个非常节能的网络。 <a href="https://youtu.be/_GfBqnnsODQ?t=2088">用创始人 Sam Williams 的话说</a>，“一切都是为了更多的数据，更少的能源。” Arweave 具有访问证明共识机制，被描述为工作证明（例如，比特币）安全性，具有股权证明（例如，以太坊）效率。</p>
+<p><a href="https://youtu.be/_GfBqnnsODQ?t=2700">According to Williams</a>, The system uses ~800 SHA256 hashes per node, per second. For context, a macbook uses 8-10million hashes per second. Further, as the blockweave expands in size, the amount of electricity used in the mining process decreases.</p>
+<p><a href="https://youtu.be/_GfBqnnsODQ?t=2700">根据 Williams 的说法</a>，系统每秒每个节点使用约 800 个 SHA256 哈希值。具体来说，macbook 每秒使用 8-1000 万个哈希。此外，随着 blockweave 尺寸的扩大，挖矿过程中使用的电量会减少。</p>
+<p>The permanent storage that Arweave offers is zero-to-one, meaning this a completely new technological offering; a new paradigm that has been unlocked. It's why companies like <a href="https://cryptotvplus.com/2022/11/meta-integrates-arweave-for-instagram-collectibles-storage/">Meta have decided to use Arweave</a> to store certain types of data that have indefinite storage needs, because no other solution can offer them truly permanent storage.</p>
+<p>Arweave 提供的永久存储是从0到1的，这意味着这是一项全新的技术产品；一个已经解锁的新范例。这就是为什么 <a href="https://cryptotvplus.com/2022/11/meta-integrates-arweave-for-instagram-collectibles-storage/">Meta 等公司决定使用 Arweave</a> 来存储某些类型的，具有无限存储空间的数据需要，因为没有其他解决方案可以为它们提供真正的永久存储。</p>
+<h2 id="去中心化和不可变的-decentralised-and-immutable">去中心化和不可变的 (Decentralised and immutable)</h2>
+<p>Arweave is a decentralised network, which means that no central authority controls or owns the data on the network. The contracts that govern the dynamics between the network and its participants are in open-source code, making their integrity independently verifiable.</p>
+<p>Arweave 是一个去中心化的网络，这意味着没有中心化机构控制或拥有网络上的数据。管理网络及其参与者之间动态的合约采用开源代码，使其完整性可以独立验证。</p>
+<p>Because the network is permanent and decentralised, it means the data is immutable and its integrity is guaranteed.</p>
+<p>因为网络是永久的和去中心化的，这意味着数据是不可变的并且其完整性得到保证。</p>
+<p>One of the core challenges facing modern archiving is to ensure that digital objects remain unaltered while stored in an archive. When a physical object is tampered with it will often present obvious clues, but this is not so with digital objects that are by their nature designed to be easily edited or overwritten.</p>
+<p>现代存档面临的核心挑战之一，是确保数字对象在存储在档案中时保持不变。当一个物理对象被篡改时，它通常会提供明显的线索，但数字对象的情况并非如此，因为它们本质上被设计为易于编辑或覆盖。</p>
+<p>Arweave and Akord solves this problem out-the-box. On the Arweave blockchain, every upload will forever be recorded, and stored, unaltered. And in every digital vault in Akord you can easily view a complete immutable timeline of events, where every action in the vault (a file uploaded, moved, renamed, a folder created, a message sent, and so on) can be located and is timestamped on-chain.</p>
+<p>Arweave 和 Akord 开箱即用地解决了这个问题。在 Arweave 区块链上，每次上传都将被永久记录和存储，不会被更改。在 Akord 的每个数字保管库中，您都可以轻松查看完整的不可变事件时间表，其中可以找到保险库中的每个操作（文件上传、移动、重命名、创建文件夹、发送消息等）并且是链上时间戳。</p>
+<p>Anything in an Akord archive can be objectively proven and verified as being the original at any point in the future.</p>
+<p>Akord 存档中的任何内容都可以在未来的任何时候被客观地证明和验证为原件。</p>
+<h2 id="自主-self-sovereign">自主 (Self-sovereign)</h2>
+<p>When data is permanent, decentralised and immutable, it follows that it will be self-sovereign, or ‘user-owned’.</p>
+<p>当数据是永久的、去中心化的和不可变的时，随之而来的是它将是自我主权或“用户拥有的”。</p>
+<p>If you’re archiving data with Microsoft Azure or Amazon S3 Glacier, you are effectively renting access to that data.</p>
+<p>如果您使用 Microsoft Azure 或 Amazon S3 Glacier 存档数据，您实际上是在租用该数据的访问权限。</p>
+<p>If you stop paying, you don’t get access and your data will be deleted. Considering that it can take up to two years to plan and execute a data migration, many archives are essentially at the mercy of their data landlords.</p>
+<p>如果您停止付款，您将无法访问并且您的数据将被删除。考虑到计划和执行数据迁移可能需要长达两年的时间，许多档案基本上都受其数据地主的摆布。</p>
+<p>The web3 archive empowers businesses and organisations with ownership of the most valuable resource they possess – their data.</p>
+<p>web3 存档使企业和组织能够拥有他们拥有的最有价值的资源——他们的数据。</p>
+<p>True ownership is a fundamental pre-requisite to permanent or perpetual storage – if you don’t own your data in a very tangible way, then you will forever be at the mercy of myriad external factors that will be out of your control.</p>
+<p>真正的所有权是永久或永久存储的基本先决条件—如果您没有以非常有形的方式拥有您的数据，那么您将永远受制于无数您无法控制的外部因素。</p>
+<h2 id="安全-secure">安全 (Secure)</h2>
+<p>The web3 archive can be public or private. If you choose to encrypt all your data, then it can be secure in the areas that traditional cloud storage services, like Amazon S3 Glacier, Microsoft Azure and Google Cloud, are famously prone to attack.</p>
+<p>web3 存档可以是公共的也可以是私密的。如果您选择加密所有数据，那么在传统云存储服务（如 Amazon S3 Glacier、Microsoft Azure 和谷歌云）容易受到攻击的领域，数据可以是安全的。</p>
+<p>The encryption keys for these services are held on centralised databases vulnerable to being <a href="https://firewalltimes.com/amazon-web-services-data-breach-timeline/">hacked</a> or <a href="https://firewalltimes.com/microsoft-data-breach-timeline/">leaked</a> through human error, which often results in terrabytes of data and hundreds of thousands, or even millions, of user records being exposed.</p>
+<p>但如果这些服务的加密密钥保存在易受<a href="https://firewalltimes.com/amazon-web-services-data-breach-timeline/">黑客攻击</a>或 通过人为错误[泄露](https://firewalltimes. com/microsoft-data-breach-timeline/)，这通常会导致数 TB 的数据和数十万甚至数百万的用户记录被暴露。</p>
+<p>With Akord, our encryption is quantum resistant and end to end. Most importantly, you own the keys to that encryption. We can’t see your data, ever. There are no backdoors. This level of privacy hands you the control and ownership over your digital assets, eliminating the need to trust third parties to properly protect your data.</p>
+<p>使用 Akord，我们的加密是抗量子的并且是端到端的。最重要的是，您拥有该加密的密钥。我们永远看不到您的数据。没有后门。这种级别的隐私让您可以控制和拥有您的数字资产，无需信任第三方来妥善保护您的数据。</p>
+<p>Decentralised storage is also resistant to ransomware attacks by the very nature of its architecture. As data is spread across hundreds or even thousands of nodes across the globe, hackers would have to attack all nodes simultaneously in order to steal and hold data to ransom.</p>
+<p>去中心化存储还因其架构的本质而可以反勒索软件攻击。由于数据分布在全球数百甚至数千个节点上，黑客必须同时攻击所有节点才能窃取数据并勒索赎金。</p>
+<p>In <a href="https://assets.sophos.com/X24WTUEQ/at/k4qjqs73jk9256hffhqsmf/sophos-state-of-ransomware-2021-wp.pdf?cmp=120469">The State of Ransomware 2021</a> report by Sophos, 37% of respondents’ organizations were hit by ransomware that year, and of those over half said the cybercriminals were successful. The average bill for rectifying a ransomware attack, considering downtime, people time, device cost, network cost, lost opportunity, ransom paid etc was US$1.85 million.</p>
+<p>在 <a href="https://assets.sophos.com/X24WTUEQ/at/k4qjqs73jk9256hffhqsmf/sophos-state-of-ransomware-2021-wp.pdf?cmp=120469">2021 年勒索软件状况</a> Sophos 的报告中，37% 的受访者的组织在那一年受到了勒索软件的攻击，其中超过一半的人表示网络犯罪分子得逞了。考虑到停机时间、人员时间、设备成本、网络成本、失去的机会、支付的赎金等，纠正勒索软件攻击的平均费用为 185 万美元。</p>
+<p>Cloud services try to protect against ransomware through measures that further lock down the data and tighten access control, with the consequence that data becomes much less readily accessible.</p>
+<p>云服务试图通过进一步锁定数据和加强访问控制的措施来防止勒索软件，结果是数据变得更不容易访问。</p>
+<h2 id="可访问-accessible">可访问 (Accessible)</h2>
+<p>Archiving is a serious, meticulously undertaken process with a long history. But the idea around what is involved in this process is changing with the possibilities of digital technology and the interactivity that web2 has ushered in.</p>
+<p>存档是一个严肃、精心进行的过程，历史悠久。但是随着数字技术的可能性和 web2 引入的交互性，围绕这个过程所涉及的内容的想法正在发生变化。</p>
+<p>Archiving used to be characterised with a file-it-and-forget-it mentality. The focus and majority of work was centred on the initial archiving away of data. Physical archives have been passive and static, difficult to access due to a fixed geographic location.</p>
+<p>过去，存档的特点是“归档后就不管”的心态。重点和大部分工作都集中在数据的初始归档上。物理档案馆一直是被动和静态的，由于地理位置固定而难以访问。</p>
+<p>But digital archives don’t have these physical restrictions; they have collapsed space, requiring only an internet connection, in theory. Digital technology and user-friendly apps have opened up the idea that archives don’t necessarily need to be passive; they can be active, living and breathing tools, where their intrinsic value can be more readily accessed and used by many people, not just a few gatekeepers.</p>
+<p>但是数字档案馆没有这些物理限制；从理论上讲，他们已经坍塌了空间，只需要互联网连接。数字技术和用户友好的应用开辟了档案不一定需要被动的想法；它们可以是活跃的、有生命力的、会呼吸的工具，它们的内在价值可以更容易地被许多人获取和使用，而不仅仅是少数看门人。</p>
+<p>But web2 has failed to deliver on this potential. The big cloud services offer special archiving tiers for their storage, but this data can take up to 48 hours to retrieve and cost you money to do so.</p>
+<p>但是 web2 未能发挥这种潜力。大型云服务为其存储提供特殊的存档层，但这些数据可能需要长达 48 小时才能检索，而且这样做会花费你很多钱。</p>
+<p>These services are so complex to manage, that centralised cloud archiving has become the domain of IT departments or specialist contractors, locking out or creating huge barriers of entry for a company, organisation or public at large.</p>
+<p>这些服务管理起来非常复杂，以至于集中式云存档已成为 IT 部门或专业承包商的领域，将公司、组织或广大公众拒之门外或设置巨大的进入壁垒。</p>
+<h2 id="经济高效且可扩展-cost-efficient-and-scalable">经济高效且可扩展 (Cost-efficient and scalable)</h2>
+<p>Archives, ideally, last for a long time. A very long time. There are many areas of archiving where storing data “forever” is mission critical: social and cultural, media and entertainment, science and research, to name the obvious.</p>
+<p>理想情况下，档案可以保存很长时间。很长一段时间。在许多存档领域，“永久”存储数据是关键任务：社会和文化、媒体和娱乐、科学和研究，等等。</p>
+<p>With this long-term view in mind, it’s worth thinking about your archival solution’s cost over decades, not years.</p>
+<p>考虑到这一长远观点，值得考虑您的存档解决方案数十年而不是数年的成本。</p>
+<p>“Total cost of ownership”, or TCO, is a phrase used to define the lifetime cost of buying an asset. In the case of data storage, to define the TCO we need to know how long we want to store the data for. With cloud storage solutions, it is impossible to define the total cost of ownership if you pay monthly for storage, and have an indefinite retention period for that data. Also, as discussed previously, even if you did have a fixed period of time in mind, you would never truly own that data.</p>
+<p>“总拥有成本”或 TCO ，是用于定义购买资产的生命周期成本的短语。在数据存储的情况下，要定义 TCO，我们需要知道希望将数据存储多长时间。使用云存储解决方案，如果您按月支付存储费用，并且数据的保留期限不确定，则无法定义总拥有成本。此外，如前所述，即使您确实有一个固定的时间段，您也永远不会真正拥有该数据。</p>
+<p>With Akord and Arweave, TCO is effectively known on day 1. That’s because you pay upfront for storage and never again. And you control the data, not a centralised third party.</p>
+<p>借助 Akord 和 Arweave，TCO 在第一天就有效地为人所知。那是因为您预先支付了存储费用，以后再也不会了。并且您控制数据，而不是中心化的第三方。</p>
+<p>This means you pay what may feel like a premium to start your archive, but after a decade you've already started paying more with monthly payments on a traditional cloud service. That doesn't even take into consideration all the costs associated with managing that service and inevitable data migrations as services change terms and prices. After 20 years the difference is stark.</p>
+<p>这意味着您可能会为开始存档支付额外费用，但十年后您已经开始在传统云服务上每月支付更多费用。这甚至没有考虑到与管理该服务相关的所有成本，以及随着服务条款和价格的变化而不可避免的数据迁移。 20 年后，差别就很明显了。</p>
+<figure data-type="image" tabindex="4"><img src="https://cdn2.assets-servd.host/akord-web/production/50TB-over-20yr.svg" alt="50 TB over 20yr" loading="lazy"></figure>
+<p>不包括出口或合同管理成本。(Doesn’t include egress or contract management costs.)</p>
+<p>With a service like Microsoft Azure or Google Cloud, the cumulative cost of every GB of data stored never stops going up over time. And the more data you add to the archive, the more you compound the effect, spiralling the cost of your archive over the years.</p>
+<p>使用 Microsoft Azure 或 Google Cloud 等服务，存储每 GB 数据的累积成本永远不会随着时间的推移而停止上升。添加到存档中的数据越多，效果就越复杂，多年来存档的成本呈螺旋式上升。</p>
+<figure data-type="image" tabindex="5"><img src="https://cdn2.assets-servd.host/akord-web/production/Cumulative-Cost_Arweave-vs-Big-3.svg" alt="Cumulative Cost Arweave vs Big 3" loading="lazy"></figure>
+<p>不包括出口或合同管理成本。假设固定的相对定价。(Doesn’t include egress or contract management costs. Assumes fixed relative pricing.)</p>
+<p>This is why Akord is a truly scalable archiving solution, especially for organisations that are continually archiving more and more data. Many archives are funded through unpredictable sources – grants, public funding, private donations from patrons. You can't scale an archive when you're beholden to gatekeepers whose continued support cannot be counted on.</p>
+<p>这就是 Akord 是真正可扩展的存档解决方案的原因，特别是对于不断归档越来越多数据的组织而言。许多档案馆的资金来自不可预测的来源——赠款、公共资金、赞助人的私人捐赠。当您受制于无法指望持续支持的看门人时，您无法扩展档案。</p>
+<p>Without knowing the TCO for the data in an archive it’s difficult to scale an archive without potentially risking its very existence by arriving at some point in the future where the business or organisation can no longer afford its maintenance.</p>
+<p>在不知道存档中数据的 TCO 的情况下，很难在不冒着潜在风险的情况下扩展存档，因为在未来的某个时间点，企业或组织将无法再承担其维护费用。</p>
+<p>What's more, the Arweave protocol itself is designed to be scalable. As the Arweave team themselves explain:</p>
+<p>更重要的是，Arweave 协议本身被设计成可扩展的。正如 Arweave 团队自己解释的那样：</p>
+<p><em>The blockweave is… designed to enable scalable on-chain storage in a cost efficient manner for the first time. As the amount of data stored in the system increases, the amount of hashing needed for consensus decreases, thus reducing the cost to store data.</em></p>
+<p><em>Blockweave 旨在首次以经济高效的方式实现可扩展的链上存储。随着系统中存储的数据量增加，达成共识所需的哈希量减少，从而降低存储数据的成本。</em></p>
+<p>-<a href="https://arweave.medium.com/what-is-arweave-explain-like-im-five-425362144eb5">What is Arweave? Explain Like I’m Five</a>, Arweave Team</p>
+<p>Pay once, store forever. This is the only way an archive can confidently scale.</p>
+<p>一次支付，永久保存。这是档案可以自信地扩展的唯一方式。</p>
+<h2 id="协作和用户友好-collaborative-and-user-friendly">协作和用户友好 (Collaborative and user-friendly)</h2>
+<p>Akord’s vaults are beautifully designed, interactive and collaborative.</p>
+<p>Akord 的保管库设计精美、互动和协作。</p>
+<p>You can invite other team members and set access-level rights, send them messages and receive notifications informing you of activity in the vault.</p>
+<p>您可以邀请其他团队成员并设置访问级别权限，向他们发送消息并接收通知，告知您保管库中的活动。</p>
+<figure data-type="image" tabindex="6"><img src="https://optimise2.assets-servd.host/akord-web/production/Manage-access-UI.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1675084631&amp;s=f5b9be61f19ffbae48c69d6c1b1b950e" alt="" loading="lazy"></figure>
+<p>Managing the data in a vault can be handled through our Command Line Interface and developer tools, or through our web app. Akord, and specifically the web app, is designed to remove all the normal web3 barriers: you don’t need tokens or third party crypto wallets – create your Akord wallet on signup in a few clicks and pay for storage with your credit card. We work with organisations or businesses who are working with large amounts of data to buy storage on the network at a competitive price.</p>
+<p>可以通过我们的命令行界面和开发人员工具，或通过我们的网络应用，来管理保险库中的数据。 Akord，特别是网络应用，旨在消除所有一般性 web3 障碍：您不需要代币或第三方加密钱包——只需点击几下即可在注册时创建您的 Akord 钱包，并使用您的信用卡支付存储费用。我们与处理大量数据的组织或企业合作，以具有竞争力的价格购买网络存储。</p>
+<p>The Akord app works just as well on your mobile as it does on your desktop. We’ve focused on making the overall user experience feel intuitive and straightforward, taking the best of web2 app experiences and combining that with web3 technology under the hood.</p>
+<p>Akord 应用在您的手机上和在桌面上一样好用。我们专注于让所有用户体验感觉直观和直接，充分利用 web2 应用体验并将其与 web3 技术相结合。</p>
+<p>With the web3 archive anyone in your team, regardless of their technical skills, can easily access and contribute to the archive.</p>
+<p>使用 web3 存档，您团队中的任何人，无论他们的技术技能如何，都可以轻松访问存档并为存档做出贡献。</p>
+<p>Akord’s versatile media viewer is particularly powerful for public archives, where sharing and presenting digital objects in an accessible way to the public is a priority.</p>
+<p>Akord 的多功能媒体查看器对于公共档案馆特别强大，其中优先考虑以一种可访问的方式向公众共享和展示数字对象。</p>
+<p>Our media viewer supports many file and image formats as well as video and audio. You can switch between focusing on single image at a time or a gallery mode, zoom in on images and PDFs, flick through the pages of a PDF document, change between light and dark mode, and print directly from the media viewer.</p>
+<p>我们的媒体查看器支持多种文件和图像格式以及视频和音频。您可以在一次聚焦于单个图像或图库模式之间切换、放大图像和 PDF、轻拂 PDF 文档的页面、在明暗模式之间切换以及直接从媒体查看器打印。</p>
+<h2 id="支持最重要的档案-supporting-archives-that-matter-most">支持最重要的档案 (Supporting archives that matter most)</h2>
+<p>Archives no longer need to be hidden away. They can be accessed instantly by anyone in your organisation, or with anyone across the globe if that’s what you want.</p>
+<p>档案不再需要隐藏起来。您组织中的任何人都可以立即访问它们，如果您需要，也可以与全球任何人一起访问。</p>
+<p>We believe that a great archive needs a great experience. If your data is valuable enough to be stored forever, then you should do it the justice of being easily accessed and presented in the best possible light.</p>
+<p>我们相信，一个伟大的档案需要一个伟大的经验。如果您的数据足够有价值，可以永久存储，那么您应该以易于访问和以最佳方式呈现它。</p>
+<p>The tools we have are just the beginning. We’re constantly working on improving the Akord experience, and we have exciting new features in our roadmap for 2023 to further elevate your web3 archives.</p>
+<p>我们拥有的工具仅仅是个开始。我们一直致力于改善 Akord 体验，我们在 2023 年的路线图中拥有令人兴奋的新功能，以进一步提升您的 web3 档案。</p>
+<p>If you’re archiving data that is valuable for the social good, preserving what matters most to humanity, then you may be eligible for specialist support and even storage grants for you project. <a href="mailto:pascal@akord.com">Please reach out</a> and let me know more about your work.</p>
+<p>如果您要归档对社会有益的数据，保存对人类最重要的数据，那么您可能有资格获得专家支持，甚至为您的项目提供存储补助。 <a href="mailto:pascal@akord.com">请联系</a> 我们让我们知道更多关于你的工作。</p>
 ]]></content>
     </entry>
     <entry>
@@ -836,300 +986,6 @@ Lee Mount，前交易员（MS 和 Citadel），加入 EulerSwap 并积极为 Eul
 </ul>
 <p>It’s been a great pleasure for the Euler Labs team to operate in such a dynamic environment and interact with so many unique people. From our family to yours, Happy Holidays and Happy New Year! We’ll see you all in 2023!</p>
 <p>Euler Labs 团队非常高兴能够在这样一个充满活力的环境中运作并与这么多独特的人互动。从我们的家人到你的家人，节日快乐，新年快乐！我们2023年见！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fuel内幕-2022年11月 (Inside Fuel-November 2022)]]></title>
-        <id>https://chainguys.github.io/post/fuel-nei-mu-2022-nian-11-yue-inside-fuel-november-2022/</id>
-        <link href="https://chainguys.github.io/post/fuel-nei-mu-2022-nian-11-yue-inside-fuel-november-2022/">
-        </link>
-        <updated>2022-12-19T01:45:24.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2022/12/InsideFuelNovember2022-1.png" alt="Inside Fuel — November 2022" loading="lazy"></figure>
-<p>The latest news from the fastest modular execution layer.<br>
-来自最快模块化执行层的最新消息。</p>
-<p>Welcome to <strong><strong>Inside Fuel</strong></strong>, our review of technical developments and everything happening on the Fuel Network. Take a moment to catch up on all the latest news.</p>
-<p>欢迎来到 <strong><strong>Inside Fuel</strong></strong>，这是我们对技术发展和 Fuel 网络上发生的一切的回顾。欢迎拨冗了解所有最新消息。</p>
-<h2 id="新入职员工-newest-additions-to-fuel">🆕 新入职员工 (Newest Additions To Fuel)</h2>
-<p>Building the fastest modular execution layer would not be possible without an incredible contributor team.  Here are the newest additions to the team this month:</p>
-<p>没有令人难以置信的贡献者团队，构建最快的模块化执行层是不可能的。以下是本月团队的最新成员：</p>
-<figure data-type="image" tabindex="2"><img src="https://fuel-labs.ghost.io/content/images/2022/12/November.png" alt="" loading="lazy"></figure>
-<h2 id="媒体曝光-in-the-news">📰 媒体曝光 (In The News)</h2>
-<figure data-type="image" tabindex="3"><img src="https://fuel-labs.ghost.io/content/images/2022/06/image.png" alt="" loading="lazy"></figure>
-<p>According to the <strong>Rust In Blockchain</strong> <a href="https://rustinblockchain.org/newsletters/rib-newsletter-42/">monthly review</a>, Fuel is one of the most active Rust-based projects this November with 247 merged PRs, 165 closed issues, and 137 open issues.  We are ranked fourth right behind Parity, Sui, and Solana.</p>
-<p>根据<strong>Rust In Blockchain</strong> <a href="https://rustinblockchain.org/newsletters/rib-newsletter-42/">月度评论</a>，Fuel 是今年 11 月最活跃的基于 Rust 的项目之一，有 247 个合并的 PR 、165 个已关闭问题和 137 个未解决问题。我们排名第四，仅次于 Parity、Sui 和 Solana。</p>
-<h2 id="️-播客和-ama-podcasts-amas">🎙️ 播客和 AMA (Podcasts &amp; AMAs)</h2>
-<p>Nick Dodson took part in the <strong>Devs Do Something</strong> podcast to talk about <strong>Sway</strong> and the <strong>FuelVM</strong>.</p>
-<p>Nick Dodson 参加了<strong>Devs Do Something</strong> 播客，谈论<strong>Sway</strong> 和<strong>FuelVM</strong>。</p>
-<p><a href="https://open.spotify.com/episode/1TAqzRiS6U8hqgKV4UQU2o?go=1&amp;sp_cid=d265dab2-66ee-4408-851f-6ba600f7c51d&amp;utm_source=embed_player_p&amp;utm_medium=desktop">点击查看</a></p>
-<p>He also joined <strong><a href="https://blockchain.capital/">Blockchain Capital</a></strong> with John Adler to explain <strong>Fuel</strong>'s vision of scaling <strong>Ethereum</strong> with the power of the fastest modular execution layer.</p>
-<p>他还与 John Adler 一起加入了 <strong><a href="https://blockchain.capital/">Blockchain Capital</a></strong>，解释了<strong>Fuel</strong> 以最快模块化执行层的力量扩展<strong>以太坊</strong>的愿景.</p>
-<p><a href="https://www.youtube.com/watch?v=eQbbHrUqcC8">点击查看</a></p>
-<p>Cami Ramos joined the <strong>Espacio Crypto</strong> podcast (in Spanish) to talk about her experience in growing the <strong>Fuel</strong> developer community.</p>
-<p>Cami Ramos 加入了 <strong>Espacio Crypto</strong> 播客(西班牙语)，讲述了她在发展 <strong>Fuel</strong> 开发者社区方面的经验。</p>
-<p><a href="https://open.spotify.com/episode/0JYExBSRpao9zcXiOzkoFN?go=1&amp;sp_cid=d265dab2-66ee-4408-851f-6ba600f7c51d&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1">点击查看</a></p>
-<h2 id="sway-日-swayday">🌴 Sway 日 (SwayDay)</h2>
-<p>We hosted the second episode of <strong>Sway Day</strong>, a monthly discussion about all-things Sway. This time, the main topic was <strong><code>Predicates - Why and how you should use them</code></strong>. where we had the chance to have the founders of one of our granted projects, <a href="https://poolshark.fi/">Poolshark</a>, a DEX with a Price-Time-Priority feature, building on Fuel.</p>
-<p>我们主持了 <strong>Sway日</strong> 的第二集，这是一个关于所有 Sway 的月度讨论。这一次的主题是**<code>谓词 - 为什么以及如何使用它们</code>**。在那里，我们有机会拥有我们的一个授权项目 <a href="https://poolshark.fi/">Poolshark</a> 的创始人，这是一个基于 Fuel 的，具有价格-时间优先功能的去中心化交易所。</p>
-<p>Read the <strong>TL;DR</strong> and listen to the replay here 👇:</p>
-<p>阅读 <strong>省流助手</strong> 并在此处收听重播👇：</p>
-<blockquote>
-<p>Missed the second episode of Sway Day featuring <a href="https://twitter.com/poolsharks_labs?ref_src=twsrc%5Etfw">@poolsharks_labs</a>?</p>
-<p>We got you covered.</p>
-<p>Here are some of the highlights 👇 🧵 <a href="https://t.co/Opd1TUA2Dr">https://t.co/Opd1TUA2Dr</a></p>
-<p>— Sway (@SwayLang) <a href="https://twitter.com/SwayLang/status/1599811440348520453?ref_src=twsrc%5Etfw">December 5, 2022</a></p>
-</blockquote>
-<blockquote>
-<p>错过了 <a href="https://twitter.com/poolsharks_labs?ref_src=twsrc%5Etfw">@poolsharks_labs</a> 的第二集 Sway 日？</p>
-<p>我们为您提供保障。</p>
-<p>以下是一些亮点 👇    <a href="https://t.co/Opd1TUA2Dr">https://t.co/Opd1TUA2Dr</a></p>
-<p>— Sway (@SwayLang) <a href="https://twitter.com/SwayLang/status/1599811440348520453?ref_src=twsrc%5Etfw">2022 年 12 月 5 日</a></p>
-</blockquote>
-<h2 id="公开露面-public-appearances">公开露面 (Public Appearances)</h2>
-<h3 id="以太坊基金会-ethsf">🌉 以太坊基金会 (EthSF)</h3>
-<p>We attended and sponsored the first edition of EthSF in the Bay area, a 3 day-long hackathon during which hackers teamed up to build DApps this November. Read more about the winning projects <strong><a href="https://fuel-labs.ghost.io/ethsf22-recap/">here</a></strong>.</p>
-<p>我们参加并赞助了在湾区举行的第一届 EthSF，这是一个为期 3 天的黑客马拉松，黑客们在今年 11 月联手构建 DApp。阅读有关获奖项目的更多信息 <strong><a href="https://fuel-labs.ghost.io/ethsf22-recap/">点击此处</a></strong>。</p>
-<figure data-type="image" tabindex="4"><img src="https://fuel-labs.ghost.io/content/images/2022/12/image-4.png" alt="" loading="lazy"></figure>
-<hr>
-<h2 id="技术更新-technical-updates"><strong>💻  技术更新 (Technical Updates)</strong></h2>
-<h2 id="fuelup">Fuelup</h2>
-<h4 id="fuelup是什么-what-is-fuelup">Fuelup是什么 (What is Fuelup?)</h4>
-<blockquote>
-<p><a href="https://github.com/FuelLabs/fuelup#installation">Fuelup</a> is the official package manager and multiplexer for <a href="https://fuel.network/">Fuel</a> that installs <strong>The Fuel Toolchain</strong> from the official release channels. It enables you to easily install pre-packaged toolchains, keep them up to date or even create custom toolchains and switch between them.</p>
-<p><a href="https://github.com/FuelLabs/fuelup#installation">Fuelup</a> 是 <a href="https://fuel.network/">Fuel</a> 的官方包管理器和复用器，它从官方发布渠道安装<strong>Fuel工具链 (The Fuel Toolchain)</strong>。它使您能够轻松安装预打包的工具链，使其保持最新状态，甚至创建自定义工具链并在它们之间切换。</p>
-<p>Binaries are executed through Fuelup as proxies which allow for flexibility in the execution of tools.</p>
-<p>二进制文件通过 Fuelup 作为代理执行，使得工具的执行变得灵活。</p>
-</blockquote>
-<p>It simplifies building and maintaining Sway applications with <a href="https://github.com/FuelLabs/sway/tree/master/forc">forc</a> and <a href="https://github.com/FuelLabs/fuel-core">fuel-core</a> for common platforms.</p>
-<blockquote>
-<p>它为一般平台使用 <a href="https://github.com/FuelLabs/sway/tree/master/forc">forc</a> 和 <a href="https://github.com/FuelLabs/fuel-core">fuel-core</a> 简化了 Sway 应用的构建和维护。</p>
-</blockquote>
-<ul>
-<li>
-<p>Introduction of testnet-specific toolchains: <code>beta-1</code> and <code>beta-2</code> toolchains. Installable through <code>fuelup toolchain install beta-2</code> for example;</p>
-</li>
-<li>
-<p><code>forc-doc</code> and <code>fuel-indexer</code> are now packaged in a default toolchain;</p>
-</li>
-<li>
-<p><code>fuelup</code> has completions thanks to an external contributor <a href="https://github.com/0xYYY">@0xYYY</a>;</p>
-</li>
-<li>
-<p><code>fuelup update</code> can be used as a shorthand for <code>fuelup toolchain install latest|nightly</code>;</p>
-</li>
-<li>
-<p>引入特定测试网的工具链：<code>beta-1</code> 和 <code>beta-2</code> 工具链。例如，可通过<code>fuelup toolchain install beta-2</code> 安装；</p>
-</li>
-<li>
-<p><code>forc-doc</code> 和 <code>fuel-indexer</code> 现在打包在默认工具链中；</p>
-</li>
-<li>
-<p>感谢外部贡献者 <a href="https://github.com/0xYYY">@0xYYY</a>，<code>fuelup</code> 已经完成；</p>
-</li>
-<li>
-<p><code>fuelup update</code> 可以用作<code>fuelup toolchain install latest|nightly</code> 的简写；</p>
-</li>
-</ul>
-<h2 id="sway库-sway-libraries">Sway库 (Sway Libraries)</h2>
-<h4 id="the-sway-libraries-repository"><a href="https://github.com/FuelLabs/sway-libs">The Sway Libraries Repository</a></h4>
-<blockquote>
-<p>The purpose of this repository is to contain libraries which users can import and use that are not part of the standard library.</p>
-<p>此存储库的目的是包含用户可以导入和使用的不属于标准库的库。</p>
-<p>These libraries contain helper functions, generalized standards, and other tools valuable to blockchain development.</p>
-<p>这些库包含辅助函数、通用标准和其他对区块链开发有价值的工具。</p>
-<p>⚠️ Note: Sway is a language under heavy development therefore the libraries may not be the most ergonomic. Over time they should receive updates/improvements in order to demonstrate how Sway can be used in real use cases.</p>
-<p>⚠️ 注意：Sway 是一种正在大力开发的语言，因此库可能不是最符合人体工程学的。随着时间的推移，他们应该会收到更新/改进，以演示如何在实际用例中使用 Sway。</p>
-</blockquote>
-<p>So far, the following libraries are available to use:<br>
-到目前为止，可以使用以下库：</p>
-<ul>
-<li><a href="https://github.com/FuelLabs/sway-libs/blob/master/sway_libs/src/merkle_proof">Binary Merkle Proof</a> is used to verify Binary Merkle Trees computed off-chain.<br>
-<a href="https://github.com/FuelLabs/sway-libs/blob/master/sway_libs/src/merkle_proof">Binary Merkle Proof</a> 用于验证链下计算的二进制默克尔树。</li>
-<li><a href="https://github.com/FuelLabs/sway-libs/blob/master/sway_libs/src/nft">Non-Fungible Token (NFT)</a> is a token library which provides unqiue collectibles, identified and differentiated by token IDs.<br>
-<a href="https://github.com/FuelLabs/sway-libs/blob/master/sway_libs/src/nft">Non-Fungible Token (NFT)</a> 是一个提供独特收藏品的代币库，通过代币 ID 识别和区分.</li>
-<li><a href="https://github.com/FuelLabs/sway-libs/blob/master/sway_libs/src/string">String</a> is an interface to implement dynamic length strings that are UTF-8 encoded.<br>
-<a href="https://github.com/FuelLabs/sway-libs/blob/master/sway_libs/src/string">String</a> 是实现 UTF-8 编码的动态长度字符串的接口。</li>
-<li><a href="https://github.com/FuelLabs/sway-libs/blob/master/sway_libs/src/signed_integers">Signed Integers</a> is an interface to implement signed integers.<br>
-<a href="https://github.com/FuelLabs/sway-libs/blob/master/sway_libs/src/signed_integers">Signed Integers</a> 是一个实现有符号整数的接口。</li>
-<li><a href="https://github.com/FuelLabs/sway-libs/blob/master/sway_libs/src/fixed_point/ufp/ufp64">Unsigned Fixed Point 64 bit</a> is an interface to implement fixed-point 64 bit numbers.<br>
-<a href="https://github.com/FuelLabs/sway-libs/blob/master/sway_libs/src/fixed_point/ufp/ufp64">Unsigned Fixed Point 64 bit</a> 是实现定点 64 位数字的接口。</li>
-</ul>
-<h2 id="sway-applications">Sway Applications</h2>
-<h4 id="the-sway-applications-repository"><a href="https://github.com/FuelLabs/sway-applications">The Sway Applications Repository</a></h4>
-<blockquote>
-<p>The purpose of the Sway Applications repository is to demonstrate what can be built with Sway and to promote good development practices.</p>
-<p>Sway 应用存储库的目的是演示可以使用 Sway 构建的内容并促进良好的开发实践。</p>
-<p>That being said, the repository should be deemed as a living project since the applications will be actively maintained, and thus it is likely that none of them will ever reach their final form!</p>
-<p>所以，存储库应该被视为一个活跃的项目，因为应用将得到积极维护，因此它们很可能永远不会达到最终形式！</p>
-<p>The repository is young so there isn't anything for anyone to use yet, however, we have lots of applications in development, and lots more planned to be worked on in the near future.</p>
-<p>这个存储库还很年轻，所以还没有任何人可以使用，但是，我们有很多应用正在开发中，并且计划在不久的将来进行更多的工作。</p>
-<p>So far, the applications are planned to have a smart contract to demonstrate Sway, tests written in Rust to demonstrate the Rust-SDK, and a user interface to demonstrate the use of the Typescript-SDK.</p>
-<p>到目前为止，应用计划有一个智能合约来演示 Sway，用 Rust 编写的测试来演示 Rust-SDK，以及一个用户界面来演示 Typescript-SDK 的使用。</p>
-<p>This part presents the applications that have gone through some level of scrutiny and have been deemed acceptable to be merged into the master branch.</p>
-<p>这部分介绍了经过一定程度审查并被认为可以合并到主分支中的应用。</p>
-<p>NOTE<br>
-注意</p>
-<p>This does not mean that they are complete nor that development has ceased.</p>
-<p>这并不意味着它们已经完成，也不意味着开发已经停止。</p>
-</blockquote>
-<ul>
-<li>
-<p>New <strong>English Auction application</strong>. The auction allows sellers to put up assets that they would like to sell based on an initial price and a reserve price. Users bid until the reserve price is met or the time expires;<br>
-新的<strong>英语拍卖应用</strong>。拍卖允许卖家根据初始价格和底价出售他们想要出售的资产。用户竞价直至达到底价或直到时间结束；</p>
-</li>
-<li>
-<p>New <strong>Name Registry</strong> application which allows users to own a human-readable name that can be used to transfer assets. This means that a user does not have to use the <code>hex</code> format of random characters; instead, they can use a memorable word/name to transfer;<br>
-新的<strong>名称注册</strong>应用允许用户拥有可用于转移资产的人类可读名称。这意味着用户不必使用随机字符的 <code>hex</code> 格式；相反，他们可以使用一个好记的词/名字来转移；</p>
-</li>
-<li>
-<p>New <strong>Over-The-Counter (OTC)</strong> Swap Predicate application demonstrates a proof-of-concept whereby coins to be swapped are locked behind predicates. Anyone can spend these coins, as long as their transaction sends a certain quantity of coins back to a provided address - thereby completing a stateless atomic swap between two parties.<br>
-新的<strong>场外交易 (OTC)</strong> Swap Predicate 应用演示了一个概念验证，其中要交换的代币被锁定在谓词后面。任何人都可以花费这些代币，只要他们的交易将一定数量的硬币发送回提供的地址——从而完成两方之间的无状态原子交换。</p>
-</li>
-</ul>
-<blockquote>
-<p><em><strong>Note:</strong></em> This minimal example could serve as the basis for an entire order book exchange, where orders are circulated off-chain, and settled solely through the funding and spending of predicates. This design would be orders of magnitude more performant than a storage-backed smart contract implementation.</p>
-<p><em><strong>注意：</strong></em> 这个最小的例子可以作为整个订单簿交换的基础，其中订单在链下流通，并仅通过谓词的资金和支出来结算。这种设计的性能将比存储支持的智能合约实现高出几个数量级。</p>
-</blockquote>
-<ul>
-<li>New <strong>Automated Market Maker (AMM)</strong> application. It allows users to swap assets via liquidity pools;<br>
-新的<strong>自动做市商 (AMM)</strong> 应用。它允许用户通过流动性池交换资产；</li>
-</ul>
-<h2 id="sway">Sway</h2>
-<h4 id="sway是什么-what-is-sway">Sway是什么 (What is Sway?)</h4>
-<blockquote>
-<p>Sway is a language for writing smart contracts for the <a href="https://github.com/FuelLabs/fuel-specs">Fuel Virtual Machine (FuelVM)</a>, a blazing-fast, blockchain-optimized VM designed for the Fuel blockchain. It is heavily inspired by Rust and aims to bring modern language development and performance to the blockchain ecosystem. Start learning the <a href="https://twitter.com/SwayLang">Sway language</a> today with the <a href="https://fuellabs.github.io/sway/latest/">Sway Book</a> and the <a href="https://www.youtube.com/watch?v=GKNuaFcPaXc">FuelVM Bootcamp</a>.</p>
-<p>Sway 是一种用于为 <a href="https://github.com/FuelLabs/fuel-specs">Fuel 虚拟机 (FuelVM)</a> 编写智能合约的语言，这是一种专为 Fuel 区块链设计的超快、区块链优化的虚拟机。它深受 Rust 的启发，旨在为区块链生态系统带来现代语言开发和性能。立即通过 <a href="https://fuellabs.github.io/sway/latest/">Sway Book</a> 和 [FuelVM Bootcamp](https: //www.youtube.com/watch?v=GKNuaFcPaXc) 来学习吧！</p>
-</blockquote>
-<h3 id="一般更新-general-updates">一般更新 (General Updates)</h3>
-<ul>
-<li>New intrinsic functions for operating on <code>raw_ptrs</code>;<br>
-用于操作 <code>raw_ptrs</code> 的新内置函数；</li>
-<li>Bug fix to address dead and incorrectly typed blocks into IR, triggering a verification failure;<br>
-错误修复以解决 IR 中死块和错误键入的块，从而触发验证失败；</li>
-<li>Disallow assigning to initialized registers in <code>asm</code> blocks;<br>
-不允许分配给 <code>asm</code> 块中的初始化注册器；</li>
-<li>Disallow control flow opcodes in <code>asm</code> blocks;<br>
-禁止在 <code>asm</code> 块中使用控制流操作码；</li>
-<li>Bug fix for a <code>**Cannot infer type**</code> error regarding call site span;<br>
-针对与调用站点跨度有关的<code>**无法推断类型**</code>错误的错误修复；</li>
-<li>Bug fixes for errors regarding generic types;<br>
-修复了关于泛型类型的错误；</li>
-<li>Allow returning <code>raw_ptr</code> from scripts;<br>
-允许从脚本中返回 <code>raw_ptr</code>；</li>
-<li>New <strong>Checks-Effects-Interactions</strong> pattern static analysis feature;<br>
-新的<strong>检查-效果-交互</strong>模式静态分析功能；</li>
-<li>Bug fix to control flow graph node uniqueness to prevent erroneous <strong><code>never used</code></strong> errors;<br>
-Bug修复-控制流图节点的唯一性以防止错误的**<code>从未使用过</code>**错误；</li>
-<li>New compiler error when using private methods of the library;<br>
-使用库的私有方法时出现新的编译器错误；</li>
-<li>New array out-of-bounds analysis at compile time;<br>
-编译时新增数组越界分析；</li>
-<li>More opcodes to <code>check_invalid_opcodes</code> for predicates;<br>
-谓词的 <code>check_invalid_opcodes</code> 更多操作码；</li>
-<li>Improve warnings on unnecessary storage annotations;<br>
-改进对不必要的存储注释的警告；</li>
-<li>Fix error message for arity mismatch on method calls;<br>
-修复方法调用中元数不匹配的错误消息；</li>
-<li>Disallows <code>while</code> loops in predicates;<br>
-不允许在谓词中使用 while 循环；</li>
-<li>New support for <strong>mutable arrays</strong>;<br>
-新支持<strong>可变数组</strong>；</li>
-</ul>
-<h3 id="标准库更新-standard-library-updates">标准库更新 (Standard Library Updates)</h3>
-<ul>
-<li>New <code>as_u128</code> method for to <code>U256</code>;<br>
-新的 <code>as_u128</code> 方法用于 <code>U256</code>；</li>
-<li>New generic trait <code>From&lt;T&gt;</code>;<br>
-新的通用特征<code>From&lt;T&gt;</code>；</li>
-<li>Updates and rework to the <code>raw_ptr</code> library with breaking changes;<br>
-对 <code>raw_ptr</code> 库进行更新和返工，并进行重大更改；</li>
-<li>Updates and rework to the <code>alloc</code> library with breaking changes;<br>
-对 <code>alloc</code> 库进行更新和返工，并进行重大更改；</li>
-<li>General rework and reformat of the standard library;<br>
-标准库的一般返工和重新格式化</li>
-<li>Small optimizations to <code>U128</code> and <code>U256</code>;<br>
-对 <code>U128</code> 和 <code>U256</code> 的小优化；</li>
-</ul>
-<h3 id="工具更新-tooling-updates">工具更新 (Tooling Updates)</h3>
-<ul>
-<li>Removal of the <code>forc-explore</code> plugin;<br>
-删除了<code>forc-explore</code>插件；</li>
-<li>New workspace building feature;<br>
-新的工作区建设功能；</li>
-<li>Add <code>**[workspace]**</code> table to workspace manifest files;<br>
-将 <code>**[workspace]**</code> 表添加到工作区清单文件；</li>
-<li>Provide a way to detect the type of manifest files and general refactor for workspace builds;<br>
-提供一种方法来检测清单文件的类型和工作区构建的一般重构；</li>
-<li>Output <code>**manifest**</code> file parsing errors/warnings for workspace members;<br>
-为工作区成员输出<code>**清单**</code>文件解析错误/警告；</li>
-<li>Introduction of <strong>Sway</strong> <strong>Unit Tests</strong>;<br>
-引入<strong>Sway</strong> <strong>单元测试</strong>；</li>
-<li>New feature to show <code>fn</code> signature and type info, visibility, and mutability on hover requests;<br>
-在悬停请求上显示<code>fn</code> 签名和类型信息、可见性和可变性的新功能；</li>
-</ul>
-<h2 id="fuel核心-fuel-core">Fuel核心 (Fuel Core)</h2>
-<ul>
-<li>Moved block timestamps to <code>TAI64</code> in compliance with the specs;<br>
-将块时间戳移至符合规范的<code>TAI64</code>；</li>
-<li>GraphQL Subscriptions via SSE for transaction status updates;<br>
-通过 SSE 进行 GraphQL 订阅以获取交易状态更新；</li>
-<li>Upgrade to <a href="https://crates.io/crates/cynic/2.2.0">Cynic 2.2</a>;<br>
-升级到 <a href="https://crates.io/crates/cynic/2.2.0">Cynic 2.2</a>；</li>
-<li>Prometheus metrics for transaction pool &amp; p2p;<br>
-交易池和 p2p 的 Prometheus 指标；</li>
-<li>Fix for block pagination in GraphQL API;<br>
-修复了 GraphQL API 中的块分页；</li>
-<li>VM fixes for <a href="https://github.com/FuelLabs/fuel-specs/blob/master/src/vm/instruction_set.md#mroo-math-root"><strong>MROO</strong></a> &amp; <a href="https://github.com/FuelLabs/fuel-specs/blob/master/src/vm/instruction_set.md#lb-load-byte"><strong>LB</strong></a>;</li>
-</ul>
-<p><a href="https://github.com/FuelLabs/fuel-specs/blob/master/src/vm/instruction_set.md#mroo-math-root"><strong>MROO</strong></a>&amp;<a href="https://github.com/FuelLabs/fuel-specs/blob/master/src/vm/instruction_set.md#lb-load-byte"><strong>LB</strong></a> 的虚拟机修复</p>
-<h2 id="sdkfuel-ts-和-fuel-rs-sdks-fuel-ts-fuel-rs">SDK(Fuel-TS 和 Fuel-RS)-SDKs (Fuel-TS &amp; Fuel-RS)</h2>
-<ul>
-<li>Better debugability through parsed readable revert errors;<br>
-通过解析可读的恢复错误来提高可调试性；</li>
-<li>Predicate data encoder;<br>
-谓词数据编码器；</li>
-<li>Block time manipulation, useful for testing;<br>
-块时间操作，对测试有用；</li>
-<li>Support for script arguments;<br>
-支持脚本参数；</li>
-<li>Transaction fee payment using bridged assets (e.g. ETH);<br>
-使用跨链资产(例如 ETH)支付交易费用；</li>
-<li>Support for parsed logs in scripts;<br>
-支持在脚本中解析日志；</li>
-<li>Contract call dependencies estimation and auto-setup: automatically sets up your contract input set and variable outputs;<br>
-合约调用依赖估计和自动设置：自动设置你的合约输入集和变量输出；</li>
-<li>New support for <strong>EVM</strong> addresses;<br>
-新支持<strong>EVM</strong> 地址；</li>
-<li>New Fuel TypeScript SDK documentation;<br>
-新的 Fuel TypeScript SDK 文档；</li>
-<li>Rust SDK (Fuel-RS) only: Support for running contract calls in async environments (e.g. passing a contract instance to a thread);<br>
-仅限 Rust SDK (Fuel-RS)：支持在异步环境中运行合约调用(例如，将合约实例传递给线程)；</li>
-</ul>
-<hr>
-<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
-<ul>
-<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
-<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
-<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
-<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
-</ul>
-<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
-<p><a href="https://www.fuel.network/">Fuel</a> is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
-<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制**。</p>
-<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
-<ul>
-<li>
-<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
-<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
-</li>
-<li>
-<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
-<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
-</li>
-<li>
-<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
-<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
-</li>
-</ul>
 ]]></content>
     </entry>
 </feed>
