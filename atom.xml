@@ -1,0 +1,1624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://chainguys.github.io</id>
+    <title>Chainguys&apos;Blog</title>
+    <updated>2023-03-22T14:38:56.056Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://chainguys.github.io"/>
+    <link rel="self" href="https://chainguys.github.io/atom.xml"/>
+    <subtitle>A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议</subtitle>
+    <logo>https://chainguys.github.io/images/avatar.png</logo>
+    <icon>https://chainguys.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Fuel内幕：23-23年的冬天 (Inside Fuel：Winter 22-23）]]></title>
+        <id>https://chainguys.github.io/post/fuel-nei-mu-23-23-nian-de-dong-tian-inside-fuelwinter-22-23/</id>
+        <link href="https://chainguys.github.io/post/fuel-nei-mu-23-23-nian-de-dong-tian-inside-fuelwinter-22-23/">
+        </link>
+        <updated>2023-02-20T14:27:29.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2023/02/Inside-Fuel-Winter-1.png" alt="" loading="lazy"></figure>
+<p>The latest news from the fastest modular execution layer.</p>
+<p>最快的模块化设计层的最新消息！</p>
+<hr>
+<p>Welcome to <strong><strong><strong><strong>Inside Fuel</strong></strong></strong></strong>, our review of technical developments and everything happening on the Fuel Network. Take a moment to catch up on all the latest news.<br>
+欢迎来到  Fuel内幕，我们对技术发展以及 Fuel 网络上发生的一切进行回顾。欢迎拨冗了解所有最新消息。</p>
+<h2 id="fuel新成员-newest-additions-to-fuel">🆕 Fuel新成员 (Newest Additions To Fuel)</h2>
+<p>Building the fastest modular execution layer would not be possible without an incredible contributor team. Here are the newest additions to the team this month:</p>
+<p>没有令人难以置信的贡献者团队，构建最快的模块化执行层是不可能的。以下是本月团队的最新成员：<br>
+<img src="https://fuel-labs.ghost.io/content/images/2023/02/Winter-2023-1.png" alt="" loading="lazy"></p>
+<h2 id="新闻-in-the-news">📰 新闻 (In The News)</h2>
+<figure data-type="image" tabindex="2"><img src="https://fuel-labs.ghost.io/content/images/2022/06/image.png" alt="" loading="lazy"></figure>
+<p>According to the <strong><strong>Rust In Blockchain</strong></strong> <a href="https://rustinblockchain.org/newsletters/rib-newsletter-44/?ref=fuel-labs.ghost.io">monthly review</a>, Fuel is one of the most active Rust-based projects this Winter with <a href="https://github.com/FuelLabs?ref=fuel-labs.ghost.io">Fuel</a>: 548 merged PRs, 406 closed issues, and 256 open issues between December 2022 and January 2023, ranking us in the Top 5 of the most active Rust-based blockchains.</p>
+<p>根据 <strong>Rust In Blockchain</strong> <a href="https://rustinblockchain.org/newsletters/rib-newsletter-44/?ref=fuel-labs.ghost.io">月度回顾</a>，Fuel是今年冬天最活跃的基于Rust的项目之一。在2022年12月至2023年1月期间，<a href="https://github.com/FuelLabs?ref=fuel-labs.ghost.io">Fuel</a> 有548个合并的PR，406个关闭的问题，以及256个开放的问题，我们在最活跃的基于Rust的区块链中排名前五。</p>
+<h2 id="️-博客和ama-podcasts-amas">🎙️ 博客和AMA (Podcasts &amp; AMAs)</h2>
+<p><a href="https://twitter.com/jadler0?ref=fuel-labs.ghost.io">John Adler</a> took part in the <a href="https://www.bankless.com/?ref=fuel-labs.ghost.io"><strong>Bankless</strong></a> Podcast to explain why and how modular blockchains will set the path for the autonomous future.</p>
+<p><a href="https://twitter.com/jadler0?ref=fuel-labs.ghost.io">John Adler</a> 参加了 <a href="https://www.bankless.com/?ref=fuel-labs.ghost.io"><strong>Bankless</strong></a> 播客，解释模块化区块链是什么以及如何为自主未来铺平道路。</p>
+<figure data-type="image" tabindex="3"><a href="https://youtu.be/ZFbmmWV4kjQ"><img src="" alt="Click to see video 点击查看视频" loading="lazy"></a></figure>
+<p>He also joined the <a href="https://open.spotify.com/show/0rGocvZ7oZR6vuy0UHKAON?si=a980953b546743b9&amp;ref=fuel-labs.ghost.io"><strong>OxResearch</strong></a> podcast to explain how Fuel differentiates itself from other rollups.</p>
+<p>他还加入了 <a href="https://open.spotify.com/show/0rGocvZ7oZR6vuy0UHKAON?si=a980953b546743b9&amp;ref=fuel-labs.ghost.io"><strong>OxResearch</strong></a> 播客，解释 Fuel 如何与其他汇总区分开来。</p>
+<figure data-type="image" tabindex="4"><a href="https://youtu.be/nSMK4jgobNE"><img src="" alt="Click to see video 点击查看视频" loading="lazy"></a></figure>
+<h2 id="sway日-sway-day">🌴 Sway日 (Sway Day)</h2>
+<p>We hosted the third episode of <strong>Sway Day</strong>, a monthly discussion about all things Sway. This time, we went over all the 2022 development accomplishments and set 2023 expectations with John Adler.</p>
+<p>我们主持了<strong>Sway日</strong>的第三部，这是一个关于Sway所有事情的月度讨论。这一次，我们回顾了2022年的所有发展成就，并与John Adler一起设定了2023年的期望。</p>
+<p>At the end of 2022, you can remember that:<br>
+在2022年年底，你可以记住。</p>
+<ul>
+<li>
+<p>3,168 issues have been filled since the beginning of Sway.<br>
+自Sway开始以来，已经覆盖了3168个问题。</p>
+</li>
+<li>
+<p>The <a href="https://github.com/FuelLabs/sway?ref=fuel-labs.ghost.io"><strong>Sway</strong> <strong>repository</strong></a> has grown from 0 to 350+ stars.<br>
+<a href="https://github.com/FuelLabs/sway?ref=fuel-labs.ghost.io"><strong>Sway</strong> <strong>repository</strong></a>已经从0发展到350多颗星。</p>
+</li>
+<li>
+<p>Reentrancy analysis is possible directly at the compiler level with Sway:<br>
+使用Sway可以直接在编译器层面进行重入分析。</p>
+</li>
+</ul>
+<blockquote>
+<p>Reentrancy detection is a critical function in smart contract systems. Reentrancy is the root cause of many DeFi hacks. Let's see how to detect reentrancy in the EVM and comparatively in the FuelVM. The difference is greater than you think 👀</p>
+<p>重入检测是智能合约系统中的一个关键功能。重入是许多 DeFi 黑客攻击的根本原因。让我们看看如何在 EVM 和 FuelVM 中检测重入。差距比你想象的要大👀</p>
+</blockquote>
+<p>1/7<a href="https://t.co/YK1OtBKqJS?ref=fuel-labs.ghost.io">https://t.co/YK1OtBKqJS</a><br>
+— Sway (@SwayLang) <a href="https://twitter.com/SwayLang/status/1621210727275970560?ref_src=twsrc%5Etfw&amp;ref=fuel-labs.ghost.io">February 2, 2023</a></p>
+<ul>
+<li>The <a href="https://github.com/FuelLabs?ref=fuel-labs.ghost.io"><strong>Fuel Labs</strong></a> repository has been in the Top 5 of Rust in Blockchain for an entire year in terms of closed PRs and consistently in the Top 1 in terms of opened/closed issues.</li>
+</ul>
+<p><a href="https://github.com/FuelLabs?ref=fuel-labs.ghost.io"><strong>Fuel Labs</strong></a>仓库在一整年内，在Rust区块链中的完成PR方面一直处于前5名，在开放/完成问题方面一直处于前1名。</p>
+<ul>
+<li>
+<p>Our well-documented and approachable documentation keeps bringing more and more third-party contributors and builders (currently 25+ projects are building on Fuel).<br>
+我们完善的文档和平易近人的文档不断带来越来越多的第三方贡献者和建设者（目前有25个以上的项目在Fuel上构建）。</p>
+</li>
+<li>
+<p>Fuel and Sway have experienced a notable rise in popularity over the past year, marked by a substantial increase in open-source contributions and participation in our Grants Program to build projects on Fuel using Sway.<br>
+在过去的一年里，Fuel和Sway的受欢迎程度明显上升，其标志是开源贡献和参与我们的资助计划，来使用Sway在Fuel上构建项目的大幅增加。</p>
+</li>
+</ul>
+<p>In 2023, you can expect:<br>
+在2023年，你可以畅想：</p>
+<ul>
+<li>
+<p>A compiler optimization in terms of bytecode size.<br>
+在字节码规模方面的编译器优化。</p>
+</li>
+<li>
+<p>More backends will be supported by Sway (i.e. EVM backend is already under development).<br>
+更多的后端将被Sway支持（例如EVM后端已经在开发中）。</p>
+</li>
+<li>
+<p>Generic and trait constraints will be improved, abstractions will be a lot more economic and powerful.<br>
+通用和特性约束将被改进，抽象将更加经济和强大。</p>
+</li>
+<li>
+<p>More applications to be ported from Solidity/Vyper to Sway.<br>
+更多的应用将从Solidity/Vyper移植到Sway。</p>
+</li>
+<li>
+<p>An improvement of the reentrancy analysis at the compiler level.<br>
+在编译器层面改进重入分析。</p>
+</li>
+<li>
+<p>Enhanced tooling and language features.<br>
+增强的工具和语言特性。</p>
+</li>
+</ul>
+<h2 id="技术更新-technical-updates"><strong>💻 技术更新 (Technical Updates)</strong></h2>
+<h2 id="fuelup">Fuelup</h2>
+<blockquote>
+<p><strong>Fuelup是什么 (What is Fuelup?)</strong></p>
+<p><a href="https://github.com/FuelLabs/fuelup#installation">Fuelup</a> is the official package manager and multiplexer for <a href="https://fuel.network/">Fuel</a> that installs <strong>The Fuel Toolchain</strong> from the official release channels. It enables you to easily install pre-packaged toolchains, keep them up to date or even create custom toolchains and switch between them.</p>
+<p><a href="https://github.com/FuelLabs/fuelup#installation">Fuelup</a> 是 <a href="https://fuel.network/">Fuel</a> 的官方包管理器和复用器，它从官方发布渠道安装<strong>Fuel工具链 (The Fuel Toolchain)</strong>。它使您能够轻松安装预打包的工具链，使其保持最新状态，甚至创建自定义工具链并在它们之间切换。</p>
+<p>Binaries are executed through Fuelup as proxies which allow for flexibility in the execution of tools.</p>
+<p>二进制文件通过 Fuelup 作为代理执行，使得工具的执行变得灵活。</p>
+</blockquote>
+<p>It simplifies building and maintaining Sway applications with <a href="https://github.com/FuelLabs/sway/tree/master/forc">forc</a> and <a href="https://github.com/FuelLabs/fuel-core">fuel-core</a> for common platforms.</p>
+<blockquote>
+<p>它为一般平台使用 <a href="https://github.com/FuelLabs/sway/tree/master/forc">forc</a> 和 <a href="https://github.com/FuelLabs/fuel-core">fuel-core</a> 简化了 Sway 应用的构建和维护。</p>
+</blockquote>
+<p><a href="https://fuellabs.github.io/fuelup/master/overrides.html?ref=fuel-labs.ghost.io">Support for overriding toolchains</a> added to Fuelup:</p>
+<p><a href="https://fuellabs.github.io/fuelup/master/overrides.html?ref=fuel-labs.ghost.io">支持覆盖工具链</a> 添加到 Fuelup：</p>
+<p>Developers can specify a specific version of a component in a TOML file (<code>fuel-toolchain.toml</code>) at the root of their Sway project. <code>fuelup</code> will automatically use the specified version when working in that directory.</p>
+<p>开发人员可以在其 Sway 项目根目录下的 TOML 文件 (<code>fuel-toolchain.toml</code>) 中指定组件的特定版本。在该目录中工作时，<code>fuelup</code> 将自动使用指定的版本。</p>
+<p>The way fuelup handles binaries has also been updated - <code>fuelup</code> now uses a generalized store found in <code>~/.fuelup/store</code> to cache your binary downloads. This means that there will be no more duplicate components of the same versions across different toolchains, and creating a new toolchain with an already downloaded component takes almost no time.</p>
+<p>fuelup 处理二进制文件的方式也已更新 - <code>fuelup</code> 现在使用在 <code>~/.fuelup/store</code> 中找到的通用存储来缓存您的二进制下载。这意味着将不再有跨不同工具链的相同版本的重复组件，并且使用已下载的组件创建新工具链几乎不需要时间。</p>
+<h2 id="sway应用-sway-applications">Sway应用 (Sway Applications)</h2>
+<h4 id="sway应用仓库-the-sway-applications-repository"><a href="https://github.com/FuelLabs/sway-applications?ref=fuel-labs.ghost.io">Sway应用仓库 The Sway Applications Repository</a></h4>
+<blockquote>
+<p>The purpose of the Sway Applications repository is to demonstrate what can be built with Sway and to promote good development practices.</p>
+<p>Sway 应用存储库的目的是演示可以使用 Sway 构建的内容并促进良好的开发实践。</p>
+<p>That being said, the repository should be deemed as a living project since the applications will be actively maintained, and thus it is likely that none of them will ever reach their final form!</p>
+<p>所以，存储库应该被视为一个活跃的项目，因为应用将得到积极维护，因此它们很可能永远不会达到最终形式！</p>
+<p>The repository is young so there isn't anything for anyone to use yet, however, we have lots of applications in development, and lots more planned to be worked on in the near future.</p>
+<p>这个存储库还很年轻，所以还没有任何人可以使用，但是，我们有很多应用正在开发中，并且计划在不久的将来进行更多的工作。</p>
+<p>So far, the applications are planned to have a smart contract to demonstrate Sway, tests written in Rust to demonstrate the Rust-SDK, and a user interface to demonstrate the use of the Typescript-SDK.</p>
+<p>到目前为止，应用计划有一个智能合约来演示 Sway，用 Rust 编写的测试来演示 Rust-SDK，以及一个用户界面来演示 Typescript-SDK 的使用。</p>
+<p>This part presents the applications that have gone through some level of scrutiny and have been deemed acceptable to be merged into the master branch.</p>
+<p>这部分介绍了经过一定程度审查并被认为可以合并到主分支中的应用。</p>
+<p>NOTE<br>
+注意</p>
+<p>This does not mean that they are complete nor that development has ceased.</p>
+<p>这并不意味着它们已经完成，也不意味着开发已经停止。</p>
+</blockquote>
+<p><a href="https://github.com/FuelLabs/sway-applications/tree/master/fractional-NFT?ref=fuel-labs.ghost.io"><strong>New Fractional NFT application</strong></a>: The Fractional NFT application will lock an NFT into a fractional-NFT(f-NFT) contract and allow users to purchase the newly minted fractionalized tokens. These tokens can then be bought and sold on an AMM or return them to the distribution contract if a buyback is initiated. If all tokens are returned, the admin may unlock the NFT from the f-NFT contract and regain full ownership.</p>
+<p><a href="https://github.com/FuelLabs/sway-applications/tree/master/fractional-NFT?ref=fuel-labs.ghost.io"><strong>新的 分割NFT(Fractional) NFT 应用</strong></a>：分割NFT(Fractional) 应用会锁定并将 NFT 转换为分割 NFT（f-NFT）合约，并允许用户购买新铸造的分割代币。然后可以在 AMM 上买卖这些代币，或者如果发起回购，则将它们返还给分发合约。如果返回所有代币，管理员可以从 f-NFT 合约中解锁 NFT 并重新获得完全所有权。</p>
+<p><strong><a href="https://github.com/FuelLabs/sway-applications/tree/master/timelock?ref=fuel-labs.ghost.io">New Timelock application</a></strong>: The purpose of a timelock is to restrict the execution of a transaction to some window of time. The transaction usually involves a transfer of funds e.g. via an escrow, vesting schedule, deferred payment, etc. however, it may also be used for valueless execution i.e. calls to a contract to perform computation. The transaction arguments are hashed and stored in a queue awaiting a subsequent call for execution. A user may choose to execute the transaction during the window of time or cancel the transaction by removing it from the queue.</p>
+<p><strong><a href="https://github.com/FuelLabs/sway-applications/tree/master/timelock?ref=fuel-labs.ghost.io">新时间锁应用</a></strong>：时间锁的目的是限制交易执行到某个时间窗口。交易通常涉及资金转移，例如通过托管、归属时间表、延期付款等。然而，它也可以用于无价值的执行，即调用合约来执行计算。交易参数被海华并存储在等待后续执行调用的队列中。用户可以选择在时间窗口内执行交易，或者通过将交易从队列中移除，来取消交易。</p>
+<h2 id="sway">Sway</h2>
+<h3 id="一般更新-general-updates">一般更新 (General Updates)</h3>
+<ul>
+<li>
+<p>Introduction of the Sway reference, a more technical Sway source of documentation;<br>
+引入 Sway 参考，这是一种更具技术性的 Sway 文档来源；</p>
+</li>
+<li>
+<p>Introduction of  <code>__smo intrinsic</code>;<br>
+<code>__smo intrinsic</code> 的介绍；</p>
+</li>
+<li>
+<p>Start-up of the work on the <strong>EVM</strong> backend;<br>
+启动 <strong>EVM</strong> 后端工作；</p>
+</li>
+<li>
+<p>Introduction of <code>configuration-time</code> constants;<br>
+引入 <code>configuration-time</code> 常量；</p>
+</li>
+<li>
+<p>Improvement of Error messages for methods called, mismatched ABI methods, improperly used types, and more;<br>
+改进了调用方法、不匹配的 ABI 方法、不正确使用的类型等的错误消息；</p>
+</li>
+<li>
+<p>Addition of balance tree and output message effects to CEI analysis;<br>
+为CEI分析添加平衡树和输出消息效果；</p>
+</li>
+<li>
+<p>Addition of a better parser recovery for incomplete path expressions/patterns;<br>
+为不完整的路径表达式/模式添加更好的解析器恢复；</p>
+</li>
+</ul>
+<p><strong>Bug修复 (Bug fixes):</strong></p>
+<ul>
+<li>
+<p>To trait constraint resolution to allow for the correct trait methods to be found;<br>
+特征约束解析将允许找到正确的特征方法；</p>
+</li>
+<li>
+<p>To dead-code-analysis to prevent false reporting dead code;<br>
+死码分析，防止误报死码；</p>
+</li>
+<li>
+<p>To prevent stack overflow from infinite type unification;<br>
+防止无限类型统一导致堆栈溢出；</p>
+</li>
+<li>
+<p>To type inference to prevent unsound type inference and internal compiler errors;<br>
+类型推断以防止不合理的类型推断和内部编译器错误；</p>
+</li>
+<li>
+<p>To calculate missing patterns in nested enum matching in match expressions;<br>
+计算匹配表达式中，嵌套枚举匹配中的缺失模式；</p>
+</li>
+<li>
+<p>To block repeated ABI/trait declarations;<br>
+阻止重复的 ABI/特征声明；</p>
+</li>
+<li>
+<p>To disable self-parameters for ABI methods;<br>
+禁用 ABI 方法的自参数；</p>
+</li>
+</ul>
+<h3 id="标准库更新-standard-library-updates">标准库更新 (Standard Library Updates)</h3>
+<ul>
+<li>
+<p>Introduction of a <strong><code>Byte</code></strong> type;<br>
+引入 <strong><code>Byte</code></strong> 类型；</p>
+</li>
+<li>
+<p>Addition of bitwise operations for <code>**u8**</code>, <code>**u16**</code>, <code>**u32**</code>;<br>
+为<code>**u8**</code>、<code>**u16**</code>、<code>**u32**</code> 添加了按位运算；</p>
+</li>
+<li>
+<p>Optimization of <code>**U128**</code> and <code>**U256**</code> division;<br>
+优化 <code>**U128**</code> 和 <code>**U256**</code> 划分；</p>
+</li>
+<li>
+<p>Remove <code>**std::context::gas**</code> in favor of <code>**std::registers::context_gas()**</code>;<br>
+删除<code>**std::context::gas**</code> 以支持<code>**std::registers::context_gas()**</code>；</p>
+</li>
+<li>
+<p>Introduction of low-level call functionality;<br>
+引入低级调用功能；<br>
+Switch to using the <code>**Bytes**</code> type for the <code>send_message</code> data parameter;<br>
+切换到对 <code>send_message</code> 数据参数使用 <code>**Bytes**</code> 类型；</p>
+</li>
+<li>
+<p>Enhance the <code>Result</code> library;<br>
+增强 <code>Result</code> 库；</p>
+</li>
+<li>
+<p>Introduction of the <code>Never enum</code>;<br>
+引入“永不枚举”；</p>
+</li>
+</ul>
+<h3 id="工具更新-tooling-updates">工具更新 (Tooling Updates)</h3>
+<ul>
+<li>
+<p>Authorization for comma-separated annotations;<br>
+逗号分隔注释的授权；</p>
+</li>
+<li>
+<p>Addition of CSS styling, favicon, and  <code>--document-private-items</code> option to <code>forc doc</code>;<br>
+添加 CSS 样式、网站图标和 <code>--document-private-items</code> 选项到 <code>forc doc</code>；</p>
+</li>
+<li>
+<p>Introduction of <code>#[test(should_revert)]</code> attribute to indicate a unit test should revert;<br>
+引入 <code>#[test(should_revert)]</code> 属性来指示单元测试应该恢复；</p>
+</li>
+<li>
+<p>Allow the LSP to start with partial config;<br>
+允许 LSP 以部分配置启动；</p>
+</li>
+<li>
+<p>Addition of LSP option to hide compiler warnings and errors;<br>
+添加 LSP 选项来隐藏编译器警告和错误；</p>
+</li>
+<li>
+<p>Addition of the <code>#[payable]</code> annotation to ABI methods;<br>
+向 ABI 方法添加<code>#[payable]</code> 注释；</p>
+</li>
+<li>
+<p>Enable the LSP to work with multiple projects simultaneously;<br>
+使 LSP 能够同时处理多个项目；</p>
+</li>
+<li>
+<p>Addition of support for calling into contract ABIs from unit tests;<br>
+增加了对从单元测试调用合约 ABI 的支持；</p>
+</li>
+<li>
+<p>Addition of an interface for generating links between items &amp; modules in <code>forc doc</code>;<br>
+添加一个界面，用于在<code>forc doc</code>中生成项目和模块之间的链接；</p>
+</li>
+</ul>
+<h3 id="forc更新-forc-updates">Forc更新 (Forc Updates)</h3>
+<ul>
+<li>
+<p>Introduction of build flag to print the dead-code-analysis graph;<br>
+引入构建标志来打印死代码分析图</p>
+</li>
+<li>
+<p>Introduction of workspace testing feature to forc test;<br>
+引入工作区测试功能来进行强制测试；</p>
+</li>
+<li>
+<p>Addition of workspace support for <code>forc clean</code>;<br>
+增加了对“forc clean”的工作区支持；</p>
+</li>
+<li>
+<p>Bug fix to prevent an occasional git checkout race when running multiple instances of forc concurrently;<br>
+防止在同时运行多个 forc 实例时偶尔出现 git checkout 竞争的错误修复</p>
+</li>
+<li>
+<p>Bug fix to correct executable output for <code>arm64</code> binaries;<br>
+更正 <code>arm64</code> 二进制文件的可执行输出的错误修复</p>
+</li>
+</ul>
+<h2 id="fuel核心-fuel-core">Fuel核心 (Fuel Core)</h2>
+<ul>
+<li>
+<p>P2P Block Sync (adds the ability to run syncing full-nodes):</p>
+<ul>
+<li>Includes the addition of two new services, Synchronization, and Block Importer;</li>
+<li>Enables libp2p in the standard fuel-core binary;</li>
+</ul>
+</li>
+<li>
+<p>P2P 块同步（添加运行同步全节点的能力）：</p>
+<ul>
+<li>包括添加两项新服务，同步和区块导入器；</li>
+<li>在标准Fuel核心二进制文件中启用 libp2p；</li>
+</ul>
+</li>
+<li>
+<p>Ports and Adapters Re-Architecture:</p>
+<ul>
+<li>Breaks the internals of fuel-core into easily unit-testable and reusable libraries;</li>
+<li>Paves the way for alternate implementations such as light clients;</li>
+</ul>
+</li>
+<li>
+<p>端口和适配器重新架构：</p>
+<ul>
+<li>将 fuel-core 的内部分解为易于单元测试和可重用的库；</li>
+<li>为轻客户端等替代实现铺平道路；</li>
+</ul>
+</li>
+<li>
+<p>Improved DataBase (DB) performance (less cloning);<br>
+改进的数据库 (DB) 性能（减少克隆）；</p>
+</li>
+<li>
+<p>Introduction of gas schedule framework &amp; revised gas prices:</p>
+<ul>
+<li>The new framework allows us to automatically reprice the gas schedule based on benchmark output;</li>
+<li>More gas price changes to come as we implement contract state merklization and optimize the DB further;</li>
+</ul>
+</li>
+<li>
+<p>引入 gas 计划框架和修改后的 gas 价格：</p>
+<ul>
+<li>新框架允许我们根据基准输出自动重新定价 gas 时间表；</li>
+<li>随着我们实施合约状态 merklization 并进一步优化 DB，将会有更多的 gas 价格变化；</li>
+</ul>
+</li>
+<li>
+<p>Gas-metered predicates:</p>
+<ul>
+<li>Predicates are priced using the standard gas schedule and their execution budget is deducted from the transaction gas limit. Previously they were only priced based on the number of bytes they added to the transaction;</li>
+</ul>
+</li>
+<li>
+<p>气体计量谓词：</p>
+<ul>
+<li>谓词使用标准 gas 计划定价，其执行预算从交易 gas 限额中扣除。以前只根据其添加到交易中的字节数来定价；</li>
+</ul>
+</li>
+<li>
+<p>Replacement of the integer logarithm in the VM with Rust std lib impl from 1.67 (Now requires Rust 1.67 to use fuel-core &amp; FueVM);<br>
+从 1.67 开始用 Rust std lib impl 替换 VM 中的整数对数（现在需要 Rust 1.67 才能使用 fuel-core 和 FueVM）；</p>
+</li>
+<li>
+<p>Binary MMR for block headers implemented;<br>
+实现区块头的二进制 MMR</p>
+</li>
+<li>
+<p>Gas prices are now configurable as part of chainconfig / genesis block;<br>
+Gas 价格现在可以作为 chainconfig / genesis 块的一部分进行配置；</p>
+</li>
+<li>
+<p>FuelVM is now a monorepo containing all fuel-based dependencies of the VM;<br>
+FuelVM 现在是一个 monorepo，包含 VM 的所有基于Fuel的依赖项；</p>
+</li>
+<li>
+<p>Update of GTF arg constants to match the spec;<br>
+更新 GTF arg 常量来匹配规范；</p>
+</li>
+</ul>
+<h2 id="sdks-fuel-ts-fuel-rs">SDKs (Fuel-TS &amp; Fuel-RS)</h2>
+<p><strong>Rust SDK:</strong></p>
+<ul>
+<li>
+<p>Easier testing infrastructure setup: describe your test wallets, contracts, scripts, predicates, and deployments all in a single macro;<br>
+更简单的测试基础设施设置：在一个宏中描述你的测试钱包、合约、脚本、谓词和部署；</p>
+</li>
+<li>
+<p>Parsed and human-readable revert errors to make smart contract debugging friendlier;<br>
+解析和人类可读的恢复错误，使智能合约调试更友好；</p>
+</li>
+<li>
+<p>Transaction fees can now be paid using <code>Messages</code>, i.e., bridged assets;<br>
+现在可以使用“消息”（即跨链资产）支付交易费用；</p>
+</li>
+<li>
+<p>Introduction of the Predicate data encoder;<br>
+引入谓词数据编码器；</p>
+</li>
+<li>
+<p>Rework of the<code>abigen!</code> macro: now supporting multiple contracts, predicates, and scripts all in the same macro invocation;<br>
+<code>abigen!</code> 宏的返工：现在支持同一个宏调用中的多个契约、谓词和脚本；</p>
+</li>
+<li>
+<p>Introduction of the predicates API;<br>
+引入谓词 API；</p>
+</li>
+<li>
+<p>Better dependencies importing experience;<br>
+更好的依赖项导入体验；</p>
+</li>
+</ul>
+<p><strong>Typescript SDK:</strong></p>
+<ul>
+<li>
+<p>Better and more reliable log parsing;<br>
+更好更可靠的日志解析；</p>
+</li>
+<li>
+<p>Overall ergonomics improvements;<br>
+整体人体工程学改进；</p>
+</li>
+<li>
+<p>Introduction of <code>abi-typegen</code> CLI;<br>
+<code>abi-typegen</code> CLI 的介绍；</p>
+</li>
+<li>
+<p>Live documentation rework;<br>
+实时文档返工；</p>
+</li>
+</ul>
+<hr>
+<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
+<ul>
+<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
+<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
+<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
+<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
+</ul>
+<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
+<p><a href="https://www.fuel.network/">Fuel</a> is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
+<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制**。</p>
+<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
+<ul>
+<li>
+<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
+<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
+</li>
+<li>
+<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
+<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
+</li>
+<li>
+<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
+<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[账户抽象-针对其余所有人 (Account Abstraction For Everyone Else)]]></title>
+        <id>https://chainguys.github.io/post/zhang-hu-chou-xiang-zhen-dui-qi-yu-suo-you-ren-account-abstraction-for-everyone-else/</id>
+        <link href="https://chainguys.github.io/post/zhang-hu-chou-xiang-zhen-dui-qi-yu-suo-you-ren-account-abstraction-for-everyone-else/">
+        </link>
+        <updated>2023-02-09T12:18:46.000Z</updated>
+        <content type="html"><![CDATA[<h2 id=""><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2023/02/Account-Abstraction-for-everyone-else.png" alt="" loading="lazy"></h2>
+<p>Many people describe account abstraction as a means to “automatically execute transactions once some condition is met.” Only a subset of those situations is possible if you’re implementing stateless account abstraction—which you should!</p>
+<p>许多人将账户抽象​​描述为一种“在满足某些条件后自动执行交易”的手段。如果您正在实施无状态帐户抽象，那么只有部分情况才是可能的——当然您应当如此！</p>
+<h2 id="什么是账户抽象what-is-account-abstraction">什么是账户抽象？(What is account abstraction?)</h2>
+<p>Account abstraction, in general, is the ability to set the validity conditions of a transaction programmatically.</p>
+<p>一般来说，账户抽象是用编程方式设置交易有效条件的能力。</p>
+<p><strong>What account abstraction is not:</strong><br>
+<strong>账户抽象不是什么：</strong></p>
+<ul>
+<li>paying users’ gas fees<br>
+支付用户的gas</li>
+<li>native multi-sig<br>
+原生(支持)多签</li>
+<li>web3auth type <a href="https://twitter.com/IvanOnTech/status/1491819594620809219?s=20&amp;%3Bt=XeUqH_4Kx32v9yUQD_pVLg&amp;ref=fuel-labs.ghost.io">“social login”</a><br>
+web3auth 类型 <a href="https://twitter.com/IvanOnTech/status/1491819594620809219?s=20&amp;%3Bt=XeUqH_4Kx32v9yUQD_pVLg&amp;ref=fuel-labs.ghost.io">“社交登录”</a></li>
+</ul>
+<p>You can do these things as a result of an account abstraction implementation.<br>
+作为实现帐户抽象的结果，您可以执行这些操作</p>
+<p><a href="https://eips.ethereum.org/EIPS/eip-4337?ref=fuel-labs.ghost.io">EIP-4337</a>, which we cover more in-depth later, written by Vitalik et al., says, “Achieve the key goal of account abstraction: allow users to use smart contract wallets containing arbitrary verification logic instead of EOAs as their primary account.”</p>
+<p><a href="https://eips.ethereum.org/EIPS/eip-4337?ref=fuel-labs.ghost.io">EIP-4337</a>，容我们稍后会更深入介绍，但它由 Vitalik 等人撰写，说，“实现账户抽象的关键目标：允许用户使用包含任意验证逻辑的智能合约钱包，而非 EOA 作为他们的主账户。”</p>
+<p>Currently, on Ethereum, a transaction is valid if and only if:<br>
+目前，在以太坊上，当且仅当满足以下条件时，交易才有效：</p>
+<ol>
+<li>There's sufficient balance to pay gas.<br>
+有足够的余额支付gas。</li>
+<li>The nonce is correct.<br>
+随机数是正确的</li>
+<li>It has a valid digital signature.<br>
+具有有效的数字签名。</li>
+</ol>
+<p>But what if developers could define a different set of conditions in which transactions are valid?</p>
+<p>但如果开发人员在有效交易中可以定义一组不同的交易条件呢？</p>
+<h2 id="无状态与有状态帐户抽象-stateless-vs-stateful-account-abstraction">无状态与有状态帐户抽象 (Stateless vs. stateful account abstraction)</h2>
+<p>Before we move on, it's important to note that two types of account abstraction exist: stateless and stateful.</p>
+<p>在我们继续之前，重要的是要注意存在两种类型的帐户抽象：无状态和有状态。</p>
+<p>Many people describe account abstraction as a means to “automatically execute transactions once some condition is met.” Only a subset of those situations is possible if you’re implementing stateless account abstraction—which you should!</p>
+<p>许多人将账户抽象​​描述为一种“在满足某些条件后自动执行交易”的手段。如果您正在实施无状态帐户抽象，那么只有这些情况的一个子集是可能的——当然您应当如此！</p>
+<p>Stateless = doesn't depend on the external state, doesn’t have side effects.<br>
+无状态 = 不依赖于外部状态，没有副作用。</p>
+<p>Stateful = can depend on external state, has access to chain’s state.<br>
+有状态 = 可以依赖于外部状态，可以访问链的状态。</p>
+<p>In a stateful account abstraction implementation, the smart contract that defines validity conditions has access to the chain’s state. The problem with this is that a condition that is true at one instance may not be true at another. Practically speaking, this would look like a node sending a transaction that is currently valid and becomes invalid later. For example, say you wanted to execute a transaction at block 1000000 automatically. At block 1000000, you could submit a user operation into the mempool, which would be valid at the time. When the bundler tries to put it into the next block, it could be that it’s not valid because the block number increased.</p>
+<p>在有状态的账户抽象实现中，定义有效条件的智能合约可以访问链的状态。但这样做的问题是，在一个实例中为真的条件在另一个实例中可能不为真。实际上，这看起来像是一个节点发送一个当前有效但稍后无效的交易。例如，假设您想在区块 1000000 自动执行一笔交易。在区块 1000000，您可以将用户操作提交到内存池中，这在当时是有效的。当 打包者(bundler)试图将它放入下一个块时，它可能是无效的，因为区块号增加了。</p>
+<p>The receiving node has to spend resources validating something that will never be on-chain and can’t blacklist what sent the transaction because it was valid at the time of sending.</p>
+<p>接收节点必须花费资源来验证永远不会在链上的东西，并且不能将发送的交易内容列入黑名单，因为它在发送时是有效的。</p>
+<p>In <a href="https://eips.ethereum.org/EIPS/eip-4337?ref=fuel-labs.ghost.io">ERC4337</a>, which we go into more detail about later, researchers spent a lot of time figuring out how to avoid this. The specification bans using specific opcodes like <code>blockNumber</code> for this reason.</p>
+<p>在我们稍后会详细介绍的 <a href="https://eips.ethereum.org/EIPS/eip-4337?ref=fuel-labs.ghost.io">ERC4337</a> 中，研究人员花了很多时间来弄清楚如何避免。出于这个原因，规范禁止去使用特定的操作码，如<code>blockNumber</code>。</p>
+<p>With stateless account abstraction, you never run the risk of changing validity– it’s monotonic.</p>
+<p>使用无状态帐户抽象，您永远不会冒更改有效性的风险——它是单片/单核的。</p>
+<h2 id="fuel-无状态-aa的实现-fuels-implementation-of-stateless-aa">Fuel 无状态 AA的实现 (Fuel’s Implementation of stateless AA)</h2>
+<p>We’ll talk about how other ecosystems implement account abstraction in a bit. By starting with Fuel, you’ll see the contrast between building a new system from the ground up and the modular thesis, compared to building for an existing system.</p>
+<p>我们稍后会讨论其他生态系统如何实现帐户抽象。从 Fuel 开始，您将看到从头开始构建新系统和模块化论文与构建现有系统之间的对比。</p>
+<p>Fuel implements stateless AA with predicates. A predicate is just a condition under which you can spend a <a href="https://academy.binance.com/en/glossary/unspent-transaction-output-utxo?ref=fuel-labs.ghost.io">UTXO</a>. Predicates are scripts where the main function returns a boolean. A pure function where assets under that predicate are unlocked and can be spent by the caller if evaluated to true. A predicate owns or controls UTXOs.</p>
+<p>Fuel 使用谓词实现无状态 AA。谓词只是您可以花费 <a href="https://academy.binance.com/en/glossary/unspent-transaction-output-utxo?ref=fuel-labs.ghost.io">UTXO</a> 的条件。谓词是主函数返回布尔值的脚本。一个纯函数，其谓词下的资产被解锁，若评估结果为真，则可以由调用者使用。谓词拥有或控制 UTXO。</p>
+<blockquote>
+<p>Note: UTXO stands for unspent transaction output. The core fundamental understanding of UTXOs is that for each transaction, the entirety of the balance, or amount of coins, gets spent. The amount you send to your intended recipient goes to them, and the rest gets burned, then minted again, resulting in new unspent output.</p>
+<p>注意：UTXO代表未花费的交易输出。对 UTXO 的核心基本理解是，对于每笔交易，都会花费全部余额或代币数量。你发送给目标收件人的金额会转给他们，其余的会被销毁，然后再重新铸造，从而产生新的未花费输出。</p>
+</blockquote>
+<p>The key thing about Fuel predicates is that you can introspect, or examine, the inputs and outputs of predicates which allows you to have agreements that allow you to build an order book exchange or do atomic swap between multiple parties.</p>
+<p>Fuel 谓词的关键是您可以内省，或检查谓词的输入和输出，这使得您可以达成允许建立订单簿交易所或在多方之间进行原子交换的协议。</p>
+<p>At the transaction level, UTXO transactions describe a subset of the exact effects of a transaction. This subset of effects can be conditioned on in stateless account abstraction. Fuel achieves this through the design decision of a UTXO model. This is what enables the system the possibility to know about the inputs and outputs of a transaction. On Ethereum, you only know about the inputs. With Fuel, you could use the outputs to write logic that says if you provide X then Y.</p>
+<p>在交易层面，UTXO 交易描述了交易确切影响的一个子集。这部分效果可以在无状态帐户抽象中进行调节。 Fuel 通过 UTXO 模型的设计决策实现了这一点。这使系统能够了解交易的输入和输出。而在以太坊上，你只知道输入。使用 Fuel，您可以使用输出来编写逻辑，比如您提供X，那么就会有 Y。</p>
+<h3 id="实际来说-practically-speaking">实际来说 (Practically speaking)</h3>
+<p>You could lock coins in a predicate with programmable validity that says, “these are spendable if, in return, X amount of Y asset was sent to a certain address. Similarly, you could have some logic that says this transaction is only valid if X is swapped at a certain price. The gotcha here is not that you’re <em>sending</em> anything. It’s already been sent. You’re seeing the final effects of the transaction, in this case, where coins have been sent.</p>
+<p>你可以将代币锁定在一个具有编程有效性的谓词中，该谓词说，“X 数量的 Y 资产被发送到某个地址，那(作为回应)这些代币就是可以花费的。同样，您可能有一些逻辑表明此交易仅在 X 以特定价格交换时才有效。这里要注意的是，不是你要 <em>发送</em> 任何东西，而是已经发送了。您将看到交易的最终效果，在这种情况下，代币实际已被发送。</p>
+<h3 id="谓词的有效性-predicate-validity">谓词的有效性 (Predicate validity)</h3>
+<p>Predicates aren’t checked during scoped execution. They’re checked at transaction validity time. A predicate can check that the transaction's inputs have specific properties, but it doesn't care if those are valid (existing, signed) inputs. They have to be valid inputs for the transaction to be valid, but it's not the predicate that enforces that validity.</p>
+<p>在作用域执行期间不检查谓词。他们在交易有效时间进行检查。谓词可以检查交易的输入是否具有特定属性，但它不关心这些输入是否有效（现有的、已签名的）。要使得交易有效，那它们必须是有效输入，但它不是强制执行有效性的谓词。</p>
+<h3 id="很快-soontm">很快 (Soon™)</h3>
+<p>Right now, Fuel predicates are constrained by the number of bytes as a way to meter them. In the future, the team is going to constrain predicates with gas, allowing for the use of loops. This makes it possible to do cryptography like custom hashing and signature verification, which usually require loops.</p>
+<p>现在，Fuel 谓词受到字节数的限制，以此作为&quot;限制&quot;的一种方式。将来，团队将使用gas来约束谓词，进而允许使用循环。这使得像自定义哈希和签名验证这样通常需要循环的密码学成为可能。</p>
+<h2 id="实施fuel的好处-benefits-of-fuels-implementation">实施Fuel的好处 (Benefits of Fuel’s Implementation)</h2>
+<blockquote>
+<p><strong>Note:</strong> Skip this section if you want to move on to what you can do with AA<br>
+<strong>注意：如果您想继续了解可以使用 AA 做什么，请跳过此部分</strong></p>
+</blockquote>
+<h3 id="utxo-内省-utxo-introspection">UTXO 内省 (UTXO Introspection)</h3>
+<p>On both Bitcoin and Ethereum, and the protocols that use similar implementations, you can’t introspect transactions. This means you can’t introspect the transaction spending it, and you can’t programmatically set what to do based on outputs.</p>
+<p>在比特币和以太坊以及使用类似实现的协议上，你无法内省交易。这意味着您无法内省花费它的交易，也无法根据输出用编程方式设置要执行的操作。</p>
+<p>At its core, Fuel’s implementation of AA offers developers and, in turn, users more flexibility because these are not things encoded at the protocol level. Fuel’s account abstraction allows developers to define custom verification schemes at the application level.</p>
+<p>核心来说，Fuel AA的实施为开发人员和用户提供更大的灵活性，因为这些不是在协议级别编码的东西。 Fuel 的帐户抽象允许开发人员在应用级别自定义验证方案。</p>
+<p>The Fuel Labs team has an EC Recover example for an Ethereum private key. If you wanted an EC Recover for different curves, a developer could write one at the application layer! Check out this <a href="https://github.com/hashcloak/fuel-crypto?ref=fuel-labs.ghost.io">implementation of BLS12-381 and Edwards25519 by Hashcloack</a>, written in Sway.</p>
+<p>Fuel Labs 团队有一个以太坊私钥的 EC Recover 示例。如果您想要针对不同曲线的 EC Recover，开发人员可以在应用层编写一个！请查看用 Sway 编写的 <a href="https://github.com/hashcloak/fuel-crypto?ref=fuel-labs.ghost.io">Hashcloack 对 BLS12-381 和 Edwards25519 的实现</a>。</p>
+<blockquote>
+<p>EC RECOVER: When sending a transaction to the Ethereum network, you have to sign this transaction with your private key. EC Recover is moving this functionality of verifying a signature into a smart contract instead of it being something only an Ethereum node can do. With this, you can verify much more than just the transaction signature itself.</p>
+<p>EC RECOVER：当向以太坊网络发送交易时，您必须使用您的私钥签署该交易。 EC Recover 正在将这种验证签名的功能转移到智能合约中，而不是只有以太坊节点才能做的事情。有了这个，您可以验证的不仅仅是交易签名本身。</p>
+</blockquote>
+<h3 id="没有状态膨胀-no-state-bloat">没有状态膨胀 (No state bloat)</h3>
+<p>Stateless account abstraction doesn't bloat the state (as much) because even when it gets spent, it never enters the blockchain state, only the history.</p>
+<p>无状态账户抽象不会使状态膨胀（那么多），因为即使它被花费了，它也永远不会进入区块链状态，只会进入历史。</p>
+<p>With predicates, there’s no contracts, state, or storage. Predicates don’t have state initially, and then if someone spends on behalf of the predicate, you only get one database entry, just for the UTXO instead of a state tree.</p>
+<p>有了谓词，就没有合约、状态或存储。谓词最初没有状态，然后如果有人代表谓词花费，你只会得到一个数据库条目，这只针对 UTXO 而不是状态树。</p>
+<h1 id="其他团队如何进行帐户抽象-how-other-teams-are-doing-account-abstraction">其他团队如何进行帐户抽象 (How Other Teams are doing Account Abstraction)</h1>
+<p>Like most things in computer science, account abstraction can be implemented in myriad ways. No one implementation is standard across the industry.</p>
+<p>与计算机科学中的大多数事物一样，帐户抽象可以通过多种方式实现。没有一种实施是整个行业的标准。</p>
+<h3 id="ethereum"><strong>Ethereum</strong></h3>
+<p><a href="https://eips.ethereum.org/EIPS/eip-2938?ref=fuel-labs.ghost.io">EIP-2938</a> was an initial EIP to allow a contract to be the top-level account that pays fees and starts transaction executions. The implementation was around introducing a new EVM opcode to signal validity to extend the conditions of transactions with the execution of arbitrary EVM bytecode. This proposal didn’t make it into the protocol because devs were busy with other changes like the merge and couldn’t risk a protocol change of that magnitude.</p>
+<p><a href="https://eips.ethereum.org/EIPS/eip-2938?ref=fuel-labs.ghost.io">EIP-2938</a> 是一个初始 EIP，允许合约成为支付费用的顶级账户并开始交易执行。实施是围绕引入一个新的 EVM 操作码，来发出有效信号，以通过执行任意 EVM 字节码来扩展交易条件。该提案没有纳入协议，因为开发人员正忙于合并等其他更改，无法冒险进行如此大的协议更改。</p>
+<p><a href="https://medium.com/infinitism/erc-4337-account-abstraction-without-ethereum-protocol-changes-d75c9d94dc4a?ref=fuel-labs.ghost.io">ERC-4337</a> is the first account abstraction proposal/standard that brings on Ethereum account abstraction without requiring core protocol changes. It does this by moving the validation of transactions out of the protocol itself and moving it over to a higher level—the smart contract level with this special <code>entry point.</code></p>
+<p><a href="https://medium.com/infinitism/erc-4337-account-abstraction-without-ethereum-protocol-changes-d75c9d94dc4a?ref=fuel-labs.ghost.io">ERC-4337</a> 是第一个账户抽象提案/标准，无需更改核心协议即可实现以太坊帐户抽象。它通过将交易验证移出协议本身并将其移至更高级别（具有此特殊“入口点 <code>entry point</code>  ”的智能合约级别）来实现这一点。</p>
+<p>On Ethereum, EOAs are accounts on Ethereum whose functionality is hardcoded into the protocol. Defining how they pay gas, how they sign transactions, how they use a nonce, etc. This standard moves away from the hard-coded nature of accounts that EOAs give us.</p>
+<p>在以太坊上，EOA 是以太坊上的账户，其功能被硬编码到协议中。它定义如何支付 gas，如何签署交易，如何使用随机数等。这个标准摆脱了 EOA 给我们的帐户的硬编码性质。</p>
+<h3 id="starknet"><strong>Starknet</strong></h3>
+<p><a href="https://starkware.co/starknet/?ref=fuel-labs.ghost.io">Starknet</a> is a zk-rollup on Ethereum. Starkware implements a modified version of the model of EIP-4337 for Ethereum. Read more about it <a href="https://community.starknet.io/t/starknet-account-abstraction-model-part-1/781?ref=fuel-labs.ghost.io">here</a>.</p>
+<p><a href="https://starkware.co/starknet/?ref=fuel-labs.ghost.io">Starknet</a> 是以太坊上的 zk-rollup。 Starkware 为以太坊实现了 EIP-4337 模型的修改版本。在 <a href="https://community.starknet.io/t/starknet-account-abstraction-model-part-1/781?ref=fuel-labs.ghost.io">此处</a> 阅读更多相关信息。</p>
+<h3 id="zksync"><strong>zkSync</strong></h3>
+<p>zkSync is a zk-rollup on Ethereum. zkSync implements a modified version of <a href="https://eips.ethereum.org/EIPS/eip-4337?ref=fuel-labs.ghost.io">EIP-4337</a>. Read more on their implementation <a href="https://v2-docs.zksync.io/dev/developer-guides/aa.html?ref=fuel-labs.ghost.io#extending-eip4337">here</a>.</p>
+<p>zkSync 是以太坊上的 zk-rollup。 zkSync 实现了 <a href="https://eips.ethereum.org/EIPS/eip-4337?ref=fuel-labs.ghost.io">EIP-4337</a> 的修改版本。在 <a href="https://v2-docs.zksync.io/dev/developer-guides/aa.html?ref=fuel-labs.ghost.io#extending-eip4337">此处</a> 阅读有关其实施的更多信息。</p>
+<h3 id="biconomy-aa"><strong>Biconomy AA</strong></h3>
+<p>Biconomy is a developer tooling platform focused on infrastructure and tooling for the Ethereum ecosystem. Biconomy implements a modified version of EIP-4337 and offers features like paying for users’ gas fees as part of an SDK. Read more about their implementation <a href="https://biconomy.gitbook.io/sdk/additional-content/account-abstraction?ref=fuel-labs.ghost.io">here</a>.</p>
+<p>Biconomy 是一个开发者工具平台，专注于以太坊生态系统的基础设施和工具。 Biconomy 实现了 EIP-4337 的修改版本，并提供了诸如作为 SDK 的一部分来支付用户 gas 费用的功能。在 <a href="https://biconomy.gitbook.io/sdk/additional-content/account-abstraction?ref=fuel-labs.ghost.io">此处</a> 阅读更多关于它们实施的信息。</p>
+<h3 id="模块化设计-modular-design">模块化设计 (Modular Design)</h3>
+<p><a href="https://fuellabs.github.io/fuel-docs/master/modular-execution.html?ref=fuel-labs.ghost.io">The ethos of modular</a> is not designing a system that is tightly coupled with another system, allowing for greater flexibility. Fuel’s implementation of account abstraction is a manifestation of that. Fuel’s implementation of account abstraction allows higher flexibility and a highly customizable environment where developers can, at the application level, define validity conditions without depending on the Fuel protocol to support it.</p>
+<p><a href="https://fuellabs.github.io/fuel-docs/master/modular-execution.html?ref=fuel-labs.ghost.io">模块化的精神</a> 并不是设计系统间互相紧密耦合的(新)系统，来实现更大的灵活性。 Fuel 对账户抽象的实现就是一个体现。 Fuel 的帐户抽象实现允许更高的灵活性和高度可定制的环境，开发人员可以在应用程别定义有效性条件，而无需依赖 Fuel 协议来支持。</p>
+<p>Because Fuel wasn’t built exclusively for Ethereum or any other system, Fuel’s implementation isn’t burdened by the baggage of another system and has room to innovate.</p>
+<p>因为 Fuel 不是专门为以太坊或任何其他系统构建的，所以 Fuel 的实施不会被另一个系统的包袱所累，并且依然创新的空间。</p>
+<p>While zkSync, Starkware, and Biconomy all implement a modified version of EIP-4337, Fuel implemented a more unique and highly performant account abstraction. Because Fuel will be deployed as a rollup on Ethereum, by some accounts, Ethereum already has account abstraction.</p>
+<p>虽然 zkSync、Starkware 和 Biconomy 都实现了 EIP-4337 的修改版本，但 Fuel 实现了更独特和高性能的帐户抽象。因为 Fuel 将作为以太坊上的汇总而部署，所以从一些账户来看，以太坊已经有了账户抽象。</p>
+<h1 id="您可以使用帐户抽象做什么-what-you-can-do-with-account-abstraction">您可以使用帐户抽象做什么 (What you can do with Account Abstraction)</h1>
+<p>The new experiences you see being built are features made possible by account abstraction but not by account abstraction itself. Things like sponsoring gas fees for users and things like Web3Auth are application-layer things built on top of account abstraction. These things are inherently possible through account abstraction's core mechanism: the ability to set the validity conditions of a tx programmatically.</p>
+<p>您看到正在构建的新体验，是由帐户抽象而变得可行的功能，但并不是由帐户抽象本身来实现。诸如为用户赞助 gas 费用和 Web3Auth 之类的东西，是建立在帐户抽象之上的应用层。通过帐户抽象的核心机制，这些事情本质上是可能的：以编程方式设置交易有效性条件的能力。</p>
+<p>Examples of things built on top of account abstraction:<br>
+建立在账户抽象之上事情的例子：</p>
+<ul>
+<li>
+<p>Web3auth<br>
+Web3授权</p>
+</li>
+<li>
+<p>Paying gas fees for other users<br>
+为其他用户支付gas</p>
+</li>
+<li>
+<p>Freedom of signature verification scheme<br>
+自由的签名验证方案</p>
+</li>
+<li>
+<p>Check multiple signatures (native multi-sig)<br>
+检查多签(原生多重签名)</p>
+</li>
+</ul>
+<p>Check out these projects who have leveraged Fuel’s account abstraction:<br>
+查看这些利用 Fuel 帐户抽象的项目：</p>
+<ul>
+<li>
+<p><a href="https://taikai.network/ethlisbon/hackathons/ethlisbon-2022/projects/cl9tv1epm14319401w1mf7ltuhm/idea?ref=fuel-labs.ghost.io">Authsome</a> - Walletless login system. This wallet is then used as the basis for a pluggable authentication infrastructure, similar to Web3Auth.<br>
+<a href="https://taikai.network/ethlisbon/hackathons/ethlisbon-2022/projects/cl9tv1epm14319401w1mf7ltuhm/idea?ref=fuel-labs.ghost.io">Authsome</a> - 无钱包登录系统。这个钱包随后被用作可插入身份验证基础设施的基础，类似于 Web3Auth。</p>
+</li>
+<li>
+<p><a href="https://twitter.com/ThunderbyFuel/status/1598338104573714433?s=20&amp;%3Bt=MCV2iY9PdkvkpoWJAtouBQ&amp;ref=fuel-labs.ghost.io">Thunder</a> - An NFT marketplace on Fuel that can bulk execute transactions with one click.<br>
+<a href="https://twitter.com/ThunderbyFuel/status/1598338104573714433?s=20&amp;%3Bt=MCV2iY9PdkvkpoWJAtouBQ&amp;ref=fuel-labs.ghost.io">Thunder</a> - Fuel 上的 NFT 市场，可以一键批量执行交易。</p>
+</li>
+<li>
+<p><a href="https://twitter.com/poolsharks_labs?ref=fuel-labs.ghost.io">Poolshark</a> - a protocol for directional liquidity. Poolshark matches conditional orders using Fuel's account abstraction with pooled liquidity to improve accessibility and reduce fees for advanced traders.<br>
+<a href="https://twitter.com/poolsharks_labs?ref=fuel-labs.ghost.io">Poolshark</a> - 定向流动性协议。 Poolshark 使用 Fuel 的账户抽象与汇集的流动性来匹配条件订单，进而提升专业交易者的可访问性并降低费用。</p>
+</li>
+</ul>
+<h2 id="ux改进-ux-improvements">UX改进 (UX Improvements)</h2>
+<ul>
+<li>
+<p>Social recovery of wallets<br>
+钱包的社交性恢复</p>
+</li>
+<li>
+<p>Batching transactions<br>
+批量交易</p>
+</li>
+<li>
+<p>Applications can pay for the gas of their users’ transactions<br>
+应用可以支付用户交易的费用</p>
+</li>
+<li>
+<p>Use wallets from different ecosystems (or same, that use different signature schemes)<br>
+使用来自不同生态系统（或相同，使用不同签名方案）的钱包</p>
+</li>
+<li>
+<p>Walletless web3 login<br>
+无钱包 web3 登录</p>
+</li>
+<li>
+<p>Users don’t need ETH in their “regular” wallet to initiate transactions<br>
+用户不需要在他们的“常规”钱包中使用 ETH 来启动交易</p>
+</li>
+<li>
+<p>Ability to put 100% of funds in a multisig and initiate transactions from there directly<br>
+能够将 100% 的资金放入多重签名并直接发起交易</p>
+</li>
+</ul>
+<h2 id="新应用解锁-new-applications-unlocked">新应用解锁 (New Applications Unlocked)</h2>
+<p>“No one knows, but it's provocative. It gets the people going!”<br>
+“没有人知道，但它真的让人血脉贲张。它让人们真的行动起来！”</p>
+<p>Here’s the truth: we don’t fully know what new types of applications can be unlocked (yet), but we can begin to make massive improvements to the UX of existing applications, and that’s a great start.</p>
+<p>事实是这样的：我们还不完全知道可以解锁哪些新型应用，但我们可以开始对现有应用的用户体验进行大规模改进，这是一个很好的开始。</p>
+<h1 id="让所有人都能使用区块链-making-blockchains-available-to-everyone">让所有人都能使用区块链 (Making blockchains available to everyone)</h1>
+<p>A couple of years ago, the UX problem with blockchains was that they were entirely financially inaccessible to most of the world. With the continued progress and proliferation of layer 2s, we arrive at a new frontier: UX.</p>
+<p>几年前，区块链的用户体验问题是世界上大多数人在经济上完全无法获得它们。随着layer2的持续进步和扩散，我们到达了一个新的前沿：用户体验。</p>
+<p>Suddenly, we can get fees down low enough to make blockchains usable, but the applications' UX needs to be more pleasant and robust. Over the next cycle, we foresee more teams will focus on account abstraction-enabled UX improvements and flows. This will be another tool needed to bring a web2-like experience with the custodial properties of web3.</p>
+<p>突然之间，我们可以将费用降到足够低来让区块链变得可用，但应用的用户体验需要更加愉快和稳健。在下一个周期，我们预计会有更多团队关注支持帐户抽象的用户体验改进和流程。这应是利用web3 的托管特性，带来类似 web2 的体验所需的另一个工具。</p>
+<h2 id="致谢-acknowledgments">致谢 (Acknowledgments)</h2>
+<p>John Adler, Kristof Gazso, Yuan Han Li, James Prestwich, Ryan Sproule.</p>
+<hr>
+<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
+<ul>
+<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
+<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
+<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
+<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
+</ul>
+<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
+<p><a href="https://www.fuel.network/">Fuel</a> is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
+<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制**。</p>
+<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
+<ul>
+<li>
+<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
+<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
+</li>
+<li>
+<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
+<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
+</li>
+<li>
+<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
+<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GDPR和区块链 (GDPR and blockchain)]]></title>
+        <id>https://chainguys.github.io/post/gdpr-he-qu-kuai-lian-gdpr-and-blockchain/</id>
+        <link href="https://chainguys.github.io/post/gdpr-he-qu-kuai-lian-gdpr-and-blockchain/">
+        </link>
+        <updated>2023-02-07T16:14:49.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://optimise2.assets-servd.host/akord-web/production/GDPR.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1675848469&amp;s=718c31c7086ae0ed02c087884f0fed64" alt="" loading="lazy"></figure>
+<h2 id="简介-introduction">简介 (Introduction)</h2>
+<p>Blockchain is undoubtedly <em>the</em> technology for data storage and traceability. While it is still not widely accepted, most people outside the Blockchain ecosystem have started to understand this.</p>
+<p>毫无疑问，区块链是数据存储和可追溯性的技术。虽然它还没有被广泛接受，但区块链生态系统之外的大多数人已经开始理解这一点。</p>
+<p>Blockchain technology acts like a decentralised database shared simultaneously with all its users, without depending on a central authority for access. Any data uploaded and stored on a blockchain (e.g. <a href="https://arweave.org/">Arweave</a>) cannot be modified, tampered with or &quot;revoked&quot; without it being visible to all. A real breakthrough technology!</p>
+<p>区块链技术就像一个去中心化的数据库，同时与所有用户共享，而不依赖于中心化访问权限。任何上传和存储在区块链（例如 <a href="https://arweave.org/">Arweave</a>）上的数据都不能在不被所有人看到的情况下被修改、篡改或“撤销”。真正的突破性技术！</p>
+<p>However, when one uses the term &quot;data&quot; within the context of data storage, what quickly comes to mind, particularly among Europeans, is the General Data Protection Regulation (GDPR). And the resulting question is: does GDPR apply to blockchain technology?</p>
+<p>然而，当人们在数据存储的上下文中使用“数据”一词时，尤其是在欧洲人中，很快就会想到通用数据保护条例 (GDPR)。由此产生的问题是：GDPR 是否适用于区块链技术？</p>
+<p>The answer given by the French <a href="https://www.cnil.fr/">Commission Nationale de l'Informatique et des Libertés (CNIL – French Data Protection Agency)</a> in 2018 on this subject is clear: &quot;when a blockchain contains personal data, GDPR is applicable&quot;.</p>
+<p>法国 <a href="https://www.cnil.fr/">Commission Nationale de l'Informatique et des Libertés（CNIL – 法国数据保护局）</a> 在 2018 年就此问题给出的答案很明确：“当区块链包含个人数据，GDPR 适用”。</p>
+<p>What exactly is meant by personal data in the sense of GDPR? CNIL specifies that it is, &quot;any information concerning an identified or identifiable natural person&quot;. The blockchain is therefore not, in itself, a data processor with a purpose in its own right, but a technology that can be used in support of different data processing. And this is where GDPR applies.</p>
+<p>GDPR 意义上的个人数据到底是什么意思？ CNIL 指定它是“关于已识别或可识别自然人的任何信息”。因此，区块链本身并不是一个具有自身目的的数据处理器，而是一种可用于支持不同数据处理的技术。这就是 GDPR 适用的地方。</p>
+<p>But is the very philosophy and operating principles of a blockchain compatible with GDPR? The answer is not so obvious and deserves to be considered for a moment.</p>
+<p>但是区块链的理念和操作原则是否与 GDPR 兼容？答案不是那么明显，值得考虑一下。</p>
+<p>Innovation and the protection of fundamental rights of individuals are not, in our opinion, contradictory objectives. Indeed, GDPR does not aim to regulate technologies as such, but rather the way actors use these technologies in a context involving personal data.</p>
+<p>在我们看来，创新和保护个人基本权利并不矛盾。事实上，GDPR 的目的不是监管技术本身，而是监管行为者在涉及个人数据的环境中使用这些技术的方式。</p>
+<p>So a blockchain storing data can satisfy many of the rules set out in GDPR.</p>
+<p>因此，存储数据的区块链可以满足 GDPR 中规定的许多规则。</p>
+<p>Even though cryptographic processes predate the publication of the data protection rules, major technological developments in protecting privacy are taking place now. Through advanced encryption, web3 developers can implement GDPR compliant solutions. Web3 is still in its nascent phase and will come to understand the spirit and the details of data protection rules over time.</p>
+<p>尽管加密过程早于数据保护规则的发布，但保护隐私的重大技术发展现在正在发生。通过高级加密，web3 开发人员可以实施符合 GDPR 的解决方案。 Web3 仍处于初级阶段，随着时间的推移将逐渐了解数据保护规则的精神和细节。</p>
+<p>The architecture and technological characteristics of each blockchain are unique. The consequences for the way personal data is stored and processed in light of GDPR may vary from one blockchain to another. It is, therefore, necessary to carry out a case-by-case analysis.</p>
+<p>每个区块链的架构和技术特征都是独一无二的。根据 GDPR 存储和处理个人数据的方式的后果可能因区块链而异。因此，有必要具体情况具体分析。</p>
+<p>The applications built on the Arweave blockchain show great promise in terms of data protection by their design and the control offered to users. We will further develop how an application such as Akord and the Arweave blockchain can address GDPR compatibility issues.</p>
+<p>建立在 Arweave 区块链上的应用，通过其设计和为用户提供的控制在数据保护方面显示出巨大的希望。我们将进一步探索 Akord 和 Arweave 区块链等应用如何解决 GDPR 兼容性问题。</p>
+<h2 id="一些有用的概念-some-useful-concepts">一些有用的概念 (Some useful concepts)</h2>
+<p>The objectives of GDPR are to protect, on the territory of the European Union, people whose personal data is processed, and to reinforce the responsibility of those processing this data.</p>
+<p>GDPR 的目标是在欧盟境内保护其个人数据被处理的人，并加强处理这些数据的人的责任。</p>
+<p>Any private or public company, regardless of the technology they use, that processes personal data of European citizens must comply with certain obligations, which are based on 5 major principles.</p>
+<p>任何处理欧洲公民个人数据的私营或上市公司，无论使用何种技术，都必须遵守基于 5 项主要原则的特定义务。</p>
+<ul>
+<li>
+<p>Inform data subjects so that they can give their consent to the collection and processing of their personal data.<br>
+通知数据主体，以便他们同意收集和处理他们的个人数据。</p>
+</li>
+<li>
+<p>Use data in a transparent and relevant way with regard to its collection and processing;<br>
+在收集和处理方面以透明和相关的方式使用数据；</p>
+</li>
+<li>
+<p>Give data subjects access to their data so that they can consult, modify, and delete it at any time.<br>
+授予数据主体访问其数据的权限，以便他们可以随时查阅、修改和删除数据。</p>
+</li>
+<li>
+<p>Control and limit the sharing and circulation of data.<br>
+控制和限制数据的共享和流通。</p>
+</li>
+<li>
+<p>Secure personal data both electronically and physically.<br>
+以电子方式和物理方式保护个人数据。</p>
+</li>
+</ul>
+<p>Understanding whether we are processing personal data is therefore key to understanding whether GDPR applies to activities carried out on a blockchain.</p>
+<p>因此，了解我们是否在处理个人数据，是了解 GDPR 是否适用于在区块链上开展的活动的关键。</p>
+<p>After the previous section, you will understand more easily that the intention of the legislator is to give back the control of personal data to its owner and to limit, or at least to frame the use and the processing by the professionals who can have access to it.</p>
+<p>在上一节之后，您将更容易理解立法者的意图是将个人数据的控制权交还给其所有者，并限制或至少限制可以访问的专业人员的使用和处理。</p>
+<h3 id="什么是个人数据什么是区块链上的个人数据what-is-personal-data-what-is-personal-data-on-a-blockchain">什么是个人数据？什么是区块链上的个人数据？(What is personal data? What is personal data on a blockchain?)</h3>
+<p>According to CNIL, personal data is &quot;any information concerning an identified or identifiable natural person&quot;. Generally, an individual can be identified by a name, an address, a number, but this can also include other identifiers such as an IP address, a cookie identifier or similar identifying metadata collected by a website or an application.</p>
+<p>根据 CNIL，个人数据是“关于已识别或可识别自然人的任何信息”。通常，个人可以通过姓名、地址、号码来识别，但这也可以包括其他标识符，例如 IP 地址、cookie 标识符或网站或应用收集的类似识别的元数据。</p>
+<p>Even if a person cannot be strictly identifed from the information processed, that person may still be deemed identifiable. Therefore, <strong>only information that is truly anonymous</strong> (i.e. “such a manner that the data subject is not or no longer identifiable”) <strong>or not &quot;about&quot; the person is not covered by GDPR.</strong></p>
+<p>即使无法从处理的信息中严格识别某个人，该人仍可被视为可识别。因此，<strong>只有真正匿名的信息</strong>（即“数据主体无法或不再可识别的方式”）<strong>或不“关于”该人的信息，不在 GDPR 的涵盖范围内。</strong></p>
+<p>On a blockchain, the personal data processed can be quite basic. For example, a pseudonym, a bank account number, the public address of a wallet, a signature; or much more complex, such as the transfer of financial or insurance assets, the &quot;hash&quot; of patients' medical data.</p>
+<p>在区块链上，处理的个人数据可能非常基础。例如，化名、银行帐号、钱包的公共地址、签名；或者更复杂，例如金融或保险资产的转移，患者医疗数据的“哈希”。</p>
+<p>Once processing of personal data is established on a blockchain, GDPR analysis applies: identification of the data controller, enforcement of rights, implementation of appropriate safeguards, security obligations, etc.</p>
+<p>一旦在区块链上建立了个人数据处理，GDPR 分析就适用：数据控制者的识别、权利的执行、适当保障措施的实施、安全义务等。</p>
+<h3 id="谁是区块链中的主要参与者-who-are-the-main-actors-involved-in-a-blockchain">谁是区块链中的主要参与者？ (Who are the main actors involved in a blockchain?)</h3>
+<p>Data protection originated in the management of centralised data within specific entities. For blockchain technology, the decentralised governance of data and the multiplicity of actors involved in the processing of data make it considerably more difficult to define the role of each actor.</p>
+<p>数据保护起源于特定实体内部集中数据的管理。对于区块链技术，数据的去中心化治理和数据处理中涉及的参与者之多样性，使得定义每个参与者的角色变得相当困难。</p>
+<p>Three types of actors can be identified:</p>
+<p>可以确定三种类型的参与者：</p>
+<ul>
+<li>
+<p>The &quot;accessors&quot;, who have the right to read and hold a copy of the chain;<br>
+有权阅读和持有链副本的“访问者”；</p>
+</li>
+<li>
+<p>The &quot;participants&quot; who have the right to make entries, ie, to carry out a transaction for which they request validation;<br>
+有权进行输入的“参与者”，即执行他们请求验证的交易；</p>
+</li>
+<li>
+<p>The &quot;miners&quot; who validate a transaction and create blocks by applying the rules of the blockchain to have them &quot;accepted&quot; by the community.<br>
+验证交易并通过应用区块链规则创建区块以使社区“接受”它们的“矿工”。</p>
+</li>
+</ul>
+<h3 id="哪个参与者充当区块链中的数据控制器which-actor-acts-as-the-data-controller-in-a-blockchain">哪个参与者充当区块链中的数据控制器？(Which actor acts as the data controller in a blockchain?)</h3>
+<p>According to CNIL, a controller is, &quot;the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data”.</p>
+<p>根据 CNIL，控制者是“单独或与他人共同确定个人数据处理目的和方式的自然人或法人、公共当局、机构或其他机构”。</p>
+<p>CNIL has clarified that participants, who have the right to write on the blockchain and who decide to send data for validation by miners, can be considered as data controllers. Indeed, the participants in the blockchain must define the purposes (objectives pursued by the processing) and the means (data format, use of blockchain technology, etc) of the processing.</p>
+<p>CNIL 已澄清，有权在区块链上写入并决定发送数据来供矿工验证的参与者可以被视为数据控制者。实际上，区块链的参与者必须定义处理的目的（处理所追求的目标）和处理的方式（数据格式、区块链技术的使用等）。</p>
+<p>More specifically, CNIL considers that the participant may be qualified as a data controller,</p>
+<p>更具体地说，CNIL 认为参与者可能有资格成为数据控制者，</p>
+<ul>
+<li>
+<p>&quot;when said participant is a natural person and the processing is related to a professional or commercial activity (ie, when the activity is not strictly personal);<br>
+“当所述参与者是自然人并且处理与专业或商业活动有关时（即，当活动不是严格意义上的个人活动时）；</p>
+</li>
+<li>
+<p>when the said participant is a legal person that registers personal data in the blockchain&quot;.<br>
+当所述参与者是在区块链中注册个人数据的法人时”。</p>
+</li>
+</ul>
+<p>On the other hand, miners are not considered as data controllers, since they only validate the transactions submitted by participants and are not involved in the purpose of these transactions.</p>
+<p>另一方面，矿工不被视为数据控制者，因为他们只验证参与者提交的交易，并不参与这些交易的目的。</p>
+<p>The Arweave blockchain and the applications that work on the Arweave blockchain are very promising in terms of data protection by their design and the control offered to users. The Akord protocol and application is a good example.</p>
+<p>Arweave 区块链和在 Arweave 区块链上运行的应用，在其设计和提供给用户的控制方面的数据保护方面非常有前途。 Akord 协议和应用就是一个很好的例子。</p>
+<h2 id="arweave-akord-和-gdpr-合规性-arweave-akord-and-gdpr-compliance">Arweave、Akord 和 GDPR 合规性 (Arweave, Akord, and GDPR compliance)</h2>
+<h3 id="arweave">Arweave</h3>
+<p>Arweave is a new blockchain protocol creating for the first time truly permanent serverless data storage. This technology is still largely reserved for a more tech savvy user that’s comfortable with the various technical processes required to use it.</p>
+<p>Arweave 是一种新的区块链协议，首次创建真正永久的无服务器数据存储。这项技术在很大程度上仍然保留给更精通技术的用户，他们熟悉使用所需的各种技术流程。</p>
+<p>From a GDPR standpoint, Arweave provides in its technical documentation, a transaction format (ANS-106) the possibility for people to let miners know not to store certain data on grounds of privacy, regulation, copyright, etc. …</p>
+<p>从 GDPR 的角度来看，Arweave 在其技术文档中提供了一种交易格式 (ANS-106)，让人们可以让矿工知道不要以隐私、监管、版权等为由存储某些数据……</p>
+<p>Privacy and private data processing are very much at the heart of Arweave’s business. As its CEO, Sam Williams, stated in an interview in 2022:</p>
+<p>隐私和私人数据处理是 Arweave 业务的核心。正如其首席执行官Sam Williams在 2022 年的一次采访中所说：</p>
+<blockquote>
+<p>It's the node's responsibility, both morally and legally, to abide by the laws of their land, and the network allows them to do that.</p>
+<p>节点在道义上和法律上都有责任遵守所在国的法律，网络允许他们这样做。</p>
+<p>~ Sam Williams，在 2022 年亚洲 Arweave 上发言<br>
+~Sam Williams, speaking at Arweave in Asia 2022</p>
+</blockquote>
+<h3 id="akord">Akord</h3>
+<p>Akord is a protocol developed by Zero Knowledge Collective. The protocol offers a digital storage space on the Arweave blockchain and a means for its users to publish their digital files to the Permaweb.</p>
+<p>Akord 是由 Zero Knowledge Collective 开发的协议。该协议在 Arweave 区块链上提供了一个数字存储空间，并为其用户提供了一种将其数字文件发布到 Permaweb 的方式。</p>
+<p>One of the main objectives of the Akord application is to democratise the use of the Arweave blockchain, giving back control of the data fully owned by its users. The app offers digital vaults with a simple UX making Arweave accessible to a broad range of users.</p>
+<p>Akord 应用的主要目标之一是使 Arweave 区块链的使用民主化，交还其用户完全拥有的数据控制权。该应用程供具有简单用户体验的数字保管库，使 Arweave 可供广泛的用户访问。</p>
+<p>This digital vault service can be qualified as automated processing of personal data, insofar as its management is based on computerised operations and the content of this storage space is, by nature, dependent on the case, linked to an identifiable physical person (the user).</p>
+<p>这种数字保管库服务可以被称为个人数据的自动处理，只要它的管理是基于计算机化的操作，并且这种存储空间的内容在本质上取决于具体情况，与可识别的自然人（用户）相关联.</p>
+<p>In the following sections, we will discuss how Akord meets the various GDPR requirements.</p>
+<p>在以下部分中，我们将讨论 Akord 如何满足 GDPR 的各种要求。</p>
+<h2 id="akord-应用如何更接近-gdpr-的完全合规性how-akord-app-moves-closer-to-full-gdpr-compliance">Akord 应用如何更接近 GDPR 的完全合规性？(How Akord app moves closer to full GDPR compliance? )</h2>
+<p>After a brief overview on GDPR as applied to blockchain technology, the following will focus on the Akord protocol. This will provide example on how Akord manages to minimize the risks when processing personal data based on the Arweave blockchain and thus meet the GPDR requirements.</p>
+<p>在简要概述 GDPR 应用于区块链技术后，下文将重点介绍 Akord 协议。这将举例说明 Akord 如何在基于 Arweave 区块链处理个人数据时设法将风险降至最低，从而满足 GPDR 要求。</p>
+<h3 id="关于接收人-regarding-recipients">关于接收人 (Regarding recipients)</h3>
+<p>Unlike the data stored in public vaults, the documents imported into the encrypted vaults, can only be consulted by the user concerned and the persons he or she has specially authorised and invited into the vault (who are themselves subject to an authentication mechanism).</p>
+<p>与存储在公共保管库中的数据不同，导入到加密保管库中的文件只能由相关用户和他或她特别授权并邀请进入保管库的人（其本身受身份验证机制约束）查阅。</p>
+<p>In practice, the data is encrypted with a key, controlled only by the user, and protected by cryptographic mechanisms making it incomprehensible to unauthorised third parties. The transfer of data on the blockchain is protected by advanced cryptography.</p>
+<p>实际上，数据是用密钥加密的，仅由用户控制，并受加密机制保护，使未经授权的第三方无法理解。区块链上的数据传输受到高级密码学的保护。</p>
+<h3 id="处理后的数据-processed-data">处理后的数据 (Processed data)</h3>
+<p>In its capacity as provider of the digital vault service, Akord is required to process data enabling users to be identified with certainty and the associated data necessary for the operation of its service.</p>
+<p>作为数字保管库服务的提供商，Akord 需要处理能够确定用户身份的数据以及运营其服务所需的相关数据。</p>
+<p>As soon as Akord defines the means and purposes for the implementation of these two processing operations (cryptographic commitment, encrypted key in particular), it assumes the role of data controller and is therefore subject to the obligations of GDPR.</p>
+<p>一旦 Akord 定义了执行这两个处理操作的方式和目的（加密承诺，特别是加密密钥），它就会承担数据控制者的角色，因此需要遵守 GDPR 的义务。</p>
+<p>Access to the encrypted digital vaults is strictly limited to the user, and it is therefore technically impossible for Akord to determine in advance the nature of the documents that a user will decide to store in his or her private space. Furthermore, Akord is not technically capable of accessing the contents of a vault, nor its possible backups.</p>
+<p>对加密数字保管库的访问严格限于用户，因此从技术上讲，Akord 无法提前确定用户将决定存储在其私人空间中的文件的性质。此外，Akord 在技术上无法访问保管库的内容，也无法访问其可能的备份。</p>
+<p>Data stored by users in their encrypted vaults are in principle excluded from the scope of GDPR (and they are not processed by Akord). The same applies to the automatic retrieval of digital documents, because these documents are not used by Akord but only entered into a digital vault.</p>
+<p>用户存储在其加密保管库中的数据原则上不在 GDPR 的范围内（并且 Akord 不处理这些数据）。这同样适用于数字文档的自动检索，因为这些文档不被 Akord 使用，而只是输入到数字保管库中。</p>
+<h3 id="保留期限-retention-period">保留期限 (Retention period)</h3>
+<p>GDPR imposes, in principle, a maximum retention period for personal data which varies according to the purpose of the data processing.</p>
+<p>GDPR 原则上规定了个人数据的最长保留期限，该期限根据数据处理的目的而有所不同。</p>
+<p>Akord commonly processes the following two categories of data via its application.</p>
+<p>Akord 通常通过其应用处理以下两类数据。</p>
+<ul>
+<li>
+<p><strong>参与者的标识符 (Participants' identifiers)</strong><br>
+Each participant has an identifier composed of a sequence of alphanumeric characters that appear to be random and that constitute the public key of the participant's account. This public key relates to a private key that only the participant knows.<br>
+每个参与者都有一个由一系列字母数字字符组成的标识符，这些字符看起来是随机的，并且构成了参与者帐户的公钥。该公钥与只有参与者知道的私钥相关。</p>
+<p>The very architecture of a blockchain requires that the identifiers be visible at all times, as they are essential to its proper functioning.<br>
+区块链的架构要求标识符始终可见，因为它们对其正常运行至关重要。</p>
+<p>In this particular case, the CNIL accepts that it is not possible to reduce the retention period further and that their retention periods can be aligned with the life of the blockchain. As the blockchain is a “Permaweb”, we can therefore conclude that the identifiers of the users, i.e, the participants, can be validly kept for the entire duration of the Akord application.<br>
+在这种特殊情况下，CNIL 承认不可能进一步缩短保留期，并且它们的保留期可以与区块链的生命周期保持一致。由于区块链是一个“永久网络”，因此我们可以得出结论，用户（即参与者）的标识符可以在 Akord 应用的整个持续时间内有效保留。</p>
+</li>
+<li>
+<p><strong>附加数据 (Additional data)</strong><br>
+In addition to the participants' identifiers, the additional data stored on the blockchain may contain personal data, potentially relating to persons other than the participants.<br>
+除了参与者的标识符之外，存储在区块链上的附加数据可能包含个人数据，可能与参与者以外的人有关。</p>
+<p>In this case, the CNIL recommends that the personal data be recorded in the blockchain in the form of a cryptographic commitment. This technical option has obviously been implemented on the Akord application for encrypted vaults.<br>
+在这种情况下，CNIL 建议将个人数据以加密承诺的形式记录在区块链中。这个技术选项显然已经在 Akord 的加密保管库应用上实现了。</p>
+</li>
+</ul>
+<h3 id="通知个人-informing-individuals">通知个人 (Informing individuals)</h3>
+<p>In accordance with GDPR, the persons concerned by the processing of personal data must be informed, in particular, of the identity of the person responsible for the service, the purpose of the processing, the recipients of the data, any transfers of data to a country outside the European Union, as well as the existence of and procedures for exercising the rights of access, rectification and opposition.</p>
+<p>根据 GDPR，处理个人数据的相关人员必须被告知，特别是服务负责人的身份、处理的目的、数据的接收者、任何数据传输到欧盟以外的国家，以及行使访问权、纠正权和异议权的存在和程序。</p>
+<p>Akord complies with all these requirements. All this information can be consulted directly on its website, under the section <a href="https://akord.com/privacy-policy">Privacy policy</a>.</p>
+<p>Akord 符合所有这些要求。所有这些信息都可以在其网站上的 <a href="https://akord.com/privacy-policy">隐私政策</a> 部分直接查阅。</p>
+<p>Akord, in its capacity as a provider of access to digital storage spaces, has developed technical solutions enabling it to offer its services without collecting confidential information, with the exception of data relating to the identification and connection of its users.</p>
+<p>Akord 作为数字存储空间访问的提供商，开发了技术解决方案，使其能够在不收集机密信息的情况下提供服务，但与用户识别和连接相关的数据除外。</p>
+<p>Users of digital vaults are clearly informed of the type of space available to them (encrypted and public vaults) and their consequences of use. The choice of public vaults can considerably degrade the protection of individuals' data within the meaning of GDPR. Also in the interest of transparency, Akord requires the prior consent of the user as a necessary precondition for creating a public vault.</p>
+<p>数字保管库的用户被清楚地告知他们可用的空间类型（加密和公共保管库）及其使用后果。在 GDPR 的意义上，选择公共保管库可能会大大降低对个人数据的保护。同样为了透明起见，Akord 需要用户的事先同意作为创建公共保管库的必要前提。</p>
+<h3 id="访问权和数据可移植权-the-right-of-access-and-right-to-data-portability">访问权和数据可移植权 (The right of access and right to data portability)</h3>
+<p>Upon simple request to the dedicated email address, any data subject may request access to the data concerning him/her.</p>
+<p>在向专用电子邮件地址提出简单请求后，任何数据主体都可以请求访问与他/她有关的数据。</p>
+<p>With regard to the right to data portability, Akord will release an app deployed directly on Arweave, Akord explorer, enabling users to independently access and retrieve all data from all digital vaults in a simple manner, regardless of whether the operating company that builds and maintains the application exists or not. This guarantees and facilitates, perpetually, the right of our users to change services if they so wish.</p>
+<p>在数据可移植性方面，Akord 将发布一款直接部署在 Arweave 上的应用 Akord explorer，使用户能够以简单的方式，独立访问和检索所有数字保管库中的所有数据，无论构建和维护运营该应用的公司是否存在。这永久地保证并促进了我们的用户根据自己的意愿更改服务的权利。</p>
+<h3 id="删除权被遗忘权或反对权-the-right-to-erasure-right-to-be-forgotten-or-right-to-object">删除权（“被遗忘权”）或反对权 - The right to erasure (“right to be forgotten”) or right to object</h3>
+<p>To date, as far as public blockchains are concerned, it is technically impossible to delete data in clear text, unless miners theoretically decide to remove data from Arweave by applying the ANS-106 option mentioned above.</p>
+<p>迄今为止，就公共区块链而言，删除明文数据在技术上是不可能的，除非矿工理论上决定通过应用上述 ANS-106 选项从 Arweave 中删除数据。</p>
+<p>In order to protect its users' personal data as much as possible, Akord leaves them the choice of how to store their data:</p>
+<p>为了尽可能保护用户的个人数据，Akord 让他们选择如何存储他们的数据：</p>
+<ul>
+<li>
+<p>The public vault comes into play in the case of data written in clear text or hashed on the Arweave blockchain. As mentioned above, specific information has been put in place to make users aware of the consequences of this choice and the vulnerability of the protection of the data that could be published there.<br>
+如果数据以明文形式写入或在 Arweave 区块链上哈希，则公共保险库会发挥作用。如上所述，已提供特定信息，让用户了解此选择的后果以及可能在那里发布的数据保护之脆弱性。</p>
+</li>
+<li>
+<p>The private vault, which is much more protective since no personal data is written in clear text on the Arweave blockchain, and which also use a cryptographic process.<br>
+私人保险库，由于 Arweave 区块链上没有以明文形式写入任何个人数据，因此保护性更强，并且还使用加密过程。</p>
+</li>
+</ul>
+<p>When a user wishes to delete one of the documents from their vault, this request is immediately taken into account with the &quot;revocation&quot; option offered by the application. As mentioned above, a document cannot be technically and effectively deleted from the Arweave blockchain unless expressly asked under ANS-106 option.</p>
+<p>当用户希望从他们的保管库中删除其中一份文档时，应用提供的“撤销”选项会立即考虑此请求。如上所述，除非在 ANS-106 选项下明确要求，否则无法从技术上有效地从 Arweave 区块链中删除文档。</p>
+<p>However, the cryptographic processes chosen by Akord make it possible to cut off the accessibility of the evidence recorded on the blockchain, by making it difficult or impossible to recover. Indeed, the mathematical properties of certain cryptographic commitments chosen by Akord can guarantee that once the elements allowing its verification are removed, it will no longer be possible to prove or verify which information was committed. The commitment itself then no longer presents any risk in terms of confidentialitý. Another option for Akord would be that of removing the secret key from the hash function which will have a similar effect.</p>
+<p>但是，Akord 选择的加密过程使得很难或不可能恢复，从而有可能切断区块链上记录的证据的可访问性。事实上，Akord 选择的某些加密承诺的数学属性可以保证，一旦允许其验证的元素被删除，将无法再证明或验证哪些信息已提交。承诺本身就不再存在任何保密风险。 Akord 的另一个选择是从哈希函数中删除密钥，这将产生类似的效果。</p>
+<h3 id="整修权-the-right-to-rectification">整修权 (The right to rectification)</h3>
+<p>As mentioned above, any data entered on a blockchain cannot technically be changed once the block is accepted by the majority of participants.</p>
+<p>如上所述，一旦区块被大多数参与者接受，任何输入区块链的数据在技术上都无法更改。</p>
+<p>However, if a user requested a change, the lack of possibility to modify the data entered in a block will most likely lead Akord to enter the updated data in a new block. This is because a subsequent transaction can always cancel the first transaction, even though the first transaction will still appear in the chain. The same solutions as in the case of a request to delete personal data could be applied to the erroneous data if it is to be deleted.</p>
+<p>但是，如果用户请求更改，则无法修改块中输入的数据，这很可能导致 Akord 在新块中输入更新的数据。这是因为后续交易总是可以取消第一笔交易，即使第一笔交易仍会出现在链中。如果要删除错误数据，则可以将与请求删除个人数据的解决方案相同的解决方案应用于错误数据。</p>
+<p>Unlike other blockchains, Arweave standard (Ans-106) provides the ability to users to request non-storage of certain data (for privacy, regulatory, copyright reasons, etc.). This strengthens data rights of our users whom can rely on Akord for technical support needed to follow this path (not provided at this stage unfortunately but working on it!).</p>
+<p>与其他区块链不同，Arweave 标准 (Ans-106) 允许用户请求不存储某些数据（出于隐私、监管、版权原因等）。这加强了我们用户的数据权利，他们可以依靠 Akord 获得遵循此路径所需的技术支持（不幸的是，现阶段未提供，但正在努力！）。</p>
+<hr>
+<p><strong>Through this article, we hope to have proven Akord's commitment to permanently guarantee the security and protection of its users' data, in accordance with the CNIL recommendations, and to make every effort to ensure its compliance with GDPR in a changing technological context favouring decentralisation.</strong></p>
+<p><strong>通过本文，我们希望证明 Akord 致力于根据 CNIL 的建议，永久保证其用户数据的安全和保护，并尽一切努力确保其在不断变化的有利于去中心化的技术环境中遵守 GDPR</strong></p>
+<p><strong>脚注 (Footnote)</strong></p>
+<p>1.The transfer of data outside the EU are not voluntarily addressed in this article and will be the subject of a separate article.</p>
+<p><strong>参考文献 Sources</strong></p>
+<p>Blockchain: Solutions for a responsible use of the blockchain in the context of personal data – CNIL- September 2018</p>
+<p>Premiers éléments d’analyse de la CNIL – September 2018</p>
+<p>LexisNexis N° 4548 – Protéger les données personnelles dans des projets blockchain - smart contracts. RGPD - December 2, 2021 - written by Nicolas Goossaert-Krupka</p>
+<p>Délibération n° 2013-270 dated September 13, 2013 CNIL recommandation about « aux services dits de coffre-fort numérique ou électronique destinés aux particuliers »</p>
+<p>Blockchain and the General Data Protection Regulation Can distributed ledgers be squared with European data protection law? - EPRS | European Parliamentary Research Service – July 2019</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[介绍Sunscreen (Introducing Sunscreen)]]></title>
+        <id>https://chainguys.github.io/post/jie-shao-sunscreen-introducing-sunscreen/</id>
+        <link href="https://chainguys.github.io/post/jie-shao-sunscreen-introducing-sunscreen/">
+        </link>
+        <updated>2023-02-02T03:22:33.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDE1fHxlbmNyeXB0aW9ufGVufDB8fHx8MTY3NTM2MzUzNA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000" alt="" loading="lazy"></figure>
+<hr>
+<p>More and more people are realizing the importance of privacy, particularly in web3. Front-running attacks plague multiple blockchains. Sophisticated users want to hide their financial holdings and trading strategies while still reaping the benefits of the DeFi ecosystem. While there has been an explosion of web3 companies, privacy is needed for the space is to have any real longevity. Without confidential voting, users may feel forced to self censor; concerningly, there's a possibility of tracking and analyzing user behavior across DAOs.</p>
+<p>越来越多的人意识到隐私的重要性，尤其在 web3.0 中。抢跑交易攻击困扰着多个区块链。老练的用户希望隐藏其金融资产和交易策略的同时，仍能从 DeFi 生态系统中获益。虽然 web3 公司呈爆炸式增长，但要让这个领域真正长寿，就需要隐私。如果没有秘密投票，用户可能会感到被迫进行自我审查；令人担忧的是，还可能会有跨 DAO 跟踪和分析用户行为。</p>
+<p>However, existing privacy solutions are difficult to work with and fall short when it comes to user experience. As we believe privacy should be built into applications from the ground up, our goal is to make it easy for developers to bring privacy to whatever application they envisage. To achieve this, two privacy technologies are needed—fully homomorphic encryption and zero knowledge proofs. With fully homomorphic encryption, anyone can perform computations on anyone else’s private data; no need to delegate access to your unencrypted data and no need to trust some third party with your privacy. Current approaches to privacy treat zero knowledge proofs (ZKPs) as the holy grail; however, ZKPs fall short when it comes to supporting lightweight users and private shared state.<a href="https://blog.sunscreen.tech/roadmap/#fn1">[1]</a> Fully homomorphic encryption in combination with zero knowledge proofs will enable the creation of a richer variety of private apps.</p>
+<p>然而，现有的隐私解决方案难以奏效，并在用户体验方面存在不足。我们认为隐私应该从头开始构建到应用中，因此我们的目标是让开发人员能够轻松地将隐私引入他们设想的任何应用。为此，需要两种隐私技术——全同态加密和零知识证明。通过全同态加密，任何人都可以对其他人的私人数据进行计算；无需委托对未加密数据的访问权限，也无需将您的隐私托付给第三方。当前的隐私保护方法将零知识证明 (ZKP) 视为圣杯；然而，ZKP 在支持轻量级用户和私有共享状态方面存在不足。完全同态加密与零知识证明相结合，将创建更丰富的隐私应用。</p>
+<p>Sunscreen's goal is to turn the above dream into a reality; we're hard at work making FHE usable for web3 applications via an SDK and are lucky to be supported by an incredible group of investors in our mission.</p>
+<p>Sunscreen的目标就是将上述梦想变为现实；我们正在努力通过 SDK 使 FHE 可用于 web3 应用，并且很幸运能够在我们的使命中得到一群令人难以置信的投资者的支持。</p>
+<hr>
+<ol>
+<li>For more details, we recommend starting with <a href="https://eprint.iacr.org/2021/727">this paper.</a><br>
+有关更多详细信息，我们建议从<a href="https://eprint.iacr.org/2021/727">本文</a><a href="https://blog.sunscreen.tech/roadmap/#fnref1">↩︎</a>开始</li>
+</ol>
+<hr>
+<h2 id="我们的线路图-our-roadmap">我们的线路图 (Our roadmap)</h2>
+<p>Our mission is to enable the next generation of private applications, starting first with (d)apps as we think privacy is most urgently needed there. However, to support FHE in web3, we need to solve a few major challenges first:</p>
+<p>我们的使命是启用下一代隐私应用，首先从 (d)apps 开始，因为我们认为那里最迫切需要隐私。然而，要在 web3 中支持 FHE，我们首先需要解决几个主要挑战：</p>
+<ol>
+<li>
+<p>Performance is incredibly important for all sorts of applications but even more so for those related to finance and trading. Unfortunately, FHE is difficult for developers to effectively use–both because there's a steep learning curve and also because it's incredibly hard to set up FHE programs to get good performance.<br>
+性能对于各种应用来说都非常重要，对于那些与金融和贸易相关的应用来说更是如此。不幸的是，FHE 很难让开发人员有效地使用——既因为学习曲线陡峭，也因为设置 FHE 程序来获得良好的性能非常困难。</p>
+</li>
+<li>
+<p>One of the tenets of web3 is &quot;don't trust, verify.&quot; If the user provides a (d)app with encrypted data, how do we know the user-provided inputs satisfy the conditions of the application and aren’t just some garbage values? Remember that no one else can inspect the inputs since they're always encrypted!<br>
+web3的信条之一是“不信任，验证”。如果用户提供带有加密数据的 (d)app，我们怎么知道用户提供的输入满足应用的条件，而不是一些垃圾值？请记住，没有其他人可以检查输入，因为它们始终是加密的！</p>
+</li>
+<li>
+<p>While storage is incredibly cheap in web2, the same doesn’t always hold for web3. Fully homomorphic encryption is incredibly fast for certain classes of applications but it’s not very space efficient. How then can we use FHE in web3?<br>
+虽然 web2 的存储非常便宜，但 web3 并不总是如此。完全同态加密对于某些类别的应用来说速度非常快，但它的空间效率不是很高。那么我们如何在 web3 中使用 FHE？</p>
+</li>
+</ol>
+<p>At Sunscreen, we're working to solve these problems in phases. Our priority so far has been to tackle the first point; in doing so, we've built an FHE compiler tailored to the needs of web3 developers. We're now turning our focus to solving problems #2 and #3; to do that, we've been working on a zero knowledge proof compiler that is compatible with our FHE compiler (so that we can prove things about encrypted data), as well as an integration with a decentralized storage system that can be used to store larger ciphertexts off-chain.</p>
+<p>在 Sunscreen，我们正在努力分阶段解决这些问题。到目前为止，我们的首要任务是解决第一点；为此，我们构建了一个专为 web3 开发人员的需求量身定制的 FHE 编译器。我们现在将注意力转向解决问题 #2 和#3；为此，我们一直在研究与我们的 FHE 编译器兼容的零知识证明编译器（以便我们可以证明有关加密数据的事情），以及可用于存储更大链下密文的，与去中心化存储系统的集成。</p>
+<h3 id="全同态加密编译器-fully-homomorphic-encryption-compiler">全同态加密编译器 (Fully homomorphic encryption compiler)</h3>
+<p>So you want to use FHE? Awesome! Let’s see what the current experience is like as a developer looking to integrate FHE into your application.</p>
+<p>所以你想使用 FHE？太好了！让我们看看作为希望将 FHE 集成到您应用中的开发人员的当前体验。</p>
+<p>As hinted at in challenge #1, existing FHE libraries expect that you as the developer have a deep understanding of the underlying cryptography and mathematics. To compound the problem, runtime can vary by orders of magnitudes depending on how well the developer selected the FHE scheme parameters for their particular application. As a result, it’s difficult for anyone but experts to get good performance out of FHE.</p>
+<p>正如挑战 #1 中所暗示的，现有的 FHE 库希望您作为开发人员对底层密码学和数学有深刻的理解。但运行时间可能会相差几个数量级，则会让问题复杂化。具体取决于开发人员为其特定应用选择的FHE 方案参数的(复杂)程度。因此，除了专家之外，任何人都很难从 FHE 中获得良好的性能。</p>
+<p>To solve this problem, we've built <a href="https://github.com/Sunscreen-tech/Sunscreen">an FHE compiler</a>. The idea here is that a developer only needs to know the very basics of public key cryptography (e.g. key generation, encryption, decryption). Behind the scenes, our compiler transforms a normal Rust function into an FHE equivalent with privacy. It figures out the best parameters for optimal performance, inserts special FHE-specific operations in automatically, generates all the circuits, and even parallelizes the program for you if it can!</p>
+<p>为了解决这个问题，我们构建了<a href="https://github.com/Sunscreen-tech/Sunscreen">一个 FHE 编译器</a>。这里的想法是开发人员只需要了解公钥密码学的基础知识（例如密钥生成、加密、解密）。在幕后，我们的编译器将普通的 Rust 函数转换为具有隐私的 FHE 等价物。它计算出最佳性能的最佳参数，自动插入特殊的 FHE 特定操作，生成所有回路，如果可以的话，甚至可以为您并行(运行)程序！</p>
+<p>Initially, we support the <a href="https://github.com/microsoft/SEAL">BFV fully homomorphic encryption scheme</a>. However, we have designed our compiler so that we can swap out the backend FHE scheme in the future. If you've already tried out our compiler, you likely suspected this after typing:</p>
+<p>最初，我们支持 <a href="https://github.com/microsoft/SEAL">BFV 全同态加密方案</a>。但是，我们设计了编译器，以便将来可以调整后端 FHE 方案。如果您已经尝试过我们的编译器，您可能会在键入以下内容后仍有怀疑：</p>
+<pre><code class="language-rust">[fhe_program(scheme=&quot;bfv&quot;)]
+</code></pre>
+<p>We believe BFV is one of the most suitable FHE schemes for web3 use cases. BFV is one of the few FHE schemes that supports 32+ bit computation without a severe degradation in performance, provides fast arithmetic, and has relatively small key sizes. Sounds too good to be true? Check out <a href="https://playground.sunscreen.tech/">our playground</a> or <a href="https://docs.sunscreen.tech/compiler/performance.html">read more</a> about how our compiler measures up to existing attempts.</p>
+<p>我们相信 BFV 是最适合 web3 用例的 FHE 方案之一。 BFV 是为数不多的 FHE 方案之一，它支持 32 位以上的计算而不会严重降低性能，提供快速算法，并且具有相对较小的密钥大小。听起来好得令人难以置信？查看<a href="https://playground.sunscreen.tech/">我们的游乐场</a> 或<a href="https://docs.sunscreen.tech/compiler/performance.html">阅读更多</a>，了解我们的编译器如何衡量现有尝试。</p>
+<p>We're also exploring support of FHE extensions like multi-party FHE and multi-key FHE. These extensions make it easy to combine and perform computation on multiple users' encrypted data.</p>
+<p>我们还在探索对 FHE 扩展的支持，例如多方 FHE 和多密钥 FHE。这些扩展使得对多个用户的加密数据进行合并和计算变得容易。</p>
+<h3 id="零知识证明编译器-zero-knowledge-proof-compiler">零知识证明编译器 (Zero knowledge proof compiler)</h3>
+<p>Next, let’s look at how we might address challenge #2.</p>
+<p>接下来，让我们看看如何应对挑战#2。</p>
+<p>Zero knowledge proofs to the rescue! The user can prove that their encrypted inputs satisfy the conditions of the application without actually revealing their data.</p>
+<p>零知识证明来救场了！用户可以证明他们的加密输入满足应用的要求，而无需实际透露他们的数据。</p>
+<p>While there are quite a few ZKP libraries out there, it can be difficult to combine these off the shelf with FHE. FHE relies on a special type of cryptography using lattices whereas the most efficient ZKP constructions don't. Combining such proof systems with FHE often leads to poor performance in practice.</p>
+<p>虽然有很多 ZKP 库，但很难将这些现成的库与 FHE 结合起来。 FHE 依赖于一种特殊类型的使用格的密码术，而最有效的 ZKP 结构则不需要。将此类证明系统与 FHE 相结合通常会导致实践中表现不佳。</p>
+<p>We’re currently evaluating a few proof systems to determine which offers the best tradeoffs with regards to space and time. If necessary, we will implement a lower level library with the proof system ourselves. As our goal is to make privacy easy for developers, we will also provide a compiler to work with ZKPs. With so much interest and innovation within the ZKP space, our focus is on designing a compiler in which the backend proof system can be swapped out further down the line. We plan to package the ZKP compiler with our existing FHE compiler for developer ease of use. In terms of API, we will try to keep it consistent with that of our FHE compiler.</p>
+<p>我们目前正在评估一些证明系统，以确定哪一方在空间和时间方面提供最佳权衡。如果有必要，我们将自己实现一个带有证明系统的较低级别的库。由于我们的目标是让开发人员更容易保护隐私，我们还将提供一个编译器来使用 ZKP。由于 ZKP 空间内有如此多的新奇和创新，我们的重点是设计一个编译器，在该编译器中，后端证明系统可以被进一步替换。我们计划将 ZKP 编译器与我们现有的 FHE 编译器打包在一起，以方便开发人员使用。在API方面，我们会尽量和我们的FHE编译器保持一致。</p>
+<h3 id="去中心化存储系统-decentralized-storage-system">去中心化存储系统 (Decentralized storage system)</h3>
+<p>The last puzzle piece requires addressing where to store large FHE ciphertexts. In integrating FHE into decentralized applications, we want to avoid massively blowing up the underlying blockchain's size. However, if we store FHE ciphertexts elsewhere, we need to ensure users and validators can quickly and easily retrieve these off-chain ciphertexts. There are a few interesting decentralized storage systems out there (<a href="https://www.arweave.org/">arweave</a>, <a href="https://ipfs.tech/">IPFS</a>, etc.) that could serve as a potential solution for us. Our efforts here are still at the earlier stages and we're hoping to share more about this piece in the coming months.</p>
+<p>最后一块拼图需要解决存储大型 FHE 密文的位置。在将 FHE 集成到去中心化应用中时，我们希望避免大量破坏对应区块链的大小。但是，如果我们将 FHE 密文存储在别处，我们需要确保用户和验证者可以快速轻松地检索这些链下密文。有一些有趣的去中心化存储系统（<a href="https://www.arweave.org/">arweave</a>、[IPFS](https://ipfs.tech/ 等）可以作为潜在的为我们解决。我们在这方面的努力仍处于早期阶段，我们希望在未来几个月内分享更多关于这件作品的信息。</p>
+<h2 id="推出我们的技术-rolling-out-our-tech">推出我们的技术 (Rolling out our tech)</h2>
+<p>We expect to deploy our technology in phases–starting first with support of private transactions in a testnet, then with support of pre-determined private programs, and finally allowing developers to author arbitrary private programs using our FHE and ZKP compilers. The ambition is to make private programs easy for web3 (and eventually web2) developers to create via Sunscreen's SDK.</p>
+<p>我们希望分阶段部署我们的技术——首先支持测试网中的隐私交易，然后支持预先确定的隐私程序，最后允许开发人员使用我们的 FHE 和 ZKP 编译器编写任意隐私程序。目标是让 web3（最终是 web2）开发人员可以通过 Sunscreen 的 SDK 轻松创建隐私程序。</p>
+<p>If you'd like to get involved, you can join our <a href="https://discord.gg/sunscreen">Discord</a> or follow us on Twitter for updates. To learn more about what we're doing, check out our <a href="https://github.com/Sunscreen-tech">Github</a> or come say hi to us at ETHDenver!</p>
+<p>如果您想参与，可以加入我们的 <a href="https://discord.gg/sunscreen">Discord</a> 或在 Twitter 上关注我们以获取更新。要了解有关我们正在做的事情的更多信息，请查看我们的 <a href="https://github.com/Sunscreen-tech">Github</a> 或来 ETHDenver 向我们问好！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[web3存档 (The web3 archive)]]></title>
+        <id>https://chainguys.github.io/post/web3-cun-dang-the-web3-archive/</id>
+        <link href="https://chainguys.github.io/post/web3-cun-dang-the-web3-archive/">
+        </link>
+        <updated>2023-01-30T16:13:37.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://optimise2.assets-servd.host/akord-web/production/Web3-Archive.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1675153887&amp;s=b7f82262879720024a48f96c6f2dba72" alt="" loading="lazy"></figure>
+<h2 id="简介-introduction">简介 (Introduction)</h2>
+<p>Let’s be upfront: archiving is not a hot topic. It’s not your go-to dinner table chat. And it’s not what most people think of when it comes to cutting edge tech and the blockchain space.</p>
+<p>让我们提前说：存档不是一个热门话题。这不是你去餐桌聊天的首选。在谈到尖端技术和区块链领域时，大多数人不会想到这一点。</p>
+<p>But in this article I’m going to show you how web3 technology, specifically Akord and Arweave, are completely reimagining what an archive can do and how it can be experienced. It’s actually pretty exciting, and I’ll prove it.</p>
+<p>但在这篇文章中，我将向您展示 web3 技术，特别是 Akord 和 Arweave，如何完全重新构想存档的功能以及体验方式。这实际上非常令人兴奋，我会证明这一点。</p>
+<p>The web3 archive has 11 fundamental properties which we’ll explore in this article: permanent, sustainable, decentralised, immutable, self-sovereign, secure, accessible, cost-efficient, scalable, collaborative and user-friendly.</p>
+<p>web3 存档有 11 个基本属性，我们将在本文中探讨这些属性：永久、可持续、去中心化、不可变、自主、安全、可访问、成本高效、可扩展、协作和用户友好。</p>
+<h2 id="永久和可持续-permanent-and-sustainable">永久和可持续 (Permanent and sustainable)</h2>
+<p>Longevity is <em>the</em> key component in an archive. The more resilient and the longer an archive survives, the better.</p>
+<p>寿命是存档中的关键组成部分。档案保存得越有弹性/适应性，保存时间越长越好。</p>
+<p>When we stored information on clay tablets and papyrus as mediums for storing data, they were not particularly permanent for obvious reasons.</p>
+<p>当我们将信息以粘土片和纸莎草纸为媒介存储时，由于显而易见的原因，它们并不是特别长久。</p>
+<p>The printing press and computer technology represented massive leaps forward, increasing the degree of permanence to an archive by orders of magnitude.</p>
+<p>印刷机和计算机技术代表了巨大的飞跃，将档案的永久性程度提高了几个数量级。</p>
+<p>Still, an archive without a shelf life and that didn't need constant maintenance has remained (until now) out of reach.</p>
+<p>尽管如此，没有保质期且不需要经常维护的档案仍然（直到目前）遥不可及。</p>
+<p>Current mainstream archiving solutions use either <a href="https://en.wikipedia.org/wiki/Magnetic-tape_data_storage">tape</a> or centralised cloud-storage technology. Tapes have a 20–30 year lifespan, but the technology to manage them lasts ~10 years.</p>
+<p>当前的主流存档解决方案使用<a href="https://en.wikipedia.org/wiki/Magnetic-tape_data_storage">磁带</a> 或中心化云存储技术。磁带的使用寿命为 20-30 年，但管理它们的技术可持续约 10 年。</p>
+<p>Centralised cloud storage depends on third party providers and managing monthly payments and complex contracts. Who knows if Google Cloud will exist in 30 years? Will you still want to pay their prices or agree to their terms next year, in 5 years, or 10?</p>
+<p>中心化云存储依赖于第三方提供商并需要管理每月付款和复杂的合同。谁知道谷歌云是否会在 30 年后存在？明年、5 年或 10 年后，您是否仍愿意支付他们的价格或同意其条款？</p>
+<p>Arweave delivers permanent, user-owned data through a decentralised network, like Bitcoin, and uses a blockchain consensus mechanism called the <a href="https://arweave.medium.com/what-is-arweave-explain-like-im-five-425362144eb5">blockweave</a>.</p>
+<p>Arweave 使用称为 <a href="https://arweave.medium.com/what-is-arweave-explain-like-im-five-425362144eb5">blockweave</a> 的机制，通过去中心化网络（如比特币）提供永久的、用户拥有的数据。</p>
+<p>When you upload to Arweave, you pay once. And never again. That payment goes into an endowment that can pay for your data’s perpetual storage, because the cost of storage decreases in a predictable fashion over time.</p>
+<p>当您上传到 Arweave 时，您只需支付一次。再也不会了。这笔款项将进入一项捐赠基金，该基金可以支付您数据的永久存储费用，因为存储成本会随着时间的推移以可预测的方式降低。</p>
+<figure data-type="image" tabindex="2"><img src="https://optimise2.assets-servd.host/akord-web/production/storage-decreasing-cost.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1674916162&amp;s=62832c64975377f12f513fd7268c08c0" alt="" loading="lazy"></figure>
+<p>日期与 $/GB 小时对数刻度，1980 年至今。资料来源：arwiki.wiki (Date vs $/GB-hour logarithmic scale, 1980 - present. Source: arwiki.wiki)</p>
+<p>The network incentivises miners to store all data uploaded to Arweave, and <a href="https://arwiki.wiki/#/en/storage-endowment">the endowment is structured to be funded for at least 200 years</a>. Critically, for archives, this permanence means an end to data migrations, which are costly, time consuming and open the door to human error and data loss.</p>
+<p>该网络激励矿工存储所有上传到 Arweave 的数据，并且<a href="https://arwiki.wiki/#/en/storage-endowment">该捐赠基金的结构是至少资助 200 年</a>。至关重要的是，对于档案来说，这种永久性意味着数据迁移的结束，数据迁移既昂贵又耗时，并且容易导致人为错误和数据丢失。</p>
+<p>While the traditional data storage industry is scheming at the theoretical level about <a href="https://www.brighttalk.com/webcast/13139/433244">the anatomy of the 100 year archive</a>, Arweave has 2x that ambition and realised the infrastructure with a sustainable model that will keep running without centralised control and maintenance.</p>
+<p>当传统的数据存储行业在理论层面策划 <a href="https://www.brighttalk.com/webcast/13139/433244">100 年档案的解剖</a> 时，Arweave 有 2 倍的雄心，并实现了基础设施一种无需集中控制和维护即可持续运行的可持续模型。</p>
+<figure data-type="image" tabindex="3"><img src="https://optimise2.assets-servd.host/akord-web/production/100-year-archive.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1675078163&amp;s=cbdc23f5bcb565551282b2202d93e357" alt="" loading="lazy"></figure>
+<p>尝试使用硬件和 web2 技术构建长期归档解决方案。来源：地平线 (An attempt to architect long-term archiving solution using hardware and web2 technology. Source: Horison)</p>
+<p>These traditional models at long-term storage attempt to spread data across different geographical locations to increase resiliency. Arweave already has hundreds of nodes spread across the globe, making it an inherently more resilient network for long-term data storage.</p>
+<p>这些长期存储的传统模型试图将数据分布在不同的地理位置来提高弹性/适应性。 Arweave 已经在全球范围内拥有数百个节点，这使其成为一个本质上更具弹性的长期数据存储网络。</p>
+<p>In 2022, Arweave upgraded the protocol to version 2.6, declaring that work on the protocol is for the most part finished. Using Bitcoin as a parallel, a blockchain protocol does not unlock its full value until it is stable – a prerequisite for businesses and organisations to confidently build on the network.</p>
+<p>2022 年，Arweave 将协议升级到 2.6 版本，宣布协议的大部分工作已经完成。以比特币为例，区块链协议在稳定之前不会释放其全部价值—这是企业和组织自信地在网络上构建的先决条件。</p>
+<p>But unlike Bitcoin, Arweave is an incredibly energy efficient network. <a href="https://youtu.be/_GfBqnnsODQ?t=2088">In the words of founder Sam Williams</a>, “it’s all about more data, less energy.” Arweave has a Proof of Access consensus mechanism, described as Proof of Work (Eg, Bitcoin) security, with Proof of Stake (Eg, Ethereum) efficiency.</p>
+<p>但与比特币不同的是，Arweave 是一个非常节能的网络。 <a href="https://youtu.be/_GfBqnnsODQ?t=2088">用创始人 Sam Williams 的话说</a>，“一切都是为了更多的数据，更少的能源。” Arweave 具有访问证明共识机制，被描述为工作证明（例如，比特币）安全性，具有股权证明（例如，以太坊）效率。</p>
+<p><a href="https://youtu.be/_GfBqnnsODQ?t=2700">According to Williams</a>, The system uses ~800 SHA256 hashes per node, per second. For context, a macbook uses 8-10million hashes per second. Further, as the blockweave expands in size, the amount of electricity used in the mining process decreases.</p>
+<p><a href="https://youtu.be/_GfBqnnsODQ?t=2700">根据 Williams 的说法</a>，系统每秒每个节点使用约 800 个 SHA256 哈希值。具体来说，macbook 每秒使用 8-1000 万个哈希。此外，随着 blockweave 尺寸的扩大，挖矿过程中使用的电量会减少。</p>
+<p>The permanent storage that Arweave offers is zero-to-one, meaning this a completely new technological offering; a new paradigm that has been unlocked. It's why companies like <a href="https://cryptotvplus.com/2022/11/meta-integrates-arweave-for-instagram-collectibles-storage/">Meta have decided to use Arweave</a> to store certain types of data that have indefinite storage needs, because no other solution can offer them truly permanent storage.</p>
+<p>Arweave 提供的永久存储是从0到1的，这意味着这是一项全新的技术产品；一个已经解锁的新范例。这就是为什么 <a href="https://cryptotvplus.com/2022/11/meta-integrates-arweave-for-instagram-collectibles-storage/">Meta 等公司决定使用 Arweave</a> 来存储某些类型的，具有无限存储空间的数据需要，因为没有其他解决方案可以为它们提供真正的永久存储。</p>
+<h2 id="去中心化和不可变的-decentralised-and-immutable">去中心化和不可变的 (Decentralised and immutable)</h2>
+<p>Arweave is a decentralised network, which means that no central authority controls or owns the data on the network. The contracts that govern the dynamics between the network and its participants are in open-source code, making their integrity independently verifiable.</p>
+<p>Arweave 是一个去中心化的网络，这意味着没有中心化机构控制或拥有网络上的数据。管理网络及其参与者之间动态的合约采用开源代码，使其完整性可以独立验证。</p>
+<p>Because the network is permanent and decentralised, it means the data is immutable and its integrity is guaranteed.</p>
+<p>因为网络是永久的和去中心化的，这意味着数据是不可变的并且其完整性得到保证。</p>
+<p>One of the core challenges facing modern archiving is to ensure that digital objects remain unaltered while stored in an archive. When a physical object is tampered with it will often present obvious clues, but this is not so with digital objects that are by their nature designed to be easily edited or overwritten.</p>
+<p>现代存档面临的核心挑战之一，是确保数字对象在存储在档案中时保持不变。当一个物理对象被篡改时，它通常会提供明显的线索，但数字对象的情况并非如此，因为它们本质上被设计为易于编辑或覆盖。</p>
+<p>Arweave and Akord solves this problem out-the-box. On the Arweave blockchain, every upload will forever be recorded, and stored, unaltered. And in every digital vault in Akord you can easily view a complete immutable timeline of events, where every action in the vault (a file uploaded, moved, renamed, a folder created, a message sent, and so on) can be located and is timestamped on-chain.</p>
+<p>Arweave 和 Akord 开箱即用地解决了这个问题。在 Arweave 区块链上，每次上传都将被永久记录和存储，不会被更改。在 Akord 的每个数字保管库中，您都可以轻松查看完整的不可变事件时间表，其中可以找到保险库中的每个操作（文件上传、移动、重命名、创建文件夹、发送消息等）并且是链上时间戳。</p>
+<p>Anything in an Akord archive can be objectively proven and verified as being the original at any point in the future.</p>
+<p>Akord 存档中的任何内容都可以在未来的任何时候被客观地证明和验证为原件。</p>
+<h2 id="自主-self-sovereign">自主 (Self-sovereign)</h2>
+<p>When data is permanent, decentralised and immutable, it follows that it will be self-sovereign, or ‘user-owned’.</p>
+<p>当数据是永久的、去中心化的和不可变的时，随之而来的是它将是自我主权或“用户拥有的”。</p>
+<p>If you’re archiving data with Microsoft Azure or Amazon S3 Glacier, you are effectively renting access to that data.</p>
+<p>如果您使用 Microsoft Azure 或 Amazon S3 Glacier 存档数据，您实际上是在租用该数据的访问权限。</p>
+<p>If you stop paying, you don’t get access and your data will be deleted. Considering that it can take up to two years to plan and execute a data migration, many archives are essentially at the mercy of their data landlords.</p>
+<p>如果您停止付款，您将无法访问并且您的数据将被删除。考虑到计划和执行数据迁移可能需要长达两年的时间，许多档案基本上都受其数据地主的摆布。</p>
+<p>The web3 archive empowers businesses and organisations with ownership of the most valuable resource they possess – their data.</p>
+<p>web3 存档使企业和组织能够拥有他们拥有的最有价值的资源——他们的数据。</p>
+<p>True ownership is a fundamental pre-requisite to permanent or perpetual storage – if you don’t own your data in a very tangible way, then you will forever be at the mercy of myriad external factors that will be out of your control.</p>
+<p>真正的所有权是永久或永久存储的基本先决条件—如果您没有以非常有形的方式拥有您的数据，那么您将永远受制于无数您无法控制的外部因素。</p>
+<h2 id="安全-secure">安全 (Secure)</h2>
+<p>The web3 archive can be public or private. If you choose to encrypt all your data, then it can be secure in the areas that traditional cloud storage services, like Amazon S3 Glacier, Microsoft Azure and Google Cloud, are famously prone to attack.</p>
+<p>web3 存档可以是公共的也可以是私密的。如果您选择加密所有数据，那么在传统云存储服务（如 Amazon S3 Glacier、Microsoft Azure 和谷歌云）容易受到攻击的领域，数据可以是安全的。</p>
+<p>The encryption keys for these services are held on centralised databases vulnerable to being <a href="https://firewalltimes.com/amazon-web-services-data-breach-timeline/">hacked</a> or <a href="https://firewalltimes.com/microsoft-data-breach-timeline/">leaked</a> through human error, which often results in terrabytes of data and hundreds of thousands, or even millions, of user records being exposed.</p>
+<p>但如果这些服务的加密密钥保存在易受<a href="https://firewalltimes.com/amazon-web-services-data-breach-timeline/">黑客攻击</a>或 通过人为错误[泄露](https://firewalltimes. com/microsoft-data-breach-timeline/)，这通常会导致数 TB 的数据和数十万甚至数百万的用户记录被暴露。</p>
+<p>With Akord, our encryption is quantum resistant and end to end. Most importantly, you own the keys to that encryption. We can’t see your data, ever. There are no backdoors. This level of privacy hands you the control and ownership over your digital assets, eliminating the need to trust third parties to properly protect your data.</p>
+<p>使用 Akord，我们的加密是抗量子的并且是端到端的。最重要的是，您拥有该加密的密钥。我们永远看不到您的数据。没有后门。这种级别的隐私让您可以控制和拥有您的数字资产，无需信任第三方来妥善保护您的数据。</p>
+<p>Decentralised storage is also resistant to ransomware attacks by the very nature of its architecture. As data is spread across hundreds or even thousands of nodes across the globe, hackers would have to attack all nodes simultaneously in order to steal and hold data to ransom.</p>
+<p>去中心化存储还因其架构的本质而可以反勒索软件攻击。由于数据分布在全球数百甚至数千个节点上，黑客必须同时攻击所有节点才能窃取数据并勒索赎金。</p>
+<p>In <a href="https://assets.sophos.com/X24WTUEQ/at/k4qjqs73jk9256hffhqsmf/sophos-state-of-ransomware-2021-wp.pdf?cmp=120469">The State of Ransomware 2021</a> report by Sophos, 37% of respondents’ organizations were hit by ransomware that year, and of those over half said the cybercriminals were successful. The average bill for rectifying a ransomware attack, considering downtime, people time, device cost, network cost, lost opportunity, ransom paid etc was US$1.85 million.</p>
+<p>在 <a href="https://assets.sophos.com/X24WTUEQ/at/k4qjqs73jk9256hffhqsmf/sophos-state-of-ransomware-2021-wp.pdf?cmp=120469">2021 年勒索软件状况</a> Sophos 的报告中，37% 的受访者的组织在那一年受到了勒索软件的攻击，其中超过一半的人表示网络犯罪分子得逞了。考虑到停机时间、人员时间、设备成本、网络成本、失去的机会、支付的赎金等，纠正勒索软件攻击的平均费用为 185 万美元。</p>
+<p>Cloud services try to protect against ransomware through measures that further lock down the data and tighten access control, with the consequence that data becomes much less readily accessible.</p>
+<p>云服务试图通过进一步锁定数据和加强访问控制的措施来防止勒索软件，结果是数据变得更不容易访问。</p>
+<h2 id="可访问-accessible">可访问 (Accessible)</h2>
+<p>Archiving is a serious, meticulously undertaken process with a long history. But the idea around what is involved in this process is changing with the possibilities of digital technology and the interactivity that web2 has ushered in.</p>
+<p>存档是一个严肃、精心进行的过程，历史悠久。但是随着数字技术的可能性和 web2 引入的交互性，围绕这个过程所涉及的内容的想法正在发生变化。</p>
+<p>Archiving used to be characterised with a file-it-and-forget-it mentality. The focus and majority of work was centred on the initial archiving away of data. Physical archives have been passive and static, difficult to access due to a fixed geographic location.</p>
+<p>过去，存档的特点是“归档后就不管”的心态。重点和大部分工作都集中在数据的初始归档上。物理档案馆一直是被动和静态的，由于地理位置固定而难以访问。</p>
+<p>But digital archives don’t have these physical restrictions; they have collapsed space, requiring only an internet connection, in theory. Digital technology and user-friendly apps have opened up the idea that archives don’t necessarily need to be passive; they can be active, living and breathing tools, where their intrinsic value can be more readily accessed and used by many people, not just a few gatekeepers.</p>
+<p>但是数字档案馆没有这些物理限制；从理论上讲，他们已经坍塌了空间，只需要互联网连接。数字技术和用户友好的应用开辟了档案不一定需要被动的想法；它们可以是活跃的、有生命力的、会呼吸的工具，它们的内在价值可以更容易地被许多人获取和使用，而不仅仅是少数看门人。</p>
+<p>But web2 has failed to deliver on this potential. The big cloud services offer special archiving tiers for their storage, but this data can take up to 48 hours to retrieve and cost you money to do so.</p>
+<p>但是 web2 未能发挥这种潜力。大型云服务为其存储提供特殊的存档层，但这些数据可能需要长达 48 小时才能检索，而且这样做会花费你很多钱。</p>
+<p>These services are so complex to manage, that centralised cloud archiving has become the domain of IT departments or specialist contractors, locking out or creating huge barriers of entry for a company, organisation or public at large.</p>
+<p>这些服务管理起来非常复杂，以至于集中式云存档已成为 IT 部门或专业承包商的领域，将公司、组织或广大公众拒之门外或设置巨大的进入壁垒。</p>
+<h2 id="经济高效且可扩展-cost-efficient-and-scalable">经济高效且可扩展 (Cost-efficient and scalable)</h2>
+<p>Archives, ideally, last for a long time. A very long time. There are many areas of archiving where storing data “forever” is mission critical: social and cultural, media and entertainment, science and research, to name the obvious.</p>
+<p>理想情况下，档案可以保存很长时间。很长一段时间。在许多存档领域，“永久”存储数据是关键任务：社会和文化、媒体和娱乐、科学和研究，等等。</p>
+<p>With this long-term view in mind, it’s worth thinking about your archival solution’s cost over decades, not years.</p>
+<p>考虑到这一长远观点，值得考虑您的存档解决方案数十年而不是数年的成本。</p>
+<p>“Total cost of ownership”, or TCO, is a phrase used to define the lifetime cost of buying an asset. In the case of data storage, to define the TCO we need to know how long we want to store the data for. With cloud storage solutions, it is impossible to define the total cost of ownership if you pay monthly for storage, and have an indefinite retention period for that data. Also, as discussed previously, even if you did have a fixed period of time in mind, you would never truly own that data.</p>
+<p>“总拥有成本”或 TCO ，是用于定义购买资产的生命周期成本的短语。在数据存储的情况下，要定义 TCO，我们需要知道希望将数据存储多长时间。使用云存储解决方案，如果您按月支付存储费用，并且数据的保留期限不确定，则无法定义总拥有成本。此外，如前所述，即使您确实有一个固定的时间段，您也永远不会真正拥有该数据。</p>
+<p>With Akord and Arweave, TCO is effectively known on day 1. That’s because you pay upfront for storage and never again. And you control the data, not a centralised third party.</p>
+<p>借助 Akord 和 Arweave，TCO 在第一天就有效地为人所知。那是因为您预先支付了存储费用，以后再也不会了。并且您控制数据，而不是中心化的第三方。</p>
+<p>This means you pay what may feel like a premium to start your archive, but after a decade you've already started paying more with monthly payments on a traditional cloud service. That doesn't even take into consideration all the costs associated with managing that service and inevitable data migrations as services change terms and prices. After 20 years the difference is stark.</p>
+<p>这意味着您可能会为开始存档支付额外费用，但十年后您已经开始在传统云服务上每月支付更多费用。这甚至没有考虑到与管理该服务相关的所有成本，以及随着服务条款和价格的变化而不可避免的数据迁移。 20 年后，差别就很明显了。</p>
+<figure data-type="image" tabindex="4"><img src="https://cdn2.assets-servd.host/akord-web/production/50TB-over-20yr.svg" alt="50 TB over 20yr" loading="lazy"></figure>
+<p>不包括出口或合同管理成本。(Doesn’t include egress or contract management costs.)</p>
+<p>With a service like Microsoft Azure or Google Cloud, the cumulative cost of every GB of data stored never stops going up over time. And the more data you add to the archive, the more you compound the effect, spiralling the cost of your archive over the years.</p>
+<p>使用 Microsoft Azure 或 Google Cloud 等服务，存储每 GB 数据的累积成本永远不会随着时间的推移而停止上升。添加到存档中的数据越多，效果就越复杂，多年来存档的成本呈螺旋式上升。</p>
+<figure data-type="image" tabindex="5"><img src="https://cdn2.assets-servd.host/akord-web/production/Cumulative-Cost_Arweave-vs-Big-3.svg" alt="Cumulative Cost Arweave vs Big 3" loading="lazy"></figure>
+<p>不包括出口或合同管理成本。假设固定的相对定价。(Doesn’t include egress or contract management costs. Assumes fixed relative pricing.)</p>
+<p>This is why Akord is a truly scalable archiving solution, especially for organisations that are continually archiving more and more data. Many archives are funded through unpredictable sources – grants, public funding, private donations from patrons. You can't scale an archive when you're beholden to gatekeepers whose continued support cannot be counted on.</p>
+<p>这就是 Akord 是真正可扩展的存档解决方案的原因，特别是对于不断归档越来越多数据的组织而言。许多档案馆的资金来自不可预测的来源——赠款、公共资金、赞助人的私人捐赠。当您受制于无法指望持续支持的看门人时，您无法扩展档案。</p>
+<p>Without knowing the TCO for the data in an archive it’s difficult to scale an archive without potentially risking its very existence by arriving at some point in the future where the business or organisation can no longer afford its maintenance.</p>
+<p>在不知道存档中数据的 TCO 的情况下，很难在不冒着潜在风险的情况下扩展存档，因为在未来的某个时间点，企业或组织将无法再承担其维护费用。</p>
+<p>What's more, the Arweave protocol itself is designed to be scalable. As the Arweave team themselves explain:</p>
+<p>更重要的是，Arweave 协议本身被设计成可扩展的。正如 Arweave 团队自己解释的那样：</p>
+<p><em>The blockweave is… designed to enable scalable on-chain storage in a cost efficient manner for the first time. As the amount of data stored in the system increases, the amount of hashing needed for consensus decreases, thus reducing the cost to store data.</em></p>
+<p><em>Blockweave 旨在首次以经济高效的方式实现可扩展的链上存储。随着系统中存储的数据量增加，达成共识所需的哈希量减少，从而降低存储数据的成本。</em></p>
+<p>-<a href="https://arweave.medium.com/what-is-arweave-explain-like-im-five-425362144eb5">What is Arweave? Explain Like I’m Five</a>, Arweave Team</p>
+<p>Pay once, store forever. This is the only way an archive can confidently scale.</p>
+<p>一次支付，永久保存。这是档案可以自信地扩展的唯一方式。</p>
+<h2 id="协作和用户友好-collaborative-and-user-friendly">协作和用户友好 (Collaborative and user-friendly)</h2>
+<p>Akord’s vaults are beautifully designed, interactive and collaborative.</p>
+<p>Akord 的保管库设计精美、互动和协作。</p>
+<p>You can invite other team members and set access-level rights, send them messages and receive notifications informing you of activity in the vault.</p>
+<p>您可以邀请其他团队成员并设置访问级别权限，向他们发送消息并接收通知，告知您保管库中的活动。</p>
+<figure data-type="image" tabindex="6"><img src="https://optimise2.assets-servd.host/akord-web/production/Manage-access-UI.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1675084631&amp;s=f5b9be61f19ffbae48c69d6c1b1b950e" alt="" loading="lazy"></figure>
+<p>Managing the data in a vault can be handled through our Command Line Interface and developer tools, or through our web app. Akord, and specifically the web app, is designed to remove all the normal web3 barriers: you don’t need tokens or third party crypto wallets – create your Akord wallet on signup in a few clicks and pay for storage with your credit card. We work with organisations or businesses who are working with large amounts of data to buy storage on the network at a competitive price.</p>
+<p>可以通过我们的命令行界面和开发人员工具，或通过我们的网络应用，来管理保险库中的数据。 Akord，特别是网络应用，旨在消除所有一般性 web3 障碍：您不需要代币或第三方加密钱包——只需点击几下即可在注册时创建您的 Akord 钱包，并使用您的信用卡支付存储费用。我们与处理大量数据的组织或企业合作，以具有竞争力的价格购买网络存储。</p>
+<p>The Akord app works just as well on your mobile as it does on your desktop. We’ve focused on making the overall user experience feel intuitive and straightforward, taking the best of web2 app experiences and combining that with web3 technology under the hood.</p>
+<p>Akord 应用在您的手机上和在桌面上一样好用。我们专注于让所有用户体验感觉直观和直接，充分利用 web2 应用体验并将其与 web3 技术相结合。</p>
+<p>With the web3 archive anyone in your team, regardless of their technical skills, can easily access and contribute to the archive.</p>
+<p>使用 web3 存档，您团队中的任何人，无论他们的技术技能如何，都可以轻松访问存档并为存档做出贡献。</p>
+<p>Akord’s versatile media viewer is particularly powerful for public archives, where sharing and presenting digital objects in an accessible way to the public is a priority.</p>
+<p>Akord 的多功能媒体查看器对于公共档案馆特别强大，其中优先考虑以一种可访问的方式向公众共享和展示数字对象。</p>
+<p>Our media viewer supports many file and image formats as well as video and audio. You can switch between focusing on single image at a time or a gallery mode, zoom in on images and PDFs, flick through the pages of a PDF document, change between light and dark mode, and print directly from the media viewer.</p>
+<p>我们的媒体查看器支持多种文件和图像格式以及视频和音频。您可以在一次聚焦于单个图像或图库模式之间切换、放大图像和 PDF、轻拂 PDF 文档的页面、在明暗模式之间切换以及直接从媒体查看器打印。</p>
+<h2 id="支持最重要的档案-supporting-archives-that-matter-most">支持最重要的档案 (Supporting archives that matter most)</h2>
+<p>Archives no longer need to be hidden away. They can be accessed instantly by anyone in your organisation, or with anyone across the globe if that’s what you want.</p>
+<p>档案不再需要隐藏起来。您组织中的任何人都可以立即访问它们，如果您需要，也可以与全球任何人一起访问。</p>
+<p>We believe that a great archive needs a great experience. If your data is valuable enough to be stored forever, then you should do it the justice of being easily accessed and presented in the best possible light.</p>
+<p>我们相信，一个伟大的档案需要一个伟大的经验。如果您的数据足够有价值，可以永久存储，那么您应该以易于访问和以最佳方式呈现它。</p>
+<p>The tools we have are just the beginning. We’re constantly working on improving the Akord experience, and we have exciting new features in our roadmap for 2023 to further elevate your web3 archives.</p>
+<p>我们拥有的工具仅仅是个开始。我们一直致力于改善 Akord 体验，我们在 2023 年的路线图中拥有令人兴奋的新功能，以进一步提升您的 web3 档案。</p>
+<p>If you’re archiving data that is valuable for the social good, preserving what matters most to humanity, then you may be eligible for specialist support and even storage grants for you project. <a href="mailto:pascal@akord.com">Please reach out</a> and let me know more about your work.</p>
+<p>如果您要归档对社会有益的数据，保存对人类最重要的数据，那么您可能有资格获得专家支持，甚至为您的项目提供存储补助。 <a href="mailto:pascal@akord.com">请联系</a> 我们让我们知道更多关于你的工作。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AkordJS：Arweave 上的隐私、协作和文件管理(AkordJS：privacy, collaboration and file management on Arweave)]]></title>
+        <id>https://chainguys.github.io/post/akordjsarweave-shang-de-yin-si-xie-zuo-he-wen-jian-guan-li-akordjsprivacy-collaboration-and-file-management-on-arweave/</id>
+        <link href="https://chainguys.github.io/post/akordjsarweave-shang-de-yin-si-xie-zuo-he-wen-jian-guan-li-akordjsprivacy-collaboration-and-file-management-on-arweave/">
+        </link>
+        <updated>2023-01-30T14:34:47.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://optimise2.assets-servd.host/akord-web/production/Akord-JS.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1674913254&amp;s=0354064eb00382cae2aaec600f6ab81c" alt="" loading="lazy"></figure>
+<p><strong>Building on Arweave’s immutable and permanent file storage, AkordJS provides the privacy layer and means to collaborate securely with messaging and notes.</strong></p>
+<p><strong>基于 Arweave 的不可变和永久文件存储，AkordJS 提供了隐私层和与消息传递和注释间安全协作的方法。</strong></p>
+<h2 id="akordjs介绍-introducing-akordjs">AkordJS介绍 (Introducing AkordJS)</h2>
+<p>Implementing the core functions of the Akord protocol, <a href="https://github.com/akord-com/akord-js">AkordJS</a> enables developers to integrate user-owned storage into their (d)Apps with our digital vaults</p>
+<p>实施 Akord 协议的核心功能，<a href="https://github.com/akord-com/akord-js">AkordJS</a> 使开发人员能够使用我们的数字保险库保管库，将用户拥有的存储集成到其(d)Apps 中。</p>
+<p>Specifically, AkordJS allows developers to do the following.</p>
+<p>具体来说，AkordJS 允许开发人员执行以下操作。</p>
+<ul>
+<li>
+<p>Create end-to-end encrypted and permanent vaults for archiving and preserving documents, images, structured data, and other forms of data. Applications can be granted access to a user’s vault to get or save data related to the application. The vaults are managed by a contract on Arweave and all data is stored on-chain.<br>
+创建端到端的加密和永久保管库，用于归档和保存文档、图像、结构化数据和其他形式的数据。可以授予应用访问用户保管库的权限，获取或保存与应用相关的数据。保险库由 Arweave 上的合约管理，所有数据都存储在链上。</p>
+</li>
+<li>
+<p>Add or remove members to vaults who can be assigned as contributors or have view-only permission. Keys are generated and rotated by the client. The agreement between members is maintained by the protocol and verified by the members’ clients.<br>
+添加或删除可以被指定为贡献者或具有只读权限的保险库成员。密钥由客户端生成和轮换。成员之间的协议由协议维护，并由成员的客户验证。</p>
+</li>
+<li>
+<p>Files, messages and other data sets can be encrypted client side and stored in the vault. Data that is managed by the vault can be arranged within folders, as well as allowing for file revisions and audits of an immutable timeline of events.<br>
+文件、消息和其他数据集可以在客户端加密并存储在保管库中。由保管库管理的数据可以安排在文件夹中，并允许对不可变的事件时间线进行文件修订和审计。</p>
+</li>
+</ul>
+<h2 id="20发布-20-release">2.0发布 (2.0 release)</h2>
+<p>We're excited to announce the release of <a href="https://github.com/Akord-com/akord-js">AkordJS 2.0</a>. This release makes some major improvements, addressing the feedback we received from the community. It includes the following updates.</p>
+<p>我们很高兴地宣布发布 <a href="https://github.com/Akord-com/akord-js">AkordJS 2.0</a> 。此版本进行了一些重大改进，回应了我们从社区收到的反馈。它包括以下更新。</p>
+<ul>
+<li>
+<p>Abstracted external services and other APIs from AkordJS core, replacing them with a single, deployable and public endpoint. Developers can now choose their preferred backend for accessing and committing transactions to Arweave.<br>
+从 AkordJS 核心中，抽象出外部服务和其他 API，将它们替换为一个单一的、可部署的公共端点。开发人员现在可以选择他们喜欢的后端来访问 Arweave 并将交易提交给 Arweave。</p>
+</li>
+<li>
+<p>Removed unneeded dependencies from the abstraction above, therefore reducing the size of AkordJS.<br>
+从上面的抽象中删除了不需要的依赖项，因此减少了 AkordJS 的大小。</p>
+</li>
+<li>
+<p>Renamed and improved the consistency of the project – naming conventions and codebase.<br>
+重命名并改进了项目的一致性—命名约定和代码库。</p>
+</li>
+</ul>
+<h2 id="使用-akordjs-构建-building-with-akordjs">使用 AkordJS 构建 (Building with AkordJS)</h2>
+<p>We believe the ability to collaborate in an end-to-end encrypted environment where data is immutable and permanent will open up exciting new opportunities; products and services that will be built on a foundation of data ownership.</p>
+<p>我们相信，在数据不可变且永久的端到端加密环境中来进行协作的能力，将开辟令人兴奋的新机会；将建立在数据所有权基础上的产品和服务。</p>
+<p>Listed below are just a few simple ideas for how AkordJS could be used.</p>
+<p>下面列出的只是关于如何使用 AkordJS 的一些简单想法。</p>
+<ul>
+<li>
+<p>Writing or blogging where content is published and shared exclusively.<br>
+专门发布和共享内容的写作或博客。</p>
+</li>
+<li>
+<p>Creating archives of important files that need to be stored for many years or even indefinitely, and where ownership can easily be managed and passed on.<br>
+为需要保存多年甚至无限期的重要文件创建存档，并且所有权可以轻松管理和传递。</p>
+</li>
+<li>
+<p>Airdropping token-gated access to vaults, containing files and message threads for specific communities.<br>
+对保管库空投代币化门禁，包含特定社区的文件和消息线程。</p>
+</li>
+<li>
+<p>Printing a QR code that provides access to a vault containing additional information, media or rewards.<br>
+打印二维码码，提供对包含额外信息、媒体或奖励的保管库的访问。</p>
+</li>
+<li>
+<p>Build a content vault, where viewers sign and agree to terms to access a specific resource.<br>
+建立一个内容库，观众可以在其中签署并同意访问特定资源的条款。</p>
+</li>
+</ul>
+<p>AkordJS, like all our tools, is just the start. Now it’s over to you to start building with privacy and permanence.</p>
+<p>与我们所有的工具一样，AkordJS 只是一个开始。现在轮到您开始构建具有隐私和永久性的产物了。</p>
+<h2 id="代码示例永久博客-code-example-a-permablog">代码示例—永久博客 (Code example – a Permablog)</h2>
+<p>Using AkordJS, we’ll easily build a simple, private and permanent blog – a Permablog!</p>
+<p>使用 AkordJS，我们将轻松构建一个简单、私人和永久的博客——永久博客！</p>
+<p>Out of the box, we’ll get end-to-end encryption of the blog posts, permanent storage on the Arweave blockchain and access control using key rotation provided by Akord protocol.</p>
+<p>开箱即用，我们将获得博客文章的端到端加密、Arweave 区块链上的永久存储以及使用 Akord 协议提供的密钥轮换来获得的访问控制。</p>
+<h3 id="从-akord-钱包开始-start-with-an-akord-wallet">从 Akord 钱包开始 (Start with an Akord wallet)</h3>
+<p>First, you’ll first need to <a href="https://v2.akord.com/signup">create your Akord account and wallet here</a>.</p>
+<p>首先，您首先需要<a href="https://v2.akord.com/signup">在此处创建您的 Akord 帐户和钱包</a>。</p>
+<p>By creating an Akord account, you’ll be able to access your wallet across devices. The wallet is where you secure your keys.</p>
+<p>通过创建 Akord 帐户，您将能够跨设备访问您的钱包。钱包是您保护密钥的地方。</p>
+<p>Make sure to safely store your recovery phrase. Akord does not have access to your recovery phrase and will never ask for it.</p>
+<p>确保安全地存储您的助记词。 Akord 无法访问您的助记词，也绝不会要求它。</p>
+<h3 id="创建保管库-create-the-vault">创建保管库 (Create the vault)</h3>
+<p>Next, we’ll start by creating a new vault for our Permablog.</p>
+<p>接下来，我们将从为永久博客创建一个新的保险库开始。</p>
+<p>NOTE: You’ll need to build with Node v16.x</p>
+<p>注意：您需要使用 Node v16.x 进行构建</p>
+<pre><code class="language-javascript">const { Akord } = require(&quot;@akord/akord-js&quot;);
+</code></pre>
+<p>Using the credentials from our Akord account to retrieve the wallet, along with the keys contained in it, we’re able to create the vault with the title “My Permablog”.</p>
+<p>使用我们 Akord 帐户的凭据来检索钱包，连同其中包含的密钥，我们能够创建标题为“My Permablog”的保管库。</p>
+<p><em>Note: you can sign up for a <a href="http://v2.akord.com/">free Akord account</a> to conveniently store and secure your wallet.</em></p>
+<p><em>注意：您可以注册一个<a href="http://v2.akord.com/">免费的 Akord 帐户</a> 来方便地存储和保护您的钱包。</em></p>
+<pre><code class="language-javascript">// access your Akord wallet 
+const email = &quot;--akord username--&quot;
+const pass = &quot;--akord password--&quot;
+const { akord } = Akord.auth.signIn(email, password);
+
+// create the vault
+const { vaultId } = await akord.vault.create(&quot;my first vault&quot;);
+</code></pre>
+<p>To finish the Vault setup, let’s create a folder to store our blog posts:</p>
+<p>要完成保管库设置，让我们创建一个文件夹来存储我们的博客文章：</p>
+<pre><code class="language-javascript">// create a folder for blog posts
+const { folderId } = await akord.folder.create(vaultId, &quot;posts&quot;);
+</code></pre>
+<h3 id="发布到永久博客-posting-to-the-permablog">发布到永久博客 (Posting to the Permablog)</h3>
+<p>We now have our Akord wallet, vault and folder ready for our blog posts. Next, we’ll post our content:</p>
+<p>我们现在已经为我们的博客文章准备好了 Akord 钱包、保险库和文件夹。接下来，我们将发布我们的内容：</p>
+<pre><code class="language-javascript">// post content to the vault
+const title = “Hello world!”
+const body = “# Welcome to my Permablog! \nThis is how it starts.&quot;
+
+const { noteId } = await akord.note.create(vaultId, body, title, folderId);
+</code></pre>
+<p>A ‘note’ is a primitive in the AkordJS library that enables you to post markdown to your vault. It’s simply a file that’s uploaded as a ‘stack’ in the Akord Protocol.</p>
+<p>“注释”是 AkordJS 库中的原语，可让您将 markdown 发布到您的保险库。它只是一个在 Akord 协议中作为“栈”上传的文件。</p>
+<p>Stacks are a useful primitive enabling you to upload a file along with any revisions. Each revision is stored in a stack like structure, meaning you keep all revisions and history of the file.</p>
+<p>栈是一种有用的原语，使您可以上传文件以及任何修订。每个修订都存储在类似栈的结构中，这意味着您可以保留文件的所有修订和历史记录。</p>
+<h3 id="从永久博客读取-reading-from-the-permablog">从永久博客读取 (Reading from the Permablog)</h3>
+<p>Now that we’ve posted content to our vault, next we’ll read from the vault display our blog post:</p>
+<p>现在我们已经将内容发布到我们的保管库中，接下来我们将从保管库中读取显示我们的博客文章：</p>
+<pre><code class="language-javascript">// get a list of notes in the vault
+const notes = await akord.note.list(vaultId);
+
+// download each note from the vault
+notes.forEach(async (note) =&gt; {
+const { data } = await akord.note.getVersion(note.id);
+console.log(data);
+});
+</code></pre>
+<h3 id="使用-akord-app-验证-verify-with-akord-app">使用 Akord App 验证 (Verify with Akord App)</h3>
+<p>Until now, we have used javascript and AkordJs to interact with our vault. Using the Akord App (<a href="http://v2.akord.com/">http://v2.akord.com</a>) we can open the vault and verify the results.</p>
+<p>到目前为止，我们已经使用 javascript 和 AkordJs 与我们的保管库进行交互。使用 Akord 应用(<a href="http://v2.akord.com/">http://v2.akord.com</a>)，我们可以打开保管库并验证结果。</p>
+<figure data-type="image" tabindex="2"><img src="https://optimise2.assets-servd.host/akord-web/production/permablog.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1674913370&amp;s=ed9c2dbcf1922294c87330c48ed1bf58" alt="" loading="lazy"></figure>
+<h2 id="更多教程和构建器支持-more-tutorials-and-builder-support">更多教程和构建器支持 (More tutorials and builder support)</h2>
+<p>You can <a href="http://js.akord.com/">find a similar tutorial here</a>. We also recommend checking out the <a href="https://docs.akord.com/">full documentation for Akord protocol here</a>, as well as our <a href="https://871123434-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0GR33YblhLmalhKSoV1D%2Fuploads%2F1A2zqgsrszDpOZYj28X6%2FAkord%20Litepaper.pdf?alt=media&amp;token=ae2870e0-5981-4c0f-9430-6b1b3d6eafa0">Litepaper</a>.</p>
+<p>您可以<a href="http://js.akord.com/">在此处找到类似的教程</a>。我们还建议您在此处查看<a href="https://docs.akord.com/">Akord 协议的完整文档</a>，以及我们的<a href="https://871123434-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0GR33YblhLmalhKSoV1D%2Fuploads%2F1A2zqgsrszDpOZYj28X6%2FAkord%20Litepaper.pdf?alt=media&amp;token=ae2870e0-5981-4c0f-9430-6b1b3d6eafa0">Litepaper</a>。</p>
+<p>This article will be followed with a more another more detailed tutorial looking at different ways to use and access Akord's vaults.</p>
+<p>这篇文章之后将有一个更详细的教程，介绍使用和访问 Akord 保险库的不同方式。</p>
+<p>If you want to connect directly with our developers, jump into the discord and join the <a href="https://discord.gg/vArB88mYJs">#builder-chat</a>.</p>
+<p>如果您想直接与我们的开发人员联系，请加入 Discord 并加入 <a href="https://discord.gg/vArB88mYJs">#builder-chat</a>。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[存储日本昭和时代的老照片 (Archiving photos from the Japanese Shōwa era)]]></title>
+        <id>https://chainguys.github.io/post/cun-chu-ri-ben-zhao-he-shi-dai-de-lao-zhao-pian-archiving-photos-from-the-japanese-showa-era/</id>
+        <link href="https://chainguys.github.io/post/cun-chu-ri-ben-zhao-he-shi-dai-de-lao-zhao-pian-archiving-photos-from-the-japanese-showa-era/">
+        </link>
+        <updated>2023-01-18T02:34:07.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://optimise2.assets-servd.host/akord-web/production/YPYK06Fb.jpeg?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1672525121&amp;s=270e4c0fc5382c8a1c7f24545858e16a" alt="YPYK06 Fb" loading="lazy"></figure>
+<p><strong>Recently, there has been a retro boom, such as Fujifilm’s disposable camera or Instax, and retro artefacts have exploded into the spotlight. In Japan, the Shōwa era has been drawing attention from the younger generation in recent years.</strong></p>
+<p><strong>最近掀起了一股复古热潮，比如富士胶片的一次性相机或Instax，复古的手工艺品开始成为人们关注的焦点。在日本，昭和时代近年来一直受到年轻一代的关注。</strong></p>
+<h2 id="昭和时代-the-shōwa-era">昭和时代 (The Shōwa era)</h2>
+<p>In Japan, every emperor is given an era name by the cabinet from a list of candidates created by bureaucrats based on a guideline. For example, we are currently in year number 4 of the Reiwa era, which translates to beautiful harmony.</p>
+<p>在日本，内阁从官僚根据指南制定的候选名单中，为每位天皇指定一个年号。例如，我们目前正处于令和时代的第 4 年，这意味着美丽和谐。</p>
+<p>The Shōwa era was one of the longest eras, lasting from 1926 until 1989. During this era, Japan went through many phases: militarization, destruction due to World War II, and a subsequent dramatic economic revival in the 1980s. This economic revival was one of the most prosperous periods in recent Japan, and people who lived through the Shōwa era now look back to these good old days.</p>
+<p>昭和时代是最长的时代之一，从 1926 年一直持续到 1989 年。在这个时代，日本经历了多个阶段：军事化、二战造成的破坏，以及随后在 1980 年代出现的剧烈经济复苏。这次经济复兴是近代日本最繁荣的时期之一，经历过昭和时代的人们现在回首过去的美好时光。</p>
+<p>However, they are not the only ones looking at this period. This nostalgia has been growing in recent years, even among the younger generations who didn't experience and live through the Shōwa era. Perhaps as Japan faces economic stagnation, these times of growth and possibility are creating nostalgia amongst a disillusioned youth. Whatever the case may be, as with many other historical periods, people will always want to look back at different periods to learn how people before them lived.</p>
+<p>然而，他们并不是唯一关注这一时期的人。近年来，这种怀旧情绪一直在增长，甚至在没有经历过昭和时代的年轻一代中也是如此。也许当日本面临经济停滞时，这些增长和可能性的时代正在让幻想破灭的年轻人产生怀旧之情。无论情况如何，与许多其他历史时期一样，人们总是希望回顾不同时期以了解他们之前的人是如何生活的。</p>
+<p>To enable people to do this, we need to be able to store this type of data for hundreds of years, allowing future generations to easily access it. Ideally, we should be able to publish this content permanently and make it easily accessible to all.</p>
+<p>为了让人们能够做到这一点，我们需要能够将此类数据存储数百年，让子孙后代能够轻松访问它。理想情况下，我们应该能够永久发布这些内容并让所有人都能轻松访问。</p>
+<figure data-type="image" tabindex="2"><img src="https://optimise2.assets-servd.host/akord-web/production/showa-era.jpg?w=2600&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1672582495&amp;s=309f7b7fd6cf88a21c3a679f3aa1206c" alt="Showa era" loading="lazy"></figure>
+<h2 id="用akord存储和发布照片-archiving-and-publishing-photos-with-akord">用Akord存储和发布照片 (Archiving and publishing photos with Akord)</h2>
+<p>There are many ways to upload, backup, and share media, but the main issue is that very few of these can last long enough to outlive us. What if you could rest assured that all the data you archive will persist no matter what happens?</p>
+<p>上传、备份和共享媒体的方式有很多种，但主要问题是这些方式中很少能够持续到我们生命的尽头。那如果您可以放心——无论发生什么情况，您存储的所有数据都将持续存在怎么办？</p>
+<p>Akord and Arweave allow you to do just that.</p>
+<p>Akord 和 Arweave 可以让您做到这一点。</p>
+<p>You just need to pay upfront for the amount of storage required on Akord, upload the content and rest easy knowing your files are archived permanently. But instead of forgetting about the content, you’ll probably want to share it with others.</p>
+<p>您只需预先支付 Akord 上所需的存储量，上传内容就可高枕无忧，因为您的文件已永久存档。与其忘记内容，不如与他人分享。</p>
+<p>Akord also lets you ti do just this: once published to Arweave you can share your files in a stylish gallery view. Your videos and audio files can also be played in your preferred browser without needing people to download them.</p>
+<p>Akord 还可以让您做到这一点：一旦发布到 Arweave，您就可以在时尚的画廊视图中共享您的文件。您的视频和音频文件也可以在您喜欢的浏览器中播放，无需下载。</p>
+<h2 id="akord上的昭和时代-shōwa-era-on-akord">Akord上的昭和时代 (Shōwa era on Akord)</h2>
+<p>Many incredible photos from the Shōwa era had been posted to Twitter by a now-removed account. With permission from the account holder, we’ve been archiving and publishing the photos to Akord. Had we not backed up all these photos, many of them might have been completely lost.</p>
+<p>许多昭和时代令人难以置信的照片，被一个现已删除的帐户发布到推特上。在账户持有人的许可下，我们一直在将照片存档并发布到 Akord。如果我们没有备份所有这些照片，其中许多照片可能已经完全丢失。</p>
+<p><a href="https://v2.akord.com/public/vaults/active/FZWZ1gW5BT1Ar1EsajsXXXhOdIal0XY60lYkvfSTELQ/assets">You can find this extraordinary collection of nearly 10,000 photos here</a>.</p>
+<p><a href="https://v2.akord.com/public/vaults/active/FZWZ1gW5BT1Ar1EsajsXXXhOdIal0XY60lYkvfSTELQ/assets">您可以在此处找到包含近 10,000 张照片的非凡收藏</a></p>
+<p>This year, we’ll be releasing Akord Explorer, deployed directly on the Permaweb, and public vaults like this one will be shared and accessed there. What’s more, people will be able to follow these vaults, getting notifications on any activity like new uploads.</p>
+<p>今年，我们将发布直接部署在 Permaweb 上的 Akord Explorer，像这样的公共保管库将在那里共享和访问。更重要的是，人们将能够关注这些保管库，获得有关新上传等任何活动的通知。</p>
+<figure data-type="image" tabindex="3"><img src="https://optimise2.assets-servd.host/akord-web/production/Showa-2.jpg?w=2600&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1672582748&amp;s=72617b30cda9e957fcd2f1ab5aa1bff9" alt="Showa 2" loading="lazy"></figure>
+<h2 id="为您的存储获得自助-get-funding-for-your-archive">为您的存储获得自助 (Get funding for your archive)</h2>
+<p>We believe Akord’s vaults are uniquely able to help publish and preserve parts of our shared history and culture, and will actively help support projects in this area that align with our values.</p>
+<p>我们相信 Akord 的保管库，能够独特地帮助发布和保存我们共同的历史和文化的一部分，并将积极帮助支持该领域符合我们价值观的项目。</p>
+<p>If you have an idea for a similar project that’s working to archive artefacts of cultural interest, or are already working on something you believe would be better published on the Permaweb, then please <a href="mailto:ai@akord.com">contact me</a> as we may be able to contribute towards the storage costs on Akord and Arweave.</p>
+<p>如果您对一个类似的项目有想法，该项目正在努力存档具有文化价值的东西，或者已经在做您认为可以更好地发布在 Permaweb 上的东西，那么请<a href="mailto:ai@akord.com">联系我</a> ，我们或许能够分担 Akord 和 Arweave 的存储成本。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Euler的创新清算引擎(Euler’s innovative liquidation engine)]]></title>
+        <id>https://chainguys.github.io/post/euler-de-chuang-xin-qing-suan-yin-qing-eulers-innovative-liquidation-engine/</id>
+        <link href="https://chainguys.github.io/post/euler-de-chuang-xin-qing-suan-yin-qing-eulers-innovative-liquidation-engine/">
+        </link>
+        <updated>2023-01-16T04:30:49.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://euler-finance.ghost.io/content/images/2023/01/liq-img.png" alt="Euler’s innovative liquidation engine" loading="lazy"></figure>
+<hr>
+<p>Summary:<br>
+总结:</p>
+<ul>
+<li>
+<p>Existing liquidation structures are wasteful, liquidating large positions and contributing to gas wars. New developments must occur in the liquidation engine space to reduce bad debt in DeFi, which sits at ~2.5% on mainnet.<br>
+现有的清算结构有巨大浪费，清算大量头寸并助长gas战争。清算引擎领域必须出现新的进步，来减少 DeFi 的坏账(在主网上的坏账约为 2.5%)。</p>
+</li>
+<li>
+<p>Euler mitigates gas usage and constrains MEV bots by offering sliding discounts to liquidators, and multiplying the discounts for liquidators with deposits in Euler. This forms a dutch auction.<br>
+Euler 通过向清算人提供滑动折扣并将清算人的折扣与 Euler 中的存款相乘来减少 gas 使用并限制 MEV 机器人。这形成了荷兰式拍卖。</p>
+</li>
+<li>
+<p>Euler’s liquidators can perform a “soft liquidation”, in which only enough collateral and debt is transferred from the user undergoing liquidation to return to a health score of 1.25.<br>
+Euler 的清算人可以执行“软清算”，即仅从正在进行清算的用户转移足够的抵押品和债务，进而恢复到 1.25 的健康评分。</p>
+</li>
+</ul>
+<hr>
+<p>Euler Finance’s liquidation engine presents many optimisations over existing liquidation infrastructure currently employed by incumbent lending and borrowing protocols. This article will explain how liquidations occur in major DeFi protocols, and then will discuss Euler’s approach to liquidations, and the benefits that this brings.</p>
+<p>Euler 金融的清算引擎，对当前借贷协议使用的现有清算基础设施进行了多处优化。本文将解释清算在主要 DeFi 协议中是如何发生的，然后将讨论 Euler 的清算方法及其益处。</p>
+<p>For those unfamiliar with liquidations, do not feel discouraged by this article! At the bottom an appendix can be found which will explain them with examples. Please start there and return here after.</p>
+<p>对于那些不熟悉清算的人，不要对这篇文章感到气馁！我们在底部提供到一个附录，其中包含解释的案例。请从那里开始，然后返回这里。</p>
+<p>In addition, a degree of familiarity with how Euler tokenises borrow / supply positions into debt tokens (dTokens) and supply tokens (eTokens) will be useful- imagine them as redeemable receipts. For more info, <a href="https://docs.euler.finance/developers/getting-started/architecture#etoken">see here.</a></p>
+<p>此外，一定程度上了解 Euler 如何将借入/供应头寸代币，转化为债务代币 (dTokens) 和供应代币 (eTokens) ，这将很有用——将它们想象成可赎回的收据。有关详细信息，<a href="https://docs.euler.finance/developers/getting-started/architecture#etoken">请参阅此处。</a></p>
+<h2 id="defi-的清算环境-defis-liquidation-landscape">DeFi 的清算环境 (DeFi’s liquidation landscape)</h2>
+<p>Different protocols handle liquidations in different ways. Leading and borrowing protocols currently handle liquidations in a static way, whereby accounts come into health factor violations and then anyone is capable of liquidating. While open and simple, this method of liquidating can lead to gas spikes and is very susceptible to MEV attack. It is therefore inefficient.</p>
+<p>不同的协议以不同的方式处理清算。领先和借贷协议目前以静态方式处理清算，账户低于健康因子，然后任何人都可以清算。虽然开放且简单，但这种清算方法会导致gas峰值，并且非常容易受到 MEV 攻击。因此效率低下。</p>
+<p>Other lending and borrowing protocols offer a fixed discount to liquidators when buying collateral, which is useful in incentivising decentralisation and ensures that anyone may participate. Some even go as far as to offer reimbursements for gas used in liquidating. This has a few drawbacks as highlighted in an audit which noted “<a href="https://blog.openzeppelin.com/compound-audit/">counterproductive incentives”</a>. In addition, this favours DeFi users with rich technical skill at their disposal, leading to in <a href="https://zengo.com/understanding-compounds-liquidation/#Compounds_Liquidation">one instance one liquidator earning 20% of all rewards.</a> Centralisation is best avoided.</p>
+<p>其他借贷协议在购买抵押品时，向清算人提供固定折扣，这有助于激励去中心化并确保任何人都可以参与。有些甚至为清算中使用的gas提供补偿。正如审计中强调的那样，这有一些缺点，比如“<a href="https://blog.openzeppelin.com/compound-audit/">适得其反的激励措施”</a>。此外，这有利于拥有丰富技术技能的 DeFi 用户，导致 <a href="https://zengo.com/understanding-compounds-liquidation/#Compounds_Liquidation">在一个实例中，一名清算人获得所有奖励的 20%。</a> 中心化应该避免。</p>
+<p>Maker has updated their liquidation module to allow for bids on collateral to be placed in a “dutch auction” (start at a high price and decrease in price until a bid is made), which goes some distance improving over the <a href="https://docs.makerdao.com/smart-contract-modules/dog-and-clipper-detailed-documentation#instant-settlement">original liquidation engine</a>, but this too <a href="https://docs.makerdao.com/smart-contract-modules/dog-and-clipper-detailed-documentation#4.-known-risks">has some issues with it</a>.</p>
+<p>Maker 已经更新了他们的清算模块，允许在“荷兰式拍卖”中对抵押品出价（从高价开始，然后降低价格，直到有人出价），这比 <a href="https://docs.makerdao.com/smart-contract-modules/dog-and-clipper-detailed-documentation#instant-settlement">原始清算引擎</a> 有了一定改进，但这也[有一些问题](https://docs.makerdao .com/smart-contract-modules/dog-and-clipper-detailed-documentation#4.-known-risks)。</p>
+<figure data-type="image" tabindex="2"><img src="https://euler-finance.ghost.io/content/images/2023/01/image-1.png" alt="" loading="lazy"></figure>
+<p>根据不同的市场走势，仓位有清算风险鉴于不同的市场走势 (DefiLlama)，仓位有清算风险 -Poistions at risk of liquidation given different market moves (DefiLlama)</p>
+<h2 id="defi-的清算功能运行是否符合预期do-liquidations-in-defi-function-as-intended">DeFi 的清算功能运行是否符合预期？(Do liquidations in DeFi function as intended?)</h2>
+<p>If the aim of a liquidation strategy is to prevent a protocol accruing bad debt, then the <a href="http://bad-debt.riskdao.org/">bad debt dashboard created by RiskDAO</a> is a good indicator of success. While other factors (such as collateral asset selection) must be considered, liquidations are ultimately the tool that is going to act as a last defence.</p>
+<p>如果清算策略的目的是防止协议产生坏账，那么 <a href="http://bad-debt.riskdao.org/">RiskDAO 创建的坏账仪表板</a> 是一个很好的成功指标。虽然必须考虑其他因素（例如抵押资产选择），但清算最终是最后一道防线。</p>
+<p>Do liquidations work? Generally speaking, yes, they do! With in excess of ~$11B in TVL locked over various lending and borrowing protocols in Ethereum DeFi, some <a href="https://defillama.com/protocols/Lending">~$4.43B</a> is lent out. Of that, the total amount of bad debt is <a href="https://bad-debt.riskdao.org/">roughly $110M</a> (that is tracked, there is likely more not tracked by this dashboard). ~2.5%** of all debt in DeFi has gone bad (i.e. has nothing backing it). While this could be far worse, if DeFi is supposed to be a replacement for the existing financial system, DeFi protocols need to get this percentage far lower.</p>
+<p>清算有效吗？一般来说，是的，有效！由于超过 ~$110亿 的 TVL 通过以太坊 DeFi 中的各种借贷协议锁定，而 <a href="https://defillama.com/protocols/Lending">~$44.3亿</a> 被借出。其中，坏账总额为 <a href="https://bad-debt.riskdao.org/">大约 1.1 亿美元</a>（已跟踪，此仪表板可能未跟踪更多）。 DeFi 中约 2.5% 的债务都变坏了（即没有任何支持）。虽然这可能会更糟，但如果 DeFi 应该取代现有的金融系统，DeFi 协议需要将这个百分比降低更多。</p>
+<p>By contrast, the amount of sovereign debt in the world in default is estimated to be <a href="https://www.bankofcanada.ca/wp-content/uploads/2022/08/san2022-11.pdf">0.3%</a> (p4). Enterprise debt defaults in 2023 are expected to hover anywhere between 2%-5% this year, but this value is lower compared to sovereign debt. As such, we can fairly deduce that defaulted debt in DeFi sits higher proportionately compared to “TradFi”, given the size of sovereign debt. Note the limitations in comparing fundamentally different types of debt.</p>
+<p>相比之下，全球违约的主权债务金额估计为 <a href="https://www.bankofcanada.ca/wp-content/uploads/2022/08/san2022-11.pdf">0.3%</a> (p4 ).预计今年 2023 年的企业债务违约率将徘徊在 2%-5% 之间，但与主权债务相比，这一数值较低。因此，考虑到主权债务的规模，我们可以公平地推断出 DeFi 中的违约债务比例高于“TradFi(传统金融)”。请注意比较根本不同类型债务的局限性。</p>
+<p>If we look at some of the protocols with larger amounts of bad debt, they often suffer oracle attacks. In offering users the ability to collateralise assets that are relatively concentrated (i.e. long tail assets), protocols are subject to relatively straightforward attack. This is done by firstly raising the price of an asset with a weak oracle <a href="https://www.euler.finance/blog/oracle-attack-simulator">(see Euler’s oracle attack simulator for a demonstration)</a> then borrowing against it with no intention of repaying (the debt is worth more than the fair market value of the asset you pumped). Alternatively, you could manipulate the price of an asset downwards allowing you to borrow more than you otherwise should be able to.</p>
+<p>如果我们看一些坏账数额较大的协议，它们经常遭受预言机攻击。在为用户提供抵押相对集中的资产（即长尾资产）的能力时，协议容易受到相对直接的攻击。这是通过首先提高弱预言机提供的资产价格 <a href="https://www.euler.finance/blog/oracle-attack-simulator">（请参阅 Euler 的预言机攻击模拟器进行演示）</a>，然后以其为抵押借款且无意偿还（债务价值超过您抽取资产的公平市场价值）来完成的。或者，您可以向下操纵资产价格，从而允许您借到比您本来应该能够借到的更多的钱。</p>
+<p>Countless examples of this have happened over the past few years, but the <a href="https://www.coindesk.com/business/2022/10/11/breaking-news-solana-based-decentralized-finance-platform-mango-hit-by-potential-100-million-exploit/">Mango Markets</a> exploit stands out as a prime example. Existing liquidation mechanisms in these circumstances have largely struggled to prevent bad debt occuring.</p>
+<p>过去几年发生了无数这样的例子，但是 [Mango市场风波](https://www.coindesk.com/business/2022/10/11/breaking-news-solana-based-decentralized-finance-platform -mango-hit-by-potential-100-million-exploit/) 是一个典型的例子。在这些情况下，现有的清算机制在很大程度上难以防止坏账的发生。</p>
+<p>It is thus clear that while protocols do a relatively good job at preventing bad debt, there is room for improvement. Enter Euler.</p>
+<p>因此很明显，虽然协议在防止坏账方面做得相对较好，但仍有改进的空间。那来看看欧拉吧！</p>
+<p>（**在撰文时结论成立 correct at time of writing）</p>
+<h2 id="是什么让-euler-的清算系统与众不同-what-makes-eulers-liquidation-system-unique">是什么让 Euler 的清算系统与众不同？ (What makes Euler’s liquidation system unique?)</h2>
+<p>Euler handles liquidations in a unique manner. Like other DeFi protocols, each user has a health score. Euler calculates health scores using risk-adjusted metrics for collateralised / borrowed assets by adjusting them against their market value to a more conservative risk-adjusted one. The health score is derived from this risk-adjusted value.</p>
+<p>Euler 以独特的方式处理清算。与其他 DeFi 协议一样，每个用户都有一个健康评分。 Euler 使用抵押/借入资产的风险调整指标计算健康评分，方法是将它们根据市场价值转化为更保守的风险调整值。健康评分源自此风险调整后的值。</p>
+<p>Once the user’s health score is flagged for liquidation (at a health score of 1), anyone may press the “liquidate” button (this is actually operated via bots) and transfer dTokens and eTokens to their own account (buying both their collateral and debt). This has the aim of returning the account in violation back to a healthier 1.25, which is what is known in Euler as a “soft liquidation”.</p>
+<p>一旦用户的健康评分被标记为清算（健康评分为 1），任何人都可以按下“清算”按钮（这实际上是通过机器人操作的）并将 dToken 和 eToken 转移到他们自己的账户（购买他们的抵押品和债务） ).这样做的目的是将违规账户恢复到更健康的 1.25，这在 Euler 中被称为“软清算”。</p>
+<p>Should an account not undergo a “soft liquidation” and the account health go below 1, an auction begins. For each additional % point decrease in health factor, the liquidator gets an additional % decrease in the cost to buy their collateral and debt (eTokens and dTokens). This has the effect of creating a dutch auction: as the health score slowly decreases, the discount (and therefore incentive) to liquidate increases!</p>
+<p>如果帐户未经历“软清算”且帐户健康状况低于 1，则拍卖开始。健康因素每降低 %，清算人购买抵押品和债务（eTokens 和 dTokens）的成本就会额外降低 %。这具有创建荷兰式拍卖的效果：随着健康评分缓慢下降，清算的折扣（因此激励）增加！</p>
+<p>Finally, Euler provides a further discount for liquidators with a deposit position (held for a period of time) in the Euler protocol, which can stack as a multiplier on the aforementioned liquidation discount. For example, if a liquidator has a position in Euler that qualifies them for a discount bonus, they will get the 2.5% liquidation bonus. If an account with a health score of 0.97 gets liquidated, there is a final total discount of 5.5%. It is important to remember that with each liquidation a small premium is paid into the <a href="https://docs.euler.finance/developers/getting-started/architecture#reserves-1">reserve</a> and that this discount is capped at 20%.</p>
+<p>最后，Euler 为在 Euler 协议中有存款头寸（持有一段时间）的清算人，提供了进一步的折扣，这可以作为上述清算折扣的乘数叠加。例如，如果清算人在 Euler 持有符合他们资格获得折扣奖金的头寸，他们将获得 2.5% 的清算奖金。如果健康评分为 0.97 的账户被清算，则最终总折扣为 5.5%。重要的是要记住，每次清算都会向<a href="https://docs.euler.finance/developers/getting-started/architecture#reserves-1">储备金</a> 支付少量溢价，并且此折扣上限为 20 %。</p>
+<p><strong><em>好处 Benefits</em></strong></p>
+<p>In using this unique liquidation system, Euler mitigates pitfalls typically suffered by existing lending and borrowing protocols:</p>
+<p>在使用这种独特的清算系统时，Euler 减少了现有借贷协议通常遭受的陷阱：</p>
+<ol>
+<li>
+<p>In enabling soft-liquidating, Euler helps accounts only lose as much collateral as is required to return to a safe health score. On other protocols, a small account health violation will lead to complete loss of the position. This is punitive and avoidable.<br>
+在启用软清算时，Euler 帮助账户限制损失——即只损失恢复到安全健康评分所需的抵押品。在其他协议上，一个小的账户健康违规将导致完全失去头寸。这种惩罚性的(制度)是可以避免的。</p>
+</li>
+<li>
+<p>By integrating with Euler’s eToken / dToken architecture, these auctions can allow for liquidators to operate without capital. By using <a href="https://docs.euler.finance/developers/getting-started/architecture#liquidity-deferrals">liquidity deferrals,</a> users may liquidate, swap collateral tokens to debt tokens, repay the debt and keep the difference (with a small fee for the reserve). This is known as a “flash liquidation”. While other protocols can rely on external flashloans, Euler users can do this without leaving Euler architecture.<br>
+通过与 Euler 的 eToken / dToken 架构相结合，这些拍卖可以允许清算人在没有资本的情况下运作。通过使用<a href="https://docs.euler.finance/developers/getting-started/architecture#liquidity-deferrals">流动性展期，</a>，用户可以清算，将抵押代币换成债务代币，偿还债务并保留差额（与保留的少量费用）。这被称为“闪电清算”。虽然其他协议可以依赖外部闪电贷，但 Euler 用户可以在不离开 Euler 架构的情况下做到这一点。</p>
+</li>
+<li>
+<p>This dutch auction is inherently MEV resistant. In allowing liquidators to choose what level of discount is acceptable to them, there is not a single moment in which 50 different liquidators all attempt to liquidate the same position. This reduces gas spikes / MEV.<br>
+这种荷兰式拍卖本质上是抗 MEV 的。在允许清算人选择他们可以接受的折扣水平时，不会有有一个时刻 50 个不同的清算人都试图清算同一个头寸。这减少了gas峰值/MEV。</p>
+</li>
+<li>
+<p>This MEV resistance is then entrenched with the multipliers Euler offers to liquidators with deposits in their account. This enables liquidators that are more closely aligned with Euler to beat liquidators with no interest in Euler beyond liquidating. It acts as effective sybil resistance / MEV protection in this area.<br>
+这种 MEV 阻力随着 Euler 向清算人账户中有存款的乘数而变得根深蒂固。这使得与 Euler 关系更密切的清算人能够击败除清算之外对 Euler 不感兴趣的清算人。它在该区域充当有效的女巫抵抗/MEV 保护。</p>
+</li>
+</ol>
+<p>Euler is thus clearly a step ahead of other lending and borrowing protocols in ensuring that liquidations are handled in a more perfect way. There is still yet more work to be done in this area, but Euler is moving down the right path and the proof is evident and can be monitored liquidations in real time with this <a href="https://twitter.com/eulLiquidations">twitter account.</a></p>
+<p>因此，在有更完美的方式处理清算方面，Euler 显然领先于其他借贷协议。在这一领域还有更多工作要做，但 Euler 正在沿着正确的道路前进，证据是显而易见的，并且可以通过这个 <a href="https://twitter.com/">twitter 帐户</a> 实时监控清算。</p>
+<p>The proof is clearly in the pudding here: <a href="https://twitter.com/eulerfinance/status/1612848570335645698">liquidations occur on the protocol with $0.50 liquidator bonuses</a>. There is a strong appetite for low reward liquidations.</p>
+<p>证据显然在此处：<a href="https://twitter.com/eulerfinance/status/1612848570335645698">清算发生在协议中，奖金为 0.50 美元</a>。低奖励清算有强烈的胃口。</p>
+<h2 id="什么是清算附录-what-is-a-liquidation-appendix">什么是清算（附录）- What is a liquidation (appendix)</h2>
+<p>Lending and borrowing is complicated. This is especially so in crypto and DeFi, where the value of assets fluctuates considerably more than in traditional finance. Liquidations are a necessary part to ensuring that the protocol still functions.</p>
+<p>借贷很复杂。在加密货币和 DeFi 中尤其如此，资产价值的波动比传统金融要大得多。清算是确保协议仍然有效的必要部分。</p>
+<p>In short, a liquidation is when a DeFi user buys your collateral (at a slight discount) when the value of the asset you borrowed exceeds a predetermined value relative to the asset you deposited as collateral. This helps to prevent protocols accruing bad debt, which is a definite [possibility in DeFi.]</p>
+<p>简而言之，清算是当您借入的资产价值，相对于您作为抵押品存入的资产的价值，超过预定值时，DeFi 用户购买您的抵押品（略有折扣）。这有助于防止协议产生坏账，这在 DeFi 中是一个明确的 <a href="https://bad-debt.riskdao.org/">可能</a>。</p>
+<p>Let’s work this through with an imaginary example whereby liquidators do not exist:</p>
+<p>让我们通过一个不存在清算人的假想示例来解决这个问题：</p>
+<p>Given USDC is worth exactly $1 and ETH is worth $1200:</p>
+<p>假设 USDC 正好值 1 美元，而 ETH 值 1200 美元：</p>
+<p>You supply 1500 USDC and borrow 0.5 ETH, meaning your deposits are substantially more valuable than your borrows. See the diagram below as an example.</p>
+<p>你提供 1500 USDC 并借入 0.5 ETH，这意味着你的存款比你的借款更有价值。请参见下图作为示例。</p>
+<figure data-type="image" tabindex="3"><img src="https://lh5.googleusercontent.com/t_RC8sek_0mhpfSRWqtgl9fZJx7Y5gYG2_yJGC3uHeJqE0hHCEriR75uQ6o2YhF70jvXWHebeRxBxCQTup3hsM5tPpe5IBiYrsVqPfIl6BrSkNxRn2MH_Aq112p7u6k67_HW8XuqRBMucgFrpcGRRacfZGqNGAUdCROPIUm79JVJKoetJ_4GXSKoKZhXRA" alt="" loading="lazy"></figure>
+<p>All of a sudden, the price of ETH rises to $4000. The value of your borrowed ETH rises from $600 to $2000, but the USDC remains at just $1500.</p>
+<p>突然之间，ETH 的价格上涨到 4000 美元。你借入的 ETH 的价值从 600 美元上升到 2000 美元，但 USDC 仍然只有 1500 美元。</p>
+<p>This means that the ETH debt is not adequately collateralised and you, as a user, have no interest in repaying the 0.5 ETH loan because your loan is worth more than the assets you borrowed against.</p>
+<p>这意味着 ETH 债务没有得到充分的抵押，作为用户，你没有兴趣偿还 0.5 ETH 贷款，因为你的贷款比你借入的资产更有价值。</p>
+<figure data-type="image" tabindex="4"><img src="https://lh3.googleusercontent.com/njPsOzCixnOqGSV0PIKwwzV2LkidWFa35abYLpCkHDckH-jY2s26WdcpNhONEKre7pmTM1ypGhTnaxEmHkfz3joS7UrKB-WSSmqVKy-8HUa97YxjSHdXnsrO7IntxgM-KYSg3jGc4fvGb3yN4qNkAnVZCiuyE9fG-9DC7GABrISI_oV8WlPKH13zEh611A" alt="" loading="lazy"></figure>
+<p>You’d then go and sell the ETH and laugh all the way to the bank because you’ve used your ETH loan as a way to take from the protocol more than the smart contract would otherwise allow for.</p>
+<p>然后你会去卖掉 ETH 并一路笑到银行，因为你已经使用你的 ETH 贷款作为一种方式从协议中获取比智能合约允许的更多的东西。</p>
+<p>That is, you would if your collateral (and debt) wasn’t transferred to a liquidator in advance of the value of the loan becoming larger than the value of the asset you supplied as collateral. Enter the liquidators: DeFi users who will buy your USDC (at a slight discount) and pay the ETH debt before the value of the asset you borrowed becomes greater than the value of the asset you supplied.</p>
+<p>也就是说，如果你的抵押品（和债务）没有在贷款价值变得大于你作为抵押品提供的资产的价值之前转移给清算人，你就会这样做。变成清算人：DeFi 用户，他们将购买你的 USDC（以轻微折扣）并在你借入的资产价值大于你提供的资产价值之前偿还 ETH 债务。</p>
+<figure data-type="image" tabindex="5"><img src="https://lh3.googleusercontent.com/pVjGt9HSWNTd2oNpqkpRGD0LjN4FkRG2EPfbmrppA0TX3el_hwjXWj5BHZLWMPtCYVI_r_cLqkP_peCdufspbFSbNxB0zby76fIxyjXf7nk6A7mC0tepuFc7nPWn08Uu8t3-e9nVleoWDGqm6wAccMx8BYxk7Zt40eQ6tYNjwrrigxns79PsDXmr3TSFwA" alt="" loading="lazy"></figure>
+<p>At roughly the point just before your ETH borrow becomes more valuable than your USDC deposit, a liquidator will step in and buy your collateral while repaying your debt. Lending and borrowing protocols incentivise these liquidators to buy your collateral (1500 USDC / $1500) by offering it at a slight discount (in this case $1490) and the protocol will take a small cut for its troubles. Using this mechanism, lending and borrowing protocols ensure that no bad debt is accrued. With a few exceptions, this works generally quite well.</p>
+<p>大约在你的 ETH 借款变得比你的 USDC 存款更有价值之前，清算人将介入并购买你的抵押品，同时偿还你的债务。借贷协议会激励这些清算人以轻微折扣（在本例中为 1490 美元）提供您的抵押品（1500 USDC / 1500 美元），并且该协议将为其带来的麻烦进行小幅削减。使用这种机制，借贷协议可确保不会产生坏账。除了少数例外，这通常效果很好。</p>
+<p>Now, equipped with this information, please return to the top of this article to see why Euler is better than other protocols at liquidations!</p>
+<p>现在，有了这些信息，请返回本文顶部，看看为什么 Euler 在清算方面优于其他协议！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Euler和FloorDAO (Euler and FloorDAO)]]></title>
+        <id>https://chainguys.github.io/post/euler-he-floordao-euler-and-floordao/</id>
+        <link href="https://chainguys.github.io/post/euler-he-floordao-euler-and-floordao/">
+        </link>
+        <updated>2023-01-10T01:54:18.000Z</updated>
+        <content type="html"><![CDATA[<h2 id=""><img src="https://euler-labs.ghost.io/content/images/2023/01/floordao-euler.png" alt="Euler and FloorDAO" loading="lazy"></h2>
+<p>This is a piece made in collaboration with FloorDAO and Euler contributors to share the unique possibilities presented to NFTs when mixed with permissionless lending and borrowing markets.</p>
+<p>这是一篇与 FloorDAO 和 Euler 贡献者合作的文章，旨在分享 NFT 在与无许可借贷市场结合时呈现的独特可能性。</p>
+<p><strong>什么是 NFT-Fi？ What is NFT-Fi?</strong></p>
+<p>The financialisation of NFTs, while a relatively new thing, has already seen some impressive growth. This has taken off as of late due to large amounts of value being stored in largely illiquid assets that are inefficient stores of value when compared to something like ETH: you can borrow against it, you can lend it, you can stake it and so forth.</p>
+<p>NFT 的金融化虽然是一个相对较新的事物，但业已取得了令人瞩目的增长。由于大量价值存储在流动性差的资产中，与 ETH 之类的东西相比，这些资产的价值存储效率低下，因此最近才开始流行：你可以借进借出抵押等等.</p>
+<p>With an NFT, the utility used to simply be tied to the purchase price, and even this was handled via bidding - which contributes more to existing market inefficiency. Other applications involve real world utility such as tickets (all my homies hate ticketmaster) or joining social clubs and so forth.</p>
+<p>对于 NFT，其效用过去常常简单地与购买价格挂钩，甚至是通过投标来处理——这对现有市场的低效率起到了推波助澜作用。其他应用涉及现实世界的实际用例，例如门票（我所有的朋友都讨厌售票员）或加入社交俱乐部等。</p>
+<p>NFT communities strive for efficiency, and so different protocols began to spring up offering creative fusions of existing DeFi building blocks compatible with established NFT projects. Once these really got moving users were lending, borrowing, paying in instalments, hedging and so forth.</p>
+<p>NFT 社区力求效率，因此不同的协议开始涌现，提供与已其 NFT 项目兼容的现有 DeFi 构建区块的创造性融合。一旦这些真正动起来，用户就会借贷、分期付款、对冲等等。</p>
+<figure data-type="image" tabindex="1"><img src="https://euler-labs.ghost.io/content/images/2023/01/image.png" alt="" loading="lazy"></figure>
+<p>This brings yield to an asset that previously didn’t have any. While you may snigger at the idea, you won’t snigger at the performance: <a href="https://twitter.com/FloorDAO/status/1600592478096265233">26ETH in just one month</a>! This is against the backdrop of November's gigantic blowup (try and tell me you weren’t red in November). NFT-Fi is here to stay.</p>
+<p>这为资产带来了以前没有的收益。虽然您可能会对这个想法窃笑，但您不会对它的表现窃笑：<a href="https://twitter.com/FloorDAO/status/1600592478096265233">仅一个月内就有 26 个 ETH</a>！这是在 11 月的巨大爆炸的背景下（试着告诉我你在 11 月没亏钱）。 NFT-Fi 将继续存在。</p>
+<p><strong>什么是 FloorDAO？What is FloorDAO?</strong></p>
+<p>In their own words: FloorDAO is an NFT market making protocol that uses OlympusDAO bonding mechanisms to deepen NFT liquidity for the NFTs in the FloorDAO treasury. These collections are deployed in strategies like NFTX, which generates yield.</p>
+<p>用他们自己的话说：FloorDAO 是一种 NFT 做市协议，它使用 OlympusDAO 绑定机制来加深 FloorDAO 库中 NFT 的 流动性。这些集合部署在 NFTX 等策略中，从而产生收益。</p>
+<p><strong>Euler 和 FloorDAO 是如何结合在一起的？How do Euler and FloorDAO fit together?</strong></p>
+<p>As it stands, FloorDAO is earning yield on 7 different collections. This has the advantage of a) bringing yield to FloorDAO on otherwise dormant assets and b) enabling speculators to long and short different NFT floor prices. This furthers FloorDAO’s goal to deepen NFT liquidity driving further activity and helps Euler by driving more demand to the protocol.</p>
+<p>目前，FloorDAO 在 7 个不同的收藏上赚取收益。这样做的好处是 a) 为 FloorDAO 带来其他休眠资产的收益，以及 b) 使投机者能够做多和做空不同的 NFT 底价。这进一步推进了 FloorDAO 的目标，即深化 NFT 流动性来推动进一步的活动，并通过推动对该协议的更多需求来帮助 Euler。</p>
+<p>Euler is a unique lending and borrowing protocol: any asset can be supplied and borrowed. Unlike other protocols in the space, it is open to any asset that can be put into an ERC-20 standard. No governance approval is required and the risks that this entails are by default managed by conservative smart contract code.</p>
+<p>Euler 是一种独特的借贷协议：可以提供和借用任何资产。与该领域的其他协议不同，它对任何可以放入 ERC-20 标准的资产开放。不需要治理批准，默认情况下，这带来的风险由保守的智能合约代码管理。</p>
+<p>As it stands, Euler and FloorDAO are already interfacing with each other thanks to FloorDAO’s tokenization of 40 Milady Maker and 1.5 CryptoPunk NFTs which were then deposited. Since then, users have been longing and shorting miladys constantly.</p>
+<p>就目前而言，由于 FloorDAO 对 40 个 Milady Maker 和 1.5 个 CryptoPunk NFT 进行了代币化，Euler 和 FloorDAO 已经相互连接。此后，用户可以持续对miladys的看多和看空。</p>
+<p>While it’s clear that  CryptoPunk NFTs (being largely considered to be held by “OGs” who have been in DeFi since the start) have seen some <a href="https://decrypt.co/97190/ethereum-nft-backed-loan-market-heats-up-as-cryptopunks-owner-borrows-8-3m">good lending and borrowing activity</a>, Miladys are catching up fast in terms of activity and may even supercede them in terms of creativity. Will miladys steal the crown for the most innovative DeFi pfp? Do I even need to draw attention to the famous <a href="https://slate.com/technology/2022/06/bored-ape-yacht-club-thefts-nfts-cryptocurrency.html">financial literacy of Ape holders?</a></p>
+<p>虽然很明显，CryptoPunk NFT（主要被认为由从一开始就在 DeFi 中的“OG”持有）已经看到了一些 [良好的借贷活动](https://decrypt.co/97190/ethereum-nft -backed-loan-market-heats-up-as-cryptopunks-owner-borrows-8-3m)，Miladys 在活动方面正在快速追赶，甚至可能在创造力方面超过他们。 miladys 会夺得最具创新性的 DeFi pfp 桂冠吗？我是否需要提请注意著名的 <a href="https://slate.com/technology/2022/06/bored-ape-yacht-club-thefts-nfts-cryptocurrency.html">Ape 持有者的金融知识？</a></p>
+<figure data-type="image" tabindex="2"><img src="https://lh4.googleusercontent.com/8Wy7sHtIC8kJQ0cZK4_RdnxsXTo7gaiFRK6LD7uUqHfYqM-fxKPNZrwVcT8S6sgjPBU5BoJTzop1yBf7h5jFNfzej-CTx_cSywCQqU1kJ3RTSmbYo75CcsB_8-k4LN0Joc21lyVJbf0K0k-ruDjWH1fd_HtLhiOEnMfSupAPFvRr089buV1XZsSqIelOiw" alt="" loading="lazy"></figure>
+<p>Breaking: milady</p>
+<h3 id="我如何在-euler-上做多和做空-nft或者如何展示我作为自称-og-的金融知识-how-do-i-long-and-short-nfts-on-euler-alternatively-how-do-i-demonstrate-my-financial-literacy-as-a-self-proclaimed-og">我如何在 Euler 上做多和做空 NFT（或者如何展示我作为自称 OG 的金融知识）？- How do I long and short NFTs on Euler (alternatively how do I demonstrate my financial literacy as a self-proclaimed OG)?</h3>
+<p>It’s quite straightforward to prove that OG CryptoPunk users are financially literate using Euler. To begin, supply some collateral to Euler. This will depend on whether or not you are long or short on CryptoPunks.</p>
+<p>使用 Euler 证明 OG CryptoPunk 用户具备金融知识非常简单。首先，向 Euler 提供一些抵押品。这将取决于您是做多还是做空 CryptoPunks。</p>
+<p>You are as ever subject to liquidation. This wallet <a href="https://twitter.com/eulLiquidations/status/1612336788856606720">was, and so is the first Milady liquidation of 2023.</a> For an overview on liquidations please see this <a href="https://docs.euler.finance/developers/getting-started/architecture#liquidations">here</a>.</p>
+<p>你一如既往地会被清算。这个钱包 <a href="https://twitter.com/eulLiquidations/status/1612336788856606720">过去是，现在也是 2023 年的第一次 Milady 清算。</a> 有关清算的概述，请参阅此<a href="https://docs.euler.finance/developers/getting-started/architecture#liquidations">此处</a>。</p>
+<p><em><strong>如何做多欧拉上的 CryptoPunk How one might long a CryptoPunk on Euler</strong></em></p>
+<p><a href="https://app.euler.finance/market/0x269616d549d7e8eaa82dfb17028d0b212d11232a">To view the PUNK market, see here.</a><br>
+<a href="https://app.euler.finance/market/0x269616d549d7e8eaa82dfb17028d0b212d11232a">要查看 PUNK 市场，请参见此处。</a></p>
+<p>This can be achieved in the following way:<br>
+这可以通过以下方式实现：</p>
+<ul>
+<li>
+<p>Supply any collateral to Euler and then borrow a USDC stable asset (or indeed any asset that you think will appreciate less than your PUNK, such as ETH) like USDC.<br>
+向 Euler 提供任何抵押品，然后借入 USDC 稳定资产（或者任何你认为升值低于你的 PUNK 的资产，例如 ETH），如 USDC。</p>
+</li>
+<li>
+<p>Swap the asset that you’ve borrowed and buy an equal amount of PUNK. This can be all handled inside the Euler finance app transaction builder, which uses 1inch.<br>
+交换您借入的资产并购买等量的 PUNK。这一切都可以在使用 1inch 的 Euler 金融交易构建器中处理。</p>
+</li>
+<li>
+<p>If the PUNK has appreciated in value say 1.5x, you can repay the USDC loan which you earlier took to finance the PUNK swap.<br>
+如果 PUNK 的价值升值了 1.5 倍，您可以偿还您之前为 PUNK 交换提供资金的 USDC 贷款。</p>
+</li>
+</ul>
+<p>The increased PUNK price means you earn profit. You keep the difference, though this is only if the value of PUNK increases. Be mindful that if PUNK decreases the value of your USDC borrow will not - you have lost money here. Note also you’ll be paying some interest on the loan.</p>
+<p>PUNK 价格上涨意味着您赚取利润。你保留差额，尽管这只是在 PUNK 的值增加的情况下。请注意，如果 PUNK 降低您借入的 USDC 的价值，则不会——这意味着您在这里亏了钱。另请注意，您将支付一些贷款利息。</p>
+<p><strong><em>如何在 Euler 上做空 CryptoPunk How one might short a CryptoPunk on Euler</em></strong></p>
+<p>It could be essentially the same, but in reverse.</p>
+<p>它可能本质上是相同的，但操作相反。</p>
+<ul>
+<li>
+<p>Supply any asset, but this time borrow PUNK against it.<br>
+提供任何资产，但这次借用 PUNK 作为抵押。</p>
+</li>
+<li>
+<p>Sell the PUNK for an asset you believe will appreciate in value against the PUNK,<br>
+出售 PUNK 以获得您认为相对于 PUNK 会升值的资产，</p>
+</li>
+<li>
+<p>Once the PUNK decreases in value enough for you to be satisfied, close the short by buying back the same amount of PUNK. You keep the difference once more.<br>
+一旦 PUNK 的价值下降到足以让您满意，通过回购相同数量的 PUNK 来平仓。</p>
+</li>
+</ul>
+<p>In doing so, you might prove to your rival NFT community you know your way around a trade.</p>
+<p>这样做，您可能会向您的竞争对手 NFT 社区证明您了解交易。</p>
+<p>As ever, none of this constitutes financial advice and only you or your financial advisor can tailor your market activities to your risk profile. Consider how that conversation might go (lol).</p>
+<p>与以往一样，这些都不构成财务建议，只有您或您的财务顾问，可以根据您的风险状况调整您的市场活动。考虑一下那个对话可能会如何进行（笑）。</p>
+<figure data-type="image" tabindex="3"><img src="https://lh4.googleusercontent.com/kB_dFBsrjy6ZT0Z7if3X-I6slGnMCNN_NTvIQWijAnqWx80_DzUG7TfCiBGVSGr74zigPBktuc6cyUAfy9YA4aQmKEWFnXgMXtvwbF5vS4rlSiKE8NT2ji_FdTWzo8LrfQL04rAC1GrfEIV5KweT5rAYWhPS7chOOozmN1oHirolBPofeAjajA-al0YNyQ" alt="" loading="lazy"></figure>
+<p><strong>未来 The future?</strong></p>
+<p>NFT financialisation is here to stay. While there’s yield to be earned and floors to be raised, FloorDAO will continue to do this. Without spilling too many juicy details, FloorDAO is looking to completely rebuild their protocol and introduce veFLOOR which will allow new collections into the portfolio and give holders the ability to direct liquidity and treasury yield to their preferred collections. Euler contributors, on the other hand, are currently working on Baby Euler where anyone can spin up a lending and borrowing pool as and when they please. Combine the two and what do you get?</p>
+<p>NFT 金融化将继续存在。虽然要赚取收益并提高底部收益，但 FloorDAO 将继续这样做。在不泄露太多有趣细节的情况下，FloorDAO 希望完全重建他们的协议并引入 veFLOOR，这将允许新的收藏品进入投资组合，并让持有人能够将流动性和国债收益率引导到他们喜欢的收藏品。另一方面，Euler 贡献者目前正在开发 Baby Euler，任何人都可以在任何时候随意启动借贷池。将两者结合起来，你会得到什么？</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[重塑我们的品牌 (Rebuilding our brand)]]></title>
+        <id>https://chainguys.github.io/post/chong-su-wo-men-de-pin-pai-rebuilding-our-brand/</id>
+        <link href="https://chainguys.github.io/post/chong-su-wo-men-de-pin-pai-rebuilding-our-brand/">
+        </link>
+        <updated>2023-01-06T04:04:11.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://optimise2.assets-servd.host/akord-web/production/vision.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1670949034&amp;s=fd1bdd19617e65efadcc7bd5e39f1e91" alt="Vision" loading="lazy"></figure>
+<p><strong>When we started Akord back in 2020, it was with a clear focus on protecting privacy and empowering data ownership. We didn’t know about Arweave back then.</strong></p>
+<p><strong>当我们在 2020 年启动 Akord 时，它明确关注保护隐私和赋能数据所有权。那时我们不知道 Arweave。</strong></p>
+<p>In 2021, we discovered the Weave, the Permaweb and joined the Open Web Foundry.</p>
+<p>2021 年，我们发现了 Weave、Permaweb 并加入了 Open Web Foundry。</p>
+<p>We realised permanence had been the missing ingredient. Many possibilities were opening up. The ideas faucet had been turned all the way to the right.</p>
+<p>我们意识到持续性才是缺失的成分。许多可能性正在打开，创意的水龙头一直涌出。</p>
+<p>We presented a use case at OWF focused on digital heritage – Akord vaults could be a time capsule for your family.</p>
+<p>我们在 OWF 展示了一个专注于数字遗产的用例——Akord 保管库可以成为您家人的时间胶囊。</p>
+<p>But this was really only one of many possible directions we saw. Over time, we realised we were drowning in ideas, lacking a clear focus.</p>
+<p>但这实际上只是我们看到的许多可能方向之一。随着时间的推移，我们意识到我们淹没在想法中，缺乏明确的重点。</p>
+<h2 id="重塑我们的品牌-rebuilding-the-brand">重塑我们的品牌 (Rebuilding the brand)</h2>
+<p>We knew we needed to rebuild the brand, to start again with fresh eyes.</p>
+<p>我们知道我们需要## 重塑品牌，以全新的眼光重新开始。</p>
+<p>For us, this wasn't about having something that just looked cool, we needed our brand to help position us, to understand who we wanted to talk to, and how; and to be built on meaningful, powerful ideas that would be translated in all our visual imagery and messaging.</p>
+<p>对我们来说，这不仅仅是为了拥有看起来很酷的东西，我们需要品牌来帮助我们定位，了解我们想与谁如何交流；并建立在有意义的、强大的想法之上，这些想法将转化为我们所有的视觉和信息。</p>
+<p>Before we could get there, a few of the questions we wanted to tackle were:</p>
+<p>在我们到达那里之前，我们想要解决的一些问题是：</p>
+<ul>
+<li>
+<p>How do people, within or new to web3, perceive Arweave and this permanent storage paradigm?<br>
+在 web3 内部或刚接触 web3 的人如何看待 Arweave 和这种永久存储范例？</p>
+</li>
+<li>
+<p>Will Akord have more value and appeal now for business and organisations or individual users?<br>
+Akord 现在对企业和组织或个人用户是否具有更多价值和吸引力？</p>
+</li>
+<li>
+<p>What are the best use cases for Akord?<br>
+Akord 的最佳用例是什么？</p>
+</li>
+<li>
+<p>How do we bring together the app, the API and developer tools under a coherent message?<br>
+我们如何将应用、API 和开发人员工具整合到一条连贯的信息中？</p>
+</li>
+</ul>
+<p>So since February we’ve been working with brand consultancy <a href="https://goodlove.co/">GoodLove</a> to answer these questions and many more.</p>
+<p>因此，自 2 月以来，我们一直在与品牌咨询公司 <a href="https://goodlove.co/">GoodLove</a> 合作，以回答这些问题以及更多问题。</p>
+<p>The work has included 9 decks and reports (~250pp), 7 workshops (~11h), a dozen research group interviews (~15h), and well over 200 artboards of UX wireframes and UI design.</p>
+<p>这项工作包括 9 个甲板和报告（~250pp）、7 个研讨会（<sub>11h）、十几个研究小组访谈（</sub>15h），以及超过 200 个 UX 线框和 UI 设计的画板。</p>
+<h2 id="安全存储和发布的协议-a-protocol-for-secure-storage-and-publishing">安全存储和发布的协议 (A protocol for secure storage and publishing)</h2>
+<p>While our bread and butter, so to speak, is secure storage on Arweave, we're now also working on evolving Akord within a Permaweb publishing context.</p>
+<p>虽然我们的根基是 Arweave 上的安全存储，但我们现在也在致力于在 Permaweb 发布环境中发展 Akord。</p>
+<p>We've seen businesses like <a href="https://akord.com/blog/its-2030-and-veritree-have-planted-1-billion-trees">veritree</a> talk of publishing their planting site data to Arweave with Akord, new projects like <a href="https://akord.com/blog/making-everyone-an-historian">Forever Stories</a> using our vaults to publish creative content permanently, and organisations like <a href="https://akord.com/blog/never-again-lament-lost-wisdom">Mahamati Foundation</a> publishing ancient teachings to the Permaweb as a way to preserve knowledge.</p>
+<p>我们已经看到像 <a href="https://akord.com/blog/its-2030-and-veritree-have-planted-1-billion-trees">veritree</a> 这样的企业谈论通过 Akord 将他们的种植地点数据发布到 Arweave， <a href="https://akord.com/blog/making-everyone-an-historian">Forever Stories</a> 等新项目使用我们的保管库永久发布创意内容，以及 <a href="https://akord.com">Mahamati Foundation</a> 等组织将古代教义发布到 Permaweb 作为保存知识的一种方式。</p>
+<p>Akord Explorer, to be released in the first half of 2023, will further unlock the potential for our vaults for publishing and sharing on the Permaweb.</p>
+<p>将于 2023 年上半年发布的 Akord Explorer 将进一步释放我们保管库在 Permaweb 上发布和共享的潜力。</p>
+<p>The storage of data within vaults was just the beginning. We've always been working with a view to the way in which we publish data to Arweave; whether that's within a secure collaborative context, or now increasingly as we look to new ways to present, share and discover valuable data.</p>
+<p>在保管库中存储数据仅仅是个开始。我们一直致力于研究将数据发布到 Arweave 的方式；无论是在安全的协作环境中，还是现在越来越多地寻求新的方式来呈现、共享和发现有价值的数据。</p>
+<figure data-type="image" tabindex="2"><img src="https://optimise2.assets-servd.host/akord-web/production/phone-flick-2.gif?w=200&amp;q=5&amp;auto=format&amp;fit=crop&amp;dm=1671398234&amp;s=a3b64dfd1bcfc170f4194f6b0a64ec26" alt="Phone flick" loading="lazy"></figure>
+<h2 id="准备找回控制权准备构建-prepare-to-seize-control-prepare-to-build">准备找回控制权，准备构建 (Prepare to seize control, prepare to build)</h2>
+<p>This new look Akord is now also speaking to the builders. The people looking to leverage the foundation of web3 – data ownership – to build their own exciting visions of future.</p>
+<p>这种新外观 Akord 现在也在与构建者交谈。希望利用 web3 的基础——数据所有权——来构建他们自己激动人心的未来愿景的人们。</p>
+<p>We have a principles first approach to our work, and we've seen how this has attracted builders with similar values. Whether it’s Genobank and FMD working with Akord to secure medical data through NFTs, or an individual developer using Akord-JS to build privacy and permanence into their app, we'll be empowering builders with the tools they need to build a better future using the Akord protocol.</p>
+<p>我们的工作采用原则至上的方法，我们已经看到这如何吸引具有相似价值观的建设者。无论是 Genobank 和 FMD 与 Akord 合作通过 NFT 保护医疗数据，还是个人开发人员使用 Akord-JS 将隐私和永久性构建到应用中，我们都将为构建者提供他们需要的工具。</p>
+<h2 id="故事才到一半-only-half-of-the-story">故事才到一半 (Only half of the story)</h2>
+<p>With the Akord app, API, Akord-JS and CLI, we’ve opened the door to untold future scenarios.</p>
+<p>借助 Akord 应用、API、Akord-JS 和 CLI，我们打开了通往未知未来场景的大门。</p>
+<p>But what will be created on the Akord protocol is a story only part told.</p>
+<p>但将在 Akord 协议上创建的只是一个故事的一部分。</p>
+<p>We’ve created the tools, and now it’s over to you – the designers, engineers, idealists and creators.</p>
+<p>我们已经创建了工具，现在轮到你们了——设计师、工程师、理想主义者和创造者。</p>
+<p>We also recognise that Akord itself stands on the ideas, dreams and work of others. Whether it’s the zero-to-one game changing technology of Arweave or a developer who opens a PR to improve Akord protocol, we will always be just part of a broader, stronger community effort.</p>
+<p>我们还认识到，Akord 本身就是基于他人的想法、梦想和工作。无论是 Arweave 的零对一改变游戏规则的技术，还是打开 PR ，改进 Akord 协议的开发人员，我们将始终只是更广泛、更强大的社区努力的一部分。</p>
+<p>What comes next? We don’t know. That's for the community to decide, and manifest.</p>
+<p>接下来是什么？我们不知道。这是由社区决定和体现的。</p>
+<p>Our new brand captures these ideas with the <a href="https://en.wikipedia.org/wiki/Mad_Libs">Mad Libs</a> typography, split screen illustrations and the incomplete A of the logo. We're inviting you to complete the picture, to be inspired and add your own ideas.</p>
+<p>我们的新品牌通过 <a href="https://en.wikipedia.org/wiki/Mad_Libs">Mad Libs</a> 排版、分屏插图和不完整的徽标 A 捕捉了这些想法。我们邀请您完成图片，获得灵感并添加您自己的想法。</p>
+<figure data-type="image" tabindex="3"><img src="https://optimise2.assets-servd.host/akord-web/production/Group-10.png?w=2600&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1671015386&amp;s=0619cdeb8c7ab1a93061d4b91788e046" alt="Brand Grid" loading="lazy"></figure>
+<h2 id="加入社区-join-the-community">加入社区 (Join the community)</h2>
+<p>We plan on making 2023 an astounding year for Akord. We have some massive milestones in our sights. We hope you'll join us for the journey.</p>
+<p>我们计划让 2023 年成为 Akord 令人震惊的一年。我们有一些巨大的里程碑。我们希望您能加入我们的旅程。</p>
+<p><a href="https://discord.com/invite/g4VXfauK5s">Jump into the Discord</a> and connect with the team and others in the community.</p>
+<p><a href="https://discord.com/invite/g4VXfauK5s">加入 Discord</a> 并与团队和社区中的其他人联系!</p>
+]]></content>
+    </entry>
+</feed>
