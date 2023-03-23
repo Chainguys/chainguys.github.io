@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-03-23T08:42:46.428Z</updated>
+    <updated>2023-03-23T09:17:32.639Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Akord中文材料合集（Akord Chinese materials) Updating]]></title>
+        <id>https://chainguys.github.io/post/akord-zhong-wen-cai-liao-he-ji-akord-chinese-materials-updating/</id>
+        <link href="https://chainguys.github.io/post/akord-zhong-wen-cai-liao-he-ji-akord-chinese-materials-updating/">
+        </link>
+        <updated>2023-03-23T08:36:21.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/img/akord-logo.svg" alt="" loading="lazy"></figure>
+<h1 id="1官方博文official-blog">1.官方博文(Official Blog)</h1>
+<p><strong>2023:</strong></p>
+<h2 id="02-08-gdpr和区块链"><a href="https://chainguys.github.io/post/gdpr-he-qu-kuai-lian-gdpr-and-blockchain/">02-08 GDPR和区块链</a></h2>
+<h2 id="01-31-web3存档-the-web3-archive"><a href="https://chainguys.github.io/post/web3-cun-dang-the-web3-archive/">01-31 web3存档 (The web3 archive)</a></h2>
+<h2 id="01-30-akordjsarweave-上的隐私-协作和文件管理akordjsprivacy-collaboration-and-file-management-on-arweave"><a href="https://chainguys.github.io/post/akordjsarweave-shang-de-yin-si-xie-zuo-he-wen-jian-guan-li-akordjsprivacy-collaboration-and-file-management-on-arweave/">01-30 AkordJS：Arweave 上的隐私、协作和文件管理(AkordJS：privacy, collaboration and file management on Arweave)</a></h2>
+<h2 id="01-06-重塑我们的品牌-rebuilding-our-brand"><a href="https://chainguys.github.io/post/chong-su-wo-men-de-pin-pai-rebuilding-our-brand/">01-06 重塑我们的品牌 (Rebuilding our brand)</a></h2>
+<p><strong>2022:</strong></p>
+<h2 id="11-26-认识-akord基于区块链的永久存储和发布协议-meet-akordthe-blockchain-based-permanent-storage-and-publishing-protocol"><a href="https://chainguys.github.io/post/ren-shi-akordji-yu-qu-kuai-lian-de-yong-jiu-cun-chu-he-fa-bu-xie-yi-meet-akordthe-blockchain-based-permanent-storage-and-publishing-protocol/">11-26 认识 Akord：基于区块链的永久存储和发布协议 (Meet Akord：the blockchain-based permanent storage and publishing protocol)</a></h2>
+<h2 id="10-11-当我们都dedoco我们的文档-when-we-all-dedoco-our-documents"><a href="https://chainguys.github.io/post/dang-wo-men-du-dedoco-wo-men-de-wen-dang-when-we-all-dedoco-our-documents/">10-11 当我们都Dedoco我们的文档 (When we all Dedoco our documents)</a></h2>
+<h2 id="10-06-akord应用v2介绍-introducing-the-v2-akord-app"><a href="https://chainguys.github.io/post/akord-ying-yong-v2-jie-shao-introducing-the-v2-akord-app/">10-06 Akord应用V2介绍 (Introducing the V2 Akord app)</a></h2>
+<h2 id="09-26-akord协议向所有构建者开源-akord-protocol-open-for-builders"><a href="https://chainguys.github.io/post/akord-xie-yi-xiang-suo-you-gou-jian-zhe-kai-yuan-akord-protocol-open-for-builders/">09-26 Akord协议—向所有构建者开源 (Akord protocol – open for builders)</a></h2>
+<h2 id="07-03-akord-x-dedoco-宣布合作-akord-x-dedoco-partnership-announcement"><a href="https://chainguys.github.io/post/akord-x-dedoco-xuan-bu-he-zuo-akord-x-dedoco-partnership-announcement/">07-03 Akord x Dedoco – 宣布合作! (Akord x Dedoco – partnership announcement)</a></h2>
+<h2 id="06-24-公共保管库已经到来public-vaults-have-arrived"><a href="https://chainguys.github.io/post/gong-gong-bao-guan-ku-yi-jing-dao-lai-public-vaults-have-arrived/">06-24 公共保管库已经到来！(Public vaults have arrived!)</a></h2>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[宣布“Beta-3”，Fuel 的第三个公共测试网 (Announcing “Beta-3”, Fuel’s Third Public Testnet)]]></title>
         <id>https://chainguys.github.io/post/xuan-bu-beta-3fuel-de-di-san-ge-gong-gong-ce-shi-wang-announcing-beta-3-fuels-third-public-testnet/</id>
@@ -1818,92 +1840,6 @@ Euler 的清算人可以执行“软清算”，即仅从正在进行清算的�
 <p>大约在你的 ETH 借款变得比你的 USDC 存款更有价值之前，清算人将介入并购买你的抵押品，同时偿还你的债务。借贷协议会激励这些清算人以轻微折扣（在本例中为 1490 美元）提供您的抵押品（1500 USDC / 1500 美元），并且该协议将为其带来的麻烦进行小幅削减。使用这种机制，借贷协议可确保不会产生坏账。除了少数例外，这通常效果很好。</p>
 <p>Now, equipped with this information, please return to the top of this article to see why Euler is better than other protocols at liquidations!</p>
 <p>现在，有了这些信息，请返回本文顶部，看看为什么 Euler 在清算方面优于其他协议！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Euler和FloorDAO (Euler and FloorDAO)]]></title>
-        <id>https://chainguys.github.io/post/euler-he-floordao-euler-and-floordao/</id>
-        <link href="https://chainguys.github.io/post/euler-he-floordao-euler-and-floordao/">
-        </link>
-        <updated>2023-01-10T01:54:18.000Z</updated>
-        <content type="html"><![CDATA[<h2 id=""><img src="https://euler-labs.ghost.io/content/images/2023/01/floordao-euler.png" alt="Euler and FloorDAO" loading="lazy"></h2>
-<p>This is a piece made in collaboration with FloorDAO and Euler contributors to share the unique possibilities presented to NFTs when mixed with permissionless lending and borrowing markets.</p>
-<p>这是一篇与 FloorDAO 和 Euler 贡献者合作的文章，旨在分享 NFT 在与无许可借贷市场结合时呈现的独特可能性。</p>
-<p><strong>什么是 NFT-Fi？ What is NFT-Fi?</strong></p>
-<p>The financialisation of NFTs, while a relatively new thing, has already seen some impressive growth. This has taken off as of late due to large amounts of value being stored in largely illiquid assets that are inefficient stores of value when compared to something like ETH: you can borrow against it, you can lend it, you can stake it and so forth.</p>
-<p>NFT 的金融化虽然是一个相对较新的事物，但业已取得了令人瞩目的增长。由于大量价值存储在流动性差的资产中，与 ETH 之类的东西相比，这些资产的价值存储效率低下，因此最近才开始流行：你可以借进借出抵押等等.</p>
-<p>With an NFT, the utility used to simply be tied to the purchase price, and even this was handled via bidding - which contributes more to existing market inefficiency. Other applications involve real world utility such as tickets (all my homies hate ticketmaster) or joining social clubs and so forth.</p>
-<p>对于 NFT，其效用过去常常简单地与购买价格挂钩，甚至是通过投标来处理——这对现有市场的低效率起到了推波助澜作用。其他应用涉及现实世界的实际用例，例如门票（我所有的朋友都讨厌售票员）或加入社交俱乐部等。</p>
-<p>NFT communities strive for efficiency, and so different protocols began to spring up offering creative fusions of existing DeFi building blocks compatible with established NFT projects. Once these really got moving users were lending, borrowing, paying in instalments, hedging and so forth.</p>
-<p>NFT 社区力求效率，因此不同的协议开始涌现，提供与已其 NFT 项目兼容的现有 DeFi 构建区块的创造性融合。一旦这些真正动起来，用户就会借贷、分期付款、对冲等等。</p>
-<figure data-type="image" tabindex="1"><img src="https://euler-labs.ghost.io/content/images/2023/01/image.png" alt="" loading="lazy"></figure>
-<p>This brings yield to an asset that previously didn’t have any. While you may snigger at the idea, you won’t snigger at the performance: <a href="https://twitter.com/FloorDAO/status/1600592478096265233">26ETH in just one month</a>! This is against the backdrop of November's gigantic blowup (try and tell me you weren’t red in November). NFT-Fi is here to stay.</p>
-<p>这为资产带来了以前没有的收益。虽然您可能会对这个想法窃笑，但您不会对它的表现窃笑：<a href="https://twitter.com/FloorDAO/status/1600592478096265233">仅一个月内就有 26 个 ETH</a>！这是在 11 月的巨大爆炸的背景下（试着告诉我你在 11 月没亏钱）。 NFT-Fi 将继续存在。</p>
-<p><strong>什么是 FloorDAO？What is FloorDAO?</strong></p>
-<p>In their own words: FloorDAO is an NFT market making protocol that uses OlympusDAO bonding mechanisms to deepen NFT liquidity for the NFTs in the FloorDAO treasury. These collections are deployed in strategies like NFTX, which generates yield.</p>
-<p>用他们自己的话说：FloorDAO 是一种 NFT 做市协议，它使用 OlympusDAO 绑定机制来加深 FloorDAO 库中 NFT 的 流动性。这些集合部署在 NFTX 等策略中，从而产生收益。</p>
-<p><strong>Euler 和 FloorDAO 是如何结合在一起的？How do Euler and FloorDAO fit together?</strong></p>
-<p>As it stands, FloorDAO is earning yield on 7 different collections. This has the advantage of a) bringing yield to FloorDAO on otherwise dormant assets and b) enabling speculators to long and short different NFT floor prices. This furthers FloorDAO’s goal to deepen NFT liquidity driving further activity and helps Euler by driving more demand to the protocol.</p>
-<p>目前，FloorDAO 在 7 个不同的收藏上赚取收益。这样做的好处是 a) 为 FloorDAO 带来其他休眠资产的收益，以及 b) 使投机者能够做多和做空不同的 NFT 底价。这进一步推进了 FloorDAO 的目标，即深化 NFT 流动性来推动进一步的活动，并通过推动对该协议的更多需求来帮助 Euler。</p>
-<p>Euler is a unique lending and borrowing protocol: any asset can be supplied and borrowed. Unlike other protocols in the space, it is open to any asset that can be put into an ERC-20 standard. No governance approval is required and the risks that this entails are by default managed by conservative smart contract code.</p>
-<p>Euler 是一种独特的借贷协议：可以提供和借用任何资产。与该领域的其他协议不同，它对任何可以放入 ERC-20 标准的资产开放。不需要治理批准，默认情况下，这带来的风险由保守的智能合约代码管理。</p>
-<p>As it stands, Euler and FloorDAO are already interfacing with each other thanks to FloorDAO’s tokenization of 40 Milady Maker and 1.5 CryptoPunk NFTs which were then deposited. Since then, users have been longing and shorting miladys constantly.</p>
-<p>就目前而言，由于 FloorDAO 对 40 个 Milady Maker 和 1.5 个 CryptoPunk NFT 进行了代币化，Euler 和 FloorDAO 已经相互连接。此后，用户可以持续对miladys的看多和看空。</p>
-<p>While it’s clear that  CryptoPunk NFTs (being largely considered to be held by “OGs” who have been in DeFi since the start) have seen some <a href="https://decrypt.co/97190/ethereum-nft-backed-loan-market-heats-up-as-cryptopunks-owner-borrows-8-3m">good lending and borrowing activity</a>, Miladys are catching up fast in terms of activity and may even supercede them in terms of creativity. Will miladys steal the crown for the most innovative DeFi pfp? Do I even need to draw attention to the famous <a href="https://slate.com/technology/2022/06/bored-ape-yacht-club-thefts-nfts-cryptocurrency.html">financial literacy of Ape holders?</a></p>
-<p>虽然很明显，CryptoPunk NFT（主要被认为由从一开始就在 DeFi 中的“OG”持有）已经看到了一些 [良好的借贷活动](https://decrypt.co/97190/ethereum-nft -backed-loan-market-heats-up-as-cryptopunks-owner-borrows-8-3m)，Miladys 在活动方面正在快速追赶，甚至可能在创造力方面超过他们。 miladys 会夺得最具创新性的 DeFi pfp 桂冠吗？我是否需要提请注意著名的 <a href="https://slate.com/technology/2022/06/bored-ape-yacht-club-thefts-nfts-cryptocurrency.html">Ape 持有者的金融知识？</a></p>
-<figure data-type="image" tabindex="2"><img src="https://lh4.googleusercontent.com/8Wy7sHtIC8kJQ0cZK4_RdnxsXTo7gaiFRK6LD7uUqHfYqM-fxKPNZrwVcT8S6sgjPBU5BoJTzop1yBf7h5jFNfzej-CTx_cSywCQqU1kJ3RTSmbYo75CcsB_8-k4LN0Joc21lyVJbf0K0k-ruDjWH1fd_HtLhiOEnMfSupAPFvRr089buV1XZsSqIelOiw" alt="" loading="lazy"></figure>
-<p>Breaking: milady</p>
-<h3 id="我如何在-euler-上做多和做空-nft或者如何展示我作为自称-og-的金融知识-how-do-i-long-and-short-nfts-on-euler-alternatively-how-do-i-demonstrate-my-financial-literacy-as-a-self-proclaimed-og">我如何在 Euler 上做多和做空 NFT（或者如何展示我作为自称 OG 的金融知识）？- How do I long and short NFTs on Euler (alternatively how do I demonstrate my financial literacy as a self-proclaimed OG)?</h3>
-<p>It’s quite straightforward to prove that OG CryptoPunk users are financially literate using Euler. To begin, supply some collateral to Euler. This will depend on whether or not you are long or short on CryptoPunks.</p>
-<p>使用 Euler 证明 OG CryptoPunk 用户具备金融知识非常简单。首先，向 Euler 提供一些抵押品。这将取决于您是做多还是做空 CryptoPunks。</p>
-<p>You are as ever subject to liquidation. This wallet <a href="https://twitter.com/eulLiquidations/status/1612336788856606720">was, and so is the first Milady liquidation of 2023.</a> For an overview on liquidations please see this <a href="https://docs.euler.finance/developers/getting-started/architecture#liquidations">here</a>.</p>
-<p>你一如既往地会被清算。这个钱包 <a href="https://twitter.com/eulLiquidations/status/1612336788856606720">过去是，现在也是 2023 年的第一次 Milady 清算。</a> 有关清算的概述，请参阅此<a href="https://docs.euler.finance/developers/getting-started/architecture#liquidations">此处</a>。</p>
-<p><em><strong>如何做多欧拉上的 CryptoPunk How one might long a CryptoPunk on Euler</strong></em></p>
-<p><a href="https://app.euler.finance/market/0x269616d549d7e8eaa82dfb17028d0b212d11232a">To view the PUNK market, see here.</a><br>
-<a href="https://app.euler.finance/market/0x269616d549d7e8eaa82dfb17028d0b212d11232a">要查看 PUNK 市场，请参见此处。</a></p>
-<p>This can be achieved in the following way:<br>
-这可以通过以下方式实现：</p>
-<ul>
-<li>
-<p>Supply any collateral to Euler and then borrow a USDC stable asset (or indeed any asset that you think will appreciate less than your PUNK, such as ETH) like USDC.<br>
-向 Euler 提供任何抵押品，然后借入 USDC 稳定资产（或者任何你认为升值低于你的 PUNK 的资产，例如 ETH），如 USDC。</p>
-</li>
-<li>
-<p>Swap the asset that you’ve borrowed and buy an equal amount of PUNK. This can be all handled inside the Euler finance app transaction builder, which uses 1inch.<br>
-交换您借入的资产并购买等量的 PUNK。这一切都可以在使用 1inch 的 Euler 金融交易构建器中处理。</p>
-</li>
-<li>
-<p>If the PUNK has appreciated in value say 1.5x, you can repay the USDC loan which you earlier took to finance the PUNK swap.<br>
-如果 PUNK 的价值升值了 1.5 倍，您可以偿还您之前为 PUNK 交换提供资金的 USDC 贷款。</p>
-</li>
-</ul>
-<p>The increased PUNK price means you earn profit. You keep the difference, though this is only if the value of PUNK increases. Be mindful that if PUNK decreases the value of your USDC borrow will not - you have lost money here. Note also you’ll be paying some interest on the loan.</p>
-<p>PUNK 价格上涨意味着您赚取利润。你保留差额，尽管这只是在 PUNK 的值增加的情况下。请注意，如果 PUNK 降低您借入的 USDC 的价值，则不会——这意味着您在这里亏了钱。另请注意，您将支付一些贷款利息。</p>
-<p><strong><em>如何在 Euler 上做空 CryptoPunk How one might short a CryptoPunk on Euler</em></strong></p>
-<p>It could be essentially the same, but in reverse.</p>
-<p>它可能本质上是相同的，但操作相反。</p>
-<ul>
-<li>
-<p>Supply any asset, but this time borrow PUNK against it.<br>
-提供任何资产，但这次借用 PUNK 作为抵押。</p>
-</li>
-<li>
-<p>Sell the PUNK for an asset you believe will appreciate in value against the PUNK,<br>
-出售 PUNK 以获得您认为相对于 PUNK 会升值的资产，</p>
-</li>
-<li>
-<p>Once the PUNK decreases in value enough for you to be satisfied, close the short by buying back the same amount of PUNK. You keep the difference once more.<br>
-一旦 PUNK 的价值下降到足以让您满意，通过回购相同数量的 PUNK 来平仓。</p>
-</li>
-</ul>
-<p>In doing so, you might prove to your rival NFT community you know your way around a trade.</p>
-<p>这样做，您可能会向您的竞争对手 NFT 社区证明您了解交易。</p>
-<p>As ever, none of this constitutes financial advice and only you or your financial advisor can tailor your market activities to your risk profile. Consider how that conversation might go (lol).</p>
-<p>与以往一样，这些都不构成财务建议，只有您或您的财务顾问，可以根据您的风险状况调整您的市场活动。考虑一下那个对话可能会如何进行（笑）。</p>
-<figure data-type="image" tabindex="3"><img src="https://lh4.googleusercontent.com/kB_dFBsrjy6ZT0Z7if3X-I6slGnMCNN_NTvIQWijAnqWx80_DzUG7TfCiBGVSGr74zigPBktuc6cyUAfy9YA4aQmKEWFnXgMXtvwbF5vS4rlSiKE8NT2ji_FdTWzo8LrfQL04rAC1GrfEIV5KweT5rAYWhPS7chOOozmN1oHirolBPofeAjajA-al0YNyQ" alt="" loading="lazy"></figure>
-<p><strong>未来 The future?</strong></p>
-<p>NFT financialisation is here to stay. While there’s yield to be earned and floors to be raised, FloorDAO will continue to do this. Without spilling too many juicy details, FloorDAO is looking to completely rebuild their protocol and introduce veFLOOR which will allow new collections into the portfolio and give holders the ability to direct liquidity and treasury yield to their preferred collections. Euler contributors, on the other hand, are currently working on Baby Euler where anyone can spin up a lending and borrowing pool as and when they please. Combine the two and what do you get?</p>
-<p>NFT 金融化将继续存在。虽然要赚取收益并提高底部收益，但 FloorDAO 将继续这样做。在不泄露太多有趣细节的情况下，FloorDAO 希望完全重建他们的协议并引入 veFLOOR，这将允许新的收藏品进入投资组合，并让持有人能够将流动性和国债收益率引导到他们喜欢的收藏品。另一方面，Euler 贡献者目前正在开发 Baby Euler，任何人都可以在任何时候随意启动借贷池。将两者结合起来，你会得到什么？</p>
 ]]></content>
     </entry>
 </feed>
