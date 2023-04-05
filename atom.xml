@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-04-01T16:59:00.035Z</updated>
+    <updated>2023-04-05T08:44:18.981Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -18,8 +18,9 @@
         <updated>2023-03-29T11:36:33.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://assets-global.website-files.com/5e990b3bae81cf4a03433c58/5f347d008da2e477a3c61fca_Aleo-logo-white-p-500.png" alt="" loading="lazy"></figure>
 <h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a>原创 (<a href="https://twitter.com/Chainguys">@Chainguys</a> Original )</h1>
-<h2 id="信息短视频-info-videos">信息短视频 (Info Videos)</h2>
-<p><a href="https://twitter.com/Chainguys/status/1640924159730667521">Aleo新人指南:3.融资轮次</a><br>
+<h2 id="视频短视频-videosshort-videos">视频/短视频 (Videos/Short Videos)</h2>
+<p><a href="https://twitter.com/Chainguys/status/1642693247108542466">Aleo简介-A short intro to Aleo</a><br>
+<a href="https://twitter.com/Chainguys/status/1640924159730667521">Aleo新人指南:3.融资轮次</a><br>
 <a href="https://twitter.com/Chainguys/status/1640197984653549569">Aleo for Beginners:3.Funding Rounds</a><br>
 <a href="https://twitter.com/Chainguys/status/1639097802700595200">Aleo新人指南:2.零知识证明-P5</a><br>
 <a href="https://twitter.com/Chainguys/status/1638381333528420354">Aleo for Beginners:2.zero-knowledge-P5</a><br>
@@ -38,13 +39,16 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Akord中文材料合集（Akord Chinese materials) Updating]]></title>
+        <title type="html"><![CDATA[Akord材料合集-CHN&ENG（Akord materials CHN&ENG) Updating]]></title>
         <id>https://chainguys.github.io/post/akord-zhong-wen-cai-liao-he-ji-akord-chinese-materials-updating/</id>
         <link href="https://chainguys.github.io/post/akord-zhong-wen-cai-liao-he-ji-akord-chinese-materials-updating/">
         </link>
         <updated>2023-03-23T08:36:21.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/img/akord-logo.svg" alt="" loading="lazy"></figure>
-<h1 id="1官方博文official-blog">1.官方博文(Official Blog)</h1>
+<h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a> 原创 (<a href="https://twitter.com/Chainguys">@Chainguys</a> Original)</h1>
+<h2 id="视频videos">视频(Videos)</h2>
+<p><a href="https://twitter.com/Chainguys/status/1642754531288023042">Akord简介-Short Intro to Akord</a></p>
+<h1 id="官方博文official-blog">官方博文(Official Blog)</h1>
 <p><strong>2023:</strong></p>
 <h2 id="02-08-gdpr和区块链"><a href="https://chainguys.github.io/post/gdpr-he-qu-kuai-lian-gdpr-and-blockchain/">02-08 GDPR和区块链</a></h2>
 <h2 id="01-31-web3存档-the-web3-archive"><a href="https://chainguys.github.io/post/web3-cun-dang-the-web3-archive/">01-31 web3存档 (The web3 archive)</a></h2>
