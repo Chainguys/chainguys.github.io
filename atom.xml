@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-04-05T08:44:18.981Z</updated>
+    <updated>2023-04-13T04:38:01.102Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,53 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[AltLayer开放免费试用无代码汇总启动板 (AltLayer opens up a free trial of its no-code rollup launchpad)]]></title>
+        <id>https://chainguys.github.io/post/altlayer-kai-fang-mian-fei-shi-yong-wu-dai-ma-hui-zong-qi-dong-ban-altlayer-opens-up-a-free-trial-of-its-no-code-rollup-launchpad/</id>
+        <link href="https://chainguys.github.io/post/altlayer-kai-fang-mian-fei-shi-yong-wu-dai-ma-hui-zong-qi-dong-ban-altlayer-opens-up-a-free-trial-of-its-no-code-rollup-launchpad/">
+        </link>
+        <updated>2023-04-12T04:35:33.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://raas-freetrial.altlayer.io/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcd830f8c-5735-49ef-84d0-370d68bc4462%2FUntitled.png?id=9c84f8b3-d01f-4c05-8ea5-7956d317f932&amp;table=block&amp;spaceId=e3667f93-2fbe-4164-a69c-0240c2500e1b&amp;width=2000&amp;userId=&amp;cache=v2" alt="" loading="lazy"></figure>
+<ul>
+<li>
+<p><em>Public launch welcomes all users to deploy their own Layer-2 with AltLayer</em><br>
+<em>公开发布欢迎所有用户使用AltLayer部署自己的Layer-2</em>。</p>
+</li>
+<li>
+<p><em>Launchpad integrated with a novel AI tool</em> <strong><em>FlashGPT</em></strong> <em>which helps devs build smart contracts faster on Solidity</em><br>
+_Launchpad集成了一个全新的AI工具  <strong>FlashGPT</strong> 它可以帮助开发者在Solidity上更快地构建智能合约。</p>
+</li>
+</ul>
+<p>Following the success of the 100 Flash Layers campaign last month, we have received numerous in-bound requests to <a href="https://dashboard.alt.technology/">open up our <strong>rollup launchpad</strong></a> to all. We quickly jumped to action — and in a few short weeks, we’re delighted to bring this product to you.</p>
+<p>继上个月100个Flash Layers活动的成功之后，我们收到了大量的内部请求，希望<a href="https://dashboard.alt.technology/">向所有人开放我们的<strong>rollup launchpad</strong></a>。我们迅速行动起来--很高兴在短短几周内就将这个产品带给你们。</p>
+<p>As of today, we’d like to o<a href="https://dashboard.alt.technology/">pen up our no-code rollup launchpad</a> as part of our public launch. With this intuitive launchpad, you can spin up an execution layer across multiple chains with an explorer. Whether you’re a developer, a Web3 entrepreneur, or just an amateur enthusiast — you will be able to launch an application-specific rollup customized to suit any business needs. A bonus is that users can experiment with the disposability features of a ‘flash layer.’ The launchpad includes associated infrastructure such as sequencers, RPC endpoints, a block explorer and a token faucet. Other toolings include Remix IDE, contract generator, and ABI Ninja — which presents an easy to use interface to call any contract deployed on a multitude of chains including rollups launched via the launchpad.</p>
+<p>从今天起，我们把无代码汇总启动板（https://dashboard.alt.technology/）作为我们公开发布的一部分。有了这个直观的启动板，你可以用一个浏览器在多个链上启动一个执行层。无论你是一个开发人员，一个Web3企业家，或者只是一个业余爱好者--你将可以启动一个特定应用的汇总，来适应任何业务需求。一个额外的好处是，用户可以试验'闪存层'的可处置性功能。启动板包括相关的基础设施，如序列器、RPC端点、区块浏览器和代币水龙头。其他工具包括Remix IDE、合约生成器和ABI Ninja--它提供了一个易于使用的界面，以调用部署在众多链上的任何合约，包括通过启动板启动的汇总。</p>
+<p>All these services are being offered as a part of a rollup-as-a-service package where a user launching the rollup does not need to host or manage any part of the rollup or associated infrastructure. And mostly importantly, users do not need to write a single line of code. And as you will see it yourself, it does not take more than 5 mins to get your own rollup.</p>
+<p>所有这些服务都是作为 &quot;汇总即服务 &quot;包的一部分提供的，启动汇总的用户不需要托管或管理汇总的任何部分或相关基础设施。最重要的是，用户不需要编写任何一行代码。正如你自己所看到的，不需要超过5分钟就能获得你自己的汇总。</p>
+<p>The launchpad can be accessed by anyone for a two-hour free trial — which gives you plenty of time to deploy a Layer-2 application of your choosing — without the hassle, the build-time or costs!</p>
+<p>任何人都可以通过两小时的免费试用来访问launchpad--这给了你足够的时间来部署你所选择的第二层应用--没有麻烦，没有构建时间，也没有成本</p>
+<p><strong>Another bonus is that</strong> we’ve integrated our proprietary FlashGPT.</p>
+<p>**另一个好处是，**我们已经整合了我们专有的FlashGPT。</p>
+<p><em>How this fits into the rollup launchpad</em>: FlashGPT utilizes the power of OpenAI’s GPT language model to generate Solidity smart contracts and deploy them to Layer 1 and Layer 2 solutions (including AltLayer’s Flash Layer, Arbitrum, BNB Chain, Ethereum, Gnosis, Polygon, Polygon zkEVM testnet, Optimism, and scroll alpha testnet). This tool natively integrates into AltLayer’s rollup-as-a-service solution, which makes it possible to deploy the smart contract on any flash layer that gets provisioned by AltLayer.</p>
+<p><em>这如何适合于汇总启动板</em>： FlashGPT利用OpenAI的GPT语言模型的力量来生成Solidity智能合约，并将其部署到第1层和第2层解决方案（包括AltLayer的Flash层、Arbitrum、BNB Chain、Ethereum、Gnosis、Polygon、Polygon zkEVM测试网、Optimism和roll alpha测试网）。这个工具原生地集成到AltLayer的rollup-as-a-service解决方案中，这使得在任何由AltLayer提供的闪存层上部署智能合约成为可能。</p>
+<p>FlashGPT is suitable for developers as well as for those with little to no coding experience. It allows developers to experiment, innovate and dive deeper into the world of decentralized application development while saving time, capital and developer resources.</p>
+<p>FlashGPT适用于开发人员，也适用于那些几乎没有编码经验的人。它允许开发者在节省时间、资金和开发者资源的同时，尝试、创新并深入到去中心化应用开发的世界。</p>
+<p>Ready to get your hands dirty?</p>
+<p>准备好下场来玩玩了吗？</p>
+<ul>
+<li>
+<p><strong>Try the launchpad now</strong>. <a href="https://dashboard.alt.technology/">https://dashboard.alt.technology/</a><br>
+<strong>现在就试试启动板</strong>。<a href="https://dashboard.alt.technology/">https://dashboard.alt.technology/</a></p>
+</li>
+<li>
+<p>Use <a href="https://raas-freetrial.altlayer.io/">our tutorial</a> to get started. It’s completely free and only takes a few minutes!<br>
+使用<a href="https://raas-freetrial.altlayer.io/">我们的教程</a>来开始。它是完全免费的，只需要几分钟。</p>
+</li>
+</ul>
+<p>We look forward to hearing about your experience using the launchpad. For questions or to engage with the community, join our <a href="https://discord.gg/altlayer">Discord server</a>. Don’t forget to follow us on <a href="https://twitter.com/alt_layer">Twitter</a> for all updates!</p>
+<p>我们期待着听到你使用启动板的经验。如有问题或想与社区互动，请加入我们的<a href="https://discord.gg/altlayer">Discord服务器</a>。不要忘记在<a href="https://twitter.com/alt_layer">Twitter</a>上关注我们的所有更新!</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Aleo内容汇总(ENG&CHN)]]></title>
         <id>https://chainguys.github.io/post/aleo-nei-rong-hui-zong-engandchn/</id>
@@ -1712,49 +1759,6 @@ console.log(data);
 <p>这篇文章之后将有一个更详细的教程，介绍使用和访问 Akord 保险库的不同方式。</p>
 <p>If you want to connect directly with our developers, jump into the discord and join the <a href="https://discord.gg/vArB88mYJs">#builder-chat</a>.</p>
 <p>如果您想直接与我们的开发人员联系，请加入 Discord 并加入 <a href="https://discord.gg/vArB88mYJs">#builder-chat</a>。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[存储日本昭和时代的老照片 (Archiving photos from the Japanese Shōwa era)]]></title>
-        <id>https://chainguys.github.io/post/cun-chu-ri-ben-zhao-he-shi-dai-de-lao-zhao-pian-archiving-photos-from-the-japanese-showa-era/</id>
-        <link href="https://chainguys.github.io/post/cun-chu-ri-ben-zhao-he-shi-dai-de-lao-zhao-pian-archiving-photos-from-the-japanese-showa-era/">
-        </link>
-        <updated>2023-01-18T02:34:07.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://optimise2.assets-servd.host/akord-web/production/YPYK06Fb.jpeg?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1672525121&amp;s=270e4c0fc5382c8a1c7f24545858e16a" alt="YPYK06 Fb" loading="lazy"></figure>
-<p><strong>Recently, there has been a retro boom, such as Fujifilm’s disposable camera or Instax, and retro artefacts have exploded into the spotlight. In Japan, the Shōwa era has been drawing attention from the younger generation in recent years.</strong></p>
-<p><strong>最近掀起了一股复古热潮，比如富士胶片的一次性相机或Instax，复古的手工艺品开始成为人们关注的焦点。在日本，昭和时代近年来一直受到年轻一代的关注。</strong></p>
-<h2 id="昭和时代-the-shōwa-era">昭和时代 (The Shōwa era)</h2>
-<p>In Japan, every emperor is given an era name by the cabinet from a list of candidates created by bureaucrats based on a guideline. For example, we are currently in year number 4 of the Reiwa era, which translates to beautiful harmony.</p>
-<p>在日本，内阁从官僚根据指南制定的候选名单中，为每位天皇指定一个年号。例如，我们目前正处于令和时代的第 4 年，这意味着美丽和谐。</p>
-<p>The Shōwa era was one of the longest eras, lasting from 1926 until 1989. During this era, Japan went through many phases: militarization, destruction due to World War II, and a subsequent dramatic economic revival in the 1980s. This economic revival was one of the most prosperous periods in recent Japan, and people who lived through the Shōwa era now look back to these good old days.</p>
-<p>昭和时代是最长的时代之一，从 1926 年一直持续到 1989 年。在这个时代，日本经历了多个阶段：军事化、二战造成的破坏，以及随后在 1980 年代出现的剧烈经济复苏。这次经济复兴是近代日本最繁荣的时期之一，经历过昭和时代的人们现在回首过去的美好时光。</p>
-<p>However, they are not the only ones looking at this period. This nostalgia has been growing in recent years, even among the younger generations who didn't experience and live through the Shōwa era. Perhaps as Japan faces economic stagnation, these times of growth and possibility are creating nostalgia amongst a disillusioned youth. Whatever the case may be, as with many other historical periods, people will always want to look back at different periods to learn how people before them lived.</p>
-<p>然而，他们并不是唯一关注这一时期的人。近年来，这种怀旧情绪一直在增长，甚至在没有经历过昭和时代的年轻一代中也是如此。也许当日本面临经济停滞时，这些增长和可能性的时代正在让幻想破灭的年轻人产生怀旧之情。无论情况如何，与许多其他历史时期一样，人们总是希望回顾不同时期以了解他们之前的人是如何生活的。</p>
-<p>To enable people to do this, we need to be able to store this type of data for hundreds of years, allowing future generations to easily access it. Ideally, we should be able to publish this content permanently and make it easily accessible to all.</p>
-<p>为了让人们能够做到这一点，我们需要能够将此类数据存储数百年，让子孙后代能够轻松访问它。理想情况下，我们应该能够永久发布这些内容并让所有人都能轻松访问。</p>
-<figure data-type="image" tabindex="2"><img src="https://optimise2.assets-servd.host/akord-web/production/showa-era.jpg?w=2600&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1672582495&amp;s=309f7b7fd6cf88a21c3a679f3aa1206c" alt="Showa era" loading="lazy"></figure>
-<h2 id="用akord存储和发布照片-archiving-and-publishing-photos-with-akord">用Akord存储和发布照片 (Archiving and publishing photos with Akord)</h2>
-<p>There are many ways to upload, backup, and share media, but the main issue is that very few of these can last long enough to outlive us. What if you could rest assured that all the data you archive will persist no matter what happens?</p>
-<p>上传、备份和共享媒体的方式有很多种，但主要问题是这些方式中很少能够持续到我们生命的尽头。那如果您可以放心——无论发生什么情况，您存储的所有数据都将持续存在怎么办？</p>
-<p>Akord and Arweave allow you to do just that.</p>
-<p>Akord 和 Arweave 可以让您做到这一点。</p>
-<p>You just need to pay upfront for the amount of storage required on Akord, upload the content and rest easy knowing your files are archived permanently. But instead of forgetting about the content, you’ll probably want to share it with others.</p>
-<p>您只需预先支付 Akord 上所需的存储量，上传内容就可高枕无忧，因为您的文件已永久存档。与其忘记内容，不如与他人分享。</p>
-<p>Akord also lets you ti do just this: once published to Arweave you can share your files in a stylish gallery view. Your videos and audio files can also be played in your preferred browser without needing people to download them.</p>
-<p>Akord 还可以让您做到这一点：一旦发布到 Arweave，您就可以在时尚的画廊视图中共享您的文件。您的视频和音频文件也可以在您喜欢的浏览器中播放，无需下载。</p>
-<h2 id="akord上的昭和时代-shōwa-era-on-akord">Akord上的昭和时代 (Shōwa era on Akord)</h2>
-<p>Many incredible photos from the Shōwa era had been posted to Twitter by a now-removed account. With permission from the account holder, we’ve been archiving and publishing the photos to Akord. Had we not backed up all these photos, many of them might have been completely lost.</p>
-<p>许多昭和时代令人难以置信的照片，被一个现已删除的帐户发布到推特上。在账户持有人的许可下，我们一直在将照片存档并发布到 Akord。如果我们没有备份所有这些照片，其中许多照片可能已经完全丢失。</p>
-<p><a href="https://v2.akord.com/public/vaults/active/FZWZ1gW5BT1Ar1EsajsXXXhOdIal0XY60lYkvfSTELQ/assets">You can find this extraordinary collection of nearly 10,000 photos here</a>.</p>
-<p><a href="https://v2.akord.com/public/vaults/active/FZWZ1gW5BT1Ar1EsajsXXXhOdIal0XY60lYkvfSTELQ/assets">您可以在此处找到包含近 10,000 张照片的非凡收藏</a></p>
-<p>This year, we’ll be releasing Akord Explorer, deployed directly on the Permaweb, and public vaults like this one will be shared and accessed there. What’s more, people will be able to follow these vaults, getting notifications on any activity like new uploads.</p>
-<p>今年，我们将发布直接部署在 Permaweb 上的 Akord Explorer，像这样的公共保管库将在那里共享和访问。更重要的是，人们将能够关注这些保管库，获得有关新上传等任何活动的通知。</p>
-<figure data-type="image" tabindex="3"><img src="https://optimise2.assets-servd.host/akord-web/production/Showa-2.jpg?w=2600&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1672582748&amp;s=72617b30cda9e957fcd2f1ab5aa1bff9" alt="Showa 2" loading="lazy"></figure>
-<h2 id="为您的存储获得自助-get-funding-for-your-archive">为您的存储获得自助 (Get funding for your archive)</h2>
-<p>We believe Akord’s vaults are uniquely able to help publish and preserve parts of our shared history and culture, and will actively help support projects in this area that align with our values.</p>
-<p>我们相信 Akord 的保管库，能够独特地帮助发布和保存我们共同的历史和文化的一部分，并将积极帮助支持该领域符合我们价值观的项目。</p>
-<p>If you have an idea for a similar project that’s working to archive artefacts of cultural interest, or are already working on something you believe would be better published on the Permaweb, then please <a href="mailto:ai@akord.com">contact me</a> as we may be able to contribute towards the storage costs on Akord and Arweave.</p>
-<p>如果您对一个类似的项目有想法，该项目正在努力存档具有文化价值的东西，或者已经在做您认为可以更好地发布在 Permaweb 上的东西，那么请<a href="mailto:ai@akord.com">联系我</a> ，我们或许能够分担 Akord 和 Arweave 的存储成本。</p>
 ]]></content>
     </entry>
 </feed>
