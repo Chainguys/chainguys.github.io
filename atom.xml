@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-04-18T03:26:47.193Z</updated>
+    <updated>2023-04-27T04:59:13.618Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,80 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Linera中文材料汇总-更新中(Linera CHN materials-Updating)]]></title>
+        <id>https://chainguys.github.io/post/linera-zhong-wen-cai-liao-hui-zong-geng-xin-zhong-linera-chn-materials-updating/</id>
+        <link href="https://chainguys.github.io/post/linera-zhong-wen-cai-liao-hui-zong-geng-xin-zhong-linera-chn-materials-updating/">
+        </link>
+        <updated>2023-04-27T03:15:17.000Z</updated>
+        <content type="html"><![CDATA[<h2 id=""><img src="https://chainguys.github.io/post-images/1682566080378.png" alt="" loading="lazy"></h2>
+<h1 id="白皮书whitepaper">白皮书(Whitepaper)</h1>
+<p><a href="https://chainguys.github.io/post/linerawei-web3-ying-yong-er-sheng-de-gao-ke-kuo-zhan-qu-kuai-lian-ji-chu-she-shi-di-1-ban-2022-nian-12-yue-19-ri">Linera：为Web3应用而生的高可扩展区块链基础设施(第1版，2022年12月19日)-Linera：a Blockchain Infrastructure for Highly Scalable Web3 Applications(Version 1 – December 19, 2022)</a></p>
+<h1 id="blogs博客">Blogs(博客)</h1>
+<p><a href="https://chainguys.github.io/post/linera-jian-jie-introducing-linera/">Linera简介 (Introducing Linera)</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linera：为Web3应用而生的高可扩展区块链基础设施(第1版-2022年12月19日)]]></title>
+        <id>https://chainguys.github.io/post/linerawei-web3-ying-yong-er-sheng-de-gao-ke-kuo-zhan-qu-kuai-lian-ji-chu-she-shi-di-1-ban-2022-nian-12-yue-19-ri/</id>
+        <link href="https://chainguys.github.io/post/linerawei-web3-ying-yong-er-sheng-de-gao-ke-kuo-zhan-qu-kuai-lian-ji-chu-she-shi-di-1-ban-2022-nian-12-yue-19-ri/">
+        </link>
+        <updated>2023-04-27T02:52:15.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://chainguys.github.io/post-images/1682564027152.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564046350.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564049541.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564064673.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564070774.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564077408.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564084726.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564090077.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564094410.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564100328.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564199576.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564207495.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564214229.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564219710.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564225477.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564231082.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564236082.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564241199.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564246398.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564251649.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564805897.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564811635.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564817435.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564823087.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564828487.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564833637.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564838889.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564845088.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564851073.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564866425.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564911032.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564917332.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564943483.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564949284.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564955137.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564960554.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564968288.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564973689.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564979456.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564985107.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564990990.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682564997374.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682565023161.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682565028280.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682565033412.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682565038347.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682565043582.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682565048615.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682565053581.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682565058233.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682565062816.png" alt="" loading="lazy"><br>
+<img src="https://chainguys.github.io/post-images/1682565067264.png" alt="" loading="lazy"></p>
+<h1 id="pdf版本请自取httpsdrivegooglecomfiled1wa92nlj_njsszomzbzcaqaepq2nyp-ikviewuspsharing">PDF版本请自取：<a href="https://drive.google.com/file/d/1wa92nlJ_NJssZoMZbZcaqAEPQ2nYp-Ik/view?usp=sharing">https://drive.google.com/file/d/1wa92nlJ_NJssZoMZbZcaqAEPQ2nYp-Ik/view?usp=sharing</a></h1>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fuel内幕-2023年第一季 (Inside Fuel：Q1 2023)]]></title>
         <id>https://chainguys.github.io/post/fuel-nei-mu-2023-nian-di-yi-ji-inside-fuelq1-2023/</id>
@@ -1618,305 +1692,6 @@ Web3授权</p>
 <a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
 </li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GDPR和区块链 (GDPR and blockchain)]]></title>
-        <id>https://chainguys.github.io/post/gdpr-he-qu-kuai-lian-gdpr-and-blockchain/</id>
-        <link href="https://chainguys.github.io/post/gdpr-he-qu-kuai-lian-gdpr-and-blockchain/">
-        </link>
-        <updated>2023-02-07T16:14:49.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://optimise2.assets-servd.host/akord-web/production/GDPR.png?w=1300&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1675848469&amp;s=718c31c7086ae0ed02c087884f0fed64" alt="" loading="lazy"></figure>
-<h2 id="简介-introduction">简介 (Introduction)</h2>
-<p>Blockchain is undoubtedly <em>the</em> technology for data storage and traceability. While it is still not widely accepted, most people outside the Blockchain ecosystem have started to understand this.</p>
-<p>毫无疑问，区块链是数据存储和可追溯性的技术。虽然它还没有被广泛接受，但区块链生态系统之外的大多数人已经开始理解这一点。</p>
-<p>Blockchain technology acts like a decentralised database shared simultaneously with all its users, without depending on a central authority for access. Any data uploaded and stored on a blockchain (e.g. <a href="https://arweave.org/">Arweave</a>) cannot be modified, tampered with or &quot;revoked&quot; without it being visible to all. A real breakthrough technology!</p>
-<p>区块链技术就像一个去中心化的数据库，同时与所有用户共享，而不依赖于中心化访问权限。任何上传和存储在区块链（例如 <a href="https://arweave.org/">Arweave</a>）上的数据都不能在不被所有人看到的情况下被修改、篡改或“撤销”。真正的突破性技术！</p>
-<p>However, when one uses the term &quot;data&quot; within the context of data storage, what quickly comes to mind, particularly among Europeans, is the General Data Protection Regulation (GDPR). And the resulting question is: does GDPR apply to blockchain technology?</p>
-<p>然而，当人们在数据存储的上下文中使用“数据”一词时，尤其是在欧洲人中，很快就会想到通用数据保护条例 (GDPR)。由此产生的问题是：GDPR 是否适用于区块链技术？</p>
-<p>The answer given by the French <a href="https://www.cnil.fr/">Commission Nationale de l'Informatique et des Libertés (CNIL – French Data Protection Agency)</a> in 2018 on this subject is clear: &quot;when a blockchain contains personal data, GDPR is applicable&quot;.</p>
-<p>法国 <a href="https://www.cnil.fr/">Commission Nationale de l'Informatique et des Libertés（CNIL – 法国数据保护局）</a> 在 2018 年就此问题给出的答案很明确：“当区块链包含个人数据，GDPR 适用”。</p>
-<p>What exactly is meant by personal data in the sense of GDPR? CNIL specifies that it is, &quot;any information concerning an identified or identifiable natural person&quot;. The blockchain is therefore not, in itself, a data processor with a purpose in its own right, but a technology that can be used in support of different data processing. And this is where GDPR applies.</p>
-<p>GDPR 意义上的个人数据到底是什么意思？ CNIL 指定它是“关于已识别或可识别自然人的任何信息”。因此，区块链本身并不是一个具有自身目的的数据处理器，而是一种可用于支持不同数据处理的技术。这就是 GDPR 适用的地方。</p>
-<p>But is the very philosophy and operating principles of a blockchain compatible with GDPR? The answer is not so obvious and deserves to be considered for a moment.</p>
-<p>但是区块链的理念和操作原则是否与 GDPR 兼容？答案不是那么明显，值得考虑一下。</p>
-<p>Innovation and the protection of fundamental rights of individuals are not, in our opinion, contradictory objectives. Indeed, GDPR does not aim to regulate technologies as such, but rather the way actors use these technologies in a context involving personal data.</p>
-<p>在我们看来，创新和保护个人基本权利并不矛盾。事实上，GDPR 的目的不是监管技术本身，而是监管行为者在涉及个人数据的环境中使用这些技术的方式。</p>
-<p>So a blockchain storing data can satisfy many of the rules set out in GDPR.</p>
-<p>因此，存储数据的区块链可以满足 GDPR 中规定的许多规则。</p>
-<p>Even though cryptographic processes predate the publication of the data protection rules, major technological developments in protecting privacy are taking place now. Through advanced encryption, web3 developers can implement GDPR compliant solutions. Web3 is still in its nascent phase and will come to understand the spirit and the details of data protection rules over time.</p>
-<p>尽管加密过程早于数据保护规则的发布，但保护隐私的重大技术发展现在正在发生。通过高级加密，web3 开发人员可以实施符合 GDPR 的解决方案。 Web3 仍处于初级阶段，随着时间的推移将逐渐了解数据保护规则的精神和细节。</p>
-<p>The architecture and technological characteristics of each blockchain are unique. The consequences for the way personal data is stored and processed in light of GDPR may vary from one blockchain to another. It is, therefore, necessary to carry out a case-by-case analysis.</p>
-<p>每个区块链的架构和技术特征都是独一无二的。根据 GDPR 存储和处理个人数据的方式的后果可能因区块链而异。因此，有必要具体情况具体分析。</p>
-<p>The applications built on the Arweave blockchain show great promise in terms of data protection by their design and the control offered to users. We will further develop how an application such as Akord and the Arweave blockchain can address GDPR compatibility issues.</p>
-<p>建立在 Arweave 区块链上的应用，通过其设计和为用户提供的控制在数据保护方面显示出巨大的希望。我们将进一步探索 Akord 和 Arweave 区块链等应用如何解决 GDPR 兼容性问题。</p>
-<h2 id="一些有用的概念-some-useful-concepts">一些有用的概念 (Some useful concepts)</h2>
-<p>The objectives of GDPR are to protect, on the territory of the European Union, people whose personal data is processed, and to reinforce the responsibility of those processing this data.</p>
-<p>GDPR 的目标是在欧盟境内保护其个人数据被处理的人，并加强处理这些数据的人的责任。</p>
-<p>Any private or public company, regardless of the technology they use, that processes personal data of European citizens must comply with certain obligations, which are based on 5 major principles.</p>
-<p>任何处理欧洲公民个人数据的私营或上市公司，无论使用何种技术，都必须遵守基于 5 项主要原则的特定义务。</p>
-<ul>
-<li>
-<p>Inform data subjects so that they can give their consent to the collection and processing of their personal data.<br>
-通知数据主体，以便他们同意收集和处理他们的个人数据。</p>
-</li>
-<li>
-<p>Use data in a transparent and relevant way with regard to its collection and processing;<br>
-在收集和处理方面以透明和相关的方式使用数据；</p>
-</li>
-<li>
-<p>Give data subjects access to their data so that they can consult, modify, and delete it at any time.<br>
-授予数据主体访问其数据的权限，以便他们可以随时查阅、修改和删除数据。</p>
-</li>
-<li>
-<p>Control and limit the sharing and circulation of data.<br>
-控制和限制数据的共享和流通。</p>
-</li>
-<li>
-<p>Secure personal data both electronically and physically.<br>
-以电子方式和物理方式保护个人数据。</p>
-</li>
-</ul>
-<p>Understanding whether we are processing personal data is therefore key to understanding whether GDPR applies to activities carried out on a blockchain.</p>
-<p>因此，了解我们是否在处理个人数据，是了解 GDPR 是否适用于在区块链上开展的活动的关键。</p>
-<p>After the previous section, you will understand more easily that the intention of the legislator is to give back the control of personal data to its owner and to limit, or at least to frame the use and the processing by the professionals who can have access to it.</p>
-<p>在上一节之后，您将更容易理解立法者的意图是将个人数据的控制权交还给其所有者，并限制或至少限制可以访问的专业人员的使用和处理。</p>
-<h3 id="什么是个人数据什么是区块链上的个人数据what-is-personal-data-what-is-personal-data-on-a-blockchain">什么是个人数据？什么是区块链上的个人数据？(What is personal data? What is personal data on a blockchain?)</h3>
-<p>According to CNIL, personal data is &quot;any information concerning an identified or identifiable natural person&quot;. Generally, an individual can be identified by a name, an address, a number, but this can also include other identifiers such as an IP address, a cookie identifier or similar identifying metadata collected by a website or an application.</p>
-<p>根据 CNIL，个人数据是“关于已识别或可识别自然人的任何信息”。通常，个人可以通过姓名、地址、号码来识别，但这也可以包括其他标识符，例如 IP 地址、cookie 标识符或网站或应用收集的类似识别的元数据。</p>
-<p>Even if a person cannot be strictly identifed from the information processed, that person may still be deemed identifiable. Therefore, <strong>only information that is truly anonymous</strong> (i.e. “such a manner that the data subject is not or no longer identifiable”) <strong>or not &quot;about&quot; the person is not covered by GDPR.</strong></p>
-<p>即使无法从处理的信息中严格识别某个人，该人仍可被视为可识别。因此，<strong>只有真正匿名的信息</strong>（即“数据主体无法或不再可识别的方式”）<strong>或不“关于”该人的信息，不在 GDPR 的涵盖范围内。</strong></p>
-<p>On a blockchain, the personal data processed can be quite basic. For example, a pseudonym, a bank account number, the public address of a wallet, a signature; or much more complex, such as the transfer of financial or insurance assets, the &quot;hash&quot; of patients' medical data.</p>
-<p>在区块链上，处理的个人数据可能非常基础。例如，化名、银行帐号、钱包的公共地址、签名；或者更复杂，例如金融或保险资产的转移，患者医疗数据的“哈希”。</p>
-<p>Once processing of personal data is established on a blockchain, GDPR analysis applies: identification of the data controller, enforcement of rights, implementation of appropriate safeguards, security obligations, etc.</p>
-<p>一旦在区块链上建立了个人数据处理，GDPR 分析就适用：数据控制者的识别、权利的执行、适当保障措施的实施、安全义务等。</p>
-<h3 id="谁是区块链中的主要参与者-who-are-the-main-actors-involved-in-a-blockchain">谁是区块链中的主要参与者？ (Who are the main actors involved in a blockchain?)</h3>
-<p>Data protection originated in the management of centralised data within specific entities. For blockchain technology, the decentralised governance of data and the multiplicity of actors involved in the processing of data make it considerably more difficult to define the role of each actor.</p>
-<p>数据保护起源于特定实体内部集中数据的管理。对于区块链技术，数据的去中心化治理和数据处理中涉及的参与者之多样性，使得定义每个参与者的角色变得相当困难。</p>
-<p>Three types of actors can be identified:</p>
-<p>可以确定三种类型的参与者：</p>
-<ul>
-<li>
-<p>The &quot;accessors&quot;, who have the right to read and hold a copy of the chain;<br>
-有权阅读和持有链副本的“访问者”；</p>
-</li>
-<li>
-<p>The &quot;participants&quot; who have the right to make entries, ie, to carry out a transaction for which they request validation;<br>
-有权进行输入的“参与者”，即执行他们请求验证的交易；</p>
-</li>
-<li>
-<p>The &quot;miners&quot; who validate a transaction and create blocks by applying the rules of the blockchain to have them &quot;accepted&quot; by the community.<br>
-验证交易并通过应用区块链规则创建区块以使社区“接受”它们的“矿工”。</p>
-</li>
-</ul>
-<h3 id="哪个参与者充当区块链中的数据控制器which-actor-acts-as-the-data-controller-in-a-blockchain">哪个参与者充当区块链中的数据控制器？(Which actor acts as the data controller in a blockchain?)</h3>
-<p>According to CNIL, a controller is, &quot;the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data”.</p>
-<p>根据 CNIL，控制者是“单独或与他人共同确定个人数据处理目的和方式的自然人或法人、公共当局、机构或其他机构”。</p>
-<p>CNIL has clarified that participants, who have the right to write on the blockchain and who decide to send data for validation by miners, can be considered as data controllers. Indeed, the participants in the blockchain must define the purposes (objectives pursued by the processing) and the means (data format, use of blockchain technology, etc) of the processing.</p>
-<p>CNIL 已澄清，有权在区块链上写入并决定发送数据来供矿工验证的参与者可以被视为数据控制者。实际上，区块链的参与者必须定义处理的目的（处理所追求的目标）和处理的方式（数据格式、区块链技术的使用等）。</p>
-<p>More specifically, CNIL considers that the participant may be qualified as a data controller,</p>
-<p>更具体地说，CNIL 认为参与者可能有资格成为数据控制者，</p>
-<ul>
-<li>
-<p>&quot;when said participant is a natural person and the processing is related to a professional or commercial activity (ie, when the activity is not strictly personal);<br>
-“当所述参与者是自然人并且处理与专业或商业活动有关时（即，当活动不是严格意义上的个人活动时）；</p>
-</li>
-<li>
-<p>when the said participant is a legal person that registers personal data in the blockchain&quot;.<br>
-当所述参与者是在区块链中注册个人数据的法人时”。</p>
-</li>
-</ul>
-<p>On the other hand, miners are not considered as data controllers, since they only validate the transactions submitted by participants and are not involved in the purpose of these transactions.</p>
-<p>另一方面，矿工不被视为数据控制者，因为他们只验证参与者提交的交易，并不参与这些交易的目的。</p>
-<p>The Arweave blockchain and the applications that work on the Arweave blockchain are very promising in terms of data protection by their design and the control offered to users. The Akord protocol and application is a good example.</p>
-<p>Arweave 区块链和在 Arweave 区块链上运行的应用，在其设计和提供给用户的控制方面的数据保护方面非常有前途。 Akord 协议和应用就是一个很好的例子。</p>
-<h2 id="arweave-akord-和-gdpr-合规性-arweave-akord-and-gdpr-compliance">Arweave、Akord 和 GDPR 合规性 (Arweave, Akord, and GDPR compliance)</h2>
-<h3 id="arweave">Arweave</h3>
-<p>Arweave is a new blockchain protocol creating for the first time truly permanent serverless data storage. This technology is still largely reserved for a more tech savvy user that’s comfortable with the various technical processes required to use it.</p>
-<p>Arweave 是一种新的区块链协议，首次创建真正永久的无服务器数据存储。这项技术在很大程度上仍然保留给更精通技术的用户，他们熟悉使用所需的各种技术流程。</p>
-<p>From a GDPR standpoint, Arweave provides in its technical documentation, a transaction format (ANS-106) the possibility for people to let miners know not to store certain data on grounds of privacy, regulation, copyright, etc. …</p>
-<p>从 GDPR 的角度来看，Arweave 在其技术文档中提供了一种交易格式 (ANS-106)，让人们可以让矿工知道不要以隐私、监管、版权等为由存储某些数据……</p>
-<p>Privacy and private data processing are very much at the heart of Arweave’s business. As its CEO, Sam Williams, stated in an interview in 2022:</p>
-<p>隐私和私人数据处理是 Arweave 业务的核心。正如其首席执行官Sam Williams在 2022 年的一次采访中所说：</p>
-<blockquote>
-<p>It's the node's responsibility, both morally and legally, to abide by the laws of their land, and the network allows them to do that.</p>
-<p>节点在道义上和法律上都有责任遵守所在国的法律，网络允许他们这样做。</p>
-<p>~ Sam Williams，在 2022 年亚洲 Arweave 上发言<br>
-~Sam Williams, speaking at Arweave in Asia 2022</p>
-</blockquote>
-<h3 id="akord">Akord</h3>
-<p>Akord is a protocol developed by Zero Knowledge Collective. The protocol offers a digital storage space on the Arweave blockchain and a means for its users to publish their digital files to the Permaweb.</p>
-<p>Akord 是由 Zero Knowledge Collective 开发的协议。该协议在 Arweave 区块链上提供了一个数字存储空间，并为其用户提供了一种将其数字文件发布到 Permaweb 的方式。</p>
-<p>One of the main objectives of the Akord application is to democratise the use of the Arweave blockchain, giving back control of the data fully owned by its users. The app offers digital vaults with a simple UX making Arweave accessible to a broad range of users.</p>
-<p>Akord 应用的主要目标之一是使 Arweave 区块链的使用民主化，交还其用户完全拥有的数据控制权。该应用程供具有简单用户体验的数字保管库，使 Arweave 可供广泛的用户访问。</p>
-<p>This digital vault service can be qualified as automated processing of personal data, insofar as its management is based on computerised operations and the content of this storage space is, by nature, dependent on the case, linked to an identifiable physical person (the user).</p>
-<p>这种数字保管库服务可以被称为个人数据的自动处理，只要它的管理是基于计算机化的操作，并且这种存储空间的内容在本质上取决于具体情况，与可识别的自然人（用户）相关联.</p>
-<p>In the following sections, we will discuss how Akord meets the various GDPR requirements.</p>
-<p>在以下部分中，我们将讨论 Akord 如何满足 GDPR 的各种要求。</p>
-<h2 id="akord-应用如何更接近-gdpr-的完全合规性how-akord-app-moves-closer-to-full-gdpr-compliance">Akord 应用如何更接近 GDPR 的完全合规性？(How Akord app moves closer to full GDPR compliance? )</h2>
-<p>After a brief overview on GDPR as applied to blockchain technology, the following will focus on the Akord protocol. This will provide example on how Akord manages to minimize the risks when processing personal data based on the Arweave blockchain and thus meet the GPDR requirements.</p>
-<p>在简要概述 GDPR 应用于区块链技术后，下文将重点介绍 Akord 协议。这将举例说明 Akord 如何在基于 Arweave 区块链处理个人数据时设法将风险降至最低，从而满足 GPDR 要求。</p>
-<h3 id="关于接收人-regarding-recipients">关于接收人 (Regarding recipients)</h3>
-<p>Unlike the data stored in public vaults, the documents imported into the encrypted vaults, can only be consulted by the user concerned and the persons he or she has specially authorised and invited into the vault (who are themselves subject to an authentication mechanism).</p>
-<p>与存储在公共保管库中的数据不同，导入到加密保管库中的文件只能由相关用户和他或她特别授权并邀请进入保管库的人（其本身受身份验证机制约束）查阅。</p>
-<p>In practice, the data is encrypted with a key, controlled only by the user, and protected by cryptographic mechanisms making it incomprehensible to unauthorised third parties. The transfer of data on the blockchain is protected by advanced cryptography.</p>
-<p>实际上，数据是用密钥加密的，仅由用户控制，并受加密机制保护，使未经授权的第三方无法理解。区块链上的数据传输受到高级密码学的保护。</p>
-<h3 id="处理后的数据-processed-data">处理后的数据 (Processed data)</h3>
-<p>In its capacity as provider of the digital vault service, Akord is required to process data enabling users to be identified with certainty and the associated data necessary for the operation of its service.</p>
-<p>作为数字保管库服务的提供商，Akord 需要处理能够确定用户身份的数据以及运营其服务所需的相关数据。</p>
-<p>As soon as Akord defines the means and purposes for the implementation of these two processing operations (cryptographic commitment, encrypted key in particular), it assumes the role of data controller and is therefore subject to the obligations of GDPR.</p>
-<p>一旦 Akord 定义了执行这两个处理操作的方式和目的（加密承诺，特别是加密密钥），它就会承担数据控制者的角色，因此需要遵守 GDPR 的义务。</p>
-<p>Access to the encrypted digital vaults is strictly limited to the user, and it is therefore technically impossible for Akord to determine in advance the nature of the documents that a user will decide to store in his or her private space. Furthermore, Akord is not technically capable of accessing the contents of a vault, nor its possible backups.</p>
-<p>对加密数字保管库的访问严格限于用户，因此从技术上讲，Akord 无法提前确定用户将决定存储在其私人空间中的文件的性质。此外，Akord 在技术上无法访问保管库的内容，也无法访问其可能的备份。</p>
-<p>Data stored by users in their encrypted vaults are in principle excluded from the scope of GDPR (and they are not processed by Akord). The same applies to the automatic retrieval of digital documents, because these documents are not used by Akord but only entered into a digital vault.</p>
-<p>用户存储在其加密保管库中的数据原则上不在 GDPR 的范围内（并且 Akord 不处理这些数据）。这同样适用于数字文档的自动检索，因为这些文档不被 Akord 使用，而只是输入到数字保管库中。</p>
-<h3 id="保留期限-retention-period">保留期限 (Retention period)</h3>
-<p>GDPR imposes, in principle, a maximum retention period for personal data which varies according to the purpose of the data processing.</p>
-<p>GDPR 原则上规定了个人数据的最长保留期限，该期限根据数据处理的目的而有所不同。</p>
-<p>Akord commonly processes the following two categories of data via its application.</p>
-<p>Akord 通常通过其应用处理以下两类数据。</p>
-<ul>
-<li>
-<p><strong>参与者的标识符 (Participants' identifiers)</strong><br>
-Each participant has an identifier composed of a sequence of alphanumeric characters that appear to be random and that constitute the public key of the participant's account. This public key relates to a private key that only the participant knows.<br>
-每个参与者都有一个由一系列字母数字字符组成的标识符，这些字符看起来是随机的，并且构成了参与者帐户的公钥。该公钥与只有参与者知道的私钥相关。</p>
-<p>The very architecture of a blockchain requires that the identifiers be visible at all times, as they are essential to its proper functioning.<br>
-区块链的架构要求标识符始终可见，因为它们对其正常运行至关重要。</p>
-<p>In this particular case, the CNIL accepts that it is not possible to reduce the retention period further and that their retention periods can be aligned with the life of the blockchain. As the blockchain is a “Permaweb”, we can therefore conclude that the identifiers of the users, i.e, the participants, can be validly kept for the entire duration of the Akord application.<br>
-在这种特殊情况下，CNIL 承认不可能进一步缩短保留期，并且它们的保留期可以与区块链的生命周期保持一致。由于区块链是一个“永久网络”，因此我们可以得出结论，用户（即参与者）的标识符可以在 Akord 应用的整个持续时间内有效保留。</p>
-</li>
-<li>
-<p><strong>附加数据 (Additional data)</strong><br>
-In addition to the participants' identifiers, the additional data stored on the blockchain may contain personal data, potentially relating to persons other than the participants.<br>
-除了参与者的标识符之外，存储在区块链上的附加数据可能包含个人数据，可能与参与者以外的人有关。</p>
-<p>In this case, the CNIL recommends that the personal data be recorded in the blockchain in the form of a cryptographic commitment. This technical option has obviously been implemented on the Akord application for encrypted vaults.<br>
-在这种情况下，CNIL 建议将个人数据以加密承诺的形式记录在区块链中。这个技术选项显然已经在 Akord 的加密保管库应用上实现了。</p>
-</li>
-</ul>
-<h3 id="通知个人-informing-individuals">通知个人 (Informing individuals)</h3>
-<p>In accordance with GDPR, the persons concerned by the processing of personal data must be informed, in particular, of the identity of the person responsible for the service, the purpose of the processing, the recipients of the data, any transfers of data to a country outside the European Union, as well as the existence of and procedures for exercising the rights of access, rectification and opposition.</p>
-<p>根据 GDPR，处理个人数据的相关人员必须被告知，特别是服务负责人的身份、处理的目的、数据的接收者、任何数据传输到欧盟以外的国家，以及行使访问权、纠正权和异议权的存在和程序。</p>
-<p>Akord complies with all these requirements. All this information can be consulted directly on its website, under the section <a href="https://akord.com/privacy-policy">Privacy policy</a>.</p>
-<p>Akord 符合所有这些要求。所有这些信息都可以在其网站上的 <a href="https://akord.com/privacy-policy">隐私政策</a> 部分直接查阅。</p>
-<p>Akord, in its capacity as a provider of access to digital storage spaces, has developed technical solutions enabling it to offer its services without collecting confidential information, with the exception of data relating to the identification and connection of its users.</p>
-<p>Akord 作为数字存储空间访问的提供商，开发了技术解决方案，使其能够在不收集机密信息的情况下提供服务，但与用户识别和连接相关的数据除外。</p>
-<p>Users of digital vaults are clearly informed of the type of space available to them (encrypted and public vaults) and their consequences of use. The choice of public vaults can considerably degrade the protection of individuals' data within the meaning of GDPR. Also in the interest of transparency, Akord requires the prior consent of the user as a necessary precondition for creating a public vault.</p>
-<p>数字保管库的用户被清楚地告知他们可用的空间类型（加密和公共保管库）及其使用后果。在 GDPR 的意义上，选择公共保管库可能会大大降低对个人数据的保护。同样为了透明起见，Akord 需要用户的事先同意作为创建公共保管库的必要前提。</p>
-<h3 id="访问权和数据可移植权-the-right-of-access-and-right-to-data-portability">访问权和数据可移植权 (The right of access and right to data portability)</h3>
-<p>Upon simple request to the dedicated email address, any data subject may request access to the data concerning him/her.</p>
-<p>在向专用电子邮件地址提出简单请求后，任何数据主体都可以请求访问与他/她有关的数据。</p>
-<p>With regard to the right to data portability, Akord will release an app deployed directly on Arweave, Akord explorer, enabling users to independently access and retrieve all data from all digital vaults in a simple manner, regardless of whether the operating company that builds and maintains the application exists or not. This guarantees and facilitates, perpetually, the right of our users to change services if they so wish.</p>
-<p>在数据可移植性方面，Akord 将发布一款直接部署在 Arweave 上的应用 Akord explorer，使用户能够以简单的方式，独立访问和检索所有数字保管库中的所有数据，无论构建和维护运营该应用的公司是否存在。这永久地保证并促进了我们的用户根据自己的意愿更改服务的权利。</p>
-<h3 id="删除权被遗忘权或反对权-the-right-to-erasure-right-to-be-forgotten-or-right-to-object">删除权（“被遗忘权”）或反对权 - The right to erasure (“right to be forgotten”) or right to object</h3>
-<p>To date, as far as public blockchains are concerned, it is technically impossible to delete data in clear text, unless miners theoretically decide to remove data from Arweave by applying the ANS-106 option mentioned above.</p>
-<p>迄今为止，就公共区块链而言，删除明文数据在技术上是不可能的，除非矿工理论上决定通过应用上述 ANS-106 选项从 Arweave 中删除数据。</p>
-<p>In order to protect its users' personal data as much as possible, Akord leaves them the choice of how to store their data:</p>
-<p>为了尽可能保护用户的个人数据，Akord 让他们选择如何存储他们的数据：</p>
-<ul>
-<li>
-<p>The public vault comes into play in the case of data written in clear text or hashed on the Arweave blockchain. As mentioned above, specific information has been put in place to make users aware of the consequences of this choice and the vulnerability of the protection of the data that could be published there.<br>
-如果数据以明文形式写入或在 Arweave 区块链上哈希，则公共保险库会发挥作用。如上所述，已提供特定信息，让用户了解此选择的后果以及可能在那里发布的数据保护之脆弱性。</p>
-</li>
-<li>
-<p>The private vault, which is much more protective since no personal data is written in clear text on the Arweave blockchain, and which also use a cryptographic process.<br>
-私人保险库，由于 Arweave 区块链上没有以明文形式写入任何个人数据，因此保护性更强，并且还使用加密过程。</p>
-</li>
-</ul>
-<p>When a user wishes to delete one of the documents from their vault, this request is immediately taken into account with the &quot;revocation&quot; option offered by the application. As mentioned above, a document cannot be technically and effectively deleted from the Arweave blockchain unless expressly asked under ANS-106 option.</p>
-<p>当用户希望从他们的保管库中删除其中一份文档时，应用提供的“撤销”选项会立即考虑此请求。如上所述，除非在 ANS-106 选项下明确要求，否则无法从技术上有效地从 Arweave 区块链中删除文档。</p>
-<p>However, the cryptographic processes chosen by Akord make it possible to cut off the accessibility of the evidence recorded on the blockchain, by making it difficult or impossible to recover. Indeed, the mathematical properties of certain cryptographic commitments chosen by Akord can guarantee that once the elements allowing its verification are removed, it will no longer be possible to prove or verify which information was committed. The commitment itself then no longer presents any risk in terms of confidentialitý. Another option for Akord would be that of removing the secret key from the hash function which will have a similar effect.</p>
-<p>但是，Akord 选择的加密过程使得很难或不可能恢复，从而有可能切断区块链上记录的证据的可访问性。事实上，Akord 选择的某些加密承诺的数学属性可以保证，一旦允许其验证的元素被删除，将无法再证明或验证哪些信息已提交。承诺本身就不再存在任何保密风险。 Akord 的另一个选择是从哈希函数中删除密钥，这将产生类似的效果。</p>
-<h3 id="整修权-the-right-to-rectification">整修权 (The right to rectification)</h3>
-<p>As mentioned above, any data entered on a blockchain cannot technically be changed once the block is accepted by the majority of participants.</p>
-<p>如上所述，一旦区块被大多数参与者接受，任何输入区块链的数据在技术上都无法更改。</p>
-<p>However, if a user requested a change, the lack of possibility to modify the data entered in a block will most likely lead Akord to enter the updated data in a new block. This is because a subsequent transaction can always cancel the first transaction, even though the first transaction will still appear in the chain. The same solutions as in the case of a request to delete personal data could be applied to the erroneous data if it is to be deleted.</p>
-<p>但是，如果用户请求更改，则无法修改块中输入的数据，这很可能导致 Akord 在新块中输入更新的数据。这是因为后续交易总是可以取消第一笔交易，即使第一笔交易仍会出现在链中。如果要删除错误数据，则可以将与请求删除个人数据的解决方案相同的解决方案应用于错误数据。</p>
-<p>Unlike other blockchains, Arweave standard (Ans-106) provides the ability to users to request non-storage of certain data (for privacy, regulatory, copyright reasons, etc.). This strengthens data rights of our users whom can rely on Akord for technical support needed to follow this path (not provided at this stage unfortunately but working on it!).</p>
-<p>与其他区块链不同，Arweave 标准 (Ans-106) 允许用户请求不存储某些数据（出于隐私、监管、版权原因等）。这加强了我们用户的数据权利，他们可以依靠 Akord 获得遵循此路径所需的技术支持（不幸的是，现阶段未提供，但正在努力！）。</p>
-<hr>
-<p><strong>Through this article, we hope to have proven Akord's commitment to permanently guarantee the security and protection of its users' data, in accordance with the CNIL recommendations, and to make every effort to ensure its compliance with GDPR in a changing technological context favouring decentralisation.</strong></p>
-<p><strong>通过本文，我们希望证明 Akord 致力于根据 CNIL 的建议，永久保证其用户数据的安全和保护，并尽一切努力确保其在不断变化的有利于去中心化的技术环境中遵守 GDPR</strong></p>
-<p><strong>脚注 (Footnote)</strong></p>
-<p>1.The transfer of data outside the EU are not voluntarily addressed in this article and will be the subject of a separate article.</p>
-<p><strong>参考文献 Sources</strong></p>
-<p>Blockchain: Solutions for a responsible use of the blockchain in the context of personal data – CNIL- September 2018</p>
-<p>Premiers éléments d’analyse de la CNIL – September 2018</p>
-<p>LexisNexis N° 4548 – Protéger les données personnelles dans des projets blockchain - smart contracts. RGPD - December 2, 2021 - written by Nicolas Goossaert-Krupka</p>
-<p>Délibération n° 2013-270 dated September 13, 2013 CNIL recommandation about « aux services dits de coffre-fort numérique ou électronique destinés aux particuliers »</p>
-<p>Blockchain and the General Data Protection Regulation Can distributed ledgers be squared with European data protection law? - EPRS | European Parliamentary Research Service – July 2019</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[介绍Sunscreen (Introducing Sunscreen)]]></title>
-        <id>https://chainguys.github.io/post/jie-shao-sunscreen-introducing-sunscreen/</id>
-        <link href="https://chainguys.github.io/post/jie-shao-sunscreen-introducing-sunscreen/">
-        </link>
-        <updated>2023-02-02T03:22:33.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDE1fHxlbmNyeXB0aW9ufGVufDB8fHx8MTY3NTM2MzUzNA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000" alt="" loading="lazy"></figure>
-<hr>
-<p>More and more people are realizing the importance of privacy, particularly in web3. Front-running attacks plague multiple blockchains. Sophisticated users want to hide their financial holdings and trading strategies while still reaping the benefits of the DeFi ecosystem. While there has been an explosion of web3 companies, privacy is needed for the space is to have any real longevity. Without confidential voting, users may feel forced to self censor; concerningly, there's a possibility of tracking and analyzing user behavior across DAOs.</p>
-<p>越来越多的人意识到隐私的重要性，尤其在 web3.0 中。抢跑交易攻击困扰着多个区块链。老练的用户希望隐藏其金融资产和交易策略的同时，仍能从 DeFi 生态系统中获益。虽然 web3 公司呈爆炸式增长，但要让这个领域真正长寿，就需要隐私。如果没有秘密投票，用户可能会感到被迫进行自我审查；令人担忧的是，还可能会有跨 DAO 跟踪和分析用户行为。</p>
-<p>However, existing privacy solutions are difficult to work with and fall short when it comes to user experience. As we believe privacy should be built into applications from the ground up, our goal is to make it easy for developers to bring privacy to whatever application they envisage. To achieve this, two privacy technologies are needed—fully homomorphic encryption and zero knowledge proofs. With fully homomorphic encryption, anyone can perform computations on anyone else’s private data; no need to delegate access to your unencrypted data and no need to trust some third party with your privacy. Current approaches to privacy treat zero knowledge proofs (ZKPs) as the holy grail; however, ZKPs fall short when it comes to supporting lightweight users and private shared state.<a href="https://blog.sunscreen.tech/roadmap/#fn1">[1]</a> Fully homomorphic encryption in combination with zero knowledge proofs will enable the creation of a richer variety of private apps.</p>
-<p>然而，现有的隐私解决方案难以奏效，并在用户体验方面存在不足。我们认为隐私应该从头开始构建到应用中，因此我们的目标是让开发人员能够轻松地将隐私引入他们设想的任何应用。为此，需要两种隐私技术——全同态加密和零知识证明。通过全同态加密，任何人都可以对其他人的私人数据进行计算；无需委托对未加密数据的访问权限，也无需将您的隐私托付给第三方。当前的隐私保护方法将零知识证明 (ZKP) 视为圣杯；然而，ZKP 在支持轻量级用户和私有共享状态方面存在不足。完全同态加密与零知识证明相结合，将创建更丰富的隐私应用。</p>
-<p>Sunscreen's goal is to turn the above dream into a reality; we're hard at work making FHE usable for web3 applications via an SDK and are lucky to be supported by an incredible group of investors in our mission.</p>
-<p>Sunscreen的目标就是将上述梦想变为现实；我们正在努力通过 SDK 使 FHE 可用于 web3 应用，并且很幸运能够在我们的使命中得到一群令人难以置信的投资者的支持。</p>
-<hr>
-<ol>
-<li>For more details, we recommend starting with <a href="https://eprint.iacr.org/2021/727">this paper.</a><br>
-有关更多详细信息，我们建议从<a href="https://eprint.iacr.org/2021/727">本文</a><a href="https://blog.sunscreen.tech/roadmap/#fnref1">↩︎</a>开始</li>
-</ol>
-<hr>
-<h2 id="我们的线路图-our-roadmap">我们的线路图 (Our roadmap)</h2>
-<p>Our mission is to enable the next generation of private applications, starting first with (d)apps as we think privacy is most urgently needed there. However, to support FHE in web3, we need to solve a few major challenges first:</p>
-<p>我们的使命是启用下一代隐私应用，首先从 (d)apps 开始，因为我们认为那里最迫切需要隐私。然而，要在 web3 中支持 FHE，我们首先需要解决几个主要挑战：</p>
-<ol>
-<li>
-<p>Performance is incredibly important for all sorts of applications but even more so for those related to finance and trading. Unfortunately, FHE is difficult for developers to effectively use–both because there's a steep learning curve and also because it's incredibly hard to set up FHE programs to get good performance.<br>
-性能对于各种应用来说都非常重要，对于那些与金融和贸易相关的应用来说更是如此。不幸的是，FHE 很难让开发人员有效地使用——既因为学习曲线陡峭，也因为设置 FHE 程序来获得良好的性能非常困难。</p>
-</li>
-<li>
-<p>One of the tenets of web3 is &quot;don't trust, verify.&quot; If the user provides a (d)app with encrypted data, how do we know the user-provided inputs satisfy the conditions of the application and aren’t just some garbage values? Remember that no one else can inspect the inputs since they're always encrypted!<br>
-web3的信条之一是“不信任，验证”。如果用户提供带有加密数据的 (d)app，我们怎么知道用户提供的输入满足应用的条件，而不是一些垃圾值？请记住，没有其他人可以检查输入，因为它们始终是加密的！</p>
-</li>
-<li>
-<p>While storage is incredibly cheap in web2, the same doesn’t always hold for web3. Fully homomorphic encryption is incredibly fast for certain classes of applications but it’s not very space efficient. How then can we use FHE in web3?<br>
-虽然 web2 的存储非常便宜，但 web3 并不总是如此。完全同态加密对于某些类别的应用来说速度非常快，但它的空间效率不是很高。那么我们如何在 web3 中使用 FHE？</p>
-</li>
-</ol>
-<p>At Sunscreen, we're working to solve these problems in phases. Our priority so far has been to tackle the first point; in doing so, we've built an FHE compiler tailored to the needs of web3 developers. We're now turning our focus to solving problems #2 and #3; to do that, we've been working on a zero knowledge proof compiler that is compatible with our FHE compiler (so that we can prove things about encrypted data), as well as an integration with a decentralized storage system that can be used to store larger ciphertexts off-chain.</p>
-<p>在 Sunscreen，我们正在努力分阶段解决这些问题。到目前为止，我们的首要任务是解决第一点；为此，我们构建了一个专为 web3 开发人员的需求量身定制的 FHE 编译器。我们现在将注意力转向解决问题 #2 和#3；为此，我们一直在研究与我们的 FHE 编译器兼容的零知识证明编译器（以便我们可以证明有关加密数据的事情），以及可用于存储更大链下密文的，与去中心化存储系统的集成。</p>
-<h3 id="全同态加密编译器-fully-homomorphic-encryption-compiler">全同态加密编译器 (Fully homomorphic encryption compiler)</h3>
-<p>So you want to use FHE? Awesome! Let’s see what the current experience is like as a developer looking to integrate FHE into your application.</p>
-<p>所以你想使用 FHE？太好了！让我们看看作为希望将 FHE 集成到您应用中的开发人员的当前体验。</p>
-<p>As hinted at in challenge #1, existing FHE libraries expect that you as the developer have a deep understanding of the underlying cryptography and mathematics. To compound the problem, runtime can vary by orders of magnitudes depending on how well the developer selected the FHE scheme parameters for their particular application. As a result, it’s difficult for anyone but experts to get good performance out of FHE.</p>
-<p>正如挑战 #1 中所暗示的，现有的 FHE 库希望您作为开发人员对底层密码学和数学有深刻的理解。但运行时间可能会相差几个数量级，则会让问题复杂化。具体取决于开发人员为其特定应用选择的FHE 方案参数的(复杂)程度。因此，除了专家之外，任何人都很难从 FHE 中获得良好的性能。</p>
-<p>To solve this problem, we've built <a href="https://github.com/Sunscreen-tech/Sunscreen">an FHE compiler</a>. The idea here is that a developer only needs to know the very basics of public key cryptography (e.g. key generation, encryption, decryption). Behind the scenes, our compiler transforms a normal Rust function into an FHE equivalent with privacy. It figures out the best parameters for optimal performance, inserts special FHE-specific operations in automatically, generates all the circuits, and even parallelizes the program for you if it can!</p>
-<p>为了解决这个问题，我们构建了<a href="https://github.com/Sunscreen-tech/Sunscreen">一个 FHE 编译器</a>。这里的想法是开发人员只需要了解公钥密码学的基础知识（例如密钥生成、加密、解密）。在幕后，我们的编译器将普通的 Rust 函数转换为具有隐私的 FHE 等价物。它计算出最佳性能的最佳参数，自动插入特殊的 FHE 特定操作，生成所有回路，如果可以的话，甚至可以为您并行(运行)程序！</p>
-<p>Initially, we support the <a href="https://github.com/microsoft/SEAL">BFV fully homomorphic encryption scheme</a>. However, we have designed our compiler so that we can swap out the backend FHE scheme in the future. If you've already tried out our compiler, you likely suspected this after typing:</p>
-<p>最初，我们支持 <a href="https://github.com/microsoft/SEAL">BFV 全同态加密方案</a>。但是，我们设计了编译器，以便将来可以调整后端 FHE 方案。如果您已经尝试过我们的编译器，您可能会在键入以下内容后仍有怀疑：</p>
-<pre><code class="language-rust">[fhe_program(scheme=&quot;bfv&quot;)]
-</code></pre>
-<p>We believe BFV is one of the most suitable FHE schemes for web3 use cases. BFV is one of the few FHE schemes that supports 32+ bit computation without a severe degradation in performance, provides fast arithmetic, and has relatively small key sizes. Sounds too good to be true? Check out <a href="https://playground.sunscreen.tech/">our playground</a> or <a href="https://docs.sunscreen.tech/compiler/performance.html">read more</a> about how our compiler measures up to existing attempts.</p>
-<p>我们相信 BFV 是最适合 web3 用例的 FHE 方案之一。 BFV 是为数不多的 FHE 方案之一，它支持 32 位以上的计算而不会严重降低性能，提供快速算法，并且具有相对较小的密钥大小。听起来好得令人难以置信？查看<a href="https://playground.sunscreen.tech/">我们的游乐场</a> 或<a href="https://docs.sunscreen.tech/compiler/performance.html">阅读更多</a>，了解我们的编译器如何衡量现有尝试。</p>
-<p>We're also exploring support of FHE extensions like multi-party FHE and multi-key FHE. These extensions make it easy to combine and perform computation on multiple users' encrypted data.</p>
-<p>我们还在探索对 FHE 扩展的支持，例如多方 FHE 和多密钥 FHE。这些扩展使得对多个用户的加密数据进行合并和计算变得容易。</p>
-<h3 id="零知识证明编译器-zero-knowledge-proof-compiler">零知识证明编译器 (Zero knowledge proof compiler)</h3>
-<p>Next, let’s look at how we might address challenge #2.</p>
-<p>接下来，让我们看看如何应对挑战#2。</p>
-<p>Zero knowledge proofs to the rescue! The user can prove that their encrypted inputs satisfy the conditions of the application without actually revealing their data.</p>
-<p>零知识证明来救场了！用户可以证明他们的加密输入满足应用的要求，而无需实际透露他们的数据。</p>
-<p>While there are quite a few ZKP libraries out there, it can be difficult to combine these off the shelf with FHE. FHE relies on a special type of cryptography using lattices whereas the most efficient ZKP constructions don't. Combining such proof systems with FHE often leads to poor performance in practice.</p>
-<p>虽然有很多 ZKP 库，但很难将这些现成的库与 FHE 结合起来。 FHE 依赖于一种特殊类型的使用格的密码术，而最有效的 ZKP 结构则不需要。将此类证明系统与 FHE 相结合通常会导致实践中表现不佳。</p>
-<p>We’re currently evaluating a few proof systems to determine which offers the best tradeoffs with regards to space and time. If necessary, we will implement a lower level library with the proof system ourselves. As our goal is to make privacy easy for developers, we will also provide a compiler to work with ZKPs. With so much interest and innovation within the ZKP space, our focus is on designing a compiler in which the backend proof system can be swapped out further down the line. We plan to package the ZKP compiler with our existing FHE compiler for developer ease of use. In terms of API, we will try to keep it consistent with that of our FHE compiler.</p>
-<p>我们目前正在评估一些证明系统，以确定哪一方在空间和时间方面提供最佳权衡。如果有必要，我们将自己实现一个带有证明系统的较低级别的库。由于我们的目标是让开发人员更容易保护隐私，我们还将提供一个编译器来使用 ZKP。由于 ZKP 空间内有如此多的新奇和创新，我们的重点是设计一个编译器，在该编译器中，后端证明系统可以被进一步替换。我们计划将 ZKP 编译器与我们现有的 FHE 编译器打包在一起，以方便开发人员使用。在API方面，我们会尽量和我们的FHE编译器保持一致。</p>
-<h3 id="去中心化存储系统-decentralized-storage-system">去中心化存储系统 (Decentralized storage system)</h3>
-<p>The last puzzle piece requires addressing where to store large FHE ciphertexts. In integrating FHE into decentralized applications, we want to avoid massively blowing up the underlying blockchain's size. However, if we store FHE ciphertexts elsewhere, we need to ensure users and validators can quickly and easily retrieve these off-chain ciphertexts. There are a few interesting decentralized storage systems out there (<a href="https://www.arweave.org/">arweave</a>, <a href="https://ipfs.tech/">IPFS</a>, etc.) that could serve as a potential solution for us. Our efforts here are still at the earlier stages and we're hoping to share more about this piece in the coming months.</p>
-<p>最后一块拼图需要解决存储大型 FHE 密文的位置。在将 FHE 集成到去中心化应用中时，我们希望避免大量破坏对应区块链的大小。但是，如果我们将 FHE 密文存储在别处，我们需要确保用户和验证者可以快速轻松地检索这些链下密文。有一些有趣的去中心化存储系统（<a href="https://www.arweave.org/">arweave</a>、[IPFS](https://ipfs.tech/ 等）可以作为潜在的为我们解决。我们在这方面的努力仍处于早期阶段，我们希望在未来几个月内分享更多关于这件作品的信息。</p>
-<h2 id="推出我们的技术-rolling-out-our-tech">推出我们的技术 (Rolling out our tech)</h2>
-<p>We expect to deploy our technology in phases–starting first with support of private transactions in a testnet, then with support of pre-determined private programs, and finally allowing developers to author arbitrary private programs using our FHE and ZKP compilers. The ambition is to make private programs easy for web3 (and eventually web2) developers to create via Sunscreen's SDK.</p>
-<p>我们希望分阶段部署我们的技术——首先支持测试网中的隐私交易，然后支持预先确定的隐私程序，最后允许开发人员使用我们的 FHE 和 ZKP 编译器编写任意隐私程序。目标是让 web3（最终是 web2）开发人员可以通过 Sunscreen 的 SDK 轻松创建隐私程序。</p>
-<p>If you'd like to get involved, you can join our <a href="https://discord.gg/sunscreen">Discord</a> or follow us on Twitter for updates. To learn more about what we're doing, check out our <a href="https://github.com/Sunscreen-tech">Github</a> or come say hi to us at ETHDenver!</p>
-<p>如果您想参与，可以加入我们的 <a href="https://discord.gg/sunscreen">Discord</a> 或在 Twitter 上关注我们以获取更新。要了解有关我们正在做的事情的更多信息，请查看我们的 <a href="https://github.com/Sunscreen-tech">Github</a> 或来 ETHDenver 向我们问好！</p>
 ]]></content>
     </entry>
 </feed>
