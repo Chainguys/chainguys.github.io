@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Euler来信-七月总结(Euler Newsletter J Summary) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1682571519088">
+<link rel="shortcut icon" href="/favicon.ico?v=1683516472514">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -880,6 +880,69 @@
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/qu-zhong-xin-hua-xu-lie-de-chong-yao-xing-the-importance-of-decentralized-sequencing/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:700/1*7QnsfyP4R69EgUcdCeyjFQ.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;p&gt;It’s well understood by now that rollups and modular blockchains present a better and a more scalable design compared to monolithic alternative Layer 1s. &lt;strong&gt;&lt;em&gt;However, some would argue that each and every existing rollup today (ZK-based or optimistic-execution based) is in fact much less decentralized than even the least decentralized alternative Layer 1s.&lt;/em&gt;&lt;/strong&gt; The core issue is that they all operate with a single &lt;strong&gt;&lt;em&gt;sequencer&lt;/em&gt;&lt;/strong&gt; — a network node core to the proper functioning of the rollups.&lt;/p&gt;
+&lt;p&gt;现在大家都明白，与单片的替代第1层相比，汇总和模块化的区块链呈现出更好、更可扩展的设计。&lt;strong&gt;然而，有些人认为，今天每一个现有的汇总（基于ZK或基于乐观执行）实际上比最不去中心化的替代第1层更不去中心化。&lt;/strong&gt;  核心问题是，它们都通过一个单一的 &lt;strong&gt;序列器 sequencer&lt;/strong&gt; 来运作，这是汇总正常运作的核心网络节点。&lt;/p&gt;
+&lt;p&gt;AltLayer is a protocol built to change this status quo both at the design as well as at the implementation-level. In this post, we dive deeper into the world of sequencers, the issues with centralized sequencers and the approach taken by AltLayer to build an open and decentralized sequencer network in a way that anyone wanting to launch a rollup can leverage them, thereby eliminating the need to self bootstrap a decentralized sequencer network for the rollup.&lt;/p&gt;
+&lt;p&gt;AltLayer是一个在设计和实施层面上，都是为了改善这种现状的协议。在这篇文章中，我们将深入探讨序列器的世界，中心化序列器的问题，以及AltLayer采取的方法：即建立一个开放的、去中心化的序列器网络，使任何想要启动汇总的人都可以加以利用，从而消除了为汇总而重复启动中心化序列器网络的必要。&lt;/p&gt;
+&lt;h2 id=&#34;为什么是去中心化序列-why-decentralized-sequencing&#34;&gt;为什么是去中心化序列 (Why Decentralized Sequencing?)&lt;/h2&gt;
+&lt;p&gt;A central component to any rollup is the &lt;strong&gt;sequencer&lt;/strong&gt;. Sequencers are nodes in the rollup network that are tasked with the following operations of a rollup:&lt;/p&gt;
+&lt;p&gt;任何汇总的核心组成部分都是&lt;strong&gt;序列器&lt;/strong&gt; 。序列器是汇总网络中的节点，负责汇总的以下操作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Aggregate transactions:&lt;/strong&gt; Accept transactions from the end users via a mempool.&lt;br&gt;
+&lt;strong&gt;聚合交易：&lt;/strong&gt; 通过mempool接受来自终端用户的交易。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Order transactions:&lt;/strong&gt; Select transactions from the mempool and order them according to some policy.&lt;br&gt;
+&lt;strong&gt;排序交易：&lt;/strong&gt; 从mempool中选择交易，并根据一些政策对其进行排序。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Execute transactions:&lt;/strong&gt; In most rollups, the sequencer is also tasked with executing the transactions according to the underlying VM.&lt;br&gt;
+&lt;strong&gt;执行交易：&lt;/strong&gt; 在大多数汇总中，序列器的任务也是根据底层虚拟机来执行交易。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Produce pre-confirmation:&lt;/strong&gt; As finality for a rollup transaction ultimately comes from the underlying Layer 1, sequencers often produce pre-confirmation for a user transaction that allows clients and applications to proceed while waiting for finality from the Layer 1.&lt;br&gt;
+&lt;strong&gt;产生预确认：&lt;/strong&gt; 由于汇总交易的最终结果来自底层的第1层，序列器经常为用户交易产生预确认，允许客户端和应用在等待第1层的最终结果时继续进行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Send ordered transaction data to the DA Layer:&lt;/strong&gt; As the last step, sequencer also commits the ordered transaction data to a DA layer, for example the underlying Layer 1. Once posted on Layer 1, transactions have Layer 1-level finality.&lt;br&gt;
+&lt;strong&gt;将订购的交易数据发送到DA层：&lt;/strong&gt; 作为最后一步，序列器还将订购的交易数据提交到DA层，例如底层第1层。一旦发布到第1层，交易就具有第1层的最终(确定)性/终态。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Sequencers are therefore the heart of a rollup. Now, imagine a rollup with a single sequencer. What would happen if the sequencer were to become unavailable? Well, the network would then effectively stop processing transactions. This is not entirely a hypothetical question as there have been instances where rollups stopped processing transactions when the sequencer was down.&lt;/p&gt;
+&lt;p&gt;因此，序列器是一个汇总的核心。现在，想象一个只有一个序列器的汇总。如果序列器不可用，会发生什么？那么，网络将有效地停止处理交易。这并不完全是一个假设性的问题，因为已经有实例表明，当序列器出现故障时，汇总系统停止处理交易。&lt;/p&gt;
+&lt;p&gt;While one could argue that even when a sequencer goes down, the network is still operational as users could instead send their Layer 2 transaction directly to Layer 1. However, those transactions can take up to 24 hours to be considered final and will cost the same fees as the underlying Layer 1 and hence would result in poor user experience. Also, a 24 hour delay may not be ideal for time-sensitive transactions like liquidation of a debt position.&lt;/p&gt;
+&lt;p&gt;虽然人们可以说，即使一个序列器发生故障，网络仍然可以运行，因为用户可以代替他们把第2层的交易直接发送到第1层。然而，这些交易可能需要长达24小时才能被最终确认，并将花费与底层第1层相同的费用，因此会导致用户体验不佳。另外，24小时的延迟对于像清算债务头寸这样的时间敏感型交易，可能并不理想。&lt;/p&gt;
+&lt;p&gt;More generally, a centralized sequencer may:&lt;br&gt;
+更为普遍的是，中心化序列器可能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Censor user transactions&lt;br&gt;
+审查用户交易&lt;/li&gt;
+&lt;li&gt;Become a choke-point or in the worst-case could go completely unavailable&lt;br&gt;
+成为一个阻塞点，或者在最坏的情况下可能完全不可用&lt;/li&gt;
+&lt;li&gt;Extract excessive rent&lt;br&gt;
+提取过多的租金&lt;/li&gt;
+&lt;li&gt;Frontrun user transactions or more broadly create bad MEV and adversely affect users&lt;br&gt;
+抢跑用户交易或更广泛地创造坏的MEV，并对用户产生不利影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is therefore imperative to decentralize the sequencer. Unfortunately, none of the live rollups have decentralized sequencing enabled today.&lt;/p&gt;
+&lt;p&gt;因此，当务之急是将序列器去中心化。不幸的是，今天没有一个实时启用了去中心化序列器。&lt;/p&gt;
+&lt;h2 id=&#34;对altlayer的简要介绍-brief-intro-to-altlayer&#34;&gt;对AltLayer的简要介绍 (Brief Intro to AltLayer)&lt;/h2&gt;
+&lt;p&gt;AltLayer offers Rollup-as-a-Service (RaaS) solutions that enable users to launch highly scalable application-tailored rollups quickly and reliably. The RaaS offering comes in the form of a no-code dashboard that allows not only developers but also those with limited or no coding experience to spin up a customized rollup within 2 mins through a few simple clicks.&lt;/p&gt;
+&lt;p&gt;AltLayer提供汇总即服务(RaaS)解决方案，使用户能够快速、可靠地启动高度可扩展的应用定制汇总。该RaaS产品以无代码仪表盘的形式出现，不仅使得开发人员，而且使得那些编码经验有限或没有编码经验的人，通过几个简单的点击，在2分钟内启动一个定制的汇总。&lt;/p&gt;
+&lt;p&gt;AltLayer’s RaaS offering can save significant capital, manpower resources and years of development work for application teams while encouraging innovation and rapid experimentation.&lt;/p&gt;
+&lt;p&gt;AltLayer的RaaS产品可以为应用团队节省大量资金、人力资源和多年的开发工作，同时鼓励创新和快速实验。&lt;/p&gt;
+&lt;p&gt;With AltLayer, decentralized sequencing is baked into the RaaS design and therefore the service entirely eliminates the issues prevalent in rollups with centralized sequencers.&lt;/p&gt;
+&lt;p&gt;在AltLayer中，去中心化序列被植入RaaS设计中，因此该服务完全消除了中心化序列器在汇总中普遍存在的问题。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Watch out for an upcoming post, which details how our multi-sequencers are designed, and how they create a more decentralized infrastructure for rollups!&lt;/em&gt; &lt;strong&gt;&lt;em&gt;Coming soon!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;请注意即将发布的一篇文章，其中详细介绍了我们的多序列器是如何设计的，以及它们如何为汇总创造一个更加去中心化基础设施！&lt;strong&gt;即将发布!&lt;/strong&gt;&lt;/p&gt;
+">去中心化序列的重要性 (The Importance of Decentralized Sequencing)</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/linera-zhong-wen-cai-liao-hui-zong-geng-xin-zhong-linera-chn-materials-updating/"" data-c="
@@ -7894,6 +7957,7 @@ export default config;
 &lt;a href=&#34;https://twitter.com/Chainguys/status/1580440230007812096&#34;&gt;Altlayer for Dummies-- making NFT Minting Scalable &lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://twitter.com/Chainguys/status/1580440238211891202&#34;&gt;Altlayer轻松入门&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;blogs&#34;&gt;Blogs&lt;/h1&gt;
+&lt;p&gt;##&lt;a href=&#34;https://chainguys.github.io/post/qu-zhong-xin-hua-xu-lie-de-chong-yao-xing-the-importance-of-decentralized-sequencing&#34;&gt;去中心化序列的重要性 (The Importance of Decentralized Sequencing)&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;altlayer开放免费试用无代码汇总启动板-altlayer-opens-up-a-free-trial-of-its-no-code-rollup-launchpad&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/altlayer-kai-fang-mian-fei-shi-yong-wu-dai-ma-hui-zong-qi-dong-ban-altlayer-opens-up-a-free-trial-of-its-no-code-rollup-launchpad&#34;&gt;AltLayer开放免费试用无代码汇总启动板 (AltLayer opens up a free trial of its no-code rollup launchpad)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;解构模块化执行层的影响和机会deconstructing-the-impact-and-opportunity-of-modular-execution-layers&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/jie-gou-mo-kuai-hua-zhi-xing-ceng-de-ying-xiang-he-ji-hui-deconstructing-the-impact-and-opportunity-of-modular-execution-layers&#34;&gt;解构模块化执行层的影响和机会(Deconstructing the Impact and Opportunity of Modular Execution Layers)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;oh-ottienft-系列铸币后分析报告-oh-ottie-nft-collectiona-post-mint-analysis-report&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/oh-ottienft-xi-lie-zhu-bi-hou-fen-xi-bao-gao-oh-ottie-nft-collectiona-post-mint-analysis-report&#34;&gt;Oh Ottie!NFT 系列：铸币后分析报告 (Oh Ottie! NFT collection：A Post-Mint Analysis Report)&lt;/a&gt;&lt;/h2&gt;
