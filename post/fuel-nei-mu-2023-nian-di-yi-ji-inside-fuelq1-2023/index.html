@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Fuel内幕-2023年第一季 (Inside Fuel：Q1 2023) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1683689514299">
+<link rel="shortcut icon" href="/favicon.ico?v=1683704441623">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -1239,6 +1239,71 @@ SMO已被更新为在内部环境中从内部平衡中收费；</li>
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/qi-zha-zheng-ming-ru-he-shi-xian-qu-xin-ren-de-kua-yu-xin-xi-chuan-di-how-fraud-proofs-enable-trustless-cross-domain-messaging/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:1400/1*ie4dmOm9pBf0IvlPXdAbgw.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Over the last couple of years, blockchain experts and enthusiasts have been debating the difference between sidechains, rollups and L2s. The core argument has been that a system should be termed an L2 or a rollup only if it “derives security” from the underlying L1. This has led to further debate on what it actually means to derive security from a chain. In this post, we discuss optimistic rollup designs and how an underlying chain verifies the correctness of a rollup, thereby allowing trustless cross-domain messaging between the rollup and the underlying chain.&lt;/p&gt;
+&lt;p&gt;在过去的几年里，区块链专家和爱好者一直在争论侧链、汇总和L2之间的区别。核心论点是，只有当一个系统从底层的L1 &amp;quot;衍生出安全 &amp;quot;时，它才应该被称为L2或汇总。这引发了对从链上获得安全的实际含义的进一步辩论。在这篇文章中，我们讨论了乐观汇总设计(optimistic rollup)以及底层链如何验证汇总的正确性，从而允许汇总和底层链之间的无去信任跨域信息传递。&lt;/p&gt;
+&lt;h2 id=&#34;主权与智能合约汇总-sovereign-vs-smart-contract-rollups&#34;&gt;主权与智能合约汇总 (Sovereign vs. Smart Contract Rollups)&lt;/h2&gt;
+&lt;p&gt;There are different types of rollup designs depending on how tethered it is to an underlying chain. Let us dig into a couple of examples.&lt;/p&gt;
+&lt;p&gt;目前存在着不同类型的汇总设计，取决于它与底层链的联系程度。让我们来看看几个例子。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Sovereign rollups&lt;/strong&gt; use an underlying chain only for data availability and transaction ordering. Sovereign rollups &lt;strong&gt;do not require an external network such as an L1&lt;/strong&gt; to validate the correctness of the rollup. As L1s in this scenario are not required or in some cases even capable of trustlessly verifying the state of a sovereign rollup, the L1 cannot independently verify any bridge-like message that comes from the rollup. As an example, the L1 cannot trustlessly allow unlocking of an asset on the L1 just because a rollup says so.&lt;br&gt;
+&lt;strong&gt;主权汇总&lt;/strong&gt; 只使用底层链的数据可用性和交易排序。主权汇总 &lt;strong&gt;不需要外部网络，如L1&lt;/strong&gt; 来验证汇总的正确性。由于这种情况下的L1不需要，或者在某些情况下甚至能够去信任地验证主权汇总的状态，那么L1就不能独立验证来自汇总的任何类似跨链的消息。举例来说，只因为一个汇总如此要求，L1不能去信任地允许解锁L1上的资产。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In contrast, &lt;strong&gt;smart contract rollups&lt;/strong&gt; such as Optimism and Arbitrum &lt;em&gt;do&lt;/em&gt; allow Ethereum validators to independently verify the correctness of the state of the rollup via what is often called a &lt;em&gt;validating bridge&lt;/em&gt;. For instance, when a user wishes to withdraw assets from the rollup onto Ethereum, the Ethereum network validators need to be convinced that the withdrawal claim is valid and funds can be released on Ethereum.&lt;br&gt;
+相比之下，&lt;strong&gt;智能合约汇总&lt;/strong&gt;，如Optimism和 Arbitrum &lt;em&gt;确实&lt;/em&gt; 允许以太坊验证者通过通常所谓的 &lt;em&gt;验证桥&lt;/em&gt; 来独立验证汇总状态的正确性。例如，当用户希望从汇总上提取资产到以太坊时，以太坊网络验证者需要确信提取要求是有效且资金可以在以太坊上释放。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;乐观汇总设计和其验证过程-optimistic-rollup-designs-their-verification-process&#34;&gt;乐观汇总设计和其验证过程 (Optimistic rollup designs &amp;amp; their verification process)&lt;/h2&gt;
+&lt;p&gt;To understand fraud proofs, we must first get a sense of how optimistic rollups work. An optimistic rollup has two main network participants: &lt;em&gt;sequencers&lt;/em&gt; and &lt;em&gt;validators&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;为了理解欺诈证明，我们必须首先了解乐观汇总的工作原理。一个乐观的汇总有两个主要的网络参与者：&lt;em&gt;序列器和验证者&lt;/em&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;strong&gt;sequencer&lt;/strong&gt; is responsible for aggregating transactions, ordering them and publishing the transaction data onto Ethereum that provides data availability and final ordering; and&lt;br&gt;
+&lt;strong&gt;序列器&lt;/strong&gt;负责汇总交易，对其进行排序，并将交易数据发布到以太坊上，提供数据可用性和最终排序；而&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Validators&lt;/strong&gt; read transaction data, execute transactions, produce a new global state of the rollup and commit the state on Ethereum.&lt;br&gt;
+&lt;strong&gt;验证器&lt;/strong&gt;读取交易数据，执行交易，产生一个新的全局状态的汇总，并在以太坊上提交状态。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As mentioned above, &lt;a href=&#34;https://arbitrum.io/&#34;&gt;Arbitrum&lt;/a&gt; and &lt;a href=&#34;https://www.optimism.io/&#34;&gt;Optimism&lt;/a&gt; are not designed as sovereign rollups, and as a result, the Ethereum network should be able to trustlessly verify the validity of the rollup state. In fact, the optimistic rollup design posits that Ethereum should optimistically assume that the rollup state is always correct, unless someone claims otherwise and is able to prove so. A contract on Ethereum would then adjudicate the correctness of the said claim and thereby the claim gets the security of the Ethereum network.&lt;/p&gt;
+&lt;p&gt;如上所述，&lt;a href=&#34;https://arbitrum.io/&#34;&gt;Arbitrum&lt;/a&gt;和&lt;a href=&#34;https://www.optimism.io/&#34;&gt;Optimism&lt;/a&gt; 没有设计成主权汇总，因此，以太坊网络应该能够去信任地验证汇总状态的有效性。事实上，乐观汇总设计认为，以太坊应该乐观地假设汇总状态总是正确的，除非有人有异议且能证明。然后，以太坊上的合约将裁定上述主张的正确性，从而使该主张获得以太坊网络的安全性。&lt;/p&gt;
+&lt;p&gt;In practice, this is implemented by allowing any other validator to challenge the validity of the state root posted on Ethereum. The ‘challenge process’ involves generating a &lt;em&gt;fraud proof&lt;/em&gt; that eventually gets verified in an Ethereum contract.&lt;/p&gt;
+&lt;p&gt;在实践中，这是通过允许任何其他验证者来挑战发布在Ethereum上的状态根有效性而实现的。“挑战过程”涉及生成一个 &lt;em&gt;欺诈证明&lt;/em&gt; ，最终在以太坊合约中得到验证。&lt;/p&gt;
+&lt;h2 id=&#34;欺诈证明机制-fraud-proof-mechanics&#34;&gt;欺诈证明机制 (Fraud Proof Mechanics)&lt;/h2&gt;
+&lt;p&gt;There are two ways to generate fraud proofs.&lt;/p&gt;
+&lt;p&gt;有两种方法来生成欺诈证明。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The first consists of re-executing the rollup transaction directly on Ethereum within a contract and then verifying if the resulting state matches the validator’s submission. While the idea is quite simple, this unfortunately has proven to be very inefficient and quite impractical.&lt;br&gt;
+第一种是在合约中直接在以太坊上重新执行汇总交易，然后验证所产生的状态是否与验证者提交的数据相符。虽然这个想法很简单，但不幸的是，这已被证明是非常低效和相当不现实的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The other solution was proposed by Arbitrum called the &lt;em&gt;bisection protocol&lt;/em&gt; that involves executing a single EVM instruction in a contract to prove the invalidity of an entire batch of transactions.&lt;br&gt;
+另一个解决方案是由Arbitrum提出的，称为 &lt;em&gt;bisection协议&lt;/em&gt;，涉及到在合同中执行一个单一的EVM指令，进而证明整个批次交易的无效性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Given the practical benefits of the bisection protocol, it has become the preferred method for fraud proofs these days.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;鉴于bisection协议的实际好处，它已成为如今欺诈证明的首选方法。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;欺诈证明的广泛实施-fraud-proof-implementation-in-the-wild&#34;&gt;欺诈证明的广泛实施 (Fraud Proof Implementation in the Wild)&lt;/h2&gt;
+&lt;p&gt;It should be clear by now that without a working fraud proof implementation, Ethereum cannot trustlessly verify the state of a rollup, which means one cannot have a trustless cross-domain messaging between the rollup and an underlying chain. As a result, a smart contract rollup that does not implement a fraud proof is not so different from a sovereign rollup that only uses Ethereum for its data availability and ordering needs.&lt;/p&gt;
+&lt;p&gt;现在应该很清楚，如果没有一个有效的欺诈证明实施，以太坊就不能去信任地验证汇总的状态，这意味着汇总和底层链之间不能有一个去信任的跨域信息传递。因此，一个没有实现欺诈证明的智能合约汇总与一个只使用以太坊来满足其数据可用性和订购需求的主权汇总没有太大区别。&lt;/p&gt;
+&lt;p&gt;While there are many implementations of optimistic rollups such as Arbitrum, Optimism, &lt;a href=&#34;https://www.metis.io/&#34;&gt;Metis&lt;/a&gt; and others, Arbitrum so far is the only one to have implemented fraud proofs.&lt;/p&gt;
+&lt;p&gt;虽然有很多乐观型汇总的实施，如Arbitrum、Optimism、&lt;a href=&#34;https://www.metis.io/&#34;&gt;Metis&lt;/a&gt;等，但到目前为止，Arbitrum是唯一实现欺诈证明的。&lt;/p&gt;
+&lt;h2 id=&#34;altlayer将在其汇总解决方案中实施欺诈证明-altlayer-to-implement-fraud-proofs-across-its-rollup-solutions&#34;&gt;AltLayer将在其汇总解决方案中实施欺诈证明 (AltLayer to implement fraud proofs across its rollup solutions)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;This changes today&lt;/strong&gt;. We are excited to announce that AltLayer has implemented fraud proofs using the bisection protocol — an efficient approach to settle disputes on an L1.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这一点今天发生了变化&lt;/strong&gt;。我们很高兴地宣布，AltLayer已经使用bisection协议实施了欺诈证明--这是一种在L1上解决争端的有效方法。&lt;/p&gt;
+&lt;p&gt;Our implementation of fraud proofs is a unique one that can be integrated into any rollup spun up via AltLayer’s &lt;strong&gt;Rollups-as-a-Service&lt;/strong&gt; product.&lt;/p&gt;
+&lt;p&gt;我们对欺诈证明的实施是一个独特的，可以整合到任何通过AltLayer的&lt;strong&gt;Rollups-as-a-Service&lt;/strong&gt;产品启动的汇总中。&lt;/p&gt;
+&lt;p&gt;We’ll soon publish a follow-up article in which we will outline the design principle of AltLayer’s fraud proof, and how its implementation fits perfectly with our rollups-as-a-service product offerings. Watch out for this!&lt;/p&gt;
+&lt;p&gt;我们将很快发表一篇后续文章，其中我们将概述AltLayer的欺诈证明的设计原理，以及它的实施如何与我们的汇总即服务产品完美结合。请关注！&lt;/p&gt;
+">欺诈证明如何实现去信任的跨域信息传递 (How Fraud Proofs Enable Trustless Cross-Domain Messaging)</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/qu-zhong-xin-hua-xu-lie-de-chong-yao-xing-the-importance-of-decentralized-sequencing/"" data-c="
@@ -8270,7 +8335,8 @@ export default config;
           &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/980/1*t55z-bhSsloTou3D5JDTAA@2x.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
 &lt;h1 id=&#34;chainguys&#34;&gt;&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt;原创 （&lt;a href=&#34;https://twitter.com/Chainguys&#34;&gt;@Chainguys&lt;/a&gt; Original)&lt;/h1&gt;
 &lt;h2 id=&#34;各类视频-videosgif-videos&#34;&gt;各类视频 (Videos/Gif Videos)&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/Chainguys/status/1643461019883261955&#34;&gt;Altlayer快速入门 (A quick intro to Altlayer)&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/Chainguys/status/1650027205010014209&#34;&gt;休息日闲聊：@alt_layer的2个NFT项目:OG徽章和Ottie(Sunday Talk:@alt_layer&#39;s OG badge&amp;amp;Ottie)&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://twitter.com/Chainguys/status/1643461019883261955&#34;&gt;Altlayer快速入门 (A quick intro to Altlayer)&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://twitter.com/Chainguys/status/1647105128476835840&#34;&gt;沉浸式体验Altlayer的无代码汇总启动板！(Immersive experience on Altlayer&#39;s non-coding roll-up dashboard)&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://twitter.com/Chainguys/status/1640172035946213376&#34;&gt;Altlayer如何帮助Web3游戏?&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://twitter.com/Chainguys/status/1636553221878546434&#34;&gt;Altlayer如何帮助3A游戏?&lt;/a&gt;&lt;br&gt;
@@ -8302,7 +8368,8 @@ export default config;
 &lt;a href=&#34;https://twitter.com/Chainguys/status/1612261833645363201&#34;&gt;模块化执行-第1部分 单片链 vs. 模块化&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://twitter.com/Chainguys/status/1611579303858409472&#34;&gt;On Modular Execution-Part 1 Monolithic vs. Modular&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;推文长推-tweetthread&#34;&gt;推文/长推 (Tweet/Thread)&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/Chainguys/status/1642824739671482368&#34;&gt;On Altlayer&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/Chainguys/status/1652612903982227457&#34;&gt;change has come&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://twitter.com/Chainguys/status/1642824739671482368&#34;&gt;On Altlayer&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://twitter.com/Chainguys/status/1644285621983125505&#34;&gt;简论 Altlayer&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://twitter.com/Chainguys/status/1621004169296637953&#34;&gt;Altlayer为什么是Web3游戏的理想解决方案&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://twitter.com/Chainguys/status/1620995511305265154&#34;&gt;Why Altlayer is the ideal solution for web3 game&lt;/a&gt;&lt;br&gt;
@@ -8316,6 +8383,7 @@ export default config;
 &lt;a href=&#34;https://twitter.com/Chainguys/status/1580440230007812096&#34;&gt;Altlayer for Dummies-- making NFT Minting Scalable &lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://twitter.com/Chainguys/status/1580440238211891202&#34;&gt;Altlayer轻松入门&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;blogs&#34;&gt;Blogs&lt;/h1&gt;
+&lt;h2 id=&#34;欺诈证明如何实现去信任的跨域信息传递-how-fraud-proofs-enable-trustless-cross-domain-messaging&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/qi-zha-zheng-ming-ru-he-shi-xian-qu-xin-ren-de-kua-yu-xin-xi-chuan-di-how-fraud-proofs-enable-trustless-cross-domain-messaging&#34;&gt;欺诈证明如何实现去信任的跨域信息传递 (How Fraud Proofs Enable Trustless Cross-Domain Messaging)&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;##&lt;a href=&#34;https://chainguys.github.io/post/qu-zhong-xin-hua-xu-lie-de-chong-yao-xing-the-importance-of-decentralized-sequencing&#34;&gt;去中心化序列的重要性 (The Importance of Decentralized Sequencing)&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;altlayer开放免费试用无代码汇总启动板-altlayer-opens-up-a-free-trial-of-its-no-code-rollup-launchpad&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/altlayer-kai-fang-mian-fei-shi-yong-wu-dai-ma-hui-zong-qi-dong-ban-altlayer-opens-up-a-free-trial-of-its-no-code-rollup-launchpad&#34;&gt;AltLayer开放免费试用无代码汇总启动板 (AltLayer opens up a free trial of its no-code rollup launchpad)&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;解构模块化执行层的影响和机会deconstructing-the-impact-and-opportunity-of-modular-execution-layers&#34;&gt;&lt;a href=&#34;https://chainguys.github.io/post/jie-gou-mo-kuai-hua-zhi-xing-ceng-de-ying-xiang-he-ji-hui-deconstructing-the-impact-and-opportunity-of-modular-execution-layers&#34;&gt;解构模块化执行层的影响和机会(Deconstructing the Impact and Opportunity of Modular Execution Layers)&lt;/a&gt;&lt;/h2&gt;

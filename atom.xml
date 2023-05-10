@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-05-10T03:32:28.479Z</updated>
+    <updated>2023-05-10T07:41:18.500Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,74 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[欺诈证明如何实现去信任的跨域信息传递 (How Fraud Proofs Enable Trustless Cross-Domain Messaging)]]></title>
+        <id>https://chainguys.github.io/post/qi-zha-zheng-ming-ru-he-shi-xian-qu-xin-ren-de-kua-yu-xin-xi-chuan-di-how-fraud-proofs-enable-trustless-cross-domain-messaging/</id>
+        <link href="https://chainguys.github.io/post/qi-zha-zheng-ming-ru-he-shi-xian-qu-xin-ren-de-kua-yu-xin-xi-chuan-di-how-fraud-proofs-enable-trustless-cross-domain-messaging/">
+        </link>
+        <updated>2023-05-10T07:33:05.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/v2/resize:fit:1400/1*ie4dmOm9pBf0IvlPXdAbgw.png" alt="" loading="lazy"></figure>
+<p>Over the last couple of years, blockchain experts and enthusiasts have been debating the difference between sidechains, rollups and L2s. The core argument has been that a system should be termed an L2 or a rollup only if it “derives security” from the underlying L1. This has led to further debate on what it actually means to derive security from a chain. In this post, we discuss optimistic rollup designs and how an underlying chain verifies the correctness of a rollup, thereby allowing trustless cross-domain messaging between the rollup and the underlying chain.</p>
+<p>在过去的几年里，区块链专家和爱好者一直在争论侧链、汇总和L2之间的区别。核心论点是，只有当一个系统从底层的L1 &quot;衍生出安全 &quot;时，它才应该被称为L2或汇总。这引发了对从链上获得安全的实际含义的进一步辩论。在这篇文章中，我们讨论了乐观汇总设计(optimistic rollup)以及底层链如何验证汇总的正确性，从而允许汇总和底层链之间的无去信任跨域信息传递。</p>
+<h2 id="主权与智能合约汇总-sovereign-vs-smart-contract-rollups">主权与智能合约汇总 (Sovereign vs. Smart Contract Rollups)</h2>
+<p>There are different types of rollup designs depending on how tethered it is to an underlying chain. Let us dig into a couple of examples.</p>
+<p>目前存在着不同类型的汇总设计，取决于它与底层链的联系程度。让我们来看看几个例子。</p>
+<ul>
+<li>
+<p><strong>Sovereign rollups</strong> use an underlying chain only for data availability and transaction ordering. Sovereign rollups <strong>do not require an external network such as an L1</strong> to validate the correctness of the rollup. As L1s in this scenario are not required or in some cases even capable of trustlessly verifying the state of a sovereign rollup, the L1 cannot independently verify any bridge-like message that comes from the rollup. As an example, the L1 cannot trustlessly allow unlocking of an asset on the L1 just because a rollup says so.<br>
+<strong>主权汇总</strong> 只使用底层链的数据可用性和交易排序。主权汇总 <strong>不需要外部网络，如L1</strong> 来验证汇总的正确性。由于这种情况下的L1不需要，或者在某些情况下甚至能够去信任地验证主权汇总的状态，那么L1就不能独立验证来自汇总的任何类似跨链的消息。举例来说，只因为一个汇总如此要求，L1不能去信任地允许解锁L1上的资产。</p>
+</li>
+<li>
+<p>In contrast, <strong>smart contract rollups</strong> such as Optimism and Arbitrum <em>do</em> allow Ethereum validators to independently verify the correctness of the state of the rollup via what is often called a <em>validating bridge</em>. For instance, when a user wishes to withdraw assets from the rollup onto Ethereum, the Ethereum network validators need to be convinced that the withdrawal claim is valid and funds can be released on Ethereum.<br>
+相比之下，<strong>智能合约汇总</strong>，如Optimism和 Arbitrum <em>确实</em> 允许以太坊验证者通过通常所谓的 <em>验证桥</em> 来独立验证汇总状态的正确性。例如，当用户希望从汇总上提取资产到以太坊时，以太坊网络验证者需要确信提取要求是有效且资金可以在以太坊上释放。</p>
+</li>
+</ul>
+<h2 id="乐观汇总设计和其验证过程-optimistic-rollup-designs-their-verification-process">乐观汇总设计和其验证过程 (Optimistic rollup designs &amp; their verification process)</h2>
+<p>To understand fraud proofs, we must first get a sense of how optimistic rollups work. An optimistic rollup has two main network participants: <em>sequencers</em> and <em>validators</em>.</p>
+<p>为了理解欺诈证明，我们必须首先了解乐观汇总的工作原理。一个乐观的汇总有两个主要的网络参与者：<em>序列器和验证者</em>。</p>
+<ul>
+<li>
+<p>The <strong>sequencer</strong> is responsible for aggregating transactions, ordering them and publishing the transaction data onto Ethereum that provides data availability and final ordering; and<br>
+<strong>序列器</strong>负责汇总交易，对其进行排序，并将交易数据发布到以太坊上，提供数据可用性和最终排序；而</p>
+</li>
+<li>
+<p><strong>Validators</strong> read transaction data, execute transactions, produce a new global state of the rollup and commit the state on Ethereum.<br>
+<strong>验证器</strong>读取交易数据，执行交易，产生一个新的全局状态的汇总，并在以太坊上提交状态。</p>
+</li>
+</ul>
+<p>As mentioned above, <a href="https://arbitrum.io/">Arbitrum</a> and <a href="https://www.optimism.io/">Optimism</a> are not designed as sovereign rollups, and as a result, the Ethereum network should be able to trustlessly verify the validity of the rollup state. In fact, the optimistic rollup design posits that Ethereum should optimistically assume that the rollup state is always correct, unless someone claims otherwise and is able to prove so. A contract on Ethereum would then adjudicate the correctness of the said claim and thereby the claim gets the security of the Ethereum network.</p>
+<p>如上所述，<a href="https://arbitrum.io/">Arbitrum</a>和<a href="https://www.optimism.io/">Optimism</a> 没有设计成主权汇总，因此，以太坊网络应该能够去信任地验证汇总状态的有效性。事实上，乐观汇总设计认为，以太坊应该乐观地假设汇总状态总是正确的，除非有人有异议且能证明。然后，以太坊上的合约将裁定上述主张的正确性，从而使该主张获得以太坊网络的安全性。</p>
+<p>In practice, this is implemented by allowing any other validator to challenge the validity of the state root posted on Ethereum. The ‘challenge process’ involves generating a <em>fraud proof</em> that eventually gets verified in an Ethereum contract.</p>
+<p>在实践中，这是通过允许任何其他验证者来挑战发布在Ethereum上的状态根有效性而实现的。“挑战过程”涉及生成一个 <em>欺诈证明</em> ，最终在以太坊合约中得到验证。</p>
+<h2 id="欺诈证明机制-fraud-proof-mechanics">欺诈证明机制 (Fraud Proof Mechanics)</h2>
+<p>There are two ways to generate fraud proofs.</p>
+<p>有两种方法来生成欺诈证明。</p>
+<ul>
+<li>
+<p>The first consists of re-executing the rollup transaction directly on Ethereum within a contract and then verifying if the resulting state matches the validator’s submission. While the idea is quite simple, this unfortunately has proven to be very inefficient and quite impractical.<br>
+第一种是在合约中直接在以太坊上重新执行汇总交易，然后验证所产生的状态是否与验证者提交的数据相符。虽然这个想法很简单，但不幸的是，这已被证明是非常低效和相当不现实的。</p>
+</li>
+<li>
+<p>The other solution was proposed by Arbitrum called the <em>bisection protocol</em> that involves executing a single EVM instruction in a contract to prove the invalidity of an entire batch of transactions.<br>
+另一个解决方案是由Arbitrum提出的，称为 <em>bisection协议</em>，涉及到在合同中执行一个单一的EVM指令，进而证明整个批次交易的无效性。</p>
+</li>
+</ul>
+<p><strong>Given the practical benefits of the bisection protocol, it has become the preferred method for fraud proofs these days.</strong></p>
+<p><strong>鉴于bisection协议的实际好处，它已成为如今欺诈证明的首选方法。</strong></p>
+<h2 id="欺诈证明的广泛实施-fraud-proof-implementation-in-the-wild">欺诈证明的广泛实施 (Fraud Proof Implementation in the Wild)</h2>
+<p>It should be clear by now that without a working fraud proof implementation, Ethereum cannot trustlessly verify the state of a rollup, which means one cannot have a trustless cross-domain messaging between the rollup and an underlying chain. As a result, a smart contract rollup that does not implement a fraud proof is not so different from a sovereign rollup that only uses Ethereum for its data availability and ordering needs.</p>
+<p>现在应该很清楚，如果没有一个有效的欺诈证明实施，以太坊就不能去信任地验证汇总的状态，这意味着汇总和底层链之间不能有一个去信任的跨域信息传递。因此，一个没有实现欺诈证明的智能合约汇总与一个只使用以太坊来满足其数据可用性和订购需求的主权汇总没有太大区别。</p>
+<p>While there are many implementations of optimistic rollups such as Arbitrum, Optimism, <a href="https://www.metis.io/">Metis</a> and others, Arbitrum so far is the only one to have implemented fraud proofs.</p>
+<p>虽然有很多乐观型汇总的实施，如Arbitrum、Optimism、<a href="https://www.metis.io/">Metis</a>等，但到目前为止，Arbitrum是唯一实现欺诈证明的。</p>
+<h2 id="altlayer将在其汇总解决方案中实施欺诈证明-altlayer-to-implement-fraud-proofs-across-its-rollup-solutions">AltLayer将在其汇总解决方案中实施欺诈证明 (AltLayer to implement fraud proofs across its rollup solutions)</h2>
+<p><strong>This changes today</strong>. We are excited to announce that AltLayer has implemented fraud proofs using the bisection protocol — an efficient approach to settle disputes on an L1.</p>
+<p><strong>这一点今天发生了变化</strong>。我们很高兴地宣布，AltLayer已经使用bisection协议实施了欺诈证明--这是一种在L1上解决争端的有效方法。</p>
+<p>Our implementation of fraud proofs is a unique one that can be integrated into any rollup spun up via AltLayer’s <strong>Rollups-as-a-Service</strong> product.</p>
+<p>我们对欺诈证明的实施是一个独特的，可以整合到任何通过AltLayer的<strong>Rollups-as-a-Service</strong>产品启动的汇总中。</p>
+<p>We’ll soon publish a follow-up article in which we will outline the design principle of AltLayer’s fraud proof, and how its implementation fits perfectly with our rollups-as-a-service product offerings. Watch out for this!</p>
+<p>我们将很快发表一篇后续文章，其中我们将概述AltLayer的欺诈证明的设计原理，以及它的实施如何与我们的汇总即服务产品完美结合。请关注！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[去中心化序列的重要性 (The Importance of Decentralized Sequencing)]]></title>
         <id>https://chainguys.github.io/post/qu-zhong-xin-hua-xu-lie-de-chong-yao-xing-the-importance-of-decentralized-sequencing/</id>
@@ -1065,459 +1133,6 @@ Fuel Book中的<a href="https://fuelbook.fuel.network/master/quickstart/develope
 <li>
 <p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
 <a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
-</li>
-<li>
-<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
-<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
-</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fuel内幕：23-23年的冬天 (Inside Fuel：Winter 22-23）]]></title>
-        <id>https://chainguys.github.io/post/fuel-nei-mu-23-23-nian-de-dong-tian-inside-fuelwinter-22-23/</id>
-        <link href="https://chainguys.github.io/post/fuel-nei-mu-23-23-nian-de-dong-tian-inside-fuelwinter-22-23/">
-        </link>
-        <updated>2023-02-20T14:27:29.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2023/02/Inside-Fuel-Winter-1.png" alt="" loading="lazy"></figure>
-<p>The latest news from the fastest modular execution layer.</p>
-<p>最快的模块化设计层的最新消息！</p>
-<hr>
-<p>Welcome to <strong><strong><strong><strong>Inside Fuel</strong></strong></strong></strong>, our review of technical developments and everything happening on the Fuel Network. Take a moment to catch up on all the latest news.<br>
-欢迎来到  Fuel内幕，我们对技术发展以及 Fuel 网络上发生的一切进行回顾。欢迎拨冗了解所有最新消息。</p>
-<h2 id="fuel新成员-newest-additions-to-fuel">🆕 Fuel新成员 (Newest Additions To Fuel)</h2>
-<p>Building the fastest modular execution layer would not be possible without an incredible contributor team. Here are the newest additions to the team this month:</p>
-<p>没有令人难以置信的贡献者团队，构建最快的模块化执行层是不可能的。以下是本月团队的最新成员：<br>
-<img src="https://fuel-labs.ghost.io/content/images/2023/02/Winter-2023-1.png" alt="" loading="lazy"></p>
-<h2 id="新闻-in-the-news">📰 新闻 (In The News)</h2>
-<figure data-type="image" tabindex="2"><img src="https://fuel-labs.ghost.io/content/images/2022/06/image.png" alt="" loading="lazy"></figure>
-<p>According to the <strong><strong>Rust In Blockchain</strong></strong> <a href="https://rustinblockchain.org/newsletters/rib-newsletter-44/?ref=fuel-labs.ghost.io">monthly review</a>, Fuel is one of the most active Rust-based projects this Winter with <a href="https://github.com/FuelLabs?ref=fuel-labs.ghost.io">Fuel</a>: 548 merged PRs, 406 closed issues, and 256 open issues between December 2022 and January 2023, ranking us in the Top 5 of the most active Rust-based blockchains.</p>
-<p>根据 <strong>Rust In Blockchain</strong> <a href="https://rustinblockchain.org/newsletters/rib-newsletter-44/?ref=fuel-labs.ghost.io">月度回顾</a>，Fuel是今年冬天最活跃的基于Rust的项目之一。在2022年12月至2023年1月期间，<a href="https://github.com/FuelLabs?ref=fuel-labs.ghost.io">Fuel</a> 有548个合并的PR，406个关闭的问题，以及256个开放的问题，我们在最活跃的基于Rust的区块链中排名前五。</p>
-<h2 id="️-博客和ama-podcasts-amas">🎙️ 博客和AMA (Podcasts &amp; AMAs)</h2>
-<p><a href="https://twitter.com/jadler0?ref=fuel-labs.ghost.io">John Adler</a> took part in the <a href="https://www.bankless.com/?ref=fuel-labs.ghost.io"><strong>Bankless</strong></a> Podcast to explain why and how modular blockchains will set the path for the autonomous future.</p>
-<p><a href="https://twitter.com/jadler0?ref=fuel-labs.ghost.io">John Adler</a> 参加了 <a href="https://www.bankless.com/?ref=fuel-labs.ghost.io"><strong>Bankless</strong></a> 播客，解释模块化区块链是什么以及如何为自主未来铺平道路。</p>
-<figure data-type="image" tabindex="3"><a href="https://youtu.be/ZFbmmWV4kjQ"><img src="" alt="Click to see video 点击查看视频" loading="lazy"></a></figure>
-<p>He also joined the <a href="https://open.spotify.com/show/0rGocvZ7oZR6vuy0UHKAON?si=a980953b546743b9&amp;ref=fuel-labs.ghost.io"><strong>OxResearch</strong></a> podcast to explain how Fuel differentiates itself from other rollups.</p>
-<p>他还加入了 <a href="https://open.spotify.com/show/0rGocvZ7oZR6vuy0UHKAON?si=a980953b546743b9&amp;ref=fuel-labs.ghost.io"><strong>OxResearch</strong></a> 播客，解释 Fuel 如何与其他汇总区分开来。</p>
-<figure data-type="image" tabindex="4"><a href="https://youtu.be/nSMK4jgobNE"><img src="" alt="Click to see video 点击查看视频" loading="lazy"></a></figure>
-<h2 id="sway日-sway-day">🌴 Sway日 (Sway Day)</h2>
-<p>We hosted the third episode of <strong>Sway Day</strong>, a monthly discussion about all things Sway. This time, we went over all the 2022 development accomplishments and set 2023 expectations with John Adler.</p>
-<p>我们主持了<strong>Sway日</strong>的第三部，这是一个关于Sway所有事情的月度讨论。这一次，我们回顾了2022年的所有发展成就，并与John Adler一起设定了2023年的期望。</p>
-<p>At the end of 2022, you can remember that:<br>
-在2022年年底，你可以记住。</p>
-<ul>
-<li>
-<p>3,168 issues have been filled since the beginning of Sway.<br>
-自Sway开始以来，已经覆盖了3168个问题。</p>
-</li>
-<li>
-<p>The <a href="https://github.com/FuelLabs/sway?ref=fuel-labs.ghost.io"><strong>Sway</strong> <strong>repository</strong></a> has grown from 0 to 350+ stars.<br>
-<a href="https://github.com/FuelLabs/sway?ref=fuel-labs.ghost.io"><strong>Sway</strong> <strong>repository</strong></a>已经从0发展到350多颗星。</p>
-</li>
-<li>
-<p>Reentrancy analysis is possible directly at the compiler level with Sway:<br>
-使用Sway可以直接在编译器层面进行重入分析。</p>
-</li>
-</ul>
-<blockquote>
-<p>Reentrancy detection is a critical function in smart contract systems. Reentrancy is the root cause of many DeFi hacks. Let's see how to detect reentrancy in the EVM and comparatively in the FuelVM. The difference is greater than you think 👀</p>
-<p>重入检测是智能合约系统中的一个关键功能。重入是许多 DeFi 黑客攻击的根本原因。让我们看看如何在 EVM 和 FuelVM 中检测重入。差距比你想象的要大👀</p>
-</blockquote>
-<p>1/7<a href="https://t.co/YK1OtBKqJS?ref=fuel-labs.ghost.io">https://t.co/YK1OtBKqJS</a><br>
-— Sway (@SwayLang) <a href="https://twitter.com/SwayLang/status/1621210727275970560?ref_src=twsrc%5Etfw&amp;ref=fuel-labs.ghost.io">February 2, 2023</a></p>
-<ul>
-<li>The <a href="https://github.com/FuelLabs?ref=fuel-labs.ghost.io"><strong>Fuel Labs</strong></a> repository has been in the Top 5 of Rust in Blockchain for an entire year in terms of closed PRs and consistently in the Top 1 in terms of opened/closed issues.</li>
-</ul>
-<p><a href="https://github.com/FuelLabs?ref=fuel-labs.ghost.io"><strong>Fuel Labs</strong></a>仓库在一整年内，在Rust区块链中的完成PR方面一直处于前5名，在开放/完成问题方面一直处于前1名。</p>
-<ul>
-<li>
-<p>Our well-documented and approachable documentation keeps bringing more and more third-party contributors and builders (currently 25+ projects are building on Fuel).<br>
-我们完善的文档和平易近人的文档不断带来越来越多的第三方贡献者和建设者（目前有25个以上的项目在Fuel上构建）。</p>
-</li>
-<li>
-<p>Fuel and Sway have experienced a notable rise in popularity over the past year, marked by a substantial increase in open-source contributions and participation in our Grants Program to build projects on Fuel using Sway.<br>
-在过去的一年里，Fuel和Sway的受欢迎程度明显上升，其标志是开源贡献和参与我们的资助计划，来使用Sway在Fuel上构建项目的大幅增加。</p>
-</li>
-</ul>
-<p>In 2023, you can expect:<br>
-在2023年，你可以畅想：</p>
-<ul>
-<li>
-<p>A compiler optimization in terms of bytecode size.<br>
-在字节码规模方面的编译器优化。</p>
-</li>
-<li>
-<p>More backends will be supported by Sway (i.e. EVM backend is already under development).<br>
-更多的后端将被Sway支持（例如EVM后端已经在开发中）。</p>
-</li>
-<li>
-<p>Generic and trait constraints will be improved, abstractions will be a lot more economic and powerful.<br>
-通用和特性约束将被改进，抽象将更加经济和强大。</p>
-</li>
-<li>
-<p>More applications to be ported from Solidity/Vyper to Sway.<br>
-更多的应用将从Solidity/Vyper移植到Sway。</p>
-</li>
-<li>
-<p>An improvement of the reentrancy analysis at the compiler level.<br>
-在编译器层面改进重入分析。</p>
-</li>
-<li>
-<p>Enhanced tooling and language features.<br>
-增强的工具和语言特性。</p>
-</li>
-</ul>
-<h2 id="技术更新-technical-updates"><strong>💻 技术更新 (Technical Updates)</strong></h2>
-<h2 id="fuelup">Fuelup</h2>
-<blockquote>
-<p><strong>Fuelup是什么 (What is Fuelup?)</strong></p>
-<p><a href="https://github.com/FuelLabs/fuelup#installation">Fuelup</a> is the official package manager and multiplexer for <a href="https://fuel.network/">Fuel</a> that installs <strong>The Fuel Toolchain</strong> from the official release channels. It enables you to easily install pre-packaged toolchains, keep them up to date or even create custom toolchains and switch between them.</p>
-<p><a href="https://github.com/FuelLabs/fuelup#installation">Fuelup</a> 是 <a href="https://fuel.network/">Fuel</a> 的官方包管理器和复用器，它从官方发布渠道安装<strong>Fuel工具链 (The Fuel Toolchain)</strong>。它使您能够轻松安装预打包的工具链，使其保持最新状态，甚至创建自定义工具链并在它们之间切换。</p>
-<p>Binaries are executed through Fuelup as proxies which allow for flexibility in the execution of tools.</p>
-<p>二进制文件通过 Fuelup 作为代理执行，使得工具的执行变得灵活。</p>
-</blockquote>
-<p>It simplifies building and maintaining Sway applications with <a href="https://github.com/FuelLabs/sway/tree/master/forc">forc</a> and <a href="https://github.com/FuelLabs/fuel-core">fuel-core</a> for common platforms.</p>
-<blockquote>
-<p>它为一般平台使用 <a href="https://github.com/FuelLabs/sway/tree/master/forc">forc</a> 和 <a href="https://github.com/FuelLabs/fuel-core">fuel-core</a> 简化了 Sway 应用的构建和维护。</p>
-</blockquote>
-<p><a href="https://fuellabs.github.io/fuelup/master/overrides.html?ref=fuel-labs.ghost.io">Support for overriding toolchains</a> added to Fuelup:</p>
-<p><a href="https://fuellabs.github.io/fuelup/master/overrides.html?ref=fuel-labs.ghost.io">支持覆盖工具链</a> 添加到 Fuelup：</p>
-<p>Developers can specify a specific version of a component in a TOML file (<code>fuel-toolchain.toml</code>) at the root of their Sway project. <code>fuelup</code> will automatically use the specified version when working in that directory.</p>
-<p>开发人员可以在其 Sway 项目根目录下的 TOML 文件 (<code>fuel-toolchain.toml</code>) 中指定组件的特定版本。在该目录中工作时，<code>fuelup</code> 将自动使用指定的版本。</p>
-<p>The way fuelup handles binaries has also been updated - <code>fuelup</code> now uses a generalized store found in <code>~/.fuelup/store</code> to cache your binary downloads. This means that there will be no more duplicate components of the same versions across different toolchains, and creating a new toolchain with an already downloaded component takes almost no time.</p>
-<p>fuelup 处理二进制文件的方式也已更新 - <code>fuelup</code> 现在使用在 <code>~/.fuelup/store</code> 中找到的通用存储来缓存您的二进制下载。这意味着将不再有跨不同工具链的相同版本的重复组件，并且使用已下载的组件创建新工具链几乎不需要时间。</p>
-<h2 id="sway应用-sway-applications">Sway应用 (Sway Applications)</h2>
-<h4 id="sway应用仓库-the-sway-applications-repository"><a href="https://github.com/FuelLabs/sway-applications?ref=fuel-labs.ghost.io">Sway应用仓库 The Sway Applications Repository</a></h4>
-<blockquote>
-<p>The purpose of the Sway Applications repository is to demonstrate what can be built with Sway and to promote good development practices.</p>
-<p>Sway 应用存储库的目的是演示可以使用 Sway 构建的内容并促进良好的开发实践。</p>
-<p>That being said, the repository should be deemed as a living project since the applications will be actively maintained, and thus it is likely that none of them will ever reach their final form!</p>
-<p>所以，存储库应该被视为一个活跃的项目，因为应用将得到积极维护，因此它们很可能永远不会达到最终形式！</p>
-<p>The repository is young so there isn't anything for anyone to use yet, however, we have lots of applications in development, and lots more planned to be worked on in the near future.</p>
-<p>这个存储库还很年轻，所以还没有任何人可以使用，但是，我们有很多应用正在开发中，并且计划在不久的将来进行更多的工作。</p>
-<p>So far, the applications are planned to have a smart contract to demonstrate Sway, tests written in Rust to demonstrate the Rust-SDK, and a user interface to demonstrate the use of the Typescript-SDK.</p>
-<p>到目前为止，应用计划有一个智能合约来演示 Sway，用 Rust 编写的测试来演示 Rust-SDK，以及一个用户界面来演示 Typescript-SDK 的使用。</p>
-<p>This part presents the applications that have gone through some level of scrutiny and have been deemed acceptable to be merged into the master branch.</p>
-<p>这部分介绍了经过一定程度审查并被认为可以合并到主分支中的应用。</p>
-<p>NOTE<br>
-注意</p>
-<p>This does not mean that they are complete nor that development has ceased.</p>
-<p>这并不意味着它们已经完成，也不意味着开发已经停止。</p>
-</blockquote>
-<p><a href="https://github.com/FuelLabs/sway-applications/tree/master/fractional-NFT?ref=fuel-labs.ghost.io"><strong>New Fractional NFT application</strong></a>: The Fractional NFT application will lock an NFT into a fractional-NFT(f-NFT) contract and allow users to purchase the newly minted fractionalized tokens. These tokens can then be bought and sold on an AMM or return them to the distribution contract if a buyback is initiated. If all tokens are returned, the admin may unlock the NFT from the f-NFT contract and regain full ownership.</p>
-<p><a href="https://github.com/FuelLabs/sway-applications/tree/master/fractional-NFT?ref=fuel-labs.ghost.io"><strong>新的 分割NFT(Fractional) NFT 应用</strong></a>：分割NFT(Fractional) 应用会锁定并将 NFT 转换为分割 NFT（f-NFT）合约，并允许用户购买新铸造的分割代币。然后可以在 AMM 上买卖这些代币，或者如果发起回购，则将它们返还给分发合约。如果返回所有代币，管理员可以从 f-NFT 合约中解锁 NFT 并重新获得完全所有权。</p>
-<p><strong><a href="https://github.com/FuelLabs/sway-applications/tree/master/timelock?ref=fuel-labs.ghost.io">New Timelock application</a></strong>: The purpose of a timelock is to restrict the execution of a transaction to some window of time. The transaction usually involves a transfer of funds e.g. via an escrow, vesting schedule, deferred payment, etc. however, it may also be used for valueless execution i.e. calls to a contract to perform computation. The transaction arguments are hashed and stored in a queue awaiting a subsequent call for execution. A user may choose to execute the transaction during the window of time or cancel the transaction by removing it from the queue.</p>
-<p><strong><a href="https://github.com/FuelLabs/sway-applications/tree/master/timelock?ref=fuel-labs.ghost.io">新时间锁应用</a></strong>：时间锁的目的是限制交易执行到某个时间窗口。交易通常涉及资金转移，例如通过托管、归属时间表、延期付款等。然而，它也可以用于无价值的执行，即调用合约来执行计算。交易参数被海华并存储在等待后续执行调用的队列中。用户可以选择在时间窗口内执行交易，或者通过将交易从队列中移除，来取消交易。</p>
-<h2 id="sway">Sway</h2>
-<h3 id="一般更新-general-updates">一般更新 (General Updates)</h3>
-<ul>
-<li>
-<p>Introduction of the Sway reference, a more technical Sway source of documentation;<br>
-引入 Sway 参考，这是一种更具技术性的 Sway 文档来源；</p>
-</li>
-<li>
-<p>Introduction of  <code>__smo intrinsic</code>;<br>
-<code>__smo intrinsic</code> 的介绍；</p>
-</li>
-<li>
-<p>Start-up of the work on the <strong>EVM</strong> backend;<br>
-启动 <strong>EVM</strong> 后端工作；</p>
-</li>
-<li>
-<p>Introduction of <code>configuration-time</code> constants;<br>
-引入 <code>configuration-time</code> 常量；</p>
-</li>
-<li>
-<p>Improvement of Error messages for methods called, mismatched ABI methods, improperly used types, and more;<br>
-改进了调用方法、不匹配的 ABI 方法、不正确使用的类型等的错误消息；</p>
-</li>
-<li>
-<p>Addition of balance tree and output message effects to CEI analysis;<br>
-为CEI分析添加平衡树和输出消息效果；</p>
-</li>
-<li>
-<p>Addition of a better parser recovery for incomplete path expressions/patterns;<br>
-为不完整的路径表达式/模式添加更好的解析器恢复；</p>
-</li>
-</ul>
-<p><strong>Bug修复 (Bug fixes):</strong></p>
-<ul>
-<li>
-<p>To trait constraint resolution to allow for the correct trait methods to be found;<br>
-特征约束解析将允许找到正确的特征方法；</p>
-</li>
-<li>
-<p>To dead-code-analysis to prevent false reporting dead code;<br>
-死码分析，防止误报死码；</p>
-</li>
-<li>
-<p>To prevent stack overflow from infinite type unification;<br>
-防止无限类型统一导致堆栈溢出；</p>
-</li>
-<li>
-<p>To type inference to prevent unsound type inference and internal compiler errors;<br>
-类型推断以防止不合理的类型推断和内部编译器错误；</p>
-</li>
-<li>
-<p>To calculate missing patterns in nested enum matching in match expressions;<br>
-计算匹配表达式中，嵌套枚举匹配中的缺失模式；</p>
-</li>
-<li>
-<p>To block repeated ABI/trait declarations;<br>
-阻止重复的 ABI/特征声明；</p>
-</li>
-<li>
-<p>To disable self-parameters for ABI methods;<br>
-禁用 ABI 方法的自参数；</p>
-</li>
-</ul>
-<h3 id="标准库更新-standard-library-updates">标准库更新 (Standard Library Updates)</h3>
-<ul>
-<li>
-<p>Introduction of a <strong><code>Byte</code></strong> type;<br>
-引入 <strong><code>Byte</code></strong> 类型；</p>
-</li>
-<li>
-<p>Addition of bitwise operations for <code>**u8**</code>, <code>**u16**</code>, <code>**u32**</code>;<br>
-为<code>**u8**</code>、<code>**u16**</code>、<code>**u32**</code> 添加了按位运算；</p>
-</li>
-<li>
-<p>Optimization of <code>**U128**</code> and <code>**U256**</code> division;<br>
-优化 <code>**U128**</code> 和 <code>**U256**</code> 划分；</p>
-</li>
-<li>
-<p>Remove <code>**std::context::gas**</code> in favor of <code>**std::registers::context_gas()**</code>;<br>
-删除<code>**std::context::gas**</code> 以支持<code>**std::registers::context_gas()**</code>；</p>
-</li>
-<li>
-<p>Introduction of low-level call functionality;<br>
-引入低级调用功能；<br>
-Switch to using the <code>**Bytes**</code> type for the <code>send_message</code> data parameter;<br>
-切换到对 <code>send_message</code> 数据参数使用 <code>**Bytes**</code> 类型；</p>
-</li>
-<li>
-<p>Enhance the <code>Result</code> library;<br>
-增强 <code>Result</code> 库；</p>
-</li>
-<li>
-<p>Introduction of the <code>Never enum</code>;<br>
-引入“永不枚举”；</p>
-</li>
-</ul>
-<h3 id="工具更新-tooling-updates">工具更新 (Tooling Updates)</h3>
-<ul>
-<li>
-<p>Authorization for comma-separated annotations;<br>
-逗号分隔注释的授权；</p>
-</li>
-<li>
-<p>Addition of CSS styling, favicon, and  <code>--document-private-items</code> option to <code>forc doc</code>;<br>
-添加 CSS 样式、网站图标和 <code>--document-private-items</code> 选项到 <code>forc doc</code>；</p>
-</li>
-<li>
-<p>Introduction of <code>#[test(should_revert)]</code> attribute to indicate a unit test should revert;<br>
-引入 <code>#[test(should_revert)]</code> 属性来指示单元测试应该恢复；</p>
-</li>
-<li>
-<p>Allow the LSP to start with partial config;<br>
-允许 LSP 以部分配置启动；</p>
-</li>
-<li>
-<p>Addition of LSP option to hide compiler warnings and errors;<br>
-添加 LSP 选项来隐藏编译器警告和错误；</p>
-</li>
-<li>
-<p>Addition of the <code>#[payable]</code> annotation to ABI methods;<br>
-向 ABI 方法添加<code>#[payable]</code> 注释；</p>
-</li>
-<li>
-<p>Enable the LSP to work with multiple projects simultaneously;<br>
-使 LSP 能够同时处理多个项目；</p>
-</li>
-<li>
-<p>Addition of support for calling into contract ABIs from unit tests;<br>
-增加了对从单元测试调用合约 ABI 的支持；</p>
-</li>
-<li>
-<p>Addition of an interface for generating links between items &amp; modules in <code>forc doc</code>;<br>
-添加一个界面，用于在<code>forc doc</code>中生成项目和模块之间的链接；</p>
-</li>
-</ul>
-<h3 id="forc更新-forc-updates">Forc更新 (Forc Updates)</h3>
-<ul>
-<li>
-<p>Introduction of build flag to print the dead-code-analysis graph;<br>
-引入构建标志来打印死代码分析图</p>
-</li>
-<li>
-<p>Introduction of workspace testing feature to forc test;<br>
-引入工作区测试功能来进行强制测试；</p>
-</li>
-<li>
-<p>Addition of workspace support for <code>forc clean</code>;<br>
-增加了对“forc clean”的工作区支持；</p>
-</li>
-<li>
-<p>Bug fix to prevent an occasional git checkout race when running multiple instances of forc concurrently;<br>
-防止在同时运行多个 forc 实例时偶尔出现 git checkout 竞争的错误修复</p>
-</li>
-<li>
-<p>Bug fix to correct executable output for <code>arm64</code> binaries;<br>
-更正 <code>arm64</code> 二进制文件的可执行输出的错误修复</p>
-</li>
-</ul>
-<h2 id="fuel核心-fuel-core">Fuel核心 (Fuel Core)</h2>
-<ul>
-<li>
-<p>P2P Block Sync (adds the ability to run syncing full-nodes):</p>
-<ul>
-<li>Includes the addition of two new services, Synchronization, and Block Importer;</li>
-<li>Enables libp2p in the standard fuel-core binary;</li>
-</ul>
-</li>
-<li>
-<p>P2P 块同步（添加运行同步全节点的能力）：</p>
-<ul>
-<li>包括添加两项新服务，同步和区块导入器；</li>
-<li>在标准Fuel核心二进制文件中启用 libp2p；</li>
-</ul>
-</li>
-<li>
-<p>Ports and Adapters Re-Architecture:</p>
-<ul>
-<li>Breaks the internals of fuel-core into easily unit-testable and reusable libraries;</li>
-<li>Paves the way for alternate implementations such as light clients;</li>
-</ul>
-</li>
-<li>
-<p>端口和适配器重新架构：</p>
-<ul>
-<li>将 fuel-core 的内部分解为易于单元测试和可重用的库；</li>
-<li>为轻客户端等替代实现铺平道路；</li>
-</ul>
-</li>
-<li>
-<p>Improved DataBase (DB) performance (less cloning);<br>
-改进的数据库 (DB) 性能（减少克隆）；</p>
-</li>
-<li>
-<p>Introduction of gas schedule framework &amp; revised gas prices:</p>
-<ul>
-<li>The new framework allows us to automatically reprice the gas schedule based on benchmark output;</li>
-<li>More gas price changes to come as we implement contract state merklization and optimize the DB further;</li>
-</ul>
-</li>
-<li>
-<p>引入 gas 计划框架和修改后的 gas 价格：</p>
-<ul>
-<li>新框架允许我们根据基准输出自动重新定价 gas 时间表；</li>
-<li>随着我们实施合约状态 merklization 并进一步优化 DB，将会有更多的 gas 价格变化；</li>
-</ul>
-</li>
-<li>
-<p>Gas-metered predicates:</p>
-<ul>
-<li>Predicates are priced using the standard gas schedule and their execution budget is deducted from the transaction gas limit. Previously they were only priced based on the number of bytes they added to the transaction;</li>
-</ul>
-</li>
-<li>
-<p>气体计量谓词：</p>
-<ul>
-<li>谓词使用标准 gas 计划定价，其执行预算从交易 gas 限额中扣除。以前只根据其添加到交易中的字节数来定价；</li>
-</ul>
-</li>
-<li>
-<p>Replacement of the integer logarithm in the VM with Rust std lib impl from 1.67 (Now requires Rust 1.67 to use fuel-core &amp; FueVM);<br>
-从 1.67 开始用 Rust std lib impl 替换 VM 中的整数对数（现在需要 Rust 1.67 才能使用 fuel-core 和 FueVM）；</p>
-</li>
-<li>
-<p>Binary MMR for block headers implemented;<br>
-实现区块头的二进制 MMR</p>
-</li>
-<li>
-<p>Gas prices are now configurable as part of chainconfig / genesis block;<br>
-Gas 价格现在可以作为 chainconfig / genesis 块的一部分进行配置；</p>
-</li>
-<li>
-<p>FuelVM is now a monorepo containing all fuel-based dependencies of the VM;<br>
-FuelVM 现在是一个 monorepo，包含 VM 的所有基于Fuel的依赖项；</p>
-</li>
-<li>
-<p>Update of GTF arg constants to match the spec;<br>
-更新 GTF arg 常量来匹配规范；</p>
-</li>
-</ul>
-<h2 id="sdks-fuel-ts-fuel-rs">SDKs (Fuel-TS &amp; Fuel-RS)</h2>
-<p><strong>Rust SDK:</strong></p>
-<ul>
-<li>
-<p>Easier testing infrastructure setup: describe your test wallets, contracts, scripts, predicates, and deployments all in a single macro;<br>
-更简单的测试基础设施设置：在一个宏中描述你的测试钱包、合约、脚本、谓词和部署；</p>
-</li>
-<li>
-<p>Parsed and human-readable revert errors to make smart contract debugging friendlier;<br>
-解析和人类可读的恢复错误，使智能合约调试更友好；</p>
-</li>
-<li>
-<p>Transaction fees can now be paid using <code>Messages</code>, i.e., bridged assets;<br>
-现在可以使用“消息”（即跨链资产）支付交易费用；</p>
-</li>
-<li>
-<p>Introduction of the Predicate data encoder;<br>
-引入谓词数据编码器；</p>
-</li>
-<li>
-<p>Rework of the<code>abigen!</code> macro: now supporting multiple contracts, predicates, and scripts all in the same macro invocation;<br>
-<code>abigen!</code> 宏的返工：现在支持同一个宏调用中的多个契约、谓词和脚本；</p>
-</li>
-<li>
-<p>Introduction of the predicates API;<br>
-引入谓词 API；</p>
-</li>
-<li>
-<p>Better dependencies importing experience;<br>
-更好的依赖项导入体验；</p>
-</li>
-</ul>
-<p><strong>Typescript SDK:</strong></p>
-<ul>
-<li>
-<p>Better and more reliable log parsing;<br>
-更好更可靠的日志解析；</p>
-</li>
-<li>
-<p>Overall ergonomics improvements;<br>
-整体人体工程学改进；</p>
-</li>
-<li>
-<p>Introduction of <code>abi-typegen</code> CLI;<br>
-<code>abi-typegen</code> CLI 的介绍；</p>
-</li>
-<li>
-<p>Live documentation rework;<br>
-实时文档返工；</p>
-</li>
-</ul>
-<hr>
-<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
-<ul>
-<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
-<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
-<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
-<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
-</ul>
-<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
-<p><a href="https://www.fuel.network/">Fuel</a> is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
-<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制**。</p>
-<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
-<ul>
-<li>
-<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
-<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
-</li>
-<li>
-<p><a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">Apply for a grant</a><br>
-<a href="https://1v1l4ftv9zy.typeform.com/fuelgrants">申请资助</a></p>
 </li>
 <li>
 <p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
