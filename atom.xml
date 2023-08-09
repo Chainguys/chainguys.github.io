@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-06-18T03:11:26.327Z</updated>
+    <updated>2023-08-09T10:06:01.179Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,41 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[RedStone - A Short intro to the New Era of Oracles for Modern DeFi]]></title>
+        <id>https://chainguys.github.io/post/redstone-a-short-intro-to-the-new-era-of-oracles-for-modern-defi/</id>
+        <link href="https://chainguys.github.io/post/redstone-a-short-intro-to-the-new-era-of-oracles-for-modern-defi/">
+        </link>
+        <updated>2023-08-09T09:57:23.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://redstone.finance/assets/img/redstone-logo-full.svg" alt="" loading="lazy"></figure>
+<h1 id="redstonewhat">RedStone?What?</h1>
+<p>RedStone is an innovative new Oracle system designed to meet the evolving data needs of decentralized finance (DeFi) protocols and dApps on multiple layer 1 and layer 2 networks.</p>
+<h1 id="how-current-oracles-let-you-down">How Current Oracles let you down :</h1>
+<p>Existing Oracle solutions have some key limitations that RedStone aims to solve:- Pushing data on-chain continuously wastes resources if the data is unused.</p>
+<ul>
+<li>Monolithic architecture makes it difficult to scale up listed assets or reduce latency.</li>
+<li>Protocols can't fully control trusted data sources and update frequencies.</li>
+<li>Users depend completely on relayers and risk being cut off.</li>
+</ul>
+<h1 id="redstones-solutions">RedStone's Solutions:</h1>
+<p>RedStone provides a radically new Oracle architecture tailored for modern DeFi:- Avoid mandatory continuous on-chain delivery.</p>
+<ul>
+<li>Enable users to self-deliver signed Oracle data on-chain.</li>
+<li>Leverage the decentralized Streamr network to deliver signed data to users.</li>
+<li>Use token incentives to motivate reliable data feeds from providers.</li>
+<li>Archive immutable Oracle data on Arweave for accountability.</li>
+</ul>
+<h1 id="modular-design-for-flexibility">Modular Design for Flexibility:</h1>
+<p>RedStone uses a modular approach where data is stored off-chain and only fetched when needed. This allows broad asset coverage and high update frequency without bloating on-chain data.3 Integration Options:<br>
+Based on smart contract needs, RedStone offers:</p>
+<ul>
+<li>RedStone Core - injects data into user transactions for efficiency.</li>
+<li>RedStone Classic - pushes data via relayer for control.</li>
+<li>RedStone X - eliminates front-running risks for derivatives.Conclusion:</li>
+</ul>
+<p>With its innovative architecture, RedStone unlocks the next evolution of customizable, reliable, and efficient Oracle solutions tailored for the future of DeFi.</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Celestia材料合集-更新中(Celestia materials-Updating)]]></title>
         <id>https://chainguys.github.io/post/celestia-cai-liao-he-ji/</id>
@@ -793,31 +828,6 @@ _Launchpad集成了一个全新的AI工具  <strong>FlashGPT</strong> 它可以�
 <a href="https://twitter.com/Chainguys/status/1628337503844577281">Aleo for Beginners:1.Introduction</a></p>
 <h2 id="推文长推-twitter-threads">推文/长推 (twitter threads)</h2>
 <p><a href="https://twitter.com/Chainguys/status/1641644054281613313"> @AleoHQ's key features</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Akord材料合集-CHN&ENG（Akord materials CHN&ENG) Updating]]></title>
-        <id>https://chainguys.github.io/post/akord-zhong-wen-cai-liao-he-ji-akord-chinese-materials-updating/</id>
-        <link href="https://chainguys.github.io/post/akord-zhong-wen-cai-liao-he-ji-akord-chinese-materials-updating/">
-        </link>
-        <updated>2023-03-23T08:36:21.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://akord.com/img/akord-logo.svg" alt="" loading="lazy"></figure>
-<h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a> 原创 (<a href="https://twitter.com/Chainguys">@Chainguys</a> Original)</h1>
-<h2 id="视频videos">视频(Videos)</h2>
-<p><a href="https://twitter.com/Chainguys/status/1642754531288023042">Akord简介-Short Intro to Akord</a></p>
-<h1 id="官方博文official-blog">官方博文(Official Blog)</h1>
-<p><strong>2023:</strong></p>
-<h2 id="02-08-gdpr和区块链"><a href="https://chainguys.github.io/post/gdpr-he-qu-kuai-lian-gdpr-and-blockchain/">02-08 GDPR和区块链</a></h2>
-<h2 id="01-31-web3存档-the-web3-archive"><a href="https://chainguys.github.io/post/web3-cun-dang-the-web3-archive/">01-31 web3存档 (The web3 archive)</a></h2>
-<h2 id="01-30-akordjsarweave-上的隐私-协作和文件管理akordjsprivacy-collaboration-and-file-management-on-arweave"><a href="https://chainguys.github.io/post/akordjsarweave-shang-de-yin-si-xie-zuo-he-wen-jian-guan-li-akordjsprivacy-collaboration-and-file-management-on-arweave/">01-30 AkordJS：Arweave 上的隐私、协作和文件管理(AkordJS：privacy, collaboration and file management on Arweave)</a></h2>
-<h2 id="01-06-重塑我们的品牌-rebuilding-our-brand"><a href="https://chainguys.github.io/post/chong-su-wo-men-de-pin-pai-rebuilding-our-brand/">01-06 重塑我们的品牌 (Rebuilding our brand)</a></h2>
-<p><strong>2022:</strong></p>
-<h2 id="11-26-认识-akord基于区块链的永久存储和发布协议-meet-akordthe-blockchain-based-permanent-storage-and-publishing-protocol"><a href="https://chainguys.github.io/post/ren-shi-akordji-yu-qu-kuai-lian-de-yong-jiu-cun-chu-he-fa-bu-xie-yi-meet-akordthe-blockchain-based-permanent-storage-and-publishing-protocol/">11-26 认识 Akord：基于区块链的永久存储和发布协议 (Meet Akord：the blockchain-based permanent storage and publishing protocol)</a></h2>
-<h2 id="10-11-当我们都dedoco我们的文档-when-we-all-dedoco-our-documents"><a href="https://chainguys.github.io/post/dang-wo-men-du-dedoco-wo-men-de-wen-dang-when-we-all-dedoco-our-documents/">10-11 当我们都Dedoco我们的文档 (When we all Dedoco our documents)</a></h2>
-<h2 id="10-06-akord应用v2介绍-introducing-the-v2-akord-app"><a href="https://chainguys.github.io/post/akord-ying-yong-v2-jie-shao-introducing-the-v2-akord-app/">10-06 Akord应用V2介绍 (Introducing the V2 Akord app)</a></h2>
-<h2 id="09-26-akord协议向所有构建者开源-akord-protocol-open-for-builders"><a href="https://chainguys.github.io/post/akord-xie-yi-xiang-suo-you-gou-jian-zhe-kai-yuan-akord-protocol-open-for-builders/">09-26 Akord协议—向所有构建者开源 (Akord protocol – open for builders)</a></h2>
-<h2 id="07-03-akord-x-dedoco-宣布合作-akord-x-dedoco-partnership-announcement"><a href="https://chainguys.github.io/post/akord-x-dedoco-xuan-bu-he-zuo-akord-x-dedoco-partnership-announcement/">07-03 Akord x Dedoco – 宣布合作! (Akord x Dedoco – partnership announcement)</a></h2>
-<h2 id="06-24-公共保管库已经到来public-vaults-have-arrived"><a href="https://chainguys.github.io/post/gong-gong-bao-guan-ku-yi-jing-dao-lai-public-vaults-have-arrived/">06-24 公共保管库已经到来！(Public vaults have arrived!)</a></h2>
 ]]></content>
     </entry>
 </feed>
