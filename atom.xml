@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-08-09T10:06:01.179Z</updated>
+    <updated>2023-08-20T09:32:13.562Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,462 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Saga材料合集-更新中(Saga Materials-Updating)]]></title>
+        <id>https://chainguys.github.io/post/saga-cai-liao-he-ji-geng-xin-zhong-saga-materials-updating/</id>
+        <link href="https://chainguys.github.io/post/saga-cai-liao-he-ji-geng-xin-zhong-saga-materials-updating/">
+        </link>
+        <updated>2023-08-20T06:19:58.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://chainguys.github.io/post-images/1692512523185.jpeg" alt="" loading="lazy"></figure>
+<h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a>原创 （<a href="https://twitter.com/Chainguys">@Chainguys</a> Original)</h1>
+<h2 id="信息图视频gif视频infographicvideogif-video">信息图/视频/gif视频(infographic/video/gif video)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Saga Infographic</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1691232599123935232">Validators  Selection Pocess(in detail)</a></td>
+</tr>
+<tr>
+<td>Saga Infographic</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1691227138572124160">Validator Selection</a></td>
+</tr>
+<tr>
+<td>Saga Infographic</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1688441498449186816">Saga's way to prevent spam</a></td>
+</tr>
+<tr>
+<td>Saga Infographic</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1685823844123090944">Saga's Front End Economics</a></td>
+</tr>
+<tr>
+<td>Saga Infographic</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1683347112015151106">Saga's validator orchestration &amp; tools </a></td>
+</tr>
+<tr>
+<td>Saga Infographic</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1680744374555283456">Saga shared security desig</a></td>
+</tr>
+<tr>
+<td>Saga Infographic</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1678232030184718339">Benefits of Saga's Chainlet</a></td>
+</tr>
+<tr>
+<td>Saga Infographic</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1675778547099549697">Saga Testnet</a></td>
+</tr>
+<tr>
+<td>Saga Infographic</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1673204943782842368">Saga's Cassiopeia Testnet</a></td>
+</tr>
+<tr>
+<td>Saga Infographic</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1671140424705257473">5 benefits that SAGA Brings</a></td>
+</tr>
+<tr>
+<td>Saga Infographic</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1668535649865981953">Key advantages of SAGA</a></td>
+</tr>
+<tr>
+<td>Saga Infographic</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1667184238414659585">SAGA IN 1 Slide</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="长推文章博客twitter-threadarticles博客">长推/文章/博客(twitter thread/articles/博客)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Saga101</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1691227138572124160">Musical Chairs in Validator Selection</a></td>
+</tr>
+<tr>
+<td>Saga101</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1688438252540153856">Saga Chailets</a></td>
+</tr>
+<tr>
+<td>Saga101</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1685812148545765377">Saga Front Enduser Economic</a></td>
+</tr>
+<tr>
+<td>Saga101</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1683348726570516481">Deploying a smart contract and provisioning a Chainlet on Saga</a></td>
+</tr>
+<tr>
+<td>Saga101</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1680838354362048512">Saga Shared Security</a></td>
+</tr>
+<tr>
+<td>Saga101</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1678228857369894913">Saga's Chainlet Design</a></td>
+</tr>
+<tr>
+<td>Saga101</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1675767866170195968">A Saga Chainlet</a></td>
+</tr>
+<tr>
+<td>Saga101</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1673197380945219585">Cassiopeia Testnet</a></td>
+</tr>
+<tr>
+<td>Saga Threads</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1671132041293991938">Introduction to Saga</a></td>
+</tr>
+<tr>
+<td>Saga101</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1668532317969686529">SAGA &amp; developers</a></td>
+</tr>
+<tr>
+<td>Saga101</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1667177504841379855">A Thread on Saga</a></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Puffer材料合集-更新中(Puffer Materials-Updating)]]></title>
+        <id>https://chainguys.github.io/post/puffer/</id>
+        <link href="https://chainguys.github.io/post/puffer/">
+        </link>
+        <updated>2023-08-20T05:51:56.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.puffer.fi/images/img-mod02.png" alt="" loading="lazy"></figure>
+<h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a>原创 （<a href="https://twitter.com/Chainguys">@Chainguys</a> Original)</h1>
+<h2 id="信息图视频gif视频infographicvideogif-video">信息图/视频/gif视频(infographic/video/gif video)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>puffer101</td>
+<td>original-ytvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1691271413653528576">Empowering Home-Based Validators: How @puffer_finance Is Democratizing Ethereum Staking</a></td>
+</tr>
+<tr>
+<td>puffer101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1690904824013848578">1.What's Puffer?</a></td>
+</tr>
+<tr>
+<td>puffer101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1691606195680034955">1.Puffer是什么?</a></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[T3RN材料合集-更新中(T3RN Materials-Updating)]]></title>
+        <id>https://chainguys.github.io/post/t3rn-cai-liao-he-ji-geng-xin-zhong-t3rn-materials-updating/</id>
+        <link href="https://chainguys.github.io/post/t3rn-cai-liao-he-ji-geng-xin-zhong-t3rn-materials-updating/">
+        </link>
+        <updated>2023-08-20T05:45:29.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://assets.website-files.com/6328b4e5e36c3fe82d4fa984/63516dd90d0721de7344d976_t3rn_logo_black-p-500.png" alt="" loading="lazy"></figure>
+<h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a>原创 （<a href="https://twitter.com/Chainguys">@Chainguys</a> Original)</h1>
+<h2 id="信息图视频gif视频infographicivideogif-video">信息图/视频/gif视频(infographic/ivideo/gif video)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>t3rn FOR BEGINNERS</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1683296692324671488">t3rn in 1 picture</a></td>
+</tr>
+<tr>
+<td>t3rn FOR BEGINNERS</td>
+<td>original-infographic</td>
+<td><a href="https://twitter.com/Chainguys/status/1684006116907163650">t3rn 一图流</a></td>
+</tr>
+<tr>
+<td>t3rn FOR BEGINNERS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1684750521771397121">P1:What is t3rn?</a></td>
+</tr>
+<tr>
+<td>t3rn FOR BEGINNERS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1685818056185171968">P1:t3rn到底是什么?</a></td>
+</tr>
+<tr>
+<td>t3rn FOR BEGINNERS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1686543083549188096">P2:The ultimate objective?</a></td>
+</tr>
+<tr>
+<td>t3rn FOR BEGINNERS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1687260561233338368">P2:最终目标?</a></td>
+</tr>
+<tr>
+<td>t3rn FOR BEGINNERS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1688362069152628736">P3:current bridging models?</a></td>
+</tr>
+<tr>
+<td>t3rn FOR BEGINNERS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1689078791765655554">P3:当前跨链桥的模式?</a></td>
+</tr>
+<tr>
+<td>t3rn FOR BEGINNERS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1689817408792305664">P4:challenges with bridging security for now?</a></td>
+</tr>
+<tr>
+<td>t3rn FOR BEGINNERS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1691248337599463424">P4:当前跨链桥方案安全挑战</a></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taiko材料合集-更新中(Taiki Materials-Updating)]]></title>
+        <id>https://chainguys.github.io/post/taiki-cai-liao-he-ji-geng-xin-zhong-taiki-materials-updating/</id>
+        <link href="https://chainguys.github.io/post/taiki-cai-liao-he-ji-geng-xin-zhong-taiki-materials-updating/">
+        </link>
+        <updated>2023-08-20T05:41:46.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://taiko.xyz/images/logotype-black.svg" alt="" loading="lazy"></figure>
+<h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a>原创 （<a href="https://twitter.com/Chainguys">@Chainguys</a> Original)</h1>
+<h2 id="信息图视频gif视频infographicivideogif-video">信息图/视频/gif视频(infographic/ivideo/gif video)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Taiko BASICS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1686546606600925184">1.What's Taiko</a></td>
+</tr>
+<tr>
+<td>Taiko BASICS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1687257038026362880">1.Taiko是什么</a></td>
+</tr>
+<tr>
+<td>Taiko BASICS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1688382453604622336">2.How to be Special?(1)</a></td>
+</tr>
+<tr>
+<td>Taiko BASICS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1689069732253564929">2.如何做才这么特别?(1)</a></td>
+</tr>
+<tr>
+<td>Taiko BASICS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1689821435215175682">2.How to be Special?(2)</a></td>
+</tr>
+<tr>
+<td>Taiko BASICS</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1691240787919745029">2.如何做才这么特别?(2)</a></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bera材料合集-更新中(Bera Materials-Updating)]]></title>
+        <id>https://chainguys.github.io/post/bera/</id>
+        <link href="https://chainguys.github.io/post/bera/">
+        </link>
+        <updated>2023-08-20T05:36:42.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://inflow-public.s3.amazonaws.com/company-logos/rp70b2xrm5pm8fvgl8ogjyvwigm5.jpeg" alt="" loading="lazy"></figure>
+<h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a>原创 （<a href="https://twitter.com/Chainguys">@Chainguys</a> Original)</h1>
+<h2 id="信息图视频gif视频infographicvideogif-video">信息图/视频/gif视频(infographic/video/gif video)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BeraChain-101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1686553149702549506">P1-What's Berachain?</a></td>
+</tr>
+<tr>
+<td>BeraChain-101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1687252256733941760">P1-Berachain是什么?</a></td>
+</tr>
+<tr>
+<td>BeraChain-101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1688370625776353280">P2-What's special on Berachain?</a></td>
+</tr>
+<tr>
+<td>BeraChain-101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1689072752102408192">P2-Berachain道理有什么特别?</a></td>
+</tr>
+<tr>
+<td>BeraChain-101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1689818415396225024">P3-The way to be Unique(1)</a></td>
+</tr>
+<tr>
+<td>BeraChain-101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1691242046101819393">P3-如何做到如此特别？(1)</a></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RedStone材料合集-更新中(RedStone Materials-Updating)]]></title>
+        <id>https://chainguys.github.io/post/redstone-he-ji-geng-xin-zhong-redstone-materialsupdating/</id>
+        <link href="https://chainguys.github.io/post/redstone-he-ji-geng-xin-zhong-redstone-materialsupdating/">
+        </link>
+        <updated>2023-08-20T05:20:41.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://redstone.finance/assets/img/redstone-logo-full.svg" alt="" loading="lazy"></figure>
+<h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a>原创 （<a href="https://twitter.com/Chainguys">@Chainguys</a> Original)</h1>
+<h2 id="信息图视频gif视频infographicivideogif-video">信息图/视频/gif视频(infographic/ivideo/gif video)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RedStone Videos</td>
+<td>original-ytvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1689473828164861952">RedStone - A Revolutionary New Architecture to Power the Oracle Needs of Web3</a></td>
+</tr>
+<tr>
+<td>RedStone Step by Step</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1688084841818931200">1.What's RedStone?</a></td>
+</tr>
+<tr>
+<td>RedStone Step by Step</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1688339671737085952">1.RedStone是什么？</a></td>
+</tr>
+<tr>
+<td>RedStone Step by Step</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1688726550596796416">2.What's the Problem?</a></td>
+</tr>
+<tr>
+<td>RedStone Step by Step</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1689064195869089792">2.问题是什么？</a></td>
+</tr>
+<tr>
+<td>RedStone Step by Step</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1689425775173185536">3.RedStone Solutions(1)</a></td>
+</tr>
+<tr>
+<td>RedStone Step by Step</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1689792746234507264">3.RedStone解决方案(1)</a></td>
+</tr>
+<tr>
+<td>RedStone Step by Step</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1690903817431506944">3.RedStone Solutions(2)</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="长推文章博客twitter-threadarticles博客">长推/文章/博客(twitter thread/articles/博客)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RedStone Threads</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1675351343848980480">Introducing RedStone</a></td>
+</tr>
+<tr>
+<td>RedStone Threads</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1689211601910452224">Ways for RedStone Integration </a></td>
+</tr>
+<tr>
+<td>RedStone Threads</td>
+<td>original-thread</td>
+<td><a href="https://twitter.com/Chainguys/status/1691270156536762368"> Modular Design Matters in DeFi! </a></td>
+</tr>
+<tr>
+<td>RedStone Articles</td>
+<td>original-article/blog</td>
+<td><a href="https://zenofchain.gitbook.io/redstone-quick-guide/">RedStone Guide &amp; Articles</a></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RedStone - A Short intro to the New Era of Oracles for Modern DeFi]]></title>
         <id>https://chainguys.github.io/post/redstone-a-short-intro-to-the-new-era-of-oracles-for-modern-defi/</id>
@@ -53,21 +509,193 @@ Based on smart contract needs, RedStone offers:</p>
         <updated>2023-06-18T03:01:53.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://celestia.org/static/celestia-logo-29451ae35d3bb72cc4b0f17712d44c3a.svg" alt="" loading="lazy"></figure>
 <h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a>原创 （<a href="https://twitter.com/Chainguys">@Chainguys</a> Original)</h1>
-<h2 id="视频gif视频videogif-video">视频/gif视频(video/gif video)</h2>
-<p><a href="https://twitter.com/Chainguys/status/1658824611662798848">P1:What's Modular?</a><br>
-<a href="https://twitter.com/Chainguys/status/1659493061418704897">P1:模块化(Modular)是什么?</a><br>
-<a href="https://twitter.com/Chainguys/status/1660494136821121025">P2: How is Celestia different?</a><br>
-<a href="https://twitter.com/Chainguys/status/1661197121876533253">P2:Celestia有什么不一样？</a><br>
-<a href="https://twitter.com/Chainguys/status/1661941850108751872">P3: A good analogy of Celestia?</a><br>
-<a href="https://twitter.com/Chainguys/status/1663035473248280577">P3: Celestia像什么?</a><br>
-<a href="https://twitter.com/Chainguys/status/1663732663478521862">P4: Why use Celestia?</a><br>
-<a href="https://twitter.com/Chainguys/status/1664473120931995648">P4: 为什么用Celestia?</a><br>
-<a href="https://twitter.com/Chainguys/status/1665537479796228097">P5: Data Availability Matters!</a><br>
-<a href="https://twitter.com/Chainguys/status/1666331576047751168">P5: 数据可用性至关重要!</a><br>
-<a href="https://twitter.com/Chainguys/status/1667073432201117696">P6: Rollups Explained</a><br>
-<a href="https://twitter.com/Chainguys/status/1668238794577911808">P6: 什么是汇总</a><br>
-<a href="https://twitter.com/Chainguys/status/1668968143996297218">P7: Work with Celestia</a><br>
-<a href="https://twitter.com/Chainguys/status/1669520787122814980">P7: 如何与Celestia配合</a></p>
+<h2 id="信息图视频gif视频infographicvideogif-video">信息图/视频/gif视频(infographic/video/gif video)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Celestia FAQs</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1674609701395353600">What is Celestia?</a></td>
+</tr>
+<tr>
+<td>Celestia FAQs</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1675677990490091536">Celestia是什么？</a></td>
+</tr>
+<tr>
+<td>Celestia FAQs</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1676380372349878272">What is a modular blockchain?</a></td>
+</tr>
+<tr>
+<td>Celestia FAQs</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1677116469145116673">什么是模块化区块链？</a></td>
+</tr>
+<tr>
+<td>Celestia FAQs</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1678192308553125888">How does Celestia scale?</a></td>
+</tr>
+<tr>
+<td>Celestia FAQs</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1678932686860156928">Celestia如何扩展?</a></td>
+</tr>
+<tr>
+<td>Celestia FAQs</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1679642111485038593">What programming languages &amp; VMs are supported by Celestia?</a></td>
+</tr>
+<tr>
+<td>Celestia FAQs</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1680754188827992064">Celestia 支持哪些编程语言和虚拟机？</a></td>
+</tr>
+<tr>
+<td>Celestia FAQs</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1681454050896936970">Will Celestia have a token and if so, what will it be used for?</a></td>
+</tr>
+<tr>
+<td>Celestia FAQs</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1682193925891821569">Celestia会发币吗?币有什么用例呢？</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1658824611662798848">P1:What's Modular?</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1659493061418704897">P1:模块化(Modular)是什么?</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1660494136821121025">P2: How is Celestia different?</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1661197121876533253">P2:Celestia有什么不一样？</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1661941850108751872">P3: A good analogy of Celestia?</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1663035473248280577">P3: Celestia像什么?</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1663732663478521862">P4: Why use Celestia?</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1664473120931995648">P4: 为什么用Celestia?</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1665537479796228097">P5: Data Availability Matters!</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1666331576047751168">P5: 数据可用性至关重要!</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1667073432201117696">P6: Rollups Explained</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1668238794577911808">P6: 什么是汇总</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1668968143996297218">P7: Work with Celestia</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1669520787122814980">P7: 如何与Celestia配合</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1670624802200059904">P8: Modularism, not maximalism</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1671343672984580096">P8: 模块化主义而非最大主义</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1673173690081759232">P9: Social Consensus is the real Layer 0</a></td>
+</tr>
+<tr>
+<td>Celestia101</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1673920523066298368">P9: 社会共识是区块链真正的 &quot;第0层&quot;</a></td>
+</tr>
+<tr>
+<td>Celestia new to pro</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1683281341264334848">1.Limits of Being Monolithic</a></td>
+</tr>
+<tr>
+<td>Celestia new to pro</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1684023984504057856">1.单片链的局限</a></td>
+</tr>
+<tr>
+<td>Celestia new to pro</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1684730640946642944">2.Modular Explained(1)</a></td>
+</tr>
+<tr>
+<td>Celestia new to pro</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1689090619673640961">2.模块化(1)</a></td>
+</tr>
+<tr>
+<td>Celestia new to pro</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1689796772971859969">2.Modular Explained(2)</a></td>
+</tr>
+<tr>
+<td>Celestia new to pro</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1690889976156987393">2.模块化(2)</a></td>
+</tr>
+<tr>
+<td>Celestia new to pro</td>
+<td>original-gifvideo</td>
+<td><a href="https://twitter.com/Chainguys/status/1688345459688132608">3.Benefits from modular?(1) </a></td>
+</tr>
+</tbody>
+</table>
 ]]></content>
     </entry>
     <entry>
@@ -202,632 +830,6 @@ Based on smart contract needs, RedStone offers:</p>
 <p>在AltLayer中，去中心化序列被植入RaaS设计中，因此该服务完全消除了中心化序列器在汇总中普遍存在的问题。</p>
 <p><em>Watch out for an upcoming post, which details how our multi-sequencers are designed, and how they create a more decentralized infrastructure for rollups!</em> <strong><em>Coming soon!</em></strong></p>
 <p>请注意即将发布的一篇文章，其中详细介绍了我们的多序列器是如何设计的，以及它们如何为汇总创造一个更加去中心化基础设施！<strong>即将发布!</strong></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Linera材料汇总-更新中(Linera materials-Updating)]]></title>
-        <id>https://chainguys.github.io/post/linera-zhong-wen-cai-liao-hui-zong-geng-xin-zhong-linera-chn-materials-updating/</id>
-        <link href="https://chainguys.github.io/post/linera-zhong-wen-cai-liao-hui-zong-geng-xin-zhong-linera-chn-materials-updating/">
-        </link>
-        <updated>2023-04-27T03:15:17.000Z</updated>
-        <content type="html"><![CDATA[<h2 id=""><img src="https://chainguys.github.io/post-images/1682566080378.png" alt="" loading="lazy"></h2>
-<h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a>原创 （<a href="https://twitter.com/Chainguys">@Chainguys</a> Original)</h1>
-<h2 id="视频gif视频videogif-video">视频/gif视频(video/gif video)</h2>
-<p>&quot;<a href="https://twitter.com/Chainguys/status/1656916298159325185">First Chinese Video on #Linera ever! #Linera 有史以来第一个中文介绍视频！</a>&quot;<br>
-<a href="https://twitter.com/Chainguys/status/1658371917538050050">01: overview</a><br>
-<a href="https://twitter.com/Chainguys/status/1659495929819414528">01: 综述</a><br>
-<a href="https://twitter.com/Chainguys/status/1660473734380044288">02: Why predictable performance and responsiveness matter?</a><br>
-<a href="https://twitter.com/Chainguys/status/1661192254646542337">02: 为什么可预期的性能和响应性很重要?</a><br>
-<a href="https://twitter.com/Chainguys/status/1661938471278092291">03: Blockspace Scarcity Explained</a><br>
-<a href="https://twitter.com/Chainguys/status/1663017082722697218">03: 区块空间稀缺性</a><br>
-<a href="https://twitter.com/Chainguys/status/1666350731052433408">04: Shortcomings of a faster single chain</a><br>
-<a href="https://twitter.com/Chainguys/status/1664437181279084545">04: 更快的单链依然有局限</a><br>
-<a href="https://twitter.com/Chainguys/status/1665541492520148994">05: Shortcomings of Sharding</a><br>
-<a href="https://twitter.com/Chainguys/status/1666324466857660417">05: 分片也有短板</a><br>
-<a href="https://twitter.com/Chainguys/status/1667064899095130112">06: Shortcomings of Rollup</a><br>
-<a href="https://twitter.com/Chainguys/status/1668236991576637443">06: Rollups(汇总)依然有短处</a><br>
-<a href="https://twitter.com/Chainguys/status/1668969114310770688">07: Linera's Mission</a><br>
-<a href="https://twitter.com/Chainguys/status/1669517416965996544">07: Linera的使命</a></p>
-<h2 id="长推twitter-thread">长推(twitter thread)</h2>
-<p><a href="https://twitter.com/Chainguys/status/1651497911358726146">intro to linera</a><br>
-<a href="https://twitter.com/Chainguys/status/1651449845914251265">linera简介</a></p>
-<h1 id="翻译的文档translated-files">翻译的文档(Translated Files)</h1>
-<h2 id="白皮书whitepaper">白皮书(Whitepaper)</h2>
-<p><a href="https://chainguys.github.io/post/linerawei-web3-ying-yong-er-sheng-de-gao-ke-kuo-zhan-qu-kuai-lian-ji-chu-she-shi-di-1-ban-2022-nian-12-yue-19-ri">Linera：为Web3应用而生的高可扩展区块链基础设施(第1版，2022年12月19日)-Linera：a Blockchain Infrastructure for Highly Scalable Web3 Applications(Version 1 – December 19, 2022)</a></p>
-<h2 id="blogs博客">Blogs(博客)</h2>
-<p><a href="https://chainguys.github.io/post/linera-jian-jie-introducing-linera/">Linera简介 (Introducing Linera)</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Linera：为Web3应用而生的高可扩展区块链基础设施(第1版-2022年12月19日)]]></title>
-        <id>https://chainguys.github.io/post/linerawei-web3-ying-yong-er-sheng-de-gao-ke-kuo-zhan-qu-kuai-lian-ji-chu-she-shi-di-1-ban-2022-nian-12-yue-19-ri/</id>
-        <link href="https://chainguys.github.io/post/linerawei-web3-ying-yong-er-sheng-de-gao-ke-kuo-zhan-qu-kuai-lian-ji-chu-she-shi-di-1-ban-2022-nian-12-yue-19-ri/">
-        </link>
-        <updated>2023-04-27T02:52:15.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://chainguys.github.io/post-images/1682564027152.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564046350.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564049541.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564064673.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564070774.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564077408.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564084726.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564090077.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564094410.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564100328.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564199576.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564207495.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564214229.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564219710.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564225477.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564231082.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564236082.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564241199.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564246398.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564251649.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564805897.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564811635.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564817435.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564823087.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564828487.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564833637.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564838889.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564845088.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564851073.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564866425.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564911032.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564917332.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564943483.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564949284.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564955137.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564960554.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564968288.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564973689.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564979456.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564985107.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564990990.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682564997374.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682565023161.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682565028280.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682565033412.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682565038347.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682565043582.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682565048615.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682565053581.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682565058233.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682565062816.png" alt="" loading="lazy"><br>
-<img src="https://chainguys.github.io/post-images/1682565067264.png" alt="" loading="lazy"></p>
-<h1 id="pdf版本请自取httpsdrivegooglecomfiled1wa92nlj_njsszomzbzcaqaepq2nyp-ikviewuspsharing">PDF版本请自取：<a href="https://drive.google.com/file/d/1wa92nlJ_NJssZoMZbZcaqAEPQ2nYp-Ik/view?usp=sharing">https://drive.google.com/file/d/1wa92nlJ_NJssZoMZbZcaqAEPQ2nYp-Ik/view?usp=sharing</a></h1>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fuel内幕-2023年第一季 (Inside Fuel：Q1 2023)]]></title>
-        <id>https://chainguys.github.io/post/fuel-nei-mu-2023-nian-di-yi-ji-inside-fuelq1-2023/</id>
-        <link href="https://chainguys.github.io/post/fuel-nei-mu-2023-nian-di-yi-ji-inside-fuelq1-2023/">
-        </link>
-        <updated>2023-04-17T03:23:00.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://fuel-labs.ghost.io/content/images/size/w2000/2023/04/Q123.png" alt="Inside Fuel: Q1 2023" loading="lazy"></figure>
-<p>Welcome to <em>Inside Fuel</em> our quarterly review of technical developments and everything happening on the Fuel Network. Take a moment to catch up on all the latest news.</p>
-<p>欢迎来到Fuel内幕，这是我们对技术发展和Fuel网络上发生的一切的季度回顾。请拨冗了解一下所有的最新消息。</p>
-<hr>
-<figure data-type="image" tabindex="2"><img src="https://fuel-labs.ghost.io/content/images/2023/04/NewestAdditionsToFuel.png" alt="" loading="lazy"></figure>
-<p>Building the fastest modular execution layer would not be possible without an incredible contributor team. Here are the newest additions to the team this quarter:</p>
-<p>如果没有一个令人难以置信的贡献者团队，建立最快的模块化执行层是不可能的。以下是本季度团队的最新成员：</p>
-<figure data-type="image" tabindex="3"><img src="https://fuel-labs.ghost.io/content/images/2023/04/NewContributors.png" alt="" loading="lazy"></figure>
-<hr>
-<figure data-type="image" tabindex="4"><img src="https://fuel-labs.ghost.io/content/images/2023/03/InTheNews-2.png" alt="" loading="lazy"></figure>
-<h2 id="rust-in-区块链-rust-in-blockchain"><strong>🦀 Rust in 区块链 Rust in Blockchain</strong></h2>
-<p>According to the <em>Rust In Blockchain</em> <a href="https://rustinblockchain.org/newsletters/rib-newsletter-45/?ref=fuel-labs.ghost.io">monthly review</a>, Fuel is one of the most active Rust-based projects this quarter, ranking us once again in the Top 5 of the most active Rust-based blockchains.</p>
-<p>根据Rust In Blockchain的<a href="https://rustinblockchain.org/newsletters/rib-newsletter-45/?ref=fuel-labs.ghost.io">月度回顾</a>，Fuel是本季度最活跃的，基于Rust的项目之一，我们再次排在最活跃的基于Rust的区块链的前五名中。</p>
-<h2 id="揭开新的fuel品牌面纱-unveiling-the-new-fuel-branding">✨ 揭开新的Fuel品牌面纱 (Unveiling the new Fuel Branding)</h2>
-<p>We officially unveiled the new visual identity of Fuel, the fastest modular execution layer.</p>
-<p>我们正式公布了最快模块化执行层Fuel的新视觉标识。</p>
-<iframe src="https://fuel-labs.ghost.io/content/media/2023/04/NewFuel.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-<hr>
-<figure data-type="image" tabindex="5"><img src="https://fuel-labs.ghost.io/content/images/2023/04/Events.png" alt="" loading="lazy"></figure>
-<h3 id="️-第2层之日-layer-2-day">🎙️ 第2层之日 (Layer 2 Day)</h3>
-<p>Right before ETH Denver, we hosted Layer 2 Day, a one-day-long event gathering all the major Ethereum Scalability maximalists from all over the world to talk about the future of blockchain, language design, account abstraction, and more!</p>
-<p>就在ETH Denver之前，我们举办了第2层之日(Layer 2 Day)，这是一个为期一天的活动，聚集了来自世界各地的所有主要以太坊扩容热心人士，讨论区块链的未来、语言设计、账户抽象等问题!<br>
-<img src="https://fuel-labs.ghost.io/content/images/2023/04/Layer2-Day.png" alt="" loading="lazy"></p>
-<p>Watch the replay of all the talks and panels:<br>
-观看所有会谈和小组讨论的回放：</p>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=cH4BNwwZLv0&amp;ref=fuel-labs.ghost.io">Blockchain Language Design</a><br>
-区块链语言设计</li>
-<li><a href="https://www.youtube.com/watch?v=tOsSuBdXlxs&amp;ref=fuel-labs.ghost.io">L2 Bridging</a><br>
-L2跨链</li>
-<li><a href="https://www.youtube.com/watch?v=tN4_oRdxaXY&amp;ref=fuel-labs.ghost.io">Defining Rollup finality</a><br>
-定义汇总的终态</li>
-<li><a href="https://www.youtube.com/watch?v=vLhnNVdRGfE&amp;t=1801s&amp;ref=fuel-labs.ghost.io">Account Abstraction</a><br>
-帐户抽象</li>
-<li><a href="https://www.youtube.com/watch?v=fpG5y1VB0oE&amp;ref=fuel-labs.ghost.io">Alternate VMs vs. EVM</a><br>
-其他虚拟机与EVM</li>
-<li><a href="https://www.youtube.com/watch?v=tN4_oRdxaXY&amp;ref=fuel-labs.ghost.io">Introducing Base</a><br>
-Base简介</li>
-<li><a href="https://www.youtube.com/watch?v=tN4_oRdxaXY&amp;ref=fuel-labs.ghost.io">Fuelmint: Celestia, Fuel, and Rollkit</a><br>
-Fuelmint： Celestia, Fuel, 和 Rollkit</li>
-</ul>
-<h3 id="️-eth丹佛-eth-denver">🏔️ ETH丹佛 (ETH Denver)</h3>
-<p>ETH Denver was an incredible opportunity for us to meet, grow and share insights to the Fuel community. If you were there, you maybe also got the chance to drink Moscow Fuel cocktails and receive exclusive Fuel swag!</p>
-<p>ETH丹佛是一个令人难以置信的机会，让我们认识、成长并与燃料社区分享见解。如果你在那里，你可能也有机会喝到莫斯科Fuel鸡尾酒，并收到Fuel的独家礼品!<br>
-<img src="https://fuel-labs.ghost.io/content/images/2023/04/ETH-Denver.png" alt="" loading="lazy"></p>
-<p>ETH Denver was also the chance for developers to experience building on Fuel using Sway. Here is a recap of the winning projects:<br>
-ETH丹佛也是一个让开发者体验使用Sway，并在Fuel上构建的机会。以下是获奖项目的回顾：</p>
-<blockquote>
-<p>We're excited to announce the winners of the Fuel bounty prize at <a href="https://twitter.com/EthereumDenver?ref_src=twsrc%5Etfw&amp;ref=fuel-labs.ghost.io">@EthereumDenver</a>!<br>
-我们很高兴地宣布@EthereumDenver的Fuel赏金奖的获奖者!</p>
-<p>🏆 Congratulations to 1st place winner Sway Network (by @swaygangsters), a decentralized, transparent and secure order book built with <a href="https://twitter.com/SwayLang?ref_src=twsrc%5Etfw&amp;ref=fuel-labs.ghost.io">@SwayLang</a> <a href="https://t.co/Imw7qsEV9k?ref=fuel-labs.ghost.io">pic.twitter.com/Imw7qsEV9k</a><br>
-🏆 祝贺第一名得主Sway Network（<a href="https://twitter.com/SwayLang?ref_src=twsrc%5Etfw&amp;ref=fuel-labs.ghost.io">@SwayLang</a>），这是一个用@SwayLang构建的去中心化、透明和安全的订单簿 pic.twitter.com/Imw7qsEV9k<br>
-— Fuel (@fuel_network) <a href="https://twitter.com/fuel_network/status/1633863056496132101?ref_src=twsrc%5Etfw&amp;ref=fuel-labs.ghost.io">March 9, 2023</a></p>
-</blockquote>
-<hr>
-<figure data-type="image" tabindex="6"><img src="https://fuel-labs.ghost.io/content/images/2023/04/Awesome-Fuel-1.png" alt="" loading="lazy"></figure>
-<p>A sample of some of the best content shared on social media by some internal and external Fuel contributors:</p>
-<p>由一些内部和外部的Fuel贡献者在社交媒体上分享的一些最佳内容的样本：</p>
-<ul>
-<li>
-<p><strong><a href="https://github.com/edakturk14/fuel-dapp-template?ref=fuel-labs.ghost.io">The Fuel dApp Template</a></strong>  by <a href="https://twitter.com/edatweets_?ref=fuel-labs.ghost.io">Eda</a> and <a href="https://twitter.com/_carletex_?ref=fuel-labs.ghost.io">Carlos</a>: A developer-friendly starter kit for quickly building decentralized applications on Fuel! This template is built using NextJS, TypeScript, Tailwind CSS, Forc, and Sway.<br>
-<strong><a href="https://github.com/edakturk14/fuel-dapp-template?ref=fuel-labs.ghost.io">The Fuel dApp 模板</a></strong> 由<a href="https://twitter.com/edatweets_?ref=fuel-labs.ghost.io">Eda</a>和<a href="https://twitter.com/_carletex_?ref=fuel-labs.ghost.io">Carlos</a>编写： 一个方便开发者的入门套件，用于在Fuel上快速建立去中心化应用！这个模板使用NextJS、TypeScript、Tailwind CSS、Forward等技术构建。</p>
-</li>
-<li>
-<p><a href="https://www.youtube.com/watch?v=yEFV4afZvnI&amp;ref=fuel-labs.ghost.io"><strong>Build a DApp on Fuel</strong></a> by <a href="https://twitter.com/schwartzswartz?ref=fuel-labs.ghost.io">Sarah Schwartz</a>: The essentials of what you need to know to get started building a dapp on Fuel.<br>
-<a href="https://www.youtube.com/watch?v=yEFV4afZvnI&amp;ref=fuel-labs.ghost.io"><strong>在Fuel上建立一个DApp</strong></a>由<a href="https://twitter.com/schwartzswartz?ref=fuel-labs.ghost.io">Sarah Schwartz</a>提供： 你需要知道的在Fuel上开始构建DApp的基本内容。</p>
-</li>
-<li>
-<p><strong><a href="https://eda.hashnode.dev/building-decentralized-applications-on-fuel?ref=fuel-labs.ghost.io">Building Decentralized Applications on Fuel</a></strong> by <a href="https://twitter.com/edatweets_?ref=fuel-labs.ghost.io">Eda</a> and <a href="https://twitter.com/_carletex_?ref=fuel-labs.ghost.io">Carlos</a>: A Dive into the Fuel dApp Template: Built using NextJS, TypeScript, Tailwind CSS, Forc, and Sway.<br>
-<strong><a href="https://eda.hashnode.dev/building-decentralized-applications-on-fuel?ref=fuel-labs.ghost.io">在Fuel上构建去中心化应用</a></strong> 作者：<a href="https://twitter.com/edatweets_?ref=fuel-labs.ghost.io">Eda</a>和<a href="https://twitter.com/_carletex_?ref=fuel-labs.ghost.io">Carlos</a>： 深入了解Fuel的dApp模板： 使用NextJS、TypeScript、Tailwind CSS、Forc和Sway构建。</p>
-</li>
-<li>
-<p><strong><a href="https://jtriley.substack.com/p/fuel-vm-binary-analysis?sd=pf&amp;ref=fuel-labs.ghost.io">FuelVM binary analysis</a></strong> by <a href="https://twitter.com/jtriley_eth?ref=fuel-labs.ghost.io">Jtriley</a>: An article on the binary analysis of Fuel smart contracts. It goes through Sway compilation steps and picks apart the final executable.<br>
-<strong><a href="https://jtriley.substack.com/p/fuel-vm-binary-analysis?sd=pf&amp;ref=fuel-labs.ghost.io">FuelVM二进制分析</a></strong> 作者 <a href="https://twitter.com/jtriley_eth?ref=fuel-labs.ghost.io">Jtriley</a>： 一篇关于Fuel智能合约的二进制分析的文章。它通过Sway的编译步骤，挑出了最终的可执行文件。</p>
-</li>
-<li>
-<p><strong>Bridging on Fuel</strong> by <a href="https://twitter.com/Rubenevolent?ref=fuel-labs.ghost.io">Rubyto</a>: A 4 parts handful guide on how bridging on Fuel works behind the scenes: <a href="https://bit.ly/brdge-1?ref=fuel-labs.ghost.io">Part 1</a>, <a href="https://bit.ly/brdge-2?ref=fuel-labs.ghost.io">Part 2</a>, <a href="https://bit.ly/brdge-3?ref=fuel-labs.ghost.io">Part 3</a>, <a href="https://bit.ly/brdge-4?ref=fuel-labs.ghost.io">Part 4</a>.<br>
-<strong>Bridging on Fuel</strong> 作者：<a href="https://twitter.com/Rubenevolent?ref=fuel-labs.ghost.io">Rubyto</a>： 一个由四部分组成的关于燃料桥接如何在幕后运作的指南：<a href="https://bit.ly/brdge-1?ref=fuel-labs.ghost.io">第一部分</a>, <a href="https://bit.ly/brdge-2?ref=fuel-labs.ghost.io">第二部分</a>, <a href="https://bit.ly/brdge-3?ref=fuel-labs.ghost.io">第三部分</a>, <a href="https://bit.ly/brdge-4?ref=fuel-labs.ghost.io">第四部分</a>.</p>
-</li>
-<li>
-<p><strong><a href="https://fuel.build/?ref=fuel-labs.ghost.io">Fuel Build</a></strong> by <a href="https://twitter.com/0xYami9?ref=fuel-labs.ghost.io">@0xYami9</a> and <a href="https://twitter.com/0xYuminomizu?ref=fuel-labs.ghost.io">@0xYuminomizu</a>: A community-led ecosystem directory.<br>
-<strong><a href="https://fuel.build/?ref=fuel-labs.ghost.io">Fuel Build</a></strong> 作者 <a href="https://twitter.com/0xYami9?ref=fuel-labs.ghost.io">@0xYami9</a>和<a href="https://twitter.com/0xYuminomizu?ref=fuel-labs.ghost.io">@0xYuminomizu</a>： 一个社区主导的生态系统目录。</p>
-</li>
-<li>
-<p><strong><a href="https://messari.io/report/fuel-supercharging-modular-execution?utm_source=twitter_messaricrypto">Supercharging Modular Execution</a></strong> by <a href="https://twitter.com/eshita?ref=fuel-labs.ghost.io">Eshita</a> from <a href="https://twitter.com/MessariCrypto?ref=fuel-labs.ghost.io">Messari</a>: A in-depth look at the Fuel Network, including a deep dive into its architecture and design choices, and potential risks and concerns.<br>
-<strong><a href="https://messari.io/report/fuel-supercharging-modular-execution?utm_source=twitter_messaricrypto">Supercharging Modular Execution</a></strong> 作者<a href="https://twitter.com/eshita?ref=fuel-labs.ghost.io">Eshita</a>，来自<a href="https://twitter.com/MessariCrypto?ref=fuel-labs.ghost.io">Messari</a>： 对Fuel网络的深入研究，包括对其架构和设计选择的深入研究，以及潜在的风险和担忧。</p>
-</li>
-</ul>
-<p>Much more awesome Fuel content can be found <strong><a href="https://fuellabs.notion.site/Awesome-Fuel-7b4ca6b262d3414a9968f275cba43fc9?ref=fuel-labs.ghost.io">here</a></strong>.<br>
-更多精彩的Fuel内容可以在 <a href="https://fuellabs.notion.site/Awesome-Fuel-7b4ca6b262d3414a9968f275cba43fc9?ref=fuel-labs.ghost.io">这里</a>找到。</p>
-<hr>
-<figure data-type="image" tabindex="7"><img src="https://fuel-labs.ghost.io/content/images/2023/03/TechnicalUpdates.png" alt="" loading="lazy"></figure>
-<h2 id="fuelup"><strong>Fuelup</strong></h2>
-<h3 id="fuelup是什么-what-is-fuelup">Fuelup是什么 (What is Fuelup?)</h3>
-<blockquote>
-<p><a href="https://github.com/FuelLabs/fuelup#installation">Fuelup</a> is the official package manager and multiplexer for <a href="https://fuel.network/">Fuel</a> that installs <strong>The Fuel Toolchain</strong> from the official release channels. It enables you to easily install pre-packaged toolchains, keep them up to date or even create custom toolchains and switch between them.</p>
-<p><a href="https://github.com/FuelLabs/fuelup#installation">Fuelup</a> 是 <a href="https://fuel.network/">Fuel</a> 的官方包管理器和复用器，它从官方发布渠道安装<strong>Fuel工具链 (The Fuel Toolchain)</strong>。它使您能够轻松安装预打包的工具链，使其保持最新状态，甚至创建自定义工具链并在它们之间切换。</p>
-<p>Binaries are executed through Fuelup as proxies which allow for flexibility in the execution of tools.</p>
-<p>二进制文件通过 Fuelup 作为代理执行，使得工具的执行变得灵活。</p>
-</blockquote>
-<p>It simplifies building and maintaining Sway applications with <a href="https://github.com/FuelLabs/sway/tree/master/forc">forc</a> and <a href="https://github.com/FuelLabs/fuel-core">fuel-core</a> for common platforms.</p>
-<blockquote>
-<p>它为一般平台使用 <a href="https://github.com/FuelLabs/sway/tree/master/forc">forc</a> 和 <a href="https://github.com/FuelLabs/fuel-core">fuel-core</a> 简化了 Sway 应用的构建和维护。</p>
-</blockquote>
-<ul>
-<li>
-<p>The fuelup installation script and docs are now all at <a href="https://install.fuel.network/latest/?ref=fuel-labs.ghost.io">https://install.fuel.network/latest</a><br>
-fuelup的安装脚本和文档都在<a href="https://install.fuel.network/latest/?ref=fuel-labs.ghost.io">https://install.fuel.network/latest</a>；</p>
-</li>
-<li>
-<p><code>fuelup show</code> shows the <code>fuels-rs</code> SDK version that the release version was tested against <a href="https://github.com/FuelLabs/fuelup/pull/410?ref=fuel-labs.ghost.io">Read more</a><br>
-<code>fuelup show</code>显示发布版本所测试的<code>fuels-rs</code> SDK版本<a href="https://github.com/FuelLabs/fuelup/pull/410?ref=fuel-labs.ghost.io">阅读更多</a>；</p>
-</li>
-<li>
-<p><code>fuelup show</code> now shows the <code>fuels-rs</code> version that was used in compatibility tests. This gives users an idea of what <code>fuels</code> version will certainly be compatible with the toolchain;<br>
-<code>fuelup show</code>现在显示兼容性测试中使用的<code>fuels-rs</code>版本。这让用户了解到什么版本的<code>fuels</code>肯定会与工具链兼容；</p>
-</li>
-</ul>
-<h2 id="sway">🌴 <strong>Sway</strong></h2>
-<h3 id="一般更新-general-updates">一般更新 (General Updates)</h3>
-<ul>
-<li>Added a new pass manager for the IR optimizer;<br>
-为IR优化器增加了一个新的通道管理器；</li>
-<li>Introduction of the <code>#[allow(dead_code)]</code> annotation;<br>
-引入了<code>#[allow(dead_code)]</code>注解；</li>
-<li>Added support for <code>Enum::&lt;T&gt;::Variant</code> syntax;<br>
-增加了对<code>Enum::&lt;T&gt;::Variant</code>语法的支持；</li>
-<li>Improvement of the performance of the register allocator;<br>
-改善了寄存分配器的性能；</li>
-<li>Disabled usage of parenthesis in unit enum variants;<br>
-禁用了单元枚举变体中小括号的使用；</li>
-<li>Added support for supertraits for ABIs;<br>
-增加了对ABI的超级特征的支持；</li>
-</ul>
-<h3 id="错误修复-bug-fixes">错误修复 (Bug Fixes)</h3>
-<ul>
-<li>Various fixes and improvements to dead code analysis;<br>
-对死代码分析进行了各种修正和改进；</li>
-<li>Fixed multiple bugs in the type system;<br>
-修正了类型系统中的多个错误；</li>
-<li>Fixed some issues related to name shadowing rules in Sway;<br>
-修正了一些与Sway中名称阴影规则有关的问题；</li>
-</ul>
-<h3 id="标准库-standard-library">标准库 (Standard Library)</h3>
-<ul>
-<li>
-<p>Extended support for <code>Input::Message</code> type fields in <code>std::inputs</code>;<br>
-在<code>std::input</code>中扩展了对<code>Input::Message</code>类型字段的支持；</p>
-</li>
-<li>
-<p>Updated <code>std::storage::get</code> and <code>std::storage::StorageMap::get</code> to return an <code>Option</code>;<br>
-更新了<code>std::storage::get</code>和<code>std::storageMap::get</code>以返回一个<code>Option</code>；</p>
-</li>
-<li>
-<p>Introduced <code>__state_clear</code>, <code>std::storage::clear</code>, and <code>std::storage::StorageMap::remove</code>;<br>
-引入了<code>__state_clear</code>, <code>std::storage::clear</code>, 和 <code>std::storageMap::remove</code>；</p>
-</li>
-<li>
-<p>Introduced <code>std::storage::StorageBytes</code>;<br>
-引入了<code>std::storage::StorageBytes</code>；</p>
-</li>
-<li>
-<p>Added <code>Not</code> trait implementations for <code>U128</code> and <code>U256</code>;<br>
-为 <code>U128</code>和 <code>U256</code>增加了 <code>Not</code>特性的实现；</p>
-</li>
-<li>
-<p>Added a <code>TryFrom</code> trait ;<br>
-增加了一个`TryFrom'特性；</p>
-</li>
-</ul>
-<h3 id="工具tooling">工具(Tooling)</h3>
-<ul>
-<li>Added Markdown formatting to item previews in <code>forc doc</code>;<br>
-为<code>forc doc</code>中的项目预览增加了Markdown格式；</li>
-<li>Added support for inner module doc attributes with <code>#!</code> and <code>//!</code> syntax;<br>
-增加了对带有<code>#!</code>和<code>//!</code>语法的内部模块文档属性的支持；</li>
-<li>Added syntax highlighting to code blocks in <code>forc doc</code>;<br>
-为<code>forc doc</code>中的代码块添加了语法高亮；</li>
-<li>Various enhancements to the LSP including collecting more tokens from the language;<br>
-对LSP的各种增强，包括从语言中收集更多的标记；</li>
-<li>Allow formatting a single file via <code>forc fmt --path</code>;<br>
-允许通过<code>forc fmt --path</code>对单个文件进行格式化；</li>
-</ul>
-<h3 id="forc">Forc</h3>
-<ul>
-<li>Added a <code>forc-submit</code> plugin command for submitting txs to a given node;<br>
-增加了一个<code>forc-submit</code>插件命令，用于向指定节点提交txs；</li>
-<li>Added <code>salt</code> flag to <code>forc deploy</code> and a <code>maturity</code> flag to <code>forc deploy</code> and <code>forc run</code>;<br>
-为<code>forc deploy</code>增加了<code>salt</code>标志，为<code>forc deploy</code>和<code>forc run</code>增加了<code>maturity</code>标志；</li>
-<li>Added a <code>forc build</code> flag to treat warnings as errors;<br>
-增加了一个<code>forc build</code>标志，将警告视为错误；</li>
-</ul>
-<h2 id="fuel核心-fuel-core"><strong>Fuel核心 Fuel Core</strong></h2>
-<p><strong>特点 Features:</strong></p>
-<ul>
-<li>Implementation of a Keygen CLI for configuring nodes;<br>
-实现了用于配置节点的Keygen CLI；</li>
-<li>Helm charts for multi-node deployments with sentries;<br>
-用于多节点部署的Helm图表与岗哨；</li>
-<li>Sticky sessions for routing API requests to sentries;<br>
-粘性会话用于将API请求路由到岗哨；</li>
-<li>Graceful shutdown for all fuel-core components;<br>
-所有Fuel核心组件的优雅关闭；</li>
-<li>Decoupled API logic from GraphQL resolvers to support alternative RPCs;<br>
-将API逻辑与GraphQL解析器解耦，以支持替代的RPC；</li>
-<li>Support for TxPointer on inputs;<br>
-支持输入的TxPointer；</li>
-<li>Retryable messages have been implemented;<br>
-已经实现了可重试的消息；</li>
-<li>Withdrawal proofs that support periodic commits to L1;<br>
-支持定期提交到L1的撤消证明；</li>
-<li>Full merklization of contract state, balances, and block headers;<br>
-合同状态、余额和块头的完全合并；</li>
-<li>Zero-length memory ranges can now pass the ownership check if the position is correct;<br>
-如果位置正确，零长度的内存范围现在可以通过所有权检查；</li>
-<li>New relative jump opcodes, new <code>CFE</code> instruction and an update to <code>LDC</code> to support position-independent code in the compiler;<br>
-新的相对跳转操作码，新的<code>CFE</code>指令和对<code>LDC</code>的更新，进而支持编译器中的独立位置的代码；</li>
-</ul>
-<p><strong>改进之处 Improvements:</strong></p>
-<ul>
-<li>Numerous significant database performance improvements;<br>
-许多重大的数据库性能改进；</li>
-<li>Improved bridging safety with a separate column for message spent status;<br>
-改进了跨链桥的安全性，为消息花费的状态设置了单独的列；</li>
-<li>Removal of most usages of <code>unsafe</code> with equally performing alternatives in the VM;<br>
-在虚拟机中取消了大部分 &quot;unsafe &quot;的使用，采用了性能相同的替代方法；</li>
-<li>Removal of recursive bottlenecks in the VM;<br>
-消除了虚拟机中的递归瓶颈；</li>
-<li><code>ChainID</code> is now utilized during transaction IDs and predicate owner hashing;<br>
-<code>ChainID</code>现在在交易ID和谓词所有者散列过程中被使用；</li>
-<li><code>$HP</code> now registers points to the first available byte on the heap;<br>
-<code>$HP</code>现在注册指向堆上的第一个可用字节；</li>
-<li>SMO has been updated to charge from an internal balance in an internal context;<br>
-SMO已被更新为在内部环境中从内部平衡中收费；</li>
-<li>Improved load-balancing, metrics, log formatting of very large fields, and UTXO pruning;<br>
-改进了负载平衡、度量、非常大的字段的日志格式和UTXO修剪；</li>
-</ul>
-<p><strong>重构 Refactoring:</strong></p>
-<ul>
-<li>Refactoring of the VM for better unit testability;<br>
-重构了虚拟机，以提高单元测试能力；</li>
-</ul>
-<h2 id="sdks-fuel-ts-fuel-rs"><strong>SDKs (Fuel-TS &amp; Fuel-RS)</strong></h2>
-<h3 id="rust-sdk"><strong>🦀 Rust SDK</strong></h3>
-<p><strong>特点 Features:</strong></p>
-<ul>
-<li>Support <code>raw_slice</code> returns from scripts and contracts;<br>
-支持来自脚本和合约的<code>raw_slice</code>返回；</li>
-<li>Support for custom assets forwarding in contract calls;<br>
-支持合约调用中的自定义资产转发；</li>
-<li>Support for Sway’s <code>#[payable]</code>;<br>
-支持Sway的<code>#[payable]</code>；</li>
-<li>Support for Sway’s configurable constants — use the SDK to update constants values with needing to recompile your Sway code;<br>
-支持Sway的可配置常量 - 使用SDK来更新常量值，而不需要重新编译你的Sway代码；</li>
-<li><code>derive</code>able <code>Parameterize</code> and <code>Tokenizable</code>;<br>
-<code>derive</code>able <code>Parameterize</code>和<code>Tokenizable</code>；</li>
-<li>New script APIs: <code>ScriptTransaction</code> and <code>CreateTransaction</code>;<br>
-新的脚本API： <code>ScriptTransaction</code>和<code>CreateTransaction</code>；</li>
-<li>Type path support and resolution of conflicting types;<br>
-类型路径支持和解决冲突的类型；</li>
-<li><code>Vec</code> as output types for contract methods;<br>
-<code>Vec</code>作为合同方法的输出类型；</li>
-<li>A new way to filter spendable resources;<br>
-一种过滤可花费资源的新方法；</li>
-<li>Enable payments with predicates;<br>
-启用带有谓词的支付；</li>
-<li>Support returning <code>Vec&lt;&gt;</code> types from contracts;<br>
-支持从合同中返回<code>Vec&lt;&gt;</code>类型；</li>
-<li>Return result from <code>try_from_type_application</code>;<br>
-从<code>try_from_type_application</code>返回结果；</li>
-<li>Added the latest block time and spendable resources with exclusion;<br>
-增加了最新的区块时间和排除可花费的资源；</li>
-</ul>
-<p><strong>改进 Improvements:</strong></p>
-<ul>
-<li>Better testability with the new support for <code>assert_eq</code> logs;<br>
-通过对<code>assert_eq</code>日志的新支持，提高了可测试性；</li>
-<li>Better contract deployment configuration;<br>
-更好的合同约部署配置；</li>
-<li>Friendlier way to retrieve the latest block time;<br>
-更加友好的方式来检索最新的区块时间；</li>
-</ul>
-<p><strong>错误修正 Bug Fixes:</strong></p>
-<ul>
-<li>Storage slots have to be sorted in a create tx;<br>
-存储槽必须在创建tx时进行排序；</li>
-<li>Make <code>load_contract</code> pub;<br>
-使<code>load_contract</code>公开；</li>
-<li>Coins query no longer returns spent coins;<br>
-金币查询不再返回已用的金币；</li>
-</ul>
-<p><strong>重构 Refactoring:</strong></p>
-<ul>
-<li><code>fuels</code> wasm-offending packages/reexports hidden behind <code>std</code> flag;<br>
-<code>fuels</code> 隐藏在<code>std</code> 标签之后的wasm-offending 包/再输出</li>
-<li>Improvement of log decoding and simplification of <code>ParamType</code>;<br>
-改进了日志解码，简化了<code>ParamType</code>；</li>
-<li>Contract deployment configuration;<br>
-合约部署配置；</li>
-<li>Removal of the <code>Byte</code> type from the SDK;<br>
-从SDK中删除了<code>Byte</code>类型；</li>
-<li>Removal of unused file <code>cargo</code>;<br>
-删除了未使用的文件<code>cargo</code>；</li>
-<li>Reorganization of harness tests;<br>
-重新组织了线束测试；</li>
-<li>Update of the PR template;<br>
-更新PR模板；</li>
-</ul>
-<p><strong>文档 Documentation:</strong></p>
-<ul>
-<li>Update docs about vectors;<br>
-更新关于向量的文档；</li>
-</ul>
-<h3 id="typescript-sdk">🧰 TypeScript SDK</h3>
-<p><strong>特点 Features:</strong></p>
-<ul>
-<li>Full support for predicates and script ABI in the new <code>typegen</code>;<br>
-在新的 <code>typegen</code>中完全支持谓词和脚本ABI；</li>
-<li><code>main</code> argument support for predicates and scripts;<br>
-对谓词和脚本的<code>main</code>参数支持；</li>
-<li>Add Predicate ABIs support to <code>Typegen</code>;<br>
-在 <code>Typegen</code>中添加谓词ABI支持；</li>
-<li>Add Script ABIs support to <code>Typegen</code>;<br>
-在<code>Typegen</code>中添加脚本ABI支持；</li>
-<li>Implementation of vector as output slice;<br>
-实现向量作为输出片断；</li>
-</ul>
-<p><strong>改进之处 Improvements:</strong></p>
-<ul>
-<li>
-<p>Predicates now work similarly to wallets — predicates are now usable to pay for fees and more;<br>
-谓词现在的工作方式类似于钱包—谓词现在可以用来支付费用和其他；</p>
-</li>
-<li>
-<p>Switched the documentation engine;<br>
-更换了文档引擎；</p>
-</li>
-<li>
-<p>Re-organization of constants throughout the repo;<br>
-重新组织了整个Repo中的常量；</p>
-</li>
-<li>
-<p>Standardization of package configurations;<br>
-包配置的标准化；</p>
-</li>
-</ul>
-<p><strong>漏洞修复 Bug Fixes:</strong></p>
-<ul>
-<li>Fixed <code>B512</code> ABI coder and Typegen to expect its correct Sway type;<br>
-修正了<code>B512</code>ABI编码器和Typegen，以期待其正确的Sway类型；</li>
-</ul>
-<hr>
-<h2 id="敬请关注-follow-us"><strong>敬请关注 (Follow Us)</strong></h2>
-<ul>
-<li><a href="https://twitter.com/fuellabs_"><strong>Twitter</strong></a></li>
-<li><a href="http://discord.com/invite/xfpK4Pe"><strong>Discord</strong></a></li>
-<li><a href="https://www.linkedin.com/company/fuel-labs/"><strong>LinkedIn</strong></a></li>
-<li><a href="https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ"><strong>YouTube</strong></a></li>
-</ul>
-<h2 id="关于我们-about-us"><strong>关于我们 (About Us)</strong></h2>
-<p><a href="https://www.fuel.network/">Fuel</a> is the <strong>fastest execution layer</strong> for the modular blockchain stack. Powerful and sleek, the technology enables parallel transaction execution, empowering developers with the <strong>highest flexible throughput</strong> and <strong>maximum security</strong> required to scale. Developers choose the <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> for its <strong>superior developer experience</strong> and the ability to go <strong>beyond the limitations of the EVM</strong>.</p>
-<p><a href="https://www.fuel.network/">Fuel</a> 是模块化区块链技术栈的<strong>最快执行层</strong>。该技术功能强大且时尚，支持并行交易执行，为开发人员提供了扩展所需的<strong>最高灵活吞吐量</strong>和<strong>最大安全性</strong>。开发人员选择 <a href="https://fuellabs.github.io/fuel-docs/master/vs-evm.html">FuelVM</a> 是因为它<strong>卓越的开发人员体验和运行能力</strong> ，突破了 EVM 的限制**。</p>
-<h2 id="成为贡献者-become-a-contributor"><strong>成为贡献者 (Become a Contributor)</strong></h2>
-<ul>
-<li>
-<p><a href="https://jobs.lever.co/fuellabs">Explore our current job openings</a><br>
-<a href="https://jobs.lever.co/fuellabs">探索我们目前的职位空缺</a></p>
-</li>
-<li>
-<p><a href="https://fuellabs.github.io/sway/v0.24.5/">Learn Sway</a><br>
-<a href="https://fuellabs.github.io/sway/v0.24.5/">学习Sway</a></p>
-</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[身份证明：它是什么以及为什么重要 (PROOF OF PERSONHOOD：What it is and why it’s needed)]]></title>
-        <id>https://chainguys.github.io/post/shen-fen-zheng-ming-ta-shi-shi-me-yi-ji-wei-shi-me-chong-yao-proof-of-personhoodwhat-it-is-and-why-its-needed/</id>
-        <link href="https://chainguys.github.io/post/shen-fen-zheng-ming-ta-shi-shi-me-yi-ji-wei-shi-me-chong-yao-proof-of-personhoodwhat-it-is-and-why-its-needed/">
-        </link>
-        <updated>2023-04-14T01:21:33.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://worldcoin-company-website.cdn.prismic.io/worldcoin-company-website/4190ff7b-b039-4b14-975d-628d85470985_proof-of-personhood-what-why-how-worldcoin-can-help-4.svg" alt="" loading="lazy"></figure>
-<hr>
-<ol>
-<li>
-<p>The rapid advancement of artificial intelligence has accelerated the need to differentiate between human- and AI-generated content online<br>
-人工智能的快速发展加速了区分人类和人工智能产生在线内容的需要。</p>
-</li>
-<li>
-<p>Proof of personhood addresses two of the key considerations presented by the Age of AI: (1) protecting against sybil attacks and (2) minimizing the spread of AI-generated misinformation<br>
-人格证明解决了人工智能时代的两个关键问题：(1)免受女巫攻击；(2)尽量减少人工智能产生错误信息的传播。</p>
-</li>
-<li>
-<p>World ID, an open and permissionless identity protocol, acts as a global digital passport and can be used anonymously to prove uniqueness and humanness as well as to selectively disclose credentials issued by other parties<br>
-世界身份证是一个开放和无许可的身份协议，作为全球数字护照，可以匿名使用，以证明其独特性和人格，并有选择地披露其他各方颁发的证书。</p>
-</li>
-<li>
-<p>Worldcoin has published in-depth resources to provide more details about <a href="https://worldcoin.org/blog/engineering/humanness-in-the-age-of-ai">proof of personhood</a> and <a href="https://worldcoin.org/blog/announcements/introducing-world-id-and-sdk">World ID</a><br>
-世界币已经发布了深度资源，以提供更多关于<a href="https://worldcoin.org/blog/engineering/humanness-in-the-age-of-ai">人格证明</a>和<a href="https://worldcoin.org/blog/announcements/introducing-world-id-and-sdk">世界身份证</a>的细节。</p>
-</li>
-</ol>
-<p>Artificial intelligence is rapidly advancing. As it does, the ability to differentiate between human- and AI-generated content online is going from a novel idea to a necessity.</p>
-<p>人工智能正在迅速发展。随着它的发展，区分人类和人工智能产生的在线内容的能力正在从一个新奇的想法变成一种必要。</p>
-<p>That’s where proof of personhood comes in.</p>
-<p>这就是人格证明的意义所在</p>
-<p>In a nutshell, proof of personhood (PoP) is a mechanism that establishes an individual’s humanness and uniqueness. It can be thought of as the first and most fundamental building block in establishing digital identity.</p>
-<p>简而言之，人格证明（PoP）是一种确定个人的人性和独特性的机制。它可以被认为是建立数字身份的第一个和最基本的基石。</p>
-<figure data-type="image" tabindex="2"><img src="https://worldcoin-company-website.cdn.prismic.io/worldcoin-company-website/0213bfa9-52ef-4735-bb3a-318195e79ec3_humanness-in-the-age-of-ai-32.svg" alt="" loading="lazy"></figure>
-<p>The Worldcoin project is initiating <a href="https://worldcoin.org/world-id">World ID</a>, an open and permissionless identity protocol that can be used anonymously to prove uniqueness and humanness as well as to selectively disclose credentials issued by other parties. More on that below, but first let’s look at the challenges that PoP addresses.</p>
-<p>世界币项目正在发起<a href="https://worldcoin.org/world-id">World ID</a>，这是一个开放的、无许可的身份协议，可以匿名使用，以证明独特性和人类性，以及选择性地披露其他方发出的证书。下面会有更多的内容，但首先让我们看看PoP所解决的挑战。</p>
-<h2 id="为什么需要人格证明why-is-proof-of-personhood-needed">为什么需要人格证明？(Why is proof of personhood needed?)</h2>
-<p>Advanced AI can be an empowering tool, but like all emerging technologies, it introduces new and complex considerations. Two of these are:</p>
-<p>先进的人工智能可以成为一种授权工具，但像所有新兴技术一样，它引入了新的和复杂的考虑。其中两点是：</p>
-<ol>
-<li>Limiting the number of accounts each individual can create to protect against online attacks from multiple pseudonymous identities generated by a single attacker (aka <a href="https://en.wikipedia.org/wiki/Sybil_attack#:~:text=A%20Sybil%20attack%20is%20a,gain%20a%20disproportionately%20large%20influence.">sybil attacks</a>)<br>
-限制每个人可以创建的账户数量，防止单个攻击者产生的多个假名身份的在线攻击（又称<a href="https://en.wikipedia.org/wiki/Sybil_attack#:~:text=A%20Sybil%20attack%20is%20a,gain%20a%20disproportionately%20large%20influence%E3%80%82">女巫攻击</a></li>
-<li>Preventing the dissemination of realistic looking/sounding AI-generated content intended to deceive or <a href="https://openai.com/research/forecasting-misuse">spread disinformation at scale</a><br>
-防止传播外观/声音逼真的人工智能生成的内容，造成欺骗或<a href="https://openai.com/research/forecasting-misuse">大规模传播虚假信息</a></li>
-</ol>
-<p>Proof of personhood addresses both of these. <br>
-人格证明解决了这两个问题。</p>
-<p>First, PoP provides natural rate limiting through account authentication. This essentially eliminates sybil attacks at any notable scale. Second, it allows for the filtration of content or accounts that have been either confirmed or not confirmed as human, helping address the viral spread of AI-generated disinformation.</p>
-<p>首先，PoP通过账户认证提供自然速率限制。这从根本上消除了任何明显规模的女巫攻击。其次，它允许过滤那些已被确认为或未被确认为人类的内容或账户，帮助解决人工智能产生的虚假信息病毒式传播的问题。</p>
-<p>PoP should not be seen as a panacea, but instead as a necessary first step in establishing a global network of genuine, unique human identities. If achieved on a large enough scale, the potential social benefits are considerable.</p>
-<p>PoP不应被视为万能药，而应被视为建立真正的、独特的人类身份全球网络的必要第一步。如果在足够大的范围内实现，潜在的社会效益十分可观。</p>
-<h2 id="世界币如何帮助建立人格证明how-can-worldcoin-help-establish-proof-of-personhood">世界币如何帮助建立人格证明？(How can Worldcoin help establish proof of personhood?)</h2>
-<p>Worldcoin recently introduced a privacy-first, decentralized and permissionless identity protocol, known as <a href="https://worldcoin.org/blog/announcements/introducing-world-id-and-sdk">World ID</a>, to help establish PoP on a global scale.</p>
-<p>世界币最近推出了一个隐私第一、去中心化和无许可的身份协议，被称为<a href="https://worldcoin.org/blog/announcements/introducing-world-id-and-sdk">World ID</a>，以帮助在全球范围内建立PoP。</p>
-<p>In order to build World ID, the teams developing the Worldcoin project first established a proof of personhood mechanism based on a custom biometric imaging device known as <a href="https://worldcoin.org/blog/engineering/opening-orb-look-inside-worldcoin-biometric-imaging-device">the Orb</a>. Once a person has verified their humanness at an Orb, they can receive a unique PoP credential on a compatible digital wallet. The first of these is the <a href="https://worldcoin.org/download-app">World App</a>, built by <a href="https://www.toolsforhumanity.com/">Tools for Humanity</a>, however more will become available as the protocol <a href="https://worldcoin.org/blog/worldcoin/primer-on-decentralization-at-worldcoin">continues to decentralize</a>.</p>
-<p>为了建立世界身份证，开发世界币项目的团队首先建立了一个基于定制的生物识别成像设备<a href="https://worldcoin.org/blog/engineering/opening-orb-look-inside-worldcoin-biometric-imaging-device">the Orb</a>的人格证明机制。一旦一个人在Orb上验证了他们的人格，他们就可以在一个兼容的数字钱包上获得一个独特的PoP凭证。其中第一个是<a href="https://worldcoin.org/download-app">世界应用</a>，由<a href="https://www.toolsforhumanity.com/">人类工具</a>建立，然而随着协议<a href="https://worldcoin.org/blog/worldcoin/primer-on-decentralization-at-worldcoin">继续去中心化</a>，更多的应用将变得可用。</p>
-<figure data-type="image" tabindex="3"><img src="https://worldcoin-company-website.cdn.prismic.io/worldcoin-company-website/7820773e-cd1f-423e-94a6-3ad3fa83540e_proof-of-personhood-what-why-how-worldcoin-can-help-5.svg" alt="" loading="lazy"></figure>
-<p>World ID can be thought of as a global digital passport or identity wallet that lives locally on its holder’s phone and can be used anonymously thanks to zero-knowledge proofs to prove that they are a real and unique person.</p>
-<p>世界身份证可以被认为是一个全球数字护照或身份钱包，它生活在持有人的手机上，由于零知识证明，可以匿名使用，以证明他们是一个真实和独特的人。</p>
-<p>As the World ID protocol is developed further by the community, it will support any verified credential (at launch, supported verifications include phone number verification for easy access to anyone with a smartphone and Orb iris biometric verification for extreme accuracy).</p>
-<p>随着世界身份证协议被社区进一步开发，它将支持任何经过验证的凭证（在推出时，支持的验证包括电话号码验证，以方便任何拥有智能手机的人使用，以及Orb虹膜生物识别验证，以获得极高的准确性）。</p>
-<h2 id="了解人格证明的其他资源-additional-resources-for-understanding-proof-of-personhood">了解人格证明的其他资源 (Additional resources for understanding proof of personhood)</h2>
-<p>The following blog posts provide more details on PoP, as well as the privacy, decentralization and hardware considerations surrounding it:</p>
-<p>以下博文提供了关于PoP的更多细节，以及围绕它的隐私、去中心化和硬件考虑：</p>
-<ol>
-<li><a href="https://worldcoin.org/blog/engineering/humanness-in-the-age-of-ai">Humanness in the Age of AI</a></li>
-<li><a href="https://worldcoin.org/blog/worldcoin/about-entropy-why-irises-beat-fingerprints-faces-proving-personhood">Why irises beat faces and fingerprints for proving personhood</a></li>
-<li><a href="https://worldcoin.org/blog/worldcoin/primer-on-decentralization-at-worldcoin">A primer on decentralization at Worldcoin</a></li>
-<li><a href="https://worldcoin.org/blog/developers/privacy-deep-dive">Privacy at Worldcoin: A Technical Deep Dive - Part I</a></li>
-<li><a href="https://worldcoin.org/blog/worldcoin/understanding-orb-why-worldcoin-uses-biometrics">Understanding the Orb and why Worldcoin uses biometrics</a></li>
-<li><a href="https://worldcoin.org/blog/engineering/opening-orb-look-inside-worldcoin-biometric-imaging-device">Opening the Orb: A look inside Worldcoin’s biometric imaging device</a></li>
-</ol>
-<p>You can also stay up to date on all of the latest Worldcoin announcements, events and information by signing up for the blog newsletter at the bottom of this page or following along on <a href="https://twitter.com/worldcoin">Twitter</a>, <a href="https://discord.gg/worldcoin">Discord</a> and <a href="https://t.me/worldcoin">Telegram</a>.</p>
-<p>您还可以通过注册本页底部的博客或在<a href="https://twitter.com/worldcoin">Twitter</a>、<a href="https://discord.gg/worldcoin">Discord</a>和<a href="https://t.me/worldcoin">Telegram</a>上关注所有最新的Worldcoin公告、活动和信息。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AltLayer开放免费试用无代码汇总启动板 (AltLayer opens up a free trial of its no-code rollup launchpad)]]></title>
-        <id>https://chainguys.github.io/post/altlayer-kai-fang-mian-fei-shi-yong-wu-dai-ma-hui-zong-qi-dong-ban-altlayer-opens-up-a-free-trial-of-its-no-code-rollup-launchpad/</id>
-        <link href="https://chainguys.github.io/post/altlayer-kai-fang-mian-fei-shi-yong-wu-dai-ma-hui-zong-qi-dong-ban-altlayer-opens-up-a-free-trial-of-its-no-code-rollup-launchpad/">
-        </link>
-        <updated>2023-04-12T04:35:33.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://raas-freetrial.altlayer.io/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcd830f8c-5735-49ef-84d0-370d68bc4462%2FUntitled.png?id=9c84f8b3-d01f-4c05-8ea5-7956d317f932&amp;table=block&amp;spaceId=e3667f93-2fbe-4164-a69c-0240c2500e1b&amp;width=2000&amp;userId=&amp;cache=v2" alt="" loading="lazy"></figure>
-<ul>
-<li>
-<p><em>Public launch welcomes all users to deploy their own Layer-2 with AltLayer</em><br>
-<em>公开发布欢迎所有用户使用AltLayer部署自己的Layer-2</em>。</p>
-</li>
-<li>
-<p><em>Launchpad integrated with a novel AI tool</em> <strong><em>FlashGPT</em></strong> <em>which helps devs build smart contracts faster on Solidity</em><br>
-_Launchpad集成了一个全新的AI工具  <strong>FlashGPT</strong> 它可以帮助开发者在Solidity上更快地构建智能合约。</p>
-</li>
-</ul>
-<p>Following the success of the 100 Flash Layers campaign last month, we have received numerous in-bound requests to <a href="https://dashboard.alt.technology/">open up our <strong>rollup launchpad</strong></a> to all. We quickly jumped to action — and in a few short weeks, we’re delighted to bring this product to you.</p>
-<p>继上个月100个Flash Layers活动的成功之后，我们收到了大量的内部请求，希望<a href="https://dashboard.alt.technology/">向所有人开放我们的<strong>rollup launchpad</strong></a>。我们迅速行动起来--很高兴在短短几周内就将这个产品带给你们。</p>
-<p>As of today, we’d like to o<a href="https://dashboard.alt.technology/">pen up our no-code rollup launchpad</a> as part of our public launch. With this intuitive launchpad, you can spin up an execution layer across multiple chains with an explorer. Whether you’re a developer, a Web3 entrepreneur, or just an amateur enthusiast — you will be able to launch an application-specific rollup customized to suit any business needs. A bonus is that users can experiment with the disposability features of a ‘flash layer.’ The launchpad includes associated infrastructure such as sequencers, RPC endpoints, a block explorer and a token faucet. Other toolings include Remix IDE, contract generator, and ABI Ninja — which presents an easy to use interface to call any contract deployed on a multitude of chains including rollups launched via the launchpad.</p>
-<p>从今天起，我们把无代码汇总启动板（https://dashboard.alt.technology/）作为我们公开发布的一部分。有了这个直观的启动板，你可以用一个浏览器在多个链上启动一个执行层。无论你是一个开发人员，一个Web3企业家，或者只是一个业余爱好者--你将可以启动一个特定应用的汇总，来适应任何业务需求。一个额外的好处是，用户可以试验'闪存层'的可处置性功能。启动板包括相关的基础设施，如序列器、RPC端点、区块浏览器和代币水龙头。其他工具包括Remix IDE、合约生成器和ABI Ninja--它提供了一个易于使用的界面，以调用部署在众多链上的任何合约，包括通过启动板启动的汇总。</p>
-<p>All these services are being offered as a part of a rollup-as-a-service package where a user launching the rollup does not need to host or manage any part of the rollup or associated infrastructure. And mostly importantly, users do not need to write a single line of code. And as you will see it yourself, it does not take more than 5 mins to get your own rollup.</p>
-<p>所有这些服务都是作为 &quot;汇总即服务 &quot;包的一部分提供的，启动汇总的用户不需要托管或管理汇总的任何部分或相关基础设施。最重要的是，用户不需要编写任何一行代码。正如你自己所看到的，不需要超过5分钟就能获得你自己的汇总。</p>
-<p>The launchpad can be accessed by anyone for a two-hour free trial — which gives you plenty of time to deploy a Layer-2 application of your choosing — without the hassle, the build-time or costs!</p>
-<p>任何人都可以通过两小时的免费试用来访问launchpad--这给了你足够的时间来部署你所选择的第二层应用--没有麻烦，没有构建时间，也没有成本</p>
-<p><strong>Another bonus is that</strong> we’ve integrated our proprietary FlashGPT.</p>
-<p>**另一个好处是，**我们已经整合了我们专有的FlashGPT。</p>
-<p><em>How this fits into the rollup launchpad</em>: FlashGPT utilizes the power of OpenAI’s GPT language model to generate Solidity smart contracts and deploy them to Layer 1 and Layer 2 solutions (including AltLayer’s Flash Layer, Arbitrum, BNB Chain, Ethereum, Gnosis, Polygon, Polygon zkEVM testnet, Optimism, and scroll alpha testnet). This tool natively integrates into AltLayer’s rollup-as-a-service solution, which makes it possible to deploy the smart contract on any flash layer that gets provisioned by AltLayer.</p>
-<p><em>这如何适合于汇总启动板</em>： FlashGPT利用OpenAI的GPT语言模型的力量来生成Solidity智能合约，并将其部署到第1层和第2层解决方案（包括AltLayer的Flash层、Arbitrum、BNB Chain、Ethereum、Gnosis、Polygon、Polygon zkEVM测试网、Optimism和roll alpha测试网）。这个工具原生地集成到AltLayer的rollup-as-a-service解决方案中，这使得在任何由AltLayer提供的闪存层上部署智能合约成为可能。</p>
-<p>FlashGPT is suitable for developers as well as for those with little to no coding experience. It allows developers to experiment, innovate and dive deeper into the world of decentralized application development while saving time, capital and developer resources.</p>
-<p>FlashGPT适用于开发人员，也适用于那些几乎没有编码经验的人。它允许开发者在节省时间、资金和开发者资源的同时，尝试、创新并深入到去中心化应用开发的世界。</p>
-<p>Ready to get your hands dirty?</p>
-<p>准备好下场来玩玩了吗？</p>
-<ul>
-<li>
-<p><strong>Try the launchpad now</strong>. <a href="https://dashboard.alt.technology/">https://dashboard.alt.technology/</a><br>
-<strong>现在就试试启动板</strong>。<a href="https://dashboard.alt.technology/">https://dashboard.alt.technology/</a></p>
-</li>
-<li>
-<p>Use <a href="https://raas-freetrial.altlayer.io/">our tutorial</a> to get started. It’s completely free and only takes a few minutes!<br>
-使用<a href="https://raas-freetrial.altlayer.io/">我们的教程</a>来开始。它是完全免费的，只需要几分钟。</p>
-</li>
-</ul>
-<p>We look forward to hearing about your experience using the launchpad. For questions or to engage with the community, join our <a href="https://discord.gg/altlayer">Discord server</a>. Don’t forget to follow us on <a href="https://twitter.com/alt_layer">Twitter</a> for all updates!</p>
-<p>我们期待着听到你使用启动板的经验。如有问题或想与社区互动，请加入我们的<a href="https://discord.gg/altlayer">Discord服务器</a>。不要忘记在<a href="https://twitter.com/alt_layer">Twitter</a>上关注我们的所有更新!</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Aleo内容汇总(ENG&CHN)]]></title>
-        <id>https://chainguys.github.io/post/aleo-nei-rong-hui-zong-engandchn/</id>
-        <link href="https://chainguys.github.io/post/aleo-nei-rong-hui-zong-engandchn/">
-        </link>
-        <updated>2023-03-29T11:36:33.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://assets-global.website-files.com/5e990b3bae81cf4a03433c58/5f347d008da2e477a3c61fca_Aleo-logo-white-p-500.png" alt="" loading="lazy"></figure>
-<h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a>原创 (<a href="https://twitter.com/Chainguys">@Chainguys</a> Original )</h1>
-<h2 id="视频短视频-videosshort-videos">视频/短视频 (Videos/Short Videos)</h2>
-<p><a href="https://twitter.com/Chainguys/status/1642693247108542466">Aleo简介-A short intro to Aleo</a><br>
-<a href="https://twitter.com/Chainguys/status/1640924159730667521">Aleo新人指南:3.融资轮次</a><br>
-<a href="https://twitter.com/Chainguys/status/1640197984653549569">Aleo for Beginners:3.Funding Rounds</a><br>
-<a href="https://twitter.com/Chainguys/status/1639097802700595200">Aleo新人指南:2.零知识证明-P5</a><br>
-<a href="https://twitter.com/Chainguys/status/1638381333528420354">Aleo for Beginners:2.zero-knowledge-P5</a><br>
-<a href="https://twitter.com/Chainguys/status/1637655820954476544">Aleo新人指南:2.零知识证明-P4</a><br>
-<a href="https://twitter.com/Chainguys/status/1636537884248293378">Aleo for Beginners:2.zero-knowledge-P4</a><br>
-<a href="https://twitter.com/Chainguys/status/1635817448346624000">Aleo新人指南:2.零知识证明-P3</a><br>
-<a href="https://twitter.com/Chainguys/status/1635109230587019267">Aleo for Beginners:2.zero-knowledge-P3</a>)<br>
-<a href="https://twitter.com/Chainguys/status/1633982008908214274">Aleo新人指南:2.零知识证明-P2</a><br>
-<a href="https://twitter.com/Chainguys/status/1633321669493243905">Aleo for Beginners:2.zero-knowledge-P2</a><br>
-<a href="https://twitter.com/Chainguys/status/1632559040009056256">Aleo新人指南:2.零知识证明-P1</a><br>
-<a href="https://twitter.com/Chainguys/status/1631121990257086464">Aleo for Beginners:2.zero-knowledge-P1</a><br>
-<a href="https://twitter.com/Chainguys/status/1628581463267610624">Aleo新人指南:1.简介</a><br>
-<a href="https://twitter.com/Chainguys/status/1628337503844577281">Aleo for Beginners:1.Introduction</a></p>
-<h2 id="推文长推-twitter-threads">推文/长推 (twitter threads)</h2>
-<p><a href="https://twitter.com/Chainguys/status/1641644054281613313"> @AleoHQ's key features</a></p>
 ]]></content>
     </entry>
 </feed>
