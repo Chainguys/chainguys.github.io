@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-10-24T01:27:02.491Z</updated>
+    <updated>2023-10-27T08:28:44.531Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,100 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[序列器：区块链的航空调度员(Sequencers：Blockchain’s Air Traffic Controllers)]]></title>
+        <id>https://chainguys.github.io/post/xu-lie-qi-qu-kuai-lian-de-hang-kong-diao-du-yuan-sequencersblockchains-air-traffic-controllers/</id>
+        <link href="https://chainguys.github.io/post/xu-lie-qi-qu-kuai-lian-de-hang-kong-diao-du-yuan-sequencersblockchains-air-traffic-controllers/">
+        </link>
+        <updated>2023-10-27T08:27:34.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*pl2hmKNJQrlk1ZLrPm1w3w.jpeg" alt="" loading="lazy"></figure>
+<p>原文 Source：<a href="https://medium.com/@compolabs/sequencers-blockchains-air-traffic-controllers-c5ad7fc8d5eb">https://medium.com/@compolabs/sequencers-blockchains-air-traffic-controllers-c5ad7fc8d5eb</a></p>
+<p>After exploring various scaling solutions such as plasma, sharding and side chains in recent years, Ethereum has settled on a “rollup centric roadmap” for scaling. Rollups are scaling solutions that improve throughput and latency on Ethereum’s base layer by moving computation and data storage off-chain. All rollups consist of at least three distinct components: a virtual machine (VM), a sequencer, a proving system, and a rollup contract on the L1 (e.g., Ethereum).</p>
+<p>在近年来探索了Plasma、分片和侧链等各种扩容解决方案后，以太坊已经确定了“以Rollup(汇总) 为中心的扩容路线图”。 Rollup汇总是一种可扩展的解决方案，通过将计算和数据存储移至链外，进而提高以太坊基础层的吞吐量和(改善)延迟。所有汇总至少由三个不同的组件组成：虚拟机 (VM)、序列器、证明系统和 L1 上的汇总合约（例如以太坊）。</p>
+<p>Sequencers are a key component of layer 2s scaling solutions such as optimistic rollups and zk (validity) rollups. They play a vital role in ordering transactions, and ensuring that they are correctly included in the underlying blockchain.</p>
+<p>对乐观汇总和zk(有效性)汇总来说，序列器是第2层扩展解决方案的关键组件。它们在以下行为中肩负重任：排序交易并确保其正确包含在底层区块链中。</p>
+<h2 id="序列器如何工作how-sequencers-work">序列器如何工作(How sequencers work)</h2>
+<p>When a user submits a transaction to a rollup network, it is first received by a sequencer. The sequencer verifies the transaction and then batches it together with other transactions from other users. The sequencer then compresses the batch of transactions into blocks and submits the batch as compressed ‘calldata’ to the ethereum blockchain.</p>
+<p>当用户向汇总网络提交交易时，它首先被序列器接收。序列器验证交易，然后与(其它用户的)其它交易一起进行批处理。然后，序列器将这批交易压缩成区块，并将该批交易作为压缩的“calldata(调用数据)”提交到以太坊区块链。</p>
+<p>In <strong>Optimistic Rollups</strong> (ORUs), such as Optimism, and Fuel v1, block production is primarily managed by a single party, called the “sequencer,” which helps the network by providing the following services:</p>
+<p>在诸如Optimism和Fuel v1的 <strong>Optimistic Rollups</strong> (ORU) 乐观汇总中，区块生产主要由称为“序列器”的单一方管理，它通过这些服务来帮助网络：</p>
+<ul>
+<li>Providing transaction confirmations and state updates.<br>
+提供交易确认和状态更新</li>
+<li>Constructing and executing L2 blocks.<br>
+创建及执行L2区块</li>
+<li>Submitting user transactions to L1.<br>
+将用户交易提交到L1</li>
+</ul>
+<p>Similar to ORUs, in <strong>Validity Rollups</strong> (ZKRUs) such as Polygon zkEVM, the sequencer posts compressed transaction batches to the layer 1 blockchain as calldata for data availability purposes.</p>
+<p>与Orus 乐观汇总相似，在<strong>有效汇总</strong>（Zkrus）中，例如Polygon Zkevm，为了数据可用性，序列器会发送压缩后的交易批次(作为“CallData”)到第1层区块链中。</p>
+<p>A different component of the rollup called the ‘prover’ posts a zero knowledge cryptographic proof that transactions have been correctly executed according to the rules of the blockchain and the resulting state transitions are all correct. The rollup contract on layer1 ultimately registers the state transition and verifies the proof.</p>
+<p>汇总的一个不同组成部分（称为“证明人”）发布零知识加密证明，它表明已根据区块链的规则正确执行交易，并且由此产生的状态过渡都是正确的。第1层上的汇总合约最终会记录状态过渡并验证(这些)证据。</p>
+<figure data-type="image" tabindex="2"><img src="https://miro.medium.com/v2/resize:fit:1400/0*KBGZxfuD78A2w6hr" alt="" loading="lazy"></figure>
+<p>Figure 1: <em>In Arbitrum Nitro, an ORU, the sequencer establishes an ordering on transactions, and publishes the order as a real-time feed and as compressed data batches on the L1 chain. Sequenced transactions are processed one at a time by a deterministic state transition function, which updates the chain state and produces L2 blocks. These blocks are later settled to the L1 chain.</em><br>
+图1：在一个乐观汇总Arbitrum Nitro上，序列器在交易上建立订单，并将订单作为实时推送和L1上的压缩数据批次进行发布。排序后的交易通过确定状态的过渡函数一次性处理，该函数更新链状态并产生L2区块。这些区块随后将被结算到L1链。</p>
+<h2 id="序列器和去中心化sequencers-and-decentralization">序列器和去中心化(Sequencers and decentralization)</h2>
+<p>Sequencers can be centralized or decentralized. In a centralized sequencer model, a single entity is responsible for processing and ordering transactions. This can lead to concerns about centralization, censorship and security.</p>
+<p>序列器可以是中心化的，也可以是去中心化的。在中心化序列器模型中，单个实体负责处理和排序交易。这可能会导致对中心化、审查度和安全性的担忧。</p>
+<p>In general, the sequencer is trusted only to order incoming transactions honestly, according to a first-come, first-serve policy. At present most rollups use centralized sequencers, which can in theory censor submitted transactions, but most of the rollups are making efforts to migrate to decentralized sequencers such as committee based sequencers.</p>
+<p>一般来说，序列器只能根据先来后到的策略诚实地排序传入的交易。目前，大多数汇总使用中心化序列器，理论上可以审查提交的交易，但大多数汇总正在努力迁移到去中心化序列器，例如基于“委员会”的序列器。</p>
+<p>In a decentralized sequencer model, multiple independent entities compete to process transactions. This can help to improve security and decentralization. However, it can also lead to higher transaction fees and latency, as sequencers compete for users.</p>
+<p>在去中心化序列器的模型中，多个独立实体(需要)竞争来处理交易。这有助于提高安全性和去中心化。然而，由于序列器争夺用户，它也可能导致更高的交易费用和延迟。</p>
+<h2 id="序列器的好处benefits-of-sequencers">序列器的好处(Benefits of sequencers)</h2>
+<p>Sequencers offer a number of benefits, including:<br>
+序列器具有许多优点，包括：</p>
+<ul>
+<li>
+<p>Scalability: Sequencers can help to improve the scalability of blockchain networks by processing transactions off-chain. This can lead to lower transaction fees and faster transaction times.<br>
+可扩展性：序列器可以通过处理链下交易，来帮助提高区块链的可扩展性。这可以降低交易费用并压缩交易时间。</p>
+</li>
+<li>
+<p>Security: Sequencers can help to improve the security of blockchain networks by offloading some of the processing burden to trusted entities. This can help to reduce the risk of attacks.<br>
+安全性：序列器可以通过将一些处理负担转移给可信实体，进而帮助提高区块链网络的安全性。这有助于降低遭受攻击的风险。</p>
+</li>
+<li>
+<p>Interoperability: Sequencers can help to improve the interoperability of blockchain networks by enabling transactions to be processed across multiple networks.<br>
+可交互性：序列器可以通过跨多个网络处理交易，来帮助提高区块链网络的可交互性。</p>
+</li>
+</ul>
+<h2 id="序列器的挑战-challenges-of-sequencers">序列器的挑战 (Challenges of sequencers)</h2>
+<p>Sequencers also pose a number of challenges, including:<br>
+序列器还带来了许多挑战，包括：</p>
+<ul>
+<li>
+<p>Centralization: Centralized sequencers can lead to concerns about centralization and security.<br>
+中心化：中心化序列器可能会导致对中心化和安全性的担忧。</p>
+</li>
+<li>
+<p>Cost: Decentralized sequencers can lead to higher transaction fees, as sequencers compete for users.<br>
+成本：去中心化的序列器可能会导致更高的交易费用，因为序列器会争夺用户。</p>
+</li>
+<li>
+<p>MEV: Sequencers can be used to extract value from users by front-running user transactions.<br>
+MEV：序列器可用于通过抢先运行的用户交易进而榨取用户价值。</p>
+</li>
+</ul>
+<h2 id="共享序列器-shared-sequencers">共享序列器 (Shared sequencers)</h2>
+<p>One way to address the challenges of sequencers is to use shared sequencers. Shared sequencers typically use a proof-of-stake consensus mechanism to select which sequencers process transactions. This helps to prevent any single sequencer from gaining too much power.</p>
+<p>解决序列器挑战的一种方法是使用共享序列器。共享序列器通常使用权益证明共识机制来选择哪些序列器处理交易。这有助于防止任何单个序列器获得过多的权力。</p>
+<p>Shared sequencers are still in their early stages of development, but they have the potential to revolutionize the way that blockchain scaling solutions are implemented. By making sequencers more decentralized and secure, shared sequencers can help to make blockchain networks more scalable and accessible to everyone.</p>
+<p>共享序列器仍处于开发的早期阶段，但它有可能彻底改变区块链扩展解决方案的实施方式。通过使序列器更加分散和安全，共享序列器可以帮助区块链网络更具可扩展性并使人人都可以访问</p>
+<p>To enable sequencer decentralization by design, the Fuel network is building its own shared sequencer that uses tendermint consensus.</p>
+<p>为了通过设计实现序列器的去中心化，Fuel 网络正在构建自己的共享序列器，该共享序列器使用tendermint共识。</p>
+<h2 id="结论conclusion">结论(Conclusion)</h2>
+<p>Sequencers are integral components of layer 2 scaling solutions. By handling transaction batching and block production on rollups, sequencers help ethereum scale to much higher transaction throughput and reduce transaction costs for users. However, currently most rollups use centralized sequencers that can create concerns of censorship and centralisation. The ethereum community is evolving decentralized sequencer architectures to address these concerns.</p>
+<p>序列器是第2层扩展解决方案的组成部分。通过维持批处理交易和汇总上的区块生产，序列器可以帮助以太坊扩展到更高的交易吞吐量 &amp; 降低用户的交易成本。但目前大多数汇总都使用中心化序列器，这些序列器可以引起对审查和中心化的关注。以太坊社区正在不断发展去中心化的序列器体系结构，以便解决这些问题。</p>
+<h2 id="连接和资源-links-and-resources">连接和资源 (Links and resources)</h2>
+<p>Find the Composability Labs community on <a href="https://tinyurl.com/CompoLabsT">Twitter</a> or <a href="https://tinyurl.com/CompoLabs">Discord</a>. Additionally:<br>
+在 <a href="https://tinyurl.com/CompoLabsT">Twitter</a> 或 <a href="https://tinyurl.com/CompoLabs">Discord</a> 上可以找到 Composability Lab 组合实验室的社区。此外也可以访问以下链接：</p>
+<ul>
+<li>Get involved by supporting our <a href="https://github.com/compolabs">GitHub</a>.<br>
+支持我们的 <a href="https://github.com/compolabs">GitHub</a> 来参与</li>
+<li>To learn more about Composability Labs Products, see <a href="http://swaylend.com/">SwayLend</a> &amp; <a href="http://sprk.fi/">Spark</a><br>
+要了解Composability Lab 组合实验室的更多信息，请参阅 <a href="http://swaylend.com/">SwayLend</a> 和 <a href="http://sprk.fi/">Spark</a></li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Saga材料合集-更新中(Saga Materials-Updating)]]></title>
         <id>https://chainguys.github.io/post/saga-cai-liao-he-ji-geng-xin-zhong-saga-materials-updating/</id>
@@ -854,72 +948,6 @@ Based on smart contract needs, RedStone offers:</p>
 <p>我们对欺诈证明的实施是一个独特的，可以整合到任何通过AltLayer的<strong>Rollups-as-a-Service</strong>产品启动的汇总中。</p>
 <p>We’ll soon publish a follow-up article in which we will outline the design principle of AltLayer’s fraud proof, and how its implementation fits perfectly with our rollups-as-a-service product offerings. Watch out for this!</p>
 <p>我们将很快发表一篇后续文章，其中我们将概述AltLayer的欺诈证明的设计原理，以及它的实施如何与我们的汇总即服务产品完美结合。请关注！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[去中心化序列的重要性 (The Importance of Decentralized Sequencing)]]></title>
-        <id>https://chainguys.github.io/post/qu-zhong-xin-hua-xu-lie-de-chong-yao-xing-the-importance-of-decentralized-sequencing/</id>
-        <link href="https://chainguys.github.io/post/qu-zhong-xin-hua-xu-lie-de-chong-yao-xing-the-importance-of-decentralized-sequencing/">
-        </link>
-        <updated>2023-05-03T03:25:55.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://miro.medium.com/v2/resize:fit:700/1*7QnsfyP4R69EgUcdCeyjFQ.png" alt="" loading="lazy"></figure>
-<hr>
-<p>It’s well understood by now that rollups and modular blockchains present a better and a more scalable design compared to monolithic alternative Layer 1s. <strong><em>However, some would argue that each and every existing rollup today (ZK-based or optimistic-execution based) is in fact much less decentralized than even the least decentralized alternative Layer 1s.</em></strong> The core issue is that they all operate with a single <strong><em>sequencer</em></strong> — a network node core to the proper functioning of the rollups.</p>
-<p>现在大家都明白，与单片的替代第1层相比，汇总和模块化的区块链呈现出更好、更可扩展的设计。<strong>然而，有些人认为，今天每一个现有的汇总（基于ZK或基于乐观执行）实际上比最不去中心化的替代第1层更不去中心化。</strong>  核心问题是，它们都通过一个单一的 <strong>序列器 sequencer</strong> 来运作，这是汇总正常运作的核心网络节点。</p>
-<p>AltLayer is a protocol built to change this status quo both at the design as well as at the implementation-level. In this post, we dive deeper into the world of sequencers, the issues with centralized sequencers and the approach taken by AltLayer to build an open and decentralized sequencer network in a way that anyone wanting to launch a rollup can leverage them, thereby eliminating the need to self bootstrap a decentralized sequencer network for the rollup.</p>
-<p>AltLayer是一个在设计和实施层面上，都是为了改善这种现状的协议。在这篇文章中，我们将深入探讨序列器的世界，中心化序列器的问题，以及AltLayer采取的方法：即建立一个开放的、去中心化的序列器网络，使任何想要启动汇总的人都可以加以利用，从而消除了为汇总而重复启动中心化序列器网络的必要。</p>
-<h2 id="为什么是去中心化序列-why-decentralized-sequencing">为什么是去中心化序列 (Why Decentralized Sequencing?)</h2>
-<p>A central component to any rollup is the <strong>sequencer</strong>. Sequencers are nodes in the rollup network that are tasked with the following operations of a rollup:</p>
-<p>任何汇总的核心组成部分都是<strong>序列器</strong> 。序列器是汇总网络中的节点，负责汇总的以下操作：</p>
-<ol>
-<li>
-<p><strong>Aggregate transactions:</strong> Accept transactions from the end users via a mempool.<br>
-<strong>聚合交易：</strong> 通过mempool接受来自终端用户的交易。</p>
-</li>
-<li>
-<p><strong>Order transactions:</strong> Select transactions from the mempool and order them according to some policy.<br>
-<strong>排序交易：</strong> 从mempool中选择交易，并根据一些政策对其进行排序。</p>
-</li>
-<li>
-<p><strong>Execute transactions:</strong> In most rollups, the sequencer is also tasked with executing the transactions according to the underlying VM.<br>
-<strong>执行交易：</strong> 在大多数汇总中，序列器的任务也是根据底层虚拟机来执行交易。</p>
-</li>
-<li>
-<p><strong>Produce pre-confirmation:</strong> As finality for a rollup transaction ultimately comes from the underlying Layer 1, sequencers often produce pre-confirmation for a user transaction that allows clients and applications to proceed while waiting for finality from the Layer 1.<br>
-<strong>产生预确认：</strong> 由于汇总交易的最终结果来自底层的第1层，序列器经常为用户交易产生预确认，允许客户端和应用在等待第1层的最终结果时继续进行。</p>
-</li>
-<li>
-<p><strong>Send ordered transaction data to the DA Layer:</strong> As the last step, sequencer also commits the ordered transaction data to a DA layer, for example the underlying Layer 1. Once posted on Layer 1, transactions have Layer 1-level finality.<br>
-<strong>将订购的交易数据发送到DA层：</strong> 作为最后一步，序列器还将订购的交易数据提交到DA层，例如底层第1层。一旦发布到第1层，交易就具有第1层的最终(确定)性/终态。</p>
-</li>
-</ol>
-<p>Sequencers are therefore the heart of a rollup. Now, imagine a rollup with a single sequencer. What would happen if the sequencer were to become unavailable? Well, the network would then effectively stop processing transactions. This is not entirely a hypothetical question as there have been instances where rollups stopped processing transactions when the sequencer was down.</p>
-<p>因此，序列器是一个汇总的核心。现在，想象一个只有一个序列器的汇总。如果序列器不可用，会发生什么？那么，网络将有效地停止处理交易。这并不完全是一个假设性的问题，因为已经有实例表明，当序列器出现故障时，汇总系统停止处理交易。</p>
-<p>While one could argue that even when a sequencer goes down, the network is still operational as users could instead send their Layer 2 transaction directly to Layer 1. However, those transactions can take up to 24 hours to be considered final and will cost the same fees as the underlying Layer 1 and hence would result in poor user experience. Also, a 24 hour delay may not be ideal for time-sensitive transactions like liquidation of a debt position.</p>
-<p>虽然人们可以说，即使一个序列器发生故障，网络仍然可以运行，因为用户可以代替他们把第2层的交易直接发送到第1层。然而，这些交易可能需要长达24小时才能被最终确认，并将花费与底层第1层相同的费用，因此会导致用户体验不佳。另外，24小时的延迟对于像清算债务头寸这样的时间敏感型交易，可能并不理想。</p>
-<p>More generally, a centralized sequencer may:<br>
-更为普遍的是，中心化序列器可能：</p>
-<ul>
-<li>Censor user transactions<br>
-审查用户交易</li>
-<li>Become a choke-point or in the worst-case could go completely unavailable<br>
-成为一个阻塞点，或者在最坏的情况下可能完全不可用</li>
-<li>Extract excessive rent<br>
-提取过多的租金</li>
-<li>Frontrun user transactions or more broadly create bad MEV and adversely affect users<br>
-抢跑用户交易或更广泛地创造坏的MEV，并对用户产生不利影响</li>
-</ul>
-<p>It is therefore imperative to decentralize the sequencer. Unfortunately, none of the live rollups have decentralized sequencing enabled today.</p>
-<p>因此，当务之急是将序列器去中心化。不幸的是，今天没有一个实时启用了去中心化序列器。</p>
-<h2 id="对altlayer的简要介绍-brief-intro-to-altlayer">对AltLayer的简要介绍 (Brief Intro to AltLayer)</h2>
-<p>AltLayer offers Rollup-as-a-Service (RaaS) solutions that enable users to launch highly scalable application-tailored rollups quickly and reliably. The RaaS offering comes in the form of a no-code dashboard that allows not only developers but also those with limited or no coding experience to spin up a customized rollup within 2 mins through a few simple clicks.</p>
-<p>AltLayer提供汇总即服务(RaaS)解决方案，使用户能够快速、可靠地启动高度可扩展的应用定制汇总。该RaaS产品以无代码仪表盘的形式出现，不仅使得开发人员，而且使得那些编码经验有限或没有编码经验的人，通过几个简单的点击，在2分钟内启动一个定制的汇总。</p>
-<p>AltLayer’s RaaS offering can save significant capital, manpower resources and years of development work for application teams while encouraging innovation and rapid experimentation.</p>
-<p>AltLayer的RaaS产品可以为应用团队节省大量资金、人力资源和多年的开发工作，同时鼓励创新和快速实验。</p>
-<p>With AltLayer, decentralized sequencing is baked into the RaaS design and therefore the service entirely eliminates the issues prevalent in rollups with centralized sequencers.</p>
-<p>在AltLayer中，去中心化序列被植入RaaS设计中，因此该服务完全消除了中心化序列器在汇总中普遍存在的问题。</p>
-<p><em>Watch out for an upcoming post, which details how our multi-sequencers are designed, and how they create a more decentralized infrastructure for rollups!</em> <strong><em>Coming soon!</em></strong></p>
-<p>请注意即将发布的一篇文章，其中详细介绍了我们的多序列器是如何设计的，以及它们如何为汇总创造一个更加去中心化基础设施！<strong>即将发布!</strong></p>
 ]]></content>
     </entry>
 </feed>
