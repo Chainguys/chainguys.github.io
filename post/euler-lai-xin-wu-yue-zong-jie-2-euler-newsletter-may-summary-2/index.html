@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>Euler来信-五月总结2 (Euler Newsletter May Summary-2) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1698395282129">
+<link rel="shortcut icon" href="/favicon.ico?v=1698742329616">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -896,6 +896,107 @@
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/fhenix-chu-shi-shou-ge-quan-tong-tai-jia-mi-jia-chi-de-qu-kuai-lian-wei-web3-dai-lai-duan-dao-duan-jia-mi-fhenix-risingthe-first-fully-homomorphic-encryption-powered-blockchain-to-bring-end-to-end-encryption-for-web3/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:1400/1*m_gG5XiuASgCELm_0ehGeA.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Fhenix leverages cutting-edge Fully Homomorphic Encryption (FHE) technology to introduce for the first time native encryption capabilities into EVM smart contracts, enabling computation over encrypted data. This enhances data security and privacy to unparalleled levels, unlocking a multitude of innovative Web3 applications.&lt;/p&gt;
+&lt;p&gt;Fhenix利用尖端的全同态加密（FHE）技术，首次将原生加密功能引入EVM智能合约中，实现对加密数据的计算。这将数据安全性和隐私性提高到了无与伦比的水平，将解锁大量创新的 Web3 应用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;导论(Introduction)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It’s become increasingly clear that Web3 is the future, but blockchain’s innate transparency presents challenges that inhibit the industry’s growth trajectory. This is because a growing number of Web3 use cases revolve around sensitive data, rendering the full openness of public blockchains problematic.&lt;/p&gt;
+&lt;p&gt;Web3已经是越来越明显的未来趋势，但区块链固有的“透明度”带来了阻碍行业增长的挑战。这是因为越来越多的 Web3 用例围绕敏感数据，然后公共区块链的完全开放性变得棘手起来。&lt;/p&gt;
+&lt;p&gt;This is for two main reasons:&lt;br&gt;
+这主要有以下两个原因：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Exclusion:&lt;/strong&gt; Payments, voting, medical records, decentralized identity, and countless other use cases require confidentiality. As the scope of blockchain grows, the absence of robust encryption solutions could either push these applications off-chain or force them to compromise on data confidentiality.&lt;br&gt;
+&lt;strong&gt;不相容：&lt;/strong&gt; 支付、投票、医疗记录、去中心化身份和无数其它用例需要保密。随着区块链范围的扩大，缺乏强大的加密解决方案可能会将这些应用推离链或迫使其在数据机密性方面做出妥协。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Security:&lt;/strong&gt; On-chain data transparency makes it much simpler for malicious parties to identify and target users. This has led to billions lost through phishing attacks and other exploitative tactics like MEV extraction.&lt;br&gt;
+&lt;strong&gt;安全性：&lt;/strong&gt; 链上数据透明，则让恶意方更容易识别和定位用户。这导致网络钓鱼攻击和 MEV 提取等其他剥削策略，造成数十亿美元的损失。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;While in Web2 space data encryption is a well-established and required standard, it seems that the ‘lack-of-encryption’ for commercially sensitive and personal data in Web3 is still a growing and evolving threat. To scale the industry forward, privacy must be an integral part of blockchain, meaning that data encryption and computation capabilities should be key features of all blockchains.&lt;/p&gt;
+&lt;p&gt;虽然在 Web2 中，数据加密是一个已经完善且必要的标准，但 Web3 中商业敏感数据和个人数据的“缺乏加密”，似乎仍是一个日益增长和不断演变的威胁。为了扩大行业规模，隐私必须成为区块链不可或缺的一部分，这意味着数据加密和计算能力应该是所有区块链的关键特征。&lt;/p&gt;
+&lt;p&gt;To address this challenge we need to bring developers the infrastructure and tools that allow easy integration of robust data encryption capabilities in the applications that are essential for this space to grow.&lt;/p&gt;
+&lt;p&gt;为了应对这一挑战，我们需要为开发人员提供基础设施和工具，让其在应用中轻松集成强大的数据加密功能，这对于该领域的发展至关重要。&lt;/p&gt;
+&lt;p&gt;Fhenix is rising to this challenge.&lt;/p&gt;
+&lt;p&gt;Fhenix正在奋起迎接这个挑战。&lt;/p&gt;
+&lt;p&gt;Fhenix is building the first confidential smart contract platform using fully homomorphic encryption (FHE). FHE is a novel cryptographic scheme that enables direct computation over encrypted data without ever revealing the underlying data. Fhenix’s goal is to advance application development in the blockchain ecosystem by bringing data encryption and encrypted data computation to smart contracts, transactions, and on-chain assets for the first time.&lt;/p&gt;
+&lt;p&gt;Fhenix 正在构建第一个使用全同态加密（FHE）的机密智能合约平台。 FHE 是一种全新的加密方案，可以对加密数据进行直接计算，而无需泄露底层数据。 Fhenix的目标，是通过首次将数据加密和加密数据计算引入智能合约、交易和链上资产，推进区块链生态系统中的应用开发。&lt;/p&gt;
+&lt;p&gt;By leveraging the power of FHE, Fhenix redefines how sensitive data is being managed in the blockchain ecosystem, envisioning a future where privacy and decentralization are not at odds, but rather, complementary aspects of a secure digital economy.&lt;/p&gt;
+&lt;p&gt;通过利用 FHE 的力量，Fhenix 重新定义了区块链生态中敏感数据的管理方式，构想了这样一个未来：隐私和去中心化不但不矛盾，而是安全数字经济的互补。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;全同态加密 (Fully Homomorphic Encryption)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;FHE is considered the holy grail of cryptography, as it enables direct computation over encrypted data while never revealing the data to the server, or in the context of blockchains — to validators or sequencers. This is all groundbreaking, with recent breakthroughs paving the way for Homomorphic Encryption data processing to arrive at last on the blockchain.&lt;/p&gt;
+&lt;p&gt;FHE 被认为是密码学的圣杯，因为它可以对加密数据进行直接计算，而不会向服务器，或在区块链环境中向验证者或序列器泄露数据。这都是开创性的，最近的突破为同态加密数据处理最终到达区块链铺平了道路。&lt;/p&gt;
+&lt;p&gt;This means that Fhenix now enables a wide array of versatile use cases such as:&lt;/p&gt;
+&lt;p&gt;这意味着 Fhenix 现在支持广泛的多功能用例，例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Trustless Gaming:&lt;/strong&gt; Every game that requires players to hide their information from other players, like on-chain casino gaming, where you need to hide information between opponents or the dealer, while still allowing computation on the data.&lt;br&gt;
+&lt;strong&gt;去信任化游戏：&lt;/strong&gt; 每款游戏都要求玩家向其他玩家隐藏自己的信息，例如链上赌场游戏，您需要在对手或庄家之间隐藏信息，同时仍然允许对数据进行计算。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Private Voting:&lt;/strong&gt; Both on-chain and off-chain voting mechanisms can operate with fully encrypted variables, ensuring confidentiality without sacrificing trustworthiness.&lt;br&gt;
+&lt;strong&gt;私密投票：&lt;/strong&gt; 链上和链下投票机制都可以使用完全加密的变量进行操作，在不牺牲可信度的情况下确保私密性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Privacy-Preserving AI:&lt;/strong&gt; The ability to compute encrypted data opens the door for on-chain artificial intelligence applications, thereby expanding the range of possible use cases exponentially.&lt;br&gt;
+&lt;strong&gt;隐私保护人工智能：&lt;/strong&gt; 计算加密数据的能力，为链上人工智能应用打开了大门，从而以指数方式扩大了可能的用例范围。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Confidential Token Transfers:&lt;/strong&gt; P2P payments, commercial transactions, and other sensitive transfers can be made private, yet auditable.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;机密代币传输：&lt;/strong&gt; P2P 支付、商业交易和其他敏感传输可以设为私密但可审计。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:1400/0*6GWx-x8UPLkhOg7p&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;These are all multi-billion dollar industries growing at a rapid pace, but applicability also extends to areas such as blind auctions, MEV protection, account abstraction, and confidential DAOs. We are also merely at the beginning of what’s truly possible, with many use cases undiscovered.&lt;/p&gt;
+&lt;p&gt;这些都是价值数十亿美元且正在快速增长的行业，不过适用性也可以扩展到盲拍、MEV 保护、账户抽象和机密 DAO 等领域。我们还仅仅处于真正可能的开始，还有许多用例尚未被发掘。&lt;/p&gt;
+&lt;p&gt;This is all possible due to fhEVM, which we’ll cover next.&lt;/p&gt;
+&lt;p&gt;这一切都归功于 fhEVM，接下来我们将介绍它。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;黄金标准：fhEVM (The Gold Standard: fhEVM)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;fhEVM is a set of extensions for the Ethereum Virtual Machine (EVM) that allows Solidity developers to seamlessly create encrypted smart contracts without any cryptographic expertise. Solidity is the most popular Web3 language to date and comes with an extensive suite of developer tools and libraries, making fhEVM extremely easy to begin working with.&lt;/p&gt;
+&lt;p&gt;fhEVM 是以太坊虚拟机 (EVM) 的一组扩展，它允许 Solidity 开发人员无需任何加密专业知识就可以无缝创建加密智能合约。Solidity 是迄今为止最流行的 Web3 语言，并附带一套流行的开发工具和库，这也使 fhEVM 对(已有开发者来说)非常容易上手。&lt;/p&gt;
+&lt;p&gt;This is important, as blockchains that rely upon entirely novel programming languages have significant costs associated with attracting and training developers to begin using their unique language. In contrast, fhEVM taps into the expansive EVM community and enables developers to easily begin deploying new, innovative projects.&lt;/p&gt;
+&lt;p&gt;这一点很重要，因为依赖全新编程语言的区块链，在吸引和培训开发人员使用/转向其独特语言方面需要付出巨大成本。相比之下，fhEVM 利用了广泛的 EVM 社区，使开发人员能够轻松部署新的创新项目。&lt;/p&gt;
+&lt;p&gt;Fhenix also has a modular, extension-like design which means that its ability to compute encrypted data can be integrated across all blockchain layers, enabling the easy development of confidential smart contracts on public blockchains. For example, developers can now build applications around encrypted data, such as decentralized email services or private voting.&lt;/p&gt;
+&lt;p&gt;Fhenix还具有模块化、类扩展的设计，意味着它计算加密数据的能力可以跨越所有区块链层来集成，进而可以在公共区块链上轻松开发机密智能合约。例如，开发人员现在可以围绕加密数据构建应用，比如去中心化电子邮件服务或私密投票。&lt;/p&gt;
+&lt;p&gt;This comes in the form of the Fhenix SDK which can now be used by developers to add encryption capabilities to their existing products, seamlessly, without any changes to their existing smart contracts.&lt;/p&gt;
+&lt;p&gt;它以 Fhenix SDK 的形式出现，开发人员现在可以使用它来无缝地向其现有产品添加加密功能，而无需对其现有智能合约进行任何更改。&lt;/p&gt;
+&lt;p&gt;Fhenix’s limited access devnet was deployed in July 2023, and provides an approachable FHE playground where the fhEVM is already functional and in use. To apply for early access click &lt;a href=&#34;https://discord.gg/CwWVmdmazJ&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Fhenix 的开发网络于 2023 年 7 月部署(非公开访问)，提供了一个平易近人的 FHE 游乐场，其中 fhEVM 已经正常运行并投入使用。要申请抢先体验，请点击&lt;a href=&#34;https://discord.gg/CwWVmdmazJ&#34;&gt;此处&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;机密计算集群：加密优先的区块链未来(The Confidential Compute Constellation: Blockchain’s Encryption-First Future)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;While public blockchains are pseudonymous in nature, this is insufficient for many blockchain applications and will become increasingly easy to correlate on-chain activity with real-world identities. Also, It is important to understand that confidentiality is not a “one-size-fits-all” issue solved by one technology alone. Like in blockchains, there are multiple tradeoffs between confidentiality technologies, such as security, scalability, decentralization, complexity and cost.&lt;/p&gt;
+&lt;p&gt;虽然公共区块链本质上使用”假名“，但这对于许多区块链应用来说是不够的，并且会越来越容易将链上活动与现实世界的身份相关联。此外，重要的是要理解，保密性并不是仅靠一种技术就能解决的“一刀切”问题。与区块链一样，保密技术之间也存在多种权衡，例如安全性、可扩展性、去中心化、复杂性和成本。&lt;/p&gt;
+&lt;p&gt;This insight led to the formation of the Confidential Compute Constellation: a collective of interconnected confidential solutions serving as an encryption hub for Web 3.0.&lt;/p&gt;
+&lt;p&gt;这种洞见导致了机密计算集群的形成：一组互连的机密解决方案，来充当 Web 3.0 的加密中心。&lt;/p&gt;
+&lt;p&gt;The Confidential Computing Constellation starts by combining Secret Network’s battle-tested platform, experience and community with the novel Fully Homomorphic Encryption technology that Fhenix introduced into a full-fledged smart contract platform.&lt;/p&gt;
+&lt;p&gt;机密计算集群首先将以下两样相结合： Secret Network 久经考验的平台、经验和社区，与 Fhenix 引入的成熟智能合约平台上全新的全同态加密技术。&lt;/p&gt;
+&lt;p&gt;The goal of the Constellation is to combine a wide range of confidential-computing technologies and solutions to create a single hub for privacy and confidentiality on Web3, offering confidential computing applications on member networks and providing privacy as a service to the EVM ecosystem and beyond.&lt;/p&gt;
+&lt;p&gt;集群的目标是结合广泛的机密计算技术和解决方案，在 Web3 上创建单一的隐私和机密中心，在成员网络上提供机密计算应用，并向 EVM 生态系统及其他生态系统提供隐私即服务。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;加密全明星：Fhenix 背后的团队 （Encryption Allstars: The Team Behind Fhenix)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Fhenix was founded by &lt;a href=&#34;https://www.linkedin.com/in/gguyz/?originalSubdomain=il&#34;&gt;Guy Zyskind&lt;/a&gt;, the Founder of Secret and is led by &lt;a href=&#34;https://www.linkedin.com/in/guy-itzhaki&#34;&gt;Guy Itzhaki&lt;/a&gt;, a former Director at the Homomorphic Encryption &amp;amp; Blockchain Group at Intel.&lt;/p&gt;
+&lt;p&gt;Fhenix 由 Secret 创始人 &lt;a href=&#34;https://www.linkedin.com/in/gguyz/?originalSubdomain=il&#34;&gt;Guy Zyskind&lt;/a&gt; 创立，并由 &lt;a href=&#34;https://www.linkedin.com/in/guy-itzhaki&#34;&gt;Guy Itzhaki&lt;/a&gt;，英特尔同态加密和区块链事业部前总监领导。&lt;/p&gt;
+&lt;p&gt;Forged by a partnership with &lt;a href=&#34;https://www.zama.ai/&#34;&gt;Zama&lt;/a&gt;, a market leader in fully homomorphic encryption technologies, Fhenix team is composed of the world-leading experts in private computation solutions.&lt;/p&gt;
+&lt;p&gt;Fhenix 团队与全同态加密技术市场领导者 &lt;a href=&#34;https://www.zama.ai/&#34;&gt;Zama&lt;/a&gt; 合作，由私有计算解决方案领域的世界领先专家组成。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“Fhenix addresses a huge problem in the Ethereum ecosystem: a lack of encryption for commercially sensitive data,”&lt;/em&gt; said Guy Zyskind, Fhenix and Secret Founder. &lt;em&gt;“Fhenix gives users the confidence to put sensitive data on public blockchains while also giving developers the tools to compute and transform that data for the first time.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“Fhenix 解决了以太坊生态系统中的一个巨大问题：商业敏感数据缺乏加密，”&lt;/em&gt; Fhenix 和 Secret 创始人 Guy Zyskind 说道。 &lt;em&gt;“Fhenix 让用户有信心将敏感数据放在公共区块链上，同时还首次为开发人员提供了计算和转换这些数据的工具。”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Fhenix recently raised a $7.5M Seed Round co-led by Multicoin Capital and Collider Ventures, with collaboration from Node Capital, Bankless, HackVC, TaneLabs, Hashkey and Metaplanet. The funds will be used to bring the Fhenix Network into public testnet early next year and to support ecosystem application development.&lt;/p&gt;
+&lt;p&gt;Fhenix 最近筹集了 750 万美元的种子轮融资，由 Multicoin Capital 和 Collider Ventures 共同牵头，Node Capital、Bankless、HackVC、TaneLabs、Hashkey 和 Metaplanet 跟进。这些资金将用于明年初将 Fhenix 网络引入公共测试网，并支持生态系统应用开发。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;区块链的复兴：即将推出的公共测试网(Blockchain’s Renaissance: Upcoming Public Testnet)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;FHENIX’s public testnet titled &lt;em&gt;Renaissance&lt;/em&gt; will be open for participation in Q1 of 2024, inviting developers to familiarize themselves with the fhEVM environment and build novel applications. This is particularly exciting for developers keen on being first-movers in an emerging field of blockchain, and more details will be shared in the coming weeks.&lt;/p&gt;
+&lt;p&gt;FHENIX 名为‘Renaissance 文艺复兴’ 的公共测试网将于 2024 年第一季度开放参与，邀请开发人员熟悉 fhEVM 环境并构建全新的应用。对于热衷于成为区块链新兴领域先行者的开发者来说，这尤其令人兴奋，更多细节将在未来几周内分享。&lt;/p&gt;
+&lt;p&gt;We invite those interested to apply for early testnet access &lt;a href=&#34;https://discord.gg/CwWVmdmazJ&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;我们邀请有兴趣的人申请早期测试网访问&lt;a href=&#34;https://discord.gg/CwWVmdmazJ&#34;&gt;此处&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;Join our social media channels to get all the updates!&lt;/p&gt;
+&lt;p&gt;加入我们的社交媒体渠道以获取所有更新！&lt;/p&gt;
+&lt;p&gt;Fhenix: Programable. Scalable. &lt;strong&gt;Encrypted&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Fhenix：可编程，可扩展， &lt;strong&gt;可加密&lt;/strong&gt;。&lt;/p&gt;
+">Fhenix出世：首个全同态加密加持的区块链，为Web3带来端到端加密(Fhenix Rising：The First Fully Homomorphic Encryption-Powered Blockchain to Bring End-to-End Encryption for Web3)</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/xu-lie-qi-qu-kuai-lian-de-hang-kong-diao-du-yuan-sequencersblockchains-air-traffic-controllers/"" data-c="
