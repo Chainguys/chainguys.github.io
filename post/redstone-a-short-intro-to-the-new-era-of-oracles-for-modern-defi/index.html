@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>RedStone - A Short intro to the New Era of Oracles for Modern DeFi | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1698827937397">
+<link rel="shortcut icon" href="/favicon.ico?v=1699948055411">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -877,6 +877,72 @@ Based on smart contract needs, RedStone offers:</p>
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/ritual-jian-jie-introducing-ritual/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://assets.tina.io/c4aad39e-1c95-4d5a-b6c9-e10a630d8c94/blog/introducing-coeffect.svg&#34; alt=&#34;post image&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;p&gt;After many long months of development, we’re excited to finally come out of stealth mode and introduce Ritual to the world. We started Ritual with a clear goal in mind: to merge the best principles and techniques of cryptography and artificial intelligence to create a system that enables open and permissionless creation, distribution and improvement of AI models. We spent significant time reflecting on our own experiences in building similar systems, engaging with industry experts and iterating on what that goal tangibly meant, and we’re excited to finally share our roadmap and vision with the community at large.&lt;/p&gt;
+&lt;p&gt;经过几个月的漫长开发，我们很高兴终于&amp;quot;摆脱隐身模式&amp;quot;，可以向世界推出 Ritual。我们在创办 Ritual 时就怀有一个明确的目标：融合密码学和人工智能的最佳原理和技术，创建一个能够开放且无许可地创建、分发和改进人工智能模型的系统。我们花费了大量时间反思自己构建类似系统的经验，与行业专家合作并迭代该目标的具体含义，我们很高兴最终与整个社区分享我们的路线图和愿景。&lt;/p&gt;
+&lt;h2 id=&#34;加密人工智能的融合-the-confluence-of-crypto-ai&#34;&gt;加密⇔人工智能的融合 (The Confluence of Crypto ⇔ AI)&lt;/h2&gt;
+&lt;p&gt;AI is by far the most expressive form of computing ever invented, and the past year in particular has seen a Cambrian explosion in new models, applications and demand for GPU compute. While the bases for many of these models are not necessarily new—the seminal paper on Transformer architecture &amp;quot;Attention is All You Need&amp;quot;, for example, was written by Google researchers (including our advisor Illia Polosukhin) in 2017—the rapid consumer adoption of applications like ChatGPT have catalyzed innovations in foundational model architectures and other techniques.&lt;/p&gt;
+&lt;p&gt;人工智能是迄今为止最具表现力的计算形式，特别是在过去的一年里，新模型、应用和对 GPU 计算的需求出现了寒武纪爆发。虽然其中许多模型的基础不一定是新的—例如，关于 Transformer 架构的开创性论文“Attention is All You Need”是由 Google 研究人员（包括我们的顾问 Illia Polosukhin）于 2017 年撰写的—但消费者快速采用ChatGPT 等应用，促进了基础模型架构和其他技术的创新。&lt;/p&gt;
+&lt;p&gt;The current AI stack isn’t perfect however. In particular, we see a few core problems:&lt;/p&gt;
+&lt;p&gt;然而，当前的人工智能堆栈并不完美。我们尤其看到几个核心问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Lack of strong SLAs: Existing platforms don’t offer any guarantees around computational integrity (i.e. Was this model run correctly?), privacy (of both inputs and outputs into models), and censorship-resistance (limiting censorship of models, applications and geographies)&lt;br&gt;
+缺乏强大的 SLA：现有平台不提供有关计算完整性（即该模型是否正确运行？）、隐私（模型输入和输出）和抗审查（限制对模型、应用、地理位置的审查）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Permissioned and centralized APIs: Existing infrastructure is hosted by a few centralized corporations, limiting developers and users from building native integrations and leading to liveness issues&lt;br&gt;
+中心化许可式API：现有基础设施由少数中心化公司托管，限制了开发人员和用户构建本机集成并导致活性问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;High compute costs and limited HW access: AI hardware is becoming increasingly difficult to procure for developers, and hardware providers charge massive rakes for developers&lt;br&gt;
+计算成本高，硬件访问权限有限：开发者采购人工智能硬件变得越来越困难，硬件提供商向开发者收取巨额费用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Oligopolistic and structurally misaligned: Organizations are either incentivized to keep their models closed-source, thus stifling innovation and centralizing power, or open-source their models understanding that there is a lack of appropriate infrastructure to reward them for their contributions. Users additionally have limited to no say in the governance and ownership of AI today.&lt;br&gt;
+寡头垄断和结构性失调：组织要么被激励保持其模型闭源，抑制了其创新和加强了中心化权力；要么将其模型开源，因为他们认识到缺乏适当的基础设施来奖励其贡献。此外，用户在当今人工智能的治理和所有权方面几乎没有发言权。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As it turns out, many of these problems are familiar to those that have previously worked in crypto. We believe that we can apply many of the principles and techniques that go into designing blockchains and protocols built on top to address these challenges, drawing on innovations in cryptography, game theory and mechanism design.&lt;/p&gt;
+&lt;p&gt;事实证明，这其中许多问题对于那些以前从事过加密货币工作的人来说是很熟悉的。我们相信，我们可以应用设计区块链和构建在其上协议的许多原则和技术来应对这些挑战，利用密码学、博弈论和机制设计方面的创新。&lt;/p&gt;
+&lt;p&gt;Conversely, bringing access to AI models will be critical to the evolution of crypto. From base layer infrastructure to applications, AI models can be used to encapsulate complex logic and enable new applications previously not feasible with just smart contracts. We imagine a world where users can, for example, generate transactions and interact with contracts using natural language, or where agents are automatically managing risk parameters for lending protocols based on real-time market conditions. There are a plethora of fascinating use cases- all that’s missing is the right infrastructure to bridge the gap between accessing models and utilizing them on-chain.&lt;/p&gt;
+&lt;p&gt;另一方面，引入人工智能模型对于加密技术的发展至关重要。从基础层基础设施到应用，人工智能模型可用于封装复杂的逻辑，并启动以前仅通过智能合约无法实现的新应用。比如，我们可以想象这样一个世界：用户可以使用自然语言生成交易并与合约交互，或者代理根据实时市场条件自动管理贷款协议的风险参数。这会有大量令人着迷的用例—这所缺少的是正确的基础设施，来弥合访问模型和链上利用之间的差距。&lt;/p&gt;
+&lt;h2 id=&#34;ritual-两个世界的交集-ritual-the-intersection-of-two-worlds&#34;&gt;Ritual: 两个世界的交集 (Ritual: The Intersection of Two Worlds)&lt;/h2&gt;
+&lt;p&gt;Ritual is a response to these aforementioned problems. Fundamentally, it is envisioned as an open, modular, sovereign execution layer for AI. Ritual brings together a distributed network of nodes with access to compute and model creators, and enables said creators to host their models on these nodes. Users are then able to access any model on this network—whether its an LLM or a classical ML model—with one common API, and the network has additional cryptographic infrastructure that allows for guarantees around computational integrity and privacy.&lt;/p&gt;
+&lt;p&gt;Ritual是对上述问题的回应。从根本上说，它被设想为人工智能的开放、模块化、主权执行层。 Ritual 将分布式节点网络汇集在一起​​，访问计算和模型创建者，并使所述创建者能够在这些节点上托管其模型。然后，用户可以使用一个通用 API 访问该网络上的任何模型（无论是 LLM 还是经典的 ML 模型），并且该网络具有额外的加密基础设施，能够保障保证计算完整性和隐私。&lt;/p&gt;
+&lt;p&gt;Infernet is the first evolution of Ritual. Infernet takes AI to where on-chain applications live today by exposing powerful interfaces for smart contracts to access AI models for inference. It’s the first building block in a suite of protocols and utilities that we will be releasing to enable anyone to seamlessly build on top of Ritual and get permissionless access to our network of model and compute providers.&lt;/p&gt;
+&lt;p&gt;Infernet 是Ritual的第一个演进。 Infernet 通过为智能合约提供强大的接口，来访问人工智能模型进行推理，从而将人工智能带入当今的链上应用。这是我们未来发布的协议和用例程序套件中的第一个构建区块，它使任何人都可以在 Ritual 之上无缝构建，并无许可即可访问我们的模型和计算提供商网络。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://assets.tina.io/c4aad39e-1c95-4d5a-b6c9-e10a630d8c94/blog/blog-infernet.svg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;The grand vision for Ritual is to become the schelling point of AI in the web3 space by evolving Infernet into a modular suite of execution layers that interop with other base layer infrastructure in the ecosystem, allowing every protocol and application on any chain to use Ritual as a AI Coprocessor.&lt;/p&gt;
+&lt;p&gt;Ritual 的宏大愿景是通过将 Infernet 发展为模块化的执行层套件，与生态系统中的其他基础层基础设施交互，从而成为 web3 领域人工智能的关键点，进而让任何链上每个协议和应用都可以将Ritual作为人工智能协处理器使用。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://assets.tina.io/c4aad39e-1c95-4d5a-b6c9-e10a630d8c94/blog/product-diagram-desktop.svg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;To learn more about the architecture with an interactive architecture map of Ritual, visit &lt;a href=&#34;https://ritual.global/product&#34;&gt;here&lt;/a&gt;. To get started building an application, visit &lt;a href=&#34;https://docs.ritual.global/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;要通过 Ritual 的交互式架构图了解有关架构的更多信息，请访问&lt;a href=&#34;https://ritual.global/product&#34;&gt;此处&lt;/a&gt;。要开始构建应用，请访问&lt;a href=&#34;https://docs.ritual.global/&#34;&gt;此处&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;我们是谁-who-we-are&#34;&gt;我们是谁? (Who we are)&lt;/h2&gt;
+&lt;p&gt;We’re a &lt;a href=&#34;https://ritual.global/about&#34;&gt;team&lt;/a&gt; of passionate builders that marries deep expertise across distributed systems, cryptography, and AI with a long-term commitment to the crypto space. We’ve helped build and invest in many household names in industry, and are excited to tackle this new frontier.&lt;/p&gt;
+&lt;p&gt;我们是一支由充满热情的建设者组成的&lt;a href=&#34;https://ritual.global/about&#34;&gt;团队&lt;/a&gt;，把分布式系统、密码学和人工智能方面的深厚专业知识与对加密货币领域的长期承诺两相结合。我们帮助建立和投资了许多业界家喻户晓的品牌，并且很高兴能够攻克这一新领域。&lt;/p&gt;
+&lt;p&gt;We’re also excited to work with a world-class set of advisors, including Illia Polosukhin, Co-Founder of NEAR Protocol and Co-Creator of Transformers (“Attention is All You Need”), Sreeram Kannan, Founder of EigenLayer and Associate Professor of CS at University of Washington, and Tarun Chitra, Founder/CEO of Gauntlet and GP @ Robot Ventures.&lt;/p&gt;
+&lt;p&gt;我们也很高兴能与世界一流的顾问合作，其中包括 NEAR Protocol 联合创始人兼 Transformers 联合创始人 Illia Polosukhin（“Attention is All You Need”）、EigenLayer 创始人兼合伙人，华盛顿大学计算机科学教授 Sreeram Kannan、Tarun Chitra，Gauntlet 创始人/首席执行官，Robot Ventures 的GP。&lt;/p&gt;
+&lt;h2 id=&#34;我们的a轮-our-series-a&#34;&gt;我们的A轮 (Our Series A)&lt;/h2&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://assets.tina.io/c4aad39e-1c95-4d5a-b6c9-e10a630d8c94/blog/raise.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;We’re also excited to announce a $25m financing for the company, led by Archetype. They’re joined by other top-tier investors including Accomplice, Robot Ventures, dao5, Accel, Dialectic, Anagram, Avra, and Hypersphere. Angels in the round include Balaji Srinivasan, Nicola Greco, Chase Lochmiller, DC Builder, Keone Hon of Monad, Sergey Gorbunov and Georgios Vlachos of Axelar, Kevin Pang of SCP, Daniel Shorr &amp;amp; Ryan Cao of Modulus, Grug, Scott Sunarto, devops199fan, Ambush Capital, and many others.&lt;/p&gt;
+&lt;p&gt;我们还很高兴地宣布为该公司提供 2500 万美元的融资，由 Archetype 领投。其他顶级投资者也选择加入，包括 Accomplice、Robot Ventures、dao5、Accel、Dilectic、Anagram、Avra 和 Hypersphere。本轮天使投资人包括 Balaji Srinivasan、Nicola Greco、Chase Lochmiller、DC Builder、Monad 的 Keone Hon、Axelar 的 Sergey Gorbunov 和 Georgios Vlachos、SCP 的 Kevin Pang、Modulus 的 Daniel Shorr 和 Ryan Cao、Grug、Scott Sunarto、devops199fan、Ambush资本等等。&lt;/p&gt;
+&lt;p&gt;This financing will help us expand our team, start growing our developer network, and start seeding the network.&lt;/p&gt;
+&lt;p&gt;这笔融资将帮助我们扩大团队，开始发展我们的开发者网络，并为网络播种。&lt;/p&gt;
+&lt;p&gt;We’re always looking for driven and ambitious talent. If our mission resonates with you, check out our Careers page. If you’re interested in integrating with Ritual, reach out to &lt;a href=&#34;mailto:hello@ritual.global&#34;&gt;hello@ritual.global&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;我们一直在寻找有干劲、雄心勃勃的人才。如果我们的使命引起您的共鸣，请查看我们的职业页面。如果您有兴趣与 Ritual 集成，请联系 &lt;a href=&#34;mailto:hello@ritual.global&#34;&gt;hello@ritual.global&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;Follow us on Twitter &lt;a href=&#34;https://twitter.com/ritualnet&#34;&gt;here&lt;/a&gt; for more updates coming soon. Learn more about the protocol &lt;a href=&#34;https://docs.ritual.global/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;在 Twitter &lt;a href=&#34;https://twitter.com/ritualnet&#34;&gt;此处&lt;/a&gt; 上关注我们，了解即将推出的更多更新。在 &lt;a href=&#34;https://docs.ritual.global/&#34;&gt;此处&lt;/a&gt; 了解有关本协议的更多信息。&lt;/p&gt;
+&lt;h2 id=&#34;免责声明disclaimer&#34;&gt;免责声明(Disclaimer)&lt;/h2&gt;
+&lt;p&gt;This post is for general information purposes only. It does not constitute investment advice or a recommendation, offer or solicitation to buy or sell any investment and should not be used in the evaluation of the merits of making any investment decision. It should not be relied upon for accounting, legal or tax advice or investment recommendations. The information in this post should not be construed as a promise or guarantee in connection with the release or development of any future products, services or digital assets. This post reflects the current opinions of the authors and is not made on behalf of Ritual or its affiliates and does not necessarily reflect the opinions of Ritual, its affiliates or individuals associated with Ritual. All information in this post is provided without any representation or warranty of any kind. The opinions reflected herein are subject to change without being updated.&lt;/p&gt;
+&lt;p&gt;这篇文章仅供一般参考之用。它不构成投资建议或购买或出售任何投资的推荐、要约或招揽，也不应用于评估任何投资决策的优点。不应依赖其提供会计、法律或税务建议或投资建议。本文中的信息不应被解释为与任何未来产品、服务或数字资产的发布或开发相关的承诺或保证。本文反映了作者当前的观点，并不代表 Ritual 或其附属公司，也不一定反映 Ritual、其附属公司或与 Ritual 相关的个人的意见。本文中的所有信息均不提供任何形式的陈述或保证。本文反映的意见如有更改，恕不更新。&lt;/p&gt;
+&lt;p&gt;原文 Origin : https://ritual.net/blog/introducing-ritual&lt;/p&gt;
+">Ritual简介(Introducing Ritual)</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/xu-lie-qi-qu-kuai-lian-de-hang-kong-diao-du-yuan-sequencersblockchains-air-traffic-controllers/"" data-c="
