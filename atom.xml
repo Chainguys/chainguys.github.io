@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-11-14T07:48:15.729Z</updated>
+    <updated>2023-11-14T09:22:35.294Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -52,10 +52,10 @@
 <p>Ritual是对上述问题的回应。从根本上说，它被设想为人工智能的开放、模块化、主权执行层。 Ritual 将分布式节点网络汇集在一起​​，访问计算和模型创建者，并使所述创建者能够在这些节点上托管其模型。然后，用户可以使用一个通用 API 访问该网络上的任何模型（无论是 LLM 还是经典的 ML 模型），并且该网络具有额外的加密基础设施，能够保障保证计算完整性和隐私。</p>
 <p>Infernet is the first evolution of Ritual. Infernet takes AI to where on-chain applications live today by exposing powerful interfaces for smart contracts to access AI models for inference. It’s the first building block in a suite of protocols and utilities that we will be releasing to enable anyone to seamlessly build on top of Ritual and get permissionless access to our network of model and compute providers.</p>
 <p>Infernet 是Ritual的第一个演进。 Infernet 通过为智能合约提供强大的接口，来访问人工智能模型进行推理，从而将人工智能带入当今的链上应用。这是我们未来发布的协议和用例程序套件中的第一个构建区块，它使任何人都可以在 Ritual 之上无缝构建，并无许可即可访问我们的模型和计算提供商网络。</p>
-<figure data-type="image" tabindex="2"><img src="https://assets.tina.io/c4aad39e-1c95-4d5a-b6c9-e10a630d8c94/blog/blog-infernet.svg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://chainguys.github.io/post-images/1699953679171.png" alt="" loading="lazy"></figure>
 <p>The grand vision for Ritual is to become the schelling point of AI in the web3 space by evolving Infernet into a modular suite of execution layers that interop with other base layer infrastructure in the ecosystem, allowing every protocol and application on any chain to use Ritual as a AI Coprocessor.</p>
 <p>Ritual 的宏大愿景是通过将 Infernet 发展为模块化的执行层套件，与生态系统中的其他基础层基础设施交互，从而成为 web3 领域人工智能的关键点，进而让任何链上每个协议和应用都可以将Ritual作为人工智能协处理器使用。</p>
-<figure data-type="image" tabindex="3"><img src="https://assets.tina.io/c4aad39e-1c95-4d5a-b6c9-e10a630d8c94/blog/product-diagram-desktop.svg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://chainguys.github.io/post-images/1699953699919.png" alt="" loading="lazy"></figure>
 <p>To learn more about the architecture with an interactive architecture map of Ritual, visit <a href="https://ritual.global/product">here</a>. To get started building an application, visit <a href="https://docs.ritual.global/">here</a>.</p>
 <p>要通过 Ritual 的交互式架构图了解有关架构的更多信息，请访问<a href="https://ritual.global/product">此处</a>。要开始构建应用，请访问<a href="https://docs.ritual.global/">此处</a>。</p>
 <h2 id="我们是谁-who-we-are">我们是谁? (Who we are)</h2>
