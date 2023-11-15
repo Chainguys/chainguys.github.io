@@ -9,7 +9,7 @@
 <meta name="description" content="A blockchain guy who likes making memes and translating tech articles &lt;/br&gt;All Information NOT Financial Adivice&lt;/br&gt; 一个区块链的老韭菜 &lt;/br&gt;兴趣是做meme和翻译技术文章 &lt;/br&gt;一切均非投资建议">
 <meta name="theme-color" content="#000">
 <title>公共保管库已经到来！(Public vaults have arrived!) | Chainguys&#39;Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1699953715713">
+<link rel="shortcut icon" href="/favicon.ico?v=1700021261219">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -903,6 +903,160 @@ Akord Explorer用户界面抢先看 (Sneak peek at Akord Explorer UI)</p>
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/zai-yi-tai-fang-shang-yong-stackr-sdk-gou-jian-wei-hui-zong-introducing-the-stackr-sdk-to-build-micro-rollups-on-ethereum/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://images.mirror-media.xyz/publication-images/abpqTNZmAs8zobi1edkyA.jpeg?height=640&amp;amp;width=1280&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://images.mirror-media.xyz/publication-images/-K31OnQUdxGGC6mxIm0Ih.png?height=1600&amp;amp;width=1600&#34; alt=&#34;0xE8CBcF9D553030b653405a9a11Bc0e3a5C2f5361&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;p&gt;Stackr Labs’ mission is ambitious yet simple: &lt;strong&gt;Empower every developer to build scalable web3 apps.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stackr Labs 的使命雄心勃勃却简单明了：&lt;strong&gt;让每个开发者都能够构建可扩展的 web3 应用。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Today, decentralized app development is constrained to a niche subset of crypto-natives. Our goal is to make it accessible for all - to break down the barriers between web2 and web3 by making it easy to build and operate rollups.&lt;/p&gt;
+&lt;p&gt;如今，去中心化应用的开发仅限于一小部分加密货币“原住民”。我们的目标是让所有人都能使用它 - 通过简化构建和操作 Rollups汇总，进而打破 web2 和 web3 之间的藩篱。&lt;/p&gt;
+&lt;p&gt;As our first step towards this goal, we are introducing the Stackr SDK - a framework to build app-specific micro-rollups in web2 programming languages. In the rest of this post, we’ll walk through these concepts and our thinking behind the SDK, our long-term vision and near-term focus.&lt;/p&gt;
+&lt;p&gt;作为实现目标的第一步，我们推出了 Stackr SDK——一个用 web2 编程语言构建专门应用的微汇总框架。在本文的其余部分中，我们将介绍这些概念以及我们 SDK 背后的思考、长期愿景和近期重点。&lt;/p&gt;
+&lt;h2 id=&#34;当应用链遇见汇总-appchains-meet-rollups&#34;&gt;当应用链遇见汇总 (Appchains, meet rollups)&lt;/h2&gt;
+&lt;p&gt;Ethereum and Cosmos visions are colliding.&lt;/p&gt;
+&lt;p&gt;以太坊和 Cosmos 的愿景正在发生冲突。&lt;/p&gt;
+&lt;p&gt;The Ethereum ecosystem has recognized the value of app-specific blockspace for customizability, performance and value capture. Meanwhile, the Cosmos ecosystem has recognized the value of shared security for trust-minimization and easier chain operations. App-specific rollups realize the best of both worlds and are quickly gaining mindshare.&lt;/p&gt;
+&lt;p&gt;以太坊生态系统已经认识到，专门应用的区块空间，在可定制性、性能和价值捕获方面的价值。与此同时，Cosmos 生态系统已经认识到共享安全对于信任最小化和更轻松链操作的价值。专门应用的汇总实现了两全其美，且迅速赢世人的关注。&lt;/p&gt;
+&lt;p&gt;However, it’s still very hard to build rollups, let alone app-specific rollups. Most existing rollups are general purpose, take a long time to build, require deep crypto expertise and use custom software.&lt;/p&gt;
+&lt;p&gt;然而，构建汇总仍然非常困难，更不用说专门应用的汇总了。大多数现有的汇总都是通用目的(general purpose)类型，需要很长时间和深厚的加密专业知识并使用定制软件才能构建。&lt;/p&gt;
+&lt;p&gt;Stackr solves this problem with an SDK for building app-specific rollups. We let developers easily customize execution environments to fit their use cases.&lt;/p&gt;
+&lt;p&gt;Stackr 通过用于构建专门应用汇总的 SDK 解决了这个问题。我们让开发人员轻松定制执行环境来适应其用例。&lt;/p&gt;
+&lt;h2 id=&#34;我们如何看待汇总-how-we-think-about-rollups&#34;&gt;我们如何看待汇总 (How we think about rollups)&lt;/h2&gt;
+&lt;p&gt;Before further illustrating our approach, let’s take a step back. The &lt;a href=&#34;https://joncharbonneau.substack.com/p/rollups-arent-real&#34;&gt;rollup design space&lt;/a&gt; is large, complex and dynamic, so it’s important that we first establish a fundamental understanding of the technology.&lt;/p&gt;
+&lt;p&gt;在进一步说明对应方法之前，让我们先后撤一步。 &lt;a href=&#34;https://joncharbonneau.substack.com/p/rollups-arent-real&#34;&gt;汇总设计空间&lt;/a&gt; 庞大、复杂且充满变化，因此我们首先对该技术建立起基本的了解就非常重要。&lt;/p&gt;
+&lt;p&gt;Rollups are often misunderstood - they simply compute over transactions off-chain and store the results and input data on-chain. Kelvin from Optimism recently offered a great mental model in &lt;a href=&#34;https://www.youtube.com/live/CAVP16pLQvM?feature=share&amp;amp;t=3695&#34;&gt;his ETHGlobal presentation&lt;/a&gt;. A rollup is “a function over an input array”. We agree, and through this lens, any finite state machine that computes over an on-chain input array can be considered a rollup. Rollups are not limited to the EVM, SVM, Move VM, or any crypto-native VMs!&lt;/p&gt;
+&lt;p&gt;汇总经常被误解 - 它们只是在链外计算交易并将结果和输入数据存储在链上。来自 Optimism 的 Kelvin 最近在&lt;a href=&#34;https://www.youtube.com/live/CAVP16pLQvM?feature=share&amp;amp;t=3695&#34;&gt;他的 ETHGlobal 演讲&lt;/a&gt; 中提供了一个很棒的心智模型。汇总是“输入数组上的函数”。我们同意，通过它，任何在链上的输入数组上进行计算的有限状态机，都可以被视为汇总。汇总不限于 EVM、SVM、Move VM 或任何加密本机 VM！&lt;/p&gt;
+&lt;h2 id=&#34;打破庞然大物-break-up-the-monoliths&#34;&gt;打破庞然大物 (Break up the monoliths)&lt;/h2&gt;
+&lt;p&gt;One thing web2 got very right was the micro-services architecture. The design philosophy involves breaking down a larger system or application into smaller components, each responsible for specific functions. For example, a given application might have authentication, data storage, and messaging functions built as separate micro-services. This approach brings many benefits to developers - agility, flexibility, upgradability, efficiency, reusability, etc.&lt;/p&gt;
+&lt;p&gt;web2 非常正确的一件事是微服务架构。该设计理念涉及将较大的系统或应用，分解为较小的组件，每个组件负责特定的功能。例如，某个应用可能具有作为单独的微服务构建的身份验证、数据存储和消息传递功能。这种方法给开发人员带来了很多好处——敏捷性、灵活性、可升级性、效率、可复用性等。&lt;/p&gt;
+&lt;p&gt;For similar reasons, web3 is also adopting this design philosophy. It underlies the shift towards modular blockchains and app-specificity.&lt;/p&gt;
+&lt;p&gt;出于类似的原因，web3也在采用这种设计理念。它是向模块化区块链和专门应用转变的基础。&lt;/p&gt;
+&lt;h2 id=&#34;微汇总来了here-come-the-micro-rollups&#34;&gt;微汇总来了(Here come the micro-rollups)&lt;/h2&gt;
+&lt;p&gt;Stackr is going a step further - from app-specificity to logic-specificity. We are introducing the concept of &lt;strong&gt;micro-rollups&lt;/strong&gt;, where individual functions within a decentralized app are developed, optimized and maintained as independent state machines. Referencing the micro-services analog, you can think about &lt;strong&gt;regular&lt;/strong&gt; &lt;strong&gt;rollups —&amp;gt; micro-rollups&lt;/strong&gt; similar to &lt;strong&gt;monoliths —&amp;gt; micro-services&lt;/strong&gt; or &lt;strong&gt;VMs —&amp;gt; containers&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Stackr 更进一步—从专门应用到专门逻辑。我们正在引入&lt;strong&gt;微汇总&lt;/strong&gt;的概念，其中去中心化应用中的各个功能作为独立的状态机进行开发、优化和维护。参考微服务类比，您可以考虑&lt;strong&gt;常规&lt;/strong&gt; &lt;strong&gt;汇总 —&amp;gt; 微汇总&lt;/strong&gt;，类似于 &lt;strong&gt;单体 —&amp;gt; 微服务&lt;/strong&gt; 或 &lt;strong&gt;虚拟机 —&amp;gt; 容器&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;Here are two ways to visualize the differences:&lt;/p&gt;
+&lt;p&gt;以下是两种可视化差异的方法：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://mirror.xyz/_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FdsAJShAjeps6zj57YEBaP.png&amp;amp;w=3840&amp;amp;q=75&#34; alt=&#34;Stackr enables more efficient state machines&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Stackr enables more efficient state machines&lt;br&gt;
+Stackr 可实现更高效的状态机...&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://mirror.xyz/_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2Fu3JladgN2iMdhjh7xYceY.png&amp;amp;w=3840&amp;amp;q=75&#34; alt=&#34;With Stackr, app = state machine&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;With Stackr, app = state machine&lt;br&gt;
+有了Stackr，app = 状态机&lt;/p&gt;
+&lt;p&gt;Developers can use the Stackr SDK to define data structures for their application’s state and state transition function. Under the hood Stackr will do the heavy lifting, providing an API to interact with the app, connect it to the aggregator network (more on this later) and finalize on L1.&lt;/p&gt;
+&lt;p&gt;开发人员可以使用 Stackr SDK 为其应用的状态和状态转换函数/功能定义数据结构。在底层，Stackr 将完成繁重的工作，提供一个 API 来与应用交互，将其连接到聚合器网络(稍后会详细介绍)并在 L1 上最终完成。&lt;/p&gt;
+&lt;p&gt;As an example application, let’s say you write a merkle tree with leaves that hold account addresses and token balances. You have just built yourself an account-book rollup. Now replace ECDSA with BLS and you have a working version of &lt;a href=&#34;https://github.com/thehubbleproject/hubble-contracts&#34;&gt;Hubble&lt;/a&gt;, the most efficient ERC-20 transfer rollup as well as (fun fact!) the first ever app-specific rollup!&lt;/p&gt;
+&lt;p&gt;作为示例应用，假设您编写了一棵默克尔树，其叶子保存了账户地址和代币余额。您刚刚为自己建立了一个账簿汇总。现在用 BLS 替换 ECDSA，您就拥有了 &lt;a href=&#34;https://github.com/thehubbleproject/hubble-contracts&#34;&gt;Hubble&lt;/a&gt; 的工作版本，这是最高效的 ERC-20 传输汇总以及(有趣的事实！)有史以来第一个专门应用的汇总！&lt;/p&gt;
+&lt;h2 id=&#34;使用您喜爱的语言进行编程-program-in-languages-you-already-love&#34;&gt;使用您喜爱的语言进行编程 (Program in languages you already love)&lt;/h2&gt;
+&lt;p&gt;The Stackr SDK is very flexible and allows developers to use programming languages of their choice. We believe that to truly make web3 app development widely accessible, we must meet developers where they are. Python, JavaScript, Go, C, etc. - these are the languages that millions of developers worldwide already know and love.&lt;/p&gt;
+&lt;p&gt;Stackr SDK 非常灵活，允许开发人员使用他们选择的编程语言。我们相信，要真正让 web3 应用开发广泛普及，我们必须满足开发人员的需求。 Python、JavaScript、Go、C 等 - 这些是全球数百万开发人员已经了解和喜爱的语言。&lt;/p&gt;
+&lt;p&gt;Stackr Labs is also developing pre-built state machine and bridging modules that make it easy for micro-rollups of different languages to interact. Imagine an app that uses one Python-based micro-rollup and another JavaScript-based micro-rollup, both optimized for the task at hand.&lt;/p&gt;
+&lt;p&gt;Stackr Labs 还在开发预构建的状态机和跨链桥模块，使不同语言的微汇总，能够轻松交互。想象一个使用一个基于 Python 的微汇总应用和另一个基于 JavaScript 的微汇总，两者都针对手头的任务进行了优化。&lt;/p&gt;
+&lt;p&gt;Here’s a way to visualize composable micro-rollups leveraging different languages and an aggregator network:&lt;/p&gt;
+&lt;p&gt;这是利用不同语言和聚合器网络来组合微汇总方法的可视化：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://mirror.xyz/_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FsreGLcjcUp-SSt0744oAS.png&amp;amp;w=3840&amp;amp;q=75&#34; alt=&#34;Composable micro-rollups using a shared aggregator network&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;Composable micro-rollups using a shared aggregator network&lt;br&gt;
+使用共享聚合器网络的可组合微汇总&lt;/p&gt;
+&lt;h2 id=&#34;充分去中心化的应用-sufficiently-decentralized-apps&#34;&gt;充分去中心化的应用 (Sufficiently decentralized apps)&lt;/h2&gt;
+&lt;p&gt;There are many exciting apps in the space, but one we find worth highlighting is &lt;a href=&#34;https://github.com/farcasterxyz/protocol&#34;&gt;Farcaster&lt;/a&gt;, a “sufficiently decentralized social network”. The Farcaster team detailed their thinking behind “sufficient decentralization” &lt;a href=&#34;https://www.varunsrinivasan.com/2022/01/11/sufficient-decentralization-for-social-networks&#34;&gt;in this post&lt;/a&gt;, but the core idea is that sometimes putting entire apps on-chain is “unnecessary and undesirable”.&lt;/p&gt;
+&lt;p&gt;该领域有许多令人兴奋的应用，但我们发现值得强调的一个是 &lt;a href=&#34;https://github.com/farcasterxyz/protocol&#34;&gt;Farcaster&lt;/a&gt;，一个“充分去中心化的社交网络”。 Farcaster 团队[在这篇文章中]详细介绍了他们“充分去中心化”背后的想法(https://www.varunsrinivasan.com/2022/01/11/sufficient-decentralization-for-social-networks)，但其核心思想是有时将整个应用放在链上是“不必要且不可取的”。&lt;/p&gt;
+&lt;p&gt;Their POV is that “a social network achieves sufficient decentralization if two users can find each other and communicate, even if the rest of the network wants to prevent it” and that “achieving this only requires three decentralized features: the ability to claim a unique username, post messages under that name, and read messages from any valid name.”&lt;/p&gt;
+&lt;p&gt;他们的观点是，“两个用户若能直接找到彼此并进行交流，即使网络的其他部分想要阻止，社交网络依然实现了足够的去中心化”，并且“实现这一点只需要三个去中心化的功能：声明一个独特用户名的能力，接着以该名称发布消息，并从任何有效名称读取消息。”&lt;/p&gt;
+&lt;p&gt;To be very clear - we at Stackr Labs believe in open and permissionless innovation. Build anything you want and put any of it on-chain. However, we do find the Farcaster design approach (and social network use case) interesting and a fantastic match for micro-rollups and the Stackr SDK. We aim to make it easy for developers to decentralize the bits that matter.&lt;/p&gt;
+&lt;p&gt;需要明确的是，Stackr Labs 相信开放和无许可的创新，进而构建任何你想要的东西并将其上链。然而，我们确实发现 Farcaster 设计方法(和社交网络用例)很有趣，并且与微汇总和 Stackr SDK 非常匹配。我们的目标是让开发人员能够轻松地将关键部分去中心化。&lt;/p&gt;
+&lt;h2 id=&#34;示范用例和应用-example-use-cases-and-applications&#34;&gt;示范用例和应用 (Example use cases and applications)&lt;/h2&gt;
+&lt;p&gt;The capacity of rollups to validate any off-chain computation represents a remarkable superpower that can be harnessed to create highly efficient use cases for distributed computing. Here are some examples to get the juices flowing:&lt;/p&gt;
+&lt;p&gt;汇总来验证任何链外计算的产能，代表了一种非凡的超能力，可以利用它为分布式计算创建高效的用例。以下是一些“小激动”的例子：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Games.&lt;/strong&gt; Build immersive, interactive games in JS or Unity by converting each user action into an L2 transaction. Rollups provide exciting new opportunities for the development of sophisticated gaming applications with unprecedented levels of interactivity.&lt;br&gt;
+&lt;strong&gt;游戏。&lt;/strong&gt; 通过将每个用户操作转换为 L2 交易，在 JS 或 Unity 中构建身临其境的交互式游戏。 Rollups汇总为开发具有前所未有的可交互性的复杂游戏应用，提供了令人兴奋的新机会。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Databases and cloud services.&lt;/strong&gt; Build a full-fledged database system and index structured and unstructured data within L2 nodes or build entire cloud service stacks like Lambda or identity management tools.&lt;br&gt;
+&lt;strong&gt;数据库和云服务。&lt;/strong&gt; 构建成熟的数据库系统，并在 L2 节点内，对结构化和非结构化数据创建索引，或构建整个云服务堆栈，例如 Lambda 或身份管理工具。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Oracles and real world data.&lt;/strong&gt; Have seamless integration of off-chain data sources such as social graphs, user credit scores, KYC and identity systems. Build attestation applications or run an entire DAO as a rollup with advanced access control and grants processes.&lt;br&gt;
+&lt;strong&gt;预言机和现实世界数据。&lt;/strong&gt; 无缝集成链下数据源，例如社交图、用户信用评分、KYC 和身份系统。构建证明应用，或将整个DAO，作为具有高级访问控制和授权流程的汇总来运行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Off-chain multi-nodal networks.&lt;/strong&gt; Develop comprehensive distributed applications. Provide novel on-chain services to users by enabling nodes to interact with each other through a rollup network.&lt;br&gt;
+链下多节点网络。开发综合分布式应用。通过让节点能通过汇总网络相互交互，为用户提供全新的链上服务。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Social algorithms.&lt;/strong&gt; Build a trending algorithm micro-rollup to power the news feed of your Farcaster client.&lt;br&gt;
+&lt;strong&gt;社交算法。&lt;/strong&gt; 构建趋势算法微汇总，为 Farcaster 客户端的新闻源提供支持。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Machine learning.&lt;/strong&gt; Deploy models for inference as Python micro-rollups. Let users verify it’s truly GPT-2 and not GPT or some other flavor.&lt;br&gt;
+&lt;strong&gt;机器学习。&lt;/strong&gt; 将推理模型部署为 Python 微汇总。让用户验证它是真正的 GPT-2，而不是  GPT 或其他版本。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;DeFi and NFTs.&lt;/strong&gt; Build an AMM DEX in Python or C++ using composable micro-rollups for token transfer + token pool + oracle + AMM logic.&lt;br&gt;
+&lt;strong&gt;DeFi 和 NFT。&lt;/strong&gt; 使用可组合的微汇总以 Python 或 C++ 构建 AMM DEX，用于代币传输 + 代币池 + 预言机 + AMM 整套逻辑。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Enterprise applications.&lt;/strong&gt; Build private and semi-private applications with robust data access controls. For example, an end-to-end supply chain management system with view permissions for the public but write permissions reserved for authorized parties.&lt;br&gt;
+&lt;strong&gt;企业级应用。&lt;/strong&gt; 构建具有强大数据访问控制的私有和半私有应用。例如，端到端的供应链管理系统，为公众提供查看权限，但为已授权方保留写入权限。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;No limits!&lt;/strong&gt; We are only starting to unlock the full potential of rollups for distributed computing. Build secure and reliable communication infrastructure, multi-party compute systems like folding@home, distributed video transcoding systems like Livepeer, privacy-focused transaction ledgers like Aztec or a massive open world game like Minecraft. Build anything from middleware for wallets to entire cloud services like AWS - there’s a huge design space for verifiable compute.&lt;br&gt;
+&lt;strong&gt;没有限制！&lt;/strong&gt; 我们才刚刚开始释放分布式计算汇总的全部潜力。构建安全可靠的通信基础设施、比如folding@home这类多方计算系统、Livepeer 这类分布式视频转码系统、Aztec 这类注重隐私的交易账本或 Minecraft 等大型开放世界游戏。构建从钱包中间件到 AWS 等整个云服务的任何东西 - 可验证计算有巨大的设计空间。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;产品愿景product-vision&#34;&gt;产品愿景(Product vision)&lt;/h2&gt;
+&lt;p&gt;Now let’s talk about our vision for Stackr Labs and the technologies we are building.&lt;br&gt;
+现在让我们谈谈我们对 Stackr Labs 的愿景以及我们正在构建的技术。&lt;/p&gt;
+&lt;h3 id=&#34;模块化和跨平台的sdkmodular-and-agnostic-sdk&#34;&gt;模块化和跨平台的SDK(Modular and agnostic SDK)&lt;/h3&gt;
+&lt;p&gt;The Stackr SDK will support many web2 programming languages such as Python, JavaScript, Go, C, Rust and more - our goal is to be language agnostic. The SDK will also be as flexible as possible regarding proofs (fraud and validity), rollup types (classic and sovereign), ordering (centralized and decentralized) and base layers.&lt;/p&gt;
+&lt;p&gt;Stackr SDK 将支持许多 web2 编程语言，例如 Python、JavaScript、Go、C、Rust 等 - 我们的目标是跨语言。 SDK 在证明(欺诈和有效性)、汇总类型(经典和主权)、序列(中心化和去中心化)和基础层方面也将尽可能灵活。&lt;/p&gt;
+&lt;h3 id=&#34;去中心化聚合网络-decentralized-aggregator-network&#34;&gt;去中心化聚合网络 (Decentralized aggregator network)&lt;/h3&gt;
+&lt;p&gt;Stackr Labs is also building an aggregator network that receives interaction data from applications (along with new states and metadata), bundles the data and submits it on-chain. You can think of the aggregator network like bundlers in EIP-4337, except with rollup data.&lt;/p&gt;
+&lt;p&gt;Stackr Labs 还在构建一个聚合器网络，该网络接收来自应用的交互数据(以及新的状态和元数据)，打包数据并将其提交到链上。您可以将聚合器网络视为 EIP-4337 中的捆绑器，但汇总数据除外。&lt;/p&gt;
+&lt;p&gt;We will be sharing much more information about this layer over the coming months!&lt;/p&gt;
+&lt;p&gt;我们将在未来几个月分享有关该层的更多信息！&lt;/p&gt;
+&lt;h3 id=&#34;近期重点near-term-focus&#34;&gt;近期重点(Near-term focus)&lt;/h3&gt;
+&lt;p&gt;To start, the Stackr SDK will focus on Python and JavaScript programming languages. It will support sovereign rollup mode and ordering will be done by the applications. The initial version will be released without proofs enabled, while we build out the aggregator network, and focus on Ethereum as a base layer.&lt;/p&gt;
+&lt;p&gt;首先，Stackr SDK 将专注于 Python 和 JavaScript 编程语言。它将支持主权汇总模式，并且排序将由应用完成。初始版本将在没有启用证明的情况下发布，同时我们构建聚合器网络，并专注于以太坊作为基础层。&lt;/p&gt;
+&lt;h2 id=&#34;找到我们where-to-find-us&#34;&gt;找到我们(Where to find us)&lt;/h2&gt;
+&lt;p&gt;The Stackr Labs mission is to &lt;strong&gt;empower&lt;/strong&gt; &lt;strong&gt;every developer to build scalable web3 apps.&lt;/strong&gt; It’s an ambitious goal and there’s plenty of work ahead. If the mission resonates with you as a builder or potential team member, please reach out!&lt;/p&gt;
+&lt;p&gt;Stackr Labs 的使命是&lt;strong&gt;赋能&lt;/strong&gt;每一位开发人员构建可扩展的 web3 应用。**这是一个雄心勃勃的目标，未来还有大量工作要做。如果该任务与作为建​​设者或潜在团队成员的您产生共鸣，请联系我们！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;We’re hiring! &lt;a href=&#34;https://stackr-labs.notion.site/Join-us-Stackr-Labs-eaf9056586d243e688dcfcfbad26d843&#34;&gt;Join our team&lt;/a&gt;&lt;br&gt;
+我们正在招聘！ &lt;a href=&#34;https://stackr-labs.notion.site/Join-us-Stackr-Labs-eaf9056586d243e688dcfcfbad26d843&#34;&gt;加入我们的团队&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eager to build with us? &lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSearPyI7Mkff7PjJ_r-AtUMlXolk6a_qB1sQKlxlJahKLB3zQ/viewform?usp=send_form&#34;&gt;Join the waitlist&lt;/a&gt;&lt;br&gt;
+渴望与我们一起建设吗？ &lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSearPyI7Mkff7PjJ_r-AtUMlXolk6a_qB1sQKlxlJahKLB3zQ/viewform?usp=send_form&#34;&gt;加入候补名单&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Whether you’re looking to deploy an existing project as a rollup, starting a new project or still in the idea maze, we’d love to collaborate with you.&lt;/p&gt;
+&lt;p&gt;无论您是希望将现有项目部署为汇总、启动新项目还是仍处于想法迷宫中，我们都乐意与您合作。&lt;/p&gt;
+&lt;p&gt;We plan to build in public and will be releasing much more information over the coming months. Excited to have you on this journey with us - let’s “roll” homies 🚀&lt;/p&gt;
+&lt;p&gt;我们计划公开建设，并将在未来几个月内发布更多信息。很高兴有你和我们一起踏上这段旅程——让我们一起“滚”吧兄弟们🚀&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/0xStackr&#34;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://discord.gg/4wChdkN2&#34;&gt;Discord&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.stackrlabs.xyz/&#34;&gt;Website&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://mirror.xyz/stackrlabs.eth&#34;&gt;Mirror&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;特别感谢-special-thanks&#34;&gt;特别感谢 (Special thanks)&lt;/h2&gt;
+&lt;p&gt;Shoutout to our advisors, investors and everyone helping out along the way: &lt;a href=&#34;https://twitter.com/litocoen&#34;&gt;@litocoen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/RHLSTHRM&#34;&gt;@RHLSTHRM&lt;/a&gt; &lt;a href=&#34;https://twitter.com/anuragarjun&#34;&gt;@anuragarjun&lt;/a&gt; &lt;a href=&#34;https://twitter.com/arjunbhuptani&#34;&gt;@arjunbhuptani&lt;/a&gt; &lt;a href=&#34;https://twitter.com/norswap&#34;&gt;@norswap&lt;/a&gt; &lt;a href=&#34;https://twitter.com/NoahCitron&#34;&gt;@NoahCitron&lt;/a&gt; &lt;a href=&#34;https://twitter.com/musalbas&#34;&gt;@musalbas&lt;/a&gt; &lt;a href=&#34;https://twitter.com/DannySursock&#34;&gt;@DannySursock&lt;/a&gt; &lt;a href=&#34;https://twitter.com/AshAEgan&#34;&gt;@AshAEgan&lt;/a&gt; &lt;a href=&#34;https://twitter.com/stonecoldpat0&#34;&gt;@stonecoldpat0&lt;/a&gt; &lt;a href=&#34;https://twitter.com/sunnydece&#34;&gt;@sunnydece&lt;/a&gt; &lt;a href=&#34;https://twitter.com/VirtualElena&#34;&gt;@VirtualElena&lt;/a&gt; &lt;a href=&#34;https://twitter.com/guywuolletjr&#34;&gt;@guywuolletjr&lt;/a&gt; &lt;a href=&#34;https://twitter.com/ljxie&#34;&gt;@ljxie&lt;/a&gt; &lt;a href=&#34;https://twitter.com/sanjaypshah&#34;&gt;@sanjaypshah&lt;/a&gt; &lt;a href=&#34;https://twitter.com/nuss_eli&#34;&gt;@nuss_eli&lt;/a&gt; &lt;a href=&#34;https://twitter.com/jacobkxyz&#34;&gt;@jacobkxyz&lt;/a&gt; &lt;a href=&#34;https://twitter.com/jadbc0x&#34;&gt;@jadbc0x&lt;/a&gt; &lt;a href=&#34;https://twitter.com/sjors_lemniscap&#34;&gt;@sjors_lemniscap&lt;/a&gt; &lt;a href=&#34;https://twitter.com/jessziyuezhang&#34;&gt;@jessziyuezhang&lt;/a&gt; &lt;a href=&#34;https://twitter.com/devfolio&#34;&gt;@devfolio&lt;/a&gt; and many others&lt;/p&gt;
+&lt;p&gt;向我们的顾问、投资者和一路上提供帮助的所有人表示感谢：&lt;a href=&#34;https://twitter.com/litocoen&#34;&gt;@litocoen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/RHLSTHRM&#34;&gt;@RHLSTHRM&lt;/a&gt; [@anuragarjun](https 😕/twitter.com/anuragarjun)&lt;a href=&#34;https://twitter.com/arjunbhuptani&#34;&gt;@arjunbhuptani&lt;/a&gt;&lt;a href=&#34;https://twitter.com/norswap&#34;&gt;@norswap&lt;/a&gt;[@NoahCitron](https://twitter. com/NoahCitron) &lt;a href=&#34;https://twitter.com/musalbas&#34;&gt;@musalbas&lt;/a&gt; &lt;a href=&#34;https://twitter.com/DannySursock&#34;&gt;@DannySursock&lt;/a&gt; &lt;a href=&#34;https://twitter.com/AshAEgan&#34;&gt;@AshAEgan&lt;/a&gt; &lt;a href=&#34;https://twitter.com/stonecoldpat0&#34;&gt; @stonecoldpat0&lt;/a&gt;&lt;a href=&#34;https://twitter.com/sunnydece&#34;&gt;@sunnydece&lt;/a&gt;&lt;a href=&#34;https://twitter.com/VirtualElena&#34;&gt;@VirtualElena&lt;/a&gt;[@guywuolletjr](https 😕/twitter.com/guywuolletjr) &lt;a href=&#34;https://twitter.com/ljxie&#34;&gt;@ljxie&lt;/a&gt; &lt;a href=&#34;https://twitter.com/sanjaypshah&#34;&gt;@sanjaypshah&lt;/a&gt; [@nuss_eli](https://twitter. com/nuss_eli) &lt;a href=&#34;https://twitter.com/jacobkxyz&#34;&gt;@jacobkxyz&lt;/a&gt; &lt;a href=&#34;https://twitter.com/jadbc0x&#34;&gt;@jadbc0x&lt;/a&gt; &lt;a href=&#34;https://twitter.com/sjors_lemniscap&#34;&gt;@sjors_lemniscap&lt;/a&gt; &lt;a href=&#34;https://twitter.com/jessziyuezhang&#34;&gt; @jessziyuezhang&lt;/a&gt; &lt;a href=&#34;https://twitter.com/devfolio&#34;&gt;@devfolio&lt;/a&gt; 以及许多其他人&lt;/p&gt;
+">在以太坊上用Stackr SDK构建微汇总 (Introducing the Stackr SDK to build micro-rollups on Ethereum)</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://chainguys.github.io/post/ritual-jian-jie-introducing-ritual/"" data-c="
