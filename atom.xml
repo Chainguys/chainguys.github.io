@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chainguys.github.io</id>
     <title>Chainguys&apos;Blog</title>
-    <updated>2023-11-15T04:08:17.606Z</updated>
+    <updated>2023-12-29T04:39:29.693Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chainguys.github.io"/>
     <link rel="self" href="https://chainguys.github.io/atom.xml"/>
@@ -10,6 +10,61 @@
     <logo>https://chainguys.github.io/images/avatar.png</logo>
     <icon>https://chainguys.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Chainguys&apos;Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[单片化与模块化并不是思考区块链可扩展性的唯一方法(Monolithic vs Modular Is Not the Only Way To Think About Blockchain Scalability)]]></title>
+        <id>https://chainguys.github.io/post/dan-pian-hua-yu-mo-kuai-hua-bing-bu-shi-si-kao-qu-kuai-lian-ke-kuo-zhan-xing-de-wei-yi-fang-fa-monolithic-vs-modular-is-not-the-only-way-to-think-about-blockchain-scalability/</id>
+        <link href="https://chainguys.github.io/post/dan-pian-hua-yu-mo-kuai-hua-bing-bu-shi-si-kao-qu-kuai-lian-ke-kuo-zhan-xing-de-wei-yi-fang-fa-monolithic-vs-modular-is-not-the-only-way-to-think-about-blockchain-scalability/">
+        </link>
+        <updated>2023-12-29T04:35:24.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://academy-public.coinmarketcap.com/optimized-uploads/2ed469d19bca405f9de4e365d1d11f6d.jpeg" alt="Monolithic vs Modular Is Not the Only Way To Think About Blockchain Scalability" loading="lazy"></figure>
+<p><a href="https://coinmarketcap.com/academy/author/mathieu-baudet">By Mathieu Baudet</a></p>
+<blockquote>
+<p>Op-Ed: the concept of microchains looks at scalability from a new perspective — that of scaling at the validator level instead of at the blockchain level.</p>
+<p>专栏：微链的概念使我们从一个新的角度看待可扩展性—在验证者级别，而不是区块链级别进行扩展。</p>
+</blockquote>
+<p>There are many narratives around scalability in web3 and we should remember that they are just that: narratives. Their power lies in the way they frame problems, and, consequently, the way we solve them. In this sense, they are more like tools than final answers.</p>
+<p>关于 web3 的可扩展性有很多叙事，(不过)我们应该记住它们只是：叙事。它们的力量在于其提出问题的方式，以及我们解决问题的方式。从这个意义上说，它们更像是工具而不是最终答案。</p>
+<p>Narratives around the problem of scalability are no different in that they can be useful when applied correctly. Perhaps we can ask ourselves what narratives around infrastructure are better for which kind of use cases. If we step outside of the dominant narratives around <em>“layer n”</em> solutions and the debate among monolithic versus modular blockchains, we find more elegant alternatives that can be better suited to end-user applications.</p>
+<p>围绕可扩展性问题的叙事没有什么不同：如果正确应用它们，就会很有用。也许我们可以问自己，关于基础设施的哪些叙事，更适应何种用例。如果我们跳出围绕“第 n 层”解决方案的主流叙事，以及单片区块链与模块化区块链之间的争论，我们会找到更优雅的替代方案，更适合最终用户应用。</p>
+<p>The concept of microchains looks at scalability from a new perspective: that of scaling at the validator level instead of at the blockchain level. The result is an approach that prioritizes web3 applications that need to support an unlimited number of active users.</p>
+<p>微链的概念从一个新的角度看待可扩展性：在验证者级别而不是区块链级别进行扩展。结果是一种优先考虑需要支持无限数量活跃用户的 web3 应用程序的方法。</p>
+<h2 id="单片已死单片万岁the-monolithic-chain-is-dead-long-live-the-monolithic-chain">单片已死，单片万岁(The monolithic chain is dead; long live the monolithic chain)</h2>
+<p>Right now, if you ask a development team how they are building a web3 application, they will probably mention including a rollup solution or app-chain. This is because all the web3 applications that are built strictly on a layer-1 are in a constant tug-of-war for blockspace in the network.</p>
+<p>现在，如果您询问开发团队如何构建 web3 应用，他们可能会提到包括汇总或应用链。这是因为所有严格构建在 Layer-1 上的 Web3 应用，都处于网络中区块空间的持续拉锯战中。</p>
+<p>This is a historical problem. Since the early days of web3 development, we have expected to have <em>“One Network to Rule them All,”</em> or a singular chain that solves all problems.</p>
+<p>这是一个历史问题。自 web3 开发初期以来，我们就期望拥有“一个网络来统治一切”，或者一个解决所有问题的单片链。</p>
+<p>This monolithic view of scalability is unnecessary and has only made it harder for builders to offer users basic things like tolerable transaction speeds or efficient gas costs. As a result, both infrastructure projects and web3 application development teams have rightfully started to look for alternatives.</p>
+<p>这种单片式的可扩展性观点并非必要，只会让开发者更难为用户提供基本的服务——比如可容忍的交易速度或有效的gas成本。因此，基础设施项目和 web3 应用开发团队都开始寻找替代方案。</p>
+<h2 id="分层还是模块这是一个问题going-layered-going-modular">分层还是模块，这是一个问题(Going layered? Going modular?)</h2>
+<p>As the web3 space has evolved, new projects use solutions like L2s and modular chains that help them offer more consistent and reliable user experiences. In recent years, we have seen a lot of development (and investment) focused on technologies like optimistic rollups, app-specific chains, and other layered or modular solutions.</p>
+<p>随着 web3 空间的发展，新项目使用 L2 和模块化链等解决方案，来帮助他们提供更加一致和可靠的用户体验。近年来，我们看到大量开发（和投资）集中在乐观汇总、特定应用链以及其它分层或模块化解决方案等技术上。</p>
+<p>It’s easy to understand why modular scalability has been all the rage as of late. By taking a modular approach, L1 chains like Ethereum can focus on scaling only the essential properties of their networks. In turn, they delegate other non-essential scalability problems to third parties and leave room for a whole ecosystem of L2 solutions. In other words, by going for a modular approach to address scalability, they are leaving behind the idea of a monolithic chain and seeing scalability as an add-on.</p>
+<p>很容易理解为什么模块化扩展性最近风靡一时。通过采用模块化方法，像以太坊这样的 L1 链可以专注于仅扩展其网络的基本属性。反过来，他们将其它非必要的可扩展性问题委托给第三方，并为整个 L2 解决方案生态系统留出空间。换句话说，通过采用模块化方法来解决可扩展性，他们抛弃了单片链的想法，并将可扩展性视为附加组件。</p>
+<p>But are modular chains really the ideal, or end state, for blockchain scalability? As useful as they can be, they also introduce new problems, ranging from extra steps in the user journey to some security concerns (including incomplete fraud proof implementations, software bugs in ZK proofs, and front running by centralized entities.)</p>
+<p>但模块化链真的是区块链可扩展性的理想或最终状态吗？尽管它们很有用，但它们也带来了新的问题，从用户体验中的“额外步骤”到一些安全问题（包括不完整的欺诈证明实现、ZK 证明中的软件bug以及中心化​​实体的抢先交易。）</p>
+<p>Yet, for the past few years, the industry has been limited in thinking about the problem under these terms. This is because of a certain kind of path dependency: we're used to thinking about blockchain scalability in one way just because we’ve mimetically taken that as the starting point.</p>
+<p>然而，在过去的几年里，业界对这些术语下问题的思考一直受到限制。这是因为某种路径依赖：我们习惯于以一种方式思考区块链的可扩展性，只是因为我们以此刻舟求剑。</p>
+<p>These are historical reasons, not practical or technical reasons — and it does not have to be the case.</p>
+<p>这些都是历史原因，而不是实际或技术原因—其实根本不必如此。</p>
+<h2 id="微链超越模块化microchains-beyond-the-modular-approach">微链：超越模块化(Microchains: beyond the modular approach)</h2>
+<p>Let’s take a step back, reframe the problem. What if we could take a step back and design an L1 that scales from the start? We could even revisit the concept of the monolithic chain under a new light — not to go back to it, but to reimagine the main blockchain infrastructure from a more efficient perspective.</p>
+<p>让我们退一步，重新思考这个问题。若退后一步，设计一个从一开始就可扩展的 L1，结果会怎样呢？我们甚至可以在新的视角下重新审视单片链的概念——不是回到它，而是从更有效的角度重新构想主要的区块链基础设施。</p>
+<p>We have the opportunity to scale a main blockchain infrastructure at the validator level, for web3 applications that can horizontally scale (in the first place). The key element to unlock these capabilities is a system where a set of honest and well-incentivized validators can run multiple — even infinite — lightweight chains in parallel. A similar situation already happens with validators who use their data centers to run on different L1s.</p>
+<p>现在，我们有机会在验证者级别扩展主要的区块链基础设施，进而实现最初就可以水平扩展的 web3 应用。解锁这些功能的关键要素是这样一个系统：其中一组诚实且受到良好激励的验证者，可以并行运行多个（甚至无限个）轻量级链。类似的情况已经发生在使用数据中心来在不同 L1 上运行的验证者身上。</p>
+<p>Each of these chains — we call them microchains — can be much smaller in size than a typical L1 chain but still share in the same security guarantees of any large-scale delegated proof-of-stake blockchain network. Because they share the same validator set, they can easily share messages and operations between each other, reducing latency.</p>
+<p>每条链（我们称之为微链）的规模都比典型的 L1 链小得多，但仍然享有任何大规模PoS区块链的相同安全保证。由于它们共享相同的验证者集，因此它们可以轻松地在彼​​此之间共享消息和操作，从而减少延迟。</p>
+<h2 id="为个人区块链铺好道路making-room-for-the-personal-blockchain">为个人区块链铺好道路(Making room for the Personal Blockchain)</h2>
+<p>Beyond scalability, the real advantages of the microchain approach are seen in an improved user experience. Running an unlimited set of parallel chains means that every user could become a partial node for their own chain, with the ability to create their own blockspace as necessary. In this system, individual wallets are at the center, proposing their own blocks, and don’t compete for blockchain infrastructure resources.</p>
+<p>除了可扩展性之外，微链方法的真正优势还在于改善的用户体验。运行无限的并行链，意味着每个用户都可以成为自己链的部分节点，并能够根据需要创建自己的区块空间。在这个系统中，个人钱包处于中心位置，提出自己的区块，并且不争夺区块链基础设施资源。</p>
+<p>One way to look at microchains is to see them as a step away from monolithic blockchains and their layered, modular add-ons, and as a step towards what we could call <em>The Personal Blockchain</em>. Imagine every user having their own chain that interacts with other users’ chains and can create new blocks whenever they want. That’s an alternative that exists when we think outside of flavor-of-the-day narratives of web3 scalability.</p>
+<p>看待微链的一种方法，也可以是将其视为远离单片区块链及其分层、模块化附加组件的一步，并且是迈向我们所谓的 <em>个人区块链</em> 的一步。想象一下，每个用户都有自己的链，可以与其他用户的链交互，并且可以随时创建新的块。当我们跳出 web3 可扩展性的流行叙述时，这是一种替代方案。</p>
+<hr>
+<p><em>Mathieu Baudet is the founder and CEO of Linera, the first low-latency blockchain designed to scale elastically through the introduction of microchains. During his nine-year tenure as an infrastructure engineer and researcher at Meta (formerly Facebook), Mathieu was instrumental in the development of the Libra/Novi project, where he worked on an academic protocol called FastPay which laid the foundations for the Linera protocol. Mathieu holds a PhD in Computer Science from École Normale Supérieure Paris-Saclay and specializes in BFT consensus protocols, cryptographic protocols, and formal verification.</em></p>
+<p><em>Mathieu Baudet 是 Linera 的创始人兼首席执行官，Linera 是第一个低延迟区块链，旨在通过引入微链实现弹性扩展。在担任 Meta（前 Facebook）基础设施工程师和研究员的九年任期内，Mathieu 在 Libra/Novi 项目的开发中发挥了重要作用，他在该项目中开发了名为 FastPay 的学术协议，该协议为 Linera 协议奠定了基础。 Mathieu 拥有巴黎萨克雷高等师范学院计算机科学博士学位，专门研究 BFT 共识协议、密码协议和形式验证。</em></p>
+<p>原文：<br>
+https://coinmarketcap.com/academy/article/monolithic-vs-modular-is-not-the-only-way-to-think-about-blockchain-scalability</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[在以太坊上用Stackr SDK构建微汇总 (Introducing the Stackr SDK to build micro-rollups on Ethereum)]]></title>
         <id>https://chainguys.github.io/post/zai-yi-tai-fang-shang-yong-stackr-sdk-gou-jian-wei-hui-zong-introducing-the-stackr-sdk-to-build-micro-rollups-on-ethereum/</id>
@@ -944,58 +999,6 @@ MEV：序列器可用于通过抢先运行的用户交易进而榨取用户价�
 <td>Taiko BASICS</td>
 <td>original-gifvideo</td>
 <td><a href="https://twitter.com/Chainguys/status/1691240787919745029">2.如何做才这么特别?(2)</a></td>
-</tr>
-</tbody>
-</table>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Bera材料合集-更新中(Bera Materials-Updating)]]></title>
-        <id>https://chainguys.github.io/post/bera/</id>
-        <link href="https://chainguys.github.io/post/bera/">
-        </link>
-        <updated>2023-08-20T05:36:42.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://inflow-public.s3.amazonaws.com/company-logos/rp70b2xrm5pm8fvgl8ogjyvwigm5.jpeg" alt="" loading="lazy"></figure>
-<h1 id="chainguys"><a href="https://twitter.com/Chainguys">@Chainguys</a>原创 （<a href="https://twitter.com/Chainguys">@Chainguys</a> Original)</h1>
-<h2 id="信息图视频gif视频infographicvideogif-video">信息图/视频/gif视频(infographic/video/gif video)</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>BeraChain-101</td>
-<td>original-gifvideo</td>
-<td><a href="https://twitter.com/Chainguys/status/1686553149702549506">P1-What's Berachain?</a></td>
-</tr>
-<tr>
-<td>BeraChain-101</td>
-<td>original-gifvideo</td>
-<td><a href="https://twitter.com/Chainguys/status/1687252256733941760">P1-Berachain是什么?</a></td>
-</tr>
-<tr>
-<td>BeraChain-101</td>
-<td>original-gifvideo</td>
-<td><a href="https://twitter.com/Chainguys/status/1688370625776353280">P2-What's special on Berachain?</a></td>
-</tr>
-<tr>
-<td>BeraChain-101</td>
-<td>original-gifvideo</td>
-<td><a href="https://twitter.com/Chainguys/status/1689072752102408192">P2-Berachain道理有什么特别?</a></td>
-</tr>
-<tr>
-<td>BeraChain-101</td>
-<td>original-gifvideo</td>
-<td><a href="https://twitter.com/Chainguys/status/1689818415396225024">P3-The way to be Unique(1)</a></td>
-</tr>
-<tr>
-<td>BeraChain-101</td>
-<td>original-gifvideo</td>
-<td><a href="https://twitter.com/Chainguys/status/1691242046101819393">P3-如何做到如此特别？(1)</a></td>
 </tr>
 </tbody>
 </table>
